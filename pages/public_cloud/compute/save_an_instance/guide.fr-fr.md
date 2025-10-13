@@ -1,6 +1,6 @@
 ---
 title: 'Sauvegarder une instance'
-excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou Openstack'
+excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou via OpenStack'
 updated: 2025-06-10
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 
 - Avoir une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ». (optionnel)
+- CLI OpenStack. Consultez notre guide « [Préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ». (optionnel)
 
 ## En pratique
 
@@ -38,21 +38,21 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
 >
 
->[!tabs]
-> Via l'espace client OVHcloud
->> Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
+> [!tabs]
 >>
->> Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
+> Via l'espace client OVHcloud
+>>
+>> Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
+>> Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.<br>
+>> Une fois sur la page des instances, cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
 >>
 >> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 >>
 >> > [primary]
 >> >
->> > Deux types de sauvegardes sont disponibles : locale et distante.
->> >
->> > Une sauvegarde locale est stockée dans la même région que votre instance.
->> >
->> > Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
+>> > Deux types de sauvegardes sont disponibles :
+>> > - Locale : Une sauvegarde locale est stockée dans la même région que votre instance.
+>> > - Distante : Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
 >> >
 >> > Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
 >> >
@@ -75,7 +75,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> /// -->
 >>
->> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
+>> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section `Instance Backup`{.action} sous la rubrique **Compute** du menu de gauche, où l'état `Backup en cours` sera affiché pendant le processus.
 >>
 >> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 >>
@@ -83,44 +83,33 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
-> Via the OVHcloud API <a name="createinstanceviaapi"></a>
+> Via l'API OVHcloud <a name="createinstanceviaapi"></a>
+>>
+>> Utilisez l'appel API suivant :
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
 >> >
 >>
->> Parameters:
+>> Renseignez les variables :
 >>
->> > **serviceName** *
->> >
->> >> Identifiant du projet OVHcloud.
->>
->> > **regionName** *
->> >
->> >> Nom de la région où se situe l’instance source.
->>
->> > **instanceId** *
->> >
->> >> Identifiant unique de l’instance concernée.
->>
->> > **snapshotName** *
->> >
->> >> Nom du snapshot (sauvegarde locale) à créer.
->>
->> > **distantRegionName (optionnel)** *
->> >
->> >> Nom de la région distante où le backup sera stocké.
->>
->> > **distantSnapshotName (optionnel)** *
->> >
->> >> Nom du backup distant à créer dans la région distante.
+>> - **serviceName** : Identifiant du projet OVHcloud.
+>> - **regionName** : Nom de la région où se situe l’instance source.
+>> - **instanceId** : Identifiant unique de l’instance concernée.
+>> - **snapshotName** : Nom du snapshot (sauvegarde locale) à créer.
+>> - **distantRegionName (optionnel)** : Nom de la région distante où le backup sera stocké.
+>> - **distantSnapshotName (optionnel)** : Nom du backup distant à créer dans la région distante.
 >>
 >> > [!primary]
 >> >
 >> > Ne créez un backup distant que si les paramètres relatifs à la région distante (**distantRegionName** et **distantSnapshotName**) sont renseignés.
 >> >
 >>
-> Via Openstack
+> Via OpenStack
+>>
+>> Exécutez la commande suivante pour afficher la liste des instances :
+>>
 >> ```bash
 >> $ openstack server list
 >>
@@ -152,11 +141,13 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> ///
 >>
 > Via Horizon
->> Cliquez sur le menu `Compute`{.action} à gauche puis sélectionnez `Instances`{.action}. Cliquez sur le bouton `Create Snapshot`{.action} situé à droite de la ligne correspondant à l’instance concernée.
+>>
+>> Cliquez sur le menu `Compute`{.action} à gauche puis sélectionnez `Instances`{.action}.<br>
+>> Cliquez ensuite sur le bouton `Create Snapshot`{.action} situé à droite de la ligne correspondant à l’instance concernée.
 >>
 >> ![public-cloud-instance-backup-horizon1](images/createbackuphorizon1.png){.thumbnail}
 >>
->> Remplissez le nom du backup et appuyez sur le bouton `Create Snapshot`{.action}.
+>> Renseignez le nom du backup et appuyez sur le bouton `Create Snapshot`{.action}.
 >>
 >> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
@@ -195,7 +186,7 @@ Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
-Dans le cas ou vous activez l'option de sauvegarde distante, vous pourrez renseigner le nom ainsi que sélectionner la localisation de celle-ci.
+Si vous activez l’option de sauvegarde distante, vous pourrez définir un nom pour la sauvegarde et sélectionner son emplacement.
 
 ![public-cloud-instance-distant-backup-workflow](images/createdistantbackup3.png){.thumbnail}
 
