@@ -1,7 +1,7 @@
 ---
 title: "Comment consulter vos crédits du Startup Program"
 excerpt: "Consultez vos crédits du Startup Program d'OVHcloud pour gérer vos ressources et suivre votre solde et historique de consommation"
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Objectif

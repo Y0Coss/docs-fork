@@ -1,7 +1,7 @@
 ---
 title: "Comment souscrire à notre newsletter Startup Program"
 excerpt: "Découvrez comment souscrire à la newsletter du Startup Program d'OVHcloud et rester informé des dernières actualités et offres exclusives"
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Introduction

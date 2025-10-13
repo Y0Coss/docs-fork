@@ -1,7 +1,7 @@
 ---
 title: "Comment optimiser votre candidature au Startup Program"
 excerpt: "Découvrez comment optimiser votre candidature au Startup Program d'OVHcloud pour maximiser vos chances d'acceptation"
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Objectif

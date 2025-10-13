@@ -1,7 +1,7 @@
 ---
 title: "How to sign your Startup Program contract"
 excerpt: 'Find out how to sign your OVHcloud Startup Program contract to activate your credits quickly'
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Objective

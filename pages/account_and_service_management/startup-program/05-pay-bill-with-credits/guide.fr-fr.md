@@ -1,7 +1,7 @@
 ---
 title: "Comment payer une facture avec mes crédits du Startup Program"
 excerpt: "Découvrez comment payer vos factures avec vos crédits du Startup Program d'OVHcloud pour optimiser vos dépenses d'infrastructure"
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Comment contacter un responsable du Startup Program et/ou demander une consultation technique"
 excerpt: "Contactez un responsable du Startup Program d'OVHcloud pour obtenir des conseils, une consultation technique ou des informations sur le programme"
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Objectif

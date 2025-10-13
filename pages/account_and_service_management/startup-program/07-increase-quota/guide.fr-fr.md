@@ -1,7 +1,7 @@
 ---
 title: "Comment augmenter les quotas Public Cloud pour un membre du Startup Program"
 excerpt: "Découvrez comment augmenter les quotas Public Cloud pour un membre du Startup Program d'OVHcloud et optimiser vos ressources Cloud"
-updated: 2025-10-08
+updated: 2025-10-14
 ---
 
 ## Objectif
