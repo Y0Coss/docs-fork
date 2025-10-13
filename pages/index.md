@@ -156,6 +156,7 @@
         + [Server management](bare-metal-cloud-dedicated-servers-managing-servers)
             + [End of life for personal installation templates](bare_metal_cloud/dedicated_servers/end-of-life-for-personal-installation-templates)
             + [OVHcloud API & OS Installation](bare_metal_cloud/dedicated_servers/api-os-installation)
+            + [How to configure the Anti-DDos Infrastructure for Solana](bare_metal_cloud/dedicated_servers/blockchain_anti_ddos)
             + [Using backup storage on a dedicated server](bare_metal_cloud/dedicated_servers/services_backup_storage)
             + [How to configure user accounts and root access on a server](bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
             + [Changing a Windows Server product key](bare_metal_cloud/dedicated_servers/windows_key)
