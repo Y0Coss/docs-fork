@@ -130,7 +130,7 @@ Przepustowość wymieniona na naszej [stronie internetowej VPS](/links/bare-meta
 VPS od OVHcloud obejmuje SLA na poziomie 99,9%.
 
 ///
-</br> </br>
+</br>
 
 /// details | Jakie są unikalne cechy VPS z Local Zone?
 
@@ -379,7 +379,7 @@ Aby sprawdzić, czy adres IP jest dozwolony, użyj następującego wywołania:
 >
 
 ///
-</br> </br>
+</br>
 
 /// details | Czy mój VPS jest chroniony przed zewnętrznymi atakami?
 

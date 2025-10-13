@@ -118,7 +118,7 @@ Hospedar serviços web em um VPS permite que você instale seu software preferid
 Um VPS elimina a necessidade de gerenciar hardware físico, como armazenamento, RAM e CPU, tornando-o adequado para a maioria das aplicações web. À medida que seu negócio cresce, você pode atualizar seu VPS ou migrar para um servidor dedicado ou uma solução de Nuvem Pública para uma infraestrutura mais flexível e poderosa.
 
 ///
-</br> </br>
+</br>
 
 /// details | Qual largura de banda é alocada para meu VPS? É garantida?
 
@@ -380,7 +380,7 @@ Para verificar se seu endereço IP está autorizado, use a seguinte chamada:
 >
 
 ///
-</br> </br>
+</br>
 
 /// details | Meu VPS está protegido contra ataques externos?
 
