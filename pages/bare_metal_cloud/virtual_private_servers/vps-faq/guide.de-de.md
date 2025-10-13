@@ -10,6 +10,7 @@ details {
     margin: 0.1rem 0;
     border: 2px solid transparent;
     border-radius: 4px;
+    font-weight: 400
     background: #ffffffff;
 }
 details > summary {
@@ -28,7 +29,7 @@ details > summary::before {
 details[open] > summary::before {
     content: '\25BC';
 }
-details.faq:hover {
+details:hover {
     border: 1px solid #147DE8;
     border-radius: 4px;
     transition: border-color 0.5s ease;
