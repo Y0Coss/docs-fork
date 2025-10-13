@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Using Virtual Models
 excerpt: Learn how to use OVHcloud AI Endpoints Virtual Models
-updated: 2025-10-12
+updated: 2025-10-13
 ---
 
 > [!primary]
@@ -51,8 +51,8 @@ When you request an LLM generation through our unified endpoint, you can provide
 
 These queries are divided into three parts: tag, ranker, and condition:
 
-- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.). You can find the possible values on [our catalog](https://endpoints.ai.cloud.ovh.net/catalog)
-- **Ranker**: The ranker defines a model's capability compared to other models. We currently support the following rankers: fastest, cheapest, biggest, lates and smallest.
+- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.). You can find the possible values on [our catalog](https://endpoints.ai.cloud.ovh.net/catalog).
+- **Ranker**: The ranker defines a model's capability compared to other models. We currently support the following rankers: fastest, cheapest, biggest, latest and smallest.
 - **Condition**: The condition allows you to filter models based on strict requirements on some of the model specifications. Currently supported specs are context_size, max_tokens, input_cost, params (number of parameters) and endpoint_publication_date (Date we made the model available on AI Endpoints). These conditions support basic operators (<, >, =).
 
 Below are some example queries and the models they currently resolve to. Please note that the resolved model can change, as we continuously update our catalog with new model releases.
