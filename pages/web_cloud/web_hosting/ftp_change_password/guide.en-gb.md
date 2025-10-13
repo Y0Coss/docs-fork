@@ -1,7 +1,7 @@
 ---
 title: "Changing an FTP user password"
 excerpt: "Find out how to change the password for an FTP user created on your OVHcloud Web Hosting plan"
-updated: 2025-09-19
+updated: 2025-10-13
 ---
 
 ## Objective
