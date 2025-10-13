@@ -6,26 +6,26 @@ updated: 2025-10-02
 
 <style>
 /* ---FAQ only--- */
-details.faq {
+details {
     margin: 0.1rem 0;
     border: 2px solid transparent;
     border-radius: 4px;
     background: #ffffffff;
 }
-details.faq > summary {
+details > summary {
     padding: 0.1rem 1rem;
     font-weight: 500;
     color: #268fd4ff;
     cursor: pointer;
     list-style: none;
 }
-details.faq > summary::before {
+details > summary::before {
     content: '\25B6';
     display: inline-block;
     margin-right: 0.5ch;
     transition: transform 0.2s;
 }
-details.faq[open] > summary::before {
+details[open] > summary::before {
     content: '\25BC';
 }
 details.faq:hover {
@@ -33,10 +33,10 @@ details.faq:hover {
     border-radius: 4px;
     transition: border-color 0.5s ease;
 }
-details.faq[open] > summary {
+details[open] > summary {
     background: #ffffffff;
 }
-details.faq > div {
+details > div {
     padding: 0.5rem 1rem !important;
 }
 </style>
