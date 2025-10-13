@@ -39,7 +39,6 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >
 
 > [!tabs]
->>
 > Via l'espace client OVHcloud
 >>
 >> Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
@@ -85,7 +84,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 > Via l'API OVHcloud <a name="createinstanceviaapi"></a>
 >>
->> Utilisez l'appel API suivant :
+>> Authentifiez-vous sur [l'API OVHcloud](/links/console) et utilisez l'appel API suivant :
 >>
 >> > [!api]
 >> >

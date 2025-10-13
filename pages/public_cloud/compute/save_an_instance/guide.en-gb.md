@@ -40,6 +40,7 @@ You can create a single backup of an instance or configure a schedule in order t
 
 > [!tabs]
 > Via the OVHcloud Control Panel
+>>
 >> Log in to [OVHcloud customer area](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
 >>
 >> Click on the `...`{.action} button to the right of the instance and select `Create backup`{.action}.
@@ -48,11 +49,9 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> > [primary]
 >> >
->> > Two types of backup are available: local and distant.
->> >
->> > A local backup is stored in the same region as your instance.
->> >
->> > A distant backup automatically creates a copy of the local backup in a different region of your choice.
+>> > Two types of backup are available:
+>> > - Local: A local backup is stored in the same region as your instance.
+>> > - Distant: A distant backup automatically creates a copy of the local backup in a different region of your choice.
 >> >
 >> > Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
 >> >
@@ -84,36 +83,22 @@ You can create a single backup of an instance or configure a schedule in order t
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Via the OVHcloud API <a name="createinstanceviaapi"></a>
+>>
+>> Log in to the [OVHcloud API](/links/console) and use the following API call:
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
 >> >
 >>
->> Parameters:
+>> Fill in the variables:
 >>
->> > **serviceName** *
->> >
->> >> The OVHcloud project ID.
->>
->> > **regionName** *
->> >
->> >> The region name where the source instance is located.
->>
->> > **instanceId** *
->> >
->> >> The unique instance ID.
->>
->> > **snapshotName** *
->> >
->> >> The name of the snapshot (local backup) to create.
->>
->> > **distantRegionName (optional)** *
->> >
->> >> The remote region name where the distant backup will be stored.
->>
->> > **distantSnapshotName (optional)** *
->> >
->> >> The name of the distant backup to create in the remote region.
+>> - **serviceName**: The OVHcloud project ID.
+>> - **regionName**: The region name where the source instance is located.
+>> - **instanceId**: The unique instance ID.
+>> - **snapshotName**: The name of the snapshot (local backup) to create.
+>> - **distantRegionName (optional)**: The remote region name where the distant backup will be stored.
+>> - **distantSnapshotName (optional)**: The name of the distant backup to create in the remote region.
 >>
 >> > [!primary]
 >> >
@@ -121,6 +106,9 @@ You can create a single backup of an instance or configure a schedule in order t
 >> >
 >>
 > Via OpenStack
+>>
+>> Run the following command to display the list of instances:
+>>
 >> ```bash
 >> $ openstack server list
 >>
@@ -149,10 +137,12 @@ You can create a single backup of an instance or configure a schedule in order t
 >> $ openstack workflow execution create ovh. glance.glance_download '{"src_image_id":"<image_id>", "src_region":"<current_region>", "dst_region":"<remote_region>"}'
 >> ```
 >>
->> //
+>> ///
 >>
 > Via Horizon
->> Click on the `Compute`{.action} menu on the left, then select `Instances`{.action}. Click on the `Create Snapshot`{.action} button to the right of the instance line.
+>>
+>> Click on the `Compute`{.action} menu on the left, then select `Instances`{.action}.<br>
+>> Then click on the `Create Snapshot`{.action} button to the right of the instance line.
 >>
 >> ![public-cloud-instance-backup-horizon1](images/createbackuphorizon1.png){.thumbnail}
 >>

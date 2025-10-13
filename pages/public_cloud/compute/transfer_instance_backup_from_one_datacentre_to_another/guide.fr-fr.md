@@ -26,7 +26,7 @@ Vous aurez également besoin d’une [instance Public Cloud](/links/public-cloud
 
 > [primary]
 >
-> Si vous devez créer une sauvegarde avec Openstack, veuillez vous référer à [notre guide dédié](/pages/public_cloud/compute/save_an_instance) pour savoir comment sauvegarder une instance.
+> Si vous devez créer une sauvegarde avec OpenStack, veuillez vous référer à [notre guide dédié](/pages/public_cloud/compute/save_an_instance) pour savoir comment sauvegarder une instance.
 >
 
 ### Télécharger la sauvegarde
