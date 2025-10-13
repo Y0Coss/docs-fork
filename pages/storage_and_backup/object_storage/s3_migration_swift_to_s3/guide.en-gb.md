@@ -1,7 +1,7 @@
 ---
 title: Object Storage - How to migrate from OVHcloud Swift Object Storage to OVHcloud S3-compatible Object Storage
 excerpt: This guide provides details on how to migrate from OVHcloud Swift Object Storage to OVHcloud S3-compatible Object Storage using Rclone
-updated: 2025-10-13
+updated: 2025-10-14
 ---
 
 ## Objective
@@ -33,16 +33,18 @@ This guide provides detailed steps to help you migrate from OVHcloud Swift Objec
 - An **OVHcloud virtual machine** with Rclone installed working as the management workstation in our scenario. To get the best results, within your budget, we suggest at least the following specifications:
     - b3-16: 4 v-cores and 16 GB of RAM
     - c3-16: 8 v-cores and 16 GB of RAM
- 
-## 1 - Installing Rclone
+
+## Instructions
+
+### 1 - Installing Rclone
 
 If you haven’t done it already, install **Rclone** by following the instructions from [its documentation](https://rclone.org/install/), based on your OS configuration.
 
-## 2 - Configuring Rclone
+### 2 - Configuring Rclone
 
 After installing **Rclone** on your virtual machine, configure its connection to both the source container and destination buckets. To do so, you can either follow Rclone step by step configuration or you can also create and modify the configuration file yourself.
 
-### 2.1 - Using Rclone config command
+#### 2.1 - Using Rclone config command
 
 ```bash
 $ rclone config
@@ -53,7 +55,7 @@ This command will open the configuration menu and will guide you step by step wi
 - For your source container: we recommand using your OpenStack user and associated rclone config file from the [OVHcloud Control Panel](/links/manager). Follow the steps in [this guide](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage) to access the config file associated to your OpenStack user.
 - For your destination bucket: the official OVHcloud provider configuration is available [here](https://rclone.org/s3/#ovhcloud) and will guide you step by step.
 
-### 2.2 - Using Rclone config file
+#### 2.2 - Using Rclone config file
 
 As said, you can also create and modify the configuration file yourself with the following command:
 
@@ -66,6 +68,7 @@ If the configuration file doesn’t exist, you’ll be prompted to add the follo
 ```bash
 $ nano /home/<your linux user>/.config/rclone/rclone.conf
 ```
+
 In both cases your configuration blocks should look like:
 
 ```bash
@@ -103,7 +106,7 @@ You can then test your two connections using the `rclone config` command by as b
 $ rclone config
 ```
 
-## 3 - Running Rclone
+### 3 - Running Rclone
 
 Depending on your strategy you can use two different commands to start the migration.
 
@@ -125,7 +128,7 @@ $ rclone copy ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-buck
 
 `--progress` shows progress during transfer.
 
-## Migration status
+### Migration status
 
 We recommend comparing the source and destination buckets after migration. Your source and OVHcloud destination buckets can be compared via command line or directly from the [OVHcloud Control Panel](/links/manager)
 

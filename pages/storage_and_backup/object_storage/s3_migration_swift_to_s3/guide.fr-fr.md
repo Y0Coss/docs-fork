@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Comment migrer un Object Storage OVHcloud Swift vers un Object Storage OVHcloud compatible S3"
 excerpt: "Découvrez comment migrer un Object Storage OVHcloud Swift vers un Object Storage OVHcloud compatible S3 en utilisant Rclone"
-updated: 2025-10-13
+updated: 2025-10-14
 ---
 
 ## Objectif
@@ -31,18 +31,20 @@ Ce guide fournit des étapes détaillées pour vous aider à migrer un Object St
     - Vos clés d'accès et clés secrètes associées.
     - L'ID de la région associée.
 - Détenir une **machine virtuelle OVHcloud** avec Rclone installé, servant de station de gestion dans notre scénario. Pour obtenir les meilleurs résultats, dans votre budget, nous vous recommandons au moins les spécifications suivantes :
-    - b3-16 : 4 cœurs virtuels et 16 Go de RAM.
-    - c3-16 : 8 cœurs virtuels et 16 Go de RAM.
- 
-## 1 - Installation de Rclone
+    - b3-16 : 4 v-cores et 16 Go de RAM.
+    - c3-16 : 8 v-cores et 16 Go de RAM.
+
+## En pratique
+
+### 1 - Installation de Rclone
 
 Si vous ne l'avez pas déjà fait, installez **Rclone** en suivant les instructions de [sa documentation](https://rclone.org/install/), en fonction de la configuration de votre système d'exploitation.
 
-## 2 - Configuration de Rclone
+### 2 - Configuration de Rclone
 
 Après avoir installé **Rclone** sur votre machine virtuelle, configurez sa connexion au conteneur source et aux buckets de destination. Pour ce faire, vous pouvez soit suivre la configuration pas à pas de Rclone, soit créer et modifier vous-même le fichier de configuration.
 
-### 2.1 - Utilisation de la commande Rclone config
+#### 2.1 - Utilisation de la commande Rclone config
 
 ```bash
 $ rclone config
@@ -53,7 +55,7 @@ Cette commande ouvrira le menu de configuration et vous guidera pas à pas dans 
 - Pour votre conteneur source : nous vous recommandons d'utiliser votre utilisateur OpenStack et le fichier de configuration Rclone associé depuis [l'espace client OVHcloud](/links/manager). Suivez les étapes de [ce guide](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage) pour accéder au fichier de configuration associé à votre utilisateur OpenStack.
 - Pour votre bucket de destination : la configuration officielle du fournisseur OVHcloud est disponible [ici](https://rclone.org/s3/#ovhcloud) et vous guidera pas à pas.
 
-### 2.2 - Utilisation du fichier de configuration Rclone
+#### 2.2 - Utilisation du fichier de configuration Rclone
 
 Comme indiqué, vous pouvez également créer et modifier vous-même le fichier de configuration avec la commande suivante :
 
@@ -103,7 +105,7 @@ Vous pouvez ensuite tester vos deux connexions en utilisant la commande `rclone 
 $ rclone config
 ```
 
-## 3 - Exécution de Rclone
+### 3 - Exécution de Rclone
 
 En fonction de votre stratégie, vous pouvez utiliser deux commandes différentes pour lancer la migration.
 
@@ -125,7 +127,7 @@ $ rclone copy ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-buck
 
 `--progress` affiche l'avancement pendant le transfert.
 
-## Statut de la migration
+### Statut de la migration
 
 Nous vous recommandons de comparer les buckets source et destination après la migration. Vos buckets source et destination OVHcloud peuvent être comparés via ligne de commande ou directement depuis [l'espace client OVHcloud](/links/manager)
 
