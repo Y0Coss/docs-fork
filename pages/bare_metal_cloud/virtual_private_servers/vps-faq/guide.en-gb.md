@@ -130,7 +130,7 @@ The bandwidth listed on our [VPS web page](/links/bare-metal/vps) is guaranteed.
 An OVHcloud VPS includes a 99.9% SLA.
 
 ///
-</br> </br>
+</br>
 
 /// details | What are the unique features of a Local Zone VPS?
 
@@ -379,7 +379,7 @@ To verify that your IP address is authorized, use the following call:
 >
 
 ///
-</br> </br>
+</br>
 
 /// details | Is my VPS protected from external attacks?
 

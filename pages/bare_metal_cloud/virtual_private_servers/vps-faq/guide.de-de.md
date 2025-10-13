@@ -6,33 +6,38 @@ updated: 2025-10-02
 
 <style>
 /* ---FAQ only--- */
-details {
-    margin: 0.5rem 0;
-    border: 1px solid #ffffffff;
+details.faq {
+    margin: 0.1rem 0;
+    border: 2px solid transparent;
     border-radius: 4px;
     background: #ffffffff;
 }
-details > summary {
-    padding: 0.75rem 1rem;
+details.faq > summary {
+    padding: 0.1rem 1rem;
     font-weight: 500;
     color: #268fd4ff;
     cursor: pointer;
     list-style: none;
 }
-details > summary::before {
+details.faq > summary::before {
     content: '\25B6';
     display: inline-block;
     margin-right: 0.5ch;
     transition: transform 0.2s;
 }
-details[open] > summary::before {
+details.faq[open] > summary::before {
     content: '\25BC';
 }
-details.[open] > summary {
+details.faq:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details.faq[open] > summary {
     background: #ffffffff;
 }
-details > div {
-    padding: 0.75rem 1rem;
+details.faq > div {
+    padding: 0.5rem 1rem !important;
 }
 </style>
 
