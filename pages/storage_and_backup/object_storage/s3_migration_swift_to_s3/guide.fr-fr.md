@@ -1,6 +1,6 @@
 ---
-title: "Object Storage - Comment migrer un Object Storage OVHcloud Swift vers un Object Storage OVHcloud compatible S3"
-excerpt: "Découvrez comment migrer un Object Storage OVHcloud Swift vers un Object Storage OVHcloud compatible S3 en utilisant Rclone"
+title: "Object Storage - Comment migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3"
+excerpt: "Découvrez comment migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3 en utilisant Rclone"
 updated: 2025-10-14
 ---
 
@@ -129,7 +129,7 @@ $ rclone copy ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-buck
 
 ### Statut de la migration
 
-Nous vous recommandons de comparer les buckets source et destination après la migration. Vos buckets source et destination OVHcloud peuvent être comparés via ligne de commande ou directement depuis [l'espace client OVHcloud](/links/manager)
+Nous vous recommandons de comparer les buckets source et destination après la migration. Vos buckets source et destination OVHcloud peuvent être comparés en ligne de commande ou directement depuis [l'espace client OVHcloud](/links/manager)
 
 Vous pouvez vérifier la taille des deux buckets et le nombre d'objets en utilisant cette commande :
 
