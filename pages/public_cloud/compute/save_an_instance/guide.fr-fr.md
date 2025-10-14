@@ -98,7 +98,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> > Ne créez un backup distant que si les paramètres relatifs à la région distante (**distantRegionName** et **distantSnapshotName**) sont renseignés.
 >> >
 >>
-> Via l'API OpenStack
+> Via la CLI OpenStack
 >>
 >> Exécutez la commande suivante pour afficher la liste des instances :
 >>

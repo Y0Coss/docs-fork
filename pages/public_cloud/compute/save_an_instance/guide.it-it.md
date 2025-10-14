@@ -97,7 +97,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >> > Crea un backup remoto solo se i parametri relativi alla regione remota (**distantRegionName** e **distantSnapshotName**) sono compilati.
 >> >
 >>
-> Attraverso l'API OpenStack
+> Attraverso la CLI OpenStack
 >>
 >> Esegui il seguente comando per visualizzare l'elenco delle istanze:
 >>

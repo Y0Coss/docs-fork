@@ -97,7 +97,7 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 >> > Cree un backup remoto solo si se proporcionan los parámetros relacionados con la región remota (**distantRegionName** y **distantSnapshotName**).
 >> >
 >>
-> A través de la API de OpenStack
+> A través de la CLI de OpenStack
 >>
 >> Ejecute el siguiente comando para mostrar la lista de instancias:
 >>

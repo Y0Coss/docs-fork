@@ -97,7 +97,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >> > Only create a distant backup if the parameters related to the remote region (**distantRegionName** and **distantSnapshotName**) are provided.
 >> >
 >>
-> Via the OpenStack API
+> Via the OpenStack CLI
 >>
 >> Run the following command to display the list of instances:
 >>

@@ -97,7 +97,7 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 >> > Twórz kopię zapasową w regionie docelowym tylko wtedy, gdy parametry **distantRegionName** i **distantSnapshotName** są wypełnione.
 >> >
 >>
-> Przez API OpenStack
+> Za pośrednictwem CLI OpenStack
 >>
 >> Uruchom poniższe polecenie, aby wyświetlić listę instancji:
 >>

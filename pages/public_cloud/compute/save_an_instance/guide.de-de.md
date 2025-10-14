@@ -97,7 +97,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >> > Erstellen Sie eine Sicherung in einer Zielregion nur, wenn die Parameter **distantRegionName** und **distantSnapshotName** ausgefüllt sind.
 >> >
 >>
-> Über OpenStack
+> Über die OpenStack-CLI
 >>
 >> Führen Sie den folgenden Befehl aus, um die Liste der Instanzen anzuzeigen:
 >>

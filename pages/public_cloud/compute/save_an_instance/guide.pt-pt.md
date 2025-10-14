@@ -98,7 +98,7 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 >> > Crie um backup remoto apenas se os parâmetros relacionados à região remota (**distantRegionName** e **distantSnapshotName**) estiverem preenchidos.
 >> >
 >>
-> Através da API OpenStack
+> Através da CLI OpenStack
 >>
 >> Execute o seguinte comando para exibir a lista de instâncias:
 >>
