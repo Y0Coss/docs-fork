@@ -30,7 +30,7 @@ This guide provides detailed steps to help you migrate from OVHcloud Swift Objec
     - Your bucket name.
     - Your associated access and secret keys.
     - The associated region ID.
-- An **OVHcloud virtual machine** with Rclone installed working as the management workstation in our scenario. To get the best results, within your budget, we suggest at least the following specifications:
+- An **OVHcloud Public Cloud instance** with Rclone installed working as the management workstation in our scenario. To get the best results, within your budget, we suggest at least the following specifications:
     - b3-16: 4 v-cores and 16 GB of RAM
     - c3-16: 8 v-cores and 16 GB of RAM
 
