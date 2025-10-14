@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2025-10-09
+updated: 2025-10-14
 ---
 
 ## Wprowadzenie 
@@ -17,7 +17,7 @@ Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów 
 
 ## W praktyce
 
-### Etap 1: Pobranie plików z Twojej przestrzeni dyskowej FTP
+### 1 - Pobranie plików z Twojej przestrzeni dyskowej FTP
 
 #### 1.1 Zaloguj się do przestrzeni dyskowej.
 
@@ -28,11 +28,38 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} i kliknij `Hosting`{.action} . Wybierz odpowiedni hosting i przejdź do karty `FTP - SSH`{.action}. 
+Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web_cloud/web_hosting/ftp_connection). W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web_cloud/web_hosting/ftp_connection).
+>>
+>> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
@@ -48,7 +75,7 @@ Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, prze
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### Etap 2: Utworzenie i pobranie kopii bazy danych (opcjonalnie)
+### 2 - Utworzenie i pobranie kopii bazy danych (opcjonalnie)
 
 > [!primary]
 >
@@ -61,7 +88,7 @@ Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową baz
 Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
 [Tworzenie i eksportowanie bazy danych na serwerze baz danych](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
-### Etap 3: Pobranie logów z hostingu OVHcloud
+### 3 - Pobranie logów z hostingu OVHcloud
 
 Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
 
