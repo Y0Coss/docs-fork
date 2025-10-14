@@ -18,7 +18,7 @@ Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](/l
 
 ## W praktyce
 
-Zaloguj się do [interfejsu API OVHcloud](https://api.ovh.com/) i postępuj zgodnie z poniższymi instrukcjami.
+Zaloguj się do [interfejsu API OVHcloud](/links/api) i postępuj zgodnie z poniższymi instrukcjami.
 
 ### Etap 1: buduj koszyk
 

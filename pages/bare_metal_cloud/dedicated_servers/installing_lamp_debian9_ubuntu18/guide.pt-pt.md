@@ -239,7 +239,7 @@ Para saber mais, consulte o guia "[Editar uma zona DNS](/pages/web_cloud/domains
 >
 > Para estabelecer ligações seguras (`https`), o servidor web deve ser protegido por uma autoridade de certificação oficial como "[Let’s Encrypt](https://letsencrypt.org/)", que propõe certificados gratuitos. Deverá instalar uma ferramenta cliente (como o Certbot) e configurar o Apache em conformidade. Sem esta etapa, o seu website ou a sua aplicação só podem aceitar pedidos `http` não encriptados.
 > 
-> Em alternativa, a OVHcloud oferece-lhe a solução [SSL Gateway](https://www.ovh.pt/ssl-gateway/). Para mais informações, consulte o [nosso manual](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> Em alternativa, a OVHcloud oferece-lhe a solução [SSL Gateway](/links/web/ssl-gateway). Para mais informações, consulte o [nosso manual](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 Certifique-se de que o seu nome de domínio está corretamente indicado na zona DNS, ou seja, associado ao endereço IP do seu servidor.

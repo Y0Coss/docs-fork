@@ -1,12 +1,15 @@
 ---
 title: "Konfiguration von IP-Aliasing"
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
-updated: 2024-11-05
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Diese Anleitung befasst sich mit der Konfiguration von Additional IPv4-Adressen auf einer öffentlichen Schnittstelle. Sie können auch IPv6-Adressen auf Ihren Dedicated Servern konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_ipv6) verwenden.
 >
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+> Beachten Sie, dass Additional IPs auch in einem vRack (privates Netzwerk) konfiguriert werden können, was die Anbindung eines breiten Spektrums von OVHcloud Diensten ermöglicht und so für mehr Flexibilität sorgt.
+>
+> Erfahren Sie mithilfe unserer Anleitungen, wie Sie Additional IPs in einem vRack für [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) und [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) konfigurieren.
 >
 
 ## Ziel
@@ -329,7 +332,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Bei Verwendung des Befehls `netplan try` kann eine Warnmeldung wie `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Das bedeutet nur, dass die Datei keine einschränkenden Berechtigungen hat. Dies hat keine Auswirkungen auf die Konfiguration Ihrer Additional IP. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Bei Verwendung des Befehls `netplan try` kann eine Warnmeldung wie `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Das bedeutet nur, dass die Datei keine einschränkenden Berechtigungen hat. Dies hat keine Auswirkungen auf die Konfiguration Ihrer Additional IP. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -553,7 +556,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Ersetzen Sie "ADDITIONAL_IP" mit Ihrer Additional IP-Adresse.
 
-Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn dies Rescue-Modus funktioniert, bedeutet es wahrscheinlich, dass ein Konfigurationsfehler besteht. Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help){.external} mit folgenden Angaben:
+Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn dies Rescue-Modus funktioniert, bedeutet es wahrscheinlich, dass ein Konfigurationsfehler besteht. Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) mit folgenden Angaben:
 
 - Name und Version des auf dem Server verwendeten Betriebssystems
 - Name und Verzeichnis der Netzwerkkonfigurationsdatei

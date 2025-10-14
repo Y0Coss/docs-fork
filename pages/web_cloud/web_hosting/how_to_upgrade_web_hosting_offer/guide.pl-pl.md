@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak zmienić ofertę"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2024-10-30
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie
@@ -12,7 +12,7 @@ updated: 2024-10-30
 - więcej przestrzeni dyskowej FTP;
 - dodatkowych baz danych; 
 - dodatkowych adresów e-mail;
-- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases){.external} (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
+- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases) (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
 
 **Dowiedz się, jak zmienić ofertę hostingową OVHcloud bez przerwy w działaniu usługi.**
 
@@ -62,9 +62,41 @@ Sprawdź, czy nowa oferta zawiera wystarczającą liczbę [baz danych](/links/we
 
 W przeciwnym razie usuń nieużywane bazy danych i w razie potrzeby zmniejsz ilość danych w nich zawartych. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie. Jeśli potrzebujesz wsparcia w zakresie wymaganych działań, skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli przejdź do zakładki `Bazy danych`{.action}, następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Przelicz rozmiar bazy`{.action}.
+Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Na nowej stronie pojawi się tabela zawierająca utworzone bazy danych. Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Przelicz rozmiar bazy`{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Etap 5**
+>>
+>> W oknie, które się wyświetli kliknij bezpośrednio przycisk `Zatwierdź`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
+>> Twoja baza danych znów stanie się w pełni operacyjna.
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come far evolvere la tua offerta"
 excerpt: "Questa guida ti mostra come modificare il piano di abbonamento di un hosting Web OVHcloud"
-updated: 2024-10-30
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -12,7 +12,7 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 - più spazio di archiviazione FTP;
 - banche dati supplementari; 
 - di indirizzi email aggiuntivi;
-- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases){.external} (incluso nelle [offerte Performance](/links/web/hosting-performance-offer).
+- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases) (incluso nelle [offerte Performance](/links/web/hosting-performance-offer).
 
 **Questa guida ti mostra come far evolvere la tua soluzione di hosting OVHcloud senza interruzioni del servizio.**
 
@@ -62,9 +62,41 @@ Assicurati che la nuova offerta includa un numero sufficiente di [database](/lin
 
 In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre la quantità di dati in essi contenuti. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta. Per assistenza sulle operazioni da effettuare, contatta i [partner OVHcloud](/links/partner).
 
-In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, clicca sulla scheda `Database`{.action} e poi sul pulsante `...`{.action} a destra del database in questione e poi su `Ricalcola la quota`{.action}.
+In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Database`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Sulla nuova pagina appare una tabella con i database creati. A destra del database, clicca sul pulsante `...`{.action} e poi su `Ricalcola la quota`{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> Nella nuova finestra, clicca direttamente sul pulsante `Conferma`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
+>> Il database sarà di nuovo pienamente operativo.
 
 > [!primary]
 >

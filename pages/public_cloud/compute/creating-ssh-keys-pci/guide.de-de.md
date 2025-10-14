@@ -1,7 +1,7 @@
 ---
 title: Authentifizierungsschlüssel für SSH-Verbindungen zu Public Cloud Instanzen erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie Schlüsselpaare für OpenSSH auf Ihrem lokalen Gerät konfigurieren und für sichere Verbindungen zu Ihrer Instanz verwenden
-updated: 2024-09-02
+updated: 2024-12-09
 ---
 
 <style>
@@ -47,7 +47,7 @@ In den folgenden Anweisungen wird erläutert, wie Sie Schlüsselpaare für Remot
 
 Wenn Sie eine grafische Benutzeroberfläche bevorzugen, können Sie für jede Art von Betriebssystem zahlreiche Anwendungen finden, mit denen Sie sich über das OpenSSH-Protokoll mit Remote-Hosts verbinden können.
 
-Beispielsweise ist [PuTTY](https://putty.org/) eine Open Source-SSH-Clientsoftware mit vielen nützlichen Funktionen. In unserem detaillierten Tutorial erfahren Sie, wie Sie damit Verbindungen zu OVHcloud Servern und Instanzen konfigurieren:
+Beispielsweise ist [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) eine Open Source-SSH-Clientsoftware mit vielen nützlichen Funktionen. In unserem detaillierten Tutorial erfahren Sie, wie Sie damit Verbindungen zu OVHcloud Servern und Instanzen konfigurieren:
 
 - [Verwendung von PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

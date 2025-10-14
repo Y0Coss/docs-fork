@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2024-10-30
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 - More FTP storage space
 - Additional databases
 - Additional email accounts
-- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases){.external} (included in [the Performance offers](/links/web/hosting-performance-offer))
+- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases) (included in [the Performance offers](/links/web/hosting-performance-offer))
 
 **This guide explains how to upgrade your OVHcloud hosting plan without any service interruptions.**
 

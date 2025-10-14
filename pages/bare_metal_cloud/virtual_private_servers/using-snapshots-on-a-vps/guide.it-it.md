@@ -1,12 +1,8 @@
 ---
 title: "Usare snapshot su un VPS"
 excerpt: "Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio Cliente OVHcloud"
-updated: 2024-09-18
+updated: 2025-09-11
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -23,6 +19,10 @@ Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagin
 
 - avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - un servizio [VPS OVHcloud](/links/bare-metal/vps) già impostato
+
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedura
 

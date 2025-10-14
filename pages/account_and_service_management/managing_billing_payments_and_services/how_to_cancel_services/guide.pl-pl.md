@@ -146,7 +146,7 @@ Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Zarządzani
 > [!faq]
 >
 > Nie mogę zrezygnować z usługi. Co mogę zrobić?
->> Jeśli nie możesz zrezygnować z usługi (przycisk ``Rezygnuję z usługi`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
+>> Jeśli nie możesz zrezygnować z usługi (przycisk `Rezygnuję z usługi`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
 >> Sprawdź również, czy spełnione są następujące warunki:
 >>
 >> - Musisz być "kontaktem administracyjnym" usługi. Aby uzyskać więcej informacji, zobacz [ten przewodnik](/pages/account_and_service_management/account_information/managing_contacts#definition).

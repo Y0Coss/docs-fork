@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'un utilisateur FTP"
 excerpt: "Découvrez comment changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
-updated: 2024-02-29
+updated: 2025-09-19
 ---
 
 ## Objectif
@@ -55,7 +55,7 @@ Selon votre offre d'[hébergement web OVHcloud](/links/web/hosting), la modifica
 >
 > Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
 >
->- Minimum 8 caractères ;
+>- Minimum 9 caractères ;
 >- Maximum 30 caractères ;
 >- Au moins une lettre majuscule ;
 >- Au moins une lettre minuscule ;

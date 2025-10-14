@@ -1,13 +1,8 @@
 ---
 title: 'Configurer une adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
-updated: 2024-11-05
+updated: 2025-09-11
 ---
-
-> [!primary]
->
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas de conséquences sur ses fonctionnalités.
->
 
 ## Objectif
 
@@ -29,6 +24,10 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Avoir un accès administrateur (sudo) via SSH ou GUI sur votre serveur
 - Avoir les connaissances de base sur les réseaux et leur administration
 
+> [!warning]
+> Les adresses Additional IP actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## En pratique
 
 Ce guide contient les configurations des distributions/systèmes d'exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre serveur via SSH ou via une session de connexion à l'interface graphique utilisateur (RDP pour un VPS Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées (Administrateur/sudo).
@@ -46,7 +45,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
-### Debian 10/11
+### Debian 11
 
 #### Étape 1 : désactiver la configuration automatique du réseau
 
@@ -222,7 +221,7 @@ sudo netplan apply
 
 Répétez cette procédure pour chaque adresse Additional IP.
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Le fichier de configuration principal est situé dans le dossier `/etc/sysconfig/network-scripts/`. Dans cet exemple, il est appelé `ifcfg-eth0`. Avant de faire des changements, vérifiez le nom réel du fichier dans ce dossier.
 
@@ -408,7 +407,7 @@ Tapez `cmd` et cliquez sur `OK`{.action} pour ouvrir l'application de ligne de c
 
 Pour récupérer la configuration IP actuelle, entrez `ipconfig` dans l'invite de commande.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -454,7 +453,7 @@ Vous perdrez la connexion à votre serveur pendant quelques secondes.
 
 Ouvrez l'invite de commandes (cmd) et entrez `ipconfig`. La configuration doit maintenant inclure la nouvelle adresse Additional IP.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:

@@ -1084,7 +1084,7 @@ La liste des événements survenus apparaît, cliquez sur `Close`{.action} pour 
 
 [Réplication avancée avec Leap](/pages/hosted_private_cloud/nutanix_on_ovhcloud/47-nutanix-leap)
 
-[Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
+[Présentation des vRack](/links/network/vrack)
 
 [Documentation Nutanix AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
 

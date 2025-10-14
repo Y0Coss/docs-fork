@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting FAQ"
 excerpt: "Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans"
-updated: 2025-04-25
+updated: 2025-08-01
 ---
 
 <style>
@@ -562,22 +562,23 @@ This error can also appear if an HTTP request ends in *timeout* on your website.
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-This message indicates that the type of HTTP request you are trying to make on your website is forbidden for a limited time, usually for security reasons.
+The “Your request has been blocked” page may appear for a number of reasons (non-exhaustive list):
+
+- The request is made from an unupdated web browser (Firefox, Chrome, Safari, Edge, etc.).
+- A very large number of requests, similar or not, are made in an extremely short time.
+- The request attempts to perform unauthorized actions on the shared infrastructure where your web hosting plan is located.
 
 In this situation, several actions are required:
 
-- [Examine the logs](/pages/web_cloud/web_hosting/logs_and_statistics) of your website, in order to determine which requests caused this block.
-- Using anti-virus or anti-spyware software, check that your devices (computers, smartphones, etc.) are not infected by spyware or malicious software.
-- Check the source code of your website (FTP storage space and database(s)).
+- Check that your web browser is up to date.
+- Retrieve the URL called (for example: `https://www.domain.tld`) as well as all the information present on the page “Your request has been blocked” (`IP address`, `Date` and `Request ID`).
+- Send this information to support by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 If you are unsure about the changes you need to make, contact your webmaster or one of our [partners](/links/partner).
 
 > [!success]
 >
-> See also our detailed guides:
->
-> - [Web hosting - View website statistics and logs](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Use cases - What to do if your  Website is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Please also refer to our detailed guide: [What should I do if the page “Your request has been blocked” appears?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -585,22 +586,21 @@ If you are unsure about the changes you need to make, contact your webmaster or 
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-This message indicates that the IP address you use to connect to your website is blocked for a limited time, usually for security reasons.
+The “Your IP has been banned” page may appear for a number of reasons (non-exhaustive list):
+
+- A very large number of requests, similar or not, are made in an extremely short time from the same IP address.
+- Requests made from the IP address in question are suspicious.
 
 In this situation, several actions are required:
 
-- [Examine the logs](/pages/web_cloud/web_hosting/logs_and_statistics) of your website, in order to determine which requests caused this block.
-- Using anti-virus or anti-spyware software, check that your devices (computers, smartphones, etc.) are not infected by spyware or malicious software.
-- Check the source code of your website (FTP storage space and database(s)).
+- Retrieve the URL called (for example: `https://www.domain.tld`) as well as all the information present on the page “Your IP has been banned” (`IP address`, `Date` and `Request ID`).
+- Send this information to support by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 If you are unsure about the changes you need to make, contact your webmaster or one of our [partners](/links/partner).
 
 > [!success]
 >
-> See also our detailed guides:
->
-> - [Web hosting - View website statistics and logs](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Use cases - What to do if your  Website is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Please also refer to our detailed guide: [What should I do if the page “Your IP has been banned” appears?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
@@ -608,7 +608,7 @@ If you are unsure about the changes you need to make, contact your webmaster or 
 
 ![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-You have no action to take in this situation. Even if your domain appears in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
+You have no action to take in this situation. Even if your domain appears in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) in your Control Panel, it will work and display in a normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
 
 > [!alert]
 >

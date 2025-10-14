@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Ziel 
@@ -59,13 +59,17 @@ Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer An
 [Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export).
 
 Wenn Sie eine Datenbank **Web Cloud Databases** für Ihre Website verwenden, lesen Sie den Abschnitt "Backup" in unserer Anleitung:
-[Eine Datenbank Ihres Datenbankservers sichern und exportieren](/pages/web_cloud/web_cloud_databases/save-export-on-database-server){.external}.
+[Eine Datenbank Ihres Datenbankservers sichern und exportieren](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
 ### Schritt 3: Logs Ihres OVHcloud Webhostings abrufen
 
 Wenn Sie den Protokollverlauf Ihrer Webseite aufbewahren möchten, haben Sie die Möglichkeit, die Logs im OVHcloud Kundencenter herunterzuladen.
 
-Wählen Sie unter `Hosting-Pakete`{.action} den gewünschten Dienst aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Klicken Sie auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
+Wählen Sie unter `Hosting-Pakete`{.action} den gewünschten Dienst aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Klicken Sie auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

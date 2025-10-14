@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2024-02-19
+updated: 2025-08-25
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -33,7 +33,7 @@ Ce processus comporte deux aspects :
 ## Prérequis
 
 - Une infrastructure PCC (SDDC ou PREMIER)
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Hosted Private Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action}.
 - Être connecté à votre interface d'administration vSphere
 
 ## En pratique
@@ -192,6 +192,12 @@ Exécutez l'API OVHcloud pour convertir les datastores en global:
 
 **Résultat attendu :** Informations de tâche
 
+> [!warning]
+>
+> **Attention** : la conversion d’un datastore en global peut entrer en conflit avec certaines fonctionnalités VMware, comme **Storage DRS**.
+> Pour plus d’informations, consultez la [documentation VMware](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-troubleshooting-6-5/troubleshooting-resource-management/troubleshooting-storage-drs/storage-drs-cannot-operate-on-a-datastore.html).
+
+
 <a name="preparevdcovhcontext"></a>
 ### Etape 3 Préparer votre vDC de destination dans le contexte OVHcloud
 
@@ -285,7 +291,7 @@ Voici une liste des éléments à prendre en compte :
 
 L'installation d'un nouveau vDC de destination nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
 
-Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html).
 
 Voici une liste d'éléments à prendre en compte:
 
@@ -323,7 +329,7 @@ Voici une liste des éléments à prendre en compte:
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
-Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html).
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
 
@@ -454,7 +460,7 @@ Pour cette étape vous aurez besoin de deux éléments :
 - le bloc IP initialement associé au vDC NSX-V.
 - l'IP publique de la VIP associée à la T0 de NSX (visible dans `Networking`{.action} > `Tier-0 Gateways`{.action} > `ovh-T0-XXXX`{.action} > dépliez > `HA VIP Configuration`{.action} > cliquez sur `1`{.action} > section `IP Address / Mask`{.action})
 
-Par la suite, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), suivez les indications de notre guide « [Déplacer une Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip) »  pour déplacer le bloc initial NSX-V sur le service PCC que vous migrez, tout en précisant comme *next hop* l'IP de la VIP de la T0 récupérée précédemment, comme sur l'exemple ci-dessous :
+Par la suite, depuis votre [espace client OVHcloud](/links/manager), suivez les indications de notre guide « [Déplacer une Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip) »  pour déplacer le bloc initial NSX-V sur le service PCC que vous migrez, tout en précisant comme *next hop* l'IP de la VIP de la T0 récupérée précédemment, comme sur l'exemple ci-dessous :
 
 ![Migration NSX IP](images/MoveIPNextHop.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Capabilities and Limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2025-04-15
+updated: 2025-07-31
 ---
 
 ## Public Cloud Databases
@@ -61,24 +61,24 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 The Essential plan typically offers the basic features and functionalities required for managing a database.
 It is designed for test and development environments or non-critical projects.
 
-### Business
+### Business/Production
 
-The Business plan is more comprehensive and suitable for organizations with higher database demands.
+The Business/Production plan is more comprehensive and suitable for organizations with higher database demands.
 This is the first production-ready offering.
 
-### Enterprise
+### Enterprise/Advanced
 
-The enterprise pricing plan is the most advanced and robust option available for managed databases.
+The Enterprise/Advanced pricing plan is the most advanced and robust option available for managed databases.
 It is dedicated to organizations with complex and high-performance database requirements.
 
 ### Plan capabilities overview
 
 Here is an overview of the various plans' capabilities:
 
-| Feature           | Essential | Business | Enterprise |
-|-------------------|-----------|----------|------------|
-| SLA               | None      | 99.9%    | 99.95%     |
-| High availability |           | ✓        | ✓          |
+| Feature           | Essential | Business/Production Single AZ | Enterprise/Advanced Single AZ | Production Multi AZ | Advanced Multi AZ |
+|-------------------|-----------|-------------------------------|-------------------------------|---------------------|-------------------|
+| SLA               | None      | 99.9%                         | 99.95%                        | 99.95%              | 99.99%            |
+| High availability |           | ✓                             | ✓                             | ✓                   | ✓                 |
 
 Your choice of plan affects the number of nodes your cluster can run.
 

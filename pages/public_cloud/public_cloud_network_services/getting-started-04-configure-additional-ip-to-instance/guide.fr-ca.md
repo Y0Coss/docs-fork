@@ -1,12 +1,18 @@
 ---
 title: Configurer une Additional IP
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Cet article concerne la configuration d'adresses Additional IPv4 sur une interface publique. Vous pouvez également configurer des adresses IPv6 sur vos instances Public Cloud en utilisant [ce guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> 
+> Veuillez noter que les adresses Additional IP peuvent également être configurées dans un vRack (réseau privé), ce qui permet l'interconnexion sur une large gamme de services OVHcloud, offrant plus de flexibilité.
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
+> Vous trouverez plus d'informations sur la configuration des adresses Additional IP dans un vRack pour une utilisation avec les instances Public Cloud dans les guides suivants :
+>
+> - [Configurer un bloc IP dans un vRack sur une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [Configurer un bloc IPv6 dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objectif
@@ -23,8 +29,8 @@ Vous devrez peut-être configurer des adresses Additional IP sur vos instances, 
 
 ## Prérequis
 
-- une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) ou un bloc Additional IP
+- une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- une [adresse Additional IP](/links/bare-metal/ip) ou un bloc Additional IP
 - un accès administrateur (sudo) via SSH ou GUI à votre instance
 - des connaissances de base sur les réseaux et leur administration
 
@@ -303,6 +309,6 @@ Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse Addi
 
 [Basculer une Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

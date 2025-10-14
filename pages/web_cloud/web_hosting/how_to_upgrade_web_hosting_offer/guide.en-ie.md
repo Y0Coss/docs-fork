@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2024-10-30
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 - More FTP storage space
 - Additional databases
 - Additional email accounts
-- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases){.external} (included in [the Performance offers](/links/web/hosting-performance-offer))
+- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases) (included in [the Performance offers](/links/web/hosting-performance-offer))
 
 **This guide explains how to upgrade your OVHcloud hosting plan without any service interruptions.**
 
@@ -61,9 +61,41 @@ Make sure there are enough [databases](/links/web/hosting-options-startsql) in t
 
 Otherwise, delete unused databases and reduce the amount of data in them, if necessary. This quantity must not exceed the maximum database size for the new solution. If you need assistance with how to proceed, please contact [OVHcloud partners](/links/partner).
 
-Once you have deleted data from your databarrrrrses, recalculate the quota used. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `Databases`{.action} tab, then click the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
+Once you have deleted data from your databases, recalculate the quota used. To do this, click on the tabs below to view each of the **5** steps.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `Databases`{.action} tab.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> On the new page, a table will appear containing the databases you have created. To the right of the database concerned, click the `...`{.action} button, then `Recalculate the quota`{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> In the window that pops up, click the `Confirm`{.action} button directly.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.  
+>> Your database is now fully operational again.
 
 > [!primary]
 >

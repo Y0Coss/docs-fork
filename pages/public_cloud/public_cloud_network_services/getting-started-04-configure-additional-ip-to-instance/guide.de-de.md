@@ -1,16 +1,18 @@
 ---
 title: Additional IP konfigurieren
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+> Diese Anleitung befasst sich mit der Konfiguration von Additional IPv4-Adressen auf einer öffentlichen Schnittstelle. Sie können auch IPv6-Adressen auf Ihren Public Cloud Instanzen konfigurieren, indem Sie [diese Anleitung](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6) verwenden.
 >
-
-> [!primary]
+> Beachten Sie, dass Additional IPs auch in einem vRack (privates Netzwerk) konfiguriert werden können, was die Anbindung einer breiten Palette von OVHcloud Diensten ermöglicht und somit eine größere Flexibilität bietet.
 >
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+> Weitere Informationen zum Konfigurieren von Additional IPs in einem vRack zur Verwendung mit Public Cloud Instanzen finden Sie in folgenden Anleitungen:
+>
+> - [IP-Block in einem vRack auf einer Public Cloud Instanz konfigurieren (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [IPv6-Block in einem vRack konfigurieren (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Ziel
@@ -22,13 +24,12 @@ Es kann nowendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum B
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Dienstes haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
->
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Dienstes haben. Sie können sich auch jederzeit an unsere [Community](/links/community) wenden, um sich mit anderen Benutzern auszutauschen.
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
-- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
+- Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Account.
+- Sie verfügen über eine [Additional IP](/links/bare-metal/ip)-Adresse oder einen Additional IP-Block.
 - Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
@@ -312,6 +313,6 @@ Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre
 
 [Umzug einer Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Treten Sie unserer [User Community](/links/community) bei.
