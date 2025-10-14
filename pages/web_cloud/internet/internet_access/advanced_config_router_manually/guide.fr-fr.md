@@ -78,7 +78,7 @@ Les paramètres à configurer sont :
     - **Service Category** : UBR without PCR
 - **Pour le VDSL** :
     - **Type** : VDSL over PTM
-- **Pour le FTTH, FTTE et le FTTO** :
+- **Pour le FTTH, FTTE et FTTO** :
     - **Type** : Ethernet
 
 ### Profil B
