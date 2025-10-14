@@ -71,7 +71,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
 >>
 > **Etap 4**
 >>
->> Zakończenie Twojej usługi nastąpi w **Data wejścia w życie**, która jest wskazana w tabeli „Zarządzanie moimi ofertami i usługami”. Jeśli nie widzisz statusu „Planowane zakończenie usługi”, odśwież stronę.
+>> Zakończenie Twojej usługi nastąpi w **Data wejścia w życie**, która jest wskazana w tabeli "Zarządzanie moimi ofertami i usługami". Jeśli nie widzisz statusu "Planowane zakończenie usługi", odśwież stronę.
 >>
 >> > [!primary]
 >> >

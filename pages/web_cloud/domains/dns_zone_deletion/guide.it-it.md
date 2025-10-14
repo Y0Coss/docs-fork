@@ -75,7 +75,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> > [!primary]
 >> >
->> > Se desideri eliminare immediatamente una zona DNS dal tuo [Spazio Cliente OVHcloud](/links/manager), esegui i 4 passi per richiedere l'annullamento alla data di entrata in vigore, quindi contatta il supporto OVHcloud creando un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > Se desideri eliminare immediatamente una zona DNS dal tuo [Spazio Cliente OVHcloud](/links/manager), esegui i 4 passi per richiedere l'annullamento alla data di entrata in vigore, quindi contatta il supporto OVHcloud creando un ticket di assistenza dal [centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
 >> > Nella richiesta specifica la zona DNS interessata e dichiara chiaramente il tuo desiderio di eliminarla immediatamente senza attendere la data di entrata in vigore.
 
 ## Per saperne di più
