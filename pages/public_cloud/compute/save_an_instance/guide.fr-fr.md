@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou via OpenStack'
-updated: 2025-06-10
+updated: 2025-10-14
 ---
 
 <style>
@@ -41,6 +41,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > [!primary]
 >
 > Deux types de sauvegardes sont disponibles :
+>
 > - Locale : Une sauvegarde locale est stockée dans la même région que votre instance.
 > - Distante : Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
 >
@@ -85,12 +86,12 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> Renseignez les variables :
 >>
->> - **serviceName** : Identifiant du projet OVHcloud.
->> - **regionName** : Nom de la région où se situe l’instance source.
 >> - **instanceId** : Identifiant unique de l’instance concernée.
->> - **snapshotName** : Nom du snapshot (sauvegarde locale) à créer.
+>> - **regionName** : Nom de la région où se situe l’instance source.
+>> - **serviceName** : Identifiant du projet OVHcloud.
 >> - **distantRegionName (optionnel)** : Nom de la région distante où le backup sera stocké.
 >> - **distantSnapshotName (optionnel)** : Nom du backup distant à créer dans la région distante.
+>> - **snapshotName** : Nom du snapshot (sauvegarde locale) à créer.
 >>
 >> > [!primary]
 >> >
