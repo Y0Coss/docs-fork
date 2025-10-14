@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2025-10-02
+updated: 2025-10-14
 ---
 
 ## Objective
@@ -51,7 +51,7 @@ A form allows you to configure the key and select its type, size and usage.
 
 > [!warning]
 >
-> Only key creation through [regionalized APIs](/pages/manage_and_operate/kms/kms-usage) is cover by PCI-DSS certifications.
+> Only key creation through [regionalized APIs](/pages/manage_and_operate/kms/kms-usage) is covered by PCI-DSS certifications.
 >
 
 Once the key is created, click it to access its details.
@@ -156,7 +156,7 @@ Depending on the key type, the possible sizes and operations are:
 
 > [!warning]
 >
-> Only key creation through [regionalized APIs](/pages/manage_and_operate/kms/kms-usage) is cover by PCI-DSS certifications.
+> Only key creation through [regionalized APIs](/pages/manage_and_operate/kms/kms-usage) is covered by PCI-DSS certifications.
 >
 
 #### Create an access certificate

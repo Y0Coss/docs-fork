@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2025-10-02
+updated: 2025-10-14
 ---
 
 ## Objectif
@@ -52,7 +52,7 @@ Un formulaire permet alors de configurer la clé en sélectionnant le type de la
 
 > [!warning]
 >
-> Seule la création de clé de chiffrement par les [APIs régionnales](/pages/manage_and_operate/kms/kms-usage) est couverte par la certification PCI-DSS.
+> Seule la création de clés de chiffrement via les [APIs régionales](/pages/manage_and_operate/kms/kms-usage) est couverte par la certification PCI-DSS.
 >
 
 Une fois la clé créée, cliquez dessus pour accéder à ses détails.
@@ -157,7 +157,7 @@ Les tailles et opérations possibles en fonction du type de clé sont les suivan
 
 > [!warning]
 >
-> Seule la création de clé de chiffrement par les [APIs régionnales](/pages/manage_and_operate/kms/kms-usage) est couverte par la certification PCI-DSS.
+> Seule la création de clés de chiffrement via les [APIs régionales](/pages/manage_and_operate/kms/kms-usage) est couverte par la certification PCI-DSS.
 >
 
 #### Créer un certificat d'accès
