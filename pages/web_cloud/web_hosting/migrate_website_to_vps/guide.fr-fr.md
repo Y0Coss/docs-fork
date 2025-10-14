@@ -183,6 +183,24 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 - Votre fichier de sauvegarde (`.sql`) a été déposé à l’étape 3.2 (par exemple : `/home/debian/backup.sql`).
 - Le **S**ystème de **G**estion de **B**ase de **D**onnées (**SGBD**) (MySQL / MariaDB) et son client en ligne de commande ont été installés à l’étape 2.2, ainsi que la base `db_name`. Si ce n'est pas le cas, créez la base (et l’utilisateur si besoin) en suivant le guide « [Installer un environnement de développement web sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps) ».
 
+#### Avant de commencer
+
+- Votre fichier de sauvegarde (`.sql`) a été déposé à l’étape 3.2 (par exemple : `/home/debian/backup.sql`).
+
+- Le **S**ystème de **G**estion de **B**ase de **D**onnées (**SGBD**) (MySQL / MariaDB) et son client en ligne de commande ont été installés à l’[étape 2.2](#step2.2).
+
+- La base **`db_name`** :
+
+  - **existe déjà** si vous l’avez créée lors de l’étape 2.2 (ou via votre panneau d’administration).
+  - **peut être créée automatiquement** si votre sauvegarde `.sql` contient `CREATE DATABASE`.
+  - **sinon, créez-la avant l’import** :
+
+    ```bash
+    sudo mysql -e "CREATE DATABASE db_name CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+    ```
+
+    (remplacez `db_name` par le nom souhaité).
+
 #### Importer la base de données
 
 1. Connectez-vous au VPS en SSH en consultant la section « Se connecter à votre VPS » de notre guide « [Premiers pas avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
