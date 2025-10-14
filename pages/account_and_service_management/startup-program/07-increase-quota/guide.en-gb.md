@@ -33,11 +33,11 @@ Log in to your [OVHcloud Control Panel](/links/manager), navigate to the `Public
 
 In the `Project Management` section, click on `Quota & Regions`{.action}. Click on `Contact Support`{.action}.
 
-![Contacter le support](images/01-quota.png){.thumbnail}
+![Contacter le support](images/01-quota.png){.thumbnail width="800"}
 
 Justify your quota increase request by specifying your participation in the OVHcloud Startup Program, stating your technical needs, and providing the name of your Startup Program Manager responsible for overseeing your participation (consult the list of Startup Program Managers [here](/links/transversal/startup-program-faq-managers)).
 
-![Contacter le support](images/02-support-request.png){.thumbnail}
+![Contacter le support](images/02-support-request.png){.thumbnail width="800"}
 
 ### Step 2 - Contact your Startup Program Manager
 
