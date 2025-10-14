@@ -71,7 +71,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 > **Step 4**
 >>
->> The cancellation of your service will take place on the **Date of effect** indicated in the "Management of my offers and services" table. If you do not see the "Cancellation scheduled" status appear, refresh the page.
+>> The cancellation of your service will take place on the **Date of effect** indicated in the "My offers and services" table. If you do not see the "Cancellation scheduled" status appear, refresh the page.
 >>
 >> > [!primary]
 >> >
