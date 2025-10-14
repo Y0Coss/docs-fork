@@ -10,7 +10,7 @@ OVHcloud propose deux types d'Object Storage : l'un basé sur OpenStack Swift et
 
 Si vous souhaitez en savoir plus sur les offres et classes d'Object Storage disponibles, référez-vous à notre guide « [Object Storage - Choisir une classe de stockage adaptée à vos besoins](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs) ».
 
-Ce guide fournit des étapes détaillées pour vous aider à migrer un Object Storage OVHcloud Swift vers un Object Storage OVHcloud compatible S3 en utilisant l'outil [Rclone](https://rclone.org/), un outil en ligne de commande permettant de gérer des ressources de stockage cloud.
+Ce guide fournit des étapes détaillées pour vous aider à migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3 en utilisant l'outil [Rclone](https://rclone.org/), un outil en ligne de commande permettant de gérer des ressources de stockage cloud.
 
 > [!warning]
 >
@@ -22,7 +22,7 @@ Ce guide fournit des étapes détaillées pour vous aider à migrer un Object St
 ## Prérequis
 
 - Posséder un **compte OVHcloud** avec un accès aux conteneurs Object Storage Swift et aux buckets compatibles S3.
-- Disposer d'un **conteneur source Object Storage OVHcloud Swift** dans votre Object Storage actuel avec :
+- Disposer d'un **conteneur source Object Storage Swift OVHcloud** dans votre Object Storage actuel avec :
     - Le nom de votre bucket.
     - Votre nom d'utilisateur et mot de passe associés.
     - L'ID de la région associée.
@@ -113,7 +113,7 @@ Vous pouvez utilisez la commande `rclone sync` pour migrer un ou tous les bucket
 
 Vous pouvez également utiliser la commande `rclone copy` qui copiera les fichiers de votre source vers votre destination.
 
-Dans les deux cas, n'oubliez pas de remplacer `source-container-name` et `destination-bucket-name` par le nom de votre conteneur source OVHcloud Swift et le nom de votre bucket de destination OVHcloud compatible S3, respectivement :
+Dans les deux cas, n'oubliez pas de remplacer `source-container-name` et `destination-bucket-name` par le nom de votre conteneur source Swift OVHcloud et le nom de votre bucket de destination OVHcloud compatible S3, respectivement :
 
 ```bash
 $ rclone sync ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-bucket-name/ --progress
