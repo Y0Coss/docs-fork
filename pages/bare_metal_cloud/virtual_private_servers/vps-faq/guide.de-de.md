@@ -7,10 +7,9 @@ updated: 2025-10-02
 <style>
 /* ---FAQ only--- */
 details {
-    margin: 0.1rem 0;
-    border: 2px solid transparent;
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
     border-radius: 4px;
-    font-weight: 400
     background: #ffffffff;
 }
 details > summary {
@@ -37,8 +36,14 @@ details:hover {
 details[open] > summary {
     background: #ffffffff;
 }
-details > div {
-    padding: 0.5rem 1rem !important;
+details > :not(summary) {
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -74,20 +79,17 @@ Um Ihre Konfiguration herunterstufen zu können, müssen Sie jedoch einen neuen 
 
 ///
 
-
 /// details | Welche Region oder welches Land sollte ich für meinen VPS wählen?
 
 Je näher Ihr Rechenzentrum an Ihrem Publikum liegt, desto geringer ist die Latenz, was zu einer besseren Benutzererfahrung und einem erhöhten Vertrauen in Ihre Dienste führt.
 
 ///
 
-
 /// details | Welchen Vorteil bietet ein in Europa gelegener VPS?
 
 Die Einrichtung Ihres VPS bei OVHcloud in Frankreich oder allgemein innerhalb der EU bietet Vorteile wie wettbewerbsfähige Preise und verstärkten Datenschutz. Ihr Service unterliegt nicht dem US CLOUD Act und ist somit vor nicht-europäischer Einflussnahme geschützt.
 
 ///
-
 
 /// details | Sind Backups mit meinem VPS inkludiert?
 
@@ -157,7 +159,7 @@ Die Bandbreite, die auf unserer [VPS-Webseite](/links/bare-metal/vps) aufgeliste
 Ein OVHcloud VPS beinhaltet eine SLA von 99,9 %.
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Welche einzigartigen Merkmale hat ein Local Zone VPS?
 
@@ -404,7 +406,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 >
 
 ///
-</br>
+<span class="small-gap"></span>
 
 /// details | Ist mein VPS vor externen Angriffen geschützt?
 
