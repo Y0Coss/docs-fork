@@ -37,6 +37,8 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 >
 > Les sauvegardes locales sont accessibles depuis toutes les zones de disponibilité d’une région 3AZ. Vous pouvez directement passer à l’étape de recréation de l’instance.
 >
+> Actuellement, la création d'une sauvegarde distante n'est pas disponible via le panneau de contrôle OVHcloud. Vous ne pouvez effectuer cette action que via l'API OVHcloud ou OpenStack.
+>
 
 > [!tabs]
 > Via l'espace client OVHcloud
@@ -74,10 +76,10 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 >> Pour créer une instance à partir d'un backup existant via l'API OVHcloud, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviaapi) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
 >>
 > Via la CLI Openstack
->> Pour créer une instance à partir d'un backup existant via la CLI Openstack, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviaopenstack) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
+>> Pour créer une instance à partir d'un backup existant via la CLI Openstack, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
 >>
 > Via Horizon
->> Pour créer une instance à partir d'un backup existant via Horizon, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviahorizon) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
+>> Pour créer une instance à partir d'un backup existant via Horizon, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviahorizon) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
 >>
 
 ## Aller plus loin

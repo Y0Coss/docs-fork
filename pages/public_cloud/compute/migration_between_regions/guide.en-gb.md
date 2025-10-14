@@ -37,6 +37,8 @@ OVHcloud offers two types of backup, with different behaviors depending on the t
 >
 > Local backups are accessible from all availability zones within a 3AZ region. You can proceed directly to the instance recreation stage.
 >
+> Currently, creating a distant backup is not available through the OVHcloud Control Panel. You can only perform this action via the OVHcloud API or OpenStack.
+>
 
 > [!tabs]
 > Via the OVHcloud Control Panel
@@ -74,10 +76,10 @@ OVHcloud offers two types of backup, with different behaviors depending on the t
 >>  To create an instance from an existing backup, please follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaapi) from our guide : Using instance backups to create or restore an instance.
 >>
 > Via the Openstack CLI
->> To create an instance from an existing backup via the Openstack CLI, follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviaopenstack) from our guide: Using instance backups to create or restore an instance.
+>> To create an instance from an existing backup via the Openstack CLI, follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack) from our guide: Using instance backups to create or restore an instance.
 >>
 > Via Horizon
->> To create an instance from an existing backup via Horizon, follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviahorizon) from our guide : Using instance backups to create or restore an instance.
+>> To create an instance from an existing backup via Horizon, follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviahorizon) from our guide : Using instance backups to create or restore an instance.
 >>
 
 ## Go further

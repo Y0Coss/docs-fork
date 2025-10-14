@@ -51,7 +51,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >
 
 > [!tabs]
-> Via the OVHcloud Control Panel
+> Via the OVHcloud Control Panel <a name="createinstanceviamanager"></a>
 >>
 >> Log in to [OVHcloud customer area](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
 >>
@@ -98,7 +98,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >> > Only create a distant backup if the parameters related to the remote region (**distantRegionName** and **distantSnapshotName**) are provided.
 >> >
 >>
-> Via OpenStack
+> Via OpenStack <a name="createinstanceviaopenstack"></a>
 >>
 >> Run the following command to display the list of instances:
 >>
@@ -132,7 +132,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ///
 >>
-> Via Horizon
+> Via Horizon <a name="createinstanceviahorizon"></a>
 >>
 >> Click on the `Compute`{.action} menu on the left, then select `Instances`{.action}.<br>
 >> Then click on the `Create Snapshot`{.action} button to the right of the instance line.
