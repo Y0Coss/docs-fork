@@ -38,6 +38,17 @@ You can create a single backup of an instance or configure a schedule in order t
 > This option is only available through a **Cold Snapshot** for Metal instances. During this process, the Metal instance will be switched to rescue-mode, and once the backup is performed, the instance will reboot back to normal mode.
 >
 
+> [!primary]
+>
+> Two types of backup are available:
+> - Local: A local backup is stored in the same region as your instance.
+> - Distant: A distant backup automatically creates a copy of the local backup in a different region of your choice.
+>
+> Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
+>
+> Currently, creating a distant backup is not available through the OVHcloud Control Panel. You can only perform this action via the OVHcloud API or OpenStack.
+>
+
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
@@ -47,15 +58,6 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 >>
->> > [primary]
->> >
->> > Two types of backup are available:
->> > - Local: A local backup is stored in the same region as your instance.
->> > - Distant: A distant backup automatically creates a copy of the local backup in a different region of your choice.
->> >
->> > Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
->> >
->>
 >> /// details | Local backup
 >>
 >> Enter a name for the backup. Review the pricing information and click `Confirm`{.action}.
@@ -63,16 +65,6 @@ You can create a single backup of an instance or configure a schedule in order t
 >> ![public-cloud-instance-backup](images/createbackup2bis.png){.thumbnail}
 >>
 >> ///
-<!-- >>
->> /// details | Distant backup
->>
->> Enter a name for the local backup in the `Enter the name of your backup :` field.
->>
->> ![public-cloud-instance-distant-backup](images/createdistantbackup1.png){.thumbnail}
->>
->> Next, `activate`{.action} the option to add a remote backup, then specify the name of this backup, select its destination region and click `Confirm`{.action}.
->>
->> /// -->
 >>
 >> It is not possible to monitor backup progress in real time. However, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status `Backup in progress` will be displayed during the process.
 >>

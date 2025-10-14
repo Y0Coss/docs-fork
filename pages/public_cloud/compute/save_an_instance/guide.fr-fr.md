@@ -38,6 +38,17 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
 >
 
+> [!primary]
+>
+> Deux types de sauvegardes sont disponibles :
+> - Locale : Une sauvegarde locale est stockée dans la même région que votre instance.
+> - Distante : Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
+>
+> Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
+>
+> Actuellement, la création d’une sauvegarde distante n’est pas disponible via l'espace client OVHcloud. Vous pouvez l’effectuer uniquement via l’API OVHcloud et Openstack.
+>
+
 > [!tabs]
 > Via l'espace client OVHcloud
 >>
@@ -47,15 +58,6 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 >>
->> > [primary]
->> >
->> > Deux types de sauvegardes sont disponibles :
->> > - Locale : Une sauvegarde locale est stockée dans la même région que votre instance.
->> > - Distante : Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
->> >
->> > Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
->> >
->>
 >> /// details | Sauvegarde locale
 >>
 >> Renseignez un nom pour la sauvegarde. Prenez connaissance des informations tarifaires et cliquez sur `Confirmer`{.action}.
@@ -63,16 +65,6 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> ![public-cloud-instance-backup](images/createbackup2bis.png){.thumbnail}
 >>
 >> ///
-<!-- >>
->> /// details | Sauvegarde distante
->>
->> Renseignez un nom pour la sauvegarde locale dans le champ `Saisissez le nom de votre backup :`.
->>
->> ![public-cloud-instance-distant-backup](images/createdistantbackup1.png){.thumbnail}
->>
->> Ensuite, `activez`{.action} l’option permettant d’ajouter une sauvegarde distante, puis indiquez le nom de cette sauvegarde, sélectionnez sa région de destination et cliquez sur `Confirmer`{.action}.
->>
->> /// -->
 >>
 >> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section `Instance Backup`{.action} sous la rubrique **Compute** du menu de gauche, où l'état `Backup en cours` sera affiché pendant le processus.
 >>
@@ -184,10 +176,6 @@ Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l
 - Sauvegarde quotidienne avec rétention des 14 dernières sauvegardes
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-Si vous activez l’option de sauvegarde distante, vous pourrez définir un nom pour la sauvegarde et sélectionner son emplacement.
-
-![public-cloud-instance-distant-backup-workflow](images/createdistantbackup3.png){.thumbnail}
 
 #### **Le nom** 
 
