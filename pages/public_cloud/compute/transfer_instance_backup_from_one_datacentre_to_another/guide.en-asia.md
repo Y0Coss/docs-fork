@@ -27,7 +27,7 @@ You will also need a [Public Cloud instance](/links/public-cloud/compute) in you
 
 > [primary]
 >
-> If you need to create a backup with OpenStack, please refer to this dedicated guide on how to [backup an instance.](/pages/public_cloud/compute/save_an_instance)
+> If you need to create a backup with OpenStack, please refer to this dedicated guide on how to [backup an instance.](/pages/public_cloud/compute/save_an_instance).
 >
 
 ### Download the backup

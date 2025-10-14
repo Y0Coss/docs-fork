@@ -24,6 +24,11 @@ También necesitará una [instancia de Public Cloud](/links/public-cloud/compute
 
 ## Procedimiento
 
+> [!primary]
+>
+> Si necesita crear una copia de seguridad con OpenStack, consulte esta guía dedicada sobre cómo [hacer una copia de seguridad de una instancia.](/pages/public_cloud/compute/save_an_instance).
+>
+
 ### Crear un backup
 
 ```bash

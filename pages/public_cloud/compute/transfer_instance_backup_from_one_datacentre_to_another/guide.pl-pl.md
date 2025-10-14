@@ -24,6 +24,11 @@ Będziesz również potrzebował [instancji Public Cloud](/links/public-cloud/co
 
 ## W praktyce
 
+> [!primary]
+>
+> Jeśli chcesz utworzyć kopię zapasową za pomocą OpenStack, skorzystaj z tej dedykowanej instrukcji, jak [zrobić kopię zapasową instancji.](/pages/public_cloud/compute/save_an_instance).
+>
+
 ### Tworzenie kopii zapasowej
 
 ```bash

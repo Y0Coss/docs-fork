@@ -22,6 +22,13 @@ Questo ambiente verrà utilizzato come "jump host" per trasferire il backup da u
 
 È inoltre necessario creare un'[istanza Public Cloud](/links/public-cloud/compute) sull'account OVHcloud.
 
+## Procedura
+
+> [!primary]
+>
+> Se necessario creare un backup con OpenStack, si prega di consultare questa guida dedicata su come [effettuare il backup di un'istanza.](/pages/public_cloud/compute/save_an_instance).
+>
+
 ### Crea un backup
 
 ```bash
