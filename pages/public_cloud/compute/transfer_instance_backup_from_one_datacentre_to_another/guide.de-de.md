@@ -29,24 +29,6 @@ Sie benötigen auch eine [Public Cloud Instanz](/links/public-cloud/compute) in 
 > Wenn Sie eine Sicherung mit OpenStack erstellen müssen, verweisen Sie auf diese spezielle Anleitung, wie Sie [eine Instanz sichern.](/pages/public_cloud/compute/save_an_instance).
 >
 
-### Backup erstellen
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Führen Sie anschließend folgenden Befehl aus, um ein Backup Ihrer Instanz zu erstellen:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
-
 ### Backup herunterladen
 
 Um die verfügbaren Instanzen aufzulisten, führen Sie folgenden Befehl aus:

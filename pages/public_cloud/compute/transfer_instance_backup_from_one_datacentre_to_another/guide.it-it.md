@@ -29,24 +29,6 @@ Questo ambiente verrà utilizzato come "jump host" per trasferire il backup da u
 > Se necessario creare un backup con OpenStack, si prega di consultare questa guida dedicata su come [effettuare il backup di un'istanza.](/pages/public_cloud/compute/save_an_instance).
 >
 
-### Crea un backup
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Per creare un backup dell’istanza, esegui questo comando:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
-
 ### Scarica il backup
 
 Esegui questo comando per visualizzare l’elenco delle istanze disponibili:
