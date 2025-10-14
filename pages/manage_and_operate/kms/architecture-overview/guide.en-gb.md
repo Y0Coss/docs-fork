@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud KMS Architecture overview"
 excerpt: "Discover how we handle the security of the OVHcloud KMS"
-updated: 2025-06-18
+updated: 2025-10-14
 ---
 
 ## Objective
@@ -65,6 +65,15 @@ The backup location depends on the location of the OVHcloud KMS.
 - **EU_WEST_PAR**
     - KMS Backup Region 1 : EU_WEST_GRA
     - KMS Backup Region 2 : EU_WEST_SBG
+- **EU_WEST_GRA**
+    - KMS Backup Region 1 : EU_WEST_GRA
+    - KMS Backup Region 2 : EU_WEST_RBX
+- **EU_WEST_LIM**
+    - KMS Backup Region 1 : EU_WEST_LIM
+    - KMS Backup Region 2 : EU_WEST_SBG
+- **EU_WEST_MIL**
+    - KMS Backup Region 1 : EU_WEST_GRA
+    - KMS Backup Region 2 : EU_WEST_SBG
 - **CA_EAST_BHS**
     - KMS Backup Region 1 : CA_EAST_BHS
     - KMS Backup Region 2 : CA_EAST_TOR
@@ -100,6 +109,16 @@ Database replica will be used at the region and rebuilt to retrieve stored keys.
 
 The keys created in the last 5 minutes can be lost and the KMS becomes unavailable.<br>
 Database backup will be used at the region and rebuilt to retrieve stored keys.
+
+## PCI-DSS certification
+
+Regions available for PCI-DSS certification:
+
+- EU_WEST_RBX
+- EU_WEST_SBG
+- EU_WEST_GRA
+- EU_WEST_LIM
+- CA_EAST_BHS
 
 ## Go further
 
