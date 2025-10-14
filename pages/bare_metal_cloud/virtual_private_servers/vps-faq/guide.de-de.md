@@ -406,7 +406,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 >
 
 ///
-<span class="small-gap"></span>
+<span class="smallish-gap"></span>
 
 /// details | Ist mein VPS vor externen Angriffen geschützt?
 
