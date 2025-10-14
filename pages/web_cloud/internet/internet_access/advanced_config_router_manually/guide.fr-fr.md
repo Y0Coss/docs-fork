@@ -60,7 +60,7 @@ Ce profil s'applique aux typologies d'accès suivantes :
 - Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte SFR
 - Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte AXIONE
 - Accès ADSL (Cuivre) en collecte ORANGE
-- Accès FTTO/FTTE (Fibre Dédiée) Bouygues
+- Accès FTTO/FTTE (Fibre dédiée) Bouygues
 
 Les paramètres à configurer sont :
 
@@ -133,7 +133,7 @@ Les paramètres à configurer sont :
 
 Ce profil s'applique aux typologies d'accès suivantes :
 
-- Accès FTTE (Fibre Dédiée) en collecte Celan
+- Accès FTTE (Fibre dédiée) en collecte Celan
 
 Les paramètres à configurer sont :
 
