@@ -1,7 +1,7 @@
 ---
 title: "Télécharger et transférer la sauvegarde d'une instance d'une région OpenStack à une autre"
 excerpt: "Découvrez comment télécharger et transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance"
-updated: 2024-12-03
+updated: 2025-10-14
 ---
 
 ## Objectif
@@ -24,23 +24,10 @@ Vous aurez également besoin d’une [instance Public Cloud](/links/public-cloud
 
 ## En pratique
 
-### Créer une sauvegarde
-
-```bash
-$ openstack server list
-
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
-
-```bash
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [primary]
+>
+> Si vous devez créer une sauvegarde avec OpenStack, veuillez vous référer à [notre guide dédié](/pages/public_cloud/compute/save_an_instance) pour savoir comment sauvegarder une instance.
+>
 
 ### Télécharger la sauvegarde
 

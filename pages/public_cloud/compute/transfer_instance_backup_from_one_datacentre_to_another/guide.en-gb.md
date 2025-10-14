@@ -1,7 +1,7 @@
 ---
 title: Downloading and transferring an instance backup from one OpenStack region to another
 excerpt: Find out how to download and transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance
-updated: 2024-12-03
+updated: 2025-10-14
 ---
 
 ## Objective
