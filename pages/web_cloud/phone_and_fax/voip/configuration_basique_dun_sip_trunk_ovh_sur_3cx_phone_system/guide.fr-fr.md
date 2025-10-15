@@ -66,11 +66,22 @@ L'écran suivant affiche les informations de configuration du Trunk (Proxy, port
 
 ![3CX Phone Systeme](images/3cx_phone_system-trunk03.png){.thumbnail}
 
+Afin de retrouver vos informations de connexion, suivez les étapes ci-dessous :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre trunk SIP.
+1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+
+Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login**, **Domain** et **Proxy sortant**.
+
 Veuillez saisir les informations d'authentification du trunk dans le formulaire suivant : 
 
-- Dans le champ **ID d'authentification (aka SIP User ID)**, saisissez le nom d'utilisateur de votre trunk. (Dans notre exemple 0033XXXXXXX90)
-- Dans le champ **Mot de passe d'authentification**, tapez le mot de passe SIP de votre trunk. 
-- Dans le champ **Nombre d'appels simultanés maximum**, saisissez la valeur correspondante à votre trunk. 
+- Dans le champ **Nom d'hôte**, saisissez le **Domain** de votre trunk.
+- Dans le champ **Proxy Sortant**, indiquez le **Proxy sortant** de votre trunk.
+- Dans le champ **ID d'authentification (aka SIP User ID)**, entrez le **Login** de votre trunk. (Dans notre exemple 0033XXXXXXX90)
+- Dans le champ **Mot de passe d'authentification**, renseignez le mot de passe SIP de votre trunk. 
+- Dans le champ **Nombre d'appels simultanés maximum**, définissez la valeur correspondante à votre trunk. 
 
 Choisissez ensuite la terminaison des appels passés directement sur le trunk. Dans l'exemple, l'option `Messagerie vocale de l'extension` est sélectionnée avec l'extension `1000...`. 
 
