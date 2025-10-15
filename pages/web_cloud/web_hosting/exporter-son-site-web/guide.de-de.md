@@ -30,7 +30,7 @@ Um sich in Ihren Speicherplatz einzuloggen, benötigen Sie:
 
 Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt.
 
-Wenn Sie nicht mehr im Besitz dieser Daten sind, Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -49,7 +49,7 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, Klicken Sie auf die Tabs, um di
 >>
 >> Klicken Sie auf den Tab `FTP - SSH`{.action}.
 >>
->> ![FTP 6 SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
