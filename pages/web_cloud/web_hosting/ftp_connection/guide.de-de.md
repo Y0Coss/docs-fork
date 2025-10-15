@@ -66,8 +66,8 @@ Wenn Sie die Verbindungsdaten nicht zur Hand haben, klicken Sie auf die Tabs, um
 >>
 >> > [!primary]
 >> >
->> > Wenn Sie von diesem Tab aus einen neuen FTP/SSH-Benutzer erstellen möchten, klicken Sie rechts auf den Button `Benutzer erstellen`{.action}.
->> > Definieren Sie die Namensendung für den neuen `Benutzer`{.action} sowie das `Wurzelverzeichnis`{.action}, in dem dieser Benutzer tätig werden kann, und klicken Sie dann auf `Weiter`{.action}.
+>> > Wenn Sie von diesem Tab aus einen neuen FTP/SSH-Benutzer erstellen möchten, klicken Sie rechts auf den Button `Benutzer erstellen`{.action}.  
+>> > Definieren Sie die Namensendung für den neuen `Benutzer`{.action} sowie das `Wurzelverzeichnis`{.action}, in dem dieser Benutzer tätig werden kann, und klicken Sie dann auf `Weiter`{.action}.  
 >> > Wählen Sie ein Passwort für diesen neuen Benutzer-Account aus, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 >>
 >> Alle für die Verbindung mit dem FTP-Speicherplatz erforderlichen Elemente finden Sie auf dieser Seite.
