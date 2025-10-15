@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2025-07-08
+updated: 2025-10-15
 ---
 
 <style>
@@ -137,13 +137,13 @@ Lorsque vous sélectionnez un dossier ou sous-dossier dans la colonne de gauche,
 >
 > L'affichage de vos e-mails se présente sous une forme qui peut être modifiée. Pour cela, cliquez le bouton `Afficher`{.action} situé en haut à droite de cette fenêtre.
 
-Vous pouvez modifier la façon dont les e-mails s'affichent dans la liste en cliquant sur `Date` en haut de la liste des e-mails.
+Il est possible de trier et d'afficher les e-mails en fonction de certains critères en cliquant sur le filtre en place (par défaut, `Date`{.action}) en haut de la liste des e-mails.
 
 ![Zimbra - dossiers](images/zimbra-06-date.png){.thumbnail .w-600}
 
 #### Action sur un e-mail sélectionné <a name="email-action"></a>
 
-Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions sont alors disponibles :
+Lorsque vous sélectionnez un e-mail, de nombreuses actions sont alors disponibles :
 
 - 1.**Répondre** : répondre directement à l'expéditeur.
 - 2.**Répondre à tous** : répondre directement à tous les destinataires présents dans les champs « A » et « Cc ».
@@ -193,14 +193,15 @@ Si vous souhaitez retrouver un e-mail, utilisez la barre de recherche dans la pa
 
 #### Récupérer des e-mails supprimés <a name="restore"></a>
 
-Lorsque vous supprimez des e-mails, ceux-ci se dirigent par défaut dans la corbeille. Si vous supprimez les e-mails de votre corbeille ou que vous la videz, ces derniers sont placés en rétention. Il est encore possible de les récupérer pendant 30 jours.
+Lorsque vous supprimez des e-mails, ceux-ci sont placés par défaut dans la corbeille.<br>
+Si vous supprimez des e-mails de votre corbeille ou que vous la videz, ces derniers sont placés en rétention. Il est encore possible de les récupérer pendant 30 jours.
 
-Nous allons voir comment récupérer les e-mails en rétention. Nous allons revoir les étapes de suppression d'un e-mail et comment le restaurer lorsqu'il est en rétention.
+Nous allons voir comment récupérer un e-mail en rétention en passant en revue les étapes de sa suppression et de sa restauration :
 
-1. **Suppression d'un e-mail**: Lorsque vous lisez un e-mail et que vous cliquez sur `supprimez`{.action} dans la boite de réception ou l'un des dossiers, celui-ci ira dans la corbeille par défaut.
-2. **Vider la Corbeille**: Lorsque vous `Videz la corbeille`{.action} ou supprimez un e-mail depuis celle-ci, l'e-mail n'apparait plus dans la corbeille et rentre dans sa période de rétention de 30 jours.
-3. **Accéder à la restauration**: Pour récupérer un e-mail supprimé de la corbeille depuis moins de 30 jours, cliquez droit sur `Corbeille`, puis cliquez sur `Récupérer le courrier jeté`{.action}.
-4. **Choisir les e-mails à restaurer**: Depuis cette fenêtre vous pouvez observer les e-mails qui ont été vidés de la corbeille. Sélectionnez le ou les e-mails que vous souhaitez restaurer. Cliquez sur `Suivant`{.action}, choisissez le dossier dans lequel vous souhaitez restaurer les e-mails, puis cliquez sur `Enregistrer`{.action}.
+1. **Suppression d'un e-mail** : Lorsque vous affichez un e-mail dans la boite de réception ou l'un des dossiers et que vous cliquez sur `supprimer`{.action}, celui-ci ira par défaut dans la corbeille.
+2. **Vider la Corbeille** : Lorsque vous `Videz la corbeille`{.action} ou supprimez un e-mail depuis celle-ci, l'e-mail n'apparaît plus dans la corbeille et rentre dans sa période de rétention de 30 jours.
+3. **Accéder à la restauration** : Pour récupérer un e-mail supprimé de la corbeille depuis moins de 30 jours, faites un clic droit sur `Corbeille`{.action}, puis cliquez sur `Récupérer le courrier jeté`{.action}.
+4. **Choisir les e-mails à restaurer** : Depuis cette fenêtre vous pouvez observer les e-mails qui ont été vidés de la corbeille. Sélectionnez le ou les e-mails que vous souhaitez restaurer. Cliquez sur `Suivant`{.action}, choisissez le dossier dans lequel vous souhaitez restaurer les e-mails, puis cliquez sur `Enregistrer`{.action}.
 
 ![Zimbra - recherche simple](images/zimbra-restore.png){.thumbnail .w-600}
 
@@ -259,10 +260,10 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 > [!tabs]
 > **Général**
 >>
->> Depuis cet onglet vous retrouvez:
+>> Depuis cet onglet vous retrouvez :
 >>
->> - Une barre de progressioin indiquant l'espace occupé sur votre compte e-mail.
->> - La possibilité de définir le format d'affichage de la date et l'heure de vos e-mails.
+>> - une barre de progression indiquant l'espace occupé sur votre compte e-mail.
+>> - la possibilité de définir le format d'affichage de la date et de l'heure de vos e-mails.
 >>
 > **Afficher le mail**
 >>
@@ -633,21 +634,21 @@ Il est possible d'utiliser un filtre pour rediriger les e-mails reçus vers une 
 
 > [!primary]
 >
-> Dans notre exemple ci-dessous, nous avons choisi de rediriger l'ensemble des e-mails entrants vers une autre adresse e-mail. Pour comprendre l'exemple dans les captures d'écrans, nous sommes connectés sur l'adresse **zimbra@mydomain.ovh** et nous souhaitons rediriger les e-mails de ce compte vers l'adresse **address@example.com**.
+> Dans notre exemple ci-dessous, nous avons choisi de rediriger l'ensemble des e-mails entrants vers une autre adresse e-mail. Pour comprendre l'exemple dans les captures d'écran, nous sommes connectés sur l'adresse **zimbra@mydomain.ovh** et nous souhaitons rediriger les e-mails de ce compte vers l'adresse **address@example.com**.
 >
 
-Pour accéder au filtre et créer votre redirection, suivez les instructions suivantes: 
+Pour accéder aux filtres et créer votre redirection, suivez les instructions suivantes : 
 
-- Cliquez sur le bouton &#9881; en haut à droite de votre fenêtre de webmail.
+- Cliquez sur le bouton `⚙`{.action} en haut à droite de votre fenêtre de webmail.
 - Cliquez sur `Paramètres`{.action}.
 - Cliquez sur la section `Filtres`{.action} depuis la fenêtre des paramètres.
 - Cliquez sur le bouton `Ajouter un filtre`{.action}.
     - Cliquez d'abord sur <u>Mode avancé</u> en haut à droite pour mettre en place cette règle.
-    - Donnez un nom à votre filtre dans la case `Nom du filtre`.
+    - Donnez un nom à votre filtre dans le champ `Nom du filtre`.
     - Laissez le menu déroulant sur `toutes` dans la phrase « Si un message entrant réunit ... de ces conditions ».
-    - Dans le premier menu déroulant des règles, choisissez `À` (To), laissez `contient` (contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans la case juste à droite.
+    - Sur la ligne suivante, choisissez `À`{.action} (To), laissez `contient`{.action} (contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans le champ juste à droite.
     - Sous la mention « Alors » (Then), sélectionnez `Transférer à` (Forward to) dans le menu déroulant, puis saisissez l'adresse e-mail de destination.
-    - Cliquez sur `+ Ajouter une action`{.action} (Add an action) plus bas, puis sélectionnez `Déplacer vers le dossier réception` (Keep in Inbox).
+    - Cliquez sur `+ Ajouter une action`{.action} (Add an action) plus bas, puis sélectionnez `Garder dans le dossier de réception` (Keep in Inbox).
     - Cliquez sur `Enregistrer`{.action} depuis la fenêtre de votre filtre et également depuis celle des paramètres.
 
 ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
