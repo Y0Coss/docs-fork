@@ -1,7 +1,7 @@
 ---
 title: "How to install a web development environment on a VPS or a dedicated server"
 excerpt: "Find out how to install a web development environment on a VPS or an OVHcloud dedicated server"
-updated: 2024-03-13
+updated: 2025-10-15
 ---
 
 ## Objective
@@ -22,12 +22,26 @@ If you would like to install a CMS (**C**ontent **M**anagement **S**ystem) on yo
 
 ## Requirements
 
-- A [VPS] solution (https://www.ovhcloud.com/asia/vps) or a [dedicated server](/links/bare-metal/bare-metal) in your [OVHcloud Control Panel](/links/manager)
+- A [VPS] solution (/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal) in your [OVHcloud Control Panel](/links/manager)
 - Administrative (sudo) access to your server via SSH
 
 ## Instructions
 
 Log in to your VPS via SSH with your username and password.
+
+### Update the package index
+
+Before installing the components, update the package list:
+
+```bash
+sudo apt update
+```
+
+Apply the available updates:
+
+```bash
+sudo apt -y upgrade
+```
 
 ### Install PHP
 

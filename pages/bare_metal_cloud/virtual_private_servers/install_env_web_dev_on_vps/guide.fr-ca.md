@@ -1,7 +1,7 @@
 ---
 title: 'Installer un environnement de développement web sur un VPS ou un serveur dédié'
 excerpt: 'Découvrez comment installer un environnement de développement web sur un VPS ou un serveur dédié OVHcloud'
-updated: 2024-03-13
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -29,6 +29,20 @@ Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur v
 ## En pratique
 
 Connectez-vous en SSH à votre VPS à l'aide de votre nom d'utilisateur et de votre mot de passe.
+
+### Mettre à jour l’index des paquets
+
+Avant d’installer les composants, mettez à jour la liste des paquets :
+
+```bash
+sudo apt update
+```
+
+Appliquez les mises à jour disponibles :
+
+```bash
+sudo apt -y upgrade
+```
 
 ### Installer PHP
 
