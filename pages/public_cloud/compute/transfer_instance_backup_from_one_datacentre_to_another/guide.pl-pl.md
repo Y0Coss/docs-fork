@@ -24,23 +24,10 @@ Będziesz również potrzebował [instancji Public Cloud](/links/public-cloud/co
 
 ## W praktyce
 
-### Tworzenie kopii zapasowej
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Następnie wprowadź następującą komendę, aby utworzyć kopię zapasową Twojej instancji:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [!primary]
+>
+> Jeśli chcesz utworzyć kopię zapasową za pomocą OpenStack, skorzystaj z tej dedykowanej instrukcji, jak [zrobić kopię zapasową instancji.](/pages/public_cloud/compute/save_an_instance).
+>
 
 ### Pobieranie kopii zapasowej
 
