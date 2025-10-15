@@ -48,14 +48,14 @@ sudo apt -y upgrade
 
 Installez PHP :
 
-```sh
-~$ sudo apt install -y php php-cli php-fpm php-xml php-gd php-curl
+```bash
+sudo apt install -y php php-cli php-fpm php-xml php-gd php-curl
 ```
 
 Pour vérifier que PHP est bien installé, entrez la commande suivante :
 
-```sh
-~$ sudo php -v
+```bash
+sudo php -v
 ```
 
 Si PHP est bien installé, un message de ce type doit apparaître :
@@ -71,14 +71,14 @@ Si PHP est bien installé, un message de ce type doit apparaître :
 
 Installez Nginx :
 
-```sh
-~$ sudo apt install nginx -y
+```bash
+sudo apt install nginx -y
 ```
 
 Pour vérifier que Nginx est bien installé, entrez la commande suivante :
 
-```sh
-~$ sudo nginx -v
+```bash
+sudo nginx -v
 ```
 
 Si Nginx est bien installé, un message de ce type doit apparaître :
@@ -97,14 +97,14 @@ En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https:
 > MySQL / MariaDB
 >> Installez MariaDB (ou MySQL) et l’extension PHP associée :
 >> 
->> ```sh
->> ~$ sudo apt install -y mariadb-server php-mysql
+>> ```bash
+>> sudo apt install -y mariadb-server php-mysql
 >> ```
 >> 
 >> Sécurisez l'installation :
 >> 
->> ```sh
->> ~$ sudo mysql_secure_installation
+>> ```bash
+>> sudo mysql_secure_installation
 >> ```
 >> 
 >> Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écran. Une fois l'installation de MariaDB (ou MySQL) terminée, le message suivant doit s'afficher :
@@ -114,13 +114,13 @@ En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https:
 > PostgreSQL
 >> Installez PostgreSQL et l’extension PHP correspondante :
 >> 
->> ```sh
->> ~$ sudo apt install -y postgresql postgresql-contrib php-pgsql
+>> ```bash
+>> sudo apt install -y postgresql postgresql-contrib php-pgsql
 >> ```
 >> 
 >> Créez une base et un utilisateur (exemple) :
 >> 
->> ```sh
+>> ```bash
 >> sudo -u postgres psql -c "CREATE DATABASE db_name;"
 >> sudo -u postgres psql -c "CREATE USER db_user WITH ENCRYPTED PASSWORD 'mot_de_passe_fort';"
 >> sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE db_name TO db_user;"
