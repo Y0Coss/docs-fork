@@ -17,16 +17,16 @@ In dieser Anleitung werden die Schritte zum Exportieren aller Elemente einer Web
 
 ## In der praktischen Anwendung
 
-### 1 -Dateien von Ihrem FTP-Speicherplatz abrufen
+### 1 - Dateien von Ihrem FTP-Speicherplatz abrufen
 
 #### 1.1 In den Speicherplatz einloggen
 
 Um sich in Ihren Speicherplatz einzuloggen, benötigen Sie:
 
-- einen aktiven FTP- oder SSH-Benutzer
-- das Passwort für diesen Nutzeraccount
-- die Server-Adresse
-- den Verbindungsport des Servers
+- Einen aktiven FTP- oder SSH-Benutzer.
+- Das Passwort für diesen Benutzer-Account.
+- Die Server-Adresse.
+- Den Verbindungsport des Servers.
 
 Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt.
 
@@ -53,13 +53,13 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um di
 >>
 > **Schritt 4**
 >>
->> Es werden nun die Informationen Ihres Speicherplatzes angezeigt. Sie sollten hier alle Elemente finden, die Sie für das Einloggen in Ihren FTP-Speicherplatz brauchen.
+>> Es werden nun die Informationen Ihres Speicherplatzes angezeigt. Sie sollten hier alle Elemente zum Einloggen in Ihren FTP-Speicherplatz finden.
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 >>
 >> Falls nötig, konsultieren Sie unsere Anleitung: [Mit dem Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
 >>
->> Wenn Sie das Passwort nicht kennen, lesen Sie bitte die Anleitung [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password).
+>> Wenn Sie das Passwort nicht kennen, nutzen Sie die Anleitung [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf dem Speicherplatz abrufen. Hierfür haben Sie zwei Möglichkeiten:
 
