@@ -1,7 +1,7 @@
 ---
 title: 'Lecture et filtrage des logs NSX-T'
 excerpt: 'Découvrez comment accéder aux journaux du pare-feu NSX-T et les filtrer afin de résoudre les problèmes de trafic bloqué sur votre Hosted Private Cloud.'
-updated: 2025-09-08
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -34,18 +34,7 @@ Lors de l'inspection des journaux, concentrez-vous sur les éléments suivants :
 
 *Facultatif : les ports source et de destination peuvent aider à identifier les problèmes spécifiques aux applications.*
 
-### Étape 2 : Accéder aux logs
-
-Les journaux NSX-T sont accessibles soit directement depuis l’espace client OVHcloud, soit via un serveur Syslog externe si la redirection est activée.
-
-#### Option 1 : Depuis l’espace client
-
-1. Connectez-vous à l’[espace client OVHcloud](/links/manager), puis accédez à NSX-T.
-2. Dans le menu de gauche, allez dans la section `Sécurité`{.action}.
-3. Sous **Pare-feu distribué**, cliquez sur l’onglet `Surveiller`{.action}.
-4. Ouvrez l’onglet `Logs`{.action} pour explorer les entrées en temps réel ou télécharger les journaux historiques.
-
-#### Option 2 : Depuis un serveur Syslog
+### Étape 2 : Accéder aux logs depuis un serveur Syslog
 
 Si NSX-T est configuré pour transférer les journaux vers l’extérieur :
 
