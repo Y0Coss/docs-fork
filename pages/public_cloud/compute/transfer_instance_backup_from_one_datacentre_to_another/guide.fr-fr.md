@@ -1,7 +1,7 @@
 ---
 title: "Télécharger et transférer la sauvegarde d'une instance d'une région OpenStack à une autre"
 excerpt: "Découvrez comment télécharger et transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance"
-updated: 2025-10-14
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -133,7 +133,7 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 > [!primary]
 >
-> Si vous souhaitez recréer votre instance à partir de cette sauvegarde, suivez notre guide « [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack) ».
+> Si vous souhaitez recréer votre instance à partir de cette sauvegarde, suivez notre guide « [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) ».
 >
 
 ## Aller plus loin

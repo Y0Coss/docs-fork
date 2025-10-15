@@ -16,7 +16,7 @@ You can make use of these instance backups for two basic purposes:
 
 ## Requirements
 
-- A backup of a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/instance-backup/)
+- A backup of a [Public Cloud instance](/links/public-cloud/instance-backup)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -24,7 +24,7 @@ You can make use of these instance backups for two basic purposes:
 ### Creating an instance from a backup
 
 > [!tabs]
-> Via the OVHcloud Control Panel <a name="createinstanceviamanager"></a>
+> Via the OVHcloud Control Panel
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
 >> Then click `Instance backup`{.action} in the left-hand navigation bar under **Compute**.
 >>
@@ -53,7 +53,7 @@ You can make use of these instance backups for two basic purposes:
 >> > In order to create the instance in a different data centre, you will first need to transfer the backup to the appropriate region. Please refer to our guide to [transferring an instance backup](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 >> >
 >>
-> Via the Openstack CLI <a name="createinstanceviaopenstack"></a>
+> Via the OpenStack CLI
 >> > [!warning]
 >> >
 >> > If your instance is a Windows server, you must select a flavor of type win-xx-xx (for example, win-b2-15) and have a public interface on the Ext-Net network. Without these conditions, authentication with the OVHcloud KMS will not be possible, and your server will remain with an [unactivated licence](/pages/public_cloud/compute/activate-windows-license-private-mode). This could lead to limitations, including the absence of updates. Please note that it is not possible to resize a Linux instance (such as b2-15) to a Windows instance (such as win-b2-15). To make this transition, you need to recreate a new instance.
@@ -65,7 +65,7 @@ You can make use of these instance backups for two basic purposes:
 >> $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
 >> ```
 >>
-> Via Horizon <a name="createinstanceviahorizon"></a>
+> Via Horizon
 >> In the Horizon interface, click on `Compute`{.action} in the left-hand menu, then on `Images`{.action}. Find the desired image and click the `Launch`{.action} button to the right of your image line. 
 >>
 >> ![public-cloud-instance-backup-horizon](images/restorebackuphorizon1.png){.thumbnail}
@@ -92,6 +92,7 @@ You can make use of these instance backups for two basic purposes:
 >> ![public-cloud-instance-backup-horizon-5](images/restorebackuphorizon5.png){.thumbnail}
 >>
 > Via the OVHcloud API <a name="createinstanceviaapi"></a>
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance

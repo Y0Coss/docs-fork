@@ -51,7 +51,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >
 
 > [!tabs]
-> Via l'espace client OVHcloud <a name="createinstanceviamanager"></a>
+> Via l'espace client OVHcloud
 >>
 >> Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
 >> Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.<br>
@@ -98,7 +98,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> > Ne créez un backup distant que si les paramètres relatifs à la région distante (**distantRegionName** et **distantSnapshotName**) sont renseignés.
 >> >
 >>
-> Via OpenStack <a name="createinstanceviaopenstack"></a>
+> Via OpenStack
 >>
 >> Exécutez la commande suivante pour afficher la liste des instances :
 >>
@@ -132,7 +132,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ///
 >>
-> Via Horizon <a name="createinstanceviahorizon"></a>
+> Via Horizon
 >>
 >> Cliquez sur le menu `Compute`{.action} à gauche puis sélectionnez `Instances`{.action}.<br>
 >> Cliquez ensuite sur le bouton `Create Snapshot`{.action} situé à droite de la ligne correspondant à l’instance concernée.
