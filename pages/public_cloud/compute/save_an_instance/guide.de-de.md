@@ -28,7 +28,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 
 - Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- CLI OpenStack. Verwenden Sie unseren Leitfaden „[System für die Verwendung der OpenStack API vorbereiten](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)“. (optional)
+- Sie haben [OpenStack CLI auf Ihrem System installiert und konfiguriert](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
 
 ## In der praktischen Anwendung
 
@@ -42,51 +42,51 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >
 > Zwei Arten von Sicherungen sind verfügbar:
 >
-> - Lokal: Eine lokale Sicherung wird in derselben Region wie Ihre Instanz gespeichert.
-> - Fern: Eine ferne Sicherung erstellt automatisch eine Kopie der lokalen Sicherung in einer anderen von Ihnen ausgewählten Region.
+> - *Local*: Eine lokale Sicherung wird in derselben Region wie Ihre Instanz gespeichert.
+> - *Distant*: Eine entfernte Sicherung erstellt automatisch eine Kopie der lokalen Sicherung in einer anderen von Ihnen ausgewählten Region.
 >
 > Jede Sicherung wird gesondert berechnet. Die ferne Sicherung wird gemäß der Speicherplatzkosten der ausgewählten fernen Region berechnet.
 >
-> Momentan ist die Erstellung einer fernen Sicherung nicht über das OVHcloud Kundencenter verfügbar. Sie können dies nur über die OVHcloud API und Openstack durchführen.
+> Momentan ist die Erstellung einer entfernten Sicherung nicht über das OVHcloud Kundencenter verfügbar. Sie können dies nur über die OVHcloud API und OpenStack durchführen.
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >>
->> Melden Sie sich bei dem [OVHcloud Kundencenter](/links/manager) an, navigieren Sie zur Registerkarte `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.<br>
->> Klicken Sie anschließend auf `Instanzen`{.action} im linken Menü.<br>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, öffnen Sie `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.  
+>> Klicken Sie anschließend auf `Instanzen`{.action} im linken Menü.  
 >> Auf der Instanzseite klicken Sie auf den Button `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 >>
 >> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 >>
 >> /// details | Lokale Sicherung
 >>
->> Geben Sie einen Namen für die Sicherung an, prüfen Sie die Preise und klicken Sie auf `Bestätigen`{.action}.
+>> Geben Sie einen Namen für die Sicherung an, prüfen Sie die Kosten-Information und klicken Sie auf `Bestätigen`{.action}.
 >>
 >> ![public-cloud-instance-backup](images/createbackup2bis.png){.thumbnail}
 >>
 >> ///
 >>
->> Der Fortschritt der Sicherung kann nicht in Echtzeit verfolgt werden. Sie können jedoch den Status der Sicherung in der Registerkarte `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü einsehen, wo der Status `Sicherung läuft` angezeigt wird.
+>> Der Fortschritt der Sicherung kann nicht in Echtzeit verfolgt werden. Sie können jedoch den Status der Sicherung im Bereich `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü einsehen, wo der Status `Sicherung läuft` angezeigt wird.
 >>
 >> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 >>
->> Nach Abschluss der Sicherung wird diese in der Registerkarte `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü angezeigt.
+>> Nach Abschluss der Sicherung wird diese im Bereich `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü angezeigt.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Über die OVHcloud API <a name="createinstanceviaapi"></a>
 >>
->> Melden Sie sich bei [der OVHcloud API](/links/console) an und verwenden Sie den folgenden API-Aufruf:
+>> Loggen Sie sich in die [OVHcloud API-Konsole](/links/console) ein und verwenden Sie den folgenden API-Aufruf:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
 >> >
 >>
->> Füllen Sie die Variablen aus:
+>> Füllen Sie die Felder für die Parameter aus:
 >>
 >> - **instanceId**: Eindeutige ID der betreffenden Instanz.
->> - **regionName**: Name der Region, in der sich die Quellinstanz befindet.
+>> - **regionName**: Name der Region, in der sich die Quell-Instanz befindet.
 >> - **serviceName**: ID des OVHcloud Projekts.
 >> - **distantRegionName (optional)**: Name der Zielregion, in der die Sicherung gespeichert wird.
 >> - **distantSnapshotName (optional)**: Name der Sicherung in der Zielregion.
@@ -94,7 +94,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >>
 >> > [!primary]
 >> >
->> > Erstellen Sie eine Sicherung in einer Zielregion nur, wenn die Parameter **distantRegionName** und **distantSnapshotName** ausgefüllt sind.
+>> > Erstellen Sie eine Sicherung in einer Zielregion nur, wenn die Parameter **distantRegionName** und **distantSnapshotName** eingetragen sind.
 >> >
 >>
 > Über die OpenStack-CLI
@@ -133,7 +133,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >>
 > Über Horizon
 >>
->> Klicken Sie auf das Menü `Compute`{.action} links und wählen Sie `Instanzen`{.action}.<br>
+>> Klicken Sie auf das Menü `Compute`{.action} links und wählen Sie `Instanzen`{.action}.  
 >> Klicken Sie anschließend auf den Button `Snapshot erstellen`{.action} rechts neben der Zeile der betreffenden Instanz.
 >>
 >> ![public-cloud-instance-backup-horizon1](images/createbackuphorizon1.png){.thumbnail}
