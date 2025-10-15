@@ -1,5 +1,5 @@
 ---
-title: 'Reading and filtering NSX-T logs'
+title: 'How to read and filter NSX-T logs'
 excerpt: 'Learn how to access and filter NSX-T firewall logs to troubleshoot blocked traffic on your Hosted Private Cloud.'
 updated: 2025-10-15
 ---
@@ -30,7 +30,7 @@ When inspecting logs, focus on the following elements:
 | Protocol       | Protocol used such as TCP, UDP, or ICMP                |
 
 > [!primary]
-> The following fields are usually sufficient to identify the most common connectivity issues.
+> The mentioned fields are usually sufficient to identify the most common connectivity issues.
 
 *Optional: Source and destination ports can help identify application specific issues.*
 
@@ -45,8 +45,7 @@ Example log lines:
 
 ```bash
 ALLOW ruleId=202 src=10.0.0.15 dst=192.168.2.20 proto=UDP dport=53
-
-DROP   ruleId=101 src=192.168.1.10 dst=10.0.0.5   proto=TCP dport=44
+DROP ruleId=101 src=192.168.1.10 dst=10.0.0.5 proto=TCP dport=44
 ```
 
 ### Step 3: Filter and analyze logs
@@ -60,21 +59,23 @@ Depending on your toolchain:
 ```bash
 grep "DROP" nsx-logs.log | awk '{print $1, $3, $5, $7}'
 ```
+
 ### Advanced: Improving readability in Graylog
 
 To make NSX-T firewall logs easier to read and closer to the simplicity of NSX-V format, you can configure Graylog extractors and dashboards:
 
 1. **Create a dedicated input stream**
 
-Configure a Graylog stream to capture only NSX-T firewall logs (`facility=local6` and `comp="nsx-edge"`) to isolate them from other system messages.
+    Configure a Graylog stream to capture only NSX-T firewall logs (`facility=local6` and `comp="nsx-edge"`) to isolate them from other system messages.
 
 2. **Normalize timestamps and hosts**
 
-Use Graylog extractors to clean the raw syslog format, keeping only the event timestamp (e.g. `2024-03-18T06:29:50.837Z`) and source hostname (e.g. `edge27-857b.rbx1a.pcc.ovh.net`).
+    Use Graylog extractors to clean the raw syslog format, keeping only the event timestamp (e.g. `2024-03-18T06:29:50.837Z`) and source hostname (e.g. `edge27-857b.rbx1a.pcc.ovh.net`).
 
 3. **Parse firewall action and rule ID**
 
-Apply a Grok or regex extractor to split entries such as `INET TERM PASS 2025 OUT TCP` into structured fields:
+    Apply a Grok or regex extractor to split entries such as `INET TERM PASS 2025 OUT TCP` into structured fields:
+
     - `Action = PASS / DROP`
     - `Rule ID = 2025`
     - `Direction = OUT`
@@ -82,19 +83,20 @@ Apply a Grok or regex extractor to split entries such as `INET TERM PASS 2025 OU
 
 4. **Extract source and destination fields**
 
-Parse the IPs and ports (e.g. `10.216.242.234/61790 -> 10.216.240.19/3128`) into structured Graylog fields:
+    Parse the IPs and ports (e.g. `10.216.242.234/61790 -> 10.216.240.19/3128`) into structured Graylog fields:
+
     - `src_ip`, `src_port`
     - `dst_ip`, `dst_port`
 
 5. **Drop useless metadata**
 
-Remove verbose attributes such as `[nsx@6876 comp="nsx-edge" ...]` that do not help troubleshooting. This keeps logs leaner and more readable.
+    Remove verbose attributes such as `[nsx@6876 comp="nsx-edge" ...]` that do not help troubleshooting. This keeps logs leaner and more readable.
 
 6. **Build a simplified log view/dashboard**
 
-Create a Graylog dashboard showing only the essential fields (Date, Action, Rule ID, Source, Destination, Protocol).
+    Create a Graylog dashboard showing only the essential fields (Date, Action, Rule ID, Source, Destination, Protocol).
 
-This replicates the clarity of NSX-V logs and speeds up troubleshooting.
+    This replicates the clarity of NSX-V logs and speeds up troubleshooting.
 
 ## Go further
 
