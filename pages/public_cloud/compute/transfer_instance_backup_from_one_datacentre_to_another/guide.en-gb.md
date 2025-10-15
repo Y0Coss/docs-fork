@@ -134,7 +134,7 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 > [!primary]
 >
-> If you wish to recreate your instance from this backup, follow our guide: [Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack)
+> If you wish to recreate your instance from this backup, follow our guide "[Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack)".
 >
 
 ## Go further

@@ -133,7 +133,7 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 > [!primary]
 >
-> Si vous souhaitez recréer votre instance à partir de cette sauvegarde, suivez notre guide : [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack)
+> Si vous souhaitez recréer votre instance à partir de cette sauvegarde, suivez notre guide « [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack) ».
 >
 
 ## Aller plus loin

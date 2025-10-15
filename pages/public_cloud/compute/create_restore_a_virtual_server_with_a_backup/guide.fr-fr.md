@@ -1,7 +1,7 @@
 ---
 title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
 excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
-updated: 2025-04-28
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -25,21 +25,22 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 > [!tabs]
 > Via l'espace client OVHcloud <a name="createinstanceviamanager"></a>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instance backup`{.action} sous la section **Compute**.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
+>> Cliquez ensuite sur `Instance backup`{.action} dans la barre de navigation de gauche sous **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 >>
 >> Cliquez alors sur les `...`{.action} à droite de la sauvegarde choisie et enfin sur `Créer une instance`{.action}.
 >>
->> Une version abrégée de la page de création de l'instance s'affiche, dans laquelle vous pouvez modifier certaines options.
+>> Une version simplifiée de la page de création d'instance est affichée, vous permettant de personnaliser certaines options.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
 >>
 >> Certains éléments sont prédéfinis :
 >>
->> - **Localisation** : votre instance sera créée dans le même datacentre que votre sauvegarde.
->> - **Image** : elle correspondra à votre sauvegarde.
->> - **Modèle** : seuls ceux pouvant accueillir votre image seront disponibles, en fonction de votre quota.
+>> - **Localisation** : Votre instance sera créée dans le même datacentre que votre sauvegarde.
+>> - **Image** : L'image correspondra à votre sauvegarde.
+>> - **Modèle** : Seuls les modèles pouvant accueillir votre image seront disponibles, en fonction de votre quota.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
 >>
@@ -96,15 +97,10 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance
 >> >
 >>
->> Paramètres:
+>> Renseignez les variables :
 >>
->> > **serviceName** *
->> >
->> >> L’ID du projet OVHcloud.
->>
->> > **regionName** *
->> >
->> >> Le nom de la région où l’instance sera créée.
+>> - **serviceName** : L’ID du projet OVHcloud.
+>> - **regionName** : Le nom de la région où l’instance sera créée.
 >>
 >> Exemple de corps de requête :
 >>
@@ -132,7 +128,8 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instances`{.action} sous la section **Compute**.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
+>> Cliquez ensuite sur `Instances`{.action} dans la barre de navigation de gauche sous **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 >>
@@ -140,10 +137,10 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> La page d'édition d'instance s'affichera alors. Vous pourrez y modifier :
 >>
->> - Le nom de l'instance.
->> - L'image de l'instance.
->> - Le modèle de l'instance.
->> - La facturation de l'instance (uniquement depuis le modèle « Horaire » vers le modèle « Mensuel »).
+>> - le nom de l'instance ;
+>> - l'image de l'instance ;
+>> - le modèle de l'instance ;
+>> - la facturation de l'instance (uniquement depuis le modèle « Horaire » vers le modèle « Mensuel »).
 >>
 >> Effectuez les modifications nécessaires puis sélectionnez l'onglet `Backups`{.action} dans la partie « Image ».
 >>
@@ -164,19 +161,11 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
 >> >
 >>
->> Paramètres:
+>> Renseignez les variables :
 >>
->> > **serviceName** *
->> >
->> >> L’ID du projet OVHcloud.
->>
->> > **regionName** *
->> >
->> >> Le nom de la région où se trouve l’instance source.
->>
->> > **instanceId** *
->> >
->> >> L’ID unique de l’instance.
+>> - **serviceName** : L’ID du projet OVHcloud.
+>> - **regionName** : Le nom de la région où se trouve l’instance source.
+>> - **instanceId** : L’ID unique de l’instance.
 >>
 >> Exemple de corps de requête :
 >>

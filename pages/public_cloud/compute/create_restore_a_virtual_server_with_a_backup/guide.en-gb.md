@@ -1,7 +1,7 @@
 ---
 title: Using instance backups to create or restore an instance
 excerpt: Find out how to restore an instance or create a new one from a backup
-updated: 2025-04-28
+updated: 2025-10-15
 ---
 
 ## Objective
@@ -25,11 +25,12 @@ You can make use of these instance backups for two basic purposes:
 
 > [!tabs]
 > Via the OVHcloud Control Panel <a name="createinstanceviamanager"></a>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click `Instance backup`{.action} under the **Compute** section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
+>> Then click `Instance backup`{.action} in the left-hand navigation bar under **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 >>
->> Click on the `...`{.action} button in the row of the relevant backup, then select `Create an instance`{.action}.
+>> Click the `...`{.action} button in the row of the relevant backup, then select `Create an instance`{.action}.
 >>
 >> You will see a shortened version of the instance creation page where you can decide on some options.
 >>
@@ -43,7 +44,7 @@ You can make use of these instance backups for two basic purposes:
 >>
 >> ![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
 >>
->> Choose the new instance's name, SSH key, vRack and billing period, then click on the `Create the instance`{.action} button.
+>> Choose the new instance's name, SSH key, vRack and billing period, then click the `Create the instance`{.action} button.
 >>
 >> For further information on creating an instance, please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps).
 >>
@@ -65,15 +66,15 @@ You can make use of these instance backups for two basic purposes:
 >> ```
 >>
 > Via Horizon <a name="createinstanceviahorizon"></a>
->> In the Horizon interface, click on `Compute`{.action} in the left-hand menu, then on `Images`{.action}. Find the desired image and click on the `Launch`{.action} button to the right of your image line. 
+>> In the Horizon interface, click on `Compute`{.action} in the left-hand menu, then on `Images`{.action}. Find the desired image and click the `Launch`{.action} button to the right of your image line. 
 >>
 >> ![public-cloud-instance-backup-horizon](images/restorebackuphorizon1.png){.thumbnail}
 >>
->> Name your instance in the dedicated field and determine the number of instances to create. Then click on the `Flavor`{.action} tab.
+>> Name your instance in the dedicated field and determine the number of instances to create. Then click the `Flavor`{.action} tab.
 >>
 >> ![public-cloud-instance-backup-horizon-2](images/restorebackuphorizon2.png){.thumbnail}
 >>
->> Choose the desired instance model, then click on the `Networks`{.action} tab.
+>> Choose the desired instance model, then click the `Networks`{.action} tab.
 >>
 >> > [!warning]
 >> >
@@ -82,7 +83,7 @@ You can make use of these instance backups for two basic purposes:
 >>
 >> ![public-cloud-instance-backup-horizon-3](images/restorebackuphorizon3.png){.thumbnail}
 >>
->> Choose the network you wish to assign to it, then click on the `Launch Instance`{.action} button.
+>> Choose the network you wish to assign to it, then click the `Launch Instance`{.action} button.
 >>
 >> [public-cloud-instance-backup-horizon-4](images/restorebackuphorizon4.png){.thumbnail}
 >>
@@ -96,15 +97,10 @@ You can make use of these instance backups for two basic purposes:
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance
 >> >
 >>
->> Parameters:
+>> Fill in the variables:
 >>
->> > **serviceName** *
->> >
->> >> The OVHcloud project ID.
->>
->> > **regionName** *
->> >
->> >> The region name where the instance will be located
+>> - **serviceName** : The OVHcloud project ID.
+>> - **regionName** : The region name where the instance will be located.
 >>
 >> Example of the request body:
 >>
@@ -132,18 +128,19 @@ You can make use of these instance backups for two basic purposes:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Instances`{.action} in the left-hand sidebar.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
+>> Then click `Instances`{.action} in the left-hand navigation bar under **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 >>
->> Click on the `...`{.action} button in the row of the relevant instance, then select `Edit`{.action}.
+>> Click the `...`{.action} button in the row of the relevant instance, then select `Edit`{.action}.
 >>
 >> This opens the page for editing an instance where you can change:
 >>
->> - the instance's name
->> - the instance's image
->> - the instance's model
->> - the instance's billing mode (from `hourly` to `monthly` only)
+>> - the instance's name;
+>> - the instance's image;
+>> - the instance's model;
+>> - the instance's billing mode (from `hourly` to `monthly` only).
 >>
 >> Make your changes if necessary and switch to the `Backups`{.action} tab of the **Image** section.
 >>
@@ -164,19 +161,11 @@ You can make use of these instance backups for two basic purposes:
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
 >> >
 >>
->> Parameters:
+>> Fill in the variables:
 >>
->> > **serviceName** *
->> >
->> >> The OVHcloud project ID.
->>
->> > **regionName** *
->> >
->> >> The region name where the source instance is located.
->>
->> > **instanceId** *
->> >
->> >> The unique instance ID.
+>> - **serviceName** : The OVHcloud project ID.
+>> - **regionName** : The region name where the source instance is located.
+>> - **instanceId** : The unique instance ID.
 >>
 >> Example of the request body:
 >>
