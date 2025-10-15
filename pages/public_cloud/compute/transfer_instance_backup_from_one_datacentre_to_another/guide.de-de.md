@@ -26,7 +26,7 @@ Sie benötigen auch eine [Public Cloud Instanz](/links/public-cloud/compute) in 
 
 > [!primary]
 >
-> Wenn Sie eine Sicherung mit OpenStack erstellen müssen, verweisen Sie auf diese spezielle Anleitung, wie Sie [eine Instanz sichern.](/pages/public_cloud/compute/save_an_instance).
+> Wenn Sie eine Sicherung mit OpenStack erstellen, verwenden Sie unsere Anleitung zur [Sicherung einer Instanz](/pages/public_cloud/compute/save_an_instance).
 >
 
 ### Backup herunterladen
