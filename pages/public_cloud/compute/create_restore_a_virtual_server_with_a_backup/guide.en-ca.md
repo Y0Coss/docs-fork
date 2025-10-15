@@ -85,7 +85,7 @@ You can make use of these instance backups for two basic purposes:
 >>
 >> Choose the network you wish to assign to it, then click the `Launch Instance`{.action} button.
 >>
->> [public-cloud-instance-backup-horizon-4](images/restorebackuphorizon4.png){.thumbnail}
+>> ![public-cloud-instance-backup-horizon-4](images/restorebackuphorizon4.png){.thumbnail}
 >>
 >> You can find the status of your new instance in `Compute`{.action} in the left-hand menu, then on `Instances`{.action}.
 >>
