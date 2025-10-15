@@ -71,7 +71,7 @@ The backup location depends on the location of the OVHcloud KMS.
 - **EU_WEST_LIM**
     - KMS Backup Region 1 : EU_WEST_LIM
     - KMS Backup Region 2 : EU_WEST_SBG
-- **EU_WEST_MIL**
+- **EU_SOUTH_MIL**
     - KMS Backup Region 1 : EU_WEST_GRA
     - KMS Backup Region 2 : EU_WEST_SBG
 - **CA_EAST_BHS**
