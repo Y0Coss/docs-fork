@@ -1,7 +1,7 @@
 ---
 title: "Comment migrer un site web depuis un hébergement Web mutualisé vers un VPS"
 excerpt: "Découvrez comment migrer votre site web d'un hébergement mutualisé vers un VPS OVHcloud"
-updated: 2025-10-15
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -127,9 +127,9 @@ Le répertoire web (ou racine web) est l’endroit où les fichiers de votre sit
 ##### Dans FileZilla (SFTP)
 
 - Côté « Site distant » (panneau de droite), allez dans : `/home/debian/`
-- Glissez-déposez le fichier de votre base de données (ex : `backup.sql`) dans `/home/debian/`. **Ne placez pas cette sauvegarde ni dans le dossier que vous allez copier vers la racine web** (ex. `/home/debian/site/`) **ni dans la racine web** (ex. `/var/www/html`), sinon elle pourra être téléchargée publiquement.
-- Créez un dossier `site` dans `/home/debian/` (clic droit → Créer un répertoire), puis ouvrez-le.
-- Sélectionnez tous les fichiers de votre site web (la base de données ne doit plus s'y trouver) et glissez-déposez-les dans `/home/debian/site/`. (**Ne déposez pas vos dumps SQL dans ce dossier**. Gardez-les hors de la racine web, ex. `/home/debian/backup.sql`.)
+- Glissez-déposez le fichier de votre base de données (ex : `backup.sql`) dans `/home/debian/`. **Ne placez pas cette sauvegarde ni dans le dossier que vous allez copier vers la racine web** (ex : `/home/debian/site/`) **ni dans la racine web** (ex : `/var/www/html`), sinon elle pourra être téléchargée publiquement.
+- Créez un dossier `site` dans `/home/debian/` (clic droit → `Créer un répertoire`{.action}), puis ouvrez-le.
+- Sélectionnez tous les fichiers de votre site web (la base de données ne doit plus s'y trouver) et glissez-déposez-les dans `/home/debian/site/`. (**Ne déposez pas vos dumps SQL dans ce dossier**. Gardez-les hors de la racine web, (ex : `/home/debian/backup.sql`.)
 
 ##### Sur votre VPS
 
@@ -186,14 +186,11 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 #### Avant de commencer
 
 - Votre fichier de sauvegarde (`.sql`) a été déposé à l’étape 3.2 (par exemple : `/home/debian/backup.sql`).
-
 - Le **S**ystème de **G**estion de **B**ase de **D**onnées (**SGBD**) (MySQL / MariaDB) et son client en ligne de commande ont été installés à l’[étape 2.2](#step2.2).
-
 - La base **`db_name`** :
-
-  - **existe déjà** si vous l’avez créée lors de l’étape 2.2 (ou via votre panneau d’administration).
-  - **peut être créée automatiquement** si votre sauvegarde `.sql` contient `CREATE DATABASE`.
-  - **sinon, créez-la avant l’import** :
+    - **existe déjà** si vous l’avez créée lors de l’étape 2.2 (ou via votre panneau d’administration).
+    - **peut être créée automatiquement** si votre sauvegarde `.sql` contient `CREATE DATABASE`.
+    - **sinon, créez-la avant l’import** :
 
     ```bash
     sudo mysql -e "CREATE DATABASE db_name CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
@@ -204,17 +201,16 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 #### Importer la base de données
 
 1. Connectez-vous au VPS en SSH en consultant la section « Se connecter à votre VPS » de notre guide « [Premiers pas avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
-
 2. Lancez l’import en utilisant le client du SGBD :
 
-Dans l'exemple ci-dessous, nous utilisons MySQL comme SGBD. Servez-vous de la documentation officielle du SGBD que vous avez installé lors de l'[étape 2.2](#step2.2) afin d'utiliser la ligne de commande adéquate pour importer la base de données sur votre VPS.
+    Dans l'exemple ci-dessous, nous utilisons MySQL comme SGBD. Servez-vous de la documentation officielle du SGBD que vous avez installé lors de l'[étape 2.2](#step2.2) afin d'utiliser la ligne de commande adéquate pour importer la base de données sur votre VPS.
 
-```bash
-mysql -u user_name -p db_name < /home/debian/backup.sql
-```
+    ```bash
+    mysql -u user_name -p db_name < /home/debian/backup.sql
+    ```
 
-- Remplacez `user_name` par votre nom d'utilisateur MySQL (MySQL/MariaDB), et pas votre login SSH.
-- Remplacez `db_name` par le nom de la base de données à importer.
+    - Remplacez `user_name` par votre nom d'utilisateur MySQL (MySQL/MariaDB), et pas votre login SSH.
+    - Remplacez `db_name` par le nom de la base de données à importer.
 
 3. Saisissez le mot de passe de l’utilisateur SGBD lorsqu’il est demandé et attendez la fin de l’import.
 
