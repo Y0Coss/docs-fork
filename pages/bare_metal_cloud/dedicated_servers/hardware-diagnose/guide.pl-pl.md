@@ -4,10 +4,6 @@ excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfika
 updated: 2025-10-16
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
-
 ## Wprowadzenie
 
 W pewnym momencie życia Twojego serwera może wystąpić awaria z powodu problemu sprzętowego. Po uruchomieniu serwera w trybie Rescue OVHcloud masz do dyspozycji kilka narzędzi diagnostycznych umożliwiających identyfikację uszkodzonych komponentów.
@@ -79,7 +75,7 @@ Aby zweryfikować system plików, wprowadź następującą komendę:
 fsck -fy
 ```
 
-Aby wykonać test zapisu, wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości
+W celu przeprowadzenia testu odczytu wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości.
 
 ```bash
 hdparm -t /dev/sd(x)

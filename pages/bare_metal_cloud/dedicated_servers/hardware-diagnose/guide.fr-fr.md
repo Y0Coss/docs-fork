@@ -75,7 +75,7 @@ Pour vérifier le système de fichiers, exécutez la commande suivante :
 fsck -fy
 ```
 
-Pour un test d'écriture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
+Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
 
 ```bash
 hdparm -t /dev/sd(x)

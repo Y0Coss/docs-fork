@@ -4,10 +4,6 @@ excerpt: "Erfahren Sie hier, wie Sie mithilfe von OVHcloud Rescue-Modus und Diag
 updated: 2025-10-16
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Mit der Zeit kann es bei Ihrem Server zu Hardwarefehlern kommen, die Fehlfunktionen verursachen. Wenn der Server im OVHcloud Rescue-Modus gestartet ist, stehen Ihnen mehrere Diagnosetools zur Verfügung, um fehlerhafte Hardwarekomponenten zu identifizieren.
@@ -79,7 +75,7 @@ Führen Sie den folgenden Befehl aus, um das Dateisystem zu überprüfen:
 fsck -fy
 ```
 
-Führen Sie den folgenden Befehl aus, um einen Schreibtest durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte
+Führen Sie den folgenden Befehl aus, um einen *Read*-Test durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte.
 
 ```bash
 hdparm -t /dev/sd(x)
