@@ -1,12 +1,12 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2025-10-08
+updated: 2025-10-16
 ---
 
 ## Objective
 
-There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud Web Hosting space](/links/web/hosting) lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net).
+There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud Web Hosting plan](/links/web/hosting) lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net).
 
 **Find out how to publish a website on your OVHcloud Web Hosting plan.**
 

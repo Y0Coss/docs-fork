@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2025-10-08
+updated: 2025-10-16
 ---
 
 ## Objective

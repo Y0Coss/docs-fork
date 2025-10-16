@@ -1,7 +1,7 @@
 ---
 title: "Eine Website auf Ihrem Webhosting online stellen"
 excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
-updated: 2025-10-08
+updated: 2025-10-16
 ---
 
 ## Ziel 
