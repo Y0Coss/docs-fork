@@ -1,7 +1,7 @@
 ---
 title: '3CX - Configuration et utilisation'
 excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
-updated: 2022-10-25
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -41,8 +41,6 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 
 ### Création du Trunk dans 3CX Phone System
 
-Nous allons configurer le trunk sur 3CX, à l'aide du template.
-
 > [!success]
 > Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 6 étapes.
 
@@ -61,7 +59,7 @@ Nous allons configurer le trunk sur 3CX, à l'aide du template.
 >>
 > **Étape 3**
 >>
->> Complétez le formulaire pour sélectionner le template OVHcloud. 
+>> Complétez le formulaire pour sélectionner le template OVHcloud :
 >>
 >> - Dans le champ **Choisir un Pays**, sélectionnez le pays de votre Trunk. Dans ce guide nous sélectionnons `FR`.
 >> - Dans le champ **Sélectionner un opérateur de votre pays**, sélectionnez `OVH`.
