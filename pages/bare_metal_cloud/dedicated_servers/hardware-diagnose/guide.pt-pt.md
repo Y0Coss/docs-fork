@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticar avarias materiais num servidor dedicado"
 excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 > [!primary]
@@ -77,12 +77,6 @@ Para verificar o sistema de arquivos, execute o comando a seguir:
 
 ```bash
 fsck -fy
-```
-
-Para efetuar um teste de leitura, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
 ```
 
 Para efetuar um teste de escrita, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores

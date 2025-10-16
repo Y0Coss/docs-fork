@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticare problemi hardware su un server dedicato"
 excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 > [!primary]
@@ -77,12 +77,6 @@ Per verificare il file system, esegui il comando:
 
 ```bash
 fsck -fy
-```
-
-Per effettuare un test di lettura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
 ```
 
 Per effettuare un test di scrittura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori

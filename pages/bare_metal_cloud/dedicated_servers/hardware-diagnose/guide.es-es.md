@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticar fallos de hardware en un servidor dedicado"
 excerpt: "Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 > [!primary]
@@ -78,12 +78,6 @@ Para comprobar el sistema de archivos, ejecute el siguiente comando:
 
 ```bash
 fsck -fy
-```
-
-Para una prueba de reproducción, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
 ```
 
 Para una prueba de escritura, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores
