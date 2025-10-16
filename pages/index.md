@@ -758,6 +758,7 @@
                 + [Object Storage - Master asynchronous replication across your buckets](storage_and_backup/object_storage/s3_asynchronous_replication)
                 + [Object Storage - Getting Started with Versioning](storage_and_backup/object_storage/s3_versioning)
                 + [Object Storage - How to connect Object Storage buckets with other resources in a vRack](storage_and_backup/object_storage/connect_other_ressources_in_vrack_private_network)
+                + [Object Storage - How to migrate from OVHcloud Swift Object Storage to OVHcloud S3-compatible Object Storage](storage_and_backup/object_storage/s3_migration_swift_to_s3)
             + [Configure Object Storage with your solutions](public-cloud-storage-object-storage-configure-object-storage-with-your-solutions)
                 + [Object Storage - Third-party applications compatibility](storage_and_backup/object_storage/s3_ecosystem)
                 + [Object Storage - Use Object Storage with Rclone](storage_and_backup/object_storage/s3_rclone)
