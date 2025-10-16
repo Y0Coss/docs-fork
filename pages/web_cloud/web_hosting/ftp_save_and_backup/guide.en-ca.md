@@ -98,29 +98,55 @@ To check the quota used on your web hosting, click on the tabs below to view eac
 > - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
 > - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
->
 
-Log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+Click on the tabs below to view each of the **6** steps.
 
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-In the popup window that appears, select the restore date you want in the dropdown menu, using the information below:
-
-|Date shown|Technical backup date|
-|---|---|
-|D-1|The same day, at 00:01 (UTC+1)|
-|D-2|One day ago, at 00:01 (UTC+1)|
-|D-3|Two days ago, at 00:01 (UTC+1)|
-|1 week|Last Sunday, at 01:00 (UTC+1)|
-|2 weeks|Sunday, 2 weeks ago, at 01:00 (UTC+1)|
-
-Once you have selected a date, click `Next`{.action}. 
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
-
-Once you are ready to start restoring the backup, click `Confirm`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> On the new page that appears, click `Retrieve backup`{.action}.
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> In the popup window that appears, select the restore date you want in the dropdown menu, using the information below:
+>>
+>> |Date shown|Technical backup date|
+>> |---|---|
+>> |D-1|The same day, at 00:01 (UTC+1)|
+>> |D-2|One day ago, at 00:01 (UTC+1)|
+>> |D-3|Two days ago, at 00:01 (UTC+1)|
+>> |1 week|Last Sunday, at 01:00 (UTC+1)|
+>> |2 weeks|Sunday, 2 weeks ago, at 01:00 (UTC+1)|
+>>
+>> Once you have selected a date, click `Next`{.action}. 
+>>
+> **Step 6**
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
+>>
+>> Once you are ready to start restoring the backup, click `Confirm`{.action}.
 
 > [!primary]
 >
@@ -150,7 +176,11 @@ Once you are ready to start making changes, continue to the next step.
 
 To access the backup data you would like to restore, you will need to log in to your storage space via the interface or software you have selected. To do this, you will need to have the FTP username, its password and your FTP server’s host name.
 
-You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
+You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

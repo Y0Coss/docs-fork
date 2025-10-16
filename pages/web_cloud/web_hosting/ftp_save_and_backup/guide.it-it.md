@@ -97,29 +97,55 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 > - I nostri team inviano un'email al [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
 > - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
 > - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
->
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo servizio nella sezione `Hosting`{.action} e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
 
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-Nella nuova finestra è possibile selezionare la data di ripristino dal menu a tendina:
-
-|Data|Momento del backup|
-|---|---|
-|g-1|Il giorno stesso alle 00:01|
-|g-2|Il giorno precedente alle 00:01|
-|g-3|Due giorni prima alle 00:01|
-|1 settimana|La domenica precedente alle 01:00|
-|2 settimane|La domenica di due settimane prima alle 01:00|
-
-Una volta selezionata la data, clicca su `Seguente`{.action}. 
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Assicurati che questa azione non comporti la perdita di dati, ad esempio di un file archiviato sullo spazio di storage dopo la data di ripristino selezionata. Come già precisato, il backup sovrascriverà i dati presenti nello storage.
-
-Clicca su `Conferma`{.action} per avviare l’operazione.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
+>>
+>> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Clicca sul pulsante `Ripristina un backup`{.action}.
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Nella nuova finestra è possibile selezionare la data di ripristino dal menu a tendina:
+>>
+>> |Data|Momento del backup|
+>> |---|---|
+>> |g-1|Il giorno stesso alle 00:01|
+>> |g-2|Il giorno precedente alle 00:01|
+>> |g-3|Due giorni prima alle 00:01|
+>> |1 settimana|La domenica precedente alle 01:00|
+>> |2 settimane|La domenica di due settimane prima alle 01:00|
+>>
+>> Una volta selezionata la data, clicca su `Seguente`{.action}. 
+>>
+> **Passaggio 6**
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Assicurati che questa azione non comporti la perdita di dati, ad esempio di un file archiviato sullo spazio di storage dopo la data di ripristino selezionata. Come già precisato, il backup sovrascriverà i dati presenti nello storage.
+>>
+>> Clicca su `Conferma`{.action} per avviare l’operazione.
 
 > [!primary]
 >
@@ -149,7 +175,11 @@ A questo punto, prosegui con lo step successivo.
 
 Dall’interfaccia o dal software selezionato, dovrai connetterti al tuo spazio di storage per accedere ai dati del backup da recuperare. Per effettuare questa operazione è necessario disporre di nome utente FTP, password e hostname del server FTP.
 
-Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo hosting. Se non possiedi più la password, segui le indicazioni descritte nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo hosting.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+Se non possiedi più la password, segui le indicazioni descritte nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

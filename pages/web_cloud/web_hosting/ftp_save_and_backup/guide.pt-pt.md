@@ -97,29 +97,55 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > - As nossas equipas enviam um e-mail ao [administrador](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
 > - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/manager). Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
->
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
+Clique nas janelas abaixo para visualizar cada uma das etapas **6**.
 
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-Na janela que vai aparecer, terá de selecionar a data de restauração pretendida no menu pendente:
-
-|Data apresentada|Data técnica da cópia de segurança|
-|---|---|
-|d-1|No mesmo dia, às 00h01 da manhã.|
-|d-2|No dia anterior, às 00h01 da manhã.|
-|d-3|Dois dias antes, às 00h01 da manhã.|
-|1 semana|No domingo anterior, à 01h00 da manhã.|
-|2 semanas|No domingo, duas semanas antes, à 01h00 da manhã.|
-
-Depois de selecionar a data, clique no botão `Seguinte`{.action}. 
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Certifique-se de que não perdeu nenhum ficheiro no processo de restauração (por exemplo, qualquer ficheiro que guardou no seu espaço de armazenamento após a data de restauração selecionada). Tal como indicado, a restauração vai apagar todos os dados atuais para os substituir pelos dados da cópia de segurança.
-
-De seguida, clique no botão `Validar`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na nova página que aparece, clique no botão `Restaurar um backup`{.action}.
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Na janela que vai aparecer, terá de selecionar a data de restauração pretendida no menu pendente:
+>>
+>> |Data apresentada|Data técnica da cópia de segurança|
+>> |---|---|
+>> |d-1|No mesmo dia, às 00h01 da manhã.|
+>> |d-2|No dia anterior, às 00h01 da manhã.|
+>> |d-3|Dois dias antes, às 00h01 da manhã.|
+>> |1 semana|No domingo anterior, à 01h00 da manhã.|
+>> |2 semanas|No domingo, duas semanas antes, à 01h00 da manhã.|
+>>
+>> Depois de selecionar a data, clique no botão `Seguinte`{.action}. 
+>>
+> **Etapa 6**
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Certifique-se de que não perdeu nenhum ficheiro no processo de restauração (por exemplo, qualquer ficheiro que guardou no seu espaço de armazenamento após a data de restauração selecionada). Tal como indicado, a restauração vai apagar todos os dados atuais para os substituir pelos dados da cópia de segurança.
+>>
+>> De seguida, clique no botão `Validar`{.action}.
 
 > [!primary]
 >
@@ -149,7 +175,11 @@ Assim que estiver pronto para continuar a operação, avance para o passo seguin
 
 A partir da interface ou do programa selecionado, deverá ligar-se ao seu espaço de armazenamento para aceder aos dados da cópia de segurança que pretende recuperar. Para isso, deverá ter um nome de utilizador FTP, a respetiva palavra-passe e o nome de host do seu servidor FTP.
 
-Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento. Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
+Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

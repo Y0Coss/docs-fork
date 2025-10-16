@@ -97,29 +97,55 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > - Do [kontaktu administratora](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
 > - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
->
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action} , następnie wybierz nazwę odpowiedniego hostingu. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `Przywróć kopię zapasową`{.action}.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Ciebie datę:
-
-|Wyświetlane oznaczenie daty|Data wykonania kopii zapasowej|
-|---|---|
-|D-1|dzisiaj, o 00:01 rano;|
-|D-2|wczoraj, o 00:01 rano;|
-|D-3|przedwczoraj, o 00:01 rano;|
-|1 tydzień temu|poprzednia niedziela, o 01:00 rano;|
-|2 tygodnie temu|niedziela dwa tygodnie temu, o 01:00 rano.|
-
-Po wybraniu daty, kliknij przycisk `Dalej`{.action}. 
-
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Poświęć chwilę, aby upewnić się, że żaden plik nie zostanie usunięty w wyniku przywrócenia przestrzeni dyskowej, np. plik, który zapisałeś na przestrzeni po wybranej dacie przywrócenia. Jak zostało wspomniane wyżej, przywrócenie przestrzeni dyskowej spowoduje usunięcie wszystkich aktualnych danych, które zostaną zastąpione danymi z kopii zapasowej.
-
-Kiedy jesteś gotowy do uruchomienia przywracania kopii zapasowej, kliknij przycisk `Zatwierdź`{.action}.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Na stronie, która się otworzy, kliknij przycisk `Przywróć kopię zapasową`{.action}.
+>>
+>> ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Etap 5**
+>>
+>> W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Ciebie datę:
+>>
+>> |Wyświetlane oznaczenie daty|Data wykonania kopii zapasowej|
+>> |---|---|
+>> |D-1|dzisiaj, o 00:01 rano;|
+>> |D-2|wczoraj, o 00:01 rano;|
+>> |D-3|przedwczoraj, o 00:01 rano;|
+>> |1 tydzień temu|poprzednia niedziela, o 01:00 rano;|
+>> |2 tygodnie temu|niedziela dwa tygodnie temu, o 01:00 rano.|
+>>
+>> Po wybraniu daty, kliknij przycisk `Dalej`{.action}. 
+>>
+> **Etap 6**
+>>
+>> ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Poświęć chwilę, aby upewnić się, że żaden plik nie zostanie usunięty w wyniku przywrócenia przestrzeni dyskowej, np. plik, który zapisałeś na przestrzeni po wybranej dacie przywrócenia. Jak zostało wspomniane wyżej, przywrócenie przestrzeni dyskowej spowoduje usunięcie wszystkich aktualnych danych, które zostaną zastąpione danymi z kopii zapasowej.
+>>
+>> Kiedy jesteś gotowy do uruchomienia przywracania kopii zapasowej, kliknij przycisk `Zatwierdź`{.action}.
 
 > [!primary]
 >
@@ -149,7 +175,11 @@ Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 
 W wybranym interfejsie lub programie zaloguj się do przestrzeni dyskowej, aby uzyskać dostęp do zawartości kopii zapasowej, którą chcesz przywrócić. Potrzebna Ci do tego będzie nazwa użytkownika FTP, hasło oraz nazwa hosta Twojego serwera. 
 
-Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu. Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
