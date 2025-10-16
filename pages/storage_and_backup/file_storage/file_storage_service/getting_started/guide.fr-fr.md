@@ -1,18 +1,20 @@
 ---
 title: "File Storage Service - Premiers pas (Alpha)"
-excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de partages, l’accès des clients et le montage sur vos machines virtuelles."
+excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
 updated: 2025-10-14
 ---
 
 ## Objectif
 
-OVHcloud propose un service File Storage basé sur OpenStack Manila. Ce service fournit des partages NFS gérés sur des réseaux privés, avec un accès ReadWriteMany (RWX) possible depuis plusieurs instances ou pods Kubernetes.
+OVHcloud propose un service File Storage basé sur OpenStack Manila. Ce service fournit des shares NFS gérés sur des réseaux privés, avec un accès ReadWriteMany (RWX) possible depuis plusieurs instances ou pods Kubernetes.
 
 Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 
 > [!warning]
 >
 > Ce service est actuellement en Alpha, disponible uniquement dans la région **SBG5** et réservé aux clients Alpha enregistrés. Les fonctionnalités et la disponibilité peuvent évoluer.
+>
+> Pendant la phase Alpha, la taille autorisée des share varie entre 10 Gio et 5 Tio.
 >
 
 ## Prérequis
@@ -52,9 +54,9 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> - share network create
 >> - share access create
 >>
->> **2\. Vérifier les types de partages disponibles**
+>> **2\. Vérifier les types de shares disponibles**
 >>
->> Listez les types de partages disponibles dans votre région :
+>> Listez les types de shares disponibles dans votre région :
 >>
 >> ```bash
 >> openstack share type list --os-region-name <REGION_NAME>
@@ -72,7 +74,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Pour le type generic_0, vous devez obligatoirement choisir un share network, sinon le partage ne pourra pas être créé.
+>> > Remarque : Pour le type generic_0, vous devez obligatoirement choisir un share network, sinon le share ne pourra pas être créé.
 >> >
 >>
 >> **3\. Créer un Share Network**
@@ -117,9 +119,9 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> openstack share network list --os-region-name <REGION_NAME>
 >> ```
 >>
->> **4\. Créer un partage NFS**
+>> **4\. Créer un share NFS**
 >>
->> Créez un partage NFS de 150 Go :
+>> Créez un share NFS de 150 Go :
 >>
 >> ```bash
 >> openstack share create \
@@ -132,10 +134,10 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Remplacez <my-first-share-name> par le nom que vous souhaitez donner à votre partage.
+>> > Remarque : Remplacez <my-first-share-name> par le nom que vous souhaitez donner à votre share.
 >> >
 >>
->> Surveillez l’état du partage jusqu’à ce qu’il devienne `available` :
+>> Surveillez l’état du share jusqu’à ce qu’il devienne `available` :
 >>
 >> ```bash
 >> openstack share list --os-region-name <REGION_NAME>
@@ -143,7 +145,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> **5\. Autoriser une VM cliente**
 >>
->> Assurez-vous que votre VM cliente se trouve dans le même réseau privé que le partage.
+>> Assurez-vous que votre VM cliente se trouve dans le même réseau privé que le share.
 >>
 >> Récupérez l’adresse IP privée de la VM :
 >>
@@ -157,7 +159,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> {'my-private-net': ['10.1.0.123', '57.123.88.111']}
 >> ```
 >>
->> Autorisez l’accès au partage en utilisant l’IP privée de la VM (par exemple, 10.1.0.123) :
+>> Autorisez l’accès au share en utilisant l’IP privée de la VM (par exemple, 10.1.0.123) :
 >>
 >> ```bash
 >> openstack share access create \
@@ -188,10 +190,10 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Ce chemin d’export est utilisé pour monter le partage sur votre VM cliente.
+>> > Remarque : Ce chemin d’export est utilisé pour monter le share sur votre VM cliente.
 >> >
 >>
->> **7\. Monter le partage sur votre VM cliente**
+>> **7\. Monter le share sur votre VM cliente**
 >>
 >> Connectez-vous à votre VM et installez les utilitaires NFS :
 >>
@@ -199,7 +201,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> sudo apt update && sudo apt install -y nfs-common
 >> ```
 >>
->> Créez un point de montage et montez le partage :
+>> Créez un point de montage et montez le share :
 >>
 >> ```bash
 >> sudo mkdir -p /mnt/share
@@ -214,12 +216,12 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Remplacez le chemin d’export par celui récupéré pour votre partage.
+>> > Remarque : Remplacez le chemin d’export par celui récupéré pour votre share.
 >> >
 >>
 >> **8\. Vérifier la capacité et l’utilisation**
 >>
->> Affichez l’espace disponible sur le partage monté :
+>> Affichez l’espace disponible sur le share monté :
 >>
 >> ```bash
 >> df -h /mnt/share
@@ -235,23 +237,23 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Cela vous permet de suivre la capacité de stockage et l’utilisation de votre partage NFS.
+>> > Remarque : Cela vous permet de suivre la capacité de stockage et l’utilisation de votre share NFS.
 >> >
 >>
->> **9\. Gérer le cycle de vie du partage**
+>> **9\. Gérer le cycle de vie du share**
 >>
->> Redimensionner le partage :
+>> Redimensionner le share :
 >>
 >> > [!warning]
 >> >
->> > Seule l’extension d’un partage est autorisée pour le moment ; la réduction n’est pas supportée.
+>> > Seule l’extension d’un share est autorisée pour le moment ; la réduction n’est pas supportée.
 >> >
 >>
 >> ```bash
 >> openstack share resize --os-region-name <REGION_NAME> <my-first-share-name> 200
 >> ```
 >>
->> Supprimer un partage :
+>> Supprimer un share :
 >>
 >> ```bash
 >> openstack share delete --os-region-name <REGION_NAME> <my-first-share-name>
@@ -265,7 +267,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Assurez-vous qu’aucun partage actif n’utilise le réseau avant de le supprimer.
+>> > Remarque : Assurez-vous qu’aucun share actif n’utilise le réseau avant de le supprimer.
 >> >
 >>
 >> **10\. Dépannage**
@@ -273,7 +275,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> | Symptôme	                 | Cause	                                        | Solution                                                                                   |
 >> | --------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 >> | `Unknown command ['share']` | CLI Manila non installée                         | Installez-la avec `sudo apt install python3-manilaclient`                                  |
->> | `Share network must be set` | Utilisation d’un type de partage DHSS=True       | Fournissez `--share-network`                                                               |
+>> | `Share network must be set` | Utilisation d’un type de share DHSS=True       | Fournissez `--share-network`                                                               |
 >> | Cannot mount NFS            | IP non autorisée ou réseau incorrect             | Assurez-vous que la VM est sur le même sous-réseau privé et que la règle d’accès est créée |
 >> | `403 Forbidden`             | Projet non autorisé pour Manila                  | Assurez-vous d’être inscrit à l’Alpha                                                      |
 >> | Share stuck in creating     | ID de réseau ou sous-réseau invalide             | Vérifiez `NETWORK_ID` et `SUBNET_ID`                                                       |
@@ -286,6 +288,11 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> - Krew (gestionnaire de plugins kubectl) installé.
 >> - Stern (plugin de suivi des logs kubectl) installé via Krew.
 >> - Un cluster Kubernetes déployé dans un réseau privé au sein d'une région PCI où les points de terminaison Manila sont accessibles.
+>>
+>> > [!primary]
+>> >
+>> > Ce guide fonctionne à la fois avec les clusters Managed Kubernetes Service (MKS) et les clusters Kubernetes autogérés.
+>> >
 >>
 >> **2. Installation de la ligne de commande Helm**
 >>
@@ -322,7 +329,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> Préparez votre environnement pour utiliser l'API OpenStack en installant python-openstackclient, en suivant [ce guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 >>
->> Installez le client Manila pour gérer les partages de stockage de fichiers :
+>> Installez le client Manila pour gérer les shares de stockage de fichiers :
 >>
 >> ```bash
 >> pip install python-manilaclient
@@ -401,11 +408,6 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> - Via le panneau de contrôle OVHcloud (Public Cloud > Paramètres > Utilisateurs & Rôles)
 >> - Ou via la CLI OVHcloud
 >>
->> > [!primary]
->> >
->> > Ce nouvel utilisateur doit avoir le rôle share_operator ou administrateur.
->> >
->>
 >> 2. Collectez les détails du projet et de l'utilisateur OpenStack
 >>
 >> Téléchargez le fichier openrc de votre projet depuis le panneau de contrôle OVHcloud et notez les informations suivantes :
@@ -417,22 +419,37 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> - os-projectName
 >> - os-projectDomainID
 >>
->> > [!primary]
->> >
->> > Une fois que vous avez ces valeurs, remplissez le fichier csi-config/secrets.yaml. Ce secret Kubernetes permettra au driver CSI Manila de gérer les ressources Manila dans votre cluster.
->> >
+>> Une fois ces valeurs obtenues, créez un fichier nommé secrets.yaml avec le contenu suivant. Ce secret Kubernetes permet au pilote CSI Manila de s'authentifier auprès d'OpenStack et de gérer les ressources Manila dans votre cluster.
 >>
->> ```bash
->> curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
->> chmod 700 get_helm.sh
->> ./get_helm.sh
+>> ```yaml
+>> apiVersion: v1
+>> kind: Secret
+>> metadata:
+>>   name: csi-manila-secrets
+>>   namespace: default
+>> stringData:
+>>   # Mandatory
+>>   os-authURL: "https://auth.cloud.ovh.net/v3"
+>>   os-region: "SBG5"
+>>
+>>   # Openstack authentication
+>>   os-userName: "<os-userName>"
+>>   os-password: "<os-password>"
+>>   os-domainName: "default"
+>>   os-projectName: "os-projectName"
+>>   os-projectDomainID: "default"
+>> 
+>>   # Authentication using trustee credentials
+>>   # os-trustID: "some-trust-id"
+>>   # os-trusteeID: "some-trustee-id"
+>>   # os-trusteePassword: "some-trustee-password"
 >> ```
 >>
->> Créez le secret dans votre cluster MKS :
+>> Ensuite, appliquez-le à votre cluster Kubernetes :
 >>
 >> ```bash
 >> # Appliquez les informations d'identification OpenStack pour Manila
->> kubectl apply -f ./csi-config/secrets.yaml
+>> kubectl apply -f ./secrets.yaml
 >> ```
 >>
 >> 3. Configurez le réseau partagé OpenStack
@@ -491,11 +508,37 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> **8. Configuration du driver CSI Manila**
 >>
->> Une fois le réseau partagé OpenStack créé, et avant de configurer le driver CSI Manila, vous devez définir la plage de CIDR utilisée par vos nœuds MKS. Cela garantit que les nœuds peuvent accéder aux partages Manila.
+>> Une fois le réseau de share OpenStack créé, et avant de configurer le pilote CSI Manila, vous devez définir la plage CIDR utilisée par vos nœuds Kubernetes. Cela garantit que les nœuds peuvent accéder aux shares Manila.
 >>
 >> Éditez la ConfigMap de runtime :
 >>
->> Ouvrez `csi-config/manila-runtime-configmap.yaml` et mettez à jour le champ `nfs.matchExportLocationAddress` pour qu'il corresponde à la plage de CIDR de votre cluster.
+>> Créez un fichier nommé `manila-runtime-configmap.yaml` et mettez à jour le champ `nfs.matchExportLocationAddress` afin qu'il corresponde au CIDR de votre cluster :
+>>
+>> ```yaml
+>> apiVersion: v1
+>> kind: ConfigMap
+>> metadata:
+>>   name: manila-csi-runtimeconf-cm
+>>   namespace: default
+>>   annotations:
+>>     meta.helm.sh/release-name: manila-csi
+>>     meta.helm.sh/release-namespace: default
+>>   labels:
+>>     app.kubernetes.io/managed-by: Helm
+>> data:
+>>   runtimeconfig.json: |
+>>     {
+>>       "nfs": {
+>>         # When mounting an NFS share, select an export location with
+>>         # this IP address. No match between this address and
+>>         # at least a single export location for this share will
+>>         # result in an error.
+>>         # Expects a CIDR-formatted address. If prefix is not provided,
+>>         # /32 or /128 prefix is assumed for IPv4 and IPv6 respectively.
+>>         "matchExportLocationAddress": "<SUBNET_CIDR>"
+>>       }
+>>     }
+>> ```
 >>
 >> Exemple :
 >>
@@ -508,12 +551,12 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> ```bash
 >> # Optionnel si la configuration de runtime est déjà définie dans les valeurs Helm
->> kubectl apply -f ./csi-config/manila-runtime-configmap.yaml
+>> kubectl apply -f ./manila-runtime-configmap.yaml
 >> ```
 >>
->> **9. Création de partages NFS via provisionnement dynamique**
+>> **9. Création de shares NFS via provisionnement dynamique**
 >>
->> Pour permettre au driver CSI Manila de créer dynamiquement des partages Manila et de les utiliser comme volumes Kubernetes, vous devez définir une classe de stockage (StorageClass) dans votre cluster. Cette classe de stockage spécifie le réseau partagé qui sera utilisé pour créer et accorder l'accès aux exports NFS.
+>> Pour permettre au driver CSI Manila de créer dynamiquement des shares Manila et de les utiliser comme volumes Kubernetes, vous devez définir une StorageClass dans votre cluster. Cette StorageClass spécifie le réseau partagé qui sera utilisé pour créer et accorder l'accès aux exports NFS.
 >>
 >> Récupérez l'ID du réseau partagé en utilisant la CLI OpenStack pour obtenir l'ID de votre réseau partagé :
 >>
@@ -521,25 +564,68 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> openstack --os-region-name SBG5 share network list -f value -c ID
 >> ```
 >>
->> Configurez la classe de stockage :
+>> Configurez la StorageClass :
 >>
 >> - Éditez le fichier csi-config/dynamic-storageclass.yaml.
 >> - Mettez à jour la valeur du paramètre shareNetworkID avec l'ID du réseau partagé récupéré à l'étape précédente.
 >>
->> Créez la classe de stockage dynamique en appliquant la classe de stockage à votre cluster :
+>> - Créez un fichier nommé `dynamic-storageclass.yaml` avec le contenu suivant :
 >>
->> ```bash
->> # Une classe de stockage ne peut pas être mise à jour. Si des modifications sont nécessaires, supprimez-la et recréez-la.
->> kubectl apply -f poc/v2/nfs/dynamic-provisioning/dynamic-storageclass.yaml
+>> ```yaml
+>> apiVersion: storage.k8s.io/v1
+>> kind: StorageClass
+>> metadata:
+>>   name: csi-manila-nfs
+>> provisioner: nfs.manila.csi.openstack.org
+>> allowVolumeExpansion: true
+>> parameters:
+>>   # Manila share type
+>>   # default value: default
+>>   # openstack share type list to find proper value
+>>   type: generic_0
+>>   # /!\ MANDATORY /!\
+>>   # openstack share network list
+>>   shareNetworkID: "<OS_SHARE_NETWORK_ID>"
+>>   nfs-shareClient: "<SUBNET_CIDR>"
+>>
+>>   csi.storage.k8s.io/provisioner-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/provisioner-secret-namespace: default
+>>   csi.storage.k8s.io/controller-expand-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/controller-expand-secret-namespace: default
+>>   csi.storage.k8s.io/node-stage-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/node-stage-secret-namespace: default
+>>   csi.storage.k8s.io/node-publish-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/node-publish-secret-namespace: default
 >> ```
 >>
->> Une fois la classe de stockage créée, créez une demande de volume persistant (PersistentVolumeClaim, PVC) en utilisant celle-ci. Par exemple, demandez un volume de 15 Gi avec un accès en lecture/écriture multiple (RWX) :
+>> Créez la StorageClass dynamique en appliquant la StorageClass à votre cluster :
 >>
 >> ```bash
->> kubectl apply -f poc/v2/nfs/dynamic-provisioning/nfs-pvc.yaml
+>> # Une StorageClass ne peut pas être mise à jour. Si des modifications sont nécessaires, supprimez-la et recréez-la.
+>> kubectl apply -f dynamic-storageclass.yaml
 >> ```
 >>
->> Après avoir appliqué la demande de volume, listez les nouveaux partages Manila créés dans votre projet Public Cloud :
+>> Une fois la StorageClass créée, créez un fichier nommé `nfs-pvc.yaml` définissant une PersistentVolumeClaim (PVC) qui utilise cette StorageClass. Par exemple, demandez un volume de 15 Gi avec un accès `ReadWriteMany` (RWX) :
+>>
+>> ```yaml
+>> apiVersion: v1
+>> kind: PersistentVolumeClaim
+>> metadata:
+>>   name: nfs-share-pvc
+>> spec:
+>>   accessModes:
+>>     - ReadWriteMany
+>>   resources:
+>>     requests:
+>>       storage: 15Gi
+>>   storageClassName: csi-manila-nfs
+>> ```
+>>
+>> ```bash
+>> kubectl apply -f nfs-pvc.yaml
+>> ```
+>>
+>> Après avoir appliqué la demande de volume, listez les nouveaux shares Manila créés dans votre projet Public Cloud :
 >>
 >> ```bash
 >> openstack --os-region SBG5 share list
@@ -555,20 +641,104 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
 >> ```
 >>
->> Déployez un déploiement Kubernetes pour un serveur web avec 2 répliques. Les pods monteront et partageront le volume RWX créé précédemment :
+>> Créez un fichier nommé `nfs-deployment.yaml` avec le contenu suivant :
 >>
->> ```bash
->> kubectl apply -f poc/v2/nfs/dynamic-provisioning/nfs-deployment.yaml
+>> ```yaml
+>> apiVersion: apps/v1
+>> kind: Deployment
+>> metadata:
+>>   name: nfs-share
+>>   labels:
+>>     app: nfs-share
+>> spec:
+>>   replicas: 2
+>>   selector:
+>>     matchLabels:
+>>       app: nfs-share
+>>   template:
+>>     metadata:
+>>       labels:
+>>         app: nfs-share
+>>     spec:
+>>       containers:
+>>       - name: web-server
+>>         resources:
+>>           limits:
+>>             cpu: 250m
+>>             memory: 256Mi
+>>           requests:
+>>             cpu: 100m
+>>             memory: 256Mi
+>>         image: nginx
+>>         imagePullPolicy: IfNotPresent
+>>         volumeMounts:
+>>           - name: nfs-share-pvc
+>>             mountPath: /var/lib/www
+>>       volumes:
+>>       - name: nfs-share-pvc
+>>         persistentVolumeClaim:
+>>           claimName: nfs-share-pvc
+>>           readOnly: false
 >> ```
 >>
->> Vous pouvez vérifier la fonctionnalité RWX en vous connectant à un pod en utilisant la commande `kubectl exec` et en créant un fichier dans le répertoire monté (par exemple, `/var/lib/www/`). Ensuite, connectez-vous au deuxième pod et vérifiez que le fichier est visible. Si c'est le cas, votre partage Manila exposé via NFS fonctionne correctement.
+>> Déployez le serveur web avec 2 répliques, qui monteront et partageront le volume `RWX` créé précédemment :
 >>
+>> ```bash
+>> kubectl apply -f nfs-deployment.yaml
+>> ```
 >>
->> **10. Montage d'un partage Manila existant comme volume dans les pods**
+>> Vous pouvez vérifier la fonctionnalité RWX en vous connectant à un pod en utilisant la commande `kubectl exec` et en créant un fichier dans le répertoire monté (par exemple, `/var/lib/www/`). Ensuite, connectez-vous au deuxième pod et vérifiez que le fichier est visible. Si c'est le cas, votre share Manila exposé via NFS fonctionne correctement.
 >>
->> Comme indiqué précédemment, une classe de stockage Kubernetes peut créer dynamiquement des partages Manila exposés via NFS. Alternativement, vous pouvez utiliser un partage Manila pré-provisionné et le monter directement dans un pod.
+>> **10\. Redimensionner un share NFS à l'aide du provisionnement dynamique**
 >>
->> Créez un nouveau partage avec la CLI OpenStack :
+>> > [!warning]
+>> >
+>> > Le redimensionnement d'un share NFS n'est pris en charge que pour :
+>> >
+>> > - Les PersistentVolumeClaims (PVC) provisionnés dynamiquement
+>> > - Les volumes démontés (vous devez réduire votre déploiement avant de redimensionner pour éviter les erreurs)
+>> >
+>> > À l'heure actuelle, seule l'extension de share est prise en charge — il n'est pas possible de réduire un volume.
+>> >
+>>
+>> Pour redimensionner un share Manila existant :
+>>
+>> Réduisez le déploiement pour vous assurer que le volume est démonté :
+>>
+>> ```bash
+>> kubectl scale deployment nfs-share --replicas 0
+>> ```
+>>
+>> Modifiez le PVC pour demander une nouvelle taille (par exemple, 42 Gi) :
+>>
+>> ```bash
+>> kubectl patch pvc nfs-share-pvc -p '{ "spec": { "resources": { "requests": { "storage": "42Gi" }}}}'
+>> ```
+>>
+>> Vérifiez que le share OpenStack a été mis à jour :
+>>
+>> ```bash
+>> openstack --os-region SBG5 share show <SHARE_ID>
+>> ```
+>>
+>> Si le share a été étendu avec succès, redimensionnez le déploiement :
+>>
+>> ```bash
+>> kubectl scale deployment nfs-share --replicas 2
+>> ```
+>>
+>> > [!warning]
+>> >
+>> > Toute tentative de redimensionnement d'un PVC qui n'est pas provisionné dynamiquement par une StorageClass entraînera une erreur telle que :
+>> >
+>> > erreur : impossible de corriger persistentvolumeclaims « existing-nfs-share-pvc » : persistentvolumeclaims « existing-nfs-share-pvc » est interdit : seul un PVC provisionné dynamiquement peut être redimensionné et la classe de stockage qui provisionne le PVC doit prendre en charge le redimensionnement.
+>> >
+>>
+>> **11. Montage d'un share Manila existant comme volume dans les pods**
+>>
+>> Comme indiqué précédemment, une StorageClass Kubernetes peut créer dynamiquement des shares Manila exposés via NFS. Alternativement, vous pouvez utiliser un share Manila pré-provisionné et le monter directement dans un pod.
+>>
+>> Créez un nouveau share avec la CLI OpenStack :
 >>
 >> ```bash
 >> openstack --os-region SBG5 share create \
@@ -580,18 +750,18 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> Où :
 >>
->> - `SHARE_TYPE` est `generic_0` par défaut. Vous pouvez vérifier les types de partage existants avec :
+>> - `SHARE_TYPE` est `generic_0` par défaut. Vous pouvez vérifier les types de share existants avec :
 >>
 >> ```bash
 >> openstack --os-region SBG5 share type list
 >> ```
 >>
 >> - `SHARE_NETWORK_ID` est l'identifiant de votre réseau partagé.
->> - `NFS_SHARE_NAME` est le nom de votre partage NFS.
+>> - `NFS_SHARE_NAME` est le nom de votre share NFS.
 >> - `SHARE_PROTOCOL` est le protocole à utiliser (actuellement, seul NFS est pris en charge).
 >> - `SHARE_SIZE` est la taille à allouer à votre volume NFS (en GiB).
 >>
->> Créez une règle d'accès au partage :
+>> Créez une règle d'accès au share :
 >>
 >> ```bash
 >> openstack --os-region SBG5 share access create <NFS_SHARE_NAME> ip <SUBNET_CIDR>
@@ -599,34 +769,77 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> Où :
 >>
->> - `SHARE_ACCESS_NAME` est le nom du partage.
+>> - `SHARE_ACCESS_NAME` est le nom du share.
 >> - `SUBNET_CIDR` est le CIDR utilisé lors de la configuration du runtime Manila CSI.
 >>
->> Récupérez l'ID du partage NFS et l'ID de l'accès au partage, puis mettez à jour les paramètres `volumeAttributes.shareID` et `volumeAttributes.shareAccessID` dans le fichier `poc/v2/nfs/static-provisioning/static-provisioning.yaml`.
+>> >> Récupérez l'ID de share NFS et l'ID d'accès au share, puis créez un fichier nommé `static-provisioning.yaml` et mettez à jour les paramètres `volumeAttributes.shareID` et `volumeAttributes.shareAccessID` :
 >>
->> Appliquez le manifeste pour créer un volume persistant et sa demande de volume persistant en utilisant le partage NFS pré-provisionné. Le partage Manila ne sera utilisé que si le pod qui réclame la demande de volume est déployé dans votre cluster :
->>
->> ```bash
->> kubectl apply -f poc/v2/nfs/static-provisioning/static-provisioning.yaml
+>> ```yaml
+>> apiVersion: v1
+>> kind: PersistentVolume
+>> metadata:
+>>   name: preprovisioned-nfs-share
+>>   labels:
+>>     name: preprovisioned-nfs-share
+>> spec:
+>>   accessModes:
+>>   - ReadWriteMany
+>>   capacity:
+>>     storage: 120Gi
+>>   csi:
+>>     driver: nfs.manila.csi.openstack.org
+>>     volumeHandle: preprovisioned-nfs-share
+>>     nodeStageSecretRef:
+>>       name: csi-manila-secrets
+>>       namespace: default
+>>     nodePublishSecretRef:
+>>       name: csi-manila-secrets
+>>       namespace: default
+>>     volumeAttributes:
+>>       shareID: <SHARE_ID>
+>>       shareAccessID: <SHARE_ACCESS_ID>
+>> ---
+>> apiVersion: v1
+>> kind: PersistentVolumeClaim
+>> metadata:
+>>   name: existing-nfs-share-pvc
+>> spec:
+>>   accessModes:
+>>   - ReadWriteMany
+>>   resources:
+>>     requests:
+>>       storage: 120Gi
+>>   storageClassName: "" # <--- Prevent default Cinder CSI usage
+>>   selector:
+>>     matchExpressions:
+>>     - key: name
+>>       operator: In
+>>       values: ["preprovisioned-nfs-share"]
 >> ```
 >>
->> Déployez un pod qui monte ce partage :
+>> Appliquez le manifeste pour créer un volume persistant et sa demande de volume persistant en utilisant le share NFS pré-provisionné. Le share Manila ne sera utilisé que si le pod qui réclame la demande de volume est déployé dans votre cluster :
 >>
 >> ```bash
->> kubectl apply -f poc/v2/nfs/static-provisioning/pod.yaml
+>> kubectl apply -f static-provisioning.yaml
 >> ```
 >>
->> Vous pouvez maintenant utiliser `kubectl exec` pour accéder au pod et exécuter `df -h` pour vérifier que le partage Manila pré-créé est correctement monté.
+>> Déployez un pod qui monte ce share :
+>>
+>> ```bash
+>> kubectl apply -f pod.yaml
+>> ```
+>>
+>> Vous pouvez maintenant utiliser `kubectl exec` pour accéder au pod et exécuter `df -h` pour vérifier que le share Manila pré-créé est correctement monté.
 >>
 >> ### CLI utiles
 >>
->> Avec vos informations d'identification OpenStack chargées dans l'environnement, vous pouvez gérer les partages Manila en utilisant la CLI OpenStack. Les commandes courantes incluent :
+>> Avec vos informations d'identification OpenStack chargées dans l'environnement, vous pouvez gérer les shares Manila en utilisant la CLI OpenStack. Les commandes courantes incluent :
 >>
 >> ```bash
->> openstack share list # Liste tous les partages
->> openstack share type list # Liste les types de partage disponibles
->> openstack share access list|create|delete [${SHARE_ID}] # Gérez les règles d'accès pour un partage spécifique
->> openstack share list|create|delete [${SHARE_ID}] # Créez, listez ou supprimez un partage par son ID
+>> openstack share list # Liste tous les shares
+>> openstack share type list # Liste les types de share disponibles
+>> openstack share access list|create|delete [${SHARE_ID}] # Gérez les règles d'accès pour un share spécifique
+>> openstack share list|create|delete [${SHARE_ID}] # Créez, listez ou supprimez un share par son ID
 >> openstack share message list # pour voir les erreurs liées aux ressources Manila
 >> ```
 >>
@@ -634,7 +847,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> [Votre stockage ReadWriteMany (RWX) dans k8s avec Manila CSI](https://www.youtube.com/watch?v=WSMZDKx4JAI){.external}
 >> [Manila/Concepts](https://wiki.openstack.org/wiki/Manila/Concepts#share_type){.external}
->> [Approche générique pour le provisionnement de partage](https://docs.openstack.org/manila/latest/admin/generic_driver.html){.external}
+>> [Approche générique pour le provisionnement de share](https://docs.openstack.org/manila/latest/admin/generic_driver.html){.external}
 >> [Plugin officiel Manila CSI sur GitHub](https://github.com/kubernetes/cloud-provider-openstack/tree/master/examples/manila-csi-plugin){.external}
 >>
 > Via Terraform (bientôt disponible)

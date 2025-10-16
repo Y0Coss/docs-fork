@@ -14,6 +14,8 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >
 > This service is currently in Alpha, available only in the **SBG5** region, and limited to registered Alpha customers. Features and availability may change.
 >
+> During the Alpha phase, the allowed share size ranges from 10 GiB to 5 TiB.
+>
 
 ## Requirements
 
@@ -278,7 +280,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> | `403 Forbidden`             | Project not whitelisted for Manila | Ensure you are registered to Alpha                                 |
 >> | Share stuck in creating     | Invalid network ID or subnet       | Check `NETWORK_ID` and `SUBNET_ID`                                 |
 >>
-> Via Manila CSI in K8s environment
+> Via Manila CSI in Kubernetes environment
 >> **1\. Additional Requirements**
 >>
 >> - Helm CLI installed on your local machine.
@@ -286,6 +288,11 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> - Krew (kubectl plugin manager) installed.
 >> - Stern (kubectl log tailing plugin) installed via Krew.
 >> - A Kubernetes cluster deployed in a private network within a PCI region where Manila endpoints are accessible.
+>>
+>> > [!primary]
+>> >
+>> > This guide works with both Managed Kubernetes Service (MKS) clusters and self-managed Kubernetes clusters.
+>> >
 >>
 >> **2\. Installing Helm command line**
 >>
@@ -401,11 +408,6 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> - Through the OVHcloud Control Panel (Public Cloud > Settings > Users & Roles)
 >> - Or via the OVHcloud CLI
 >>
->> > [!primary]
->> >
->> > This new user must have the role share_operator or administrator.
->> >
->>
 >> 2. Collect OpenStack project and user details
 >>
 >> Download your project’s openrc file from the OVHcloud control panel and note the following credentials:
@@ -415,24 +417,37 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> - os-domainName
 >> - os-projectDomainID
 >> - os-projectName
->> - os-projectDomainID
 >>
->> > [!primary]
->> >
->> > Once you have these values, populate the csi-config/secrets.yaml file. This Kubernetes secret will allow the Manila CSI driver to manage Manila resources in your cluster.
->> >
+>> Once you have these values, create a file named secrets.yaml with the following content. This Kubernetes Secret allows the Manila CSI driver to authenticate against OpenStack and manage Manila resources in your cluster.
 >>
->> ```bash
->> curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
->> chmod 700 get_helm.sh
->> ./get_helm.sh
+>> ```yaml
+>> apiVersion: v1
+>> kind: Secret
+>> metadata:
+>>   name: csi-manila-secrets
+>>   namespace: default
+>> stringData:
+>>   # Mandatory
+>>   os-authURL: "https://auth.cloud.ovh.net/v3"
+>>   os-region: "SBG5"
+>>
+>>   # Openstack authentication
+>>   os-userName: "<os-userName>"
+>>   os-password: "<os-password>"
+>>   os-domainName: "default"
+>>   os-projectName: "os-projectName"
+>>   os-projectDomainID: "default"
+>> 
+>>   # Authentication using trustee credentials
+>>   # os-trustID: "some-trust-id"
+>>   # os-trusteeID: "some-trustee-id"
+>>   # os-trusteePassword: "some-trustee-password"
 >> ```
 >>
->> Create the secret in your MKS cluster:
+>> Then, apply it to your Kubernetes cluster:
 >>
 >> ```bash
->> # Apply OpenStack credentials for Manila
->> kubectl apply -f ./csi-config/secrets.yaml
+>> kubectl apply -f ./secrets.yaml
 >> ```
 >>
 >> 3. Configure the OpenStack shared network
@@ -491,11 +506,37 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> **8\. Configure the Manila CSI driver**
 >>
->> Once the OpenStack share network is created, and before configuring the Manila CSI driver, you need to define the CIDR range used by your MKS nodes. This ensures that the nodes can access the Manila shares.
+>> Once the OpenStack share network is created, and before configuring the Manila CSI driver, you need to define the CIDR range used by your Kubernetes nodes. This ensures that the nodes can access the Manila shares.
 >>
 >> Edit the runtime ConfigMap:
 >>
->> Open `csi-config/manila-runtime-configmap.yaml` and update the `nfs.matchExportLocationAddress` field to match your cluster’s CIDR.
+>> Create a file named `manila-runtime-configmap.yaml` and update the `nfs.matchExportLocationAddress` field to match your cluster’s CIDR:
+>>
+>> ```yaml
+>> apiVersion: v1
+>> kind: ConfigMap
+>> metadata:
+>>   name: manila-csi-runtimeconf-cm
+>>   namespace: default
+>>   annotations:
+>>     meta.helm.sh/release-name: manila-csi
+>>     meta.helm.sh/release-namespace: default
+>>   labels:
+>>     app.kubernetes.io/managed-by: Helm
+>> data:
+>>   runtimeconfig.json: |
+>>     {
+>>       "nfs": {
+>>         # When mounting an NFS share, select an export location with
+>>         # this IP address. No match between this address and
+>>         # at least a single export location for this share will
+>>         # result in an error.
+>>         # Expects a CIDR-formatted address. If prefix is not provided,
+>>         # /32 or /128 prefix is assumed for IPv4 and IPv6 respectively.
+>>         "matchExportLocationAddress": "<SUBNET_CIDR>"
+>>       }
+>>     }
+>> ```
 >>
 >> Example:
 >>
@@ -508,7 +549,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> ```bash
 >> # Optional if runtime config is already defined in Helm values
->> kubectl apply -f ./csi-config/manila-runtime-configmap.yaml
+>> kubectl apply -f ./manila-runtime-configmap.yaml
 >> ```
 >>
 >> **9\. Creating NFS Shares via Dynamic Provisioning**
@@ -523,20 +564,62 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> Configure the StorageClass:
 >>
->> - Edit the csi-config/dynamic-storageclass.yaml file.
+>> - Create a file named `dynamic-storageclass.yaml` with the following content:
+>>
+>> ```yaml
+>> apiVersion: storage.k8s.io/v1
+>> kind: StorageClass
+>> metadata:
+>>   name: csi-manila-nfs
+>> provisioner: nfs.manila.csi.openstack.org
+>> allowVolumeExpansion: true
+>> parameters:
+>>   # Manila share type
+>>   # default value: default
+>>   # openstack share type list to find proper value
+>>   type: generic_0
+>>   # /!\ MANDATORY /!\
+>>   # openstack share network list
+>>   shareNetworkID: "<OS_SHARE_NETWORK_ID>"
+>>   nfs-shareClient: "<SUBNET_CIDR>"
+>>
+>>   csi.storage.k8s.io/provisioner-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/provisioner-secret-namespace: default
+>>   csi.storage.k8s.io/controller-expand-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/controller-expand-secret-namespace: default
+>>   csi.storage.k8s.io/node-stage-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/node-stage-secret-namespace: default
+>>   csi.storage.k8s.io/node-publish-secret-name: csi-manila-secrets
+>>   csi.storage.k8s.io/node-publish-secret-namespace: default
+>> ```
+>>
 >> - Update the parameter.shareNetworkID value with the shared network ID retrieved in the previous step.
 >>
 >> Create the dynamic StorageClass, applying the StorageClass to your cluster:
 >>
 >> ```bash
 >> # A StorageClass cannot be updated. If modifications are needed, delete and recreate it.
->> kubectl apply -f poc/v2/nfs/dynamic-provisioning/dynamic-storageclass.yaml
+>> kubectl apply -f dynamic-storageclass.yaml
 >> ```
 >>
->> Once the StorageClass is created, create a `PersistentVolumeClaim` (PVC) using it. For example, claim a 15Gi volume with `ReadWriteMany` (RWX) access:
+>> Once the StorageClass is created, create a file named `nfs-pvc.yaml` defining a PersistentVolumeClaim (PVC) that uses this StorageClass. For example, request a 15Gi volume with `ReadWriteMany` (RWX) access:
+>>
+>> ```yaml
+>> apiVersion: v1
+>> kind: PersistentVolumeClaim
+>> metadata:
+>>   name: nfs-share-pvc
+>> spec:
+>>   accessModes:
+>>     - ReadWriteMany
+>>   resources:
+>>     requests:
+>>       storage: 15Gi
+>>   storageClassName: csi-manila-nfs
+>> ```
 >>
 >> ```bash
->> kubectl apply -f poc/v2/nfs/dynamic-provisioning/nfs-pvc.yaml
+>> kubectl apply -f nfs-pvc.yaml
 >> ```
 >>
 >> After applying the PVC, list the newly created Manila shares in your Public Cloud project:
@@ -555,13 +638,98 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
 >> ```
 >>
->> Deploy a Kubernetes Deployment for a web server with 2 replicas. The pods will mount and share the previously created `RWX` volume:
+>> Create a file named `nfs-deployment.yaml` with the following content:
+>>
+>> ```yaml
+>> apiVersion: apps/v1
+>> kind: Deployment
+>> metadata:
+>>   name: nfs-share
+>>   labels:
+>>     app: nfs-share
+>> spec:
+>>   replicas: 2
+>>   selector:
+>>     matchLabels:
+>>       app: nfs-share
+>>   template:
+>>     metadata:
+>>       labels:
+>>         app: nfs-share
+>>     spec:
+>>       containers:
+>>       - name: web-server
+>>         resources:
+>>           limits:
+>>             cpu: 250m
+>>             memory: 256Mi
+>>           requests:
+>>             cpu: 100m
+>>             memory: 256Mi
+>>         image: nginx
+>>         imagePullPolicy: IfNotPresent
+>>         volumeMounts:
+>>           - name: nfs-share-pvc
+>>             mountPath: /var/lib/www
+>>       volumes:
+>>       - name: nfs-share-pvc
+>>         persistentVolumeClaim:
+>>           claimName: nfs-share-pvc
+>>           readOnly: false
+>> ```
+>>
+>> Deploy the web server with 2 replicas, which will mount and share the previously created `RWX` volume:
 >>
 >> ```bash
->> kubectl apply -f poc/v2/nfs/dynamic-provisioning/nfs-deployment.yaml
+>> kubectl apply -f nfs-deployment.yaml
 >> ```
 >>
 >> You can verify the RWX functionality by connecting to one pod using`kubectl exec` command and creating a file in the mounted directory (e.g., `/var/lib/www/`). Then, connect to the second pod and check that the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
+>>
+>> **10\. Resize an NFS Share Using Dynamic Provisioning**
+>>
+>> > [!warning]
+>> >
+>> > Resizing an NFS share is only supported for:
+>> >
+>> > - Dynamically provisioned PersistentVolumeClaims (PVCs)
+>> > - Unmounted volumes (you must downscale your deployment before resizing to avoid errors)
+>> >
+>> > At this time, only share extension is supported — shrinking a volume is not possible.
+>> >
+>>
+>> To resize an existing Manila share:
+>>
+>> Scale down the deployment to ensure the volume is unmounted:
+>>
+>> ```bash
+>> kubectl scale deployment nfs-share --replicas 0
+>> ```
+>>
+>> Patch the PVC to request a new size (for example, 42Gi):
+>>
+>> ```bash
+>> kubectl patch pvc nfs-share-pvc -p '{ "spec": { "resources": { "requests": { "storage": "42Gi" }}}}'
+>> ```
+>>
+>> Verify that the OpenStack share has been updated:
+>>
+>> ```bash
+>> openstack --os-region SBG5 share show <SHARE_ID>
+>> ```
+>>
+>> If the share has been successfully extended, scale the deployment back up:
+>>
+>> ```bash
+>> kubectl scale deployment nfs-share --replicas 2
+>> ```
+>>
+>> > [!warning]
+>> >
+>> > Attempting to resize a PVC that is not dynamically provisioned by a StorageClass will result in an error such as:
+>> >
+>> > error: persistentvolumeclaims "existing-nfs-share-pvc" could not be patched: persistentvolumeclaims "existing-nfs-share-pvc" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
+>> >
 >>
 >> **10\. Mounting an Existing Manila Share as a Volume in Pods**
 >>
@@ -601,18 +769,61 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> - `SHARE_ACCESS_NAME` is the name of the share.
 >> - `SUBNET_CIDR` is the CIDR used when configuring the Manila CSI runtime.
 >>
->> Retrieve the NFS share ID and the share access ID, then update the `volumeAttributes.shareID` and `volumeAttributes.shareAccessID` parameters in the `poc/v2/nfs/static-provisioning/static-provisioning.yaml` file.
+>> Retrieve the NFS share ID and the share access ID, then create a file named `static-provisioning.yaml` and update the `volumeAttributes.shareID` and `volumeAttributes.shareAccessID` parameters:
+>>
+>> ```yaml
+>> apiVersion: v1
+>> kind: PersistentVolume
+>> metadata:
+>>   name: preprovisioned-nfs-share
+>>   labels:
+>>     name: preprovisioned-nfs-share
+>> spec:
+>>   accessModes:
+>>   - ReadWriteMany
+>>   capacity:
+>>     storage: 120Gi
+>>   csi:
+>>     driver: nfs.manila.csi.openstack.org
+>>     volumeHandle: preprovisioned-nfs-share
+>>     nodeStageSecretRef:
+>>       name: csi-manila-secrets
+>>       namespace: default
+>>     nodePublishSecretRef:
+>>       name: csi-manila-secrets
+>>       namespace: default
+>>     volumeAttributes:
+>>       shareID: <SHARE_ID>
+>>       shareAccessID: <SHARE_ACCESS_ID>
+>> ---
+>> apiVersion: v1
+>> kind: PersistentVolumeClaim
+>> metadata:
+>>   name: existing-nfs-share-pvc
+>> spec:
+>>   accessModes:
+>>   - ReadWriteMany
+>>   resources:
+>>     requests:
+>>       storage: 120Gi
+>>   storageClassName: "" # <--- Prevent default Cinder CSI usage
+>>   selector:
+>>     matchExpressions:
+>>     - key: name
+>>       operator: In
+>>       values: ["preprovisioned-nfs-share"]
+>> ```
 >>
 >> Apply the manifest to create a PersistentVolume and its PersistentVolumeClaim using the pre-provisioned NFS share. The Manila share will be used only if the pod claiming the PVC is deployed in your cluster:
 >>
 >> ```bash
->> kubectl apply -f poc/v2/nfs/static-provisioning/static-provisioning.yaml
+>> kubectl apply -f static-provisioning.yaml
 >> ```
 >>
 >> Deploy a pod that mounts this share:
 >>
 >> ```bash
->> kubectl apply -f poc/v2/nfs/static-provisioning/pod.yaml
+>> kubectl apply -f pod.yaml
 >> ```
 >>
 >> You can now use `kubectl exec` to access the pod and run `df -h` to verify that the pre-created Manila share is properly mounted. 
