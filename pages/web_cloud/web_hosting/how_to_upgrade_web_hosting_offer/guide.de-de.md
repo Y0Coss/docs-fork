@@ -140,11 +140,9 @@ Um die Quota des auf Ihrem Webhosting verwendeten FTP-Speicherplatzes zu überpr
 >>
 > **Schritt 3**
 >>
->> Im Feld **Allgemeine Informationen** finden Sie die Adresse unter **Speicherplatz**.
+>> Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->>
->> Der verwendete Speicherplatz steht unter dieser Erwähnung.
 
 #### 4 - E-Mail-Accounts
 
