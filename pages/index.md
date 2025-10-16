@@ -2154,7 +2154,7 @@
                 + [Tracking slow MySQL queries with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_mysql_slow_queries)
                 + [Supervising your HAProxy deployment with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_haproxy)
                 + [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
-                + [Extract logs from Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_extract_logs_from_ldp)
+                + [Extracting logs from Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_extract_logs_from_ldp)
                 + [Handling roles and permissions when IAM is not enabled](manage_and_operate/observability/logs_data_platform/getting_started_roles_permission)
                 + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
     + [Key Management Service (KMS)](manage-operate-kms)

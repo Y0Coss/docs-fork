@@ -1,6 +1,6 @@
 ---
-title: Extract logs from Logs Data Platform
-excerpt: Export logs using Logstash or Elasticdump
+title: Extracting logs from Logs Data Platform
+excerpt: How to export logs using Logstash or Elasticdump
 updated: 2025-10-16
 ---
 
