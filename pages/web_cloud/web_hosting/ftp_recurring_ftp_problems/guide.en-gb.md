@@ -75,11 +75,9 @@ To check the remaining storage space on your hosting, click on the tabs below to
 >>
 > **Step 3**
 >>
->> In the **General information** box, you will see the address under **Disk space**.
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->>
->> The storage space used will appear below this note.
 
 ### I can't transfer my files to the FTP server.
 
