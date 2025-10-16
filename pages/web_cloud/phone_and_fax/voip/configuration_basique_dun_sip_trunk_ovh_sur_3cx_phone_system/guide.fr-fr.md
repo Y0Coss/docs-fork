@@ -49,24 +49,24 @@ Nous allons configurer le trunk sur 3CX, à l'aide du template.
 > [!tabs]
 > **Étape 1**
 >>
->> - Connectez-vous à l'interface d'administration de 3CX.
+>> Connectez-vous à l'interface d'administration de 3CX.
 >> 
 >> ![3CX Phone Systeme](images/3cx_phone_system-login.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> - Cliquez sur `Trunk SIP`{.action}, puis sur `Ajouter un Trunk SIP`{.action}.
+>> Cliquez sur `Trunk SIP`{.action}, puis sur `Ajouter un Trunk SIP`{.action}.
 >>
 >> ![3CX Phone Systeme](images/3cx_phone_system-trunk01.png){.thumbnail}
 >>
 > **Étape 3**
 >>
->> - Complétez le formulaire pour sélectionner le template OVHcloud. 
+>> Complétez le formulaire pour sélectionner le template OVHcloud. 
 >>
->>     - Dans le champ **Choisir un Pays**, sélectionnez le pays de votre Trunk. >> Dans ce guide nous sélectionnons `FR`.
->>     - Dans le champ **Sélectionner un opérateur de votre pays**, sélectionnez `OVH`.
->>     - Dans **Numéro principal**, entrez le numéro de votre trunk (ici, `0033XXXXXXX90`).
->>     - Vérifiez les informations et cliquez sur `OK`{.action}.
+>> - Dans le champ **Choisir un Pays**, sélectionnez le pays de votre Trunk. Dans ce guide nous sélectionnons `FR`.
+>> - Dans le champ **Sélectionner un opérateur de votre pays**, sélectionnez `OVH`.
+>> - Dans **Numéro principal**, entrez le numéro de votre trunk (ici, `0033XXXXXXX90`).
+>> - Vérifiez les informations et cliquez sur `OK`{.action}.
 >>
 >> ![3CX Phone Systeme](images/3cx_phone_system-trunk02.png){.thumbnail}
 >>
