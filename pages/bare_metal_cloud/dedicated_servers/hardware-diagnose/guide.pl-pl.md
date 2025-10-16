@@ -1,7 +1,7 @@
 ---
 title: "Diagnostyka usterek sprzętowych serwera dedykowanego"
 excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 > [!primary]
@@ -77,12 +77,6 @@ Aby zweryfikować system plików, wprowadź następującą komendę:
 
 ```bash
 fsck -fy
-```
-
-W celu przeprowadzenia testu odczytu wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
 ```
 
 Aby wykonać test zapisu, wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości
