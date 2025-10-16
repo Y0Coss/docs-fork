@@ -145,7 +145,7 @@ OVHcloud bietet außerdem eine Webanwendung an, mit der Sie Ihre E-Mail-Adresse 
 
 ### Sicherung Ihres E-Mail-Accounts erstellen
 
-Wenn Sie eine Aktion durchführen müssen, die zu einem Datenverlust Ihres E-Mail-Accounts führen könnte, empfehlen wir Ihnen, vorher eine Sicherung des betreffenden Ihres E-Mail-Accounts durchzuführen. Dazu konsultieren Sie den Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" unserer Anleitung "[Manuelle Migration Ihres E-Mail-Accounts](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+Wenn Sie eine Aktion durchführen müssen, die zu einem Datenverlust Ihres E-Mail-Accounts führen könnte, empfehlen wir Ihnen, vorher eine Sicherung des betreffenden Ihres E-Mail-Accounts durchzuführen. Konsultieren Sie hierzu den Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" unserer Anleitung "[Manuelle Migration Ihres E-Mail-Accounts](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Vorhandene Einstellungen ändern
 
