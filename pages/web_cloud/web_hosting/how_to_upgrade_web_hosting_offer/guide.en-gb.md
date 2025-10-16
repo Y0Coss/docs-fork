@@ -90,7 +90,7 @@ Once you have deleted data from your databases, recalculate the quota used. To d
 >>
 > **Step 5**
 >>
->> In the window that pops up, click the `Confirm`{.action} button directly.
+>> In the window that pops up, click the `Confirm`{.action} button.
 >>
 >> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
 >>
@@ -137,11 +137,9 @@ To check the FTP storage space quota used on your web hosting plan, click on the
 >>
 > **Step 3**
 >>
->> In the **General information** box, you will see the address under **Disk space**.
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->>
->> The storage space used will appear below this note.
 
 #### 4 - Email accounts
 
