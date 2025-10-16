@@ -75,7 +75,7 @@ To check the file system, run the following command:
 fsck-fy
 ```
 
-For a write test, run the command below. Replace `sd(x)` with your own values
+For a read test, run the command below. Replace `sd(x)` with your own values
 
 ```bash
 hdparm -t /dev/sd(x)

@@ -4,10 +4,6 @@ excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare m
 updated: 2025-10-16
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 A un certo punto della vita del tuo server, potresti riscontrare un guasto a causa di un problema hardware. Quando il server viene avviato in modalità Rescue OVHcloud, sono disponibili diversi strumenti di diagnostica che permettono di identificare i componenti hardware difettosi.
@@ -79,7 +75,7 @@ Per verificare il file system, esegui il comando:
 fsck -fy
 ```
 
-Per effettuare un test di scrittura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori
+Per effettuare un test di lettura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori
 
 ```bash
 hdparm -t /dev/sd(x)

@@ -4,10 +4,6 @@ excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar av
 updated: 2025-10-16
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Sumário
 
 A um determinado momento da vida do seu servidor, pode sofrer uma avaria devido a um problema material. Quando o servidor é iniciado através do modo rescue OVHcloud, dispõe de várias ferramentas de diagnóstico que permitem identificar os componentes materiais com defeito.
@@ -79,7 +75,7 @@ Para verificar o sistema de arquivos, execute o comando a seguir:
 fsck -fy
 ```
 
-Para efetuar um teste de escrita, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores
+Para efetuar um teste de leitura, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores
 
 ```bash
 hdparm -t /dev/sd(x)
