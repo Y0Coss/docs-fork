@@ -1,6 +1,6 @@
 ---
 title: Using OpenSearch Dashboards with Logs Data Platform
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -38,7 +38,7 @@ So now Logs Data Platform knows which stream you want to browse. Now let's confi
 
 ### Access your OpenSearch Dashboards instance
 
-To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximately 20 minutes.
+To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximately 20 minutes.
 
 ![osd creation](images/osd_created.png){.thumbnail}
 
@@ -62,4 +62,3 @@ To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboa
 - Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)
-

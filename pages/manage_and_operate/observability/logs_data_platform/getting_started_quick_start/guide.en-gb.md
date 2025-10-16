@@ -1,6 +1,6 @@
 ---
 title: Quick start for Logs Data Platform
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ Once IAM is enabled you will land on the Logs Data Platform control panel:
 
 ![Main interface](images/manager_start.png){.thumbnail}
 
-Your Logs Data Platform service name is located on the top left of the page (as shown in the red square on the capture). This service name is used in the IAM URN of the Logs Data Platform service like this:
+Your Logs Data Platform service name is located on the top left of the page (as shown in the orange square on the capture). This service name is used in the IAM URN of the Logs Data Platform service like this:
 
 
 ```urn:v1:eu:resource:ldp:ldp-ag-03980```
@@ -95,7 +95,7 @@ As said before, you can retrieve the ports and the address of your cluster at th
 
 ![About page](images/about.png){.thumbnail}
 
-To send your logs to Logs Data Platform you can easily test your stream by doing, for example, a simple `echo` followed by an `openssl` command. Here are 3 examples, choose the format you like the most with your preferred terminal:  Note that each format has its own timestamp format: GELF uses [seconds from epoch](https://en.wikipedia.org/wiki/Unix_time), RFC 5424 and LTSV use the [RFC 3339](https://tools.ietf.org/html/rfc3339). Don't forget to change the **timestamp** to your current time to see your logs (by default Graylog displays recent logs; you can change the search scope using the top‑left time picker. Also, ensure you replace the **token** with the correct one.”
+To send your logs to Logs Data Platform you can easily test your stream by doing, for example, a simple `echo` followed by an `openssl` command. Here are 3 examples, choose the format you like the most with your preferred terminal:  Note that each format has its own timestamp format: GELF uses [seconds from epoch](https://en.wikipedia.org/wiki/Unix_time), RFC 5424 and LTSV use the [RFC 3339](https://tools.ietf.org/html/rfc3339). Don't forget to change the **timestamp** to your current time to see your logs (by default Graylog displays recent logs; you can change the search scope using the top‑left time picker. Also, ensure you replace the **token** with the correct one.
 
 *GELF*:
 
@@ -134,9 +134,7 @@ The Graylog login page looks like this:
 
 On this page you can select the Identity Provider available to this cluster. Select the right provider for your service and you will be redirected to the OVHcloud login page or, if you are already logged, you will land on the confirmation page.
 
-
 ![confirmation](images/confirmation.png){.thumbnail}
-
 
 Once logged, you will be redirected to this page:
 
@@ -196,7 +194,8 @@ In this screenshot, you can see that we added a widget that represents the mean 
 
 Note that dashboards are interactive and you can use the top search bar and the date picker to only display the widgets for a particular type of event. Try it ;-).
 
-## Going further
+## Go further
+
 You have only scratched the surface of what Logs Data Platform can do for you. you will soon find how to:
 
 - [Send correctly formatted logs](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention) to use custom types as number, boolean and other stuff.

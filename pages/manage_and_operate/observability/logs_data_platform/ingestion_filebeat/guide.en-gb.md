@@ -1,6 +1,6 @@
 ---
 title: Pushing logs with a forwarder - Filebeat (Linux)
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective

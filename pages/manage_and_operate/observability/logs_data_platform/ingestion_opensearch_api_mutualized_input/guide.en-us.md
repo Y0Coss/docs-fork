@@ -1,7 +1,7 @@
 ---
 title: Mutualized input - OpenSearch API
 excerpt: Send your logs to the platform with the OpenSearch API.
-updated: 2025-09-30
+updated: 2025-10-16
 ---
 
 ## Overview
@@ -58,10 +58,13 @@ When **IAM** is enabled for your Logs Data Platform service, the authentication 
 - **Legacy (non‑IAM) authentication** uses basic username/password (or a legacy token) as described in the existing examples.
 - **IAM authentication** uses a **Bearer token** obtained from OVHcloud IAM (Personal Access Token or Service Account token).
 
- **How to obtain a Bearer token** – you can generate one via a service account or a local user:
+**How to obtain a Bearer token** – you can generate one via a service account or a local user:
+
 For a service account:
+
 - Create a [service account](/pages/manage_and_operate/iam/identities-management/) and assign the required IAM policies (see the [IAM access management guide](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management)).
 - Retrieve an API token using the OAuth2 client‑credentials flow as described in the [service‑account authentication guide](/pages/account_and_service_management/account_information/authenticate-api-with-service-account). The request looks like:
+
    ```bash
    curl --request POST \
         --url 'https://www.ovh.com/auth/oauth2/token' \
@@ -74,7 +77,8 @@ For a service account:
    The response contains an `access_token` field – this is the Bearer token to use.
 
 For a local user:
-- You can create a local user by following the dedicated section on the [Identities management guide](/pages/manage_and_operate/iam/identities-management/)
+
+- You can create a local user by following the dedicated section on the [Identities management guide](/pages/manage_and_operate/iam/identities-management/).
 - You can generate a Personal Access Token via the IAM API. See the FAQ documentation or use the call:
 
 > [!api]
@@ -114,7 +118,7 @@ For clients that do not support the `Authorization: Bearer` header, you can use 
 Authorization: Basic pat_jwt_<your_value>:<bearer_token_value>
 ```
 
-Replace `<your_value>` with any ascii value to identify your Personal Access Token (PAT) and `<bearer_token_value>` with the token obtained as described above. This allows the request to be accepted by the OpenSearch endpoint with a user/password couple while using the same token.
+Replace `<your_value>` with any ASCII value to identify your Personal Access Token (PAT) and `<bearer_token_value>` with the token obtained as described above. This allows the request to be accepted by the OpenSearch endpoint with a user/password couple while using the same token.
 
 
 All existing examples that use basic credentials remain valid for customers who have **not** enabled IAM.

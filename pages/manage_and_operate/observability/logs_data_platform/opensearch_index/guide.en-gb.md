@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Index as a Service
 excerpt: Use the power of OpenSearch without managing a cluster.
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -34,7 +34,7 @@ Simply choose a suffix for your index. The final name will follow this conventio
 
 `<service_name>-i-<suffix>`.
 
-The service name is the identifier of your Logs Data Platform service. It is different from the username used by non IAM users. The service name starts with `ldp` (ex: ldp-ab-12345). On the other hand, the username starts with `logs` (ex: logs-ab-12345). In this guide we will use **<service_name>** or **<username>** as tags to let you differentiate both usages. You can find both pieces of information in the **Logs Data Platform control panel**.
+The service name is the identifier of your Logs Data Platform service. It is different from the username used by non IAM users. The service name starts with `ldp` (e.g. `ldp-ab-12345`). On the other hand, the username starts with `logs` (e.g. `logs-ab-12345`). In this guide we will use **<service_name>** or **<username>** as tags to let you differentiate both usages. You can find both pieces of information in the **Logs Data Platform control panel**.
 
 > [!info]
 >
@@ -84,7 +84,7 @@ The rights relative to the management of OpenSearch items through the **OpenSear
 Attach these rights to your policies freely whether you need to interact directly with the OpenSearch API or through the manager.
 
 The prefix of all indices or aliases created is <service_name>. Example: ldp-ab-12345-i-my-awesome-index.
-To interact with the OpenSearch API, you can either create [service accounts](/pages/account_and_service_management/account_information/authenticate-api-with-service-account) and leverages the OpenID workflow, or create [local users](/pages/account_and_service_management/account_information/ovhcloud-users-management) with their Personal Access Token with the API:
+To interact with the OpenSearch API, you can either create [service accounts](/pages/account_and_service_management/account_information/authenticate-api-with-service-account) and leverage the OpenID workflow, or create [local users](/pages/account_and_service_management/account_information/ovhcloud-users-management) with their Personal Access Token with the API:
 
 > [!api]
 >
@@ -109,8 +109,9 @@ Here, in both examples, the index created will have 2 shards and will appear in 
 
 #### Legacy users
 
-If you don't have IAM enabled on your account (which will be deprecated) the prefix of indices is <username>:
-Here is an example with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
+If you don't have IAM enabled on your account (which will be deprecated) the prefix of indices is `<username>:`.
+
+Here is an example with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster:
 
 ```bash
 $ curl -u logs-ab-12345:mypassword -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/logs-ab-12345-i-another-index' -d '{ "settings" : {"number_of_shards" : 1}}'

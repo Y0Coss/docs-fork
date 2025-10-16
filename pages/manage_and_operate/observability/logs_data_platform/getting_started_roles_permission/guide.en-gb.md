@@ -1,7 +1,7 @@
 ---
 title: Handling roles and permissions when IAM is not enabled
 excerpt: Manage who can have access to your data and what they can do with them.
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Overview
@@ -15,7 +15,7 @@ Log policies also affect several teams regarding access rights; for instance, pr
 > We strongly advise using IAM and not using the content of this guide for new Logs Data Platform services.
 
 
-We maintain the [Role Based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control) to allow users to configure access rights if they cannot yet enable IAM. This document will show you how to use this system to configure access rights. However, as stated above, this feature will not be upgraded and will be fully replaced by IAM access management.
+We maintain the [Role Based access control](https://en.wikipedia.org/wiki/Role-based_access_control) to allow users to configure access rights if they cannot yet enable IAM. This document will show you how to use this system to configure access rights. However, as stated above, this feature will not be upgraded and will be fully replaced by IAM access management.
 
 ## Creating a Role
 
@@ -27,7 +27,7 @@ Once created, you will be able to configure the role details: its permissions an
 
 ## Managing Permissions
 
-Click on the `...`{.action} button on the right to display the menu and navigate to Manage Permissions.
+Click on the `...`{.action} button on the right to display the menu and navigate to `Modify Permissions`{.action}.
 
 ![menu\_permission](images/menu_permissions.png){.thumbnail}
 

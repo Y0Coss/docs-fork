@@ -1,7 +1,7 @@
 ---
 title: IAM for Logs Data Platform - Configuring Access Rights
 excerpt: A comprehensive guide to managing access rights for Logs Data Platform using OVHcloud IAM
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 <style>
@@ -30,7 +30,7 @@ This guide provides instructions for configuring access rights on OVHcloud IAM t
 
 ## Policies and identities
 
-This guide leverages [local users](/pages/account_and_service_management/account_information/ovhcloud-users-management) to explain how you can share resources with another user. The policies created can be applied to any OVHcloud identities through the OVHcloud API. You can use these policies to share data with a local user, another OVHcloud user account or an OAuth client. You can refer to the specific [IAM Policies with API guide](/pages/account_and_service_management/account_information/iam-policies-api) to recreate all these policies with the API.
+This guide leverages [local users](/pages/account_and_service_management/account_information/ovhcloud-users-management) to explain how you can share resources with another user. The policies created can be applied to any OVHcloud identities through the OVHcloud API. You can use these policies to share data with a local user, another OVHcloud user account or an OAuth client. You can refer to the specific [IAM Policies with API guide](/pages/account_and_service_management/account_information/iam-policies-api) to re-create all these policies with the API.
 
 The identity will see a new service listed in their Logs Data Platform. This service contains the shared Logs Data Platform items. To ensure the recipient can see the shared items, we must share a view of the service with them.
 

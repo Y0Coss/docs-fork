@@ -1,7 +1,7 @@
 ---
 title: IAM for Logs Data Platform - Presentation and FAQ
 excerpt: A presentation on how IAM works with Logs Data Platform
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Mutualized Inputs
 excerpt: Discover what inputs are and how to use them to ingest your logs in Logs Data Platform
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -91,4 +91,3 @@ You should now have all the information you need to configure your software to i
 [Python 3 SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_python_3_logging_ldp)<br>
 [Rust SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_rust_loggers) <br>
 [Ingest the logs from your Kubernetes cluster](/pages/manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit) <br>
-

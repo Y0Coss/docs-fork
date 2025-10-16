@@ -1,7 +1,7 @@
 ---
 title: IAM for Logs Data Platform - Migration and Breaking Changes
 excerpt: Important changes to be aware of before the IAM migration
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 > [!primary]

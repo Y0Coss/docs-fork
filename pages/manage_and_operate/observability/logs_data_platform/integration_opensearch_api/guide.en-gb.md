@@ -1,7 +1,7 @@
 ---
 title: Exposing your logs to third-party tools via the OpenSearch API
 excerpt: 'Leverage any software that can use the OpenSearch API with Logs Data Platform.'
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective

@@ -1,12 +1,12 @@
 ---
 title: Securing Logs Data Platform's APIs with tokens
 excerpt: If you want to give access to your logs to a software application or automate tasks that depend on your logs, you may need to access them through the API.
-updated: 2025-10-13
+updated: 2025-10-16
 ---
 
 ## Objective
 
-With Logs Data Platform, there are 3 ways to query your logs.
+With Logs Data Platform, there are 3 ways to query your logs:
 
 - The [Graylog Web Interface](https://gra1.logs.ovh.com)
 - The [Graylog API](https://gra1.logs.ovh.com/api/api-browser/global/index.html#!/search47universal47relative/searchRelative)
@@ -18,14 +18,13 @@ All these accesses are secured by your username and password. But what if you do
 
 ## Requirements
 
-- a service with IAM enabled to use IAM tokens or without IAM to use legacy tokens
+- A service with IAM enabled to use IAM tokens or without IAM to use legacy tokens
 
 ## Instructions
 
 ### Generating tokens with IAM
 
 Before generating tokens with IAM you will need to create a [Service Account or a Local User](/pages/manage_and_operate/iam/identities-management). Both have specificities detailed in IAM documentation. Don't forget to attach these new identities to your [IAM Policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
-
 
 #### Service accounts
 
@@ -42,16 +41,15 @@ With this API call, you can create OAuth2 credentials for several authentication
 
 You must supply the following values:
 
-- **callbackUrls**: an empty array of callback URLs `[]`
-- **flow**: `CLIENT_CREDENTIALS`
-- **name**: the name you would like to provide to your identifier
-- **description**: a description of your identifier. We recommend describing how you will use this identifier. If you audit your access in the future, it is easier to link it to your application name, so that you can easily find out where the identifier is deployed (and what the impact will be if you change your access).
+- **callbackUrls**: An empty array of callback URLs `[]`.
+- **flow**: `CLIENT_CREDENTIALS`.
+- **name**: The name you would like to provide to your identifier.
+- **description**: A description of your identifier. We recommend describing how you will use this identifier. If you audit your access in the future, it is easier to link it to your application name, so that you can easily find out where the identifier is deployed (and what the impact will be if you change your access).
 
 In response, the API will provide you with two pieces of information:
 
-- **clientId**: your service account ID
-- **clientSecret**: a token allowing you to authenticate yourself on our APIs. This information must be stored securely. With these two credentials, you can log in to this service account and get the rights associated with it. Save this value. It will not be possible to retrieve it at a later stage.
-
+- **clientId**: Your service account ID.
+- **clientSecret**: A token allowing you to authenticate yourself on our APIs. This information must be stored securely. With these two credentials, you can log in to this service account and get the rights associated with it. Save this value. It will not be possible to retrieve it at a later stage.
 
 In order to retrieve an API token, you can use the following HTTP call with these two pieces of information:
 
@@ -67,8 +65,8 @@ curl --request POST \
 
 Depending on the location of your API, you will need to use the following URL:
 
-- **EU API**: `https://www.ovh.com/auth/oauth2/token`
-- **CA API**: `https://ca.ovh.com/auth/oauth2/token`
+- **EU API**: `https://www.ovh.com/auth/oauth2/token`.
+- **CA API**: `https://ca.ovh.com/auth/oauth2/token`.
 
 Following this API call, you will receive a response in the following format:
 
@@ -81,7 +79,7 @@ Following this API call, you will receive a response in the following format:
 }
 ```
 
-Save the token in the **access_token** field. You will need it to authenticate your API calls.
+Save the token in the **access_token** field. You will need it to authenticate your API calls. 
 
 This access token can then be used to interact with Logs Data Platform backend APIs. Don't forget to manage access rights of your service account with the [IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
 
@@ -89,7 +87,7 @@ This access token can then be used to interact with Logs Data Platform backend A
 ldp@laptop curl -H 'content-type: application/json' --oauth2-bearer <access_token> -XPUT 'https://<your_cluster>.logs.ovh.com:9200/_cat/indices/ldp-*'
 ```
 
-or with the Bearer header
+Or with the Bearer header:
 
 ```bash
 ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <access_token>" -XPUT 'https://<your_cluster>.logs.ovh.com:9200/_cat/indices/ldp-*'
@@ -97,11 +95,9 @@ ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <a
 
 Note that access tokens created through a service account expire after some time. You must regenerate a new one after it has expired.
 
-
 #### Local Users
 
 Create a local user by following the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management) and create the right [IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management). Once created, you can use the OVHcloud API to create a token for this user:
-
 
 > [!api]
 >
@@ -110,20 +106,19 @@ Create a local user by following the [dedicated documentation](/pages/account_an
 
 This call will return a bearer access token for your local user.
 
-you can then use this token on Logs Data Platform backend APIs:
+You can then use this token on Logs Data Platform backend APIs:
 
 ```bash
 ldp@laptop curl -H 'content-type: application/json' --oauth2-bearer <access_token> -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
 ```
 
-or with the Bearer header
+Or with the Bearer header
 
 ```bash
 ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <access_token>" -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
 ```
 
-These tokens do not expire but can be deleted whenever needed with this call
-
+These tokens do not expire but can be deleted whenever needed with this call:
 
 > [!api]
 >
@@ -140,11 +135,10 @@ ldp@laptop curl -H 'content-type: application/json' \\
   -XPUT 'https://<your_cluster>.logs.ovh.com:9200/_cat/indices/ldp-*'
 ```
 
-
 ### Legacy tokens
 
-
 Legacy tokens are still working and maintained for users without IAM. They are not available to IAM-enabled users. We strongly encourage you to migrate to IAM now and use the more flexible tokens described above.
+
 Once you have logged into Logs Data Platform you will have access to the token generation function from the Configuration panel.
 
 ![Token Menu](images/token_menu.png){.thumbnail}
@@ -191,4 +185,3 @@ The Graylog Web Interface does not support token authentication.
 - Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)
-
