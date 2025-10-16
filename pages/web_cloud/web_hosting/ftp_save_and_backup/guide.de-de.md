@@ -65,11 +65,11 @@ Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, klicken Sie auf di
 >>
 > **Schritt 3**
 >>
->> Im Feld **Allgemeine Informationen** finden Sie die Adresse unter **Speicherplatz**.
+>> Im Feld **Allgemeine Informationen** finden Sie Speicherplatzauslastung unter **Speicherplatz**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
->> Der verwendete Speicherplatz steht unter dieser Erwähnung.Wenn mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) verwenden).
+>> Wenn mehr als die Hälfte des hier angezeigten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) verwenden).
 >>
 >> Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
 
