@@ -56,9 +56,9 @@ Wenn Sie sich nicht authentifizieren können, ändern Sie Ihr FTP-Passwort entsp
 
 ### Auf meiner Website sind zufällige Fehler aufgetreten
 
-Wenn Sie den Speicherplatz auf Ihrem Shared Hosting überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
+Wenn Sie den Speicherplatz Ihres Webhostings überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
 
-Um den verbleibenden Speicherplatz auf Ihrem Hosting zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -75,11 +75,9 @@ Um den verbleibenden Speicherplatz auf Ihrem Hosting zu überprüfen, klicken Si
 >>
 > **Schritt 3**
 >>
->> Im Feld **Allgemeine Informationen** finden Sie die Adresse unter **Speicherplatz**.
+>> Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->>
->> Der verwendete Speicherplatz steht unter dieser Erwähnung.
 
 ### Ich kann meine Dateien nicht auf den FTP Server übertragen
 
