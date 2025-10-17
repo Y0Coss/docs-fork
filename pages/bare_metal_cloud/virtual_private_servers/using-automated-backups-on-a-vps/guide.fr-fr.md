@@ -54,8 +54,8 @@ Pour plus de flexibilité avec vos sauvegardes, vous pouvez activer l'option Bac
 
 ### Comment souscrire au Backup automatisé Premium
 
-L'option Premium Automated Backup crée une sauvegarde de votre VPS toutes les 24 heures à l'heure spécifiée.  
-Vous aurez accès à toutes les sauvegardes quotidiennes des 7 derniers jours. Une fois les 7 sauvegardes créées, chaque nouvelle sauvegarde remplacera la plus ancienne.
+Avec l'option Backup automatisé Premium, une sauvegarde de votre VPS est créée toutes les 24 heures à l'heure spécifiée.  
+Vous aurez accès à toutes les sauvegardes quotidiennes des 7 derniers jours. Une fois les 7 premières sauvegardes créées, chaque nouvelle sauvegarde remplacera la plus ancienne.
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action}, sélectionnez `Serveurs privés virtuels`{.action}, puis cliquez sur le nom de votre VPS.
 
