@@ -437,17 +437,12 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>   os-domainName: "default"
 >>   os-projectName: "os-projectName"
 >>   os-projectDomainID: "default"
->> 
->>   # Authentication using trustee credentials
->>   # os-trustID: "some-trust-id"
->>   # os-trusteeID: "some-trustee-id"
->>   # os-trusteePassword: "some-trustee-password"
 >> ```
 >>
 >> Then, apply it to your Kubernetes cluster:
 >>
 >> ```bash
->> kubectl apply -f ./secrets.yaml
+>> kubectl apply -f secrets.yaml
 >> ```
 >>
 >> 3. Configure the OpenStack shared network
@@ -541,15 +536,15 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> Example:
 >>
 >> ```bash
->> nfs:
->>   matchExportLocationAddress: 10.42.0.0/16
+>> "nfs":
+>>   "matchExportLocationAddress": "10.42.0.0/16"
 >> ```
 >>
 >> Apply the ConfigMap to your Kubernetes cluster:
 >>
 >> ```bash
 >> # Optional if runtime config is already defined in Helm values
->> kubectl apply -f ./manila-runtime-configmap.yaml
+>> kubectl apply -f manila-runtime-configmap.yaml
 >> ```
 >>
 >> **9\. Creating NFS Shares via Dynamic Provisioning**
@@ -593,7 +588,8 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>   csi.storage.k8s.io/node-publish-secret-namespace: default
 >> ```
 >>
->> - Update the parameter.shareNetworkID value with the shared network ID retrieved in the previous step.
+>> - Update the `parameter.shareNetworkID` value with the shared network identifier.
+>> - update the `parameter.nfs-shareClient` value with the subnet CIDR defined during cluster creation.
 >>
 >> Create the dynamic StorageClass, applying the StorageClass to your cluster:
 >>
@@ -731,7 +727,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > error: persistentvolumeclaims "existing-nfs-share-pvc" could not be patched: persistentvolumeclaims "existing-nfs-share-pvc" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
 >> >
 >>
->> **10\. Mounting an Existing Manila Share as a Volume in Pods**
+>> **11\. Mounting an Existing Manila Share as a Volume in Pods**
 >>
 >> As shown earlier, a Kubernetes StorageClass can dynamically create Manila shares exposed via NFS. Alternatively, you can use a pre-provisioned Manila share and mount it directly in a Pod.
 >>

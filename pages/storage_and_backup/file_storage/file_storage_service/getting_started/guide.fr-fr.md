@@ -438,18 +438,13 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>   os-domainName: "default"
 >>   os-projectName: "os-projectName"
 >>   os-projectDomainID: "default"
->> 
->>   # Authentication using trustee credentials
->>   # os-trustID: "some-trust-id"
->>   # os-trusteeID: "some-trustee-id"
->>   # os-trusteePassword: "some-trustee-password"
 >> ```
 >>
 >> Ensuite, appliquez-le à votre cluster Kubernetes :
 >>
 >> ```bash
 >> # Appliquez les informations d'identification OpenStack pour Manila
->> kubectl apply -f ./secrets.yaml
+>> kubectl apply -f secrets.yaml
 >> ```
 >>
 >> 3. Configurez le réseau partagé OpenStack
@@ -543,15 +538,15 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> Exemple :
 >>
 >> ```bash
->> nfs:
->>   matchExportLocationAddress: 10.42.0.0/16
+>> "nfs":
+>>   "matchExportLocationAddress": "10.42.0.0/16"
 >> ```
 >>
 >> Appliquez la ConfigMap à votre cluster Kubernetes :
 >>
 >> ```bash
 >> # Optionnel si la configuration de runtime est déjà définie dans les valeurs Helm
->> kubectl apply -f ./manila-runtime-configmap.yaml
+>> kubectl apply -f manila-runtime-configmap.yaml
 >> ```
 >>
 >> **9. Création de shares NFS via provisionnement dynamique**
@@ -597,6 +592,9 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>   csi.storage.k8s.io/node-publish-secret-name: csi-manila-secrets
 >>   csi.storage.k8s.io/node-publish-secret-namespace: default
 >> ```
+>>
+>> - Mettez à jour la valeur `parameter.shareNetworkID` avec l'identifiant réseau partagé.
+>> - Mettez à jour la valeur `parameter.nfs-shareClient` avec le CIDR du sous-réseau défini lors de la création du cluster.
 >>
 >> Créez la StorageClass dynamique en appliquant la StorageClass à votre cluster :
 >>
