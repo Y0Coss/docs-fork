@@ -243,19 +243,26 @@ web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-c
 web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: E-Mail-Anwendung auf Ihrem Mobilgerät einrichten
 web-cloud-domains: Domains
 web-cloud-domains-api: API
-web-cloud-domains-api-frequent-tasks: Wiederkehrende Tasks
+web-cloud-domains-api-key-concepts: Schlüsselkonzepte
+web-cloud-domains-api-configuration: Konfiguration
+web-cloud-domains-api-migration: Migration
 web-cloud-domains-dns: DNS (Domain Name System)
-web-cloud-domains-dns-dns-options: DNS-Optionen
-web-cloud-domains-dns-dns-records: DNS-Einträge
-web-cloud-domains-dns-dns-servers: DNS-Server
-web-cloud-domains-dns-dns-tools: DNS-Tools
-web-cloud-domains-dns-dns-zone: DNS-Zone
+web-cloud-domains-dns-configuration-dns-options: DNS-Optionen
+web-cloud-domains-dns-configuration-dns-records: DNS-Einträge
+web-cloud-domains-dns-configuration-dns-servers: DNS-Server
+web-cloud-domains-dns-key-concepts: Schlüsselkonzepte
+web-cloud-domains-dns-configuration: Konfiguration
+web-cloud-domains-dns-configuration-dns-zone: DNS-Zone
+web-cloud-domains-dns-security: Sicherheit
+web-cloud-domains-dns-tutorials: Tutorials
 web-cloud-domains-domain-names: Domainnamen
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Änderung des Inhabers eines Domainnamens (Trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Änderung des Inhabers eines Domainnamens (Trade)
 web-cloud-domains-domain-names-getting-started: Erste Schritte
-web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Eingehender Transfer zu OVHcloud
+web-cloud-domains-domain-names-configuration: Konfiguration
+web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Eingehender Transfer zu OVHcloud
 web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transfer ausgehend von OVHcloud
-web-cloud-domains-domain-names-troubleshooting: Diagnose und Fehlerbehebung
+web-cloud-domains-domain-names-troubleshooting: Diagnose
+web-cloud-domains-domain-names-migration: Migration
 web-cloud-domains-domain-names-tutorials: Tutorials
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Internetzugang
