@@ -163,11 +163,11 @@ Esta operação realiza-se em vários passos. Certifique-se de que tem a palavra
 
 #### 1 - Escolher o programa ou a interface que vai utilizar
 
-Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar para aceder à cópia de segurança do seu espaço de armazenamento. Se já decidiu, passe para o passo 2. Caso contrário, recomendamos que utilize uma destas três soluções:
+Primeiro, defina o software ou a interface que irá utilizar para se ligar à cópia de segurança do seu espaço de armazenamento. Se já o conhece, avance diretamente para o passo 2. Caso contrário, recomendamos que utilize uma das duas soluções seguintes:
 
-- **FileZilla**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do FileZilla”](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Este manual não substitui a documentação oficial do editor.
+- **FileZilla**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual "[Guia de utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)". Este manual não substitui a documentação oficial do editor.
 
-- **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). Este manual não substitui a documentação oficial do editor.
+- **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual "[Guia de utilização do Cyberduck (MAC)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)". Este manual não substitui a documentação oficial do editor.
 
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
 
@@ -179,7 +179,7 @@ Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojame
 
 ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
-Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
+Caso não tenha a palavra-passe do utilizador FTP, consulte o manual "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

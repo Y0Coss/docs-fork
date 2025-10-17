@@ -163,9 +163,9 @@ Questa operazione prevede diversi step. Assicurati di avere a disposizione la pa
 
 #### 1. Scegliere il software o l’interfaccia Web da utilizzare
 
-Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere al backup del tuo spazio di storage. Se hai già preso la tua decisione, passa direttamente allo step 2. In caso contrario, ecco alcune soluzioni consigliate:
+Per prima cosa, definisci il software o l'interfaccia che utilizzerai per collegarti al backup del tuo spazio di archiviazione. Se lo conosci già, passa direttamente alla fase 2. In caso contrario, ti consigliamo di utilizzare una delle due soluzioni seguenti:
 
-- **FileZilla**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra[ guida all’utilizzo di FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
+- **FileZilla**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
 - **Cyberduck**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di Cyberduck (MAC)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
@@ -179,7 +179,7 @@ Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo h
 
 ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
-Se non possiedi più la password, segui le indicazioni descritte nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+Se non possiedi più la password, segui le indicazioni descritte nella guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

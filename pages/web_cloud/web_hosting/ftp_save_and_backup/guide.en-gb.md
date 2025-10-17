@@ -164,7 +164,7 @@ There are several stages to this procedure. Ensure that you have your FTP user p
 
 #### Step 1: Decide on the software or interface you want to use.
 
-First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following three solutions:
+First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following two solutions:
 
 - **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 

@@ -165,21 +165,21 @@ Operacja składa się z kilku etapów. Upewnij się, że posiadasz hasło użytk
 
 Na wstępie określ program lub interfejs, którego będziesz używał do łączenia się z kopią zapasową Twojej przestrzeni dyskowej. Jeśli już wybrałeś program lub interfejs, przejdź od razu do etapu 2. W przeciwnym razie zalecamy użycie jednego z trzech rozwiązań:
 
-- **program FileZilla**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu FileZilla na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
+- **program FileZilla**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik "[Korzystanie z programu FileZilla na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)", w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
-- **program Cyberduck**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu Cyberduck na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
+- **program Cyberduck**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik "[Korzystanie z programu Cyberduck na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)", w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
 Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 
 #### Etap 2: logowanie do kopii zapasowej przestrzeni dyskowej
 
-W wybranym interfejsie lub programie zaloguj się do przestrzeni dyskowej, aby uzyskać dostęp do zawartości kopii zapasowej, którą chcesz przywrócić. Potrzebna Ci do tego będzie nazwa użytkownika FTP, hasło oraz nazwa hosta Twojego serwera. 
+Najpierw należy określić oprogramowanie lub interfejs, którego będą Państwo używać do łączenia się z kopią zapasową przestrzeni dyskowej. Jeśli już je znają, proszę przejść od razu do kroku 2. W przeciwnym razie zalecamy skorzystanie z jednego z dwóch poniższych rozwiązań:
 
 Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu.
 
 ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
-Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

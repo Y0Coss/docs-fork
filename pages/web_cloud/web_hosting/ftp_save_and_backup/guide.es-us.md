@@ -163,7 +163,7 @@ Esta operación se realiza en varios pasos. Asegúrese de tener la contraseña d
 
 #### 1. Elegir el programa o la interfaz web que vaya a utilizar
 
-En primer lugar, debe decidir qué programa o interfaz web va a utilizar para conectarse a la copia de seguridad de su espacio de almacenamiento. Si ya lo ha decidido, vaya al paso 2. En caso contrario, le recomendamos que utilice una de las siguientes soluciones:
+En primer lugar, defina el software o la interfaz que va a utilizar para conectarse a la copia de seguridad de su espacio de almacenamiento. Si ya lo sabe, pase directamente al paso 2. De lo contrario, le recomendamos que utilice una de las dos soluciones siguientes:
 
 - **FileZilla**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Esta guía no sustituye a la documentación oficial del editor.
 
@@ -179,7 +179,7 @@ Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su aloj
 
 ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
-Si no tiene la contraseña FTP, siga las indicaciones de la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+Si no tiene la contraseña FTP, siga las indicaciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

@@ -163,7 +163,7 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 
 #### Schritt 1: Software oder Interface auswählen <a name="viainterface"></a>
 
-Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden drei Lösungen:
+Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden beiden Lösungen:
 
 - **FileZilla**: Laden Sie FileZilla zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von FileZilla eine Anleitung zur Verfügung](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 

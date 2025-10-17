@@ -163,11 +163,11 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 
 #### Étape 1 : définir le logiciel ou l'interface à utiliser
 
-Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des trois solutions suivantes :
+Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des deux solutions suivantes :
 
-- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation « [Utiliser le logiciel FileZilla avec son hébergement web](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) », vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation « [Utiliser le logiciel Cyberduck avec son hébergement web](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac) », vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
@@ -179,7 +179,7 @@ Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de vot
 
 ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
-Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
+Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
