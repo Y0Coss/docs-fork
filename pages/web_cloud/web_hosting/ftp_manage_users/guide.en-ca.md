@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - How to manage FTP users"
 excerpt: "Find out how to create, modify and delete FTP users on your OVHcloud web hosting plan"
-updated: 2025-10-15
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -56,13 +56,13 @@ The following window will appear:
 >>
 >> ![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
 >>
->> Enter the settings for the new FTP user by defining the following elements/forms:
+>> Define the settings for the new FTP user by filling in the following fields:
 >>
->> - *User*: corresponds to the full FTP username that you will define. The new user will need it to log in to your web hosting plan’s FTP storage space. All additional FTP user names created on your web hosting plan will be preceded by your web hosting plan’s main FTP login, followed by a hyphen. For example, if your primary FTP login is `FTPLogin` and you create a new FTP user `user1`, your new user’s FTP login will be `FTPLogin-user1`.
+>> - *User*: Corresponds to the full FTP username that you will define. The new user will need it to log in to your web hosting plan’s FTP storage space. All additional FTP user names created on your web hosting plan will be preceded by your web hosting plan’s main FTP login, followed by a hyphen. For example, if your primary FTP login is `FTPLogin` and you create a new FTP user `user1`, your new user’s FTP login will be `FTPLogin-user1`.
 >>
->> - *Root folder*: is the name of the directory or subdirectory in which the FTP user will be able to log in to the FTP storage space. For example, if a user needs to access all of your web hosting plan’s FTP storage space, leave this form empty. Otherwise, specify the name of the directory to which they will be authorized to access (examples: `www`, `blog`, `website1`, `www/development`, etc.).
+>> - *Root folder*: It is the name of the directory or subdirectory in which the FTP user will be able to log in to the FTP storage space. For example, if a user needs to access all of your web hosting plan’s FTP storage space, leave this field empty. Otherwise, specify the name of the directory to which they will be authorized to access (e.g. `www`, `blog`, `website1`, `www/development`, etc.).
 >>
->> - *Connection protocol*: allows you to define the protocols that the FTP user can use to log in to your web hosting plan’s FTP storage space. For example, if you select the third choice (the **FTP**, **SFTP** and **SSH** protocols), the FTP user will be able to connect using all three protocols. This way, the FTP user can log in via the **SSH** protocol, and manage FTP content using the same protocol.
+>> - *Connection protocol*: Allows you to define the protocols that the FTP user can use to log in to your web hosting plan’s FTP storage space. For example, if you select the third choice (the **FTP**, **SFTP** and **SSH** protocols), the FTP user will be able to connect using all three protocols. This way, the FTP user can log in via the **SSH** protocol, and manage FTP content using the same protocol.
 >>
 >> Once you have set the parameters, click `Next`{.action}.
 >>
@@ -70,7 +70,7 @@ The following window will appear:
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
->> In this second window, you only need to set and confirm the password for the new FTP user in the two forms. Follow the password policy listed just below the 2 forms.
+>> In this second window, you only need to set and confirm the password for the new FTP user in the two fileds. Follow the password policy listed just below the 2 fields.
 >>
 >> Once you have chosen and confirmed your password, click `Next`{.action}.
 >>
@@ -121,7 +121,7 @@ To edit an FTP user, click on the tabs below to view each of the **5** steps.
 >>
 >> ![FTP-SSH edit user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-a-user-step1.png){.thumbnail}
 >>
-With the exception of the FTP user name and password, you can modify the *root folder* and the *connection protocols* defined for the FTP user here. If you need more information on the *root folder* and *connection protocols*, please refer to the [Create a new FTP user on your web hosting plan](#create-ftp-user) section in this guide.
+With the exception of the FTP user name and password, you can modify the *root folder* and the *connection protocols* defined for the FTP user here. If you need more information on the *root folder* and *connection protocols*, please refer to the "[Create a new FTP user on your web hosting plan](#create-ftp-user)" section in this guide.
 >> 
 >> You can also *disable the user* if necessary by ticking the box provided. This option is useful if you want to prevent a user from accessing your FTP space without deleting the FTP and SSH logs associated with them. These logs will allow you to determine what operations were performed if you notice any unwanted interventions on your web hosting plan.
 >>

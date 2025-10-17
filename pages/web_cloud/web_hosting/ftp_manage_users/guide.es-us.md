@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo gestionar usuarios FTP"
 excerpt: "Descubra cómo crear, modificar o eliminar usuarios FTP en un alojamiento web de OVHcloud"
-updated: 2025-10-15
+updated: 2025-10-16
 ---
 
 ## Objetivo
@@ -56,13 +56,13 @@ Para crear un nuevo usuario FTP en un alojamiento web desde el área de cliente 
 
 >> ![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
 >>
->> Introduzca los parámetros del nuevo usuario FTP definiendo los siguientes elementos / formularios:
+>> Defina los parámetros del nuevo usuario FTP rellenando los siguientes campos:
 >>
->>- *Usuario* : corresponde al nombre de usuario FTP completo que va a definir para su colaborador. que deberá utilizar para conectarse al espacio de almacenamiento FTP de su alojamiento web. Independientemente del nuevo usuario FTP creado en su alojamiento web, el nombre elegido estará siempre precedido por el usuario FTP principal del alojamiento web, seguido de un guión. Por ejemplo, si su usuario FTP principal es `FTPLogin` y desea crear un nuevo usuario FTP `user1`, el usuario FTP de su nuevo usuario será `FTPLogin-user1`.
+>>- *Usuario* : Corresponde al nombre de usuario FTP completo que va a definir para su colaborador. que deberá utilizar para conectarse al espacio de almacenamiento FTP de su alojamiento web. Independientemente del nuevo usuario FTP creado en su alojamiento web, el nombre elegido estará siempre precedido por el usuario FTP principal del alojamiento web, seguido de un guión. Por ejemplo, si su usuario FTP principal es `FTPLogin` y desea crear un nuevo usuario FTP `user1`, el usuario FTP de su nuevo usuario será `FTPLogin-user1`.
 >>
->> - *Carpeta raíz* : es el nombre del directorio o subdirectorio en el que el usuario FTP tendrá derecho a conectarse en el espacio de almacenamiento FTP. Por ejemplo, si su colaborador necesita acceder a todo el espacio de almacenamiento FTP de su alojamiento web, deje este formulario en blanco. En caso contrario, indique el nombre del directorio al que estará autorizado a acceder (ejemplos: `www`, `blog`, `website1`, `www/development`, etc.).
+>> - *Carpeta raíz* : Es el nombre del directorio o subdirectorio en el que el usuario FTP tendrá derecho a conectarse en el espacio de almacenamiento FTP. Por ejemplo, si su colaborador necesita acceder a todo el espacio de almacenamiento FTP de su alojamiento web, deje este campo en blanco. En caso contrario, indique el nombre del directorio al que estará autorizado a acceder (por ejemplo: `www`, `blog`, `website1`, `www/development`, etc.).
 >>
->> - *Protocolo de conexión* : permite definir el protocolo o protocolos que el usuario FTP podrá utilizar para conectarse al espacio de almacenamiento FTP de su alojamiento web. Por ejemplo, si selecciona la tercera opción (los protocolos **FTP**,**SFTP** y **SSH**), el usuario FTP podrá conectarse con los tres protocolos. De este modo, el colaborador que utilizará este usuario FTP podrá, por ejemplo, conectarse en línea de comandos mediante el protocolo **SSH**, pero también gestionar el contenido FTP a partir del mismo protocolo.
+>> - *Protocolo de conexión* : Permite definir el protocolo o protocolos que el usuario FTP podrá utilizar para conectarse al espacio de almacenamiento FTP de su alojamiento web. Por ejemplo, si selecciona la tercera opción (los protocolos **FTP**,**SFTP** y **SSH**), el usuario FTP podrá conectarse con los tres protocolos. De este modo, el colaborador que utilizará este usuario FTP podrá, por ejemplo, conectarse en línea de comandos mediante el protocolo **SSH**, pero también gestionar el contenido FTP a partir del mismo protocolo.
 >>
 >> Una vez que haya definido los parámetros, haga clic en `Siguiente`{.action}.
 >>
@@ -70,7 +70,7 @@ Para crear un nuevo usuario FTP en un alojamiento web desde el área de cliente 
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
->> En este segundo ventana, solo tiene que establecer y confirmar, en los dos formularios, la contraseña del nuevo usuario FTP. Siga la política de contraseñas que aparece debajo de los dos formularios.
+>> En este segundo ventana, solo tiene que establecer y confirmar, en los dos campos, la contraseña del nuevo usuario FTP. Siga la política de contraseñas que aparece debajo de los dos campos.
 >>
 >> Una vez que haya elegido y confirmado la contraseña, haga clic en `Siguiente`{.action}.
 >>

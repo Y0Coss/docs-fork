@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web -Como gerir utilizadores FTP"
 excerpt: "Saiba como criar, modificar ou eliminar utilizadores FTP no seu alojamento web da OVHcloud"
-updated: 2025-10-15
+updated: 2025-10-16
 ---
 
 ## Objetivo
@@ -56,13 +56,13 @@ Para criar um novo utilizador FTP no seu alojamento web através da Área de Cli
 >>
 >> ![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
 >>
->> Introduza as definições do novo utilizador FTP definindo os seguintes elementos/formulários:
+>> Defina os parâmetros do novo utilizador FTP preenchendo os campos seguintes:
 >>
->> - *Utilizador* : corresponde ao nome de utilizador FTP completo que vai definir para o seu colaborador. Deverá utilizá-lo para se ligar ao espaço de armazenamento FTP do seu alojamento web. Qualquer que seja o novo utilizador FTP criado no seu alojamento web, o nome escolhido será sempre precedido do login FTP principal do seu alojamento web, seguido de um hífen. Por exemplo, se o seu login FTP principal for `FTPLogin` e pretender criar um novo utilizador FTP `user1`, o login FTP do seu novo utilizador será `FTPLogin-user1`.
+>> - *Utilizador* : Corresponde ao nome de utilizador FTP completo que vai definir para o seu colaborador. Deverá utilizá-lo para se ligar ao espaço de armazenamento FTP do seu alojamento web. Qualquer que seja o novo utilizador FTP criado no seu alojamento web, o nome escolhido será sempre precedido do login FTP principal do seu alojamento web, seguido de um hífen. Por exemplo, se o seu login FTP principal for `FTPLogin` e pretender criar um novo utilizador FTP `user1`, o login FTP do seu novo utilizador será `FTPLogin-user1`.
 >>
->> - *Pasta raiz* : corresponde ao nome do diretório ou subdiretório no qual o utilizador FTP terá o direito de se ligar no espaço de armazenamento FTP. Por exemplo, se o seu colaborador precisa de aceder ao conjunto do espaço de armazenamento FTP do seu alojamento web, deixe este formulário vazio. Caso contrário, especifique o nome do diretório ao qual será autorizado aceder (exemplos: `www`, `blog`, `website1`, `www/development`, etc.).
+>> - *Pasta raiz* : Corresponde ao nome do diretório ou subdiretório no qual o utilizador FTP terá o direito de se ligar no espaço de armazenamento FTP. Por exemplo, se o seu colaborador precisa de aceder ao conjunto do espaço de armazenamento FTP do seu alojamento web, deixe este campo vazio. Caso contrário, especifique o nome do diretório ao qual será autorizado aceder (exemplos: `www`, `blog`, `website1`, `www/development`, etc.).
 >>
->> - *Protocolo de ligação* : permite definir o(s) protocolo(s) que o utilizador FTP poderá utilizar para se ligar ao espaço de armazenamento FTP do seu alojamento web. Por exemplo, se selecionar a terceira opção (os protocolos **FTP**,**SFTP** e **SSH**), o utilizador FTP poderá ligar-se com os três protocolos. Assim, o colaborador que irá utilizar este utilizador FTP poderá, por exemplo, escolher ligar-se em linha de comandos através do protocolo **SSH** mas também gerir o conteúdo FTP a partir do mesmo protocolo.
+>> - *Protocolo de ligação* : Permite definir o(s) protocolo(s) que o utilizador FTP poderá utilizar para se ligar ao espaço de armazenamento FTP do seu alojamento web. Por exemplo, se selecionar a terceira opção (os protocolos **FTP**,**SFTP** e **SSH**), o utilizador FTP poderá ligar-se com os três protocolos. Assim, o colaborador que irá utilizar este utilizador FTP poderá, por exemplo, escolher ligar-se em linha de comandos através do protocolo **SSH** mas também gerir o conteúdo FTP a partir do mesmo protocolo.
 >>
 >> Depois de definidos os parâmetros, clique em `Seguinte`{.action}.
 >>
@@ -70,7 +70,7 @@ Para criar um novo utilizador FTP no seu alojamento web através da Área de Cli
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
->> Nesta segunda janela, só deverá definir e confirmar, nos 2 formulários, a palavra-passe do novo utilizador FTP. Siga a política de palavras-passe listada logo abaixo dos 2 formulários.
+>> Nesta segunda janela, só deverá definir e confirmar, nos 2 campos, a palavra-passe do novo utilizador FTP. Siga a política de palavras-passe listada logo abaixo dos 2 campos.
 >> 
 >> Depois de escolher a sua palavra-passe e de a confirmar, clique em `Seguinte`{.action}.
 >>

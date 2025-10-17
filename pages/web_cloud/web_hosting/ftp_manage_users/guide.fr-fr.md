@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment gérer des utilisateurs FTP"
 excerpt: "Découvrez comment créer, modifier ou supprimer des utilisateurs FTP sur votre hébergement web OVHcloud"
-updated: 2025-10-15
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -56,13 +56,13 @@ Pour créer un nouvel utilisateur FTP sur votre hébergement web via votre espac
 >>
 >> ![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
 >>
->> Saisissez les paramètres du nouvel utilisateur FTP en définissant les éléments / formulaires suivants :
+>> Définissez les paramètres du nouvel utilisateur FTP en renseignant les champs suivants :
 >>
->> - *utilisateur* : correspond au nom d'utilisateur FTP complet que vous allez définir pour votre collaborateur. Il devra l'utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web. Quel que soit le nouvel utilisateur FTP créé sur votre hébergement web, le nom choisi sera toujours précédé du login FTP principal de votre hébergement web, suivi d'un trait d'union. Par exemple, si votre login FTP principal est `FTPLogin` et que vous souhaitez créer un nouvel utilisateur FTP `user1`, le login FTP de votre nouvel utilisateur sera donc `FTPLogin-user1`.
+>> - *Utilisateur* : Correspond au nom d'utilisateur FTP complet que vous allez définir pour votre collaborateur. Il devra l'utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web. Quel que soit le nouvel utilisateur FTP créé sur votre hébergement web, le nom choisi sera toujours précédé du login FTP principal de votre hébergement web, suivi d'un trait d'union. Par exemple, si votre login FTP principal est `FTPLogin` et que vous souhaitez créer un nouvel utilisateur FTP `user1`, le login FTP de votre nouvel utilisateur sera donc `FTPLogin-user1`.
 >>
->> - *dossier racine* : correspond au nom du répertoire ou sous-répertoire dans lequel l'utilisateur FTP aura le droit de se connecter dans l'espace de stockage FTP. Par exemple, si votre collaborateur a besoin d'accéder à l'ensemble de l'espace de stockage FTP de votre hébergement web, laissez ce formulaire vide. Dans le cas contraire, précisez le nom du répertoire auquel il sera autorisé à accéder (exemples : `www`, `blog`, `website1`, `www/development`, etc.).
+>> - *Dossier racine* : Correspond au nom du répertoire ou sous-répertoire dans lequel l'utilisateur FTP aura le droit de se connecter dans l'espace de stockage FTP. Par exemple, si votre collaborateur a besoin d'accéder à l'ensemble de l'espace de stockage FTP de votre hébergement web, laissez ce champ vide. Dans le cas contraire, précisez le nom du répertoire auquel il sera autorisé à accéder (par exemple : `www`, `blog`, `website1`, `www/development`, etc.).
 >>
->> - *protocole de connexion* : permet de définir le ou les protocoles que l'utilisateur FTP pourra utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web. Par exemple, si vous sélectionnez le troisième choix (les protocoles **FTP**,**SFTP** et **SSH**), l'utilisateur FTP pourra se connecter avec les trois protocoles. Ainsi, le collaborateur qui utilisera cet utilisateur FTP pourra, par exemple, choisir de se connecter en ligne de commande via le protocole **SSH** mais aussi gérer le contenu FTP à partir de ce même protocole.
+>> - *Protocole de connexion* : Permet de définir le ou les protocoles que l'utilisateur FTP pourra utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web. Par exemple, si vous sélectionnez le troisième choix (les protocoles **FTP**,**SFTP** et **SSH**), l'utilisateur FTP pourra se connecter avec les trois protocoles. Ainsi, le collaborateur qui utilisera cet utilisateur FTP pourra, par exemple, choisir de se connecter en ligne de commande via le protocole **SSH** mais aussi gérer le contenu FTP à partir de ce même protocole.
 >>
 >> Une fois les paramètres définis, cliquez sur `Suivant`{.action}.
 >>
@@ -70,7 +70,7 @@ Pour créer un nouvel utilisateur FTP sur votre hébergement web via votre espac
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
->> Dans cette deuxième fenêtre, vous devez uniquement définir et confirmer, dans les 2 formulaires, le mot de passe du nouvel utilisateur FTP. Respectez la politique des mots de passe listée juste en dessous des 2 formulaires.
+>> Dans cette deuxième fenêtre, vous devez uniquement définir et confirmer, dans les 2 champs, le mot de passe du nouvel utilisateur FTP. Respectez la politique des mots de passe listée juste en dessous des 2 champs.
 >>
 >> Une fois votre mot de passe choisi et confirmé, cliquez sur `Suivant`{.action}.
 >>
@@ -111,7 +111,7 @@ Pour modifier un utilisateur FTP, cliquez sur les onglets ci-dessous pour affich
 >> 
 > **Étape 4**
 >>
->> Dans le tableau situé en bas de page et sur la partie droite de la ligne correspondante à l'utilisateur FTP concerné, cliquez sur le bouton `...`{.action}, puis cliquez sur `Modifier`{.action}.
+>> Dans le tableau situé en bas de page et sur la partie droite de la ligne correspondant à l'utilisateur FTP concerné, cliquez sur le bouton `...`{.action}, puis cliquez sur `Modifier`{.action}.
 >>
 >> ![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
 >>
@@ -158,7 +158,7 @@ Pour supprimer un utilisateur FTP, cliquez sur les onglets ci-dessous pour affic
 >> 
 > **Étape 4**
 >>
->> Dans le tableau situé en bas de page et sur la partie droite de la ligne correspondante à l'utilisateur FTP concerné, cliquez sur le bouton `...`{.action}, puis cliquez sur `Supprimer`{.action}.
+>> Dans le tableau situé en bas de page et sur la partie droite de la ligne correspondant à l'utilisateur FTP concerné, cliquez sur le bouton `...`{.action}, puis cliquez sur `Supprimer`{.action}.
 >>
 >> ![FTP-SSH delete user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1.png){.thumbnail}
 >>
