@@ -40,7 +40,6 @@ A opção de Backup automatizado para VPS oferece uma forma prática de ter back
         - [Distributions Redhat](#red)
         - [Windows](#win)
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 Quando adquire um VPS, é incluído um backup automático diário como opção de serviço gratuito. Esta opção de backup standard permite:
 
@@ -51,15 +50,18 @@ Para uma maior flexibilidade dos seus backups, pode ativar a opção Backup auto
 
 <a name="premium"></a>
 
-### Como passar para o Backup automatizado Premium
+### Como assinar o Backup automatizado Premium
 
-A atualização para o Backup automatizado Premium melhora a sua opção de backup automático para um backup diário de atualização de 7 dias. Isto permite-lhe voltar às versões de backup mais antigas em comparação com a rotação de 24 horas da opção standard.
+A opção de Backup automatizado Premium cria um backup do seu VPS a cada 24 horas no horário especificado.  
+Você terá acesso a todos os backups diários dos últimos 7 dias. Uma vez criados 7 backups, cada novo backup substituirá o mais antigo.
 
-Após selecionar o seu alojamento VPS, clique no separador `Backup automatizado`{.action} no menu horizontal.
+Faça login no seu [Área de Cliente OVHcloudl](/links/manager), abra a seção `Bare Metal Cloud`{.action}, selecione `Servidor privado virtual`{.action} e, em seguida, clique no nome do seu VPS.
 
-Clique no link `Encomendar uma cópia de segurança premium`{.action}.
+Clique na aba `Backup automatizado`{.action} no menu horizontal.
 
-![autobackupvps](images/backup_vps.png){.thumbnail}
+Clique no link `Encomendar uma cópia de segurança premium`{.action} (para serviços encomendados a partir de 7 AGO, 2025) ou no botão `Ativar o Backup Automatizado`{.action}.
+
+<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
 
 Na etapa seguinte, tome nota da informação relativa ao preço e depois clique em `Encomendar`{.action}. Será então guiado através do processo de encomenda que será confirmado com o envio de um e-mail.
 

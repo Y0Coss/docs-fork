@@ -42,8 +42,6 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
         - [Windows](#win)
 
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
-
 Quando ordini un VPS, come opzione di servizio gratuito è incluso un backup automatico giornaliero. Questa opzione di backup standard consente di:
 
 - Montare e ripristinare il backup giornaliero.
@@ -53,15 +51,18 @@ Per una maggiore flessibilità con i backup, è possibile attivare l'opzione Bac
 
 <a name="premium"></a>
 
-### Come passare a Backup automatico Premium
+### Come sottoscrivere Backup automatico Premium
 
-L'aggiornamento a Backup automatico Premium migliora l'opzione di backup automatico a un backup giornaliero attivo di 7 giorni. In questo modo è possibile ripristinare le versioni di backup precedenti rispetto alla rotazione di 24 ore dell'opzione standard.
+L'opzione di Backup automatico Premium crea un backup del tuo VPS ogni 24 ore all'ora specificata.  
+Avrai accesso a tutti i backup giornalieri degli ultimi 7 giorni. Una volta creati 7 backup, ogni nuovo backup sostituirà il più vecchio.
 
-Dopo aver selezionato il VPS, clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), apri la sezione `Bare Metal Cloud`{.action}, seleziona `Server Privati Virtual`{.action} e clicca quindi sul nome del tuo VPS.
 
-Clicca sul link `Ordina un backup Premium`{.action}.
+Clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
 
-![autobackupvps](images/backup_vps.png){.thumbnail}
+Clicca sul link `Ordina un backup Premium`{.action} (per i servizi ordinati a partire dal 7 AGO, 2025) o sul pulsante `Attiva il Backup automatico`{.action}.
+
+<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma.
 

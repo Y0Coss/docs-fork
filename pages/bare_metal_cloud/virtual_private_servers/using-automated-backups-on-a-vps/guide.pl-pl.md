@@ -40,7 +40,6 @@ Opcja zautomatyzowany backup zapasowych dla serwerów VPS pozwala na udostępnie
         - [Dystrybucje Redhat](#red)
         - [Windows](#win)
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatne serwery wirtualne`{.action}.
 
 W przypadku zamówienia VPS codzienna automatyczna kopia zapasowa jest zawarta w cenie. Ta opcja kopii zapasowych pozwala na:
 
@@ -51,15 +50,18 @@ Aby uzyskać większą elastyczność w zakresie kopii zapasowych, możesz włą
 
 <a name="premium"></a>
 
-### Jak zmienić ofertę na zautomatyzowany backup Premium
+### Jak subskrybować zautomatyzowany backup Premium
 
-Migracja na ofertę zautomatyzowany backup Premium pozwoli na automatyczne tworzenie kopii zapasowych przez 7 kolejnych dni. Pozwala to na przywrócenie starszych wersji backupu w porównaniu z 24-godzinną rotacją opcji standardowej.
+Opcja zautomatyzowany backup Premium tworzy kopię zapasową Twojego VPS co 24 godziny w wyznaczonym czasie.  
+Będziesz miał dostęp do wszystkich dziennych kopii zapasowych z ostatnich 7 dni. Po utworzeniu 7 kopii zapasowych, każda nowa kopia zastąpi najstarszą.
 
-Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Zautomatyzowany backup`{.action} w menu poziomym.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), otwórz sekcję `Bare Metal Cloud`{.action}, wybierz `Prywatne serwery wirtualne`{.action} a następnie kliknij nazwę swojego VPS.
 
-Kliknij link `Wła̧cz zautomatyzowany backup premium`{.action}.
+Kliknij kartę `Zautomatyzowany backup`{.action} w poziomym menu.
 
-![automatyczne kopie zapasowe](images/backup_vps.png){.thumbnail}
+Kliknij link `Wła̧cz zautomatyzowany backup premium`{.action} (dla usług zamówionych od 7 sierpnia 2025) lub przycisk `Włącz zautomatyzowany backup`{.action}.
+
+<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
 
 W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem.
 

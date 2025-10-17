@@ -40,7 +40,6 @@ The Automated backup option for VPS offers a convenient way to have complete sys
         - [Redhat-based distributions](#red)
         - [Windows](#win)
 
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
 
 When you order a VPS, a single daily Automated backup is included as a free service option. This standard backup option allows you to:
 
@@ -53,13 +52,16 @@ For more flexiblity with your backups, you can activate the Premium Automated Ba
 
 ### How to subscribe to Premium Automated Backup
 
-Upgrading to Premium Automated Backup enhances your Automated backup option to a 7-day rolling daily backup. This allows you to revert to older backup versions compared to the 24-hour rotation of the standard option (only applicable to services ordered from 7 AUG, 2025).
+The Premium Automated Backup option creates a backup of your VPS every 24 hours at the specified time.  
+You will have access to all daily backups of the last 7 days. Once 7 backups are created, each new backup will replace the oldest one.
 
-After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
+Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, select `Virtual Private Servers`{.action} and then click the name of your VPS.
 
-Click the link `Order a premium backup`{.action}.
+Click the `Automated backup`{.action} tab in the horizontal menu.
 
-![autobackupvps](images/backup_vps.png){.thumbnail}
+Click the link `Order a premium backup`{.action} (for services ordered from 7 AUG, 2025) or the button `Enable Automated backup`{.action}.
+
+<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
 
