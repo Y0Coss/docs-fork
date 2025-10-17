@@ -1,7 +1,7 @@
 ---
 title: "Utilizar snapshots num alojamento VPS"
 excerpt: "Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OVHcloud"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Sumário

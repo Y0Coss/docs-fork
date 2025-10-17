@@ -1,7 +1,7 @@
 ---
 title: "How to use snapshots on a VPS"
 excerpt: "Find out how to enable and use the Snapshot option in the OVHcloud Control Panel"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objective

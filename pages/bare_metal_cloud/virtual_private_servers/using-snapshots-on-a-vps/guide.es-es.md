@@ -1,7 +1,7 @@
 ---
 title: "Uso de instantáneas Snapshots en un servidor virtual privado (VPS)"
 excerpt: "Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Korzystanie z migawek na prywatnym serwerze wirtualnym"
 excerpt: "Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Wprowadzenie

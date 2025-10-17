@@ -1,7 +1,7 @@
 ---
 title: "Usare snapshot su un VPS"
 excerpt: "Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio Cliente OVHcloud"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Obiettivo

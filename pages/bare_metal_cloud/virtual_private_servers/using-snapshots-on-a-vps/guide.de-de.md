@@ -1,7 +1,7 @@
 ---
 title: "Snapshots auf einem VPS verwenden"
 excerpt: "Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Snapshot-Option aktivieren und verwenden"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Ziel

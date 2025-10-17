@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le snapshot"
 excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objectif

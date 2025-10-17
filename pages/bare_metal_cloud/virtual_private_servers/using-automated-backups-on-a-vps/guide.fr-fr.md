@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les sauvegardes automatisées sur un VPS"
 excerpt: "Découvrez comment utiliser l'option Backup automatisé depuis l'espace client OVHcloud pour sécuriser vos données"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objectif
