@@ -1,14 +1,14 @@
 ---
 title: "Déploiement d'une infrastructure blue-green"
 excerpt: "Ce guide vous montre comment déployer une infrastructure blue-green avec le Load Balancer OVHcloud"
-updated: 2019-02-25
+updated: 2025-10-17
 ---
 
 ## Objectif
 
 Ce guide présente un cas d'usage spécifique du service Load Balancer OVHcloud : la configuration d'un service visant à faciliter le basculement fluide du trafic entre l'environnement de production et un nouvel environnement candidat à la production, également appelé infrastructure `blue-green`{.action}.
 
-Une infrastructure `blue-green`{.action} vous permet d'éviter toute interruption de service de votre infrastructure. Le principal avantage de ce type de déploiement est de pouvoir préparer des mises à jour et/ou des opérations de maintenance dans un environnement isolé de votre environnement de production. Vous pouvez ainsi tester vos modifications avant la mise en production, les annuler rapidement en cas de détection de défaillances, et ce, avec une interruption de service quasi nulle.
+Une infrastructure `blue-green`{.action} vous permet d'éviter toute interruption de service de votre infrastructure. Le principal avantage de ce type de déploiement est de pouvoir préparer des mises à jour et/ou des opérations de maintenance dans un environnement isolé de votre environnement de production. Vous pouvez ainsi tester vos modifications avant la mise en production, les annuler rapidement en cas de défaillance, et ce, avec une interruption de service quasi nulle.
 
 **Ce guide vous montre comment déployer une infrastructure blue-green avec le Load Balancer OVHcloud.**
 
