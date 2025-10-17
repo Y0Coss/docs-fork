@@ -17,6 +17,11 @@ account-and-service-management-managing-billing-payments-and-services-terminatin
 account-and-service-management-reversibility: Reversibilità
 account-and-service-management-reversibility-reversibility-policies: Politiche di reversibilità
 account-and-service-management-responsibility-sharing: Condivisione delle responsabilità
+startup-program: Startup Program
+startup-program-general-information: General information
+startup-program-support-communication: Support & Communication
+startup-program-credits-billing: Credits & Billing
+startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Server dedicati
 bare-metal-cloud-dedicated-servers-advanced-usage: Utilizzo avanzato
 bare-metal-cloud-dedicated-servers-getting-started: Per iniziare
@@ -367,6 +372,7 @@ manage-operate-terraform: Terraform
 manage-operate-cli: CLI
 manage-operate-observability: Observability
 manage-operate-kms: KMS
+manage-operate-secret-manager: Secret Manager
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Getting Started
 observability-logs-data-platform-iam: IAM
