@@ -30,7 +30,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in
 
 ### Schritt 1: Snapshot-Option aktivieren
 
-Scrollen Sie im Tab `Start`{.action} nach unten zum Feld mit der Bezeichnung **Zusammenfassung der Optionen**.  
+Scrollen Sie im Tab `Start`{.action} nach unten zum Feld mit der Bezeichnung **Backup**.  
 Wenn sich die Option bereits im Status "Aktiviert" befindet, fahren Sie direkt mit Schritt 2 fort. Wenn "Snapshot" noch nicht aktiviert ist, klicken Sie auf `...`{.action} neben "Snapshot". Im Kontextmenü klicken Sie auf `Bestellen`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -43,7 +43,7 @@ Um die Dienstoption zu kündigen, klicken Sie auf `...`{.action} neben "Snapshot
 
 ### Schritt 2: Einen Snapshot erstellen
 
-Sobald die Option aktiviert ist, klicken Sie auf `...`{.action} neben der Option "Snapshot". Im Kontextmenü klicken Sie auf `Snapshot erstellen`{.action}. Sie können eine Beschreibung eingeben, die an Ihren Snapshot angehängt wird. Die Dauer der Erstellung des Snapshots hängt vom verwendeten Speicherplatz ab. Anschließend wird der Zeitstempel der Erstellung im Bereich **Zusammenfassung der Optionen** angezeigt.
+Sobald die Option aktiviert ist, klicken Sie auf `...`{.action} neben der Option "Snapshot". Im Kontextmenü klicken Sie auf `Snapshot erstellen`{.action}. Sie können eine Beschreibung eingeben, die an Ihren Snapshot angehängt wird. Die Dauer der Erstellung des Snapshots hängt vom verwendeten Speicherplatz ab. Anschließend wird der Zeitstempel der Erstellung im Bereich **Backup** angezeigt.
 
 ### Schritt 3: Einen Snapshot löschen/wiederherstellen
 

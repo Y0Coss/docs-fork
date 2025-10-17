@@ -30,7 +30,7 @@ Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cl
 
 ### Step 1: Subscribing to the snapshot option
 
-From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**.  
+From the `Home`{.action} tab, scroll down to the box labelled **Backup**.  
 If "Snapshot" is already set to "Enabled", go directly to step 2. If "Snapshot" is not yet enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -43,7 +43,7 @@ To cancel the service option, click on the button `...`{.action} next to the opt
 
 ### Step 2: Taking a snapshot
 
-Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation in the **Summary of options** box.
+Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation in the **Backup** box.
 
 ### Step 3: Deleting or restoring a snapshot
 

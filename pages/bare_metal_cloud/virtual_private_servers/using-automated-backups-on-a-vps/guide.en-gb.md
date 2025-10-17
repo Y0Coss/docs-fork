@@ -51,9 +51,9 @@ For more flexiblity with your backups, you can activate the Premium Automated Ba
 
 <a name="premium"></a>
 
-### How to upgrade to Premium Automated Backup
+### How to subscribe to Premium Automated Backup
 
-Upgrading to Premium Automated Backup enhances your Automated backup option to a 7-day rolling daily backup. This allows you to revert to older backup versions compared to the 24-hour rotation of the standard option.
+Upgrading to Premium Automated Backup enhances your Automated backup option to a 7-day rolling daily backup. This allows you to revert to older backup versions compared to the 24-hour rotation of the standard option (only applicable to services ordered from 7 AUG, 2025).
 
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
 
