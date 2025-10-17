@@ -94,7 +94,9 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >>
 > **Étape 5**
 >>
->> Personnalisez ensuite le comportement souhaité lors d'un appel à destination du trunk. Dans notre exemple, nous routons les appels vers le répondeur de l'extension 1000. Pour ce faire, nous sélectionnons l'option  `Messagerie vocale de l'extension` avec l'extension `1000...`, pendant et en dehors des heures de bureau.
+>> Personnalisez ensuite le comportement souhaité lors d'un appel à destination du trunk. Dans notre exemple, nous routons les appels vers le répondeur de l'extension 1000.
+>>
+>> Pour ce faire, nous sélectionnons l'option  `Messagerie vocale de l'extension` avec l'extension `1000...`, pendant et en dehors des heures de bureau.
 >>
 >> ![3CX Phone Systeme](images/3cx_phone_system-trunk04.png){.thumbnail}
 >>
