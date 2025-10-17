@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2025-05-23
+updated: 2025-10-17
 ---
 
 ## Obiettivo
@@ -190,19 +190,36 @@ Ora che conosci i diversi parametri modificabili per il tuo hosting Web OVHcloud
 
 #### 2.1 - Accedi alla gestione della configurazione dell’hosting Web
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Assicurati di essere posizionato sulla scheda
-`Informazioni generali`{.action}. A destra della voce `Versione PHP`{.action}, situata quasi al centro della pagina, clicca sul pulsante `...`{.action} e poi su `Modifica la configurazione`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
-
-> [!primary]
->
-> Se il pulsante `Modifica la configurazione`{.action} è disattivato, è possibile che una verifica della **versione PHP globale** sia in corso. In questo caso, accanto alla versione verrà visualizzato un cerchio blu che indica che è in corso un controllo. Attendi qualche minuto fino a quando il pulsante `Modifica la configurazione`{.action} sarà nuovamente disponibile.
->
-> Se l’opzione `Versione PHP Globale`{.action} non compare nel tuo [Spazio Cliente OVHcloud](/links/manager), verifica che il file *.ovhconfig* esista effettivamente nella root FTP del tuo hosting condiviso OVHcloud.
->
-> Tutte le informazioni relative al file *.ovhconfig* sono disponibili nella terza parte "[Metodo 2: modificare la configurazione dell’hosting Web dal file ".ovhconfig"](#setting-ovhconfig)" di questa guida.
->
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Configurazione**, trovi la dicitura **Versione PHP**.
+>>
+>> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
+>>
+>> A destra della voce **Versione PHP**, situata quasi al centro della pagina, clicca sul pulsante `...`{.action} e poi su `Modifica la configurazione`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > Se il pulsante `Modifica la configurazione`{.action} è disattivato, è possibile che una verifica della **Versione PHP** sia in corso. In questo caso, accanto alla versione verrà visualizzato un cerchio blu che indica che è in corso un controllo. Attendi qualche minuto fino a quando il pulsante `Modifica la configurazione`{.action} sarà nuovamente disponibile.
+>> >
+>> > Se l’opzione **Versione PHP** non compare nel tuo [Spazio Cliente OVHcloud](/links/manager), verifica che il file *.ovhconfig* esista effettivamente nella root FTP del tuo hosting condiviso OVHcloud.
+>> >
+>> > Tutte le informazioni relative al file *.ovhconfig* sono disponibili nella terza parte "[Metodo 2: modificare la configurazione dell’hosting Web dal file ".ovhconfig"](#setting-ovhconfig)" di questa guida.
 
 #### 2.2 - Modifica la configurazione dell’hosting Web
 
