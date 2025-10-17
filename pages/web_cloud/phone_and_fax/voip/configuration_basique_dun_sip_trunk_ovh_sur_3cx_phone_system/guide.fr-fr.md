@@ -116,6 +116,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 ### Création et configuration des extensions
 
 L'objectif de cette étape est de configurer les extensions 1000 et 1001.
+
 Configurez l’extension 1000 pour lui permettre de présenter le DDI XX XX XX XX 26.
 
 - Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Utilisateurs`{.action}.
