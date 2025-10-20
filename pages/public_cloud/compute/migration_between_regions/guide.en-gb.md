@@ -1,12 +1,12 @@
 ---
 title: 'Migration of instances between different regions'
-excerpt: 'This guide describes how to migrate an OVHcloud Public Cloud instance between two regions, 1AZ and 3AZ. It covers the backup, transfer and recreation steps, with instructions via the Manager, Horizon or the OpenStack CLI.'
+excerpt: 'This guide describes how to migrate an OVHcloud Public Cloud instance between two regions, 1AZ and 3AZ. It covers the backup, transfer and re-creation steps, with instructions via the Manager, Horizon or the OpenStack CLI.'
 updated: 2025-10-15
 ---
 
 ## Objectives
 
-This guide explains how to migrate a Public Cloud instance from one region to another, from 1AZ to 3AZ or vice versa. It centralizes the key steps (backup, transfer and recreation) and redirects to the detailed guides for each element.
+This guide explains how to migrate a Public Cloud instance from one region to another, from 1AZ to 3AZ or vice versa. It centralizes the key steps (backup, transfer and re-creation) and redirects to the detailed guides for each element.
 
 ## Requirements
 
@@ -33,9 +33,9 @@ OVHcloud offers two types of backup, with different behaviors depending on the t
 
 > [!primary]
 >
-> If your local backup was performed in a 3AZ region and you wish to recreate the instance in another AZ in the same region, no transfer is required.
+> If your local backup was performed in a 3AZ region and you wish to re-create the instance in another AZ in the same region, no transfer is required.
 >
-> Local backups are accessible from all availability zones within a 3AZ region. You can proceed directly to the instance recreation stage.
+> Local backups are accessible from all availability zones within a 3AZ region. You can proceed directly to the instance re-creation stage.
 >
 > Currently, creating a distant backup is not available through the OVHcloud Control Panel. You can only perform this action via the OVHcloud API or OpenStack.
 >
@@ -70,7 +70,7 @@ The instance can be restored in the new region:
 - via the OpenStack CLI.
 - via Horizon.
 
-Find all the detailed information in the **Creating an instance from a backup** section in our guide "[Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviamanager)".
+Find all the detailed information in the **Creating an instance from a backup** section in our guide "[Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: "Descarregar e transferir a cópia de segurança de uma instância de uma região OpenStack para outra"
 excerpt: "Saiba como descarregar e transferir uma cópia de segurança de uma instância de uma região OpenStack para outra, mantendo a configuração e o estado da instância"
-updated: 2024-12-03
+updated: 2025-10-15
 ---
 
 ## Objetivo
@@ -134,9 +134,9 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 ### Criar uma instância a partir da sua cópia de segurança
 
-> [!warning]
+> [!primary]
 >
-> Se a sua instância for um servidor Windows, deve selecionar um flavor do tipo win-xx-xx (por exemplo, win-b2-15) e dispor de uma interface pública na rede Ext-Net. Sem estas condições, a autenticação junto do KMS OVHcloud não será possível e o seu servidor ficará com uma [licença não ativada](/pages/public_cloud/compute/activate-windows-license-private-mode). Isto poderá implicar limitações, nomeadamente a ausência de atualizações. Tenha em conta que não é possível redimensionar uma instância Linux (por exemplo, b2-15) numa instância Windows (como win-b2-15). Para efetuar esta transição, é necessário criar uma nova instância.
+> Se desejar recriar a sua instância a partir deste backup, siga o nosso guia "[Utilizar cópias de segurança de instâncias para criar ou restaurar uma instância](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
 >
 
 Para criar uma instância a partir do seu backup, utilize o ID da cópia de segurança como imagem com este comando:

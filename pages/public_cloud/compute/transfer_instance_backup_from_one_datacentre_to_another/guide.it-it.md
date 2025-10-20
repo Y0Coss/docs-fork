@@ -1,7 +1,7 @@
 ---
 title: "Scaricare e trasferire il backup di un’istanza da una Region OpenStack ad un’altra"
 excerpt: "Scopri come scaricare e trasferire un backup di istanza da una Region OpenStack ad un’altra preservando la configurazione e lo stato dell’istanza"
-updated: 2024-12-03
+updated: 2025-10-15
 ---
 
 ## Obiettivo
@@ -133,9 +133,9 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 ### Crea un’istanza a partire da un backup
 
-> [!warning]
+> [!primary]
 >
-> Se l'istanza è un server Windows, è necessario selezionare un flavor di tipo win-xx-xx (ad esempio, win-b2-15) e disporre di un'interfaccia pubblica sulla rete Ext-Net. Senza queste condizioni, l'autenticazione presso il KMS OVHcloud non sarà possibile e il tuo server resterà con una [licenza non attivata](/pages/public_cloud/compute/activate-windows-license-private-mode). Ciò potrebbe comportare alcune limitazioni, in particolare la mancanza di aggiornamenti. Non è possibile ridimensionare un'istanza Linux (ad esempio b2-15) in un'istanza Windows (ad esempio win-b2-15). Per effettuare questa transizione, è necessario ricreare una nuova istanza.
+Se desideri ricreare la tua istanza da questo backup, segui la nostra guida "[Utilizzare le copie di backup delle istanze per creare o ripristinare un'istanza](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
 >
 
 Per creare un’istanza a partire dal backup, utilizza l’ID di backup come immagine con questo comando:

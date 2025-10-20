@@ -54,10 +54,6 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> >
 >>
 > Via la CLI OpenStack
->> > [!warning]
->> >
->> > Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d’une interface publique sur le réseau Ext-Net. Sans ces conditions, l’authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/pages/public_cloud/compute/activate-windows-license-private-mode). Cela pourrait entraîner des limitations, notamment l’absence de mises à jour. À noter qu’il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
->> >
 >>
 >> Pour créer une instance à partir de votre sauvegarde, utilisez l'ID de sauvegarde comme image avec cette commande :
 >>
@@ -74,7 +70,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> ![public-cloud-instance-backup-horizon-2](images/restorebackuphorizon2.png){.thumbnail}
 >>
->>  Choisissez le modèle d'instance désiré, puis cliquez sur l'onglet `Networks`{.action}.
+>> Choisissez le modèle d'instance désiré, puis cliquez sur l'onglet `Networks`{.action}.
 >>
 >> > [!warning]
 >> >
