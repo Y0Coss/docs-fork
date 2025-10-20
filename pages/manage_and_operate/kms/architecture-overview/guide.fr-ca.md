@@ -1,16 +1,16 @@
 ---
-title: "KMS OVHcloud - Aperçu de l'architecture"
-excerpt: "Découvrez comment nous gérons la sécurité du KMS OVHcloud"
-updated: 2025-10-14
+title: "OKMS - Aperçu de l'architecture"
+excerpt: "Découvrez comment nous gérons la sécurité de l'infrastructure OKMS"
+updated: 2025-10-2°
 ---
 
 ## Objectif
 
-Ce guide explique comment nous gérons la résilience du service de gestion de clés KMS (*Key Management Service*) OVHcloud.
+Ce guide explique comment nous gérons la résilience du service de gestion de clés KMS (*Key Management Service*) et du Secret Manager OVHcloud.
 
 ## En pratique
 
-L’architecture KMS d’OVHcloud poursuit 3 objectifs principaux :
+L’architecture OKMS poursuit 3 objectifs principaux :
 
 - **Confidentialité** : vous assurer que personne d'autre que vous ne puisse accéder à votre clé.
 - **Disponibilité** : vous offrir un haut niveau de résilience et donc une haute disponibilité.
@@ -25,13 +25,13 @@ Même les employés OVHcloud n’ont pas accès à vos clés.
 
 ### Architecture KMS
 
-Le KMS OVHcloud est par conception répliqué sur plusieurs centres de données.
+L'infrastructure OKMS est par conception répliqué sur plusieurs centres de données.
 
 ![Présentation de l'architecture](images/KMS_Overview.png){.thumbnail}
 
 ### Emplacement des composants KMS
 
-Chaque région KMS se compose de plusieurs hôtes dans une seule région OVHcloud.
+Chaque région OKMS se compose de plusieurs hôtes dans une seule région OVHcloud.
 
 Ces hôtes sont partitionnés en deux zones différentes, de sorte qu'une panne matérielle unique rendant indisponible les deux zones en même temps est aussi peu probable que possible.
 
@@ -45,7 +45,7 @@ Le matériel clé est également répliqué dans une troisième base de données
 
 - **Sauvegarde de base de données**
 
-Des sauvegardes régulières sont effectuées à partir de la réplication toutes les 5 minutes. Chaque sauvegarde est stockée dans deux régions différentes de la région principale du KMS.<br>
+Des sauvegardes régulières sont effectuées à partir de la réplication toutes les 5 minutes. Chaque sauvegarde est stockée dans deux régions différentes de la région principale OKMS.<br>
 Ces sauvegardes sont conservées pendant 30 jours.
 
 #### Sécurité des données
@@ -54,7 +54,7 @@ Toutes les données des clients sont toujours stockées chiffrées dans les base
 
 #### Emplacement de sauvegarde
 
-L'emplacement de la sauvegarde dépend de l'emplacement du KMS OVHcloud.
+L'emplacement de la sauvegarde dépend de l'emplacement du OKMS.
 
 - **EU_WEST_RBX**
     - KMS Backup Region 1 : EU_WEST_SBG
