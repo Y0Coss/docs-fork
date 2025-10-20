@@ -14,7 +14,6 @@ Ce guide explique comment migrer vos données d’un volume Block Storage standa
 
 - Une [instance Public Cloud](/links/public-cloud/compute) dans votre projet Public Cloud.
 - Un volume Block Storage existant (source)
-- Un nouveau volume Block Storage chiffré LUKS (cible), créé depuis l['espace client OVHcloud](/links/manager) ou depuis l'[API](/links/api).
 - Accès administrateur (root ou sudo) à votre instance
 
 ## En pratique
@@ -25,7 +24,7 @@ Depuis votre [espace client OVHcloud](/links/manager) créez un nouveau volume B
 
 > [!primary]
 > 
-> Une fois attaché à votre instance, le volume LUKS se comporte comme un volume standard. Le chiffrement et le déverrouillage sont entièrement gérés par l’infrastructure OVHcloud (Nova/Cinder).
+> Une fois attaché à votre instance, le volume LUKS se comporte comme un volume standard. Le chiffrement et le déverrouillage sont entièrement gérés par l’infrastructure OVHcloud.
 >
 
 ### Étape 2 : Attacher les volumes à votre instance

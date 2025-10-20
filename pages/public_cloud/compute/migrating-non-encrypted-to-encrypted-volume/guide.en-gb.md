@@ -14,7 +14,6 @@ This guide explains how to migrate your data from a standard Block Storage volum
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - An existing Block Storage volume (source)
-- A new Block Storage LUKS volume (target), created from the [OVHcloud Control Panel](/links/manager) or via the [API](/links/api)
 - Administrator (root or sudo) access to your instance
 
 ## Instructions
@@ -25,7 +24,7 @@ In your [OVHcloud Control Panel](/links/manager), create a new Block Storage vol
 
 > [!primary]
 > 
-> Once attached to your instance, the LUKS volume behaves like a standard volume. All encryption and unlocking are handled automatically by the OVHcloud infrastructure (Nova/Cinder).
+> Once attached to your instance, the LUKS volume behaves like a standard volume. All encryption and unlocking are handled automatically by the OVHcloud infrastructure.
 >
 
 ### Step 2: Attach the volumes to your instance
