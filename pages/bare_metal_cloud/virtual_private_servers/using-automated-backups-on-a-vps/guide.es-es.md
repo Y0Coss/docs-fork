@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar los backups automatizados en un VPS"
 excerpt: "Descubra cómo utilizar la opción de backup automatizado desde el área de cliente de OVHcloud para proteger los datos"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objetivo
@@ -42,8 +42,6 @@ La opción backup automatizado para VPS es una forma cómoda de tener copias de 
         - [Windows](#win)
 
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
-
 Al contratar un VPS, la opción de servicio gratuito incluye una única copia de seguridad automática diaria. Esta opción de backup estándar le permite:
 
 - Montar y restaurar la copia de seguridad diaria.
@@ -53,15 +51,20 @@ Para mayor flexibilidad en sus backups, puede activar la opción backup automati
 
 <a name="premium"></a>
 
-### Cómo actualizar a backup automatizado Premium
+### Cómo suscribirse al backup automatizado Premium
 
-La actualización a backup automatizado Premium mejora su opción de backup automático a un backup diario continuo de 7 días. Esto le permite volver a versiones de backup más antiguas en comparación con la rotación de 24 horas de la opción estándar.
+La opción de backup automatizado Premium crea una copia de seguridad de su VPS cada 24 horas en la hora especificada.  
+Tendrá acceso a todas las copias de seguridad diarias de los últimos 7 días. Una vez creadas 7 copias de seguridad, cada nueva copia de seguridad reemplazará a la más antigua.
 
-Una vez seleccionado el VPS, haga clic en la pestaña `Backup automatizado`{.action} del menú horizontal.
+Inicie sesión en el [área de cliente de OVHcloud](/links/manager), abra la sección `Bare Metal Cloud`{.action}, seleccione `Servidores Privados Virtuales`{.action} y luego haga clic en el nombre de su VPS.
 
-Haga clic en el enlace `Contratar un backup automatizado premium`{.action}.
+Haga clic en la pestaña `Backup automatizado`{.action} en el menú horizontal.
 
-![autobackupvps](images/backup_vps.png){.thumbnail}
+Haga clic en el enlace `Contratar un backup automatizado premium`{.action} (para servicios pedidos desde el 7 de agosto de 2025) o en el botón `Activar el backup automatizado`{.action}.
+
+<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
+
+En el siguiente paso, anote la información de precios y haga clic en `Contratar`{.action}. Se le guiará a través del proceso de pedido y recibirá un mensaje de correo electrónico de confirmación.
 
 <a name="time"></a>
 
