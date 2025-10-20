@@ -1,7 +1,7 @@
 ---
 title: "Comment migrer un site web depuis un hébergement Web mutualisé vers un VPS"
 excerpt: "Découvrez comment migrer votre site web d'un hébergement mutualisé vers un VPS OVHcloud"
-updated: 2025-10-16
+updated: 2025-10-20
 ---
 
 ## Objectif
@@ -129,7 +129,7 @@ Le répertoire web (ou racine web) est l’endroit où les fichiers de votre sit
 - Côté « Site distant » (panneau de droite), allez dans : `/home/debian/`
 - Glissez-déposez le fichier de votre base de données (ex : `backup.sql`) dans `/home/debian/`. **Ne placez pas cette sauvegarde ni dans le dossier que vous allez copier vers la racine web** (ex : `/home/debian/site/`) **ni dans la racine web** (ex : `/var/www/html`), sinon elle pourra être téléchargée publiquement.
 - Créez un dossier `site` dans `/home/debian/` (clic droit → `Créer un répertoire`{.action}), puis ouvrez-le.
-- Sélectionnez tous les fichiers de votre site web (la base de données ne doit plus s'y trouver) et glissez-déposez-les dans `/home/debian/site/`. (**Ne déposez pas vos dumps SQL dans ce dossier**. Gardez-les hors de la racine web, (ex : `/home/debian/backup.sql`.)
+- Sélectionnez tous les fichiers de votre site web (la base de données ne doit plus s'y trouver) et glissez-déposez-les dans `/home/debian/site/`. **Ne déposez pas vos dumps SQL dans ce dossier**. Gardez-les hors de la racine web, (ex : `/home/debian/backup.sql`.)
 
 ##### Sur votre VPS
 
