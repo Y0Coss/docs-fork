@@ -80,12 +80,13 @@ You can find more information in our guide [Changing your account password](/pag
 > **Can't remember your password?**
 >
 > Go to the [login page for your Control Panel](/links/manager) and click `Forgot username or password?`{.action}. Enter your NIC handle or the primary email address associated with your OVHcloud account, then click `Submit`{.action}. An email is then sent to the account’s contact email address, to confirm the request. Please read the instructions carefully and click on the link in it.
-
-If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
-
-If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](links/transversal/procedure-email-change).
-
-If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
+>
+> If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
+>
+> If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](/links/transversal/procedure-email-change).
+>
+> If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
+>
 
 ///
 
