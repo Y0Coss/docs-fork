@@ -1,6 +1,5 @@
 ---
 title: "Commande d'un certificat SSL gratuit"
-universe: cloud
 excerpt: Commander un certificat SSL gratuit pour vos services web derrière un Load Balancer
 updated: 2025-09-26
 ---

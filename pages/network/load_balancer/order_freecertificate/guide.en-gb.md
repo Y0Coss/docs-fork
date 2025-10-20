@@ -1,6 +1,5 @@
 ---
 title: Order a free SSL certificate
-universe: cloud
 excerpt: Order a free SSL certificate for your web services behind a Load Balancer
 updated: 2025-09-26
 ---
