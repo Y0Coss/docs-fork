@@ -1,7 +1,7 @@
 ---
 title: "File Storage Service - Premiers pas (Alpha)"
 excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
-updated: 2025-10-14
+updated: 2025-10-20
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >
 > Ce service est actuellement en Alpha, disponible uniquement dans la région **SBG5** et réservé aux clients Alpha enregistrés. Les fonctionnalités et la disponibilité peuvent évoluer.
 >
-> Pendant la phase Alpha, la taille autorisée des share varie entre 10 Gio et 5 Tio.
+> Pendant la phase Alpha, la taille autorisée des shares varie entre 10 Gio et 5 Tio.
 >
 
 ## Prérequis
@@ -281,20 +281,20 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> | Share stuck in creating     | ID de réseau ou sous-réseau invalide             | Vérifiez `NETWORK_ID` et `SUBNET_ID`                                                       |
 >>
 > Via Manila CSI dans l'environnement K8s
->> **1. Prérequis supplémentaires**
+>> **1\. Prérequis supplémentaires :**
 >>
 >> - Helm CLI installé sur votre machine locale.
 >> - OpenStack CLI configuré et prêt à l'emploi.
 >> - Krew (gestionnaire de plugins kubectl) installé.
 >> - Stern (plugin de suivi des logs kubectl) installé via Krew.
->> - Un cluster Kubernetes déployé dans un réseau privé au sein d'une région PCI où les points de terminaison Manila sont accessibles.
+>> - Un cluster Kubernetes déployé dans un réseau privé au sein d'une région Public Cloud où les points de terminaison Manila sont accessibles.
 >>
 >> > [!primary]
 >> >
 >> > Ce guide fonctionne à la fois avec les clusters Managed Kubernetes Service (MKS) et les clusters Kubernetes autogérés.
 >> >
 >>
->> **2. Installation de la ligne de commande Helm**
+>> **2\. Installation de la ligne de commande Helm**
 >>
 >> ```bash
 >> curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
@@ -302,7 +302,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> ./get_helm.sh
 >> ```
 >>
->> **3. Installation des outils Krew et Stern**
+>> **3\. Installation des outils Krew et Stern**
 >>
 >> Exécutez la commande suivante pour installer Krew dans votre environnement :
 >>
@@ -325,7 +325,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl krew install stern
 >> ```
 >>
->> **4. Installation de la CLI OpenStack**
+>> **4\. Installation de la CLI OpenStack**
 >>
 >> Préparez votre environnement pour utiliser l'API OpenStack en installant python-openstackclient, en suivant [ce guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 >>
@@ -337,7 +337,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> N'oubliez pas de mettre à jour votre script de complétion de shell pour activer l'autocomplétion OpenStack `share`.
 >>
->> **5. Installation du driver CSI NFS**
+>> **5\. Installation du driver CSI NFS**
 >>
 >> Ajoutez le référentiel de chart Helm :
 >>
@@ -372,7 +372,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl stern -n kube-system -l app.kubernetes.io/instance=csi-driver-nfs
 >> ```
 >>
->> **6. Installation du driver CSI Manila**
+>> **6\. Installation du driver CSI Manila**
 >>
 >> Ajoutez le référentiel de chart Helm :
 >>
@@ -399,18 +399,18 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl stern -n kube-system -l app=openstack-manila-csi
 >> ```
 >>
->> **7. Préparation des ressources OpenStack pour Manila CSI**
+>> **7\. Préparation des ressources OpenStack pour Manila CSI**
 >>
->> 1. Créez un utilisateur OpenStack dédié pour Manila
+>> 7.1\. Créez un utilisateur OpenStack dédié pour Manila
 >>
 >> Vous avez besoin d'un utilisateur OpenStack séparé pour gérer les ressources Manila. Cet utilisateur peut être créé :
 >>
->> - Via le panneau de contrôle OVHcloud (Public Cloud > Paramètres > Utilisateurs & Rôles)
+>> - Via l'espace client OVHcloud (Public Cloud > Paramètres > Utilisateurs & Rôles)
 >> - Ou via la CLI OVHcloud
 >>
->> 2. Collectez les détails du projet et de l'utilisateur OpenStack
+>> 7.2\. Collectez les détails du projet et de l'utilisateur OpenStack
 >>
->> Téléchargez le fichier openrc de votre projet depuis le panneau de contrôle OVHcloud et notez les informations suivantes :
+>> Téléchargez le fichier openrc de votre projet depuis l'espace client OVHcloud et notez les informations suivantes :
 >>
 >> - os-userName
 >> - os-password
@@ -447,7 +447,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl apply -f secrets.yaml
 >> ```
 >>
->> 3. Configurez le réseau partagé OpenStack
+>> 7.3\. Configurez le réseau partagé OpenStack
 >>
 >> Manila nécessite un réseau partagé car le driver est configuré avec `DHSS=true` (`driver_handles_share_servers`).
 >>
@@ -460,7 +460,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> # Récupérez l'ID du réseau
 >> openstack --os-region-name SBG5 network show -c id -f value <PRIVATE_NETWORK_NAME>
 >>
->> # Récupérez l'ID de la sous-réseau liée à ce réseau
+>> # Récupérez l'ID du sous-réseau lié à ce réseau
 >> openstack --os-region-name SBG5 subnet show -c id -f value <PRIVATE_SUBNET_NAME>
 >>
 >> # Créez le réseau partagé Manila
@@ -501,7 +501,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> +-----------------------------------+----------------------------------------------------------+
 >> ```
 >>
->> **8. Configuration du driver CSI Manila**
+>> **8\. Configuration du driver CSI Manila**
 >>
 >> Une fois le réseau de share OpenStack créé, et avant de configurer le pilote CSI Manila, vous devez définir la plage CIDR utilisée par vos nœuds Kubernetes. Cela garantit que les nœuds peuvent accéder aux shares Manila.
 >>
@@ -549,7 +549,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl apply -f manila-runtime-configmap.yaml
 >> ```
 >>
->> **9. Création de shares NFS via provisionnement dynamique**
+>> **9\. Création de shares NFS via provisionnement dynamique**
 >>
 >> Pour permettre au driver CSI Manila de créer dynamiquement des shares Manila et de les utiliser comme volumes Kubernetes, vous devez définir une StorageClass dans votre cluster. Cette StorageClass spécifie le réseau partagé qui sera utilisé pour créer et accorder l'accès aux exports NFS.
 >>
@@ -829,7 +829,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> Vous pouvez maintenant utiliser `kubectl exec` pour accéder au pod et exécuter `df -h` pour vérifier que le share Manila pré-créé est correctement monté.
 >>
->> ### CLI utiles
+>> **CLI utiles**
 >>
 >> Avec vos informations d'identification OpenStack chargées dans l'environnement, vous pouvez gérer les shares Manila en utilisant la CLI OpenStack. Les commandes courantes incluent :
 >>
@@ -841,7 +841,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> openstack share message list # pour voir les erreurs liées aux ressources Manila
 >> ```
 >>
->> ### Ressources utiles
+>> **Ressources utiles**
 >>
 >> [Votre stockage ReadWriteMany (RWX) dans k8s avec Manila CSI](https://www.youtube.com/watch?v=WSMZDKx4JAI){.external}
 >> [Manila/Concepts](https://wiki.openstack.org/wiki/Manila/Concepts#share_type){.external}

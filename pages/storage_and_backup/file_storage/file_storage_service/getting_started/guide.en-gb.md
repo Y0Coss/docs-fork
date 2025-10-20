@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started (Alpha)
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2025-10-14
+updated: 2025-10-20
 ---
 
 ## Objective
@@ -287,7 +287,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> - OpenStack CLI configured and ready to use.
 >> - Krew (kubectl plugin manager) installed.
 >> - Stern (kubectl log tailing plugin) installed via Krew.
->> - A Kubernetes cluster deployed in a private network within a PCI region where Manila endpoints are accessible.
+>> - A Kubernetes cluster deployed in a private network within a Public Cloud region where Manila endpoints are accessible.
 >>
 >> > [!primary]
 >> >
@@ -325,7 +325,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> kubectl krew install stern
 >> ```
 >>
->> **4\. Installing Openstack CLI**
+>> **4\. Installing OpenStack CLI**
 >>
 >> Prepare your environment to use the OpenStack API by installing python-openstackclient, following [this guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 >>
@@ -401,16 +401,16 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> **7\. Preparing OpenStack Resources for Manila CSI**
 >>
->> 1. Create a dedicated OpenStack user for Manila
+>> 7.1\. Create a dedicated OpenStack user for Manila
 >>
 >> You need a separate OpenStack user to manage Manila resources. This user can be created:
 >>
 >> - Through the OVHcloud Control Panel (Public Cloud > Settings > Users & Roles)
 >> - Or via the OVHcloud CLI
 >>
->> 2. Collect OpenStack project and user details
+>> 7.2\. Collect OpenStack project and user details
 >>
->> Download your project’s openrc file from the OVHcloud control panel and note the following credentials:
+>> Download your project’s openrc file from the OVHcloud Control Panel and note the following credentials:
 >>
 >> - os-userName
 >> - os-password
@@ -445,7 +445,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> kubectl apply -f secrets.yaml
 >> ```
 >>
->> 3. Configure the OpenStack shared network
+>> 7.3\. Configure the OpenStack shared network
 >>
 >> Manila requires a share network because the driver is configured with `DHSS=true` (`driver_handles_share_servers`).
 >>
@@ -680,7 +680,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> kubectl apply -f nfs-deployment.yaml
 >> ```
 >>
->> You can verify the RWX functionality by connecting to one pod using`kubectl exec` command and creating a file in the mounted directory (e.g., `/var/lib/www/`). Then, connect to the second pod and check that the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
+>> You can verify the RWX functionality by connecting to one pod using the `kubectl exec` command and creating a file in the mounted directory (e.g., `/var/lib/www/`). Then, connect to the second pod and check that the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
 >>
 >> **10\. Resize an NFS Share Using Dynamic Provisioning**
 >>
@@ -824,7 +824,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> You can now use `kubectl exec` to access the pod and run `df -h` to verify that the pre-created Manila share is properly mounted. 
 >>
->> ### Useful CLI
+>> **Useful CLI**
 >>
 >> With your OpenStack credentials loaded in the environment, you can manage Manila shares using the OpenStack CLI. Common commands include:
 >>
@@ -836,7 +836,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share message list # to see error related to Manila resources
 >> ```
 >>
->> ### Useful resources
+>> **Useful resources**
 >>
 >> [Your ReadWriteMany (RWX) Storage in k8s with Manila CSI](https://www.youtube.com/watch?v=WSMZDKx4JAI){.external}
 >> [Manila/Concepts](https://wiki.openstack.org/wiki/Manila/Concepts#share_type){.external}
