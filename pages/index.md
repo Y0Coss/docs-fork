@@ -1159,6 +1159,7 @@
                 + [AI Notebooks - Billing and lifecycle](public_cloud/ai_machine_learning/notebook_guide_billing_concept)
                 + [AI Notebooks - Workspace](public_cloud/ai_machine_learning/notebook_guide_workspace)
                 + [AI Notebooks - Notebook concept](public_cloud/ai_machine_learning/notebook_guide_concepts_notebooks)
+                + [AI Notebooks - Coding assistant](public_cloud/ai_machine_learning/notebook_guide_coding_assistant)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-notebooks-tutorials)
                 + [AI Notebooks - Tutorial - Use tensorboard inside notebooks](public_cloud/ai_machine_learning/notebook_tuto_02_tensorboard)
                 + [AI Notebooks - Tutorial - Weights & Biases integration](public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases)
