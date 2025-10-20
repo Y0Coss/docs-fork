@@ -1,6 +1,6 @@
 ---
 title: AI Notebooks - Using a code assistant (EN)
-excerpt: Learn how to use AI endpoints to optimize your development
+excerpt: Learn out how to use a code assistant in AI Notebooks to optimize your development
 updated: 2025-10-20
 ---
 
