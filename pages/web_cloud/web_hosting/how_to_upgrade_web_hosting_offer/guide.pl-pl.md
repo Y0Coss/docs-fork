@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak zmienić ofertę"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2025-10-09
+updated: 2025-10-16
 ---
 
 ## Wprowadzenie
@@ -12,7 +12,7 @@ updated: 2025-10-09
 - więcej przestrzeni dyskowej FTP;
 - dodatkowych baz danych; 
 - dodatkowych adresów e-mail;
-- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases) (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
+- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases) (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/)).
 
 **Dowiedz się, jak zmienić ofertę hostingową OVHcloud bez przerwy w działaniu usługi.**
 
@@ -121,9 +121,28 @@ Jeśli nie chcesz przechowywać tych danych, możesz usunąć Twoją usługę We
 
 Upewnij się, czy nowa oferta zawiera wystarczającą [przestrzeń dyskową FTP](/pages/web_cloud/web_hosting/ftp_connection), aby umożliwić import plików z Twojego aktualnego hostingu.
 
-Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla, znajdź limit w sekcji `Przestrzeń dyskowa`.
+Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Informacje ogólne** znajduje się wzmianka **Przestrzeń dyskowa**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Pod tą informacją wyświetlana jest wykorzystana przestrzeń dyskowa.
 
 #### 4 - Adresy e-mail
 

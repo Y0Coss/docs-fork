@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como fazer evoluir a sua oferta"
 excerpt: "Saiba como alterar a forma de subscrição do seu plano de alojamento web da OVHcloud"
-updated: 2025-10-09
+updated: 2025-10-16
 ---
 
 ## Objetivo
@@ -12,7 +12,7 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 - mais espaço de armazenamento FTP;
 - de bases de dados suplementares; 
 - endereços de e-mail adicionais;
-- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](/links/web/hosting-professional-offer)) ou o [serviço Web Cloud Databases](/links/web/databases) (incluído em [oferta Performance](/links/web/hosting-performance-offer).
+- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](/links/web/hosting-professional-offer)) ou o [serviço Web Cloud Databases](/links/web/databases) (incluído em [oferta Performance](/links/web/hosting-performance-offer)).
 
 **Saiba como fazer evoluir a sua oferta de alojamento OVHcloud, sem interrupção de serviço.**
 
@@ -121,9 +121,28 @@ Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço We
 
 Certifique-se de que a nova oferta oferece um espaço de armazenamento [FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que seja possível a importação dos ficheiros do seu alojamento atual.
 
-Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que é apresentada, encontre a quota sob a menção `Espaço de disco`.
+Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
-![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> No marco **Informações gerais**, encontrará **Espaço de disco**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> O espaço de armazenamento utilizado aparece abaixo desta menção.
 
 #### 4 - Endereços de e-mail
 

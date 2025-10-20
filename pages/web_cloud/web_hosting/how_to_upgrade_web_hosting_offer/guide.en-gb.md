@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2025-10-09
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -90,7 +90,7 @@ Once you have deleted data from your databases, recalculate the quota used. To d
 >>
 > **Step 5**
 >>
->> In the window that pops up, click the `Confirm`{.action} button directly.
+>> In the window that pops up, click the `Confirm`{.action} button.
 >>
 >> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
 >>
@@ -120,9 +120,26 @@ If you do not want to keep this data, you can also delete your Web Cloud Databas
 
 Make sure that the new solution offers enough [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) for you to be able to import files from your current hosting plan.
 
-To check the FTP storage space quota used on your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Web Hosting`{.action} , then select the Web Hosting plan concerned. On the `General information`{.action} page that pops up, you will find the quota under the heading `Disk space`.
+To check the FTP storage space quota used on your web hosting plan, click on the tabs below to view each of the **3** steps.
 
-![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 #### 4 - Email accounts
 
