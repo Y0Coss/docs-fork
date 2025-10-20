@@ -1,7 +1,7 @@
 ---
 title: "Przywracanie plików z kopii zapasowej OVHcloud"
 excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
-updated: 2025-10-16
+updated: 2025-10-20
 ---
 
 ## Wprowadzenie 

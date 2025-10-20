@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2025-10-16
+updated: 2025-10-20
 ---
 
 ## Objective
@@ -46,7 +46,7 @@ Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), cl
 
 ### I transferred my files with FTP software, but my website does not appear.
 
-First of all, check that your website’s files and folders are in the [root folder](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-uploading-the-files-to-the-storage-space) of your Web Hosting plan.
+First of all, check that your website’s files and folders are in the [root folder](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-upload-the-files-to-the-storage-space) of your Web Hosting plan.
 
 If you have made a change to your [DNS servers](/pages/web_cloud/domains/dns_server_edit) or [DNS zone](/pages/web_cloud/domains/dns_zone_edit) less than 48 hours ago, please wait and reboot your devices regularly to clear their cache.
 
@@ -75,11 +75,9 @@ To check the remaining storage space on your hosting, click on the tabs below to
 >>
 > **Step 3**
 >>
->> In the **General information** box, you will see the address under **Disk space**.
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->>
->> The storage space used will appear below this note.
 
 ### I can't transfer my files to the FTP server.
 

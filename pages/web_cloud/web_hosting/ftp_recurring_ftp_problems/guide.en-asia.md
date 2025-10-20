@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2025-10-16
+updated: 2025-10-20
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ Using FTP software when logging in to your [Web Hosting plan](/links/web/hosting
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -75,11 +75,9 @@ To check the remaining storage space on your hosting, click on the tabs below to
 >>
 > **Step 3**
 >>
->> In the **General information** box, you will see the address under **Disk space**.
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->>
->> The storage space used will appear below this note.
 
 ### I can't transfer my files to the FTP server.
 

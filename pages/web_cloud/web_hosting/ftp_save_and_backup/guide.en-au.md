@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2025-10-16
+updated: 2025-10-20
 ---
 
 ## Objective
@@ -67,13 +67,13 @@ To check the quota used on your web hosting, click on the tabs below to view eac
 >>
 > **Step 3**
 >>
->> In the **General information** box, you will see the address under **Disk space**.
+>> In the **General information** box, you will find the quota under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
->> If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
+>> If the space in use is more than half of the total FTP storage space of your hosting plan, you can free up space by removing large files from your website (you can use [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
->> Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
+>> Download these files, then delete them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
 
 - [Restore the storage space via the OVHcloud Control Panel](#viacontrolpanel)
 
