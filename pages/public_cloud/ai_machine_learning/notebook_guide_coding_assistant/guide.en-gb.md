@@ -1,16 +1,16 @@
 ---
 title: AI Notebooks - Using a code assistant (EN)
-excerpt: Learn how to use AI endpoints to help you in your development.
-updated: 2025-10-9
+excerpt: Learn how to use AI endpoints to optimize your development
+updated: 2025-10-20
 ---
 
 ## Objective
 
 This tutorial shows how to use **AI Endpoints** in AI Notebooks to get a coding assistant.
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform that provides easy access to world‑renowned pre‑trained AI models. It is simple, secure, and intuitive, with data privacy as a top priority. We do not store user data, making it ideal for developers who want to add AI capabilities while keeping data private.
+[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform that provides easy access to world‑renowned pre‑trained AI models. It is simple, secure and intuitive, with data privacy as a top priority. We do not store user data, making it ideal for developers who want to add AI capabilities while keeping data private.
 
-No extensive AI expertise is required, so AI Endpoints is a convenient, secure choice for integrating AI into your applications.
+No extensive AI expertise is required, so AI Endpoints is a convenient and secure choice for integrating AI into your applications.
 
 By default you can use our [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) solution in all notebooks without a personal token, but you will be rate‑limited.
 
@@ -37,13 +37,13 @@ To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer
 >>
 >> JupyterLab is configured with Jupyter‑AI, which provides a native integration with JupyterLab.
 >>
->> **1\. Ask your question**
+>> **1 - Ask your question**
 >>
 >> You are ready to go with the default settings; ask your first question about your code!
 >>
 >> ![Create a Notebook Control Panel manager 02](images/jupyter-ai-ask-question.png){.thumbnail}
 >>
->> **2\. Update settings**
+>> **2 - Update your settings**
 >>
 >> If you need to use your own AI Endpoints token, update your settings.
 >> You may also want to use another public AI Endpoint available from the completion model dropdown list.
@@ -54,13 +54,13 @@ To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer
 >>
 >> VS Code is configured with Continue.
 >>
->> **1\. Ask your question**
+>> **1 - Ask your question**
 >>
 >> You are ready to go with the default settings; ask your first question about your code!
 >>
 >> ![Create a Notebook Control Panel manager 02](images/continue-ask-question.png){.thumbnail}
 >>
-> **Update settings**
+> **2 - Update your settings**
 >>
 >> If you need to use your own AI Endpoints token, update your settings.
 >> You may also want to use another public AI Endpoints available from the completion model dropdown list.
@@ -75,6 +75,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 ## Feedback
 
-Please send us your questions, feedback and suggestions to improve the service:
-
-- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+Please send us your questions, feedback and suggestions to improve the service on the OVHcloud [Discord server](https://discord.gg/ovhcloud).
