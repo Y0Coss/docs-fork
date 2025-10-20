@@ -16,7 +16,7 @@ Um den Transfer durchzuführen benötigen Sie eine Umgebung mit:
 
 - [OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 - Anbindung an die OpenStack API von OVHcloud.
-- Verfügbarer Speicherplatz entsprechend der Größe der Instanz-Disk (für temporären Backup-Speicher).
+- Verfügbarem Speicherplatz entsprechend der Größe der Instanz-Disk (für temporären Backup-Speicher).
 
 Diese Umgebung wird als "Jump Host" verwendet, um das Backup von einer Region in eine andere zu übertragen. Bei dieser Umgebung kann es sich um eine bei OVHcloud oder auf Ihrem lokalen System gehostete Instanz handeln.
 
@@ -135,7 +135,7 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 > [!primary]
 >
-> Wenn Sie Ihre Instanz aus diesem Backup wiederherstellen möchten, folgen Sie unserem Leitfaden „[Mit Sicherungen von Instanzen eine Instanz erstellen oder wiederherstellen](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)“.
+> Wenn Sie Ihre Instanz aus diesem Backup wiederherstellen möchten, folgen Sie unserer Anleitung: „[Mit Sicherungen von Instanzen eine Instanz erstellen oder wiederherstellen](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)“.
 >
 
 Um eine Instanz aus Ihrem Backup zu erstellen, verwenden Sie die Backup-ID als Image mit folgendem Befehl:
