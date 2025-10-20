@@ -32,7 +32,7 @@ In the Control Panel, you will see the features detailed below:
 
 ![OVHcloud Load Balancer service](images/iplb_service.png){.thumbnail}
 
-Via the OVH API, in the section:
+Via the OVHcloud API, in the section:
 
 > [!api]
 >

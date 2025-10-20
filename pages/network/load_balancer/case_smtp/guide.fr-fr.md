@@ -119,14 +119,14 @@ Les champs obligatoires sont l'*Adresse IPv4*, l'*État* et la *Version du Proxy
 > Postfix est compatible avec ce protocole.
 > 
 
-![Ajour d'un serveur dans une Ferme.](images/add_server.png){.thumbnail}
-![Ajour d'un serveur dans une Ferme.](images/add_server_advance.png){.thumbnail}
+![Ajout d'un serveur dans une ferme](images/add_server.png){.thumbnail}
+![Ajout d'un serveur dans une ferme](images/add_server_advance.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis.
 
 Votre serveur devrait apparaître dans la liste des serveurs dans l'onglet `Fermes`{.action}, juste en dessous de la liste des fermes.
 
-![Détails du serveur créé.](images/resume_server.png){.thumbnail}
+![Détails du serveur créé](images/resume_server.png){.thumbnail}
 
 ### Depuis l'API OVHcloud
 

@@ -6,15 +6,15 @@ updated: 2025-10-17
 
 ## Objective
 
-This guide demonstrates a specific use case for the OVHcloud Load Balancer: the configuration of a service to facilitate seamless traffic switching between production and new production candidate environments, also called a `blue-green`{.action} infrastructure.
+This guide demonstrates a specific use case for the OVHcloud Load Balancer: the configuration of a service to facilitate seamless traffic switching between production and new production candidate environments, also called a **blue-green** infrastructure.
 
-With a `blue-green`{.action} infrastructure, you can stop your infrastructure from experiencing any downtime. The main benefit of this deployment type is that you can prepare updates and/or maintenance in an environment that is isolated from your production environment. This way, you can test your changes before they are put into production, undo them quickly if you detect any faults, and do all of this with virtually zero downtime.
+With a **blue-green** infrastructure, you can stop your infrastructure from experiencing any downtime. The main benefit of this deployment type is that you can prepare updates and/or maintenance in an environment that is isolated from your production environment. This way, you can test your changes before they are put into production, undo them quickly if you detect any faults, and do all of this with virtually zero downtime.
 
 **This guide will show you how to deploy a blue-green infrastructure with the OVHcloud Load Balancer.**
 
 ## Requirements
 
-To deploy a `blue-green`{.action} infrastructure, you need the following components:
+To deploy a **blue-green** infrastructure, you need the following components:
 
 - An OVHcloud [Load Balancer](/links/network/load-balancer) service
 - Access to the [OVHcloud Control Panel](/links/manager)
@@ -28,9 +28,9 @@ You have an infrastructure designed to host your live website.
 
 This environment hosts the website’s code, in addition to all essential applications (web servers, database servers, etc.). You need to update your applications and/or your code on a regular basis. You want to be able to test your updates without impacting the website's availability or functionality for end-users.
 
-One way to achieve this is by deploying a `blue-green`{.action} infrastructure.
+One way to achieve this is by deploying a **blue-green** infrastructure.
 
-The principle of a `blue-green`{.action} deployment involves being able to switch easily from a development infrastructure to a production infrastructure, and vice versa. This switch must be done in a way that is transparent for your users. To do this, public traffic will be routed to the standard HTTP port 80 for access to the production infrastructure, and a non-standard port, such as 8888, will be used to access the development infrastructure.
+The principle of a **blue-green** deployment involves being able to switch easily from a development infrastructure to a production infrastructure, and vice versa. This switch must be done in a way that is transparent for your users. To do this, public traffic will be routed to the standard HTTP port 80 for access to the production infrastructure, and a non-standard port, such as 8888, will be used to access the development infrastructure.
 
 ## Deploy the infrastructures
 
@@ -40,7 +40,7 @@ The production infrastructure can be accessed by your customers on the standard 
 
 During the initial setup phase, roles are provisionally assigned to each infrastructure component. `Infrastructure A`{.action} serves as the initial production environment, while `infrastructure B`{.action} serves as the staging environment. At this stage, we will consider them to be similar to one another.
 
-A `blue-green`{.action} infrastructure involves switching from infrastructure A to infrastructure B, once infrastructure B has been fully updated and validated. The Load Balancer will manage this switch.
+A **blue-green** infrastructure involves switching from infrastructure A to infrastructure B, once infrastructure B has been fully updated and validated. The Load Balancer will manage this switch.
 
 The diagram below gives a general idea of the architecture:
 
@@ -52,7 +52,7 @@ This infrastructure is made up of a server farm that will later be associated wi
 
 In our scenario, we will declare a farm of servers for the HTTP service. Please note that you can create as many farms (as well as TCP and/or UDP services) as are required for your final service to be exposed to your customers.
 
-#### Via the OVH Control Panel:
+#### Via the OVHcloud Control Panel:
 
 ![Add a new HTTP farm dedicated to infrastructure A](images/ferme1.png){.thumbnail}
 
@@ -86,7 +86,7 @@ With the additional calls listed below, you can list, modify and delete your ser
 
 Associate a server with your farm, if it is a physical server hosting your production infrastructure. The service exposed to the front-end is supplied by the server’s port 8080. Please note that you can associate one or more servers with each farm (to balance the load and/or offer higher fault tolerance, for ex.).
 
-#### Via the OVH Control Panel:
+#### Via the OVHcloud Control Panel:
 
 ![Add a new server to the farm HTTP A](images/serveur1.png){.thumbnail}
 
@@ -149,7 +149,7 @@ Deploy the server farm for the HTTP service (and/or any other TCP or UDP service
 
 Associate a server with your farm. Here, it involves one or more physical servers hosting your development infrastructure.
 
-#### Via the OVH Control Panel:
+#### Via the OVHcloud Control Panel:
 
 ![Add a new server to the farm HTTP B](images/serveur2.png){.thumbnail}
 
@@ -176,7 +176,7 @@ At this stage, here is the configuration status for your two farms:
 
 ## Front-ends
 
-The magic of `blue-green`{.action} deployment lies in the configuration of your front-ends. At this stage, we have configure two functionally identical infrastructures. For both infrastructures, you have declared one or more server farms, each with their own set of associated servers.
+The magic of **blue-green** deployment lies in the configuration of your front-ends. At this stage, we have configure two functionally identical infrastructures. For both infrastructures, you have declared one or more server farms, each with their own set of associated servers.
 
 To switch simply from one infrastructure to another, we will use front-ends.
 
@@ -190,7 +190,7 @@ To do this, we need to declare two front-ends. The first one will give you acces
 ### Blue front-end
 This `front-end`{.action} is dedicated to accessing the production infrastructure. The ports exposed to your customers are the standard ports for accessing the service. In this case, we are exposing a HTTP service, so we will use port 80 (443 if you would like an SSL termination).
 
-#### Via the OVH Control Panel:
+#### Via the OVHcloud Control Panel:
 
 ![Adding a front-end dedicated to production, a blue front-end](images/frontend1.png){.thumbnail}
 
@@ -215,7 +215,7 @@ This `front-end`{.action} is dedicated to accessing the production infrastructur
 
 This `front-end`{.action} is dedicated to accessing the development infrastructure. The ports exposed to your customers will be non-standard ports that you can choose arbitrarily. In this case, we will expose the HTTP development service on port 8888.
 
-#### Via the OVH Control Panel:
+#### Via the OVHcloud Control Panel:
 
 ![Add the green front-end, dedicated to development](images/frontend2.png){.thumbnail}
 
@@ -242,7 +242,7 @@ This `front-end`{.action} is dedicated to accessing the development infrastructu
 
 Once you have finished configuring the components of the OVHcloud Load Balancer service, you now just need to apply your changes.
 
-#### Via the OVH Control Panel:
+#### Via the OVHcloud Control Panel:
 
 ![Apply your changes to the zone](images/deploy.png){.thumbnail}
 

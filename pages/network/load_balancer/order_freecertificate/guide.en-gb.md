@@ -13,7 +13,7 @@ The purpose of SSL termination is to decrypt the incoming encrypted stream befor
 
 Handling SSL termination on the Load Balancer reduces the computational load on your backend servers and centralizes certificate management. This makes maintenance and security updates easier.
 
-**Discover how to order a free SSL certificate via the OVHcloud Manager or the API.**
+**Discover how to order a free SSL certificate via the OVHcloud Control Panel or the API.**
 
 ## Requirements
 
@@ -22,7 +22,7 @@ Handling SSL termination on the Load Balancer reduces the computational load on 
 
 ## Instructions
 
-### Via the Manager
+### Via the OVHcloud Control Panel
 
 #### Configure the frontend for SSL termination
 
@@ -42,13 +42,13 @@ Once the frontend has been created, a banner will appear prompting you to `Apply
 
 #### Order the free SSL certificate
 
-In the `SSL Certificates` section of your Manager, click the `Order SSL Certificate`{.action} button to create a new one. An edit window will appear with an `FQDN` field to be filled in.
+In the `SSL Certificates` section of your Control Panel, click the `Order SSL Certificate`{.action} button to create a new one. An edit window will appear with an `FQDN` field to be filled in.
 
 ![Add a free SSL certificate](images/iplb-order-ssl.png){.thumbnail}
 
 #### Follow-up of the order
 
-In the `Tasks`{.action} section of your Manager, the tasks related to ordering a free SSL Certificate are of the type `orderFreeCertificate`.
+In the `Tasks`{.action} section of your Control Panel, the tasks related to ordering a free SSL Certificate are of the type `orderFreeCertificate`.
 
 ### Via API
 
