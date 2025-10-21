@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a blue-green infrastructure'
 excerpt: 'This guide will show you how to deploy a blue-green infrastructure with the OVHcloud Load Balancer'
-updated: 2025-10-17
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -48,15 +48,15 @@ The diagram below gives a general idea of the architecture:
 
 ### Infrastructure A
 
-This infrastructure is made up of a server farm that will later be associated with a front-end of your Load Balancer. This farm will expose an HTTP, TCP or UDP service to the front-end. It also balances loads by sending the front-end’s incoming traffic to the servers. For more detail on the role of various component of the OVHcloud Load Balancer service, you can read the following guide: [Introduction to the OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation).
+This infrastructure is made up of a server farm that will later be associated with a front-end of your Load Balancer. This farm will expose an HTTP, TCP or UDP service to the front-end. It also balances loads by sending the front-end’s incoming traffic to the servers. For more details on the role of the various components of the OVHcloud Load Balancer service, please refer to the following guide: [Introduction to the OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation).
 
 In our scenario, we will declare a farm of servers for the HTTP service. Please note that you can create as many farms (as well as TCP and/or UDP services) as are required for your final service to be exposed to your customers.
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Add a new HTTP farm dedicated to infrastructure A](images/ferme1.png){.thumbnail}
 
-#### Via the API:
+#### Via the API
 
 > [!api]
 >
@@ -67,7 +67,7 @@ In our scenario, we will declare a farm of servers for the HTTP service. Please 
 |---|---|
 |serviceName|Your Load Balancer service ID|
 
-With the additional calls listed below, you can list, modify and delete your server farms respectively.
+With the additional calls listed below, you can list, modify and delete your server farms respectively:
 
 > [!api]
 >
@@ -84,15 +84,15 @@ With the additional calls listed below, you can list, modify and delete your ser
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm
 > 
 
-Associate a dedicated server with your farm if it hosts your production infrastructure. The service is exposed to the front-end via the server’s port 8080. Note that you may associate one or more servers with each farm (for example, to balance the load or offer higher fault tolerance).
+Link a dedicated server to your farm if it hosts your production infrastructure. The service is exposed to the front-end via the server’s port 8080. Note that you may LINK one or more servers with each farm (for example, to balance the load or offer higher fault tolerance).
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Add a new server to the farm HTTP A](images/serveur1.png){.thumbnail}
 
 ![Enter the HTTP A server’s configuration](images/server1.png){.thumbnail}
 
-#### Via the API:
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -107,7 +107,7 @@ Associate a dedicated server with your farm if it hosts your production infrastr
 |displayName||The name of the server associated with your farm|HTTP A server|
 |port||The server port associated with your farm|8080|
 
-With the additional calls listed below, you can list, modify and delete your servers respectively.
+With the additional calls listed below, you can list, modify and delete your servers respectively:
 
 > [!api]
 >
@@ -130,13 +130,13 @@ Functionally, this second infrastructure is identical to the first. It is also c
 
 Deploy the server farm for the HTTP service (and/or any other TCP or UDP services required for your final service to be exposed to your customers).
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Add a new HTTP farm dedicated to infrastructure B](images/ferme2.png){.thumbnail}
 
 ![Create a second farm dedicated to infrastructure B](images/backend2.png){.thumbnail}
 
-#### Via the API:
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -149,13 +149,13 @@ Deploy the server farm for the HTTP service (and/or any other TCP or UDP service
 
 Associate a server with your farm. Here, it involves one or more physical servers hosting your development infrastructure.
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Add a new server to the farm HTTP B](images/serveur2.png){.thumbnail}
 
 ![Enter the HTTP B server’s configuration](images/server2.png){.thumbnail}
 
-#### Via the API:
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -176,7 +176,7 @@ At this stage, here is the configuration status for your two farms:
 
 ## Front-ends
 
-The magic of blue-green deployment lies in the configuration of your front-ends. At this stage, we have configure two functionally identical infrastructures. For both infrastructures, you have declared one or more server farms, each with their own set of associated servers.
+The magic of blue-green deployment lies in the configuration of your front-ends. At this stage, we have configured two functionally identical infrastructures. For both infrastructures, you have declared one or more server farms, each with their own set of associated servers.
 
 To switch simply from one infrastructure to another, we will use front-ends.
 
@@ -189,15 +189,15 @@ To do this, we need to declare two front-ends. The first one will give you acces
 
 ### Blue front-end
 
-This **front-end** is dedicated to accessing the production infrastructure. The ports exposed to your customers are the standard ports for accessing the service. In this case, we are exposing a HTTP service, so we will use port 80 (443 if you would like an SSL termination).
+This **front-end** is dedicated to accessing the production infrastructure. The ports exposed to your customers are the standard ports for accessing the service. In this case, we are exposing an HTTP service, so we will use port 80 (443 if you would like an SSL termination).
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Adding a front-end dedicated to production, a blue front-end](images/frontend1.png){.thumbnail}
 
 ![Enter the blue front-end’s configuration](images/fblue.png){.thumbnail}
 
-#### Via the API:
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -216,13 +216,13 @@ This **front-end** is dedicated to accessing the production infrastructure. The 
 
 This **front-end** is dedicated to accessing the development infrastructure. The ports exposed to your customers will be non-standard ports that you can choose arbitrarily. In this case, we will expose the HTTP development service on port 8888.
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Add the green front-end, dedicated to development](images/frontend2.png){.thumbnail}
 
 ![Enter the green front-end’s configuration](images/fgreen.png){.thumbnail}
 
-#### Via the API:
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -241,13 +241,13 @@ This **front-end** is dedicated to accessing the development infrastructure. The
 
 ### Initial deployment
 
-Once you have finished configuring the components of the OVHcloud Load Balancer service, you now just need to apply your changes.
+Once you have finished configuring the components of the OVHcloud Load Balancer service, the only thing left to do is apply your changes.
 
-#### Via the OVHcloud Control Panel:
+#### Via the OVHcloud Control Panel
 
 ![Apply your changes to the zone](images/deploy.png){.thumbnail}
 
-#### Via the API:
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -260,16 +260,14 @@ Once you have finished configuring the components of the OVHcloud Load Balancer 
 
 ### The production/staging switch
 
-At this stage, our initial environment is deployed and ready to use.
-
-Now, you need to switch over your front-ends from one server farm to another.
+At this stage, our initial environment is deployed and ready to use. Now, you need to switch over your front-ends from one server farm to another.
 
 Let’s take a look at our scenario:
 
 - The production infrastructure (A) is deployed on **HTTP farm A** (id 77212), which in turn is attached to **HTTP server A**. This infrastructure can be accessed through the **blue front-end**.
 - The development infrastructure (B) is deployed on **HTTP farm B** (id 77213), which in turn is attached to **HTTP server B**. This infrastructure can be accessed through the **green front-end**.
 
-Once you have modified/applied updates to **infrastructure B** and checked that the service is working properly, you decide to put it into production.
+Once you have modified/applied updates to **infrastructure B** and checked that the service is working properly, you can decide to put it into production.
 
 To switch between the two farms, you can simply update your different front-ends by modifying the ID of the farm it is attached to, and applying the modification.
 
@@ -281,7 +279,7 @@ This should be the result on the OVHcloud Control Panel after updating the front
 
 ![Result after updating front-ends](images/switch.png){.thumbnail}
 
-#### Via the API: updating front-ends and applying modifications
+#### Via the OVHcloud API: updating front-ends and applying modifications
 
 > [!api]
 >
