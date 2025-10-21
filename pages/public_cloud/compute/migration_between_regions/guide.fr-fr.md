@@ -10,7 +10,7 @@ Ce guide explique comment migrer une instance Public Cloud d’une zone de dispo
 
 ## prérequis
 
-- Avoir une instance [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
+- Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
@@ -19,7 +19,7 @@ Ce guide explique comment migrer une instance Public Cloud d’une zone de dispo
 >
 > Avant d’effectuer une migration d’instance, il est important de bien comprendre les différences entre les types de déploiement proposés dans le Public Cloud OVHcloud. Chaque mode (1AZ, 3AZ ou Local Zones) a un impact direct sur la résilience, la disponibilité et la conception de votre infrastructure.
 >
-> Pour en savoir plus, consultez la documentation : [Comparaison et résilience des modes de déploiement - Comprendre les régions 3-AZ / 1-AZ / Local Zones.](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details).
+> Pour en savoir plus, consultez la documentation : [Comparaison et résilience des modes de déploiement - Comprendre les régions 3-AZ / 1-AZ / Local Zones](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details).
 >
 
 ### Étape 1. Sauvegarder son instance

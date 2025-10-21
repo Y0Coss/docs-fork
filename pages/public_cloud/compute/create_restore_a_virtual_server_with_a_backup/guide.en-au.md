@@ -54,10 +54,6 @@ You can make use of these instance backups for two basic purposes:
 >> >
 >>
 > Via the OpenStack CLI
->> > [!warning]
->> >
->> > If your instance is a Windows server, you must select a flavor of type win-xx-xx (for example, win-b2-15) and have a public interface on the Ext-Net network. Without these conditions, authentication with the OVHcloud KMS will not be possible, and your server will remain with an [unactivated licence](/pages/public_cloud/compute/activate-windows-license-private-mode). This could lead to limitations, including the absence of updates. Please note that it is not possible to resize a Linux instance (such as b2-15) to a Windows instance (such as win-b2-15). To make this transition, you need to recreate a new instance.
->> >
 >>
 >> To create an instance from your backup, use the backup ID as the image with this command:
 >>
@@ -78,7 +74,7 @@ You can make use of these instance backups for two basic purposes:
 >>
 >> > [!warning]
 >> >
->> > If your instance is a Windows server, you must select a flavor of type win-xx-xx (for example, win-b2-15) and have a public interface on the Ext-Net network. Without these conditions, authentication to the OVHcloud KMS will not be possible, and your server will remain with a [license not activated](/pages/public_cloud/compute/activate-windows-license-private-mode). This could lead to limitations, including the absence of updates. Please note that it is not possible to resize a Linux instance (e.g. b2-15) to a Windows instance (e.g. win-b2-15). To make this transition, you need to recreate a new instance.
+>> > If your instance is a Windows server, you must select a flavor of type win-xx-xx (for example, win-b2-15) and have a public interface on the Ext-Net network. Without these conditions, authentication with the OVHcloud KMS will not be possible, and your server will remain with an [unactivated licence](/pages/public_cloud/compute/activate-windows-license-private-mode). This could lead to limitations, including the absence of updates. Please note that it is not possible to resize a Linux instance (such as b2-15) to a Windows instance (such as win-b2-15). To make this transition, you need to recreate a new instance.
 >> >
 >>
 >> ![public-cloud-instance-backup-horizon-3](images/restorebackuphorizon3.png){.thumbnail}
