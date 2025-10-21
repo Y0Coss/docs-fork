@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Configuration du réseau privé"
 excerpt: Découvrez configurer un réseau privé pour votre service Enterprise File Storage depuis votre espace client OVHcloud
-updated: 2025-09-18
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -47,6 +47,11 @@ Cliquez sur le lien `Configurer les paramètres réseaux`{.action} pour configur
 Pour activer votre vRack Services, vous devez avoir un vRack. Si vous n'en avez pas à cette étape, il est possible d'en commander un via le bouton `Commander`{.action} de votre espace client. Le vRack est un service gratuit. Sinon, sélectionnez votre vRack dans la liste déroulante.
 
 ![Sans configuration réseau](images/02-EFS.png){.thumbnail}
+
+> [!primary]
+> Veuillez noter que la création de vRack Services, de Sous-réseaux ou de Service Endpoints sur un vRack en production **n'entraîne aucune interruption de service**.
+> Par conséquent, vous pouvez suivre les étapes 2 et 3 de ce guide en toute sécurité dans un environnement de production.
+>
 
 ### Etape 2 - Sélection ou création d'un vRack Services
 

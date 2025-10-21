@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Configuration du réseau privé"
 excerpt: Découvrez configurer un réseau privé pour votre service Enterprise File Storage depuis votre espace client OVHcloud
-updated: 2025-09-18
+updated: 2025-10-21
 ---
 
 ## Objectif

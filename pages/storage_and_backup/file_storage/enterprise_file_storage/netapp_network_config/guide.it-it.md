@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Private network configuration"
 excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud Control Panel"
-updated: 2025-09-18
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -44,7 +44,12 @@ Click the `Configure Network Parameters`{.action} link to configure your Service
 
 You must have a vRack to activate your vRack services. OVHcloud vRack is a free service. If you don't have one at this stage, you can order one using the `Order`{.action} button in the Control Panel. Otherwise, select your vRack from the drop down menu.
 
-![Sans configuration réseau](images/02-EFS.png){.thumbnail}
+![without configuration réseau](images/02-EFS.png){.thumbnail}
+
+> [!primary]
+> Please note that creating vRack Services, Subnets, or Service Endpoints on a production vRack **does not cause any service interruption**.
+> Therefore, you can safely follow steps 2 and 3 of this guide in a production environment.
+>
 
 ### Step 2 - Selecting or activating a vRack Services
 
