@@ -1,7 +1,7 @@
 ---
 title: "OKMS - Aperçu de l'architecture"
 excerpt: "Découvrez comment nous gérons la sécurité de l'infrastructure OKMS"
-updated: 2025-10-2°
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Même les employés OVHcloud n’ont pas accès à vos clés.
 
 ### Architecture KMS
 
-L'infrastructure OKMS est par conception répliqué sur plusieurs centres de données.
+L'infrastructure OKMS est par conception répliquée sur plusieurs centres de données.
 
 ![Présentation de l'architecture](images/KMS_Overview.png){.thumbnail}
 

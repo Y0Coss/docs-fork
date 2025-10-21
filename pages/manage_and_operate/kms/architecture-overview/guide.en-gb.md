@@ -1,12 +1,12 @@
 ---
 title: "OKMS Architecture overview"
 excerpt: "Discover how we handle the security of the OKMS infrastructure"
-updated: 2025-10-20
+updated: 2025-10-21
 ---
 
 ## Objective
 
-This guide explains how we handle the resilience of the OKMS infrastructure use for OVHcloud KMS and Secret Manager.
+This guide explains how we handle the resilience of the OKMS infrastructure used for OVHcloud KMS (Key Management Service) and Secret Manager.
 
 ## Instructions
 

@@ -2,7 +2,7 @@
 title: OKMS - Partage des responsabilités
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du KMS OHcloud et du Secret Manager"
 flag: hidden
-updated: 2024-10-20
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -58,7 +58,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer la disponibilité réseau du service |  | RA |
 | Administrer le service |  | RA  |
 | Réaliser les backups du service |  | RA |
-| Administrer les clés stockés et les secret dans le OKMS | RA |  |
+| Administrer les clés stockées et les secrets dans l'OKMS | RA |  |
 
 ##### **3.1.2. Gestion des accès**
 

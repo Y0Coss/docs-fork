@@ -1,7 +1,7 @@
 ---
 title: OKMS - Shared responsibilities
 excerpt: "Shared responsibilities between OVHcloud and the customer for OVHcloud KMS and Secret Manager"
-updated: 2025-10-20
+updated: 2025-10-21
 ---
 
 ## Objective
