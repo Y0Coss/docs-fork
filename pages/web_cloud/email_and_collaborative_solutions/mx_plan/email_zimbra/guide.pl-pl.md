@@ -1,12 +1,12 @@
 ---
 title: "Korzystaj z interfejsu Webmail Zimbra"
 excerpt: "Poznaj interfejs Zimbra Webmail dla Twoich kont e-mail MX Plan OVHcloud"
-updated: 2025-07-08
+updated: 2025-10-15
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 </style>
 
@@ -34,6 +34,7 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
  - [Przetwarzanie wiadomości](#email-management)
     - [Operacja na wybranym e-mailu](#email-action)
     - [Wyszukaj e-mail](#email-search)
+    - [Przywracanie usuniętych wiadomości e-mail](#restore)
 - [Napisz wiadomość e-mail](#email-writing)
 - [Skonfiguruj preferencje interfejsu Zimbra](#settings)
 - [Kontakty](#contacts)
@@ -47,6 +48,7 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
 - [Filtry](#filters)
     - [Jak skonfigurować filtry](#filters-howto)
     - [Utwórz filtr](#filters-creation)
+    - [Utwórz przekierowanie](#filters-redirection)
 - [Delegacje](#delegations)
 - [Podpis](#signatures)
 - [Odpowiedzi automatyczne / Poczta głosowa](#auto-reply)
@@ -55,11 +57,11 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
 
 Przejdź do strony [Webmail](/links/web/email). Wpisz adres e-mail i hasło, a następnie kliknij `Wyślij`{.action}.
 
-![Zimbra - logowanie](images/ovhcloud-login-webmail.png){.thumbnail}
+![Zimbra - logowanie](images/ovhcloud-login-webmail.png){.thumbnail .w-600}
 
 Zostaniesz wówczas przekierowany do interfejsu Zimbra.
 
-![Zimbra - interfejs](images/zimbra-01.png){.thumbnail}
+![Zimbra - interfejs](images/zimbra-01.png){.thumbnail .w-600}
 
 ### Ogólny interfejs webmaila Zimbra <a name="general-interface"></a>
 
@@ -72,13 +74,13 @@ Po zalogowaniu się do swojego konta e-mail masz dostęp do głównego okna Zimb
 >> - **(2)** Pasek wyszukiwania pozwala na odnalezienie wiadomości lub kontaktów.
 >> - **(3)** Menu zarządzania profilem konta e-mail oraz przycisk dostępu do ustawień **(4)**.
 >>
->> ![Zimbra - górne menu](images/zimbra-02.png){.thumbnail}
+>> ![Zimbra - górne menu](images/zimbra-02.png){.thumbnail .w-600}
 >>
 > **Lewa kolumna**
 >>
 >> Domyślnie jest to drzewo konta e-mail składające się z folderów i podfolderów. Katalog główny jest `Skrzynka odbiocza`.
 >>
->> ![Zimbra — drzewo](images/zimbra-03.png){.thumbnail}
+>> ![Zimbra — drzewo](images/zimbra-03.png){.thumbnail .w-600}
 >>
 > **Okno środkowe**
 >>
@@ -87,14 +89,14 @@ Po zalogowaniu się do swojego konta e-mail masz dostęp do głównego okna Zimb
 >> - **(1)** wykaz elementów
 >> - **(2)** Zawartość wybranego elementu
 >>
->> ![Zimbra - E-maile](images/zimbra-04.png){.thumbnail}
+>> ![Zimbra - E-maile](images/zimbra-04.png){.thumbnail .w-600}
 >>
 
 ### Zarządzanie folderami konta e-mail (lewa kolumna) <a name="folders-management"></a>
 
 W tym obszarze wyświetlają się foldery znajdujące się na Twoim koncie e-mail. Znajdziesz tam **specjalne** katalogi, które już posiadasz (na pomarańczowo) oraz katalogi, które **utworzyłeś** (na zielono).
 
-![Zimbra - dokumentacja](images/zimbra-05.png){.thumbnail}
+![Zimbra - dokumentacja](images/zimbra-05.png){.thumbnail .w-600}
 
 #### Katalogi specjalne <a name="folders-specials"></a>
 
@@ -127,11 +129,17 @@ Możesz również utworzyć podfolder, klikając prawym przyciskiem myszy wybran
 
 Po zaznaczeniu folderu lub podfolderu w lewej kolumnie lista zawartych w nim e-maili pojawia się w środkowej kolumnie. Następnie kliknij wybraną wiadomość e-mail, aby wyświetlić jej zawartość w prawym oknie.
 
+![Zimbra - Foldery](images/zimbra-06.png){.thumbnail .w-600}
+
 > [!primary]
 >
 > **Typ wyświetlania**
 >
 > Twoje wiadomości e-mail wyświetlają się w formie, którą można zmienić. Kliknij przycisk `Widok`{.action} w prawym górnym rogu okna.
+
+Można sortować i wyświetlać wiadomości e-mail na podstawie określonych kryteriów, klikając w istniejący filtr (domyślnie `Data`{.action}) u góry listy wiadomości e-mail.
+
+![Zimbra - carpetas](images/zimbra-06-date.png){.thumbnail .w-600}
 
 #### Operacja na wybranym e-mailu <a name="email-action"></a>
 
@@ -154,7 +162,7 @@ Po wybraniu wiadomości e-mail dostępnych jest wiele operacji:
     - **Drukuj**: drukuj wybraną konwersację lub wiadomość e-mail.
 - 9.**Widok**: wybierz jeden z 3 układów, aby wyświetlić foldery i e-maile.
 
-![Zimbra - działania](images/zimbra-07.png){.thumbnail}
+![Zimbra - działania](images/zimbra-07.png){.thumbnail .w-600}
 
 Możesz uzyskać dostęp do tych opcji, klikając prawym przyciskiem myszy każdą z e-maili w środkowej kolumnie.
 
@@ -174,20 +182,34 @@ Jeśli chcesz znaleźć e-mail, skorzystaj z paska wyszukiwania w górnej częś
 >>
 >> > Jeśli wiesz, gdzie szukać elementu, możesz wpisać słowa kluczowe ( **from**, **to**, **cc**, **subject**, itp.), po których następuje dwukropek (`:`), a następnie wyszukać element w polu tekstowym wyszukiwania. Na przykład, jeśli chcesz szybko wyszukać nadawcę, możesz wpisać "from:" przed adresem e-mail, którego szukasz. Na przykład "from: address@example.com".
 >>
->> ![Zimbra - proste wyszukiwanie](images/zimbra-08.png){.thumbnail}
+>> ![Zimbra - proste wyszukiwanie](images/zimbra-08.png){.thumbnail .w-600}
 >>
 > **Zaawansowane wyszukiwanie**
 >>
 >> Aby wyświetlić więcej informacji, kliknij krokwę w prawej części paska wyszukiwania. Dzięki temu możesz ograniczyć wyszukiwanie do katalogu, przedziału czasowego, tematu lub treści wiadomości, etc.
 >>
->> ![Zimbra - zaawansowane wyszukiwanie](images/zimbra-09.png){.thumbnail}
+>> ![Zimbra - zaawansowane wyszukiwanie](images/zimbra-09.png){.thumbnail .w-600}
 >>
+
+#### Odbudowanie usuniętych wiadomości e-mail <a name="restore"></a>
+
+Gdy usuwasz wiadomości e-mail, domyślnie trafiają one do kosza.<br>
+Jeśli usuniesz wiadomości e-mail z kosza lub go opróżnisz, trafiają one do rezerwacji. Nadal można je odzyskać przez 30 dni.
+
+Przejdziemy przez kroki odzyskania wiadomości e-mail z rezerwacji, przeglądając jej usunięcie i odbudowanie:
+
+1. **Usunięcie wiadomości e-mail**: Gdy wyświetlasz wiadomość e-mail w skrzynce odbiorczej lub jednym z folderów i klikasz `usuń`{.action}, trafi ona domyślnie do kosza.
+2. **Opróżnienie kosza**: Gdy klikniesz `Opróżnij kosz`{.action} lub usuniesz wiadomość e-mail z kosza, wiadomość e-mail nie będzie już widoczna w koszu i wejdzie w 30-dniowy okres rezerwacji.
+3. **Dostęp do odbudowania**: Aby odzyskać wiadomość e-mail usuniętą z kosza w ciągu 30 dni, kliknij prawym przyciskiem myszy na `Kosz`{.action}, a następnie kliknij `Odbuduj usuniętą pocztę`{.action}.
+4. **Wybierz wiadomości e-mail do odbudowania**: W tym oknie możesz zobaczyć wiadomości e-mail, które zostały opróżnione z kosza. Wybierz wiadomość(e) e-mail, które chcesz odbudować. Kliknij `Dalej`{.action}, wybierz folder, w którym chcesz odbudować wiadomości e-mail, a następnie kliknij `Zapisz`{.action}.
+
+![Zimbra - prosta wyszukiwarka](images/zimbra-restore.png){.thumbnail .w-600}
 
 ### Napisz wiadomość e-mail <a name="email-writing"></a>
 
 Aby utworzyć nową wiadomość e-mail, kliknij przycisk `Nowa wiadomość`{.action} (1) w lewym górnym rogu okna Zimbra.
 
-![Zimbra - napisz e-mail](images/zimbra-10.png){.thumbnail}
+![Zimbra - napisz e-mail](images/zimbra-10.png){.thumbnail .w-600}
 
 > [!tabs]
 > **Nagłówek**
@@ -204,18 +226,18 @@ Aby utworzyć nową wiadomość e-mail, kliknij przycisk `Nowa wiadomość`{.act
 >>    - Kliknij pozycję `Poproś o potwierdzenie odczytu`, aby poprosić odbiorcę o potwierdzenie przeczytania.<br>
 >>    - Funkcja `Zwykły tekst` wyłączy funkcje układu strony HTML w wiadomości e-mail. <br>
 >>
->> ![Zimbra — nagłówek](images/zimbra-11.png){.thumbnail}
+>> ![Zimbra — nagłówek](images/zimbra-11.png){.thumbnail .w-600}
 >>
 > **Treść e-maila**
 >>
 >> Treść wiadomości e-mail można zredagować, tworząc pasek narzędzi HTML w dolnej części okna. Pozwoli Ci to na tworzenie wiadomości e-mail z układem bezpośrednio w przeglądarce. Ponadto przycisk `< >`{.action} (po prawej stronie paska narzędzi) otwiera okno, w którym można wkleić gotowy e-mail z narzędzia zewnętrznego.
 >>
->> ![Zimbra — ciało](images/zimbra-12.png){.thumbnail}
+>> ![Zimbra — ciało](images/zimbra-12.png){.thumbnail .w-600}
 >>
 
 Po zredagowaniu wiadomości e-mail, przed kliknięciem przycisku `Wyślij`{.action}, możesz dołączyć do niej załącznik, klikając ikonę spinki znajdującą się obok przycisku `Wyślij`{.action}.
 
-![Zimbra - załącznik](images/zimbra-13.png){.thumbnail}
+![Zimbra - załącznik](images/zimbra-13.png){.thumbnail .w-600}
 
 > [!success]
 > **Anuluj wysyłkę**
@@ -223,13 +245,13 @@ Po zredagowaniu wiadomości e-mail, przed kliknięciem przycisku `Wyślij`{.acti
 > Jeśli zaznaczyłeś opcję `Cofnij wysyłanie` w sekcji "**Pisanie e-maila**" preferencji Zimbra, możesz kliknąć `COFNIJ`{.action} Anuluj wysyłkę.
 > Przycisk ten pozostaje dostępny przez około 5 sekund.
 >
-> ![Zimbra - anulowanie wysyłki](images/zimbra-cancel-email.png){.thumbnail .w-400}
+> ![Zimbra - anulowanie wysyłki](images/zimbra-cancel-email.png){.thumbnail .w-600}
 
 ### Skonfiguruj preferencje interfejsu Zimbra <a name="settings"></a>
 
 Interfejs Zimbra posiada 2 menu konfiguracyjne:
 
-![Zimbra - preferencje](images/zimbra-14.png){.thumbnail}
+![Zimbra - preferencje](images/zimbra-14.png){.thumbnail .w-600}
 
 - **(1) Profil** : kliknij nazwę konta e-mail w prawej górnej części interfejsu. Z poziomu tego menu będziesz mógł "**Zmień hasło**" swojego konta e-mail, "**Zmień zdjęcie profilowe**" lub wylogować się, klikając "**Wyloguj**".
 
@@ -238,7 +260,10 @@ Interfejs Zimbra posiada 2 menu konfiguracyjne:
 > [!tabs]
 > **Ogólne**
 >>
->> W tej karcie znajdziesz zajętą przestrzeń na koncie e-mail oraz możliwość ustawienia formatu, w którym będą wyświetlane daty i godziny e-maili.
+>> W tym zakładku znajdziesz:
+>>
+>> - pasek postępu wskazujący zajęty przestrzeń na Twoim koncie e-mail.
+>> - możliwość ustawienia formatu wyświetlania daty i godziny Twoich wiadomości e-mail.
 >>
 > **Wyświetlanie wiadomości e-mail**
 >>
@@ -313,7 +338,7 @@ Kliknij pozycję `Kontakty` na górnym pasku, aby przejść do książki adresow
 - **(2) Lista kontaktów** (na środku): wyświetl kontakty z wybranej książki adresowej lub folderu.
 - **(3) Właściwości kontaktu** lub **Nowy kontakt** (po prawej): Okno jest wyświetlane, gdy wybrany lub tworzony jest kontakt. Możesz odczytać lub zmienić dane kontaktu.
 
-![Zimbra - kontakty](images/zimbra-15.png){.thumbnail}
+![Zimbra - kontakty](images/zimbra-15.png){.thumbnail .w-600}
 
 Aby utworzyć nowy kontakt, kliknij przycisk `Nowy kontakt`{.action} w górnej części lewej kolumny.
 
@@ -321,7 +346,7 @@ Uzupełnij pola zgodnie z informacjami, które posiadasz na temat kontaktu. Moż
 
 Następnie kliknij przycisk `Zapisz`{.action}.
 
-![Zimbra - nowy kontakt](images/zimbra-16.png){.thumbnail}
+![Zimbra - nowy kontakt](images/zimbra-16.png){.thumbnail .w-600}
 
 #### Zarządzanie folderami kontaktów <a name="contacts-folders"></a>
 
@@ -339,7 +364,7 @@ Możesz również utworzyć podfolder, klikając prawym przyciskiem myszy wybran
 
 Aby przenieść kontakt do jednego z folderów, zaznacz go w środkowej kolumnie, a następnie w oknie kontaktu, które pojawi się po prawej stronie, kliknij przycisk `Przenieś`{.action}. Zaznacz następnie folder, który chcesz przypisać do kontaktu.
 
-![Zimbra - sprawy z kontaktami](images/zimbra-17.png){.thumbnail}
+![Zimbra - sprawy z kontaktami](images/zimbra-17.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -353,7 +378,7 @@ Aby utworzyć listę, kliknij w ramce `Nowa lista` na dole lewej kolumny i wpisz
 
 Aby przypisać kontakt do jednej z list, zaznacz ten kontakt w środkowej kolumnie listy, a następnie w oknie, które pojawi się po prawej stronie, kliknij `Przypisz do list`{.action}. Zaznacz listę lub listy, które chcesz przypisać do kontaktu. Możesz również wpisać nazwę nowej listy i kliknąć na `Dodaj`{.action}.
 
-![Zimbra - listy](images/zimbra-list.png){.thumbnail}
+![Zimbra - listy](images/zimbra-list.png){.thumbnail .w-600}
 
 #### Import / Eksport kontaktów <a name="import-export"></a>
 
@@ -365,14 +390,14 @@ Wybierz jedną z dwóch następujących zakładek:
 >> W oknie `Kontakty` kliknij prawym przyciskiem myszy wybrany folder kontaktów, z wyjątkiem folderów "Kontakty e-mail" i "Kosz", które nie pozwalają na import i eksport kontaktów.<br>
 >>
 >> Następnie kliknij przycisk `Importuj`{.action}, aby otworzyć okno importu. Przycisk `Browse...` umożliwia pobranie pliku zawierającego kontakty w formacie ".csv" lub ".vcf". <br><br>
->> ![Zimbra — import](images/zimbra-19.png){.thumbnail}
+>> ![Zimbra — import](images/zimbra-19.png){.thumbnail .w-600}
 >>
 > **Eksportuj kontakty**
 >>
 >> W oknie `Kontakty` kliknij prawym przyciskiem myszy wybrany folder kontaktów, z wyjątkiem folderów "Kontakty e-mail" i "Kosz", które nie pozwalają na import i eksport kontaktów.
 >>
 >> Następnie kliknij przycisk `Eksportuj`{.action}, aby otworzyć okno eksportu. Wybierz typ pliku, który chcesz wyeksportować i kliknij przycisk `Eksportuj teraz`{.action}.<br><br>
->> ![Zimbra - Eksport](images/zimbra-20.png){.thumbnail}
+>> ![Zimbra - Eksport](images/zimbra-20.png){.thumbnail .w-600}
 >>
 
 ### Kalendarz <a name="calendar"></a>
@@ -383,7 +408,7 @@ Kliknij ikonę `Kalendarz` na górnym pasku, aby przejść do książki adresowe
 - **(2) Zawartość kalendarzy** (na środku) : Wyświetl zawartość wybranych kalendarzy i podkalendarzy.
 - **(3) Lista zadań** (po prawej) : Zarządzaj zadaniami i listami zadań.
 
-![Zimbra - kalendarz](images/zimbra-calendar-view.png){.thumbnail}
+![Zimbra - kalendarz](images/zimbra-calendar-view.png){.thumbnail .w-600}
 
 ### Zarządzanie kalendarzami <a name="calendar-management"></a>
 
@@ -397,14 +422,14 @@ Możliwe jest również tworzenie podkalendarzy.
 
 - **(2)** : Aby utworzyć podkalendarz, naciśnij kursor na kalendarzu, dla którego chcesz go utworzyć, a następnie kliknij prawym przyciskiem myszy, aby wyświetlić menu rozwijane. Kliknij przycisk `Dodaj podkalendarz`. Wpisz nazwę i określ kolor, po czym kliknij na `Zapisz`{.action}
 
-![Zimbra - kalendarz](images/zimbra-calendar-add.png){.thumbnail .w-400}
+![Zimbra - kalendarz](images/zimbra-calendar-add.png){.thumbnail .w-600}
 
 ##### 2- Dodaj wydarzenie <a name="calendar-add-event"></a>
 
 - **(1)** : Kliknij `Nowe Termin`{.action} w lewym górnym rogu.
 - **(2)** : Kliknij przedział godzinowy w kalendarzu, do którego chcesz dodać wydarzenie. Aby uprościć dodawanie, wystarczy zdefiniować tytuł wydarzenia i lokalizację, a następnie kliknąć na `Zapisz`{.action}. Aby dodać więcej szczegółów wydarzenia, kliknij przycisk `Dodaj więcej szczegółów`{.action}
 
-![Zimbra - kalendarz](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+![Zimbra - kalendarz](images/zimbra-calendar-event-add-01.png){.thumbnail .w-600}
 
 - **Początek** : data i godzina rozpoczęcia wydarzenia. Jeśli zaznaczysz `Cały dzień`, nie będziesz miał godziny rozpoczęcia i zakończenia do wpisania, ponieważ cały dzień będzie brany pod uwagę.
 - **Koniec** : data i godzina zakończenia wydarzenia.
@@ -419,7 +444,7 @@ Możliwe jest również tworzenie podkalendarzy.
 
 Po zdefiniowaniu wydarzenia kliknij przycisk `Zapisz`{.action}.
 
-![Zimbra - kalendarz](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+![Zimbra - kalendarz](images/zimbra-calendar-event-add-02.png){.thumbnail .w-600}
 
 ##### 3- Edytuj wydarzenie <a name="calendar-modify-event"></a>
 
@@ -433,13 +458,13 @@ Lista "Zadania" istnieje domyślnie. Nie można jej usunąć, ale można utworzy
 
 - **(2)** : Aby utworzyć nową listę zadań, kliknij przycisk `...`{.action}, a następnie `Sporządzać listę...`{.action}.
 
-![Zimbra - kalendarz](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+![Zimbra - kalendarz](images/zimbra-calendar-task-01.png){.thumbnail .w-600}
 
 Po utworzeniu zadania możesz zdefiniować datę ukończenia i priorytet, które pozwolą na sortowanie ich według ważności, a także wybrać odpowiednią listę zadań z menu rozwijanego.
 
 Następnie kliknij przycisk `Zapisz`{.action}, aby dokończyć tworzenie zadania.
 
-![Zimbra - kalendarz](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+![Zimbra - kalendarz](images/zimbra-calendar-task-02.png){.thumbnail .w-600}
 
 ### Przestrzeń dyskowa <a name="storage"></a>
 
@@ -462,7 +487,7 @@ Kliknij ikonę `Aktówka`{.action} na górnym pasku, aby uzyskać dostęp do prz
 
 3. W prawym oknie, w zależności od typu pliku wybranego w środkowej kolumnie, wyświetlany jest podgląd treści. W górnym pasku podglądu są wyświetlane możliwe operacje na wybranym pliku lub plikach.
 
-![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
 #### Dodaj plik
 
@@ -472,7 +497,7 @@ Aby dodać plik do przestrzeni dyskowej, wykonaj następujące kroki:
 2. W oknie Przeglądarka plików wybierz plik(i), który chcesz umieścić na Twojej przestrzeni dyskowej.
 3. Kliknij przycisk `Otwórz`{.action}, aby załadować element(y) do Twojej przestrzeni dyskowej.
 
-![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
 #### Udostępnienie pliku/katalogu
 
@@ -491,7 +516,7 @@ Udostępnianie pozwala na udostępnienie katalogu lub pliku na Twojej przestrzen
 >> 4. Wybierz uprawnienia, które chcesz przypisać gościowi.
 >> 5. Kliknij `Zapisz`{.action}, aby dokończyć udostępnianie.
 >>
->> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail .w-600}
 >>
 > **Udostępnij katalog**
 >>
@@ -500,12 +525,12 @@ Udostępnianie pozwala na udostępnienie katalogu lub pliku na Twojej przestrzen
 >> 3. Wybierz uprawnienia, które chcesz przypisać gościowi.
 >> 4. Kliknij na `Zapisz`{.action}, aby dokończyć udostępnianie.
 >>
->> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail .w-600}
 >>
 
 Gość otrzymuje e-mail z prośbą o utworzenie konta Zimbra z nazwą użytkownika i hasłem. To konto umożliwia dostęp do interfejsu Zimbra tylko w przypadku udostępniania treści.
 
-![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
 
 ### Filtry <a name="filters"></a>
 
@@ -520,7 +545,7 @@ Reguła filtrowania w Zimbra składa się z 4 elementów:
 3 - [Wartość](#filters-value): jakie słowa/elementy wiadomości e-mail będą filtrowane.<br>
 4 - [Operacje filtru](#filters-action): co filtr zrobi z e-mailem.<br>
 
-![Zimbra - filtry](images/zimbra-filters.png){.thumbnail}
+![Zimbra - filtry](images/zimbra-filters.png){.thumbnail .w-600}
 
 > Przykład: Jeśli pole **Temat (1)** wiadomości e-mail **zawiera (2)** słowo `invoice`**(3)**, **przenieś na (4)** adres `billing@example.com`.
 
@@ -583,7 +608,7 @@ Pole `Wówczas` definiuje czynność, jaką należy wykonać w odniesieniu do e-
 
 Aby uzyskać dostęp do tworzenia filtrów, kliknij ikonę koła zębatego w prawym górnym rogu interfejsu Zimbra, następnie kliknij `Ustawienia`{.action}, a na koniec wybierz pozycję `Filtry`{.action} w lewej kolumnie.
 
-![Zimbra - utwórz filtr](images/zimbra-21.png){.thumbnail}
+![Zimbra - utwórz filtr](images/zimbra-21.png){.thumbnail .w-600}
 
 Jeśli filtry istnieją, lista będzie wyświetlana zgodnie z ich kolejnością:
 
@@ -596,12 +621,37 @@ Kliknij przycisk `+ Dodaj filtr`{.action}, aby rozpocząć jego tworzenie. Okno 
 > [!tabs]
 > **Tryb prosty**
 >>
->> ![Zimbra - filtry - tryb prosty](images/zimbra-22.png){.thumbnail}
+>> ![Zimbra - filtry - tryb prosty](images/zimbra-22.png){.thumbnail .w-600}
 >>
 > **Tryb zaawansowany**
 >>
->> ![Zimbra - filtry - tryb zaawansowany](images/zimbra-23.png){.thumbnail}
+>> ![Zimbra - filtry - tryb zaawansowany](images/zimbra-23.png){.thumbnail .w-600}
 >>
+
+#### Utwórz przekierowanie <a name="filters-redirection"></a>
+
+Można użyć filtra, aby przekierować odbierane wiadomości e-mail do innej adresu za pomocą reguły przekierowania.
+
+> [!primary]
+>
+> W poniższym przykładzie zdecydowaliśmy się na przekierowanie wszystkich wiadomości e-mail do innej adresu e-mail. Aby zrozumieć przykład w zrzutach ekranu, jesteśmy zalogowani na adres **zimbra@mydomain.ovh** i chcemy przekierować wiadomości z tego konta do adresu **address@example.com**.
+>
+
+Aby uzyskać dostęp do filtrów i utworzyć swoje przekierowanie, wykonaj poniższe instrukcje:
+
+- Kliknij przycisk `⚙`{.action} w prawym górnym rogu okna webmail.
+- Kliknij `Ustawienia`{.action}.
+- Kliknij sekcję `Filtry`{.action} w oknie ustawień.
+- Kliknij przycisk `Dodaj filtr`{.action}.
+    - Najpierw kliknij <u>Tryb zaawansowany</u> w prawym górnym rogu, aby skonfigurować tę regułę.
+    - Nadaj nazwę swojemu filtru w polu `Nazwa filtra`.
+    - Pozostaw menu rozwijane na `wszystkie` w zdaniu „Jeśli wiadomość przychodząca spełnia ... tych warunków”.
+    - W następnym wierszu wybierz `Do`{.action} (To), pozostaw `zawiera`{.action} (contains), a następnie wpisz adres e-mail, na który jesteś zalogowany, w polu po prawej stronie.
+    - Pod etykietą „Wtedy” (Then) wybierz `Przekieruj do` (Forward to) z menu rozwijanego i wpisz adres e-mail docelowy.
+    - Kliknij `+ Dodaj akcję`{.action} (Add an action) niżej, a następnie wybierz `Zachowaj w skrzynce odbiorczej` (Keep in Inbox).
+    - Kliknij `Zapisz`{.action} w oknie filtra i również w oknie ustawień.
+
+![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
 
 ### Delegacje <a name="delegations"></a>
 
@@ -613,7 +663,7 @@ Konto e-mail można przypisać do innego konta e-mail. Musi on współużytkowa�
 >
 > Konto e-mail o tej samej nazwie domeny, ale znajdujące się w innej ofercie e-mail nie może otrzymać uprawnienia.
 
-![email](images/zimbra-delegation.png){.thumbnail}
+![email](images/zimbra-delegation.png){.thumbnail .w-600}
 
 **(1) Delegaci**. Aby delegować konto e-mail do innego konta, kliknij przycisk `Dodaj delegatów`{.action}.
 

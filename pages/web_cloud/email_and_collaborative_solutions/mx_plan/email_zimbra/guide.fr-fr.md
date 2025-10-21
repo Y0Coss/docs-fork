@@ -454,7 +454,7 @@ Les tâches sont des éléments dissociés de vos calendriers. Elles ont pour ob
 
 La liste « Tâches » existe par défaut, elle ne peut pas être supprimée mais vous pouvez créer vos propres listes de tâches.
 
-- **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action}  ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
+- **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action} ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
 
 - **(2)** : Pour créer une nouvelle liste de tâches, cliquez sur le bouton `...`{.action} puis sur `Créer une liste`{.action}.
 
@@ -674,7 +674,7 @@ Il est possible de déléguer votre compte e-mail à un autre compte e-mail. Cel
 
 - **Enregistrer les mails envoyés dans mon dossier « Envoyés »** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés ».
 - **Enregistrer les mails envoyés dans le dossier « Envoyés » du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans son dossier « Envoyés ».
-- **Enregistrer les mails envoyés dans mon dossier « Envoyés » et dans celui du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés »  ainsi que dans son dossier « Envoyés ».
+- **Enregistrer les mails envoyés dans mon dossier « Envoyés » et dans celui du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés » ainsi que dans son dossier « Envoyés ».
 - **Ne pas enregistrer de copie des mails envoyés** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, il n'y aura aucune copie de faite.
 
 ### Signature <a name="signatures"></a>
