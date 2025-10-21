@@ -6,7 +6,7 @@ updated: 2025-10-10
 
 > [!primary]
 > 
-> This document is related to a deployment planned for **October 31st, 2025**, which will change the way link aggregation (LACP) functions within OVHcloud infrastructures.
+> This document is related to a deployment planned for **November 25, 2025**, which will change the way link aggregation (LACP) functions within OVHcloud infrastructures.
 > OVHcloud customers affected by these changes will also receive a communication by e-mail.
 
 ## Objective
