@@ -249,19 +249,26 @@ web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-c
 web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-domains: Domaines
 web-cloud-domains-api: API
-web-cloud-domains-api-frequent-tasks: Tâches courantes
+web-cloud-domains-api-key-concepts: Concepts clés
+web-cloud-domains-api-configuration: Configuration
+web-cloud-domains-api-migration: Migration
 web-cloud-domains-dns: DNS (Domain Name System)
-web-cloud-domains-dns-dns-options: Options DNS
-web-cloud-domains-dns-dns-records: Enregistrements DNS
-web-cloud-domains-dns-dns-servers: Serveurs DNS
-web-cloud-domains-dns-dns-tools: Outils DNS
-web-cloud-domains-dns-dns-zone: Zone DNS
+web-cloud-domains-dns-configuration-dns-options: Options DNS
+web-cloud-domains-dns-configuration-dns-records: Enregistrements DNS
+web-cloud-domains-dns-configuration-dns-servers: Serveurs DNS
+web-cloud-domains-dns-key-concepts: Concepts clés
+web-cloud-domains-dns-configuration: Configuration
+web-cloud-domains-dns-configuration-dns-zone: Zone DNS
+web-cloud-domains-dns-security: Sécurité
+web-cloud-domains-dns-tutorials: Tutoriels
 web-cloud-domains-domain-names: Noms de domaine
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Changer le propriétaire d'un nom de domaine (trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Changer le propriétaire d'un nom de domaine (trade)
 web-cloud-domains-domain-names-getting-started: Premiers pas
-web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Transfert entrant vers OVHcloud
+web-cloud-domains-domain-names-configuration: Configuration
+web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Transfert entrant vers OVHcloud
 web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transfert sortant depuis OVHcloud
-web-cloud-domains-domain-names-troubleshooting: Diagnostic et dépannage
+web-cloud-domains-domain-names-troubleshooting: Diagnostic
+web-cloud-domains-domain-names-migration: Migration
 web-cloud-domains-domain-names-tutorials: Tutoriels
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Accès Internet
