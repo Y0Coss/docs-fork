@@ -181,7 +181,7 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 #### Before you begin
 
 - Your backup file (`.sql`) was placed in step 3.2 (e.g., `/home/debian/backup.sql`).
-- The **S**ystem **G**estion de **B**ase de **D**onnées (**SGBD**) (MySQL / MariaDB) and its command-line client were installed in [step 2.2](#step2.2).
+- The **D**ata**B**ase **M**anagement **S**ystem (**DBMS**) (MySQL / MariaDB) and its command-line client were installed in [step 2.2](#step2.2).
 - The database **`db_name`** :
     - **already exists** if you created it during step 2.2 (or via your admin panel).
     - **can be created automatically** if your backup `.sql` contains `CREATE DATABASE`.
@@ -196,9 +196,9 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 #### Import the database
 
 1. Connect to the VPS via SSH by referring to the "Connect to your VPS" section of our guide "[Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
-2. Launch the import using the SGBD client:
+2. Launch the import using the DBMS client:
 
-    In the example below, we use MySQL as the SGBD. Use the official documentation of the SGBD you installed during [step 2.2](#step2.2) to use the appropriate command for importing the database onto your VPS.
+    In the example below, we use MySQL as the DBMS. Use the official documentation of the DBMS you installed during [step 2.2](#step2.2) to use the appropriate command for importing the database onto your VPS.
 
     ```bash
     mysql -u user_name -p db_name < /home/debian/backup.sql
@@ -207,7 +207,7 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
     - Replace `user_name` with your MySQL (MySQL/MariaDB) username, not your SSH login.
     - Replace `db_name` with the name of the database to import.
 
-3. Enter the SGBD user password when prompted and wait for the import to complete.
+3. Enter the DBMS user password when prompted and wait for the import to complete.
 
 ### Step 5 - Set up your website’s configuration files <a name="step5"></a>
 
