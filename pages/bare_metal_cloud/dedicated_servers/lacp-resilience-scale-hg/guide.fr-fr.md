@@ -28,7 +28,7 @@ Désormais :
 - Les agrégations logiques seront réparties sur **deux cartes réseau distinctes** (sans modification physique du câblage).
 - Les agrégations existantes ne sont pas modifiées.
 
-![Resilience comparison before/after](images/resilience_comparison.png){.thumbnail}
+![Comparaison de la résilience avant/après](images/resilience_comparison.png){.thumbnail}
 
 Si vous n’utilisez pas l’agrégation de liens LACP sur votre serveur, **aucune action n’est requise** et **aucun changement ne sera visible pour vos services**.
 
