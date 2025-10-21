@@ -1,7 +1,7 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2025-09-08
+updated: 2025-10-21
 ---
 
 ## Objetivo
