@@ -70,7 +70,7 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
-- Details of a specific TCP server:
+- Details of a specific TCP server farm:
 
 > [!api]
 >
@@ -166,7 +166,7 @@ A `front-end`{.action} must now be added to the service and connected to the ser
 
 Go to the `+ Front-ends`{.action} tab, and click `+TCP/TLS`{.action}.
 
-Fill in the fields. The mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone* and *Probe* (if a probe was configured on your farm). If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a port range, in the format "start_port-end_port".
+Fill in the fields. The mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone*, *Default farm* and *Probe* (if a probe was configured on your farm). If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a port range, in the format "<start\_port>-<end\_port>".
 
 If you have routed Additional IPs to your OVHcloud Load Balancer service, you can also attach a front-end to one or more specific Additional IPs.
 
@@ -240,7 +240,9 @@ Go to the homepage for the OVHcloud Load Balancer, and click `Apply:Zone`{.actio
 
 To make Postfix compatible with HAProxy *ProxyProtocol*, an option is required in the postfix main.cf configuration file:
 
-**smtp_upstream_proxy_protocol = haproxy**
+```bash
+smtp_upstream_proxy_protocol = haproxy
+```
 
 The Postfix daemon must then be restarted.
 

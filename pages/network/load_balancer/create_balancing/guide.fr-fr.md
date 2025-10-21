@@ -61,8 +61,8 @@ Cet appel permet de consulter le détail d'une ferme en connaissant son identifi
 
 |Paramètre|Signification|
 |---|---|
-|serviceName\*|Identifiant de votre service Load Balancer|
-|farmId\*|Identifiant numérique de la ferme|
+|serviceName*|Identifiant de votre service Load Balancer|
+|farmId*|Identifiant numérique de la ferme|
 
 |Réponse (BackendHttp)|Signification|
 |---|---|
@@ -85,8 +85,8 @@ Cet appel permet de modifier la configuration d'une ferme en connaissant son ide
 
 |Paramètre|Signification|
 |---|---|
-|serviceName\*|Identifiant de votre service Load Balancer|
-|farmId\*|Identifiant numérique de la ferme|
+|serviceName*|Identifiant de votre service Load Balancer|
+|farmId*|Identifiant numérique de la ferme|
 |BackendHttp.balance|Algorithme de répartition souhaité pour cette ferme|
 
 #### Appliquer les modifications
@@ -98,8 +98,8 @@ Cet appel permet de modifier la configuration d'une ferme en connaissant son ide
 
 |Paramètre|Signification|
 |---|---|
-|serviceName\*|Identifiant de votre service Load Balancer|
-|zone\*|Nom de la zone dans laquelle déployer la configuration|
+|serviceName*|Identifiant de votre service Load Balancer|
+|zone*|Nom de la zone dans laquelle déployer la configuration|
 
 ## Aller plus loin
 
