@@ -1,7 +1,7 @@
 ---
-title: Migrer un volume Block Storage vers un volume chiffré LUKS
-excerpt: 'Apprenez à migrer un volume Block Storage d’un état non chiffré vers un volume chiffré (LUKS), tout en garantissant la sécurité de vos données.'
-updated: 2025-09-30
+title: "Migrer un volume Block Storage vers un volume chiffré LUKS"
+excerpt: "Découvrez comment migrer un volume Block Storage d’un état non chiffré vers un volume chiffré (LUKS), tout en garantissant la sécurité de vos données"
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -14,13 +14,13 @@ Ce guide explique comment migrer vos données d’un volume Block Storage standa
 
 - Une [instance Public Cloud](/links/public-cloud/compute) dans votre projet Public Cloud.
 - Un volume Block Storage existant (source)
-- Accès administrateur (root ou sudo) à votre instance
+- Un accès administrateur (root ou sudo) à votre instance
 
 ## En pratique
 
-### Step 1: Créer un volume LUKS
+### Etape 1 : Créer un volume LUKS
 
-Depuis votre [espace client OVHcloud](/links/manager) créez un nouveau volume Block Storage et sélectionnez le type `LUKS`.
+Depuis votre [espace client OVHcloud](/links/manager), créez un nouveau volume Block Storage et sélectionnez le type `LUKS`.
 
 > [!primary]
 > 
@@ -31,36 +31,36 @@ Depuis votre [espace client OVHcloud](/links/manager) créez un nouveau volume B
 
 1. Attachez les deux volumes à votre instance :
 
-- Volume source (non chiffré)
-- Volume cible (chiffré LUKS)
+    - Volume source (non chiffré)
+    - Volume cible (chiffré LUKS)
 
 2. Vérifiez que les deux volumes sont visibles sur votre instance :
 
-```bash
-lsblk
-```
+    ```bash
+    lsblk
+    ```
 
-Exemple de sortie :
+    Exemple de sortie :
 
-```bash
-/dev/vdb # volume source
-/dev/vdc # volume cible LUKS
-```
+    ```bash
+    /dev/vdb # volume source
+    /dev/vdc # volume cible LUKS
+    ```
 
 ### Étape 3 : Préparer le volume LUKS (chiffré)
 
 1. Formatez le volume LUKS avec le système de fichiers de votre choix (par exemple ext4) :
 
-```bash
-sudo mkfs.ext4 /dev/vdc
-```
+    ```bash
+    sudo mkfs.ext4 /dev/vdc
+    ```
 
 2. Montez le volume cible :
 
-```bash
-sudo mkdir -p /mnt/luks_target
-sudo mount /dev/vdc /mnt/luks_target
-```
+    ```bash
+    sudo mkdir -p /mnt/luks_target
+    sudo mount /dev/vdc /mnt/luks_target
+    ```
 
 ### Étape 4 : Monter le volume source
 
@@ -85,18 +85,18 @@ sudo rsync -aAXHv --progress /mnt/source_volume/ /mnt/luks_target/
 
 ### (Optionnel) Étape 6 : Vérification et détachement
 
-1. Vérifiez que vos données ont été copiées correctement. Vous pouvez utiliser des commandes comme ls, du ou rsync --dry-run pour un contrôle rapide.
+1. Vérifiez que vos données ont été copiées correctement. Vous pouvez utiliser des commandes comme `ls`, `du` ou `rsync --dry-run` pour un contrôle rapide.
 
 2. Démontez les deux volumes :
 
-```bash
-sudo umount /mnt/source_volume
-sudo umount /mnt/luks_target
-```
+    ```bash
+    sudo umount /mnt/source_volume
+    sudo umount /mnt/luks_target
+    ```
 
 3. Détachez le volume source s’il n’est plus nécessaire.
 
-### (Optionnel) Étape 7 : Mettre à jour vos points de montage
+### Étape 7 (facultatif) : Mettre à jour vos points de montage
 
 Si le volume LUKS doit être utilisé de manière permanente, ajoutez une entrée dans `/etc/fstab` pour qu’il soit monté automatiquement au démarrage :
 
@@ -110,11 +110,11 @@ UUID=<UUID_of_volume> /mnt/data ext4 defaults 0 2
 >
 > **Notes:**
 >
-> Remplacez <UUID_du_volume> par l’UUID réel de votre volume LUKS (obtenez-le avec sudo blkid /dev/vdc).
+> Remplacez <UUID_du_volume> par l’UUID réel de votre volume LUKS (obtenez-le avec `sudo blkid /dev/vdc`).
 >
 > Assurez-vous que le point de montage `/mnt/data` existe avant le démarrage, sinon le système risque de ne pas pouvoir monter le volume.
 >
 
-## Go further
+## Aller plus loin
 
-Join our [community of users](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

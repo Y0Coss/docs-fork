@@ -1,7 +1,7 @@
 ---
 title: Migrating a Block Storage volume to an encrypted LUKS volume
-excerpt: 'Learn how to migrate a Block Storage volume from non-encrypted to encrypted (LUKS), keeping your data secure throughout the process.'
-updated: 2025-09-30
+excerpt: "Learn how to migrate a Block Storage volume from non-encrypted to encrypted (LUKS), keeping your data secure throughout the process"
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ This guide explains how to migrate your data from a standard Block Storage volum
 
 ## Requirements
 
-- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/compute) in your OVHcloud account
 - An existing Block Storage volume (source)
 - Administrator (root or sudo) access to your instance
 
@@ -31,36 +31,36 @@ In your [OVHcloud Control Panel](/links/manager), create a new Block Storage vol
 
 1. Attach both volumes to your instance:
 
-- Source volume (non encrypted)
-- Target volume (LUKS encrypted)
+    - Source volume (non encrypted)
+    - Target volume (LUKS encrypted)
 
 2. Verify that both volumes are visible on your instance:
 
-```bash
-lsblk
-```
+    ```bash
+    lsblk
+    ```
 
-Example output:
+    Example output:
 
-```bash
-/dev/vdb # source volume 
-/dev/vdc # target LUKS volume
-```
+    ```bash
+    /dev/vdb # source volume 
+    /dev/vdc # target LUKS volume
+    ```
 
 ### Step 3: Prepare the LUKS (encrypted) volume
 
 1. Format the LUKS volume with the filesystem of your choice (for example, ext4):
 
-```bash
-sudo mkfs.ext4 /dev/vdc
-```
+    ```bash
+    sudo mkfs.ext4 /dev/vdc
+    ```
 
 2. Mount the target volume:
 
-```bash
-sudo mkdir -p /mnt/luks_target
-sudo mount /dev/vdc /mnt/luks_target
-```
+    ```bash
+    sudo mkdir -p /mnt/luks_target
+    sudo mount /dev/vdc /mnt/luks_target
+    ```
 
 ### Step 4: Mount the source volume
 
@@ -85,18 +85,18 @@ sudo rsync -aAXHv --progress /mnt/source_volume/ /mnt/luks_target/
 
 ### (Optional) Step 6: Verify and detach
 
-1. Verify that your data has been copied successfully. You can use commands like ls, du, or rsync --dry-run for quick checks.
+1. Verify that your data has been copied successfully. You can use commands like `ls`, `du`, or `rsync --dry-run` for quick checks.
 
 2. Unmount both volumes:
 
-```bash
-sudo umount /mnt/source_volume
-sudo umount /mnt/luks_target
-```
+    ```bash
+    sudo umount /mnt/source_volume
+    sudo umount /mnt/luks_target
+    ```
 
 3. Detach the source volume if it is no longer needed.
 
-### (Optional) Step 7: Update your mount points
+### Step 7 (Optional): Update your mount points
 
 If the LUKS volume should be used permanently, add an entry to `/etc/fstab` to mount it automatically at boot.
 
@@ -110,7 +110,7 @@ UUID=<UUID_of_volume> /mnt/data ext4 defaults 0 2
 >
 > **Notes:**
 >
-> Replace <UUID_of_volume> with the actual UUID of your LUKS volume (obtain it with sudo blkid /dev/vdc).
+> Replace <UUID_of_volume> with the actual UUID of your LUKS volume (obtain it with `sudo blkid /dev/vdc`).
 >
 > Ensure the mount point `/mnt/data` exists before boot or the system may fail to mount the volume.
 >
