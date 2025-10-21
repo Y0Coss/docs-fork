@@ -14,6 +14,7 @@ details {
 }
 details > summary {
     padding: 0.1rem 1rem;
+	font-weight: 500;
     color: #268fd4ff;
     cursor: pointer;
     list-style: none;
@@ -45,6 +46,7 @@ details > :not(summary) {
     margin-bottom: 0.25rem;
 }
 </style>
+
 
 ## Allgemeine Fragen zu VPS-Angeboten
 
@@ -123,7 +125,7 @@ Nein, unsere VPS-Lösungen enthalten keinen Domainnamen oder E-Mail-Dienst. Dies
 ///
 
 /// details | Wie wähle ich zwischen einem VPS und einem Hosting-Paket?
-
+<span class="smallish-gap"></span>
 - Hosting-Paket: ideal für grundlegende Hosting-Anforderungen mit einer vorab konfigurierten Einrichtung.
 - VPS: mehr Flexibilität und Kontrolle, perfekt für skalierbare Projekte mit komplexen Konfigurationsanforderungen.
 
@@ -132,14 +134,14 @@ Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzu
 ///
 
 /// details | Was ist der Unterschied zwischen einem VPS und Public Cloud Lösungen?
-
+<span class="smallish-gap"></span>
 - VPS: eine optimierte und dedizierte virtuelle Maschine, geeignet sowohl für Präproduktion als auch für Produktion, die mehrere Webprojekte hosten kann.
 - OVHcloud Public Cloud: bietet eine Multi-Server-Infrastruktur mit hoher Verfügbarkeit und einem privaten Netzwerk (vRack) und ist für komplexe, skalierbare Architekturen konzipiert.
 
 ///
 
 /// details | Welche Vorteile bietet ein VPS im Vergleich zu einem dedizierten Server?
-
+<span class="smallish-gap"></span>
 - VPS: bietet vereinfachte Administration ohne Hardware-Verwaltung, ideal für Projekte, die strikte Kontrolle benötigen.  
 - Dedizierter Server: wird für komplexe Infrastrukturen empfohlen, die eine vollständige Hardware-Kontrolle und garantierte Leistung erfordern.
 
