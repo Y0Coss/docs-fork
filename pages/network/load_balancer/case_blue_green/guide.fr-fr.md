@@ -99,7 +99,7 @@ Associez un **serveur dédié** à votre ferme s'il héberge votre infrastructur
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
-|Setting|Required|Meaning|Example|
+|Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
 |serviceName|Requis|Votre ID de service Load Balancer|loadbalancer-abcdef0123456789|
 |farmId|Requis|Votre ID de ferme de serveurs|77212|
@@ -143,7 +143,7 @@ Déployez la ferme de serveurs pour le service HTTP (et/ou tout autre service TC
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
-|Setting|Meaning|
+|Paramètre|Signification|
 |---|---|
 |serviceName|Votre ID de service Load Balancer|
 
@@ -162,7 +162,7 @@ Associez un serveur à votre ferme. Ici, il s'agit d'un ou plusieurs **serveurs 
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
-|Setting|Required|Meaning|Example|
+|Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
 |serviceName|Requis|Votre ID de service Load Balancer|loadbalancer-abcdef0123456789|
 |farmId|Requis|Votre ID de ferme de serveurs|77213|
@@ -204,7 +204,7 @@ Ce **front-end** est dédié à l'accès à l'infrastructure de production. Les 
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
-|Setting|Required|Meaning|Example|
+|Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
 |serviceName|Requis|Votre ID de service Load Balancer|loadbalancer-abcdef0123456789|
 |defaultFarmId||Votre ID de ferme de production|77212|
@@ -229,7 +229,7 @@ Ce **front-end** est dédié à l'accès à l'infrastructure de développement. 
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
-|Setting|Required|Meaning|Example|
+|Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
 |serviceName|Requis|Votre ID de service Load Balancer|loadbalancer-abcdef0123456789|
 |defaultFarmId||Votre ID de ferme de production|77213|
@@ -254,7 +254,7 @@ Une fois que vous avez terminé de configurer les composants du service Load Bal
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
-|Setting|Meaning|
+|Paramètre|Signification|
 |---|---|
 |serviceName|Votre ID de service Load Balancer|
 
@@ -288,7 +288,7 @@ Voici le résultat attendu sur le Panneau de configuration OVHcloud après la mi
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
-|Setting|Meaning|Example|
+|Paramètre|Signification|Exemple|
 |---|---|---|
 |serviceName|Votre ID de service Load Balancer|loadbalancer-abcdef0123456789|
 |frontendId|Votre ID de front-end de production|70089|
@@ -299,7 +299,7 @@ Voici le résultat attendu sur le Panneau de configuration OVHcloud après la mi
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
-|Setting|Meaning|Example|
+|Paramètre|Signification|Exemple|
 |---|---|---|
 |serviceName|Votre ID de service Load Balancer|loadbalancer-abcdef0123456789|
 |frontendId|Votre ID de front-end de production|70090|
@@ -312,7 +312,7 @@ Voici le résultat attendu sur le Panneau de configuration OVHcloud après la mi
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
-|Setting|Meaning|
+|Paramètre|Signification|
 |---|---|
 |serviceName|Votre ID de service Load Balancer|
 
