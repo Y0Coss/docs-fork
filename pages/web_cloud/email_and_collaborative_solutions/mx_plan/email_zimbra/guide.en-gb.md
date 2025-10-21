@@ -646,9 +646,9 @@ To access the filters and create your redirection, follow these instructions:
     - First, click <u>Advanced mode</u> in the top-right corner to set up this rule.
     - Give your filter a name in the `Filter name` field.
     - Leave the dropdown menu on `all` in the phrase "If an incoming message meets ... of these conditions".
-    - On the next line, select `To`{.action} (To), leave `contains`{.action} (contains), and enter the email address you are logged in to in the field just to the right.
-    - Under the "Then" section, select `Forward to` (Forward to) from the dropdown menu and enter the destination email address.
-    - Click `+ Add an action`{.action} (Add an action) further down, then select `Keep in Inbox` (Keep in Inbox).
+    - On the next line, select `To`{.action} (To), leave `contains`{.action}, and enter the email address you are logged in to in the field just to the right.
+    - Under the "Then" section, select `Forward to` from the dropdown menu and enter the destination email address.
+    - Click `+ Add an action`{.action} further down, then select `Keep in Inbox`.
     - Click `Save`{.action} in your filter window and also in the settings window.
 
 ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
