@@ -452,6 +452,10 @@ Output:
 
 ## Constraints and limitations
 
+> [!primary]
+> Please note that creating vRack Services, Subnets, or Service Endpoints on a production vRack **does not cause any service interruption**.
+> 
+
 ### vRack Services
 
 - A vRack Services is attached to a single region.

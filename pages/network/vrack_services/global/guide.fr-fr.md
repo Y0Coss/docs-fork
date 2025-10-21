@@ -452,6 +452,10 @@ Retour de l'appel API :
 
 ## Contraintes et limites
 
+> [!primary]
+> Veuillez noter que la création de vRack Services, de sous-réseaux ou de Service Endpoints sur un vRack en production **n'entraîne aucune interruption de service**.
+>
+
 ### vRack Services
 
 - Un vRack Services est attaché à une seule région.
