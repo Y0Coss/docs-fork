@@ -1573,7 +1573,7 @@
             + [Web Cloud Databases - How to retrieve logs](web_cloud/web_cloud_databases/retrieve-logs)
             + [How to detach your Web Cloud Databases solution from web hosting](web_cloud/web_cloud_databases/detach-from-web-hosting)
         + [Migration](web-cloud-clouddb-migration)
-             + [Backing up and exporting a database of your database server](web_cloud/web_cloud_databases/save-export-on-database-server)
+            + [Backing up and exporting a database of your database server](web_cloud/web_cloud_databases/save-export-on-database-server)
             + [Restoring and importing a database to your database server](web_cloud/web_cloud_databases/restore-import-on-database-server)
         + [Additional resources](web-cloud-clouddb-additional-resources)
             + [Web Cloud Databases EOS and EOL announcements](web_cloud/web_cloud_databases/clouddb-eos-eol)
