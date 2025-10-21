@@ -37,7 +37,9 @@ Choose your target stream and click on `Copy stream ID`{.action}.
 
 #### Retrieve your LDP destination `serviceName`:
 
-- It refers to your Public Cloud project ID.
+- This refers to your Public Cloud project ID. You can retrieve it in the Public Cloud section of your project.
+
+![LDP project id](images/ldp_project_id.png)
 
 #### Retrieve your `clusterId`:
 
@@ -49,34 +51,60 @@ In the cluster details, you can find the `Service ID` field, which corresponds t
 
 ### Step 2 - Create your subscription
 
-1. Start by retrieving the types of logs available for your database cluster with the following API call:
-
-> [!api]
->
-> @api {v1} /cloud GET  /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/kind
->
-
-This will return the list of valid kind values you can use when subscribing to logs.
-
-2. Once you know the valid kind, use it to subscribe to a log stream with this API call:
-
-> [!api]
->
-> @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
->
-
-```console
-body : {
-    kind: <log_type_from_previous_call>
-    streamId: <your_stream_id>
-}
-```
-
-Then logs will start to be forwarded to your LDP stream.
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> On the database instance page, go to the `Logs`{.action} section and click the `Subscribe`{.action} button.
+>>
+>> ![LDP database subscription](images/ldp_database_subscription.png)
+>>
+>> Select the relevant LDP account by clicking the Subscribe button.
+>>
+>> ![LDP database subscription 2](images/ldp_database_subscription2.png)
+>>
+>> Then logs will start to be forwarded to your LDP stream.
+>>
+> Via the OVHcloud API
+>> 1. Start by retrieving the types of logs available for your database cluster with the following API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/kind
+>> >
+>>
+>> This will return the list of valid kind values you can use when subscribing to logs.
+>>
+>> 2. Once you know the valid kind, use it to subscribe to a log stream with this API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
+>> >
+>>
+>> ```console
+>> body : {
+>>     kind: <log_type_from_previous_call>
+>>     streamId: <your_stream_id>
+>> }
+>> ```
+>>
+>> Then logs will start to be forwarded to your LDP stream.
+>>
 
 ### Find logs in Graylog
 
-To find logs of your service in your graylogs stream you can use the following graylog queries:
+On the LDP page, click the `sample-data-stream`{.action} button (the last data stream modified when you previously subscribed to it), or click the `Graylog`{.action} button.
+
+![LDP database go to graylog](images/ldp_database_go_to_graylogs.png)
+
+You need to log in using your Graylog credentials. You can retrieve them from the LDP details page, in the Configuration section. The login corresponds to the value shown on the `Logs Data Platform service` line, and the password is displayed under `Password`.
+
+![LDP database ldp details](images/ldp_database_ldp_details.png)
+
+Once connected, you can view your service logs in your Graylog stream.
+
+![LDP database graylogs result](images/ldp_database_graylogs_result.png)
+
+You can also use the following Graylog queries for more granular filtering:
 
 #### MongoDB
 
@@ -100,12 +128,21 @@ You can find this `HostID` in your OVHcloud Control Panel:
 
 You have 2 methods to delete a subscription:
 
-- You can delete subscriptions using the `subscriptionId` concerned in this API call:
-
-> [!api]
->
-> @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
->
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> In the subscription page of the database instance, click on `Unsubscribe`{.action} button.
+>>
+>> ![LDP database unsubscribe](images/ldp_database_unsubscribe.png)
+>>
+> Via the OVHcloud API
+>>
+>> - You can delete subscriptions using the `subscriptionId` concerned in this API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
+>> >
+>>
 
 - If you delete your database service, all subscriptions of this service are deleted automatically.
 
