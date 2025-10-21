@@ -272,7 +272,7 @@ Para isso, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
->> Se for caso disso, consulte as instruções descritas na nossa documentação ["Alterar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password) para obter uma palavra-passe para o utilizador FTP.
+>> Quanto à palavra-passe do utilizador FTP, consulte as instruções descritas no manual "[Alterar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)" se necessário.
 
 #### 3.2 - Recuperar ou criar o ficheiro ".ovhconfig"
 

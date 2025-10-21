@@ -274,7 +274,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
->> Jeśli chodzi o hasło użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Zmiana hasła do konta FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
+>> Jeśli chodzi o hasło użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 #### 3.2 - Odzyskaj lub utwórz plik ".ovhconfig"
 

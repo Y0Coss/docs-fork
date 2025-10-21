@@ -193,25 +193,25 @@ Maintenant que vous connaissez les différents paramètres modifiables pour votr
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Version PHP Globale**.
 >>
 >> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 >>
->> Sur la droite de la mention **Version PHP Globale** située quasiment au centre de la page, cliquez sur le bouton `...`{.action} puis sur `Modifier la configuration`{.action}.
+>> Cliquez sur le bouton `...`{.action} à droite de la mention **Version PHP Globale**, puis sur `Modifier la configuration`{.action}.
 >>
 >> > [!primary]
 >> >
@@ -272,7 +272,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
->> Concernant le mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password) si nécessaire.
+>> Concernant le mot de passe de l'utilisateur FTP, référez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) » si nécessaire.
 
 #### 3.2 - Récupérer ou créer le fichier « .ovhconfig »
 

@@ -193,19 +193,19 @@ Ora che conosci i diversi parametri modificabili per il tuo hosting Web OVHcloud
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Nel riquadro **Configurazione**, trovi la dicitura **Versione PHP**.
 >>
@@ -272,7 +272,7 @@ Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno d
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
->> Per conoscere la password associata a un utente FTP, consulta le istruzioni fornite nella nostra guida ["Modificare la password di un utente FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
+>> Per quanto riguarda la password associata a un utente FTP, consulta le istruzioni fornite nella nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 #### 3.2 - Recuperare o creare il file ".ovhconfig"
 

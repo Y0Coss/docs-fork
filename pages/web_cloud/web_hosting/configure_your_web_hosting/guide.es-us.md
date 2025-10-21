@@ -272,7 +272,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
->> Para conocer la contraseña del usuario FTP, consulte las instrucciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
+>> Con respecto a la contraseña del usuario FTP, consulte las instrucciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 #### 3.2 - Obtener o crear el archivo ".ovhconfig"
 
