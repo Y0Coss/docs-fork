@@ -1,7 +1,7 @@
 ---
 title: "Comment migrer un site web depuis un hébergement Web mutualisé vers un VPS"
 excerpt: "Découvrez comment migrer votre site web d'un hébergement mutualisé vers un VPS OVHcloud"
-updated: 2025-10-20
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -177,11 +177,6 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 > [!warning]
 >
 > Si votre base de données est déjà hébergée sur un service Web Cloud Databases, il n'est pas nécessaire de la migrer vers le VPS. Vous pouvez conserver la base de données sur le service Web Cloud Databases et configurer votre VPS pour qu'il se connecte à cette base de données ([étape 5](#step5)).
-
-#### Avant de commencer
-
-- Votre fichier de sauvegarde (`.sql`) a été déposé à l’étape 3.2 (par exemple : `/home/debian/backup.sql`).
-- Le **S**ystème de **G**estion de **B**ase de **D**onnées (**SGBD**) (MySQL / MariaDB) et son client en ligne de commande ont été installés à l’étape 2.2, ainsi que la base `db_name`. Si ce n'est pas le cas, créez la base (et l’utilisateur si besoin) en suivant le guide « [Installer un environnement de développement web sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps) ».
 
 #### Avant de commencer
 
