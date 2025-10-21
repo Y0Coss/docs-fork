@@ -1,7 +1,7 @@
 ---
 title: "Déploiement d'une infrastructure blue-green"
 excerpt: "Ce guide vous montre comment déployer une infrastructure blue-green avec le Load Balancer OVHcloud"
-updated: 2025-10-17
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Une infrastructure **blue-green** vous permet d'éviter toute interruption de se
 Pour déployer une infrastructure **blue-green**, vous avez besoin des composants suivants :
 
 - Un service [Load Balancer OVHcloud](/links/network/load-balancer)
-- Un accès au [Panneau de configuration OVHcloud](/links/manager)
+- Un accès à l'[espace client OVHcloud](/links/manager)
 - Deux [serveurs dédiés](/links/bare-metal/bare-metal), l'un hébergeant votre environnement de production, l'autre, un serveur de configuration similaire hébergeant votre environnement de développement.
 
 ## En pratique
@@ -50,13 +50,13 @@ Le schéma ci-dessous donne une idée générale de l'architecture :
 
 Cette infrastructure est composée d'une ferme de serveurs qui sera associée plus tard à un front-end de votre Load Balancer. Cette ferme exposera un service HTTP, TCP ou UDP au front-end. Elle assure également l'équilibrage de charge en envoyant le trafic entrant du front-end aux serveurs. Pour plus de détails sur le rôle des différents composants du service Load Balancer OVHcloud, vous pouvez lire le guide suivant : [Introduction au Load Balancer OVHcloud](/pages/network/load_balancer/use_presentation).
 
-Dans notre scénario, nous allons déclarer une ferme de serveurs pour le service HTTP. Veuillez noter que vous pouvez créer autant de fermes (ainsi que de services TCP et/ou UDP) que nécessaire pour que votre service final soit exposé à vos clients.
+Dans notre scénario, nous allons déclarer une ferme de serveurs pour le service HTTP. Veuillez noter que vous pouvez créer autant de fermes (ainsi que de services TCP et/ou UDP) que nécessaire pour que votre service final soit accessible à vos clients.
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Add a new HTTP farm dedicated to infrastructure A](images/ferme1.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -67,7 +67,7 @@ Dans notre scénario, nous allons déclarer une ferme de serveurs pour le servic
 |---|---|
 |serviceName|Votre ID de service Load Balancer|
 
-Avec les appels supplémentaires listés ci-dessous, vous pouvez respectivement lister, modifier et supprimer vos fermes de serveurs.
+Avec les appels supplémentaires listés ci-dessous, vous pouvez respectivement lister, modifier et supprimer vos fermes de serveurs:
 
 > [!api]
 >
@@ -86,13 +86,13 @@ Avec les appels supplémentaires listés ci-dessous, vous pouvez respectivement 
 
 Associez un **serveur dédié** à votre ferme s'il héberge votre infrastructure de production. Le service est exposé au front-end via le port 8080 du serveur. Notez que vous pouvez associer un ou plusieurs serveurs à chaque ferme (par exemple, pour équilibrer la charge ou offrir une tolérance aux pannes plus élevée).
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Add a new server to the farm HTTP A](images/serveur1.png){.thumbnail}
 
 ![Enter the HTTP A server’s configuration](images/server1.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -107,7 +107,7 @@ Associez un **serveur dédié** à votre ferme s'il héberge votre infrastructur
 |displayName||Le nom du serveur associé à votre ferme|HTTP A server|
 |port||Le port du serveur associé à votre ferme|8080|
 
-Avec les appels supplémentaires listés ci-dessous, vous pouvez respectivement lister, modifier et supprimer vos serveurs.
+Avec les appels supplémentaires listés ci-dessous, vous pouvez respectivement lister, modifier et supprimer vos serveurs:
 
 > [!api]
 >
@@ -130,13 +130,13 @@ Fonctionnellement, cette deuxième infrastructure est identique à la première.
 
 Déployez la ferme de serveurs pour le service HTTP (et/ou tout autre service TCP ou UDP requis pour que votre service final soit exposé à vos clients).
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Add a new HTTP farm dedicated to infrastructure B](images/ferme2.png){.thumbnail}
 
 ![Create a second farm dedicated to infrastructure B](images/backend2.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -149,13 +149,13 @@ Déployez la ferme de serveurs pour le service HTTP (et/ou tout autre service TC
 
 Associez un serveur à votre ferme. Ici, il s'agit d'un ou plusieurs **serveurs dédiés** hébergeant votre infrastructure de développement.
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Add a new server to the farm HTTP B](images/serveur2.png){.thumbnail}
 
 ![Enter the HTTP B server’s configuration](images/server2.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -191,13 +191,13 @@ Pour ce faire, nous devons déclarer deux front-ends. Le premier vous donnera ac
 
 Ce **front-end** est dédié à l'accès à l'infrastructure de production. Les ports exposés à vos clients sont les ports standard pour l'accès au service. Dans ce cas, nous exposons un service HTTP, nous utiliserons donc le port 80 (443 si vous souhaitez une terminaison SSL).
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Adding a front-end dedicated to production, a blue front-end](images/frontend1.png){.thumbnail}
 
 ![Enter the blue front-end’s configuration](images/fblue.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -216,13 +216,13 @@ Ce **front-end** est dédié à l'accès à l'infrastructure de production. Les 
 
 Ce **front-end** est dédié à l'accès à l'infrastructure de développement. Les ports exposés à vos clients seront des ports non standard que vous pourrez choisir arbitrairement. Dans ce cas, nous exposerons le service de développement HTTP sur le port 8888.
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Add the green front-end, dedicated to development](images/frontend2.png){.thumbnail}
 
 ![Enter the green front-end’s configuration](images/fgreen.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -243,11 +243,11 @@ Ce **front-end** est dédié à l'accès à l'infrastructure de développement. 
 
 Une fois que vous avez terminé de configurer les composants du service Load Balancer OVHcloud, il ne vous reste plus qu'à appliquer vos modifications.
 
-#### Via le Panneau de configuration OVHcloud :
+#### Via l'espace client OVHcloud
 
 ![Apply your changes to the zone](images/deploy.png){.thumbnail}
 
-#### Via l'API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -258,11 +258,9 @@ Une fois que vous avez terminé de configurer les composants du service Load Bal
 |---|---|
 |serviceName|Votre ID de service Load Balancer|
 
-### Basculement production/staging
+### Changement de production ou de mise en scène
 
-À ce stade, notre environnement initial est déployé et prêt à l'emploi.
-
-Maintenant, vous devez basculer vos front-ends d'une ferme de serveurs à une autre.
+À ce stade, notre environnement initial est déployé et prêt à l'emploi. Maintenant, vous devez basculer vos front-ends d'une ferme de serveurs à une autre.
 
 Prenons notre scénario :
 
@@ -277,11 +275,11 @@ Le **front-end blue** (id 70089) sera alors associé à la **Ferme B** (infrastr
 
 Le **front-end green** (id 70090) sera alors associé à la **Ferme A** (infrastructure A, nouveau développement, id 77212).
 
-Voici le résultat attendu sur le Panneau de configuration OVHcloud après la mise à jour des front-ends et l'application de la nouvelle configuration :
+Voici le résultat attendu dans l'espace client OVHcloud après la mise à jour des front-ends et l'application de la nouvelle configuration :
 
 ![Result after updating front-ends](images/switch.png){.thumbnail}
 
-#### Via l'API : mise à jour des front-ends et application des modifications
+#### Via l'API OVHcloud : mise à jour des front-ends et application des modifications
 
 > [!api]
 >
@@ -305,7 +303,7 @@ Voici le résultat attendu sur le Panneau de configuration OVHcloud après la mi
 |frontendId|Votre ID de front-end de production|70090|
 |defaultFarmId|Votre ID de ferme de serveurs de développement|77212|
 
-#### Pour appliquer vos modifications et basculer effectivement les environnements de production et de développement :
+#### Pour appliquer vos modifications et basculer effectivement les environnements de production et de développement
 
 > [!api]
 >
