@@ -115,7 +115,7 @@ Si votre périphérique (téléphone mobile / smartphone / clé de sécurité) u
 - utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs ;
 - [désactiver la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation).
 
-Consultez la partie [« Que faire si l'un de mes périphériques est perdu/volé ou cesse de fonctionner ? »](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device) ou la partie [« Désactiver complètement la double authentification »](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation) de notre guide sur la double authentification.
+Consultez la partie « [Que faire si l'un de mes périphériques est perdu/volé ou cesse de fonctionner ?](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device) » ou la partie « [Désactiver complètement la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation) » de notre guide sur la double authentification.
 
 ///
 
@@ -155,7 +155,9 @@ Pour mieux connaître les impacts du règlement général sur la protection des 
 
 ///
 
-/// details | Puis-je changer manuellement mon identifiant client ? J'aimerais d'autres lettres ou chiffres.
+/// details | Puis-je changer manuellement mon identifiant client ?
+
+J'aimerais d'autres lettres ou chiffres.
 
 L'identifiant client ne peut pas être modififé car il est lié aux informations fournies lors de la création de votre compte OVHcloud. Les deux premières lettres correspondent généralement aux initiales du nom de l'administrateur, tandis que les chiffres suivants sont générés aléatoirement.
 
@@ -191,9 +193,8 @@ La fermeture de votre compte client OVHcloud et la suppression de vos données p
 Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
 
 1. Connectez-vous au [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Cliquez sur le bouton `Créer un ticket`{.action}.
-3. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
-4. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
+1. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
+1. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
 
 ///
 

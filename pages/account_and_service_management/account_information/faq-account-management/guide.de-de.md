@@ -134,7 +134,7 @@ Wenn Sie Ihr Gerät (Mobilgerät / Sicherheitsschlüssel), das für die Zwei-Fak
 - Ein anderes Gerät für die Zwei-Faktor-Authentifizierung verwenden, falls Sie mehrere aktiviert haben.
 - Die Zwei-Faktor-Authentifizierung [deaktivieren](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation).
 
-Lesen Sie den Abschnitt ["Was tun, wenn eines meiner Geräte verloren, gestohlen oder nicht mehr funktioniert?"](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device) oder den Abschnitt ["Zwei-Faktor-Authentifizierung vollständig deaktivieren"](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation) unserer Anleitung zur Zwei-Faktor-Authentifizierung.
+Lesen Sie den Abschnitt "[Was tun, wenn eines meiner Geräte verloren, gestohlen oder nicht mehr funktioniert?](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device)" oder den Abschnitt "[Zwei-Faktor-Authentifizierung vollständig deaktivieren](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation)" unserer Anleitung zur Zwei-Faktor-Authentifizierung.
 
 ///
 
@@ -209,9 +209,8 @@ Die Schließung Ihres OVHcloud Kunden-Accounts und die Löschung Ihrer persönli
 Wenn alle oben genannten Bedingungen erfüllt sind, können Sie die Löschung Ihres OVHcloud Kunden-Accounts und der damit verbundenen Daten beantragen, indem Sie die folgenden Schritte ausführen:
 
 1. Melden Sie sich im [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) an.
-2. Klicken Sie auf den Button `Ticket erstellen`{.action}.
-3. Wählen Sie `Ihren OVHcloud Kunden-Account verwalten`{.action} aus.
-4. Geben Sie `Ich möchte meinen OVHcloud Kunden-Account schließen`{.action} an und folgen Sie den Schritten.
+1. Wählen Sie `Ihren OVHcloud Kunden-Account verwalten`{.action} aus.
+1. Geben Sie `Ich möchte meinen OVHcloud Kunden-Account schließen`{.action} an und folgen Sie den Schritten.
 
 ///
 

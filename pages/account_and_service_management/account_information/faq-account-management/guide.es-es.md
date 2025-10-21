@@ -40,7 +40,7 @@ La creación de una cuenta es gratuita. Este espacio facilita el acceso a sus in
 Debe introducir su número de teléfono en formato internacional.
 
 > [!success]
-> Si su número es el "612 345 678", deberá introducir "+34 612345678". El prefijo "+ 34" se añade automáticamente al seleccionar España como país de residencia.
+> Si su número es el "612 345 678", deberá introducir "+34 612 345 678". El prefijo "+ 34" se añade automáticamente al seleccionar España como país de residencia.
 
 ///
 
@@ -209,9 +209,8 @@ La cierre de su cuenta de cliente OVHcloud y la eliminación de sus datos person
 Si se cumplen las condiciones anteriores, puede solicitar la eliminación de su cuenta OVHcloud y los datos asociados siguiendo estos pasos:
 
 1. Inicie sesión en el [centro de ayuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Haga clic en el botón `Crear un tíquet`{.action}.
-3. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`{.action}.
-4. Indique `Quiero cerrar mi cuenta de cliente OVHcloud`{.action} y siga los pasos descritos.
+1. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`{.action}.
+1. Indique `Quiero cerrar mi cuenta de cliente OVHcloud`{.action} y siga los pasos descritos.
 
 ///
 

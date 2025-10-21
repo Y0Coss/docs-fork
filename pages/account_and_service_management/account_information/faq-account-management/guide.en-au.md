@@ -119,7 +119,7 @@ If your device (mobile phone/smartphone/security key) used for two-factor authen
 - use another two-factor authentication device, if you have enabled several;
 - [disable two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation).
 
-Check out the ["What do I do if I lose one of my devices, or if it stops working? "](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device) or the ["Disabling two-factor authentication completely "](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation) sections of our guide on two-factor authentication.
+Check out the "[What do I do if I lose one of my devices, or if it stops working?](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device)" or the "[Disabling two-factor authentication completely](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation) sections of our guide on two-factor authentication."
 
 ///
 
@@ -195,9 +195,8 @@ Closing your OVHcloud customer account and deleting your personal data is only p
 If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
 
 1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Click the `Create ticket`{.action} button.
-3. Select the reason `Manage your OVHcloud customer account`{.action}.
-4. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
+1. Select the reason `Manage your OVHcloud customer account`{.action}.
+1. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
 
 ///
 

@@ -224,9 +224,8 @@ La fermeture de votre compte client OVHcloud et la suppression de vos données p
 Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
 
 1. Connectez-vous au [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Cliquez sur le bouton `Créer un ticket`{.action}.
-3. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
-4. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
+1. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
+1. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
 
 ///
 
@@ -288,7 +287,7 @@ La délégation de service devra être validée par e-mail à la fois par l’ad
 
 Avant toute modification, assurez-vous donc que toutes les adresses e-mail de contact sont valides, sans quoi la demande ne pourra aboutir.
 
-Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur [notre outil Whois en ligne](/links/web/domains-whois)), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre [cette procédure](/links/transversal/procedure-contact-change).
+Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur [notre outil WHOIS en ligne](/links/web/domains-whois)), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre [cette procédure](/links/transversal/procedure-contact-change).
 
 > [!success]
 > Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts).

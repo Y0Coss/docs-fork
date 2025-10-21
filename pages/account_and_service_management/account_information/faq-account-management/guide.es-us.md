@@ -28,10 +28,10 @@ Encuentre aquí las preguntas más frecuentes sobre la gestión de su cuenta de 
 
 /// details | ¿Cómo crear una cuenta de OVHcloud ?
 
-La creación de una cuenta es gratuita. Este espacio facilita el acceso a sus informaciones y permite gestionar sus servicios. Consulte nuestro guía [Crear una cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+La creación de una cuenta es gratuita. Este espacio facilita el acceso a sus informaciones y permite gestionar sus servicios. Consulte nuestro guía "[Crear una cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)".
 
 > [!success]
-> Una vez creada su cuenta, asegúrela configurando una autenticación de doble factor. Encuentre más información en nuestro guía "[Asegurar su cuenta de OVHcloud con la autenticación de doble factor](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)".
+> Una vez creada su cuenta, asegúrese de protegerla configurando una autenticación de doble factor. Encuentre más información en nuestro guía "[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)".
 
 ///
 
@@ -40,7 +40,7 @@ La creación de una cuenta es gratuita. Este espacio facilita el acceso a sus in
 Debe introducir su número de teléfono en formato internacional.
 
 > [!success]
-> Si su número es el "612 345 678", deberá introducir "+34 612345678". El prefijo "+ 34" se añade automáticamente al seleccionar España como país de residencia.
+> Si su número es el "612 345 678", deberá introducir "+34 612 345 678". El prefijo "+ 34" se añade automáticamente al seleccionar España como país de residencia.
 
 ///
 
@@ -48,7 +48,7 @@ Debe introducir su número de teléfono en formato internacional.
 
 Su identificador de cliente, a veces también llamado "NIC-handle", aparece en la parte superior derecha de su última factura. Tiene este aspecto: "aa00000-ovh" (las primeras letras suelen ser las iniciales de la persona que creó la cuenta). Este identificador también se indica en todos los correos electrónicos enviados por OVHcloud (correo de confirmación de creación de cuenta, correos de confirmación o renovación de pedido, etc.).
 
-Si no ha encontrado aún su identificador, puede hacer clic en el enlace "Identifiant ou mot de passe oublié ?" presente en la página de [connexion au compte OVHcloud](/links/manager). Introduzca entonces la dirección de correo electrónico asociada a su cuenta.
+Si no ha encontrado aún su identificador, puede hacer clic en el enlace "¿No recuerda su ID de cliente o contraseña?" presente en la página de [conexión a la cuenta de OVHcloud](/links/manager). Introduzca entonces la dirección de correo electrónico asociada a su cuenta.
 
 > [!success]
 > En cualquier momento, cuando esté conectado a su espacio cliente, puede encontrar su identificador en la parte superior derecha al hacer clic en su nombre.
@@ -86,14 +86,14 @@ Para todos estos casos, consulte [esta documentación](/pages/account_and_servic
 
 Inicie sesión en su [área de cliente OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y luego en `Mi Cuenta`{.action}.
 
-Haga clic en la pestaña `Seguridad`{.action}, luego en el botón `Modificar`{.action} situado a la derecha de la etiqueta **Contraseña**. Puede cambiar su contraseña actual. Aparecerá un mensaje de seguridad para informarle que está a punto de realizar un cambio de contraseña. Tras confirmar, recibirá (en la dirección de correo principal registrada en la cuenta) un correo electrónico con la procedimiento a seguir. 
+Haga clic en la pestaña `Seguridad`{.action}, luego en el botón `Editar`{.action} situado a la derecha de la etiqueta **Contraseña**. Puede cambiar su contraseña actual. Aparecerá un mensaje de seguridad para informarle que está a punto de realizar un cambio de contraseña. Tras confirmar, recibirá (en la dirección de correo principal registrada en la cuenta) un correo electrónico con la procedimiento a seguir. 
 
-Encuentre más información en nuestra guía «[Cambiar la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password)".
+Encuentre más información en nuestra guía "[Establecer y gestionar la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password)".
 
 > [!success]
 > **¿No recuerda su contraseña?**
 >
-> Vaya a la [página de inicio de sesión a su área de cliente](/links/manager) y haga clic en `Identificador o contraseña olvidados`{.action}. Introduzca su identificador o la dirección de correo principal asociada a su cuenta OVHcloud, y haga clic en `Enviar`{.action}. Se enviará un correo electrónico a la dirección de contacto de la cuenta para confirmar la solicitud. Lea cuidadosamente las instrucciones y haga clic en el enlace que contiene.
+> Vaya a la [página de inicio de sesión a su área de cliente](/links/manager) y haga clic en `¿No recuerda su ID de cliente o contraseña?`{.action}. Introduzca su ID de cliente o la dirección de correo principal asociada a su cuenta OVHcloud, y haga clic en `Enviar`{.action}. Se enviará un correo electrónico a la dirección de contacto de la cuenta para confirmar la solicitud. Lea cuidadosamente las instrucciones y haga clic en el enlace que contiene.
 >
 > Si ya no tiene acceso a esta dirección pero sí a su dirección de correo de respaldo, cree un [ticket de asistencia a través del centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) para reemplazar su dirección de correo principal por la dirección de correo de respaldo.
 >
@@ -104,7 +104,7 @@ Encuentre más información en nuestra guía «[Cambiar la contraseña de su cue
 
 ///
 
-/// details | ¿Existe un límite en el número de veces que puedo cambiar la contraseña de mi cuenta OVHcloud (a través de la opción "Identificador o contraseña olvidados")?
+/// details | ¿Existe un límite en el número de veces que puedo cambiar la contraseña de mi cuenta OVHcloud (a través de la opción "¿No recuerda su ID de cliente o contraseña?")?
 
 OVHcloud no impone un límite en el número de cambios de contraseña, puede modificarla tantas veces como desee.
 
@@ -209,9 +209,8 @@ La cierre de su cuenta de cliente OVHcloud y la eliminación de sus datos person
 Si se cumplen las condiciones anteriores, puede solicitar la eliminación de su cuenta OVHcloud y los datos asociados siguiendo estos pasos:
 
 1. Inicie sesión en el [centro de ayuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Haga clic en el botón `Crear un ticket`{.action}.
-3. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`{.action}.
-4. Indique `Quiero cerrar mi cuenta de cliente OVHcloud`{.action} y siga los pasos descritos.
+1. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`{.action}.
+1. Indique `Quiero cerrar mi cuenta de cliente OVHcloud`{.action} y siga los pasos descritos.
 
 ///
 
@@ -267,13 +266,13 @@ Reemplace `{logId}` por el identificador real del registro que desea consultar. 
 
 /// details | ¿Cómo delegar el acceso a mis servicios a otras personas?
 
-Tiene la posibilidad de delegar a otros clientes OVHcloud la gestión administrativa, técnica y facturación de sus servicios desde su área de cliente. Para ello, inicie sesión en su [área de cliente OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y luego en `Mis contactos`{.action}.
+Tiene la posibilidad de delegar a otros clientes de OVHcloud la gestión administrativa, técnica y facturación de sus servicios desde su área de cliente. Para ello, inicie sesión en su [área de cliente OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y luego en `Mis contactos`{.action}.
 
 La delegación de servicio deberá validarse por correo tanto por el administrador del servicio como por el nuevo contacto.
 
 Antes de cualquier modificación, asegúrese de que todas las direcciones de correo de contacto sean válidas, de lo contrario, la solicitud no podrá concluirse.
 
-Si desea recuperar un nombre de dominio del cual es titular registrado ante el registro (puede verificar esta información en [nuestra herramienta Whois en línea](/links/web/domains-whois)), pero no tiene acceso a la cuenta de cliente administradora, le invitamos a seguir [este procedimiento](/links/transversal/procedure-contact-change).
+Si desea recuperar un nombre de dominio del cual es titular registrado ante el registro (puede verificar esta información en [nuestra herramienta WHOIS en línea](/links/web/domains-whois)), pero no tiene acceso a la cuenta de cliente administradora, le invitamos a seguir [este procedimiento](/links/transversal/procedure-contact-change).
 
 > [!success]
 > Un guía completo sobre la gestión de contactos está disponible [aquí](/pages/account_and_service_management/account_information/managing_contacts).
@@ -306,7 +305,7 @@ Tan pronto como disponga de la denuncia, deberá enviarnos una copia. Esta permi
 Póngase en contacto con el soporte OVHcloud por teléfono:
 
 - España: 91 758 34 77
-- América Latine: 1-855-684-5463
+- América Latina: 1-855-684-5463
 
 Su identificador de cliente será bloqueado y los servicios suscritos fraudulentamente serán eliminados.
 
