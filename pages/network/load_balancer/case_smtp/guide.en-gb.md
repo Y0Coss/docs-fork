@@ -1,7 +1,7 @@
 ---
 title: 'How to configure SMTP on a Load Balancer service'
 excerpt: 'Find out how to use SMTP with the OVHcloud Load Balancer'
-updated: 2025-10-17
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -32,7 +32,7 @@ In the Control Panel, you will see the features detailed below:
 
 ![OVHcloud Load Balancer service](images/iplb_service.png){.thumbnail}
 
-Via the OVHcloud API, in the section:
+Via the OVHcloud API, use the following call:
 
 > [!api]
 >
@@ -43,9 +43,9 @@ For more information on the API features, you can refer to [the following guide]
 
 ### Add a server farm
 
-A farm of TCP servers must be added to the service; this component manages traffic balancing across the servers.
+A TCP server farm must be added to the service; this component manages traffic balancing across the servers.
 
-#### Via the Control Panel
+#### Via the OVHcloud Control Panel
 
 In the `Farms`{.action} tab for servers, click on the `+TCP/TLS`{.action} button.
 
@@ -55,13 +55,13 @@ Optionally, you can add an SMTP probe on your farm.
 
 ![Add a server farm via the Control Panel](images/add_farm.png){.thumbnail}
 
-Click `Add`{.action} once the fields are filled.
+Click on `Add`{.action} once you have filled in the fields.
 
 Your server farm should appear in the list, in the `Farms`{.action} tab.
 
 ![Details of the server farm created](images/resume_farm.png){.thumbnail}
 
-#### Via the API
+#### Via the OVHcloud API
 
 - List of TCP server farms:
 
@@ -102,7 +102,7 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 
 A server must now be added to the server farm.
 
-#### Via the Control Panel
+#### Via the OVHcloud Control Panel
 
 In the `Farms`{.action} tab, select the farm you want to add a server to by clicking on the corresponding line. The list of servers already configured in the farm will appear beneath the list of farms, along with the `Add a server`{.action} button. Click this button to add a new server.
 
@@ -115,13 +115,13 @@ The mandatory fields are the *IPv4 address*, *Status*, and *ProxyProtocol versio
 
 ![Add a server to a farm.](images/add_server.png){.thumbnail}
 
-Click `Add`{.action} once the fields are filled.
+Click on `Add`{.action} once you have filled in the fields.
 
 Your server should appear in the server list, in the `Farms`{.action} tab, just below the list of farms.
 
 ![Details of the server created.](images/resume_server.png){.thumbnail}
 
-#### Via the API
+#### Via the OVHcloud API
 
 - List of servers in the farm:
 
@@ -162,7 +162,7 @@ Your server should appear in the server list, in the `Farms`{.action} tab, just 
 
 A `front-end`{.action} must now be added to the service and connected to the server farm. The front-end is the component of your OVHcloud Load Balancer that exposes your service to the internet.
 
-#### Via the Control Panel
+#### Via the OVHcloud Control Panel
 
 Go to the `+ Front-ends`{.action} tab, and click `+TCP/TLS`{.action}.
 
@@ -180,7 +180,7 @@ Your front-end must appear in the list, in the `Front-ends`{.action} tab.
 
 ![Details of the front-end created](images/resume_frontend.png){.thumbnail}
 
-#### Via the API
+#### Via the OVHcloud API
 
 - List of TCP front-ends:
 
@@ -219,15 +219,15 @@ Your front-end must appear in the list, in the `Front-ends`{.action} tab.
 
 ### Apply the modifications
 
-Modifications made to your OVHcloud Load Balancer must be *explicitly applied* in each of the zones configured for your service. They will only become visible to your users at this point. This process allows for complex configuration changes to be prepared and applied only when fully ready.
+Modifications made to your OVHcloud Load Balancer must be **explicitly applied** in each of the zones configured for your service. They will only become visible to your users at this point. This process allows for complex configuration changes to be prepared and applied only when fully ready.
 
 If you have several zones, the same configuration must be applied to each.
 
-#### Via the Control Panel
+#### Via the OVHcloud Control Panel
 
 Go to the homepage for the OVHcloud Load Balancer, and click `Apply:Zone`{.action} for each of the zones concerned.
 
-#### Via the API
+#### Via the OVHcloud API
 
 - Refresh a zone:
 
