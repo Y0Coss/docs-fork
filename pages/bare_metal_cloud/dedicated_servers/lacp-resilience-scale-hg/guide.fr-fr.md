@@ -21,7 +21,7 @@ Ce guide présente la nouvelle architecture d’agrégation réseau mise en plac
 
 ### Ce qui change
 
-Jusqu’à présent, l’agrégation (LACP) des interfaces réseau était réalisée sur des ports appartenant à la **même carte réseau (NIC)**. Cette configuration assurait déjà une redondance en cas de défaillance d’un switch ToR, mais ne couvrait pas le risque de panne d’une carte réseau.
+Jusqu’à présent, l’agrégation (LACP) des interfaces réseau était réalisée sur des ports appartenant à la **même carte réseau (NIC)**. Cette configuration assurait déjà une redondance en cas de défaillance d’un switch ToR (Top-of-Rack), mais ne couvrait pas le risque de panne d’une carte réseau.
 
 Désormais :
 
