@@ -17,9 +17,9 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 > Puede encontrar más información sobre nuestra solución anti-DDoS en [nuestro sitio web](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) |
+| Infraestructura anti-DDoS y protección DDoS Game en OVHcloud |
 |:--:|
-| Diagrama de los servicios de protección de juegos e infraestructuras anti-DDoS en OVHcloud |
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Requisitos
 

@@ -15,9 +15,9 @@ Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bi
 > Weitere Informationen zu unserer Anti-DDoS-Lösung finden Sie [hier](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Diagramm zu DDoS-Schutz & Infrastruktur bei OVHcloud |
+| Anti-DDoS-Infrastruktur & Game-Schutzdienste-Diagramm bei OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Voraussetzungen 
 

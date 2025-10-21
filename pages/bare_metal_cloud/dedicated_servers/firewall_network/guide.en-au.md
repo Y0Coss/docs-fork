@@ -15,9 +15,9 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 > You can find more information on our Anti-DDoS solution on [our website](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Anti-DDoS infrastructure & game protection services diagram at OVHcloud |
+| Anti-DDoS infrastructure & Game protection services diagram at OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Requirements
 
