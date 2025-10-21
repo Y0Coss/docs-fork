@@ -1,16 +1,16 @@
 ---
-title: "OVHcloud KMS Architecture overview"
-excerpt: "Discover how we handle the security of the OVHcloud KMS"
-updated: 2025-10-14
+title: "OKMS Architecture overview"
+excerpt: "Discover how we handle the security of the OKMS infrastructure"
+updated: 2025-10-21
 ---
 
 ## Objective
 
-This guide explains how we handle the resilience of the OVHcloud KMS (Key Management Service).
+This guide explains how we handle the resilience of the OKMS infrastructure used for OVHcloud KMS (Key Management Service) and Secret Manager.
 
 ## Instructions
 
-The OVHcloud KMS architecture has 3 main objectives:
+The OKMS architecture has 3 main objectives:
 
 - **Confidentiality**: Assure that no one except you can access your key.
 - **Availability**: Offering a high level of resilience and therefore high availability.
@@ -25,13 +25,13 @@ Even the OVHcloud employees cannot access your keys.
 
 ### KMS architecture
 
-The OVHcloud KMS is by design replicated across multiple datacenters.
+The OKMS infrastructure is by design replicated across multiple datacenters.
 
 ![Architecture overview](images/KMS_Overview.png){.thumbnail}
 
 ### KMS components location
 
-Each KMS Region consists of several hosts in a single OVHcloud Region.
+Each OKMS Region consists of several hosts in a single OVHcloud Region.
 
 These hosts are partitioned into two different zones so that any single hardware failure is as unlikely as possible to take out both zones at once.
 
@@ -45,7 +45,7 @@ The key material is also replicated to a third database, in a different region. 
 
 - **DB Backups**
 
-Regular backups are taken from the replica every 5 minutes. Each backup is stored in two regions, different from the main KMS region.<br>
+Regular backups are taken from the replica every 5 minutes. Each backup is stored in two regions, different from the main OKMS region.<br>
 These backups are kept for 30 days.
 
 #### Data security
@@ -54,7 +54,7 @@ All customer data are always stored encrypted in the databases and in the backup
 
 #### Backup location
 
-The backup location depends on the location of the OVHcloud KMS.
+The backup location depends on the location of the OKMS.
 
 - **EU_WEST_RBX**
     - KMS Backup Region 1 : EU_WEST_SBG
