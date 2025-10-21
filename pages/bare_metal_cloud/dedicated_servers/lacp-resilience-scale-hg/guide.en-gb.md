@@ -27,9 +27,9 @@ Until now, the aggregation (LACP) of network interfaces was performed on ports b
 From now on:
 
 - Logical aggregations will be spread across **two distinct network cards** (with no physical cabling modification).
-- Existing aggregations are not modified.
+- Existing aggregations **are not modified**.
 
-![Resilience comparison before/after](images/resilience_comparison.png){.thumbnail}
+![Before/after resilience comparison](images/resilience_comparison.svg){.thumbnail}
 
 If you do not use LACP link aggregation on your server, **no action is required** and **no change will be visible for your services**.
 
