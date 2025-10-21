@@ -83,7 +83,7 @@ sudo rsync -aAXHv /mnt/source_volume/ /mnt/luks_target/
 sudo rsync -aAXHv --progress /mnt/source_volume/ /mnt/luks_target/
 ```
 
-### (Optionnel) Étape 6 : Vérification et détachement
+### Étape 6 (facultatif) : Vérification et détachement
 
 1. Vérifiez que vos données ont été copiées correctement. Vous pouvez utiliser des commandes comme `ls`, `du` ou `rsync --dry-run` pour un contrôle rapide.
 
