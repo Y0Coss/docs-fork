@@ -60,7 +60,7 @@ To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer
 >>
 >> ![Create a Notebook Control Panel manager 02](images/continue-ask-question.png){.thumbnail}
 >>
-> **2 - Update your settings**
+>> **2 - Update your settings**
 >>
 >> If you need to use your own AI Endpoints token, update your settings.
 >> You may also want to use another public AI Endpoints available from the completion model dropdown list.
