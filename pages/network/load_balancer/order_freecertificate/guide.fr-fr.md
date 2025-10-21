@@ -6,7 +6,7 @@ updated: 2025-09-26
 
 ## Objectif
 
-Le service OVH Load Balancer peut être configuré pour prendre en charge la terminaison SSL.
+Le service OVHcloud Load Balancer peut être configuré pour prendre en charge la terminaison SSL.
 
 La terminaison SSL a pour but de déchiffrer le flux chiffré entrant avant de le faire suivre vers le service approprié, tel qu'un serveur web.
 

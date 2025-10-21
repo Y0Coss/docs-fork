@@ -16,9 +16,9 @@ Une infrastructure **blue-green** vous permet d'éviter toute interruption de se
 
 Pour déployer une infrastructure **blue-green**, vous avez besoin des composants suivants :
 
-- Un service [Load Balancer](/links/network/load-balancer) OVHcloud
+- Un service [Load Balancer OVHcloud](/links/network/load-balancer)
 - Un accès au [Panneau de configuration OVHcloud](/links/manager)
-- Deux [serveurs dédiés](/links/bare-metal/bare-metal) : l'un hébergeant votre environnement de production, l'autre, un serveur de configuration similaire hébergeant votre environnement de développement.
+- Deux [serveurs dédiés](/links/bare-metal/bare-metal), l'un hébergeant votre environnement de production, l'autre, un serveur de configuration similaire hébergeant votre environnement de développement.
 
 ## En pratique
 
@@ -38,7 +38,7 @@ Dans ce scénario, votre service Load Balancer joue un rôle central. C'est l'é
 
 L'infrastructure de production est accessible par vos clients sur le service HTTP standard (port 80), et votre infrastructure de développement est accessible par les développeurs et administrateurs sur le port non standard 8888.
 
-Au cours de la phase de configuration initiale, les rôles sont provisoirement attribués à chaque composant de l'infrastructure. L'`Infrastructure A`{.action} sert d'environnement de production initial, tandis que l'`infrastructure B`{.action} sert d'environnement de staging. À ce stade, nous allons les considérer comme similaires l'une à l'autre.
+Au cours de la phase de configuration initiale, les rôles sont provisoirement attribués à chaque composant de l'infrastructure. **L'Infrastructure A** sert d'environnement de production initial, tandis que **l'infrastructure B** sert d'environnement de staging. À ce stade, nous allons les considérer comme similaires l'une à l'autre.
 
 Une infrastructure **blue-green** implique le basculement de l'infrastructure A vers l'infrastructure B, une fois que l'infrastructure B est prête à exposer votre site Web après que vos modifications ont été appliquées et testées. Le Load Balancer gérera ce basculement.
 
@@ -84,7 +84,7 @@ Avec les appels supplémentaires listés ci-dessous, vous pouvez respectivement 
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm
 > 
 
-Associez un serveur à votre ferme, s'il s'agit d'un serveur physique hébergeant votre infrastructure de production. Le service exposé au front-end est fourni par le port 8080 du serveur. Veuillez noter que vous pouvez associer un ou plusieurs serveurs à chaque ferme (pour équilibrer la charge et/ou offrir une tolérance aux pannes plus élevée, par ex.).
+Associez un **serveur dédié** à votre ferme s'il héberge votre infrastructure de production. Le service est exposé au front-end via le port 8080 du serveur. Notez que vous pouvez associer un ou plusieurs serveurs à chaque ferme (par exemple, pour équilibrer la charge ou offrir une tolérance aux pannes plus élevée).
 
 #### Via le Panneau de configuration OVHcloud :
 
@@ -130,7 +130,7 @@ Fonctionnellement, cette deuxième infrastructure est identique à la première.
 
 Déployez la ferme de serveurs pour le service HTTP (et/ou tout autre service TCP ou UDP requis pour que votre service final soit exposé à vos clients).
 
-#### Via le Panneau de configuration Sunrise :
+#### Via le Panneau de configuration OVHcloud :
 
 ![Add a new HTTP farm dedicated to infrastructure B](images/ferme2.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Déployez la ferme de serveurs pour le service HTTP (et/ou tout autre service TC
 |---|---|
 |serviceName|Votre ID de service Load Balancer|
 
-Associez un serveur à votre ferme. Ici, il s'agit d'un ou plusieurs serveurs physiques hébergeant votre infrastructure de développement.
+Associez un serveur à votre ferme. Ici, il s'agit d'un ou plusieurs **serveurs dédiés** hébergeant votre infrastructure de développement.
 
 #### Via le Panneau de configuration OVHcloud :
 
@@ -184,11 +184,12 @@ Pour ce faire, nous devons déclarer deux front-ends. Le premier vous donnera ac
 
 > [!warning]
 >
-> Si le service final que vous exposez à vos clients nécessite plusieurs fermes de serveurs (par ex. les ports 80 et 443), vous devrez déclarer un `front-end`{.action} pour chacune de vos fermes.
+> Si le service final que vous exposez à vos clients nécessite plusieurs fermes de serveurs (par ex. les ports 80 et 443), vous devrez déclarer un **front-end** pour chacune de vos fermes.
 > 
 
 ### Front-end Blue
-Ce `front-end`{.action} est dédié à l'accès à l'infrastructure de production. Les ports exposés à vos clients sont les ports standard pour l'accès au service. Dans ce cas, nous exposons un service HTTP, nous utiliserons donc le port 80 (443 si vous souhaitez une terminaison SSL).
+
+Ce **front-end** est dédié à l'accès à l'infrastructure de production. Les ports exposés à vos clients sont les ports standard pour l'accès au service. Dans ce cas, nous exposons un service HTTP, nous utiliserons donc le port 80 (443 si vous souhaitez une terminaison SSL).
 
 #### Via le Panneau de configuration OVHcloud :
 
@@ -213,7 +214,7 @@ Ce `front-end`{.action} est dédié à l'accès à l'infrastructure de productio
 
 ### Front-end Green
 
-Ce `front-end`{.action} est dédié à l'accès à l'infrastructure de développement. Les ports exposés à vos clients seront des ports non standard que vous pourrez choisir arbitrairement. Dans ce cas, nous exposerons le service de développement HTTP sur le port 8888.
+Ce **front-end** est dédié à l'accès à l'infrastructure de développement. Les ports exposés à vos clients seront des ports non standard que vous pourrez choisir arbitrairement. Dans ce cas, nous exposerons le service de développement HTTP sur le port 8888.
 
 #### Via le Panneau de configuration OVHcloud :
 
@@ -265,22 +266,22 @@ Maintenant, vous devez basculer vos front-ends d'une ferme de serveurs à une au
 
 Prenons notre scénario :
 
-- L'infrastructure de production (A) est déployée sur la `ferme HTTP A`{.action} (id 77212), qui est elle-même attachée au `serveur HTTP A`{.action}. Cette infrastructure est accessible via le `front-end blue`{.action}.
-- L'infrastructure de développement (B) est déployée sur la `ferme HTTP B`{.action} (id 77213), qui est elle-même attachée au `serveur HTTP B`{.action}. Cette infrastructure est accessible via le `front-end green`{.action}.
+- L'infrastructure de production (A) est déployée sur la **ferme HTTP A** (id 77212), qui est elle-même attachée au **serveur HTTP A**. Cette infrastructure est accessible via le **front-end blue**.
+- L'infrastructure de développement (B) est déployée sur la **ferme HTTP B** (id 77213), qui est elle-même attachée au **serveur HTTP B**. Cette infrastructure est accessible via le **front-end green**.
 
-Une fois que vous avez modifié/appliqué les mises à jour à l'`infrastructure B`{.action} et vérifié que le service fonctionne correctement, vous décidez de la mettre en production.
+Une fois que vous avez modifié/appliqué les mises à jour à l'**infrastructure B** et vérifié que le service fonctionne correctement, vous décidez de la mettre en production.
 
 Pour basculer entre les deux fermes, vous pouvez simplement mettre à jour vos différents front-ends en modifiant l'ID de la ferme à laquelle il est attaché, et en appliquant la modification.
 
-Le `front-end blue`{.action} (id 70089) sera alors associé à la `Ferme B`{.action} (infrastructure B, nouvelle production, id 77213).
+Le **front-end blue** (id 70089) sera alors associé à la **Ferme B** (infrastructure B, nouvelle production, id 77213).
 
-Le `front-end green`{.action} (id 70090) sera alors associé à la `Ferme A`{.action} (infrastructure A, nouveau développement, id 77212).
+Le **front-end green** (id 70090) sera alors associé à la **Ferme A** (infrastructure A, nouveau développement, id 77212).
 
-Voici le résultat attendu sur le Panneau de configuration Sunrise après la mise à jour des front-ends et l'application de la nouvelle configuration :
+Voici le résultat attendu sur le Panneau de configuration OVHcloud après la mise à jour des front-ends et l'application de la nouvelle configuration :
 
 ![Result after updating front-ends](images/switch.png){.thumbnail}
 
-#### Via l'API : mise à jour des front-ends et application des modifications ####
+#### Via l'API : mise à jour des front-ends et application des modifications
 
 > [!api]
 >
@@ -317,7 +318,7 @@ Voici le résultat attendu sur le Panneau de configuration Sunrise après la mis
 
 ## Conclusion
 
-Vous avez réussi à mettre en œuvre une infrastructure hautement disponible pour la gestion des `déploiements blue-green`{.action}.
+Vous avez réussi à mettre en œuvre une infrastructure hautement disponible pour la gestion des déploiements blue-green.
 
 Les développeurs ont accès à un environnement de développement sur le port 8888 (ou tout port non standard configurable), tandis que vos clients continuent d'accéder au service en production via le port HTTP standard (80).
 

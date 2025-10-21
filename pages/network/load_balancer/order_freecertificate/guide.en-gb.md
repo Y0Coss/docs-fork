@@ -6,7 +6,7 @@ updated: 2025-09-26
 
 ## Objective
 
-The OVH Load Balancer service can be configured to support SSL termination.
+The OVHcloud Load Balancer service can be configured to support SSL termination.
 
 The purpose of SSL termination is to decrypt the incoming encrypted stream before forwarding it to the appropriate service, such as a web server.
 
@@ -17,7 +17,7 @@ Handling SSL termination on the Load Balancer reduces the computational load on 
 ## Requirements
 
 - You must have an [OVHcloud Load balancer](/links/network/load-balancer) in your OVHcloud account.
-- You must be logged in to the [OVH Control Panel](/links/manager).
+- You must be logged in to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -49,7 +49,7 @@ In the `SSL Certificates` section of your Control Panel, click the `Order SSL Ce
 
 In the `Tasks`{.action} section of your Control Panel, the tasks related to ordering a free SSL Certificate are of the type `orderFreeCertificate`.
 
-### Via API
+### Via the API
 
 #### Configuring the frontend for SSL termination
 
@@ -75,11 +75,11 @@ In the API, the command is as follows :
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
 >
 
-For the order to be finalized, the chosen domain name must point to your OVH Load Balancer service.
+For the order to be finalized, the chosen domain name must point to your OVHcloud Load Balancer service.
 
 #### Follow-up of the order
 
--  Returning the task list
+- Returning the task list
 
 You can specify the action type `orderFreeCertificate` to refine the search.
 
@@ -88,14 +88,14 @@ You can specify the action type `orderFreeCertificate` to refine the search.
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
--  Returning the status of a particular task
+- Returning the status of a particular task
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
-Once the order is complete, the SSL Certificate is automatically installed on your OVH Load Balancer service.
+Once the order is complete, the SSL Certificate is automatically installed on your OVHcloud Load Balancer service.
 
 ## Go further
 
