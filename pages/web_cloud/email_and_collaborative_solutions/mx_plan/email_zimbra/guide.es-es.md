@@ -148,7 +148,7 @@ Al seleccionar un mensaje de correo electrónico, podrá realizar diversas accio
 - 1.**Responder**: responder directamente al remitente.
 - 2.**Responder a todos**: responder directamente a todos los destinatarios de los campos "Para" y "CC".
 - 3.**Reenviar**: reenviar el correo electrónico seleccionado a uno o varios destinatarios.
-- 4.**Archivo** : Mover el correo a la carpeta "Archivo" de su cuenta de correo.
+- 4.**Archivo**: Mover el correo a la carpeta "Archivo" de su cuenta de correo.
 - 5.**Mover**: mover el correo a una de las carpetas de la cuenta de correo.
 - 6.**Eliminar**: Colocar el correo electrónico seleccionado en la papelera de reciclaje.
 - 7.**Basura**: Colocar el correo electrónico seleccionado directamente en la carpeta de correo no deseado (SPAM).
@@ -216,7 +216,7 @@ Para redactar un nuevo mensaje de correo electrónico, haga clic en el botón `N
 >>
 >> El encabezado permite completar los siguientes campos:
 >>
->> - **De** : la dirección desde la que se envía el correo. Por defecto, es su dirección de correo electrónico. Puede cambiar su dirección de correo electrónico haciendo clic en el paréntesis angular situado al final de la línea correspondiente a su dirección de correo electrónico, solo si se ha establecido una [delegación](#delegations).<br>
+>> - **De**: la dirección desde la que se envía el correo. Por defecto, es su dirección de correo electrónico. Puede cambiar su dirección de correo electrónico haciendo clic en el paréntesis angular situado al final de la línea correspondiente a su dirección de correo electrónico, solo si se ha establecido una [delegación](#delegations).<br>
 >> - **Para**: el/los destinatario/s de su correo electrónico. Haga clic en `Para`{.action} para acceder a su [agenda de contactos](#contacts) y seleccionar sus destinatarios.<br>
 >> - **CC**: Haga clic en `Cc/Cco`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia es un campo destinatario que permite enviar el correo en copia a las personas que desea integrar en un bucle sin que se consideren como destinatarios directos del correo (a diferencia de los destinatarios del campo "**Para**").<br>
 >> - **CCO**: Haga clic en `CCO`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia oculta es un campo de destinatario que permite transmitir un mensaje de correo electrónico sin que los otros destinatarios vean a la persona o personas en "**CCO**".<br>
@@ -260,33 +260,33 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 > [!tabs]
 > **General**
 >>
->> Da questa scheda troverete:
+>> Desde esta pestaña encontrará:
 >>
->> - una barra di avanzamento che indica lo spazio occupato sul vostro account email.
->> - la possibilità di impostare il formato di visualizzazione della data e dell'ora delle vostre email.
+>> - barra de progreso que indica el espacio ocupado en su cuenta de correo.
+>> - la posibilidad de definir el formato de visualización de la fecha y la hora de sus mensajes de correo.
 >>
 > **Ver mensajes**
 >>
 >> Consulte aquí los elementos asociados a la visualización de sus elementos en su cuenta de correo.
 >>
 >> - **Al ver la lista de mensajes**: estas opciones permiten organizar la lista de los mensajes de correo en grupos de conversaciones y mostrar más detalles en la vista previa.
->> - **Panel de vista previa** : seleccione una de las tres configuraciones para ver sus carpetas y mensajes de correo electrónico. Esta opción recoge las opciones que aparecen en el botón `Ver`{.action} cuando se visualizan los mensajes de correo.
+>> - **Panel de vista previa**: seleccione una de las tres configuraciones para ver sus carpetas y mensajes de correo electrónico. Esta opción recoge las opciones que aparecen en el botón `Ver`{.action} cuando se visualizan los mensajes de correo.
 >> - **Densidad de la lista de mensajes**
->> - **Marcar como leído** : Puede retrasar el cambio de estado de su correo electrónico a "leído" cuando haga clic en él o decidir no hacer nada y dejarlo como "no leído" sin que usted realice ninguna acción.
->> - **Revisar correo nuevo** : establezca la frecuencia de sincronización de los mensajes recibidos desde su interfaz Zimbra.
->> - **Confirmaciones de lectura** : permite definir el comportamiento de Zimbra al abrir un mensaje de correo electrónico con confirmación de lectura.
->> - **Notificaciones de correo nuevo** : habilite las notificaciones cuando se reciba un mensaje.
->> - **Mostrar imágenes en mensajes** : muestra o no las fotos al abrir un correo electrónico.
->> - **Ver correo como texto sin formato** : esta opción muestra el mensaje de correo electrónico en formato sin formato.
+>> - **Marcar como leído**: Puede retrasar el cambio de estado de su correo electrónico a "leído" cuando haga clic en él o decidir no hacer nada y dejarlo como "no leído" sin que usted realice ninguna acción.
+>> - **Revisar correo nuevo**: establezca la frecuencia de sincronización de los mensajes recibidos desde su interfaz Zimbra.
+>> - **Confirmaciones de lectura**: permite definir el comportamiento de Zimbra al abrir un mensaje de correo electrónico con confirmación de lectura.
+>> - **Notificaciones de correo nuevo**: habilite las notificaciones cuando se reciba un mensaje.
+>> - **Mostrar imágenes en mensajes**: muestra o no las fotos al abrir un correo electrónico.
+>> - **Ver correo como texto sin formato**: esta opción muestra el mensaje de correo electrónico en formato sin formato.
 >> - **Mostrar imágenes de forma predeterminada en el correo de estas direcciones o dominios de confianza**: defina las direcciones de correo electrónico de confianza para las que pueden mostrarse las imágenes al abrirlas.
 >>
 > **Redactar mensajes**
 >>
->> - **Deshacer envío** : Esta opción permite mostrar un banner, durante 5 segundos, que permite cancelar el envío de un email.
->> - **Solicitar notificación de lectura** : esta opción envía una solicitud de confirmación de lectura a los destinatarios cuando les envía un mensaje de correo electrónico.
->> - **Guardar una copia en la carpeta Enviados** : Esta opción, marcada por defecto, guarda los mensajes enviados en la carpeta "*Enviado" de su cuenta de correo.
->> - **Delegados** : consulte la sección [Delegaciones](#delegations) de esta guía para comprender su uso.
->> - **Delegar la configuración de envío** : consulte el tema [Delegaciones](#delegations) de esta guía para comprender cómo se utiliza.
+>> - **Deshacer envío**: Esta opción permite mostrar un banner, durante 5 segundos, que permite cancelar el envío de un email.
+>> - **Solicitar notificación de lectura**: esta opción envía una solicitud de confirmación de lectura a los destinatarios cuando les envía un mensaje de correo electrónico.
+>> - **Guardar una copia en la carpeta Enviados**: Esta opción, marcada por defecto, guarda los mensajes enviados en la carpeta "*Enviado" de su cuenta de correo.
+>> - **Delegados**: consulte la sección [Delegaciones](#delegations) de esta guía para comprender su uso.
+>> - **Delegar la configuración de envío**: consulte el tema [Delegaciones](#delegations) de esta guía para comprender cómo se utiliza.
 >> - **Redactor**: puede establecer su estilo de escritura predeterminado al iniciar la redacción de un mensaje de correo electrónico.
 >>
 > **Firmas**
@@ -310,21 +310,21 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 >>
 >> **Configuración general de agenda**
 >>
->> - **Agenda predeterminada** : permite definir el calendario que se utilizará por defecto al crear un evento en los calendarios.
->> - **Inicio de la semana** : el día que aparece en primer lugar en la cuadrícula del calendario.
->> - **Inicio del día laboral** : la hora que aparece en la parte superior de la amplitud horaria mostrada.
->> - **Final del día laboral** : la hora que aparece en la parte inferior de la amplitud horaria mostrada.
+>> - **Agenda predeterminada**: permite definir el calendario que se utilizará por defecto al crear un evento en los calendarios.
+>> - **Inicio de la semana**: el día que aparece en primer lugar en la cuadrícula del calendario.
+>> - **Inicio del día laboral**: la hora que aparece en la parte superior de la amplitud horaria mostrada.
+>> - **Final del día laboral**: la hora que aparece en la parte inferior de la amplitud horaria mostrada.
 >> - **zona horaria del día laboral** utilizada para los calendarios.
->> - **Cuando se crean o editan eventos** : mostrar las zonas horarias para las horas de inicio y finalización.
->> - **Compartir** : `Activar la delegación para los clientes CALDav`. Esta opción le permite administrar sus calendarios mediante un software compatible con el protocolo CALdav.
+>> - **Cuando se crean o editan eventos**: mostrar las zonas horarias para las horas de inicio y finalización.
+>> - **Compartir**: `Activar la delegación para los clientes CALDav`. Esta opción le permite administrar sus calendarios mediante un software compatible con el protocolo CALdav.
 >> - **Eventos rechazados**: mostrar un evento en el calendario, incluso si se ha rechazado.
 >>
 >> **Recordatorios de eventos**
 >>
->> - **Enviar recordatorios por correo electrónico a** : enviar recordatorios de eventos a una dirección de correo electrónico.
->> - **Mostrar notificaciones del navegador** : Recibir notificaciones de los eventos desde su navegador de internet.
->> - **Tiempo de recordatorio predeterminado** : Tiempo de aviso predeterminado que se aplica cuando se activa en un evento.
->> - **Mostrar recordatorios para eventos vencidos** : continuar enviando recordatorios después de un evento.
+>> - **Enviar recordatorios por correo electrónico a**: enviar recordatorios de eventos a una dirección de correo electrónico.
+>> - **Mostrar notificaciones del navegador**: Recibir notificaciones de los eventos desde su navegador de internet.
+>> - **Tiempo de recordatorio predeterminado**: Tiempo de aviso predeterminado que se aplica cuando se activa en un evento.
+>> - **Mostrar recordatorios para eventos vencidos**: continuar enviando recordatorios después de un evento.
 >>
 >> **Permiso Libre/Ocupado**
 >>
@@ -389,7 +389,7 @@ Seleccione una de las dos fichas siguientes:
 >>
 >> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas "Contactos por correo electrónico" y "Papelera de reciclaje", que no permiten la importación y exportación de contactos.<br>
 >>
->> A continuación, haga clic en `Importar`{.action} para abrir la ventana de importación. El botón `Browse...` le permite descargar el archivo que contiene sus contactos en formato ".CSV" o ".vcf". <br><br>
+>> A continuación, haga clic en `Importar`{.action} para abrir la ventana de importación. El botón `Browse...` le permite descargar el archivo que contiene sus contactos en formato ".csv" o ".vcf". <br><br>
 >> ![Zimbra - Importer](images/zimbra-19.png){.thumbnail .w-600}
 >>
 > **Exportar contactos**
@@ -402,11 +402,11 @@ Seleccione una de las dos fichas siguientes:
 
 ### Calendario <a name="calendar"></a>
 
-Haga clic en el icono `Agenda` situado en la barra superior para acceder a la agenda de contactos. Dicho código se divide en **3 partes** :
+Haga clic en el icono `Agenda` situado en la barra superior para acceder a la agenda de contactos. Dicho código se divide en **3 partes**:
 
-- **(1) Lista de calendarios** (izquierda) : Gestione sus distintos calendarios y subcalendarios.
-- **(2) Contenido del calendario** (centro) : vea el contenido de los calendarios y subcalendarios seleccionados.
-- **(3) Lista de tareas** (derecha) : administre sus tareas y listas de tareas.
+- **(1) Lista de calendarios** (izquierda): Gestione sus distintos calendarios y subcalendarios.
+- **(2) Contenido del calendario** (centro): vea el contenido de los calendarios y subcalendarios seleccionados.
+- **(3) Lista de tareas** (derecha): administre sus tareas y listas de tareas.
 
 ![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail .w-600}
 
@@ -416,31 +416,31 @@ Por defecto, en la lista `Mis agendas`, tiene un `Agenda` creado por defecto. Es
 
 ##### 1- Crear un calendario <a name="calendar-add-calendar"></a>
 
-- **(1)** : Para crear un calendario, sitúe el cursor sobre `Mis agendas` en la columna de la izquierda y haga clic en el botón `+`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
+- **(1)**: Para crear un calendario, sitúe el cursor sobre `Mis agendas` en la columna de la izquierda y haga clic en el botón `+`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
 
 También puede crear subcalendarios.
 
-- **(2)** : Para crear un subcalendario, coloque el cursor sobre el calendario para el que desea crear un subcalendario y haga clic derecho para ver el menú desplegable. Haga clic en `Añadir subcalendario`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
+- **(2)**: Para crear un subcalendario, coloque el cursor sobre el calendario para el que desea crear un subcalendario y haga clic derecho para ver el menú desplegable. Haga clic en `Añadir subcalendario`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
 
 ![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-600}
 
 ##### 2- Añadir un evento <a name="calendar-add-event"></a>
 
-- **(1)** : Haga clic en `Nuevo evento`{.action} en la esquina superior izquierda.
-- **(2)** : Haga clic en la franja horaria de su calendario a la que desea agregar un evento. Para añadir fácilmente, solo tiene que definir un título y una ubicación para el evento y hacer clic en `Guardar`{.action}. Para añadir más detalles sobre su evento, haga clic en `Añadir más detalles`{.action}
+- **(1)**: Haga clic en `Nuevo evento`{.action} en la esquina superior izquierda.
+- **(2)**: Haga clic en la franja horaria de su calendario a la que desea agregar un evento. Para añadir fácilmente, solo tiene que definir un título y una ubicación para el evento y hacer clic en `Guardar`{.action}. Para añadir más detalles sobre su evento, haga clic en `Añadir más detalles`{.action}
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-600}
 
-- **Inicio** : fecha y hora de inicio del evento. Si marca `Todo el día`, no tendrá que introducir una hora de inicio y de finalización, ya que se tendrá en cuenta todo el día.
-- **Fin** : la fecha y la hora de finalización del evento.
-- **Repetir** : si se trata de un evento recurrente, defina su frecuencia.
-- **Ubicación** : el lugar en el que tendrá lugar el evento, como el nombre de una sala de reuniones.
-- **Equipo** : Al hacer clic en `Mostrar equipo`{.action}, aparece esta línea para definir un dispositivo compartido que va a utilizar para su evento.
-- **Invitados** : las direcciones de correo electrónico de los participantes del evento.
-- **Notas** : mensaje que se enviará a los invitados del evento.
-- **Recordar** : recibir una notificación antes de que comience el evento.
-- **Mostrar como** : definir si el evento hace que sus invitados estén disponibles o no durante su desarrollo
-- **Agenda** : definir a qué calendario está asociado el evento.
+- **Inicio**: fecha y hora de inicio del evento. Si marca `Todo el día`, no tendrá que introducir una hora de inicio y de finalización, ya que se tendrá en cuenta todo el día.
+- **Fin**: la fecha y la hora de finalización del evento.
+- **Repetir**: si se trata de un evento recurrente, defina su frecuencia.
+- **Ubicación**: el lugar en el que tendrá lugar el evento, como el nombre de una sala de reuniones.
+- **Equipo**: Al hacer clic en `Mostrar equipo`{.action}, aparece esta línea para definir un dispositivo compartido que va a utilizar para su evento.
+- **Invitados**: las direcciones de correo electrónico de los participantes del evento.
+- **Notas**: mensaje que se enviará a los invitados del evento.
+- **Recordar**: recibir una notificación antes de que comience el evento.
+- **Mostrar como**: definir si el evento hace que sus invitados estén disponibles o no durante su desarrollo
+- **Agenda**: definir a qué calendario está asociado el evento.
 
 Una vez definido el evento, haga clic en `Guardar`{.action}.
 
@@ -555,12 +555,12 @@ En los subcapítulos siguientes, encontrará los detalles de cada uno de los ele
 
 El campo de comparación hace referencia a la sección del mensaje de correo electrónico que se debe comprobar para el operador de comparación. Los campos de comparación pueden incluir los siguientes:
 
-- **De** : especifique un remitente en el campo "De" del correo electrónico.
-- **Para** : buscar nombres de destinatarios en el campo "Para".
-- **CC** : buscar nombres de destinatarios en copia en el campo "CC".
-- **Asunto** : especificar elementos en el asunto del mensaje de correo electrónico.
-- **Cabecera con nombre** : cuando se selecciona esta opción, aparece un campo de entrada adicional antes del operador de comparación. Este campo permite introducir cualquier elemento del encabezado de un mensaje de correo electrónico. Puede especificar los campos estándar "De", "Para", "Asunto" u otros campos que puedan estar presentes en el encabezado del mensaje de correo electrónico. Por ejemplo, algunos servidores de correo pueden incluir campos específicos en el encabezado que se pueden incluir en la regla de filtrado utilizando este campo de comparación.
-- **Texto del mensaje** : se refiere a las palabras que aparecen o no en el cuerpo del mensaje de correo electrónico.
+- **De**: especifique un remitente en el campo "De" del correo electrónico.
+- **Para**: buscar nombres de destinatarios en el campo "Para".
+- **CC**: buscar nombres de destinatarios en copia en el campo "CC".
+- **Asunto**: especificar elementos en el asunto del mensaje de correo electrónico.
+- **Cabecera con nombre**: cuando se selecciona esta opción, aparece un campo de entrada adicional antes del operador de comparación. Este campo permite introducir cualquier elemento del encabezado de un mensaje de correo electrónico. Puede especificar los campos estándar "De", "Para", "Asunto" u otros campos que puedan estar presentes en el encabezado del mensaje de correo electrónico. Por ejemplo, algunos servidores de correo pueden incluir campos específicos en el encabezado que se pueden incluir en la regla de filtrado utilizando este campo de comparación.
+- **Texto del mensaje**: se refiere a las palabras que aparecen o no en el cuerpo del mensaje de correo electrónico.
 
 ##### 2. Operador de comparación <a name="filters-comp-operator"></a>
 
@@ -597,12 +597,12 @@ Una vez que haya seleccionado el campo y el operador de comparación, introduzca
 
 El campo `Entonces` define la acción que debe realizarse en el mensaje de correo electrónico que cumple las condiciones del filtro . Las acciones de filtrado pueden incluir la eliminación, clasificación e incluso marcación del correo electrónico entrante.
 
-- **Mantener en la bandeja de entrada** : guarda los mensajes de correo electrónico en la bandeja de entrada. Si ninguna de las reglas de filtrado coincide con un mensaje de correo electrónico, esta acción se realiza de forma predeterminada.
-- **Mover a la carpeta** : permite mover el mensaje de correo electrónico a una carpeta especificada.
-- **Borrar permanenteme** : elimina el mensaje de correo electrónico sin entregarlo. El mensaje no se encuentra en ninguna de las carpetas, incluida la papelera.
-- **Reenviar a** : reenvía el correo electrónico a la dirección que especifique.
+- **Mantener en la bandeja de entrada**: guarda los mensajes de correo electrónico en la bandeja de entrada. Si ninguna de las reglas de filtrado coincide con un mensaje de correo electrónico, esta acción se realiza de forma predeterminada.
+- **Mover a la carpeta**: permite mover el mensaje de correo electrónico a una carpeta especificada.
+- **Borrar permanenteme**: elimina el mensaje de correo electrónico sin entregarlo. El mensaje no se encuentra en ninguna de las carpetas, incluida la papelera.
+- **Reenviar a**: reenvía el correo electrónico a la dirección que especifique.
 - **Marcar como leído**
-- **Estrella** : marca el correo electrónico con una estrella.
+- **Estrella**: marca el correo electrónico con una estrella.
 
 #### Crear un filtro <a name="filters-creation"></a>
 
@@ -667,14 +667,14 @@ Es posible delegar su cuenta de correo a otra cuenta de correo. que deben compar
 
 **(1) Delegados**. Para delegar su cuenta de correo electrónico en otra cuenta, haga clic en `Añadir delegados`{.action}.
 
-- **Enviar como"** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, igual que si lo hubiera enviado. El destinatario no mencionará la dirección de correo electrónico del delegado.
-- **Enviar de parte de** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, indicando "en nombre de" dicha dirección. El destinatario tiene por tanto la mención de las dos direcciones de correo electrónico implicadas en el intercambio.
+- **Enviar como"**: la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, igual que si lo hubiera enviado. El destinatario no mencionará la dirección de correo electrónico del delegado.
+- **Enviar de parte de**: la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, indicando "en nombre de" dicha dirección. El destinatario tiene por tanto la mención de las dos direcciones de correo electrónico implicadas en el intercambio.
 
 **(2) Delegar la configuración de envío**. Al delegar su dirección de correo electrónico a otra, puede:
 
-- **Guardar los mensajes enviados en mi carpeta Enviados** : Si la persona delegada en su cuenta envía un mensaje de correo electrónico desde su dirección de correo electrónico, dicho mensaje aparecerá en la carpeta "Enviados".
-- **Guardar los mensajes enviados en la carpeta Enviados del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados".
-- **Guardar los mensajes enviados en mi carpeta Enviados y en la del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados" así como en su carpeta "Enviados".
+- **Guardar los mensajes enviados en mi carpeta Enviados**: Si la persona delegada en su cuenta envía un mensaje de correo electrónico desde su dirección de correo electrónico, dicho mensaje aparecerá en la carpeta "Enviados".
+- **Guardar los mensajes enviados en la carpeta Enviados del delegado**: Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados".
+- **Guardar los mensajes enviados en mi carpeta Enviados y en la del delegado**: Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados" así como en su carpeta "Enviados".
 - **No guardar los mensajes enviados**: si la persona delegada en su cuenta envía un email desde su dirección de correo electrónico, no habrá ninguna copia de hecho.
 
 ### Firma <a name="signatures"></a>

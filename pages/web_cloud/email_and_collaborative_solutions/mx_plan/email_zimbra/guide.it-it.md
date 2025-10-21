@@ -104,7 +104,7 @@ Le cartelle speciali vengono create automaticamente dal server di posta elettron
 
 - **In arrivo**: le email vengono consegnate per impostazione predefinita in questa cartella (filtri esclusi).
 - **Bozze**: le email scritte ma non spedite vengono salvate in questa cartella.
-- **Posta inviato** : le email inviate vengono automaticamente archiviate in questa cartella.
+- **Posta inviato**: le email inviate vengono automaticamente archiviate in questa cartella.
 - **Archivio**: cartella predefinita per classificare le email elaborate.
 - **Spam**: cartella in cui sono archiviate le email considerate indesiderate.
 - **Cestino**: Le email eliminate vengono memorizzate in questa cartella prima di essere eliminate definitivamente.
@@ -145,22 +145,22 @@ Quando si seleziona una cartella o una sottocartella nella colonna di sinistra, 
 
 Selezionando un’email sono disponibili numerose azioni:
 
-- 1.**Rispondi** : rispondi direttamente al mittente.
-- 2.**Rispondi a tutti** : rispondi direttamente a tutti i destinatari presenti nei campi "A" e "Copia".
+- 1.**Rispondi**: rispondi direttamente al mittente.
+- 2.**Rispondi a tutti**: rispondi direttamente a tutti i destinatari presenti nei campi "A" e "Copia".
 - 3.**Inoltra**: trasferisci l’email selezionata a uno o più destinatari.
-- 4.**Archivia** : sposta l’email nella cartella "Archive" del tuo account email.
-- 5.**Sposta** : sposta l’email in una delle cartelle dell’account email.
-- 6.**Elimina** : Inserisci l’email selezionata nel "Cestino".
-- 7.**SPAM** : inserire l’email selezionata direttamente nella cartella di posta indesiderata (SPAM).
+- 4.**Archivia**: sposta l’email nella cartella "Archive" del tuo account email.
+- 5.**Sposta**: sposta l’email in una delle cartelle dell’account email.
+- 6.**Elimina**: Inserisci l’email selezionata nel "Cestino".
+- 7.**SPAM**: inserire l’email selezionata direttamente nella cartella di posta indesiderata (SPAM).
 - 8.**Altro**
     - **Contrassegna come letto**.
     - **Contrassegna come non letto**.
     - **Stella**: assegna una stella alla tua email per evidenziarla e identificarla più facilmente.
-    - **Elimina stella** : rimuovi la stella assegnata a questa email.
-    - **Mostra originale** : Visualizzare l'intero messaggio, corpo e intestazione.
-    - **Nuovo filtro** : crea un filtro dal mittente e dall'oggetto del messaggio selezionato.
-    - **Stampa** : stampa la conversazione o l'email selezionata.
-- 9.**Visualizza** : selezionare uno dei 3 layout per visualizzare le cartelle e le email.
+    - **Elimina stella**: rimuovi la stella assegnata a questa email.
+    - **Mostra originale**: Visualizzare l'intero messaggio, corpo e intestazione.
+    - **Nuovo filtro**: crea un filtro dal mittente e dall'oggetto del messaggio selezionato.
+    - **Stampa**: stampa la conversazione o l'email selezionata.
+- 9.**Visualizza**: selezionare uno dei 3 layout per visualizzare le cartelle e le email.
 
 ![Zimbra - azioni](images/zimbra-07.png){.thumbnail .w-600}
 
@@ -219,9 +219,9 @@ Per scrivere una nuova email, clicca sul pulsante `Nuovo Messaggio`{.action} (1)
 >> - **Da**: indirizzo da cui vuoi inviare la tua email. Di default, è il tuo indirizzo email. È possibile modificare l’indirizzo del mittente cliccando sul pulsante a destra del proprio indirizzo email, solo se è stata installata una [delega](#delegations).<br>
 >> - **A**: il/i destinatario/i della tua email. Clicca su `A`{.action} per accedere alla tua [rubrica contatti](#contacts) e selezionare i destinatari.<br>
 >> - **Cc**: fare clic su `Cc/Ccn`{.action} a destra del campo `A`{.action} per visualizzare il campo. La copia in formato cartaceo è un campo di destinazione che consente di inviare la propria e-mail in copia a persone che si desidera includere in un ciclo continuo senza che vengano considerate come destinatari diretti dell'e-mail (a differenza dei destinatari del campo "**A**").<br>
->> - **CCn** : clicca su `Cc/Ccn`{.action} in corrispondenza del campo `A`{.action} per visualizzare il campo. La copia in carbonio invisibile è un campo destinatario che permette di trasmettere un’email senza che gli altri destinatari vedano la persona o le persone in "**Ccn**".<br>
+>> - **CCn**: clicca su `Cc/Ccn`{.action} in corrispondenza del campo `A`{.action} per visualizzare il campo. La copia in carbonio invisibile è un campo destinatario che permette di trasmettere un’email senza che gli altri destinatari vedano la persona o le persone in "**Ccn**".<br>
 >> - **Oggetto**: titolo dell’email, primo elemento visibile alla ricezione prima di aprire l’email.<br>
->> - `...`{.action} : situato a destra del campo `Da`{.action}, ti dà accesso a 3 opzioni:<br>
+>> - `...`{.action}: situato a destra del campo `Da`{.action}, ti dà accesso a 3 opzioni:<br>
 >>    - Selezionando l’opzione `Priorità alta` puoi definire prioritaria la tua email.<br>
 >>    - Fare clic su `Richiedi conferma di lettura` per richiedere una conferma di lettura al destinatario.<br>
 >>    - La funzione `Testo semplice` disattiverà le funzioni di impaginazione HTML dell'e-mail. <br>
@@ -269,23 +269,23 @@ L'interfaccia Zimbra dispone di 2 menu di configurazione:
 >>
 >> Qui trovi gli elementi associati alla visualizzazione dei tuoi elementi sul tuo account email.
 >>
->> - **Nella visualizzazione degli elenchi di messaggi** : queste opzioni consentono di organizzare l'elenco dei messaggi di posta elettronica in gruppi di conversazioni e di visualizzare più dettagli in anteprima.
->> - **Riquadro anteprima** : selezionare uno dei 3 layout per visualizzare le cartelle e le e-mail. Questa opzione riprende le scelte che trovi sul pulsante `Mostra`{.action} quando visualizzi le tue email.
+>> - **Nella visualizzazione degli elenchi di messaggi**: queste opzioni consentono di organizzare l'elenco dei messaggi di posta elettronica in gruppi di conversazioni e di visualizzare più dettagli in anteprima.
+>> - **Riquadro anteprima**: selezionare uno dei 3 layout per visualizzare le cartelle e le e-mail. Questa opzione riprende le scelte che trovi sul pulsante `Mostra`{.action} quando visualizzi le tue email.
 >> - **Spaziatura elenco messaggi**
->> - **Segna come già letto** : è possibile sospendere la modifica dello stato dell'e-mail in "letto" quando si fa clic su di esso o decidere di non fare nulla e lasciarlo in "non letto" senza alcuna azione da parte vostra.
->> - **Controlla l'arrivo di nuove mail** : definisci la frequenza di sincronizzazione delle email ricevute dalla tua interfaccia Zimbra.
->> - **Conferme di lettura** : definisci il comportamento di Zimbra quando apri un’email con avviso di lettura.
+>> - **Segna come già letto**: è possibile sospendere la modifica dello stato dell'e-mail in "letto" quando si fa clic su di esso o decidere di non fare nulla e lasciarlo in "non letto" senza alcuna azione da parte vostra.
+>> - **Controlla l'arrivo di nuove mail**: definisci la frequenza di sincronizzazione delle email ricevute dalla tua interfaccia Zimbra.
+>> - **Conferme di lettura**: definisci il comportamento di Zimbra quando apri un’email con avviso di lettura.
 >> - **Nuove notifiche di posta** elettronica: abilitare le notifiche quando si riceve un messaggio.
->> - **Mostra immagini nelle email** : visualizza o meno le foto all'apertura di un'email.
->> - **Visualizza le e-mail come testo semplice** : questa opzione consente di visualizzare i messaggi di posta elettronica in formato normale senza layout.
+>> - **Mostra immagini nelle email**: visualizza o meno le foto all'apertura di un'email.
+>> - **Visualizza le e-mail come testo semplice**: questa opzione consente di visualizzare i messaggi di posta elettronica in formato normale senza layout.
 >> - **Mostra le immagini per impostazione predefinita nella posta di questi indirizzi o domini attendibili**: definisci gli indirizzi email trusted per i quali le immagini possono essere visualizzate all'apertura.
 >>
 > **Scrittura di email**
 >>
->> - **Annulla invio** : questa opzione permette di visualizzare un banner, per 5 secondi, che permette di annullare l'invio di un'email.
->> - **Richiedi conferme di lettura** : questa opzione trasmette una richiesta di conferma di lettura ai destinatari quando viene inviata loro un’email.
+>> - **Annulla invio**: questa opzione permette di visualizzare un banner, per 5 secondi, che permette di annullare l'invio di un'email.
+>> - **Richiedi conferme di lettura**: questa opzione trasmette una richiesta di conferma di lettura ai destinatari quando viene inviata loro un’email.
 >> - **Salva una copia nella cartella Posta inviato**: selezionata per impostazione predefinita, questa opzione salva i messaggi inviati nella cartella "Inviato" del tuo account email.
->> - **Delegati** : per maggiori informazioni sul suo utilizzo, consulta la sezione [Deleghe](#delegations) di questa guida.
+>> - **Delegati**: per maggiori informazioni sul suo utilizzo, consulta la sezione [Deleghe](#delegations) di questa guida.
 >> - **Impostazioni di invio delegato**: per ulteriori informazioni sull'utilizzo di questa guida, vedere l'argomento [Deleghe](#delegations) in questa guida.
 >> - **Compositore**: è possibile impostare lo stile di scrittura predefinito quando si inizia a scrivere un messaggio di posta elettronica.
 >>
@@ -310,25 +310,25 @@ L'interfaccia Zimbra dispone di 2 menu di configurazione:
 >>
 >> **Impostazioni Agenda generali**
 >>
->> - **Agenda predefinita** : impostare il calendario predefinito da utilizzare quando si crea un evento nei calendari.
->> - **Inizio settimana** : il giorno che compare per primo nella griglia del calendario.
->> - **Inizio giorno feriale** : l'ora visualizzata nella parte superiore dell'intervallo orario visualizzato.
->> - **Fine giorno feriale** : l'ora visualizzata nella parte inferiore dell'intervallo orario visualizzato.
+>> - **Agenda predefinita**: impostare il calendario predefinito da utilizzare quando si crea un evento nei calendari.
+>> - **Inizio settimana**: il giorno che compare per primo nella griglia del calendario.
+>> - **Inizio giorno feriale**: l'ora visualizzata nella parte superiore dell'intervallo orario visualizzato.
+>> - **Fine giorno feriale**: l'ora visualizzata nella parte inferiore dell'intervallo orario visualizzato.
 >> - **Fuso orario giorni feriali** utilizzato per i calendari.
->> - **Durante la creazione o la modifica di eventi** : visualizzare i fusi orari per le ore di inizio e di fine.
->> - **Condivisione** : `Attiva la delega per i clienti CALDav`. Questa opzione consente di gestire i calendari tramite un software che supporta il protocollo CALdav.
->> - **Eventi rifiutati** : visualizzare un evento nel calendario, anche se è stato rifiutato.
+>> - **Durante la creazione o la modifica di eventi**: visualizzare i fusi orari per le ore di inizio e di fine.
+>> - **Condivisione**: `Attiva la delega per i clienti CALDav`. Questa opzione consente di gestire i calendari tramite un software che supporta il protocollo CALdav.
+>> - **Eventi rifiutati**: visualizzare un evento nel calendario, anche se è stato rifiutato.
 >>
 >> **Promemoria eventi**
 >>
->> - **Invia promemoria via email a** : inviare promemoria di eventi a un indirizzo e-mail.
->> - **Mostra notifiche del browser** : essere avvisati dal browser per i tuoi eventi.
->> - **Orario promemoria predefinito** : timeout di richiamata predefinito quando viene attivato su un evento.
->> - **Mostra promemoria per gli eventi scaduti** : continua a inviare promemoria dopo un evento.
+>> - **Invia promemoria via email a**: inviare promemoria di eventi a un indirizzo e-mail.
+>> - **Mostra notifiche del browser**: essere avvisati dal browser per i tuoi eventi.
+>> - **Orario promemoria predefinito**: timeout di richiamata predefinito quando viene attivato su un evento.
+>> - **Mostra promemoria per gli eventi scaduti**: continua a inviare promemoria dopo un evento.
 >>
 >> **Autorizzazione orari liberi/occupati**
 >>
->> - **Autorizzazione per** : questo parametro riguarda esclusivamente lo stato di disponibilità associato ai calendari dell’indirizzo email. Questo significa che è possibile condividere il proprio stato "Occupato" o "Disponibile" con altri indirizzi email.
+>> - **Autorizzazione per**: questo parametro riguarda esclusivamente lo stato di disponibilità associato ai calendari dell’indirizzo email. Questo significa che è possibile condividere il proprio stato "Occupato" o "Disponibile" con altri indirizzi email.
 
 ### Contatti <a name="contacts"></a>
 
@@ -354,7 +354,7 @@ Come per le email, le cartelle dei contatti speciali vengono create automaticame
 
 - **Contatti**: i contatti vengono archiviati per impostazione predefinita in questa cartella.
 - **Cestino**: i contatti eliminati vengono memorizzati in questa cartella prima di essere eliminati definitivamente.
-- **Contatti inviati via email** : i contatti con cui ti sei scambiato vengono salvati in questa cartella.
+- **Contatti inviati via email**: i contatti con cui ti sei scambiato vengono salvati in questa cartella.
 
 È possibile creare cartelle e sottocartelle. Consentono di suddividere i contatti in sottoinsiemi. In questo modo è più facile trovare un contatto in una cartella creata che nella rubrica indirizzi.
 
@@ -555,12 +555,12 @@ Nei seguenti sottocapitoli vengono illustrati i dettagli di ogni elemento di una
 
 Il campo Confronta indica la sezione dell'e-mail da controllare per l'operatore di confronto. I campi di confronto possono includere:
 
-- **Da** : indica il mittente nel campo "Da" dell’email.
-- **A** : cercare i nomi dei destinatari nel campo TB.
-- **Cc** : cerca i nomi dei destinatari in copia nel campo Cc.
-- **Oggetto** : specificare gli elementi nell'oggetto e-mail.
-- **Intestazione denominata** : quando questa opzione è selezionata, prima dell'operatore di confronto viene visualizzato un campo di inserimento aggiuntivo. Questo campo consente di inserire qualsiasi elemento dell'intestazione di un messaggio di posta elettronica. È possibile specificare i campi standard "Da", "A", "Oggetto" o altri campi che possono essere presenti nell'intestazione dell'email. Alcuni server di posta elettronica, ad esempio, possono aggiungere campi specifici nell'intestazione che è possibile includere nella regola di filtro utilizzando questo campo di confronto.
-- **Corpo** : Indica le parole contenute o meno nel corpo dell'email.
+- **Da**: indica il mittente nel campo "Da" dell’email.
+- **A**: cercare i nomi dei destinatari nel campo TB.
+- **Cc**: cerca i nomi dei destinatari in copia nel campo Cc.
+- **Oggetto**: specificare gli elementi nell'oggetto e-mail.
+- **Intestazione denominata**: quando questa opzione è selezionata, prima dell'operatore di confronto viene visualizzato un campo di inserimento aggiuntivo. Questo campo consente di inserire qualsiasi elemento dell'intestazione di un messaggio di posta elettronica. È possibile specificare i campi standard "Da", "A", "Oggetto" o altri campi che possono essere presenti nell'intestazione dell'email. Alcuni server di posta elettronica, ad esempio, possono aggiungere campi specifici nell'intestazione che è possibile includere nella regola di filtro utilizzando questo campo di confronto.
+- **Corpo**: Indica le parole contenute o meno nel corpo dell'email.
 
 ##### 2 - Operatore di confronto <a name="filters-comp-operator"></a>
 
@@ -570,13 +570,13 @@ In base al campo di confronto specificato in precedenza, l'operatore di confront
 >
 > Gli operatori di confronto disponibili variano in base al campo di confronto selezionato.
 
-- **Corrisponde esattamente a / Non corrisponde esattamente** : quello che digiterai deve corrispondere esattamente.<br>
+- **Corrisponde esattamente a / Non corrisponde esattamente**: quello che digiterai deve corrispondere esattamente.<br>
     *Ad esempio*, se si specifica che l'oggetto dell'e-mail corrisponde esattamente a "house", la corrispondenza verrà eseguita solo con "house" e non con "houses" o "a blue house".
 
-- **Contiene / Non contiene** : ciò che si sta immettendo deve essere presente nel campo o nei campi.<br>
+- **Contiene / Non contiene**: ciò che si sta immettendo deve essere presente nel campo o nei campi.<br>
     *Ad esempio*, indicando che l’oggetto dell’email deve contenere "casa", la corrispondenza sarà con "house", "houses" e anche "a blue house".
 
-- **Corrisponde al criterio jolly / Non corrisponde al criterio jolly** : specifica che l'argomento deve corrispondere alla stringa specificata, che include caratteri jolly.
+- **Corrisponde al criterio jolly / Non corrisponde al criterio jolly**: specifica che l'argomento deve corrispondere alla stringa specificata, che include caratteri jolly.
 
 - **Esiste / Non esiste** - Specifica che il campo di confronto specificato deve esistere o non deve esistere nel messaggio. Questo operatore di confronto viene utilizzato con i campi di confronto Intestazione con nome.
 
@@ -598,8 +598,8 @@ Dopo aver selezionato il campo e l'operatore di confronto, è necessario immette
 Il campo `allora` definisce l'azione da effettuare sull'email che soddisfa le condizioni del filtro . Le operazioni filtro possono includere l'eliminazione, l'ordinamento e persino il contrassegno della posta in arrivo.
 
 - **Conserva in Posta in arrivo** - Salva i messaggi di posta elettronica nella cartella Posta in arrivo. Se nessuna delle regole di filtro corrisponde a un messaggio di posta elettronica, questa operazione viene eseguita per impostazione predefinita.
-- **Sposta nella cartella** : Sposta l'email in una cartella specificata.
-- **Elimina definitivamente** : elimina il messaggio di posta elettronica senza recapitarlo. Il messaggio non si trova in nessuna delle cartelle, incluso il cestino.
+- **Sposta nella cartella**: Sposta l'email in una cartella specificata.
+- **Elimina definitivamente**: elimina il messaggio di posta elettronica senza recapitarlo. Il messaggio non si trova in nessuna delle cartelle, incluso il cestino.
 - **Inoltra a**: inoltra l'email all'indirizzo specificato.
 - **Contrassegna come letto**
 - **Stella**: segna la tua email con una stella.
@@ -672,10 +672,10 @@ Per accedere all’impostazione di delega, clicca sull’icona a forma di ingran
 
 **(2) Impostazioni di invio delegato**. Quando deleghi il tuo indirizzo email a un altro provider, puoi:
 
-- **Salva messaggi inviati nella mia cartella Inviati** : se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, questa apparirà nella tua cartella "Inviate".
-- **Salva messaggi inviati nella cartella Inviati del delegato** : se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, questa apparirà nella sua cartella "Inviate".
-- **Salva messaggi inviati nella cartella Inviati del delegato e nella mia cartella Inviati** : se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, questa apparirà nella tua cartella "Inviate" e nella sua cartella "Inviate".
-- **Non salvare i messaggi inviati** : se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, non ci sarà alcuna copia di fatto.
+- **Salva messaggi inviati nella mia cartella Inviati**: se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, questa apparirà nella tua cartella "Inviate".
+- **Salva messaggi inviati nella cartella Inviati del delegato**: se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, questa apparirà nella sua cartella "Inviate".
+- **Salva messaggi inviati nella cartella Inviati del delegato e nella mia cartella Inviati**: se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, questa apparirà nella tua cartella "Inviate" e nella sua cartella "Inviate".
+- **Non salvare i messaggi inviati**: se la persona delegata sul tuo account invia un’email dal tuo indirizzo email, non ci sarà alcuna copia di fatto.
 
 ### Firma <a name="signatures"></a>
 

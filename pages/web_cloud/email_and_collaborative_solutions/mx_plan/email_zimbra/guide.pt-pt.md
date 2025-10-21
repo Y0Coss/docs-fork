@@ -213,12 +213,12 @@ Para redigir um novo e-mail, clique no botão `Nova mensagem`{.action} (1) na pa
 >>
 >> O cabeçalho permite preencher os seguintes campos:
 >>
->> - **De** : o endereço a partir do qual envia o seu e-mail. Por predefinição, é o seu endereço de e-mail. Só é possível alterar o endereço de e-mail se clicar na barra à direita do endereço de e-mail, se tiver sido criada uma [delegação](#delegations).<br>
->> - **Para** : o(s) destinatário(s) do seu e-mail. Clique em `Para`{.action} para aceder ao seu [livro de contactos](#contacts) e selecionar os seus destinatários.<br>
->> - **CC** : clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono é um campo de destino que permite enviar o seu e-mail em cópia a pessoas que deseja integrar num loop sem que sejam consideradas como destinatários diretos do e-mail (ao contrário dos destinatários do campo "**Para**").<br>
->> - **Bcc** : clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono invisível é um campo de destino que permite a transmissão de um e-mail sem que os outros destinatários vejam a pessoa ou pessoas "**Bcc**".<br>
+>> - **De**: o endereço a partir do qual envia o seu e-mail. Por predefinição, é o seu endereço de e-mail. Só é possível alterar o endereço de e-mail se clicar na barra à direita do endereço de e-mail, se tiver sido criada uma [delegação](#delegations).<br>
+>> - **Para**: o(s) destinatário(s) do seu e-mail. Clique em `Para`{.action} para aceder ao seu [livro de contactos](#contacts) e selecionar os seus destinatários.<br>
+>> - **CC**: clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono é um campo de destino que permite enviar o seu e-mail em cópia a pessoas que deseja integrar num loop sem que sejam consideradas como destinatários diretos do e-mail (ao contrário dos destinatários do campo "**Para**").<br>
+>> - **Bcc**: clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono invisível é um campo de destino que permite a transmissão de um e-mail sem que os outros destinatários vejam a pessoa ou pessoas "**Bcc**".<br>
 >> - **Assunto**: Título do e-mail, primeiro elemento visível na receção antes de abrir o e-mail.<br>
->> - `...`{.action} : situado à direita do campo `De`{.action}, dá-lhe acesso a 3 opções : <br>
+>> - `...`{.action}: situado à direita do campo `De`{.action}, dá-lhe acesso a 3 opções: <br>
 >>    - Pode qualificar o seu e-mail como prioritário selecionando `Prioridade máxima`.<br>
 >>    - Clique em `Solicitar recibo de leitura` para pedir uma confirmação de leitura ao destinatário.<br>
 >>    - A funcionalidade `Texto simples` irá desativar as funções de formatação de páginas HTML no correio eletrónico. <br>
@@ -250,7 +250,7 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 
 ![Zimbra - preferências](images/zimbra-14.png){.thumbnail .w-600}
 
-- **(1) Perfil** : clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá "**Alterar a palavra-passe**" do seu endereço de e-mail, "**Alterar imagem do perfil**" ou encerrar a sessão clicando "**Terminar sessão**".
+- **(1) Perfil**: clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá "**Alterar a palavra-passe**" do seu endereço de e-mail, "**Alterar imagem do perfil**" ou encerrar a sessão clicando "**Terminar sessão**".
 
 - **(2) Definições**: Clique na roda dentada no canto superior direito da sua interface para aceder às alterações "**Idioma**" da sua interface. Uma secção "**Ajuda**" permite consultar a documentação oficial do Zimbra. "**Definições**" encontrará todos os elementos de configuração descritos nos seguintes separadores:
 
@@ -282,7 +282,7 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 >> - **Anular envio**: esta opção permite apresentar um banner, durante 5 segundos, que permite anular o envio de um e-mail.
 >> - **Solicitar recibos de leitura**: esta opção envia um pedido de recibo de leitura aos seus destinatários quando lhes envia um e-mail.
 >> - **Salve uma cópia na pasta Enviados**: assinalado por predefinição, esta opção guarda os e-mails enviados para a pasta "*Enviado" da sua conta de e-mail.
->> - **Delegados** : consulte a secção [Delegações](#delegations) deste guia para saber mais sobre a sua utilização.
+>> - **Delegados**: consulte a secção [Delegações](#delegations) deste guia para saber mais sobre a sua utilização.
 >> - **Definições de envio dos delegados**: consulte a secção [Delegações](#delegations) deste guia para compreender a sua utilização.
 >> - **Compositor**: pode definir o seu estilo de escrita quando iniciar a redação de um e-mail.
 >>
@@ -309,10 +309,10 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 >>
 >> - **Calendário predefinido** - defina o calendário padrão usado ao criar um evento em seus calendários.
 >> - **Início da semana**: o dia que aparece em primeiro lugar na grelha do seu calendário.
->> - **Início do dia útil** : a hora que aparece no topo da amplitude horária apresentada.
->> - **Fim do dia útil** : a hora que aparece na parte inferior da amplitude horária apresentada.
+>> - **Início do dia útil**: a hora que aparece no topo da amplitude horária apresentada.
+>> - **Fim do dia útil**: a hora que aparece na parte inferior da amplitude horária apresentada.
 >> - **Fuso horário do dia útil** utilizado para os seus calendários.
->> - **Ao criar ou editar eventos** : Mostrar os fusos horários para as horas de início e de fim.
+>> - **Ao criar ou editar eventos**: Mostrar os fusos horários para as horas de início e de fim.
 >> - **Compartilhar**: `Ativar a delegação para os clientes CALDav`. Esta opção permite-lhe gerir os seus calendários através de um software que suporte o protocolo CALdav.
 >> - **Eventos recusados**: ver um evento no calendário, mesmo que tenha sido recusado.
 >>
@@ -325,7 +325,7 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 >>
 >> **Permissão de Ocupação Livre**
 >>
->> - **Permissão para** : este parâmetro diz unicamente respeito ao estado de disponibilidade associado aos calendários do seu endereço de e-mail. Isto significa que poderá partilhar o seu estado « Ocupado » ou « Disponível » com outros endereços de e-mail.
+>> - **Permissão para**: este parâmetro diz unicamente respeito ao estado de disponibilidade associado aos calendários do seu endereço de e-mail. Isto significa que poderá partilhar o seu estado « Ocupado » ou « Disponível » com outros endereços de e-mail.
 
 ### Contactos <a name="contacts"></a>
 
@@ -351,7 +351,7 @@ Tal como acontece com os e-mails, as pastas de contactos especiais são automati
 
 - **Contactos**: os contactos são armazenados por predefinição nesta pasta.
 - **Lixeira**: os contactos excluídos são armazenados nessa pasta antes de serem excluídos permanentemente.
-- **Contactos por e-mail** : os contactos com os quais trocou são guardados nesta pasta.
+- **Contactos por e-mail**: os contactos com os quais trocou são guardados nesta pasta.
 
 É possível criar pastas e subpastas. Permitem classificar os contactos em subconjuntos. Assim, encontrará mais facilmente um contacto numa pasta que criou do que em todo o seu livro de endereços.
 
@@ -401,9 +401,9 @@ Selecione um dos dois separadores seguintes:
 
 Clique no ícone `calendário` na barra superior para aceder ao livro de contactos. Este está dividido em **3 partes**:
 
-- **(1) Lista dos calendários** (à esquerda) : faça a gestão dos seus diferentes calendários e subcalendários.
-- **(2) Conteúdo dos calendários** (no centro) : visualize o conteúdo dos calendários e subcalendários selecionados.
-- **(3) Lista de tarefas** (à direita) : faça a gestão das suas tarefas e listas de tarefas.
+- **(1) Lista dos calendários** (à esquerda): faça a gestão dos seus diferentes calendários e subcalendários.
+- **(2) Conteúdo dos calendários** (no centro): visualize o conteúdo dos calendários e subcalendários selecionados.
+- **(3) Lista de tarefas** (à direita): faça a gestão das suas tarefas e listas de tarefas.
 
 ![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail .w-600}
 
@@ -413,7 +413,7 @@ Por predefinição, na lista `Os meus calendários`, tem um `Calendário` criado
 
 ##### 1- Criar um calendário <a name="calendar-add-calendar"></a>
 
-- **(1)** : Para criar um calendário, passe o seu cursor para as `Os meus calendários` na coluna da esquerda e clique no botão `+`. Introduza um nome e defina uma cor e depois clique em `Guardar`{.action}.
+- **(1)**: Para criar um calendário, passe o seu cursor para as `Os meus calendários` na coluna da esquerda e clique no botão `+`. Introduza um nome e defina uma cor e depois clique em `Guardar`{.action}.
 
 Também é possível criar subcalendários.
 
@@ -423,21 +423,21 @@ Também é possível criar subcalendários.
 
 ##### 2- Adicionar um evento <a name="calendar-add-event"></a>
 
-- **(1)** : Clique em `Novo evento`{.action} no canto superior esquerdo.
-- **(2)** : Clique no intervalo horário do seu calendário no qual deseja adicionar um evento. Para uma adição simplificada, basta definir um título para o evento e um local e clicar em `Guardar`{.action}. Para adicionar mais detalhes sobre o seu evento, clique em `Adicionar mais detalhes`{.action}.
+- **(1)**: Clique em `Novo evento`{.action} no canto superior esquerdo.
+- **(2)**: Clique no intervalo horário do seu calendário no qual deseja adicionar um evento. Para uma adição simplificada, basta definir um título para o evento e um local e clicar em `Guardar`{.action}. Para adicionar mais detalhes sobre o seu evento, clique em `Adicionar mais detalhes`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-600}
 
-- **Início** : a data e a hora de início do seu evento. Se você marcar `Dia inteiro`, você não terá hora de início e fim para introduzir, pois todo o dia será levado em conta.
-- **Fim** : a data e a hora de fim do evento.
+- **Início**: a data e a hora de início do seu evento. Se você marcar `Dia inteiro`, você não terá hora de início e fim para introduzir, pois todo o dia será levado em conta.
+- **Fim**: a data e a hora de fim do evento.
 - **Repetir**:  se se tratar de um evento recorrente, defina a sua frequência.
-- **Localização** : o local onde o evento irá ocorrer, como por exemplo, o nome de uma sala de reuniões.
-- **Equipamento** : ao clicar em `Ver equipamento`{.action}, faz surgir esta linha para definir um equipamento partilhado que vai utilizar para o seu evento.
-- **Convidados** : endereços de e-mail dos participantes do evento.
-- **Observações** : mensagem a enviar aos convidados do evento.
-- **Lembrar** : ser avisado antes do início do evento.
-- **Mostrar como** : definir se o evento torna os seus convidados disponíveis ou indisponíveis durante o seu desenrolar.
-- **Calendário** : definir a que calendário é associado o evento.
+- **Localização**: o local onde o evento irá ocorrer, como por exemplo, o nome de uma sala de reuniões.
+- **Equipamento**: ao clicar em `Ver equipamento`{.action}, faz surgir esta linha para definir um equipamento partilhado que vai utilizar para o seu evento.
+- **Convidados**: endereços de e-mail dos participantes do evento.
+- **Observações**: mensagem a enviar aos convidados do evento.
+- **Lembrar**: ser avisado antes do início do evento.
+- **Mostrar como**: definir se o evento torna os seus convidados disponíveis ou indisponíveis durante o seu desenrolar.
+- **Calendário**: definir a que calendário é associado o evento.
 
 Depois de definir o evento, clique em `Guardar`{.action}.
 
@@ -451,9 +451,9 @@ As tarefas são itens dissociados dos seus calendários. O objetivo é apresenta
 
 A lista « Tarefas » existe por predefinição e não pode ser eliminada, mas pode criar as suas próprias listas de tarefas.
 
-- **(1)** : Para criar uma tarefa, clique no botão `...`{.action} e, a seguir, em `Nova tarefa`{.action} ou simplesmente no botão `+`{.action} ao lado da sua lista de tarefas.
+- **(1)**: Para criar uma tarefa, clique no botão `...`{.action} e, a seguir, em `Nova tarefa`{.action} ou simplesmente no botão `+`{.action} ao lado da sua lista de tarefas.
 
-- **(2)** : Para criar uma nova lista de tarefas, clique no botão `...`{.action} e, a seguir, em `Criar lista...`{.action}.
+- **(2)**: Para criar uma nova lista de tarefas, clique no botão `...`{.action} e, a seguir, em `Criar lista...`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-600}
 
@@ -552,9 +552,9 @@ Nos subcapítulos que se seguem, poderá encontrar os detalhes de cada um dos el
 
 O campo de comparação designa a secção do e-mail a verificar pelo operador de comparação. Os campos de comparação podem incluir:
 
-- **De** : indicar um remetente no campo "De" do e-mail.
+- **De**: indicar um remetente no campo "De" do e-mail.
 - **Para**: procure os nomes de destinatários no campo "Para".
-- **Cc** : procurar os nomes dos destinatários em cópia no campo "Cc".
+- **Cc**: procurar os nomes dos destinatários em cópia no campo "Cc".
 - **Assunto**: Especificar itens no assumpto do e-mail.
 - **Cabeçalho nomeado**: Quando esta opção está selecionada, um campo de entrada adicional aparece antes do operador de comparação. Este campo permite introduzir qualquer elemento no cabeçalho de uma mensagem de correio eletrónico. Pode especificar os campos padrão "De", "Para", "Assumpto", ou outros campos que possam estar presentes no cabeçalho da mensagem. Por exemplo, alguns servidores de correio eletrónico podem adicionar campos específicos no cabeçalho que podem ser integrados na regra de filtragem, utilizando este campo de comparação.
 - **Corpo**: significa as palavras contidas ou não no corpo do e-mail.
@@ -567,15 +567,15 @@ Em função do campo de comparação acima referido, o operador de comparação 
 >
 > Os operadores de comparação disponíveis variam de acordo com o campo de comparação selecionado.
 
-- **Coincide exatamente / Não coincide exatamente** : o que você vai digitar deve corresponder exatamente.<br>
+- **Coincide exatamente / Não coincide exatamente**: o que você vai digitar deve corresponder exatamente.<br>
     *Por exemplo*, indicando que o assumpto do e-mail corresponde exatamente "house", a correspondência será feita apenas com "house" e não com "houses" ou "a blue house".
 
-- **Contém / Não contém** : o que você digitar deve estar presente no(s) campo(s).<br>
+- **Contém / Não contém**: o que você digitar deve estar presente no(s) campo(s).<br>
     *Por exemplo*, indicando que o assumpto do e-mail deve conter "house", a correspondência será feita com "house", "houses" e também "a blue house".
 
-- **Coincide com a condição universal / Não coincide com a condição universal** : Especifica que o tópico deve corresponder à string especificada, que inclui caracteres curinga.
+- **Coincide com a condição universal / Não coincide com a condição universal**: Especifica que o tópico deve corresponder à string especificada, que inclui caracteres curinga.
 
-- **Existe / Não existe** : Especifica que o campo de comparação especificado deve existir ou não deve existir na mensagem. Este operador de comparação é utilizado com os campos de comparação "Cabeçalho nomeado".
+- **Existe / Não existe**: Especifica que o campo de comparação especificado deve existir ou não deve existir na mensagem. Este operador de comparação é utilizado com os campos de comparação "Cabeçalho nomeado".
 
 > **Utilização de caracteres de sincronização nos filtros**
 >
@@ -664,15 +664,15 @@ Para aceder ao parâmetro de delegação, clique na roda dentada no canto superi
 
 **(1) Delegados**. Para delegar sua conta de e-mail a outra conta, clique em `Adicionar delegados`{.action}.
 
-- **Enviar como"** : a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail, tal como se o tivesse enviado. O destinatário não terá menção do endereço de e-mail do delegado.
-- **Enviar em nome de** : a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail com uma menção "da parte" seu endereço de e-mail. O destinatário recebe a menção dos dois endereços de e-mail implicados na troca.
+- **Enviar como**: a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail, tal como se o tivesse enviado. O destinatário não terá menção do endereço de e-mail do delegado.
+- **Enviar em nome de**: a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail com uma menção "da parte" seu endereço de e-mail. O destinatário recebe a menção dos dois endereços de e-mail implicados na troca.
 
 **(2) Parâmetros de envio do delegado**. Quando delega o seu endereço de e-mail noutro, pode:
 
-- **Guardar as mensagens enviadas na minha pasta Itens "enviados"** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados".
-- **Guardar as mensagens enviadas na pasta Itens "enviados" do delegado** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados".
-- **Guardar as mensagens enviadas na minha pasta Itens "enviados" e na pasta Itens enviados do delegado** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados" bem como na pasta "Enviados".
-- **Não salve as mensagens enviadas** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, não haverá nenhuma cópia de facto.
+- **Guardar as mensagens enviadas na minha pasta Itens "enviados"**: se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados".
+- **Guardar as mensagens enviadas na pasta Itens "enviados" do delegado**: se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados".
+- **Guardar as mensagens enviadas na minha pasta Itens "enviados" e na pasta Itens enviados do delegado**: se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados" bem como na pasta "Enviados".
+- **Não salve as mensagens enviadas**: se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, não haverá nenhuma cópia de facto.
 
 ### Assinatura <a name="signatures"></a>
 
@@ -690,7 +690,7 @@ A opção predefinida `Ativar resposta automática durante estas datas (inclusiv
 
 - Se não souber quando pretende interromper a resposta automática, selecione a opção `Nenhuma data final`.
 - O botão `Enviar texto de amostra para mim`{.action} envia uma descrição geral desta resposta automática na pasta A receber.
-- `Remetentes externos` : pode definir uma mensagem diferente quando o remetente é externo ao seu nome de domínio e/ou ao seu livro de endereços. Por predefinição, todos os remetentes recebem a mesma mensagem.
+- `Remetentes externos`: pode definir uma mensagem diferente quando o remetente é externo ao seu nome de domínio e/ou ao seu livro de endereços. Por predefinição, todos os remetentes recebem a mesma mensagem.
 
 ## Quer saber mais?
 
