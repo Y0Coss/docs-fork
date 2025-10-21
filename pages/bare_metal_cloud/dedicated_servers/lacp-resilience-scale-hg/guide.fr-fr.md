@@ -5,7 +5,7 @@ updated: 2025-10-10
 ---
 
 > [!primary]
-> Ce document concerne un déploiement prévu le **31 octobre 2025**, qui changera la manière dont fonctionne l'aggrégation de liens (LACP) au sein des infrastructures OVHcloud.
+> Ce document concerne un déploiement prévu le **25 novembre 2025**, qui changera la manière dont fonctionne l'aggrégation de liens (LACP) au sein des infrastructures OVHcloud.
 > Les clients OVHcloud concernés par ces changements recevront également une communication par e-mail.
 
 ## Objectif
