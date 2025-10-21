@@ -262,8 +262,8 @@ Ihr Zimbra Interface verfügt über 2 Konfigurationsmenüs:
 >>
 >> In diesem Tab finden Sie:
 >>
->> - eine Fortschrittsleiste, die den belegten Speicherplatz auf Ihrem E-Mail-Konto anzeigt.
->> - die Möglichkeit, das Anzeigeformat für Datum und Uhrzeit Ihrer E-Mails festzulegen.
+>> - Eine Anzeige der Speicherplatzbelegung Ihres E-Mail-Accounts.
+>> - Die Möglichkeit, das Anzeigeformat für Datum und Uhrzeit Ihrer E-Mails festzulegen.
 >>
 > **Mail anzeigen**
 >>
@@ -643,13 +643,13 @@ Um auf die Filter zuzugreifen und Ihre Weiterleitung zu erstellen, folgen Sie de
 - Klicken Sie auf `Einstellungen`{.action}.
 - Klicken Sie im Einstellungsfenster auf den Abschnitt `Filter`{.action}.
 - Klicken Sie auf die Schaltfläche `Filter hinzufügen`{.action}.
-    - Klicken Sie zunächst auf <u>Erweiterten Modus</u> in der oberen rechten Ecke, um diese Regel einzurichten.
+    - Klicken Sie zunächst auf <u>Erweiterter Modus</u> in der oberen rechten Ecke, um diese Regel einzurichten.
     - Geben Sie Ihrem Filter einen Namen im Feld `Filtername`.
-    - Lassen Sie das Dropdown-Menü auf `alle` in der Phrase „Wenn eine eingehende Nachricht ... dieser Bedingungen erfüllt“ stehen.
+    - Belassen Sie das Dropdown-Menü auf `alle` in „Wenn eine eingehende Nachricht ... dieser Bedingungen erfüllt“.
     - In der nächsten Zeile wählen Sie `An`{.action} (To), lassen Sie `enthält`{.action} (contains), und geben Sie die E-Mail-Adresse ein, mit der Sie angemeldet sind, in das Feld rechts daneben.
-    - Unter der Bezeichnung „Dann“ (Then) wählen Sie `An weiterleiten` (Forward to) im Dropdown-Menü und geben Sie die Ziel-E-Mail-Adresse ein.
+    - Unter der Bezeichnung „Dann“ (Then) wählen Sie `weiterleiten an` (Forward to) im Dropdown-Menü und geben Sie die Ziel-E-Mail-Adresse ein.
     - Klicken Sie auf `+ Aktion hinzufügen`{.action} (Add an action) weiter unten, dann wählen Sie `Im Posteingang behalten` (Keep in Inbox).
-    - Klicken Sie auf `Speichern`{.action} im Filterfenster und auch im Einstellungsfenster.
+    - Klicken Sie auf `Speichern`{.action} im Filterfenster und im Einstellungsfenster.
 
 ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
 
