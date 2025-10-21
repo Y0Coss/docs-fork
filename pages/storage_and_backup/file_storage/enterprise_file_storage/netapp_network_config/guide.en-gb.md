@@ -46,6 +46,11 @@ You must have a vRack to activate your vRack services. OVHcloud vRack is a free 
 
 ![Sans configuration réseau](images/02-EFS.png){.thumbnail}
 
+> [!primary]
+> Please note that creating vRack Services, Subnets, or Service Endpoints on a production vRack **does not cause any service interruption**.
+> Therefore, you can safely follow steps 2 and 3 of this guide in a production environment.
+>
+
 ### Step 2 - Selecting or activating a vRack Services
 
 In this second step you will create a vRack Service. If you don't already have a vRack Services activated, you can do it at this step. Click on `Activate`{.action} to be be redirected to the vRack Services configuration page. For more information on vRack Services configuration, please refer to [this page](/pages/network/vrack_services/global). 

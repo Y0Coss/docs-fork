@@ -48,6 +48,11 @@ Pour activer votre vRack Services, vous devez avoir un vRack. Si vous n'en avez 
 
 ![Sans configuration réseau](images/02-EFS.png){.thumbnail}
 
+> [!primary]
+> Veuillez noter que la création de vRack Services, de Sous-réseaux ou de Service Endpoints sur un vRack en production **n'entraîne aucune interruption de service**.
+> Par conséquent, vous pouvez suivre les étapes 2 et 3 de ce guide en toute sécurité dans un environnement de production.
+>
+
 ### Etape 2 - Sélection ou création d'un vRack Services
 
 Dans cette deuxième étape, vous devez sélectionner un vRack Services. Si vous n'avez pas de vRack Services, il est possible à cette étape d'en activer un nouveau. Cliquez sur `Activer`{.action}, vous serez alors redirigé vers la page de configuration de vRack Services. Pour plus d'informations sur la création d'un vRack Services, vous pouvez consulter [cette page](/pages/network/vrack_services/global).
