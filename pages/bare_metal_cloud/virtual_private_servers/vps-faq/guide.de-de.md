@@ -40,6 +40,11 @@ details > :not(summary) {
     padding: 0.5rem 0.75rem;
     box-sizing: border-box;
 }
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
 </style>
 
 
