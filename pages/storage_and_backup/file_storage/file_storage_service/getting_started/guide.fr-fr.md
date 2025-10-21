@@ -443,7 +443,6 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> Ensuite, appliquez-le à votre cluster Kubernetes :
 >>
 >> ```bash
->> # Appliquez les informations d'identification OpenStack pour Manila
 >> kubectl apply -f secrets.yaml
 >> ```
 >>
@@ -560,9 +559,6 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> ```
 >>
 >> Configurez la StorageClass :
->>
->> - Éditez le fichier csi-config/dynamic-storageclass.yaml.
->> - Mettez à jour la valeur du paramètre shareNetworkID avec l'ID du réseau partagé récupéré à l'étape précédente.
 >>
 >> - Créez un fichier nommé `dynamic-storageclass.yaml` avec le contenu suivant :
 >>
@@ -729,7 +725,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> >
 >> > Toute tentative de redimensionnement d'un PVC qui n'est pas provisionné dynamiquement par une StorageClass entraînera une erreur telle que :
 >> >
->> > erreur : impossible de corriger persistentvolumeclaims « existing-nfs-share-pvc » : persistentvolumeclaims « existing-nfs-share-pvc » est interdit : seul un PVC provisionné dynamiquement peut être redimensionné et la classe de stockage qui provisionne le PVC doit prendre en charge le redimensionnement.
+>> > error: persistentvolumeclaims "existing-nfs-share-pvc" could not be patched: persistentvolumeclaims "existing-nfs-share-pvc" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
 >> >
 >>
 >> **11. Montage d'un share Manila existant comme volume dans les pods**
