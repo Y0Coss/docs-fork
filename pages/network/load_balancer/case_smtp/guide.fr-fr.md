@@ -1,7 +1,7 @@
 ---
 title: 'Comment configurer le SMTP sur un service Load Balancer'
 excerpt: 'Découvrez comment utiliser le SMTP avec le Load Balancer OVHcloud'
-updated: 2025-10-17
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -29,7 +29,7 @@ Pour rappel, chaque protocole (HTTP, TCP et UDP) du service OVHcloud Load Balanc
 >
 > L'ordre de création des éléments est important.
 > En particulier, les fermes de serveurs doivent être configurées **avant** de pouvoir leur attacher des serveurs.
-> 
+>
 
 Les fonctionnalités détaillées ci-dessous sont disponibles dans l'espace client OVHcloud :
 
@@ -66,7 +66,7 @@ Votre ferme de serveurs devrait apparaître dans la liste, sous l'onglet `Fermes
 
 ![Détails de la ferme de serveurs créée](images/resume_farm.png){.thumbnail}
 
-#### Depuis l'API OVHcloud 
+#### Depuis l'API OVHcloud
 
 - Liste des fermes de serveurs TCP :
 
@@ -120,6 +120,7 @@ Les champs obligatoires sont l'*Adresse IPv4*, l'*État* et la *Version du Proxy
 > 
 
 ![Ajout d'un serveur dans une ferme](images/add_server.png){.thumbnail}
+
 ![Ajout d'un serveur dans une ferme](images/add_server_advance.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis.
@@ -226,7 +227,7 @@ Votre *frontend* devrait apparaître dans la liste, sous l'onglet `Frontends`{.a
 
 ### Appliquer les modifications
 
-Les modifications apportées à votre service OVHcloud Load Balancer doivent être *appliquées explicitement* dans chacune des zones configurées pour votre service. C'est seulement à ce moment qu'elles deviendront visibles pour vos visiteurs. Ce processus permet de préparer des changements de configuration complexes et de ne les appliquer qu'une fois la configuration entièrement prête.
+Les modifications apportées à votre service OVHcloud Load Balancer doivent être **appliquées explicitement** dans chacune des zones configurées pour votre service. C'est seulement à ce moment qu'elles deviendront visibles pour vos visiteurs. Ce processus permet de préparer des changements de configuration complexes et de ne les appliquer qu'une fois la configuration entièrement prête.
 
 Si vous avez plusieurs zones, la même configuration devra être appliquée pour chacune de vos zones.
 
