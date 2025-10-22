@@ -1,7 +1,7 @@
 ---
 title: "Korzystaj z interfejsu Webmail Zimbra"
 excerpt: "Poznaj interfejs Zimbra Webmail dla Twoich kont e-mail MX Plan OVHcloud"
-updated: 2025-10-15
+updated: 2025-10-22
 ---
 
 <style>

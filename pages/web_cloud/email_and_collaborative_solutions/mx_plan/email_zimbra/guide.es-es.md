@@ -1,7 +1,7 @@
 ---
 title: "Utilizar el webmail Zimbra"
 excerpt: "Descubra la interfaz del webmail Zimbra para sus cuentas MX Plan OVHcloud"
-updated: 2025-10-15
+updated: 2025-10-22
 ---
 
 <style>
