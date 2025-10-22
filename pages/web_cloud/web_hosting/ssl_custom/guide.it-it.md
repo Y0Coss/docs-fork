@@ -148,7 +148,7 @@ Se in questo step inizi direttamente la lettura di questa guida perché disponi 
 **Prima di completare l'installazione del certificato SSL sul tuo hosting Web**, verifica che **l'insieme dei domini e/o sottodomini** interessati dal tuo certificato SSL:
 
 - puntano verso l’indirizzo IP del tuo hosting Web.
-- sono dichiarati in multisito sul tuo hosting web.
+- siano dichiarati su uno dei siti web del tuo hosting web.
 - non dispongono già di un certificato SSL attivo.
 
 Per maggiori informazioni, consulta le nostre guide:

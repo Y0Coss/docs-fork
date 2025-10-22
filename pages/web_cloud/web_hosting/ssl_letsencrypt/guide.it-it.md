@@ -47,7 +47,7 @@ Let's Encrypt è un'autorità di certificazione gratuita, automatizzata, aperta 
 > **Prima di proseguire**, verifica che **ogni dominio e/o sottodominio** interessato da un futuro certificato SSL Let's Encrypt:
 >
 > - punta verso l’indirizzo IP del tuo hosting Web.
-> - dichiarato multisito sul tuo hosting Web.
+> - sia dichiarato su uno dei siti web del tuo hosting web.
 > - non dispone già di un certificato SSL attivo.
 >
 > Per maggiori informazioni, consulta le nostre guide:

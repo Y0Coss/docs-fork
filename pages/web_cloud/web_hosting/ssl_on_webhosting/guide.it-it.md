@@ -37,7 +37,7 @@ Per utilizzare il protocollo HTTPS è indispensabile disporre di un certificato 
 > **Prima di proseguire**, verifica che **i domini e/o sottodomini** interessati dal(i) futuro(i) certificato(i) SSL:
 >
 > - punta(nt) verso l’indirizzo IP del tuo hosting Web.
-> - è (sono) dichiarato/i come multisito sul tuo hosting Web.
+> - sia/siano dichiarati su uno dei siti web del tuo hosting web.
 > - non dispone già di un certificato SSL attivo.
 >
 > Per maggiori informazioni, consulta le nostre guide:

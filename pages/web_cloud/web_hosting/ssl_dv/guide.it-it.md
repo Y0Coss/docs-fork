@@ -53,12 +53,12 @@ Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i
 **Prima di ordinare un certificato SSL Sectigo DV su un hosting Web**, assicurati che **il dominio/sottodominio** interessato dal certificato SSL:
 
 - punti verso l’indirizzo IP del tuo hosting Web.
-- è dichiarato multisito sul tuo hosting Web.
+- sia dichiarato su uno dei siti web del tuo hosting web.
 - non dispone già di un certificato SSL attivo.
 
 > [!primary]
 >
-> Se vuoi sottoscrivere un certificato SSL Sectigo DV per un dominio (ad esempio: `domain.tld`), verifica che anche il suo sottodominio in "www" (ad esempio: `wwww.domain.tld`) punti verso l’indirizzo IP del tuo hosting Web e sia correttamente dichiarato come multisito.
+> Se desideri acquistare un certificato SSL Sectigo DV per un nome di dominio (ad esempio: `domain.tld`), verifica bene che il suo sottodominio "www" (ad esempio: `www.domain.tld`) punti anch'esso verso l'indirizzo IP del tuo hosting web e sia correttamente dichiarato su uno dei siti web del tuo hosting web.
 >
 > Se ordini il certificato SSL Sectigo DV ma non ne sei sicuro, è necessario apportare le dovute correzioni. In questo caso, è necessario eliminare il certificato SSL Sectigo DV precedentemente sottoscritto **senza ottenere alcun rimborso** e ordinarne uno nuovo. Il nuovo certificato SSL Sectigo DV deve includere sia il dominio `domain.tld` che il sottodominio "www" `www.domain.tld`.
 >

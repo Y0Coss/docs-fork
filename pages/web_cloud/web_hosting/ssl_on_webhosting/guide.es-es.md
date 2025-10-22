@@ -37,7 +37,7 @@ Para utilizar un certificado SSL en HTTPS, es imprescindible tener un certificad
 > **Antes de continuar**, asegúrese de que **el/los nombre/s de dominio y/o subdominio/s** correspondiente/s a su/s futuro/s certificado/s SSL:
 >
 > - apunta(n) a la dirección IP de su alojamiento web.
-> - está(s) declarado(s) en multisitio en su alojamiento web.
+> - esté (n) declarado (s) en uno de los sitios web de su alojamiento web.
 > - no dispone(n) de un certificado SSL activo.
 >
 > Para más información, consulte nuestras guías:

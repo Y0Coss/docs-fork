@@ -71,7 +71,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 **Antes de continuar**, compruebe que **el dominio y/o subdominio** correspondiente a su futuro certificado SSL Sectigo EV:
 
 - apunta a la dirección IP de su alojamiento web.
-- está declarado en multisitio en su alojamiento web.
+- esté declarado en uno de los sitios web de su alojamiento web.
 - no dispone ya de un certificado SSL activo.
 
 Para más información, consulte nuestras guías:
@@ -83,7 +83,7 @@ Para más información, consulte nuestras guías:
 
 > [!primary]
 >
->  En caso de que quiera contratar un certificado SSL Sectigo EV para un dominio (por ejemplo, `domain.tld`), compruebe que su subdominio en "www" (por ejemplo, `www.domain.tld`) apunte también a la dirección IP de su alojamiento web y esté correctamente declarado en multisitio.
+> Si desea adquirir un certificado SSL Sectigo EV para un nombre de dominio (por ejemplo: `domain.tld`), verifique bien que su subdominio "www" (por ejemplo: `www.domain.tld`) apunte también a la dirección IP de su hospedaje web y esté correctamente declarado en uno de los sitios web de su alojamiento web.
 >
 > En su caso, si contrata el certificado SSL Sectigo EV sin asegurarse de los puntos anteriores, deberá realizar una corrección a posteriori. A continuación, deberá eliminar el certificado SSL Sectigo EV anteriormente suscrito **sin poder beneficiarse de un reembolso** y contratar uno nuevo. El objetivo es que el nuevo certificado SSL Sectigo EV incluya al mismo tiempo su dominio `domain.tld` y su subdominio en "www" `www.domain.tld`.
 >

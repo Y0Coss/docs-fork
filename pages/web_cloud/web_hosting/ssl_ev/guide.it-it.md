@@ -71,7 +71,7 @@ Per verificare se hai diritto alla sottoscrizione di un certificato SSL Sectigo 
 **Prima di proseguire**, verifica che **il dominio e/o sottodominio** interessato dal tuo futuro certificato SSL Sectigo EV:
 
 - punti verso l’indirizzo IP del tuo hosting Web.
-- è dichiarato multisito sul tuo hosting Web.
+- sia dichiarato su uno dei siti web del tuo hosting web.
 - non dispone già di un certificato SSL attivo.
 
 Per maggiori informazioni, consulta le nostre guide:
@@ -83,7 +83,7 @@ Per maggiori informazioni, consulta le nostre guide:
 
 > [!primary]
 >
-> Nel caso in cui desideri sottoscrivere un certificato SSL Sectigo EV per un dominio (esempio: `domain.tld`), verifica che il suo sottodominio in "www" (esempio: `www.domain.tld`) punti anche verso l’indirizzo IP del tuo hosting Web ed sia correttamente dichiarato come multisito.
+> Se desideri acquistare un certificato SSL Sectigo EV per un nome di dominio (ad esempio: `domain.tld`), verifica bene che il suo sottodominio "www" (ad esempio: `www.domain.tld`) punti anch'esso verso l'indirizzo IP del tuo hosting web e sia correttamente dichiarato su uno dei siti web del tuo hosting web.
 >
 > Perché se ordini il certificato SSL Sectigo EV ma non ti assicuri i i punti precedenti, è necessario effettuare una correzione a posteriori. In questo caso, è necessario eliminare il certificato SSL Sectigo EV precedentemente sottoscritto **senza usufruire di un rimborso** e ordinarne un altro. Il nuovo certificato SSL Sectigo EV deve includere sia il dominio `domain.tld` che il sottodominio "www" `www.domain.tld`.
 >

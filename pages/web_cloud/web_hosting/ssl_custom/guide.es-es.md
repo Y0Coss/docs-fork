@@ -148,7 +148,7 @@ Si empieza a leer esta guía en este etapa porque ya tiene un certificado SSL ex
 **Antes de finalizar la instalación del certificado SSL en su alojamiento web**, compruebe que **todos los dominios y/o subdominios** afectados por su certificado SSL:
 
 - apuntan a la dirección IP de su alojamiento web.
-- están declarados como multisitio en su alojamiento web.
+- estén declarados en uno de los sitios web de su alojamiento web.
 - no disponen ya de un certificado SSL activo.
 
 Para más información, consulte nuestras guías:
