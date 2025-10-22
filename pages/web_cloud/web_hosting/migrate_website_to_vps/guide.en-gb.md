@@ -1,7 +1,7 @@
 ---
 title: "How to migrate a website from a web hosting plan to a VPS"
 excerpt: "Find out how to migrate your website from a web hosting plan to an OVHcloud VPS"
-updated: 2025-10-21
+updated: 2025-10-23
 ---
 
 ## Objective
