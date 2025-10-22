@@ -4,6 +4,19 @@ excerpt: "Découvrez comment utiliser l'option Backup automatisé depuis l'espac
 updated: 2025-10-17
 ---
 
+<style>
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
+
 ## Objectif
 
 L'option Backup Automatisé pour les VPS offre un moyen pratique de disposer de sauvegardes complètes du système depuis votre espace client OVHcloud sans avoir à vous connecter au serveur pour créer et restaurer manuellement vos sauvegardes. Un autre avantage est que vous pouvez également choisir de monter une sauvegarde et accéder ensuite à ses fichiers à distance.
@@ -63,7 +76,10 @@ Cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.
 
 Cliquez sur le lien `Commander un backup premium`{.action} (services commandés à partir du 7 août 2025) ou le bouton `Activer le Backup Automatisé`{.action}.
 
-<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
+<div class="grid-gallery">
+  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+</div>
 
 Lors de l'étape suivante, veuillez prendre note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.
 
