@@ -1,7 +1,7 @@
 ---
 title: Modes de répartition
 excerpt: Découvrez les différents modes de répartition de charge du Load Balancer OVHcloud
-updated: 2025-10-17
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -32,9 +32,9 @@ Pour une vue d'ensemble des composants du service OVHcloud Load Balancer, consul
 |**Source**|Utilise une fonction de *hachage* sur l'adresse IP source pour rediriger systématiquement la même IP cliente vers le même serveur, tant que celui-ci reste opérationnel.|
 |**URI**|Utilise une fonction de *hachage* sur une partie ou la totalité de l'URI pour rediriger systématiquement les URI identiques vers le même serveur, tant que celui-ci reste opérationnel. *(Applicable uniquement aux fermes HTTP/HTTPS.)*|
 
-### Modifier l'algorithme de répartition de charge d'une ferme via l'espace client
+### Modifier l'algorithme de répartition de charge d'une ferme via l'espace client OVHcloud
 
-Dans la section `Fermes de serveur`{.action}, vous verrez les fermes actuellement créées. Il vous suffit d'éditer l'une d'entre elles en cliquant sur les trois points à droite puis `Modifier`{.action} :
+Dans la section `Fermes de serveur`{.action}, vous verrez les fermes actuellement créées. Il vous suffit d'éditer l'une d'entre elles en cliquant sur les trois points à droite puis sur `Modifier`{.action} :
 
 ![Modification d'une ferme](images/server_cluster_change.png){.thumbnail}
 
@@ -52,7 +52,7 @@ La modification de l'algorithme de répartition s'effectue en éditant le champ 
 
 #### Voir le détail d'une ferme
 
-Cet appel permet de consulter le détail d'une ferme en connaissant son identifiant. Dans cet exemple, nous travaillons sur une ferme HTTP :
+Cet appel API permet de consulter le détail d'une ferme en connaissant son identifiant. Dans cet exemple, nous travaillons sur une ferme HTTP :
 
 > [!api]
 >
@@ -76,7 +76,7 @@ Cet appel permet de consulter le détail d'une ferme en connaissant son identifi
 
 #### Modifier l'algorithme de répartition de charge d'une ferme
 
-Cet appel permet de modifier la configuration d'une ferme en connaissant son identifiant. Dans cet exemple, nous travaillons sur une ferme HTTP. Pour modifier le mode de répartition, le champ `BackendHttp.balance` doit être mis à jour avec un algorithme disponible :
+Cet appel API permet de modifier la configuration d'une ferme en connaissant son identifiant. Dans cet exemple, nous travaillons sur une ferme HTTP. Pour modifier le mode de répartition, le champ `BackendHttp.balance` doit être mis à jour avec un algorithme disponible :
 
 > [!api]
 >
