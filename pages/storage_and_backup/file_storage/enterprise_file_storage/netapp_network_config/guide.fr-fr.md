@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Configuration du réseau privé"
 excerpt: Découvrez configurer un réseau privé pour votre service Enterprise File Storage depuis votre espace client OVHcloud
-updated: 2025-10-21
+updated: 2025-10-22
 ---
 
 ## Objectif
@@ -86,9 +86,9 @@ Vous pouvez à présent suivre les guides ci-dessous pour créer et gérer vos v
 > - L'adresse IP de votre Service Endpoint doit être unique dans votre sous-réseau et doit être exclue de votre serveur DHCP si vous en utilisez un.
 > - Exemple : sous-réseau vRack Services 10.0.0.0/24 - Service Endpoint 10.0.0.16/29  - Votre service sera donc accessible à l'adresse IP 10.0.0.16 dans le sous-réseau 10.0.0.0/24.
 
-- La commande **arping <IP_Endpoint>** ne doit retourner qu'une seule adresse MAC.
-- La commande **traceroute -T <IP_Endpoint> -p 2049** ne doit pas retourner d'erreur.
-- La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 <IP_Endpoint>** doit retourner des ports dans l'état OPEN (indispensable pour le bon fonctionnement de NFSv3).
+- La commande **arping IP_Endpoint** ne doit retourner qu'une seule adresse MAC.
+- La commande **traceroute -T IP Endpoint -p 2049** ne doit pas retourner d'erreur.
+- La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 IP_Endpoint** doit retourner des ports dans l'état OPEN (indispensable pour le bon fonctionnement de NFSv3).
 
 ## Aller plus loin <a name="gofurther"></a>
 
