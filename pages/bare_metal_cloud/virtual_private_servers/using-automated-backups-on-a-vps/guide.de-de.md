@@ -79,7 +79,6 @@ Klicken Sie auf den Link `Premium Backup bestellen`{.action} (für Dienste, die 
   <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
   <img src="/images/backup_vps_leg.png" alt="autobackup vps">
 </div>
-</br>
 
 Beachten Sie im nächsten Schritt die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozesses geführt und erhalten eine E-Mail zur Bestätigung.
 

@@ -26,7 +26,7 @@ Hier finden Sie die am häufigsten gestellten Fragen zur Verwaltung Ihres OVHclo
 
 ### OVHcloud Kunden-Account erstellen, einloggen und absichern
 
-/// details | Wie erstelle ich ein OVHcloud Kunden-Account?
+/// details | Wie erstelle ich einen OVHcloud Kunden-Account?
 
 Die Erstellung eines Kunden-Accounts ist kostenlos. Dieser Bereich erleichtert den Zugriff auf Ihre Daten und ermöglicht die Verwaltung Ihrer Dienste. Lesen Sie unsere Anleitung: [OVHcloud Kunden-Account erstellen](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 
@@ -183,7 +183,7 @@ Sie können jedoch einen [neuen OVHcloud Kunden-Account erstellen](/pages/accoun
 
 /// details | Kann ich die Tochtergesellschaft meines OVHcloud Kunden-Accounts ändern?
 
-Wenn Sie ein OVHcloud Kunden-Account in der falschen Tochtergesellschaft erstellt haben, können Sie einen neuen Account in der richtigen Tochtergesellschaft mit denselben persönlichen Informationen erstellen.
+Wenn Sie einen OVHcloud Kunden-Account in der falschen Tochtergesellschaft erstellt haben, können Sie einen neuen Account in der richtigen Tochtergesellschaft mit denselben persönlichen Informationen erstellen.
 
 Allerdings müssen Sie eine andere Kontakt-E-Mail-Adresse verwenden, da es nicht möglich ist, zwei verschiedene OVHcloud Accounts mit derselben Kontakt-E-Mail-Adresse zu haben.
 
@@ -191,7 +191,7 @@ Weitere Informationen zur Erstellung eines OVHcloud Kunden-Accounts finden Sie i
 
 Nachdem Sie Ihren OVHcloud Kunden-Account in der richtigen Tochtergesellschaft erstellt haben, können Sie die Anweisungen in [dieser Anleitung](/pages/account_and_service_management/account_information/managing_contacts) befolgen, um Ihre Dienste von einem Account zum anderen zu übertragen.
 
-Wenn Sie ein OVHcloud Kunden-Account in unserer kanadischen Infrastruktur (d. h. in einem Land außerhalb Europas) besitzen, können Sie keine Dienste zwischen Accounts verschieben. In diesem Fall müssen Sie neue Dienste im neuen Account bestellen und Ihre Inhalte ggf. manuell migrieren.
+Wenn Sie einen OVHcloud Kunden-Account in unserer kanadischen Infrastruktur (d. h. in einem Land außerhalb Europas) besitzen, können Sie keine Dienste zwischen Accounts verschieben. In diesem Fall müssen Sie neue Dienste im neuen Account bestellen und Ihre Inhalte ggf. manuell migrieren.
 
 Für weitere Informationen wenden Sie sich an unseren Support, indem Sie ein [Support-Ticket über das OVHcloud Help Center erstellen](https://help.ovhcloud.com/csm?id=csm_get_help).
 

@@ -4,6 +4,19 @@ excerpt: "Come utilizzare l’opzione di Backup automatico nello Spazio Cliente 
 updated: 2025-10-17
 ---
 
+<style>
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
+
 ## Obiettivo
 
 L’opzione di Backup automatico per VPS offre un modo pratico per avere backup di sistema completi disponibili dallo Spazio Cliente OVHcloud senza doversi connettere al server per crearli e ripristinarli manualmente. Un altro vantaggio consiste nella possibilità di scegliere di montare un backup e quindi di accedere ai file in remoto.
@@ -62,7 +75,10 @@ Clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
 
 Clicca sul link `Ordina un backup Premium`{.action} (per i servizi ordinati a partire dal 7 AGO, 2025) o sul pulsante `Attiva il Backup automatico`{.action}.
 
-<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
+<div class="grid-gallery">
+  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+</div>
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma.
 

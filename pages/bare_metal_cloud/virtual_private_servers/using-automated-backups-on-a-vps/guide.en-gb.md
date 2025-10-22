@@ -4,6 +4,19 @@ excerpt: "Find out how to use the Automated backup option in the OVHcloud Contro
 updated: 2025-10-17
 ---
 
+<style>
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
+
 ## Objective
 
 The Automated backup option for VPS offers a convenient way to have complete system backups available from your OVHcloud Control Panel without having to connect to the server to create and restore them manually. Another advantage is that you can also choose to mount a backup and then access its files remotely.
@@ -61,7 +74,10 @@ Click the `Automated backup`{.action} tab in the horizontal menu.
 
 Click the link `Order a premium backup`{.action} (for services ordered from 7 AUG, 2025) or the button `Enable Automated backup`{.action}.
 
-<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
+<div class="grid-gallery">
+  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+</div>
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
 

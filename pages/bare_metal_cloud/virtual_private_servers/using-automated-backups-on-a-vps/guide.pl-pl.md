@@ -4,6 +4,19 @@ excerpt: "Dowiedz się, jak korzystać z opcji zautomatyzowany backup zapasowych
 updated: 2025-10-17
 ---
 
+<style>
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
+
 ## Wprowadzenie
 
 Opcja zautomatyzowany backup zapasowych dla serwerów VPS pozwala na udostępnienie pełnej kopii zapasowej systemu w Panelu klienta OVHcloud bez konieczności łączenia się z serwerem w celu ich ręcznego utworzenia i przywrócenia. Kolejną korzyścią jest możliwość zdalnego dostępu do plików kopii zapasowej przy jej wcześniejszym zamontowaniu.
@@ -61,7 +74,10 @@ Kliknij kartę `Zautomatyzowany backup`{.action} w poziomym menu.
 
 Kliknij link `Wła̧cz zautomatyzowany backup premium`{.action} (dla usług zamówionych od 7 sierpnia 2025) lub przycisk `Włącz zautomatyzowany backup`{.action}.
 
-<table><tbody><tr><td><img alt="autobackup vps2025" class="thumbnail" src="/images/backup_vps2025.png" loading="lazy"></td><td><img alt="autobackup vps" class="thumbnail" src="/images/backup_vps_leg.png" loading="lazy"></td></tr></tbody></table>
+<div class="grid-gallery">
+  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+</div>
 
 W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem.
 
