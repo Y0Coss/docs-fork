@@ -1,7 +1,7 @@
 ---
 title: Order a free SSL certificate
 excerpt: Order a free SSL certificate for your web services behind a Load Balancer
-updated: 2025-09-26
+updated: 2025-10-22
 ---
 
 ## Objective
@@ -49,7 +49,7 @@ In the `SSL Certificates` section of your Control Panel, click the `Order SSL Ce
 
 In the `Tasks`{.action} section of your Control Panel, the tasks related to ordering a free SSL Certificate are of the type `orderFreeCertificate`.
 
-### Via the API
+### Via the OVHcloud API
 
 #### Configuring the frontend for SSL termination
 
@@ -60,7 +60,7 @@ In the API, the SSL termination is specified by the `ssl` boolean. To enable SSL
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
-Then apply the changes :
+Then apply the changes:
 
 > [!api]
 >
@@ -69,7 +69,8 @@ Then apply the changes :
 
 #### Order the free SSL certificate
 
-In the API, the command is as follows :
+In the API, the call is as follows:
+
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
@@ -81,14 +82,14 @@ For the order to be finalized, the chosen domain name must point to your OVHclou
 
 - Returning the task list
 
-You can specify the action type `orderFreeCertificate` to refine the search.
+You can specify the action type `orderFreeCertificate` to refine the search:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
-- Returning the status of a particular task
+- Returning the status of a particular task:
 
 > [!api]
 >
