@@ -37,7 +37,7 @@ Sie benötigen ein SSL-Zertifikat für Ihre Website, um es über HTTPS zu verwen
 > Bevor Sie fortfahren, **überprüfen Sie, dass Domainname und Subdomain**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
 >
 > - Auf die IP-Adresse Ihres Webhostings verweisen.
-> - Auf Ihrem Webhosting als Multisite deklariert sind.
+> - auf einem der Webseiten Ihres Webhostings deklariert sind.
 > - Noch nicht über ein aktives SSL-Zertifikat verfügen.
 >
 > Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:

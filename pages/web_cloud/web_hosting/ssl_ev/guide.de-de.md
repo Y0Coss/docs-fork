@@ -70,7 +70,7 @@ Sie können über [diese Adresse](https://help.sectigostore.com/support/solution
 **Bevor Sie das Sectigo EV SSL-Zertifikat bestellen**, überprüfen Sie, dass **Domainname und Subdomain**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
 
 - verweist auf die IP-Adresse Ihres Webhostings.
-- ist auf Ihrem Webhosting als Multisite deklariert.
+- auf einem der Webseiten Ihres Webhostings deklariert ist.
 - verfügt nicht bereits über ein aktives SSL-Zertifikat.
 
 Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
@@ -82,7 +82,7 @@ Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 
 > [!primary]
 >
-> Wenn Sie ein Sectigo EV SSL-Zertifikat für eine Domain bestellen möchten (Beispiel: `domain.tld`), überprüfen Sie, dass die zugehörige Subdomain "www" (Beispiel: `www.domain.tld`) ebenfalls auf die IP-Adresse Ihres Webhostings verweist und korrekt für Multisite deklariert ist.
+> Wenn Sie ein SSL-Zertifikat „Sectigo EV“ für eine Domäne bestellen möchten (z. B.: `domain.tld`), stellen Sie sicher, dass auch deren Unterdomäne mit „www“ (z. B.: `www.domain.tld`) ebenfalls auf die IP-Adresse Ihres Webhostings verweist und korrekt auf einer der Webseiten Ihres Webhostings deklariert ist.
 >
 > Wenn Sie das Sectigo EV SSL-Zertifikat bestellen, ohne die oben genannten Punkte zu verifizieren, müssen Sie nachträglich eine Korrektur vornehmen. In diesem Fall müssen Sie das zuvor abonnierte Sectigo EV SSL-Zertifikat **ohne Rückerstattung** löschen und anschließend ein neues Zertifikat bestellen. Das neue Sectigo EV SSL Zertifikat soll sowohl Ihre Domain `domain.tld` als auch deren Subdomain `www.domain.tld` umfassen.
 >

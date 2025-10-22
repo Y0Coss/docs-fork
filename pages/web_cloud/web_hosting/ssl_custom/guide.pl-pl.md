@@ -148,7 +148,7 @@ Jeśli rozpoczniesz od razu lekturę tego przewodnika, ponieważ już posiadasz 
 **Przed zakończeniem instalacji certyfikatu SSL na Twoim hostingu** sprawdź, czy **wszystkie domeny i/lub subdomeny**, dla których jest dostępny certyfikat SSL:
 
 - wskazują na adres IP Twojego hostingu.
-- są zadeklarowane w opcji MultiSite na Twoim hostingu.
+- zostały zadeklarowane na jednej z witryn internetowych Twojego hostingu.
 - nie mają już aktywnego certyfikatu SSL.
 
 Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:

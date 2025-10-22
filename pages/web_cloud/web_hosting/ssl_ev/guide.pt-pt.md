@@ -72,7 +72,7 @@ Para verificar se é elegível para a subscrição de um certificado SSL Sectigo
 **Antes de continuar**, verifique se **o nome de domínio e/ou subdomínio** relacionado com o seu futuro certificado SSL Sectigo EV:
 
 - aponta para o endereço IP do seu alojamento web.
-- está declarado em multi-site no seu alojamento web.
+- está declarado num dos sites web da sua alojamento web.
 - ainda não possui um certificado SSL ativo.
 
 Para confirmar, consulte os guias abaixo sempre que necessário:
@@ -84,7 +84,7 @@ Para confirmar, consulte os guias abaixo sempre que necessário:
 
 > [!primary]
 >
-> Se pretender subscrever a um certificado SSL Sectigo EV para um domínio (exemplo: `domain.tld`), verifique se o seu subdomínio em "www" (exemplo: `www.domain.tld`) aponta também para o endereço IP do seu alojamento web e está corretamente declarado em multi-site.
+> Se pretender adquirir um certificado SSL Sectigo EV para um nome de domínio (por exemplo: `domain.tld`), verifique bem que o seu subdomínio "www" (por exemplo: `www.domain.tld`) também aponta para o endereço IP da sua alojamento web e está corretamente declarado num dos sites web da sua alojamento web.
 >
 > Sim, se aplicável, e se encomendar o certificado SSL Sectigo EV sem verificar os pontos anteriores, deverá efetuar uma correção a posteriori. Deverá eliminar o certificado SSL Sectigo EV que subscreveu anteriormente **sem poder beneficiar de um reembolso**, e depois encomendar um novo certificado. O objetivo é que o novo certificado SSL Sectigo EV englobe o seu domínio `domain.tld` e o seu subdomínio em "www" `www.domain.tld`.
 >

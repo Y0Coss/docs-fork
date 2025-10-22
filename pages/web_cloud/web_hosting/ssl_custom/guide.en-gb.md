@@ -148,7 +148,7 @@ If you start reading this guide in this step because you already have an externa
 **Before finalizing the SSL certificate installation on your web hosting plan**, please ensure that **all domain names and/or subdomains** included in your SSL certificate:
 
 - Point to your web hosting plan’s IP address.
-- Are declared as multisites on your web hosting plan.
+- Are declared on one of the websites on your web hosting.
 - Do not already have an active SSL certificate.
 
 To check if this is the case, please refer to our guides below:

@@ -71,7 +71,7 @@ Aby sprawdzić, czy możesz zamówić certyfikat SSL Sectigo EV, przejdź do [li
 **Zanim przejdziesz dalej**, sprawdź, czy **nazwa domeny i/lub subdomeny**, której będzie dotyczyć Twój przyszły certyfikat SSL Sectigo EV:
 
 - wskazuje na adres IP hostingu.
-- dostępny w opcji MultiSite na Twoim hostingu.
+- została zadeklarowana na jednej z witryn internetowych Twojego hostingu.
 - nie ma już aktywnego certyfikatu SSL.
 
 Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
@@ -83,7 +83,7 @@ Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
 
 > [!primary]
 >
-> Jeśli chcesz zamówić certyfikat SSL Sectigo EV dla domeny (na przykład: `domain.tld`), sprawdź, czy jego subdomena oznaczona jest jako "www" (na przykład: `www.domain.tld`) wskazuje również na adres IP Twojego hostingu i czy jest poprawnie zadeklarowana jako MultiSite.
+> Jeśli chcesz zamówić certyfikat SSL Sectigo EV dla domeny (np. `domain.tld`), upewnij się, że jej poddomena z „www” (np. `www.domain.tld`) również wskazuje na adres IP Twojego hostingu i została poprawnie zadeklarowana na jednej z witryn internetowych Twojego hostingu.
 >
 > W razie potrzeby, jeśli zamówisz certyfikat SSL Sectigo EV i nie upewnisz się, czy zamówiłeś poprzednie punkty, wprowadź poprawki. Należy usunąć wykupiony wcześniej certyfikat SSL Sectigo EV **bez możliwości otrzymania zwrotu płatności**, a następnie zamówić nowy. Celem jest, aby nowy certyfikat SSL Sectigo EV obejmował zarówno Twoją domenę `domain.tld`, jak i jej subdomenę "www" `www.domain.tld`.
 >

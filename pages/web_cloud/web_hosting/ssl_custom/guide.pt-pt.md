@@ -148,7 +148,7 @@ Se iniciar diretamente a leitura deste manual nesta etapa, uma vez que já disp�
 **Antes de finalizar a instalação do certificado SSL no alojamento web**, verifique se **todos os domínios e/ou subdomínios** abrangidos pelo seu certificado SSL:
 
 - apontam para o endereço IP do seu alojamento web.
-- são declarados em multi-site no seu alojamento web.
+- estão declarados num dos sites web da sua alojamento web.
 - não possuem já um certificado SSL ativo.
 
 Para confirmar, consulte os guias abaixo sempre que necessário:

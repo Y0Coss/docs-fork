@@ -47,7 +47,7 @@ Let's Encrypt to bezpłatny, zautomatyzowany, otwarty i nienastawiony na zysk or
 > **Zanim przejdziesz dalej**, sprawdź, czy **każda domena i/lub subdomena** objęta przyszłym certyfikatem SSL Let's Encrypt:
 >
 > - wskazuje na adres IP hostingu.
-> - dostępny w opcji MultiSite na Twoim hostingu.
+> - została zadeklarowana na jednej z witryn internetowych Twojego hostingu.
 > - nie ma już aktywnego certyfikatu SSL.
 >
 > Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:

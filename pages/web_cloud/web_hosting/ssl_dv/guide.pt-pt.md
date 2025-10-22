@@ -53,12 +53,12 @@ Para os alojamentos partilhados OVHcloud, a autoridade de certificação que emi
 **Antes de encomendar o certificado SSL Sectigo DV no seu alojamento web**, verifique se **o nome de domínio/subdomínio** relacionado com o seu certificado SSL:
 
 - aponta para o endereço IP do seu alojamento web.
-- está declarado em multi-site no seu alojamento web.
+- está declarado num dos sites web da sua alojamento web.
 - ainda não possui um certificado SSL ativo.
 
 > [!primary]
 >
-> Se pretender subscrever um certificado SSL Sectigo DV para um domínio (por exemplo: `domain.tld`), verifique se o seu subdomínio em « www » (por exemplo: `www.domain.tld`) aponta também para o endereço IP do seu alojamento web e é corretamente declarado em multi-site.
+> Se pretender adquirir um certificado SSL Sectigo DV para um nome de domínio (por exemplo: `domain.tld`), verifique bem que o seu subdomínio "www" (por exemplo: `www.domain.tld`) também aponta para o endereço IP da sua alojamento web e está corretamente declarado num dos sites web da sua alojamento web.
 >
 > Sim, se for necessário e se encomendar o certificado SSL Sectigo DV sem ter de se certificar, deverá realizar uma correção a posteriori. Deverá eliminar o certificado SSL Sectigo DV anteriormente subscrito **sem ser reembolsado** e, a seguir, encomendar um novo certificado SSL Sectigo DV. O objetivo é que o novo certificado SSL Sectigo DV englobe o seu domínio `domain.tld` e o seu subdomínio em "www" `www.domain.tld`.
 >

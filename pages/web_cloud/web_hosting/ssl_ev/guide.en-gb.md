@@ -71,7 +71,7 @@ To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to
 **Before you continue**, please check that **the domain name and/or subdomain** covered by your future Sectigo EV SSL certificate:
 
 - Points to the IP address of your web hosting plan.
-- Is declared as a multisite on your web hosting plan.
+- is declared on one of the websites on your web hosting.
 - Does not already have an active SSL certificate.
 
 To check if this is the case, please refer to our guides below:
@@ -83,7 +83,7 @@ To check if this is the case, please refer to our guides below:
 
 > [!primary]
 >
-> If you would like to subscribe to a Sectigo EV SSL certificate for a domain name (e.g. `domain.tld`), please check that its www subdomain (e.g. `www.domain.tld`) also points to the IP address of your web hosting plan, and is correctly declared as a multisite.
+> If you wish to order a Sectigo EV SSL certificate for a domain name (e.g. `domain.tld`), make sure that its "www" subdomain (e.g. `www.domain.tld`) also points to the IP address of your web hosting and is correctly declared on one of the websites on your web hosting.
 >
 > If you order a Sectigo EV SSL certificate without checking the previous points, you will need to make a correction at a later date. You will then need to delete the Sectigo EV SSL certificate you have previously subscribed to **without being able to receive a refund**, then order a new one. The goal is for the new Sectigo EV SSL certificate to include both your domain name `domain.tld` and its subdomain in “www” `www.domain.tld`.
 >

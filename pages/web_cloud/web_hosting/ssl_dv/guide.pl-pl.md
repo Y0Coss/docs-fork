@@ -53,12 +53,12 @@ W przypadku hostingu www OVHcloud organem certyfikującym wydającym certyfikaty
 **Przed złożeniem zamówienia na certyfikat SSL Sectigo DV na Twoim hostingu** sprawdź, czy **nazwa domeny/subdomeny**, której dotyczy certyfikat SSL:
 
 - wskazuje na adres IP hostingu.
-- dostępny w opcji MultiSite na Twoim hostingu.
+- została zadeklarowana na jednej z witryn internetowych Twojego hostingu.
 - nie ma już aktywnego certyfikatu SSL.
 
 > [!primary]
 >
-> Jeśli chcesz zamówić certyfikat SSL Sectigo DV dla domeny (na przykład: `domain.tld`), sprawdź, czy jego subdomena oznaczona "www" (na przykład: `www.domain.tld`) wskazuje również na adres IP Twojego hostingu i czy jest poprawnie zadeklarowana jako MultiSite.
+> Jeśli chcesz zamówić certyfikat SSL Sectigo DV dla domeny (np. `domain.tld`), upewnij się, że jej poddomena z „www” (np. `www.domain.tld`) również wskazuje na adres IP Twojego hostingu i została poprawnie zadeklarowana na jednej z witryn internetowych Twojego hostingu.
 >
 > Jeśli zamawiasz certyfikat SSL Sectigo DV, ale go nie sprawdzasz, wprowadź poprawki. Należy usunąć certyfikat SSL Sectigo DV wykupiony wcześniej **bez zwrotu płatności**, a następnie zamówić nowy. Zgodnie z oczekiwaniami nowy certyfikat SSL Sectigo DV będzie obejmował zarówno Twoją domenę `domain.tld`, jak i jej subdomenę "www" `www.domain.tld`.
 >

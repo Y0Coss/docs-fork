@@ -37,7 +37,7 @@ You must have an SSL certificate in order to use HTTPS for your website.
 > **Before you continue**, please ensure that **each domain name and/or subdomain** covered by a future SSL certificate:
 >
 > - Points to the IP address of your web hosting plan.
-> - Is declared as a multisite on your web hosting plan.
+> - is (are) declared on one of the websites on your web hosting.
 > - Does not already have an active SSL certificate.
 >
 > To check this, please refer to our guides below:

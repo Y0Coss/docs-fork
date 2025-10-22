@@ -69,7 +69,7 @@ Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Se
 **Avant de commander le certificat SSL Sectigo EV sur votre hébergement web**, vérifiez que **le nom de domaine/sous-domaine** concerné par votre certificat SSL : 
 
 - pointe vers l'adresse IP de votre hébergement web. 
-- est déclaré en multisite sur votre hébergement web.
+- est déclaré sur l'un des sites web de votre hébergement web.
 - ne dispose pas déjà d'un certificat SSL actif.
 
 Pour vous en assurer, consultez si besoin nos guides ci-dessous :
@@ -81,7 +81,7 @@ Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 > [!primary]
 >
-> Si vous souhaitez souscrire un certificat SSL Sectigo EV pour un nom de domaine (par exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (par exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
+> Si vous souhaitez souscrire un certificat SSL Sectigo EV pour un nom de domaine (par exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (par exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré sur l'un des sites web de votre hébergement web.
 >
 > En effet, le cas échéant et si vous commandez le certificat SSL Sectigo EV sans vous en assurer, vous devrez effectuer un correctif a posteriori. Vous devrez alors supprimer le certificat SSL Sectigo EV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. L'objectif est que le nouveau certificat SSL Sectigo EV englobe bien à la fois votre nom de domaine `domain.tld` et son sous-domaine en « www » `www.domain.tld`.
 >

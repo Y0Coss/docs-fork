@@ -37,7 +37,7 @@ Dispor de um certificado SSL para o seu website é incontornável para o utiliza
 > **Antes de continuar**, verifique se **o(s) domínio(s) e/ou subdomínio(s)** em causa no(s) seu(s) futuro(s) certificado(s) SSL:
 >
 > - aponta(m) para o endereço IP do seu alojamento web.
-> - está(ão) declarado(s) em multi-site no seu alojamento web.
+> - está(ão) declarado(s) num dos sites web da sua alojamento web.
 > - não possui um certificado SSL ativo.
 >
 > Para se certificar disso, consulte os guias abaixo sempre que necessário:

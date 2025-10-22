@@ -47,7 +47,7 @@ Let's Encrypt ist eine kostenlose, automatisierte, offene und gemeinnützige Zer
 > **Bevor Sie fortfahren**, überprüfen Sie, dass **jeder Domainname und/oder jede Subdomain**, die von einem zukünftigen Let's Encrypt SSL Zertifikat betroffen ist:
 >
 > - verweist auf die IP-Adresse Ihres Webhostings.
-> - ist auf Ihrem Webhosting als Multisite deklariert.
+> - auf einem der Webseiten Ihres Webhostings deklariert ist.
 > - verfügt nicht bereits über ein aktives SSL-Zertifikat.
 >
 > Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:

@@ -37,7 +37,7 @@ Posiadanie certyfikatu SSL dla strony www jest niezbędne, aby używać go w HTT
 > **Zanim przejdziesz dalej**, sprawdź, czy **nazwa(e) domeny i/lub subdomeny(y)**, której(e) dotyczy(e) Twój(e) przyszły(e) certyfikat(e) SSL:
 >
 > - przekieruj(nt) na adres IP Twojego hostingu.
-> - jest (jest) zadeklarowany(e) w opcji MultiSite na Twoim hostingu.
+> - została/zostały zadeklarowana/zadeklarowane na jednej z witryn internetowych Twojego hostingu.
 > - nie ma(a) już aktywnego certyfikatu SSL.
 >
 > Aby się upewnić co do metody, zapoznaj się z naszymi przewodnikami:

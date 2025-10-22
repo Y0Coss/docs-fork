@@ -53,12 +53,12 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 **Before ordering the Sectigo DV SSL certificate on your web hosting plan**, check that **the domain/subdomain name** covered by your SSL certificate:
 
 - Points to the IP address of your web hosting plan.
-- Is declared as a multisite on your web hosting plan.
+- is declared on one of the websites on your web hosting.
 - Does not already have an active SSL certificate.
 
 > [!primary]
 >
-> If you would like to subscribe to a Sectigo DV SSL certificate for a domain name (e.g.: `domain.tld`), please check that its www subdomain (e.g.: `www.domain.tld`) also points to your web hosting plan’s IP address, and is correctly declared as a multisite.
+> If you wish to order a Sectigo DV SSL certificate for a domain name (e.g. `domain.tld`), make sure that its "www" subdomain (e.g. `www.domain.tld`) also points to the IP address of your web hosting and is correctly declared on one of the websites on your web hosting.
 >
 > If you order a Sectigo DV SSL certificate without checking that it has been sent, you will need to make a correction at a later date. You will then need to delete the Sectigo DV SSL certificate you have previously subscribed to **without being refunded**, then order a new one. The goal is for the new Sectigo DV SSL certificate to include both your domain name `domain.tld` and its its www subdomain `www.domain.tld`.
 >

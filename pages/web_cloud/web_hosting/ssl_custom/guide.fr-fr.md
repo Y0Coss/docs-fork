@@ -148,7 +148,7 @@ Si vous démarrez directement la lecture de ce guide à cette étape car vous di
 **Avant de finaliser l'installation du certificat SSL sur votre hébergement web**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre certificat SSL : 
 
 - pointent vers l'adresse IP de votre hébergement web.
-- sont déclarés en multisite sur votre hébergement web.
+- sont déclarés sur l'un des sites web de votre hébergement web.
 - ne disposent pas déjà d'un certificat SSL actif.
 
 Pour vous en assurer, consultez si besoin nos guides ci-dessous :

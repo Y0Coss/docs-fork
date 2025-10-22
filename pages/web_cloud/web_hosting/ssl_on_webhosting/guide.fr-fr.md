@@ -37,7 +37,7 @@ Disposer d'un certificat SSL pour son site web est incontournable pour l'utilise
 > **Avant de poursuivre**, vérifiez que **le(s) nom(s) de domaine et/ou sous-domaine(s)** concerné(s) par votre (vos) futur(s) certificat(s) SSL :
 >
 > - pointe(nt) vers l'adresse IP de votre hébergement web. 
-> - est (sont) déclaré(s) en multisite sur votre hébergement web.
+> - est (sont) déclaré(s) sur l'un des sites web de votre hébergement web.
 > - ne dispose(nt) pas déjà d'un certificat SSL actif.
 >
 > Pour vous en assurer, consultez si besoin nos guides ci-dessous :
