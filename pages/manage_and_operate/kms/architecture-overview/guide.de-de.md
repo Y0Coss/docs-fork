@@ -1,7 +1,7 @@
 ---
 title: "OKMS Architecture overview"
 excerpt: "Discover how we handle the security of the OKMS infrastructure"
-updated: 2025-10-21
+updated: 2025-10-22
 ---
 
 ## Objective
@@ -23,11 +23,21 @@ Only the users allowed by an IAM policy can manage the keys or use them to encry
 
 Even the OVHcloud employees cannot access your keys.
 
-### KMS architecture
+### OKMS architecture
 
-The OKMS infrastructure is by design replicated across multiple datacenters.
+Each OKMS region is fully independent from the others and uses dedicated hosts.
 
-![Architecture overview](images/KMS_Overview.png){.thumbnail}
+#### 1AZ regions
+
+On single AZ regions, architecture is based on zones, which consists of distinct datacenter buildings where servers are spread accross. To increase resilience in 1AZ regions, a database replica server is deployed in a distinct nearby region. Replication to the remote region will may be a few seconds at most behind the main region.
+
+![Architecture overview](images/KMS_Overview_1AZ.png){.thumbnail}
+
+#### 3AZ regions
+
+On 3AZ regions, architecture is duplicated across the 3 Availability Zones.
+
+![Architecture overview](images/KMS_Overview_3AZ.png){.thumbnail}
 
 ### KMS components location
 
@@ -39,86 +49,84 @@ These hosts are partitioned into two different zones so that any single hardware
 
 - **DB Replication**
 
-The KMS will not return a success status for the creation or import of key material unless that data was successfully replicated to both zones. This is to ensure that if one of the databases is lost, no key will be lost. As a consequence, if one zone becomes unavailable, the KMS will refuse to create new keys. However, existing keys will still be available to perform cryptographic operations.
+The KMS will not return a success status for the write operations (e.g. creation or import of key material) unless that has been successfully replicated on at least 2 database hosts (the primary and the synchronous replica). This is to ensure that if one of the databases hosts is lost, no data will be lost.
 
-The key material is also replicated to a third database, in a different region. Because replication to a remote region has a higher latency, we do not wait for that replication to be complete before returning a success status to the user. Replication to the remote region will typically lag a few seconds at most behind the main region.
+An auto-failover mechanism in also in place that will re-assign the database hosts roles in case the current primary or synchronous replica becomes unavailable. This means that if any of the 3 database hosts becomes unavailable, there will be no service disruption (apart from during the failover itself, that might take around 1 minute).
+
+However if 2 zones or databases hosts become unavailable simultaneously, the OKMS will switch to read-only and write operations will fail (creation of new keys, secrets, metadata update...). Existing keys will still be available to perform any cryptographic operations, and existing secrets will remain readable.
 
 - **DB Backups**
 
-Regular backups are taken from the replica every 5 minutes. Each backup is stored in two regions, different from the main OKMS region.<br>
+Incremental backups are taken every 5 minutes at most, and a full backup is taken daily. Each backup is stored in two different regions
 These backups are kept for 30 days.
 
 #### Data security
 
-All customer data are always stored encrypted in the databases and in the backups.
+All customer data is always stored encrypted in the databases and the database backups themselves are encrypted.
 
 #### Backup location
 
 The backup location depends on the location of the OKMS.
 
-- **EU_WEST_RBX**
-    - KMS Backup Region 1 : EU_WEST_SBG
-    - KMS Backup Region 2 : EU_WEST_GRA
-- **EU_WEST_SBG**
-    - KMS Backup Region 1 : EU_WEST_RBX
-    - KMS Backup Region 2 : EU_WEST_GRA
-- **EU_WEST_PAR**
-    - KMS Backup Region 1 : EU_WEST_GRA
-    - KMS Backup Region 2 : EU_WEST_SBG
-- **EU_WEST_GRA**
-    - KMS Backup Region 1 : EU_WEST_GRA
-    - KMS Backup Region 2 : EU_WEST_RBX
-- **EU_WEST_LIM**
-    - KMS Backup Region 1 : EU_WEST_LIM
-    - KMS Backup Region 2 : EU_WEST_SBG
-- **EU_SOUTH_MIL**
-    - KMS Backup Region 1 : EU_WEST_GRA
-    - KMS Backup Region 2 : EU_WEST_SBG
-- **CA_EAST_BHS**
-    - KMS Backup Region 1 : CA_EAST_BHS
-    - KMS Backup Region 2 : CA_EAST_TOR
-- **CA_EAST_TOR**
-    - KMS Backup Region 1 : CA_EAST_BHS
-    - KMS Backup Region 2 : CA_EAST_TOR
-- **AP_SOUTHEAST_SGP**
-    - KMS Backup Region 1 : AP_SOUTHEAST_SGP
-    - KMS Backup Region 2 : AP_SOUTHEAST_SYD
-- **AP_SOUTHEAST_SYD**
-    - KMS Backup Region 1 : AP_SOUTHEAST_SGP
-    - KMS Backup Region 2 : AP_SOUTHEAST_SYD
+- **EU-WEST-RBX**
+    - KMS Backup Region 1 : EU-WEST-SBG
+    - KMS Backup Region 2 : EU-WEST-GRA
+- **EU-WEST-SBG**
+    - KMS Backup Region 1 : EU-WEST-RBX
+    - KMS Backup Region 2 : EU-WEST-GRA
+- **EU-WEST-PAR**
+    - KMS Backup Region 1 : EU-WEST-GRA
+    - KMS Backup Region 2 : EU-WEST-SBG
+- **EU-WEST-GRA**
+    - KMS Backup Region 1 : EU-WEST-GRA
+    - KMS Backup Region 2 : EU-WEST-RBX
+- **EU-WEST-LIM**
+    - KMS Backup Region 1 : EU-WEST-LIM
+    - KMS Backup Region 2 : EU-WEST-SBG
+- **EU-SOUTH-MIL**
+    - KMS Backup Region 1 : EU-WEST-GRA
+    - KMS Backup Region 2 : EU-WEST-SBG
+- **CA-EAST-BHS**
+    - KMS Backup Region 1 : CA-EAST-BHS
+    - KMS Backup Region 2 : CA-EAST-TOR
+- **CA-EAST-TOR**
+    - KMS Backup Region 1 : CA-EAST-BHS
+    - KMS Backup Region 2 : CA-EAST-TOR
+- **AP-SOUTHEAST-SGP**
+    - KMS Backup Region 1 : AP-SOUTHEAST-SGP
+    - KMS Backup Region 2 : AP-SOUTHEAST-SYD
+- **AP-SOUTHEAST-SYD**
+    - KMS Backup Region 1 : AP-SOUTHEAST-SGP
+    - KMS Backup Region 2 : AP-SOUTHEAST-SYD
 
 ### Disaster scenarios
 
 #### What happens if one host in a zone is lost?
 
-Keys remain available and traffic is redirected to the other zone.<br>
-Requests in flight can timeout or return errors.<br>
-If the database is down, the KMS will refuse to create or import new keys.
+Keys remain available and traffic is redirected to another zone.
+Requests in flight can timeout or return errors, depending on which host is affected
 
-#### What happens if a zone is lost?
+#### What happens if one zone is lost?
 
-Keys remain available.<br>
-The other zone stays available to serve user queries but will refuse to create or import new keys.
+Keys remain available and traffic is redirected to another zone.
+Requests in flight can timeout or return errors.
 
-#### What happens if the primary region is lost?
+#### What happens if a whole region is lost?
 
-The keys created in the last seconds can be lost and the KMS becomes unavailable.<br>
+3AZ regions are designed to prevent this scenario, however it could occur on 1AZ regions.
+
+In that case, the keys created in the last seconds can be lost and the OKMS becomes unavailable.
 Database replica will be used at the region and rebuilt to retrieve stored keys.
-
-#### What happens if the primary region and the remote replica are lost?
-
-The keys created in the last 5 minutes can be lost and the KMS becomes unavailable.<br>
-Database backup will be used at the region and rebuilt to retrieve stored keys.
 
 ## PCI-DSS certification
 
 Regions available for PCI-DSS certification:
 
-- EU_WEST_RBX
-- EU_WEST_SBG
-- EU_WEST_GRA
-- EU_WEST_LIM
-- CA_EAST_BHS
+- EU-WEST-RBX
+- EU-WEST-SBG
+- EU-WEST-GRA
+- EU-WEST-LIM
+- CA-EAST-BHS
 
 ## Go further
 
