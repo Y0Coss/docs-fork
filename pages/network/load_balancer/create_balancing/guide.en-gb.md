@@ -1,7 +1,7 @@
 ---
 title: Load balancing methods
 excerpt: Discover the various load balancing algorithms available with the OVHcloud Load Balancer
-updated: 2025-10-17
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -32,21 +32,21 @@ For an overview of the OVHcloud Load Balancer service components, please refer t
 |**Source**|Uses a hash of the source IP address to consistently redirect the same client IP to the same server, provided the server remains operational.|
 |**URI**|Uses a hash of part or all of the URI path to consistently redirect identical URIs to the same server, provided the server remains operational. *(Applicable to HTTP/HTTPS farms only.)*|
 
-### Modify a server farm’s load balancing method via the Control Panel
+### Modify a server farm’s load balancing method via the OVHcloud Control Panel
 
-- In the `Server farms`{.action} section (1), locate the desired farm. You can edit it by clicking the three dots on the right-hand side (2), then `Change`{.action}:
+- In the `Server farms`{.action} section (1), locate the desired farm. You can edit it by clicking the three dots on the right-hand side (2), then `Change`{.action}.
 
 ![Modify a farm](images/server_cluster_change.png){.thumbnail}
 
-In `Advanced settings`{.action}, modify the `Load balancing method`{.action}:
+In `Advanced settings`{.action}, modify the `Load balancing method`{.action}.
 
 ![Modify a farm](images/distrib_mode_edit.png){.thumbnail}
 
-Once your preferred method is selected, click `Update`{.action}, then click `Apply configuration`{.action} in the yellow banner that appears:
+Once your preferred method is selected, click `Update`{.action}, then click `Apply configuration`{.action} in the yellow banner that appears.
 
 ![Apply configuration](images/apply_config.png){.thumbnail}
 
-### Modify a server farm’s load balancing method via the API
+### Modify a server farm’s load balancing method via the OVHcloud API
 
 The load balancing method is changed by updating the corresponding field within the server farm configuration.
 
