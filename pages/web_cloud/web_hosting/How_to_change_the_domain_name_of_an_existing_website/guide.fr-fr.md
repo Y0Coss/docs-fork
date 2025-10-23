@@ -57,7 +57,7 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 > - [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Passer son site internet en HTTPS grâce au SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-Si l'ensemble des actions ont été correctement réalisées, les déclarations de vos nom de domaine doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
+Si l'ensemble des actions ont été correctement réalisées, les déclarations de vos noms de domaine doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
 
 ![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
