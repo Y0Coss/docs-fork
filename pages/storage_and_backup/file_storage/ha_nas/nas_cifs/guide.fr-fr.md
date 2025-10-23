@@ -52,6 +52,7 @@ You can't access this shared folder because your organization's security policie
 ```console
 System error 3227320323 has occurred.
 ```
+
 > [!primary]
 >
 > Pour corriger ces erreurs, reportez-vous à la documentation officielle Microsoft :<br>

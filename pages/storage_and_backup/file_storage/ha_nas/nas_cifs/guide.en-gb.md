@@ -48,15 +48,16 @@ System error 1272 has occurred.
 
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
+
 ```console
 System error 3227320323 has occurred.
 ```
+
 > [!primary]
 >
 > To correct these errors, refer to the official Microsoft documentation :<br>
 > [How to enable insecure guest logons in SMB2 and SMB3](https://learn.microsoft.com/en-gb/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=powershell).<br>
 > [Control SMB signing behavior](https://learn.microsoft.com/en-gb/windows-server/storage/file-server/smb-signing?tabs=powershell).
-
 
 
 ### Settings for Linux

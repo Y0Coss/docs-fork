@@ -1,7 +1,7 @@
 ---
 title: Configure o seu NAS-HA no Windows Server através do CIFS
 excerpt: Configurar e montar um NAS-HA através do protocolo CIFS
-updated: 2025-10-09
+updated: 2025-10-22
 ---
 
 ## Objetivo
@@ -15,12 +15,11 @@ updated: 2025-10-09
 
 ## Instruções
 
-### Configuração para Windows
+### Configuração para Microsoft Windows
 
-- **Windows Server 2008** : clique no menu `Start`{.action} > `All the programs`{.action} > `Accessories`{.action} > `Command prompt`{.action}.
-- **Windows Server 2012** : clique no ícone `Windows PowerShell`{.action} na barra de tarefas.
-- **Windows Server 2016** : clique no menu `Start`{.action} e, a seguir, no ícone do `Windows PowerShell`{.action}.
-- **Windows Server 2019** : clique no menu `Start`{.action} e, a seguir, no ícone do `Windows PowerShell`{.action}.
+- **Windows Server 2008**: clique no menu `Start`{.action} > `All the programs`{.action} > `Accessories`{.action} > `Command prompt`{.action}.
+- **Windows Server 2012**: clique no ícone `Windows PowerShell`{.action} na barra de tarefas.
+- **Windows Server 2016/2019/2022/2025**: clique no menu `Start`{.action} e, a seguir, no ícone do `Windows PowerShell`{.action}.
 
 De seguida, execute o seguinte comando:
 
@@ -41,7 +40,7 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 > O utilizador SMB/CIFS é `nobody`, qualquer modificação de direitos efetuada por este utilizador pode gerar conflitos com direitos NFS existentes.
 >
 
-A seguinte mensagem de erro pode aparecer:
+As seguintes mensagens de erro podem ser exibidas:
 
 ```console
 System error 1272 has occurred.
@@ -49,11 +48,16 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
+```console
+System error 3227320323 has occurred.
+```
+
 > [!primary]
 >
-> Para corrigir este erro, é necessário alterar o registo do Windows. Para tal, abra o editor do registo (regedit) e aceda à chave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
-> Atribua o valor "1" ao parâmetro `AllowInsecureGuestAuth`.<br>
-> Encontre mais informações sobre este tópico nas [páginas de suporte da Microsoft](https://learn.microsoft.com/pt-pt/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> Para corrigir esses erros, consulte a documentação oficial da Microsoft:<br>
+> [Como ativar logons convidados inseguros no SMB2 e SMB3](https://learn.microsoft.com/pt-pt/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=powershell).<br>
+> [Controlar o comportamento de assinatura do SMB](https://learn.microsoft.com/pt-pt/windows-server/storage/file-server/smb-signing?tabs=powershell).
+
 
 ### Configuração para Linux
 
