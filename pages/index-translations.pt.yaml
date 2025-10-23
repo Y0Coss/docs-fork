@@ -308,23 +308,20 @@ web-cloud-phone-and-fax-voip-telephone-lines: Linhas telefónicas
 web-cloud-phone-and-fax-voip-troubleshooting: Diagnóstico
 web-cloud-phone-and-fax-voip-tutorials: Tutoriais
 web-cloud-hosting: Alojamento partilhado
-web-cloud-hosting-automating-tasks-cron: Automatização de tarefas (cron)
-web-cloud-hosting-cloud-web-configuration: Configuração de um alojamento Cloud Web
 web-cloud-hosting-cms: CMS
-web-cloud-hosting-configuring-web-hosting-plan: Configurar o alojamento web Perso, Pro ou Performance
-web-cloud-hosting-databases: Bases de dados
-web-cloud-hosting-ftp-and-ssh: FTP e SSH
+web-cloud-hosting-configuration-ftp-and-ssh: FTP e SSH
 web-cloud-hosting-getting-started: Primeiros passos
-web-cloud-hosting-general-information: Informações gerais
+web-cloud-hosting-configuration: Configuração
+web-cloud-hosting-configuration-databases: Bases de dados
+web-cloud-hosting-additional-resources: Recursos adicionais
 web-cloud-hosting-php: PHP
 web-cloud-hosting-redirection-and-authentication: Reencaminhamento e autenticação
-web-cloud-hosting-ssl: SSL
+web-cloud-hosting-security: Segurança
 web-cloud-hosting-troubleshooting: Diagnóstico
 web-cloud-hosting-tutorials: Tutoriais
+web-cloud-hosting-migration: Migração
 web-cloud-hosting-tutorials-wordpress: Tutoriais WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutoriais Cloud Web
-web-cloud-hosting-website-optimisation: Otimização site
-web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeiros passos
 storage-object-storage: Object Storage
