@@ -39,7 +39,7 @@ net use z: \\10.16.101.8\zpool-000206_NOM_PARTITION_1
 > [!alert]
 >
 > L'utilisateur SMB/CIFS est `nobody`, toute modification de droits effectuée par cet utilisateur peut générer des conflits avec des droits NFS existants.
-> 
+>
 
 Les messages d'erreur suivants peuvent s'afficher :
 
