@@ -37,7 +37,7 @@ Sie benötigen ein SSL-Zertifikat für Ihre Website, um es über HTTPS zu verwen
 > Bevor Sie fortfahren, **überprüfen Sie, dass Domainname und Subdomain**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
 >
 > - Auf die IP-Adresse Ihres Webhostings verweisen.
-> - auf einem der Webseiten Ihres Webhostings deklariert sind.
+> - Auf einem der Webseiten Ihres Webhostings deklariert sind.
 > - Noch nicht über ein aktives SSL-Zertifikat verfügen.
 >
 > Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
@@ -62,11 +62,11 @@ Hier finden Sie die 4 Links zu unseren Anleitungen zu diesen 4 Lösungen:
 
 > [!warning]
 >
-> Die Löschung eines kostenpflichtigen SSL-Zertifikats **Sectigo** (DV oder EV) ist endgültig, auch wenn das Zertifikat noch nicht abgelaufen ist. Für die verbleibende Zeit können keine anteiligen Rückerstattungen vorgenommen werden. Wenn Sie ein SSL-Zertifikat **Sectigo** (DV oder EV) neu installieren möchten, müssen Sie eine neue Bestellung aufgeben und das neue abonnierte SSL-Zertifikat vollständig bezahlen.
+> Die Löschung eines kostenpflichtigen **Sectigo** SSL-Zertifikats (DV oder EV) ist endgültig, auch wenn das Zertifikat noch nicht abgelaufen ist. Für die verbleibende Zeit können keine anteiligen Rückerstattungen vorgenommen werden. Wenn Sie ein solches SSL-Zertifikat neu installieren möchten, müssen Sie eine neue Bestellung aufgeben und das neue abonnierte SSL-Zertifikat vollständig bezahlen.
 >
-> Wenn Sie ein SSL-Zertifikat dauerhaft von Ihrem Webhosting deaktivieren möchten, stellen Sie bitte sicher, dass **bevor Sie fortfahren**, dass die endgültige Deaktivierung des SSL-Zertifikats Ihre Websites nicht unzugänglich macht. In diesem Fall erhalten Ihre Benutzer einen Sicherheitsfehler, wenn sie versuchen, auf Ihre Website über HTTPS zuzugreifen.
+> Wenn Sie ein SSL-Zertifikat dauerhaft auf Ihrem Webhosting deaktivieren möchten, stellen Sie sicher **bevor Sie fortfahren**, dass die endgültige Deaktivierung des SSL-Zertifikats Ihre Websites nicht unzugänglich macht. In diesem Fall erhalten Ihre Benutzer einen Sicherheitsfehler, wenn sie versuchen, auf Ihre Website über HTTPS zuzugreifen.
 >
-> Da diese Überprüfung von den Einstellungen Ihrer Website abhängt, empfehlen wir Ihnen, sich an einen [spezialisierten Dienstanbieter](/links/partner) zu wenden, falls Sie Probleme haben. Wir können Ihnen in dieser Hinsicht keine Unterstützung bieten.
+> Da diese Überprüfung von den Einstellungen Ihrer Website abhängt, empfehlen wir Ihnen, sich an einen [spezialisierten Dienstanbieter](/links/partner) zu wenden. Wir können Ihnen in dieser Hinsicht keine Unterstützung bieten.
 
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen:
 
