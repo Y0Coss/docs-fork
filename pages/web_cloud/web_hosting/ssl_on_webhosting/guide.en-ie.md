@@ -37,7 +37,7 @@ You must have an SSL certificate in order to use HTTPS for your website.
 > **Before you continue**, please ensure that **each domain name and/or subdomain** covered by a future SSL certificate:
 >
 > - Points to the IP address of your web hosting plan.
-> - is (are) declared on one of the websites on your web hosting.
+> - Is declared on one of the websites on your web hosting.
 > - Does not already have an active SSL certificate.
 >
 > To check this, please refer to our guides below:
@@ -62,7 +62,7 @@ Below are the 4 links to our guides dedicated to these 4 solutions:
 
 > [!warning]
 >
-> The deletion of a paid SSL certificate **Sectigo** (DV or EV) is permanent, even if the certificate has not yet expired. No refund may be made on a pro rata basis for the remaining time. If you would like to reinstall an SSL certificate **Sectigo** (DV or EV), you will need to place a new order and pay for the new SSL certificate.
+> The deletion of a paid **Sectigo** SSL certificate (DV or EV) is permanent, even if the certificate has not yet expired. No refund may be made on a pro rata basis for the remaining time. If you would like to reinstall such an SSL certificate, you will need to place a new order and pay for the new SSL certificate.
 >
 > Furthermore, if you would like to permanently deactivate an SSL certificate on your Web Hosting plan, please ensure that you do not make your websites inaccessible by permanently deactivating the SSL certificate **before you proceed**. If this is the case, your users will encounter a security error when they try to access your website in HTTPS.
 >
