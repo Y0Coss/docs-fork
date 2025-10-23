@@ -1,7 +1,7 @@
 ---
 title: "Déploiement d'une infrastructure blue-green"
 excerpt: "Ce guide vous montre comment déployer une infrastructure blue-green avec le Load Balancer OVHcloud"
-updated: 2025-10-21
+updated: 2025-10-23
 ---
 
 ## Objectif
@@ -38,7 +38,7 @@ Dans ce scénario, votre service Load Balancer joue un rôle central. C'est l'é
 
 L'infrastructure de production est accessible par vos clients sur le service HTTP standard (port 80), et votre infrastructure de développement est accessible par les développeurs et administrateurs sur le port non standard 8888.
 
-Au cours de la phase de configuration initiale, les rôles sont provisoirement attribués à chaque composant de l'infrastructure. **L'Infrastructure A** sert d'environnement de production initial, tandis que **l'infrastructure B** sert d'environnement de staging. À ce stade, nous allons les considérer comme similaires l'une à l'autre.
+Au cours de la phase de configuration initiale, les rôles sont provisoirement attribués à chaque composant de l'infrastructure. **L'infrastructure A** sert d'environnement de production initial, tandis que **l'infrastructure B** sert d'environnement de staging. À ce stade, nous allons les considérer comme similaires l'une à l'autre.
 
 Une infrastructure **blue-green** implique le basculement de l'infrastructure A vers l'infrastructure B, une fois que l'infrastructure B est prête à exposer votre site Web après que vos modifications ont été appliquées et testées. Le Load Balancer gérera ce basculement.
 
@@ -48,7 +48,7 @@ Le schéma ci-dessous donne une idée générale de l'architecture :
 
 ### Infrastructure A
 
-Cette infrastructure est composée d'une ferme de serveurs qui sera associée plus tard à un front-end de votre Load Balancer. Cette ferme exposera un service HTTP, TCP ou UDP au front-end. Elle assure également l'équilibrage de charge en envoyant le trafic entrant du front-end aux serveurs. Pour plus de détails sur le rôle des différents composants du service Load Balancer OVHcloud, vous pouvez lire le guide suivant : [Introduction au Load Balancer OVHcloud](/pages/network/load_balancer/use_presentation).
+Cette infrastructure est composée d'une ferme de serveurs qui sera associée plus tard à un front-end de votre Load Balancer. Cette ferme exposera un service HTTP, TCP ou UDP au front-end. Elle assure également l'équilibrage de charge en envoyant le trafic entrant du front-end aux serveurs. Pour plus de détails sur le rôle des différents composants du service Load Balancer OVHcloud, vous pouvez lire le guide suivant : [Présentation du service OVHcloud Load Balancer ](/pages/network/load_balancer/use_presentation).
 
 Dans notre scénario, nous allons déclarer une ferme de serveurs pour le service HTTP. Veuillez noter que vous pouvez créer autant de fermes (ainsi que de services TCP et/ou UDP) que nécessaire pour que votre service final soit accessible à vos clients.
 

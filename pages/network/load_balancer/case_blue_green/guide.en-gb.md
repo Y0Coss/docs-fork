@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a blue-green infrastructure'
 excerpt: 'This guide will show you how to deploy a blue-green infrastructure with the OVHcloud Load Balancer'
-updated: 2025-10-21
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ To deploy a blue-green infrastructure, you need the following components:
 
 - An [OVHcloud Load Balancer](/links/network/load-balancer) service
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Two [dedicated servers](/links/bare-metal/bare-metal), one hosting your production environment, and a similarly configured server hosting your staging environment.
+- Two [dedicated servers](/links/bare-metal/bare-metal), one hosting your production environment, and a similarly configured server hosting your staging environment
 
 ## Instructions
 
@@ -38,7 +38,7 @@ In this scenario, your Load Balancer service plays a central role. It is the ele
 
 The production infrastructure can be accessed by your customers on the standard HTTP service (port 80), and your development infrastructure can be accessed by developers and admins on the non-standard port 8888.
 
-During the initial setup phase, roles are provisionally assigned to each infrastructure component. **Infrastructure A** serves as the initial production environment, while **infrastructure B** serves as the staging environment. At this stage, we will consider them to be similar to one another.
+During the initial setup phase, roles are provisionally assigned to each infrastructure component. **Infrastructure A** serves as the initial production environment, while **Infrastructure B** serves as the staging environment. At this stage, we will consider them to be similar to one another.
 
 A blue-green infrastructure involves switching from infrastructure A to infrastructure B, once infrastructure B has been fully updated and validated. The Load Balancer will manage this switch.
 
@@ -56,7 +56,7 @@ In our scenario, we will declare a farm of servers for the HTTP service. Please 
 
 ![Add a new HTTP farm dedicated to infrastructure A](images/ferme1.png){.thumbnail}
 
-#### Via the API
+#### Via the OVHcloud API
 
 > [!api]
 >
@@ -279,7 +279,9 @@ This should be the result on the OVHcloud Control Panel after updating the front
 
 ![Result after updating front-ends](images/switch.png){.thumbnail}
 
-#### Via the OVHcloud API: updating front-ends and applying modifications
+#### Via the OVHcloud API
+
+- Updating front-ends and applying modifications:
 
 > [!api]
 >
@@ -303,7 +305,7 @@ This should be the result on the OVHcloud Control Panel after updating the front
 |frontendId|Your production front-end ID|70090|
 |defaultFarmId|Your development server farm ID|77212|
 
-#### To apply your changes and effectively switch over the production and development environments:
+- To apply your changes and effectively switch over the production and development environments:
 
 > [!api]
 >

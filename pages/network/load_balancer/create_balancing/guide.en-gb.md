@@ -1,7 +1,7 @@
 ---
 title: Load balancing methods
 excerpt: Discover the various load balancing algorithms available with the OVHcloud Load Balancer
-updated: 2025-10-21
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ The OVHcloud Load Balancer service supports a variety of load balancing algorith
 
 The load balancing setting is applied at the server farm level and defines the method by which client requests are distributed among the servers within that farm.
 
-For an overview of the OVHcloud Load Balancer service components, please refer to the [Load Balancer Introduction](/pages/network/load_balancer/use_presentation).
+For an overview of the OVHcloud Load Balancer service components, please refer to the [Load Balancer Introduction](/pages/network/load_balancer/use_presentation) guide.
 
 |Algorithm|Features|
 |---|---|
@@ -34,7 +34,7 @@ For an overview of the OVHcloud Load Balancer service components, please refer t
 
 ### Modify a server farm’s load balancing method via the OVHcloud Control Panel
 
-- In the `Server farms`{.action} section (1), locate the desired farm. You can edit it by clicking the three dots on the right-hand side (2), then `Change`{.action}.
+- In the `Server farms`{.action} section (1), locate the desired farm. You can edit it by clicking the three dots on the right-hand side (2), then on `Change`{.action}.
 
 ![Modify a farm](images/server_cluster_change.png){.thumbnail}
 
@@ -52,12 +52,12 @@ The load balancing method is changed by updating the corresponding field within 
 
 #### View details on a server farm
 
-Use this call to view the details of a server farm given its ID. In this example, we work with an HTTP farm:
+Use this api call to view the details of a server farm given its ID. In this example, we work with an HTTP farm:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
-> 
+>
 
 |Setting|Meaning|
 |---|---|
@@ -76,12 +76,12 @@ Use this call to view the details of a server farm given its ID. In this example
 
 #### Modify a server farm’s load balancing method
 
-Use this call to edit the settings of a server farm given its ID. In this example, we work with an HTTP farm. To modify the balancing method, update the `BackendHttp.balance` field with an available algorithm:
+Use this api call to edit the settings of a server farm given its ID. In this example, we work with an HTTP farm. To modify the balancing method, update the `BackendHttp.balance` field with an available algorithm:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
-> 
+>
 
 |Setting|Meaning|
 |---|---|
@@ -94,7 +94,7 @@ Use this call to edit the settings of a server farm given its ID. In this exampl
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
-> 
+>
 
 |Setting|Meaning|
 |---|---|

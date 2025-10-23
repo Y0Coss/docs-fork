@@ -1,7 +1,7 @@
 ---
 title: Modes de répartition
 excerpt: Découvrez les différents modes de répartition de charge du Load Balancer OVHcloud
-updated: 2025-10-21
+updated: 2025-10-23
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Le service OVHcloud Load Balancer prend en charge différents algorithmes de ré
 
 L'algorithme de répartition de charge est appliqué au niveau des fermes de serveurs. C'est ce paramètre qui définit la manière dont les requêtes sont réparties entre les serveurs de la ferme.
 
-Pour une vue d'ensemble des composants du service OVHcloud Load Balancer, consultez la [présentation du Load Balancer](/pages/network/load_balancer/use_presentation).
+Pour une vue d'ensemble des composants du service OVHcloud Load Balancer, consultez ce guide : [Présentation du service OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation).
 
 |Algorithme|Fonctionnalités|
 |---|---|
@@ -57,7 +57,7 @@ Cet appel API permet de consulter le détail d'une ferme en connaissant son iden
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
-> 
+>
 
 |Paramètre|Signification|
 |---|---|
@@ -81,7 +81,7 @@ Cet appel API permet de modifier la configuration d'une ferme en connaissant son
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
-> 
+>
 
 |Paramètre|Signification|
 |---|---|
@@ -94,7 +94,7 @@ Cet appel API permet de modifier la configuration d'une ferme en connaissant son
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
-> 
+>
 
 |Paramètre|Signification|
 |---|---|
