@@ -116,7 +116,7 @@ Zapoznaj się z [przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/commen
 
 Po zalogowaniu się do swojego VPS drzewo struktury plików lokalnych będzie widoczne po lewej stronie interfejsu FileZilla, a drzewo struktury plików VPS po prawej stronie.
 
-Katalog sieci Web (lub katalog główny) to miejsce, w którym będą przechowywane pliki witryny, aby były dostępne w Internecie. **Domyślnie może to być folder o nazwie `/var/www/html` lub inny katalog skonfigurowany podczas instalacji serwera sieci Web w [kroku 2.2](#step2.2)**. Upewnij się, że pliki są umieszczone w katalogu skonfigurowanym jako **katalog główny**, aby witryna działała poprawnie.
+Katalog sieci Web (lub katalog główny) to miejsce, w którym będą przechowywane pliki witryny, aby były dostępne w Internecie. **Domyślnie może to być folder o nazwie `/var/www/html` lub inny katalog skonfigurowany podczas instalacji serwera sieci Web na [etapie 2.2](#step2.2)**. Upewnij się, że pliki są umieszczone w katalogu skonfigurowanym jako **katalog główny**, aby witryna działała poprawnie.
 
 > [!warning]
 >
@@ -139,7 +139,7 @@ Uruchom poniższe polecenia:
 
 > [!warning]
 >
-> W tym przykładzie katalog główny to `/var/www/html`. Jeśli Twój katalog główny jest inny (skonfigurowany w kroku 2.2), zastąp `/var/www/html` swoim rzeczywistym ścieżką.
+> W tym przykładzie katalog główny to `/var/www/html`. Jeśli Twój katalog główny jest inny (skonfigurowany w etapie 2.2), zastąp `/var/www/html` swoim rzeczywistym ścieżką.
 
 Utwórz katalog główny, jeśli nie istnieje:
 
@@ -180,10 +180,10 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 
 #### Przed rozpoczęciem
 
-- Twój plik kopii zapasowej (`.sql`) został umieszczony w kroku 3.2 (np. `/home/debian/backup.sql`).
-- **D**ata**B**ase **M**anagement **S**ystem (**DBMS**) (MySQL / MariaDB) oraz jego konsola zostały zainstalowane w [kroku 2.2](#step2.2).
+- Twój plik kopii zapasowej (`.sql`) został umieszczony w etapu 3.2 (np. `/home/debian/backup.sql`).
+- **D**ata**B**ase **M**anagement **S**ystem (**DBMS**) (MySQL / MariaDB) oraz jego konsola zostały zainstalowane na [etap 2.2](#step2.2).
 - Baza danych **`db_name`**:
-    - **już istnieje**, jeśli została utworzona podczas kroku 2.2 (lub przez panel administracyjny).
+    - **już istnieje**, jeśli została utworzona podczas etapu 2.2 (lub przez panel administracyjny).
     - **może zostać utworzona automatycznie**, jeśli plik kopii zapasowej `.sql` zawiera `CREATE DATABASE`.
     - **w przeciwnym razie utwórz ją przed zaimportowaniem**:
 
@@ -198,7 +198,7 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 1. Połącz się z VPS przez SSH, korzystając z sekcji "Połącz się z VPS" naszego przewodnika "[Rozpoczęcie pracy z VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
 2. Uruchom import za pomocą klienta DBMS:
 
-    W poniższym przykładzie używamy MySQL jako DBMS. Skorzystaj z oficjalnej dokumentacji DBMS, którego zainstalowałeś w [kroku 2.2](#step2.2), aby użyć odpowiedniego polecenia do zaimportowania bazy danych na VPS.
+    W poniższym przykładzie używamy MySQL jako DBMS. Skorzystaj z oficjalnej dokumentacji DBMS, którego zainstalowałeś w [etap 2.2](#step2.2), aby użyć odpowiedniego polecenia do zaimportowania bazy danych na VPS.
 
     ```bash
     mysql -u user_name -p db_name < /home/debian/backup.sql

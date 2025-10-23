@@ -112,7 +112,7 @@ Consulta la nostra [guida sull’utilizzo di FileZilla](/pages/bare_metal_cloud/
 - **Username** e **Password**: le credenziali dell'account utente SSH sul VPS.
 - **Porta**: utilizza la porta 22 (porta predefinita per SFTP).
 
-#### Step  3.2 - Trasferimento dei file del vostro sito web verso il VPS
+#### Step 3.2 - Trasferimento dei file del vostro sito web verso il VPS
 
 Una volta connessi al VPS, l’albero delle directory locali apparirà a sinistra dell’interfaccia FileZilla, e quelle del VPS a destra.
 
