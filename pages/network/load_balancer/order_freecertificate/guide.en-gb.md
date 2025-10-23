@@ -1,7 +1,7 @@
 ---
 title: Order a free SSL certificate
 excerpt: Order a free SSL certificate for your web services behind a Load Balancer
-updated: 2025-10-22
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -37,7 +37,7 @@ Finally, open the advanced settings and fill in the `HTTPS Redirection` field.
 
 ![Configuring the SSL termination of a Frontend](images/enable_ssl_terminaison.png){.thumbnail}
 
-Once the frontend has been created, a banner will appear prompting you to `Apply configuration` to deploy your changes in the appropriate zone.
+Once the frontend has been created, a banner will appear prompting you to `Apply the configuration` to deploy your changes in the appropriate zone.
 
 #### Order the free SSL certificate
 
