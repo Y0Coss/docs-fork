@@ -1,7 +1,7 @@
 ---
-title: Exchange - Comment gérer les logs 
-excerpt: Découvrez comment visualiser et gérer les logs sur votre offre Private Exchange ou Trusted Exchange
-updated: 2025-04-28
+title: Exchange - Comment gérer les logs
+excerpt: Découvrez comment visualiser et gérer les logs sur votre offre Private ou Trusted Exchange
+updated: 2025-10-23
 ---
 
 <style>
