@@ -47,7 +47,7 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 > **Before you continue**, please ensure that **each domain name and/or subdomain** covered by a future Let's Encrypt SSL certificate:
 >
 > - Points to the IP address of your web hosting plan.
-> - is declared on one of the websites on your web hosting.
+> - Is declared on one of the websites on your web hosting.
 > - Does not already have an active SSL certificate.
 >
 > To check if this is the case, please refer to our guides below:
