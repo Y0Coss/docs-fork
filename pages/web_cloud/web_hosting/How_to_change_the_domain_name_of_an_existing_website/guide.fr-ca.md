@@ -101,7 +101,7 @@ Pour les autres CMS non proposés en installation automatique par OVHcloud, nous
 
 #### Cas n°2 : votre site web est un site « fait maison »
 
-Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
+Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web_cloud/web_hosting/sql_create_database) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
 
 N'oubliez pas de vérifier dans votre fichier `.htaccess` si des réécritures d'URL ne sont pas à mettre à jour avec votre nouveau domaine.
 
