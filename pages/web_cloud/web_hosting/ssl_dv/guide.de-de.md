@@ -41,10 +41,10 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
 >
 > Die bei OVHcloud angebotenen Sectigo DV SSL-Zertifikate sind auf Ihrem Webhosting nur für einen der beiden folgenden Fälle gültig:
 >
-> - Ein Domainname und seine Subdomain "www" (Beispiel: `domain.tld` und `www.domain.tld`).
-> - Eine Subdomain (Beispiel: `sub.domain.tld`).
+> - Ein Domainname und seine Subdomain "www" (Beispiel: `domain.tld` und `www.domain.tld`)
+> - Eine Subdomain (Beispiel: `sub.domain.tld`)
 >
-> Wenn auf Ihrem Webhosting weitere Domains oder Subdomains registriert sind und Sie diesen ebenfalls ein SSL-Zertifikat zuweisen möchten, können Sie entweder:
+> Wenn auf Ihrem Webhosting weitere Domains oder Subdomains registriert sind und Sie diesen ebenfalls ein SSL-Zertifikat zuweisen möchten, können Sie:
 >
 > - [Kostenloses SSL-Zertifikat für Let's Encrypt aktivieren](/pages/web_cloud/web_hosting/ssl_letsencrypt) (falls noch nicht standardmäßig festgelegt).
 > - Ein oder mehrere weitere kostenpflichtige SSL-Zertifikate aktivieren ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) oder [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
@@ -52,19 +52,19 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
 
 **Bevor Sie das Sectigo DV SSL-Zertifikat auf Ihrem Webhosting bestellen**, überprüfen Sie, dass **alle Domains und Subdomains**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
 
-- verweist auf die IP-Adresse Ihres Webhostings.
-- auf einem der Webseiten Ihres Webhostings deklariert ist.
-- verfügt nicht bereits über ein aktives SSL-Zertifikat.
+- Auf die IP-Adresse Ihres Webhostings verweisen.
+- Auf einem der Webseiten Ihres Webhostings deklariert sind.
+- Nicht bereits über ein aktives SSL-Zertifikat verfügen.
 
 > [!primary]
 >
-> Wenn Sie ein SSL-Zertifikat „Sectigo DV“ für eine Domäne bestellen möchten (z. B.: `domain.tld`), stellen Sie sicher, dass auch deren Unterdomäne mit „www“ (z. B.: `www.domain.tld`) ebenfalls auf die IP-Adresse Ihres Webhostings verweist und korrekt auf einer der Webseiten Ihres Webhostings deklariert ist.
+> Wenn Sie ein Sectigo DV SSL-Zertifikat für eine Domain bestellen möchten (z. B.: `domain.tld`), überprüfen Sie, dass die zugehörige Subdomain "www" (Beispiel: `www.domain.tld`) ebenfalls auf die IP-Adresse Ihres Webhostings verweist und korrekt auf einer der Webseiten Ihres Webhostings deklariert ist.
 >
 > Wenn Sie das Sectigo DV SSL-Zertifikat bestellen, ohne sich dessen zu vergewissern, müssen Sie nachträglich eine Korrektur vornehmen. In diesem Fall müssen Sie das zuvor abonnierte Sectigo DV SSL-Zertifikat **ohne Rückerstattung** löschen und anschließend ein neues Zertifikat bestellen. Das neue Sectigo DV SSL Zertifikat soll sowohl Ihre Domain `domain.tld` als auch deren Subdomain `www.domain.tld` umfassen.
 >
 > Wenn Sie ein Sectigo DV SSL-Zertifikat direkt für eine Subdomain bestellen (Beispiel: `sub.domain.tld`), sind Sie von dieser Situation nicht betroffen.
 
-Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
+Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
 
 - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
@@ -96,7 +96,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen:
 >>
 > **Schritt 4**
 >>
->> Wenn der Inhalt der Registerkarte angezeigt wird, klicken Sie auf `Sectigo-SSL-Zertifikat bestellen`{.action}.
+>> Wenn der Inhalt des Tabs angezeigt wird, klicken Sie auf `Sectigo-SSL-Zertifikat bestellen`{.action}.
 >>
 >> ![SSL Sectigo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
 >>
