@@ -44,7 +44,7 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 > - A single domain name including the www subdomain (e.g. `domain.tld` and `www.domain.tld`).
 > - One subdomain (e.g. `sub.domain.tld`).
 >
-> If other domain names or subdomains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can either:
+> If other domain names or subdomains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can:
 >
 > - [Activate a free Let's Encrypt SSL certificate](/pages/web_cloud/web_hosting/ssl_letsencrypt) (if not already the default).
 > - Activate one or more other paid SSL certificate(s) ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) or [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
@@ -53,7 +53,7 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 **Before ordering the Sectigo DV SSL certificate on your web hosting plan**, check that **the domain/subdomain name** covered by your SSL certificate:
 
 - Points to the IP address of your web hosting plan.
-- is declared on one of the websites on your web hosting.
+- Is declared on one of the websites on your web hosting.
 - Does not already have an active SSL certificate.
 
 > [!primary]
