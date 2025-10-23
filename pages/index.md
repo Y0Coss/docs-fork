@@ -1684,6 +1684,7 @@
                 + [Configuring an Exchange account on Android via the Gmail app](web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
             + [Troubleshooting](web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting)
                 + [Using Exchange error diagnostics](web_cloud/email_and_collaborative_solutions/microsoft_exchange/diagnostic_advanced)
+                + [Exchange - How to manage logs](web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_manage_logs)
         + [Microsoft Office](web-cloud-email-collaborative-solutions-microsoft-office)
             + [Managing a group of Microsoft 365 OVHcloud licences](web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1)
             + [Managing a group of OVHcloud Office 365 Reseller licences (CSP2)](web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2)
