@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
-updated: 2025-10-09
+updated: 2025-10-23
 ---
 
 ## Objectif <a name="objectif"></a>
@@ -98,7 +98,7 @@ Activez un [certificat SSL](/links/web/hosting-options-ssl) sur votre hébergeme
 
 #### Scénario 2 : le certificat SSL de votre hébergement ne fonctionne pas
 
-Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'option SSL dans le `Multisite`{.action} de votre hébergement en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting#activer-un-certificat-ssl-sur-un-multisite).
+Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'option SSL de votre hébergement en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 Si vous disposez d'un **certificat SSL importé** et que celui-ci ne fonctionne pas, contactez son fournisseur.
 
