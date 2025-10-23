@@ -62,7 +62,7 @@ To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to
 >- A single domain name including the www subdomain (e.g. `domain.tld` and `www.domain.tld`)
 >- One subdomain (e.g. `sub.domain.tld`)
 >
-> If other domain names or sub-domains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can either:
+> If other domain names or sub-domains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can:
 >
 > - [Activate a free Let's Encrypt SSL certificate](/pages/web_cloud/web_hosting/ssl_letsencrypt) (if not already the default).
 > - Activate one or more other paid SSL certificate(s) ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) or [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
@@ -71,7 +71,7 @@ To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to
 **Before you continue**, please check that **the domain name and/or subdomain** covered by your future Sectigo EV SSL certificate:
 
 - Points to the IP address of your web hosting plan.
-- is declared on one of the websites on your web hosting.
+- Is declared on one of the websites on your web hosting.
 - Does not already have an active SSL certificate.
 
 To check if this is the case, please refer to our guides below:
@@ -85,7 +85,7 @@ To check if this is the case, please refer to our guides below:
 >
 > If you wish to order a Sectigo EV SSL certificate for a domain name (e.g. `domain.tld`), make sure that its "www" subdomain (e.g. `www.domain.tld`) also points to the IP address of your web hosting and is correctly declared on one of the websites on your web hosting.
 >
-> If you order a Sectigo EV SSL certificate without checking the previous points, you will need to make a correction at a later date. You will then need to delete the Sectigo EV SSL certificate you have previously subscribed to **without being able to receive a refund**, then order a new one. The goal is for the new Sectigo EV SSL certificate to include both your domain name `domain.tld` and its subdomain in “www” `www.domain.tld`.
+> If you order a Sectigo EV SSL certificate without checking the previous points, you will need to make a correction. You will then need to delete the Sectigo EV SSL certificate you have previously subscribed to **without being able to receive a refund**, then order a new one. The goal is for the new Sectigo EV SSL certificate to include both your domain name `domain.tld` and its "www" subdomain `www.domain.tld`.
 >
 > As a reminder, if you subscribe to a Sectigo EV SSL certificate directly for a subdomain (example: `sub.domain.tld`), you are not affected by this situation.
 
