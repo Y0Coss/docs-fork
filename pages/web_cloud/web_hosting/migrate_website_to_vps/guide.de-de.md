@@ -1,6 +1,6 @@
 ---
 title: "Migrieren einer Website von einem Webhosting auf einen VPS"
-excerpt: "Erfahren Sie hier, wie Sie Ihre Website von einem Webhosting auf einen OVHcloud VPS migrieren"
+excerpt: "Erfahren Sie, wie Sie Ihre Website von einem Webhosting auf einen OVHcloud VPS migrieren"
 updated: 2025-10-23
 ---
 
@@ -111,9 +111,9 @@ Folgen Sie unserer [Anleitung zur Verwendung von FileZilla](/pages/web_cloud/web
 - **Username** und **Password**: die Kennungen Ihres SSH-Benutzerkontos auf dem VPS.
 - **Port**: Verwenden Sie Port 22 (Standard für SFTP).
 
-#### Schritt 3.2 - Übertragen Sie Ihre Website-Dateien an den VPS
+#### Schritt 3.2 - Übertragen Sie Ihre Website-Dateien auf den VPS
 
-Sobald Sie sich bei Ihrem VPS angemeldet haben, wird der Baumansicht Ihrer lokalen Dateien auf der linken Seite der FileZilla-Oberfläche angezeigt, und der Baumansicht Ihres VPS auf der rechten Seite.
+Wenn Sie auf Ihrem VPS eingeloggt sind, wird die Ordnerstruktur der lokalen Dateien links im FileZilla Interface und die Ordnerstruktur Ihres VPS rechts angezeigt.
 
 Das Webverzeichnis (oder Webroot) ist der Ort, an dem Ihre Website-Dateien gespeichert werden, um im Internet zugänglich zu sein. **Standardmäßig kann es sich um einen Ordner namens `/var/www/html` oder einen anderen Ordner handeln, der während der Webserverinstallation in [Schritt 2.2](#step2.2) konfiguriert wurde**. Stellen Sie sicher, dass Ihre Dateien im Ordner platziert werden, der als **Webroot** konfiguriert ist, damit Ihre Website ordnungsgemäß funktioniert.
 
@@ -121,7 +121,7 @@ Das Webverzeichnis (oder Webroot) ist der Ort, an dem Ihre Website-Dateien gespe
 >
 > Wenn Sie sich über SFTP mit einem Nicht-Root-Benutzer (z. B. `debian`) verbinden, haben Sie keine Schreibberechtigung für `/var/www/html`.
 
-**Einfache Vorgehensweise: in `/home` ablegen und mit `sudo` verschieben**
+**Einfache Vorgehensweise: Dateien in `/home` ablegen und dann mit `sudo` verschieben.**
 
 ##### In FileZilla (SFTP)
 
@@ -132,7 +132,7 @@ Das Webverzeichnis (oder Webroot) ist der Ort, an dem Ihre Website-Dateien gespe
 
 ##### Auf Ihrem VPS
 
-Melden Sie sich über SSH bei Ihrem VPS an, indem Sie sich an den Abschnitt „Verbindung mit Ihrem VPS“ unseres Leitfadens „[Einstieg in einen VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)“ beziehen.
+Loggen Sie sich via SSH in Ihrem VPS ein, indem Sie den Abschnitt „Mit Ihrem VPS verbinden“ unserer Anleitung „[Erste Schritte mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)“ verwenden.
 
 Führen Sie die folgenden Befehle aus:
 
@@ -184,17 +184,17 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 - Die Datenbank **`db_name`**:
     - **existiert bereits**, wenn Sie sie während Schritt 2.2 (oder über Ihr Adminpanel) erstellt haben.
     - **kann automatisch erstellt werden**, wenn Ihre Sicherungsdatei `.sql` `CREATE DATABASE` enthält.
-    - **sonst erstellen Sie sie vor dem Import**:
+    - **muss andernfalls vor dem Import erstellt werden.**
 
     ```bash
     sudo mysql -e "CREATE DATABASE db_name CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
     ```
 
-    (ersetzen Sie `db_name` durch Ihren gewünschten Namen).
+    (Ersetzen Sie `db_name` durch Ihren gewünschten Namen).
 
 #### Import der Datenbank
 
-1. Melden Sie sich über SSH bei Ihrem VPS an, indem Sie sich an den Abschnitt „Verbindung mit Ihrem VPS“ unseres Leitfadens „[Einstieg in einen VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)“ beziehen.
+1. Loggen Sie sich via SSH in Ihrem VPS ein, indem Sie den Abschnitt „Mit Ihrem VPS verbinden“ unserer Anleitung „[Erste Schritte mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)“ verwenden.
 2. Starten Sie den Import mit dem DBMS-Client:
 
     Im folgenden Beispiel verwenden wir MySQL als DBMS. Verwenden Sie die offizielle Dokumentation des DBMS, das Sie während [Schritt 2.2](#step2.2) installiert haben, um den entsprechenden Befehl für den Import der Datenbank auf Ihren VPS zu verwenden.
