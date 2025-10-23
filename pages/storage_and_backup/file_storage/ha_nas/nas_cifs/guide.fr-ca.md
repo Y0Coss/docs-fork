@@ -1,7 +1,7 @@
 ---
 title: Monter un NAS-HA via un partage CIFS
 excerpt: Configurer et monter un NAS-HA via le protocole CIFS
-updated: 2025-10-22
+updated: 2025-10-23
 ---
 
 ## Objectif
@@ -55,7 +55,7 @@ System error 3227320323 has occurred.
 
 > [!primary]
 >
-> Pour corriger ces erreurs, reportez-vous à la documentation officielle Microsoft :<br>
+> Pour corriger ces erreurs, reportez-vous à la documentation officielle de Microsoft :<br>
 > [Comment activer les ouvertures de session invité non sécurisées dans SMB2 et SMB3](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=powershell).<br>
 > [Contrôler le comportement de la signature SMB](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/smb-signing?tabs=powershell).
 

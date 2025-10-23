@@ -1,7 +1,7 @@
 ---
 title: Configure o seu NAS-HA no Windows Server através do CIFS
 excerpt: Configurar e montar um NAS-HA através do protocolo CIFS
-updated: 2025-10-22
+updated: 2025-10-23
 ---
 
 ## Objetivo

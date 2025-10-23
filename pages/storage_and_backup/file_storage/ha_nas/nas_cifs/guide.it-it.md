@@ -1,7 +1,7 @@
 ---
 title: Montare un NAS-HA tramite condivisione CIFS
 excerpt: Configurare e montare un NAS-HA tramite il protocollo CIFS
-updated: 2025-10-22
+updated: 2025-10-23
 ---
 
 ## Obiettivo

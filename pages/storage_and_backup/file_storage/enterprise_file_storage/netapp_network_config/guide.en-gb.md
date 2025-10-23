@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Private network configuration"
 excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud Control Panel"
-updated: 2025-10-22
+updated: 2025-10-23
 ---
 
 ## Objective
