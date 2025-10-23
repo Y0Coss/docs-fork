@@ -15,7 +15,7 @@ updated: 2025-10-22
 
 ## In der praktischen Anwendung
 
-### Einstellungen Microsoft Windows
+### Einstellungen für Microsoft Windows
 
 - **Windows Server 2008**: Klicken Sie auf `Start`{.action}, `All the programs`{.action}, `Accessories`{.action}, `Command prompt`{.action}.
 - **Windows Server 2012**: Klicken Sie auf das `Windows PowerShell`{.action} Icon am unteren Bildschirmrand in der Taskleiste.
@@ -56,8 +56,8 @@ System error 3227320323 has occurred.
 > [!primary]
 >
 > Informationen zum Beheben dieser Fehler finden Sie in der offiziellen Microsoft-Dokumentation:<br> 
->[Aktivieren von unsicheren Gastanmeldungen in SMB2 und SMB3](https://learn.microsoft.com/de-de/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=powershell) 
-> [Steuerung des SMB-Signierverhaltens](https://learn.microsoft.com/de-de/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> [Aktivieren von unsicheren Gastanmeldungen in SMB2 und SMB3](https://learn.microsoft.com/de-de/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=powershell) 
+> [Steuerung des SMB-Signierverhaltens](https://learn.microsoft.com/de-de/windows-server/storage/file-server/smb-signing?tabs=powershell).
 
 ### Einstellungen für Linux
 
