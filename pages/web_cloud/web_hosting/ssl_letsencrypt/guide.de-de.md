@@ -44,13 +44,13 @@ Let's Encrypt ist eine kostenlose, automatisierte, offene und gemeinnützige Zer
 
 > [!warning]
 >
-> **Bevor Sie fortfahren**, überprüfen Sie, dass **jeder Domainname und/oder jede Subdomain**, die von einem zukünftigen Let's Encrypt SSL Zertifikat betroffen ist:
+> **Bevor Sie fortfahren**, überprüfen Sie, dass **jeder Domainname und/oder jede Subdomain**, die von einem zukünftigen Let's Encrypt SSL Zertifikat betroffen sind:
 >
-> - verweist auf die IP-Adresse Ihres Webhostings.
-> - auf einem der Webseiten Ihres Webhostings deklariert ist.
-> - verfügt nicht bereits über ein aktives SSL-Zertifikat.
+> - Auf die IP-Adresse Ihres Webhostings verweisen.
+> - Auf einem der Webseiten Ihres Webhostings deklariert sind.
+> - Nicht bereits über ein aktives SSL-Zertifikat verfügen.
 >
-> Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
+> Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
 >
 > - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 > - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
@@ -82,7 +82,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
 >>
 > **Schritt 4**
 >>
->> Wenn der Inhalt der Registerkarte angezeigt wird, wählen Sie die Domain oder Subdomain aus, für die Sie das kostenlose SSL-Zertifikat Let's Encrypt (DV) aktivieren möchten, und klicken Sie auf den Link `SSL-Zertifikat aktivieren`.
+>> Wenn der Inhalt des Tabs angezeigt wird, wählen Sie die Domain oder Subdomain aus, für die Sie das kostenlose SSL-Zertifikat Let's Encrypt (DV) aktivieren möchten, und klicken Sie auf den Link `SSL-Zertifikat aktivieren`.
 >>
 >> ![SSL Let's Encrypt](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/enable-ssl-lets-encrypt.png){.thumbnail}
 >>
