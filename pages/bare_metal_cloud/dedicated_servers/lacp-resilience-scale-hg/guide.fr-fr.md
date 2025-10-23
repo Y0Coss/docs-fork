@@ -34,7 +34,7 @@ Si vous n’utilisez pas l’agrégation de liens LACP sur votre serveur, **aucu
 
 ### Comment effectuer le changement sur vos serveurs
 
-Lors d’une reconfiguration des agrégations, la nouvelle règle sera appliquée automatiquement. Pour activer la nouvelle règle, vous pouvez également effectuer un passage en mode **OLA**, puis un retour en mode par défaut.
+Pour activer la nouvelle règle, vous devez [passer en mode **OLA**](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager), puis revenir au mode par défaut.
 
 Une fois la nouvelle règle activée, il ne sera plus possible de revenir à l’ancienne configuration. Les serveurs livrés après la date de déploiement bénéficieront directement de cette nouvelle règle.
 

@@ -5,7 +5,7 @@ updated: 2025-10-10
 ---
 
 > [!primary]
-> 
+>
 > This document is related to a deployment planned for **November 25, 2025**, which will change the way link aggregation (LACP) functions within OVHcloud infrastructures.
 > OVHcloud customers affected by these changes will also receive a communication by e-mail.
 
@@ -16,13 +16,13 @@ This guide presents the new network aggregation architecture implemented on OVHc
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal).
-- Have configured link aggregation (LACP) on your public or private interfaces (excluding OLA).
+- Link aggregation (LACP) configured on its public or private interfaces (excluding OLA).
 
 ## Instructions
 
 ### What's Changing
 
-Until now, the aggregation (LACP) of network interfaces was performed on ports belonging to the **same Network Interface Card (NIC)**. This configuration already ensured redundancy in case of a ToR switch failure but did not cover the risk of a NIC failure.
+Until now, the aggregation (LACP) of network interfaces was performed on ports belonging to the **same Network Interface Card (NIC)**. This configuration already ensured redundancy in case of a ToR (Top-of-Rack) switch failure but did not cover the risk of a NIC failure.
 
 From now on:
 
@@ -35,13 +35,13 @@ If you do not use LACP link aggregation on your server, **no action is required*
 
 ### How to Apply the Change on Your Servers
 
-When reconfiguring aggregations, the new rule will be applied automatically. To activate the new rule, you can also switch to **OLA** mode, then return to the default mode.
-Once the new rule is activated, it will no longer be possible to revert to the old configuration. Servers delivered after the deployment date will directly benefit from this new rule.
+To activate the new rule, you need to [switch to **OLA** mode](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager), then revert to the default mode.
+Once the new rule is activated, it will no longer be possible to revert to the old configuration. Servers delivered after the deployment date will immediately benefit from this new rule.
 
 > [!warning]
-> For the changes to take effect, you must **reconfigure the declared MAC addresses** in your operating system.
+> If you plan on switching to the new aggregation rule, you will need to update the MAC addresses assigned to each bond in your operating system.
 >
-> In case of incorrect configuration in the OS, resilience might not be effective
+> In case of incorrect configuration in the OS, resilience might not be effective.
 
 ### Benefits
 
