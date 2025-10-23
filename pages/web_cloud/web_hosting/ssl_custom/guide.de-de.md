@@ -147,11 +147,11 @@ Wenn Sie diese Anleitung in diesem Schritt beginnen, da Sie bereits über ein ex
 
 **Bevor Sie die Installation des SSL-Zertifikats auf Ihrem Webhosting** abschließen, überprüfen Sie, dass **alle Domains und Subdomains**, die von Ihrem SSL-Zertifikat betroffen sind:
 
-- auf die IP-Adresse Ihres Webhostings verweisen.
-- auf einem der Webseiten Ihres Webhostings deklariert sind.
-- verfügen nicht bereits über ein aktives SSL-Zertifikat.
+- Auf die IP-Adresse Ihres Webhostings verweisen.
+- Auf einem der Webseiten Ihres Webhostings deklariert sind.
+- Nicht bereits über ein aktives SSL-Zertifikat verfügen.
 
-Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
+Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
 
 - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
