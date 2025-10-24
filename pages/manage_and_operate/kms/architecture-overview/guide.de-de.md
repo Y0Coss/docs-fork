@@ -1,7 +1,7 @@
 ---
 title: "OKMS Architecture overview"
 excerpt: "Discover how we handle the security of the OKMS infrastructure"
-updated: 2025-10-22
+updated: 2025-10-24
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ This guide explains how we handle the resilience of the OKMS infrastructure used
 
 ## Instructions
 
-The OKMS architecture has 3 main objectives:
+The OKMS architecture has three main objectives:
 
 - **Confidentiality**: Assure that no one except you can access your key.
 - **Availability**: Offering a high level of resilience and therefore high availability.
@@ -27,15 +27,17 @@ Even the OVHcloud employees cannot access your keys.
 
 Each OKMS region is fully independent from the others and uses dedicated hosts.
 
-#### 1AZ regions
+#### 1-AZ regions
 
-On single AZ regions, architecture is based on zones, which consists of distinct datacenter buildings where servers are spread accross. To increase resilience in 1AZ regions, a database replica server is deployed in a distinct nearby region. Replication to the remote region will may be a few seconds at most behind the main region.
+The architecture of a single-AZ region is based on two zones located in distinct buildings within one or more datacenters of the same region, where the servers are spread.
+
+To increase resilience in 1-AZ regions, a database replica server is deployed in a distinct nearby region. Replication to the remote region may take a few seconds longer than replication to the main region.
 
 ![Architecture overview](images/KMS_Overview_1AZ.png){.thumbnail}
 
-#### 3AZ regions
+#### 3-AZ regions
 
-On 3AZ regions, architecture is duplicated across the 3 Availability Zones.
+On 3-AZ regions, mono-AZ architecture is duplicated across 3 Availability Zones.
 
 ![Architecture overview](images/KMS_Overview_3AZ.png){.thumbnail}
 
@@ -49,20 +51,20 @@ These hosts are partitioned into two different zones so that any single hardware
 
 - **DB Replication**
 
-The KMS will not return a success status for the write operations (e.g. creation or import of key material) unless that has been successfully replicated on at least 2 database hosts (the primary and the synchronous replica). This is to ensure that if one of the databases hosts is lost, no data will be lost.
+The KMS will not return a success status for write operations (e.g. creation or import of key material) unless the data has been successfully replicated to at least 2 database hosts (the primary and the synchronous replica). This is to ensure that if one of the databases hosts is lost, no data will be lost.
 
-An auto-failover mechanism in also in place that will re-assign the database hosts roles in case the current primary or synchronous replica becomes unavailable. This means that if any of the 3 database hosts becomes unavailable, there will be no service disruption (apart from during the failover itself, that might take around 1 minute).
+An auto-failover mechanism in also in place to automatically reassign the database hosts roles in case the current primary or synchronous replica becomes unavailable. This means that if any of the 3 database hosts becomes unavailable, there will be no service interruption, except during the short failover phase (approximately one minute).
 
-However if 2 zones or databases hosts become unavailable simultaneously, the OKMS will switch to read-only and write operations will fail (creation of new keys, secrets, metadata update...). Existing keys will still be available to perform any cryptographic operations, and existing secrets will remain readable.
+However, if 2 zones or 2 databases hosts become unavailable simultaneously, the OKMS will switch to read-only mode and write operations will fail (creation of new keys, secrets management, metadata updates, etc.). Existing keys will still be available to perform any cryptographic operations, and existing secrets will remain readable.
 
 - **DB Backups**
 
-Incremental backups are taken every 5 minutes at most, and a full backup is taken daily. Each backup is stored in two different regions
+Incremental backups are taken every 5 minutes at most, and a full backup is taken daily. Each backup is stored in two different regions.
 These backups are kept for 30 days.
 
 #### Data security
 
-All customer data is always stored encrypted in the databases and the database backups themselves are encrypted.
+All customer data is always stored encrypted in the databases, and the database backups themselves are encrypted.
 
 #### Backup location
 
@@ -104,7 +106,7 @@ The backup location depends on the location of the OKMS.
 #### What happens if one host in a zone is lost?
 
 Keys remain available and traffic is redirected to another zone.
-Requests in flight can timeout or return errors, depending on which host is affected
+Requests in flight can timeout or return errors, depending on which host is affected.
 
 #### What happens if one zone is lost?
 
@@ -113,7 +115,7 @@ Requests in flight can timeout or return errors.
 
 #### What happens if a whole region is lost?
 
-3AZ regions are designed to prevent this scenario, however it could occur on 1AZ regions.
+3-AZ regions are designed to prevent this scenario, however it could occur on 1-AZ regions.
 
 In that case, the keys created in the last seconds can be lost and the OKMS becomes unavailable.
 Database replica will be used at the region and rebuilt to retrieve stored keys.
