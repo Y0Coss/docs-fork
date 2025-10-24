@@ -1,1 +1,0 @@
-Gdy tylko nazwa domeny posiada [aktywny certyfikat SSL za pośrednictwem hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting) i strona internetowa jest gotowa do przełączenia na *HTTPS*, można to zrobić.
