@@ -38,13 +38,29 @@ This ensures that all data traffic remains on the private network, with no Inter
 
 ## Overview
 
-The diagram below illustrates how an Enterprise File Storage (EFS) volume connects to a Public Cloud instance through a private vRack network. Both services share the same VLAN ID and subnet to ensure network connectivity within the vRack.
-
-EFS endpoints are allocated from a reserved service address range, while Access Control Lists (ACLs) must authorize the instance’s private IP for secure access.
-
-This configuration keeps all NFS traffic on the private network, with no exposure to the public Internet.
+The diagram below illustrates how an Enterprise File Storage (EFS) volume connects to a Public Cloud instance through a private vRack network.
 
 ![global schema](images/architecture.png){.thumbnail}
+
+1. Critical Match — VLAN ID
+
+The VLAN ID (e.g., `1900`) must be identical in both the Public Cloud Private Network and the vRack Services configuration.
+
+2. Critical Match — Subnet CIDR
+
+The Subnet CIDR (e.g., `10.235.0.0/24`) must also match across both services to ensure they operate within the same logical network in the vRack.
+
+3. Info — Service Address Range
+
+The Service Address Range (e.g., `10.235.0.240/28`) is a reserved subset of the main subnet. These IPs are exclusively used by EFS service endpoints (e.g., `10.235.0.241`) and must not be assigned to instances.
+
+4. Security — ACL Rule
+
+The EFS volume’s Access Control List (ACL) must explicitly authorize the private IP of any instance requiring access (e.g., `10.235.0.15`).
+
+5. Concept — vRack Services
+
+vRack Services acts as a secure network bridge, allowing managed services such as EFS outside your Public Cloud project to connect seamlessly to your private vRack network.
 
 ## Instructions
 
@@ -213,7 +229,6 @@ If no errors occur, the EFS volume will now automatically mount on boot.
 | Symptom                            | Likely Cause                                              | Resolution                                                                                                                                     |
 | ---------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | mount.nfs: No route to host        | Instance and EFS not in the same region, or wrong VLAN ID | Ensure the instance, EFS, and vRack Services are in the same region. Recreate the vRack Service using the same VLAN ID as the private network. |
-| ARPING ... Received 0 response(s)  | vRack Services and private network not on the same VLAN   | Update the vRack Services configuration to use the same VLAN ID as the OpenStack private network.                                              |
 | mount.nfs: access denied by server | EFS ACL missing or incorrect                              | Add the instance IP (e.g., `10.235.0.x`) or subnet (e.g., `10.235.0.0/24`) with protocol NFSv3 and Read/Write access.                          |
 | mount command hangs indefinitely   | Wrong NFS version or unresponsive endpoint                | Use: `-o vers=3,timeo=600,retrans=2` to force NFSv3 and define timeouts.                                                                       |
 | mount succeeds but no read/write   | ACLs or POSIX permissions too strict                      | Adjust ACLs or update volume-level permissions.                                                                                               |
