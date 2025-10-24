@@ -1,7 +1,7 @@
 ---
 title: Load balancing methods
 excerpt: Discover the various load balancing algorithms available with the OVHcloud Load Balancer
-updated: 2025-10-23
+updated: 2025-10-24
 ---
 
 ## Objective

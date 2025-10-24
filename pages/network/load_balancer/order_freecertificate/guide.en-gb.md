@@ -1,7 +1,7 @@
 ---
 title: Order a free SSL certificate
 excerpt: Order a free SSL certificate for your web services behind a Load Balancer
-updated: 2025-10-23
+updated: 2025-10-24
 ---
 
 ## Objective

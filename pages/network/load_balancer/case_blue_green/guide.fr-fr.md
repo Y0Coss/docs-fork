@@ -1,7 +1,7 @@
 ---
 title: "Déploiement d'une infrastructure blue-green"
 excerpt: "Ce guide vous montre comment déployer une infrastructure blue-green avec le Load Balancer OVHcloud"
-updated: 2025-10-23
+updated: 2025-10-24
 ---
 
 ## Objectif
@@ -36,7 +36,7 @@ Le principe d'un déploiement **blue-green** implique de pouvoir basculer facile
 
 Dans ce scénario, votre service Load Balancer joue un rôle central. C'est l'élément que vous utilisez pour exposer simultanément vos deux infrastructures (production et développement) à différents utilisateurs.
 
-L'infrastructure de production est accessible par vos clients sur le service HTTP standard (port 80), et votre infrastructure de développement est accessible par les développeurs et administrateurs sur le port non standard 8888.
+L'infrastructure de production est accessible pour vos clients sur le service HTTP standard (port 80), et votre infrastructure de développement est accessible pour les développeurs et administrateurs sur le port non standard 8888.
 
 Au cours de la phase de configuration initiale, les rôles sont provisoirement attribués à chaque composant de l'infrastructure. **L'infrastructure A** sert d'environnement de production initial, tandis que **l'infrastructure B** sert d'environnement de staging. À ce stade, nous allons les considérer comme similaires l'une à l'autre.
 
@@ -50,7 +50,7 @@ Le schéma ci-dessous donne une idée générale de l'architecture :
 
 Cette infrastructure est composée d'une ferme de serveurs qui sera associée plus tard à un front-end de votre Load Balancer. Cette ferme exposera un service HTTP, TCP ou UDP au front-end. Elle assure également l'équilibrage de charge en envoyant le trafic entrant du front-end aux serveurs. Pour plus de détails sur le rôle des différents composants du service Load Balancer OVHcloud, vous pouvez lire le guide suivant : [Présentation du service OVHcloud Load Balancer ](/pages/network/load_balancer/use_presentation).
 
-Dans notre scénario, nous allons déclarer une ferme de serveurs pour le service HTTP. Veuillez noter que vous pouvez créer autant de fermes (ainsi que de services TCP et/ou UDP) que nécessaire pour que votre service final soit accessible à vos clients.
+Dans notre scénario, nous allons déclarer une ferme de serveurs pour le service HTTP. Veuillez noter que vous pouvez créer autant de fermes (ainsi que de services TCP et/ou UDP) que nécessaire pour que votre service final soit accessible pour vos clients.
 
 #### Via l'espace client OVHcloud
 
@@ -303,7 +303,7 @@ Voici le résultat attendu dans l'espace client OVHcloud après la mise à jour 
 |frontendId|Votre ID de front-end de production|70090|
 |defaultFarmId|Votre ID de ferme de serveurs de développement|77212|
 
-#### Pour appliquer vos modifications et basculer effectivement les environnements de production et de développement
+#### Appliquer vos modifications et basculer effectivement les environnements de production et de développement
 
 > [!api]
 >

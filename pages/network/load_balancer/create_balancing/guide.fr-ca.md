@@ -1,7 +1,7 @@
 ---
 title: Modes de répartition
 excerpt: Découvrez les différents modes de répartition de charge du Load Balancer OVHcloud
-updated: 2025-10-23
+updated: 2025-10-24
 ---
 
 ## Objectif

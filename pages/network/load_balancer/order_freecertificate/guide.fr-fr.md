@@ -1,7 +1,7 @@
 ---
 title: "Commande d'un certificat SSL gratuit"
 excerpt: Commander un certificat SSL gratuit pour vos services web derrière un Load Balancer
-updated: 2025-10-23
+updated: 2025-10-24
 ---
 
 ## Objectif
