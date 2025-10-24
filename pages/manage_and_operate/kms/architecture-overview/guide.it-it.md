@@ -55,7 +55,7 @@ The KMS will not return a success status for write operations (e.g. creation or 
 
 An auto-failover mechanism in also in place to automatically reassign the database hosts roles in case the current primary or synchronous replica becomes unavailable. This means that if any of the 3 database hosts becomes unavailable, there will be no service interruption, except during the short failover phase (approximately one minute).
 
-However, if 2 zones or 2 databases hosts become unavailable simultaneously, the OKMS service will switch to read-only mode and write operations will fail (creation of new keys, secrets management, metadata updates, etc.). Existing keys will still be available to perform any cryptographic operations, and existing secrets will remain readable.
+However, if 2 zones or 2 databases hosts become unavailable simultaneously, the OKMS will switch to read-only mode and write operations will fail (creation of new keys, secrets management, metadata updates, etc.). Existing keys will still be available to perform any cryptographic operations, and existing secrets will remain readable.
 
 - **DB Backups**
 
@@ -117,7 +117,7 @@ Requests in flight can timeout or return errors.
 
 3-AZ regions are designed to prevent this scenario, however it could occur on 1-AZ regions.
 
-In that case, the keys created in the last seconds can be lost and the KMS becomes unavailable.
+In that case, the keys created in the last seconds can be lost and the OKMS becomes unavailable.
 Database replica will be used at the region and rebuilt to retrieve stored keys.
 
 ## PCI-DSS certification
