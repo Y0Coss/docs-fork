@@ -1,0 +1,1 @@
+Dès que votre nom de domaine dispose d'un [certificat SSL actif via votre hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) et que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.

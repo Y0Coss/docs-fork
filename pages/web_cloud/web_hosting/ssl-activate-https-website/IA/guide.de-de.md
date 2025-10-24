@@ -1,0 +1,1 @@
+Sobald Ihr Domainname über [einen aktiven SSL-Zertifikat auf Ihrem Webhosting](/pages/web_cloud/web_hosting/ssl_on_webhosting) verfügt und Ihre Website bereit ist, auf *HTTPS* umgestellt zu werden, können Sie dies aktivieren.
