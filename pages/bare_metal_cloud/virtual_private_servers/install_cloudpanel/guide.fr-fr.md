@@ -40,17 +40,15 @@ Remplacez :
 
 Mettez votre système d’exploitation à jour. Cette opération peut prendre plusieurs minutes.
 
-Exemple pour AlmaLinux 9 et Rocky Linux 8 :
-
-```bash
-sudo dnf -y update
-```
-
-Debian / Ubuntu :
-
-```bash
-sudo apt update && sudo apt -y upgrade
-```
+> [!tabs]
+> Debian et Ubuntu
+>> ```bash
+>> sudo apt update && sudo apt -y upgrade
+>> ```
+> AlmaLinux 9 et Rocky Linux 8
+>> ```bash
+>> sudo dnf -y update
+>> ```
 
 ### Étape 2 — Ouvrir les ports nécessaires (pare-feu)
 
@@ -114,17 +112,15 @@ sudo firewall-cmd --list-all
 
 1. Installez `wget`
 
-Pour Debian et Ubuntu :
-
-```bash
-sudo apt -y install wget
-```
-
-Pour AlmaLinux et Rocky :
-
-```bash
-sudo dnf -y install wget
-```
+> [!tabs]
+> Debian et Ubuntu
+>> ```bash
+>> sudo apt -y install wget
+>> ```
+> AlmaLinux et Rocky Linux
+>> ```bash
+>> sudo dnf -y install wget
+>> ```
 
 2. Téléchargez le script d’installation de CloudPanel :
 
