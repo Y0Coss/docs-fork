@@ -75,15 +75,15 @@ The following form will be displayed:
 - **Resources**: Add resources or resource groups to be covered by the policy. The resources available are filtered by the product type selected beforehand.
 - **Actions**.
 
-There are 4 different ways to add actions:
+**There are 4 different ways to add actions:**
 
-##### Activating the Authorise all actions option
+##### 1 - Activating the "Authorise all actions" option
 
 ![Create a policy](images/create_a_policy_02.png){.thumbnail}
 
 When activating this option, you allow all actions related to the selected products. This includes all existing actions as well as actions added in the future for these product types.
 
-- Selecting a group of managed permissions
+##### 2 - Selecting a group of managed permissions
 
 We provide permission groups that are preconfigured and managed by OVHcloud. You can select one or more groups by selecting them from the available list.
 
@@ -93,7 +93,7 @@ Details of the content of the managed permission groups are available in the [as
 
 Managed action groups can be used in addition to unit actions.
 
-##### Adding actions manually
+##### 3 - Adding actions manually
 
 If you know the action name, you can add it manually.
 
@@ -107,7 +107,7 @@ For example, adding `vps:apiovh:ips/*` will grant the following rights:
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-##### Selecting actions from the list
+##### 4 - Selecting actions from the list
 
 Finally, you can select actions from the list.
 
@@ -126,20 +126,21 @@ A search field is available to help identify a specific action on the list.
 > [!primary]
 > Actions related to ordering and billing are not yet available in the OVHcloud IAM.
 
-##### Conditions on policies
+#### Conditions on policies
 
 It's possible to add conditions on IAM policies.
+
 A policy with conditions is valid only if all conditions are validated.
 
 It's possible to add conditions on:
 
-- Tag on resource
-- Name of resource
-- Product Type
-- IP address request
-- Weekday
-- Date
-- Hour
+- a resource tag;
+- the resource name;
+- the product type;
+- the IP of the request;
+- the day of the week;
+- the date;
+- the time.
 
 ![Créer une politique](images/conditions.png){.thumbnail}
 

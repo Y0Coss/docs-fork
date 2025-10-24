@@ -75,15 +75,15 @@ Le formulaire suivant s'affiche :
 - **Ressources** : ajoutez des ressources ou des groupes de ressources à couvrir par la politique. Les ressources disponibles sont filtrées par type de produit préalablement sélectionné.
 - **Actions**.
 
-Il existe 4 façons d'ajouter des actions :
+**Il existe 4 façons d'ajouter des actions :**
 
-##### Activer l'option Autoriser toutes les actions
+##### 1 - Activer l'option « Autoriser toutes les actions »
 
 ![Créer une politique](images/create_a_policy_02.png){.thumbnail}
 
 Lors de l'activation de cette option, vous autorisez toutes les actions liées aux produits sélectionnés. Cela inclut toutes les actions existantes ainsi que les actions ajoutées à l'avenir pour ces catégories de produits.
 
-- En sélectionnant un groupe de permissions managées
+##### 2 - Sélectionner un groupe de permissions managées
 
 Nous mettons à disposition des groupes de permissions préconfigurées et managées par OVHcloud.
 Vous pouuvez sélectionner un ou plusieurs groupes en les sélectionnant parmi la liste disponible.
@@ -94,7 +94,7 @@ Le détail du contenu des groupes de permissions managées est disponible dans l
 
 Il est possible d'utiliser les groupes d'actions managées en complément d'actions unitaires.
 
-##### Ajouter manuellement des actions
+##### 3 - Ajouter manuellement des actions
 
 Si vous connaissez le nom de l'action, vous pouvez l'ajouter manuellement.
 
@@ -108,7 +108,7 @@ Par exemple, l'ajout de `vps:apiovh:ips/*` accordera les droits suivants :
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-##### Sélectionner des actions dans la liste
+##### 4 - Sélectionner des actions dans la liste
 
 Des actions peuvent être sélectionnées dans la liste.
 
@@ -127,20 +127,21 @@ Un champ de recherche est disponible pour vous aider à identifier une action sp
 > [!primary]
 > Les actions liées à la commande et la facturation ne sont pas encore disponibles dans l'IAM OVHcloud.
 
-##### Conditions dans les politiques
+#### Conditions sur les politiques
 
 Il est possible d'ajouter des conditions sur les politiques IAM.
+
 Une politique avec des conditions est valide lorsque toutes les conditions sont validées.
 
 Il est possible d'appliquer des conditions sur :
 
-- Un tag de la ressource
-- Le nom de la ressource
-- Le type de produit
-- L'adresse IP de la requête
-- Le jour de la semaine
-- La date
-- L'heure
+- un tag de la ressource ;
+- le nom de la ressource ;
+- le type de produit ;
+- l'adresse IP de la requête ;
+- le jour de la semaine ;
+- la date ;
+- l'heure.
 
 ![Créer une politique](images/conditions.png){.thumbnail}
 
