@@ -145,6 +145,23 @@ Pendant l’installation :
 - Choisissez le serveur web et la base de données de votre choix.
 - L’installeur installe les dépendances nécessaires (cela peut prendre plusieurs minutes).
 
+#### Message « Incorrect hostname » pendant l’installation
+
+Si le message suivant s’affiche pendant l’installation :
+
+```console
+You have incorrect hostname: vps-xxxx-vps-ovh-net  
+Enter new hostname (or Ctrl+C to exit):
+```
+
+Cela signifie que le nom d’hôte (hostname) de votre serveur n’est pas un nom de domaine complet (FQDN). Pour continuer, entrez un nom de domaine valide qui pointe vers votre serveur, par exemple :
+
+```console
+ispmanager.mondomaine.ovh
+```
+
+Si vous ne disposez pas encore d’un nom de domaine lié à votre VPS, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour faire pointer votre nom de domaine vers l’adresse IP de votre VPS.
+
 ### Étape 4 — Première connexion
 
 Une fois l’installation terminée, entrez l’URL `https://<IP_VPS>:1500/ispmgr` dans votre navigateur en remplaçant `<IP_VPS>` par l’adresse IP de votre VPS.
