@@ -1,7 +1,7 @@
 ---
 title: Improving Network Resilience on Bare Metal servers
 excerpt: Discover how to reinforce the resilience of public and private interfaces on your OVHcloud Bare Metal servers with the new network aggregation architecture
-updated: 2025-10-10
+updated: 2025-10-24
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ This guide presents the new network aggregation architecture implemented on OVHc
 
 ## Instructions
 
-### What's Changing
+### What's changing
 
 Until now, the aggregation (LACP) of network interfaces was performed on ports belonging to the **same Network Interface Card (NIC)**. This configuration already ensured redundancy in case of a ToR (Top-of-Rack) switch failure but did not cover the risk of a NIC failure.
 
@@ -33,7 +33,7 @@ From now on:
 
 If you do not use LACP link aggregation on your server, **no action is required** and **no change will be visible for your services**.
 
-### How to Apply the Change on Your Servers
+### How to apply the change on your servers
 
 To activate the new rule, you need to [switch to **OLA** mode](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager), then revert to the default mode.
 Once the new rule is activated, it will no longer be possible to revert to the old configuration. Servers delivered after the deployment date will immediately benefit from this new rule.
