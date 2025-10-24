@@ -53,7 +53,7 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 > **Certificats SSL**
 >
-> Si le domaine initialement utilisé pour accéder à votre site dispose d'un certificat SSL, consultez nos 2 guides :
+> Si le domaine initialement utilisé pour accéder à votre site web dispose d'un certificat SSL, consultez nos 2 guides :
 > - [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Passer son site internet en HTTPS grâce au SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
@@ -114,18 +114,18 @@ Si vous avez fait appel à un prestataire pour la création de votre site, conta
 
 ### Etape 3 - retirer l'ancien nom de domaine <a name="step3"></a>
 
-Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration sur votre site web de votre ancien nom de domaine à l'aide du guide sur la gestion des [sites web sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration de votre ancien nom de domaine sur votre site web à l'aide du guide sur la gestion des [sites web sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > N'oubliez pas de vous occuper de votre certificat SSL *Sectigo EV*, *Sectigo DV* ou *Custom* comme précisé dans [l'étape 1](#step1).
 >
 
-Une fois votre ancien nom de domaine dissocié de votre site web présent sur votre hébergement web et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](/pages/web_cloud/domains/redirect_domain_name). Cela permettra à vos visiteurs d'être automatiquement redirigé vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
+Une fois votre ancien nom de domaine dissocié de votre site web présent sur votre hébergement web et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](/pages/web_cloud/domains/redirect_domain_name). Cela permettra à vos visiteurs d'être automatiquement redirigés vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Liste des IPs de nos hébergements mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+[Liste des adresses IP de nos hébergements mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
 [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
@@ -133,7 +133,7 @@ Une fois votre ancien nom de domaine dissocié de votre site web présent sur vo
 
 [Rediriger un domaine](/pages/web_cloud/domains/redirect_domain_name)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

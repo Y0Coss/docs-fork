@@ -66,15 +66,15 @@ Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'a
 
 #### Vider le cache du Shared CDN
 
-Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple, lors de la mise en production d'une nouvelle version de votre site. Il vous est possible de vider le cache pour chacun de vos noms de domaine ou sous-domaines.
+Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple, lors de la mise en production d'une nouvelle version de votre site. Il vous est possible de vider le cache pour chacun de vos noms de domaine et sous-domaines.
 
-Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis `Purger le CDN`{.action}.
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Purger le CDN`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurer les options du Shared CDN
 
-Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Modifier le CDN`{.action}. 
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Modifier le CDN`{.action}.
 
 > [!warning]
 > 
@@ -196,9 +196,9 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Purge avancée** : Personnalisez votre purge en choisissant les éléments du cache à vider : tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 
-	Depuis l'onglet `Multisite`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Purger le CDN`{.action}.
+    Depuis l'onglet `Multisite`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Purger le CDN`{.action}.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
+    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
 	- *Désactivé* : La ressource est mise en cache avec ses paramètres non triés. Ce qui va créer, par exemple, 2 itérations dans le cache du CDN pour 2 URL ayant les mêmes paramètres dans un ordre différent.
@@ -278,7 +278,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 
 ### Désactiver l'option CDN pour un site web
 
-Cette action permet de désactiver le CDN pour une ou plusieurs de vos nom de domaine ou sous-domaines, sans supprimer l'option CDN de votre hébergement web.
+Cette action permet de désactiver le CDN pour un ou plusieurs de vos noms de domaine ou sous-domaines, sans supprimer l'option CDN de votre hébergement web.
 
 > [!warning]
 >
@@ -358,7 +358,7 @@ L'absence de la mention « *X-CDN* » indique que vous ne passez pas à travers 
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

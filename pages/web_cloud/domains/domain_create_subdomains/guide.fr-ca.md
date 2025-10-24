@@ -176,7 +176,8 @@ Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur
 
 > [!warning]
 >
-> L'ajout d'un nom de domaine ou d'un sous-domaine sur l'un des sites web de votre hébergement web peut nécessiter la mise en place d'un token de validation. Pour un sous-domaine, ce même token n'est pas pris en compte et doit être ajouté non pas pour le sous-domaine mais pour le nom de domaine. Dans ce cas, ajoutez en complément, dans la zone DNS active de votre nom de domaine, le token sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine.
+> L'ajout d'un nom de domaine ou d'un sous-domaine sur l'un des sites web de votre hébergement web peut nécessiter la mise en place d'un **token de validation**.
+> Pour un sous-domaine, ce même token n'est pas pris en compte et doit être ajouté directement dans la zone DNS active du nom de domaine sous la forme d'un enregistrement DNS de type TXT.
 
 #### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine <a name="link-subdomain-case-2"></a>
 
@@ -206,7 +207,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

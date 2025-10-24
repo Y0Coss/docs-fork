@@ -71,7 +71,7 @@ Une fois tous les éléments en votre possession, la récupération de vos fichi
 
 Une fois connecté à votre espace de stockage, il ne vous reste plus qu’à télécharger les fichiers de votre site. **Nous vous invitons à être particulièrement attentifs quant au répertoire sur lequel vous avez installé votre site.** Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour héberger plusieurs sites internet, vous avez sûrement déclaré plusieurs sites web.
 
-Pour vérifier le dossier dans lequel votre site internet est stocké, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
+Pour vérifier le dossier dans lequel votre site web est stocké, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
@@ -132,7 +132,7 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

@@ -8,8 +8,8 @@ updated: 2025-10-23
 
 Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 
-- La configuration de votre nom de domaine avec votre [site web](/pages/web_cloud/web_hosting/multisites_configure_multisite) n’est pas correctement paramétrée vers votre répertoire cible
-- Le dossier cible vers lequel votre nom de domaine pointe ne contient pas de fichiers **« index.html »** ou **« index.php »**
+- La [configuration de votre nom de domaine avec votre site web](/pages/web_cloud/web_hosting/multisites_configure_multisite) n’est pas correctement paramétrée vers votre répertoire cible.
+- Le dossier cible vers lequel votre nom de domaine pointe ne contient pas de fichiers **« index.html »** ou **« index.php »**.
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Assurez-vous également qu'un fichier **index.php** ou **index.html** est prése
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
