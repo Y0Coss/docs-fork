@@ -46,19 +46,43 @@ Mettez votre système d’exploitation à jour. Cette opération peut prendre pl
 
 Exemple pour AlmaLinux 9 et Rocky Linux 8 :
 
-```bash
-sudo dnf -y update
-```
-
 Debian / Ubuntu :
 
 ```bash
 sudo apt update && sudo apt -y upgrade
 ```
 
+```bash
+sudo dnf -y update
+```
+
 ### Étape 2 — Ouvrir les ports nécessaires (pare-feu)
 
 Pour autoriser les connexions entrantes et sortantes, consultez la [documentation officielle d’ISPmanager](https://www.ispmanager.com/docs/ispmanager/system-requirements#firewall) pour connaître les ports à ouvrir selon vos besoins.
+
+#### Exemple d’ouverture de ports pour Debian / Ubuntu
+
+1. Installez `UFW` :
+
+```bash
+sudo apt -y install ufw
+```
+
+2. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
+
+```bash
+sudo ufw allow 22/tcp
+sudo ufw allow 1500/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+```
+
+3. Activez `UFW` et vérifiez son statut (la valeur « ALLOW » est attendue) :
+
+```bash
+sudo ufw enable
+sudo ufw status
+```
 
 #### Exemple d’ouverture de ports pour AlmaLinux
 
@@ -88,30 +112,6 @@ sudo firewall-cmd --add-port=1500/tcp --permanent
 ```bash
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-all
-```
-
-#### Exemple d’ouverture de ports pour Debian / Ubuntu
-
-1. Installez `UFW` :
-
-```bash
-sudo apt -y install ufw
-```
-
-2. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
-
-```bash
-sudo ufw allow 22/tcp
-sudo ufw allow 1500/tcp
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-```
-
-3. Activez `UFW` et vérifiez son statut (la valeur « ALLOW » est attendue) :
-
-```bash
-sudo ufw enable
-sudo ufw status
 ```
 
 ### Étape 3 — Installer ISPmanager
