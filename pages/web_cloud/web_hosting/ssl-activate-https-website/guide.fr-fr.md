@@ -94,7 +94,7 @@ Sachez que si vous utilisez un « site clés en main », sa structure gère au
 
 ### Étape 3 - Activer le HTTPS sur votre site web <a name="https-enable"></a>
 
-Dès que votre [nom de domaine dispose d'un certificat SSL actif](/pages/web_cloud/web_hosting/ssl_on_webhosting) via votre hébergement web et que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.
+Dès que votre nom de domaine dispose d'un [certificat SSL actif via votre hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) et que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.
 
 > [!warning]
 >

@@ -22,7 +22,7 @@ Un site web composé essentiellement de pages web statiques garantit un meilleur
 
 ## En pratique
 
-Les [hébergements web mutualisés](/links/web/hosting) permettent de déclarer des domaines ou sous-domaines sur les sites web qu'il contient. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
+Un [hébergement web mutualisé](/links/web/hosting) permet de déclarer des domaines ou sous-domaines sur les sites web qu'ils contient. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
 
 Pour vous aider à déclarer un domaine ou un sous-domaine sur l'un des sites web de votre hébergement, consultez notre page « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
