@@ -844,13 +844,180 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> [Approche générique pour le provisionnement de share](https://docs.openstack.org/manila/latest/admin/generic_driver.html){.external}
 >> [Plugin officiel Manila CSI sur GitHub](https://github.com/kubernetes/cloud-provider-openstack/tree/master/examples/manila-csi-plugin){.external}
 >>
-> Via Terraform (bientôt disponible)
->>
->> > [!primary]
->> >
->> > La configuration via Terraform sera bientôt détaillée ici.
->> >
->>
+> Via Terraform  
+>> **1\. Prérequis additionnels**  
+>>  
+>> - Vous disposez déjà d'un environnement [Terraform fonctionnel](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).  
+>>  
+>> > [!primary]  
+>> >  
+>> > NB : Vous pouvez trouver des exemples utiles [ici](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service){.external}  
+>> >  
+>>  
+>> **2\. Déclarer le fournisseur OpenStack**  
+>>  
+>> Ajoutez la configuration suivante à votre `main.tf` pour spécifier les fournisseurs Terraform requis :  
+>>  
+>> ```  
+>> vim main.tf  
+>>  
+>> terraform {  
+>>   required_providers {  
+>>     ovh = {  
+>>       source  = "ovh/ovh"  
+>>     }  
+>>  
+>>     openstack = {  
+>>       source  = "terraform-provider-openstack/openstack"  
+>>     }  
+>>   }  
+>> }  
+>> ```  
+>>  
+>> Ce bloc garantit que Terraform utilise les fournisseurs corrects pour gérer les ressources OVH et OpenStack.  
+>>  
+>> **3\. Récupérer les informations sur votre réseau privé**  
+>>  
+>> Ajoutez les blocs suivants à votre fichier `main.tf` pour récupérer les détails de votre réseau privé et sous-réseau :  
+>>  
+>> ```bash  
+>> data "openstack_networking_network_v2" "private_network" {  
+>>   name   = "<YOUR_PRIVATE_NETWORK_NAME>"  
+>>   region = "<YOUR_REGION_NAME>"  
+>> }  
+>>  
+>> data "openstack_networking_subnet_v2" "private_subnet" {  
+>>   name   = "<YOUR_PRIVATE_SUBNET_NAME>"  
+>>   region = "<YOUR_REGION_NAME>"  
+>> }  
+>> ```  
+>>  
+>> Ces blocs de données permettent à Terraform de requêter OpenStack et de récupérer les détails nécessaires de votre réseau privé et sous-réseau, requis pour configurer le service de stockage de fichiers.  
+>>  
+>> **4\. Créer un réseau de partage**  
+>>  
+>> Ajoutez la ressource suivante à votre `main.tf` pour créer un réseau de partage pour votre service de stockage de fichiers :  
+>>  
+>> ```bash  
+>> resource "openstack_sharedfilesystem_sharenetwork_v2" "sharenetwork" {  
+>>   name              = "<YOUR_SHARE_NETWORK_NAME>"  
+>>   region            = "<YOUR_REGION_NAME>"  
+>>   neutron_net_id    = data.openstack_networking_network_v2.private_network.id  
+>>   neutron_subnet_id = data.openstack_networking_subnet_v2.private_subnet.id  
+>> }  
+>> ```  
+>>  
+>> Cette ressource crée un réseau de partage dans OpenStack, l'associant à votre réseau privé et sous-réseau existants. Elle est nécessaire pour provisionner et gérer des systèmes de fichiers partagés.  
+>>  
+>> **5\. Créer un partage NFS**  
+>>  
+>> Ajoutez la ressource suivante à votre `main.tf` pour créer un partage NFS sur votre service de stockage de fichiers :  
+>>  
+>> ```bash  
+>> vim main.tf  
+>>  
+>>  
+>> resource "openstack_sharedfilesystem_share_v2" "share" {  
+>>   name             = "<YOUR_SHARE_NAME>"  
+>>   region           = "<YOUR_REGION_NAME>"  
+>>   share_type       = "generic_0"  
+>>   share_proto      = "NFS"  
+>>   size             = 150  
+>>   share_network_id = openstack_sharedfilesystem_sharenetwork_v2.sharenetwork.id  
+>> }  
+>> ```  
+>>  
+>> Cette ressource provisionne un partage NFS dans OpenStack, lié au réseau de partage précédemment créé. Ajustez la `size` et `share_type` selon vos besoins.  
+>>  
+>> **6\. Autoriser une machine virtuelle client**  
+>>  
+>> Assurez-vous que votre machine virtuelle client est connectée au même réseau privé que votre partage.  
+>>  
+>> Récupérez l'adresse IP privée de la machine virtuelle :  
+>>  
+>> ```bash  
+>> openstack server show --os-region-name <YOUR_REGION_NAME> <YOUR_CLIENT_VM_NAME> -c addresses -f value  
+>> ```  
+>>  
+>> Exemple de sortie :  
+>>  
+>> ```bash  
+>> {'my-private-net': ['10.1.0.123', '57.123.88.111']}  
+>> ```  
+>>  
+>> Utilisez l'IP privée (ex. `10.1.0.123`) pour accorder l'accès au partage NFS :  
+>>  
+>> ```bash  
+>> resource "openstack_sharedfilesystem_share_access_v2" "share_access" {  
+>>   share_id     = openstack_sharedfilesystem_share_v2.share.id  
+>>   region       = "<YOUR_REGION_NAME>"  
+>>   access_type  = "ip"  
+>>   access_to    = "10.1.0.123"  
+>>   access_level = "rw"  
+>> }  
+>> ```  
+>>  
+>> Cette ressource autorise la machine virtuelle client spécifiée à accéder au partage NFS avec des permissions en lecture/écriture.  
+>>  
+>> **7\. Récupérer le chemin d'exportation**  
+>>  
+>> Ajoutez le bloc de sortie suivant à votre `main.tf` pour récupérer le chemin d'exportation du partage NFS :  
+>>  
+>> ```bash  
+>> output "export_path" {  
+>>   value = openstack_sharedfilesystem_share_v2.share.export_locations[0].path  
+>> }  
+>> ```  
+>>  
+>> Cette sortie fournit le chemin d'exportation NFS, utilisable par les machines virtuelles clientes pour monter le partage.  
+>>  
+>> **8\. Monter le partage sur votre machine virtuelle client**  
+>>  
+>> Connectez-vous à votre machine virtuelle client et installez les utilitaires NFS nécessaires :  
+>>  
+>> ```bash  
+>> sudo apt update && sudo apt install -y nfs-common  
+>> ```  
+>>  
+>> Créez un point de montage et montez le partage :  
+>>  
+>> ```bash  
+>> sudo mkdir -p /mnt/share  
+>> sudo mount -t nfs4 <NFS_EXPORT_PATH> /mnt/share  
+>> ```  
+>>  
+>> Remplacez `<NFS_EXPORT_PATH>` par le chemin d'exportation récupéré via Terraform (ex. `10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef`).  
+>>  
+>> Vérifiez le montage :  
+>>  
+>> ```bash  
+>> df -h /mnt/share  
+>> ```  
+>>  
+>> Rendre le montage persistant après les redémarrages :  
+>>  
+>> ```bash  
+>> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab  
+>> ```  
+>>  
+>> Cela garantit que votre partage NFS est automatiquement remonté après les redémarrages de la machine virtuelle.  
+>>  
+>> **9\. Vérifier la capacité et l'utilisation**  
+>>  
+>> Une fois le partage NFS monté, vérifiez son espace disponible et son utilisation :  
+>>  
+>> ```bash  
+>> df -h /mnt/share  
+>> ```  
+>>  
+>> Exemple de sortie :  
+>>  
+>> ```bash  
+>> Filesystem                          Size  Used  Avail Use% Mounted on  
+>> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share  
+>> ```  
+>>  
+>> Cette commande affiche la taille totale, l'espace utilisé et l'espace disponible sur votre partage NFS monté.
 
 ## Aller plus loin
 
