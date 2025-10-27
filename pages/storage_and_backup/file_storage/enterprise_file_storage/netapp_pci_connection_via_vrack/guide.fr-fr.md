@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Connecter une instance Public Cloud à un volume EFS via le réseau privé vRack"
 excerpt: "Découvrez comment connecter une instance Public Cloud à un volume Enterprise File Storage (EFS) via le réseau privé vRack."
-updated: 2025-10-23
+updated: 2025-10-27
 ---
 
 <style>

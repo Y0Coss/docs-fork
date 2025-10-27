@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Connect a Public Cloud instance to an EFS Volume via vRack Private Network"
 excerpt: "Find out how to connect a Public Cloud instance to an Enterprise File Storage (EFS) volume using a vRack private network."
-updated: 2025-10-23
+updated: 2025-10-27
 ---
 
 <style>
@@ -44,7 +44,7 @@ The diagram below illustrates how an Enterprise File Storage (EFS) volume connec
 
 1. Critical Match — VLAN ID
 
-    The VLAN ID (e.g. `1900`) must be identical in both the Public Cloud private network and the vRack services configuration.
+    The VLAN ID (e.g. `1900`) must be identical in both the Public Cloud private network and the vRack Services configuration.
 
 2. Critical Match — Subnet CIDR
 
@@ -153,7 +153,7 @@ For detailed guidance, see OVHcloud’s official documentation: [vRack Services 
 
 3. Select your vRack.
 
-4. If no vRack Services have been created yet, activate the vRack Services and follow the [first method: creation via vRack services](step4-a-region-selection) from the third point.
+4. If no vRack Services have been created yet, activate the vRack Services and follow the [first method: creating via vRack Services](step4-a-region-selection) from the third point.
 
 5. If you have already created a vRack service, select your dedicated service.
 
