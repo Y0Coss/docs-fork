@@ -1,4 +1,7 @@
+id: b03a1742-7d1b-4af8-bcf0-5bc226816be0
+full_slug: sms-senders
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +9,4 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
-id: b03a1742-7d1b-4af8-bcf0-5bc226816be0
-full_slug: sms-senders
+- pt-pt
