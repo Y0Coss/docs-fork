@@ -1,7 +1,7 @@
 ---
 title: Exchange - Comment gérer les logs
 excerpt: Découvrez comment visualiser et gérer les logs sur votre offre Private Exchange ou Trusted Exchange
-updated: 2025-10-23
+updated: 2025-10-28
 ---
 
 <style>
@@ -36,6 +36,7 @@ Votre offre Private Exchange ou Trusted Exchange génère donc ses propres logs.
 ## Prérequis
 
 - Avoir souscrit une offre [Private Exchange](/links/web/emails-hosted-exchange) ou [Trusted Exchange](/links/web/emails-trusted-exchange).
+- Un compte Logs Data Platform (LDP). Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
@@ -99,7 +100,7 @@ Depuis la page qui s'affiche, sélectionnez le compte Logs Data Platform souhait
 
 Deux cas de figure se présentent alors pour abonner votre solution Exchange :
 
-> [!tab]
+> [!tabs]
 > **Cas n°1**
 >> **S'abonner à un flux déjà existant sur votre solution Logs Data Platform**
 >>
