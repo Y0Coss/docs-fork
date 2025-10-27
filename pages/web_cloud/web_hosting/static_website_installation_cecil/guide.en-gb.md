@@ -24,7 +24,7 @@ A website essentially composed of static web pages guarantees a better loading t
 - Have an [OVHcloud web hosting plan](/links/web/hosting) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - Be able to transfer files via FTP with a client like [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-- Configure your DNS zone to point your domain name (or subdomain) to your shared web hosting. This is particularly useful if you want to host multiple [websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your shared web hosting.
+- Configure your DNS zone to point your domain name (or subdomain) to your web hosting. This is particularly useful if you want to host multiple [websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your web hosting plan.
 - Install [Composer](https://getcomposer.org/) with the file `composer.phar` in the root of your web hosting or in the target folder of your domain name.
 
 ## Instructions
