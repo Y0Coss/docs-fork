@@ -132,15 +132,15 @@ It's possible to add conditions on IAM policies.
 
 A policy with conditions is valid only if all conditions are validated.
 
-It's possible to add conditions on:
+It's possible to add conditions on these elements:
 
-- a resource tag;
-- the resource name;
-- the product type;
-- the IP of the request;
-- the day of the week;
-- the date;
-- the time.
+- A resource tag
+- The resource name
+- The product type
+- The IP of the request
+- The day of the week
+- The date
+- The time
 
 ![Créer une politique](images/conditions.png){.thumbnail}
 
