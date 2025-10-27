@@ -1,14 +1,14 @@
 ---
-title: 'Installer ISPmanager sur un VPS ou un serveur dédié OVHcloud'
-excerpt: 'Découvrez comment installer le panneau d’administration ISPmanager sur un VPS ou un serveur dédié OVHcloud'
-updated: 2025-10-08
+title: 'Comment installer ISPmanager sur un VPS ou un Serveur Dédié'
+excerpt: 'Découvrez comment installer ISPmanager sur votre VPS ou Serveur Dédié OVHcloud et gérer vos sites web, bases de données et services associés'
+updated: 2025-10-27
 ---
 
 ## Objectif
-  
-ISPmanager est un panneau d’hébergement web tout-en-un qui facilite la gestion des sites web, bases de données, comptes, certificats TLS/Let’s Encrypt et services associés via une interface web. Ce guide vous explique comment installer ISPmanager sur un VPS ou un serveur dédié vierge et accéder à l’interface pour la configuration initiale.
 
-**Découvrez comment installer ISPmanager sur un VPS ou un serveur dédié OVHcloud.**
+[ISPmanager](https://www.ispmanager.com/) est un panneau d’hébergement web tout-en-un qui facilite la gestion des sites web, bases de données, comptes, certificats TLS/Let’s Encrypt et services associés via une interface web. Ce guide vous explique comment installer ISPmanager sur un VPS ou un serveur dédié vierge et accéder à l’interface pour la configuration initiale.
+
+**Découvrez comment installer ISPmanager sur un VPS ou un Serveur Dédié OVHcloud.**
 
 > [!warning]
 >
@@ -19,11 +19,10 @@ ISPmanager est un panneau d’hébergement web tout-en-un qui facilite la gestio
 
 ## Prérequis
 
-- Disposer d’une offre [VPS](/links/bare-metal/vps) ou d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre [espace client OVHcloud](/links/manager) avec une [configuration recommandée](https://www.ispmanager.com/docs/ispmanager/system-requirements).
+- Disposer d’une offre [VPS](/links/bare-metal/vps) ou d’un [Serveur Dédié](/links/bare-metal/bare-metal) dans votre [espace client OVHcloud](/links/manager) avec une [configuration recommandée pour ISPmanager](https://www.ispmanager.com/docs/ispmanager/system-requirements).
 - Disposer d’un accès administrateur (sudo) via SSH à votre serveur.
 
 ## En pratique
-
 
 ### Étape 1 — Connexion et mise à jour du système
 
@@ -46,27 +45,31 @@ Mettez votre système d’exploitation à jour. Cette opération peut prendre pl
 
 > [!tabs]
 > Debian et Ubuntu
+>>
 >> ```bash
 >> sudo apt update && sudo apt -y upgrade
 >> ```
+>>
 > AlmaLinux et Rocky Linux
+>>
 >> ```bash
 >> sudo dnf -y update
 >> ```
+>>
 
-### Étape 2 — Ouvrir les ports nécessaires (pare-feu)
+### Étape 2 — Ouvrir les ports nécessaires sur le pare-feu
 
 Pour autoriser les connexions entrantes et sortantes, consultez la [documentation officielle d’ISPmanager](https://www.ispmanager.com/docs/ispmanager/system-requirements#firewall) pour connaître les ports à ouvrir selon vos besoins.
 
 #### Exemple d’ouverture de ports pour Debian / Ubuntu
 
-1. Installez `UFW` :
+1\. Installez `UFW` :
 
 ```bash
 sudo apt -y install ufw
 ```
 
-2. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
+2\. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
 
 ```bash
 sudo ufw allow 22/tcp
@@ -75,7 +78,7 @@ sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
 
-3. Activez `UFW` et vérifiez son statut (la valeur « ALLOW » est attendue) :
+3\. Activez `UFW` et vérifiez son statut (la valeur « ALLOW » est attendue) :
 
 ```bash
 sudo ufw enable
@@ -84,19 +87,19 @@ sudo ufw status
 
 #### Exemple d’ouverture de ports pour AlmaLinux
 
-1. Installez `firewalld` :
+1\. Installez `firewalld` :
 
 ```bash
 sudo dnf -y install firewalld
 ```
 
-2. Activez et démarrez le service :
+2\. Activez et démarrez le service :
 
 ```bash
 sudo systemctl enable --now firewalld
 ```
 
-3. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
+3\. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
 
 ```bash
 sudo firewall-cmd --add-service=ssh --permanent
@@ -105,7 +108,7 @@ sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --add-port=1500/tcp --permanent
 ```
 
-4. Appliquez la configuration :
+4\. Appliquez la configuration :
 
 ```bash
 sudo firewall-cmd --reload
@@ -114,25 +117,29 @@ sudo firewall-cmd --list-all
 
 ### Étape 3 — Installer ISPmanager
 
-1. Installez `wget`
+1\. Installez `wget` :
 
 > [!tabs]
 > Debian et Ubuntu
+>>
 >> ```bash
 >> sudo apt -y install wget
 >> ```
+>>
 > AlmaLinux 9 et Rocky Linux 8
+>>
 >> ```bash
 >> sudo dnf -y install wget
+>>
 >> ```
 
-2. Téléchargez le script d’installation d'ISPmanager :
+2\. Téléchargez le script d’installation d'ISPmanager :
 
 ```bash
 wget https://download.ispmanager.com/install.eu.sh -O install.eu.sh
 ```
 
-3. Lancez l’installeur :
+3\. Lancez l’installeur :
 
 ```bash
 sudo sh install.eu.sh
@@ -140,7 +147,7 @@ sudo sh install.eu.sh
 
 Pendant l’installation :
 
-- Choisissez la branche stable.  
+- Choisissez la branche stable.
 - Sélectionnez l’édition (Lite/Pro/Host) avec les composants recommandés.
 - Choisissez le serveur web et la base de données de votre choix.
 - L’installeur installe les dépendances nécessaires (cela peut prendre plusieurs minutes).
@@ -174,7 +181,7 @@ L’interface ci-dessous s’affiche :
 
 ![ispmanager install](images/ispmanager-setup-interface.png){.thumbnail}
 
-Par défaut, la première connexion à l’interface d’ISPmanager se fait avec le compte système `root` du serveur. Si vous vous connectez en SSH avec un utilisateur non-root (ex. `almalinux`, `debian`, `ubuntu`) et que `root` n’a pas de mot de passe, exécutez les lignes de commande suivantes :
+Par défaut, la première connexion à l’interface d’ISPmanager se fait avec le compte système `root` du serveur. Si vous vous connectez en SSH avec un utilisateur non-root (ex : `almalinux`, `debian`, `ubuntu`) et que `root` n’a pas de mot de passe, exécutez les lignes de commande suivantes :
 
 Passez en root :
 
