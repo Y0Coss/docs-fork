@@ -49,7 +49,7 @@ In the cluster details, you can find the `Service ID` field, which corresponds t
 
 ![LDP database details](images/ldp_database_details.png)
 
-### Step 2 - Create your subscription
+### Create your subscription
 
 > [!tabs]
 > Via the OVHcloud Control Panel
