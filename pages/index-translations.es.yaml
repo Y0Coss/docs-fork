@@ -309,23 +309,21 @@ web-cloud-phone-and-fax-voip-telephone-lines: Líneas telefónicas
 web-cloud-phone-and-fax-voip-troubleshooting: Resolución de problemas
 web-cloud-phone-and-fax-voip-tutorials: Tutoriales
 web-cloud-hosting: Web hosting
-web-cloud-hosting-automating-tasks-cron: Automatización de tareas (cron)
-web-cloud-hosting-cloud-web-configuration: Configurar un hosting Cloud Web
-web-cloud-hosting-cms: CMS
-web-cloud-hosting-configuring-web-hosting-plan: Configurar un web hosting Personal, Profesional o Performance
-web-cloud-hosting-databases: Bases de datos
-web-cloud-hosting-ftp-and-ssh: FTP y SSH
+web-cloud-hosting-tutorials-cms: CMS
+web-cloud-hosting-configuration-ftp-and-ssh: FTP y SSH
 web-cloud-hosting-getting-started: Primeros pasos
-web-cloud-hosting-general-information: Información General
+web-cloud-hosting-configuration: Configuración
+web-cloud-hosting-configuration-databases: Bases de datos
+web-cloud-hosting-configuration-cms: CMS
+web-cloud-hosting-additional-resources: Recursos adicionales
 web-cloud-hosting-php: PHP
-web-cloud-hosting-redirection-and-authentication: Redirección y autenticación
-web-cloud-hosting-ssl: SSL
-web-cloud-hosting-troubleshooting: Resolución de problemas
+web-cloud-hosting-tutorials-redirection-and-authentication: Redirección y autenticación
+web-cloud-hosting-security: Seguridad
+web-cloud-hosting-troubleshooting: Diagnóstico
 web-cloud-hosting-tutorials: Tutoriales
+web-cloud-hosting-migration: Migración
 web-cloud-hosting-tutorials-wordpress: Tutoriales WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutoriales para hosting Cloud Web
-web-cloud-hosting-website-optimisation: Optimización de su sitio web
-web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeros pasos
 storage-object-storage: Object Storage
