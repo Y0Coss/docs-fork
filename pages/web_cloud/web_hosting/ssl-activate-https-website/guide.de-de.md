@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Website auf HTTPS umstellen"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website auf HTTPS umstellen, nachdem Sie ein SSL-Zertifikat aktiviert haben"
-updated: 2025-10-24
+updated: 2025-10-27
 ---
 
 ## Ziel

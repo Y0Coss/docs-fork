@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Habilitar HTTPS en un sitio web"
 excerpt: "Decubra cómo activar un certificado SSL en un sitio web HTTPS"
-updated: 2025-10-24
+updated: 2025-10-27
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalação e configuração de Cecil, um gerador de sites estáticos (SSG) em PHP"
 excerpt: "Descubra como Cecil lhe permite criar o seu site estático com a ajuda de um motor de template moderno (Jamstack)"
-updated: 2025-10-24
+updated: 2025-10-27
 ---
 
 ## Objetivo

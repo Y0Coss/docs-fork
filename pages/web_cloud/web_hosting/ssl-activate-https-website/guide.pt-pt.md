@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Passar o seu website em HTTPS"
 excerpt: "Saiba como passar o seu website em HTTPS após ter ativado um certificado SSL"
-updated: 2025-10-24
+updated: 2025-10-27
 ---
 
 ## Objetivo

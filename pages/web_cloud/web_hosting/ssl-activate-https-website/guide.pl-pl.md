@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Ustaw HTTPS na stronie WWW"
 excerpt: "Dowiedz się, jak aktywować certyfikat SSL na Twojej stronie WWW poprzez HTTPS"
-updated: 2025-10-24
+updated: 2025-10-27
 ---
 
 ## Wprowadzenie
