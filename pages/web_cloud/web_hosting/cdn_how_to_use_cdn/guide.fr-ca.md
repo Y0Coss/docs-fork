@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
-updated: 2025-10-23
+updated: 2025-10-27
 ---
 
 ## Objectif

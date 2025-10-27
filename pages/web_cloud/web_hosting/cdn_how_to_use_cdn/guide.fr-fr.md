@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
-updated: 2025-10-23
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -173,7 +173,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 #### Configurer les options du CDN Advanced
 
-Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Modifier le CDN`{.action}. 
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Modifier le CDN`{.action}.
 
 > [!primary]
 >
