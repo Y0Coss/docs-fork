@@ -140,7 +140,7 @@ You have 2 methods to delete a subscription:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription/{subscriptionId}
 >> >
 >>
 
