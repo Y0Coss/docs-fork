@@ -19,8 +19,8 @@ updated: 2025-10-27
 
 ## Requirements
 
-- Have an [VPS](/links/bare-metal/vps) or [Dedicated Server](/links/bare-metal/bare-metal) in your [OVHcloud Control Panel](/links/manager) with a [recommended configuration for ISPmanager](https://www.ispmanager.com/docs/ispmanager/system-requirements).
-- Have administrator access (sudo) via SSH to your server.
+- A [VPS](/links/bare-metal/vps) or a [Dedicated Server](/links/bare-metal/bare-metal) in your [OVHcloud Control Panel](/links/manager) with a [recommended configuration for ISPmanager](https://www.ispmanager.com/docs/ispmanager/system-requirements).
+- Administrator access (sudo) via SSH to your server.
 
 ## Instructions
 
