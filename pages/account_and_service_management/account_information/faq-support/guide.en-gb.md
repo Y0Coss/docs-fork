@@ -94,8 +94,8 @@ If the problem persists, please contact our assistance team for help.
 >
 > - European Union (EU): <https://www.ovh.com/auth/>
 > - Canada (CA): <https://ca.ovh.com/auth/>
-
-This may solve some login problems.
+>
+> This may solve some login problems.
 
 ///
 
