@@ -85,7 +85,7 @@ Das folgende Formular wird angezeigt:
 
 Wenn Sie diese Option aktivieren, lassen Sie alle Aktionen zu, die sich auf die ausgewählten Produkte beziehen. Dies schließt alle bestehenden und in Zukunft hinzugefügten Aktionen für diese Produktkategorien ein.
 
-##### 2 - Eine Gruppe verwalteter Berechtigungen auswählen
+##### 2 - Auswählen einer verwalteten Berechtigungsgruppe
 
 Wir stellen Berechtigungsgruppen zur Verfügung, die von OVHcloud vorkonfiguriert und verwaltet werden.
 Sie können eine oder mehrere Gruppen aus der verfügbaren Liste auswählen.
@@ -137,13 +137,13 @@ Eine Richtlinie mit Bedingungen ist gültig, wenn alle Bedingungen validiert sin
 
 Es ist möglich, Bedingungen für folgende Elemente festzulegen:
 
-- Tag auf Ressource;
-- Name der Ressource;
-- Produkttyp;
-- IP-Adresse der Anfrage;
-- Wochentag;
-- Datum;
-- Uhrzeit.
+- Tag der Ressource
+- Name der Ressource
+- Produkttyp
+- IP-Adresse der Anfrage
+- Wochentag
+- Datum
+- Uhrzeit
 
 ![Richtlinie erstellen](images/conditions.png){.thumbnail}
 
