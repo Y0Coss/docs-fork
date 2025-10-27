@@ -94,7 +94,7 @@ Se utilizzi un "sito chiavi in mano", la sua struttura gestisce automaticamente 
 
 ### Step 3 - Attiva il protocollo HTTPS sul tuo sito Web <a name="https-enable"></a>
 
-Appena il tuo nome di dominio dispone di un [certificato SSL attivo tramite il tuo spazio web](/pages/web_cloud/web_hosting/ssl_on_webhosting) e il tuo sito web è pronto per passare a *HTTPS*, puoi attivarlo.
+Appena il tuo nome di dominio dispone di un [certificato SSL attivo tramite il tuo hosting web](/pages/web_cloud/web_hosting/ssl_on_webhosting) e il tuo sito web è pronto per passare a *HTTPS*, puoi attivarlo.
 
 > [!warning]
 >

@@ -17,14 +17,14 @@ Strona www zawierająca statyczne strony internetowe gwarantuje lepszy czas ład
 - Posiadanie [hostingu OVHcloud](/links/web/hosting) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec tych oferowanych domyślnie w naszych pakietach hostingowych.
 - Zapoznanie się z wprowadzaniem wiersza poleceń.
 - Możliwość przesyłania plików przez FTP z klientem, takim jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-- Skonfiguruj swoją strefę DNS, aby przekierować nazwę domeny (lub poddomeny) na Twoje współdzielone hostowanie. Może to być szczególnie przydatne, jeśli chcesz hostować wiele [stron internetowych](/pages/web_cloud/web_hosting/multisites_configure_multisite) na swoim współdzielonym hostingu.
+- Skonfiguruj swoją strefę DNS, aby przekierować nazwę domeny (lub poddomeny) na Twoje współdzielone hostowanie. Może to być szczególnie przydatne, jeśli chcesz hostować wiele [strony WWW](/pages/web_cloud/web_hosting/multisites_configure_multisite) na swoim współdzielonym hostingu.
 - Zainstaluj wcześniej [Composer](https://getcomposer.org/) z plikiem `composer.phar` w katalogu głównym hostingu lub w katalogu docelowym Twojej domeny.
 
 ## W praktyce
 
-Współdzielone [hostowanie internetowe](/links/web/hosting) umożliwia zadeklarowanie domen lub poddomen na stronach internetowych, które zawiera. Domena lub poddomena jest wymagana, aby wdrożyć swoją stronę internetową stworzoną za pomocą **Cecil**.
+Współdzielone [hosting współdzielony](/links/web/hosting) umożliwia zadeklarowanie domen lub poddomen na stronach internetowych, które zawiera. Domena lub poddomena jest wymagana, aby wdrożyć swoją stronę internetową stworzoną za pomocą **Cecil**.
 
-Aby pomóc Ci zadeklarować domenę lub poddomenę na jednej z stron internetowych Twojego hostingu, zapoznaj się z naszą stroną „[Dzielenie się hostowaniem między wiele stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+Aby pomóc Ci zadeklarować domenę lub poddomenę na jednej z stron internetowych Twojego hostingu, zapoznaj się z naszą stroną "[Dzielenie się hostowaniem między wiele stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 ### Utwórz katalog, w którym będą Twoje pliki
 
@@ -87,7 +87,7 @@ Teraz możesz zobaczyć wynik wyświetlając nazwę Twojej domeny:
 
 Aby zobaczyć wynik Twojej strony w przeglądarce, zmień wskazanie Twojej domeny lub subdomeny w katalogu `_site` utworzonym poprzednio podczas instalacji **Cecil**.
 
-Jeśli Twoja domena lub poddomena znajduje się na serwerze OVHcloud, zapoznaj się z naszymi przewodnikami dotyczącymi [konfiguracji DNS](/pages/web_cloud/domains/dns_zone_edit) oraz wdrożenia [strony internetowej na Twoim hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Jeśli Twoja domena lub poddomena znajduje się na serwerze OVHcloud, zapoznaj się z naszymi przewodnikami dotyczącymi [konfiguracji DNS](/pages/web_cloud/domains/dns_zone_edit) oraz wdrożenia [strony WWW na Twoim hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Konfiguracja strony
 
