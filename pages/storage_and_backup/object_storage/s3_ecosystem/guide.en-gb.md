@@ -48,7 +48,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | --- | --- | --- | --- |
 | **Cyberduck** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on [Cyberduck](https://docs.cyberduck.io/cyberduck/) | Coming Soon |
 | **WinSCP** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on [WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
-| **FileZilla Pro** | Compatible | Provides a secure, fast file transfers to cloud and servers in a single app. More details on [FileZilla Pro](https://filezillapro.com/) | Coming Soon |
+| **FileZilla Pro** | Compatible | Provides secure, fast file transfers to cloud and servers in a single app. More details on [FileZilla Pro](https://filezillapro.com/) | Coming Soon |
 
 ### File Sharing
 
