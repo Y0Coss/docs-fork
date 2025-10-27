@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Installation und Konfiguration von Cecil, einem Static Site Generator (SSG) in PHP"
-excerpt: "Erfahren Sie hier, wie Sie mit Cecil Ihre statische Website mithilfe einer modernen Template-Engine erstellen (Jamstack)"
+excerpt: "Erfahren Sie, wie Sie mit Cecil Ihre statische Website mithilfe einer modernen Template-Engine erstellen (Jamstack)"
 updated: 2025-10-24
 ---
 
@@ -23,14 +23,14 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
 - Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) übertragen.
-- Konfigurieren Sie Ihre DNS-Zone, damit Ihr Domainname (oder Unterdomain) auf Ihr Webhosting weitergeleitet wird. Dies ist insbesondere nützlich, wenn Sie mehrere [Webseiten](/pages/web_cloud/web_hosting/multisites_configure_multisite) auf Ihrem Webhosting einrichten möchten.  
+- Ihre DNS-Zone ist konfiguriert, damit Ihr Domainname (oder Subdomain) auf Ihr Webhosting weitergeleitet wird. Dies ist insbesondere nützlich, wenn Sie mehrere [Webseiten](/pages/web_cloud/web_hosting/multisites_configure_multisite) auf Ihrem Webhosting einrichten möchten.  
 - Sie haben [Composer](https://getcomposer.org/) installiert, mit der Datei `composer.phar` im Wurzelverzeichnis Ihres Webhostings oder im Zielordner Ihres Domainnamens.
 
 ## In der praktischen Anwendung
 
-Ein [Webhosting](/links/web/hosting) ermöglicht es, Domains oder Unterdomains auf den darin enthaltenen Webseiten zu deklarieren. Eine Domain oder Unterdomain ist erforderlich, um Ihre mit **Cecil** erstellte Website bereitzustellen.  
+Ein [Webhosting](/links/web/hosting) ermöglicht es, Domains oder Subdomains auf den darin enthaltenen Webseiten zu deklarieren. Eine Domain oder Subdomain ist erforderlich, um Ihre mit **Cecil** erstellte Website bereitzustellen.  
 
-Um Ihnen bei der Einrichtung einer Domain oder Unterdomain auf einer der Webseiten Ihres Webhostings zu helfen, konsultieren Sie unsere Seite „[Mehrere Webseiten auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.  
+Um Ihnen bei der Einrichtung einer Domain oder Subdomain auf einer der Webseiten Ihres Webhostings zu helfen, konsultieren Sie unsere Seite „[Mehrere Webseiten auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.  
 
 ### Erstellen Sie das Verzeichnis für Ihre Dateien
 
@@ -93,7 +93,7 @@ Sie können nun das Ergebnis sehen, indem Sie Ihren Domainnamen aufufen:
 
 Um die Ergebnisse in Ihrem Browser anzuzeigen, muss Ihr Domainname auf das Verzeichnis `_site` verweisen, das Sie bei der Installation von **Cecil** erstellt haben.
 
-Wenn Ihr Domainname oder Unterdomain bei OVHcloud gehostet wird, konsultieren Sie unsere Anleitungen zu der [DNS-Konfiguration](/pages/web_cloud/domains/dns_zone_edit) und zur Einrichtung einer [Webseite auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Wenn Ihr Domainname oder Subdomain bei OVHcloud gehostet wird, konsultieren Sie unsere Anleitungen zu der [DNS-Konfiguration](/pages/web_cloud/domains/dns_zone_edit) und zur Einrichtung einer [Webseite auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Ihre Webseite konfigurieren
 
