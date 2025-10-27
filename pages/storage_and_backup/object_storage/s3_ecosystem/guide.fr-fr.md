@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-07-10
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -48,7 +48,8 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
 | **Cyberduck** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [Cyberduck](https://docs.cyberduck.io/cyberduck/) | A venir |
-| **WinSCP** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur  [WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **WinSCP** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **FileZilla Pro** | Compatible | Permet des transferts de fichiers sécurisés et rapides vers le cloud et les serveurs dans une unique application. Plus de détails sur [FileZilla Pro](https://filezillapro.com/) | A venir |
 
 ### Partage de fichiers
 
