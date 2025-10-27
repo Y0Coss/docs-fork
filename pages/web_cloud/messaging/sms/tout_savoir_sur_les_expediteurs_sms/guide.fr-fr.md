@@ -1,7 +1,7 @@
 ---
 title: ‘Tout savoir sur les expéditeurs SMS’
 excerpt: Découvrez les différents expéditeurs utilisables avec nos solutions SMS
-updated: 2025-20-27
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -27,7 +27,7 @@ OVHcloud vous offre la possibilité de choisir un type d’expéditeur pour envo
 
 L'expéditeur « Numéro court permettant la réponse » est disponible par défaut sur nos solutions SMS, il vous est cependant possible d'utiliser un expéditeur alphanumérique ou encore un numéro mobile virtuel.
 
-#### 1 - Numéro court permettant la réponse
+#### Numéro court permettant la réponse
 
 **Uniquement pour les comptes OVHcloud en France hors DOM-TOM.**
 
@@ -41,7 +41,7 @@ Il permet de recevoir une réponse via l’onglet SMS reçus.
 >
 > Si vous avez besoin d'envoyer des SMS contenant des URLs, vous devez utiliser un expéditeur alphanumérique.
 
-#### 2 - Expéditeur alphanumérique
+#### Expéditeur alphanumérique
 
 Vous pouvez personnaliser votre expéditeur. Il n’est alors plus possible de recevoir une réponse de la part du destinataire de votre SMS. Pour accéder à la gestion des expéditeurs SMS, sélectionnez l’onglet `Expéditeurs`{.action}(1) lorsque vous êtes sur le compte SMS concerné.
 
@@ -68,7 +68,7 @@ La validation d'un expéditeur alphanumérique est effectuée en moyenne dans le
 
 - **Ajouter des expéditeurs à partir de vos noms de domaines OVHcloud** : Vous pouvez utiliser un nom de domaine disponible dans votre compte OVHcloud en tant qu'expéditeur. Une liste déroulante des expéditeurs disponibles s'affichera alors.
 
-#### 3 - Numéro mobile virtuel
+#### Numéro mobile virtuel
 
 **Uniquement pour les comptes OVHcloud en France.**
 
