@@ -34,7 +34,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
 - Boot type: **uefi** or **legacy**
-- Partition type: **MBR** or **GPT**
+- Partition type: **MBR** or **GPT**
 - Image format: **qcow2** or **raw**
 
 > [!warning]
