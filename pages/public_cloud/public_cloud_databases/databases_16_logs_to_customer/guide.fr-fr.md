@@ -21,34 +21,6 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ## Instructions
 
-### Step 1 - Retrieve the required information
-
-#### Retrieve your LDP destination `streamId`:
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, select `Logs Data Platform`{.action} then click on the relevant LDP instance.
-
-![LDP list page](images/ldp_page.png)
-
-Go to the `Data stream` tab.
-
-![LDP details page](images/ldp_page_details.png)
-
-Choose your target stream and click on `Copy stream ID`{.action}.
-
-#### Retrieve your LDP destination `serviceName`:
-
-- This refers to your Public Cloud project ID. You can retrieve it in the Public Cloud section of your project.
-
-![LDP project id](images/ldp_project_id.png)
-
-#### Retrieve your `clusterId`:
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section and select the Public Cloud project concerned. In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
-
-In the cluster details, you can find the `Service ID` field, which corresponds to the cluster ID.
-
-![LDP database details](images/ldp_database_details.png)
-
 ### Create your subscription
 
 > [!tabs]
@@ -64,7 +36,35 @@ In the cluster details, you can find the `Service ID` field, which corresponds t
 >> Then logs will start to be forwarded to your LDP stream.
 >>
 > Via the OVHcloud API
->> 1. Start by retrieving the types of logs available for your database cluster with the following API call:
+>> 1. Retrieve the required information
+>>
+>> **Retrieve your LDP destination `streamId`:**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, select `Logs Data Platform`{.action} then click on the relevant LDP instance.
+>>
+>> ![LDP list page](images/ldp_page.png)
+>>
+>> Go to the `Data stream` tab.
+>>
+>> ![LDP details page](images/ldp_page_details.png)
+>>
+>> Choose your target stream and click on `Copy stream ID`{.action}.
+>>
+>> **Retrieve your LDP destination `serviceName`:**
+>>
+>> - This refers to your Public Cloud project ID. You can retrieve it in the Public Cloud section of your project.
+>>
+>> ![LDP project id](images/ldp_project_id.png)
+>>
+>> **Retrieve your `clusterId`:**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section and select the Public Cloud project concerned. In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
+>>
+>> In the cluster details, you can find the `Service ID` field, which corresponds to the cluster ID.
+>>
+>> ![LDP database details](images/ldp_database_details.png)
+>>
+>> 2. Start by retrieving the types of logs available for your database cluster with the following API call:
 >>
 >> > [!api]
 >> >
@@ -73,7 +73,7 @@ In the cluster details, you can find the `Service ID` field, which corresponds t
 >>
 >> This will return the list of valid kind values you can use when subscribing to logs.
 >>
->> 2. Once you know the valid kind, use it to subscribe to a log stream with this API call:
+>> 3. Once you know the valid kind, use it to subscribe to a log stream with this API call:
 >>
 >> > [!api]
 >> >
@@ -140,7 +140,7 @@ You have 2 methods to delete a subscription:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription/{subscriptionId}
 >> >
 >>
 
