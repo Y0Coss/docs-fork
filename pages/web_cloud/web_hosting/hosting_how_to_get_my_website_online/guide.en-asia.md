@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2025-10-16
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -102,7 +102,7 @@ Once you have everything you need, there are two different ways of connecting to
 
 #### 2.3. Upload the files to the storage space.
 
-Once you have logged in to your storage space, all you need to do is put your website files online. **Please take special care when you select the folder you upload the files to.** For standard websites, the files should be uploaded to the “www” folder. However, if you host several websites on your hosting space, you have almost certainly registered several **Multi-sites**.
+Once connected to your storage space, you only have to upload the files of your website. **We recommend that you pay particular attention to the directory in which you are going to upload the files.** In a typical use case, the website must be uploaded in the "www" folder. However, if you are using your hosting for multiple websites, you have most likely declared multiple websites.
 
 To identify the folder that the website should be published from, go to the `Multi-site`{.action} tab in the OVHcloud Control Panel. In the table shown, check the `Root folder`{.action} listed for the domain in question. This is the folder in which you should publish the files for your website.
 

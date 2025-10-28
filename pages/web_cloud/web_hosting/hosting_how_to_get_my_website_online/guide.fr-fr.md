@@ -1,7 +1,7 @@
 ---
 title: "Mettre en ligne un site web sur son hébergement web"
 excerpt: "Découvrez comment mettre en ligne un site web sur votre hébergement web OVHcloud"
-updated: 2025-10-23
+updated: 2025-10-28
 ---
 
 ## Objectif
