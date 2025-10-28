@@ -298,16 +298,17 @@ web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Primeiros passos
 web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Envio e receção de faxes
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-administration: Administrar
-web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
-web-cloud-phone-and-fax-voip-faq: FAQ
-web-cloud-phone-and-fax-voip-ipbx: IPBX
-web-cloud-phone-and-fax-voip-numbers-and-aliases: Números e alias
-web-cloud-phone-and-fax-voip-popc: POPC
-web-cloud-phone-and-fax-voip-previous-phone-models: Modelos de telefone anteriores
+web-cloud-phone-and-fax-voip-configuration-administration: Administrar
+web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
+web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
+web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Números e alias
+web-cloud-phone-and-fax-voip-configuration-popc: POPC
+web-cloud-phone-and-fax-voip-additional-resources: Recursos adicionais
 web-cloud-phone-and-fax-voip-security: Segurança
-web-cloud-phone-and-fax-voip-telephone-lines: Linhas telefónicas
+web-cloud-phone-and-fax-voip-getting-started: Introdução
+web-cloud-phone-and-fax-voip-configuration: Configuração
+web-cloud-phone-and-fax-voip-configuration-telephone-lines: Linhas telefónicas
 web-cloud-phone-and-fax-voip-troubleshooting: Diagnóstico
 web-cloud-phone-and-fax-voip-tutorials: Tutoriais
 web-cloud-hosting: Alojamento partilhado
