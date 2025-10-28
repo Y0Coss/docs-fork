@@ -1,5 +1,6 @@
 id: b03a1742-7d1b-4af8-bcf0-5bc226816be0
 full_slug: sms-senders
+translation_banner: true
 disable_languages:
 - de-de
 - fr-ca
