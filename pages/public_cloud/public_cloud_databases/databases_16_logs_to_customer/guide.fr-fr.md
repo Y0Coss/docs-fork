@@ -1,7 +1,7 @@
 ---
-title: Public Cloud Databases - How to setup logs forwarding
+title: Public Cloud Databases - How to set up logs forwarding
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
-updated: 2024-09-25
+updated: 2024-10-28
 ---
 
 ## Objective
@@ -27,26 +27,27 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 > Via the OVHcloud Control Panel
 >> On the database instance page, go to the `Logs`{.action} section and click the `Subscribe`{.action} button.
 >>
->> ![LDP database subscription](images/ldp_database_subscription.png)
+>> ![LDP database subscription](images/ldp_database_subscription.png){.thumbnail}
 >>
->> Select the relevant LDP account by clicking the Subscribe button.
+>> Select the relevant LDP account by clicking the `Subscribe`{.action} button.
 >>
->> ![LDP database subscription 2](images/ldp_database_subscription2.png)
+>> ![LDP database subscription 2](images/ldp_database_subscription2.png){.thumbnail}
 >>
->> Then logs will start to be forwarded to your LDP stream.
+>> The logs will then start to be forwarded to your LDP stream.
 >>
 > Via the OVHcloud API
->> 1. Retrieve the required information
+>>
+>> 1\. Retrieve the required information
 >>
 >> **Retrieve your LDP destination `streamId`:**
 >>
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, select `Logs Data Platform`{.action} then click on the relevant LDP instance.
 >>
->> ![LDP list page](images/ldp_page.png)
+>> ![LDP list page](images/ldp_page.png){.thumbnail}
 >>
->> Go to the `Data stream` tab.
+>> Go to the `Data stream`{.action} tab.
 >>
->> ![LDP details page](images/ldp_page_details.png)
+>> ![LDP details page](images/ldp_page_details.png){.thumbnail}
 >>
 >> Choose your target stream and click on `Copy stream ID`{.action}.
 >>
@@ -54,7 +55,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> - This refers to your Public Cloud project ID. You can retrieve it in the Public Cloud section of your project.
 >>
->> ![LDP project id](images/ldp_project_id.png)
+>> ![LDP project id](images/ldp_project_id.png){.thumbnail}
 >>
 >> **Retrieve your `clusterId`:**
 >>
@@ -62,9 +63,9 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> In the cluster details, you can find the `Service ID` field, which corresponds to the cluster ID.
 >>
->> ![LDP database details](images/ldp_database_details.png)
+>> ![LDP database details](images/ldp_database_details.png){.thumbnail}
 >>
->> 2. Start by retrieving the types of logs available for your database cluster with the following API call:
+>> 2\. Start by retrieving the types of logs available for your database cluster with the following API call:
 >>
 >> > [!api]
 >> >
@@ -73,7 +74,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> This will return the list of valid kind values you can use when subscribing to logs.
 >>
->> 3. Once you know the valid kind, use it to subscribe to a log stream with this API call:
+>> 3\. Once you know the valid kind, use it to subscribe to a log stream with this API call:
 >>
 >> > [!api]
 >> >
@@ -87,22 +88,22 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >> }
 >> ```
 >>
->> Then logs will start to be forwarded to your LDP stream.
+>> The logs will then start to be forwarded to your LDP stream.
 >>
 
 ### Find logs in Graylog
 
 On the LDP page, click the `sample-data-stream`{.action} button (the last data stream modified when you previously subscribed to it), or click the `Graylog`{.action} button.
 
-![LDP database go to graylog](images/ldp_database_go_to_graylogs.png)
+![LDP database go to graylog](images/ldp_database_go_to_graylogs.png){.thumbnail}
 
-You need to log in using your Graylog credentials. You can retrieve them from the LDP details page, in the Configuration section. The login corresponds to the value shown on the `Logs Data Platform service` line, and the password is displayed under `Password`.
+You need to log in using your Graylog credentials. You can retrieve them from the LDP details page, in the `Configuration` section. The login corresponds to the value shown on the `Logs Data Platform service` line, and the password is displayed under `Password`.
 
-![LDP database ldp details](images/ldp_database_ldp_details.png)
+![LDP database ldp details](images/ldp_database_ldp_details.png){.thumbnail}
 
 Once connected, you can view your service logs in your Graylog stream.
 
-![LDP database graylogs result](images/ldp_database_graylogs_result.png)
+![LDP database graylogs result](images/ldp_database_graylogs_result.png){.thumbnail}
 
 You can also use the following Graylog queries for more granular filtering:
 
@@ -130,9 +131,9 @@ You have 2 methods to delete a subscription:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> In the subscription page of the database instance, click on `Unsubscribe`{.action} button.
+>> In the subscription page of the database instance, click the `Unsubscribe`{.action} button.
 >>
->> ![LDP database unsubscribe](images/ldp_database_unsubscribe.png)
+>> ![LDP database unsubscribe](images/ldp_database_unsubscribe.png){.thumbnail}
 >>
 > Via the OVHcloud API
 >>
