@@ -1,7 +1,7 @@
 ---
 title: Mount your HA-NAS via a CIFS share
 excerpt: This guide shows you how to mount your HA-NAS using CIFS protocol
-updated: 2025-10-09
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -15,12 +15,12 @@ updated: 2025-10-09
 
 ## Instructions
 
-### Settings for Windows
+### Settings for Microsoft Windows
 
 - **Windows Server 2008**: Click on the menu `Start`{.action} > `All the programs`{.action} > `Accessories`{.action} > `Command prompt`{.action}.
 - **Windows Server 2012**: Click the `Windows PowerShell`{.action} icon at the bottom of the screen in the taskbar.
-- **Windows Server 2016**: Click on the menu `Start`{.action}, then on the `Windows PowerShell`{.action} icon.
-- **Windows Server 2019**: Click on the menu `Start`{.action}, then on the `Windows PowerShell`{.action} icon.
+- **Windows Server 2016/2019/2022/2025**: Click on the menu `Start`{.action}, then on the `Windows PowerShell`{.action} icon.
+
 
 Then run the following command:
 
@@ -41,7 +41,7 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 > The SMB/CIFS user is `nobody`. Changing permissions with this user may generate conflicts with existing NFS permissions. 
 > 
 
-The following error message may appear:
+The following error messages may appear:
 
 ```console
 System error 1272 has occurred.
@@ -49,11 +49,16 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
+```console
+System error 3227320323 has occurred.
+```
+
 > [!primary]
 >
-> To correct this error, you need to modify the Windows registry. To do this, open the Registry Editor (regedit), then navigate to the key `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
-> Then set the value of the parameter `AllowInsecureGuestAuth` to "1".<br>
-> Find more information on this topic on the [Microsoft support pages](https://learn.microsoft.com/en-in/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> To correct these errors, refer to the official Microsoft documentation :<br>
+> [How to enable insecure guest logons in SMB2 and SMB3](https://learn.microsoft.com/en-gb/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=powershell).<br>
+> [Control SMB signing behavior](https://learn.microsoft.com/en-gb/windows-server/storage/file-server/smb-signing?tabs=powershell).
+
 
 ### Settings for Linux
 

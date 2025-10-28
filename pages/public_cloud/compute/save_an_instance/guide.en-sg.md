@@ -48,12 +48,11 @@ You can create a single backup of an instance or configure a schedule in order t
 > Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
 >
 > Currently, creating a distant backup is not available through the OVHcloud Control Panel. You can only perform this action via the OVHcloud API or OpenStack.
->
 
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
->> Log in to [OVHcloud customer area](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
+>> Log in to the [OVHcloud Control Panel](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
 >>
 >> Click on the `...`{.action} button to the right of the instance and select `Create backup`{.action}.
 >>
@@ -98,7 +97,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >> > Only create a distant backup if the parameters related to the remote region (**distantRegionName** and **distantSnapshotName**) are provided.
 >> >
 >>
-> Via OpenStack
+> Via the OpenStack CLI
 >>
 >> Run the following command to display the list of instances:
 >>

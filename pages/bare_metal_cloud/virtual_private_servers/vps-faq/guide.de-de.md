@@ -14,7 +14,7 @@ details {
 }
 details > summary {
     padding: 0.1rem 1rem;
-    font-weight: 500;
+	font-weight: 500;
     color: #268fd4ff;
     cursor: pointer;
     list-style: none;
@@ -47,6 +47,7 @@ details > :not(summary) {
 }
 </style>
 
+
 ## Allgemeine Fragen zu VPS-Angeboten
 
 /// details | Was ist ein VPS und wofür wird er verwendet?
@@ -63,7 +64,7 @@ OVHcloud VPS-Angebote bieten hervorragenden Leistungspreis, mit unbegrenztem Dat
 
 /// details | Ist eine VPS-Lösung die richtige Wahl für mich?
 
-Die Nutzung eines VPS erfordert grundlegende Kenntnisse der Server-Administration. Dies zu berücksichtigen ist entscheidend, um Ihren Betriebssystem (Linux oder Windows) effektiv zu verwalten und Ihre Anwendungen einzurichten, z. B. PrestaShop oder WordPress.
+Die Nutzung eines VPS erfordert grundlegende Kenntnisse der Server-Administration. Dies zu berücksichtigen ist entscheidend, um Ihr Betriebssystem (Linux oder Windows) effektiv zu verwalten und Ihre Anwendungen einzurichten, z. B. PrestaShop oder WordPress.
 
 Wenn Sie einen VPS benötigen, aber nicht über die technischen Kenntnisse verfügen, um ihn zu verwalten, wenden Sie sich an einen unserer [Partner](/links/partner) für Unterstützung.
 
@@ -81,7 +82,7 @@ Um Ihre Konfiguration herunterstufen zu können, müssen Sie jedoch einen neuen 
 
 /// details | Welche Region oder welches Land sollte ich für meinen VPS wählen?
 
-Je näher Ihr Rechenzentrum an Ihrem Publikum liegt, desto geringer ist die Latenz, was zu einer besseren Benutzererfahrung und einem erhöhten Vertrauen in Ihre Dienste führt.
+Ihr Rechenzentrum näher an Ihren Nutzern zu verorten führt zu geringerer Latenz und damit besserer Benutzererfahrung und einem erhöhten Vertrauen in Ihre Dienste.
 
 ///
 
@@ -124,6 +125,7 @@ Nein, unsere VPS-Lösungen enthalten keinen Domainnamen oder E-Mail-Dienst. Dies
 ///
 
 /// details | Wie wähle ich zwischen einem VPS und einem Hosting-Paket?
+<span class="smallish-gap"></span>
 
 - Hosting-Paket: ideal für grundlegende Hosting-Anforderungen mit einer vorab konfigurierten Einrichtung.
 - VPS: mehr Flexibilität und Kontrolle, perfekt für skalierbare Projekte mit komplexen Konfigurationsanforderungen.
@@ -133,6 +135,7 @@ Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzu
 ///
 
 /// details | Was ist der Unterschied zwischen einem VPS und Public Cloud Lösungen?
+<span class="smallish-gap"></span>
 
 - VPS: eine optimierte und dedizierte virtuelle Maschine, geeignet sowohl für Präproduktion als auch für Produktion, die mehrere Webprojekte hosten kann.
 - OVHcloud Public Cloud: bietet eine Multi-Server-Infrastruktur mit hoher Verfügbarkeit und einem privaten Netzwerk (vRack) und ist für komplexe, skalierbare Architekturen konzipiert.
@@ -140,6 +143,7 @@ Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzu
 ///
 
 /// details | Welche Vorteile bietet ein VPS im Vergleich zu einem dedizierten Server?
+<span class="smallish-gap"></span>
 
 - VPS: bietet vereinfachte Administration ohne Hardware-Verwaltung, ideal für Projekte, die strikte Kontrolle benötigen.  
 - Dedizierter Server: wird für komplexe Infrastrukturen empfohlen, die eine vollständige Hardware-Kontrolle und garantierte Leistung erfordern.
