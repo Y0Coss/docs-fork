@@ -297,19 +297,21 @@ web-cloud-messaging-sms-smpp: SMPP
 web-cloud-phone-and-fax: Telefono e Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Per iniziare
-web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Invio e ricezione fax
+web-cloud-phone-and-fax-fax-configuration: Configurazione
+web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Invio e ricezione fax
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-administration: Amministrare
-web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integrazione della telefonia informatica (CTI)
-web-cloud-phone-and-fax-voip-faq: FAQ
-web-cloud-phone-and-fax-voip-ipbx: IPBX
-web-cloud-phone-and-fax-voip-numbers-and-aliases: Numeri e alias
-web-cloud-phone-and-fax-voip-popc: POPC
-web-cloud-phone-and-fax-voip-previous-phone-models: Modelli di telefono precedenti
+web-cloud-phone-and-fax-voip-configuration-administration: Amministrare
+web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integrazione della telefonia informatica (CTI)
+web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
+web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Numeri e alias
+web-cloud-phone-and-fax-voip-configuration-popc: POPC
+web-cloud-phone-and-fax-voip-additional-resources: Risorse aggiuntive
 web-cloud-phone-and-fax-voip-security: Sicurezza
-web-cloud-phone-and-fax-voip-telephone-lines: Linee telefoniche
-web-cloud-phone-and-fax-voip-troubleshooting: Risoluzione dei problemi
+web-cloud-phone-and-fax-voip-getting-started: Per iniziare
+web-cloud-phone-and-fax-voip-configuration: Configurazione
+web-cloud-phone-and-fax-voip-configuration-telephone-lines: Linee telefoniche
+web-cloud-phone-and-fax-voip-troubleshooting: Diagnosi
 web-cloud-phone-and-fax-voip-tutorials: Tutorial
 web-cloud-hosting: Hosting Web
 web-cloud-hosting-tutorials-cms: CMS
