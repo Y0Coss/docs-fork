@@ -25,39 +25,81 @@ updated: 2025-04-30
  }
 </style>
 
-> [!primary]
-> This documentation covers the limitations of the Managed Kubernetes Service Free Plan. For additional details on the Managed Kubernetes Service Standard plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium).
-
 ## Nodes and pods
 
-We have tested our OVHcloud Managed Kubernetes service with up to 100 nodes and 100 pods per node.
-While we are fairly sure it can go further, we advise you to keep under those limits.
+### Free Plan
 
-Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple node pools with the same instance flavor if needed of course).
-A node can run up to 110 pods. This limit does not depend on node flavor.
+We have tested our OVHcloud Managed Kubernetes service Free Plan with up to **100 nodes per cluster** and **100 pods per node**.
 
-In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
+While higher configurations might work, we recommend staying under these limits for optimal stability.
 
-To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.
+Nodepools using anti-affinity are limited to 5 nodes per pool. You can create multiple nodepools with the same instance flavor if needed.
 
-Please note that any operation requested to our services, like node deletions or rolling updates, will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
+To ensure high availability for your workloads, it is recommended to have sufficient compute capacity to handle the workload even if one node becomes unavailable.
 
-Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
+Any operation requested to our services, such as node deletions or rolling updates, follows a **graceful draining procedure** respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this period, nodes are forcefully drained to allow operations to continue.
 
-Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH into your nodes.
+Worker nodes (added manually or through the Cluster Autoscaler) are generally ready within a few minutes.
+
+> [!primary]
+>
+> GPU worker nodes (t1 and t2 flavors) may take more than one hour to reach a ready state.
+>  
+
+As a fully managed service, you will **not have SSH access** to the nodes. All OS and component updates are handled automatically.
+
+### Standard Plan
+
+The Standard Plan has been tested with up to **500 nodes per cluster**, maintaining the same **100 pods per node** limit.
+
+Nodepools with anti-affinity are also limited to 5 nodes per pool, but multiple nodepools with the same flavor can be created.
+
+To ensure high availability, your cluster should have enough compute resources to handle workloads even if one or more nodes fail or become unavailable.
+
+> [!primary]
+>  
+> Operations such as node deletions or rolling updates follow the same **graceful draining procedure** as Free Plan, respecting PDBs for up to 10 minutes. Nodes are forcefully drained afterwards if necessary.
+>
+
+Worker nodes are created within a few minutes, except GPU nodes (t1 and t2 flavors), which may take longer than an hour to become ready.
+
+> [!primary]
+>  
+> SSH access is not provided, similar to the Free Plan.
+>
 
 ## Data persistence
 
-If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
+### Free Plan
 
-We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) for more information.
+If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the nodes can be fully reinstalled.
+
+It is recommended to save your data in Persistent Volumes (PV), not directly on nodes, to avoid data loss.
+Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) for more information.
+
+### Standard Plan
+
+For Standard Plan clusters, Persistent Volumes are provisioned using **zone-specific StorageClasses**:
+
+- `csi-cinder-high-speed`
+- `csi-cinder-high-speed-gen2`
+
+> [!primary]
+>
+> A PVC provisioned in a given zone will only be accessible from nodes in that same zone.
+>
+
+Classic multi-attach is **not supported** for multi-AZ clusters, as attaching volumes to multiple instances in different zones can lead to data corruption.
+
+Standard Plan clusters also have a **dedicated etcd** with a **quota of 8 GB** per cluster. Real-time monitoring of etcd usage is not yet supported.
 
 ## LoadBalancer
 
-Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer based on OpenStack Octavia.
-If the LoadBalancer has been created through a K8s service, the lifespan of the external Load Balancer (and thus the associated IP address if not explicity specified to keep it) is linked to the lifespan of this Kubernetes resource.
+Creating a Kubernetes service of type LoadBalancer triggers the creation of a Public Cloud Load Balancer based on OpenStack Octavia.  
+The lifespan of the external Load Balancer (and the associated IP address, if not explicitly specified to keep it) is linked to the lifespan of the Kubernetes resource.  
 
-To get more information about the deployment of a LoadBalancer deployment in a MKS cluster, consult our documentation to [expose services through a LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
+This behavior applies to both Free and Standard Plans.  
+For more information, see [expose services through a LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
 ## OpenStack & Quota
 
@@ -70,6 +112,21 @@ Please refrain from manipulating them from the *OVHcloud Public Cloud Control Pa
 
 There is also a limit of __20__ Managed Kubernetes Services by Openstack project (also named Openstack tenant).
 
+
+Managed Kubernetes clusters are based on OpenStack. Nodes, persistent volumes, and load balancers are built on it using OVHcloud Public Cloud. As such, you can see them in the `Compute` > `Instances` section of your [OVHcloud Public Cloud Control Panel](/links/manager).
+
+> [!primary]
+>
+> This does not mean you can manage them directly as other Public Cloud instances. The nodes and volumes are fully managed as part of OVHcloud Managed Kubernetes.
+>
+
+MKS Cluster quotas rely on your project's quota. Consult [this documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) to increase your quota if necessary.
+
+> [!warning]
+> Do not manipulate nodes or volumes directly through the OVHcloud Public Cloud Control Panel (e.g., modifying ports, renaming, resizing volumes), as this may break your cluster.
+
+There is also a limit of **20 Managed Kubernetes Services per OpenStack project**.
+
 ### Node naming
 
 Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
@@ -78,30 +135,45 @@ The usage of the __period (`.`)__ character is forbidden in node name. Please, p
 
 ## Ports
 
-In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVHcloud Managed Kubernetes service running:
+To ensure proper operation of your OVHcloud Managed Kubernetes cluster, certain ports must remain open.
 
 ### Ports to open from public network (INPUT)
 
-- TCP Port 22 (*ssh*): needed for nodes management by OVHcloud
-- TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
-- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
+| Port(s)       | Protocol | Usage |
+| ------------- | -------- | ----- |
+| 22            | TCP      | SSH access for node management by OVHcloud |
+| 30000–32767   | TCP      | needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services |
+| 111           | TCP      | rpcbind (only if using NFS client) |
 
 ### Ports to open from instances to public network (OUTPUT)
 
-- TCP Port 443 (*kubelet*): needed for communication between the kubelets and the Kubernetes API server
-- TCP Port 80 IP 169.254.169.254/32 (*init service*): needed for OpenStack metadata service
-- TCP Ports from 25000 to 31999 (*TLS tunnel*): needed to tunnel traffic between pods and the Kubernetes API server
-- TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
-- UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
-- TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
-- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
-- TCP Port 4443 (metrics server): needed for communication between the metrics server and the Kubernetes API server
+| Port(s)                 | Protocol | Usage                                                |
+| ----------------------- | -------- | ---------------------------------------------------- |
+| 443                     | TCP      | Kubelet communication with the kubernetes API server |
+| 80 (169.254.169.254/32) | TCP      | Init service (OpenStack metadata)                    |
+| 25000–31999             | TCP      | TLS tunnel between pods and kubernetes API server    |
+| 8090                    | TCP      | Internal (OVHcloud) node management service          |
+| 123                     | UDP      | NTP servers synchronization (systemd-timesync)       |
+| 53                      | TCP/UDP  | Allow domain name resolution (systemd-resolve)       |
+| 111                     | TCP      | rpcbind (only if using NFS client)                   |
+| 4443                    | TCP      | Metrics server communication                         |
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
-- UDP Port 8472 (*flannel*): needed for communication between pods
-- UDP Port 4789 (*kube-dns internal usage*): needed for DNS resolution between nodes
-- TCP Port 10250 (*kubelet*): needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
+| Port(s)       | Protocol | Usage |
+| ------------- | -------- | ----- |
+| 8472          | UDP      | Flannel overlay network (for communication between pods) |
+| 4789          | UDP      | Kubernetes DNS internal usage |
+| 10250         | TCP      | Needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet) (kubelet) |
+
+> [!warning]
+>
+> Blocking any of the above ports may cause cluster malfunction.
+>
+> For Standard Plan clusters, the same rules apply.
+>
+> Keep the default OpenStack security group unchanged to avoid disconnecting nodes; only add application-specific rules carefully.
+>
 
 ### About OpenStack security groups
 
@@ -124,20 +196,47 @@ For more details, please refer to the [Creating and configuring a security group
 
 ## Private Networks
 
-The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.  
+### Free Plan
 
-To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
+The `vRack` feature is currently available and fully compatible with OVHcloud Managed Kubernetes Free Plan.
+
+To prevent network conflicts, it is recommended to **keep the DHCP service running** in your private network.
 
 > [!warning]
-> At the moment, MKS worker nodes cannot use provided Subnet's DNS nameservers.
+>
+> At the moment, MKS worker nodes cannot use provided subnet DNS nameservers.
 >
 
 > [!warning]
-> If your cluster has been created using an OpenStack Private Network, you should not change this private network's name nor the network's subnet name. <br>
-> Indeed, the OpenStack Cloud Controller Manager (CCM) is using the network name to create private network connectivity inside the cluster to link nodes to the private network.<br>
-> Changing either the private network name or the network's subnet name will have an impact on future nodes to be deployed as the CCM cannot find network information.<br>
-> The CCM cannot fetch private network information on OpenStack side in order to initialize networking on the freshly deployed nodes on Kubernetes side.<br>
-> Nodes will have a "uninitialized=true:NoSchedule" taint which prevents the [kube-scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/) to deploy pods on those new uninitialized nodes. Nodes impacted by this use case don't have an External-IP as well.
+>
+> If your cluster was created using an OpenStack Private Network, do **not change** the private network name or the subnet name.
+>
+> The OpenStack Cloud Controller Manager (CCM) relies on these names to create private network connectivity inside the cluster and to link nodes to the private network.
+>
+> Changing either the network or subnet name may prevent new nodes from being deployed correctly. Nodes will have a `"uninitialized=true:NoSchedule"` taint, which prevents the kube-scheduler from deploying pods on these nodes.
+>
+> Nodes affected in this way will also lack an External-IP.
+>
+
+### Standard Plan
+
+Standard Plan clusters use **zone-specific networking** and include reserved IP ranges that **must not be used elsewhere** in your private network:
+
+- **Reserved subnets for cluster resources:**
+
+```text
+10.240.0.0/13 # Subnet used by pods
+10.3.0.0/16   # Subnet used by services
+```
+
+> [!warning]
+>
+> These ranges are fixed for now but will be configurable in a future release. Do not use them elsewhere in your private network.
+>
+
+> [!primary]
+>
+> For Standard Plan clusters, careful planning of IP allocation is required when scaling or adding nodes. Volumes and pods are tied to their respective zones, so overlapping subnets can cause failures in multi-AZ deployments.
 >
 
 ### Known not compliant IP ranges
@@ -149,6 +248,11 @@ The following subnets are not compliant with the `vRack` feature and can generat
 10.3.0.0/16 # Subnet used by services
 172.17.0.0/16 # Subnet used by the Docker daemon
 ```
+
+> [!primary]
+>
+> These subnets must be avoided in your private network to prevent networking issues.
+>
 
 ## Cluster health
 
