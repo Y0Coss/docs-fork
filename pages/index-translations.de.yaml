@@ -273,17 +273,20 @@ web-cloud-domains-domain-names-migration: Migration
 web-cloud-domains-domain-names-tutorials: Tutorials
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Internetzugang
-web-cloud-internet-internet-access-advanced-setup: Erweiterte Einrichtung
+web-cloud-internet-internet-access-configuration-advanced-setup: Erweiterte Einrichtung
+web-cloud-internet-internet-access-key-concepts: Schlüsselkonzepte
 web-cloud-internet-internet-access-getting-started: Erste Schritte
-web-cloud-internet-internet-access-managing-your-offer: Verwaltung Ihres Angebots
-web-cloud-internet-internet-access-managing-your-options: Verwaltung Ihrer Optionen
-web-cloud-internet-internet-access-setting-up-your-access: Installation Ihrer Zugänge
-web-cloud-internet-internet-access-troubleshooting: Störungsbehebung
+web-cloud-internet-internet-access-configuration: Konfiguration
+web-cloud-internet-internet-access-configuration-managing-your-offer: Verwaltung Ihres Angebots
+web-cloud-internet-internet-access-configuration-managing-your-options: Verwaltung Ihrer Optionen
+web-cloud-internet-internet-access-configuration-setting-up-your-access: Installation Ihrer Zugänge
+web-cloud-internet-internet-access-troubleshooting: Diagnose
 web-cloud-internet-overthebox: OverTheBox
-web-cloud-internet-overthebox-managing-your-offer: Verwaltung Ihres Angebots
-web-cloud-internet-overthebox-advanced-setup: Erweiterte Einrichtung
+web-cloud-internet-overthebox-configuration-managing-your-offer: Verwaltung Ihres Angebots
+web-cloud-internet-overthebox-configuration-advanced-setup: Erweiterte Einrichtung
 web-cloud-internet-overthebox-getting-started: Erste Schritte
-web-cloud-internet-overthebox-initial-setup: Erstkonfiguration
+web-cloud-internet-overthebox-configuration: Konfiguration
+web-cloud-internet-overthebox-configuration-initial-setup: Erstkonfiguration
 web-cloud-messaging: Messaging
 web-cloud-messaging-sms: SMS
 web-cloud-messaging-sms-advanced-usage: Fortgeschrittene Anwendung
