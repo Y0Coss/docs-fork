@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Load Balancer pour Public Cloud
 excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Objectif
@@ -17,7 +17,6 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 - Comprendre les [concepts de réseau Public Cloud](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)
 - Un Load Balancer nécessite un sous-réseau, lisez [ce guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) pour plus d'informations
 - (Facultatif) : Ce guide explique la configuration du load balancer via l'interface graphique et l'interface en ligne de commande. Si vous souhaitez utiliser cette dernière, installez [l'environnement en ligne de commande OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
-
 
 ## En pratique
 
@@ -35,8 +34,8 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >>
 >> 1. **Sélectionnez le type de zone :**
 >>
->> - 1AZ : déploiement sur une seule zone de disponibilité.
->> - 3AZ : déploiement réparti sur trois zones pour une haute disponibilité.
+>>    - 1AZ : Déploiement sur une seule zone de disponibilité.
+>>    - 3AZ : Déploiement réparti sur trois zones pour une haute disponibilité.
 >>
 >> 2. **Choisissez la région :** Seules les régions sur lesquelles vous avez un réseau privé et au moins un sous-réseau peuvent être sélectionnées. Sélectionnez la région et cliquez sur `Suivant`{.action}.
 >>
@@ -44,29 +43,28 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >>
 >> ![Choix de la taille](images/size.png){.thumbnail}
 >>
->> L'interface contient un lien vers notre site sur lequel les caractéristiques / benchmark de toutes tailles sont fournies. Une fois que vous avez choisi votre taille, cliquez sur `Suivant`{.action}.
+>> L'interface contient un lien vers notre site sur lequel les caractéristiques / benchmark de toutes les tailles sont fournies. Une fois que vous avez choisi votre taille, cliquez sur `Suivant`{.action}.
 >>
->>
->> #### Étape 3 : attacher une IP publique (ou non)
+>> #### Étape 3 : Attacher une IP publique (ou non)
 >>
 >> ![Public IP choice](images/floating_IP.png){.thumbnail}
 >>
->> À ce stade, vous devez savoir si votre Load Balancer recevra du trafic public ou non (pour plus de détails, consultez notre page « [Concepts - Réseau Public Cloud](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)) ». 
+>> À ce stade, vous devez savoir si votre Load Balancer recevra du trafic public ou non (pour plus de détails, consultez notre page « [Concepts - Réseau Public Cloud](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)) ».
 >>
 >> Si votre Load Balancer reçoit du trafic public, vous disposez de 2 options :
 >>
->> - `Nouvelle IP Publique` : cette option créera une nouvelle adresse Floating IP pour votre Load Balancer. 
+>> - `Nouvelle IP Publique` : Cette option créera une nouvelle adresse Floating IP pour votre Load Balancer.
 >> - Si vous avez déjà une adresse Floating IP, l'interface vous proposera d'en choisir une.
 >>
->> Si votre Load Balancer ne doit recevoir que du trafic privé, choisissez « Aucune IP publique ».
+>> Si votre Load Balancer ne doit recevoir que du trafic privé, choisissez `Aucune IP publique`{.action}.
 >>
->> #### Étape 4 : sélectionnez le réseau privé et le sous-réseau sur lesquels le Load Balancer sera créé
+>> #### Étape 4 : Sélectionner le réseau privé et le sous-réseau sur lesquels le Load Balancer sera créé
 >>
 >> ![Choix du réseau](images/private_network.png){.thumbnail}
 >>
 >> L'interface vous informera si le réseau privé ou le sous-réseau ne sont pas conformes aux prérequis (voir notre page « [Concepts - Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#network-prerequisites) »).
 >>
->> #### Étape 5 (facultatif) : définir le ou les listeners et les membres
+>> #### Étape 5 (facultatif) : Définir le ou les listeners et les membres
 >>
 >> ![Choix du listener](images/listener.png){.thumbnail}
 >>
@@ -75,7 +73,6 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >> - Enfin, parmi les instances de votre région, choisissez l'IP et le port membre qui feront partie du pool. Notez que pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener, et que le membre ne peut être choisi qu'à partir de l'instance. Ces limitations peuvent être contournées en ignorant cette partie de la configuration et en utilisant la configuration du pool/membre une fois le Load Balancer créé. 
 >>
 >> > [!primary]
->> >
 >> > Pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener et le membre ne peut être choisi qu'à partir d'une instance. De plus, l'algorithme de load balancing par défaut est : `ROUND_ROBIN`.
 >> > Ces limitations peuvent être contournées en ignorant cette partie de la configuration et en utilisant la configuration du pool/membre une fois le Load Balancer créé. 
 >> >
@@ -86,13 +83,13 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >>
 >> Vous pouvez définir un nom pour le Load Balancer et cliquer sur `Créer un Load Balancer`{.action}.
 >>
->> Vous allez être redirigé vers la page qui liste les Load Balancers. Parmi les attributs qui s'affichent, les `Operating status` et `Provisioning status` fournissent des informations sur l'état de votre load balancer. Retrouvez plus d'informations sur la [page Concepts du Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status).
+>> Vous allez être redirigé vers la page qui liste les Load Balancers. Parmi les attributs qui s'affichent, les `Operating status` et `Provisioning status` fournissent des informations sur l'état de votre load balancer. Retrouvez plus d'informations sur la page « [Concepts du Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status) ».
 >>
 > Via la CLI Openstack
 >> Une autre façon de créer un Load Balance est d'utiliser l'interface de ligne de commande d'Openstack. Avant de commencer, consultez les guides suivants :
 >>
->> [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
->> [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+>> [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
+>> [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 >>
 >> #### Configurer votre réseau privé
 >>

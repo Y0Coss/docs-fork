@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -34,8 +34,8 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> 1. **Select the zone type:**
 >>
->> - 1AZ: deployment in a single availability zone.
->> - 3AZ: deployment spread across three availability zones for high availability.
+>>    - 1AZ: Deployment in a single availability zone.
+>>    - 3AZ: Deployment spread across three availability zones for high availability.
 >>
 >> 2. **Choose the region:** Only regions where you have a private network and at least one subnet can be selected. Select the region and click `Next`{.action}.
 >>
@@ -49,14 +49,14 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> ![Public IP choice](images/floating_IP.png){.thumbnail}
 >>
->> At this stage, you need to know if your Load Balancer will be receiving public traffic or not (for more details, read our [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) page). 
+>> At this stage, you need to know if your Load Balancer will be receiving public traffic or not (for more details, read our [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) page).
 >>
 >> If your Load Balancer is processing public traffic, you have 2 options :
 >>
->> - `New Public IP`: this option will create a new Floating IP for your Load Balancer. 
+>> - `New Public IP`: This option will create a new Floating IP for your Load Balancer.
 >> - If you already have a Floating IP, the interface will offer you to pick one.
 >>
->> If your Load Balancer is processing private traffic, choose `No Public IP`.
+>> If your Load Balancer is processing private traffic, choose `No Public IP`{.action}.
 >>
 >> #### Step 4: Select the private network and the subnet where the Load Balancer will be spawned
 >>
@@ -83,7 +83,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> You can update the name according to your choice and click on `Create a Load Balancer`{.action}.
 >>
->> You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. Find more information on the [Load Balancer concepts page](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status).
+>> You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. Find more information on the "[Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status)" page.
 >>
 > Via the Openstack CLI
 >> Another way to create a Load Balancer is through the Openstack Command Line Interface. Before you begin, consult the following guides:
@@ -107,7 +107,9 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >> openstack router set --external-gateway Ext-Net my_router
 >> ```
 >>
->> You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration). List the addresses of your instances in your network with the following command:
+>> You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration).
+>>
+>> List the addresses of your instances in your network with the following command:
 >>
 >> ```bash
 >> openstack server list
