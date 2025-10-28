@@ -1773,7 +1773,7 @@
         + [VoIP](products/web-cloud-phone-and-fax-voip)
             + [Getting started](web-cloud-phone-and-fax-voip-getting-started)
                 + [FAQ](web_cloud/phone_and_fax/voip/faq-voip)
-            + [Configuration](web-cloud-phone-and-fax-voip-configuration)
+            + [Configuration](products/web-cloud-phone-and-fax-voip-configuration)
                 + [Telephone lines](web-cloud-phone-and-fax-voip-configuration-telephone-lines)
                     + [Gérer le téléphone Plug & Phone d'une ligne SIP](web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone)
                     + [Configurer et consulter le répondeur de sa ligne](web_cloud/phone_and_fax/voip/configurer-consulter-repondeur-ligne-ovh)
