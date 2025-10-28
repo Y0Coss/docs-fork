@@ -45,7 +45,7 @@ Será então redirecionado para a página onde será gerada a nota de encomenda.
 
 #### Se a opção CDN já estiver ativa no seu alojamento Web
 
-Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. No separador `Multisite`{.action}, clique no botão `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, clique em `Alterar`{.action}.
+Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. No separador `Multisite`{.action}, clique no botão `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, clique em `Modificar o domínio`{.action}.
 
 Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
@@ -68,13 +68,13 @@ No que diz respeito ao SEO (referenciamento nos motores de pesquisa), a velocida
 
 Pode ser útil esvaziar o cache do CDN, especialmente quando modifica os seus ficheiros estáticos. Por exemplo, quando coloca uma nova versão do seu site em produção. Pode esvaziar o cache para cada um dos seus nomes de domínio e subdomínios.
 
-Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Purgar o CDN`{.action}.
+Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Limpar a CDN`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurar as opções do Shared CDN
 
-Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar o CDN`{.action}. 
+Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar a CDN`{.action}. 
 
 > [!warning]
 > 
@@ -98,7 +98,7 @@ Depois de escolher as opções, clique em `Aplicar configuração`{.action} e, a
 
 ##### **Criar uma regra de implementação de cache** <a name="cacherules"></a>
 
-Para adicionar uma regra de cache num dos elementos do seu site, clique no separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Configurar o CDN`{.action}.
+Para adicionar uma regra de cache num dos elementos do seu site, clique no separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar a o CDN`{.action}.
 
 Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.action}.
 
@@ -126,7 +126,7 @@ Depois de configurar as regras e selecionar as opções, clique em `Aplicar conf
 
 #### Configurar as opções do CDN Security
 
-Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar o CDN`{.action}. 
+Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar a CDN`{.action}. 
 
 > [!primary]
 > As opções apresentadas abaixo requerem a subscrição do [CDN security](/links/web/hosting-options-cdn) ou do [CDN Advanced](/links/web/hosting-options-cdn).
@@ -173,7 +173,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 #### Configurar as opções do CDN Advanced
 
-Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar o CDN`{.action}.
+Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar a CDN`{.action}.
 
 > [!primary]
 >
@@ -196,7 +196,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 - **Purga avançada**: Personalize a sua purga escolhendo os elementos da cache a esvaziar: todo o site, pasta, URI, extensão de ficheiros ou através de uma expressão personalizada e regular. 
 
-	A partir do separador `Multisite`{.action}, clique no botão `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Purger o CDN`{.action}. 
+	A partir do separador `Multisite`{.action}, clique no botão `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Limpar a CDN`{.action}. 
 
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
@@ -221,7 +221,7 @@ Depois de escolher as opções, clique em `Aplicar configuração`{.action} e, a
 
 ##### **Criar uma regra de cache avançada** <a name="cacherulesadv"></a>
 
-Para adicionar uma regra de cache num dos elementos do seu site, clique no separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Configurar o CDN`{.action}.
+Para adicionar uma regra de cache num dos elementos do seu site, clique no separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar a CDN`{.action}.
 
 Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.action}.
 
@@ -295,7 +295,7 @@ Esta ação permite desativar o CDN para um ou vários dos seus nomes de domíni
 > A modificação de uma entrada na zona DNS ativa de um domínio provoca um prazo de propagação de **4** a **24** para ficar plenamente efetiva. Quando esta propagação estiver finalizada, pode aparecer aleatoriamente uma página com o código **520**. Este fenómeno está ligado ao facto de que certas partes da rede DNS reencaminham ainda os pedidos para o endereço IP do CDN associado ao seu alojamento web.
 >
 
-Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. No separador `Multisite`{.action}, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Alterar`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. No separador `Multisite`{.action}, clique em `...`{.action} à direita do nome de domínio ou subdomínio relevante e, em seguida, em `Modificar o domínio`{.action}.
 
 Desmarque a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 

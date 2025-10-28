@@ -104,7 +104,7 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 #### 2.3. Zapisanie plików na przestrzeni dyskowej
 
-Po zalogowaniu się do swojego obszaru magazynowania, pozostało Ci już tylko wgranie plików swojej strony internetowej. **Zachęcamy, abyś był szczególnie uważny, wybierając katalog, do którego chcesz przesłać pliki.** W typowym przypadku użycia strona powinna być przesłana do katalogu "www". Jednak jeśli korzystasz z hostingu do obsługi wielu stron internetowych, prawdopodobnie zadeklarowałeś wiele stron.
+Po zalogowaniu się do swojego obszaru magazynowania, pozostało Ci już tylko wgranie plików swojej strony internetowej. **Zachęcamy, abyś był szczególnie uważny, wybierając katalog, do którego chcesz przesłać pliki**. W typowym przypadku użycia strona powinna być przesłana do katalogu "www". Jednak jeśli korzystasz z hostingu do obsługi wielu stron internetowych, prawdopodobnie zadeklarowałeś wiele stron.
 
 Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do zakładki `MultiSite`{.action} w Panelu klienta. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}. Następnie opublikuj w nim pliki strony WWW.
 

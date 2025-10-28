@@ -45,7 +45,7 @@ Vous serez redirigé vers la génération du bon de commande. Une fois la comman
 
 #### Si l'option CDN est déjà activée sur votre hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis cliquez sur `Modifier`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis cliquez sur `Modifier le domaine`{.action}.
 
 Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -293,7 +293,7 @@ Cette action permet de désactiver le CDN pour un ou plusieurs de vos noms de do
 > La modification d'une entrée dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4** à **24** heures pour être pleinement effective. Le temps que cette propagation se finalise, une page contenant le code **520** peut apparaître aléatoirement. Ce phénomène est lié au fait que certaines parties du réseau DNS redirigent encore les requêtes vers l'adresse IP du CDN lié à votre hébergement web.
 >
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Modifier`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Modifier le domaine`{.action}.
 
 Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 

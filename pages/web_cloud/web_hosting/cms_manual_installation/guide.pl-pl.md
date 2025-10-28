@@ -114,9 +114,9 @@ Aby zainstalować CMS na Twoim [hostingu](/links/web/hosting), potrzebne są jak
 
 #### 1.1 - Sprawdź zgłoszenie w katalogu głównym
 
-„Katalog główny” odpowiada katalogowi, w którym zostanie zainstalowany Twój przyszły system CMS na Twoim serwisie internetowym. Zaleca się wybranie pustego katalogu, aby uniknąć konfliktów z Twoimi innymi potencjalnymi stronami internetowymi.
+"Katalog główny" odpowiada katalogowi, w którym zostanie zainstalowany Twój przyszły system CMS na Twoim serwisie internetowym. Zaleca się wybranie pustego katalogu, aby uniknąć konfliktów z Twoimi innymi potencjalnymi stronami internetowymi.
 
-Zapoznaj się z naszą dokumentacją, która opisuje [jak utworzyć stronę internetową na swoim serwisie web](/pages/web_cloud/web_hosting/multisites_configure_multisite), aby określić katalog główny do użycia z Twoim CMS.
+Zapoznaj się z naszą dokumentacją, która opisuje [jak utworzyć stronę internetową na swoim hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite), aby określić katalog główny do użycia z Twoim CMS.
 
 > [!primary]
 >

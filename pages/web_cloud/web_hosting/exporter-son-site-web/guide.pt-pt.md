@@ -69,9 +69,9 @@ Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no es
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 
-Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas transferir os ficheiros do seu site. **Recomendamos que seja especialmente atento ao diretório em que instalou o seu site.** Num cenário de utilização comum, o site deve ser transferido para a pasta « www ». No entanto, se estiver a utilizar o seu alojamento para alojar vários sítios Web, certamente declarou vários sítios Web.
+Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas transferir os ficheiros do seu site. **Recomendamos que seja especialmente atento ao diretório em que instalou o seu site**. Num cenário de utilização comum, o site deve ser transferido para a pasta « www ». No entanto, se estiver a utilizar o seu alojamento para alojar vários sítios Web, certamente declarou vários sítios Web.
 
-Para verificar a pasta em que o seu site está armazenado, posicione-se no separador `Multisite`{.action} a partir da sua área de cliente OVHcloud. No quadro que aparece, para o domínio pretendido, consulte o `Pasta raiz`{.action} que aparece.
+Para verificar a pasta em que o seu site está armazenado, posicione-se no separador `Multisite`{.action} a partir da sua Área de cliente OVHcloud. No quadro que aparece, para o domínio pretendido, consulte o `Pasta raiz`{.action} que aparece.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 

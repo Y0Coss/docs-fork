@@ -181,7 +181,7 @@ Więcej informacji na temat konfigurowania domeny lub subdomeny na hostingu znaj
 
 > [!warning]
 >
-> Dodanie nazwy domeny lub poddomeny na jednym z witryn internetowych Twojej oferty hostingu może wymagać ustawienia **tokena weryfikacyjnego**.
+> Dodanie nazwy domeny lub poddomeny na jednym z witryn internetowych Twojej oferty hostingu WWW może wymagać ustawienia **tokena weryfikacyjnego**.
 > W przypadku subdomeny ten sam token nie jest brany pod uwagę i musi zostać dodany nie dla subdomeny, ale dla nazwy domeny. W tym przypadku dodaj dodatkowo token w postaci rekordu DNS typu TXT dla nazwy domeny w aktywnej strefie DNS Twojej domeny.
 
 #### Przypadek 2 - Tworzenie kont e-mail Exchange z subdomeną <a name="link-subdomain-case-2"></a>

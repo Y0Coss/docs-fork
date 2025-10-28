@@ -42,7 +42,7 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que 
 >
 > Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do). Pode também proteger o acesso às suas pastas com uma [palavra-passe](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Recomendamos que contacte um [provedor especializado](/links/partner) se tiver dificuldades em configurar esta configuração. De facto, as nossas equipas de apoio não poderão prestar assistência para qualquer modificação da programação interna do seu site web.
+> Recomendamos que contacte um [provedor especializado](/links/partner) se tiver dificuldades em configurar esta configuração. De facto, as nossas equipas de apoio não poderão prestar assistência para qualquer modificação da programação interna do seu site.
 
 ### Resolver o caso mais comum de uma página "Index of"
 

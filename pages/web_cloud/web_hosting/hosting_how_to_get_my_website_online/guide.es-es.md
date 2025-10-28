@@ -102,7 +102,7 @@ Una vez que disponga de todos los datos necesarios, podrá conectarse a su espac
 
 #### 2.3. Cargar los archivos en el espacio de almacenamiento
 
-Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que vaya a cargar los archivos.** En un caso de uso habitual, el sitio debe cargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para varios sitios web, es probable que haya declarado varios sitios web.
+Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que vaya a cargar los archivos**. En un caso de uso habitual, el sitio debe cargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para varios sitios web, es probable que haya declarado varios sitios web.
 
 Para conocer la carpeta en la que debe colocar el sitio web, vaya a la pestaña `Multisitio`{.action} del área de cliente de OVHcloud. Aparecerá una tabla en la que podrá consultar la **Carpeta raíz** del dominio correspondiente. Ese es el directorio en el que debe colocar los archivos del sitio web.
 

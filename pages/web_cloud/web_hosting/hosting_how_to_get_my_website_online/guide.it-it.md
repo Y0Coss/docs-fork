@@ -102,7 +102,7 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in due mod
 
 #### 2.3. Caricare i file
 
-Una volta connesso al tuo spazio di archiviazione, ti rimane solo da caricare i file del tuo sito web. **Ti invitiamo a prestare particolare attenzione al percorso in cui intendi caricare i file.** In un utilizzo classico, il sito deve essere caricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per diversi siti web, è molto probabile che tu abbia dichiarato diversi siti web.
+Una volta connesso al tuo spazio di archiviazione, ti rimane solo da caricare i file del tuo sito web. **Ti invitiamo a prestare particolare attenzione al percorso in cui intendi caricare i file**. In un utilizzo classico, il sito deve essere caricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per diversi siti web, è molto probabile che tu abbia dichiarato diversi siti web.
 
 Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisito`{.action} del tuo Spazio Cliente OVHcloud e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato. 
 

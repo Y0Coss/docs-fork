@@ -1,27 +1,27 @@
 ---
-title: "O que fazer em caso de erro « Sua conexão não é particular »?"
+title: 'O que fazer em caso de erro "Sua conexão não é particular"?'
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
 updated: 2025-10-28
 ---
 
 ## Objetivo <a name="objective"></a>
 
-Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção « [Quer saber mais?](#go-further) »): 
+Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção "[Quer saber mais?](#go-further)"): 
 
 |Browser|Mensagem de erro em questão|
 |-|---|
-|Chrome:<br>« Sua conexão não é particular »|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
-|Firefox:<br>« Aviso: Potencial risco de segurança à frente »|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
-|Edge:<br>« Sua conexão não é privada »|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
-|Safari:<br>« Esta ligação não é segura »|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
+|Chrome:<br>"Sua conexão não é particular"|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
+|Firefox:<br>"Aviso: Potencial risco de segurança à frente"|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
+|Edge:<br>"Sua conexão não é privada"|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
+|Safari:<br>"Esta ligação não é segura"|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
 
-**Descubra como resolver os erros do tipo « Sua conexão não é particular ».**
+**Descubra como resolver os erros do tipo "Sua conexão não é particular".**
 
 > [!warning]
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: « [Quer saber mais?](#go-further) ».
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "[Quer saber mais?](#go-further)".
 >
 
 ## Requisitos
@@ -83,8 +83,8 @@ Nota do destino do tipo `A` para o seu domínio:
 |O endereço IP indicado na [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) corresponde ao do seu alojamento partilhado.|Passe para [Etapa 2](#step2).|
 |O endereço IP indicado na zona não diz respeito a nenhum alojamento do seu [conta OVHcloud](/links/manager), mas aparece na [lista dos servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Verifique que não possui um alojamento que possua este endereço IP num dos seus outros [contas OVHcloud](/links/manager), caso tenha criado vários. Se necessário, contacte o seu webmaster ou os [parceiros da OVHcloud](/links/partner) a este respeito.|
 |O endereço IP indicado na zona não é o do seu alojamento nem aparece na [lista dos servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner) a este respeito.|
-|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit), que aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net » (substitua « **?** » pelo número do servidor DNS em causa):<br><br>![warning_other_ovh_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique os servidores DNS do seu domínio, de modo a que correspondam aos inscritos nas entradas de tipo `NS` da zona. Para efetuar esta operação, siga as instruções do [presente guia](/pages/web_cloud/domains/dns_server_edit).|
-|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) e estes não aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net »:<br><br>![warning_external_dn_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner) a este respeito.|
+|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit), que aparecem na forma "ns **?** .ovh.net" ou "dns **?** .ovh.net" (substitua "**?**" pelo número do servidor DNS em causa):<br><br>![warning_other_ovh_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique os servidores DNS do seu domínio, de modo a que correspondam aos inscritos nas entradas de tipo `NS` da zona. Para efetuar esta operação, siga as instruções do [presente guia](/pages/web_cloud/domains/dns_server_edit).|
+|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) e estes não aparecem na forma "ns **?** .ovh.net" ou "dns **?** .ovh.net":<br><br>![warning_external_dn_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner) a este respeito.|
 |`Noms de domínio`{.action} do seu [Área de Cliente OVHcloud](/links/manager).<br><br>Ou o separador `Zona DNS`{.action} do seu domínio aparece da seguinte forma:<br><br>![zonedns_ndd_non_sur_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir do seu [Área de Cliente OVHcloud](/links/manager).<br><br>Verifique que o domínio não é gerido a partir de uma das suas outras [contas OVHcloud](/links/manager), se tiver criado vários.<br><br>Pode igualmente determinar o seu escritório de's registo e os servidores DNS aos quais está ligado através da nossa ferramenta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner).|
 
 ### 2: Verificar o certificado SSL do alojamento <a name="step2"></a>
@@ -99,7 +99,7 @@ Ative um [certificado SSL](/links/web/hosting-options-ssl) no seu alojamento, se
 
 #### Cenário 2: o certificado SSL do seu alojamento não funciona
 
-Se gerou um **certificado SSL « Let's Encrypt »**, ative a opção SSL do seu alojamento seguindo as instruções do [guia](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Se gerou um **certificado SSL "Let's Encrypt"**, ative a opção SSL do seu alojamento seguindo as instruções [deste guia](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 Se dispõe de um **certificado SSL importado** e este não funcionar, contacte o seu fornecedor.
 

@@ -386,9 +386,9 @@ Una volta modificato il file ".ovhconfig", caricalo sul tuo [spazio di storage F
 
 Se utilizzi il tuo spazio web per ospitare diversi siti web, potrebbero esserci diverse motivazioni che ti spingono a voler utilizzare una versione diversa di PHP per alcuni dei tuoi siti web.
 
-Crea un file ".ovhconfig" contenente la versione di PHP desiderata per il sito web o i siti web interessati. Segui le operazioni descritte nella sezione "[3.3 - Modifica il contenuto del file « .ovhconfig »](#update-ovhconfig)" di questa guida, se necessario. Quando caricherai il file ".ovhconfig" sul tuo [spazio di archiviazione FTP](/pages/web_cloud/web_hosting/ftp_connection), fallo nella cartella radice dove si trovano i file che compongono il sito web interessato. Trova la cartella radice del tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/manager) nell'onghetta `Multisito`{.action} dell'ospitaggio interessato.
+Crea un file ".ovhconfig" contenente la versione di PHP desiderata per il sito web o i siti web interessati. Segui le operazioni descritte nella sezione "[3.3 - Modifica il contenuto del file ".ovhconfig"](#update-ovhconfig)" di questa guida, se necessario. Quando caricherai il file ".ovhconfig" sul tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), fallo nella cartella radice dove si trovano i file che compongono il sito web interessato. Trova la cartella radice del tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/manager) nell'onghetta `Multisito`{.action} dell'hosting interessato.
 
-Consulta la nostra guida che dettaglia come [configurare un sito web su un'ospitaggio web](/pages/web_cloud/web_hosting/multisites_configure_multisite) se necessario.
+Consulta la nostra guida che dettaglia come [configurare un sito web su un'hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite) se necessario.
 
 > [!warning]
 >

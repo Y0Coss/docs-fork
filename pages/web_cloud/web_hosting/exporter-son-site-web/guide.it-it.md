@@ -69,7 +69,7 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
-Una volta connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito. **Ti invitiamo a prestare particolare attenzione al percorso in cui hai installato il tuo sito.** Nell'uso comune, il sito deve essere scaricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per ospitare diversi siti web, è probabile che tu abbia dichiarato diversi siti web.
+Una volta connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito. **Ti invitiamo a prestare particolare attenzione al percorso in cui hai installato il tuo sito**. Nell'uso comune, il sito deve essere scaricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per ospitare diversi siti web, è probabile che tu abbia dichiarato diversi siti web.
 
 Per verificare la cartella in cui è memorizzato il tuo sito web, vai sull'onglet `Multisito`{.action} dal tuo Spazio Cliente OVHcloud. Nella tabella visualizzata, per il dominio desiderato, guarda il `Cartella di root`{.action} che appare.
 

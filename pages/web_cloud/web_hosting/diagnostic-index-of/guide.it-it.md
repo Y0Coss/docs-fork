@@ -47,7 +47,7 @@ Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del t
 
 ### Risolvere il caso più comune di una pagina "Index of"
 
-Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo spazio di hosting tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il tuo nome dominio non è collegato a questa cartella nella colonna `Cartella di root` del tuo sito web.
+Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il tuo nome dominio non è collegato a questa cartella nella colonna `Cartella di root` del tuo sito web.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

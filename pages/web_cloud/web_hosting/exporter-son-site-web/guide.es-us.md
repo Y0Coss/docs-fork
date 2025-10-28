@@ -69,7 +69,7 @@ Una vez que disponga de todos los elementos necesarios, la recuperación de los 
 
 #### 1.2. Descargar los archivos desde el espacio de almacenamiento.
 
-Una vez conectado a su espacio de almacenamiento, solo le queda descargar los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que ha instalado su sitio.** En un caso de uso típico, el sitio debe descargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para alojar varios sitios web, es probable que haya declarado varios sitios web.
+Una vez conectado a su espacio de almacenamiento, solo le queda descargar los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que ha instalado su sitio**. En un caso de uso típico, el sitio debe descargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para alojar varios sitios web, es probable que haya declarado varios sitios web.
 
 Para comprobar la carpeta en la que se almacena su sitio web, vaya a la pestaña `Multisitio`{.action} desde su área de cliente de OVHcloud. En la tabla que aparece, para el dominio deseado, mire el `Carpeta raíz`{.action} que se muestra.
 

@@ -114,9 +114,9 @@ Para instalar um CMS na sua oferta de[alojamento web](/links/web/hosting), é ne
 
 #### 1.1 - Verificar a declaração do "dossier raiz"
 
-A "pasta raiz" corresponde ao diretório no qual o seu futuro CMS será instalado no seu alojamento. Recomenda-se escolher um diretório vazio para evitar conflitos com os seus outros potenciais sites web.
+A "pasta raiz" corresponde ao diretório no qual o seu futuro CMS será instalado no seu alojamento. Recomenda-se escolher um diretório vazio para evitar conflitos com os seus outros potenciais sites.
 
-Consulte a nossa documentação que descreve [como adicionar um multi-site ao seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir a pasta raiz a utilizar com o seu CMS.
+Consulte a nossa documentação que descreve [como adicionar um site ao seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir a pasta raiz a utilizar com o seu CMS.
 
 > [!primary]
 >

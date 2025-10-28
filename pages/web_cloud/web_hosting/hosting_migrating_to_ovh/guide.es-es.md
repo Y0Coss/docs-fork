@@ -136,7 +136,7 @@ Para ello, sustituya los datos de conexión de su antigua base de datos por los 
 > Para asociar una nueva base de datos si utiliza un Content Management System (CMS) como WordPress, Joomla, Drupal o PrestaShop, consulte la información relativa a sus archivos de configuración desde **el etapa 2** de la guía "[Modificación de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Declare/autorice su nombre de dominio externo en su alojamiento web OVHcloud siguiendo nuestro tutorial « [gestión de sitios web de un alojamiento web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».. Introduzca el nombre de la carpeta raíz que haya elegido al comienzo del[etapa 4](#step4). Le recordamos que esta es la carpeta en la que ha guardado sus archivos en su espacio de almacenamiento FTP.
+Declare/autorice su nombre de dominio externo en su alojamiento web OVHcloud siguiendo nuestro tutorial "[gestión de sitios web de un alojamiento web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Introduzca el nombre de la carpeta raíz que haya elegido al comienzo del[etapa 4](#step4). Le recordamos que esta es la carpeta en la que ha guardado sus archivos en su espacio de almacenamiento FTP.
 
 > [!warning]
 >

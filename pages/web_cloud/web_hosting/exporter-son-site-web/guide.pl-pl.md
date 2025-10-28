@@ -57,19 +57,19 @@ Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, 
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 >>
->> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web_cloud/web_hosting/ftp_connection).
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: "[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
->> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
+>> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku"[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
 - **Program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **Dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](/links/web/hosting). Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
+- **Dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](/links/web/hosting). Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją "[Korzystanie z dostępu SSH do hostingu WWW](/pages/web_cloud/web_hosting/ssh_on_webhosting)". 
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 
-Po zalogowaniu się do swojego obszaru magazynowania, pozostaje Ci tylko pobrać pliki swojej strony internetowej. **Zwracamy Ci szczególne uwagę na katalog, w którym zainstalowałeś swoją stronę.** W przypadku typowego użycia, strona powinna zostać pobrana do katalogu "www". Jednak jeśli korzystasz z hostingu, aby hostować wiele stron internetowych, prawdopodobnie zadeklarowałeś wiele stron internetowych.
+Po zalogowaniu się do swojego obszaru magazynowania, pozostaje Ci tylko pobrać pliki swojej strony internetowej. **Zwracamy Ci szczególne uwagę na katalog, w którym zainstalowałeś swoją stronę**. W przypadku typowego użycia, strona powinna zostać pobrana do katalogu "www". Jednak jeśli korzystasz z hostingu, aby hostować wiele stron internetowych, prawdopodobnie zadeklarowałeś wiele stron internetowych.
 
 Aby sprawdzić katalog, w którym znajduje się Twoja strona internetowa, przejdź do karty `MultiSite`{.action} w Panelu klienta OVHcloud. W wyświetlonej tabeli, dla wybranego domeny, sprawdź `Katalog główny`{.action}, który jest wyświetlany.
 
@@ -83,7 +83,7 @@ Aby sprawdzić katalog, w którym znajduje się Twoja strona internetowa, przejd
 >
 
 Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową bazy danych:
-[„Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW”](/pages/web_cloud/web_hosting/sql_database_export).
+"[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)".
 
 Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
 [Tworzenie i eksportowanie bazy danych na serwerze baz danych](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).

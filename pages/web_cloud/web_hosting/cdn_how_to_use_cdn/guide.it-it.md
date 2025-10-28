@@ -45,7 +45,7 @@ Sarai reindirizzato verso una pagina in cui è possibile generare un buono d’o
 
 #### Se l'opzione CDN è già attiva sul tuo hosting Web
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Hosting`{.action}. Nella scheda `Multisito`{.action}, clicca sul pulsante `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi clicca su `Modifica`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Hosting`{.action}. Nella scheda `Multisito`{.action}, clicca sul pulsante `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi clicca su `Modifica il dominio`{.action}.
 
 A questo punto, seleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
 
@@ -68,7 +68,7 @@ Per quanto riguarda la SEO (motori di ricerca), la velocità di visualizzazione 
 
 A volte può essere utile svuotare la cache del CDN, in particolare quando modifichi i tuoi file statici. Ad esempio, quando metti in produzione una nuova versione del tuo sito. È possibile svuotare la cache per ciascuno dei tuoi nomi di dominio e sottodomini.
 
-Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi su `Purger la CDN`{.action}.
+Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi su `Svuota la cache della CDN`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.actio
 
 - **Brotli**: tipo di compressione che permette di ottimizzare la dimensione dei tuoi file in cache.
 
-- **Regole della cache**: Crea fino a 5 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. ([segui la fase successiva](#cacherules)). 
+- **Regola di cache**: Crea fino a 5 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. ([segui la fase successiva](#cacherules)). 
 
 Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
@@ -98,9 +98,9 @@ Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e po
 
 ##### **Crea una regola di inserimento in cache** <a name="cacherules"></a>
 
-Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato, quindi su `Configura la CDN`{.action}.
+Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato, quindi su `Modifica la CDN`{.action}.
 
-Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
+Seleziona **Regola di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
 
@@ -221,7 +221,7 @@ Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e po
 
 ##### **Crea una regola di memorizzazione in cache avanzata** <a name="cacherulesadv"></a>
 
-Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato, quindi su `Configura la CDN`{.action}.
+Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla scheda `Multisito`{.action} del tuo hosting, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato, quindi su `Modifica la CDN`{.action}.
 
 Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
 
@@ -293,7 +293,7 @@ Questa azione permette di disattivare il CDN per uno o più dei tuoi nomi di dom
 > La modifica di un record nella zona DNS attiva di un dominio comporta un tempo di propagazione da **4** a **24** ore per essere pienamente efficace. Una pagina contenente il codice **520** potrebbe apparire casualmente fino al termine della propagazione. Questo fenomeno è legato al fatto che alcune parti della rete DNS reindirizzano ancora le richieste verso l'indirizzo IP della CDN associato al tuo hosting Web.
 >
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Nella scheda `Multisito`{.action}, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi su `Modifica`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Nella scheda `Multisito`{.action}, clicca su `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi su `Modifica il dominio`{.action}.
 
 A questo punto, deseleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
 

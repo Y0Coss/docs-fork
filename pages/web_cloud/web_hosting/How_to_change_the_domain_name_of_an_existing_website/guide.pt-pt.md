@@ -114,7 +114,7 @@ Se tiver contactado um fornecedor para a criação do seu site, contacte-o para 
 
 ### Etapa 3 - retirar o antigo nome de domínio <a name="step3"></a>
 
-Para evitar o « *Duplicate-content* » e quando o seu novo nome de domínio estiver plenamente operacional com o seu site web, deverá eliminar a declaração do seu antigo nome de domínio no seu site web com o guia sobre a gestão dos [sites web no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Para evitar o "*Duplicate-content*" e quando o seu novo nome de domínio estiver plenamente operacional com o seu site web, deverá eliminar a declaração do seu antigo nome de domínio no seu site web com o guia sobre a gestão dos [sites web no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >

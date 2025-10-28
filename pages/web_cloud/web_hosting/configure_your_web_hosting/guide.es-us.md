@@ -386,7 +386,7 @@ Una vez modificado el archivo ".ovhconfig", cárguelo en su [espacio de almacena
 
 Si utiliza su alojamiento web para alojar varios sitios web, puede que tenga razones para querer beneficiarse de una versión de PHP diferente para algunos de sus sitios web.
 
-Cree un archivo « .ovhconfig » que contenga la versión de PHP deseada para el o los sitios web afectados. Siga las manipulaciones descritas en la parte « [3.3 - Modificar el contenido del archivo « .ovhconfig »](#update-ovhconfig) » de este guía si es necesario. Cuando cargue el archivo « .ovhconfig » en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz donde se encuentran los archivos que componen el sitio web afectado. Puede encontrar la carpeta raíz de su sitio web desde su [área de cliente de OVHcloud](/links/manager) en la pestaña `Multisite`{.action} del alojamiento afectado.
+Cree un archivo ".ovhconfig" que contenga la versión de PHP deseada para el o los sitios web afectados. Siga las manipulaciones descritas en la parte "[3.3 - Modificar el contenido del archivo ".ovhconfig"](#update-ovhconfig)" de este guía si es necesario. Cuando cargue el archivo ".ovhconfig" en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz donde se encuentran los archivos que componen el sitio web afectado. Puede encontrar la carpeta raíz de su sitio web desde su [área de cliente de OVHcloud](/links/manager) en la pestaña `Multisite`{.action} del alojamiento afectado.
 
 Consulte nuestro guía detallando cómo [configurar un sitio web en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si es necesario.
 

@@ -134,7 +134,7 @@ Sostituisci le informazioni di connessione del tuo database precedente con quell
 > Per collegare il tuo nuovo database se utilizzi un Content Management System (CMS) come WordPress, Joomla!, Drupal o PrestaShop, consulta le informazioni sui file di configurazione nello **Step 2** della guida ["Modificare la password di un database"](/pages/web_cloud/web_hosting/sql_change_password).
 >
 
-Dichiarate/autorizzate il vostro nome di dominio esterno sull'ospedaggio web OVHcloud tramite la nostra guida « [gestione dei siti web di un ospedaggio web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Dichiarare correttamente il "nome" della cartella di root scelta all'inizio dello [step 4](#step4). Ti ricordiamo che questa è la cartella in cui hai inserito i tuoi file nel tuo spazio di storage FTP.
+Dichiarate/autorizzate il vostro nome di dominio esterno sull'ospedaggio web OVHcloud tramite la nostra guida "[gestione dei siti web di un ospedaggio web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Dichiarare correttamente il "nome" della cartella di root scelta all'inizio dello [step 4](#step4). Ti ricordiamo che questa è la cartella in cui hai inserito i tuoi file nel tuo spazio di storage FTP.
 
 > [!warning]
 >
