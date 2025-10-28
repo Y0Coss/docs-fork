@@ -1,7 +1,7 @@
 ---
 title: Registries - Use & manage your registries
 excerpt: Learn how to use and manage your public and private registries
-updated: 2025-05-05
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ The Public Cloud provides a default registry called `shared registry`, where use
 
 > [!warning]
 >
->This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
+> This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 This is why it can be interesting to add and manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the `ovhai` CLI.
@@ -127,7 +127,7 @@ To add your registry, you can either use the OVHcloud Control Panel (UI) or the 
 During this step, you will be asked your user's credentials (user ID and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
 
 > [!tabs]
-> **Using the Control Panel (UI)**
+> Using the Control Panel (UI)
 >>
 >> To add your private registry via UI, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 >> 
@@ -141,7 +141,7 @@ During this step, you will be asked your user's credentials (user ID and passwor
 >> 
 >> When you have finished filling in the form, click `Add`{.action}. 
 >>
-> **Using ovhai CLI**
+> Using ovhai CLI
 >>
 > To add your private Harbor registry via CLI, use:
 > 
@@ -149,13 +149,13 @@ During this step, you will be asked your user's credentials (user ID and passwor
 > ovhai registry add <registry-url>
 > ```
 > 
-> Once your registry is added, you should see it in your registries list. You can then use any images pushed on this registry for your AI Training jobs and AI Deploy apps.
+> Once your registry is added, you should see it in your registries list. You can then use any image pushed on this registry for your AI Training jobs and AI Deploy apps.
 
 #### Push an image to your registry
 
 > [!warning]
 >
->Be careful for the following, we will use the displayed URL. This version does not contain the `https://` part, which is present in the URL given by the Public Cloud.
+> Be careful with the following, as we will use the displayed URL. This version does not contain the `https://` part, which is present in the URL given by the Public Cloud.
 >
 
 Log in to your private registry, using a user with write rights to your registry project, with the following command:
@@ -270,7 +270,7 @@ Once your image is pushed on your GitHub account, you will need to add your GitH
 You will be asked your GitHub credentials.
 
 > [!tabs]
-> **Using the Control Panel (UI)**
+> Using the Control Panel (UI)
 >>
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 >> 
@@ -284,7 +284,7 @@ You will be asked your GitHub credentials.
 >> 
 >> When you have finished filling in the form, click `Add`{.action}.
 >>
-> **Using ovhai CLI**
+> Using ovhai CLI
 >>
 >> ```console
 >> ovhai registry add ghcr.io
