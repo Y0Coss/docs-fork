@@ -37,7 +37,7 @@ To change the access domain name for your website, there are several steps to fo
 
 ### Step 1: Declare the new domain on your hosting <a name="step1"></a>
 
-Declare your new domain name using our documentation on [adding a website to your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its subdomain in `www` if you want, for example, `www.NewDomain.tld` to display your website as well as `NewDomain.tld`.
+Declare your new domain name using our documentation on [adding a website to your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its `www` subdomain to display your website as `www.NewDomain.tld` as well as `NewDomain.tld`.
 
 There are several conditions to meet for this part:
 
@@ -57,7 +57,7 @@ There are several conditions to meet for this part:
 > - [Managing an SSL certificate on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Activating HTTPS on your website with an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-If all the actions have been correctly performed, the declarations of your domain names should be strictly identical **unless you are using a paid SSL certificate of type *Sectigo DV*, *Sectigo EV*, or *custom***.
+If all actions have been correctly performed, the declarations of your domain names should be strictly identical **unless you are using a paid SSL certificate of type *Sectigo DV*, *Sectigo EV*, or *custom***.
 
 ![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -114,14 +114,14 @@ If you used a service provider to create your website, contact them so that they
 
 ### Step 3: Remove the old domain name <a name="step3"></a>
 
-To avoid "duplicate content" and once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name on your website using the guide on managing [websites on your shared hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+To avoid "duplicate content" once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name on your website using the guide on managing [websites on your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > Don't forget to take care of your SSL certificate *Sectigo EV*, *Sectigo DV* or *Custom* as specified in [step 1](#step1).
 >
 
-Once your old domain name is dissociated from your website on your web hosting and if it is registered with OVHcloud, you can redirect it using a [permanent visible 301 redirect](/pages/web_cloud/domains/redirect_domain_name). This will allow your visitors to be automatically redirected to your website while seeing your new domain in the address bar/URL of their browser.
+Once your old domain name is dissociated from your website on your web hosting and if it is registered with OVHcloud, you can redirect it using a [permanent visible 301 redirect](/pages/web_cloud/domains/redirect_domain_name). This will allow your visitors to be automatically redirected to your website while seeing your new domain name / URL in the address bar of their browser.
 
 ## Go further <a name="go-further"></a>
 
