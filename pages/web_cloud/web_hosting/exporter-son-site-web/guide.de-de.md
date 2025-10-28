@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2025-10-14
+updated: 2025-10-28
 ---
 
 ## Ziel 
@@ -69,9 +69,9 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 
-Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateien Ihrer Webseite herunterladen. **Achten Sie bitte besonders auf das Verzeichnis, in dem Sie Ihre Seite installiert haben.** Standardmäßig werden diese im „www“-Ordner abgelegt. Sollten Sie über Ihr Webhosting mehrere Webseiten betreiben, haben Sie mit Sicherheit mehrere **Multisites** angelegt.
+Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben, müssen Sie nur noch die Dateien Ihres Webs auf dem Server herunterladen. **Wir empfehlen Ihnen, besonders aufmerksam zu sein, in welchem Verzeichnis Sie Ihre Website installiert haben.** In einem typischen Szenario muss die Website im Ordner „www“ heruntergeladen werden. Wenn Sie jedoch Ihren Webhosting-Service nutzen, um mehrere Websites zu hosten, haben Sie wahrscheinlich mehrere Webseiten deklariert.
 
-Gehen Sie in Ihrem OVHcloud-Kundencenter auf den Tab `Multisite`{.action}, um herauszufinden, in welchem Ordner Ihre Webseite gespeichert ist. In der angezeigten Tabelle wird das Wurzelverzeichnis für die gewünschte Domain angegeben.
+Um zu prüfen, in welchem Ordner Ihre Website gespeichert ist, wechseln Sie im OVHcloud Kundencenter zum Tab `Multisite`{.action}. Im angezeigten Tabellenbereich suchen Sie nach dem gewünschten Domainnamen und prüfen Sie anschließend den angezeigten `Wurzelverzeichnis`{.action}.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 

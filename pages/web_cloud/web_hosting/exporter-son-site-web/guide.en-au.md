@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2025-10-14
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -69,9 +69,9 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 #### 2.1 Upload the files from your storage space.
 
-Once you have logged in to your storage space, all you need to do upload your website files. **Please take special care when you select the repository you have set up your website on.** For standard websites, the files should be uploaded to the “www” folder. However, if you host several websites on your hosting plan, you have almost certainly registered several **Multi-sites**.
+Once connected to your storage space, you just need to download the files from your website. **We recommend that you pay particular attention to the directory on which you installed your website.** In a typical use case, the website should be downloaded in the "www" folder. However, if you are using your hosting to host multiple websites, you have probably declared multiple websites.
 
-To identify the folder that the website is stored on, go to the `Multi-site`{.action} tab in the OVHcloud Control Panel. In the table shown, check the `Root folder`{.action} listed for the domain in question.
+To check the folder in which your website is stored, go to the `Multisite`{.action} tab from your OVHcloud Control Panel. In the table that appears, for the desired domain, look at the `Root folder`{.action} that is displayed.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 

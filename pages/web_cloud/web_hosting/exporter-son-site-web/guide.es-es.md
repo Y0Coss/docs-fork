@@ -1,7 +1,7 @@
 ---
 title: "Exportar un sitio web"
 excerpt: "Cómo exportar un sitio web de OVHcloud"
-updated: 2025-10-14
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -69,9 +69,9 @@ Una vez que disponga de todos los elementos necesarios, la recuperación de los 
 
 #### 1.2. Descargar los archivos desde el espacio de almacenamiento.
 
-Una vez que se haya conectado al espacio de almacenamiento, solo tiene que descargar los archivos del sitio web. **Preste especial atención al directorio en el que haya instalado su sitio web.** Para un uso convencional, deberá cargar el sitio web en la carpeta «www». Sin embargo, si utiliza su hosting para alojar varios sitios web, probablemente haya declarado varios **multisitios**.
+Una vez conectado a su espacio de almacenamiento, solo le queda descargar los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que ha instalado su sitio.** En un caso de uso típico, el sitio debe descargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para alojar varios sitios web, es probable que haya declarado varios sitios web.
 
-Para consultar la carpeta en la que está almacenado el sitio web, abra la pestaña `Multisitio`{.action} del área de cliente de OVHcloud. Aparecerá una tabla en la que podrá consultar la `Carpeta raíz`{.action} del dominio correspondiente.
+Para comprobar la carpeta en la que se almacena su sitio web, vaya a la pestaña `Multisitio`{.action} desde su área de cliente de OVHcloud. En la tabla que aparece, para el dominio deseado, mire el `Carpeta raíz`{.action} que se muestra.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 

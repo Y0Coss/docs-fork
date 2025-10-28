@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2025-10-14
+updated: 2025-10-28
 ---
 
 ## Wprowadzenie 
@@ -69,9 +69,9 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pli
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 
-Po zalogowaniu się do przestrzeni dyskowej pobierz pliki Twojej witryny. **Zalecamy szczególną ostrożność przy wyborze katalogu, w którym znajdują się pliki Twojej witryny.** W przypadku instalacji tylko jednej strony WWW na hostingu, pliki powinny znaleźć się w katalogu „www”. Jeśli jednak zainstalowałeś na Twoim hostingu więcej witryn WWW, z pewnością skonfigurowałeś różne katalogi dla domen w opcji **MultiSite**.
+Po zalogowaniu się do swojego obszaru magazynowania, pozostaje Ci tylko pobrać pliki swojej strony internetowej. **Zwracamy Ci szczególne uwagę na katalog, w którym zainstalowałeś swoją stronę.** W przypadku typowego użycia, strona powinna zostać pobrana do katalogu "www". Jednak jeśli korzystasz z hostingu, aby hostować wiele stron internetowych, prawdopodobnie zadeklarowałeś wiele stron internetowych.
 
-Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do karty `MultiSite`{.action} w panelu klienta OVHcloud. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}.
+Aby sprawdzić katalog, w którym znajduje się Twoja strona internetowa, przejdź do karty `MultiSite`{.action} w Panelu klienta OVHcloud. W wyświetlonej tabeli, dla wybranego domeny, sprawdź `Katalog główny`{.action}, który jest wyświetlany.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2025-10-14
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -69,9 +69,9 @@ Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no es
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 
-Depois de aceder ao espaço de armazenamento, apenas precisará de transferir os ficheiros do seu site. **Preste especial atenção ao diretório no qual instalou o seu site.** Num caso de utilização clássica, o site deve ser carregado para a pasta “www”. No entanto, se utiliza o seu alojamento web para alojar vários sites, deverá utilizar a opção **Multi-site**.
+Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas transferir os ficheiros do seu site. **Recomendamos que seja especialmente atento ao diretório em que instalou o seu site.** Num cenário de utilização comum, o site deve ser transferido para a pasta « www ». No entanto, se estiver a utilizar o seu alojamento para alojar vários sítios Web, certamente declarou vários sítios Web.
 
-Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site`{.action} a partir da Área de Cliente OVHcloud. Aparecerá uma tabela onde poderá consultar a `Pasta raiz`{.action} do domínio pretendido.
+Para verificar a pasta em que o seu site está armazenado, posicione-se no separador `Multisite`{.action} a partir da sua área de cliente OVHcloud. No quadro que aparece, para o domínio pretendido, consulte o `Pasta raiz`{.action} que aparece.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 

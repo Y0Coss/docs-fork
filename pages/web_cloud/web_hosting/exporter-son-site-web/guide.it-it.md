@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2025-10-14
+updated: 2025-10-28
 ---
 
 ## Obiettivo
@@ -69,9 +69,9 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
-Una volta connesso allo spazio di storage, non ti resta che caricare i file del tuo sito. **Ti consigliamo di prestare la massima attenzione alla directory su cui hai installato il tuo sito.** in genere è la cartella “www”. Se utilizzi il tuo hosting per ospitare più siti Internet, hai sicuramente dichiarato diversi **Multisito**.
+Una volta connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito. **Ti invitiamo a prestare particolare attenzione al percorso in cui hai installato il tuo sito.** Nell'uso comune, il sito deve essere scaricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per ospitare diversi siti web, è probabile che tu abbia dichiarato diversi siti web.
 
-Per verificare la cartella in cui il tuo sito è ospitato clicca sulla scheda `Multisito`{.action} dello Spazio Cliente OVHcloud. e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato.
+Per verificare la cartella in cui è memorizzato il tuo sito web, vai sull'onglet `Multisito`{.action} dal tuo Spazio Cliente OVHcloud. Nella tabella visualizzata, per il dominio desiderato, guarda il `Cartella di root`{.action} che appare.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
