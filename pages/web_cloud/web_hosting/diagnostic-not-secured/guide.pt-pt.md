@@ -1,7 +1,7 @@
 ---
 title: "O que fazer em caso de erro « Sua conexão não é particular »?"
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
-updated: 2025-10-09
+updated: 2025-10-28
 ---
 
 ## Objetivo <a name="objective"></a>
@@ -99,7 +99,7 @@ Ative um [certificado SSL](/links/web/hosting-options-ssl) no seu alojamento, se
 
 #### Cenário 2: o certificado SSL do seu alojamento não funciona
 
-Se gerou um **certificado SSL « Let's Encrypt »**, ative a opção SSL no `Multisite`{.action} do seu alojamento seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/ssl_on_webhosting#ativar-um-certificado-ssl-num-multisite).
+Se gerou um **certificado SSL « Let's Encrypt »**, ative a opção SSL do seu alojamento seguindo as instruções do [guia](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 Se dispõe de um **certificado SSL importado** e este não funcionar, contacte o seu fornecedor.
 

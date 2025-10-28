@@ -1,7 +1,7 @@
 ---
 title: "Cosa fare in caso di errore « La connessione non è privata »?"
 excerpt: "Reagire in caso di messaggio di errore relativo alla sicurezza del tuo sito"
-updated: 2025-10-09
+updated: 2025-10-28
 ---
 
 ## Obiettivo <a name="objective"></a>
@@ -98,7 +98,7 @@ Attiva un [certificato SSL](/links/web/hosting-options-ssl) sul tuo hosting segu
 
 #### Scenario 2: il certificato SSL del tuo hosting non funziona
 
-Se hai generato un **certificato SSL "Let's Encrypt"**, attiva l'opzione SSL nella `Multisito`{.action} del tuo hosting seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/ssl_on_webhosting#attiva-un-certificato-ssl-su-un-multisito).
+Se hai generato un **certificato SSL "Let's Encrypt"**, attiva l'opzione SSL del tuo hosting seguendo le istruzioni di [questa guida](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 Se disponi di un **certificato SSL importato** e questo non funziona, contatta il suo provider.
 

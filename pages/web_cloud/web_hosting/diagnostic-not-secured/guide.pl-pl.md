@@ -1,7 +1,7 @@
 ---
 title: "Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?"
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
-updated: 2025-10-09
+updated: 2025-10-28
 ---
 
 ## Wprowadzenie  <a name="objective"></a>
@@ -98,7 +98,7 @@ Włącz [certyfikat SSL](/links/web/hosting-options-ssl) na Twoim hostingu post�
 
 #### Scenariusz 2: certyfikat SSL nie działa
 
-Jeśli wygenerowałeś **certyfikat SSL « Let's Encrypt »**, włącz opcję SSL w opcji `MultiSite`{.action} Twojego hostingu postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/ssl_on_webhosting#aktywacja-certyfikatu-ssl-na-stronie-podpietej-w-opcji-multisite).
+Jeśli wygenerowałeś **certyfikat SSL „Let's Encrypt”**, aktywuj opcję SSL dla swojego hostingu, postępując zgodnie z instrukcjami w [tym przewodniku](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 Jeśli posiadasz importowany **certyfikat SSL** i certyfikat ten nie działa, skontaktuj się z dostawcą.
 
