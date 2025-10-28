@@ -1,5 +1,5 @@
 ---
-title: "Tutto ciò che devi sapere sugli mittenti SMS"
+title: 'Tutto ciò che devi sapere sugli mittenti SMS'
 excerpt: Scopri i diversi mittenti utilizzabili con le nostre soluzioni SMS
 updated: 2025-10-28
 ---
