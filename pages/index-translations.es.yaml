@@ -297,7 +297,8 @@ web-cloud-messaging-sms-smpp: SMPP
 web-cloud-phone-and-fax: Teléfono y Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Primeros pasos
-web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Enviar y recibir faxes
+web-cloud-phone-and-fax-fax-configuration: Configuración
+web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Enviar y recibir faxes
 web-cloud-phone-and-fax-voip: VoIP
 web-cloud-phone-and-fax-voip-configuration-administration: Administración
 web-cloud-phone-and-fax-voip-configuration-api: API
