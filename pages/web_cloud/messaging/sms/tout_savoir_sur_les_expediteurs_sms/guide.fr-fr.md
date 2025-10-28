@@ -1,7 +1,7 @@
 ---
 title: ‘Tout savoir sur les expéditeurs SMS’
 excerpt: Découvrez les différents expéditeurs utilisables avec nos solutions SMS
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Objectif
@@ -72,11 +72,11 @@ La validation d'un expéditeur alphanumérique est effectuée en moyenne dans le
 
 **Uniquement pour les comptes OVHcloud en France.**
 
-Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page sur le numéro mobile virtuel](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page sur le numéro mobile virtuel](/links/telecom/sms-vln).
 
 > [!primary]
 >
-> Si vous disposez déjà d'un compte SMS, la création d'un numéro mobile virtuel pour ce compte existant est impossible. Il sera nécessaire de commander un nouveau compte SMS via la page de l'offre [numéro mobile virtuel](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+> Si vous disposez déjà d'un compte SMS, la création d'un numéro mobile virtuel pour ce compte existant est impossible. Il sera nécessaire de commander un nouveau compte SMS via la page de l'offre [numéro mobile virtuel](/links/telecom/sms-vln).
 >
 
 ## Aller plus loin

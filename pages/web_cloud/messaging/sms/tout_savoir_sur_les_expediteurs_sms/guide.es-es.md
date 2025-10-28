@@ -1,7 +1,7 @@
 ---
 title: 'Todo sobre remitentes SMS'
 excerpt: Descubra los diferentes remitentes utilizables con nuestras soluciones SMS
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -73,11 +73,11 @@ La validación de un remitente alfanumérico se realiza en promedio en 72 horas 
 
 **Sólo para cuentas OVHcloud en Francia.**
 
-Si dispone de una oferta SMS con número de móvil virtual, puede indicar este número como remitente. Para más información, consulte nuestra [página sobre el número de móvil virtual](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+Si dispone de una oferta SMS con número de móvil virtual, puede indicar este número como remitente. Para más información, consulte nuestra [página sobre el número de móvil virtual](/links/telecom/sms-vln).
 
 > [!primary]
 >
-> Si ya dispone de una cuenta SMS, no es posible crear un número de móvil virtual para esta cuenta existente. Será necesario pedir una nueva cuenta SMS a través de la página de la oferta [número de móvil virtual](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+> Si ya dispone de una cuenta SMS, no es posible crear un número de móvil virtual para esta cuenta existente. Será necesario pedir una nueva cuenta SMS a través de la página de la oferta [número de móvil virtual](/links/telecom/sms-vln).
 >
 
 ## Más información

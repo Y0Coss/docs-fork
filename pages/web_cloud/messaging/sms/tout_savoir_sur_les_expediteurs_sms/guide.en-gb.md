@@ -1,7 +1,7 @@
 ---
 title: 'Everything you need to know about SMS senders'
 excerpt: Discover the different senders available with our SMS solutions
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -10,8 +10,8 @@ This guide explains how to create and use senders for sending your SMS messages.
 
 ## Requirements
 
-- Have an [OVHcloud SMS account](/links/telecom/sms).
-- Be logged in to the [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+- An [OVHcloud SMS account](/links/telecom/sms).
+- Access to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![OVHcloud Control Panel Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -29,7 +29,7 @@ The "Short number allowing replies" sender is available by default on our SMS so
 
 #### Short number allowing replies
 
-**Only for OVHcloud accounts in France (excluding DOM-TOM).**
+**Only for OVHcloud accounts in France excluding French overseas departments and territories.**
 
 It allows you to receive a reply via the "Received SMS" tab.
 
@@ -73,11 +73,11 @@ The validation of an alphanumeric sender is usually processed within 72 hours af
 
 **Only for OVHcloud accounts in France.**
 
-If you have an SMS offer with a virtual mobile number, you can use this number as a sender. For more information, see our [page on virtual mobile numbers](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+If you have an SMS offer with a virtual mobile number, you can use this number as a sender. For more information, see our [page on virtual mobile numbers](/links/telecom/sms-vln).
 
 > [!primary]
 >
-> If you already have an SMS account, it is not possible to create a virtual mobile number for an existing account. You will need to order a new SMS account via the [virtual mobile number](https://www.ovhcloud.com/fr/sms/virtual-numbers) offer page.
+> If you already have an SMS account, it is not possible to create a virtual mobile number for an existing account. You will need to order a new SMS account via the [virtual mobile number](/links/telecom/sms-vln) offer page.
 >
 
 ## Go further

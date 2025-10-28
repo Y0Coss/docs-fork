@@ -1,7 +1,7 @@
 ---
 title: "Tutto ciò che devi sapere sugli mittenti SMS"
 excerpt: Scopri i diversi mittenti utilizzabili con le nostre soluzioni SMS
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Obiettivo
@@ -73,11 +73,11 @@ La validazione di un mittente alfanumerico avviene in media entro 72 ore dopo la
 
 **Solo per account OVHcloud in Francia.**
 
-Se disponi di un'offerta SMS con numero mobile virtuale, puoi utilizzarlo come mittente. Per ulteriori informazioni, consulta la nostra [pagina relativa al numero mobile virtuale](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+Se disponi di un'offerta SMS con numero mobile virtuale, puoi utilizzarlo come mittente. Per ulteriori informazioni, consulta la nostra [pagina relativa al numero mobile virtuale](/links/telecom/sms-vln).
 
 > [!primary]
 >
-> Se disponi già di un account SMS, non è possibile creare un numero mobile virtuale per questo account esistente. Sarà necessario ordinare un nuovo account SMS tramite la pagina dell'offerta [numero mobile virtuale](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+> Se disponi già di un account SMS, non è possibile creare un numero mobile virtuale per questo account esistente. Sarà necessario ordinare un nuovo account SMS tramite la pagina dell'offerta [numero mobile virtuale](/links/telecom/sms-vln).
 >
 
 ## Per saperne di più

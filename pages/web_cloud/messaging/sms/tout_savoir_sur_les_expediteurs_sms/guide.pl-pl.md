@@ -1,7 +1,7 @@
 ---
-title: 'Wszystko o nadawcach SMS'
+title: 'Wszystko, co musisz wiedzieć o nadawcach SMS'
 excerpt: Poznaj różne nadawców, których można użyć z naszymi rozwiązaniami SMS
-updated: 2025-10-27
+updated: 2025-10-28
 ---
 
 ## Wprowadzenie
@@ -73,11 +73,11 @@ Weryfikacja nadawcy alfanumerycznego trwa średnio 72 godziny po jego utworzeniu
 
 **Tylko dla kont OVHcloud w Francji.**
 
-Jeśli masz ofertę SMS z wirtualnym numerem komórkowym, możesz podać ten numer jako nadawcę. Aby uzyskać więcej informacji, odwiedź naszą [stronę dotyczącą wirtualnego numeru komórkowego](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+Jeśli masz ofertę SMS z wirtualnym numerem komórkowym, możesz podać ten numer jako nadawcę. Aby uzyskać więcej informacji, odwiedź naszą [stronę dotyczącą wirtualnego numeru komórkowego](/links/telecom/sms-vln).
 
 > [!primary]
 >
-> Jeśli masz już konto SMS, nie możesz utworzyć wirtualnego numeru komórkowego dla istniejącego konta. Będzie konieczne zamówienie nowego konta SMS przez stronę oferty [wirtualnego numeru komórkowego](https://www.ovhcloud.com/fr/sms/virtual-numbers).
+> Jeśli masz już konto SMS, nie możesz utworzyć wirtualnego numeru komórkowego dla istniejącego konta. Będzie konieczne zamówienie nowego konta SMS przez stronę oferty [wirtualnego numeru komórkowego](/links/telecom/sms-vln).
 >
 
 ## Sprawdź również
