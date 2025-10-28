@@ -2086,6 +2086,7 @@
     + [vRack Services](products/network-vrack-services)
         + [vRack Services - Exposing a Managed Service on your vRack](network/vrack_services/global)
         + [Enterprise File Storage - Private network configuration](storage_and_backup/file_storage/enterprise_file_storage/netapp_network_config)
+        + [Enterprise File Storage - Connect a Public Cloud instance to an EFS volume via vRack](storage_and_backup/file_storage/enterprise_file_storage/netapp_pci_connection_via_vrack)
     + [Content Delivery Network (CDN) Infrastructure](network-content-delivery-network-cdninfrastructure)
         + [Configuring a domain name for the first time](network/content_delivery_network_infrastructure/first_domain_name_configuration)
         + [Understanding quota on the CDN](network/content_delivery_network_infrastructure/quota)
