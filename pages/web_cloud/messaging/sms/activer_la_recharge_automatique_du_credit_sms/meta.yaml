@@ -10,3 +10,4 @@ disable_languages:
 - pt-pt
 id: 2afb6264-5aed-43bb-86f7-01735c0ebd7b
 full_slug: sms-credit-management
+translation_banner: true

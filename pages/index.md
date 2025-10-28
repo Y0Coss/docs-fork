@@ -1877,6 +1877,7 @@
             + [Managing your solution](web-cloud-messaging-sms-managing-your-solution)
                 + [Managing SMS credits and enabling automatic re-crediting](web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms)
                 + [Manage your SMS history](web_cloud/messaging/sms/gerer_l_historique_des_sms)
+                + [Everything you need to know about SMS senders](web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)
                 + [Everything you need to know about SMS users](web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
                 + [How to create an SMS recipient list](web_cloud/messaging/sms/liste_de_destinataire_sms)
                 + [Managing SMS address books](web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms)
