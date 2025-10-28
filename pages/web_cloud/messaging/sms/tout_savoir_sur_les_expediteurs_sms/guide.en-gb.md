@@ -11,7 +11,7 @@ This guide explains how to create and use senders for sending your SMS messages.
 ## Requirements
 
 - An [OVHcloud SMS account](/links/telecom/sms).
-- Access to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+- Access to the [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![OVHcloud Control Panel Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 

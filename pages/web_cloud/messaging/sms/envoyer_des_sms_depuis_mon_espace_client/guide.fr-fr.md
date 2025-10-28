@@ -34,6 +34,9 @@ Une fois sur la page d'envoi de SMS, vous disposez de différents paramètres à
 
 Pour l’expéditeur du SMS (1) , vous avez la possibilité de sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique.
 
+> [!primary]
+> Pour plus de renseignements sur les SMS permettant la réponse, référez-vous à notre guide « [Envoyer des SMS permettant la réponse](/pages/web_cloud/messaging/sms/gerer_les_sms_avec_reponse) ».
+
 Renseignez ensuite  le numéro du destinataire (2) au format international (+336xxxxxxxx).
 
 Vous pouvez également envoyer des SMS à plusieurs destinataires. Deux méthodes sont disponibles pour y parvenir :
