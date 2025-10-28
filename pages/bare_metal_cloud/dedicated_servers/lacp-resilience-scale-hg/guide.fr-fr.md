@@ -1,7 +1,7 @@
 ---
 title: Amélioration de la résilience réseau sur les serveurs Bare Metal
 excerpt: "Découvrez comment renforcer la résilience des interfaces publiques et privées sur vos serveurs Bare Metal OVHcloud avec la nouvelle architecture d'agrégation réseau"
-updated: 2025-10-24
+updated: 2025-10-28
 ---
 
 > [!primary]
@@ -14,7 +14,7 @@ Ce guide présente la nouvelle architecture d’agrégation réseau mise en plac
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal)
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) possédant 4 interfaces réseau (gammes High Grade et SCALE).
 - Avoir configuré l’agrégation de liens (LACP) sur vos interfaces publiques ou privées (hors OLA)
 
 ## En pratique

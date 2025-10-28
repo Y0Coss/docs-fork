@@ -1,7 +1,7 @@
 ---
 title: Improving Network Resilience on Bare Metal servers
 excerpt: Discover how to reinforce the resilience of public and private interfaces on your OVHcloud Bare Metal servers with the new network aggregation architecture
-updated: 2025-10-24
+updated: 2025-10-28
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ This guide presents the new network aggregation architecture implemented on OVHc
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal).
+- A [dedicated server](/links/bare-metal/bare-metal) with 4 network interfaces (High Grade & SCALE ranges).
 - Link aggregation (LACP) configured on its public or private interfaces (excluding OLA).
 
 ## Instructions
