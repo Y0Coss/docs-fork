@@ -37,12 +37,12 @@ To change the access domain name for your website, there are several steps to fo
 
 ### Step 1: Declare the new domain on your hosting <a name="step1"></a>
 
-Declare your new domain name using our documentation on [adding a website to your shared hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its subdomain in `www` if you want, for example, `www.NewDomain.tld` to display your website as well as `NewDomain.tld`.
+Declare your new domain name using our documentation on [adding a website to your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its subdomain in `www` if you want, for example, `www.NewDomain.tld` to display your website as well as `NewDomain.tld`.
 
 There are several conditions to meet for this part:
 
 - Your new domain must point to the same root folder as the domain currently used to access your site.
-- Check that your new domain points to the IP address of your hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select your service, then retrieve **IPv4** in the `General information`{.action} tab.
+- Check that your new domain points to the IP address of your web hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select your service, then retrieve the **IPv4** in the `General information`{.action} tab.
 
 > [!warning]
 >
