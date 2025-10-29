@@ -96,9 +96,9 @@ Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP su
 >
 > Lors d'un changement d'offre vers les nouvelles offres Fibre Pro et xDSL Pro, vous pourrez soit résilier ces options ou choisir de les conserver aux tarifs en vigueur.
 >
-> L'adresse IP publique de l'accès ne peut être conservée après le déménagement.
+> L'adresse IP publique de l'accès ne peut pas être conservée après le déménagement.
 >
-> Cependant, si un [bloc IP](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et aurez la possibilité d'avancer cette migration via API si besoin.
+> Cependant, si un [bloc IP](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
 
 ![Choix de l'offre](images/move07-2022.png){.thumbnail}
 

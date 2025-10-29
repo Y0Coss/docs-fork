@@ -73,7 +73,7 @@ Sur la page, dans la partie « Configuration générale », assurez-vous de déc
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
-Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVHcloud. Poursuivez selon le modèle que vous possédez :
+Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVHcloud. Poursuivez selon le modèle que vous possédez.
 
 > [!primary]
 >
