@@ -15,9 +15,9 @@ updated: 2025-10-29
 
 **[Continue](https://www.continue.dev/)** is an IDE‑agnostic AI assistant that brings chat, code generation, and autocomplete capabilities directly into your editor. Compatible with VS Code and JetBrains IDEs (e.g., IntelliJ, PyCharm), Continue empowers you to plug in any compatible LLM hosted on **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
 
-This tutorial shows you how to configure Continue so you can connect to AI Endpoints LLMs so these models can interact with your code.
+Continue enables you to configure and use your own LLMs, giving you full control over the models you use and how they interact with your code.
 
-In this tutorial, you will learn how to configure Continue to connect to AI Endpoints LLMs, to improve your coding efficiency, accuracy, and overall productivity.
+This tutorial describes how to configure Continue to connect to AI Endpoints LLMs, allowing these models to integrate with your editor to enhance coding efficiency, accuracy, and productivity.
 
 ## Requirements
 
@@ -64,7 +64,7 @@ models:
 
 > [!primary]
 >
-> When you have modified your config file, make sure to reload it before trying to interact with your configured models ! 
+> When you have modified your config file, make sure to reload it before trying to interact with your configured models!
 >
 
 Try out different LLMs from [our catalog](https://endpoints.ai.cloud.ovh.net/catalog) and choose the one that best fits your use case. You can switch between them easily in the IDE UI.
