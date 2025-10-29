@@ -1,7 +1,7 @@
 ---
 title: 'Déroulement d’un RMA'
 excerpt: 'Découvrez les étapes de restitution d’un téléphone fourni par OVHcloud'
-updated: 2025-04-28
+updated: 2025-10-29
 ---
 
 <style>
@@ -167,14 +167,19 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 
 ///
 
-Si une caution est restituée, elle sera disponible sur votre compte OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique. 
-<br>Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
+Si une caution est restituée, elle sera disponible sous forme d'avoir sur votre compte prépayé OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique.<br>
+Si vous le souhaitez, vous pouvez en demander le versement sur votre compte bancaire via les étapes suivantes, **sous réserve d'avoir [enregistré et défini en moyen de paiement par défaut un compte bancaire SEPA](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) au préalable** :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
-1. Cliquez sur l'onglet `Facturation`{.action} puis sur `Virement vers un compte bancaire`{.action}
+1. Cliquez sur l'onglet `Facturation`{.action} puis sur `Virement vers un compte bancaire`{.action}.
+1. Dans le tableau, cliquez sur les `...`{.action} à droite de la ligne correspondant à la caution restituée, puis sur `Demander un remboursement`{.action}.
+1. Cliquez sur `Valider la demande`{.action}.
 
-Entrez le compte bancaire à créditer et validez. Le virement sera effectué sous 48 heures ouvrées.
+Le montant du remboursement apparaîtra au crédit du compte bancaire SEPA défini dans votre espace client OVHcloud sous 48 heures.
+
+> [!primary]
+> Si le montant de l'avoir n'apparaît pas sur le solde du compte prépayé OVHcloud ou est incomplet, tout ou partie de ce montant a été utilisé automatiquement pour le règlement de vos factures.
 
 #### Le matériel n'est pas reçu
 
