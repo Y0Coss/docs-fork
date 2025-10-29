@@ -41,11 +41,11 @@ Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit 
 >
 > Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Wir empfehlen Ihnen, bei Schwierigkeiten bei der Einrichtung auf einen [spezialisierten Dienstleister](/links/partner) zurückzugreifen. Tatsächlich können unsere Support-Teams keine Unterstützung bei Änderungen der internen Programmierung Ihrer Website anbieten.
+> Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams können keine Unterstützung bei Änderungen der internen Programmierung Ihrer Website anbieten.
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
-Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` Ihres Hosting-Webspace per [FTP](/pages/web_cloud/web_hosting/ftp_connection) importiert. Allerdings ist Ihr Domainname nicht mit diesem Verzeichnis in der Spalte `Wurzelverzeichnis` Ihrer Website verknüpft.
+Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) hochgeldaen. Allerdings ist Ihr Domainname nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer Website verknüpft.
 
 ![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
