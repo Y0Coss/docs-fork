@@ -76,7 +76,6 @@ When exposing your load balancer publicly (public-to-public or public-to-private
 > Note: Each publicly exposed Load Balancer has its own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth. ([except for Public-to-Public mode](#public-to-public-scenario))
 >
 
-
 ## Instructions
 
 Depending on the Kubernetes version your cluster is using, if you want to use a [Public Cloud Load Balancer](/links/public-cloud/load-balancer) rather than the historical [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) solution, you might need to add the annotation: `loadbalancer.ovhcloud.com/class: "octavia"` on your Kubernetes Service manifest. Please refer to the [versions matrix section](#kube-versions).
@@ -256,7 +255,7 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
 - `loadbalancer.openstack.org/flavor-id` (MKS Standard only)
 
   The UUID of the flavor used to create the loadbalancer. To get the flavors UUIDs, see the following guides:
-    - [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api),
+    - [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api);
     - [Load the OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
     - Run `openstack loadbalancer flavor list` to get the list of flavors and their UUIDs.
 
