@@ -14,7 +14,7 @@ details {
 }
 details > summary {
     padding: 0.1rem 1rem;
-	font-weight: 500;
+    font-weight: 500;
     color: #268fd4ff;
     cursor: pointer;
     list-style: none;
