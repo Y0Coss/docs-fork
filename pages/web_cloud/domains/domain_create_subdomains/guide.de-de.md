@@ -180,8 +180,8 @@ Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem We
 
 > [!warning]
 >
-> Das Hinzufügen eines Domain- oder Unterdomain-Namens zu einem der Webseiten Ihres Webhostings kann die Einrichtung eines **Validierungstokens** erfordern. 
-> Bei einer Subdomain wird das gleiche token nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das token als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
+> Das Hinzufügen eines Domainnamens oder Subdomain zu einem der Webseiten Ihres Webhostings kann die Einrichtung eines **Validierungstokens** erfordern.  
+> Bei einer Subdomain wird das gleiche Token nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das Token als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
 
 #### Fall 2: Exchange E-Mail-Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-2"></a>
 
