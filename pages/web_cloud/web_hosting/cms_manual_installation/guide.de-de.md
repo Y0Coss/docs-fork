@@ -113,9 +113,9 @@ Um ein CMS auf Ihrem [Webhosting](/links/web/hosting) Angebot zu installieren si
 
 #### 1.1 Überprüfen Sie das Wurzelverzeichnis
 
-Der „Stammordner“ entspricht dem Verzeichnis, in das Ihr zukünftiger CMS in Ihrem Hosting installiert wird. Es wird empfohlen, ein leeres Verzeichnis auszuwählen, um Konflikte mit anderen potenziellen Webseiten zu vermeiden.
+Das Wurzelverzeichnis entspricht dem Ordner, in dem Ihr CMS auf Ihrem Hosting installiert wird. Es wird empfohlen, ein leeres Verzeichnis zu wählen, um potenzielle Konflikte mit anderen Webseiten zu vermeiden.
 
-Konsultieren Sie unsere Dokumentation, die beschreibt [wie Sie eine Website auf Ihrem Webhosting erstellen können](/pages/web_cloud/web_hosting/multisites_configure_multisite), um den zu verwendenden Stammordner für Ihr CMS zu definieren.
+Konsultieren Sie unsere Dokumentation, die beschreibt [wie Sie eine Website auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/multisites_configure_multisite), um das zu verwendende Wurzelverzeichnis für Ihr CMS zu definieren.
 
 > [!primary]
 >
