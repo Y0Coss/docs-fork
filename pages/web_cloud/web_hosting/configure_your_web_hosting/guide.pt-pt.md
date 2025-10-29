@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2025-10-21
+updated: 2025-10-27
 ---
 
 ## Objetivo
@@ -384,11 +384,11 @@ Depois de" alterado o ficheiro ".ovhconfig, transfira-o para o seu [espaço de a
 
 ### 4 - Utilização avançada dos ficheiros ".ovhconfig" <a name="ovhconfig-more"></a>
 
-Se utiliza o seu alojamento web para alojar vários websites (em *multi-sites*), existem várias razões pelas quais pretende beneficiar de uma versão de PHP diferente para alguns dos seus *multi-sites*.
+Se está a utilizar o seu alojamento web para alojar vários sítios web, pode haver diversas razões pelas quais pretende beneficiar de uma versão de PHP diferente para alguns dos seus sítios web.
 
-Crie um ficheiro ".ovhconfig" que contenha a versão de PHP pretendida para os *multisites* em causa. Recorra às operações descritas na parte "[3.3 - Alterar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando descarregar o ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), deverá fazê-lo na pasta raiz onde estão localizados os ficheiros que compõem o website "*multisites*" em causa. Encontre a pasta raiz dos seus *multisites* a partir da sua [Área de Cliente OVHcloud](/links/manager) no separador `Multisite`{.action} do alojamento em causa.
+Crie um ficheiro ".ovhconfig" contendo a versão de PHP desejada para o(s) sítio(s) web em questão. Utilize as manipulações descritas na parte "[3.3 - Modificar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando fizer o upload do ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), faça-o na pasta raiz onde se encontram os ficheiros que compõem o sítio web em questão. Encontre a pasta raiz do seu sítio web a partir do seu [Área de Cliente OVHcloud](/links/manager) no separador `Multisite`{.action} do alojamento em questão.
 
-Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite)" se necessário.
+Consulte o nosso guia detalhado sobre como [configurar um sítio web num alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite), se necessário.
 
 > [!warning]
 >

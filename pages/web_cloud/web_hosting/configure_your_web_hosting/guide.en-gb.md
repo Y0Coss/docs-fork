@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2025-10-21
+updated: 2025-10-27
 ---
 
 ## Objective
@@ -383,11 +383,11 @@ Once you have modified the .ovhconfig file, upload it to your [FTP storage space
 
 ### 4 - Advanced use of .ovhconfig files <a name="ovhconfig-more"></a>
 
-If you use your web hosting plan to host several websites on it (in *multisites*), there are various reasons why you may want to use a different PHP version for some of your *multisites*.
+If you are using your web hosting to host multiple websites, there may be various reasons why you want to use a different PHP version for some of your websites.
 
-Create a .ovhconfig file containing the PHP version you want for the *multisites* concerned. Use the instructions in the section [3.3 - Modify the content of the .ovhconfig file](#update-ovhconfig) of this guide, if required. When you upload the .ovhconfig file to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), do so in the root folder where the files that make up the relevant "*multisites*" website are located. You can find the root folder of your *multisites* in your [OVHcloud Control Panel](/links/manager) in the `Multisite`{.action} tab of the Web Hosting plan concerned.
+Create a ".ovhconfig" file containing the desired PHP version for the relevant website or websites. Refer to the section "[3.3 - Modify the contents of the ".ovhconfig" file](#update-ovhconfig)" in this guide for assistance if needed. When you upload the ".ovhconfig" file to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), do so in the root folder where the files that make up the relevant website are located. You can find the root folder of your website from your [OVHcloud Control Panel](/links/manager) in the `Multisite`{.action} tab of the relevant hosting.
 
-Refer to our guide on [Configuring a multisite on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite), if required.
+If needed, consult our guide detailing how to [configure a website on a web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >

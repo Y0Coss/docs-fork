@@ -1,7 +1,7 @@
 ---
 title: What to do if you get a "Your connection is not private" error?
 excerpt: How to react to a security error message on your website
-updated: 2025-10-09
+updated: 2025-10-28
 ---
  
 ## Objective <a name="objective"></a>
@@ -98,7 +98,7 @@ Activate an [SSL certificate](/links/web/hosting-options-ssl) on your Web Hostin
 
 #### Scenario 2: the SSL certificate on your Web hosting plan does not work
 
-If you generated a **Let's Encrypt SSL certificate**, click on the `Multisite`{.action} tab and follow the instructions of this [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting#enabling-ssl-on-a-multisite) to activate and/or generate the SSL option.
+If you have generated a **Let's Encrypt SSL certificate**, enable the SSL option on your hosting by following the instructions in [this guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 If you **ordered a SSL certificate** of our partner [SECTIGO](https://sectigo.com/), check if you have received an e-mail offering to renew it.
 <br>If necessary, contact the [SECTIGO support team](https://sectigo.com/support) for more informations.

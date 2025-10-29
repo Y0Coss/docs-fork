@@ -1,7 +1,7 @@
 ---
 title: "Eine Website auf Ihrem Webhosting online stellen"
 excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
-updated: 2025-10-16
+updated: 2025-10-28
 ---
 
 ## Ziel 
@@ -102,9 +102,9 @@ Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherpl
 
 #### 2.3. Dateien auf Ihren Speicherplatz hochladen
 
-Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateien Ihrer Website hochladen. **Achten Sie bitte besonders darauf, in welches Verzeichnis Sie die Dateien hochladen.** Standardmäßig werden diese im „www“-Ordner abgelegt. Sollten Sie über Ihr Webhosting mehrere Websites betreiben, haben Sie mit Sicherheit mehrere **Multisites** angelegt.
+Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben, müssen Sie lediglich noch die Dateien Ihres Webs auf den Server laden. **Wir empfehlen Ihnen, besonders aufmerksam darauf zu achten, in welchem Verzeichnis Sie die Dateien hochladen.** In einem klassischen Szenario muss die Website in den Ordner "www" geladen werden. Falls Sie jedoch Ihren Webhosting-Service für mehrere Webseiten nutzen, haben Sie wahrscheinlich mehrere Websites deklariert.
 
-Gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Multisite`{.action}, um zu überprüfen, in welchem Ordner die neue Website veröffentlicht wird. Achten Sie in der angezeigten Tabelle auf das für die gewünschte Domain angegebene `Wurzelverzeichnis`{.action}. Veröffentlichen Sie die Dateien in diesem Verzeichnis.
+Gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Multisite`{.action}, um zu überprüfen, in welchem Ordner die neue Website veröffentlicht wird. Achten Sie in der angezeigten Tabelle auf das für die gewünschte Domain angegebene `Wurzelverzeichnis`{.action}. Plazieren Sie die Dateien in diesem Verzeichnis.
 
 Es kann sein, dass Sie auf Ihrem Speicherplatz eine Datei mit dem Namen „index.html“ finden. Diese wurde gegebenenfalls bei der Installation Ihres Hostings von OVHcloud erstellt, um für Ihre Domain zunächst eine Standardseite anzuzeigen. Vergessen Sie bitte nicht, diese Datei zu löschen, wenn Sie Ihre Dateien online stellen.
 
