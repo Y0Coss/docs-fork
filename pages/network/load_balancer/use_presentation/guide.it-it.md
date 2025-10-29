@@ -64,7 +64,7 @@ Automatic health checks detect unresponsive servers and reroute traffic instantl
 
 Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
 
-![Make maintenance easier](images/scale_easily2025.png){.thumbnail}
+![Make maintenance easier](images/facilitate_maintenance2025.png){.thumbnail}
 
 ### Service Integration
 
