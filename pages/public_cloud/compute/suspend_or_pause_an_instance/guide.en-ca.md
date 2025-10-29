@@ -156,7 +156,7 @@ This option will allow you to re-up your instance so that you can continue using
 
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
-Click on the `...`{.action} button to the right of the instance, then click on `Reactivate`{.action}.
+Click on the `⋮`{.action} button to the right of the instance, then click on `Reactivate`{.action}.
 
 ![reactivate instance](images/reactivate_instance_2025.png){.thumbnail}
 
