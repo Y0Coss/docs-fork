@@ -63,15 +63,15 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um di
 
 Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf dem Speicherplatz abrufen. Hierfür haben Sie zwei Möglichkeiten:
 
-- **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe brauchen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
+- **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe benötigen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
 
 - **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](/links/web/hosting) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 
-Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben, müssen Sie nur noch die Dateien Ihres Webs auf dem Server herunterladen. **Wir empfehlen Ihnen, besonders aufmerksam zu sein, in welchem Verzeichnis Sie Ihre Website installiert haben.** In einem typischen Szenario muss die Website im Ordner „www“ heruntergeladen werden. Wenn Sie jedoch Ihren Webhosting-Service nutzen, um mehrere Websites zu hosten, haben Sie wahrscheinlich mehrere Webseiten deklariert.
+Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateien Ihrer Webseite herunterladen. **Wir empfehlen, besonders darauf zu achten, in welchem Verzeichnis die Website installiert ist.** Normalerweise befinden sich die Dateien der Website im Ordner "www". Wenn Sie jedoch Ihr Webhosting nutzen, um mehrere Websites zu hosten, haben Sie wahrscheinlich mehrere Ordner für die Websites deklariert.
 
-Um zu prüfen, in welchem Ordner Ihre Website gespeichert ist, wechseln Sie im OVHcloud Kundencenter zum Tab `Multisite`{.action}. Im angezeigten Tabellenbereich suchen Sie nach dem gewünschten Domainnamen und prüfen Sie anschließend den angezeigten `Wurzelverzeichnis`{.action}.
+Um zu prüfen, in welchem Ordner Ihre Website gespeichert ist, wechseln Sie im OVHcloud Kundencenter zum Tab `Multisite`{.action}. Im angezeigten Tabellenbereich suchen Sie nach dem gewünschten Domainnamen und prüfen Sie das zugehörige `Wurzelverzeichnis`{.action}.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
