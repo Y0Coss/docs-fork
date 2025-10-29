@@ -36,7 +36,7 @@ Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere 
 
 ### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
 
-Melden Sie sich mit unserem neuen Domainnamen mithilfe unserer Dokumentation über das [Hinzufügen einer Website zu Ihrem Hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Melden Sie außerdem auch den Unterdomainnamen in `www` an, wenn Sie beispielsweise auch `www.NewDomain.tld` so konfigurieren möchten, dass auch Ihre Website angezeigt wird, zusätzlich zu `NewDomain.tld`.
+Melden Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Website auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
