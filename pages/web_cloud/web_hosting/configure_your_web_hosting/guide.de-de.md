@@ -385,9 +385,9 @@ Nachdem Sie die Datei “.ovhconfig“ bearbeitet haben, laden Sie sie auf Ihren
 
 Wenn Sie Ihr Webhosting nutzen, um mehrere Webseiten darauf zu hosten, können verschiedene Gründe dafür sprechen, dass Sie für einige Ihrer Webseiten eine andere PHP-Version verwenden möchten.
 
-Erstellen Sie eine Datei namens „.ovhconfig“, die die gewünschte PHP-Version für die betreffenden Webseiten enthält. Nutzen Sie ggf. die Anweisungen im Abschnitt „[3.3 - Inhalt der Datei „.ovhconfig“ ändern](#update-ovhconfig)“ dieses Leitfadens. Wenn Sie die Datei „.ovhconfig“ in Ihr [FTP-Dateispeicher](/pages/web_cloud/web_hosting/ftp_connection) hochladen, tun Sie dies im Stammverzeichnis, in dem sich die Dateien der betreffenden Webseite befinden. Sie finden das Stammverzeichnis Ihrer Webseite in Ihrem [OVHcloud Kundencenter](/links/manager) im Tab `Multisite`{.action} des betreffenden Hostings.
+Erstellen Sie eine Datei namens „.ovhconfig“, die die gewünschte PHP-Version für die betreffenden Webseiten enthält. Nutzen Sie ggf. die Anweisungen im Abschnitt „[3.3 - Inhalt der Datei „.ovhconfig“ ändern](#update-ovhconfig)“ in dieser Anleitung. Wenn Sie die Datei „.ovhconfig“ auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hochladen, tun Sie dies im Wurzelverzeichnis, in dem sich die Dateien der betreffenden Webseite befinden. Sie finden das Wurzelverzeichnis Ihrer Webseite in Ihrem [OVHcloud Kundencenter](/links/manager) im Tab `Multisite`{.action} des betreffenden Hostings.
 
-Wenn Sie weitere Informationen benötigen, konsultieren Sie unseren Leitfaden, der beschreibt, wie Sie [eine Webseite auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Wenn Sie weitere Informationen benötigen, konsultieren Sie unsere Anleitung zum [Konfigurieren mehrerer Websites auf einem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
