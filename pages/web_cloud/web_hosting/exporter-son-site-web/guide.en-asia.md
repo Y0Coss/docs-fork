@@ -12,21 +12,21 @@ This guideline will outline the steps to follow in order to export all elements 
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](/links/web/hosting)
+- an [OVHcloud web hosting plan](/links/web/hosting)
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-### 1 - Retrieve files from your FTP storage space.
+### 1 - Retrieve files from your FTP storage space
 
-#### 1.1 Log in to your storage space.
+#### 1.1 Log in to your storage space
 
 To log in to your storage space, you will need the following:
 
-- the active FTP or SSH user account
-- the FTP or SSH user account password
-- the server address
-- the server connection port
+- The active FTP or SSH user account
+- The FTP or SSH user account password
+- The server address
+- The server connection port
 
 This information was included in the email informing you that your web hosting plan has been set up.
 
@@ -67,29 +67,29 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 - **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](/links/web/hosting) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
-#### 2.1 Upload the files from your storage space.
+#### 2.1 Download the files from your storage space
 
-Once connected to your storage space, you just need to download the files from your website. **We recommend that you pay particular attention to the directory on which you installed your website.** In a typical use case, the website should be downloaded in the "www" folder. However, if you are using your hosting to host multiple websites, you have probably declared multiple websites.
+Once connected to your storage space, you just need to download the files of your website. **We recommend that you pay particular attention to the directory in which you installed your website.** In a typical use case, the website should be located in the "www" folder. However, if you are using your hosting to host multiple websites, you have probably declared multiple websites.
 
-To check the folder in which your website is stored, go to the `Multisite`{.action} tab from your OVHcloud Control Panel. In the table that appears, for the desired domain, look at the `Root folder`{.action} that is displayed.
+To verify the folder in which your website is stored, go to the `Multisite`{.action} tab from your OVHcloud Control Panel. In the table that appears, for the desired domain, look at the `Root folder`{.action} that is displayed.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### 2 - Retrieve your database backup (optional).
+### 2 - Retrieve your database backup (optional)
 
 > [!primary]
 >
-> This step is optional if your website does not use any databases.
+> This step is not required if your website does not use any databases.
 >
 
 To retrieve a backup of your database, please read our guide on
 [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export).
 
-### 3 - Retrieve the logs for your OVHcloud web hosting plan.
+### 3 - Retrieve the logs for your OVHcloud web hosting plan
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.
 
-Click on `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab.
+Click `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab.
 
 ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 

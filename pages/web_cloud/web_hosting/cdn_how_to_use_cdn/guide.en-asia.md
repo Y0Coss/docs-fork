@@ -33,10 +33,10 @@ In order for this to work, each server stores a part of your website in its cach
 
 #### If the CDN option is not ordered or enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
 
 > [!primary]
->
+> 
 > If you have a CDN option from before 11/19/2020, you can order the new Shared CDN offer by clicking `Upgrade CDN to a later version`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
@@ -47,12 +47,12 @@ You will be redirected to a page where you can generate a purchase order. Once t
 
 Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on the `...`{.action} button to the right of the domain name or subdomain concerned, then click on `Modify domain`{.action}.
 
-Select the "Activate the CDN" option, click `Next`{.action} and then `Confirm`{.action}.
+Select the “Activate the CDN” option, click `Next`{.action} and then `Confirm`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
 
 > [!warning]
->
+> 
 > If an external domain name is added to one of the websites on your web hosting, you must include the CDN IP address of your hosting in the DNS zone of the domain name.
 >
 > Check the [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) to find the specific IP address for your cluster’s CDN.
@@ -156,7 +156,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-hsts.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > When you enable the HSTS feature on your website, it will enforce the use of the HTTPS protocol on your browser until the end of the period known as `maximum age`, even after disabling the feature in your Control Panel. However, when the cache is cleared on the browser that has already visited your site, the browser will apply the new HSTS status.
 
 - **Mixed content**: Enforce the integrity of all your web pages's content. Pages will be loaded securely, contributing to an optimal user experience. All of your website’s internal and external resources must be available in HTTPS, to avoid a browser error.
@@ -192,7 +192,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 	?> 
 	```
 
-- **Mobile redirect**: Automatically redirect "Mobile" visitors to an optimised website. Choice: redirect systematically to the root of another website or keep the URL by replacing only the domain (or subdomain).
+- **Mobile redirect**: Automatically redirect "Mobile" visitors to an optimised website. Choice: redirect systematically to the root of another website, or keep the URL by replacing only the domain (or subdomain).
 
 - **Advanced Purge**: Customise your purge by choosing which elements of the cache to clear: the entire site, a folder, a URI, a file extension, or using a custom regular expression. 
 
@@ -229,10 +229,10 @@ Under **Cache** rules, click the `Add a rule`{.action} button.
 
 * **Rule name**: Give your rule a name.
 * **Resource type**: Choose from the options below:
-    * **Extension**: Please enter a valid file extension without putting a period, for example: CSS.
-    * **File**: Please enter a valid path for one of the folders in the root directory of your website.
-    * **Custom regular expression**: It applies to all URIs on your website.
-    * **URI**: Enter the subset of your website’s resources via their URL path.
+	* **Extension**: Please enter a valid file extension without putting a period, for example: CSS.
+	* **File**: Please enter a valid path for one of the folders in the root directory of your website.
+	* **Custom regular expression**: It applies to all URIs on your website.
+	* **URI**: Enter the subset of your website’s resources via their URL path.
 * **Resource**: set attributes based on the type of resource you choose.
 * **Lifespan**: Specify the cache duration for the chosen resource.
 * **Order**: Order your rules by execution order (lowest to highest).
@@ -274,7 +274,7 @@ If you are not using a CMS, you can also use the CDN cache. To do this, you must
 > [!warning]
 >
 > Caching by using HTTP headers results in caching within the CDN but also within your users’ browsers. Therefore, to prevent your visitors from seeing an older cached version, it is recommended that you rename the files with every new version.
->
+> 
 
 ### Disabling the CDN option for a website
 
@@ -282,15 +282,15 @@ This action allows you to disable the CDN for one or more of your domain names o
 
 > [!warning]
 >
-> Disabling the CDN option for a website requires changing the IP address to use to redirect your domain name to your web hosting plan.
-> This change is done automatically if your domain name’s active DNS zone is also managed from the [OVHcloud account](/links/manager) containing your web hosting plan.
+> Disabling the CDN option for a website requires changing the IP address to use to redirect your domain name to your Web Hosting plan.
+> This change is done automatically if your domain name’s active DNS zone is also managed from the [OVHcloud account](/links/manager) containing your Web Hosting plan.
 >
 > Otherwise, you will need to do two things:
 >
-> - Retrieve the **default** IP address of the cluster where your Web Hosting plan is located using our guide “[Web Hosting: the IP addresses of our clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”;
+> - Retrieve the **default** IP address of the cluster where your Web Hosting plan is located using our guide “[Web Hosting: The IP addresses of our clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”.
 > - Manually change the IP address in your domain name’s active DNS zone, or contact your DNS zone provider to update it for you.
 >
-> Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This phenomenon is linked to the fact that some parts of the DNS network still redirect requests to the CDN IP address linked to your web hosting plan.
+> Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This occurs because some parts of the DNS network still redirect requests to the CDN IP address linked to your Web Hosting plan.
 >
 
 Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on the `...`{.action} button to the right of the domain name or subdomain concerned, then click on `Modify domain`{.action}.

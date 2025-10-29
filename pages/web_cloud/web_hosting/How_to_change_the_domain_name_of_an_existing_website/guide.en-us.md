@@ -21,9 +21,9 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 
 ## Requirements
 
-- A [domain name](/links/web/domains).
-- An [OVHcloud shared hosting](/links/web/hosting).
-- Access to the [OVHcloud Control Panel](/links/manager).
+- A [domain name](/links/web/domains)
+- An [OVHcloud web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -37,16 +37,16 @@ To change the access domain name for your website, there are several steps to fo
 
 ### Step 1: Declare the new domain on your hosting <a name="step1"></a>
 
-Declare your new domain name using our documentation on [adding a website to your shared hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its subdomain in `www` if you want, for example, `www.NewDomain.tld` to display your website as well as `NewDomain.tld`.
+Declare your new domain name using our documentation on [adding a website to your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its `www` subdomain to display your website as `www.NewDomain.tld` as well as `NewDomain.tld`.
 
 There are several conditions to meet for this part:
 
 - Your new domain must point to the same root folder as the domain currently used to access your site.
-- Check that your new domain points to the IP address of your hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web cloud`{.action} section, click on `Hosting plans`{.action}, select your Hosting, then retrieve **IPv4** in the `General information`{.action} tab.
+- Check that your new domain points to the IP address of your web hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select your service, then retrieve the **IPv4** in the `General information`{.action} tab.
 
 > [!warning]
 >
-> If you enable the **country IP** or **CDN** options with your new domain, be sure to use the appropriate IP address listed in our documentation [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> If you enable the **country IP** or **CDN** options with your new domain, be sure to use the appropriate IP address listed in our documentation [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 >
 > To find the cluster number where your hosting is located, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select your hosting, then the `FTP-SSH`{.action} tab. You will see the cluster number in the form **FTP server and SFTP**: `ftp.cluster0XX.ovh.net` (where `X` is the cluster number).
 >
@@ -57,7 +57,7 @@ There are several conditions to meet for this part:
 > - [Managing an SSL certificate on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Activating HTTPS on your website with an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-If all the actions have been correctly performed, the declarations of your domain names should be strictly identical **unless you are using a paid SSL certificate of type *Sectigo DV*, *Sectigo EV*, or *custom***.
+If all actions have been correctly performed, the declarations of your domain names should be strictly identical **unless you are using a paid SSL certificate of type *Sectigo DV*, *Sectigo EV*, or *custom***.
 
 ![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -91,8 +91,8 @@ Most CMSs can directly replace the domain originally declared for your website w
 Since CMSs are developed by third-party organisations and are not managed by OVHcloud, you will find below links to the official documentation for the various CMSs offered for installation on our hosting plans:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla! : The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, visit the official pages [docs.joomla.org](https://docs.joomla.org/) or [forum.joomla.org](https://forum.joomla.org/).
-- Drupal: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the official pages [drupal.org](https://drupal.org) or [drupal.fr](https://drupal.fr).
+- Joomla!: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, visit the official pages [docs.joomla.org](https://docs.joomla.org/) or [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://drupal.org).
 - PrestaShop: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, click [here](https://help-center.prestashop.com) to go to their official page.
 
 Please note that for these CMSs, you can also edit the domain names directly [in the corresponding database](/pages/web_cloud/web_hosting/sql_create_database). You will need to change the URL for accessing your website in the table used for your CMS.
@@ -112,16 +112,16 @@ If you used a service provider to create your website, contact them so that they
 > Once step 2 is complete, your website must appear with your new domain.
 >
 
-### Step 3 - Remove the old domain name <a name="step3"></a>
+### Step 3: Remove the old domain name <a name="step3"></a>
 
-To avoid "duplicate content" and once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name on your website using the guide on managing [websites on your shared hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+To avoid "duplicate content" once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name on your website using the guide on managing [websites on your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > Don't forget to take care of your SSL certificate *Sectigo EV*, *Sectigo DV* or *Custom* as specified in [step 1](#step1).
 >
 
-Once your old domain name is dissociated from your website on your web hosting and if it is registered with OVHcloud, you can redirect it using a [permanent visible 301 redirect](/pages/web_cloud/domains/redirect_domain_name). This will allow your visitors to be automatically redirected to your website while seeing your new domain in the address bar/URL of their browser.
+Once your old domain name is dissociated from your website on your web hosting and if it is registered with OVHcloud, you can redirect it using a [permanent visible 301 redirect](/pages/web_cloud/domains/redirect_domain_name). This will allow your visitors to be automatically redirected to your website while seeing your new domain name / URL in the address bar of their browser.
 
 ## Go further <a name="go-further"></a>
 

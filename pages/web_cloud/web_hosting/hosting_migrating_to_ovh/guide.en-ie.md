@@ -22,7 +22,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 - Access to your domain name’s active DNS (Domain Name System) zone
 - Access to your website’s files and database at your current hosting provider
 - Credentials (user, password, server) for your current email accounts
-- Access to the [OVHcloud Control Panel](/links/manager).
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -134,7 +134,7 @@ To do this, replace the login details for your old database with the login detai
 > If you are using a Content Management System (CMS) like WordPress, Joomla!, Drupal or PrestaShop, you can find the information in their configuration files. See **Step 2** of the guide “[Changing a database password](/pages/web_cloud/web_hosting/sql_change_password)”.
 >
 
-Declare/authorise your external domain name on your OVHcloud web hosting via our guide [Managing multiple websites on an OVHcloud web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). Enter the name of the folder you chose at the beginning of [step 4](#step4) as the Multisite "Root folder". As a reminder, this is the folder in which you have placed your files in your FTP storage space.
+Declare and authorise your external domain name on your OVHcloud web hosting via our guide [Managing multiple websites on an OVHcloud web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). Enter the name of the folder you chose at the beginning of [step 4](#step4) as the Multisite "Root folder". As a reminder, this is the folder in which you have placed your files in your FTP storage space.
 
 > [!warning]
 >
