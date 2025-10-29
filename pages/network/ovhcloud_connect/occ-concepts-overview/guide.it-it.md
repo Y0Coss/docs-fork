@@ -8,7 +8,7 @@ updated: 2025-09-09
 
 OVHcloud Connect is a private, dedicated connection between your on-premises network and your OVHcloud vRack. It is designed to extend your network and securely connect to your cloud resources, bypassing the public internet.
 
-![OVHcloud Connect](images/VrackConnectDedicated.png){.thumbnail}
+![OVHcloud Connect](images/VrackConnectDedicated2025.png){.thumbnail}
 
 ## Benefits of OVHcloud Connect
 
