@@ -39,7 +39,7 @@ Lors d'un changement d'offre vers les nouvelles offres Fibre Pro et xDSL Pro, vo
 >
 > Lors d'un changement d'offre xDSL vers Fibre, l'adresse IP publique de l'accès xDSL ne peut pas être conservée.
 >
-> Si un [bloc IP](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
+> Si un [bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
 >
 
 ### Changer d’offre
