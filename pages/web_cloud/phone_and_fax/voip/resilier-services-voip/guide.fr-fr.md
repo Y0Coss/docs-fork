@@ -8,7 +8,7 @@ updated: 2025-10-29
 
 Ce guide décrit comment résilier une ligne Fax ou un service VoIP OVHcloud, que ce soit une ligne SIP, Trunk SIP ou un numéro alias.
 
-**Découvrez comment résilier un services VoIP ou une ligne Fax depuis l'espace client OVHcloud.**
+**Découvrez comment résilier un service VoIP ou une ligne Fax depuis l'espace client OVHcloud.**
 
 ## Prérequis
 
