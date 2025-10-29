@@ -1,7 +1,7 @@
 ---
 title: Présentation du service OVHcloud Load Balancer
 excerpt: Découvrez la solution OVHcloud Load Balancer pour distribuer et sécuriser votre trafic
-updated: 2025-09-29
+updated: 2025-10-29
 ---
 
 ## Objectif
@@ -64,7 +64,7 @@ Des sondes automatiques détectent les serveurs non réactifs et redirigent inst
 
 Mettez une ferme ou un serveur en mode maintenance sans impacter les utilisateurs, puis réintégrez-le facilement après intervention.
 
-![Maintenance simplifiée](images/scale_easily2025.png){.thumbnail}
+![Maintenance simplifiée](images/facilitate_maintenance2025.png){.thumbnail}
 
 ### Intégration avec les services OVHcloud
 

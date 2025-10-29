@@ -1,7 +1,7 @@
 ---
 title: Introduction to the OVHcloud Load Balancer
 excerpt: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
-updated: 2025-09-29
+updated: 2025-10-29
 ---
 
 ## Objective

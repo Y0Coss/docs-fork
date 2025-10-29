@@ -1,7 +1,7 @@
 ---
 title: Présentation des concepts
 excerpt: Présentation des concepts nécessaires à la compréhension de l’offre OVHcloud Connect
-updated: 2025-09-09
+updated: 2025-10-29
 ---
 
 ## Qu'est-ce que OVHcloud Connect ?
