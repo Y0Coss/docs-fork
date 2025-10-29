@@ -52,11 +52,11 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 > **SSL-Zertifikate**
 >
-> Wenn der ursprünglich verwendete Domainname für den Zugriff auf Ihre Website über einen SSL-Zertifikat verfügt, konsultieren Sie bitte unsere 2 Leitfäden :
+> Wenn der ursprünglich verwendete Domainname für den Zugriff auf Ihre Website über ein SSL-Zertifikat verfügt, konsultieren Sie diese Anleitungen:
 > - [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Website auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, müssen die Angaben zu Ihren Domainnamen exakt identisch sein **es sei denn, Sie verwenden ein kostenpflichtiges SSL-Zertifikat des Typs *Sectigo DV*, *Sectigo EV* oder *custom***.
+Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, sollten die Angaben zu Ihren Domainnamen exakt identisch sein **außer, Sie verwenden ein kostenpflichtiges SSL-Zertifikat des Typs *Sectigo DV*, *Sectigo EV* oder *Custom***.
 
 ![Multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
