@@ -289,11 +289,12 @@ web-cloud-internet-overthebox-configuration: Konfiguration
 web-cloud-internet-overthebox-configuration-initial-setup: Erstkonfiguration
 web-cloud-messaging: Messaging
 web-cloud-messaging-sms: SMS
-web-cloud-messaging-sms-advanced-usage: Fortgeschrittene Anwendung
+web-cloud-messaging-sms-configuration-advanced-usage: Fortgeschrittene Anwendung
 web-cloud-messaging-sms-getting-started: Erste Schritte
-web-cloud-messaging-sms-managing-your-solution: Meine IT-Lösung verwalten
-web-cloud-messaging-sms-sending-sms-messages: SMS versenden
-web-cloud-messaging-sms-smpp: SMPP
+web-cloud-messaging-sms-configuration: Konfiguration
+web-cloud-messaging-sms-configuration-managing-your-solution: Meine IT-Lösung verwalten
+web-cloud-messaging-sms-configuration-sending-sms-messages: SMS versenden
+web-cloud-messaging-sms-configuration-smpp: SMPP
 web-cloud-phone-and-fax: Telefon und Fax
 web-cloud-phone-and-fax-fax: Faxe versenden und empfangen
 web-cloud-phone-and-fax-fax-getting-started: Erste Schritte
