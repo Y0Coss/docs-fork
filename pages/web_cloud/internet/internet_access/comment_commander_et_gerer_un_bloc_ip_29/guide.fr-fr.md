@@ -1,7 +1,7 @@
 ---
 title: 'Gérer et configurer un bloc IP /29'
 excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre box OVHcloud'
-updated: 2025-04-28
+updated: 2025-10-29
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ## En pratique
 
-### Étape 1 : retrouver les IP associées à votre accès <a name="trouver-IP-associees"></a>
+### Étape 1 : retrouver les IP associées à votre accès <a name="trouver-ip-associees"></a>
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
@@ -157,7 +157,7 @@ La configuration d'un bloc IP sur une box Technicolor ou Thomson est possible de
 >>
 >> Configurez la passerelle (_gateway_) du bloc IP sur l'interface **lan**.
 >> 
->> Prenez soin de remplacer « LocalNetwork » par le nom de l'interface correspondant à **lan** récupéré précédemment. Changez également l'adresse « 1.1.1.6/29 » par celle de passerelle (_gateway_) récupérée lors de [l'étape 1](#trouver-IP-associees).
+>> Prenez soin de remplacer « LocalNetwork » par le nom de l'interface correspondant à **lan** récupéré précédemment. Changez également l'adresse « 1.1.1.6/29 » par celle de passerelle (_gateway_) récupérée lors de [l'étape 1](#trouver-ip-associees).
 >>
 >> ```console
 >> ip ipadd intf=LocalNetwork addr=1.1.1.6/29
@@ -190,7 +190,7 @@ Une fois connecté à l'interface, plusieurs manipulations sont nécessaires. La
 
 |Informations|Description|
 |---|---|
-|IPv4 Address|Renseignez l'adresse de passerelle (_gateway_) récupérée lors de [l'étape 1](#trouver-IP-associees).|
+|IPv4 Address|Renseignez l'adresse de passerelle (_gateway_) récupérée lors de [l'étape 1](#trouver-ip-associees).|
 |Subnet Mask|Indiquez l'adresse `255.255.255.248` (qui correspond au bloc /29).|
 
 Cliquez ensuite sur le bouton `Apply`{.action}.
@@ -213,7 +213,7 @@ Complétez les informations demandées en vous aidant du tableau ci-dessous :
 |Type|Sélectionnez dans le menu déroulant `Many-to-One`.|
 |Local Start IP|Indiquez `192.168.1.2`. Il s'agit de l'adresse par défaut, sauf si vous l'avez changée dans la configuration de votre box.|
 |Local End IP|Indiquez `192.168.1.254`. Il s'agit de l'adresse par défaut, sauf si vous l'avez changée dans la configuration de votre box.|
-|Global Start IP|Indiquez l'adresse IPv4 initiale que vous avez récupérée lors de [l'étape 1](#trouver-IP-associees) (celle mentionnée avec le masque /32).|
+|Global Start IP|Indiquez l'adresse IPv4 initiale que vous avez récupérée lors de [l'étape 1](#trouver-ip-associees) (celle mentionnée avec le masque /32).|
 |WAN Interface|Sélectionnez le nom de l'interface récupéré précédemment (mentionné en dessous de « Connected Interface »).|
 
 Cliquez ensuite sur le bouton `OK`{.action}.
@@ -242,8 +242,8 @@ Votre bloc IP /29 étant à présent paramétré sur votre box OVHcloud, vous po
 
 Pour réaliser une configuration sur l'un de vos équipements, vous aurez besoin des trois informations suivantes :
 
-- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-IP-associees);
-- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-IP-associees);
+- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-ip-associees);
+- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-ip-associees);
 - **le masque de sous-réseau** : vous l'avez configuré lors de l'étape précédente ; il doit correspondre à `255.255.255.248`.
 
 Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibilité de tester l'attribution de nouvelles adresses IP en réalisant un test de débit depuis notre site <http://ovh.net/>. À la fin, celles-ci apparaîtront à côté de **IPv4** à gauche.
@@ -252,7 +252,7 @@ Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibi
 
 ### Résiliation du bloc IP /29
 
-Si vous souhaitez résilier votre bloc IP /29, suivez le cheminement décrit dans [l'étape 1](#trouver-IP-associees) puis cliquez sur l'icône `corbeille`{.action} de votre bloc IP /29.
+Si vous souhaitez résilier votre bloc IP /29, suivez le cheminement décrit dans [l'étape 1](#trouver-ip-associees) puis cliquez sur l'icône `corbeille`{.action} à droite de votre bloc IP /29.
 
 ## Aller plus loin
 
