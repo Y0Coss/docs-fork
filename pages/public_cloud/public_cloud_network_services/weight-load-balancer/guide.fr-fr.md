@@ -1,5 +1,5 @@
 ---
-title : "Utiliser la fonctionnalité de poids sur un membre du Load Balancer"
+title: "Utiliser la fonctionnalité de poids sur un membre du Load Balancer"
 excerpt: "Découvrez comment ajuster le poids d'un membre du Load Balancer"
 updated: 2025-10-01
 ---
@@ -26,7 +26,7 @@ En définissant le poids sur 0, le membre est effectivement retiré du pool de t
 - Un [compte OVHcloud actif](/links/manager).
 - Un [projet Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - Un [Load Balancer configuré avec plusieurs membres](/pages/network/load_balancer/create_http_https).
-- La [CLI OpenStack installée et configurée](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- La [CLI OpenStack installée et configurée](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 
 ## En pratique
 
@@ -58,7 +58,7 @@ Les réponses des deux membres doivent être alternées :
 
 > [!tabs]
 > API OVHcloud
->> Connectez-vous à l’interface APIv6 d’OVHcloud en utilisant ce guide de [premiers pas avec l’API OVHcloud](/pages/manage_and_operating/api/first-steps).
+>> Connectez-vous à l’interface APIv6 d’OVHcloud en utilisant ce guide de [premiers pas avec l’API OVHcloud](/pages/manage_and_operate/api/first-steps).
 >>
 >> Si l'identifiant du projet est inconnu, les appels d'API ci-dessous permettent de le récupérer.
 >>
@@ -169,7 +169,7 @@ Si avoir un statut final **DRAINED** est critique pour vos opérations, il est r
 >>
 >> > [!api]
 >> >
->> > @api {v1} /cloudPUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
 >>
 > Horizon
 >>
@@ -289,7 +289,7 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >>
 >> Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
 >>
->> Dans l'onglet de gauche, cliquez sur `Network` {.action}, puis sur `Load Balancers`{.action}.
+>> Dans l'onglet de gauche, cliquez sur `Network`{.action}, puis sur `Load Balancers`{.action}.
 >>
 >> Cliquez sur le load balancer concerné.
 >>

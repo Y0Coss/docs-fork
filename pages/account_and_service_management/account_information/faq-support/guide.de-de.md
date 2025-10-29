@@ -141,7 +141,7 @@ Wenn Sie Dateien teilen müssen, können Sie sie direkt in Ihr Ticket über das 
 
 Wenn Sie uns ein Video senden möchten, beachten Sie, dass nur das Format gif akzeptiert wird und die Größe 1024 MB nicht überschreiten darf. Wenn Ihr Video in einem anderen Format ist oder größer ist, können Sie eine der folgenden Methoden wählen:
 
-- Antworten Sie per E-Mail (von der E-Mail-Adresse, die mit Ihrem OVHcloud-Konto verknüpft ist) auf das Support-Ticket und fügen Sie das Video als Anhang hinzu.
+- Antworten Sie per E-Mail (von der E-Mail-Adresse, die mit Ihrem OVHcloud Kunden-Account verknüpft ist) auf das Support-Ticket und fügen Sie das Video als Anhang hinzu.
 - Laden Sie das Video auf eine Plattform wie YouTube hoch und teilen Sie den Link im Ticket.
 
 > [!warning]

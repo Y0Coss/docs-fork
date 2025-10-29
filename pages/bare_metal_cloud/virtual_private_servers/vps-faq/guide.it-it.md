@@ -18,9 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## FAQ su VPS
-
-### Domande generali sulle offerte VPS
+## Domande generali sulle offerte VPS
 
 /// details | Cos'è un VPS e a cosa viene utilizzato?
 
@@ -121,6 +119,19 @@ Un VPS elimina la necessità di gestire hardware fisico come archiviazione, RAM 
 
 ///
 
+/// details | Quale larghezza di banda è allocata al mio VPS? È garantita?
+
+La larghezza di banda indicata nella nostra [pagina web dei VPS](/links/bare-metal/vps) è garantita. Si tratta della quantità minima allocata al tuo servizio.
+
+///
+
+/// details | Quale SLA si applica al mio VPS?
+
+Un VPS OVHcloud include un SLA del 99,9%.
+
+///
+</br>
+
 /// details | Quali sono le caratteristiche uniche di un VPS Local Zone?
 
 Con un VPS Local Zone, puoi ridurre significativamente i tempi di accesso ai tuoi siti e applicazioni, poiché i tuoi dati vengono ospitati più vicino ai tuoi utenti. Ciò crea una migliore esperienza utente riducendo la latenza ogni volta che le applicazioni richiedono un tempo di risposta minimizzato. Basta selezionare una delle nostre sedi in tutto il mondo al momento dell'ordine.
@@ -130,7 +141,6 @@ Tieni presente che un VPS Local Zone, a differenza di un VPS regolare, non inclu
 Un VPS Local Zone soddisfa anche le esigenze di progetti con requisiti di residenza e sovranità dei dati. Ospitando i tuoi servizi in una regione specifica, puoi facilmente soddisfare le normative locali relative all'elaborazione e archiviazione dei dati, come il GDPR europeo.
 
 ///
-
 
 /// details | Posso migrare il mio VPS da una Local Zone a un data center e viceversa?
 
@@ -150,19 +160,7 @@ Se la resilienza agli attacchi DDoS è un fattore critico per il tuo progetto, t
 
 ///
 
-/// details | Quale larghezza di banda è allocata al mio VPS? È garantita?
-
-La larghezza di banda indicata nella nostra [pagina web dei VPS](/links/bare-metal/vps) è garantita. Si tratta della quantità minima allocata al tuo servizio.
-
-///
-
-/// details | Quale SLA si applica al mio VPS?
-
-Un VPS OVHcloud include un SLA del 99,9%.
-
-///
-
-### Domande relative all'amministrazione del VPS
+## Domande relative all'amministrazione del VPS
 
 /// details | Come posso accedere al mio VPS?
 
@@ -170,13 +168,6 @@ Puoi accedere al tuo VPS in remoto utilizzando le credenziali fornite via email 
 Il metodo di connessione dipende dal sistema operativo in uso.
 
 Tutti i dettagli sono riportati nella nostra guida su [come iniziare con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | Come posso proteggere il mio VPS?
-
-Per impostazione predefinita, il VPS viene fornito con solo il sistema operativo selezionato installato. L'amministratore del VPS è responsabile dell'applicazione di una configurazione di sicurezza appropriata una volta consegnato il VPS.  
-Per farlo, si prega di fare riferimento alla nostra guida su [come proteggere un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -315,6 +306,16 @@ Se l'indirizzo IP di destinazione è compatibile con la tua licenza (`true`), pu
 
 ///
 
+
+## Domande relative alla sicurezza e al backup
+
+/// details | Come posso proteggere il mio VPS?
+
+Per impostazione predefinita, il VPS viene fornito con solo il sistema operativo selezionato installato. L'amministratore del VPS è responsabile dell'applicazione di una configurazione di sicurezza appropriata una volta consegnato il VPS.  
+Per farlo, si prega di fare riferimento alla nostra guida su [come proteggere un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | Come posso scaricare i miei file o un backup del VPS?
 
 Sono disponibili diverse opzioni, ad esempio:
@@ -377,6 +378,7 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza la seguente chi
 >
 
 ///
+</br>
 
 /// details | Il mio VPS è protetto dagli attacchi esterni?
 

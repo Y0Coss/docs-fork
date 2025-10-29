@@ -5,22 +5,50 @@ updated: 2025-10-02
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+	font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
-## VPS FAQ
 
-### Allgemeine Fragen zu VPS-Angeboten
+## Allgemeine Fragen zu VPS-Angeboten
 
 /// details | Was ist ein VPS und wofür wird er verwendet?
 
@@ -36,7 +64,7 @@ OVHcloud VPS-Angebote bieten hervorragenden Leistungspreis, mit unbegrenztem Dat
 
 /// details | Ist eine VPS-Lösung die richtige Wahl für mich?
 
-Die Nutzung eines VPS erfordert grundlegende Kenntnisse der Server-Administration. Dies zu berücksichtigen ist entscheidend, um Ihren Betriebssystem (Linux oder Windows) effektiv zu verwalten und Ihre Anwendungen einzurichten, z. B. PrestaShop oder WordPress.
+Die Nutzung eines VPS erfordert grundlegende Kenntnisse der Server-Administration. Dies zu berücksichtigen ist entscheidend, um Ihr Betriebssystem (Linux oder Windows) effektiv zu verwalten und Ihre Anwendungen einzurichten, z. B. PrestaShop oder WordPress.
 
 Wenn Sie einen VPS benötigen, aber nicht über die technischen Kenntnisse verfügen, um ihn zu verwalten, wenden Sie sich an einen unserer [Partner](/links/partner) für Unterstützung.
 
@@ -52,20 +80,17 @@ Um Ihre Konfiguration herunterstufen zu können, müssen Sie jedoch einen neuen 
 
 ///
 
-
 /// details | Welche Region oder welches Land sollte ich für meinen VPS wählen?
 
-Je näher Ihr Rechenzentrum an Ihrem Publikum liegt, desto geringer ist die Latenz, was zu einer besseren Benutzererfahrung und einem erhöhten Vertrauen in Ihre Dienste führt.
+Ihr Rechenzentrum näher an Ihren Nutzern zu verorten führt zu geringerer Latenz und damit besserer Benutzererfahrung und einem erhöhten Vertrauen in Ihre Dienste.
 
 ///
-
 
 /// details | Welchen Vorteil bietet ein in Europa gelegener VPS?
 
 Die Einrichtung Ihres VPS bei OVHcloud in Frankreich oder allgemein innerhalb der EU bietet Vorteile wie wettbewerbsfähige Preise und verstärkten Datenschutz. Ihr Service unterliegt nicht dem US CLOUD Act und ist somit vor nicht-europäischer Einflussnahme geschützt.
 
 ///
-
 
 /// details | Sind Backups mit meinem VPS inkludiert?
 
@@ -100,6 +125,7 @@ Nein, unsere VPS-Lösungen enthalten keinen Domainnamen oder E-Mail-Dienst. Dies
 ///
 
 /// details | Wie wähle ich zwischen einem VPS und einem Hosting-Paket?
+<span class="smallish-gap"></span>
 
 - Hosting-Paket: ideal für grundlegende Hosting-Anforderungen mit einer vorab konfigurierten Einrichtung.
 - VPS: mehr Flexibilität und Kontrolle, perfekt für skalierbare Projekte mit komplexen Konfigurationsanforderungen.
@@ -109,6 +135,7 @@ Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzu
 ///
 
 /// details | Was ist der Unterschied zwischen einem VPS und Public Cloud Lösungen?
+<span class="smallish-gap"></span>
 
 - VPS: eine optimierte und dedizierte virtuelle Maschine, geeignet sowohl für Präproduktion als auch für Produktion, die mehrere Webprojekte hosten kann.
 - OVHcloud Public Cloud: bietet eine Multi-Server-Infrastruktur mit hoher Verfügbarkeit und einem privaten Netzwerk (vRack) und ist für komplexe, skalierbare Architekturen konzipiert.
@@ -116,6 +143,7 @@ Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzu
 ///
 
 /// details | Welche Vorteile bietet ein VPS im Vergleich zu einem dedizierten Server?
+<span class="smallish-gap"></span>
 
 - VPS: bietet vereinfachte Administration ohne Hardware-Verwaltung, ideal für Projekte, die strikte Kontrolle benötigen.  
 - Dedizierter Server: wird für komplexe Infrastrukturen empfohlen, die eine vollständige Hardware-Kontrolle und garantierte Leistung erfordern.
@@ -123,6 +151,19 @@ Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzu
 Ein VPS beseitigt die Notwendigkeit, physische Hardware wie Speicher, RAM und CPU zu verwalten, wodurch er sich gut für die meisten Webanwendungen eignet. Wenn Ihr Unternehmen wächst, können Sie Ihren VPS upgraden oder auf einen dedizierten Server oder eine Public Cloud Lösung migrieren, um eine flexiblere und leistungsfähigere Infrastruktur zu erhalten.
 
 ///
+
+/// details | Welche Bandbreite ist meinem VPS zugeordnet? Ist sie garantiert?
+
+Die Bandbreite, die auf unserer [VPS-Webseite](/links/bare-metal/vps) aufgelistet ist, ist garantiert. Es handelt sich um den minimalen Wert, der Ihrem Dienst zugeordnet wird.
+
+///
+
+/// details | Welche SLA gilt für meinen VPS?
+
+Ein OVHcloud VPS beinhaltet eine SLA von 99,9 %.
+
+///
+<span class="smallish-gap"></span>
 
 /// details | Welche einzigartigen Merkmale hat ein Local Zone VPS?
 
@@ -152,19 +193,7 @@ Wenn die Resilienz gegenüber DDoS-Angriffen für Ihr Projekt von entscheidender
 
 ///
 
-/// details | Welche Bandbreite ist meinem VPS zugeordnet? Ist sie garantiert?
-
-Die Bandbreite, die auf unserer [VPS-Webseite](/links/bare-metal/vps) aufgelistet ist, ist garantiert. Es handelt sich um den minimalen Wert, der Ihrem Dienst zugeordnet wird.
-
-///
-
-/// details | Welche SLA gilt für meinen VPS?
-
-Ein OVHcloud VPS beinhaltet eine SLA von 99,9 %.
-
-///
-
-### Fragen zur VPS-Administration
+## Fragen zur VPS-Administration
 
 /// details | Wie verbinde ich mich mit meinem VPS?
 
@@ -172,13 +201,6 @@ Sie können sich mithilfe der per E-Mail bereitgestellten Anmeldeinformationen n
 Die Verbindungsart hängt davon ab, welche Betriebssysteme verwendet werden.
 
 Alle Details finden Sie in unserer Anleitung zu [den ersten Schritten mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | Wie sichere ich meinen VPS?
-
-Standardmäßig wird der VPS nur mit dem ausgewählten Betriebssystem ausgeliefert. Der VPS-Administrator ist für die Anwendung einer geeigneten Sicherheitskonfiguration nach der Auslieferung des VPS verantwortlich.  
-Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -317,6 +339,15 @@ Wenn die Ziel-IP mit Ihrer Lizenz kompatibel ist (`true`), können Sie den entsp
 
 ///
 
+## Fragen zu Sicherheit und Backup
+
+/// details | Wie sichere ich meinen VPS?
+
+Standardmäßig wird der VPS nur mit dem ausgewählten Betriebssystem ausgeliefert. Der VPS-Administrator ist für die Anwendung einer geeigneten Sicherheitskonfiguration nach der Auslieferung des VPS verantwortlich.  
+Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | Wie kann ich meine Dateien oder ein Backup des VPS herunterladen?
 
 Es gibt mehrere Optionen, z. B.:
@@ -379,6 +410,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 >
 
 ///
+<span class="smallish-gap"></span>
 
 /// details | Ist mein VPS vor externen Angriffen geschützt?
 

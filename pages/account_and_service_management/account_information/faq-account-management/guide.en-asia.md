@@ -80,12 +80,13 @@ You can find more information in our guide [Changing your account password](/pag
 > **Can't remember your password?**
 >
 > Go to the [login page for your Control Panel](/links/manager) and click `Forgot username or password?`{.action}. Enter your NIC handle or the primary email address associated with your OVHcloud account, then click `Submit`{.action}. An email is then sent to the account’s contact email address, to confirm the request. Please read the instructions carefully and click on the link in it.
-
-If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
-
-If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](links/transversal/procedure-email-change).
-
-If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
+>
+> If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
+>
+> If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](/links/transversal/procedure-email-change).
+>
+> If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
+>
 
 ///
 
@@ -119,7 +120,7 @@ If your device (mobile phone/smartphone/security key) used for two-factor authen
 - use another two-factor authentication device, if you have enabled several;
 - [disable two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation).
 
-Check out the ["What do I do if I lose one of my devices, or if it stops working? "](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device) or the ["Disabling two-factor authentication completely "](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation) sections of our guide on two-factor authentication.
+Check out the "[What do I do if I lose one of my devices, or if it stops working?](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device)" or the "[Disabling two-factor authentication completely](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation) sections of our guide on two-factor authentication."
 
 ///
 
@@ -195,9 +196,8 @@ Closing your OVHcloud customer account and deleting your personal data is only p
 If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
 
 1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Click the `Create ticket`{.action} button.
-3. Select the reason `Manage your OVHcloud customer account`{.action}.
-4. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
+1. Select the reason `Manage your OVHcloud customer account`{.action}.
+1. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
 
 ///
 
