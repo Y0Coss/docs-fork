@@ -1,5 +1,5 @@
 ---
-title: "¿Qué hacer en caso de error "La conexión no es privada"?"
+title: "¿Qué hacer en caso de error 'La conexión no es privada'?"
 excerpt: "Responder en caso de que aparezca un mensaje de error relacionado con la seguridad de su sitio web"
 updated: 2025-10-28
 ---
