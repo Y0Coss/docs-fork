@@ -1,7 +1,7 @@
 ---
 title: 'Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?'
 excerpt: 'Découvrez comment migrer votre connexion xDSL vers la fibre optique en raison de la fermeture progressive du réseau cuivre'
-updated: 2025-03-19
+updated: 2025-10-29
 ---
 
 ## Objectif
@@ -68,6 +68,13 @@ Cochez les cases correspondant aux services à conserver puis cliquez sur `Confi
 
 Lors de la dernière étape, une demande de confirmation apparaît afin de valider le changement d'offre.
 Lisez les contrats, cochez la case afin de les accepter puis cliquez sur le bouton `Valider le changement d'offre`{.action}.
+
+> [!primary]
+>
+> Lors d'un changement d'offre xDSL vers Fibre, l'adresse IP publique de l'accès xDSL ne peut pas être conservée.
+>
+> Si un [bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
+>
 
 Un délai moyen de 10 à 30 jours est nécessaire pour la réalisation de la commande de votre nouvel accès à Internet fibre.<br>
 Dans ce cas précis, nous créons en parallèle de votre *packadsl* un nouveau *packadsl* temporaire. Cela permet de conserver votre accès cuivre opérationnel et inchangé lors de la commande fibre. Ce *packadsl* temporaire sera supprimé lors de la livraison de l’accès fibre. L'accès fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
