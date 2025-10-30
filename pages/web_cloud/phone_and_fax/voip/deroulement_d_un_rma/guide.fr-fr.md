@@ -1,7 +1,7 @@
 ---
 title: 'Déroulement d’un RMA'
 excerpt: 'Découvrez les étapes de restitution d’un téléphone fourni par OVHcloud'
-updated: 2025-10-29
+updated: 2025-10-30
 ---
 
 <style>

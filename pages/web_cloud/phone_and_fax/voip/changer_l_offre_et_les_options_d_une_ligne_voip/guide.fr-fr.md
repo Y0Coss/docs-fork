@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos services VoIP'
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
-updated: 2025-10-29
+updated: 2025-10-30
 ---
 
 ## Objectif
