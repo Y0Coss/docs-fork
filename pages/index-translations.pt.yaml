@@ -42,11 +42,15 @@ bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades OVHcloud
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Serviços e opções da OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades VMware vSphere
 bare-metal-cloud-virtual-private-servers: Servidores privados virtuais
-bare-metal-cloud-virtual-private-servers-advanced-usage: Utilização avançada
-bare-metal-cloud-virtual-private-servers-backups: Backups
+bare-metal-cloud-virtual-private-servers-configuration-advanced-usage: Utilização avançada
+bare-metal-cloud-virtual-private-configuration-servers-backups: Backups
 bare-metal-cloud-virtual-private-servers-getting-started: Primeiros passos
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Rede e IP
+bare-metal-cloud-virtual-private-servers-configuration: Configuração
+bare-metal-cloud-virtual-private-servers-configuration-network-and-ip-management: Rede e IP
+bare-metal-cloud-virtual-private-servers-security: Segurança
 bare-metal-cloud-virtual-private-servers-troubleshooting: Diagnóstico
+bare-metal-cloud-virtual-private-servers-additional-resources: Recursos adicionais
+bare-metal-cloud-virtual-private-servers-migration: Migração
 bare-metal-cloud-virtual-private-servers-tutorials: Tutoriais
 hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
 hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Primeiros passos
