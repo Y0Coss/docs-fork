@@ -1,20 +1,49 @@
 ---
 title: "OVHcloud VPS Perguntas frequentes"
 excerpt: "Encontre as respostas às perguntas mais frequentes sobre nossas ofertas de VPS"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -94,31 +123,46 @@ Não, nossas soluções de VPS não incluem um nome de domínio ou serviço de e
 
 ///
 
-/// details | Como escolher entre um VPS e um plano de hospedagem web?
+/// details | Como escolher entre um VPS e um plano de alojamento web?
 
-- Plano de hospedagem web: ideal para necessidades básicas de hospedagem com uma configuração pré-configurada.
-- VPS: mais flexibilidade e controle, perfeito para projetos escaláveis com necessidades de configuração complexa.
+**Plano de alojamento web**
+
+- Iideal para necessidades básicas de alojamento com uma configuração pré-configurada.
+
+**VPS**
+
+- Mais flexibilidade e controle, perfeito para projetos escaláveis com necessidades de configuração complexa.
 
 Hospedar serviços web em um VPS permite que você instale seu software preferido, personalize as configurações do servidor e hospede vários sites com recursos dedicados. Observe que um VPS precisa ser configurado de forma a atender às necessidades de sua aplicação e ser adaptado ao crescimento do seu negócio.
 
 ///
 
-/// details | Qual é a diferença entre um VPS e soluções de nuvem pública?
+/// details | Qual é a diferença entre um VPS e soluções de Public Cloud?
 
-- VPS: uma máquina virtual otimizada e dedicada adequada tanto para pré-produção quanto para produção, projetada para hospedar vários projetos web.
-- OVHcloud Nuvem Pública: oferece uma infraestrutura multi-servidor com alta disponibilidade e uma rede privada (vRack), projetada para arquiteturas complexas e escaláveis.
+**VPS**
+
+- Uma máquina virtual otimizada e dedicada adequada tanto para pré-produção quanto para produção, projetada para hospedar vários projetos web.
+
+**OVHcloud Public Cloud**
+
+- Oferece uma infraestrutura multi-servidor com alta disponibilidade e uma rede privada (vRack), projetada para arquiteturas complexas e escaláveis.
 
 ///
 
 /// details | Quais são as vantagens de um VPS em comparação com um servidor dedicado?
 
-- VPS: oferece gerenciamento simplificado sem manutenção de hardware, ideal para projetos que precisam de controle rigoroso. 
-- Servidor dedicado: recomendado para infraestruturas complexas que exigem controle total de hardware e desempenho garantido. 
+**VPS**
 
-Um VPS elimina a necessidade de gerenciar hardware físico, como armazenamento, RAM e CPU, tornando-o adequado para a maioria das aplicações web. À medida que seu negócio cresce, você pode atualizar seu VPS ou migrar para um servidor dedicado ou uma solução de Nuvem Pública para uma infraestrutura mais flexível e poderosa.
+- Oferece gerenciamento simplificado sem manutenção de hardware, ideal para projetos que precisam de controle rigoroso. 
+
+**Servidor dedicado** 
+
+- Recomendado para infraestruturas complexas que exigem controle total de hardware e desempenho garantido. 
+
+Um VPS elimina a necessidade de gerenciar hardware físico, como armazenamento, RAM e CPU, tornando-o adequado para a maioria das aplicações web. À medida que seu negócio cresce, você pode atualizar seu VPS ou migrar para um servidor dedicado ou uma solução de Public Cloud para uma infraestrutura mais flexível e poderosa.
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Qual largura de banda é alocada para meu VPS? É garantida?
 
@@ -380,7 +424,7 @@ Para verificar se seu endereço IP está autorizado, use a seguinte chamada:
 >
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Meu VPS está protegido contra ataques externos?
 

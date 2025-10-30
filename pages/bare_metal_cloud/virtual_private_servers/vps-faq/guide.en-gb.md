@@ -1,20 +1,49 @@
 ---
 title: "OVHcloud VPS FAQ"
 excerpt: "Find the answers to the most frequently asked questions about our VPS offers"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-	color: #2199e8ff !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -96,8 +125,13 @@ No, our VPS solutions do not include a domain name or email service. These servi
 
 /// details | How do I choose between a VPS and a web hosting plan?
 
-- Web hosting plan: ideal for basic hosting needs with a pre-configured setup.
-- VPS: more flexibility and control, perfect for scaling projects with complex configuration needs.
+**Web hosting plan**
+
+- Ideal for basic hosting needs with a pre-configured setup.
+
+**VPS**
+
+- More flexibility and control, perfect for scaling projects with complex configuration needs.
 
 If you host web services on a VPS, you can install your preferred software, customize server settings, and host multiple websites with dedicated resources. Please note that a VPS needs to be configured in a way that suits your application requirements and is adapted to your business growth.
 
@@ -105,15 +139,25 @@ If you host web services on a VPS, you can install your preferred software, cust
 
 /// details | What is the difference between a VPS and Public Cloud solutions?
 
-- VPS: an optimized and dedicated virtual machine suitable for both pre-production and production, designed to host several web projects.
-- OVHcloud Public Cloud: offers a multi-server infrastructure with high availability and a private network (vRack), and is designed for complex, scalable architectures.
+**VPS**
+
+- An optimized and dedicated virtual machine suitable for both pre-production and production, designed to host several web projects.
+
+**OVHcloud Public Cloud**
+
+- Offers a multi-server infrastructure with high availability and a private network (vRack), and is designed for complex, scalable architectures.
 
 ///
 
 /// details | What are the advantages of a VPS, compared to a dedicated server?
 
-- VPS: offers simplified management without hardware maintenance, ideal for projects needing tight control. 
-- Dedicated server: recommended for complex infrastructure that require full hardware control and guaranteed performance. 
+**VPS**
+
+- Offers simplified management without hardware maintenance, ideal for projects needing tight control.
+ 
+**Dedicated server**
+
+- Recommended for complex infrastructure that require full hardware control and guaranteed performance. 
 
 A VPS eliminates the need to manage physical hardware such as storage, RAM, and CPU, making it well-suited for most web applications. As your business grows, you can upgrade your VPS, or migrate to a dedicated server or a Public Cloud solution for a more flexible and powerful infrastructure.
 
@@ -130,7 +174,7 @@ The bandwidth listed on our [VPS web page](/links/bare-metal/vps) is guaranteed.
 An OVHcloud VPS includes a 99.9% SLA.
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | What are the unique features of a Local Zone VPS?
 
@@ -379,7 +423,7 @@ To verify that your IP address is authorized, use the following call:
 >
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Is my VPS protected from external attacks?
 
