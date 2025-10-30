@@ -53,7 +53,7 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ## FAQ
 
-### Creating an OVHcloud account, loggin in, and securing it
+### Creating an OVHcloud account, logging in, and securing it
 
 /// details | How do I create an OVHcloud account?
 
