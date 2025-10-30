@@ -72,7 +72,7 @@ import argparse
 import time
 import os
 
-from langchain import hub
+from langchain_classic import hub
 
 from langchain_mistralai import ChatMistralAI
 
