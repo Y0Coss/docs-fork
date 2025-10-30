@@ -43,11 +43,11 @@ We are now ready to learn how to connect to our PostgreSQL instance.
 
 Once logged in pgAdmin, from the Servers dashboard view select `Add new server`{.action}.
 
-![pgAdmin Dashboard view not connected](images/pgadmin_dashboard_not_connected.png)
+![pgAdmin Dashboard view not connected](images/pgadmin_dashboard_not_connected.png){.thumbnail}
 
 Fill in the `name` from the  `General`{.action} tab of the **Register - Server** dialog.
 
-![Register - Server - General tab](images/pgadmin_register_server_general.png)
+![Register - Server - General tab](images/pgadmin_register_server_general.png){.thumbnail}
 
 Then select the `Connection`{.action} tab and fill in the following fields with the collected credentials:
 
@@ -57,17 +57,17 @@ Then select the `Connection`{.action} tab and fill in the following fields with 
 - Username
 - Password
 
-![Register - Server - Connection tab](images/pgadmin_register_server_connection.png)
+![Register - Server - Connection tab](images/pgadmin_register_server_connection.png){.thumbnail}
 
 Finally, select the `Parameters`{.action} tab and set the **SSL mode** to **require**.
 
-![Register - Server - Parameters tab](images/pgadmin_register_server_parameters.png)
+![Register - Server - Parameters tab](images/pgadmin_register_server_parameters.png){.thumbnail}
 
 If needed you can also adjust the connection timeout from the same tab.
 
 Once saved, select your server in the servers list on the left. In the Dashboard view, you can observe that the connection is active:
 
-![pgAdmin Dashboard view connected](images/pgadmin_dashboard_connected.png)
+![pgAdmin Dashboard view connected](images/pgadmin_dashboard_connected.png){.thumbnail}
 
 ## Go further
 
@@ -77,4 +77,4 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
