@@ -1,6 +1,6 @@
 ---
-title: 'Résilier une ligne SIP, Trunk SIP, une ligne Fax ou un numéro alias'
-excerpt: "Découvrez comment résilier un service VoIP ou une ligne Fax depuis l'espace client OVHcloud"
+title: 'Comment résilier un service VoIP ou une ligne Fax'
+excerpt: "Découvrez comment résilier une ligne SIP, Trunk SIP, une ligne Fax ou un numéro alias depuis l'espace client OVHcloud"
 updated: 2025-10-29
 ---
 

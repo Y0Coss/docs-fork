@@ -155,4 +155,6 @@ Pour plus d'informations sur cette procédure, consultez le guide « [Effectuer 
 
 ## Aller plus loin
 
+[Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip)
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).
