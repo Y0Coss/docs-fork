@@ -24,6 +24,10 @@ Retrouvez dans ce guide les explications pour résilier unitairement un service 
 >
 > Retrouvez les informations correspondantes dans notre guide « [Gérer vos groupes de téléphonie](pages/web_cloud/phone_and_fax/voip/regrouper_services_telephonie) ».
 
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre service VoIP ou Fax.
+1. Cliquez sur l'onglet `Services`{.action} puis sur sur la ligne ou le numéro concerné (vous pouvez rechercher le service dans le champ prévu à cet effet).
+
 En fonction de votre service, référez-vous à la partie correspondante.
 
 ### Résilier une ligne SIP / Trunk
