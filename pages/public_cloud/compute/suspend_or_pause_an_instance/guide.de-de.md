@@ -33,7 +33,7 @@ In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optione
 |Funktion|Beschreibung|Abrechnung|
 |---|---|---|
 |[Aussetzen (*shelve*)](#shelve-instance)|Speichert die Ressourcen und Daten Ihrer Disk, indem ein Snapshot erstellt wird. Alle anderen Ressourcen werden freigegeben.|Ihnen wird nur der Snapshot berechnet.|
-|[Ausschalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der VM auf die Disk. Die der Instanz zugewiesenen Ressourcen bleiben reserviert.|An der Abrechnung der Instanz ändert sich nichts.|
+|[Anhalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der VM auf die Disk. Die der Instanz zugewiesenen Ressourcen bleiben reserviert.|An der Abrechnung der Instanz ändert sich nichts.|
 |[Pausieren (*pause*)](#pause-instance)|Speichert den Zustand der VM im RAM. Eine pausierte Instanz wird "eingefroren".|An der Abrechnung der Instanz ändert sich nichts.|
 
 ### Inhaltsübersicht
@@ -46,7 +46,7 @@ In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optione
     - [Im OVHcloud Kundencenter](#control-panel-unshelve)
     - [Im Horizon-Interface](#horizon-unshelve)
     - [Verwendung der OpenStack/Nova API](#openstack-nova-unshelve)
-- [Ausschalten einer Instanz (*suspend*)](#stop-suspend-instance)
+- [Anhalten einer Instanz (*suspend*)](#stop-suspend-instance)
     - [Im OVHcloud Kundencenter](#stop-control-panel)
     - [Im Horizon-Interface](#stop-horizon)
     - [Verwendung der OpenStack/Nova API](#stop-openstack-nova)
@@ -190,9 +190,9 @@ Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 <a name="stop-suspend-instance"></a>
 
-### Ausschalten einer Instanz (*suspend*)
+### Anhalten einer Instanz (*suspend*)
 
-Mit dieser Option können Sie Ihre Instanz ausschalten. Der Status der VM wird auf der Festplatte gespeichert, während der Speicher auf die Festplatte geschrieben wird.
+Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuellen Maschine auf der Disk sichern. Der Arbeitsspeicher wird ebenfalls auf die Disk geschrieben.
 
 <a name="stop-control-panel"></a>
 
