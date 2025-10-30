@@ -170,7 +170,7 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 ///
 
 Si une caution est restituée, elle sera disponible sous forme d'avoir sur votre compte prépayé OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique.<br>
-Si vous le souhaitez, vous pouvez en demander le versement sur votre compte bancaire via les étapes suivantes, **sous réserve d'avoir [enregistré et défini en moyen de paiement par défaut un compte bancaire SEPA](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) au préalable** :
+Si vous le souhaitez, vous pouvez en demander le remboursement sur votre compte bancaire via les étapes suivantes, **sous réserve d'avoir [enregistré un compte bancaire SEPA dans votre compte OVHcloud et de l'avoir défini en moyen de paiement par défaut](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) au préalable** :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
@@ -181,7 +181,7 @@ Si vous le souhaitez, vous pouvez en demander le versement sur votre compte banc
 Le montant du remboursement apparaîtra au crédit du compte bancaire SEPA défini dans votre espace client OVHcloud sous 48 heures.
 
 > [!primary]
-> Si le montant de l'avoir n'apparaît pas sur le solde du compte prépayé OVHcloud ou est incomplet, tout ou partie de ce montant a été utilisé automatiquement pour le règlement de vos factures.
+> Si le montant de l'avoir n'apparaît pas sur le solde du compte prépayé OVHcloud ou est incomplet, cela signifie que la totalité ou une partie de ce montant a été utilisée automatiquement pour le règlement de vos factures.
 
 #### Le matériel n'est pas reçu
 
