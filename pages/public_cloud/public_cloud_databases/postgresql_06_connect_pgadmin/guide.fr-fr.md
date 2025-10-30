@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Se connecter avec pgAdmin (EN)
+title: PostgreSQL - Connect with pgAdmin
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using pgAdmin
 updated: 2022-04-04
 ---
@@ -43,7 +43,7 @@ We are now ready to learn how to connect to our PostgreSQL instance.
 
 Once logged in pgAdmin, from the Servers dashboard view select `Add new server`{.action}.
 
-![pgAdmin Dashboard view](images/postgresql_06_connect_pgadmin-2022020413471615.png)
+![pgAdmin Dashboard view not connected](images/pgadmin_dashboard_not_connected.png)
 
 Fill in the `name` from the  `General`{.action} tab of the **Register - Server** dialog.
 
