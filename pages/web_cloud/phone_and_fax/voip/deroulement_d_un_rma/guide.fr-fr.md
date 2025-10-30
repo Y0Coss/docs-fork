@@ -102,11 +102,13 @@ Lorsque vous recevez cet e-mail, le lien du PDF est disponible dans le corps de 
 > 1. Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.
 >
 > Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
+>
+> **L’impression du bon de retour doit être effectuée de façon claire et lisible afin que les code-barres puissent être scannés lors de la réception.**
 
 Une partie du bon est impérativement à joindre dans le colis et l'autre volet est à coller sur le colis pour l'affranchissement.
 
-Le volet à joindre dans le colis contient une checklist des éléments à renvoyer. **N'oubliez aucun élément pour récupérer la totalité de la caution**. 
-<br>Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite sur le bon RMA.
+Le volet à joindre dans le colis contient une checklist des éléments à renvoyer. **N'oubliez aucun élément pour récupérer la totalité de la caution**.<br>
+Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite dans l'e-mail reçu ou dans la référence du bon RMA avant la mention « 3BHE » (RMAxxxx**MAC**3BHE).
 
 Si vous devez restituer plusieurs téléphones, vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par téléphone) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
 
