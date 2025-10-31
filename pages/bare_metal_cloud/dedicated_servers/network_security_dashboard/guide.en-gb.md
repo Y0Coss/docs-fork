@@ -1,7 +1,7 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-10-30
+updated: 2025-10-31
 ---
 
 ## Objective
@@ -78,7 +78,7 @@ In the table, the following columns are present:
 - **Destination IP** - The IP that was the target of the attack
 - **Attack vectors** - Provides information about detected types of attacks, such as UDP or TCP attack, etc.
 
-**The data retention period for scrubbing centre logs is *1 year.***
+**The data retention period for scrubbing centre logs is 1 year.**
 
 > [!warning]
 >
@@ -91,7 +91,7 @@ In the **Traffic chart** tab, you can see a graph showing traffic to your IP add
 
 It presents malicious traffic that was dropped (**in red**) and clean traffic delivered to your IP address (**in green**). There are also basic mitigation statistics displayed, i.e.: how many attacks were detected for a selected IP, how much traffic (or packets) was cleaned during attacks or how many times scrubbing centres took an action to inspect your traffic (number of events) in a selected period of time.
 
-**The data retention period for the traffic chart is *2 months.***
+**The data retention period for the traffic chart is 2 months.**
 
 ## FAQ
 
