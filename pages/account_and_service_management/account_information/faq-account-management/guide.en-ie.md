@@ -37,8 +37,9 @@ details[open] > summary {
     background: #ffffffff;
 }
 details > :not(summary) {
-    padding: 0.5rem 0.75rem;
+    padding: 0.25rem 0.5rem;
     box-sizing: border-box;
+    list-style-position: inside;
 }
 .smallish-gap {
     display: block;
@@ -298,10 +299,10 @@ The service delegation must be validated via email both by the service administr
 
 Before you make any changes, please ensure that all contact email addresses are valid, otherwise the request will not be successful.
 
-If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change)
+If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change).
 
 > [!success]
-> A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
+> A full contact management guide is available here: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ///
 

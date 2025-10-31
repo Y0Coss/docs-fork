@@ -37,8 +37,9 @@ details[open] > summary {
     background: #ffffffff;
 }
 details > :not(summary) {
-    padding: 0.5rem 0.75rem;
+    padding: 0.25rem 0.5rem;
     box-sizing: border-box;
+    list-style-position: inside;
 }
 .smallish-gap {
     display: block;
