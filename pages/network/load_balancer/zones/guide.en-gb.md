@@ -1,5 +1,5 @@
 ---
-title: Working with zones
+title: How to configure the OVHcloud Load Balancer in multiple zones
 excerpt: Use zones to increase availability and decrease latency
 updated: 2025-07-30
 ---
@@ -112,6 +112,16 @@ you can order a Load Balancer service in the `gra` and `bhs` areas and configure
 
 - A frontend in the gra zone with as default cluster in the gra zone which contains servers in the Gravelines datacenter
 - A frontend in the bhs zone with a default cluster in the bhs zone that contains servers in the Beauharnois datacenter
+
+### Multi-AZ deployment
+
+OVHcloud is currently rolling out its strategic plan for multi-Availability Zone (AZ) regions, beginning with the launch of Paris 3-AZ in April 2024.
+
+Load balancing across multiple regions offers **maximum disaster recovery against widespread regional outages** and allows for worldwide entry points that significantly **reduce latency** by routing users to the **nearest server**. 
+
+In contrast, load balancing across several Availability Zones (AZs) within the same region ensures **high availability**, **high performance** and **fault tolerance against local outages** using fast, **low-latency connections**.
+
+![Difference between multi-AZ and multi-zone deployments](images/multi-az-comparison.png)
 
 ## Go further
 
