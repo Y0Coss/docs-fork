@@ -34,11 +34,12 @@ updated: 2025-10-29
 | Standard|500|110|5|8GB|
 
 We have tested our OVHcloud Managed Kubernetes service Plans with a max number of nodes, while higher configurations might work and that there is no hard limits, we recommend staying under these limits for optimal stability.
-Keep in mind that impact on the control plane isn't solely determined by the number of nodes. What truly defines a 'large cluster' depends on the combination of resources deployed pods, custom resources, and other objects all contribute to control plane load. A cluster with fewer nodes but intensive resource utilization can stress the control plane more than a cluster with many nodes running minimal workloads, in such configuration it is recommended to switch to Standard plan in order to benefit from higher and dedicated control plane ressources.
 
-While 110 pods per node is the default value defined by Kubernetes, please note that the OVHcloud team deploy some management components on nodes (CNI, agents, Konnectivity,...), these are considered 'cluster mandatory' and will impact the pods per node capacity for user workloads. For the same reason, as those management components are mandatory and require a small amount of node ressources, in case of node overloading you might face some of your pods being in state `Terminated` with `Reason: OOMKilled` and `Exit Code: 137`. That's why it is important to have a clean resources management for your workload in order to avoid nodes overloading and instabilities.
+Keep in mind that impact on the control plane isn't solely determined by the number of nodes. What truly defines a 'large cluster' depends on the combination of resources deployed pods, custom resources, and other objects all contribute to control plane load. A cluster with fewer nodes but intensive resource utilization can stress the control plane more than a cluster with many nodes running minimal workloads, in such configuration it is recommended to switch to Standard plan in order to benefit from higher and dedicated control plane resources.
 
-As a fully managed service, you will **not have SSH access** to the nodes. All OS and component updates are handled by OVHcloud through patches and minor updates.
+While 110 pods per node is the default value defined by Kubernetes, please note that the OVHcloud team deploy some management components on nodes (CNI, agents, Konnectivity,...), these are considered 'cluster mandatory' and will impact the pods per node capacity for user workloads. For the same reason, as those management components are mandatory and require a small amount of node resources, in case of node overloading you might face some of your pods being in state `Terminated` with `Reason: OOMKilled` and `Exit Code: 137`. That's why it is important to have a clean resources management for your workload in order to avoid nodes overloading and instabilities.
+
+As a fully managed service, you will **not have SSH access** to the nodes. All OS and component updates are handled by OVHcloud through patches and minor updates. If you need to perform **node-level debugging**, you can use the Kubernetes native tooling with [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node){.external} to inspect or troubleshoot a node without requiring direct SSH access.
 
 ## Patch, Upgrades & Maintenances considerations
 
@@ -58,8 +59,8 @@ If an incident is detected by the OVHcloud monitoring, as part of auto-healing, 
 To avoid data loss in case of node failure, patch or upgrade, it is recommended to save your data Persistent Volumes (PV) based on Persistent Storage classes (such as Block or File Storage), not directly on nodes (including NVMe additional disks).
 Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) for more information.
 
-By default, OVHcloud provide storage classes based on Cinder block-storage solution through Cinder CSI.  
-A worker node can have a maximum of 100 Cinder persistent volumes attached to it, and a Cinder persistent volume can only be attached to a single worker node.  
+By default, OVHcloud provide [storage classes](https://github.com/ovh/docs/blob/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume/guide.en-gb.md#storage-classes){.external} based on Cinder block-storage solution through Cinder CSI.
+A worker node can have a maximum of 100 Cinder persistent volumes attached to it, and a Cinder persistent volume can only be attached to a single worker node.
 
 You can manually [configure multi-attach persistent volumes with NAS-HA](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha).
 
@@ -94,13 +95,13 @@ The lifespan of the external Load Balancer (and the associated IP address, if no
 
 For more information, see [expose services through a LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
-## Ressources & Quota
+## Resources & Quota
 
-Managed Kubernetes service ressources including nodes, persistent volumes and load balancers are based on standard Public Cloud ressources deployed on user Project. As such, you can see them in the [OVHcloud Public Cloud Control Panel](/links/manager) or through APIs. Though it doesn't mean that you can interact directly with these ressources the same way you can do it for other Public Cloud instances. The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those ressources to be part of our Managed Kubernetes.  
+Managed Kubernetes service resources including nodes, persistent volumes and load balancers are based on standard Public Cloud resources deployed on user Project. As such, you can see them in the [OVHcloud Public Cloud Control Panel](/links/manager) or through APIs. Though it doesn't mean that you can interact directly with these resources the same way you can do it for other Public Cloud instances. The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those resources to be part of our Managed Kubernetes.  
 Please avoid manipulating them 'manually' (modifying ports left opened, renaming, deleting, resizing volumes...), as you could break them. As part of our auto-healing process, any deletion or modification may lead to a new ressource creation or duplication.
 
 By default, there is a quota of __20__ Managed Kubernetes 'Free' plan cluster by Project (also named Openstack tenant).
-MMKS Cluster's quotas relies on your project's quota. If necessary, consult [this documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) to increase your quota.
+MKS Cluster's quotas relies on your project's quota. If necessary, consult [this documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) to increase your quota.
 
 ### Node naming
 
