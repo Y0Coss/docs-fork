@@ -1,6 +1,6 @@
 ---
-title: Choosing the Right OVHcloud Kubernetes Plan: Free or Standard
-excerpt: Explore OVHcloud Managed Kubernetes plans: Free and Standard. Discover which plan suits your cloud projects and get started quickly.
+title: "Choosing the right OVHcloud Managed Kubernetes Plan: Free or Standard"
+excerpt: "Explore OVHcloud Managed Kubernetes plans: Free and Standard. Discover which plan suits your cloud projects and get started quickly."
 updated: 2025-10-31
 ---
 
