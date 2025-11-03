@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2025-10-28
+updated: 2025-11-03
 ---
 
 ## Objective
@@ -85,11 +85,11 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. Find more information on the "[Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status)" page.
 >>
-> Via the Openstack CLI
->> Another way to create a Load Balancer is through the Openstack Command Line Interface. Before you begin, consult the following guides:
+> Via the OpenStack CLI
+>> Another way to create a Load Balancer is through the OpenStack Command Line Interface. Before you begin, consult the following guides:
 >>
->> [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
->> [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+>> - [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+>> - [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 >>
 >> **Configuring your private network**
 >>

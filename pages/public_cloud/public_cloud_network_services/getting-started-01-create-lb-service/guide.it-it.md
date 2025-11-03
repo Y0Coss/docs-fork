@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2025-10-28
+updated: 2025-11-03
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> The configuration page will open.
 >>
->> #### Step 1: Region choice
+>> **Step 1: Region choice**
 >>
 >> ![Region choice](images/region.png){.thumbnail}
 >>
@@ -39,13 +39,13 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> 2. **Choose the region:** Only regions where you have a private network and at least one subnet can be selected. Select the region and click `Next`{.action}.
 >>
->> #### Step 2: Size choice
+>> **Step 2: Size choice**
 >>
 >> ![Size choice](images/size.png){.thumbnail}
 >>
 >> The interface contains a link to the website on which the characteristics / benchmark of all size are provided. Once you have chosen your size, click `Next`{.action}.
 >>
->> #### Step 3: Attach a public IP (or not)
+>> **Step 3: Attach a public IP (or not)**
 >>
 >> ![Public IP choice](images/floating_IP.png){.thumbnail}
 >>
@@ -58,13 +58,13 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> If your Load Balancer is processing private traffic, choose `No Public IP`{.action}.
 >>
->> #### Step 4: Select the private network and the subnet where the Load Balancer will be spawned
+>> **Step 4: Select the private network and the subnet where the Load Balancer will be spawned**
 >>
 >> ![Network choice](images/private_network.png){.thumbnail}
 >>
 >> The interface will inform you if the private network / subnet is not compliant with the prerequisites (see [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#network-prerequisites)).
 >>
->> #### Step 5 (optional): Define the listener(s) and the members
+>> **Step 5 (optional): Define the listener(s) and the members**
 >>
 >> ![Listener choice](images/listener.png){.thumbnail}
 >>
@@ -77,7 +77,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >> > Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
 >> >
 >>
->> #### Step 6: Define the name of Load Balancer
+>> **Step 6: Define the name of Load Balancer**
 >>
 >> ![Name](images/name.png){.thumbnail}
 >>
@@ -85,13 +85,13 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. Find more information on the "[Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status)" page.
 >>
-> Via the Openstack CLI
->> Another way to create a Load Balancer is through the Openstack Command Line Interface. Before you begin, consult the following guides:
+> Via the OpenStack CLI
+>> Another way to create a Load Balancer is through the OpenStack Command Line Interface. Before you begin, consult the following guides:
 >>
->> [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
->> [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+>> - [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+>> - [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 >>
->> #### Configuring your private network
+>> **Configuring your private network**
 >>
 >> Before creating a Load Balancer, you will need to set up a private network:
 >>
@@ -117,7 +117,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> In the next step, configure the network interfaces of your instances according to this output.
 >>
->> #### Creating the Load Balancer
+>> **Creating the Load Balancer**
 >>
 >> You can view a list of the different Load Balancer flavors we offer with this command:
 >>
@@ -133,7 +133,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >>
 >> Your Load Balancer will be configured with an IP address of the private network. If you want to have access from the internet, you will need to attach a Floating IP address.
 >>
->> #### Attaching a Floating IP address to a Load Balancer
+>> **Attaching a Floating IP address to a Load Balancer**
 >>
 >> This is how to attach a Floating IP address to a Load Balancer:
 >>
@@ -147,7 +147,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 >> > To retrieve the VIP port ID of your Load Balancer, use `openstack loadbalancer show my_load_balancer`.
 >> >
 >>
->> #### Configuring your Load Balancer
+>> **Configuring your Load Balancer**
 >>
 >> In this example we will configure an HTTP Load Balancer. In order to listen on port 80 of the Load Balancer, create a Listener with this command:
 >>

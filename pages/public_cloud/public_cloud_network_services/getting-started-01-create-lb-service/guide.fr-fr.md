@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Load Balancer pour Public Cloud
 excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
-updated: 2025-10-28
+updated: 2025-11-03
 ---
 
 ## Objectif
@@ -43,7 +43,7 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >>
 >> ![Choix de la taille](images/size.png){.thumbnail}
 >>
->> L'interface contient un lien vers notre site sur lequel les caractéristiques / benchmark de toutes les tailles sont fournies. Une fois que vous avez choisi votre taille, cliquez sur `Suivant`{.action}.
+>> L'interface contient un lien vers notre site sur lequel les caractéristiques et un benchmark de toutes les tailles sont fournis. Une fois que vous avez choisi votre taille, cliquez sur `Suivant`{.action}.
 >>
 >> **Étape 3 : Attacher une IP publique (ou non)**
 >>
@@ -85,11 +85,11 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >>
 >> Vous allez être redirigé vers la page qui liste les Load Balancers. Parmi les attributs qui s'affichent, les `Operating status` et `Provisioning status` fournissent des informations sur l'état de votre load balancer. Retrouvez plus d'informations sur la page « [Concepts du Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status) ».
 >>
-> Via la CLI Openstack
->> Une autre façon de créer un Load Balance est d'utiliser l'interface de ligne de commande d'Openstack. Avant de commencer, consultez les guides suivants :
+> Via la CLI OpenStack
+>> Une autre façon de créer un Load Balancer est d'utiliser l'interface de ligne de commande d'OpenStack. Avant de commencer, consultez les guides suivants :
 >>
->> [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
->> [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+>> - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+>> - [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 >>
 >> **Configurer votre réseau privé**
 >>
@@ -107,7 +107,7 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >> openstack router set --external-gateway Ext-Net my_router
 >> ```
 >>
->> Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration). 
+>> Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration).
 >>
 >> Prenez note des adresses de vos instances dans votre réseau avec la commande suivante :
 >>
