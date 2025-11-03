@@ -10,3 +10,4 @@ disable_languages:
 - pt-pt
 id: 1a8f6500-5c3a-4317-b4bd-f83255f97d41
 full_slug: sms-sending-via-api-php
+translation_banner: true

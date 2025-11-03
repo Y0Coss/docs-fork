@@ -1,20 +1,50 @@
 ---
 title: "FAQ sur les VPS OVHcloud"
 excerpt: "Trouvez les réponses aux questions les plus fréquemment posées sur nos offres VPS"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -96,8 +126,13 @@ Non, nos VPS n’incluent pas de nom de domaine ni de service e-mail. Ces servic
 
 /// details | Comment choisir entre un VPS et un hébergement web ?
 
-- Hébergement web : Idéal pour vos besoins de base avec une installation préconfigurée.
-- VPS : Davantage de flexibilité et de contrôle, idéal pour faire évoluer des projets avec des besoins de configuration complexes.
+**Hébergement web**
+
+- Idéal pour vos besoins de base avec une installation préconfigurée.
+
+**VPS**
+
+- Davantage de flexibilité et de contrôle, idéal pour faire évoluer des projets avec des besoins de configuration complexes.
 
 L’hébergement de services web sur un VPS vous permet d’installer le logiciel de votre choix, de personnaliser les paramètres du serveur et d’héberger plusieurs sites web avec des ressources dédiées. À noter qu’un VPS nécessite d’être configuré de manière à répondre aux besoins de vos applications et à s’adapter à la croissance de votre activité.
 
@@ -105,15 +140,25 @@ L’hébergement de services web sur un VPS vous permet d’installer le logicie
 
 /// details | Quelle est la différence entre un VPS et une solution Public Cloud ?
 
-- VPS : Une machine virtuelle optimisée et dédiée, adaptée à la préproduction comme à la production, conçue pour héberger plusieurs projets web.
-- Public Cloud OVHcloud : Offre une infrastructure multi-serveurs à haute disponibilité et un réseau privé (vRack), conçue pour les architectures complexes et évolutives.
+**VPS**
+
+- Une machine virtuelle optimisée et dédiée, adaptée à la préproduction comme à la production, conçue pour héberger plusieurs projets web.
+
+**Public Cloud OVHcloud**
+
+- Offre une infrastructure multi-serveurs à haute disponibilité et un réseau privé (vRack), conçue pour les architectures complexes et évolutives.
 
 ///
 
 /// details | Quels sont les avantages d’un VPS par rapport à un serveur dédié ?
 
-- VPS : Offre une gestion simplifiée sans maintenance matérielle, idéale pour les projets nécessitant un contrôle strict.
-- Serveur dédié : Recommandé pour les infrastructures complexes qui nécessitent un contrôle matériel complet et des performances garanties.
+**VPS**
+
+- Offre une gestion simplifiée sans maintenance matérielle, idéale pour les projets nécessitant un contrôle strict.
+
+**Serveur dédié**
+
+- Recommandé pour les infrastructures complexes qui nécessitent un contrôle matériel complet et des performances garanties.
 
 Le VPS élimine la nécessité de gérer le matériel physique, comme le stockage, la RAM et le CPU, ce qui le rend bien adapté à la plupart des applications web. Au fur et à mesure que votre entreprise se développe, vous pouvez faire évoluer votre VPS ou migrer vers un serveur dédié ou une solution Public Cloud pour bénéficier d’une infrastructure plus flexible et plus puissante.
 
@@ -130,7 +175,7 @@ La bande passante indiquée sur notre [page web VPS](/links/bare-metal/vps) est 
 Un VPS OVHcloud inclut un SLA de 99,9 %.
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Quelles sont les spécificités d’un VPS Local Zone ?
 
@@ -383,7 +428,7 @@ Pour vérifier que votre adresse IP est autorisée, utilisez l'appel suivant :
 >
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Mon VPS est-il protégé contre les attaques externes ?
 

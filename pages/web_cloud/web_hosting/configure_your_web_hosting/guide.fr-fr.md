@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Environnement, version PHP, « .ovhconfig »"
 excerpt: "Découvrez comment modifier l'environnement d'exécution, la version PHP, le pare-feu applicatif, le moteur, le mode et le « .ovhconfig » d'un hébergement web"
-updated: 2025-10-21
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -384,11 +384,11 @@ Une fois le fichier « .ovhconfig » modifié, téléchargez-le sur votre [espac
 
 ### 4 - Utilisation avancée des fichiers « .ovhconfig » <a name="ovhconfig-more"></a>
 
-Si vous utilisez votre hébergement web pour y héberger plusieurs sites web (en *multisites*), diverses raisons peuvent vous amener à vouloir bénéficier d'une version de PHP différente pour certains de vos *multisites*.
+Si vous utilisez votre hébergement web pour y héberger plusieurs sites web, diverses raisons peuvent vous amener à vouloir bénéficier d'une version de PHP différente pour certains de vos sites web.
 
-Créez un fichier « .ovhconfig » contenant la version de PHP souhaitée pour le ou les *multisites* concernés. Aidez-vous des manipulations décrites dans la partie « [3.3 - Modifier le contenu du fichier « .ovhconfig »](#update-ovhconfig) » de ce guide si nécessaire. Lorsque vous téléchargerez le fichier « .ovhconfig » sur votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection), faites-le dans le dossier racine où se trouvent les fichiers qui composent le site web "*multisites*" concerné. Retrouvez le dossier racine de vos *multisites* depuis votre [espace client OVHcloud](/links/manager) dans l'onglet `Multisite`{.action} de l'hébergement concerné.
+Créez un fichier « .ovhconfig » contenant la version de PHP souhaitée pour le ou les sites web concernés. Aidez-vous des manipulations décrites dans la partie « [3.3 - Modifier le contenu du fichier « .ovhconfig »](#update-ovhconfig) » de ce guide si nécessaire. Lorsque vous téléchargerez le fichier « .ovhconfig » sur votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection), faites-le dans le dossier racine où se trouvent les fichiers qui composent le site web concerné. Retrouvez le dossier racine de votre site web depuis votre [espace client OVHcloud](/links/manager) dans l'onglet `Multisite`{.action} de l'hébergement concerné.
 
-Consultez notre guide « [Configurer un multisite sur votre hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite) » si besoin.
+Consultez notre guide détaillant comment [configurer un site web sur un hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si besoin.
 
 > [!warning]
 >
@@ -401,7 +401,7 @@ Consultez notre guide « [Configurer un multisite sur votre hébergement web](/p
 
 [Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

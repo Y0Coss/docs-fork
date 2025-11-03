@@ -1,20 +1,50 @@
 ---
 title: "FAQ su VPS OVHcloud"
 excerpt: "Trovate le risposte alle domande più frequenti sulle nostre offerte VPS"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -96,8 +126,13 @@ No, le nostre soluzioni VPS non includono un nome di dominio o un servizio email
 
 /// details | Come scelgo tra un VPS e un piano di hosting web?
 
-- Piano di hosting web: ideale per esigenze di hosting di base con una configurazione predefinita.
-- VPS: maggiore flessibilità e controllo, perfetto per progetti scalabili con esigenze di configurazione complesse.
+**Piano di hosting web**
+
+- Deale per esigenze di hosting di base con una configurazione predefinita.
+
+**VPS**
+
+- Maggiore flessibilità e controllo, perfetto per progetti scalabili con esigenze di configurazione complesse.
 
 Ospitare servizi web su un VPS ti consente di installare il software preferito, personalizzare le impostazioni del server e ospitare più siti web con risorse dedicate. Si prega di notare che un VPS deve essere configurato in modo adatto alle tue esigenze di applicazione e adattato alla crescita della tua attività.
 
@@ -105,15 +140,25 @@ Ospitare servizi web su un VPS ti consente di installare il software preferito, 
 
 /// details | Qual è la differenza tra un VPS e le soluzioni Public Cloud?
 
-- VPS: macchina virtuale dedicata e ottimizzata adatta sia alla pre-produzione che alla produzione, progettata per ospitare più progetti web.
-- OVHcloud Public Cloud: offre un'infrastruttura multi-server con alta disponibilità e rete privata (vRack), progettata per architetture complesse e scalabili.
+**VPS**
+
+- Macchina virtuale dedicata e ottimizzata adatta sia alla pre-produzione che alla produzione, progettata per ospitare più progetti web.
+
+**OVHcloud Public Cloud**
+
+- Offre un'infrastruttura multi-server con alta disponibilità e rete privata (vRack), progettata per architetture complesse e scalabili.
 
 ///
 
 /// details | Quali sono i vantaggi di un VPS rispetto a un server dedicato?
 
-- VPS: offre una gestione semplificata senza manutenzione hardware, ideale per progetti che richiedono un controllo stretto.
-- Server dedicato: consigliato per infrastrutture complesse che richiedono il pieno controllo dell'hardware e prestazioni garantite.
+**VPS**
+
+- Offre una gestione semplificata senza manutenzione hardware, ideale per progetti che richiedono un controllo stretto.
+
+**Server dedicato**
+
+- Consigliato per infrastrutture complesse che richiedono il pieno controllo dell'hardware e prestazioni garantite.
 
 Un VPS elimina la necessità di gestire hardware fisico come archiviazione, RAM e CPU, rendendolo adatto per la maggior parte delle applicazioni web. Man mano che la tua attività cresce, puoi aggiornare il tuo VPS o migrare verso un server dedicato o una soluzione Public Cloud per un'infrastruttura più flessibile e potente.
 
@@ -130,7 +175,7 @@ La larghezza di banda indicata nella nostra [pagina web dei VPS](/links/bare-met
 Un VPS OVHcloud include un SLA del 99,9%.
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Quali sono le caratteristiche uniche di un VPS Local Zone?
 
@@ -378,7 +423,7 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza la seguente chi
 >
 
 ///
-</br>
+<span class="smallish-gap"></span>
 
 /// details | Il mio VPS è protetto dagli attacchi esterni?
 

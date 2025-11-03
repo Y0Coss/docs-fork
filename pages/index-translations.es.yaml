@@ -42,11 +42,15 @@ bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades de OVHclo
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Servicios y opciones de OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades de VMware vSphere
 bare-metal-cloud-virtual-private-servers: Servidores Privados Virtuales
-bare-metal-cloud-virtual-private-servers-advanced-usage: Uso avanzado
-bare-metal-cloud-virtual-private-servers-backups: Backups
+bare-metal-cloud-virtual-private-servers-configuration-advanced-usage: Uso avanzado
+bare-metal-cloud-virtual-private-configuration-servers-backups: Backups
 bare-metal-cloud-virtual-private-servers-getting-started: Primeros pasos
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Red e IP
-bare-metal-cloud-virtual-private-servers-troubleshooting: Resolución de problemas
+bare-metal-cloud-virtual-private-servers-configuration: Configuración
+bare-metal-cloud-virtual-private-servers-configuration-network-and-ip-management: Red e IP
+bare-metal-cloud-virtual-private-servers-security: Seguridad
+bare-metal-cloud-virtual-private-servers-troubleshooting: Diagnóstico
+bare-metal-cloud-virtual-private-servers-additional-resources: Recursos adicionales
+bare-metal-cloud-virtual-private-servers-migration: Migración
 bare-metal-cloud-virtual-private-servers-tutorials: Tutoriales
 hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
 hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Primeros pasos
@@ -273,40 +277,46 @@ web-cloud-domains-domain-names-migration: Migración
 web-cloud-domains-domain-names-tutorials: Tutoriales
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Acceso a internet
-web-cloud-internet-internet-access-advanced-setup: Configuración avanzada
+web-cloud-internet-internet-access-configuration-advanced-setup: Configuración avanzada
+web-cloud-internet-internet-access-key-concepts: Conceptos clave
 web-cloud-internet-internet-access-getting-started: Primeros pasos
-web-cloud-internet-internet-access-managing-your-offer: Gestionar las soluciones
-web-cloud-internet-internet-access-managing-your-options: Gestionar las opciones
-web-cloud-internet-internet-access-setting-up-your-access: Configurar los accesos
-web-cloud-internet-internet-access-troubleshooting: Resolución de problemas
+web-cloud-internet-internet-access-configuration: Configuración
+web-cloud-internet-internet-access-configuration-managing-your-offer: Gestionar las soluciones
+web-cloud-internet-internet-access-configuration-managing-your-options: Gestionar las opciones
+web-cloud-internet-internet-access-configuration-setting-up-your-access: Configurar los accesos
+web-cloud-internet-internet-access-troubleshooting: Diagnóstico
 web-cloud-internet-overthebox: OverTheBox
-web-cloud-internet-overthebox-managing-your-offer: Gestionar las soluciones
-web-cloud-internet-overthebox-advanced-setup: Configuración avanzada
+web-cloud-internet-overthebox-configuration-managing-your-offer: Gestionar las soluciones
+web-cloud-internet-overthebox-configuration-advanced-setup: Configuración avanzada
 web-cloud-internet-overthebox-getting-started: Primeros pasos
-web-cloud-internet-overthebox-initial-setup: Configuración inicial
+web-cloud-internet-overthebox-configuration: Configuración
+web-cloud-internet-overthebox-configuration-initial-setup: Configuración inicial
 web-cloud-messaging: SMS
 web-cloud-messaging-sms: SMS
-web-cloud-messaging-sms-advanced-usage: Uso avanzado
+web-cloud-messaging-sms-configuration-advanced-usage: Uso avanzado
 web-cloud-messaging-sms-getting-started: Primeros pasos
-web-cloud-messaging-sms-managing-your-solution: Gestionar un servicio
-web-cloud-messaging-sms-sending-sms-messages: Enviar SMS
-web-cloud-messaging-sms-smpp: SMPP
+web-cloud-messaging-sms-configuration: Configuración
+web-cloud-messaging-sms-configuration-managing-your-solution: Gestionar un servicio
+web-cloud-messaging-sms-configuration-sending-sms-messages: Enviar SMS
+web-cloud-messaging-sms-configuration-smpp: SMPP
 web-cloud-phone-and-fax: Teléfono y Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Primeros pasos
-web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Enviar y recibir faxes
+web-cloud-phone-and-fax-fax-configuration: Configuración
+web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Enviar y recibir faxes
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-administration: Administración
-web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integración de telefonía informática (CTI)
-web-cloud-phone-and-fax-voip-faq: FAQ
-web-cloud-phone-and-fax-voip-ipbx: IPBX
-web-cloud-phone-and-fax-voip-numbers-and-aliases: Números y alias
-web-cloud-phone-and-fax-voip-popc: POPC
-web-cloud-phone-and-fax-voip-previous-phone-models: Gamas antiguas de teléfonos
+web-cloud-phone-and-fax-voip-configuration-administration: Administración
+web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integración de telefonía informática (CTI)
+web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
+web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Números y alias
+web-cloud-phone-and-fax-voip-configuration-popc: POPC
+web-cloud-phone-and-fax-voip-additional-resources: Recursos adicionales
 web-cloud-phone-and-fax-voip-security: Seguridad
-web-cloud-phone-and-fax-voip-telephone-lines: Líneas telefónicas
-web-cloud-phone-and-fax-voip-troubleshooting: Resolución de problemas
+web-cloud-phone-and-fax-voip-getting-started: Primeros pasos
+web-cloud-phone-and-fax-voip-configuration: Configuración
+web-cloud-phone-and-fax-voip-configuration-telephone-lines: Líneas telefónicas
+web-cloud-phone-and-fax-voip-troubleshooting: Diagnóstico
 web-cloud-phone-and-fax-voip-tutorials: Tutoriales
 web-cloud-hosting: Web hosting
 web-cloud-hosting-tutorials-cms: CMS

@@ -1,19 +1,19 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
-updated: 2025-10-09
+updated: 2025-10-28
 ---
 
 ## Objectif <a name="objectif"></a>
 
-Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement Web ne contient pas de [certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section « [Aller plus loin](#go-further) ») : 
+Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement Web ne contient pas de [certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section « [Aller plus loin](#go-further) ») :
 
 |Navigateur|Message d'erreur concerné|
 |-|---|
-|Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
-|Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
-|Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
-|Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
+|Sur Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
+|Sur Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
+|Sur Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
+|Sur Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
 
 **Découvrez comment résoudre les erreurs du type « Votre connexion n'est pas privée ».**
 
@@ -94,11 +94,11 @@ Dans l'onglet `Informations générales`{.action} de votre hébergement OVHcloud
 
 #### Scénario 1 : votre hébergement ne contient pas de certificat SSL
 
-Activez un [certificat SSL](https://www.ovh.com/ca/fr/) sur votre hébergement en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Activez un [certificat SSL](/links/web/hosting-options-ssl) sur votre hébergement en suivant les instructions de [ce guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Scénario 2 : le certificat SSL de votre hébergement ne fonctionne pas
 
-Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'option SSL dans le `Multisite`{.action} de votre hébergement en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting#activer-un-certificat-ssl-sur-un-multisite).
+Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'option SSL de votre hébergement en suivant les instructions de [ce guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 Si vous disposez d'un **certificat SSL importé** et que celui-ci ne fonctionne pas, contactez son fournisseur.
 
@@ -121,7 +121,7 @@ Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire 
 
 [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
  
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

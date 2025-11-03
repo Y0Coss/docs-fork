@@ -1,20 +1,50 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2025-09-12
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -24,7 +54,7 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ## FAQ
 
-### Creating an OVHcloud account, loggin in, and securing it
+### Creating an OVHcloud account, logging in, and securing it
 
 /// details | How do I create an OVHcloud account?
 
@@ -259,10 +289,10 @@ The service delegation must be validated via email both by the service administr
 
 Before you make any changes, please ensure that all contact email addresses are valid, otherwise the request will not be successful.
 
-If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change)
+If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change).
 
 > [!success]
-> A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
+> A full contact management guide is available here: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ///
 

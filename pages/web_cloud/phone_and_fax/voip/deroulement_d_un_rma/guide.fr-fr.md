@@ -1,7 +1,7 @@
 ---
 title: 'Déroulement d’un RMA'
 excerpt: 'Découvrez les étapes de restitution d’un téléphone fourni par OVHcloud'
-updated: 2025-04-28
+updated: 2025-10-30
 ---
 
 <style>
@@ -102,15 +102,19 @@ Lorsque vous recevez cet e-mail, le lien du PDF est disponible dans le corps de 
 > 1. Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.
 >
 > Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
+>
+> **L’impression du bon de retour doit être effectuée de façon claire et lisible afin que les code-barres puissent être scannés lors de la réception.**
 
 Une partie du bon est impérativement à joindre dans le colis et l'autre volet est à coller sur le colis pour l'affranchissement.
+
+Le volet à joindre dans le colis contient la liste des éléments à renvoyer. **N'oubliez aucun élément pour récupérer la totalité de la caution**.<br>
+Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite dans l'e-mail reçu ou dans la référence du bon RMA avant la mention « 3BHE » (RMAxxxx**MAC**3BHE).
+
+Si vous devez restituer plusieurs téléphones, vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par téléphone) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
 
 > [!primary]
 >
 > Le colis doit être envoyé depuis un bureau de Poste.
-
-Le volet à joindre dans le colis contient une checklist des éléments à renvoyer. **N'oubliez aucun élément pour récupérer la totalité de la caution**. 
-<br>Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite sur le bon RMA.
 
 Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confirmation de la bonne réception de celui-ci dans nos locaux.
 
@@ -167,14 +171,19 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 
 ///
 
-Si une caution est restituée, elle sera disponible sur votre compte OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique. 
-<br>Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
+Si une caution est restituée, elle sera disponible sous forme d'avoir sur votre compte prépayé OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique.<br>
+Si vous le souhaitez, vous pouvez en demander le remboursement sur votre compte bancaire via les étapes suivantes, **sous réserve d'avoir [enregistré un compte bancaire SEPA dans votre compte OVHcloud et de l'avoir défini en moyen de paiement par défaut](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) au préalable** :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
-1. Cliquez sur l'onglet `Facturation`{.action} puis sur `Virement vers un compte bancaire`{.action}
+1. Cliquez sur l'onglet `Facturation`{.action} puis sur `Virement vers un compte bancaire`{.action}.
+1. Dans le tableau, cliquez sur les `...`{.action} à droite de la ligne correspondant à la caution restituée, puis sur `Demander un remboursement`{.action}.
+1. Cliquez sur `Valider la demande`{.action}.
 
-Entrez le compte bancaire à créditer et validez. Le virement sera effectué sous 48 heures ouvrées.
+Le montant du remboursement apparaîtra au crédit du compte bancaire SEPA défini dans votre espace client OVHcloud sous 48 heures.
+
+> [!primary]
+> Si le montant de l'avoir n'apparaît pas sur le solde du compte prépayé OVHcloud ou est incomplet, cela signifie que la totalité ou une partie de ce montant a été utilisée automatiquement pour le règlement de vos factures.
 
 #### Le matériel n'est pas reçu
 
