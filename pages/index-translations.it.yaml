@@ -225,10 +225,14 @@ web-cloud-clouddb-configuration: Configurazione
 web-cloud-clouddb-migration: Migrazione
 web-cloud-clouddb-additional-resources: Risorse aggiuntive
 web-cloud-email-collaborative-solutions: Soluzioni email e strumenti collaborativi
-web-cloud-email-collaborative-solutions-common-email-features: Funzionalità comuni alle offerte email
+web-cloud-email-collaborative-solutions-getting-started: Per iniziare
+web-cloud-email-collaborative-solutions-configuration: Configurazione
+web-cloud-email-collaborative-solutions-security: Sicurezza
 web-cloud-email-collaborative-solutions-using-outlook-web-access-owa: Utilizzo di Outlook Web App (OWA)
-web-cloud-email-collaborative-solutions-migration: Migrazione di servizi
-web-cloud-email-collaborative-solutions-troubleshooting: Risoluzione dei problemi
+web-cloud-email-collaborative-solutions-using-outlook-web-access-owa-getting-started: Per iniziare
+web-cloud-email-collaborative-solutions-using-outlook-web-access-owa-configuration: Configurazione
+web-cloud-email-collaborative-solutions-migration: Migrazione
+web-cloud-email-collaborative-solutions-troubleshooting: Diagnosi
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Per iniziare
 web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Caratteristiche indirizzo di posta elettronica
