@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,6 +31,20 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Objectif
@@ -50,6 +61,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
     - E-mails (MX Plan) OVHcloud (disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément.
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/zimbra).
     - Une offre e-mail hors OVHcloud disposant du DKIM.
 
 > [!warning]
@@ -93,7 +105,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 Pour bien comprendre pourquoi le DKIM permet de sécuriser vos échanges d'e-mails, il est nécessaire de comprendre comment il fonctionne. Le DKIM fait appel au «**hachage**» et au «**chiffrement asymétrique**» pour créer une signature sécurisée. La **plateforme e-mail** et la **Zone DNS** de votre nom de domaine vont aider à transmettre les informations du DKIM à vos destinataires.
 
-#### Le hachage <a name="hash"></a>
+/// details | Le hachage <a name="hash"></a>
 
 Le principe d'une **fonction de hachage** est de générer une **signature** (aussi appelée empreinte) à partir d'une donnée d'entrée. Son intérêt est de créer en sortie une suite de caractères fixe, quelle que soit la quantité de données en entrée.
 
@@ -103,7 +115,9 @@ Sur le diagramme suivant, vous pouvez constater que la sortie (Output) sera touj
 
 La fonction de hachage est utile lorsque vous souhaitez vérifier l'intégrité d'un message. En effet, deux données qui peuvent sembler très similaires présentent en réalité une valeur de hachage complètement différente, avec une longueur de caractères égale en sortie, quelle que soit la longueur d'entrée.
 
-#### Le chiffrement asymétrique <a name="encrypt"></a>
+///
+
+/// details | Le chiffrement asymétrique <a name="encrypt"></a>
 
 Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
 
@@ -119,17 +133,23 @@ Il existe deux utilisations du chiffrement asymétrique :
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
-#### Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ? <a name="encrypt-and-hash"></a>
+///
+
+/// details | Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ? <a name="encrypt-and-hash"></a>
 
 Depuis la plateforme e-mail, le DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'en-tête de l'e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) et du corps de l'e-mail (contenu de l'e-mail).
 
 La signature est ensuite chiffrée avec la clé privée en utilisant le chiffrement asymétrique.
 
-#### Pourquoi a-t-on besoin de configurer les serveurs DNS ? <a name="dns-and-dkim"></a>
+///
+
+/// details | Pourquoi a-t-on besoin de configurer les serveurs DNS ? <a name="dns-and-dkim"></a>
 
 Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il aura besoin des paramètres DKIM et surtout de la clé publique pour la déchiffrer. La [zone DNS](/pages/web_cloud/domains/dns_zone_general_information) d'un nom de domaine est publique, c'est pourquoi un enregistrement DNS est ajouté pour transmettre la clé publique et les paramètres DKIM au destinataire.
 
-#### Qu'est-ce qu'un sélecteur DKIM <a name="selector"></a>
+///
+
+/// details | Qu'est-ce qu'un sélecteur DKIM <a name="selector"></a>
 
 Lorsque vous activez le DKIM, celui-ci fonctionne avec une paire de clé publique / clé privée. Il est possible d'attribuer plusieurs paires de clés à votre nom de domaine, dans le cadre d'une rotation par exemple. En effet, lorsque vous changez de paire de clés, l'ancienne paire doit rester active le temps que l'ensemble des e-mails que vous avez envoyé avec l'ancienne clé ne rencontre pas d'échec dans la vérification du DKIM sur le serveur de réception.
 
@@ -142,7 +162,9 @@ Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les
 
 La valeur du sélecteur est ici `s=ovhex123456-selector1`.
 
-#### Exemple d'un e-mail envoyé en utilisant le DKIM <a name="example"></a>
+///
+
+/// details | Exemple d'un e-mail envoyé en utilisant le DKIM <a name="example"></a>
 
 Lorsque vous envoyez un e-mail depuis **contact@mydomain.ovh**, une signature chiffrée à l'aide d'une clé privée (private key) est ajoutée dans l'en-tête de l'e-mail.
 
@@ -152,11 +174,21 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 
 ![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail .w-400 .h-600}
 
-### Configurer le DKIM automatiquement pour une offre e-mail Exchange ou E-mail Pro OVHcloud <a name="auto-dkim"></a>
+///
 
-La configuration automatique du DKIM est accessible pour les offres e-mail MX Plan (incluse avec un [hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément), [Exchange](/links/web/emails) et [E-mail Pro](/links/web/email-pro).
+### Configurer le DKIM automatiquement pour une offre e-mail OVHcloud <a name="auto-dkim"></a>
 
-Par défaut le DKIM n'est pas activé lorsque vous ajoutez un nom de domaine à votre plateforme. Vous devez donc lancer le processus de configuration automatique via l'espace client.
+La configuration automatique du DKIM est accessible pour toutes nos offres e-mail:
+
+- MX Plan (incluse avec un [hébergement Web Cloud](/links/web/hosting)
+- [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément)
+- [Exchange](/links/web/emails)
+- [E-mail Pro](/links/web/email-pro)
+- [Zimbra](/links/web/zimbra)
+
+Lorsque vous configurez votre nom de domaine sur une solution e-mail OVHcloud, la configuration automatique du DKIM est proposée et installé par défaut si vous ne la désactivez pas.
+
+Si le DKIM n'a pas été activé lorsque vous avez ajouté un nom de domaine à votre plateforme e-mail, Vous devrez donc lancer le processus de configuration automatique via l'espace client.
 
 Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
@@ -173,6 +205,16 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
+>> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
+>> 
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>>
+>> Dans le cas où votre nom de domaine n'est pas géré dans le même espace client OVHcloud que votre plateforme e-mail ou enregistré hors OVHcloud, vous obtenez la fenêtre ci-dessous :
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>>
+>> Celle-ci vous invite à saisir deux valeurs CNAME dans la zone DNS du nom de domaine, ce qui permet de lier ce nom de domaine aux sélecteurs DKIM de votre service e-mail. Il est nécessaire de saisir ces valeurs et de vous assurer qu'elles soit propagées avant de cliquer sur `Activer`{.action}.
+>>
 > **Exchange**
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
@@ -185,6 +227,11 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
+>>
+>> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
+>> 
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>>
 > **E-mail Pro**
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
@@ -196,23 +243,29 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >> À droite du nom de domaine concerné, vous pouvez observer que la pastille `DKIM` est rouge.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
+>> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
+>> 
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>>
+> **Zimbra**
+>>
+>> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+>> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
+>> 1. Cliquez sur `Zimbra Mail`{.action}.
+>> 1. Enfin, allez dans l'onglet `Domaine`{.action}.
+>> 1. À droite du domaine concerné, cliquez sur `⁝`{.action}, puis cliquez sur `Diagnostics`{.action}.
+>>
+>> À droite de l'onglet `DKIM`, vous devriez observer un avertissement indiquant que le DKIM est en défaut. cliquez sur l'onglet `DKIM`.
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
 Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-> [!primary]
->
-> **E-mails (MX Plan)**
->
-> Dans le cas où votre nom de domaine n'est pas géré dans le même espace client OVHcloud que votre plateforme e-mail ou enregistré hors OVHcloud, vous obtenez la fenêtre ci-dessous :
->
-> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
->
-> Celle-ci vous invite à saisir deux valeurs CNAME dans la zone DNS du nom de domaine, ce qui permet de lier ce nom de domaine aux sélecteurs DKIM de votre service e-mail. Il est nécessaire de saisir ces valeurs et de vous assurer qu'elles soit propagées avant de cliquer sur `Activer`{.action}.
->
 
-L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pour vérifier que votre DKIM est fonctionnel, il vous suffit de retourner dans l'onglet `Informations générales`{.action} ou `Domaines associés`{.action} de votre plateforme e-mail et de vous assurer que la pastille `DKIM` est devenue verte.
+L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pour vérifier que votre DKIM est fonctionnel, il vous suffit de retourner dans la rubrique de gestion de domaine évoqué dans les onglet ci-dessus et vérifier que la pasille `DKIM` soit verte ou ne présente plus l'icone de défaut pour une offre Zimbra
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
