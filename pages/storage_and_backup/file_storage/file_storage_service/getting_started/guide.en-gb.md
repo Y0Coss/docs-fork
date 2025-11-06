@@ -844,13 +844,13 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> [Official Manila CSI Plugin on GitHub](https://github.com/kubernetes/cloud-provider-openstack/tree/master/examples/manila-csi-plugin){.external}
 >>
 > Via Terraform
->> **1\. Additional Requirements**
+>> **1\. Additional requirements**
 >>
 >> - You already have a working [Terraform environment](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 >>
 >> > [!primary]
 >> >
->> > NB: You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service){.external}
+>> > You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service){.external}
 >> >
 >>
 >> **2\. Declare the OpenStack provider**
@@ -875,7 +875,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This block ensures that Terraform uses the correct providers for managing OVH and OpenStack resources.
 >>
->> **3\. Retrieve Information About Your Private Network**
+>> **3\. Retrieve information about your Private Network**
 >>
 >> Add the following blocks to your `main.tf` file to fetch details about your private network and subnet:
 >>
@@ -893,7 +893,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> These data blocks allow Terraform to query OpenStack and retrieve the necessary details of your private network and subnet, which are required for configuring the File Storage service.
 >>
->> **4\. Create a Share Network**
+>> **4\. Create a share network**
 >>
 >> Add the following resource to your `main.tf` to create a share network for your File Storage service:
 >>
@@ -908,9 +908,9 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This resource creates a share network in OpenStack, associating it with your existing private network and subnet. It is required to provision and manage shared file systems.
 >>
->> **5\. Create a NFS Network**
+>> **5\. Create a NFS network**
 >>
->> Add the following resource to your `main.t`f to create an NFS share on your File Storage service:
+>> Add the following resource to your `main.tf` to create an NFS share on your File Storage service:
 >>
 >> ```bash
 >> vim main.tf
@@ -928,7 +928,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This resource provisions an NFS share in OpenStack, linked to the previously created share network. Adjust the `size` and `share_type` according to your requirements.
 >>
->> **6\. Authorize a Client VM**
+>> **6\. Authorize a client VM**
 >>
 >> Ensure that your client VM is connected to the same private network as your share.
 >>
@@ -958,7 +958,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This resource authorizes the specified client VM to access the NFS share with read/write permissions.
 >>
->> **7\. Retrieve the Export Path**
+>> **7\. Retrieve the export path**
 >>
 >> Add the following output block to your `main.tf` to retrieve the NFS share export path:
 >>
@@ -970,7 +970,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This output provides the NFS export path, which can be used by client VMs to mount the share.
 >>
->> **8\. Mount the Share on Your Client VM**
+>> **8\. Mount the share on your client VM**
 >>
 >> Connect to your client VM and install the necessary NFS utilities:
 >>
@@ -995,11 +995,13 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> Make the mount persistent across reboots:
 >>
+>> ```bash
 >> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
 >>
 >> This ensures your NFS share is automatically remounted after the VM restarts.
 >>
->> **9\. Check Capacity and Usage**
+>> **9\. Check capacity and usage**
 >>
 >> Once the NFS share is mounted, you can verify its available space and usage:
 >>
