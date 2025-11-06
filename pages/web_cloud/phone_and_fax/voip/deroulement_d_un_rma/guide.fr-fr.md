@@ -28,7 +28,7 @@ De même, lors d'un changement de modem suite à une migration vers la Fibre ou 
 
 ## Prérequis
 
-- Disposer d'un téléphone VoIP fourni sous caution par OVHcloud, ou d'un modem fourni en prêt par OVHcloud.
+- Disposer d'un téléphone VoIP fourni sous caution par OVHcloud, d'un modem ou d'un ONT fournis en prêt par OVHcloud.
 - Un retour du matériel est demandé, par exemple suite à un échange ou à une résiliation.
 
 ## En pratique
@@ -37,7 +37,7 @@ De même, lors d'un changement de modem suite à une migration vers la Fibre ou 
 >
 > Pour plus d'informations sur l'échange de téléphones fournis par OVHcloud, consultez notre guide « [Gérer le téléphone Plug & Phone d’une ligne SIP](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone) ».
 
-Retrouvez dans ce guide les étapes du déroulement d'un RMA pour la restitution d'un téléphone sous caution ou d'un modem fourni par OVHcloud.
+Retrouvez dans ce guide les étapes du déroulement d'un RMA pour la restitution d'un téléphone sous caution, d'un modem et d'un ONT fournis par OVHcloud.
 
 Ce guide décrit 2 exemples de RMA (échange de téléphone ou de modem et résiliation) afin d'en comprendre le fonctionnement.
 D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d'un e-mail puis rappel et enfin clôture du RMA).
@@ -338,7 +338,7 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 
 ///
 
-## Erreur d'envoi d'un téléphone ou d'un modem
+## Erreur d'envoi d'un téléphone, d'un modem ou d'un ONT
 
 Si vous renvoyez à OVHcloud un matériel autre que celui concerné par le RMA, il est malgré tout indispensable de nous retourner le matériel réclamé sur le bon RMA. En effet, le délai de renvoi court toujours et le matériel correspondant au RMA doit nous être restitué. 
 
