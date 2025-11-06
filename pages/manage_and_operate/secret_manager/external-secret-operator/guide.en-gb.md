@@ -4,6 +4,9 @@ excerpt: "Configure External Secret Operator to store Kubernetes secrets on the 
 updated: 2025-10-27
 ---
 
+> [!primary]
+> Secret Manager is currently in beta phase. This guide can be updated in the future with the advances of our teams in charge of this product.
+
 ## Objective
 
 This guide explains how set up the Kubernetes External Secret Operator to use the OVHcloud Secret Manager as a provider
@@ -192,6 +195,9 @@ provider:
         name: token-secret # The k8s secret that contain your PAT
         key: token 
 ```
+
+> [!info]
+> Only [token authentication](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) is supported
 
 Once the `SecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
 In the example we use a secret already created on the Secret Manager:
