@@ -28,6 +28,8 @@ Cet utilisateur doit avoir au moins les droits suivants :
 
 - `okms:apikms:secret/create`
 - `okms:apikms:secret/version/getData`
+- `okms:apiovh:secret/get`
+- `okms:apikms:secret/create`
 
 Puis créez un jeton d'accès personnel (PAT) `user_pat` :
 
@@ -154,7 +156,7 @@ external-secrets/external-secrets \
 --set installCRDs=true
 ```
 
-#### Définissez les chartes de l'External Secret Operator
+#### Configurer l'External Secret Operator
 
 Tout d'abord, configurez un `SecretStore` qui est chargé de la synchronisation avec le Secret Manager.
 Nous configurons le SecretStore en utilisant HashiCorp Vault avec l'authentification par jeton et en utilisant l'endpoint OKMS comme backend.
@@ -178,7 +180,7 @@ template:
     type: Opaque
 ```
 
-La charte `SecretStore` :
+La ressource `SecretStore` :
 
 ```yaml
 apiVersion: external-secrets.io/v1
@@ -199,6 +201,8 @@ provider:
 
 > [!info]
 > Seulement [l'authentification par token](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) est supporté
+
+#### Utiliser External Secret Operator
 
 Une fois le `SecretStore` configuré, vous pouvez définir des `ExternalSecret` provenant du gestionnaire de secrets.
 Dans l'exemple, nous utilisons un secret déjà créé sur le Secret Manager :
@@ -234,7 +238,7 @@ data:
 ```
 
 > [!info]
-> [La création de secret depuis Kubernetes](https://external-secrets.io/latest/guides/pushsecrets/) n'est pas encore supportée.
+> Uniquement les `ExternalSecret` sont supporté pour l'instant.
 
 #### Déployez votre application
 
