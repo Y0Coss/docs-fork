@@ -235,26 +235,31 @@ web-cloud-email-collaborative-solutions-migration: Migration
 web-cloud-email-collaborative-solutions-troubleshooting: Diagnostic
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Premiers pas
-web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Fonctionnalités des adresses e-mail
-web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-mx-plan-configuration: Configuration
+web-cloud-email-collaborative-solutions-mx-plan-configuration-email-address-features: Fonctionnalités des adresses e-mail
+web-cloud-email-collaborative-solutions-mx-plan-configuration-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
+web-cloud-email-collaborative-solutions-mx-plan-configuration-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-mx-plan-configuration-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Premiers pas
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
-web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
+web-cloud-email-collaborative-solutions-email-pro-configuration: Configuration
+web-cloud-email-collaborative-solutions-email-pro-configuration-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-email-pro-configuration-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-email-pro-configuration-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
-web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Fonctionnalités d'un compte Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-configuration-exchange-account-features: Fonctionnalités d'un compte Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Premiers pas
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
-web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
+web-cloud-email-collaborative-solutions-microsoft-exchange-configuration: Configuration
+web-cloud-email-collaborative-solutions-microsoft-exchange-configuration-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-microsoft-exchange-configuration-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
+web-cloud-email-collaborative-solutions-microsoft-office-configuration: Configuration
 web-cloud-email-collaborative-solutions-zimbra: Zimbra
 web-cloud-email-collaborative-solutions-zimbra-getting-started: Premiers pas
-web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-zimbra-configuration: Configuration
+web-cloud-email-collaborative-solutions-zimbra-configuration-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-zimbra-configuration-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-domains: Domaines
 web-cloud-domains-api: API
 web-cloud-domains-api-key-concepts: Concepts clés
