@@ -61,34 +61,34 @@ hosted-private-cloud-public-VCF-tutorials: Tutoriais
 hosted-private-cloud-public-VCF-security: Segurança
 hosted-private-cloud-public-VCF-troubleshooting: Diagnóstico
 hosted-private-cloud-public-VCF-additional-resources: Recursos adicionais
-hosted-private-cloud-managed-vsphere: Managed vSphere
-hosted-private-cloud-managed-vsphere-key-concepts: Conceitos-chave
-hosted-private-cloud-managed-vsphere-getting-started: Introdução
-hosted-private-cloud-managed-vsphere-configuration: Configuração
-hosted-private-cloud-managed-vsphere-configuration-vm: Máquinas virtuais
-hosted-private-cloud-managed-vsphere-configuration-storage: Armazenamento e recursos
-hosted-private-cloud-managed-vsphere-configuration-network: Rede e conectividade
-hosted-private-cloud-managed-vsphere-configuration-vsphere: Funcionalidades vSphere
-hosted-private-cloud-managed-vsphere-configuration-backup: Cópias de segurança e replicação
-hosted-private-cloud-managed-vsphere-migration: Migração
-hosted-private-cloud-managed-vsphere-tutorials: Tutoriais
-hosted-private-cloud-managed-vsphere-tutorials-vm: Máquinas virtuais
-hosted-private-cloud-managed-vsphere-tutorials-storage: Armazenamento e replicação
-hosted-private-cloud-managed-vsphere-tutorials-network: Rede e NSX
-hosted-private-cloud-managed-vsphere-tutorials-vsphere: Funcionalidades vSphere
-hosted-private-cloud-managed-vsphere-tutorials-ha: Alta disponibilidade e resiliência
-hosted-private-cloud-managed-vsphere-security: Segurança
-hosted-private-cloud-managed-vsphere-security-iam: Gestão de identidade e acesso
-hosted-private-cloud-managed-vsphere-security-encryption: Encriptação e gestão de chaves
-hosted-private-cloud-managed-vsphere-security-nsx: Segurança de rede (NSX)
-hosted-private-cloud-managed-vsphere-security-hardening: Endurecimento do sistema e vulnerabilidades
-hosted-private-cloud-managed-vsphere-security-secnumcloud: Conformidade e SecNumCloud
-hosted-private-cloud-managed-vsphere-troubleshooting: Diagnóstico
-hosted-private-cloud-managed-vsphere-troubleshooting-maintenance: Manutenção e atualizações
-hosted-private-cloud-managed-vsphere-troubleshooting-logs: Monitorização e registos
-hosted-private-cloud-managed-vsphere-troubleshooting-errors: Gestão de erros
-hosted-private-cloud-managed-vsphere-troubleshooting-compliance: Monitorização da conformidade
-hosted-private-cloud-managed-vsphere-additional-resources: Recursos adicionais
+hosted-private-cloud-managed-vmware: Managed VMware
+hosted-private-cloud-managed-vmware-key-concepts: Conceitos-chave
+hosted-private-cloud-managed-vmware-getting-started: Introdução
+hosted-private-cloud-managed-vmware-configuration: Configuração
+hosted-private-cloud-managed-vmware-configuration-vm: Máquinas virtuais
+hosted-private-cloud-managed-vmware-configuration-storage: Armazenamento e recursos
+hosted-private-cloud-managed-vmware-configuration-network: Rede e conectividade
+hosted-private-cloud-managed-vmware-configuration-vsphere: Funcionalidades vSphere
+hosted-private-cloud-managed-vmware-configuration-backup: Cópias de segurança e replicação
+hosted-private-cloud-managed-vmware-migration: Migração
+hosted-private-cloud-managed-vmware-tutorials: Tutoriais
+hosted-private-cloud-managed-vsphvmwareere-tutorials-vm: Máquinas virtuais
+hosted-private-cloud-managed-vmware-tutorials-storage: Armazenamento e replicação
+hosted-private-cloud-managed-vmware-tutorials-network: Rede e NSX
+hosted-private-cloud-managed-vmware-tutorials-vsphere: Funcionalidades vSphere
+hosted-private-cloud-managed-vmware-tutorials-ha: Alta disponibilidade e resiliência
+hosted-private-cloud-managed-vmware-security: Segurança
+hosted-private-cloud-managed-vmware-security-iam: Gestão de identidade e acesso
+hosted-private-cloud-managed-vmware-security-encryption: Encriptação e gestão de chaves
+hosted-private-cloud-managed-vmware-security-nsx: Segurança de rede (NSX)
+hosted-private-cloud-managed-vmware-security-hardening: Endurecimento do sistema e vulnerabilidades
+hosted-private-cloud-managed-vmware-security-secnumcloud: Conformidade e SecNumCloud
+hosted-private-cloud-managed-vmware-troubleshooting: Diagnóstico
+hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Manutenção e atualizações
+hosted-private-cloud-managed-vmware-troubleshooting-logs: Monitorização e registos
+hosted-private-cloud-managed-vmware-troubleshooting-errors: Gestão de erros
+hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitorização da conformidade
+hosted-private-cloud-managed-vmware-additional-resources: Recursos adicionais
 hosted-private-cloud-nutanix: Nutanix on OVHcloud
 hosted-private-cloud-nutanix-key-concepts: Conceitos-chave
 hosted-private-cloud-nutanix-getting-started: Introdução
