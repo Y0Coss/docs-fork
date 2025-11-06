@@ -6,19 +6,21 @@ updated: 2025-11-05
 
 ## Objective
 
-The OVHcloud Load Balancer service acts as a proxy. Like a human proxy, it serves as an intermediary: the client addresses the proxy, which in turn contacts the service provider on behalf of the client. In this configuration, **only the proxy** has information about the **real client** (the visitor of your web service) and the **real service provider** (one of your servers).
+The OVHcloud Load Balancer service acts as a proxy. Like a human proxy, it acts as an intermediary: the client addresses the proxy, which in turn contacts the service provider on behalf of the client. In this configuration, **only the proxy** has information about the **real client** (the visitor of your web service) and the **real service provider** (one of your servers).
 
-For the visitor, this configuration does not raise any issues. They do not need to know the specific server handling their request; it is an implementation detail. However, for legal and statistical reasons, it is **essential** that the final server knows the client's real IP address. By default, it only identifies the proxy, which is your OVHcloud Load Balancer service. To overcome this issue, your OVHcloud Load Balancer service **adds by default** the standard HTTP headers that allow you to retrieve this information in the case of an HTTP connection. For a TCP connection, other solutions such as the ProxyProtocol exist, but they are beyond the scope of this guide.
+For the visitor, this configuration does not raise any issues. They do not need to know the exact server that is processing their request; it is an implementation detail. However, for legal and statistical reasons, it is **essential** that the final server knows the real address of the client. By default, it only identifies the proxy, which is your OVHcloud Load Balancer service.
 
-**This guide presents the default headers, their function, how to use them on the most common servers, and how to customize them according to the requirements of your infrastructure.**
+To overcome this limitation, your OVHcloud Load Balancer service **adds by default** the standard HTTP headers that allow you to retrieve this information in the case of an HTTP connection. For a TCP connection, other solutions such as the ProxyProtocol exist, but they are beyond the scope of this guide.
 
-This guide is specifically for you if you only find private IP addresses in your access logs (`access_log`).
+**This guide presents the default headers, their function, how to use them on the most common servers and how to customize them according to the requirements of your infrastructure.**
+
+This guide is specifically addressed to you if you only find private IP addresses in your access logs (`access_log`).
 
 ## Requirements
 
-- Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
+- Have an [OVHcloud Load balancer](/links/network/load-balancer) offer in your OVHcloud account.
 - Be logged in to your [OVHcloud Control Panel](/links/manager).
-- Have a Web service installed and configured on your servers.
+- Have a web service installed and configured on your servers.
 - Have an Nginx service installed and configured on your servers.
 
 ## In practice
@@ -34,32 +36,32 @@ You may be required to keep logs and certain data related to traffic in accordan
 
 **As an example:**
 
-- [Article L34-1 of the Code of Posts and Electronic Communications](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070987&idArticle=LEGIARTI000006465770&dateTexte=&categorieLien=cid) and [Decree No. 2006-358 of 24 March 2006 on the retention of electronic communication data](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000637071&dateTexte=20180110) require any natural or legal person providing a public electronic communications service to retain user identification data for the services provided, etc. ;
-- [Law No. 2004-575 of 21 June 2004 on trust in the digital economy](https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=JORFARTI000002457442&cidTexte=JORFTEXT000000801164) and [Decree No. 2011-219 of 25 February 2011](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000023646013&categorieLien=id) require, among other things, that persons whose activity consists of providing access to online public communication services retain, for each connection, data relating to the connection identifier, the start and end dates and times of the connection, etc.
+- [Article L34-1 of the Code of Posts and Electronic Communications](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070987&idArticle=LEGIARTI000006465770&dateTexte=&categorieLien=cid) and the [Decree No. 2006-358 of 24 March 2006 on the retention of electronic communications data](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000637071&dateTexte=20180110) require, among other things, that any natural or legal person providing a public electronic communications service must retain user identification data for the services provided, etc. ;
+- The [Law No. 2004-575 of 21 June 2004 on trust in the digital economy](https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=JORFARTI000002457442&cidTexte=JORFTEXT000000801164) and the [Decree No. 2011-219 of 25 February 2011](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000023646013&categorieLien=id) require, among other things, that persons whose activity consists of providing access to online public communication services must retain, for each connection, data relating to the connection identifier, the dates and times of the start and end of the connection, etc.
 
 ### Default headers
 
-By default, your OVHcloud Load Balancer service adds **five** standard HTTP headers to each request, allowing you to identify the visitor's IP address and port as well as the initial connection protocol of the visitor to your site.
+By default, your OVHcloud Load Balancer service adds **five** standard HTTP headers to each request, allowing you to identify the address and port of your site visitor as well as the initial connection protocol.
 
 |Header|Description|
 |---|---|
-|X-Forwarded-For and X-Remote-Ip|IP address of the client, as seen by your OVHcloud Load Balancer.|
-|X-Forwarded-Port and X-Remote-Port|Source port of the client, as seen by your OVHcloud Load Balancer.|
+|X-Forwarded-For and X-Remote-Ip|Client IP address, as seen by your OVHcloud Load Balancer.|
+|X-Forwarded-Port and X-Remote-Port|Client source port, as seen by your OVHcloud Load Balancer.|
 |X-Forwarded-Proto|Client protocol (HTTP or HTTPS), as seen by your OVHcloud Load Balancer.|
 
 > [!warning]
->The `X-Forwarded-*` fields can be manipulated by a malicious client, **so they should only be considered if they come from a trusted source.**
+> The `X-Forwarded-*` fields can be manipulated by a malicious client, **so they should only be considered if they come from a trusted source.**
 >
->It is therefore **essential** to restrict their use to trusted IP addresses, which are the output IP addresses of your OVHcloud Load Balancer service. Major web servers such as Nginx and Apache have modules that can handle this aspect of security and reliability.
+> It is therefore **essential** to restrict their use to trusted IP addresses, which are in this case the outgoing IP addresses of your OVHcloud Load Balancer service. Major web servers such as Nginx and Apache have modules that can handle this aspect of security and reliability.
 >
 
-The list of your output IP addresses is available via the OVHcloud Control Panel and the OVHcloud API.
+The list of your outgoing IP addresses is available via the OVHcloud Control Panel and the OVHcloud API.
 
 #### From the OVHcloud Control Panel
 
-The list of IPv4 output addresses that may be used by your OVHcloud Load Balancer service is available on the homepage of your Load Balancer service under the heading "IPv4 output".
+The list of IPv4 addresses that may be used by your OVHcloud Load Balancer service is available on the home page of your Load Balancer service under the heading "IPv4 de sortie".
 
-![IPv4 output address of your OVHcloud Load Balancer service](images/iplb_service.png){.thumbnail}
+![IPv4 address of your OVHcloud Load Balancer service](images/iplb_service.png){.thumbnail}
 
 #### From the OVHcloud API
 
@@ -72,18 +74,18 @@ The list of IPv4 output addresses that may be used by your OVHcloud Load Balance
 
 ### Correcting the source IP in the logs <a name="ip-source-logs"></a>
 
-By default, Apache, Nginx and other web servers record the source IP address in their logs. When you use an OVHcloud Load Balancer in front of your website, the logs then only contain IP addresses of the form "10.108.a.b". These are the internal IP addresses used by the OVHcloud Load Balancer to contact you.
+By default, Apache, Nginx and other web servers record the source IP address in their logs. When you use an OVHcloud Load Balancer upstream of your website, the logs then only contain IP addresses of the form "10.108.a.b". These are the internal IP addresses used by the OVHcloud Load Balancer to contact you.
 
-When a request goes through your OVHcloud Load Balancer service, it records the visitor's IP address in the `X-Forwarded-For` and `X-Remote-Ip` headers. These two fields carry the same information, their names differ only for compatibility with most servers.
+When a request passes through your OVHcloud Load Balancer service, it records the visitor's IP address in the `X-Forwarded-For` and `X-Remote-Ip` headers. These two fields carry the same information, their names differ only for compatibility with most servers.
 
-To correct the IP addresses in the logs, one solution would be to modify the log format directive on your server to use one of these headers instead of the Load Balancer's IP address. Unfortunately, this approach is insufficient, as anyone can fill in this header, even without going through your OVHcloud Load Balancer. This manipulation would allow the visitor to impersonate someone else. Apart from the ethical aspect, this practice has legal, security and statistical implications that make its prevention essential.
+To correct the IP addresses in the logs, one solution could be to modify the log format directive on your server to use one of these headers instead of the Load Balancer's IP. Unfortunately, this approach is insufficient, as anyone can fill in this header, even without going through your OVHcloud Load Balancer. Such a manipulation would allow the visitor to be mistaken for someone else. In addition to the ethical aspect, this practice has legal, security and statistical implications that make its prevention essential.
 
-This is why the main web servers include specialized modules that allow you to precisely control the level of trust given to these headers based on :
+This is why the main web servers include specialized modules that allow you to precisely control the level of trust granted to these headers based on :
 
 - The source IP address (must be exclusively that of your OVHcloud Load Balancer service !)
-- The depth of the IP in the field. Indeed, each proxy (proxy, load balancer) adds the client's IP address to this field.
+- The depth level of the IP in the field. Indeed, each proxy (proxy, load balancer) adds the client's IP to this field.
 
-The rest of this guide provides recommended configuration practices for the main web servers.
+The rest of this guide proposes recommended configuration practices for the main web servers.
 
 #### Apache
 
@@ -135,13 +137,13 @@ service nginx reload
 
 #### Redirecting HTTP visitors to HTTPS
 
-To enhance security, some content, such as login pages, can be restricted to the HTTPS protocol. Some sites even choose to systematically redirect all visits to the HTTPS version. By default, the HTTP and HTTPS protocols use different ports (80 and 443 respectively), so the classic solution is to place the redirection rules directly in the *vhost* dedicated to HTTP.
+To enhance security, certain content, such as login pages, can be restricted to the HTTPS protocol. Some sites even choose to systematically redirect all visits to the HTTPS version. By default, the HTTP and HTTPS protocols use different ports (80 and 443 respectively), so the classic solution is to place the redirection rules directly in the *vhost* dedicated to HTTP.
 
-When a request goes through a service like the OVHcloud Load Balancer, it handles the reception of HTTP traffic, the decryption of HTTPS traffic and forwards both types of traffic to your servers. Depending on your server configuration, all traffic will be propagated in HTTP or HTTPS, without distinction of the incoming protocol on the Load Balancer. Your server can no longer differentiate the two, as both arrive at the same point. This process is called **"SSL Termination"**.
+When a request passes through a service such as the OVHcloud Load Balancer, it handles the reception of HTTP traffic, the decryption of HTTPS traffic and forwards both types of traffic to your servers. Depending on the configuration of your servers, all traffic will be propagated in HTTP or HTTPS, without distinction of the incoming protocol on the Load Balancer. Your server can no longer differentiate the two, as both arrive at the same point. This process is called **"SSL Termination".**
 
 This is why the OVHcloud Load Balancer service automatically adds a header `X-Forwarded-Proto` which indicates the name of the original protocol, either "http" or "https".
 
-Like `X-Forwarded-For`, this header can be forged by a malicious visitor to make an insecure request appear to come from your OVHcloud Load Balancer service, in HTTPS. It is crucial to trust this header only if it is proven to come from your OVHcloud Load Balancer service.
+Like `X-Forwarded-For`, this header can be forged by a malicious visitor to make an unsecured request appear to come from your OVHcloud Load Balancer service, in HTTPS. It is crucial to trust this header only if it is proven to come from your OVHcloud Load Balancer service.
 
 #### Apache
 
@@ -177,34 +179,34 @@ service nginx reload
 
 ### Passing headers to PHP
 
-PHP uses the `REMOTE_ADDR` header to determine the address of the visitors. This header is automatically configured as soon as the configuration detailed in the section "[Correcting the source IP in the logs](#ip-source-logs)" is applied.
+PHP uses the `REMOTE_ADDR` header to determine the addresses of visitors. This header is automatically configured as long as the configuration detailed in the section "[Correcting the source IP in the logs](#ip-source-logs)" is applied.
 
 ### Adding custom headers
 
-Whether your application requires a specific header format to identify the visitor's IP, port or protocol, or you want to know which *frontend* a request arrived through (or for any other reason), you can add custom headers on your HTTP *frontend*.
+Whether your application requires a specific header format to identify the visitor's IP, port or protocol, or whether you want to know which *frontend* a request arrived through (or for any other reason), you can add custom headers on your HTTP *frontend*.
 
-Custom headers must follow the format "X-Header Header Value". The header name and its value are separated by a space. It is possible to specify several headers on the same *frontend*.
+Custom headers must follow the format "`X-Header Header Value`". The header name and value are separated by a space. It is possible to specify several headers on the same *frontend*.
 
-If an existing header is present in the request, it will be overwritten and replaced by the new value, making it impossible for the visitor passing through this *frontend* to forge it. It is not possible to redefine headers reserved for proxies, such as those described in this document, as they are automatically managed by your OVHcloud Load Balancer service.
+If an existing header is present in the request, it will be overwritten and replaced by the new value, making it impossible for the visitor passing through this *frontend* to forge it. It is not possible to redefine the headers reserved for proxies, such as those described in this document, as they are automatically managed by your OVHcloud Load Balancer service.
 
-When specifying a non-standard header name, it is customary to prefix it with "X-".
+When specifying a non-standard header name, it is customary to prefix it with "`X-`".
 
 The use of variables in the header values is supported :
 
-- `%ci` will be replaced by the visitor's IP address.
-- `%cp` will be replaced by the visitor's source port.
+- `%ci` will be replaced by your visitor's IP address.
+- `%cp` will be replaced by your visitor's source port.
 
 Custom headers can be configured via the OVHcloud Control Panel and the API, whether on a new *frontend* or an existing *frontend*.
 
 #### From the OVHcloud Control Panel
 
-In the `Frontends`{.action} section of your OVHcloud Control Panel, select the *frontend* to edit or click on the `Add a frontend`{.action} button to create a new one. An editing window will appear, displaying a `HTTP Header`{.action} field in the `Advanced Settings`{.action} section.
+In the `Frontends`{.action} section of your OVHcloud Control Panel, select the *frontend* to edit or click on the `Add a frontend`{.action} button to create a new one. An editing window will appear, showing a `HTTP Header`{.action} field in the `Advanced Settings`{.action} section.
 
-If you want to configure multiple headers, they must be separated by commas, *without spaces*. For example, you can define the following headers: `X-Ip-Header %ci,X-Port-Header %cp`.
+If you want to configure multiple headers, they must be separated by commas, *without space*. For example, you can define the following headers: `X-Ip-Header %ci,X-Port-Header %cp`.
 
 ![Configuration of HTTP headers of a Frontend via ovh manager API](images/add_headers.png){.thumbnail}
 
-Click on the `Update`{.action} button after configuring the headers, then on `Deploy zone: YOUR ZONE`{.action} to apply the changes in the concerned zone.
+Click on the `Update`{.action} button after configuring the headers, then on `Deploy the zone: YOUR ZONE`{.action} to apply the changes in the concerned zone.
 
 ### From the OVHcloud API
 
