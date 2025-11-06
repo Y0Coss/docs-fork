@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Load Balancer FAQ'
-excerpt: 'Frequently Asked Questions on the OVHcloud Load Balancer'
-updated: 2018-03-26
+excerpt: 'Questions fréquentes concernant le service OVHcloud Load Balancer'
+updated: 2025-11-07
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Pour déterminer les adresses IP que vous devez autoriser dans votre pare-feu, v
 
 #### Via l'espace client OVHcloud
 
-Dans votre service Load Balancer, accédez à l'onglet `Home`{.action}, et trouvez la section **Information**. Sur la ligne **Outbound IPv4**, cliquez sur les points de suspension, puis sélectionnez "Read".
+Dans votre tableau de bord du service Load Balancer, accédez à l'onglet `Accueil`{.action}, et trouvez la section **Informations**. Sur la ligne **IPv4 de sortie**, cliquez sur les points de suspension, puis sélectionnez "Consulter".
 Une fenêtre s'ouvrira, listant les adresses IP que vous devez autoriser dans votre pare-feu.
 
 ### Comment savoir le statut de mon service ?
@@ -45,7 +45,7 @@ Les différents statuts de l'OVHcloud Load Balancer peuvent être `running`{.act
 
 #### Via l'espace client OVHcloud
 
-Dans votre service Load Balancer, accédez à l'onglet `Home`{.action}, et trouvez la section **Status**, qui liste le nom interne de votre Load Balancer et son statut.
+Dans votre tableau de bord du service Load Balancer, accédez à l'onglet `Accueil`{.action}, et trouvez la section **Statut**, qui liste le nom interne de votre Load Balancer et son statut.
 
 ### Comment ajouter une Additional IP à l'OVHcloud Load Balancer ?
 
@@ -69,10 +69,10 @@ Une Additional IP est une adresse IP secondaire qui peut être associée à votr
 
 #### Via l'espace client OVHcloud
 
-Dans votre service Load Balancer, accédez à l'onglet `Front-ends`{.action}, et sélectionnez `Add a front-end`{.action}.
-Ensuite, développez `Advanced settings`{.action}, et sélectionnez les Additional IPs que vous souhaitez ajouter à votre front-end *(listées sur l'interface comme "Dedicated failover IP")*.
+Dans votre tableau de bord du service Load Balancer, accédez à l'onglet `Frontends`{.action}, et sélectionnez `Ajouter un frontend`{.action}.
+Ensuite, développez `Paramètres avancés`{.action}, et sélectionnez les Additional IPs que vous souhaitez ajouter à votre frontend *(listées sur l'interface comme "Dedicated failover IP")*.
 
-### Comment lister les Additional IPs routées vers l'OVHcloud Load Balancer ?
+### Comment lister les Additional IPs routées vers le service OVHcloud Load Balancer ?
 
 > [!api]
 >
@@ -83,14 +83,14 @@ Ensuite, développez `Advanced settings`{.action}, et sélectionnez les Addition
 
 #### Via l'espace client OVHcloud
 
-Dans votre service Load Balancer, accédez à l'onglet `SSL certificates`{.action}, et sélectionnez `Order an SSL certificate`{.action}.
-Remplissez le FQDN dans le champ dédié, puis sélectionnez `Order`{.action}.
+Dans votre tableau de bord du service Load Balancer, accédez à l'onglet `Certificats SSL`{.action}, et sélectionnez `Commander un certificat SSL`{.action}.
+Remplissez le FQDN dans le champ dédié, puis sélectionnez `Commander`{.action}.
 
 Pour que la commande soit validée, il est nécessaire que le nom de domaine pointe vers votre OVHcloud Load Balancer.
 
 #### Via l'API OVHcloud
 
-Il est possible de commander un certificat SSL gratuit pour l'OVHcloud Load Balancer.
+Il est possible de commander un certificat SSL gratuit pour le service OVHcloud Load Balancer.
 
 - Pour commander un certificat SSL gratuit, vous pouvez utiliser l'appel API suivant et entrer votre domaine dans le champ `fqdn` :
 
@@ -107,9 +107,9 @@ Pour que la commande soit validée, il est nécessaire que le nom de domaine poi
 
 #### Via l'espace client OVHcloud
 
-Dans votre service Load Balancer, accédez à l'onglet `SSL certificates`{.action}, où vous trouverez un tableau listant les certificats associés à ce Load Balancer.
+Dans votre tableau de bord du service Load Balancer, accédez à l'onglet `Certificats SSL`{.action}, où vous trouverez un tableau listant les certificats associés à ce Load Balancer.
 
-Pour obtenir les détails d'un certificat SSL, cliquez sur le bouton de points de suspension à droite du certificat souhaité, puis sélectionnez `See a preview`{.action}.
+Pour obtenir les détails d'un certificat SSL, cliquez sur le bouton de points de suspension à droite du certificat souhaité, puis sélectionnez `Voir un aperçu`{.action}.
 
 #### Via l'API OVHcloud
 
@@ -122,7 +122,7 @@ Pour obtenir les détails d'un certificat SSL, cliquez sur le bouton de points d
 
 Les certificats SSL commandés (gratuits ou non) apparaîtront comme `built`. Ceux ajoutés par vous-même apparaîtront comme `custom`.
 
-Un certificat SSL apparaissant comme `built_not_routed` est un certificat qui a été commandé et livré, mais dont le domaine ne peut pas être validé. Cela est généralement dû au fait que le domaine ne pointe plus vers le Load Balancer OVHcloud.
+Un certificat SSL apparaissant comme `built_not_routed` est un certificat qui a été commandé et livré, mais dont le domaine ne peut pas être validé. Cela est généralement dû au fait que le domaine ne pointe plus vers le service OVHcloud Load Balancer.
 
 - Pour obtenir les détails d'un certificat SSL, vous pouvez utiliser l'appel API suivant :
 
