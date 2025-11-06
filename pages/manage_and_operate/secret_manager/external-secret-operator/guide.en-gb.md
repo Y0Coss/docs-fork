@@ -232,6 +232,9 @@ data:
         property: password
 ```
 
+> [!info]
+> [Pushing secret from Kubernetes](https://external-secrets.io/latest/guides/pushsecrets/) is not supported yet.
+
 #### Deploy your application
 
 The secret should be created and available in kubernetes.
