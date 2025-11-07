@@ -72,7 +72,6 @@ Un client **Keycloak dédié** est nécessaire pour permettre à la CLI OpenStac
 
 - Allez dans l’onglet `Credentials` du client que vous venez de créer.
 - Copiez et conservez de manière sécurisée la **Client Secret** — il sera nécessaire lors de la configuration du CLI OpenStack.
-  
 
 ### Configuration de la CLI OpenStack
 
@@ -107,7 +106,7 @@ export OS_PASSWORD="keycloak-user-password"
 export OS_PROJECT_ID="project-id"
 ```
 
-> **Tips 1**
+> **Conseil**
 > Vous pouvez utiliser le script suivant afin de générer le fichier de configuration openrc.sh facilement :  
 
 ```bash
@@ -161,7 +160,7 @@ export OS_PASSWORD="$KC_PASSWORD_INPUT"
 export OS_PROJECT_ID="$PROJECT_ID > $PROJECT_ID."-openrc.sh"
 ```
 
-> **Tips: Configuration d'un proxy**  
+> **Conseil: Configuration d'un proxy**  
 > Si vous utilisez un proxy pour accéder a votre service, vous devez configurer vos variables d'environnement pour prendre en compte ce proxy.
 
 Pour ce faire, ajoutez les lignes de commande suivantes :
