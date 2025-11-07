@@ -11,7 +11,7 @@ This guide details the steps to install an OPCP instance from the **Horizon** in
 
 ---
 
-## Prerequisites
+## Requirements
 
 - Have an active [OPCP](https://www.ovhcloud.com/en/hosted-private-cloud/onprem-cloud-platform/) service.
 - Have a **user account** with sufficient permissions to access Horizon for the OPCP offer.
