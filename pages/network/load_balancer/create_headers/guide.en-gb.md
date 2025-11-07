@@ -1,7 +1,7 @@
 ---
 title: "Configuration of an OVHcloud Load Balancer service - HTTP headers"
 excerpt: Integrate your web services behind a Load Balancer with HTTP headers
-updated: 2025-11-05
+updated: 2025-11-07
 ---
 
 ## Objective
@@ -17,11 +17,11 @@ This guide is specifically for you if you only find private IP addresses in your
 ## Requirements
 
 - Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
-- Be logged in to your [OVHcloud Control Panel](/links/manager).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - Have a Web service installed and configured on your servers.
 - Have an Nginx service installed and configured on your servers.
 
-## In practice
+## Instructions
 
 ```bash
 10.108.0.15 - - [02/Fev/2022:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
@@ -48,9 +48,9 @@ By default, your OVHcloud Load Balancer service adds **five** standard HTTP head
 |X-Forwarded-Proto|Client protocol (HTTP or HTTPS), as seen by your OVHcloud Load Balancer.|
 
 > [!warning]
->The `X-Forwarded-*` fields can be manipulated by a malicious client, **so they should only be considered if they come from a trusted source.**
+> The `X-Forwarded-*` fields can be manipulated by a malicious client, **so they should only be considered if they come from a trusted source.**
 >
->It is therefore **essential** to restrict their use to trusted IP addresses, which are the output IP addresses of your OVHcloud Load Balancer service. Major web servers such as Nginx and Apache have modules that can handle this aspect of security and reliability.
+> It is therefore **essential** to restrict their use to trusted IP addresses, which are the output IP addresses of your OVHcloud Load Balancer service. Major web servers such as Nginx and Apache have modules that can handle this aspect of security and reliability.
 >
 
 The list of your output IP addresses is available via the OVHcloud Control Panel and the OVHcloud API.
@@ -63,7 +63,7 @@ The list of IPv4 output addresses that may be used by your OVHcloud Load Balance
 
 #### From the OVHcloud API
 
-- Retrieving the list of IP addresses used by your OVHcloud Load Balancer service :
+- Retrieving the list of IP addresses used by your OVHcloud Load Balancer service:
 
 > [!api]
 >
@@ -78,9 +78,9 @@ When a request goes through your OVHcloud Load Balancer service, it records the 
 
 To correct the IP addresses in the logs, one solution would be to modify the log format directive on your server to use one of these headers instead of the Load Balancer's IP address. Unfortunately, this approach is insufficient, as anyone can fill in this header, even without going through your OVHcloud Load Balancer. This manipulation would allow the visitor to impersonate someone else. Apart from the ethical aspect, this practice has legal, security and statistical implications that make its prevention essential.
 
-This is why the main web servers include specialized modules that allow you to precisely control the level of trust given to these headers based on :
+This is why the main web servers include specialized modules that allow you to precisely control the level of trust given to these headers based on:
 
-- The source IP address (must be exclusively that of your OVHcloud Load Balancer service !)
+- The source IP address (must be exclusively that of your OVHcloud Load Balancer service!)
 - The depth of the IP in the field. Indeed, each proxy (proxy, load balancer) adds the client's IP address to this field.
 
 The rest of this guide provides recommended configuration practices for the main web servers.
@@ -88,7 +88,7 @@ The rest of this guide provides recommended configuration practices for the main
 #### Apache
 
 - Create the file `/etc/apache2/conf-available/remoteip.conf`.
-- Insert the following configuration :
+- Insert the following configuration:
 
 ```apache
 1. # Trust X-Forwarded-For headers from the OVHcloud Load Balancer
@@ -98,7 +98,7 @@ The rest of this guide provides recommended configuration practices for the main
 ```
 
 - Then replace the variables `%h` with `%a` in the `LogFormat` directives of the Apache configuration.
-- Finally, enable the new configuration with :
+- Finally, enable the new configuration with:
 
 ```bash
 # Enable the 'remoteip' module and configuration
@@ -113,12 +113,12 @@ service apache2 restart
 
 For Nginx, the approach is slightly simpler, but the principle remains the same as for Apache: only take into account the `X-Forwarded-For` field if it comes from your OVHcloud Load Balancer service.
 
-This configuration can be applied :
+This configuration can be applied:
 
-- to all sites, by inserting the configuration in the `http {}` section ;
-- to a specific site, by inserting the configuration in the corresponding `server {}` section ;
-- to a specific URL, by inserting the configuration in the corresponding `location {}` section.
-- Insert the configuration in the desired section(s) (`http {}` for a global configuration) :
+- To all sites, by inserting the configuration in the `http {}` section;
+- To a specific site, by inserting the configuration in the corresponding `server {}` section;
+- To a specific URL, by inserting the configuration in the corresponding `location {}` section.
+- Insert the configuration in the desired section(s) (`http {}` for a global configuration):
 
 ```nginx
 1. # Trust X-Forwarded-For headers from the OVHcloud Load Balancer
@@ -127,7 +127,7 @@ This configuration can be applied :
 4. real_ip_header X-Forwarded-For;
 ```
 
-- Then enable the new configuration with :
+- Then enable the new configuration with:
 
 ```bash
 service nginx reload
@@ -135,9 +135,9 @@ service nginx reload
 
 #### Redirecting HTTP visitors to HTTPS
 
-To enhance security, some content, such as login pages, can be restricted to the HTTPS protocol. Some sites even choose to systematically redirect all visits to the HTTPS version. By default, the HTTP and HTTPS protocols use different ports (80 and 443 respectively), so the classic solution is to place the redirection rules directly in the *vhost* dedicated to HTTP.
+To enhance security, some content such as login pages, can be restricted to the HTTPS protocol. Some sites even choose to systematically redirect all visits to the HTTPS version. By default, the HTTP and HTTPS protocols use different ports (80 and 443 respectively), so the classic solution is to place the redirection rules directly in the *vhost* dedicated to HTTP.
 
-When a request goes through a service like the OVHcloud Load Balancer, it handles the reception of HTTP traffic, the decryption of HTTPS traffic and forwards both types of traffic to your servers. Depending on your server configuration, all traffic will be propagated in HTTP or HTTPS, without distinction of the incoming protocol on the Load Balancer. Your server can no longer differentiate the two, as both arrive at the same point. This process is called **"SSL Termination"**.
+When a request goes through a service like the OVHcloud Load Balancer, it handles the reception of HTTP traffic, the decryption of HTTPS traffic and forwards both types of traffic to your servers. Depending on your server configuration, all traffic will be propagated in HTTP or HTTPS, without distinction of the incoming protocol on the Load Balancer. Your server can no longer differentiate the two, as both arrive at the same point. This process is called **SSL Termination**.
 
 This is why the OVHcloud Load Balancer service automatically adds a header `X-Forwarded-Proto` which indicates the name of the original protocol, either "http" or "https".
 
@@ -145,7 +145,7 @@ Like `X-Forwarded-For`, this header can be forged by a malicious visitor to make
 
 #### Apache
 
-- Insert the following configuration in your site's `.htaccess` file :
+- Insert the following configuration in your site's `.htaccess` file:
 
 ```apache
 1. RewriteEngine on
@@ -153,7 +153,7 @@ Like `X-Forwarded-For`, this header can be forged by a malicious visitor to make
 3. RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-- Then enable the new configuration with :
+- Then enable the new configuration with:
 
 ```bash
 service apache2 reload
@@ -161,7 +161,7 @@ service apache2 reload
 
 #### Nginx
 
-- Insert the following configuration in the `server {` section of your site :
+- Insert the following configuration in the `server {` section of your site:
 
 ```nginx
 1. if ($http_x_forwarded_proto = "http") {
@@ -169,7 +169,7 @@ service apache2 reload
 3. }
 ```
 
-- Then enable the new configuration with :
+- Then enable the new configuration with:
 
 ```bash
 service nginx reload
@@ -189,7 +189,7 @@ If an existing header is present in the request, it will be overwritten and repl
 
 When specifying a non-standard header name, it is customary to prefix it with "X-".
 
-The use of variables in the header values is supported :
+The use of variables in the header values is supported:
 
 - `%ci` will be replaced by the visitor's IP address.
 - `%cp` will be replaced by the visitor's source port.
@@ -198,7 +198,7 @@ Custom headers can be configured via the OVHcloud Control Panel and the API, whe
 
 #### From the OVHcloud Control Panel
 
-In the `Frontends`{.action} section of your OVHcloud Control Panel, select the *frontend* to edit or click on the `Add a frontend`{.action} button to create a new one. An editing window will appear, displaying a `HTTP Header`{.action} field in the `Advanced Settings`{.action} section.
+Go to the `Frontends`{.action} tab in the dashboard of your OVHcloud Load Balancer service and select the *frontend* to edit or click on the `Add a frontend`{.action} button to create a new one. An editing window will appear, displaying an `HTTP Header`{.action} field in the `Advanced Settings`{.action} section.
 
 If you want to configure multiple headers, they must be separated by commas, *without spaces*. For example, you can define the following headers: `X-Ip-Header %ci,X-Port-Header %cp`.
 
@@ -208,13 +208,13 @@ Click on the `Update`{.action} button after configuring the headers, then on `De
 
 ### From the OVHcloud API
 
-In the API, the headers are specified within a `httpHeader` list. Unlike the OVHcloud Control Panel, each header must be its own entry in the list. 
+In the API, the headers are specified within an `httpHeader` list. Unlike the OVHcloud Control Panel, each header must be its own entry in the list. 
 
 In the OVHcloud API console, a `+`{.action} button is available as soon as you start to specify a value, allowing you to add a new field to the list. 
 
 ![Configuration of HTTP headers of a Frontend](images/add_headers_with_api.png){.thumbnail}
 
-If you integrate the API into your code, this corresponds to a JSON list of the type :
+If you integrate the API into your code, this corresponds to a JSON list of the type:
 
 ```json
 1. {
@@ -238,7 +238,7 @@ If you integrate the API into your code, this corresponds to a JSON list of the 
 |frontendId|Identifier of the frontend where to configure the HTTP headers|
 |httpHeader|List of headers to configure|
 
-- Applying the changes :
+- Applying the changes:
 
 > [!api]
 >
