@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar un certificado SSL Sectigo DV"
 excerpt: "Descubra cómo activar un certificado SSL Sectigo DV en un alojamiento web de OVHcloud"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -58,7 +58,7 @@ Para los alojamientos compartidos de OVHcloud, la autoridad de certificación qu
 
 > [!primary]
 >
-> Si desea adquirir un certificado SSL Sectigo DV para un nombre de dominio (por ejemplo: `domain.tld`), verifique bien que su subdominio "www" (por ejemplo: `www.domain.tld`) apunte también a la dirección IP de su hospedaje web y esté correctamente declarado en uno de los sitios web de su alojamiento web.
+> Si desea adquirir un certificado SSL Sectigo DV para un nombre de dominio (por ejemplo: `domain.tld`), verifique bien que su subdominio "www" (por ejemplo: `www.domain.tld`) apunte también a la dirección IP de su alojamiento web y esté correctamente declarado en uno de los sitios web de su alojamiento web.
 >
 > En su caso, si contrata el certificado SSL Sectigo DV sin estar seguro de ello, deberá realizar una corrección más adelante. A continuación, deberá eliminar el certificado SSL Sectigo DV anteriormente suscrito **sin reembolso** y contratar uno nuevo. El objetivo es que el nuevo certificado SSL Sectigo DV incluya al mismo tiempo su dominio `domain.tld` y su subdominio en "www" `www.domain.tld`.
 >
@@ -73,7 +73,7 @@ Para más información, consulte nuestras guías:
 
 ### Contratar el certificado SSL Sectigo DV
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas:
 
 > [!tabs]
 > **Etapa 1**
@@ -118,7 +118,7 @@ La instalación del certificado SSL Sectigo DV puede tardar hasta **24** horas.
 
 ### Comprobar la activación del certificado SSL Sectigo DV
 
-Para comprobar que la instalación se ha completado, haga clic en las fichas siguientes para ver cada uno de los **4** pasos:
+Para comprobar que la instalación se ha completado, haga clic en las fichas siguientes para ver cada una de las **4** etapas:
 
 > [!tabs]
 > **Etapa 1**

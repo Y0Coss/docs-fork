@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Gestire un certificato SSL"
 excerpt: "Questa quiga ti mostra come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Obiettivo
@@ -34,11 +34,11 @@ Per utilizzare il protocollo HTTPS è indispensabile disporre di un certificato 
 
 > [!warning]
 >
-> **Prima di proseguire**, verifica che **i domini e/o sottodomini** interessati dal(i) futuro(i) certificato(i) SSL:
+> **Prima di continuare**, verifica che **il o i nomi di dominio e/o i sottodomini** interessati dal tuo o dai tuoi futuri certificati SSL:
 >
-> - punta(nt) verso l’indirizzo IP del tuo hosting Web.
-> - sia/siano dichiarati su uno dei siti web del tuo hosting web.
-> - non dispone già di un certificato SSL attivo.
+> - punta/puntano all'indirizzo IP del tuo hosting web.
+> - è/sono registrato/i su uno dei siti web del tuo hosting web.
+> - non dispone/dispongono già di un certificato SSL attivo.
 >
 > Per maggiori informazioni, consulta le nostre guide:
 >

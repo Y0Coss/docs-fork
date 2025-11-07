@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Gerir um certificado SSL"
 excerpt: "Saiba como gerir um certificado SSL no alojamento web da OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -34,11 +34,11 @@ Dispor de um certificado SSL para o seu website é incontornável para o utiliza
 
 > [!warning]
 >
-> **Antes de continuar**, verifique se **o(s) domínio(s) e/ou subdomínio(s)** em causa no(s) seu(s) futuro(s) certificado(s) SSL:
+> **Antes de continuar**, verifique se **o nome ou os nomes de domínio e/ou subdomínios** relacionados com o seu ou os seus futuros certificados SSL:
 >
-> - aponta(m) para o endereço IP do seu alojamento web.
-> - está(ão) declarado(s) num dos sites web da sua alojamento web.
-> - não possui um certificado SSL ativo.
+> - aponta/apontam para o endereço IP do seu alojamento web.
+> - está/estão registado(s) em um dos sites do seu alojamento web.
+> - não dispõe/dispõem já de um certificado SSL ativo.
 >
 > Para se certificar disso, consulte os guias abaixo sempre que necessário:
 >
@@ -64,7 +64,7 @@ Encontre aqui os 4 links para os nossos guias dedicados a estas 4 soluções:
 >
 > A eliminação de um certificado SSL pago **Sectigo** (DV ou EV) é definitiva, mesmo que o certificado ainda não tenha expirado. Não poderá ser efetuado qualquer reembolso proporcional ao tempo restante. Se pretender reinstalar um certificado SSL **Sectigo** (DV ou EV), deverá obrigatoriamente realizar uma nova encomenda e pagar a integralidade do novo certificado SSL subscrito.
 >
-> Além disso, se deseja desativar definitivamente um certificado SSL do seu alojamento web, certifique-se de que **antes de prosseguir** que a desativação definitiva do certificado SSL não tornará os seus websites inacessíveis. Se isso acontecer, os seus utilizadores irão encontrar um erro de segurança ao tentar aceder ao seu website em « HTTPS ».
+> Além disso, se deseja desativar definitivamente um certificado SSL do seu alojamento web, certifique-se de que **antes de prosseguir** que a desativação definitiva do certificado SSL não tornará os seus websites inacessíveis. Se isso acontecer, os seus utilizadores irão encontrar um erro de segurança ao tentar aceder ao seu website em "HTTPS".
 >
 > Uma vez que esta verificação depende das definições do(s) website(s), recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica.
 

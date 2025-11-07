@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Installer un certificat SSL personnalisé"
 excerpt: "Découvrez comment importer et installer un certificat SSL personnalisé sur votre hébergement Web OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objectif

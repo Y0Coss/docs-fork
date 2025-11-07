@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Aktywacja certyfikatu SSL Sectigo EV"
 excerpt: "Dowiedz się, jak zamówić i zainstalować certyfikat SSL Sectigo EV na Twoim hostingu WWW OVHcloud"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Wprowadzenie
@@ -36,7 +36,7 @@ W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyf
 ## Wymagania początkowe <a name="requirements"></a>
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
-- Zamów lub zamów [hosting OVHcloud](/links/web/hosting).
+- Zamów lub zamów [hosting współdzielony OVHcloud](/links/web/hosting).
 - Zamów [domenę](/links/web/domains) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 - Być organizacją (firma, agencja rządowa, itp.) zarejestrowaną w oficjalnym rejestrze.
 - Posiadanie upoważnienia organizacji do zamawiania certyfikatu SSL Sectigo EV.
@@ -91,40 +91,40 @@ Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
 
 #### 1.1 - Dla już istniejącej domeny i hostingu OVHcloud
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **6**:
+Kliknij poniższe zakładki, aby wyświetlić każdy z **6** kroków:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
 >>
 >> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Kiedy pojawi się zawartość karty, kliknij przycisk `Zamów certyfikat SSL Sectigo`{.action}.
 >>
 >> ![SSL Sectigo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W nowym oknie, które się otworzy, wybierz w rozwijanym menu odpowiednią domenę lub subdomenę, następnie kliknij `Zatwierdź`{.action}, aby zostać przekierowanym do zamówienia certyfikatu SSL Sectigo EV.
 >>
 >> ![SSL Sectigo wybór domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
-> **Etap 6**
+> **Krok 6**
 >>
 >> Wybierz **Certyfikat SSL Sectigo EV**, po dotarciu do tunelu poleceń, następnie kontynuuj zamówienie.
 >>

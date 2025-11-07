@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Installa un certificato SSL personalizzato"
 excerpt: "Scopri come importare e installare un certificato SSL personalizzato sul tuo hosting Web OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Obiettivo
@@ -33,7 +33,7 @@ OVHcloud propone diversi tipi di certificati SSL sulle offerte di [hosting condi
 
 > [!primary]
 >
-> Questo step è opzionale se hai già generato e recuperato il certificato SSL presso il tuo provider SSL o se quest'ultimo propone la generazione del CSR durante l'ordine del certificato SSL. In tal caso, passa direttamente allo [sezione 2](#step-2).
+> Questo step è opzionale se hai già generato e recuperato il certificato SSL presso il tuo provider SSL o se quest'ultimo propone la generazione del CSR durante l'ordine del certificato SSL. In tal caso, passa direttamente alla [parte 2](#step-2).
 
 #### 1.1 - Genera chiave privata e CSR da riga di comando <a name="step-1.1"></a>
 
@@ -71,7 +71,7 @@ Per recuperare la chiave privata generata in precedenza e sempre dal terminale, 
 cat my_private.key
 ```
 
-Sostituisci il termine `my_private` con il nome di file che hai scelto in precedenza nello [sezione 1.1](#step-1.1) di questa guida.
+Sostituisci il termine `my_private` con il nome di file che hai scelto in precedenza nella [parte 1.1](#step-1.1) di questa guida.
 
 La chiave privata viene visualizzata nel terminale in questo modo:
 
@@ -95,7 +95,7 @@ Per recuperare la CSR generata in precedenza e sempre dal terminale, esegui ques
 cat your_file_name.csr
 ```
 
-Sostituisci il termine `your_file_name` con il nome di file che hai scelto precedentemente durante il [sezione 1.1](#step-1.1) di questa guida.
+Sostituisci il termine `your_file_name` con il nome di file che hai scelto in precedenza nella [parte 1.1](#step-1.1) di questa guida.
 
 La CSR viene visualizzata nel terminale in questo modo:
 
@@ -119,9 +119,9 @@ Salva questo file è importante conservarlo per il resto di questa guida se il t
 
 > [!primary]
 >
-> Questo step è opzionale se hai già generato e recuperato il certificato SSL presso il tuo provider SSL. In tal caso, passa direttamente allo [sezione 3](#step-3).
+> Questo step è opzionale se hai già generato e recuperato il certificato SSL presso il tuo provider SSL. In tal caso, passa direttamente alla [parte 3](#step-3).
 
-Ordina il certificato SSL presso il tuo provider SSL. Se il cliente ne ha bisogno, trasmetti al cliente il contenuto della CSR generata nello [sezione 1](#step-1) di questa guida. Se ti chiede di inserire la chiave privata generata nello [sezione 1](#step-1), trasmettile.
+Ordina il certificato SSL presso il tuo provider SSL. Se il cliente ne ha bisogno, trasmetti al cliente il contenuto della CSR generata nella [parte 1](#step-1) di questa guida. Se ti chiede di inserire la chiave privata generata nella [parte 1](#step-1), trasmettile.
 
 A seguito dell'ordine, il provider di certificati SSL deve fornirti 3 file:
 
@@ -129,15 +129,15 @@ A seguito dell'ordine, il provider di certificati SSL deve fornirti 3 file:
 - Il file `private.key`.
 - Il file `ca_bundle.crt`.
 
-Sarà il contenuto di ciascuno dei suoi file che sarà necessario per realizzare lo [sezione 3](#step-3) di questa guida.
+Sarà il contenuto di ciascuno dei suoi file che sarà necessario per realizzare la [parte 3](#step-3) di questa guida.
 
 <a name="3files"></a>
 
 > [!warning]
 >
-> Alcuni provider SSL rilasciano il contenuto dei file `certificate.crt` e `ca_bundle.crt` in un unico file. È necessario separare il contenuto di questo file per riformare i file `certificate.crt` e `ca_bundle.crt`. Prima di eseguire lo [sezione 3](#step-3) di questa guida.
+> Alcuni provider SSL rilasciano il contenuto dei file `certificate.crt` e `ca_bundle.crt` in un unico file. È necessario separare il contenuto di questo file per riformare i file `certificate.crt` e `ca_bundle.crt`. Prima di eseguire la [parte 3](#step-3) di questa guida.
 >
-> Altri provider SSL rilasciano il file `ca_bundle.crt` in più parti/file. Dovrai concatenare il contenuto di questi file per riformare un solo file `ca_bundle.crt` e seguire così lo [sezione 3](#step-3) di questa guida.
+> Altri provider SSL rilasciano il file `ca_bundle.crt` in più parti/file. Dovrai concatenare il contenuto di questi file per riformare un solo file `ca_bundle.crt` e seguire così la [parte 3](#step-3) di questa guida.
 >
 > Se sei interessato e riscontri difficoltà nello svolgere queste operazioni, contatta il tuo provider SSL. Ti ricordiamo che tutti i contenuti consegnati devono essere suddivisi in soli 3 file (`certificate.crt`, `ca_bundle.crt` e `private.key`) per poter procedere all’installazione del certificato SSL.
 

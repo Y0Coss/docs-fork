@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to install a custom SSL certificate"
 excerpt: "Find out how to import and install a custom SSL certificate on your OVHcloud Web Hosting plan"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objective

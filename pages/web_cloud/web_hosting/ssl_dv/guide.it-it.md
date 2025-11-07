@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attivare un certificato SSL Sectigo DV"
 excerpt: "Questa guida ti mostra come attivare un certificato SSL Sectigo DV su un hosting Web OVHcloud"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Obiettivo
@@ -41,8 +41,8 @@ Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i
 >
 > I certificati SSL Sectigo DV offerti da OVHcloud sono validi solo in uno dei due casi seguenti:
 >
-> - Un solo dominio + il suo sottodominio in "www" (esempio: `domain.tld` e `wwww.domain.tld`).
-> - Un solo sottodominio (esempio: `sub.domain.tld`).
+> - Un solo dominio + il suo sottodominio in "www" (ad esempio: `domain.tld` e `wwww.domain.tld`).
+> - Un solo sottodominio (ad esempio: `sub.domain.tld`).
 >
 > Se sul tuo hosting Web sono dichiarati altri domini o sottodomini e vuoi anche attribuirgli un certificato SSL, puoi:
 >
@@ -104,7 +104,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> Nella nuova finestra, seleziona il dominio o sottodominio con il menu a tendina e clicca su `Confermare`{.action} per essere reindirizzato al buono d’ordine del tuo certificato SSL Sectigo DV.
 >>
->> ![SSL Sectigo selection du domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
+>> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
 >> Prosegui con l’ordine fino al saldo dell’ordine per confermare la richiesta di creazione del certificato SSL Sectigo DV per il tuo dominio e/o sottodominio sul tuo hosting Web.
 
@@ -118,7 +118,7 @@ L'installazione del certificato SSL Sectigo DV può richiedere fino a **24** ore
 
 ### Verifica l'attivazione del certificato SSL Sectigo DV
 
-Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ogni **4** step:
+Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi:
 
 > [!tabs]
 > **Passaggio 1**

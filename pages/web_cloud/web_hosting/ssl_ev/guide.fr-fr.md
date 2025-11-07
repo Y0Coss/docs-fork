@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL Sectigo EV"
 excerpt: "Découvrez comment commander et installer un certificat SSL Sectigo EV sur votre hébergement Web OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Hosting - Instalacja spersonalizowanego certyfikatu SSL"
 excerpt: "Dowiedz się, jak importować i instalować spersonalizowany certyfikat SSL na Twoim hostingu OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Wprowadzenie
@@ -16,8 +16,8 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
-- Zamówić lub dysponować [hostingiem OVHcloud](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Zamówić lub dysponować [hosting współdzielony OVHcloud](/links/web/hosting).
 - Zamówić lub dysponować [domeną](/links/web/domains) i mieć wyłączne prawa do jej używania. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 - Posiadanie OpenSSL lub kompatybilnej aplikacji zainstalowanej lokalnie na Twoim urządzeniu.
 
@@ -33,7 +33,7 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 
 > [!primary]
 >
-> Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od Twojego dostawcy SSL lub jeśli dostawca proponuje wygenerowanie certyfikatu SSL podczas zamawiania certyfikatu. Jeśli tak jest, przejdź bezpośrednio do [sekcjiu 2](#step-2).
+> Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od Twojego dostawcy SSL lub jeśli dostawca proponuje wygenerowanie certyfikatu SSL podczas zamawiania certyfikatu. Jeśli tak jest, przejdź bezpośrednio do [części 2](#step-2).
 
 #### 1.1 - Wygeneruj klucz prywatny i CSR za pomocą wiersza polecenia <a name="step-1.1"></a>
 
@@ -71,7 +71,7 @@ Aby uzyskać klucz prywatny wygenerowany wcześniej i zawsze w Twoim urządzeniu
 cat my_private.key
 ```
 
-Zastąp słowo `my_private` nazwą pliku wybraną wcześniej w [sekcjiie 1.1](#step-1.1) niniejszego przewodnika.
+Zastąp słowo `my_private` nazwą pliku wybraną wcześniej w [części 1.1](#step-1.1) niniejszego przewodnika.
 
 Klucz prywatny wyświetla się wówczas w Twoim urządzeniu w następującej formie:
 
@@ -95,7 +95,7 @@ Aby pobrać poprzednio wygenerowany CSR, ale zawsze z poziomu terminala, wprowad
 cat your_file_name.csr
 ```
 
-Zastąp termin `your_file_name` nazwą pliku wybraną wcześniej w [sekcjiie 1.1](#step-1.1) niniejszego przewodnika.
+Zastąp termin `your_file_name` nazwą pliku wybraną wcześniej w [części 1.1](#step-1.1) niniejszego przewodnika.
 
 CSR wyświetla się wówczas w Twoim urządzeniu w następującej formie:
 
@@ -119,9 +119,9 @@ Zapisz ten plik i zachowaj go jako kontynuację tego przewodnika, jeśli zostani
 
 > [!primary]
 >
-> Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od dostawcy SSL. W takim przypadku przejdź bezpośrednio do [sekcjiu 3](#step-3).
+> Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od dostawcy SSL. W takim przypadku przejdź bezpośrednio do [części 3](#step-3).
 
-Zamów certyfikat SSL u swojego dostawcy SSL. Jeśli będzie on potrzebował pomocy, prześlij mu treść CSR wygenerowaną podczas [sekcjiu 1](#step-1) niniejszego przewodnika. Jeśli poprosi Cię o uzupełnienie klucza prywatnego wygenerowanego podczas [sekcjiu 1](#step-1), prześlij go również.
+Zamów certyfikat SSL u swojego dostawcy SSL. Jeśli jest to konieczne, prześlij mu treść CSR wygenerowaną w [części 1](#step-1) niniejszego przewodnika. Jeśli poprosi Cię dodatkowo o klucz prywatny wygenerowany w [części 1](#step-1), prześlij mu również tę informację.
 
 Po złożeniu zamówienia dostawca certyfikatu SSL powinien dostarczyć 3 pliki:
 
@@ -129,15 +129,15 @@ Po złożeniu zamówienia dostawca certyfikatu SSL powinien dostarczyć 3 pliki:
 - Plik `private.key`.
 - Plik `ca_bundle.crt`.
 
-Treść każdego z plików będzie niezbędna do wykonania [sekcjiu 3](#step-3) niniejszego przewodnika.
+Zawartość każdego z tych plików będzie potrzebna do wykonania [części 3](#step-3) niniejszego przewodnika.
 
 <a name="3files"></a>
 
 > [!warning]
 >
-> Niektórzy dostawcy SSL dostarczają zawartość plików `certificate.crt` i `ca_bundle.crt` w jednym pliku. Musisz oddzielić zawartość tego pliku, aby zreformować pliki `certificate.crt` i `ca_bundle.crt`. Zanim przejdziesz do [sekcjiu 3](#step-3) niniejszego przewodnika.
+> Niektórzy dostawcy SSL dostarczają zawartość plików `certificate.crt` i `ca_bundle.crt` w jednym pliku. Musisz oddzielić zawartość tego pliku, aby zreformować pliki `certificate.crt` i `ca_bundle.crt`. Zanim przejdziesz do [części 3](#step-3) niniejszego przewodnika.
 >
-> Inni dostawcy SSL dostarczają plik `ca_bundle.crt` w wielu częściach/plikach. Musisz połączyć zawartość tych plików, aby zmienić jeden plik `ca_bundle.crt` i tym samym postępować zgodnie z [sekcjiu 3](#step-3) niniejszego przewodnika.
+> Inni dostawcy SSL dostarczają plik `ca_bundle.crt` w wielu częściach/plikach. Musisz połączyć zawartość tych plików, aby zmienić jeden plik `ca_bundle.crt` i tym samym postępować zgodnie z [części 3](#step-3) niniejszego przewodnika.
 >
 > Jeśli ta sytuacja Cię dotyczy i masz trudności z wykonaniem tych operacji, skontaktuj się z dostawcą certyfikatu SSL w tej sprawie. Pamiętaj, że cała dostarczona przez niego zawartość musi zostać rozłożona tylko na 3 pliki (`certificate.crt`, `ca_bundle.crt` i `private.key`), abyś mógł zainstalować certyfikat SSL.
 
@@ -160,34 +160,34 @@ Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
 
 Po spełnieniu wszystkich tych wymagań możesz rozpocząć instalację spersonalizowanego certyfikatu SSL na Twoim hostingu.
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**:
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
 >>
 >> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Kiedy pojawi się zawartość karty, kliknij przycisk `Import własnego certyfikatu SSL`{.action}.
 >>
 >> ![Spersonalizowany SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W następnym oknie zostanie wyświetlony formularz z 3 polami do wypełnienia:
 >>
@@ -214,28 +214,28 @@ Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymag
 
 Instalacja potrwa kilka minut.
 
-Aby sprawdzić, czy instalacja została zakończona, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy:
+Aby sprawdzić, czy instalacja została zakończona, kliknij karty poniżej, aby kolejno wyświetlić każdy z **4** kroków:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
 >>
 >> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Kiedy pojawi się zawartość karty, sprawdź, czy każda domena i/lub subdomena figuruje w tabeli z typem certyfikatu SSL `Custom`.
 >>

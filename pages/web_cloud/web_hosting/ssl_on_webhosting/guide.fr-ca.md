@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Gérer un certificat SSL"
 excerpt: "Découvrez comment gérer un certificat SSL sur votre hébergement web OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objectif
@@ -34,7 +34,7 @@ Disposer d'un certificat SSL pour son site web est incontournable pour l'utilise
 
 > [!warning]
 >
-> **Avant de poursuivre**, vérifiez que **le(s) nom(s) de domaine et/ou sous-domaine(s)** concerné(s) par votre (vos) futur(s) certificat(s) SSL :
+> **Avant de poursuivre**, vérifiez que **le ou les noms de domaine et/ou sous-domaines** concernés par votre ou vos futurs certificats SSL :
 >
 > - pointe(nt) vers l'adresse IP de votre hébergement web. 
 > - est (sont) déclaré(s) sur l'un des sites web de votre hébergement web.

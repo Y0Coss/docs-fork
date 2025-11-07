@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Aktywacja darmowego certyfikatu SSL Let's Encrypt"
 excerpt: "Dowiedz się, jak aktywować bezpłatny certyfikat SSL Let's Encrypt na Twoim hostingu"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Wprowadzenie
@@ -26,15 +26,15 @@ Let's Encrypt to bezpłatny, zautomatyzowany, otwarty i nienastawiony na zysk or
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
-- Zamówić lub dysponować [hostingiem OVHcloud](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Zamówić lub dysponować [hosting współdzielony OVHcloud](/links/web/hosting).
 - Zamówić lub dysponować [domeną](/links/web/domains) i mieć wyłączne prawa do jej używania. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 
 > [!primary]
 >
 > Od **06/08/2025** certyfikat SSL Let's Encrypt jest automatycznie aktywowany domyślnie dla:
 >
-> - Wszystkie nowe domeny/subdomeny powiązane z hostingiem.
+> - wszystkie nowe domeny/subdomeny powiązane z hostingiem.
 > - wszystkie nowe zamówienia na nową domenę z nowym hostingiem.
 >
 > Konfiguracja usług pozwala zaoszczędzić czas. Certyfikat Let's Encrypt SSL będziesz mógł dezaktywować w [Panelu klienta OVHcloud](/links/manager), jeśli chcesz zainstalować inny certyfikat SSL (Sectigo DV, Sectigo EV lub spersonalizowany certyfikat SSL).
@@ -59,28 +59,28 @@ Let's Encrypt to bezpłatny, zautomatyzowany, otwarty i nienastawiony na zysk or
 
 ### Aktywacja certyfikatu SSL Let's Encrypt
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **4**:
+Kliknij poniższe zakładki, aby wyświetlić każdy z **4** kroków:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
 >>
 >> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Kiedy pojawi się zawartość karty, wybierz domenę lub subdomenę, dla której chcesz aktywować bezpłatny certyfikat SSL Let's Encrypt (DV), zaznaczając opcję `Włącz certyfikat SSL`.
 >>
@@ -92,28 +92,28 @@ Wdrożenie certyfikatu SSL Let's Encrypt może potrwać kilka godzin.
 
 ### Sprawdź aktywację darmowego certyfikatu SSL Let's Encrypt (DV)
 
-Aby sprawdzić, czy instalacja została zakończona, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy:
+Aby sprawdzić, czy instalacja została zakończona, kliknij karty poniżej, aby kolejno wyświetlić każdy z **4** kroków:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
 >>
 >> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Kiedy pojawi się zawartość karty, sprawdź, czy każda domena i/lub subdomena figuruje w tabeli z certyfikatem SSL `Let's Encrypt`.
 >>

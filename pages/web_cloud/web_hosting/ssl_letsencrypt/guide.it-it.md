@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attivare un certificato SSL gratuito Let's Encrypt"
 excerpt: "Scopri come attivare un certificato SSL gratuito Let's Encrypt sul tuo hosting Web"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Obiettivo
@@ -92,7 +92,7 @@ L’implementazione del certificato SSL Let’s Encrypt può richiedere diverse 
 
 ### Verifica l'attivazione del certificato SSL gratuito Let's Encrypt (DV)
 
-Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ogni **4** step:
+Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare successivamente ciascuno dei **4** passi:
 
 > [!tabs]
 > **Passaggio 1**

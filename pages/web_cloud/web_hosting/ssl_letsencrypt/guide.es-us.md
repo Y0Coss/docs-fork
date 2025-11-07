@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar un certificado SSL gratuito Let's Encrypt"
 excerpt: "Descubra cómo activar un certificado SSL gratuito Let's Encrypt en un alojamiento web"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -35,10 +35,10 @@ Let's Encrypt es una autoridad de certificación gratuita, automatizada, abierta
 > A partir del **06/08/2025**, el certificado SSL Let's Encrypt se activa automáticamente por defecto para:
 >
 > - todos los nuevos dominios o subdominios asociados a un alojamiento web.
-> - Todas las nuevas contrataciones de un dominio con un nuevo alojamiento web.
+> - todas las nuevas contrataciones de un dominio con un nuevo alojamiento web.
 >
-> El objetivo es ahorrarle tiempo durante la configuración de sus servicios. Puede desactivar el certificado SSL Let's Encrypt desde el [área de cliente de OVHcloud] (/links/manager) si desea instalar otro certificado SSL (Sectigo DV, Sectigo EV o un certificado SSL personalizado).
-> Para más información, consulte nuestra guía «[Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)», sección **Desactivar un certificado SSL en un alojamiento web**.
+> El objetivo es ahorrarle tiempo durante la configuración de sus servicios. Puede desactivar el certificado SSL Let's Encrypt desde el [área de cliente de OVHcloud](/links/manager) si desea instalar otro certificado SSL (Sectigo DV, Sectigo EV o un certificado SSL personalizado).
+> Para más información, consulte nuestra guía "[Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)", sección **Desactivar un certificado SSL en un alojamiento web**.
 
 ## Procedimiento
 
@@ -59,7 +59,7 @@ Let's Encrypt es una autoridad de certificación gratuita, automatizada, abierta
 
 ### Activar el certificado SSL Let's Encrypt
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** pasos:
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas:
 
 > [!tabs]
 > **Etapa 1**
@@ -92,7 +92,7 @@ La instalación del certificado SSL Let's Encrypt puede tardar varias horas.
 
 ### Comprobar la activación del certificado SSL gratuito Let's Encrypt (DV)
 
-Para comprobar que la instalación se ha completado, haga clic en las fichas siguientes para ver cada uno de los **4** pasos:
+Para comprobar que la instalación se ha completado, haga clic en las fichas siguientes para ver cada una de las **4** etapas:
 
 > [!tabs]
 > **Etapa 1**

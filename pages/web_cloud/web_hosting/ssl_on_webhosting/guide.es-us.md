@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Gestionar un certificado SSL"
 excerpt: "Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Los niveles de cifrado SSL son idénticos entre los tres tipos de certificado.
 
 La principal diferencia reside en el nivel de comprobaciones que realizará la Autoridad de Certificación (CA) que emite el certificado SSL y certifica su autenticidad.
 
-Para utilizar un certificado SSL en HTTPS, es imprescindible tener un certificado SSL en el sitio web.
+Disponer de un certificado SSL para su sitio web es imprescindible para utilizarlo en HTTPS.
 
 **Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud.**
 
@@ -34,11 +34,11 @@ Para utilizar un certificado SSL en HTTPS, es imprescindible tener un certificad
 
 > [!warning]
 >
-> **Antes de continuar**, asegúrese de que **el/los nombre/s de dominio y/o subdominio/s** correspondiente/s a su/s futuro/s certificado/s SSL:
+> **Antes de continuar**, verifica que **el o los nombres de dominio y/o subdominios** afectados por tu o tus futuros certificados SSL:
 >
-> - apunta(n) a la dirección IP de su alojamiento web.
-> - esté (n) declarado (s) en uno de los sitios web de su alojamiento web.
-> - no dispone(n) de un certificado SSL activo.
+> - apunta/apuntan a la dirección IP de tu alojamiento web.
+> - está/están registrado/s en uno de los sitios web de tu alojamiento web.
+> - no dispone/disponen ya de un certificado SSL activo.
 >
 > Para más información, consulte nuestras guías:
 >
@@ -66,9 +66,9 @@ Consulte a continuación los cuatro enlaces a nuestras guías dedicadas a estas 
 >
 > Además, si desea desactivar definitivamente un certificado SSL de su alojamiento web, asegúrese **antes de continuar** de que la desactivación definitiva del certificado SSL no hará que sus sitios web dejen de estar accesibles. En ese caso, los usuarios encontrarán un error de seguridad al intentar acceder a su sitio web en HTTPS.
 >
-> Esta comprobación es inherente a la configuración de su sitio web. Si necesita ayuda, le recomendamos que contacte con un [proveedor de servicios especializado] (/links/partner). No podremos asistirle.
+> Esta comprobación es inherente a la configuración de su sitio web. Si necesita ayuda, le recomendamos que contacte con un [proveedor de servicios especializado](/links/partner). No podremos asistirle.
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas:
 
 > [!tabs]
 > **Etapa 1**

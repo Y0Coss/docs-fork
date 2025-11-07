@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Instalar un certificado SSL personalizado"
 excerpt: "Descubra cómo importar e instalar un certificado SSL personalizado en un alojamiento web de OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -33,7 +33,7 @@ En función de su situación, es posible que quiera instalar un certificado SSL 
 
 > [!primary]
 >
-> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL o si este último propone la generación del CSR durante el pedido del certificado SSL. En ese caso, vaya directamente al [sección 2](#step-2).
+> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL o si este último propone la generación del CSR durante el pedido del certificado SSL. En ese caso, vaya directamente a la [parte 2](#step-2).
 
 #### 1.1 - Generar la clave privada y la CSR en línea de comandos <a name="step-1.1"></a>
 
@@ -71,7 +71,7 @@ Para recuperar la clave privada generada anteriormente y siempre desde su termin
 cat my_private.key
 ```
 
-Sustituya el término `my_private` por el nombre de archivo que haya elegido anteriormente en el [sección 1.1](#step-1.1) de esta guía.
+Sustituya el término `my_private` por el nombre de archivo que haya elegido anteriormente en la [parte 1.1](#step-1.1) de esta guía.
 
 La clave privada se mostrará en su terminal de la siguiente forma:
 
@@ -95,7 +95,7 @@ Para recuperar el CSR generado anteriormente y siempre desde su terminal, ejecut
 cat your_file_name.csr
 ```
 
-Sustituya el término `your_file_name` por el nombre de archivo que haya elegido anteriormente en el [sección 1.1](#step-1.1) de esta guía.
+Sustituya el término `your_file_name` por el nombre de archivo que haya elegido anteriormente en la [parte 1.1](#step-1.1) de esta guía.
 
 El CSR se mostrará en su terminal con el siguiente formato:
 
@@ -119,9 +119,9 @@ Guarde este archivo y guárdelo cuidadosamente para el resto de esta guía si su
 
 > [!primary]
 >
-> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL. En ese caso, vaya directamente al [sección 3](#step-3).
+> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL. En ese caso, vaya directamente a la [parte 3](#step-3).
 
-Contrate el certificado SSL a su proveedor SSL. Si este último lo necesita, puede enviarle el contenido de la CSR generada en el [sección 1](#step-1) de esta guía. Si le pide además la clave privada generada en el [sección 1](#step-1), transmítala también.
+Contrate el certificado SSL a su proveedor SSL. Si este último lo necesita, puede enviarle el contenido de la CSR generada en la [parte 1](#step-1) de esta guía. Si le pide además la clave privada generada en la [parte 1](#step-1), transmítala también.
 
 Después de su pedido, el proveedor de certificado SSL debe proporcionarle 3 archivos:
 
@@ -129,15 +129,15 @@ Después de su pedido, el proveedor de certificado SSL debe proporcionarle 3 arc
 - El archivo `private.key`.
 - El archivo `ca_bundle.crt`.
 
-El contenido de cada uno de sus archivos será necesario para realizar el [sección 3](#step-3) de esta guía.
+El contenido de cada uno de sus archivos será necesario para realizar la [parte 3](#step-3) de esta guía.
 
 <a name="3files"></a>
 
 > [!warning]
 >
-> Algunos proveedores SSL entregan el contenido de los ficheros `certificate.crt` y `ca_bundle.crt` en un solo fichero. Deberá separar el contenido de este archivo para poder reformar los archivos `certificate.crt` y `ca_bundle.crt`. Antes de realizar el [sección 3](#step-3) de esta guía.
+> Algunos proveedores SSL entregan el contenido de los ficheros `certificate.crt` y `ca_bundle.crt` en un solo fichero. Deberá separar el contenido de este archivo para poder reformar los archivos `certificate.crt` y `ca_bundle.crt`. Antes de realizar la [parte 3](#step-3) de esta guía.
 >
-> Otros proveedores SSL entregan el fichero `ca_bundle.crt` en varias partes/ficheros. Deberá concatenar los contenidos de estos archivos para poder reformar un único archivo `ca_bundle.crt` y así seguir el [sección 3](#step-3) de esta guía.
+> Otros proveedores SSL entregan el fichero `ca_bundle.crt` en varias partes/ficheros. Deberá concatenar los contenidos de estos archivos para poder reformar un único archivo `ca_bundle.crt` y así seguir la [parte 3](#step-3) de esta guía.
 >
 > Si esta situación le afecta y tiene dificultades para realizar estas operaciones, póngase en contacto con su proveedor SSL. Por favor, indique que todo el contenido que le ha entregado debe repartirse únicamente en 3 ficheros (`certificate.crt`, `ca_bundle.crt` y `private.key`) para que pueda proceder a la instalación del certificado SSL.
 
@@ -160,7 +160,7 @@ Para más información, consulte nuestras guías:
 
 Una vez que haya cumplido todos estos requisitos, ya puede finalizar la instalación del certificado SSL personalizado en su alojamiento web.
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas:
 
 > [!tabs]
 > **Etapa 1**

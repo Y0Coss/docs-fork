@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL gratuito Let's Encrypt"
 excerpt: "Saiba como ativar um certificado SSL gratuito Let's Encrypt no seu alojamento web"
-updated: 2025-06-16
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -34,11 +34,11 @@ A Let's Encrypt é uma autoridade de certificação gratuita, automatizada, aber
 >
 > A partir de **06/08/2025**, o certificado SSL Let's Encrypt é automaticamente ativado por predefinição para:
 >
-> - Todos os novos domínios/subdomínios associados a um alojamento web.
+> - todos os novos domínios/subdomínios associados a um alojamento web.
 > - todas as novas subscrições de um domínio com um novo alojamento web.
 >
 > O objetivo é poupar tempo na configuração dos serviços. Poderá desativar o certificado SSL Let's Encrypt a partir da sua [Área de Cliente OVHcloud](/links/manager) se pretender instalar outro certificado SSL (Sectigo DV, Sectigo EV ou um certificado SSL personalizado).
-> Encontre mais informações no nosso guia « [Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) », parte **Desativar um certificado SSL num alojamento web**.
+> Encontre mais informações no nosso guia "[Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)", parte **Desativar um certificado SSL num alojamento web**.
 
 ## Instruções
 
