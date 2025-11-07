@@ -1,7 +1,7 @@
 ---
 title: "Configuration des sondes sur un service OVHcloud Load Balancer"
 excerpt: "Découvrez les principes généraux et des cas d'usage pour les sondes"
-updated: 2025-11-06
+updated: 2025-11-07
 ---
 
 <style>
@@ -32,7 +32,7 @@ Pour plus de détails sur le déploiement d'une architecture Blue-Green avec vot
 
 Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 
-**Ce guide vous présentera les principes généraux, ainsi que des scénarios d'utilisation des sondes, tirés de cas d'usages réels.**
+**Ce guide vous présente les principes généraux, ainsi que des scénarios d'utilisation des sondes, tirés de cas d'usages réels.**
 
 ## Prérequis
 
@@ -41,7 +41,7 @@ Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent pé
 
 ## En pratique
 
-**Sommaire**
+## Sommaire
 
 - [Présentation de l'API des sondes](#probe-api)
 - [Exemples](#examples)
@@ -50,11 +50,11 @@ Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent pé
 
 ### Présentation de l'API des sondes <a name="probe-api"></a>
 
-L'API des sondes de votre OVHcloud Load Balancer a été conçue pour être souple et évolutive.
+L'API des sondes de votre service OVHcloud Load Balancer a été conçue pour être souple et évolutive.
 
 Les sondes se configurent directement sur les fermes. Tous les serveurs d'une même ferme appliquent ainsi exactement la même sonde. Cependant, l'activation ou la désactivation d'une sonde est spécifique à chaque serveur. Il est donc possible de ne « surveiller » que certains serveurs d'une même ferme.
 
-La liste des sondes disponibles et de leurs paramètres peut être consultée avec l'appel d'API :
+La liste des sondes disponibles et de leurs paramètres peut être consultée avec l'appel API suivant :
 
 > [!api]
 >
