@@ -1,7 +1,7 @@
 ---
 title: "Mon site est lent. Que faire ?" 
 excerpt: "Identifiez l'origine des lenteurs de votre site web et découvrez comment résoudre cette situation"
-updated: 2023-10-26
+updated: 2025-11-20
 ---
  
 ## Objectif
@@ -32,7 +32,6 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 > Si vous avez besoin d'un service offrant un taux de disponibilité SLA supérieur à 99%, nous vous conseillons d'envisager l'utilisation d'un [Serveur Privé Virtuel (VPS)](/links/bare-metal/vps) ou d'un [Serveur Dédié](/links/bare-metal/bare-metal).
 >
 > Par ailleurs, les performances de l'infrastructure d'hébergements mutualisés OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant, un rétablissement rapide de vos services en cas de surcharge avérée.
->
 
 ## Prérequis
 
@@ -45,13 +44,11 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance **dès lors que l'infrastructure où votre offre d'hébergement mutualisé est présente n'est pas en cause**. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
->
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance **dès lors que l'infrastructure où votre offre d'hébergement mutualisé est présente n'est pas en cause**. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 
 > [!success]
 >
 > Nous vous conseillons de noter vos résultats de diagnostic au fur et à mesure de votre avancée dans ce guide. En effet, ces résultats s'avèreront très utiles pour la résolution de votre situation, quelle que soit l'origine de la lenteur.
->
 
 ### Comprendre la notion de Time To First Byte (TTFB)
 
@@ -69,13 +66,13 @@ En effet, pour des Content Managment System (CMS) tels que WordPress, Joomla!, P
 >
 > Une fois la requête arrivée sur le fichier « **index.php** », celui-ci est alors exécuté par le serveur web de votre hébergement mutualisé. 
 >
->Dans son exécution, le fichier « **index.php** » doit récupérer des informations parmi les autres fichiers qui composent votre site web, voire des éléments présents dans votre base de données. 
+> Dans son exécution, le fichier « **index.php** » doit récupérer des informations parmi les autres fichiers qui composent votre site web, voire des éléments présents dans votre base de données. 
 >
->Chacune de ces demandes d'informations génère une requête interne sur votre service d'hébergement. 
+> Chacune de ces demandes d'informations génère une requête interne sur votre service d'hébergement. 
 >
->Le fichier « **index.php** » attendra d'avoir le résultat de toutes les requêtes internes qu'il a demandé **avant** de renvoyer le premier octet de donnée à votre navigateur internet.
+> Le fichier « **index.php** » attendra d'avoir le résultat de toutes les requêtes internes qu'il a demandé **avant** de renvoyer le premier octet de donnée à votre navigateur internet.
 >
->Si votre fichier « **index.php** » génère des requêtes « lentes » ou lourdes à s'exécuter, le TTFB sera alors élevé et votre site mettra plusieurs secondes à s'afficher. Les performances de votre offre d'hébergement ne sont alors pas en cause.
+> Si votre fichier « **index.php** » génère des requêtes « lentes » ou lourdes à s'exécuter, le TTFB sera alors élevé et votre site mettra plusieurs secondes à s'afficher. Les performances de votre offre d'hébergement ne sont alors pas en cause.
 
 Des outils de diagnostic en ligne vous permettent de récupérer le TTFB de votre hébergement. Cependant, la plupart d'entres eux fonctionnent comme des navigateurs Internet et leurs résultats sont donc à relativiser.<br>
 En effet, ces outils ne sont pas en mesure de prendre en compte les requêtes internes demandées par le fichier que vous avez appelé via votre navigateur,comme dans l'exemple ci-dessus avec le fichier « **index.php** ».
@@ -93,13 +90,7 @@ Tous les diagnostics de l'étape 1 doivent être réalisés **sans exception** a
 
 Pour être sûr que vos services (hébergement mutualisé **et** base de données) ne font pas l'objet d'une maintenance ou d'un incident, récupérez les informations sur le cluster et le filer de votre hébergement mutualisé ainsi que les informations générales relatives à votre base de données. Vous pourrez ensuite vérifier leur statut sur [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
-
-![Récupérer Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérer le numéro du cluster où se trouve votre hébergement mutualisé.
-
-![Récupérer cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, consultez notre guide « [Hébergement web - Comment connaître son cluster et son filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».
 
 > [!success]
 >
@@ -108,7 +99,6 @@ Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérer le numéro d
 > Vous pouvez vous inscrire avec votre adresse e-mail à la déclaration d'incident ou de maintenance, afin d'être notifié par e-mail de l'avancée des opérations.
 >
 > Une fois le statut de l'incident ou de la maintenance marqué comme **résolu**, la stabilisation de la charge accumulée peut nécessiter un délai de **3 heures** maximum après la notification de résolution pour se résorber complètement.
->
 
 Si aucun incident ou aucune maintenance ne sont déclarés, poursuivez vos diagnostics.
 
@@ -135,7 +125,6 @@ phpinfo();
 > Les manipulations sur un fichier « **.htaccess** » peuvent avoir des conséquences sur l'affichage de votre site. Faites appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés à réaliser ce qui suit.
 >
 > S'il ne s'affiche pas et **uniquement pour les utilisateurs avertis**, renommez vos fichiers « **.htaccess** » en « **.htaccess_OLD** » afin que le serveur ne les exécutent plus le temps de votre test. Renommez-les correctement une fois votre diagnostic effectué.
->
 
 **Exemple**: si le nom de domaine permettant l'accès à votre site est « domain.tld » et si le fichier « **phpinfo.php** » a bien été placé à la racine de votre site web, celui-ci sera accessible grâce à l'URL suivante : `http://domain.tld/phpinfo.php` (ou `https://domain.tld/phpinfo.php`).
 
