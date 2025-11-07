@@ -13,7 +13,7 @@ Ce guide détaille les étapes à suivre pour installer une instance OPCP à par
 
 ## Prérequis
 
-- Disposer d’un **service OPCP actif**.  
+- Disposer d'un service [OPCP](https://www.ovhcloud.com/en/hosted-private-cloud/onprem-cloud-platform/) actif.
 - Posséder un **compte utilisateur** avec les droits suffisants pour se connecter à Horizon sur l’offre OPCP.
 
 ---
@@ -172,4 +172,3 @@ Pour aller plus loin, consultez la [documentation officielle OpenStack](https://
 - [OpenStack Compute Guide (Nova)](https://docs.openstack.org/nova/latest/)  
 - [OpenStack Key Pairs](https://docs.openstack.org/nova/latest/user/ssh-keys.html)  
 - [Debian 12 Official Site](https://www.debian.org/releases/book/)
-
