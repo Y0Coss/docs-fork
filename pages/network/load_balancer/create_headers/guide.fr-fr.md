@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer - Les en-têtes HTTP"
 excerpt: Intégrez vos services web derrière un Load Balancer avec les en-têtes HTTP
-updated: 2025-11-05
+updated: 2025-11-07
 ---
 
 ## Objectif
@@ -50,9 +50,9 @@ Par défaut, votre service OVHcloud Load Balancer ajoute **cinq** en-têtes HTTP
 |X-Forwarded-Proto|Protocole du client (HTTP ou HTTPS), tel que vu par votre OVHcloud Load Balancer.|
 
 > [!warning]
->Les champs `X-Forwarded-*` pouvant être manipulés par un client malveillant, **ils ne doivent être pris en compte que s'ils proviennent d'une source de confiance.**
+> Les champs `X-Forwarded-*` pouvant être manipulés par un client malveillant, **ils ne doivent être pris en compte que s'ils proviennent d'une source de confiance.**
 >
->Il est donc **essentiel** de restreindre leur utilisation aux adresses IP de confiance, qui sont en l'occurrence les adresses IP de sortie de votre service OVHcloud Load Balancer. Les serveurs web majeurs tels que Nginx et Apache disposent de modules capables de gérer cet aspect de sécurité et de fiabilité.
+> Il est donc **essentiel** de restreindre leur utilisation aux adresses IP de confiance, qui sont en l'occurrence les adresses IP de sortie de votre service OVHcloud Load Balancer. Les serveurs web majeurs tels que Nginx et Apache disposent de modules capables de gérer cet aspect de sécurité et de fiabilité.
 >
 
 La liste de vos adresses IP de sortie est disponible via l'espace client OVHcloud et l'API OVHcloud.
@@ -74,7 +74,7 @@ La liste des IPv4 de sortie susceptibles d'être utilisées par votre service OV
 
 ### Correction de l'IP source dans les logs <a name="ip-source-logs"></a>
 
-Par défaut, Apache, Nginx et les autres serveurs web enregistrent l'adresse IP source dans leurs journaux. Lorsque vous utilisez un OVHcloud Load Balancer en amont de votre site web, les logs ne contiennent alors que des adresses IP de la forme « 10.108.a.b ». Il s'agit des adresses IP internes utilisées par l'OVHcloud Load Balancer pour vous contacter.
+Par défaut, Apache, Nginx et les autres serveurs web enregistrent l'adresse IP source dans leurs journaux. Lorsque vous utilisez un OVHcloud Load Balancer en amont de votre site web, les logs ne contiennent alors que des adresses IP de la forme « 10.108.a.b ». Il s'agit des adresses IP internes utilisées par le service OVHcloud Load Balancer pour vous contacter.
 
 Lorsqu'une requête transite par votre service OVHcloud Load Balancer, celui-ci enregistre l'adresse IP de votre visiteur dans les en-têtes `X-Forwarded-For` et `X-Remote-Ip`. Ces deux champs véhiculent la même information, leur nom diffère uniquement pour des raisons de compatibilité avec la majorité des serveurs.
 
@@ -137,7 +137,7 @@ service nginx reload
 
 #### Redirection des visiteurs HTTP vers HTTPS
 
-Pour renforcer la sécurité, certains contenus, tels que les pages de connexion, peuvent être restreints au protocole HTTPS. Certains sites optent même pour la redirection systématique de toutes les visites vers la version HTTPS. Par défaut, les protocoles HTTP et HTTPS utilisant des ports différents (80 et 443 respectivement), la solution classique consiste à placer les règles de redirection directement dans le *vhost* dédié au HTTP.
+Pour renforcer la sécurité, certains contenus, tels que les pages de connexion, peuvent être restreints au protocole HTTPS. Certains sites optent même pour la redirection systématique de toutes les visites vers la version HTTPS. Par défaut, les protocoles HTTP et HTTPS utilisent des ports différents (80 et 443 respectivement), la solution classique consiste à placer les règles de redirection directement dans le *vhost* dédié au HTTP.
 
 Lorsqu'une requête passe par un service comme le Load Balancer OVHcloud, celui-ci gère la réception du trafic HTTP, le déchiffrement du trafic HTTPS et transmet les deux types de trafic à vos serveurs. Selon la configuration de vos serveurs, l'ensemble du trafic sera propagé en HTTP ou en HTTPS, sans distinction du protocole d'entrée sur le Load Balancer. Votre serveur ne peut plus différencier les deux, car les deux arrivent au même point. Ce processus est appelé **« Terminaison SSL »**.
 
@@ -185,7 +185,7 @@ PHP utilise l'en-tête `REMOTE_ADDR` pour déterminer l'adresse des visiteurs. C
 
 Que votre application nécessite un format d'en-tête spécifique pour identifier l'IP, le port ou le protocole du visiteur, ou que vous souhaitiez connaître le *frontend* par lequel une requête est arrivée (ou pour toute autre raison), vous avez la possibilité d'ajouter des en-têtes personnalisés sur votre *frontend* HTTP.
 
-Les en-têtes personnalisés doivent respecter le format « `X-En-Tete Valeur de l'Entête` ». Le nom de l'en-tête et sa valeur sont séparés par un espace. Il est possible de spécifier plusieurs en-têtes sur un même *frontend*.
+Les en-têtes personnalisés doivent respecter le format « `X-En-Tete Valeur de l'Entête` ». Le nom de l'en-tête et sa valeur sont séparés par un espace. Il est possible de spécifier plusieurs en-têtes sur un même *frontend*.gy9 
 
 Si un en-tête existant est présent dans la requête, il sera écrasé et remplacé par la nouvelle valeur, rendant ainsi impossible pour le visiteur passant par ce *frontend* de le contrefaire. Il n'est pas possible de redéfinir les en-têtes réservés aux mandataires, tels que ceux décrits dans ce document, car ils sont gérés automatiquement par votre service OVHcloud Load Balancer.
 
@@ -200,7 +200,7 @@ Les en-têtes personnalisés peuvent être configurés via l'espace client OVHcl
 
 #### Depuis l'espace client OVHcloud
 
-Dans la section `Frontends`{.action} de votre espace client OVHcloud, sélectionnez le *frontend* à éditer ou cliquez sur le bouton `Ajouter un frontend`{.action} pour en créer un nouveau. Une fenêtre d'édition apparaîtra, présentant un champ `Entête HTTP`{.action} dans la section `Paramètres avancés`{.action}.
+Rendez-vous dans l'onglet `Frontends`{.action} du tableau de bord de votre service OVHcloud Load Balancer et sélectionnez le *frontend* à éditer ou cliquez sur le bouton `Ajouter un frontend`{.action} pour en créer un nouveau. Une fenêtre d'édition apparaîtra, présentant un champ `Entête HTTP`{.action} dans la section `Paramètres avancés`{.action}.
 
 Si vous souhaitez configurer plusieurs en-têtes, ceux-ci doivent être séparés par des virgules, *sans espace*. Par exemple, vous pouvez définir les en-têtes suivants : `X-Ip-Header %ci,X-Port-Header %cp`.
 
