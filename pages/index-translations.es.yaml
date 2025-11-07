@@ -22,18 +22,21 @@ startup-program-general-information: General information
 startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Credits & Billing
 startup-program-technical-resources: Technical resources
-bare-metal-cloud-dedicated-servers: Servidores dedicados
-bare-metal-cloud-dedicated-servers-advanced-usage: Uso avanzado
+bare-metal-cloud-dedicated-servers-key-concepts: Conceptos clave
 bare-metal-cloud-dedicated-servers-getting-started: Primeros pasos
-bare-metal-cloud-dedicated-servers-managing-servers: Gestionar los servidores
-bare-metal-cloud-dedicated-servers-backup-restore: Copia de seguridad y restauración de un servidor
-bare-metal-cloud-dedicated-servers-miscellaneous: Miscelánea
-bare-metal-cloud-dedicated-servers-network-and-ip-management: Red e IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID y discos
-bare-metal-cloud-dedicated-servers-security: Seguridad
-bare-metal-cloud-dedicated-servers-troubleshooting: Resolución de problemas
+bare-metal-cloud-dedicated-servers-configuration: Configuración
+bare-metal-cloud-dedicated-servers-configuration-system: Sistema
+bare-metal-cloud-dedicated-servers-configuration-storage: Almacenamiento
+bare-metal-cloud-dedicated-servers-configuration-network: Red
+bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
+bare-metal-cloud-dedicated-servers-configuration-deployments: Despliegues
+bare-metal-cloud-dedicated-servers-migration: Migración
 bare-metal-cloud-dedicated-servers-tutorials: Tutoriales
-bare-metal-cloud-dedicated-servers-vrack: vRack
+bare-metal-cloud-dedicated-servers-security: Seguridad
+bare-metal-cloud-dedicated-servers-security-hardening: Hardening
+bare-metal-cloud-dedicated-servers-security-backup: Copia de seguridad
+bare-metal-cloud-dedicated-servers-security-network: Red
+bare-metal-cloud-dedicated-servers-troubleshooting: Solución de problemas
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Primeros pasos
