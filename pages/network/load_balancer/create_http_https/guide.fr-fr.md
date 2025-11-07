@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec HTTP/HTTPS"
 excerpt: "Configurez votre Load Balancer OVHcloud pour répartir la charge HTTP et sécuriser vos connexions avec HTTPS"
-updated: 2025-11-06
+updated: 2025-11-07
 ---
 
 <style>
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 Ce guide a pour but de vous aider à créer votre premier service HTTP/HTTPS avec l'offre OVHcloud Load Balancer. Nous allons ici configurer un service OVHcloud Load Balancer simple pour répartir la charge HTTP d'un service, tel qu'un site web.
 
-Un frontend sera créé pour écouter sur le port 80, tandis qu'un autre écoutera sur le port 443 avec un certificat SSL/TLS. Ces frontends seront configurés pour diriger leur trafic vers une ferme HTTP commune. Cette ferme peut disposer d'un ou plusieurs serveurs, selon la configuration choisie / adaptée.
+Un frontend sera créé pour écouter sur le port 80, tandis qu'un autre écoutera sur le port 443 avec un certificat SSL/TLS. Ces frontends seront configurés pour diriger leur trafic vers une ferme HTTP commune. Cette ferme peut disposer d'un ou plusieurs serveurs, selon la configuration choisie/adaptée.
 
 Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties élémentaires :
 
@@ -44,7 +44,7 @@ Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties éléme
 
 ## En pratique
 
-**Sommaire**
+## Sommaire
 
 - [Ajouter une ferme de serveurs](#farm)
 - [Ajouter un serveur](#server)
@@ -88,7 +88,7 @@ Nous allons ajouter une ferme de serveurs HTTP à notre service. Cette partie es
 
 Dans l'onglet `Fermes de serveurs`{.action}, cliquez sur le bouton `Ajouter une ferme de serveurs`{.action}.
 
-Remplissez les champs. Les seuls champs obligatoires pour une configuration simple sont le *Protocole* et le *Datacentre*. Il est recommandé de définir explicitement un *Port*, généralement le port 80 pour un service web. Si aucun port n'est spécifié, votre OVHcloud Load Balancer utilisera automatiquement le même port que le frontend correspondant et les sondes pourront ne pas fonctionner comme prévu.
+Remplissez les champs. Les seuls champs obligatoires pour une configuration simple sont le *Protocole* et le *Datacentre*. Il est recommandé de définir explicitement un *Port*, généralement le port 80 pour un service web. Si aucun port n'est spécifié, votre service OVHcloud Load Balancer utilisera automatiquement le même port que le frontend correspondant et les sondes pourront ne pas fonctionner comme prévu.
 
 Si vous ajoutez plusieurs serveurs dans votre ferme, il est recommandé de configurer une `sonde de disponibilité` HTTP. Lorsqu'une sonde est configurée, le service OVHcloud Load Balancer pourra automatiquement désactiver un serveur qui serait en panne ou en maintenance, de manière à ne pas affecter les visiteurs.
 
@@ -178,7 +178,7 @@ Votre serveur devrait apparaître dans la liste des serveurs, dans l'onglet `Fer
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
-- Modification d'un Serveur spécifique :
+- Modification d'un serveur spécifique :
 
 > [!api]
 >
@@ -194,7 +194,7 @@ Votre serveur devrait apparaître dans la liste des serveurs, dans l'onglet `Fer
 
 ### Ajouter un frontend <a name="frontend"></a>
 
-Nous allons maintenant ajouter un `frontend` à notre service et le connecter à notre ferme de serveurs. Le frontend est la partie de votre OVHcloud Load Balancer qui sert à exposer votre service sur Internet. Dans un premier temps, nous allons le configurer en HTTP uniquement, sans certificat SSL/TLS.
+Nous allons maintenant ajouter un `frontend` à notre service et le connecter à notre ferme de serveurs. Le frontend est la partie de votre service OVHcloud Load Balancer qui sert à exposer votre service sur Internet. Dans un premier temps, nous allons le configurer en HTTP uniquement, sans certificat SSL/TLS.
 
 #### Depuis l'espace client OVHcloud
 
@@ -261,10 +261,10 @@ Que vous optiez pour une configuration via l'API ou via l'espace client OVHcloud
 - Importer un certificat SSL/TLS existant.
 - Commander un certificat SSL/TLS géré automatiquement. La commande de certificats DV et EV sera disponible prochainement.
 
-Si vous optez pour l'importation d'un certificat SSL/TLS commandé et géré par vos soins, vous devrez le renouveler périodiquement vous-même et le mettre à jour dans votre service OVHcloud Load Balancer. La majorité des certificats sont valides pour 1 an. Certains peuvent l'être plus longtemps. Les certificats Let's Encrypt ne sont quant à eux valides que 3 mois. Il est recommandé d'utiliser le service géré automatiquement par votre OVHcloud Load Balancer pour les certificats Let's Encrypt afin de ne pas accidentellement rater une échéance.
+Si vous optez pour l'importation d'un certificat SSL/TLS commandé et géré par vos soins, vous devrez le renouveler périodiquement vous-même et le mettre à jour dans votre service OVHcloud Load Balancer. La majorité des certificats sont valides pour 1 an. Certains peuvent l'être plus longtemps. Les certificats `Let's Encrypt` ne sont quant à eux valides que 3 mois. Il est recommandé d'utiliser le service géré automatiquement par votre service OVHcloud Load Balancer pour les certificats `Let's Encrypt` afin de ne pas accidentellement rater une échéance.
 
 Si vous optez pour un certificat géré par votre service OVHcloud Load Balancer, celui-ci sera automatiquement commandé, validé, installé et renouvelé périodiquement par votre OVHcloud Load Balancer.<br>
-Pour que les opérations de validation et de renouvellement fonctionnent, il est nécessaire que le ou les domaines pour lesquels vous commandez ce certificat soient routés vers votre service OVHcloud Load Balancer. Cela implique que les champs *A* et *AAAA* de votre domaine pointent respectivement sur l'IPv4 et l'IPv6 de votre OVHcloud Load Balancer ou l'une de ses Additional IPs. Lors de la commande, vous recevrez un e-mail qui vous guidera dans les étapes de la validation.
+Pour que les opérations de validation et de renouvellement fonctionnent, il est nécessaire que le ou les domaines pour lesquels vous commandez ce certificat soient routés vers votre service OVHcloud Load Balancer. Cela implique que les champs *A* et *AAAA* de votre domaine pointent respectivement sur l'IPv4 et l'IPv6 de votre Load Balancer ou l'une de ses Additional IPs. Lors de la commande, vous recevrez un e-mail qui vous guidera dans les étapes de la validation.
 
 > [!primary]
 >
@@ -275,13 +275,16 @@ Pour que les opérations de validation et de renouvellement fonctionnent, il est
 Les certificats configurés sur votre service OVHcloud Load Balancer sont automatiquement disponibles pour l'ensemble des frontends de votre service OVHcloud Load Balancer sur lesquels l'option *SSL* est activée.
 
 #### Support de TLS 1.3
+
 Avec l'évolution constante des normes de sécurité sur Internet, OVHcloud s'engage à fournir les technologies les plus récentes et les plus sûres pour vos services. Le Load Balancer OVHcloud supporte désormais TLS 1.3.
 
-##### Qu'est-ce que TLS 1.3 ?
+##### **Qu'est-ce que TLS 1.3 ?**
+
 TLS 1.3 est la dernière version du protocole TLS, offrant des améliorations significatives en matière de sécurité et de performance par rapport à TLS 1.2. Les avantages clés incluent un processus de *handshake* plus rapide, réduisant ainsi le temps nécessaire pour établir des connexions sécurisées, et l'utilisation de suites de chiffrement plus sûres pour renforcer la sécurité des données transmises.
 
-##### Pourquoi utiliser TLS 1.3 avec OVHcloud Load Balancer ?
-En intégrant TLS 1.3, votre Load Balancer OVHcloud bénéficiera d'une sécurité renforcée et d'une performance améliorée, assurant une expérience utilisateur optimale pour vos visiteurs. La réduction du temps de *handshake* accélère le chargement des pages, tandis que les améliorations de sécurité garantissent que vos données sont protégées avec les normes les plus récentes et les plus sûres.
+##### **Pourquoi utiliser TLS 1.3 avec OVHcloud Load Balancer ?**
+
+En intégrant TLS 1.3, votre service OVHcloud Load Balancer bénéficiera d'une sécurité renforcée et d'une performance améliorée, assurant une expérience utilisateur optimale pour vos visiteurs. La réduction du temps de *handshake* accélère le chargement des pages, tandis que les améliorations de sécurité garantissent que vos données sont protégées avec les normes les plus récentes et les plus sûres.
 
 #### Depuis l'espace client OVHcloud
 
@@ -295,7 +298,7 @@ Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis. Votre cert
 
 ![Ajout d'un certificat existant](images/add_certificat_custom.png){.thumbnail}
 
-Pour ajouter un certificat Let's Encrypt, cliquez sur `Commander un certificat SSL`{.action}, renseignez votre domaine, assurez-vous que celui-ci pointe bien sur votre service OVHcloud Load Balancer et laissez-vous guider par les e-mails que vous recevrez. Vous le verrez ensuite apparaître dans la liste des certificats disponibles.
+Pour ajouter un certificat `Let's Encrypt`, cliquez sur `Commander un certificat SSL`{.action}, renseignez votre domaine, assurez-vous que celui-ci pointe bien sur votre service OVHcloud Load Balancer et laissez-vous guider par les e-mails que vous recevrez. Vous le verrez ensuite apparaître dans la liste des certificats disponibles.
 
 ![Command d'un certificat Let's Encrypt](images/add_certificat_letsencrypt.png){.thumbnail}
 
