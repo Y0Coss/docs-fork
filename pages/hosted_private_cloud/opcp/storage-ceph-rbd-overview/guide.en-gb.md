@@ -15,7 +15,7 @@ This guide presents the Block Storage architecture implemented in **OPCP**, base
 
 The objective is to show how this storage layer guarantees performance, resilience and scalability, allowing teams to focus on application development and deployment without being limited by the infrastructure.
 
-## 1. Performance and Scalability: Designed to evolve
+### 1. Performance and Scalability: Designed to evolve
 
 Unlike traditional storage solutions, the Ceph infrastructure distributes data and workloads across all physical nodes in the cluster.
 
@@ -27,7 +27,7 @@ This approach eliminates bottlenecks and allows for linear scalability suitable 
 | Horizontal scalability       | **Growth without interruption:** increasing storage capacity is simply achieved by adding standard servers to the cluster. The system automatically integrates the new hardware and rebalances the data in the background, **without causing any downtime**. |
 | Dynamic provisioning         | **Optimized efficiency:** volumes are allocated instantly but only use physical space when data is actually written. This approach significantly improves the **utilization and efficiency** of the physical storage pool. |
 
-## 2. Resilience and data protection
+### 2. Resilience and data protection
 
 The fundamental architecture of Ceph is designed to offer **maximum fault tolerance**, ensuring that hardware failures do not cause service interruptions or data loss.
 
@@ -45,34 +45,34 @@ The fundamental architecture of Ceph is designed to offer **maximum fault tolera
 
 - The system operates without a central controller or proprietary hardware component, ensuring **real redundancy** and **maximum availability** for cloud services.
 
-## 3. Technical specifications and limitations
+### 3. Technical specifications and limitations
 
 This section details the main technical features and compatibility requirements for users deploying applications on the OVHcloud OPCP platform.
 
-### A. Compatibility and access
+#### A. Compatibility and access
 
-| Element                        | Detail              | Description                                                                                                                                 |
-| ------------------------------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage type                   | Block storage       | Presented to the VM as a standard SCSI or virtio block device, equivalent to a physical disk for optimal performance.                      |
-| POSIX compatibility            | Yes (via guest OS)  | Ceph RBD provides the raw block device; the guest OS file system (XFS, ext4, NTFS, etc.) ensures POSIX compliance.                          |
-| Network file system            | No                  | It is not a shared NFS or SMB. Each volume is dedicated to a single VM at a time for maximum performance.                                 |
+| Element                        | Detail              | Description|
+| ------------------------------ | ------------------- | ------------------------------------------------------------------------------ |
+| Storage type                   | Block storage       | Presented to the VM as a standard SCSI or virtio block device, equivalent to a physical disk for optimal performance.|
+| POSIX compatibility            | Yes (via guest OS)  | Ceph RBD provides the raw block device; the guest OS file system (XFS, ext4, NTFS, etc.) ensures POSIX compliance. |
+| Network file system            | No                  | It is not a shared NFS or SMB. Each volume is dedicated to a single VM at a time for maximum performance. |
 
-### B. Limitations and sizing
+#### B. Limitations and sizing
 
-| Metric                                  | Value/Default | Notes                                                                                                                                                          |
-| ----------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Maximum volume size                       | 16 TB             | Limit to ensure optimal performance and ease of management under OpenStack. Custom pools can support larger sizes on request. |
-| Minimum volume size                       | 1 GB              | Smallest deployable volume unit via Cinder.                                                                                                             |
-| Volume availability                       | Instant           | Volume allocation and attachment are done immediately via the OpenStack API or dashboard.                                                     |
+| Metric                   | Value/Default | Notes |
+| -------------------------| ----------------- | ------------------------------------------------------------------------------------------- |
+| Maximum volume size      | 16 TB             | Limit to ensure optimal performance and ease of management under OpenStack. Custom pools can support larger sizes on request. |
+| Minimum volume size      | 1 GB              | Smallest deployable volume unit via Cinder. |
+| Volume availability      | Instant           | Volume allocation and attachment are done immediately via the OpenStack API or dashboard. |
 
-### C. Performance and quality of service (QoS)
+#### C. Performance and quality of service (QoS)
 
 The platform offers several **performance levels** via Cinder volume types (Storage Classes), with guaranteed I/O limits enforced by the Ceph RBD QoS system:
 
-| Storage class            | IOPS          | Throughput | Use case                                                                                   |
-| ------------------------ | ------------- | -------- | --------------------------------------------------------------------------------------------- |
+| Storage class            | IOPS          | Throughput | Use case                                                                                  |
+| ------------------------ | ------------- | -------- | --------------------------------------------------------------------------------------------|
 | Distributed storage (Standard) | 1 000 / 1 000 | 100 MB/s | General VMs, web servers, test and development environments.                          |
-| Distributed storage (High)     | 3 000 / 3 000 | 200 MB/s | Databases, analytics engines, high-traffic or latency-sensitive applications. |
+| Distributed storage (High)     | 3 000 / 3 000 | 200 MB/s | Databases, analytics engines, high-traffic or latency-sensitive applications.         |
 | Distributed storage (Insane)   | 7 500 / 7 500 | 300 MB/s | Extreme workloads, critical transactional systems, deep learning infrastructure.      |
 
 > [!primary]
@@ -80,7 +80,7 @@ The platform offers several **performance levels** via Cinder volume types (Stor
 > **Note:** these thresholds are enforced by the Ceph QoS system. Volumes may sometimes exceed these limits if system resources allow, but the guarantees ensure predictable performance, even during high demand periods.
 >
 
-### 4. Advanced data management features
+#### 4. Advanced data management features
 
 The **Ceph RBD** backend offers advanced tools for volume lifecycle management, simplifying and accelerating operations for cloud users.
 
