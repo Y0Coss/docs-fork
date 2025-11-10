@@ -554,6 +554,7 @@
         + [Getting started](hosted-private-cloud-opcp-getting-started)
             + [How to use API and get credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
             + [How to setup instance](hosted_private_cloud/opcp/how-to-setup-instance)
+            + [How to setup LACP on node](hosted_private_cloud/opcp/how-to-setup-lacp-on-node)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
