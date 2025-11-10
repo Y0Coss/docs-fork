@@ -14,7 +14,7 @@ updated: 2025-11-07
 
 - Be an administrator of the [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) infrastructure and have access to the administration interface (admin.dashboard).
 - Have access to the Keyloack admin interface.
-- Have a user with sufficient rights to log in to [Horizon](https://horizon.cloud.ovh.net/auth/login/) on the OPCP offer.
+- Have a user with sufficient rights to log in to Horizon on the OPCP offer.
 
 ## Instructions
 
