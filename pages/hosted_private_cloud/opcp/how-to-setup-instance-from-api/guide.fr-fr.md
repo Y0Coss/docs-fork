@@ -1,17 +1,17 @@
 ---
 title: "OPCP - Comment installer un noeud depuis les API Openstack"
 excerpt: "Découvrez déployer un noeud OPCP via les API Openstack en configurant réseaux, sous-réseaux, instances et clés SSH"
-updated: 2025-11-07
+updated: 2025-11-10
 ---
 
 ## Objectif
 
-Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer d’un noeud installé et actif.  
-Ce guide détaille les étapes à suivre pour installer un noeud OPCP à partir de l’interface les API Openstack.
+Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’un noeud installé et actif.  
+Ce guide détaille les étapes à suivre pour installer un noeud OPCP via la création d'une instance à partir des API Openstack.
 
 ## Prérequis
 
-- Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
+- Disposer d'un service [OPCP](https://www.ovhcloud.com/en/hosted-private-cloud/onprem-cloud-platform/) actif.
 - Posséder un compte utilisateur avec les droits suffisants pour se connecter aux API Openstack.
 - [Préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [Charger les variables d'environnement pour le projet déployant le noeud](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
@@ -49,8 +49,9 @@ List flavors ...
 > [!success]
 >
 > Consultez la documentation du client directement sur le [site OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
-> 
-### Opérations basiques
+>
+
+### Récupérer les paramètres nécessaires à la création d'une instance
 
 #### Créer un network et un subnet
 
@@ -255,7 +256,7 @@ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 ```
 
-#### Installation d'une instance
+### Installation d'une instance
 
 Avec les éléments récupérés précédemment, vous pouvez créer une instance pour installer un noeud sur la flavor souhaitée :
 
@@ -313,8 +314,9 @@ openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Par défaut, le noeud qui va être installé est sélectionné automatiquement dans le pool de noeud en `Available` et pour lesquels les **traits** requis par la flavor correspondent avec l'installation demandée.
-Après plusieurs minutes, l'instance est déployé et vous pouvez retrouver vos instances installées via la commande suivante :
+Par défaut, le noeud qui va être installé est sélectionné automatiquement dans le pool de noeud en `Available` et pour lesquels les **traits** requis par la flavor correspondent avec l'installation demandée. Cela signifie qu'un serveur physique correpondant aux contraintes décrites par les **traits** sera sélectionné.
+
+Après plusieurs minutes, l'instance est déployée et vous pouvez retrouver vos instances installées via la commande suivante :
 
 ```bash
 openstack server list
@@ -325,7 +327,7 @@ openstack server list
 +--------------------------------------+-----------------+--------+-------------------------+---------------------+---------+
 ```
 
-Si vous souhaitez installer un noeud spécifique, vous pouvez spécifier l'indentifiant de votre noeud dans votre commande :
+Si vous souhaitez installer un noeud spécifique, vous pouvez spécifier l'identifiant de votre noeud dans votre commande :
 
 ```bash
 openstack server create --flavor $flavor_ID --image $image_ID --network $network_ID --key-name $your_keyname --availability-zone nova::$baremetal_noeud_ID $server_name
@@ -333,7 +335,7 @@ openstack server create --flavor $flavor_ID --image $image_ID --network $network
 
 Il faudra cependant bien vous assurer que le noeud soit bien `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
 
-Pour vérifier l'état actuel du noeud, vous pouvez suivre notre documentation [Cycle de vie d'un noeud OPCP](pages/hosted_private_cloud/opcp/node-lifecycle)
+Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez suivre notre documentation [Cycle de vie d'un noeud OPCP](pages/hosted_private_cloud/opcp/node-lifecycle)
 
 Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre notre documentation [Traits & Flavor](lien à faire avec la doc traits)
 
@@ -345,7 +347,9 @@ Vous pouvez supprimer une instance grâce à la commande suivante :
 openstack server delete $INSTANCE_ID
 ```
 
-Votre noeud passera en état `Cleaning` avant de redevenir `Available` pour une nouvelle installation
+Votre noeud passera en état `Cleaning`. Cette étape consiste à la réinitialisation matérielle du serveur physique et de l'effacement des données présentes sur les disques.
+Durant cette étape, vous ne verrez plus l'instance dans la liste des instances, cependant le noeud ne sera pas disponible immédiatement pour une nouvelle installation. N'oubliez pas de prendre en compte ce délai lors de vos opérations de maintenance.
+L'opération peut prendre plusieurs minutes avant que le noeud soit de nouveau `Available` et disponible pour une nouvelle installation.
 
 ### Références
 
