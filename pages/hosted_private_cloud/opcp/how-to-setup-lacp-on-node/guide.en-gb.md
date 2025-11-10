@@ -1,37 +1,40 @@
 ---
 title: "OPCP - How to setup LACP on a Node"
-excerpt: "Learn how to setup a node in OpenStack to use LACP (Link Aggregation Control Protocol)"
-updated: 2025-11-07
+excerpt: Learn how to setup a node in OpenStack to use LACP (Link Aggregation Control Protocol)
+updated: 2025-11-10
 ---
 
 ## Objective
+  
+LACP configuration must be applied to the node before deploying an instance so that the network interfaces are properly aggregated.
 
-This guide explains how to configure a **node** (physical server) in **OPCP** to enable **LACP (Link Aggregation Control Protocol)**.  
-LACP configuration must be applied to the node before deploying an instance so that the network interfaces are properly aggregated.  
+**This guide explains how to configure a node (physical server) in OPCP to enable LACP (Link Aggregation Control Protocol)**.
+
 We will also see how to configure **bonding** (logical grouping of multiple network interfaces into a single virtual interface) within your instance to fully leverage **LACP**.
 
 > [!warning]
-> A standard user cannot setup LACP by themselves.  
+> A standard user cannot setup LACP by themselves.
 > You must be an **admin**, or have **available nodes** in your OpenStack project.
 >
-> It is recommended to setup LACP **before** deploying an instance.  
+> It is recommended to setup LACP **before** deploying an instance.
 > This guide **does not cover** configuring a node that is already in production.
 
 ## Why Use LACP?
 
-LACP can be used in two specific use cases:  
+LACP can be used in two specific use cases:
 
-- **Increase network capacity.** By aggregating multiple network cards, you can add the bandwidth of each NIC to the aggregate, for the same networks.  
-- **Increase resilience.** Each OPCP server has 4×25 G interfaces and is connected to two network switches (A & B) to ensure resilience in case of hardware failure. LACP allows you to create virtual interfaces that remain available in the event of hardware failure by aggregating two NICs connected to different switches.
+- **Increase network capacity:** By aggregating multiple network cards, you can add the bandwidth of each NIC to the aggregate, for the same networks.
+- **Increase resilience:** Each OPCP server has 4×25 G interfaces and is connected to two network switches (A & B) to ensure resilience in case of hardware failure. LACP allows you to create virtual interfaces that remain available in the event of hardware failure by aggregating two NICs connected to different switches.
 
 ## Requirements
 
 Before starting, make sure you have the following:
 
-- An active [OPCP service](https://www.ovhcloud.com/en/hosted-private-cloud/onprem-cloud-platform/).
-- **[Configured OpenStack CLI access](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the necessary permissions (`clouds.yaml` or environment variables).  
-- The **admin** role and/or transferred nodes within your project.  
-- LACP is an advanced networking configuration requiring system and networking expertise. Apply this guide only if you are already familiar with: configuring nodes in OpenStack Ironic, managing ports in OpenStack Neutron, and using the OpenStack CLI.
+- An active [OPCP service](/links/hosted-private-cloud/onprem-cloud-platform).
+- **[Configured OpenStack CLI access](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the necessary permissions (`clouds.yaml` or environment variables).
+- The **admin** role and/or transferred nodes within your project.
+
+LACP is an advanced networking configuration requiring system and networking expertise. Apply this guide only if you are already familiar with: configuring nodes in OpenStack Ironic, managing ports in OpenStack Neutron, and using the OpenStack CLI.
 
 ## Instructions
 
@@ -57,8 +60,6 @@ openstack baremetal node list
 +--------------------------------------+----------------+--------------------------------------+-------------+--------------------+-------------+
 ```
 
----
-
 #### 2. Transfer Node Ownership (Admin Only)
 
 An admin can transfer node ownership to a specific project:
@@ -66,8 +67,6 @@ An admin can transfer node ownership to a specific project:
 ```bash
 openstack baremetal node set <node-id> --owner <project-id>
 ```
-
----
 
 #### 3. List Network Ports
 
@@ -92,7 +91,8 @@ openstack baremetal port list --node <node-id>
 +--------------------------------------+-------------------+
 ```
 
-To view detailed information about a port, including physical connection info:  
+To view detailed information about a port, including physical connection info:
+
 This is particularly useful if you plan to configure a **2x2 LACP bonding**, distributing NICs across two switches for **better redundancy and fault tolerance**.
 
 ```bash
@@ -121,8 +121,6 @@ openstack baremetal port show 71899d54-546d-4fdd-8d8b-52ad986bf425
 +-----------------------+------------------------------------------------------------------------------------------------+
 ```
 
----
-
 #### 4. Enable Maintenance Mode
 
 Before any network configuration change, the node must be placed in **maintenance mode** to prevent deployment during the operation:
@@ -131,18 +129,15 @@ Before any network configuration change, the node must be placed in **maintenanc
 openstack baremetal node maintenance set <node-id>
 ```
 
----
-
 #### 5. Create a Port Group (LACP Bond)
 
 A **port group** allows enabling LACP aggregation between multiple network interfaces.
 
-Use the `--mode 802.3ad` parameter to enable LACP.  
-If you don’t specify a MAC address with `--address`, one of the ports’ addresses will be used automatically.
+Use the `--mode 802.3ad` parameter to enable LACP. If you don’t specify a MAC address with `--address`, one of the ports’ addresses will be used automatically.
 
-> [!note]
+> [!success]
 > You can create:
-> - a **single port group** for a 1×4 bond, or  
+> - a **single port group** for a 1×4 bond, or
 > - two **port groups** for 2×2 bonds.
 
 **Example:**
@@ -170,8 +165,6 @@ openstack baremetal port group create \
 +----------------------------+-------------------------------------------+
 ```
 
----
-
 #### 6. Associate Ports to the Group
 
 Each port on the node must be linked to the created port group:
@@ -189,8 +182,6 @@ openstack baremetal port set --port-group d082c2ab-5960-44e3-920d-3d6dfb6811e9 4
 openstack baremetal port set --port-group d082c2ab-5960-44e3-920d-3d6dfb6811e9 34073903-92ad-47d1-a751-15aa96991415
 ```
 
----
-
 #### 7. Disable Maintenance Mode
 
 Once configuration is complete, disable maintenance mode:
@@ -198,8 +189,6 @@ Once configuration is complete, disable maintenance mode:
 ```bash
 openstack baremetal node maintenance unset <node-id>
 ```
-
----
 
 #### 8. Create an Instance on the configured Node
 
@@ -224,8 +213,6 @@ openstack server create --image <image-name> \
    <instance-name>
 ```
 
----
-
 #### Summary of Steps
 
 | Step | Action | Command |
@@ -245,17 +232,16 @@ After configuring your node in OpenStack and deploying an OS, you need to config
 
 #### Check Bonding Configuration
 
-On some images (like **Debian 12** or **Ubuntu 22.04**), **bonding** is automatically detected and configured.  
-However, other distributions may require manual adjustments.
+On some images (like **Debian 12** or **Ubuntu 22.04**), **bonding** is automatically detected and configured. However, other distributions may require manual adjustments.
 
-##### 1. Check Active Bonds
+**1. Check Active Bonds**
 
 ```bash
 ls /proc/net/bonding/
 bond0
 ```
 
-##### 2. Check Member Interfaces
+**2. Check Member Interfaces**
 
 ```bash
 cat /proc/net/bonding/bond0 | grep Interface
@@ -265,9 +251,7 @@ Slave Interface: ens21f1np1
 Slave Interface: ens21f0np0
 ```
 
----
-
-##### 3. Check Transmit Hash Policy
+**3. Check Transmit Hash Policy**
 
 ```bash
 cat /proc/net/bonding/* | grep Trans
@@ -275,14 +259,12 @@ Transmit Hash Policy: layer2 (0)
 ```
 
 > [!warning]  
-> To fully utilize available bandwidth, configure the policy to `layer3+4` (some OSes default to `layer2`, which is less efficient).  
-> More info: [Ubuntu Bonding Documentation](https://help.ubuntu.com/community/UbuntuBonding)
-
----
+> To fully utilize available bandwidth, configure the policy to `layer3+4` (some OSes default to `layer2`, which is less efficient).
+> For more information: [Ubuntu Bonding Documentation](https://help.ubuntu.com/community/UbuntuBonding).
 
 #### Modify Configuration
 
-##### 1. Temporary Change (Non-Persistent)
+**1. Temporary Change (Non-Persistent)**
 
 To test your configuration manually:
 
@@ -292,7 +274,7 @@ sudo ip link set bond0 type bond xmit_hash_policy layer3+4
 
 Note: This configuration will reset on reboot.
 
-##### 2. Persistent Change (Example with Netplan and cloud-init)
+**2. Persistent Change (Example with Netplan and cloud-init)**
 
 Create the configuration file (e.g. `/etc/cloud/cloud.cfg.d/99-custom-network.cfg`) and include:
 
@@ -322,19 +304,17 @@ network:
 
 Then apply the configuration by rebooting the instance.
 
----
-
 #### 3. Test Bandwidth with `iperf3`
 
 To properly test LACP, you need **two nodes** in the **same network**, both configured with LACP.
 
-##### Iperf3 Server (Node 1)
+**Iperf3 Server (Node 1)**
 
 ```bash
 iperf3 -s
 ```
 
-##### Iperf3 Client (Node 2)
+**Iperf3 Client (Node 2)**
 
 Use `-P` to generate multiple parallel streams to reach maximum throughput.
 
@@ -342,25 +322,24 @@ Use `-P` to generate multiple parallel streams to reach maximum throughput.
 iperf3 -c <node-ip> -P 64
 ```
 
-##### Example Result
+**Example Result:**
 
 ```bash
 [SUM] 0.0000-10.0121 sec   110 GBytes  94.0 Gbits/sec
 ```
 
-With a 4×25 Gbps link, you should achieve around **100 Gbps**.  
-Some system tuning might be required to fully reach this capacity.
-
----
+With a 4×25 Gbps link, you should achieve around **100 Gbps**. Some system tuning might be required to fully reach this capacity.
 
 ## Conclusion
 
 You have successfully configured:
 
-- **LACP (802.3ad)** at the OpenStack Baremetal node level,  
-- **Bonding configuration** within the guest OS,  
+- **LACP (802.3ad)** at the OpenStack Baremetal node level;
+- **Bonding configuration** within the guest OS;
 - And validated **network performance** using `iperf3`.
 
 Your instance is now ready to leverage the full available bandwidth of the aggregated link.
 
----
+## Go further
+
+Join our [community of users](/links/community).
