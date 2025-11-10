@@ -843,12 +843,180 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> [Generic approach for share provisioning](https://docs.openstack.org/manila/latest/admin/generic_driver.html){.external}
 >> [Official Manila CSI Plugin on GitHub](https://github.com/kubernetes/cloud-provider-openstack/tree/master/examples/manila-csi-plugin){.external}
 >>
-> Via Terraform (coming soon)
+> Via Terraform
+>> **1\. Additional requirements**
+>>
+>> - You already have a working [Terraform environment](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 >>
 >> > [!primary]
 >> >
->> > The configuration via Terraform will soon be detailed here.
+>> > You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service){.external}
 >> >
+>>
+>> **2\. Declare the OpenStack provider**
+>>
+>> Add the following configuration to your `main.tf` to specify the required Terraform providers:
+>>
+>> ```
+>> vim main.tf
+>>
+>> terraform {
+>>   required_providers {
+>>     ovh = {
+>>       source  = "ovh/ovh"
+>>     }
+>> 
+>>     openstack = {
+>>       source  = "terraform-provider-openstack/openstack"
+>>     }
+>>   }
+>> }
+>> ```
+>>
+>> This block ensures that Terraform uses the correct providers for managing OVH and OpenStack resources.
+>>
+>> **3\. Retrieve information about your Private Network**
+>>
+>> Add the following blocks to your `main.tf` file to fetch details about your private network and subnet:
+>>
+>> ```bash
+>> data "openstack_networking_network_v2" "private_network" {
+>>   name   = "<YOUR_PRIVATE_NETWORK_NAME>"
+>>   region = "<YOUR_REGION_NAME>"
+>> }
+>>
+>> data "openstack_networking_subnet_v2" "private_subnet" {
+>>   name   = "<YOUR_PRIVATE_SUBNET_NAME>"
+>>   region = "<YOUR_REGION_NAME>"
+>> }
+>> ```
+>>
+>> These data blocks allow Terraform to query OpenStack and retrieve the necessary details of your private network and subnet, which are required for configuring the File Storage service.
+>>
+>> **4\. Create a share network**
+>>
+>> Add the following resource to your `main.tf` to create a share network for your File Storage service:
+>>
+>> ```bash
+>> resource "openstack_sharedfilesystem_sharenetwork_v2" "sharenetwork" {
+>>   name              = "<YOUR_SHARE_NETWORK_NAME>"
+>>   region            = "<YOUR_REGION_NAME>"
+>>   neutron_net_id    = data.openstack_networking_network_v2.private_network.id
+>>   neutron_subnet_id = data.openstack_networking_subnet_v2.private_subnet.id
+>> }
+>> ```
+>>
+>> This resource creates a share network in OpenStack, associating it with your existing private network and subnet. It is required to provision and manage shared file systems.
+>>
+>> **5\. Create a NFS network**
+>>
+>> Add the following resource to your `main.tf` to create an NFS share on your File Storage service:
+>>
+>> ```bash
+>> vim main.tf
+>>
+>> 
+>> resource "openstack_sharedfilesystem_share_v2" "share" {
+>>   name             = "<YOUR_SHARE_NAME>"
+>>   region           = "<YOUR_REGION_NAME>"
+>>   share_type       = "generic_0"
+>>   share_proto      = "NFS"
+>>   size             = 150
+>>   share_network_id = openstack_sharedfilesystem_sharenetwork_v2.sharenetwork.id
+>> }
+>> ```
+>>
+>> This resource provisions an NFS share in OpenStack, linked to the previously created share network. Adjust the `size` and `share_type` according to your requirements.
+>>
+>> **6\. Authorize a client VM**
+>>
+>> Ensure that your client VM is connected to the same private network as your share.
+>>
+>> Retrieve the VM's private IP address:
+>>
+>> ```bash
+>> openstack server show --os-region-name <YOUR_REGION_NAME> <YOUR_CLIENT_VM_NAME> -c addresses -f value
+>> ```
+>>
+>> Example output:
+>>
+>> ```bash
+>> {'my-private-net': ['10.1.0.123', '57.123.88.111']}
+>> ```
+>>
+>> Use the private IP (e.g., `10.1.0.123`) to grant access to the NFS share:
+>>
+>> ```bash
+>> resource "openstack_sharedfilesystem_share_access_v2" "share_access" {
+>>   share_id     = openstack_sharedfilesystem_share_v2.share.id
+>>   region       = "<YOUR_REGION_NAME>"
+>>   access_type  = "ip"
+>>   access_to    = "10.1.0.123"
+>>   access_level = "rw"
+>> }
+>> ```
+>>
+>> This resource authorizes the specified client VM to access the NFS share with read/write permissions.
+>>
+>> **7\. Retrieve the export path**
+>>
+>> Add the following output block to your `main.tf` to retrieve the NFS share export path:
+>>
+>> ```bash
+>> output "export_path" {
+>>   value = openstack_sharedfilesystem_share_v2.share.export_locations[0].path
+>> }
+>> ```
+>>
+>> This output provides the NFS export path, which can be used by client VMs to mount the share.
+>>
+>> **8\. Mount the share on your client VM**
+>>
+>> Connect to your client VM and install the necessary NFS utilities:
+>>
+>> ```bash
+>> sudo apt update && sudo apt install -y nfs-common
+>> ```
+>>
+>> Create a mount point and mount the share:
+>>
+>> ```bash
+>> sudo mkdir -p /mnt/share
+>> sudo mount -t nfs4 <NFS_EXPORT_PATH> /mnt/share
+>> ```
+>>
+>> Replace <NFS_EXPORT_PATH> with the export path retrieved from Terraform (e.g., `10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef`).
+>>
+>> Verify the mount:
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Make the mount persistent across reboots:
+>>
+>> ```bash
+>> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> This ensures your NFS share is automatically remounted after the VM restarts.
+>>
+>> **9\. Check capacity and usage**
+>>
+>> Once the NFS share is mounted, you can verify its available space and usage:
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Example output:
+>>
+>> ```bash
+>> Filesystem                          Size  Used  Avail Use% Mounted on
+>> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
+>> ```
+>>
+>> This command shows the total size, used space, and available space on your mounted NFS share.
 >>
 
 ## Go further
