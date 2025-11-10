@@ -35,7 +35,7 @@ Dans le menu de gauche, cliquez sur `Network`{.action}, puis sur `Networks`{.act
 Cliquez sur `Create Network`{.action}.<br><br>
 ![horizon-network-networks](images/02-create-network-step02.png){.thumbnail}
 
-> [tabs]
+> [!tabs]
 > **Network**
 >>
 >> ![horizon-network-setup-network](images/02-create-network-setup-network.png){.thumbnail}
@@ -122,7 +122,7 @@ Sélectionnez le **réseau privé** précédemment créé. Vous pouvez égalemen
 
 ![horizon-compute-instances-launch-instance-key-pairs](images/03-create-instance-horizon-key-pairs.png){.thumbnail}
 
-> [tabs]
+> [!tabs]
 > **Créer une nouvelle paire de clés**
 >>
 >> Cliquez sur `+ Create Key Pair`{.action} et renseignez les champs suivants :

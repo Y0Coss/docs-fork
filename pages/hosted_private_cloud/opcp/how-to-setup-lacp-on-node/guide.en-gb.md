@@ -106,7 +106,7 @@ openstack baremetal port show 71899d54-546d-4fdd-8d8b-52ad986bf425
 +-----------------------+------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                          |
 +-----------------------+------------------------------------------------------------------------------------------------+
-| address               | 85:32:f2:89:66:f9                                                                             |
+| address               | 85:32:f2:89:66:f9                                                                              |
 | created_at            | 2025-01-06T10:43:38.020574+00:00                                                               |
 | extra                 | {}                                                                                             |
 | internal_info         | {}                                                                                             |
@@ -136,8 +136,8 @@ A **port group** allows enabling LACP aggregation between multiple network inter
 Use the `--mode 802.3ad` parameter to enable LACP. If you don’t specify a MAC address with `--address`, one of the ports’ addresses will be used automatically.
 
 > [!success]
-> You can create:
-> - a **single port group** for a 1×4 bond, or
+> You can create:<br>
+> - a **single port group** for a 1×4 bond, or<br>
 > - two **port groups** for 2×2 bonds.
 
 **Example:**
@@ -154,7 +154,7 @@ openstack baremetal port group create \
 
 ```bash
 +----------------------------+-------------------------------------------+
-| Field                      | Value                                    |
+| Field                      | Value                                     |
 +----------------------------+-------------------------------------------+
 | uuid                       | d082c2ab-5960-44e3-920d-3d6dfb6811e9      |
 | address                    | 00:00:00:20:00:01                         |

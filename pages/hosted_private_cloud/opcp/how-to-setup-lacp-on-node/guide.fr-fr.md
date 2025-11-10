@@ -23,8 +23,8 @@ Nous verrons également comment configurer le **bonding** (association logique d
 
 LACP peut être utilisé dans deux cas d'usage précis :
 
-- **Augmenter la capacité réseau:** En agrégeant plusieurs cartes réseau, vous pourrez ajouter la bande passante de chaque carte réseau ajoutée à cet agrégat, pour les mêmes réseaux.
-- **Augmenter la résilience:** Chaque serveur de OPCP bénéficie de 4 interfaces 25G. Chaque serveur est relié à deux switchs réseau (A&B) pour assurer la résilience en cas de panne matérielle de l'un d'entre eux. LACP permet de créer des interfaces virtuelles résilientes en cas de panne matérielle en aggrégant deux cartes réseau reliées sur des switchs distincts.
+- **Augmenter la capacité réseau :** En agrégeant plusieurs cartes réseau, vous pourrez ajouter la bande passante de chaque carte réseau ajoutée à cet agrégat, pour les mêmes réseaux.
+- **Augmenter la résilience :** Chaque serveur de OPCP bénéficie de 4 interfaces 25G. Chaque serveur est relié à deux switchs réseau (A&B) pour assurer la résilience en cas de panne matérielle de l'un d'entre eux. LACP permet de créer des interfaces virtuelles résilientes en cas de panne matérielle en aggrégant deux cartes réseau reliées sur des switchs distincts.
 
 ## Prérequis
 
@@ -135,8 +135,8 @@ Le **groupe de ports** permet d’activer l’agrégation LACP entre plusieurs i
 Utilisez le paramètre `--mode 802.3ad` pour activer LACP.  Si vous n’indiquez pas d’adresse MAC avec `--address`, l’adresse d’un des ports sera utilisée automatiquement.
 
 > [!success]
-> Vous pouvez créer :
-> - un **groupe de ports unique** pour un bond 1×4, ou  
+> Vous pouvez créer :<br>
+> - un **groupe de ports unique** pour un bond 1×4, ou<br>
 > - deux **groupes de ports** pour des bonds 2×2.
 
 **Exemple :**
