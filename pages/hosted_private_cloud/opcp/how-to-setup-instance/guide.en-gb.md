@@ -153,7 +153,7 @@ Select the **private network** previously created. You can also attach an existi
 >> Click on `Import Key Pair`{.action}.<br><br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-import-step01](images/03-create-instance-horizon-key-pairs-import-step01.png){.thumbnail}
 >>
->> The key is now selected by default. Click on `Launch Instance`{.action} to start creating the instance.<br>
+>> The key is now selected by default. Click on `Launch Instance`{.action} to start creating the instance.<br><br>
 ![horizon-compute-instances-launch-instance-key-pairs-import-step02](images/03-create-instance-horizon-key-pairs-import-step02.png){.thumbnail}
 >>
 
