@@ -12,37 +12,33 @@ This guide details the steps to install an OPCP instance from the **Horizon** in
 
 ## Requirements
 
-- Have an active [OPCP](/links/onprem-cloud-platform/) service.
+- Have an active [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) service.
 - Have a **user account** with sufficient permissions to access Horizon for the OPCP offer.
 
 ## Instructions
 
 ### 1. Log in to Horizon
 
-Log in to the **Horizon** interface of your OPCP environment.
-
+Log in to the **Horizon** interface of your OPCP environment.<br>
 ![horizon-interface](images/01-log-to-horizon-step01.png){.thumbnail}
 
-Once connected, select the **project** where you want to install your instance.
-
+Once connected, select the **project** where you want to install your instance.<br>
 ![horizon-select-project](images/01-log-to-horizon-step02.png){.thumbnail}
 
 ### 2. Creating a private network
 
 Before deploying your instance, it is generally necessary to create a **private network** so that it can be accessed within your local infrastructure.
 
-In the left-hand menu, click **Network > Networks**.
-
+In the left-hand menu, click on `Network`{.action}, then on `Networks`{.action}.<br>
 ![horizon-network-networks](images/02-create-network-step01.png){.thumbnail}
 
-Click **Create Network**.
-
+Click on `Create Network`{.action}.<br>
 ![horizon-network-networks](images/02-create-network-step02.png){.thumbnail}
 
 > [!tabs]
 > **Network**
 >>
->> ![horizon-network-setup-network](images/02-create-network-setup-network.png){.thumbnail}  
+>> ![horizon-network-setup-network](images/02-create-network-setup-network.png){.thumbnail}
 >>
 >> | Field | Description |
 >> |--------|--------------|
@@ -59,6 +55,7 @@ Click **Create Network**.
 >> > [!primary]
 >> >  Although it is possible to create a network without a subnet, it cannot be attached to an instance unless it has one.
 >> >
+>>
 >> | Field | Description |
 >> |--------|--------------|
 >> |**Subnet Name**|Enter a name for your subnet.|
@@ -67,7 +64,7 @@ Click **Create Network**.
 >> |**Gateway IP**|Optional. If not specified, an address will be automatically selected.|
 >> |**Disable Gateway**|Check this box to not assign a gateway address.|
 >>
->> **Subnet Details**
+> **Subnet Details**
 >>
 >> ![horizon-network-setup-subnet](images/02-create-network-setup-subnet-details.png){.thumbnail}
 >>
@@ -77,16 +74,14 @@ Click **Create Network**.
 >> |**Allocation Pools**|Optional. Allows you to define a specific IP address range.|
 >> |**DNS Name Servers**|Optional. Lets you specify one or more DNS servers.|
 >> |**Host Routes**|Optional. Allows you to add static routes.|
-
+>>
 
 ### 3. Creating an instance
 
-In the left-hand menu, click **Compute > Instances**.
-
+In the left-hand menu, click on `Compute`{.action}, then on `Instances`{.action}.<br>
 ![horizon-compute-instances](images/03-create-instance-horizon-step01.png){.thumbnail}
 
-Click **Launch Instance** to create a new instance.
-
+Click on `Launch Instance`{.action} to create a new instance.<br>
 ![horizon-compute-instances-launch-instance](images/03-create-instance-horizon-step02.png){.thumbnail}
 
 #### Details
@@ -125,7 +120,6 @@ Select the **private network** previously created. You can also attach an existi
 
 > [!warning]
 > Although selecting an SSH key in Horizon is not mandatory, it is **essential for connecting to the instance** once it has been created.
->
 
 ![horizon-compute-instances-launch-instance-key-pairs](images/03-create-instance-horizon-key-pairs.png){.thumbnail}
 
@@ -143,7 +137,7 @@ Select the **private network** previously created. You can also attach an existi
 >> Copy the private key with **Copy Private Key to Clipboard**, then click on `Done`{.action}.<br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-create-step01](images/03-create-instance-horizon-key-pairs-create-step01.png){.thumbnail}
 >>
->> The key is now selected by default. Click `Launch Instance`{.action} to start creating the instance.<br>
+>> The key is now selected by default. Click on `Launch Instance`{.action} to start creating the instance.<br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-create-step02](images/03-create-instance-horizon-key-pairs-create-step02.png){.thumbnail}
 >>
 > **Import an existing key**
@@ -156,24 +150,24 @@ Select the **private network** previously created. You can also attach an existi
 >> |**Key Type**|Select **SSH Key**.|
 >> |**Public Key**|Paste your public key or upload the corresponding file.|
 >>
->> Click `Import Key Pair`{.action}.<br>
+>> Click on `Import Key Pair`{.action}.<br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-import-step01](images/03-create-instance-horizon-key-pairs-import-step01.png){.thumbnail}
 >>
->> The key is now selected by default. Click `Launch Instance`{.action} to start creating the instance.
+>> The key is now selected by default. Click on `Launch Instance`{.action} to start creating the instance.<br>
 ![horizon-compute-instances-launch-instance-key-pairs-import-step02](images/03-create-instance-horizon-key-pairs-import-step02.png){.thumbnail}
 >>
 
 ### 5. Other options
 
-The other configuration tabs (Security Groups, Configuration, Metadata, etc.) are not required for a standard installation.
+The other configuration tabs (Security Groups, Configuration, Metadata, etc.) are not required for a standard installation.<br>
 To learn more, refer to the [official OpenStack documentation](https://docs.openstack.org/).
 
 ### 6. References
 
-- [OpenStack Official Documentation – Horizon](https://docs.openstack.org/horizon/latest/)  
-- [OpenStack Networking Guide (Neutron)](https://docs.openstack.org/neutron/latest/)  
-- [OpenStack Compute Guide (Nova)](https://docs.openstack.org/nova/latest/)  
-- [OpenStack Key Pairs](https://docs.openstack.org/nova/latest/user/ssh-keys.html)  
+- [OpenStack Official Documentation – Horizon](https://docs.openstack.org/horizon/latest/)
+- [OpenStack Networking Guide (Neutron)](https://docs.openstack.org/neutron/latest/)
+- [OpenStack Compute Guide (Nova)](https://docs.openstack.org/nova/latest/)
+- [OpenStack Key Pairs](https://docs.openstack.org/nova/latest/user/ssh-keys.html)
 - [Debian 12 Official Site](https://www.debian.org/releases/book/)
 
 ## Go further
