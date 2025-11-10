@@ -39,7 +39,11 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 - Sie hosten eine Website auf einem [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
-## Voraussetzungen
+## In der praktischen Anwendung
+
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.

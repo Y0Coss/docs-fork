@@ -43,6 +43,10 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 
 > [!warning]
 >
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
+> [!warning]
+>
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. **siempre que la infraestructura en la que está alojado su plan de hosting no sea válida**. Más información en la sección ["Más información"](#go-further) de esta guía.

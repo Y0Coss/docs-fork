@@ -43,6 +43,10 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 
 > [!warning]
 >
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
+> [!warning]
+>
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
 > Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza **se l'infrastruttura in cui è presente la tua offerta di hosting condiviso non è interessata**. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
