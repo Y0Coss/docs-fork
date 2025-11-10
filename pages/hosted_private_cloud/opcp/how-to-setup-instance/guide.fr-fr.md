@@ -6,7 +6,7 @@ updated: 2025-11-06
 
 ## Objectif
 
-Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer d’une instance installé et actif.  
+Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer d’une instance installée et active.  
 Ce guide détaille les étapes à suivre pour installer une instance OPCP à partir de l’interface **Horizon**.
 
 ---
