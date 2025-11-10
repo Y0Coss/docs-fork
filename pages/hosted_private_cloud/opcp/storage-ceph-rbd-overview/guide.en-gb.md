@@ -4,6 +4,11 @@ excerpt: "Discover OVHcloud OPCP's Ceph RBD Block Storage: performance, high ava
 updated: 2025-11-12
 ---
 
+> [!primary]
+>
+> Please note that this information may change prior to General Availability (GA). Our current estimate for GA is **March 2026**. We will make every effort to keep you informed of any updates, but we recommend checking this guide regularly for the latest information. Thank you for your understanding.
+>
+
 ## Objective
 
 This guide presents the Block Storage architecture implemented in **OPCP**, based on OpenStack. It explains how persistent storage for virtual machines (VMs) is ensured by **Ceph RADOS Block Device** (RBD), an open-source, distributed and highly scalable solution designed to meet the needs of modern enterprises.
