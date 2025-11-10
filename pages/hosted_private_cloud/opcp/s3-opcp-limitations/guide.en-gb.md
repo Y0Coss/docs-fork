@@ -4,6 +4,11 @@ excerpt: "Discover the specifications of Object Storage for OVHcloud OPCP, with 
 updated: 2025-11-12
 ---
 
+> [!primary]
+>
+> Please note that this information may change prior to General Availability (GA). Our current estimate for GA is **March 2026**. We will make every effort to keep you informed of any updates, but we recommend checking this guide regularly for the latest information. Thank you for your understanding.
+>
+
 ## Objective
 
 OVHcloud Object Storage in **OPCP** provides a scalable, durable, and low-latency solution for storing and accessing unstructured data. Designed to meet the needs of various applications, it offers a robust platform for data storage with OPCP-specific optimizations to ensure high performance and availability.
