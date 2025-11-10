@@ -181,15 +181,17 @@ public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
 public-cloud-compute-getting-started: Introdução
-public-cloud-compute-general-information: Informações gerais
-public-cloud-compute-project-management: Gestão do projeto
-public-cloud-compute-instance-management: Gestão das instâncias
-public-cloud-compute-instance-management-getting-started: Gestão das instâncias - Introdução
-public-cloud-compute-instance-management-control-panel: Gestão a partir da Área de Cliente OVHcloud
-public-cloud-compute-instance-management-horizon: Gestão a partir do Horizon
-public-cloud-compute-instance-management-openstack: Gestão via OpenStack API
-public-cloud-compute-block-storage: Block Storage
+public-cloud-compute-key-concepts: Conceitos-chave
+public-cloud-compute-configuration: Configuration
+public-cloud-compute-configuration-project-management: Gestão do projeto
+public-cloud-compute-configuration-instance-management: Gestão das instâncias
+public-cloud-compute-configuration-instance-management-horizon: Gestão a partir do Horizon
+public-cloud-compute-configuration-instance-management-openstack: Gestão via OpenStack API
 public-cloud-compute-tutorials: Tutoriais
+public-cloud-compute-migration: Migração
+public-cloud-compute-security: Segurança
+public-cloud-compute-Troubleshooting: Diagnóstico
+public-cloud-compute-additional-resources: Recursos adicionais
 public-cloud-cross-functional: Public Cloud - Informações gerais
 public-cloud-cross-functional-getting-started: Introdução
 public-cloud-cross-functional-general-information: Informações gerais
