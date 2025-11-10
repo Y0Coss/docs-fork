@@ -105,7 +105,7 @@ openstack baremetal port show 71899d54-546d-4fdd-8d8b-52ad986bf425
 +-----------------------+------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                          |
 +-----------------------+------------------------------------------------------------------------------------------------+
-| address               | 85:32:f2:89:66:f9                                                                             |
+| address               | 85:32:f2:89:66:f9                                                                              |
 | created_at            | 2025-01-06T10:43:38.020574+00:00                                                               |
 | extra                 | {}                                                                                             |
 | internal_info         | {}                                                                                             |
@@ -304,11 +304,11 @@ network:
 
 Puis appliquez la configuration en rédémarrant l'instance.
 
-**3. Tester la bande passante avec `iperf3`**
+#### 3. Tester la bande passante avec `iperf3`
 
 Pour tester correctement LACP, vous devez disposer de **2 noeuds** dans le **même réseau**, tous deux configurés avec LACP.
 
-**noeud Iperf3 (noeud 1)**
+**Noeud Iperf3 (noeud 1)**
 
 ```bash
 iperf3 -s
