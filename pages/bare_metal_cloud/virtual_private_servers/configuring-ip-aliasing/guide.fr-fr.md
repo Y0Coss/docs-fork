@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
-updated: 2024-11-05
+updated: 2025-09-11
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et nous ne pourrons pas vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://marketplace.ovhcloud.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/transversal/marketplace) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -23,6 +23,10 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Disposer d'une [adresse Additional IP](/links/bare-metal/ip)
 - Avoir un accès administrateur (sudo) via SSH ou GUI sur votre serveur
 - Avoir les connaissances de base sur les réseaux et leur administration
+
+> [!warning]
+> Les adresses Additional IP actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## En pratique
 
@@ -478,7 +482,7 @@ Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis 
 
 [Activer le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-[OVHcloud Marketplace](https://marketplace.ovhcloud.com/)
+[OVHcloud Marketplace](/links/transversal/marketplace)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

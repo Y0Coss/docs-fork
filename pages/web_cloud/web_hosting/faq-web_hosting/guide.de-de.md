@@ -620,7 +620,7 @@ Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in I
 
 ///
 
-## Weiterführende Informationen <a name=“go-further“></a>
+## Weiterführende Informationen
 
 [FAQ - Webhosting E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

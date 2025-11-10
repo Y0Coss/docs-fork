@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2025-08-27
+updated: 2025-10-10
 ---
 
 ## Objectif
@@ -104,7 +104,7 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |      **VPS Exemple**       |       urn        |   :   |           v1           |   :   |            ca             |   :   |             resource              |   :   |                                                          vps                                                           |   :   |       vps-5b48d78b.vps.ovh.net       |
 | **Resource Group Exemple** |       urn        |   :   |           v1           |   :   |            us             |   :   |           resourceGroup           |       |                                                                                                                        |   :   | aa0713ab-ed13-4f1a-89a5-32aa0cb936d8 |
 
-Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
+Les actions et les URNs de ressources peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou actions en une seule ligne.
 
 *Exemple d'une URN avec un wildcard :*
 
@@ -335,7 +335,7 @@ Les conditions disponibles sont :
 
 |       Condition        |                         Opérateur                          | Type de donnée |            Description             |                    Exemple                    |
 | :--------------------: | :--------------------------------------------------------: | :------------: | :--------------------------------: | :-------------------------------------------: |
-|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaires  |  "date.Date(America/New_York)": "2024-12-25"  |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaires  |  "date(America/New_York).Date": "2024-12-25"  |
 |  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |      int       |       Filtre sur les heures        |    "date(Europe/Paris).Hour.IN" : "7,8,9"     |
 | date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     string     | Filtre sur les jours de la semaine | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
 | resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |     string     |        Filtre sur les tags         |       "resource.Tag(environment): "dev"       |

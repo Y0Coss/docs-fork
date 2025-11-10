@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un VPS
 excerpt: Come gestire un VPS dallo Spazio Cliente OVHcloud e scopri gli step iniziali del suo utilizzo, incluse le connessioni remote e le misure di sicurezza
-updated: 2025-08-07
+updated: 2025-09-11
 ---
 
 ## Obiettivo
@@ -14,6 +14,11 @@ Un server privato virtuale (VPS) è un server dedicato virtualizzato che offre g
 
 - Disporre di un [VPS](/links/bare-metal/vps) nello Spazio Cliente OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+> [!warning]
+> Non tutte le funzionalità dei VPS citate in questa pagina sono disponibili nelle Local Zones di OVHcloud.
+>
+> Per maggiori informazioni, consulta la [pagina Web des Local Zones](/links/bare-metal/vps-lz).
 
 ## Procedura
 
@@ -119,11 +124,11 @@ Queste opzioni si riferiscono a servizi VPS aggiuntivi per il backup e il ripris
 >>
 > Backup automatizzato
 >>
->> Il backup giornaliero del sistema viene creato automaticamente (esclusi i dischi aggiuntivi) e conservato per 24 ore. Passando all'opzione **Backup automatico Premium**, disporrai degli ultimi 7 backup giornalieri del tuo VPS disponibili per il montaggio e il ripristino.  
+>> Il backup giornaliero del sistema viene creato automaticamente (esclusi i dischi aggiuntivi) e conservato per 24 ore (applicabile solo ai servizi ordinati a partire dal 7 agosto 2025). Passando all'opzione **Backup automatico Premium**, disporrai degli ultimi 7 backup giornalieri del tuo VPS disponibili per il montaggio e il ripristino.  
 Rispetto alle copie istantanee manuali, questa funzione aumenta la sicurezza dei dati creando diversi punti di ripristino a intervalli regolari.
 >>
 
-Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-servers-backups).
+Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
 #### Il mio servizio
 

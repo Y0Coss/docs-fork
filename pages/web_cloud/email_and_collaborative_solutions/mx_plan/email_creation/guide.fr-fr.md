@@ -3,7 +3,7 @@ title: 'Créer une adresse e-mail avec son offre MX Plan'
 excerpt: 'Découvrez comment créer une adresse e-mail avec votre offre MX Plan'
 updated: 2025-08-26
 ---
-
+ 
 <style>
 .w-400 {
   max-width:400px !important;
@@ -49,9 +49,9 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-400}
 
-### OWA et Zimbra 
+### OWA et Zimbra
 
-Cette section documente les offres MX Plan utilisant la technologie webamil **OWA** et **Zimbra**.
+Cette section documente les offres MX Plan utilisant la technologie webmail **OWA** et **Zimbra**.
 
 #### Créer un compte e-mail
 
@@ -198,7 +198,7 @@ Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un sm
 >> - [Interface Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)
 >>
 
-Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
+Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser.
 
 #### Paramètres de réception IMAP et POP <a name="imap-pop"></a>
 

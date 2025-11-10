@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Liste der IP-Adressen pro Cluster"
 excerpt: "Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist"
-updated: 2025-07-08
+updated: 2025-09-06
 ---
 
 ## Ziel 
@@ -26,12 +26,12 @@ In dieser Anleitung finden Sie alle IP-Adressen für OVHcloud Webhostings. So k�
 
 ## In der praktischen Anwendung
 
-Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -43,16 +43,9 @@ Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, klicken Sie 
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf den Tab `FTP - SSH`{.action}.
+>> Suchen Sie in der Randleiste **Allgemeine Informationen** auf der angezeigten Seite die Cluster-Nummer unter **Cluster** (3 Ziffern von `0` bis `9`).
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->> 
-> **Schritt 4**
->>
->> Auf dieser Seite finden Sie die Cluster-Nummer des Webhostings unter **FTP- und SFTP-Server** (3 Ziffern von `0` bis `9`).
->>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
->>
+>> ![Cluster-Nummer und Filer-Nummer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ### Cluster 002
 

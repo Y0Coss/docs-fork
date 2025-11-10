@@ -1,17 +1,13 @@
 ---
 title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
 excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
-updated: 2025-06-04
+updated: 2025-10-31
 ---
 
 ## Objetivo
 
 Esta guía explica el panel de control de seguridad de la red y proporciona una visión general de las medidas de respuesta activadas por nuestra infraestructura de protección DDoS cuando se detecta actividad de red malintencionada. Puede encontrar información detallada sobre las protecciones adicionales activadas que se deben implementar para mantener sus servicios activos y en funcionamiento. Además, hay gráficos de tráfico disponibles en el tablero de mandos para limpiar los periodos de actividad del centro a fin de visualizar mejor la situación.
 
-> [!warning]
->
-> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
->
 
 ## Requisitos
 
@@ -53,8 +49,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Ne
 Las columnas corresponden al estado de limpieza anti-DDoS (**Mitigación**), la disponibilidad de las funciones de Edge Network **Firewall** y **Firewall GAME** y sus estados.
 
 - El estado **Mitigación** puede ser:
-    - **Automático** - El centro de limpieza está en modo **automático**. Es el modo recomendado para usar, redirecciona el tráfico para un análisis más profundo cuando sea necesario.
-    - **Permanente** - El centro de limpieza está **habilitado de forma permanente**. No se recomienda habilitarlo permanentemente, a menos que se observe fluctuación de latencia debido a un redireccionamiento del tráfico hacia adelante y hacia atrás.
+    - **Automático** - El centro de limpieza está en modo **automático** y redirecciona el tráfico para un análisis más profundo cuando sea necesario.
     - **Forzado** - Esto indica que el centro de limpieza está **tomando medidas** en este momento.
 
 - La columna **Firewall** indica el estado del firewall de red perimetral que puede ser:
@@ -84,6 +79,8 @@ En la tabla, están presentes las siguientes columnas:
 - **IP de destino**: la IP que ha sido el objetivo del ataque
 - **Vectores de ataque**: proporciona información sobre los tipos de ataques detectados, como ataques UDP o TCP, etc.
 
+**El período de retención de datos para los registros del centro de filtrado es de 1 año.**
+
 > [!warning]
 >
 > Tenga en cuenta que las direcciones IP de origen de los eventos detectados no se muestran porque suelen ser simuladas (los ataques DDoS pueden apuntar a otras fuentes distintas de las que proceden en realidad) y que dicha información puede ser engañosa o no utilizable.
@@ -94,6 +91,8 @@ En la pestaña **Gráfico de tráfico**, puede ver un gráfico que muestra el tr
 ![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Presenta tráfico malintencionado que se descartó (**en rojo**) y tráfico limpio entregado a su dirección IP (**en verde**). También se muestran estadísticas básicas de mitigación, por ejemplo: cuántos ataques se detectaron para una IP seleccionada, cuánto tráfico (o paquetes) se limpió durante los ataques o cuántas veces los centros de limpieza realizaron una acción para inspeccionar su tráfico (número de eventos) en un período de tiempo seleccionado.
+
+**El período de retención de datos para el gráfico de tráfico es de 2 meses.**
 
 ## FAQ
 
@@ -114,7 +113,7 @@ Estos datos solo están disponibles para las direcciones IP públicas durante lo
 
 ### El gráfico de tráfico para algunas posiciones en los registros del centro de limpieza no está disponible.
 
-Los datos del gráfico de tráfico sólo están disponibles durante las últimas dos semanas, mientras que las entradas del registro pueden revisarse durante el año pasado.
+Los datos del gráfico de tráfico solo están disponibles para los últimos dos meses, mientras que las entradas de registro se pueden revisar durante el último año.
 
 ### Persiste un ataque a mi servicio, ¿cómo puedo proteger mejor mi servidor?
 
