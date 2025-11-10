@@ -12,7 +12,7 @@ updated: 2025-11-10
 
 ## Requirements
 
-- Have an external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro), or MX Plan (via the MX Plan offer alone or included in an [OVHcloud web hosting](/links/web/hosting) offer).
+- An external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro), or MX Plan solution (via the MX Plan offer or included in an [OVHcloud web hosting](/links/web/hosting) offer)
 - Login details for the email accounts you want to migrate (the source accounts)
 - Login details for the OVHcloud email accounts that will be receiving the migrated data (the destination accounts)
 

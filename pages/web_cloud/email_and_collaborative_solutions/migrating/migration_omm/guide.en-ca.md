@@ -12,7 +12,7 @@ updated: 2025-11-10
 
 ## Requirements
 
-- Have an external email service or one from OVHcloud.
+- An external email service or one from OVHcloud.
 - Login details for the email accounts you want to migrate (the source accounts)
 - Login details for the OVHcloud email accounts that will be receiving the migrated data (the destination accounts)
 
