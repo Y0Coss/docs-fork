@@ -55,6 +55,7 @@ Cliquez sur `Create Network`{.action}.<br>
 >> > [!primary]
 >> >  Bien qu’il soit possible de créer un réseau sans sous-réseau, celui-ci ne pourra pas être attaché à une instance s'il n'a pas de sous-réseau.
 >> >
+>>
 >> | Champ | Description |
 >> |--------|--------------|
 >> |**Subnet Name**|Entrez un nom pour votre sous-réseau.|
