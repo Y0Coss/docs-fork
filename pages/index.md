@@ -550,7 +550,7 @@
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Zerto](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)
             + [Migrating OmniOS datastores](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_omnios)
-    + [OPCP](hosted-private-cloud-opcp)
+    + [OPCP](products/hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-opcp-getting-started)
             + [How to use API and get credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
