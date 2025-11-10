@@ -6,13 +6,13 @@ updated: 2025-11-10
 
 ## Ziel
 
-[OVH Mail Migrator](https://omm.ovh.net/) ist ein von OVHcloud entwickeltes Tool, das den Bedarf nach Rückverfügbarkeit abdeckt. Sie können damit E-Mail-Accounts auf Ihre OVHcloud E-Mail-Accounts oder einen externen E-Mail-Dienst migrieren. Dabei können verschiedene Inhalte wie E-Mails, Kontakte, Kalender und Aufgaben übertragen werden, sofern diese mit Ihren E-Mail-Accounts kompatibel sind.
+[OVH Mail Migrator](https://omm.ovh.net/) ist ein von OVHcloud entwickeltes Tool, das den Bedarf nach Reversibilität abdeckt. Sie können damit E-Mail-Accounts auf Ihre OVHcloud E-Mail-Accounts oder einen externen E-Mail-Dienst migrieren. Dabei können verschiedene Inhalte wie E-Mails, Kontakte, Kalender und Aufgaben übertragen werden, sofern diese mit Ihren E-Mail-Accounts kompatibel sind.
 
 **Diese Anleitung erklärt, wie Sie Ihre E-Mail-Accounts mithilfe des OVH Mail Migrator zu OVHcloud migrieren.**
 
 ## Voraussetzungen
 
-- Ein externer E-Mail-Service oder ein Service von OVHcloud, wie z. B. ein [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-Mail Pro](/links/web/email-pro) oder MX Plan (über das einzelne MX Plan-Angebot oder in einem [OVHcloud-Webhosting-Angebot](/links/web/hosting) enthalten).
+- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
 - Sie verfügen über die Login-Daten für die Quell-Accounts, die Sie migrieren möchten (*Source*).
 - Sie verfügen über die Login-Daten der OVHcloud Ziel-Accounts, auf die Sie die Inhalte übertragen möchten (*Destination*).
 
