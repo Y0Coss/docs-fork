@@ -14,7 +14,7 @@ updated: 2025-11-07
 
 - Être administrateur de l'infrastructure [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) et avoir accès à l'interface d'administration (admin.dashboard).
 - Avoir accès à l'interface d'administration Keyloack admin.
-- Avoir un utilisateur avec les droits suffisants pour se connecter à [Horizon](https://horizon.cloud.ovh.net/auth/login/) sur l'offre OPCP.
+- Avoir un utilisateur avec les droits suffisants pour se connecter à Horizon sur l'offre OPCP.
 
 ## En pratique
 
