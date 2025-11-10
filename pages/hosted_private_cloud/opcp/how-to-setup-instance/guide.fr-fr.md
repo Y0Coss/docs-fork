@@ -19,20 +19,20 @@ Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessai
 
 ### 1. Connexion à Horizon
 
-Connectez-vous à l’interface **Horizon** de votre environnement OPCP.<br>
+Connectez-vous à l’interface **Horizon** de votre environnement OPCP.<br><br>
 ![horizon-interface](images/01-log-to-horizon-step01.png){.thumbnail}
 
-Une fois connecté, sélectionnez le **projet** dans lequel vous souhaitez installer votre instance.<br>
+Une fois connecté, sélectionnez le **projet** dans lequel vous souhaitez installer votre instance.<br><br>
 ![horizon-select-project](images/01-log-to-horizon-step02.png){.thumbnail}
 
 ### 2. Création d’un réseau privé
 
 Avant de déployer votre instance, il est généralement nécessaire de créer un **réseau privé** afin qu’il soit accessible au sein de votre infrastructure locale.
 
-Dans le menu de gauche, cliquez sur `Network`{.action}, puis sur `Networks`{.action}.<br>
+Dans le menu de gauche, cliquez sur `Network`{.action}, puis sur `Networks`{.action}.<br><br>
 ![horizon-network-networks](images/02-create-network-step01.png){.thumbnail}
 
-Cliquez sur `Create Network`{.action}.<br>
+Cliquez sur `Create Network`{.action}.<br><br>
 ![horizon-network-networks](images/02-create-network-step02.png){.thumbnail}
 
 > [tabs]
@@ -77,10 +77,10 @@ Cliquez sur `Create Network`{.action}.<br>
 
 ### 3. Création d’une instance
 
-Dans le menu de gauche, cliquez sur `Compute`{.action}, puis sur `Instances`{.action}.<br>
+Dans le menu de gauche, cliquez sur `Compute`{.action}, puis sur `Instances`{.action}.<br><br>
 ![horizon-compute-instances](images/03-create-instance-horizon-step01.png){.thumbnail}
 
-Cliquez sur `Launch Instance`{.action} pour lancer la création d’une nouvelle instance.<br>
+Cliquez sur `Launch Instance`{.action} pour lancer la création d’une nouvelle instance.<br><br>
 ![horizon-compute-instances-launch-instance](images/03-create-instance-horizon-step02.png){.thumbnail}
 
 #### Onglet : Details
@@ -133,10 +133,10 @@ Sélectionnez le **réseau privé** précédemment créé. Vous pouvez égalemen
 >> |**Key Type**| Sélectionnez **SSH Key**.|
 >>
 >> Cliquez sur `Create Keypair`{.action}.  
->> Copiez la clé privée avec **Copy Private Key to Clipboard**, puis cliquez sur `Done`{.action}.<br>
+>> Copiez la clé privée avec **Copy Private Key to Clipboard**, puis cliquez sur `Done`{.action}.<br><br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-create-step01](images/03-create-instance-horizon-key-pairs-create-step01.png){.thumbnail}
 >>
->> La clé est désormais sélectionnée par défaut. Cliquez sur `Launch Instance`{.action} pour démarrer la création de l'instance.<br>
+>> La clé est désormais sélectionnée par défaut. Cliquez sur `Launch Instance`{.action} pour démarrer la création de l'instance.<br><br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-create-step02](images/03-create-instance-horizon-key-pairs-create-step02.png){.thumbnail}
 >>
 > **Importer une clé existante**
@@ -149,10 +149,10 @@ Sélectionnez le **réseau privé** précédemment créé. Vous pouvez égalemen
 >> |**Key Type**|Sélectionnez **SSH Key**.|
 >> |**Public Key**|Collez votre clé publique ou importez le fichier correspondant.|
 >>
->> Cliquez sur `Import Key Pair`{.action}.<br>  
+>> Cliquez sur `Import Key Pair`{.action}.<br><br> 
 >> ![horizon-compute-instances-launch-instance-key-pairs-import-step01](images/03-create-instance-horizon-key-pairs-import-step01.png){.thumbnail}
 >>
->> La clé est désormais sélectionnée par défaut. Cliquez sur `Launch Instance`{.action} pour démarrer la création de l'instance.<br>
+>> La clé est désormais sélectionnée par défaut. Cliquez sur `Launch Instance`{.action} pour démarrer la création de l'instance.<br><br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-import-step02](images/03-create-instance-horizon-key-pairs-import-step02.png){.thumbnail}
 >>
 
