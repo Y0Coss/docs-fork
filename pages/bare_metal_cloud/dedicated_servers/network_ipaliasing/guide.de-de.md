@@ -4,6 +4,20 @@ excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzu
 updated: 2025-10-XX
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 > [!primary]
 > Diese Anleitung befasst sich mit der Konfiguration von Additional IPv4-Adressen auf einer öffentlichen Schnittstelle. Sie können auch IPv6-Adressen auf Ihren Dedicated Servern konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_ipv6) verwenden.
 >

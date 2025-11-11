@@ -4,6 +4,20 @@ excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazion
 updated: 2025-10-XX
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 > [!primary]
 > Questo articolo riguarda la configurazione di indirizzi Additional IPv4 su un'interfaccia pubblica. È inoltre possibile configurare indirizzi IPv6 sui server dedicati utilizzando [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 >

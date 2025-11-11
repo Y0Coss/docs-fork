@@ -4,6 +4,20 @@ excerpt: Descubra como adicionar endereços Additional IP à configuração de r
 updated: 2025-10-XX
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 > [!primary]
 > Este artigo diz respeito à configuração de endereços Additional IPv4 numa interface pública. Pode igualmente configurar endereços IPv6 nos seus servidores dedicados utilizando [este manual](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 >

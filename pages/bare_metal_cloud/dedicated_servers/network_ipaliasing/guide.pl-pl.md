@@ -4,6 +4,20 @@ excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
 updated: 2025-10-XX
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 > [!primary]
 > Ten artykuł dotyczy konfiguracji adresów Additional IPv4 w interfejsie publicznym. Możesz również skonfigurować adresy IPv6 na swoich serwerach dedykowanych, korzystając z [tego przewodnika](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 >

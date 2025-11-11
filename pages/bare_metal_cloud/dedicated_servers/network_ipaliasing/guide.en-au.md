@@ -4,6 +4,20 @@ excerpt: 'Find out how to add Additional IP addresses to your server configurati
 updated: 2025-10-XX
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 > [!primary]
 > This article is about Additional IPv4 configuration on a public interface. You can also configure Primary IPv6 addresses on your dedicated servers using [this guide](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 > 
