@@ -13,10 +13,10 @@ LACP configuration must be applied to the node before deploying an instance so t
 We will also see how to configure **bonding** (logical grouping of multiple network interfaces into a single virtual interface) within your instance to fully leverage **LACP**.
 
 > [!warning]
-> A standard user cannot setup LACP by themselves.
+> Standard users cannot setup LACP by themselves.  
 > You must be an **admin**, or have **available nodes** in your OpenStack project.
 >
-> It is recommended to setup LACP **before** deploying an instance.
+> It is recommended to setup LACP **before** deploying an instance.  
 > This guide **does not cover** configuring a node that is already in production.
 
 ## Why Use LACP?
@@ -341,5 +341,7 @@ You have successfully configured:
 Your instance is now ready to leverage the full available bandwidth of the aggregated link.
 
 ## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
 
 Join our [community of users](/links/community).

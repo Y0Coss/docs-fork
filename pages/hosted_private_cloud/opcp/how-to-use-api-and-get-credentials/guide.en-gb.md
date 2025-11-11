@@ -197,3 +197,9 @@ If these commands return results, the **Keycloak ↔ OpenStack** integration is 
 - [Keycloak Documentation – OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc)
 - [OpenStack Keystone Documentation](https://docs.openstack.org/keystone/latest/)
 - [OVHcloud OPCP Documentation](https://docs.opcp.ovh)
+
+## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+
+Join our [community of users](/links/community).

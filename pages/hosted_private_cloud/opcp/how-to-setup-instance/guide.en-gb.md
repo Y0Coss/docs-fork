@@ -19,20 +19,24 @@ This guide details the steps to install an OPCP instance from the **Horizon** in
 
 ### 1. Log in to Horizon
 
-Log in to the **Horizon** interface of your OPCP environment.<br><br>
+Log in to the **Horizon** interface of your OPCP environment.
+
 ![horizon-interface](images/01-log-to-horizon-step01.png){.thumbnail}
 
-Once connected, select the **project** where you want to install your instance.<br><br>
+Once connected, select the **project** where you want to install your instance.
+
 ![horizon-select-project](images/01-log-to-horizon-step02.png){.thumbnail}
 
 ### 2. Creating a private network
 
 Before deploying your instance, it is generally necessary to create a **private network** so that it can be accessed within your local infrastructure.
 
-In the left-hand menu, click on `Network`{.action}, then on `Networks`{.action}.<br><br>
+In the left-hand menu, click on `Network`{.action}, then on `Networks`{.action}.
+
 ![horizon-network-networks](images/02-create-network-step01.png){.thumbnail}
 
-Click on `Create Network`{.action}.<br><br>
+Click on `Create Network`{.action}.
+
 ![horizon-network-networks](images/02-create-network-step02.png){.thumbnail}
 
 > [!tabs]
@@ -171,5 +175,7 @@ To learn more, refer to the [official OpenStack documentation](https://docs.open
 - [Debian 12 Official Site](https://www.debian.org/releases/book/)
 
 ## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
 
 Join our [community of users](/links/community).

@@ -90,3 +90,9 @@ The **Ceph RBD** backend offers advanced tools for volume lifecycle management, 
 - **Support for live migration:** The distributed storage allows for non-disruptive migration of active virtual machines between compute nodes.
 - **Boot from volume:** Direct launch of a VM from a Cinder volume, ensuring that the root disk immediately benefits from **all the high availability and advanced features of Ceph RBD.**
 - **Disaster recovery ready (RBD Mirroring):** The underlying Ceph architecture supports **asynchronous volume mirroring** to a remote Ceph cluster, offering a robust solution for **Disaster Recovery Planning (DRP)**.
+
+## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+
+Join our [community of users](/links/community).
