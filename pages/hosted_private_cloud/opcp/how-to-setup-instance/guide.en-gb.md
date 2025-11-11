@@ -133,7 +133,7 @@ Select the **private network** previously created. You can also attach an existi
 >> |**Key Pair Name**|Enter a name for the key.|
 >> |**Key Type**| Select `SSH Key`{.action}.|
 >>
->> Next, click on `Create Keypair`{.action}.<br>
+>> Next, click on `Create Keypair`{.action}.
 >> Copy the private key with **Copy Private Key to Clipboard**, then click on `Done`{.action}.<br><br>
 >> ![horizon-compute-instances-launch-instance-key-pairs-create-step01](images/03-create-instance-horizon-key-pairs-create-step01.png){.thumbnail}
 >>
@@ -154,7 +154,7 @@ Select the **private network** previously created. You can also attach an existi
 >> ![horizon-compute-instances-launch-instance-key-pairs-import-step01](images/03-create-instance-horizon-key-pairs-import-step01.png){.thumbnail}
 >>
 >> The key is now selected by default. Click on `Launch Instance`{.action} to start creating the instance.<br><br>
-![horizon-compute-instances-launch-instance-key-pairs-import-step02](images/03-create-instance-horizon-key-pairs-import-step02.png){.thumbnail}
+>> ![horizon-compute-instances-launch-instance-key-pairs-import-step02](images/03-create-instance-horizon-key-pairs-import-step02.png){.thumbnail}
 >>
 
 ### 5. Other options
