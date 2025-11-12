@@ -38,10 +38,11 @@ You can restore an object in the Cold Archive storage class by using the [OVHclo
 >> In the list of objects, click on the `...`{.action} button associated to the object you want to restore, and then click `Restore`{.action}.
 >>
 > Via the OVHcloud API
->> ```bash
->> ADDING API ROUTE FOR RESTORATION ON COLD ARCHIVE
->> ```
-> Via AWS CLI
+>> [!api]
+>>
+>> @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/object/{key}/restore
+>> 
+>> Via AWS CLI
 >>
 >> ```bash
 >> aws s3api restore-object --bucket <bucket-name> --key <object-name> --restore-request '{"Days":10}'
