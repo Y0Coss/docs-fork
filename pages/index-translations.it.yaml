@@ -212,8 +212,13 @@ public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold A
 public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
 public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
 public-cloud-storage-block-storage: Block Storage
-public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-block-storage-key-concepts: Concetti chiave
+public-cloud-storage-block-storage-getting-started: Per iniziare
+public-cloud-storage-block-storage-configuration: Configurazione
+public-cloud-storage-block-storage-migration: Migrazione
+public-cloud-storage-block-storage-additional-resources: Risorse aggiuntive
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-getting-started: Per iniziare
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
@@ -351,9 +356,32 @@ storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift 
 storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-ha-nas: HA-NAS
+storage-file-storage-enterprise-file-storage-key-concepts: Concetti chiave
+storage-file-storage-enterprise-file-storage-getting-started: Per iniziare
+storage-file-storage-enterprise-file-storage-configuration: Configurazione
+storage-file-storage-enterprise-file-storage-migration: Migrazione
+storage-file-storage-enterprise-file-storage-additional-resources: Risorse aggiuntive
+storage-file-storage-ha-nas: NAS-HA
+storage-file-storage-ha-nas-key-concepts: Concetti chiave
+storage-file-storage-ha-nas-getting-started: Per iniziare
+storage-file-storage-ha-nas-configuration: Configurazione
+storage-file-storage-ha-nas-migration: Migrazione
+storage-file-storage-ha-nas-additional-resources: Risorse aggiuntive
+storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-getting-started: Per iniziare
 storage-block-storage: Block Storage
+storage-block-storage-block-volume: Block volume
+storage-block-storage-block-volume-key-concepts: Concetti chiave
+storage-block-storage-block-volume-getting-started: Per iniziare
+storage-block-storage-block-volume-configuration: Configurazione
+storage-block-storage-block-volume-migration: Migrazione
+storage-block-storage-block-volume-additional-resources: Risorse aggiuntive
 storage-block-storage-cloud-disk-array: Cloud Disk Array
+storage-block-storage-cloud-disk-array-key-concepts: Concetti chiave
+storage-block-storage-cloud-disk-array-getting-started: Per iniziare
+storage-block-storage-cloud-disk-array-configuration: Configurazione
+storage-block-storage-cloud-disk-array-tutorials: Tutorials
+storage-block-storage-cloud-disk-array-additional-resources: Risorse aggiuntive
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
