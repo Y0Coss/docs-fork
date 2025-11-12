@@ -1,7 +1,7 @@
 ---
 title: CLI - Launch an AI notebook
 excerpt: Learn how to run an AI Notebook using the CLI
-updated: 2024-09-12
+updated: 2025-11-12
 ---
 
 ## Objective
@@ -269,7 +269,7 @@ Now that the notebook is in the `RUNNING` state, a https address is defined in t
 
 You can now start writing code in your notebook. Since we used the PyTorch framework in our example, we will be able to use it without having to install anything ourselves.
 
-As you explore your notebook, you will find an `ai-training-examples` folder already included in your workspace. This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
+As you explore your notebook, you will find an `ai-training-examples` folder already included in your [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace). This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
 
 ### Stopping a notebook
 

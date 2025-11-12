@@ -445,7 +445,7 @@ To save your Notebook, click on the sub-menu `Save`{.action} of the `File` menu.
 
 ### Getting started with code examples
 
-To help you get started with your AI Notebook, we provide a [GitHub repository](https://github.com/ovh/ai-training-examples) named `ai-training-examples`, containing code examples and tutorials. This repository is already cloned in your Notebook workspace when you launch it, so you can start exploring the examples right away.
+To help you get started with your AI Notebook, we provide a [GitHub repository](https://github.com/ovh/ai-training-examples) named `ai-training-examples`, containing code examples and tutorials. This repository is already cloned in your Notebook [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) when you launch it, so you can start exploring the examples right away.
 
 We currently provide a variety of tutorials, including for examples:
 
