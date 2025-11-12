@@ -51,7 +51,7 @@ Oui cette [fonctionnalité](https://docs.openstack.org/octavia/latest/user/guide
 
 /// details | Comment est mise en oeuvre la redondance pour chaque type d'offre ? Les Amphoras sont-ils configurés en mode ACT/STBY ?
 
-Oui, nous proposons le mode Active/Standby pour toutes les offres S/M/L.
+Oui, nous proposons le mode Active/Standby pour toutes les offres S/M/L/XL.
 
 ///
 

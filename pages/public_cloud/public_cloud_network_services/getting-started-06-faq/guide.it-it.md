@@ -51,7 +51,7 @@ Yes this [feature](https://docs.openstack.org/octavia/latest/user/guides/monitor
 
 /// details | How is the redundancy implemented for each type of service plan? Are the Amphoras configured in a ACT/STBY mode?
 
-Yes, we offer Active/Standby mode for all plans S/M/L.
+Yes, we offer Active/Standby mode for all plans S/M/L/XL.
 
 ///
 
