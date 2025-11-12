@@ -121,7 +121,7 @@ More details about lifecycle management [here](/pages/storage_and_backup/object_
 
 #### Cold Archive (Object-level management) class considerations
 
-When using the Cold Archive class in an Object Storage general-purpose bucket, **archived objects are not available in real-time**. The user is asked to first restore the object through a "restore" request and then, after some time (from minutes up to multiple hours), the object is available to download for a duration set by the user when requesting it and is billed upfront at the Standard class rate. However its class will remain as Cold Archive but will be available for GET requests or other actions.
+When using the Cold Archive class in an Object Storage general-purpose bucket, **archived objects are not available in real-time**. The user is asked to first restore the object through a "restore" request and then, after some time (from minutes up to multiple hours), the object is available to download for a duration set by the user when requesting it and is billed upfront at the Standard class rate. However its class will remain as Cold Archive but will be available for GET requests or other actions. In summary, for each object restored, a one time restoration fee per GiB of data plus the storage cost at the Standard rate of the object are billed. 
 
 For official prices, see [Object Storage pricing](https://www.ovhcloud.com/en-gb/public-cloud/prices/#storage).
 
