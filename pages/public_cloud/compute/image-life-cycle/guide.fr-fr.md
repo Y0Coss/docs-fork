@@ -70,7 +70,7 @@ OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les source
 | Version | Nom de code | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- | ------- |
 | 14 | [Forky](https://wiki.debian.org/DebianForky) | | | |
-| 13 | [Trixie](https://wiki.debian.org/DebianTrixie) | | | |
+| 13 | [Trixie](https://wiki.debian.org/DebianTrixie) | Août 2025 | Août 2028 | Juin 2030 |
 | 12 | [Bookworm](https://wiki.debian.org/DebianBookworm) | Juin 2023 | Juin 2026 | Juin 2028 |
 | 11 | [Bullseye](https://wiki.debian.org/DebianBullseye) | Août 2021 | Août 2024 | Août 2026 |
 | 10 | [Buster](https://wiki.debian.org/DebianBuster) | Juillet 2019 | Septembre 2022 | Juin 2024 |
