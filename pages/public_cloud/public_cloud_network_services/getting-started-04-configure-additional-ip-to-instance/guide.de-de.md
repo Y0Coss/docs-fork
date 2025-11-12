@@ -60,7 +60,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >
 
 > [!success]
-> Wählen Sie die Registerkarte, die Ihrem Betriebssystem entspricht.
+> Wählen Sie den Tab für Ihr Betriebssystem.
 
 > [!tabs]
 > **Debian 11**

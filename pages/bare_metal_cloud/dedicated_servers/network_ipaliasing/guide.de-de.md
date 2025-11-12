@@ -69,7 +69,7 @@ Beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen de
 In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebssystemen muss es vor der Verwendung installiert werden. Ist das der Fall, werden Sie dazu aufgefordert. Sie können natürlich auch einen beliebigen Texteditor verwenden.
 
 > [!success]
-> Wählen Sie die Registerkarte, die Ihrem Betriebssystem entspricht.
+> Wählen Sie den Tab für Ihr Betriebssystem.
 >
 
 > [!tabs]
