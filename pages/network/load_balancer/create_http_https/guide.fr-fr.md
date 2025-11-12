@@ -1,6 +1,6 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec HTTP/HTTPS"
-excerpt: "Configurez votre Load Balancer OVHcloud pour répartir la charge HTTP et sécuriser vos connexions avec HTTPS"
+excerpt: "Découvrez comment configurer votre Load Balancer OVHcloud pour répartir la charge HTTP et sécuriser vos connexions avec HTTPS"
 updated: 2025-11-07
 ---
 
@@ -34,6 +34,8 @@ Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties éléme
 - les `routes` avancées entre les Frontends et les Fermes de serveurs ;
 - les certificats `SSL/TLS` permettant de chiffrer les connexions TCP et/ou HTTP.
 
+**Découvrez comment configurer votre service Load Balancer OVHcloud pour répartir la charge HTTP et sécuriser vos connexions avec HTTPS.**
+
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
@@ -58,7 +60,7 @@ Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties éléme
 > Nous allons vous guider au travers des différentes étapes. Selon vos choix d'architecture, certaines configurations peuvent différer.
 > 
 
-Avant de vous lancer, il est conseillé de consulter la [présentation de l'OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation).
+Avant de vous lancer, il est conseillé de consulter la [présentation du service OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation).
 
 > [!warning]
 >
@@ -256,10 +258,14 @@ La section précédente décrivait la configuration générale pour un frontend 
 - basculer le frontend sur le port 443, standard pour le protocole HTTPS ;
 - configurer un certificat SSL/TLS afin d'authentifier et chiffrer les connexions.
 
-Que vous optiez pour une configuration via l'API ou via l'espace client OVHcloud, vous aurez le choix entre 2 stratégies pour vos certificats SSL/TLS. Ce choix dépend de vos besoins ainsi que des solutions actuellement en place :
+Que vous optiez pour une configuration via l'API ou via l'espace client OVHcloud, vous aurez le choix entre 2 stratégies pour vos certificats SSL/TLS :
 
 - Importer un certificat SSL/TLS existant.
 - Commander un certificat SSL/TLS géré automatiquement. La commande de certificats DV et EV sera disponible prochainement.
+
+> [!primary]
+>
+> Ce choix dépend de vos besoins ainsi que des solutions actuellement en place.
 
 Si vous optez pour l'importation d'un certificat SSL/TLS commandé et géré par vos soins, vous devrez le renouveler périodiquement vous-même et le mettre à jour dans votre service OVHcloud Load Balancer. La majorité des certificats sont valides pour 1 an. Certains peuvent l'être plus longtemps. Les certificats `Let's Encrypt` ne sont quant à eux valides que 3 mois. Il est recommandé d'utiliser le service géré automatiquement par votre service OVHcloud Load Balancer pour les certificats `Let's Encrypt` afin de ne pas accidentellement rater une échéance.
 
@@ -280,7 +286,7 @@ Avec l'évolution constante des normes de sécurité sur Internet, OVHcloud s'en
 
 ##### **Qu'est-ce que TLS 1.3 ?**
 
-TLS 1.3 est la dernière version du protocole TLS, offrant des améliorations significatives en matière de sécurité et de performance par rapport à TLS 1.2. Les avantages clés incluent un processus de *handshake* plus rapide, réduisant ainsi le temps nécessaire pour établir des connexions sécurisées, et l'utilisation de suites de chiffrement plus sûres pour renforcer la sécurité des données transmises.
+TLS 1.3 est la dernière version du protocole TLS. Elle améliore significativement la sécurité et les performances par rapport à TLS 1.2, notamment grâce à un processus de *handshake* plus rapide, réduisant le temps nécessaire pour établir des connexions sécurisées, et à l’utilisation de suites de chiffrement plus sûres pour renforcer la sécurité des données transmises.
 
 ##### **Pourquoi utiliser TLS 1.3 avec OVHcloud Load Balancer ?**
 

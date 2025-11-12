@@ -32,7 +32,7 @@ Pour plus de détails sur le déploiement d'une architecture Blue-Green avec vot
 
 Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 
-**Ce guide vous présente les principes généraux, ainsi que des scénarios d'utilisation des sondes, tirés de cas d'usages réels.**
+**Ce guide vous présente les principes généraux des sondes, ainsi que des scénarios d'utilisation inspirés de cas d'usages réels.**
 
 ## Prérequis
 
@@ -284,7 +284,7 @@ Quatre comparateurs sont disponibles pour valider le résultat d'une sonde :
 |Comparateur|Description|
 |---|---|
 |default|Lance un test de base, sans paramètre.|
-|status|Liste séparée par des virgules de codes de retour HTTP valides.|
+|status|Liste de codes de retour HTTP valides, séparés par des virgules.|
 |contains|Vérifie que le pattern se trouve dans la réponse.|
 |matches|Vérifie que la réponse correspond à l'expression régulière du pattern.|
 
@@ -433,7 +433,7 @@ Cette sonde tente d'établir une connexion TCP sur le port 79 de votre serveur e
 
 ### Depuis l'espace client OVHcloud <a name="manager"></a>
 
-La configuration des sondes se fait lors de l'ajout ou la modification d'une ferme de serveurs, dans les paramètres avancés.
+La configuration des sondes se fait lors de l'ajout ou de la modification d'une ferme de serveurs, dans les paramètres avancés.
 
 ![Paramètres avancés d'une ferme](images/farm_advanced_settings.png){.thumbnail}
 
