@@ -37,6 +37,8 @@ You can restore an object in the Cold Archive storage class by using the [OVHclo
 >>
 >> In the list of objects, click on the `...`{.action} button associated to the object you want to restore, and then click `Restore`{.action}.
 >>
+>> You can also monitor the status of your restoration in the list of objects view, through a dedicated status.
+>> 
 > Via the OVHcloud API
 >> [!api]
 >>
