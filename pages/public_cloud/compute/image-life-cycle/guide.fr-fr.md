@@ -1,7 +1,7 @@
 ---
 title: "Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions"
 excerpt: "Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud"
-updated: 2025-02-11
+updated: 2025-11-12
 ---
 
 ## Objectif
