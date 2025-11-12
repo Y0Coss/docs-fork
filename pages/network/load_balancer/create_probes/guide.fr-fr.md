@@ -32,7 +32,7 @@ Pour plus de détails sur le déploiement d'une architecture Blue-Green avec vot
 
 Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 
-**Ce guide vous présente les principes généraux des sondes, ainsi que des scénarios d'utilisation inspirés de cas d'usages réels.**
+**Ce guide vous présente les principes généraux des sondes, ainsi que des scénarios d'utilisation inspirés de cas d'usage réels.**
 
 ## Prérequis
 
