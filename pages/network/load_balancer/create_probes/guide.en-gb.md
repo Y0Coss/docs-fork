@@ -1,7 +1,7 @@
 ---
 title: "Configuration of probes on an OVHcloud Load Balancer service"
 excerpt: "Discover the general principles and use cases for probes"
-updated: 2025-11-06
+updated: 2025-11-12
 ---
 
 <style>
@@ -431,4 +431,24 @@ This probe attempts to establish a TCP connection on port 79 of your server and 
 |URL|Not supported|
 |matches|`default`|
 
-### From the OVHcloud Control Panel <a
+### From the OVHcloud Control Panel <a name="manager"></a>
+
+You can configure probes when you add or modify a server farm, in advanced settings.
+
+![Advanced farm settings](images/farm_advanced_settings.png){.thumbnail}
+
+You will then have access to the configuration for the probe type.
+
+![Probe settings](images/farm_advanced_settings_unfolded.png){.thumbnail}
+
+If the probe type you have selected allows it, you can configure advanced settings that are specific to that probe.
+
+![Advanced probe settings](images/probe_settings.png){.thumbnail}
+
+A new configuration window will appear, with the probe’s settings.
+
+![Advanced probe settings](images/probe_settings_dialog.png){.thumbnail}
+
+## Go further
+
+Join our [community of users](/links/community).

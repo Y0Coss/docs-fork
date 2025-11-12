@@ -1,7 +1,7 @@
 ---
 title: "Configuration des sondes sur un service OVHcloud Load Balancer"
 excerpt: "Découvrez les principes généraux et des cas d'usage pour les sondes"
-updated: 2025-11-07
+updated: 2025-11-12
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Load Balancer FAQ'
 excerpt: 'Questions fréquentes concernant le service OVHcloud Load Balancer'
-updated: 2025-11-07
+updated: 2025-11-12
 ---
 
 ## Objectif
