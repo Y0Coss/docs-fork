@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
-updated: 2025-10-XX
+updated: 2025-11-12
 ---
 
 ## Objectif

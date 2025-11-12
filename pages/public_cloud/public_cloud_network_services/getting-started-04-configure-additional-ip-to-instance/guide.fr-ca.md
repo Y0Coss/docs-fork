@@ -1,7 +1,7 @@
 ---
 title: Configurer une Additional IP
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -55,10 +55,11 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
+> [!success]
+> Sélectionnez l'onglet correspondant à votre système d'exploitation.
+
 > [!tabs]
 > **Debian 11**
->>
->> Debian 11
 >>
 >> Etape 1 : désactiver la configuration automatique du réseau
 >>

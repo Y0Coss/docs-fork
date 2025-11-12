@@ -1,7 +1,7 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -52,7 +52,10 @@ Concerning different distribution releases, please note that the proper procedur
 > [!primary]
 >
 > When configuring an Additional IP on a Public Cloud instance, you do not need a gateway and subnet mask.
-> 
+>
+
+> [!success]
+> Select the tab corresponding to your operating system.
 
 > [!tabs]
 > **Debian 11**

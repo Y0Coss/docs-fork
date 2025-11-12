@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja Additional IP
 excerpt: Dowiedz się, jak dodawać adresy Additional IP do konfiguracji Twojej instancji
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -59,6 +59,9 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >
 > Konfiguracja Additional IP w instancji Public Cloud nie wymaga bramy (gateway) ani maski podsieci.
 >
+
+> [!success]
+> Wybierz zakładkę odpowiadającą Twojemu systemowi operacyjnemu.
 
 > [!tabs]
 > **Debian 11**

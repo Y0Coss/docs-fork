@@ -1,7 +1,7 @@
 ---
 title: Configurar una Additional IP
 excerpt: Cómo añadir direcciones Additional IP a la configuración de la instancia
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -59,6 +59,9 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 >
 > Para configurar una dirección Additional IP en una instancia de Public Cloud no es necesario tener una puerta de enlace (gateway) ni una máscara de subred.
 >
+
+> [!success]
+> Seleccione la pestaña correspondiente a su sistema operativo.
 
 > [!tabs]
 > **Debian 11**

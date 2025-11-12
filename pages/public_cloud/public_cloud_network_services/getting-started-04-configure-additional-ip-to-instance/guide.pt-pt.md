@@ -1,7 +1,7 @@
 ---
 title: Configurar um Additional IP
 excerpt: "Saiba como adicionar endereços Additional IP à configuração da sua instância"
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -59,6 +59,9 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 >
 > A configuração de um endereço Additional IP numa instância Public Cloud não requer gateway nem máscara de sub-rede.
 >
+
+> [!success]
+> Selecione a guia correspondente ao seu sistema operacional.
 
 > [!tabs]
 > **Debian 11**

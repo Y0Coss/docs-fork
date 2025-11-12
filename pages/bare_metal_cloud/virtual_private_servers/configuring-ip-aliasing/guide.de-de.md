@@ -1,7 +1,7 @@
 ---
 title: "IP-Adresse als Alias konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration einbinden"
-updated: 2025-10-XX
+updated: 2025-11-12
 ---
 
 ## Ziel

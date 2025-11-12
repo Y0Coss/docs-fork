@@ -1,7 +1,7 @@
 ---
 title: Configura un Additional IP
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -59,6 +59,9 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >
 > Per configurare un Additional IP su un’istanza Public Cloud, non è necessario utilizzare un gateway o una subnet mask.
 >
+
+> [!success]
+> Selezionare la scheda corrispondente al proprio sistema operativo.
 
 > [!tabs]
 > **Debian 11**

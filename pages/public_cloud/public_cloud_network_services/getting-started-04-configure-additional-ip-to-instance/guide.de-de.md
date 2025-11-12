@@ -1,7 +1,7 @@
 ---
 title: Additional IP konfigurieren
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
-updated: 2025-11-XX
+updated: 2025-11-12
 ---
 
 > [!primary]
@@ -58,6 +58,9 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >
 > Für die Konfiguration einer Additional IP auf einer Public Cloud Instanz ist kein Gateway oder Subnetzmaske erforderlich.
 >
+
+> [!success]
+> Wählen Sie die Registerkarte, die Ihrem Betriebssystem entspricht.
 
 > [!tabs]
 > **Debian 11**

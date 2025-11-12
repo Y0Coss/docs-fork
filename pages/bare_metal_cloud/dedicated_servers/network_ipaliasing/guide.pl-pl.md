@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja adresu Additional IP jako aliasu'
 excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
-updated: 2025-10-XX
+updated: 2025-11-12
 ---
 
 <style>
