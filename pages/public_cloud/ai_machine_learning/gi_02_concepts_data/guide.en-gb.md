@@ -1,7 +1,7 @@
 ---
 title: Data - Concept and best practices
 excerpt: Learn the concept behind AI Tools data
-updated: 2022-04-11
+updated: 2025-11-12
 ---
 
 ## Definition

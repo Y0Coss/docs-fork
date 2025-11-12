@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2025-07-01
+updated: 2025-11-12
 ---
 
 ## Introduction
@@ -580,7 +580,7 @@ Once the Notebook has reached the `Stopped` state, you may be interested in rest
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
 
-Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and eventual remote mounted volumes). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
+Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and remotely mounted volumes if any). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
 
 ### Deleting a Notebook
 

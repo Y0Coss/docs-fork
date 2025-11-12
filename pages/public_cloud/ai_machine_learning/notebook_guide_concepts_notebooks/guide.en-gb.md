@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Notebook concept
 excerpt: Learn the concept behind AI Notebooks
-updated: 2023-12-04
+updated: 2025-11-12
 ---
 
 ## Definition
