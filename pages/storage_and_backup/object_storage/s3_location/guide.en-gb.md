@@ -34,7 +34,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Roubaix</td>
@@ -42,7 +42,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Strasbourg</td>
@@ -50,7 +50,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Paris</td>
@@ -58,7 +58,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard only</td>
+        <td>Standard, Infrequent Access and Cold Archive</td>
     </tr>
     <tr>
         <td>Frankfurt</td>
@@ -66,7 +66,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>London</td>
@@ -74,7 +74,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Warsaw</td>
@@ -82,7 +82,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td rowspan=2><strong>North America<br>(excluding USA)</strong></td>
@@ -91,7 +91,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Toronto</td>
@@ -99,7 +99,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td rowspan=3><strong>Asia-Pacific</strong></td>
@@ -108,7 +108,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Sydney</td>
@@ -116,7 +116,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
     <tr>
         <td>Mumbai</td>
@@ -124,7 +124,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>Standard & High Performance</td>
+        <td>High Performance, Standard and Infrequent Access</td>
     </tr>
 </table>
 
@@ -155,7 +155,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=5>Standard Infrequent Access</td>
+        <td rowspan=4>Standard Infrequent Access</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
@@ -168,6 +168,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
+        <td>Cold Archive</td>
     </tr>
 </table>
 
