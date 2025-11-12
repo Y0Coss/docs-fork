@@ -37,6 +37,8 @@ There are two ways to manage your data:
 2. At the notebook start, the volume is attached inside the wanted directory. Data is then available inside the job as long as the `RUNNING` phase lasts.
 3. After the notebook stop, data is synchronized back **from** the underlying filesystem volume **into** the **OVHcloud Object Storage**. This synchronization is done during the `STOPPING` phase.
 
+This applies to your internal `/workspace` and remote object storage volumes.
+
 ![image](images/data_phases_notebook.svg){.thumbnail}
 
 ## Capabilities
