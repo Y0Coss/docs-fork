@@ -110,7 +110,7 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> >
 >> > - Résiliation d'un abonnement
 >> > - Suspension prolongée d'un abonnement
->> > - Impayé d'un abonnement <sup>1</sup>
+>> > - Impayé d'un abonnement <sup>*</sup>
 >> >
 >> > Voici le bon de retour, au format PDF, pour le renvoi de ce matériel : #Lien vers le PDF du RMA#.<br>
 >> > Veuillez imprimer ce bon svp, puis joindre la partie basse à votre colis, tandis que la partie haute devra être collée dessus, à l'extérieur.<br>
@@ -119,7 +119,7 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> > Votre numéro de retour (RMA) est : #RMA#. Il vous sera demandé en cas d'échange avec notre support concernant ce dossier.<br>
 >> > Adresse de retour : 155 avenue Georges Hannart 59170 CROIX.
 >> > 
->> > <sup>1</sup> Cette demande de retour sera automatiquement annulée en cas de régularisation de votre situation dans les délais. A défaut, votre abonnement sera définitivement supprimé et les frais éventuels restants appliqués.
+>> > <sup>*</sup> Cette demande de retour sera automatiquement annulée en cas de régularisation de votre situation dans les délais. A défaut, votre abonnement sera définitivement supprimé et les frais éventuels restants appliqués.
 >> 
 > Résiliation d'un accès Internet xDSL
 >>
