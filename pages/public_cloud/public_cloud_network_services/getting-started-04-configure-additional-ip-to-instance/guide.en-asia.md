@@ -108,7 +108,8 @@ Concerning different distribution releases, please note that the proper procedur
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Ubuntu 22.04 & Debian 12**
+> **Debian 12, Ubuntu 22.04+**
+>> *Debian 12, Ubuntu 22.04+ and following
 >>
 >> The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
 >>
@@ -180,7 +181,71 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> Repeat this procedure for each Additional IP address.
 >>
+> **CentOS 7 / Red Hat derivatives**
+>> CentOS 7 / Red Hat derivatives
+>>
+>> Step 1: Edit the network configuration file
+>>
+>> You can verify your network interface name with this command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Open the network configuration file for editing:
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+>> ```
+>>
+>> Then add these lines:
+>>
+>> ```bash
+>> DEVICE=NETWORK_INTERFACE:ID
+>> BOOTPROTO=static
+>> IPADDR=ADDITIONAL_IP
+>> NETMASK=255.255.255.255
+>> BROADCAST=ADDITIONAL_IP
+>> ONBOOT=yes
+>> ```
+>>
+>> Step 2: Restart the interface
+>>
+>> Apply the changes with the following command:
+>>
+>> ```bash
+>> sudo systemctl restart networking
+>> ```
+>>
+> **Plesk**
+>> Plesk
+>>
+>> Step 1: Access the Plesk IP management section
+>>
+>> In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
+>>
+>> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+>>
+>> Click on `IP Addresses`{.action} under **Tools & Resources**.
+>>
+>> Step 2: Add the additional IP information
+>>
+>> In this section, click on the button `Add IP Address`{.action}.
+>>
+>> ![add ip information](images/pleskip2-2.png){.thumbnail}
+>>
+>> Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
+>>
+>> ![add ip information](images/pleskip3-3.png){.thumbnail}
+>>
+>> Step 3: Check the current IP configuration
+>>
+>> Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
+>>
+>> ![current IP configuration](images/pleskip4-4.png){.thumbnail}
+>>
 > **Windows Server**
+>> Windows Server
 >>
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >>
@@ -234,66 +299,6 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> ![check current network configuration](images/image8-8.png){.thumbnail}
 >>
-> **cPanel (CentOS 7) / Red Hat derivatives**
->>
->> Step 1: Edit the network configuration file
->>
->> You can verify your network interface name with this command:
->>
->> ```bash
->> ip a
->> ```
->>
->> Open the network configuration file for editing:
->>
->> ```bash
->> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
->> ```
->>
->> Then add these lines:
->>
->> ```bash
->> DEVICE=NETWORK_INTERFACE:ID
->> BOOTPROTO=static
->> IPADDR=ADDITIONAL_IP
->> NETMASK=255.255.255.255
->> BROADCAST=ADDITIONAL_IP
->> ONBOOT=yes
->> ```
->>
->> Step 2: Restart the interface
->>
->> Apply the changes with the following command:
->>
->> ```bash
->> sudo systemctl restart networking
->> ```
->>
-> **Plesk**
->>
->> Step 1: Access the Plesk IP management section
->>
->> In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
->>
->> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
->>
->> Click on `IP Addresses`{.action} under **Tools & Resources**.
->>
->> Step 2: Add the additional IP information
->>
->> In this section, click on the button `Add IP Address`{.action}.
->>
->> ![add ip information](images/pleskip2-2.png){.thumbnail}
->>
->> Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
->>
->> ![add ip information](images/pleskip3-3.png){.thumbnail}
->>
->> Step 3: Check the current IP configuration
->>
->> Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
->>
->> ![current IP configuration](images/pleskip4-4.png){.thumbnail}
 
 ### Troubleshooting
 

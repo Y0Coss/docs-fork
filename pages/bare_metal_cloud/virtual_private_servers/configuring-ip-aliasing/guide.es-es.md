@@ -4,6 +4,20 @@ excerpt: 'Cómo añadir direcciones Additional IP a su configuración VPS'
 updated: 2025-11-12
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objetivo
 
 El alias de IP (*IP aliasing* en inglés) es una configuración especial de red para los servidores de OVHcloud, que permite asociar varias direcciones IP a una única interfaz de red.
@@ -55,7 +69,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 > Debian 11
 >> **Debian 11**
 >>
->> 1\. desactivar la configuración automática de red
+>> **1\. desactivar la configuración automática de red**
 >>
 >> Abra la ruta al siguiente archivo con un editor de texto, en nuestro ejemplo utilizamos `nano`:
 >>
@@ -71,7 +85,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
 >>
->> 2\. crear una copia de seguridad
+>> **2\. crear una copia de seguridad**
 >>
 >> Por defecto, el fichero de configuración se encuentra en la ruta `/etc/network/interfaces.d`.
 >>
@@ -88,7 +102,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> 3\. editar el archivo de configuración de red
+>> **3\. editar el archivo de configuración de red**
 >>
 >> Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 >>
@@ -122,6 +136,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> address ADDITIONAL_IP2
 >> netmask 255.255.255.255
 >> ```
+>>
 >> /// details | **Ejemplo**
 >>
 >> ```console
@@ -132,7 +147,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> ```
 >> ///
 >>
->> 4\. reiniciar la interfaz
+>> **4\. reiniciar la interfaz**
 >>
 >> Aplique los cambios con el siguiente comando:
 >>
@@ -141,13 +156,13 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> ```
 >>
 > Debian 12, Ubuntu 20.04+
->> **Debian 12, Ubuntu 20.04 et versions ultérieures**
+>> **Debian 12, Ubuntu 20.04 y versiones posteriores**
 >>
 >> El archivo de configuración de las direcciones Additional IP se encuentra en `/etc/netplan/`. En este ejemplo, se llama `50-cloud-init.yaml`.
 >>
 >> La práctica recomendada es crear un archivo de configuración independiente para definir las direcciones Additional IP. De este modo, podrá volver a revisar fácilmente los cambios en caso de que se produzca un error.
 >>
->> 1\. crear el archivo de configuración de red
+>> **1\. crear el archivo de configuración de red**
 >>
 >> En nuestro ejemplo, nuestro archivo se llama `51-cloud-init.yaml`:
 >>
@@ -155,7 +170,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> sudo touch /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
->> 2\. editar el archivo de configuración
+>> **2\. editar el archivo de configuración**
 >>
 >> Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 >>
@@ -214,7 +229,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> Guarde y cierre el archivo.
 >>
->> 3\. aplicar la nueva configuración de red
+>> **3\. aplicar la nueva configuración de red**
 >>
 >> Para probar su configuración, utilice el siguiente comando:
 >>
@@ -230,13 +245,14 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> Repita este procedimiento para cada dirección Additional IP.
 >>
-> AlmaLinux (8 y 9), Rocky Linux (8 y 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8 y 9), Rocky Linux (8 y 9)**
+>>
 >> El archivo de configuración principal se encuentra en la carpeta `/etc/sysconfig/network-scripts/`. En este ejemplo, se denomina `ifcfg-eth0`. Antes de realizar cualquier cambio, compruebe el nombre real del archivo en esta carpeta.
 >>
 >> Para cada dirección Additional IP que desee configurar, cree un archivo de configuración independiente con los siguientes parámetros: `ifcfg-NETWORK_INTERFACE:ID`. Donde `NETWORK_INTERFACE` representa la interfaz física y `ID` representa la interfaz de red virtual o el alias ethernet que empieza por un valor de 0. Por ejemplo, para nuestra interfaz llamada `eth0` el primer alias es `eth0:0`, el segundo alias es `eth0:1`, etc.
 >>
->> 1\. determinar la interfaz
+>> **1\. determinar la interfaz**
 >>
 >> Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 >>
@@ -244,7 +260,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> ip a
 >> ```
 >>
->> 2\. crear el archivo de configuración
+>> **2\. crear el archivo de configuración**
 >>
 >> En primer lugar, cree el archivo de configuración. Sustituya `NETWORK_INTERFACE:ID` por sus propios valores.
 >>
@@ -273,8 +289,9 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> NETMASK=255.255.255.255
 >> BROADCAST=203.0.113.0
 >> ```
->>
->> 3\. reiniciar la interfaz
+>> ///
+>> 
+>> **3\. reiniciar la interfaz**
 >>
 >> Aplique los cambios con el siguiente comando:
 >>
@@ -293,7 +310,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> Fedora ahora utiliza archivos clave. NetworkManager almacenaba previamente los perfiles de red en formato ifcfg en este directorio: `/etc/sysconfig/network-scripts/`. Sin embargo, el formato ifcfg está obsoleto. De forma predeterminada, NetworkManager ya no crea nuevos perfiles en este formato. El archivo de configuración se encuentra ahora en `/etc/NetworkManager/system-connections/`.
 >>
->> 1\. crear una copia de seguridad
+>> **1\. crear una copia de seguridad**
 >>
 >> En nuestro ejemplo, nuestro archivo se llama `cloud-init-eno1.nmconnection`, por lo que hacemos una copia del archivo `cloud-init-eno1.nmconnection` utilizando el siguiente comando:
 >>
@@ -308,7 +325,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> 2\. modificar el archivo de configuración
+>> **2\. modificar el archivo de configuración**
 >>
 >> > [!primary]
 >> > Tenga en cuenta que el nombre del archivo de red en nuestro ejemplo puede ser diferente del suyo. Adapte los comandos a su nombre de archivo.
@@ -347,7 +364,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> ```
 >> ///
 >> 
->> 3\. reiniciar la interfaz
+>> **3\. reiniciar la interfaz**
 >> 
 >> ```bash
 >> sudo systemctl restart NetworkManager
@@ -356,13 +373,13 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 > cPanel
 >> **cPanel**
 >>
->> 1\. acceder a la sección de gestión de las IP del WHM
+>> **1\. acceder a la sección de gestión de las IP del WHM**
 >>
 >> En el área de cliente de WHM, haga clic en `IP Functions`{.action} y seleccione `Add a New IP Address`{.action} en el menú de la izquierda.
 >>
 >> ![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 >>
->> 2\. añadir la información de las direcciones Additional IP
+>> **2\. añadir la información de las direcciones Additional IP**
 >>
 >> Introduzca su dirección Additional IP con el formato `xxx.xxx.xxx.xxx` en el campo `New IP or IP range to add`.
 >>
@@ -375,7 +392,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> > Atención, si tiene varias IP que configurar en un mismo bloque y las añade todas al mismo tiempo, el sistema WHM le obligará a utilizar la máscara de subred `255.255.255.0`. No se recomienda utilizar esta configuración, es necesario añadir cada IP individualmente para poder utilizar la máscara de subred adecuada `255.255.255.255`.
 >> >
 >>
->> 3\. comprobar la configuración IP actual
+>> **3\. comprobar la configuración IP actual**
 >>
 >> Vuelva a la sección `IP Functions`{.action} y haga clic en `Show or Delete Current IP Addresses`{.action} para comprobar que la dirección Additional IP se ha añadido correctamente.
 >>
@@ -384,7 +401,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 > Plesk
 >> **Plesk**
 >>
->> 1\. acceder a la gestión de IP de Plesk
+>> **1\. acceder a la gestión de IP de Plesk**
 >>
 >> En el panel de configuración de Plesk, seleccione `Tools & Settings`{.action} en la columna izquierda.
 >>
@@ -392,7 +409,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> Haga clic en `IP Addresses`{.action} bajo **Tools & Settings**.
 >>
->> 2\. añadir la información IP adicional
+>> **2\. añadir la información IP adicional**
 >>
 >> En esta sección, haga clic en el botón `Add IP Address`{.action}.
 >>
@@ -402,7 +419,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> ![añadir información IP](images/Plesk-additional-ip.png){.thumbnail}
 >>
->> 3\. comprobar la configuración IP actual
+>> **3\. comprobar la configuración IP actual**
 >>
 >> En la sección "IP Addresses", compruebe que la dirección Additional IP se haya añadido correctamente.
 >>
@@ -411,7 +428,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 > Windows Server 
 >> **Windows Server**
 >>
->> 1\. comprobar la configuración de red
+>> **1\. comprobar la configuración de red**
 >>
 >> Haga clic derecho en el botón `Start`{.action} y abra `Run`{.action}.
 >>
@@ -435,7 +452,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>    Default Gateway . . . . . . . . . : 192.0.2.1
 >> ```
 >>
->> 2\. modificar las propiedades IPv4
+>> **2\. modificar las propiedades IPv4**
 >>
 >> 1. Vaya al menú `Start`{.action}, luego `Control Panel`{.action}, `Network and Internet`{.action}, `Network and Sharing Centre`{.action} y `Change Adapter Settings`{.action} en la barra de la izquierda.
 >> 2. Haga clic derecho en `Ethernet`{.action};
@@ -450,7 +467,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> > Atención: si introduce información incorrecta, no podrá acceder al servidor. En ese caso, deberá realizar las correcciones oportunas a través del KVM.
 >> >
 >>
->> 3\. añadir la dirección Additional IP en los Parámetros TCP/IP avanzados
+>> **3\. añadir la dirección Additional IP en los Parámetros TCP/IP avanzados**
 >>
 >> En la nueva ventana, haga clic en `Add...`{.action} en "IP addresses". Introduzca su dirección Additional IP y la máscara de subred (255.255.255.255).
 >>
@@ -466,7 +483,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >>
 >> Perderá la conexión con su servidor durante unos segundos.
 >>
->> 4\. comprobar la configuración IP actual
+>> **4\. comprobar la configuración IP actual**
 >>
 >> Abra el símbolo del sistema (cmd) e introduzca `ipconfig`. La configuración debe incluir ahora la nueva dirección Additional IP.
 >>
@@ -504,4 +521,4 @@ Para probar la conexión, solo tiene que enviar un ping a su dirección Addition
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -65,6 +65,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 
 > [!tabs]
 > **Debian 11**
+>> Debian 11
 >>
 >> Etap 1: wyłącz automatyczną konfigurację sieci
 >>
@@ -113,7 +114,8 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Ubuntu 22.04 & Debian 12**
+> **Debian 12, Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 i nowsze wersje
 >>
 >> Plik konfiguracyjny adresów Additional IP znajduje się w katalogu `/etc/netplan/`. W tym przykładzie nosi nazwę "50-cloud-init.yaml". Zanim wprowadzisz zmiany, sprawdź w tym folderze nazwę rzeczywistego pliku. Każdy adres Additional IP wymaga własnej linii w pliku.
 >>
@@ -184,7 +186,71 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> Powtórz tę procedurę dla każdego adresu Additional IP.
 >>
+> **CentOS 7 / pochodne Red Hat**
+>> CentOS 7 / pochodne Red Ha
+>>
+>> Etap 1: zmień plik konfiguracyjny sieci
+>>
+>> Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Otwórz plik konfiguracyjny sieci, aby go zmienić:
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+>> ```
+>>
+>> Dodaj te linie:
+>>
+>> ```bash
+>> DEVICE=NETWORK_INTERFACE:ID
+>> BOOTPROTO=static
+>> IPADDR=ADDITIONAL_IP
+>> NETMASK=255.255.255.255
+>> BROADCAST=ADDITIONAL_IP
+>> ONBOOT=yes
+>> ```
+>>
+>> Etap 2: uruchom ponownie interfejs
+>>
+>> Zastosuj zmiany za pomocą polecenia:
+>>
+>> ```bash
+>> sudo systemctl restart networking
+>> ```
+>>
+> **Plesk**
+>> Plesk
+>>
+>> Etap 1: dostęp do interfejsu zarządzania adresami IP Plesk
+>>
+>> W panelu konfiguracyjnym Plesk wybierz `Tools & Settings`{.action} na pasku bocznym po lewej stronie.
+>>
+>> ![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
+>>
+>> Kliknij `IP Addresses`{.action} w **Tools & Settings**.
+>>
+>> Etap 2: dodaj dodatkowe informacje IP
+>>
+>> W tej sekcji kliknij przycisk `Add IP Address`{.action}.
+>>
+>> ![dodaj informacje IP](images/pleskip2-2.png){.thumbnail}
+>>
+>> Wprowadź adres Additional IP w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
+>>
+>> ![dodaj informacje IP](images/pleskip3-3.png){.thumbnail}
+>>
+>> Etap 3: sprawdź aktualną konfigurację IP
+>>
+>>  sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
+>>
+>> ![aktualna konfiguracja IP](images/pleskip4-4.png){.thumbnail}
+>>
 > **Windows Server**
+>> Windows Server
 >>
 >> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 >>
@@ -238,66 +304,6 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> ![sprawdź aktualną konfigurację sieci](images/image8-8.png){.thumbnail}
 >>
-> **cPanel (CentOS 7) / pochodne Red Hat**
->>
->> Etap 1: zmień plik konfiguracyjny sieci
->>
->> Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
->>
->> ```bash
->> ip a
->> ```
->>
->> Otwórz plik konfiguracyjny sieci, aby go zmienić:
->>
->> ```bash
->> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
->> ```
->>
->> Dodaj te linie:
->>
->> ```bash
->> DEVICE=NETWORK_INTERFACE:ID
->> BOOTPROTO=static
->> IPADDR=ADDITIONAL_IP
->> NETMASK=255.255.255.255
->> BROADCAST=ADDITIONAL_IP
->> ONBOOT=yes
->> ```
->>
->> Etap 2: uruchom ponownie interfejs
->>
->> Zastosuj zmiany za pomocą polecenia:
->>
->> ```bash
->> sudo systemctl restart networking
->> ```
->>
-> Plesk
->>
->> Etap 1: dostęp do interfejsu zarządzania adresami IP Plesk
->>
->> W panelu konfiguracyjnym Plesk wybierz `Tools & Settings`{.action} na pasku bocznym po lewej stronie.
->>
->> ![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
->>
->> Kliknij `IP Addresses`{.action} w **Tools & Settings**.
->>
->> Etap 2: dodaj dodatkowe informacje IP
->>
->> W tej sekcji kliknij przycisk `Add IP Address`{.action}.
->>
->> ![dodaj informacje IP](images/pleskip2-2.png){.thumbnail}
->>
->> Wprowadź adres Additional IP w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
->>
->> ![dodaj informacje IP](images/pleskip3-3.png){.thumbnail}
->>
->> Etap 3: sprawdź aktualną konfigurację IP
->>
->>  sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
->>
->> ![aktualna konfiguracja IP](images/pleskip4-4.png){.thumbnail}
 
 ### Diagnostyka
 

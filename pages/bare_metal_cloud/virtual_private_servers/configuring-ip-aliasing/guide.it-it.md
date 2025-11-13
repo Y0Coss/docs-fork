@@ -4,6 +4,20 @@ excerpt: Come aggiungere indirizzi Additional IP alla tua configurazione VPS
 updated: 2025-11-12
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Obiettivo
 
 L'alias IP (*IP aliasing* in inglese) è una configurazione di rete speciale per i tuoi server OVHcloud, che ti permette di associare più indirizzi IP su un'unica interfaccia di rete.
@@ -55,7 +69,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 > Debian 11
 >> **Debian 11**
 >>
->> Step 1: disattiva la configurazione automatica della rete
+>> **Step 1: disattiva la configurazione automatica della rete**
 >>
 >> Apri il percorso per accedere al file seguente con un editor di testo:
 >>
@@ -71,7 +85,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> La creazione di questo file di configurazione impedisce l'esecuzione automatica delle modifiche apportate alla configurazione della tua rete.
 >>
->> Step 2: crea un backup
+>> **Step 2: crea un backup**
 >>
 >> Per impostazione predefinita, il file di configurazione si trova nel percorso `etc/network/interfaces.d`.
 >>
@@ -88,7 +102,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> Step 3: modifica il file di configurazione
+>> **Step 3: modifica il file di configurazione**
 >>
 >> Verifica il nome dell’interfaccia di rete con questo comando:
 >>
@@ -133,7 +147,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> ```
 >> ///
 >>
->> Step 4: riavvia l'interfaccia
+>> **Step 4: riavvia l'interfaccia**
 >>
 >> Applica le modifiche utilizzando il seguente comando:
 >>
@@ -215,7 +229,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Salva e chiudi il file.
 >>
->> Step 3: applicare la nuova configurazione di rete
+>> **Step 3: applicare la nuova configurazione di rete**
 >>
 >> Per testare la tua configurazione utilizza questo comando:
 >>
@@ -231,13 +245,14 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Ripeti questa procedura per ogni indirizzo Additional IP.
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8/9), Rocky Linux (8/9)**
+>>
 >> Il file di configurazione principale si trova nella cartella `/etc/sysconfig/network-scripts/`. In questo esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome effettivo del file nella cartella.
 >>
 >> Per ogni indirizzo Additional IP da configurare, crea un file di configurazione separato con le seguenti impostazioni: `ifcfg-NETWORK_INTERFACE:ID`. Dove `NETWORK_INTERFACE` rappresenta l’interfaccia fisica e `ID` rappresenta l’interfaccia di rete virtuale o l’alias ethernet che inizia con un valore di 0. Ad esempio, per la nostra interfaccia chiamata `eth0` il primo alias è `eth0:0`, il secondo alias è `eth0:1`, ecc.
 >>
->> Step 1: determina l’interfaccia
+>> **Step 1: determina l’interfaccia**
 >>
 >> Verifica il nome dell’interfaccia di rete con questo comando:
 >>
@@ -245,7 +260,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> ip a
 >> ```
 >>
->> Step 2: crea il file di configurazione
+>> **Step 2: crea il file di configurazione**
 >>
 >> Creare innanzitutto il file di configurazione. Sostituisci `NETWORK_INTERFACE:ID` con i tuoi valori.
 >>
@@ -274,8 +289,9 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> NETMASK=255.255.255.255
 >> BROADCAST=203.0.113.0
 >> ```
+>> ///
 >>
->> Step 3: riavvia l’interfaccia
+>> **Step 3: riavvia l’interfaccia**
 >>
 >> ```bash
 >> sudo systemctl restart network
@@ -292,7 +308,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Fedora ora utilizza i file chiave. In precedenza NetworkManager memorizzava i profili di rete in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg è ora obsoleto. Per impostazione predefinita, NetworkManager non crea più nuovi profili in questo formato. Il file di configurazione è ora disponibile in `/etc/NetworkManager/system-connections/`.
 >>
->> Step 1: crea un backup
+>> **Step 1: crea un backup**
 >>
 >> Nel nostro esempio, il nostro file si chiama `cloud-init-eno1.nmconnection`, quindi facciamo una copia del file `cloud-init-eno1.nmconnection` utilizzando il seguente comando:
 >>
@@ -307,7 +323,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> Step 2: modifica il file di configurazione
+>> **Step 2: modifica il file di configurazione**
 >>
 >> > [!primary]
 >> > Ti ricordiamo che il nome del file di rete nel nostro esempio potrebbe essere diverso dal tuo. Adatta i comandi al tuo nome di file.
@@ -346,7 +362,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> ```
 >> ///
 >>
->> Step 3: riavvia l’interfaccia
+>> **Step 3: riavvia l’interfaccia**
 >>
 >> Riavvia l’interfaccia:
 >>
@@ -357,7 +373,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 > cPanel
 >> **cPanel**
 >>
->> Step 1: accedi alla sezione di gestione degli IP del WHM
+>> **Step 1: accedi alla sezione di gestione degli IP del WHM**
 >>
 >> Dallo Spazio Cliente WHM, clicca su `IP Functions`{.action} e seleziona `Add a New IP Address`{.action} nel menu a sinistra.
 >>
@@ -376,7 +392,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> > Attenzione: se hai diversi IP da configurare sullo stesso blocco e li aggiungi tutti contemporaneamente, il sistema WHM ti obbligherà a utilizzare la subnet mask `255.255.255.0`. Non è consigliabile utilizzare questa configurazione, è necessario aggiungere ogni IP singolarmente per poter utilizzare la subnet mask appropriata `255.255.255.255`.
 >> >
 >>
->> Step 3: verifica la configurazione IP corrente
+>> **Step 3: verifica la configurazione IP corrente**
 >>
 >> Nella sezione `IP Functions`{.action}, clicca su `Show or Delete Current IP Addresses`{.action} per verificare che l’indirizzo Additional IP sia stato aggiunto correttamente.
 >>
@@ -384,7 +400,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 > Plesk
 >> **Plesk**
->> Step 1: accedere alla gestione IP di Plesk
+>>
+>> **Step 1: accedere alla gestione IP di Plesk**
 >>
 >> Nel pannello di configurazione Plesk, seleziona `Tools & Settings`{.action} nella barra laterale sinistra.
 >>
@@ -392,7 +409,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Clicca su `IP Addresses`{.action} con **Tools & Settings**.
 >>
->> Step 2: aggiungi le informazioni IP supplementari
+>> **Step 2: aggiungi le informazioni IP supplementari**
 >>
 >> In questa sezione, clicca sul pulsante `Add IP Address`{.action}.
 >>
@@ -400,9 +417,9 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Inserisci il tuo indirizzo Additional IP nella forma `xxx.xxx.xxx.xxx/32` nel campo "IP address and subnet mask" e clicca su `OK`{.action}.
 >>
-![aggiungi informazioni IP](images/Plesk-additional-ip.png){.thumbnail}
+>> ![aggiungi informazioni IP](images/Plesk-additional-ip.png){.thumbnail}
 >>
->> Step 3: verifica la configurazione IP corrente
+>> **Step 3: verifica la configurazione IP corrente**
 >>
 >> Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "IP Addresses".
 >>
@@ -411,7 +428,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 > Windows Server
 >> **Windows Server**
 >>
->> Step 1: verifica la configurazione di rete
+>> **Step 1: verifica la configurazione di rete**
 >>
 >> Clicca con il tasto destro sul pulsante `Start Menu`{.action} e apri `Run`{.action}.
 >>
@@ -435,7 +452,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>    Default Gateway . . . . . . . . . : 192.0.2.1
 >> ```
 >>
->> Step 2: modifica le proprietà IPv4
+>> **Step 2: modifica le proprietà IPv4**
 >>
 >> 1. Accedi al menu `Start`{.action}, poi `Control Panel`{.action}, `Network and Internet`{.action}, `Network and Sharing Centre`{.action} e `Change Adapter Settings`{.action} nella barra di sinistra;
 >> 2. clicca con il tasto destro su `Ethernet`{.action};
@@ -450,7 +467,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> > Attenzione: se le informazioni inserite non sono corrette, il server non sarà più raggiungibile. Sarà necessario effettuare le correzioni tramite il KVM.
 >> >
 >>
->> Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate
+>> **Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate**
 >>
 >> Nella nuova finestra, clicca su `Add...`{.action} sotto "IP addresses". Inserisci il tuo indirizzo Additional IP e la subnet mask (255.255.255.255).
 >>
@@ -466,7 +483,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Si perderà la connessione al server per alcuni secondi.
 >>
->> Step 4: verifica la nuova configurazione di rete
+>> **Step 4: verifica la nuova configurazione di rete**
 >>
 >> Apri il prompt dei comandi (cmd) e inserisci `ipconfig`. La configurazione deve includere il nuovo indirizzo Additional IP.
 >>
@@ -504,4 +521,4 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

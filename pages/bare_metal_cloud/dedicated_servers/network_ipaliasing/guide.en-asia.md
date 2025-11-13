@@ -317,7 +317,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> > It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed.
 >> >
 >>
->> /// details | **Configuration example:**
+>> /// details | **Configuration example**
 >>
 >> ```yaml
 >> network:
@@ -348,7 +348,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> > When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions. This does not affect the configuration of your Additional IP. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
 >>
 >> The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
@@ -382,7 +382,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> BROADCAST=ADDITIONAL_IP
 >> ```
 >>
->> /// details | **Configuration example:**
+>> /// details | **Configuration example**
 >>
 >> ```console
 >> DEVICE=eth0:0
