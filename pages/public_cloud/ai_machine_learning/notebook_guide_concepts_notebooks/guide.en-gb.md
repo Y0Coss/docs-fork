@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Notebook concept
 excerpt: Learn the concept behind AI Notebooks
-updated: 2025-11-12
+updated: 2025-11-13
 ---
 
 ## Definition
@@ -44,9 +44,9 @@ During its lifetime, the notebook will transit between the following states:
 - `RUNNING`: The notebook is running, you can connect to it using its endpoint and benefit from your compute resources and your attached data.
 - `STOPPING`: The notebook is stopping, your compute resources are freed, your work included in your [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) folder is automatically saved, and if remote data is mounted on your notebook, it is synchronized back to the Object Storage if changed and mounted as `RW`, not `RO`.
 - `STOPPED`: The notebook ended normally. You can restart it whenever you want or delete it. It will keep the same endpoint.
-- `FAILED`: The notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code. For more information, refer to [this section of our Troubleshooting documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_troubleshooting#cli-my-notebook-is-in-failed-status).
+- `FAILED`: The notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code. For more information, refer to [this section](/pages/public_cloud/ai_machine_learning/notebook_guide_troubleshooting#cli-my-notebook-is-in-failed-status) of our troubleshooting documentation.
 - `ERROR`: The notebook ended due to a backend error. You may reach our support.
-- `DELETING`: The notebook is being removed. When it is deleted, you will no longer see it, and it will no longer exist. Its internal [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) data will not be deleted automatically after notebook deletion. If you are sure you want to delete it, you can find and delete it in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
+- `DELETING`: The notebook is being removed. When it is deleted, you will no longer see it, and it will no longer exist. Its internal [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) data will not be deleted automatically after the notebook is deleted. If you are sure you want to delete it, you can find and delete it in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
 
 ![image](images/notebooks_concept.svg){.thumbnail}
 
