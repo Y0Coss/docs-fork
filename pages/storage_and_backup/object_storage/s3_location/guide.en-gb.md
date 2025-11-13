@@ -28,7 +28,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <th>Storage tier supported</th>
     </tr>
     <tr>
-        <td rowspan=7><strong>Europe</strong></td>
+        <td rowspan=8><strong>Europe</strong></td>
         <td>Gravelines</td>
         <td>gra</td>
         <td>HTTPS</td>
@@ -59,6 +59,14 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>4</td>
         <td>3-AZ region</td>
         <td>Standard, Infrequent Access and Cold Archive</td>
+    </tr>
+    <tr>
+        <td>Milan</td>
+        <td>eu-south-mil</td>
+        <td>HTTPS</td>
+        <td>4</td>
+        <td>3-AZ region</td>
+        <td>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Frankfurt</td>
@@ -193,6 +201,10 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
         <td>STANDARD_IA</td>
         <td>Standard Infrequent Access</td>
     </tr>
+    <tr>
+        <td>DEEP_ARCHIVE</td>
+        <td>Cold Archive</td>
+    </tr>
 </table>
 
 
@@ -235,13 +247,14 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=3>Standard Infrequent Access</td>
+        <td rowspan=2>Standard Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
+        <td>Cold Archive</td>
     </tr>
 </table>
 
@@ -265,6 +278,10 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     <tr>
         <td>GLACIER_IR</td>
         <td>Standard Infrequent Access</td>
+    </tr>
+    <tr>
+        <td>DEEP_ARCHIVE</td>
+        <td>Cold Archive</td>
     </tr>
 </table>
 
