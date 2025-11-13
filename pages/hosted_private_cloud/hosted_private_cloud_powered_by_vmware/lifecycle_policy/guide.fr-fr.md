@@ -28,8 +28,6 @@ Cette politique de cycle de vie est fournie pour aider les clients à comprendre
 
 **Hosted Private Cloud VMware on OVHcloud** :
 
-- DC2011 et DC2013 (AMD Opteron, AMD Bulldozer).
-- DC2014 & DC2016 (AMD PileDriver).
 - SDDC2014 et SDDC2016 (Intel Ivy Bridge, Intel Haswell).
 - SDDC2018 (Intel Broadwell, Intel Haswell).
 - Essentials (Intel Broadwell).
