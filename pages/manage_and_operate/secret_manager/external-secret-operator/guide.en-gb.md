@@ -165,19 +165,19 @@ spec:
   secretStoreRef:
     name: vault-secret-store
     kind: ClusterSecretStore
-refreshInterval: "10s"
-target:
-  name: creds-secret
-  creationPolicy: Owner
-data:
-  - secretKey: login
-    remoteRef:
-      key: prod/database/MySQL # Path of the secret in the Secret Manager
-      property: login # Key to find in the JSON data of the secret
-  - secretKey: password
-    remoteRef:
-      key: prod/database/MySQL
-      property: password
+  refreshInterval: "10s"
+  target:
+    name: creds-secret
+    creationPolicy: Owner
+  data:
+    - secretKey: login
+      remoteRef:
+        key: prod/database/MySQL # Path of the secret in the Secret Manager
+        property: login # Key to find in the JSON data of the secret
+    - secretKey: password
+      remoteRef:
+        key: prod/database/MySQL
+        property: password
 ```
 
 > [!info]
