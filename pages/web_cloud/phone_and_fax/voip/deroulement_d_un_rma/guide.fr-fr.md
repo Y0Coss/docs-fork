@@ -44,7 +44,7 @@ D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d
 
 ### Vue d'ensemble
 
-Suite à la réception de l'e-mail contenant le ou les bons de retour, vous disposez de 15 jours pour effectuer l'envoi du matériel, avant la clôture du dossier.
+Suite à la réception de l'e-mail contenant le bon de retour, vous disposez de 15 jours pour effectuer l'envoi du matériel, avant la clôture du dossier.
 
 | Actions à réaliser | Délai imparti |
 | :---: | :---: |
@@ -52,12 +52,12 @@ Suite à la réception de l'e-mail contenant le ou les bons de retour, vous disp
 
 ### Réception du premier e-mail et impression du bon de retour
 
+Lorsque votre RMA est créé, vous recevez un premier e-mail :
+
 > [!primary]
 >
-> L'e-mail est envoyé au contact facturation du service.
+> Cet e-mail est envoyé au contact facturation du service.
 > Retrouvez plus d'informations sur la gestion des contacts dans notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
-
-Lorsque votre RMA est créé, vous recevez un premier e-mail :
 
 /// details | E-mail pour un échange de matériel
 
