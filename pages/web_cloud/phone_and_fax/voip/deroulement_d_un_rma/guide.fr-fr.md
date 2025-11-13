@@ -46,7 +46,7 @@ D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d
 
 Suite à la réception de l'e-mail contenant le bon de retour, vous disposez de 15 jours pour effectuer l'envoi du matériel, avant la clôture du dossier.
 
-| Actions à réaliser | Délai imparti |
+| Actions à réaliser | Délai de restitution du matériel |
 | :---: | :---: |
 | ![actions-rma](images/rma-schema-retour.png){.thumbnail width="400"} | ![frise-rma](images/rma-schema-frise.png){.thumbnail width="400"} |
 
