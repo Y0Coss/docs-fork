@@ -206,13 +206,23 @@ public-cloud-cross-functional-infrastructure: Infrastructure
 public-cloud-cross-functional-billing-information: Informations sur la facturation
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-general-information: General information
-public-cloud-storage-object-storage-general-guides-to-start: General guides to start
-public-cloud-storage-object-storage-tutorials: Tutorials
-public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-object-storage-s3: Compatible avec S3
+public-cloud-storage-object-storage-s3-key-concepts: Concepts clés
+public-cloud-storage-object-storage-s3-getting-started: Premiers pas
+public-cloud-storage-object-storage-s3-configuration: Configuration
+public-cloud-storage-object-storage-s3-migration: Migration
+public-cloud-storage-object-storage-s3-tutorials: Tutoriels
+public-cloud-storage-object-storage-s3-security: Sécurité
+public-cloud-storage-object-storage-s3-troubleshooting: Diagnostic et dépannage
+public-cloud-storage-object-storage-s3-additional-resources: Ressources additionnelles
+public-cloud-storage-object-storage-swift: swift
+public-cloud-storage-object-storage-swift-getting-started: Premiers pas
+public-cloud-storage-object-storage-swift-configuration: Configuration
+public-cloud-storage-object-storage-swift-migration: Migration
+public-cloud-storage-object-storage-swift-tutorials: Tutoriels
+public-cloud-storage-object-storage-swift-security: Sécurité
+public-cloud-storage-object-storage-swift-troubleshooting: Diagnostic et dépannage
+public-cloud-storage-object-storage-swift-additional-resources: Ressources additionnelles
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
 public-cloud-storage-file-storage: File Storage
@@ -343,13 +353,23 @@ web-cloud-hosting-tutorials-cloud-web: Tutoriels Cloud Web
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Premiers pas
 storage-object-storage: Object Storage
-storage-object-storage-general-information: Informations générales
-storage-object-storage-general-guides-to-start: Guides généraux pour débuter
-storage-object-storage-tutorials: Tutoriels
-storage-object-storage-configure-object-storage-with-your-solutions: Configurer Object Storage avec vos solutions
-storage-object-storage-cold-archive-storage-class-specifics: Spécificités de la classe de stockage Cold Archive
-storage-object-storage-openstack-swift-storage-class-specifics: Spécificités de la classe de stockage OpenStack Swift
-storage-object-storage-openstack-swift-archive-storage-class-specifics: Spécificités de la classe de stockage d’archive OpenStack Swift
+storage-object-storage-s3: Compatible avec S3
+storage-object-storage-s3-key-concepts: Concepts clés
+storage-object-storage-s3-getting-started: Premiers pas
+storage-object-storage-s3-configuration: Configuration
+storage-object-storage-s3-migration: Migration
+storage-object-storage-s3-tutorials: Tutoriels
+storage-object-storage-s3-security: Sécurité
+storage-object-storage-s3-troubleshooting: Diagnostic et dépannage
+storage-object-storage-s3-additional-resources: Ressources additionnelles
+storage-object-storage-swift: swift
+storage-object-storage-swift-getting-started: Premiers pas
+storage-object-storage-swift-configuration: Configuration
+storage-object-storage-swift-migration: Migration
+storage-object-storage-swift-tutorials: Tutoriels
+storage-object-storage-swift-security: Sécurité
+storage-object-storage-swift-troubleshooting: Diagnostic et dépannage
+storage-object-storage-swift-additional-resources: Ressources additionnelles
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
 storage-file-storage-ha-nas: NAS-HA

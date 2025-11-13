@@ -206,13 +206,23 @@ public-cloud-cross-functional-infrastructure: Infrastructure
 public-cloud-cross-functional-billing-information: Información de facturación
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-general-information: General information
-public-cloud-storage-object-storage-general-guides-to-start: General guides to start
-public-cloud-storage-object-storage-tutorials: Tutorials
-public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-object-storage-s3: S3 compatible
+public-cloud-storage-object-storage-s3-key-concepts: Conceptos clave
+public-cloud-storage-object-storage-s3-getting-started: Primeros pasos
+public-cloud-storage-object-storage-s3-configuration: Configuración
+public-cloud-storage-object-storage-s3-migration: Migración
+public-cloud-storage-object-storage-s3-tutorials: Tutoriales
+public-cloud-storage-object-storage-s3-security: Seguridad
+public-cloud-storage-object-storage-s3-troubleshooting: Resolución de problemas
+public-cloud-storage-object-storage-s3-additional-resources: Recursos adicionales
+public-cloud-storage-object-storage-swift: swift
+public-cloud-storage-object-storage-swift-getting-started: Primeros pasos
+public-cloud-storage-object-storage-swift-configuration: Configuración
+public-cloud-storage-object-storage-swift-migration: Migración
+public-cloud-storage-object-storage-swift-tutorials: Tutoriales
+public-cloud-storage-object-storage-swift-security: Seguridad
+public-cloud-storage-object-storage-swift-troubleshooting: Resolución de problemas
+public-cloud-storage-object-storage-swift-additional-resources: Recursos adicionales
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
 public-cloud-storage-file-storage: File Storage
@@ -344,13 +354,23 @@ web-cloud-hosting-tutorials-cloud-web: Tutoriales para hosting Cloud Web
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeros pasos
 storage-object-storage: Object Storage
-storage-object-storage-general-information: General information
-storage-object-storage-general-guides-to-start: General guides to start
-storage-object-storage-tutorials: Tutorials
-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+storage-object-storage-s3: S3 compatible
+storage-object-storage-s3-key-concepts: Conceptos clave
+storage-object-storage-s3-getting-started: Primeros pasos
+storage-object-storage-s3-configuration: Configuración
+storage-object-storage-s3-migration: Migración
+storage-object-storage-s3-tutorials: Tutoriales
+storage-object-storage-s3-security: Seguridad
+storage-object-storage-s3-troubleshooting: Resolución de problemas
+storage-object-storage-s3-additional-resources: Recursos adicionales
+storage-object-storage-swift: swift
+storage-object-storage-swift-getting-started: Primeros pasos
+storage-object-storage-swift-configuration: Configuración
+storage-object-storage-swift-migration: Migración
+storage-object-storage-swift-tutorials: Tutoriales
+storage-object-storage-swift-security: Seguridad
+storage-object-storage-swift-troubleshooting: Resolución de problemas
+storage-object-storage-swift-additional-resources: Recursos adicionales
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
 storage-file-storage-ha-nas: HA-NAS
