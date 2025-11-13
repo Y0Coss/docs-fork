@@ -162,9 +162,9 @@ metadata:
   name: vault-external-secret
   namespace: default
 spec:
-secretStoreRef:
-  name: vault-secret-store
-  kind: ClusterSecretStore
+  secretStoreRef:
+    name: vault-secret-store
+    kind: ClusterSecretStore
 refreshInterval: "10s"
 target:
   name: creds-secret
@@ -176,8 +176,8 @@ data:
       property: login # Key to find in the JSON data of the secret
   - secretKey: password
     remoteRef:
-        key: prod/database/MySQL
-        property: password
+      key: prod/database/MySQL
+      property: password
 ```
 
 > [!info]

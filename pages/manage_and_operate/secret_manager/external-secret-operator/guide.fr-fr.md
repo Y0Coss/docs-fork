@@ -163,9 +163,9 @@ metadata:
   name: vault-external-secret
   namespace: default
 spec:
-secretStoreRef:
-  name: vault-secret-store
-  kind: ClusterSecretStore
+  secretStoreRef:
+    name: vault-secret-store
+    kind: ClusterSecretStore
 refreshInterval: "10s"
 target:
   name: creds-secret
