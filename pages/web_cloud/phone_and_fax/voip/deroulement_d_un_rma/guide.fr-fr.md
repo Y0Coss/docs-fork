@@ -1,7 +1,7 @@
 ---
 title: "VoIP / Accès Internet - Déroulement d'un RMA"
 excerpt: "Découvrez les étapes de restitution d’un téléphone ou d'un modem fourni par OVHcloud"
-updated: 2025-11-05
+updated: 2025-11-13
 ---
 
 <style>
@@ -33,16 +33,29 @@ De même, lors d'un changement de modem suite à une migration vers la Fibre ou 
 
 ## En pratique
 
+Retrouvez dans ce guide les étapes du déroulement d'un RMA pour la restitution d'un téléphone sous caution, d'un modem et d'un ONT fournis par OVHcloud.
+
+Ce guide décrit 2 exemples de RMA (échange de téléphone ou de modem et résiliation) afin d'en comprendre le fonctionnement.
+D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d'un e-mail puis rappels et enfin clôture du RMA).
+
 > [!primary]
 >
 > Pour plus d'informations sur l'échange de téléphones fournis par OVHcloud, consultez notre guide « [Gérer le téléphone Plug & Phone d’une ligne SIP](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone) ».
 
-Retrouvez dans ce guide les étapes du déroulement d'un RMA pour la restitution d'un téléphone sous caution, d'un modem et d'un ONT fournis par OVHcloud.
+### Vue d'ensemble
 
-Ce guide décrit 2 exemples de RMA (échange de téléphone ou de modem et résiliation) afin d'en comprendre le fonctionnement.
-D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d'un e-mail puis rappel et enfin clôture du RMA).
+Suite à la réception de l'e-mail contenant le ou les bons de retour, vous disposez de 15 jours pour effectuer l'envoi du matériel, avant la clôture du dossier.
+
+| Actions à réaliser | Délai imparti |
+| :---: | :---: |
+| ![actions-rma](images/rma-schema-retour.png){.thumbnail width="400"} | ![frise-rma](images/rma-schema-frise.png){.thumbnail width="400"} |
 
 ### Réception du premier e-mail et impression du bon de retour
+
+> [!primary]
+>
+> L'e-mail est envoyé au contact facturation du service.
+> Retrouvez plus d'informations sur la gestion des contacts dans notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 
 Lorsque votre RMA est créé, vous recevez un premier e-mail :
 
@@ -146,7 +159,7 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> > Vous disposez de X jours, soit jusqu'au #DATE+15jours#, pour nous renvoyer ce matériel. Après ce délai, vous pourrez être facturé de la caution et/ou des frais de pénalités.<br>
 >> > Vous pouvez retrouver le bon de retour pour le modem au format PDF à l'adresse suivante : #Lien vers le PDF du RMA#.<br>
 >> > Celui de l'ONT au format PDF est à l'adresse suivante : #Lien vers le PDF du RMA-ONT#.<br>
->> > Vous avez la possibilité de renvoyer l'ONT et le modem dans le même colis, pensez bien à y joindre les deux bons de retours.<br>
+>> > Vous avez la possibilité de renvoyer l'ONT et le modem dans le même colis, pensez bien à y joindre les deux bons de retour.<br>
 >> > Après avoir imprimé votre bon, coupez la partie basse. Joignez la au matériel, à l'intérieur du colis. La partie haute doit être collée à l'extérieur du colis et doit rester visible.<br>
 >> > Nous vous prions de joindre l'intégralité des éléments d'origine du matériel.<br>
 >> > Attention : Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n'aurait aucun lien avec le matériel retourné. Dans le cas contraire, OVHcloud tentera de prendre attache avec le client par courriel pour restituer les biens n'appartenant pas à OVHcloud. A compter de l'envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.<br>
@@ -160,11 +173,11 @@ Lorsque vous recevez cet e-mail, le lien du PDF est disponible dans le corps de 
 > [!tabs]
 > Exemple de RMA VoIP
 >>
->> ![deroulement-rma](images/rma2020.png){.thumbnail}
+>> ![deroulement-rma](images/rma2020.png){.thumbnail width="400"}
 >>
 > Exemple de RMA xDSL
 >>
->> ![deroulement-rma-xdsl](images/rma-xdsl-2025.png){.thumbnail}
+>> ![deroulement-rma-xdsl](images/rma-xdsl-2025.png){.thumbnail width="400"}
 >>
 > Exemple de RMA Fibre
 >>
@@ -172,7 +185,7 @@ Lorsque vous recevez cet e-mail, le lien du PDF est disponible dans le corps de 
 >>
 >> | Bon de retour du modem | Bon de retour de l'ONT |
 >> | --- | --- |
->> | ![deroulement-rma-ftth-modem](images/rma-ftth-2025.png){.thumbnail} | ![deroulement-rma-ftth-ont](images/rma-ftth-ont-2025.png){.thumbnail} |
+>> | ![deroulement-rma-ftth-modem](images/rma-ftth-2025.png){.thumbnail width="400"} | ![deroulement-rma-ftth-ont](images/rma-ftth-ont-2025.png){.thumbnail width="400"} |
 >> 
 
 Récupérez directement le bon de retour depuis l'e-mail reçu afin de l'imprimer.
@@ -193,7 +206,7 @@ Pour la téléphonie, vous pourrez également télécharger le bon de retour dep
 >
 > Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
 
- ### Envoi du colis
+### Envoi du colis
 
 > [!tabs]
 > Envoi d'un téléphone
