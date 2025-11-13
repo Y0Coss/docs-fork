@@ -66,8 +66,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 
 
 > [!tabs]
-> Debian 11
->> **Debian 11**
+> **Debian 11**
+>> Debian 11
 >>
 >> **Schritt 1: Automatische Netzwerkkonfiguration deaktivieren**
 >>
@@ -150,8 +150,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart networking
 >> ```
 >>
-> *Debian 12, Ubuntu 20.04+
->> **Debian 12, Ubuntu 20.04 und höher**
+> **Debian 12, Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 und höher
 >>
 >> Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie `50-cloud-init.yaml`. 
 >>
@@ -240,8 +240,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Wiederholen Sie diesen Vorgang für jede Additional IP-Adresse.
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
->> **AlmaLinux (8/9), Rocky Linux (8/9)**
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
 >>
 >> Die Hauptkonfigurationsdatei befindet sich im Ordner `/etc/sysconfig/network-scripts/`. In diesem Beispiel ist es `ifcfg-eth0`. Überprüfen Sie den Dateinamen in Ihrem Ordner, bevor Sie Änderungen vornehmen.
 >>
@@ -300,8 +300,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> Fedora 42
->> **Fedora 42**
+> **Fedora 42**
+>> Fedora 42
 >>
 >> Fedora verwendet Schlüsseldateien. NetworkManager hat zuvor Netzwerkprofile im Format ifcfg in diesem Verzeichnis gespeichert: `/etc/sysconfig/network-scripts/`. Da ifcfg nicht mehr unterstützt wird, erstellt NetworkManager keine neuen Profile mehr in diesem Format. Die Konfigurationsdatei befindet sich nun in `/etc/NetworkManager/system-connections/`.
 >>
@@ -367,8 +367,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> cPanel
->> **cPanel**
+> **cPanel**
+>> cPanel
 >>
 >> **Schritt 1: Auf den Bereich IP-Verwaltung des WHM zugreifen**
 >>
@@ -395,8 +395,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen**
 >>
@@ -422,8 +422,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> ![aktuelle IP-Konfiguration](images/plesk-final-configuration.png){.thumbnail}
 >>
-> Windows Servers
->> **Windows Servers**
+> **Windows Server**
+>> Windows Server
 >>
 >> **Schritt 1: Netzwerkkonfiguration überprüfen**
 >>
