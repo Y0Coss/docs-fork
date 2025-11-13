@@ -1,27 +1,36 @@
 ---
-title: Retrieve server health status
-universe: cloud
+title: "Retrieving server health status"
 excerpt: Retrieve server status
 updated: 2022-03-29
 ---
 
-## Presentation
-The OVH Load Balancer service acts by default as a proxy. That is to say that it distributes the load (requests) it receives between all the servers of the desired farm.
+## Objective
+
+The **OVHcloud Load Balancer** service acts by default as a proxy. It distributes the load (requests) it receives among all the servers in the desired farm.
 
 Each server can be configured for the load balancer to check its status frequently.
 
-Once a server is detected as "down", the load balancer no longer sends any data to it and distributes the load among the remaining servers.
+As soon as a server is detected as "unavailable" (unhealthy), the load balancer stops sending it data and distributes the load among the remaining servers.
 
-This can be practical in the case of server maintenance: you can take the server out of the farm, perform maintenance and then reintegrate it into the farm.
+This functionality is useful in the event of scheduled maintenance: the server is "taken out" of the farm, maintenance is performed, and then it is reintegrated into the farm.
 
-However, when a server is removed from the farm by the load balancer beyond our control, it can be interesting to know about it and why.
+However, when a server is "taken out" of the farm by the load balancer independently of our will, it is important to be informed and to know the reason.
 
-This tutorial explains how to know the health status of each server for each instance of your OVH Load Balancer.
+This tutorial explains how to find out the health status of each server for each instance of your **OVHcloud Load Balancer**.
 
-## Retrieve the health status of the servers
+## Requirements
 
-### Via API
-In the API, server health status is available in the serverState table :
+- Possess an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
+- Be logged into your [OVHcloud customer space](/links/manager).
+- Be connected to the [OVHcloud API](/links/api).
+- Possess a configured farm
+- Possess a configured *frontend*
+
+## Instructions
+
+### From the OVHcloud API
+
+In the API, the health status of the servers is available in the `serverState` table:
 
 > [!api]
 >
@@ -35,39 +44,45 @@ In the API, server health status is available in the serverState table :
 
 #### Result
 
-![Result server health status via API](images/result_serversStateApi.png){.thumbnail}
+![Result server health status via the API](images/result_serversStateApi.png){.thumbnail}
 
-In the picture above, we have the result of the command in the API.
+The image above illustrates the result of the command in the API.
 
-### Via the Manager
-In the "Farms" section, after selecting one of them, the status of each of its servers is displayed in the line corresponding to it.
+### From the OVHcloud customer space
+
+In the `Server farms`{.action} tab, after selecting one of them, the status of each of its servers is displayed on the corresponding line.
 
 #### Result
 
-![Result server health status via Manager](images/farm_server_health.png){.thumbnail}
+![Result server health status via the OVHcloud customer space](images/farm_server_health.png){.thumbnail}
 
-In order to obtain details on the health status of a server, simply click on the pictogram in the "Status" column.
+To obtain details on the health status of a server, simply click on the pictogram in the "**Status**" column.
 
-![Result server health status via Manager (details)](images/server_health_detail.png){.thumbnail}
+![Result server health status via the OVHcloud customer space (details)](images/server_health_detail.png){.thumbnail}
 
-### Explanation of the details
-As explained previously, we have successfully retrieved the server health status for each instance of your OVH Load Balancer.
+### Explanations of the details obtained
 
-For each instance, we have several pieces of information :
+As explained previously, we have retrieved the server health status for each instance of your **OVHcloud Load Balancer**.
+
+For each instance, we have the following information:
 
 |Field|Description|
 |---|---|
-|Status|Server Status|
-|Check code|Probe return code|
-|Check status|Probe Status|
-|Last check content|Contents of the probe response|
-|Check time|Probe execution date|
+|Status|Server status|
+|Check code|Return code of the health check probe|
+|Check status|Status of the health check probe|
+|Last check content|Content of the probe's return|
+|Check time|Date and time the probe was executed|
 
 ## Appendix
 
-### Getting the list of instances of your OVH Load Balancer
+### Retrieving the list of instances of your OVHcloud Load Balancer
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/instancesState
 > 
+
+## Go further
+
+Discuss with our [user community](/links/community).

@@ -7,20 +7,21 @@ updated: 2021-02-05
 
 ## Objective
 
-The OVH Load Balancer acts by default as a proxy. It can also be configured to redirect your customers to a third-party website, which is useful if you are changing your domain name, or want to redirect your customers to your website’s HTTPS version, for example. This is known as HTTP redirection.
+The **OVHcloud Load Balancer** operates by default as a proxy. It can also be configured to redirect client traffic to a third-party website. This functionality is essential for scenarios such as **domain name migration** or enforcing the **HTTPS version** of a website. This is known as **HTTP redirection**.
 
-**This guide will show you how to integrate your web services behind an OVH Load Balancer with redirections.**
+**This guide outlines the process for integrating your web services behind an OVHcloud Load Balancer utilizing HTTP redirections.**
 
 ## Requirements
 
-- an [OVH Load Balancer](/links/network/load-balancer)
-- access to the [OVH Control Panel](/links/manager), or the [OVH API](/links/api)
+- An [OVHcloud Load Balancer](/links/network/load-balancer)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud API](/links/api)
 
 ## Instructions
 
 ### Presentation
 
-A HTTP redirection is presented as follows:
+An HTTP redirection is presented as follows:
 
 ```bash
 HTTP/1.1 301 Moved Permanently
@@ -29,47 +30,47 @@ Content-Type: text/html
 Content-Length: 174
 ```
 
-Custom redirections should have the following form: `<scheme>://<net_loc>/<path>;<params>?<query>#<fragment>`. You can only specify one redirection per front-end.
+Custom redirections must use the following format: `<scheme>://<net_loc>/<path>;<params>?<query>#<fragment>`. Only **one redirection** can be specified per front-end.
 
-Custom redirections can be specified via the OVH Control Panel and via the API, both on new and existing `front-ends`{.action}.
+Custom redirections can be configured via the OVHcloud Control Panel and the API, both on new and existing `front-ends`{.action}.
 
 ### Add a custom redirection via the OVH Control Panel.
 
-You can define custom redirections from the [OVH Control Panel](/links/manager) by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
+You can configure custom redirections from the [OVHcloud Control Panel](/links/manager) by navigating to the `Cloud`{.action} section, then selecting `Load Balancer`{.action}.
 
-You can either do this on a new front-end as you create it, or on an existing front-end.
+This configuration can be performed either during the creation of a new front-end or by modifying an existing one.
 
-* Add a new front-end.
+- **Add a new front-end.**
 
-In the `Front-ends`{.action} section of the OVH Control Panel, click on `Add a front-end`{.action} to create a new one.
+In the `Front-ends`{.action} section of the OVHcloud Control Panel, click `Add a front-end`{.action} to create a new one.
 
-In the editing page for a front-end, select `HTTP`{.action} or `HTTPS`{.action} protocol. Configure the information as requested. However, please note that there is no need to set a `Default farm`{.action}, as it will not be used.
+On the front-end editing page, select either the `HTTP`{.action} or `HTTPS`{.action} protocol. Provide the required information. However, be aware that setting a `Default farm`{.action} is unnecessary, as it will not be utilized for a redirection front-end.
 
-In the advanced settings, enter the `HTTP redirection`{.action}.
+Under advanced settings, input the target `HTTP redirection`{.action} URL.
 
-* Edit an existing front-end.
+- **Edit an existing front-end.**
 
-In the `Front-ends`{.action} section of the OVH Control Panel, select the front-end you would like to edit. To do this, click the `...`{.action} button, then select `Edit`{.action} in the menu that appears. Please ensure that the front-end you have chosen uses either `HTTP` or `HTTPS` protocol.
+In the `Front-ends`{.action} section of the OVHcloud Control Panel, select the front-end you would like to edit. To do this, click the `...`{.action} button, then select `Edit`{.action} from the menu. Please ensure that the selected front-end uses either the `HTTP` or `HTTPS` protocol.
 
-In the editing page for the front-end, complete the configuration if needed. However, please note that there is no need to set a `Default farm`{.action}, as it will not be used.
+On the front-end editing page, complete the configuration as needed. However, please note that defining a `Default farm`{.action} is not required, as it will not be used.
 
-In the advanced settings, enter the `HTTP redirection`{.action}.
+In the advanced settings, enter the `HTTP redirection`{.action} URL.
 
 ![Configure a front-end redirection](images/add_redirectlocation.png){.thumbnail}
 
-Once the front-end has been configured, click `Add`{.action} or `Edit`{.action}, depending on whether you are configuring a new or existing front-end. Please remember to deploy the configuration. There are two ways of doing this:
+Once the front-end has been configured, click `Add`{.action} or `Edit`{.action}, depending on whether you are configuring a new or existing front-end. Please remember to deploy the configuration. This can be achieved in two ways:
 
-- via the `Status`{.action} section of the OVH Control Panel, by clicking on your Load Balancer’s `...`{.action} button, then selecting `Apply configuration`{.action}
+- via the `Status`{.action} section of the OVHcloud Control Panel, by clicking on your Load Balancer’s `...`{.action} button, then selecting `Apply configuration`{.action}
 
-- via the reminder box in the OVH Control Panel, notifying you that the configuration has not been applied, by clicking `Apply configuration`{.action}
+- via the reminder banner in the OVHcloud Control Panel, which notifies you that the configuration has not been applied, by clicking `Apply configuration`{.action}
 
 ![Apply a Load Balancer configuration](images/apply_configuration.png){.thumbnail}
 
 ### Add a custom redirection via the API.
 
-In the [OVH API](/links/api), redirections are specified in the redirectLocation character chain.
+Within the [OVHcloud API](/links/api), redirections are specified using the `redirectLocation` character string parameter.
 
-* If you are creating a new front-end:
+- **If you are creating a new front-end:**
 
 > [!api]
 >
@@ -83,7 +84,7 @@ In the [OVH API](/links/api), redirections are specified in the redirectLocation
 |zone|Front-end deployment zones|
 |redirectLocation|HTTP redirection URL|
 
-* If you are updating an existing front-end:
+- **If you are updating an existing front-end:**
 
 > [!api]
 >
@@ -96,7 +97,7 @@ In the [OVH API](/links/api), redirections are specified in the redirectLocation
 |frontendId|ID of the front-end to be updated|
 |redirectLocation|HTTP redirection URL|
 
-Then apply the modifications:
+Then, you must apply the modifications:
 
 > [!api]
 >
@@ -110,4 +111,4 @@ Then apply the modifications:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovhcloud.com/en/>.
