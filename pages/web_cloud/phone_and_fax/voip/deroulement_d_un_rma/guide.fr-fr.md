@@ -303,7 +303,7 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 
 ///
 
-Si une caution est restituée (uniquement valable pour un téléphone, les modems sont fournis en prêt par OVHcloud), elle sera disponible sous forme d'avoir sur votre compte prépayé OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique.<br>
+Si une caution est restituée (uniquement valable pour un téléphone, les modems et les ONT sont fournis en prêt par OVHcloud), elle sera disponible sous forme d'avoir sur votre compte prépayé OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique.<br>
 Si vous le souhaitez, vous pouvez en demander le remboursement sur votre compte bancaire via les étapes suivantes, **sous réserve d'avoir [enregistré un compte bancaire SEPA dans votre compte OVHcloud et de l'avoir défini en moyen de paiement par défaut](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) au préalable** :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
@@ -337,6 +337,8 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 > Nous sommes donc dans l'obligation de fermer votre ticket.
 >
 
+///
+
 **Facturation suite à la non réception du matériel**
 
 > [!tabs]
@@ -348,8 +350,6 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 >>
 >> Passé le délai de clôture du RMA, une pénalité sera appliquée pour le matériel (modem et/ou ONT) non reçu. Une facture sera ainsi émise.
 >> 
-
-///
 
 ## Erreur d'envoi d'un téléphone, d'un modem ou d'un ONT
 
