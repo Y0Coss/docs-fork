@@ -168,27 +168,8 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 
 ///
 
-Lorsque vous recevez cet e-mail, le lien du PDF est disponible dans le corps de l'e-mail. Il se présente sous cette forme :
-
-> [!tabs]
-> Exemple de RMA VoIP
->>
->> ![deroulement-rma](images/rma2020.png){.thumbnail width="400"}
->>
-> Exemple de RMA xDSL
->>
->> ![deroulement-rma-xdsl](images/rma-xdsl-2025.png){.thumbnail width="400"}
->>
-> Exemple de RMA Fibre
->>
->> Deux RMA sont générés, pour le retour du modem et pour le retour du boîtier fibre (ONT).
->>
->> | Bon de retour du modem | Bon de retour de l'ONT |
->> | --- | --- |
->> | ![deroulement-rma-ftth-modem](images/rma-ftth-2025.png){.thumbnail width="400"} | ![deroulement-rma-ftth-ont](images/rma-ftth-ont-2025.png){.thumbnail width="400"} |
->> 
-
-Récupérez directement le bon de retour depuis l'e-mail reçu afin de l'imprimer.
+Lorsque vous recevez cet e-mail, le lien vers le bon de retour au format PDF est disponible dans le corps de l'e-mail.<br>
+Suivez ce lien et imprimez le bon de retour.
 
 > [!primary]
 > L'ouverture du fichier PDF via le logiciel Adobe Reader peut ne pas aboutir. Dans ce cas, ouvrez ce fichier directement via un navigateur web ou via un autre lecteur de PDF.
@@ -205,6 +186,26 @@ Pour la téléphonie, vous pourrez également télécharger le bon de retour dep
 > 1. Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.
 >
 > Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
+
+Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
+
+> [!tabs]
+> Bon RMA - VoIP
+>>
+>> ![deroulement-rma](images/rma2020.png){.thumbnail width="400"}
+>>
+> Bon RMA - xDSL
+>>
+>> ![deroulement-rma-xdsl](images/rma-xdsl-2025.png){.thumbnail width="400"}
+>>
+> Bons RMA - Fibre
+>>
+>> Deux bons RMA sont générés, pour le retour du modem et pour le retour du boîtier fibre (ONT).
+>>
+>> | Bon de retour du modem | Bon de retour de l'ONT |
+>> | --- | --- |
+>> | ![deroulement-rma-ftth-modem](images/rma-ftth-2025.png){.thumbnail width="400"} | ![deroulement-rma-ftth-ont](images/rma-ftth-ont-2025.png){.thumbnail width="400"} |
+>>
 
 ### Envoi du colis
 
@@ -234,11 +235,7 @@ Pour la téléphonie, vous pourrez également télécharger le bon de retour dep
 >> Le volet à joindre dans le colis contient la liste des éléments à renvoyer. **N'oubliez aucun élément pour éviter toute pénalité**.<br>
 >>
 >> Vous pouvez effectuer l'envoi du modem et de l'ONT en un seul colis. Dans ce cas, **glissez bien les 2 bons de retour dans le colis** et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
->> 
-
-#### Envoi de plusieurs équipements (téléphone(s) - modem(s) - ONT)
-
-Si vous devez restituer plusieurs équipements (téléphone(s), modem(s) et ONT), vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par matériel) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
+>>
 
 > [!primary]
 >
@@ -251,7 +248,10 @@ Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confir
 > Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n’aurait aucun lien avec le matériel retourné.
 > 
 > Dans le cas contraire, OVHcloud tentera de prendre contact avec le client par courriel pour restituer les biens n’appartenant pas à OVHcloud. A compter de l’envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.
->
+
+#### Envoi de plusieurs équipements (téléphone(s) - modem(s) - ONT)
+
+Si vous devez restituer plusieurs équipements (téléphone(s), modem(s) et ONT), vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par matériel) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
 
 ### Les rappels
 
