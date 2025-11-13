@@ -4,6 +4,20 @@ excerpt: Find out how to add Additional IP addresses to your VPS configuration
 updated: 2025-11-12
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 IP aliasing refers to a special network configuration for certain OVHcloud services. Additional IPs allow you to associate multiple IP addresses with a single network interface.
@@ -58,13 +72,13 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> Open the following file path with a text editor:
 >>
->> ```
+>> ```bash
 >> sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 >> ```
 >>
 >> Enter the following line, then save and exit the editor:
 >>
->> ```
+>> ```bash
 >> network: {config:disabled}
 >> ```
 >>
@@ -285,9 +299,9 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> Fedora 37+
+> Fedora 42
 >>
->> **Fedora 37 and following**
+>> **Fedora 42**
 >>
 >> Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 >>

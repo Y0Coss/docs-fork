@@ -4,6 +4,20 @@ excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration ei
 updated: 2025-11-12
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Ziel
 
 Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für bestimme OVHcloud Dienste, mit der Sie mehrere IP-Adressen über ein einziges Netzwerkinterface verbinden können.
@@ -55,7 +69,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 > Debian 11
 >> **Debian 11**
 >>
->> Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
+>> **Schritt 1: Automatische Netzwerkkonfiguration deaktivieren**
 >>
 >> Öffnen Sie diesen Dateipfad mit einem Texteditor:
 >>
@@ -71,7 +85,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Die Erstellung dieser Konfigurationsdatei verhindert die automatische Ausführung von Änderungen an der Konfiguration Ihres Netzwerks.
 >>
->> Schritt 2: Backup erstellen
+>> **Schritt 2: Backup erstellen**
 >>
 >> Standardmäßig ist der Pfad zur Konfigurationsdatei: `etc/network/interfaces.d`.
 >>
@@ -82,7 +96,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
+>> **Schritt 3: Netzwerkkonfigurationsdatei bearbeiten**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -126,7 +140,9 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> netmask 255.255.255.255
 >> ```
 >>
->> Schritt 4: Interface neu starten
+>> ///
+>>
+>> **Schritt 4: Interface neu starten**
 >>
 >> Wenden Sie die Änderungen mit folgendem Befehl an:
 >>
@@ -134,13 +150,14 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart networking
 >> ```
 >>
->> ### Debian 12, Ubuntu 20.04 und höher
+> *Debian 12, Ubuntu 20.04+
+>> **Debian 12, Ubuntu 20.04 und höher**
 >>
 >> Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie `50-cloud-init.yaml`. 
 >>
 >> Es empfiehlt sich, eine separate Konfigurationsdatei zu erstellen, in der die Additional IP-Adressen definiert werden. Auf diese Weise können Sie die Änderungen im Falle eines Fehlers leicht rückgängig machen.
 >>
->> Schritt 1: Netzwerkkonfigurationsdatei erstellen
+>> **Schritt 1: Netzwerkkonfigurationsdatei erstellen**
 >>
 >> In unserem Beispiel heißt die Datei `51-cloud-init.yaml`:
 >>
@@ -148,7 +165,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo touch /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
->> #### Schritt 2: Netzwerkkonfigurationsdatei bearbeiten
+>> **Schritt 2: Netzwerkkonfigurationsdatei bearbeiten**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -192,7 +209,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> > Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen.
 >> >
 >>
->> /// details | **Exemple**
+>> /// details | **Beispiel**
 >>
 >> ```yaml
 >> network:
@@ -207,7 +224,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Speichern und schließen Sie die Datei.
 >>
->> Schritt 3: Neue Netzwerkkonfiguration anwenden
+>> **Schritt 3: Neue Netzwerkkonfiguration anwenden**
 >>
 >> Sie können Ihre Konfiguration mit folgendem Befehl testen:
 >>
@@ -230,7 +247,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Erstellen Sie für jede zu konfigurierende Additional IP-Adresse eine separate Konfigurationsdatei mit den folgenden Einstellungen: `ifcfg-NETWORK_INTERFACE:ID`. Dabei steht `NETWORK_INTERFACE` für die physische Schnittstelle und `ID` für die virtuelle Netzwerkschnittstelle oder den Ethernet-Alias, der mit einem Wert von 0 beginnt. Für unsere Schnittstelle `eth0` ist der erste Alias beispielsweise `eth0:0`, der zweite Alias ist `eth0:1` usw.
 >>
->> Schritt 1: Netzwerkkonfigurationsdatei bearbeiten
+>> **Schritt 1: Netzwerkkonfigurationsdatei bearbeiten**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -238,7 +255,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> ip a
 >> ```
 >>
->> Schritt 2: Netzwerkkonfigurationsdatei erstellen
+>> **Schritt 2: Netzwerkkonfigurationsdatei erstellen**
 >>
 >> Erstellen Sie zuerst die Konfigurationsdatei. Ersetzen Sie `NETWORK_INTERFACE:ID` durch eigene Werte.
 >>
@@ -267,8 +284,9 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> NETMASK=255.255.255.255
 >> BROADCAST=203.0.113.0
 >> ```
+>> ///
 >>
->> Schritt 3: Interface neu starten
+>> **Schritt 3: Interface neu starten**
 >>
 >> Wenden Sie die Änderungen mit folgendem Befehl an:
 >>
@@ -287,7 +305,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Fedora verwendet Schlüsseldateien. NetworkManager hat zuvor Netzwerkprofile im Format ifcfg in diesem Verzeichnis gespeichert: `/etc/sysconfig/network-scripts/`. Da ifcfg nicht mehr unterstützt wird, erstellt NetworkManager keine neuen Profile mehr in diesem Format. Die Konfigurationsdatei befindet sich nun in `/etc/NetworkManager/system-connections/`.
 >>
->> Schritt 1: Backup erstellen
+>> **Schritt 1: Backup erstellen**
 >>
 >> In unserem Beispiel heißt die Datei `cloud-init-eno1.nmconnection`, daher erstellen wir eine Kopie der Datei `cloud-init-eno1.nmconnection` mit folgendem Befehl:
 >>
@@ -302,7 +320,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> Schritt 2: Netzwerkkonfigurationsdatei bearbeiten
+>> **Schritt 2: Netzwerkkonfigurationsdatei bearbeiten**
 >>
 >> > [!primary]
 >> > Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Passen Sie die Befehle an Ihren Dateinamen an.
@@ -341,7 +359,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> ```
 >> ///
 >>
->> Schritt 3: Interface neu starten
+>> **Schritt 3: Interface neu starten**
 >>
 >> Starten Sie Ihr Interface neu:
 >>
@@ -349,15 +367,16 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
->> cPanel
+> cPanel
+>> **cPanel**
 >>
->> Schritt 1: Auf den Bereich IP-Verwaltung des WHM zugreifen
+>> **Schritt 1: Auf den Bereich IP-Verwaltung des WHM zugreifen**
 >>
 >> Klicken Sie im WHM Interface auf `IP Functions`{.action} und wählen Sie `Add a New IP Address`{.action} im Menü auf der linken Seite.
 >>
 >> ![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 >>
->> Schritt 2: Additional IP-Informationen hinzufügen
+>> **Schritt 2: Additional IP-Informationen hinzufügen**
 >>
 >> Geben Sie Ihre Additional IP-Adresse in der Form "xxx.xxx.xxx.xxx" in das Feld "New IP or IP range to add" ein.
 >>
@@ -370,7 +389,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> > Achtung: Wenn Sie mehrere IP-Adressen auf einem Block konfigurieren müssen und alle gleichzeitig hinzufügen, erzwingt das WHM-System die Subnetzmaske `255.255.255.0`. Es wird nicht empfohlen, diese Konfiguration zu verwenden. Sie müssen jede IP einzeln hinzufügen, um die entsprechende Subnetzmaske `255.255.255.255` verwenden zu können.
 >> >
 >>
->> Schritt 3: Aktuelle IP-Konfiguration überprüfen
+>> **Schritt 3: Aktuelle IP-Konfiguration überprüfen**
 >>
 >> Zurück im Abschnitt `IP Functions`{.action}, klicken Sie auf `Show or Delete Current IP Addresses`{.action}, um zu überprüfen, dass die Additional IP korrekt hinzugefügt wurde.
 >>
@@ -378,7 +397,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 > Plesk
 >> **Plesk**
->> Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen
+>>
+>> **Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen**
 >>
 >> Wählen Sie im Plesk Konfigurationspanel `Tools & Settings`{.action} im linken Menü aus.
 >>
@@ -386,7 +406,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Klicken Sie auf `IP Addresses`{.action} unter **Tools & Resources**.
 >>
->> Schritt 2: Die zusätzliche IP-Information hinzufügen
+>> **Schritt 2: Die zusätzliche IP-Information hinzufügen**
 >>
 >> Klicken Sie in diesem Abschnitt auf den Button `Add IP Address`{.action}.
 >>
@@ -396,16 +416,16 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> ![IP-Informationen hinzufügen](images/Plesk-additional-ip.png){.thumbnail}
 >>
->> Schritt 3: Aktuelle IP-Konfiguration überprüfen
+>> **Schritt 3: Aktuelle IP-Konfiguration überprüfen**
 >>
 >> Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
 >>
 >> ![aktuelle IP-Konfiguration](images/plesk-final-configuration.png){.thumbnail}
 >>
-> Windows Server
->> **Windows Server**
+> Windows Servers
+>> **Windows Servers**
 >>
->> Schritt 1: Netzwerkkonfiguration überprüfen
+>> **Schritt 1: Netzwerkkonfiguration überprüfen**
 >>
 >> Klicken Sie mit der rechten Maustaste auf `Start`{.action} und öffnen Sie `Run`{.action}.
 >>
@@ -429,7 +449,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>    Default Gateway . . . . . . . . . : 192.0.2.1
 >> ```
 >>
->> Schritt 2: IPv4 Eigenschaften ändern
+>> **Schritt 2: IPv4 Eigenschaften ändern**
 >>
 >> Die IP-Eigenschaften müssen nun zu einer statischen Konfiguration geändert werden.
 >>
@@ -446,7 +466,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> > Achtung, der Server wird unerreichbar, wenn Sie falsche Informationen eingeben. In diesem Fall sind Korrekturen über das KVM-Interface erforderlich.
 >> >
 >>
->> Schritt 3: Die Additional IP in "Erweiterte TCP/IP Einstellungen" hinzufügen
+>> **Schritt 3: Die Additional IP in "Erweiterte TCP/IP Einstellungen" hinzufügen**
 >>
 >> Klicken Sie im neuen Fenster auf `Add...`{.action} unter "IP addresses". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
 >>
@@ -462,7 +482,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Die Verbindung zu Ihrem Server wird für einige Sekunden unterbrochen.
 >>
->> Schritt 4: Neue Netzwerkkonfiguration überprüfen
+>> **Schritt 4: Neue Netzwerkkonfiguration überprüfen**
 >>
 >> Öffnen Sie die Eingabeaufforderung (cmd), und geben Sie `ipconfig` ein. Die Konfiguration muss nun die neue Additional IP-Adresse enthalten.
 >>
@@ -500,4 +520,4 @@ Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Für den Austausch mit unserer [User Community](/links/community).

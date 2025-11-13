@@ -4,6 +4,20 @@ excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configu
 updated: 2025-11-12
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau pour vos serveurs OVHcloud. Elle vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
@@ -55,7 +69,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 > Debian 11
 >> **Debian 11**
 >>
->> Étape 1 : désactiver la configuration automatique du réseau
+>> **Étape 1 : désactiver la configuration automatique du réseau**
 >>
 >> Ouvrez le chemin d'accès au fichier suivant avec un éditeur de texte.
 >>
@@ -71,7 +85,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> La création de ce fichier de configuration empêche l'exécution automatique des modifications apportées à la configuration de votre réseau.
 >>
->> Étape 2 : créer une sauvegarde
+>> **Étape 2 : créer une sauvegarde**
 >>
 >> Par défaut, le fichier de configuration est situé dans le chemin `etc/network/interfaces.d`.
 >>
@@ -88,7 +102,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> Étape 3 : éditer le fichier de configuration
+>> **Étape 3 : éditer le fichier de configuration**
 >>
 >> Vérifiez le nom de votre interface réseau à l'aide de la commande suivante :
 >>
@@ -133,7 +147,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> ```
 >> ///
 >>
->> Étape 4 : redémarrer l'interface
+>> **Étape 4 : redémarrer l'interface**
 >>
 >> Appliquez les modifications à l'aide de la commande suivante :
 >>
@@ -148,7 +162,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> La meilleure pratique consiste à créer un fichier de configuration distinct pour définir les adresses Additional IP. De cette manière, vous pouvez facilement revenir sur les modifications en cas d'erreur.
 >>
->> Étape 1 : créer le fichier de configuration du réseau
+>> **Étape 1 : créer le fichier de configuration du réseau**
 >>
 >> Dans notre exemple, notre fichier s'appelle `51-cloud-init.yaml` :
 >>
@@ -156,7 +170,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo touch /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
->> Étape 2 : modifier le fichier de configuration
+>> **Étape 2 : modifier le fichier de configuration**
 >>
 >> Vérifiez le nom de votre interface réseau à l'aide de la commande suivante :
 >>
@@ -214,7 +228,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> Enregistrez et fermez le fichier.
 >>
->> Étape 3 : appliquer la nouvelle configuration réseau
+>> **Étape 3 : appliquer la nouvelle configuration réseau**
 >>
 >> Testez votre configuration à l'aide de la commande suivante :
 >>
@@ -230,13 +244,14 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> Répétez cette procédure pour chaque adresse Additional IP.
 >>
-> AlmaLinux (8/9), Rocky Linux (8/9)
+> AlmaLinux / Rocky Linux (8/9)
 >> **AlmaLinux (8/9), Rocky Linux (8/9)**
+>>
 >> Le fichier de configuration principal est situé dans le dossier `/etc/sysconfig/network-scripts/`. Dans cet exemple, il est appelé `ifcfg-eth0`. Avant de faire des changements, vérifiez le nom réel du fichier dans ce dossier.
 >>
 >> Pour chaque adresse Additional IP à configurer, créez un fichier de configuration séparé avec les paramètres suivants : `ifcfg-NETWORK_INTERFACE:ID`. Où `NETWORK_INTERFACE` représente l'interface physique et `ID` représente l'interface réseau virtuelle ou l'alias ethernet commençant par une valeur de 0. Par exemple, pour notre interface nommée `eth0` le premier alias est `eth0:0`, le second alias est `eth0:1`, etc.
 >>
->> Étape 1 : déterminer l'interface
+>> **Étape 1 : déterminer l'interface**
 >>
 >> Vérifiez le nom de votre interface réseau à l'aide de la commande suivante :
 >>
@@ -244,7 +259,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> ip a
 >> ```
 >>
->> Étape 2 : créer le fichier de configuration
+>> **Étape 2 : créer le fichier de configuration**
 >>
 >> Tout d'abord, créez le fichier de configuration. Remplacez `NETWORK_INTERFACE:ID` par vos propres valeurs.
 >>
@@ -273,8 +288,9 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> NETMASK=255.255.255.255
 >> BROADCAST=203.0.113.0
 >> ```
+>> ///
 >>
->> Étape 3 : redémarrer l'interface
+>> **Étape 3 : redémarrer l'interface**
 >>
 >> ```bash
 >> sudo systemctl restart network
@@ -291,7 +307,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> Fedora utilise maintenant des fichiers clés. NetworkManager stockait auparavant les profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Cependant, le format ifcfg est maintenant obsolète. Par défaut, NetworkManager ne crée plus de nouveaux profils dans ce format. Le fichier de configuration se trouve maintenant dans `/etc/NetworkManager/system-connections/`.
 >>
->> Étape 1 : créer une sauvegarde
+>> **Étape 1 : créer une sauvegarde**
 >>
 >> Dans notre exemple, notre fichier s'appelle `cloud-init-eno1.nmconnection`, donc nous faisons une copie du fichier `cloud-init-eno1.nmconnection` en utilisant la commande suivante :
 >>
@@ -306,7 +322,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> Étape 2 : modifier le fichier de configuration
+>> **Étape 2 : modifier le fichier de configuration**
 >>
 >> > [!primary]
 >> > Veuillez noter que le nom du fichier réseau dans notre exemple peut être différent du vôtre. Veuillez adapter les commandes à votre nom de fichier.
@@ -345,7 +361,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> ```
 >> ///
 >>
->> Étape 3 : redémarrer l'interface
+>> **Étape 3 : redémarrer l'interface**
 >>
 >> Redémarrez votre interface :
 >>
@@ -356,13 +372,13 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 > cPanel
 >> **cPanel**
 >>
->> Étape 1 : accéder à la section de gestion des IP du WHM.
+>> **Étape 1 : accéder à la section de gestion des IP du WHM.**
 >>
 >> Dans l'espace client WHM, cliquez sur `IP Functions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 >>
 >> ![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 >>
->> Étape 2 : ajouter les informations des Additional IP.
+>> **Étape 2 : ajouter les informations des Additional IP.**
 >>
 >> Renseignez votre adresse Additional IP sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
 >>
@@ -374,7 +390,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> > Attention, si vous avez plusieurs IP à configurer sur un même bloc et que vous les ajoutez toutes en même temps, le système WHM vous forcera à utiliser le masque de sous-réseau `255.255.255.0`. Il n'est pas recommandé d'utiliser cette configuration, il faut ajouter chaque IP individuellement pour pouvoir utiliser le masque de sous-réseau approprié `255.255.255.255`.
 >> >
 >>
->> Étape 3 : vérifier la configuration IP actuelle.
+>> **Étape 3 : vérifier la configuration IP actuelle.**
 >>
 >> De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 >>
@@ -382,7 +398,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 > Plesk
 >> **Plesk**
->> Étape 1 : accéder à la gestion d'IP de Plesk
+>>
+>> **Étape 1 : accéder à la gestion d'IP de Plesk**
 >>
 >> Dans le panneau de configuration Plesk, choisissez `Tools & Settings`{.action} dans la barre latérale gauche.
 >>
@@ -390,7 +407,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> Cliquez sur `IP Addresses`{.action} sous **Tools & Settings**.
 >>
->> Étape 2 : ajouter les informations des Additional IP
+>> **Étape 2 : ajouter les informations des Additional IP**
 >>
 >> Dans cette section, cliquez sur le bouton `Add IP Address`{.action}.
 >>
@@ -400,7 +417,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> ![ajouter des informations IP](images/Plesk-additional-ip.png){.thumbnail}
 >>
->> Étape 3 : vérifier la configuration IP actuelle
+>> **Étape 3 : vérifier la configuration IP actuelle**
 >>
 >> Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 >>
@@ -409,7 +426,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 > Windows Server
 >> **Windows Server**
 >>
->> Étape 1 : vérifier la configuration réseau
+>> **Étape 1 : vérifier la configuration réseau**
 >>
 >> Faites un clic droit sur le bouton `Menu Démarrer`{.action} et ouvrez `Exécuter`{.action}.
 >>
@@ -433,7 +450,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>    Default Gateway . . . . . . . . . : 192.0.2.1
 >> ```
 >>
->> Étape 2 : modifier les propriétés IPv4
+>> **Étape 2 : modifier les propriétés IPv4**
 >>
 >> 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de gestion`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
 >> 2. Effectuez un clic droit sur `Connexion au réseau local`{.action} ;
@@ -464,7 +481,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> Vous perdrez la connexion à votre serveur pendant quelques secondes.
 >>
->> Étape 4 : vérifier la nouvelle configuration réseau
+>> **Étape 4 : vérifier la nouvelle configuration réseau**
 >>
 >> Ouvrez l'invite de commandes (cmd) et entrez `ipconfig`. La configuration doit maintenant inclure la nouvelle adresse Additional IP.
 >> 
