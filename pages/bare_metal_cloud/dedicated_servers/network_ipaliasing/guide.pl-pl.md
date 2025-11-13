@@ -360,7 +360,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >> > Używając polecenia `netplan try`, system może zwrócić komunikat ostrzegawczy, taki jak `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Oznacza to po prostu, że plik nie ma ograniczonych uprawnień. Nie ma to wpływu na konfigurację Additional IP. Aby uzyskać więcej informacji na temat uprawnień do plików, zobacz [oficjalną dokumentację Ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
 >>
 >> łówny plik konfiguracyjny znajduje się w `/etc/sysconfig/network-scripts/`. W naszym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.

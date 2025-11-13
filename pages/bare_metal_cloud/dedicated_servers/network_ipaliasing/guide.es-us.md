@@ -188,8 +188,8 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> **Fedora 41 y versiones posteriores**
 >>
 >> Fedora ahora utiliza archivos clave (*keyfiles*).
-Fedora solía utilizar perfiles de red almacenados por NetworkManager en formato ifcfg en el directorio `/etc/sysconfig/network-scripts/`.<br>
-Como el ifcfg ya no está actualizado, NetworkManager ya no crea nuevos perfiles en este formato de forma predeterminada. El archivo de configuración se encuentra ahora en `/etc/NetworkManager/system-connections/`.
+>> Fedora solía utilizar perfiles de red almacenados por NetworkManager en formato ifcfg en el directorio `/etc/sysconfig/network-scripts/`.<br>
+>> Como el ifcfg ya no está actualizado, NetworkManager ya no crea nuevos perfiles en este formato de forma predeterminada. El archivo de configuración se encuentra ahora en `/etc/NetworkManager/system-connections/`.
 >>
 >> 1\. Crear una copia de seguridad del archivo de configuración
 >>
@@ -352,7 +352,7 @@ Como el ifcfg ya no está actualizado, NetworkManager ya no crea nuevos perfiles
 >> > Al utilizar el comando `netplan try`, es posible que el sistema envíe un mensaje de advertencia como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Simplemente significa que el archivo no tiene permisos restrictivos. Esto no afecta a la configuración de su Additional IP. Para obtener más información sobre los permisos de archivo, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
 >>
 >> El archivo de configuración principal se encuentra en `/etc/sysconfig/network-scripts/`. En nuestro ejemplo, se denomina `ifcfg-eth0`. Antes de realizar cualquier cambio, compruebe el nombre de archivo real en esta carpeta.
@@ -457,7 +457,7 @@ Como el ifcfg ya no está actualizado, NetworkManager ya no crea nuevos perfiles
 >>
 >> Los siguientes pasos pueden realizarse, bien mediante línea comandos, o bien a través de la interfaz gráfica.
 >>
->> Mediante línea de comandos (recomendado)
+>> **Mediante línea de comandos (recomendado)**
 >>
 >> En los comandos indicados más abajo, sustituya los siguientes valores:
 >>

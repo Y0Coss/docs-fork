@@ -360,7 +360,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> > Quando si utilizza il comando `netplan try`, è possibile che il sistema restituisca un messaggio di avviso, ad esempio `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Significa semplicemente che il file non dispone di autorizzazioni restrittive. e la configurazione dell’Additional IP resta invariata. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
 >> 
 >> Il file di configurazione principale si trova in `/etc/sysconfig/network-scripts/`. Nel nostro esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome file effettivo nella cartella.
@@ -381,7 +381,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> 
 >>  ```sh
 >>  sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
->> ```
+>>  ```
 >> 
 >> Successivamente, modifica il file con il contenuto seguente, sostituendo `NETWORK_INTERFACE:ID` e `ADDITIONAL_IP` con i tuoi valori:
 >> 
@@ -465,7 +465,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >>
 >> Per continuare, è possibile effettuare le operazioni sia da riga di comando che tramite interfaccia grafica:
 >>
->> Da riga di comando (consigliato)
+>> **Da riga di comando (consigliato)**
 >>
 >> Nei comandi seguenti, è necessario sostituire:
 >>

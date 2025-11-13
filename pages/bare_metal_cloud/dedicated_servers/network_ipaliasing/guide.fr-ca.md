@@ -191,8 +191,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> Fedora 40+
->> **Fedora 40 et versions ultérieures**
+> Fedora 41+
+>> **Fedora 41 et versions ultérieures**
 >>
 >> Fedora utilise dorénavant des fichiers clés (*keyfiles*).
 >> Fedora utilisait auparavant des profils réseau stockés par NetworkManager au format ifcfg dans le répertoire `/etc/sysconfig/network-scripts/`.<br>
@@ -359,7 +359,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >> > Lors de l'utilisation de la commande `netplan try`, il est possible que le système renvoie un message d'avertissement tel que `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Cela signifie simplement que le fichier n'a pas de permissions restrictives. Cela n'affecte pas la configuration de votre Additional IP. Pour plus d'informations sur les permissions de fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
-> AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+> AlmaLinux / Rocky Linux
 >> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
 >>
 >> Le fichier de configuration principal se trouve dans `/etc/sysconfig/network-scripts/`. Dans notre exemple, il est appelé `ifcfg-eth0`. Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier.

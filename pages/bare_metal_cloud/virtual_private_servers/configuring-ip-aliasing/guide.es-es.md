@@ -156,7 +156,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> ```
 >>
 > Debian 12, Ubuntu 20.04+
->> **Debian 12, Ubuntu 20.04 et versions ultérieures**
+>> **Debian 12, Ubuntu 20.04 y versiones posteriores**
 >>
 >> El archivo de configuración de las direcciones Additional IP se encuentra en `/etc/netplan/`. En este ejemplo, se llama `50-cloud-init.yaml`.
 >>
