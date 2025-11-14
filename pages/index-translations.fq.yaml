@@ -122,28 +122,33 @@ public-cloud-quantum-computing-qpus: Quantum QPUs
 public-cloud-quantum-computing-qpus-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
-public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
-public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
-public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
-public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup, Restore and Migrate
-public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
-public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
-public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
-public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
-public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
-public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
-public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
-public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
-public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloads
+public-cloud-containers-orchestration-managed-kubernetes-k8s-key-concepts: Concepts clés
+public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Premiers pas
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration: Configuration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-network: Réseau
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-backup-and-restore: Sauvegarde et restauration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-observability-monitoring: Surveillance et observabilité
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-traffic-management: Gestion du trafic
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-storage: Stockage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-operators: Opérateurs
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-cluster: Cluster
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-nodepools-and-nodes: Nodepools & Nodes
+public-cloud-containers-orchestration-managed-kubernetes-k8s-migration: Migration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutoriels
+public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Sécurité
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Diagnostic et dépannage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-additional-resources: Ressources additionnelles
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
-public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
-public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-private-registry-getting-started: Premiers pas
+public-cloud-containers-orchestration-managed-private-registry-configuration: Configuration
+public-cloud-containers-orchestration-managed-private-registry-security: Sécurité
+public-cloud-containers-orchestration-managed-private-registry-troubleshooting: Diagnostic et dépannage 
+public-cloud-containers-orchestration-managed-private-registry-additional-resources: Ressources additionnelles
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
-public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
-public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
-public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
+public-cloud-containers-orchestration-managed-rancher-service-getting-started: Premiers pas
+public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
+public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutoriels
+public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Ressources additionnelles
 public-cloud-data-analytics: Analytics
 public-cloud-data-analytics-general-information: Informations générales
 public-cloud-data-analytics-general-guides: Guides généraux
