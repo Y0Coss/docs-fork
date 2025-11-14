@@ -1,6 +1,6 @@
 ---
 title: "VoIP / Accès Internet - Déroulement d'un RMA"
-excerpt: "Découvrez les étapes de restitution d’un téléphone ou d'un modem fourni par OVHcloud"
+excerpt: "Découvrez les étapes de restitution d’un téléphone, d'un modem ou d'un ONT fournis par OVHcloud"
 updated: 2025-11-14
 ---
 
