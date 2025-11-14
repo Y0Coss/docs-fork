@@ -178,14 +178,11 @@ Suivez ce lien et imprimez le bon de retour.
 
 Pour la téléphonie, vous pourrez également télécharger le bon de retour depuis votre espace client OVHcloud en suivant les étapes ci-dessous :
 
-> [!success]
->
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-> 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-> 1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée (vous pouvez rechercher le numéro dans le champ prévu à cet effet).
-> 1. Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.
->
-> Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
+1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée (vous pouvez rechercher le numéro dans le champ prévu à cet effet).
+1. Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.
+1. Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
 
 Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
 
@@ -214,9 +211,8 @@ Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
 >>
 >> La partie basse du bon de retour est impérativement à joindre dans le colis et l'autre volet est à coller sur le colis pour l'affranchissement.<br>
 >> Le volet à joindre dans le colis contient la liste des éléments à renvoyer. **N'oubliez aucun élément pour récupérer la totalité de la caution**.<br>
->> Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite dans l'e-mail reçu ou dans la référence du bon RMA avant la mention « 3BHE » (RMAxxxx**MAC**3BHE).<br>
 >>
->> Si vous devez restituer plusieurs téléphones, vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par téléphone) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
+>> Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite dans l'e-mail reçu ou dans la référence du bon RMA avant la mention « 3BHE » (RMAxxxx**MAC**3BHE).<br>
 >>
 > Envoi d'un modem (xDSL et Fibre)
 >>
@@ -227,8 +223,6 @@ Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
 >>
 >> **Modem Zyxel** : Si vous disposez de plusieurs modems similaires, vérifiez que le numéro de série (un numéro unique par modem) du modem correspond bien à celui écrit dans l'e-mail reçu ou dans la référence du bon RMA avant la mention « 3BHE » (RMAxxxx**SN**3BHE).<br>
 >>
->> Si vous devez restituer plusieurs modems, vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par modem) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
->>
 > Envoi d'un modem et d'un ONT (Fibre)
 >>
 >> La partie basse du bon de retour est impérativement à joindre dans le colis et l'autre volet est à coller sur le colis pour l'affranchissement.<br>
@@ -236,6 +230,10 @@ Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
 >>
 >> Vous pouvez effectuer l'envoi du modem et de l'ONT en un seul colis. Dans ce cas, **glissez bien les 2 bons de retour dans le colis** et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
 >>
+
+#### Envoi de plusieurs équipements (téléphone(s) - modem(s) - ONT)
+
+Si vous devez restituer plusieurs équipements (téléphone(s), modem(s) et ONT), vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par matériel) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
 
 > [!primary]
 >
@@ -248,10 +246,6 @@ Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confir
 > Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n’aurait aucun lien avec le matériel retourné.
 > 
 > Dans le cas contraire, OVHcloud tentera de prendre contact avec le client par courriel pour restituer les biens n’appartenant pas à OVHcloud. À compter de l’envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.
-
-#### Envoi de plusieurs équipements (téléphone(s) - modem(s) - ONT)
-
-Si vous devez restituer plusieurs équipements (téléphone(s), modem(s) et ONT), vous pouvez les regrouper dans un seul colis. Dans ce cas, **glissez bien l'ensemble des bons de retour dans le colis** (un bon de retour par matériel) et collez la partie haute d'un des bons de retour sur le colis pour l'affranchissement.
 
 ### Les rappels
 
