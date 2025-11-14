@@ -1,7 +1,7 @@
 ---
-title: 'Managing Intel SGX on a dedicated server'
-excerpt: 'Find out how to enable SGX on your dedicated server and install the Linux SGX software stack'
-updated: 2022-08-31
+title: "How to manage Intel SGX on a dedicated server"
+excerpt: "Find out how to enable SGX on your dedicated server and install the Linux SGX software stack"
+updated: 2025-11-18
 ---
 
 ## Objective
@@ -12,18 +12,20 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 
 ## Requirements
 
-- A dedicated server compatible with the [SGX option](https://www.ovhcloud.com/en-gb/bare-metal/intel-software-guard-extensions/) in your OVHcloud account
+- A dedicated server compatible with the [SGX option](/links/bare-metal/sgx) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](/links/api)
 - Login credentials received via email after the installation
-- Ubuntu 18.04 or equivalent installed on the server
+- Ubuntu 24.04 or equivalent installed on the server
 
 ## Instructions
 
 ### From the OVHcloud Control Panel
 
+#### Step 1: Logging in to the OVHcloud Control Panel
+
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
 
-#### Enabling the option
+#### Step 2: Enabling SGX
 
 Scroll down to the "Advanced features" box and click on `...`{.action} next to "Security - Intel SGX (Software Guard Extensions)". Select `Enable SGX`{.action} from the drop-down menu.
 
@@ -40,16 +42,6 @@ You can either choose to enable SGX with a specific amount of reserved memory or
 A confirmation pop-up will appear. Please confirm you have understood that activating Intel SGX technology will make your server reboot.
 
 ![activation SGX](images/confirmation-popup_sgx.png){.thumbnail}
-
-> [!warning]
->
-> This will cause your server to reboot once or several times, depending on your server model.
-
-#### Disabling the option
-
-Scroll down to the "Advanced features" box and click on `...`{.action} next to "Security - Intel SGX (Software Guard Extensions)". Select `Modify SGX`{.action} from the drop-down menu. Choose the `Disable`{.action} option and then click `Confirm`{.action}.
-
-![SGX disabling](images/disable_sgx.png){.thumbnail}
 
 > [!warning]
 >
@@ -107,102 +99,130 @@ You can verify that the status is set to enabled:
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
+Continue with [Step 3](#sgx-softwares) of the instructions below.
+
+### Manual configuration in the BIOS
+
+#### Step 1: Start a Remote KVM session
+
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
+
+Then, start a Remote KVM session:
+
+![Start a Remote KVM session](images/manager.png){.thumbnail}
+
+#### Step 2: Enabling SGX
+
+Then, through the KVM, initiate a server reboot and enter the BIOS (usually by pressing the `DEL`{.action} or `F2`{.action} key).
+
+In the BIOS, go to `Advanced` > `Processor Configuration`.
+
+Enable TME and SGX options, and configure the desired PRMRR size:
+
+![Enable SGX](images/sgx_bios.png){.thumbnail}
+
+Save the changes by pressing the `F10`{.action} key. A confirmation pop-up will appear, please confirm with the `Yes` option.
+
+Your server will then restart and boot into your OS.
+
+Continue with [Step 3](#sgx-softwares) of the instructions below.
+
 ### Step 3: Installing the SGX software stack <a name="sgx-softwares"></a>
 
-Use the following commands to install Intel's driver and SDK to be able to develop and run SGX applications.  
+Use the following commands to install Intel's SDK to be able to develop and run SGX applications.  
 
 First, install some dependencies:
 
 ```bash
-sudo apt-get install build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake git
+sudo apt update
+sudo apt install autoconf automake build-essential cmake debhelper git libcurl4-openssl-dev libprotobuf-dev libssl-dev libtool lsb-release ocaml ocamlbuild protobuf-compiler python-is-python3 reprepro wget perl unzip pkgconf libboost-dev libboost-system-dev libboost-thread-dev lsb-release libsystemd0
 ```
 
-Then, download, build and install the SGX software stack:
+Then, download the source code and prepare the submodules and prebuilt binaries:
 
 ```bash
 BASE_DIR=/opt/intel
 [[ -d $BASE_DIR ]] || sudo mkdir -p $BASE_DIR && sudo chown `whoami` $BASE_DIR
 cd $BASE_DIR
-
+ 
 git clone https://github.com/intel/linux-sgx.git
-
+ 
 cd linux-sgx
-git checkout sgx_2.6
-./download_prebuilt.sh
-make -j 6
-make sdk_install_pkg -j 6
-make deb_pkg -j 6
-$BASE_DIR/linux-sgx/linux/installer/bin/sgx_linux_x64_sdk_2.6.100.51363.bin --prefix=$BASE_DIR/
-
-sudo dpkg -i $BASE_DIR/linux-sgx/linux/installer/deb/libsgx-urts_2.6.100.51363-bionic1_amd64.deb $BASE_DIR/linux-sgx/linux/installer/deb/libsgx-enclave-common_2.6.100.51363-bionic1_amd64.deb
+git checkout sgx_2.26
+make preparation
 ```
 
-Download and install the driver:
+Build and install SGX SDK:
 
 ```bash
-wget https://download.01.org/intel-sgx/linux-2.6/ubuntu18.04-server/sgx_linux_x64_driver_2.5.0_2605efa.bin
-chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
-sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
+make sdk_install_pkg
+$ ./linux/installer/bin/sgx_linux_x64_sdk_2.26.100.0.bin --prefix=$BASE_DIR/
 ```
 
-### Step 4: Rebooting to finish the installation
+### Step 4: Test sample application in Simulator mode
 
-The server needs to reboot before continuing.
-
-### Step 5: Validating the installation (optional)
-
-You can use a sample application to validate the installation. Build one of the sample apps provided:
+To build and run LocalAttestation sample code in Simulator mode:
 
 ```bash
 BASE_DIR=/opt/intel
 cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
 source $BASE_DIR/sgxsdk/environment
-make SGX_DEBUG=0 SGX_MODE=HW SGX_PRERELEASE=1
+ 
+make clean
+SGX_MODE=SIM make
+cd bin
+./app
+succeed to load enclaves.
+succeed to establish secure channel.
+Succeed to exchange secure message...
+Succeed to close Session...
 ```
 
-Run the app:
+### Step 5: Build and install Intel SGX PSW
+
+Intel SGX Platform Software (PSW) provides software libraries to run SGX applications in Hardware mode. To build the local Debian package repository hosting the packages enter the following commands:
 
 ```bash
-ovh@nsXXXX:/opt/intel/sgxsdk/SampleCode/LocalAttestation$ ./app 
+BASE_DIR=/opt/intel
+cd $BASE_DIR/linux-sgx
+make deb_local_repo
+```
 
-Available Enclaves
-Enclave1 - EnclaveID 2
-Enclave2 - EnclaveID 3
-Enclave3 - EnclaveID 4
+Create the following file to add the local Debian package repository to the system repository configuration:
 
-Secure Channel Establishment between Source (E1) and Destination (E2) Enclaves successful !!!
+```bash
+$ cat /etc/apt/sources.list.d/sgx.sources
+Types: deb
+URIs: file:/opt/intel/linux-sgx/linux/installer/deb/sgx_debian_local_repo
+Suites: noble
+Components: main
+trusted: yes
+```
 
-Enclave to Enclave Call between Source (E1) and Destination (E2) Enclaves successful !!!
+Then, install the following packages:
 
-Message Exchange between Source (E1) and Destination (E2) Enclaves successful !!!
+```bash
+sudo apt update
+sudo apt-get install libsgx-epid libsgx-quote-ex libsgx-dcap-ql
+```
 
-Secure Channel Establishment between Source (E1) and Destination (E3) Enclaves successful !!!
+### Step 6: Test sample application in Hardware mode (optional)
 
-Enclave to Enclave Call between Source (E1) and Destination (E3) Enclaves successful !!!
+To build and run LocalAttestation sample code in Hardware mode:
 
-Message Exchange between Source (E1) and Destination (E3) Enclaves successful !!!
-
-Secure Channel Establishment between Source (E2) and Destination (E3) Enclaves successful !!!
-
-Enclave to Enclave Call between Source (E2) and Destination (E3) Enclaves successful !!!
-
-Message Exchange between Source (E2) and Destination (E3) Enclaves successful !!!
-
-Secure Channel Establishment between Source (E3) and Destination (E1) Enclaves successful !!!
-
-Enclave to Enclave Call between Source (E3) and Destination (E1) Enclaves successful !!!
-
-Message Exchange between Source (E3) and Destination (E1) Enclaves successful !!!
-
-Close Session between Source (E1) and Destination (E2) Enclaves successful !!!
-
-Close Session between Source (E1) and Destination (E3) Enclaves successful !!!
-
-Close Session between Source (E2) and Destination (E3) Enclaves successful !!!
-
-Close Session between Source (E3) and Destination (E1) Enclaves successful !!!
-
-Hit a key....
+```bash
+BASE_DIR=/opt/intel
+cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
+source $BASE_DIR/sgxsdk/environment
+ 
+make clean
+SGX_MODE=HW make
+cd bin
+./app
+succeed to load enclaves.
+succeed to establish secure channel.
+Succeed to exchange secure message...
+Succeed to close Session...
 ```
 
 ## Go further
@@ -211,9 +231,5 @@ To go further (develop your own application, register for remote attestation, et
 
 - [Intel SGX](https://software.intel.com/en-us/sgx)
 - [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
-- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [Intel SGX linux-2.26 documentation](https://download.01.org/intel-sgx/sgx-linux/2.26/docs/)
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)
-
-Join our [community of users](/links/community).
