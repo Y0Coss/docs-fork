@@ -88,7 +88,7 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> > Veuillez imprimer ce bon svp, puis joindre la partie basse à votre colis, tandis que la partie haute devra être collée dessus, à l'extérieur.<br>
 >> > Merci de bien vérifier que votre matériel contienne tous les éléments d'origine. Vous disposez de 15 jours pour nous renvoyer ce matériel.
 >> > Après ce délai, vous serez facturé de la caution de ce dernier #AMOUNT#.<br>
->> > La société OVH décline toutes responsabilités en cas de non réception ou de perte du colis par le transporteur choisi.<br>
+>> > La société OVH décline toute responsabilité en cas de non réception ou de perte du colis par le transporteur choisi.<br>
 >> > Votre numéro de retour (RMA) est : #RMA#. Il vous sera demandé en cas d'échange avec notre support concernant ce dossier.<br>
 >> > Adresse de retour : OVH SAS - Service Après Vente - 155, avenue Georges Hannart 59170 CROIX.
 
@@ -117,9 +117,9 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> > Merci de bien vérifier que votre colis contienne tous les éléments d'origine.<br>
 >> > Vous disposez de 15 jours pour nous renvoyer ce matériel. Après ce délai, vous pourrez être facturé de la caution et/ou des frais de pénalités.<br>
 >> > Votre numéro de retour (RMA) est : #RMA#. Il vous sera demandé en cas d'échange avec notre support concernant ce dossier.<br>
->> > Adresse de retour : 155 avenue Georges Hannart 59170 CROIX.
+>> > Adresse de retour : OVH SAS - Service Après Vente - 155, avenue Georges Hannart 59170 CROIX
 >> > 
->> > <sup>*</sup> Cette demande de retour sera automatiquement annulée en cas de régularisation de votre situation dans les délais. A défaut, votre abonnement sera définitivement supprimé et les frais éventuels restants appliqués.
+>> > <sup>*</sup> Cette demande de retour sera automatiquement annulée en cas de régularisation de votre situation dans les délais. À défaut, votre abonnement sera définitivement supprimé et les frais éventuels restants appliqués.
 >> 
 > Résiliation d'un accès Internet xDSL
 >>
@@ -135,10 +135,10 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> > Un bon de renvoi du modem #MODEL# a été créé avec la référence #RMA#.<br>
 >> > Vous disposez de X jours, soit jusqu'au #DATE+15jours#, pour nous renvoyer ce matériel. Après ce délai, vous pourrez être facturé de la caution et/ou des frais de pénalités.<br>
 >> > Vous pouvez retrouver le bon de retour pour le modem au format PDF à l'adresse suivante : #Lien vers le PDF du RMA#.<br>
->> > Après avoir imprimé votre bon, coupez la partie basse. Joignez la au matériel, à l'intérieur du colis. La partie haute doit être collée à l'extérieur du colis et doit rester visible.<br>
+>> > Après avoir imprimé votre bon, coupez la partie basse. Joignez-la au matériel, à l'intérieur du colis. La partie haute doit être collée à l'extérieur du colis et doit rester visible.<br>
 >> > Nous vous prions de joindre l'intégralité des éléments d'origine du matériel.<br>
->> > Attention : Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n'aurait aucun lien avec le matériel retourné. Dans le cas contraire, OVHcloud tentera de prendre attache avec le client par courriel pour restituer les biens n'appartenant pas à OVHcloud. A compter de l'envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.<br>
->> > La société OVH décline toutes responsabilités en cas de non réception ou de perte du colis par le transporteur choisi.<br>
+>> > Attention : Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n'aurait aucun lien avec le matériel retourné. Dans le cas contraire, OVHcloud tentera de prendre attache avec le client par courriel pour restituer les biens n'appartenant pas à OVHcloud. À compter de l'envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.<br>
+>> > La société OVH décline toute responsabilité en cas de non réception ou de perte du colis par le transporteur choisi.<br>
 >> > L'adresse de retour est la suivante : OVH SAS - Service Après Vente - 155, avenue Georges Hannart 59170 CROIX
 >>
 > Résiliation d'un accès Internet Fibre
@@ -160,10 +160,10 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
 >> > Vous pouvez retrouver le bon de retour pour le modem au format PDF à l'adresse suivante : #Lien vers le PDF du RMA#.<br>
 >> > Celui de l'ONT au format PDF est à l'adresse suivante : #Lien vers le PDF du RMA-ONT#.<br>
 >> > Vous avez la possibilité de renvoyer l'ONT et le modem dans le même colis, pensez bien à y joindre les deux bons de retour.<br>
->> > Après avoir imprimé votre bon, coupez la partie basse. Joignez la au matériel, à l'intérieur du colis. La partie haute doit être collée à l'extérieur du colis et doit rester visible.<br>
+>> > Après avoir imprimé votre bon, coupez la partie basse. Joignez-la au matériel, à l'intérieur du colis. La partie haute doit être collée à l'extérieur du colis et doit rester visible.<br>
 >> > Nous vous prions de joindre l'intégralité des éléments d'origine du matériel.<br>
->> > Attention : Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n'aurait aucun lien avec le matériel retourné. Dans le cas contraire, OVHcloud tentera de prendre attache avec le client par courriel pour restituer les biens n'appartenant pas à OVHcloud. A compter de l'envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.<br>
->> > La société OVH décline toutes responsabilités en cas de non réception ou de perte du colis par le transporteur choisi.<br>
+>> > Attention : Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n'aurait aucun lien avec le matériel retourné. Dans le cas contraire, OVHcloud tentera de prendre attache avec le client par courriel pour restituer les biens n'appartenant pas à OVHcloud. À compter de l'envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.<br>
+>> > La société OVH décline toute responsabilité en cas de non réception ou de perte du colis par le transporteur choisi.<br>
 >> > L'adresse de retour est la suivante : OVH SAS - Service Après Vente - 155, avenue Georges Hannart 59170 CROIX
 
 ///
@@ -203,7 +203,7 @@ Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
 >> Deux bons RMA sont générés, pour le retour du modem et pour le retour du boîtier fibre (ONT).
 >>
 >> | Bon de retour du modem | Bon de retour de l'ONT |
->> | --- | --- |
+>> | :---: | :---: |
 >> | ![deroulement-rma-ftth-modem](images/rma-ftth-2025.png){.thumbnail width="400"} | ![deroulement-rma-ftth-ont](images/rma-ftth-ont-2025.png){.thumbnail width="400"} |
 >>
 
@@ -247,7 +247,7 @@ Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confir
 >
 > Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n’aurait aucun lien avec le matériel retourné.
 > 
-> Dans le cas contraire, OVHcloud tentera de prendre contact avec le client par courriel pour restituer les biens n’appartenant pas à OVHcloud. A compter de l’envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.
+> Dans le cas contraire, OVHcloud tentera de prendre contact avec le client par courriel pour restituer les biens n’appartenant pas à OVHcloud. À compter de l’envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.
 
 #### Envoi de plusieurs équipements (téléphone(s) - modem(s) - ONT)
 
