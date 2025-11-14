@@ -93,8 +93,8 @@ external-secrets/external-secrets \
 
 #### Configure External Secret Operator
 
-First, setup a `SecretStore` that is responsible of the synchronization with the Secret Manager.
-We configure the SecretStore using HashiCorp Vault with token authentification and with the OKMS endpoint as backend.
+First, setup a `ClusterSecretStore` that is responsible of the synchronization with the Secret Manager.
+We configure the ClusterSecretStore using HashiCorp Vault with token authentification and with the OKMS endpoint as backend.
 
 Add the `user_pat` as a secret to be able to use it in the charts.
 
@@ -115,7 +115,7 @@ spec:
         type: Opaque
 ```
 
-The `SecretStore` resource:
+The `ClusterSecretStore` resource:
 
 ```yaml
 apiVersion: external-secrets.io/v1
@@ -147,7 +147,7 @@ As an example for **Europe (France - Paris)**, OKMS endpoint is **eu-west-par.ok
 
 #### Use External Secret Operator
 
-Once the `SecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
+Once the `ClusterSecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
 In the example we use a secret already created on the Secret Manager:
 
 - Path: `prod/database/MySQL`
