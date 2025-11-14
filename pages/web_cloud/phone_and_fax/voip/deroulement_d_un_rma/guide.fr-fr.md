@@ -267,13 +267,13 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 >
 > Bonjour,
 >
-> Sauf erreur de notre part, nous n'avons toujours pas reçu le matériel lié au retour ouvert en date du #DATE# :
-> Modèle : #MODEL# 
-> Référence : #REFERENCE#
-> Voici le bon de retour, au format PDF, pour le renvoi de ce matériel : #Lien vers le PDF du RMA#
-> Veuillez imprimer ce bon svp, puis joindre la partie basse à votre colis, tandis que la partie haute devra être collée dessus, à l'extérieur.
-> Merci de bien vérifier que votre colis contienne tous les éléments d'origine.
-> Sans restitution de votre matériel dans les 3 jours, nous devrons procéder à la fermeture de ce dossier.
+> Sauf erreur de notre part, nous n'avons toujours pas reçu le matériel lié au retour ouvert en date du #DATE# :<br>
+> Modèle : #MODEL#<br>
+> Référence : #REFERENCE#<br>
+> Voici le bon de retour, au format PDF, pour le renvoi de ce matériel : #Lien vers le PDF du RMA#<br>
+> Veuillez imprimer ce bon svp, puis joindre la partie basse à votre colis, tandis que la partie haute devra être collée dessus, à l'extérieur.<br>
+> Merci de bien vérifier que votre colis contienne tous les éléments d'origine.<br>
+> Sans restitution de votre matériel dans les 3 jours, nous devrons procéder à la fermeture de ce dossier.<br>
 > Adresse de retour : OVH SAS - 155, avenue Georges Hannart 59170 CROIX.
 >
 
@@ -295,9 +295,9 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 > 
 > Bonjour,
 >
-> Nous avons réceptionné le matériel lié au RMA #RMA# correspondant à la référence #MODEL#, et nous vous en remercions.
-> Tout est en ordre et la totalité de votre caution vous sera restituée dans les jours qui suivent. 
-> Elle sera créditée sur votre compte OVH, accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH.
+> Nous avons réceptionné le matériel lié au RMA #RMA# correspondant à la référence #MODEL#, et nous vous en remercions.<br>
+> Tout est en ordre et la totalité de votre caution vous sera restituée dans les jours qui suivent.<br>
+> Elle sera créditée sur votre compte OVH, accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH.<br>
 > Vous pouvez à tout moment procéder à un transfert vers votre compte bancaire depuis votre espace client.
 >
 
@@ -330,10 +330,10 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 >
 > Bonjour,
 >
-> Sauf erreur de notre part, nous n'avons pas reçu le matériel lié au retour ouvert en date du #DATE# : 
-> Modèle : #MODEL# 
-> Référence/Mac : #REFERENCE#
-> Le bon de retour, pour le renvoi de ce matériel, était le suivant : #Lien vers le PDF du RMA#.
+> Sauf erreur de notre part, nous n'avons pas reçu le matériel lié au retour ouvert en date du #DATE# :<br>
+> Modèle : #MODEL#<br>
+> Référence/Mac : #REFERENCE#<br>
+> Le bon de retour, pour le renvoi de ce matériel, était le suivant : #Lien vers le PDF du RMA#.<br>
 > Nous sommes donc dans l'obligation de fermer votre ticket.
 >
 
