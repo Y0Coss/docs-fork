@@ -89,7 +89,7 @@ Alle Diagnosen in Schritt 1 sind **ausnahmslos** durchzuführen, um festzustelle
 
 Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von keiner Störung oder Wartung beeinträchtigt werden, benötigen Sie die Cluster- und Filer-Nummer des Hostings sowie die allgemeinen Daten zur entsprechenden Datenbank. Damit können Sie den Status auf [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/) überprüfen.
 
-Um den Cluster und den Filer zu ermitteln, auf dem sich Ihr Shared Hosting befindet, konsultieren Sie unser Handbuch „[Webhosting - Cluster und Filer eines Webhostings finden](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)“.
+Um den Cluster und den Filer zu ermitteln, auf dem sich Ihr Webhosting befindet, konsultieren Sie: „[Webhosting - Cluster und Filer eines Webhostings finden](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)“.
 
 > [!success]
 >
