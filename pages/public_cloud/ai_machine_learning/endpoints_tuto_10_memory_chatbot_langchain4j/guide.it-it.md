@@ -133,7 +133,7 @@ Make sure your environment variables are set:
 
 ```bash
 export OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3
-export OVH_AI_ENDPOINTS_MODEL_URL=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+export OVH_AI_ENDPOINTS_MODEL_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 export OVH_AI_ENDPOINTS_ACCESS_TOKEN=<your-access-token>
 ```
 
