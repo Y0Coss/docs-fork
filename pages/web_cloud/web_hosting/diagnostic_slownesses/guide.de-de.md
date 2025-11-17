@@ -1,7 +1,7 @@
 ---
 title: "Meine Website lädt zu langsam. Was soll ich tun?" 
 excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren Sie, wie Sie diese Situation verbessern"
-updated: 2025-11-20
+updated: 2025-11-17
 ---
   
 ## Ziel

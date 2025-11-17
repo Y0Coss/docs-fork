@@ -1,7 +1,7 @@
 ---
 title: "Moja strona jest powolna. Co robić?"
 excerpt: "Dowiedz się, skąd pochodzą opóźnienia Twojej strony WWW i jak je rozwiązać"
-updated: 2025-11-20
+updated: 2025-11-17
 ---
 
 ## Wprowadzenie
