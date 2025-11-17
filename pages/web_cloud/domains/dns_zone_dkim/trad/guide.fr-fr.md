@@ -1,88 +1,16 @@
----
-title: Améliorer la sécurité des e-mails via un enregistrement DKIM
-excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2025-11-14
----
 
-<style>
-.w-400 {
-  max-width:400px !important;
-}
-.h-600 {
-  max-height:600px !important;
-}
- pre {
-     font-size: 14px !important;
- }
- pre.bgwhite {
-   background-color: #fff !important;
-   color: #000 !important;
-   font-family: monospace !important;
-   padding: 5px !important;
-   margin-bottom: 5px !important;
- }
- pre.bgwhite code {
-   background-color: #fff !important;
-   border: solid 0px transparent !important;
-   font-family: monospace !important;
-   font-size: 0.90em !important;
-   color: #000 !important;
- }
- .small {
-     font-size: 0.90em !important;
- }
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-.w-500 {
-  max-width:500px !important;
-}
-</style>
 
-## Objectif
-
-L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de signer les e-mails pour éviter l'usurpation d'identité. Cette signature fonctionne sur le principe du hachage combiné à une cryptographie asymétrique.
-
-**Découvrez comment fonctionne DKIM et comment le mettre en place pour votre service e-mail.**
-
-## Prérequis
-
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Avoir souscrit à l'une des offres e-mail ci-dessous :
+60 - Avoir souscrit à l'une des offres e-mail ci-dessous :
     - MX Plan OVHcloud (disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément.
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Une offre e-mail hors OVHcloud disposant du DKIM.
 
-> [!warning]
->
-> Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du DKIM depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
->
-> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links/manager) depuis l'onglet `Zone DNS`{.action}, une fois le domaine concerné sélectionné.
->
 
-## En pratique
 
-**Sommaire**
 
-- [Comment le DKIM fonctionne-t-il ?](#how-dkim-work)
-    - [Le hachage](#hash)
-    - [Le chiffrement asymétrique](#encrypt)
-    - [Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ?](#encrypt-and-hash)
-    - [Pourquoi a-t-on besoin de configurer les serveurs DNS ?](#dns-and-dkim)
-    - [Exemple d'un e-mail envoyé en utilisant le DKIM](#example)
-    - [Qu'est-ce qu'un sélecteur DKIM ?](#selector)
-- [Configurer le DKIM automatiquement pour une offre e-mail OVHcloud](#auto-dkim)
+85 - [Configurer le DKIM automatiquement pour une offre e-mail OVHcloud](#auto-dkim)
 - [Configurer le DKIM par API pour une offre e-mail OVHcloud](#internal-dkim)
     - [API - Configuration complète du DKIM](#firststep)
         - [Pour MX Plan et Zimbra](#confemail)
@@ -91,92 +19,37 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
     - [API - Les différents états du DKIM](#dkim-status)
     - [API - Activer ou changer un sélecteur DKIM](#enable-switch)
     - [API - Désactiver et supprimer le DKIM](#disable-delete)
-- [Configurer DKIM pour une offre e-mail hors de votre compte OVHcloud](#external-dkim)
-    - [Enregistrement DKIM](#dkim-record)
-    - [Enregistrement TXT](#txt-record)
-    - [Enregistrement CNAME](#cname-record)
-- [Tester votre DKIM](#test-dkim)
-- [Cas d'usages](#usecases)
-    - [Comment changer sa paire de clé DKIM ?](#2selectors)
-    - [Pourquoi l'icône DKIM apparait en rouge dans l'espace client ?](#reddkim)
-    - [Depuis l'interface API OVHcloud, comment comprendre l'état du DKIM qui ne fonctionne pas ?](#api-error)
 
-### Comment le DKIM fonctionne-t-il ? <a name="how-dkim-work"></a>
 
-Pour bien comprendre pourquoi le DKIM permet de sécuriser vos échanges d'e-mails, il est nécessaire de comprendre comment il fonctionne. Le DKIM fait appel au «**hachage**» et au «**chiffrement asymétrique**» pour créer une signature sécurisée. La **plateforme e-mail** et la **zone DNS** de votre nom de domaine vont aider à transmettre les informations du DKIM à vos destinataires.
 
-/// details | Le hachage <a name="hash"></a>
+106 Pour bien comprendre pourquoi le DKIM permet de sécuriser vos échanges d'e-mails, il est nécessaire de comprendre comment il fonctionne. Le DKIM fait appel au «**hachage**» et au «**chiffrement asymétrique**» pour créer une signature sécurisée. La **plateforme e-mail** et la **zone DNS** de votre nom de domaine vont aider à transmettre les informations du DKIM à vos destinataires.
 
-Le principe d'une **fonction de hachage** est de générer une **signature** (aussi appelée empreinte) à partir d'une donnée d'entrée. Son intérêt est de créer en sortie une suite de caractères fixe, quelle que soit la quantité de données en entrée.
+108 /// details | Le hachage <a name="hash"></a>
 
-Sur le diagramme suivant, vous pouvez constater que la sortie (Output) sera toujours composée de 32 caractères en utilisant un algorithme de hachage MD5 (**M**essage **D**igest **5**), alors que le texte d'entrée (Input) peut varier en taille. La moindre variation de caractère dans la donnée d'entrée change complètement le hachage en sortie, ce qui rend la signature en sortie imprévisible et infalsifiable. Dans l'exemple ci-dessous, la valeur d'entrée (Input) est passée dans l'algorithme de hachage MD5 et présente en sortie (Output) sa valeur de hachage.
 
-![hash](/pages/assets/schemas/emails/dns-dkim-hash01.png){.thumbnail .w-400 .h-600}
+118 ///
 
-La fonction de hachage est utile lorsque vous souhaitez vérifier l'intégrité d'un message. En effet, deux données qui peuvent sembler très similaires présentent en réalité une valeur de hachage complètement différente, avec une longueur de caractères égale en sortie, quelle que soit la longueur d'entrée.
+120/// details | Le chiffrement asymétrique <a name="encrypt"></a>
 
-///
+136 ///
 
-/// details | Le chiffrement asymétrique <a name="encrypt"></a>
+138 /// details | Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ? <a name="encrypt-and-hash"></a>
 
-Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
+144 ///
 
-Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par le propriétaire et n'est pas visible de tous.
+146 /// details | Pourquoi a-t-on besoin de configurer les serveurs DNS ? <a name="dns-and-dkim"></a>
 
-Il existe deux utilisations du chiffrement asymétrique :
+150 ///
 
-- **La donnée d'entrée est chiffrée avec la clé publique et déchiffrée par celui qui possède la clé privée**. Par exemple, vous souhaitez qu'un tiers vous transmette des données de manière sécurisée. Vous transmettez votre clé publique sans vous soucier que quelqu'un la récupère, ce tiers chiffrera ses données avec votre clé publique. Les données chiffrées ne pourront être déchiffrées que par le propriétaire de la clé privée.
+152 /// details | Qu'est-ce qu'un sélecteur DKIM ? <a name="selector"></a>
 
-![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
+165 ///
 
-- **La donnée d'entrée est chiffrée par le propriétaire de la clé privée et déchiffrée par la clé publique**. Cette utilisation s'applique pour authentifier un échange de donnée. Par exemple, vos destinataires souhaitent s'assurer que vous êtes bien l'auteur du message que vous leur transmettez. Dans ce cas, vous allez chiffrer votre message avec votre clé privée. Ce message ne pourra être déchiffré que par la clé publique que vous aurez transmise à tout le monde, ce qui garantit à vos destinataires l'authenticité de votre message. En effet, un message déchiffré par la clé publique ne peut provenir uniquement que du propriétaire de la clé privée.
+167 /// details | Exemple d'un e-mail envoyé en utilisant le DKIM <a name="example"></a>
 
-![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
+177 ///
 
-///
-
-/// details | Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ? <a name="encrypt-and-hash"></a>
-
-Depuis la plateforme e-mail, le DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'en-tête de l'e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) et du corps de l'e-mail (contenu de l'e-mail).
-
-La signature est ensuite chiffrée avec la clé privée en utilisant le chiffrement asymétrique.
-
-///
-
-/// details | Pourquoi a-t-on besoin de configurer les serveurs DNS ? <a name="dns-and-dkim"></a>
-
-Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il aura besoin des paramètres DKIM et surtout de la clé publique pour la déchiffrer. La [zone DNS](/pages/web_cloud/domains/dns_zone_general_information) d'un nom de domaine est publique, c'est pourquoi un enregistrement DNS est ajouté pour transmettre la clé publique et les paramètres DKIM au destinataire.
-
-///
-
-/// details | Qu'est-ce qu'un sélecteur DKIM ? <a name="selector"></a>
-
-Lorsque vous activez le DKIM, celui-ci fonctionne avec une paire de clé publique / clé privée. Il est possible d'attribuer plusieurs paires de clés à votre nom de domaine, dans le cadre d'une rotation par exemple. En effet, lorsque vous changez de paire de clés, l'ancienne paire doit rester active le temps que l'ensemble des e-mails que vous avez envoyé avec l'ancienne clé ne rencontre pas d'échec dans la vérification du DKIM sur le serveur de réception.
-
-Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les **sélecteurs DKIM**. Un sélecteur DKIM comprend une paire de clé privée/clé publique. Il est visible sous la forme d'une chaîne de caractère dans la signature DKIM d'un e-mail par l'argument `s=`. Cette signature est visible dans [l'en-tête de l'e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
-
-**Exemple d'une partie de signature DKIM**
-
-<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
-</code></pre>
-
-La valeur du sélecteur est ici `s=ovhex123456-selector1`.
-
-///
-
-/// details | Exemple d'un e-mail envoyé en utilisant le DKIM <a name="example"></a>
-
-Lorsque vous envoyez un e-mail depuis **contact@mydomain.ovh**, une signature chiffrée à l'aide d'une clé privée (private key) est ajoutée dans l'en-tête de l'e-mail.
-
-![email](/pages/assets/schemas/emails/dns-dkim-send.gif){.thumbnail .w-400 .h-600}
-
-Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature avec la clé publique (Public key) visible dans la zone DNS de **mydomain.ovh**. La signature est créée à partir du contenu de l'e-mail envoyé. Cela signifie que si l'e-mail est modifié lors du transit, la signature ne correspondra pas avec le contenu et cela provoquera donc l'échec de la vérification DKIM sur le serveur destinataire.
-
-![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail .w-400 .h-600}
-
-///
-
-### Configurer le DKIM automatiquement pour une offre e-mail OVHcloud <a name="auto-dkim"></a>
+179 ### Configurer le DKIM automatiquement pour une offre e-mail OVHcloud <a name="auto-dkim"></a>
 
 La configuration automatique du DKIM est accessible pour toutes nos offres e-mail :
 
@@ -943,27 +816,6 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants :
 Sélectionnez l'offre e-mail concernée parmi les onglets suivants :
 
 > [!tabs]
-> **MX Plan et Zimbra**
->> Pour activer le DKIM, utilisez l'appel API suivant :
->>
->> > [!api]
->> >
->> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
->> <br>
->>
->> - `domain` : saisissez le nom de domaine attaché à votre service E-mail sur lequel le DKIM doit être présent. <br>
->>
->> *Exemple de résultat :*
->>
->> ```console
->> {
->>  "function": "domain/enableDKIM",
->>  "id": 123456789,
->>  "domain": "guidesteam.ovh",
->>  "status": "todo"
->> }
->> ```
->>
 > **Exchange**
 >> Pour activer le DKIM sur un sélecteur, utilisez l'appel API suivant :
 >>
@@ -994,7 +846,7 @@ Sélectionnez l'offre e-mail concernée parmi les onglets suivants :
 >
 > Lors d'une rotation de sélecteur DKIM, vous pouvez directement activer le deuxième sélecteur que vous avez créé afin de basculer dessus, tout en conservant le premier sélecteur qui restera actif le temps que tous les e-mails délivrés avec celui-ci soient bien analysés par leur destinataire.
 
-#### API - Désactiver et supprimer le DKIM <a name="disable-switch"></a>
+#### API - Désactiver et supprimer le DKIM <a name="enable-switch"></a>
 
 > [!warning]
 >

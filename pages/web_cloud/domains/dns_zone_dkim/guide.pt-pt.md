@@ -1,7 +1,7 @@
 ---
 title: "Melhorar a segurança dos e-mails através do registo DKIM"
 excerpt: "Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud"
-updated: 2025-04-28
+updated: 2025-11-14
 ---
 
 <style>
@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,6 +31,20 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Objetivo
@@ -878,6 +889,27 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 Selecione a oferta de e-mail em questão nos separadores seguintes:
 
 > [!tabs]
+> **E-mail (MX Plan)**
+>> Para ativar o DKIM, utilize a seguinte chamada API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
+>> <br>
+>>
+>> - `domain` : introduza o nome de domínio associado ao seu serviço E-mail no qual o DKIM deve estar presente. <br>
+>>
+>> *Exemplo de resultado:*
+>>
+>> ```console
+>> {
+>>  "domain": "guidesteam.ovh",
+>>  "id": 174219594,
+>>  "function": "domain/enableDKIM",
+>>  "status": "todo"
+>> }
+>> ```
+>>
 > **Exchange**
 >> Para ativar o DKIM num seletor, utilize a seguinte chamada API:
 >>
@@ -908,7 +940,7 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >
 > Aquando de uma rotação de seletor DKIM, pode diretamente ativar o segundo seletor que criou para o migrar, conservando o primeiro seletor que ficará ativo enquanto todos os e-mails emitidos com este último forem bem analisados pelo destinatário.
 
-#### Desativar e eliminar o DKIM <a name="enable-switch"></a>
+#### Desativar e eliminar o DKIM <a name="disable-switch"></a>
 
 > [!warning]
 >

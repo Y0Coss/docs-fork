@@ -1,7 +1,7 @@
 ---
 title: "Poprawa bezpieczeństwa e-maili dzięki rejestracji DKIM"
 excerpt: "Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud"
-updated: 2025-04-28
+updated: 2025-11-14
 ---
 
 <style>
@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,6 +31,20 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Wprowadzenie
@@ -878,6 +889,27 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 
 > [!tabs]
+> **MX Plan i Zimbra**
+>> Aby wyłączyć DKIM bez usuwania selektorów i ich par kluczy, należy użyć następującego wywołania API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
+>> <br>
+>>
+>> - `domain` : wprowadź nazwę domeny przypisanej do Twojej usługi E-mail, na której DKIM ma być obecny. <br>
+>>
+>> *Przykład wyniku:*
+>>
+>> ```console
+>> {
+>>  "domain": "guidesteam.ovh",
+>>  "id": 174219594,
+>>  "function": "domain/enableDKIM",
+>>  "status": "todo"
+>> }
+>> ```
+>>
 > **Exchange**
 >> Aby aktywować DKIM na selektorze, użyj następującego wywołania API:
 >>
@@ -908,7 +940,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >
 > Podczas rotacji selektywnika DKIM możesz bezpośrednio włączyć drugi wyłącznik, który utworzyłeś, aby go przełączyć, zachowując przy tym pierwszy wyłącznik, który pozostanie aktywny, dopóki wszystkie e-maile dostarczone wraz z tym wyborem są dokładnie analizowane przez ich adresata.
 
-#### Wyłącz i usuń DKIM <a name="enable-switch"></a>
+#### Wyłącz i usuń DKIM <a name="disable-switch"></a>
 
 > [!warning]
 >

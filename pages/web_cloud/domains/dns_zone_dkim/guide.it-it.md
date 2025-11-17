@@ -1,7 +1,7 @@
 ---
 title: Migliora la sicurezza delle email con un record DKIM
 excerpt: Come configurare un record DKIM sul tuo dominio e sulla tua piattaforma email OVHcloud
-updated: 2025-04-28
+updated: 2025-11-14
 ---
 
 <style>
@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,6 +31,20 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Obiettivo
@@ -878,6 +889,26 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 Seleziona il servizio di posta in questione nelle seguenti schede:
 
 > [!tabs]
+> **Email (MX Plan)**
+>> Per attivare il DKIM, utilizza questa chiamata API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
+>> <br>
+>>
+>> - `domain`: inserisci il dominio associato al tuo servizio di posta elettronica su cui deve essere presente il DKIM. <br>
+>>
+>> *Esempio di risultato:*
+>>
+>> ```console
+>> {
+>>  "domain": "guidesteam.ovh",
+>>  "id": 174219594,
+>>  "function": "domain/enableDKIM",
+>>  "status": "todo"
+>> }
+>> ```
 > **Exchange**
 >> Per attivare il DKIM su un selettore, utilizza questa chiamata API:
 >>
@@ -907,7 +938,7 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 >
 > Durante la rotazione del selettore DKIM, potrai attivare direttamente il secondo selezionatore che hai creato per ribaltarlo, conservando il primo selettore che resterà attivo per tutto il tempo che tutte le email rilasciate con questo saranno analizzate correttamente dal destinatario.
 
-#### Disattiva ed elimina il DKIM <a name="enable-switch"></a>
+#### Disattiva ed elimina il DKIM <a name="disable-switch"></a>
 
 > [!warning]
 >

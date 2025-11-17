@@ -1,7 +1,7 @@
 ---
 title: Mejorar la seguridad del correo electrónico mediante un registro DKIM
 excerpt: Cómo configurar un registro DKIM en un dominio y una plataforma de correo electrónico de OVHcloud
-updated: 2025-04-28
+updated: 2025-11-14
 ---
 
 <style>
@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,6 +31,20 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Objetivo
@@ -880,6 +891,27 @@ Seleccione el servicio de correo en las siguientes pestañas:
 Seleccione el servicio de correo en las siguientes pestañas:
 
 > [!tabs]
+> **Email (MX Plan)**
+>> Para activar el DKIM, utilice la siguiente llamada a la API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
+>> <br>
+>>
+>> - `domain` : Introduzca el dominio asociado a su servicio de correo en el que debe estar presente el DKIM. <br>
+>>
+>> *Ejemplo de resultado:*
+>>
+>> ```console
+>> {
+>>  "domain": "guidesteam.ovh",
+>>  "id": 174219594,
+>>  "function": "domain/enableDKIM",
+>>  "status": "todo"
+>> }
+>> ```
+>>
 > **Exchange**
 >> Para activar el DKIM en un selector, utilice la siguiente llamada a la API:
 >>
@@ -910,7 +942,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >
 > Al rotar el selector DKIM, puede activar directamente el segundo selector que haya creado para cambiarlo, pero conservando el primer selector que permanecerá activo hasta que el destinatario analice correctamente todos los mensajes de correo que se emitan con él.
 
-#### Desactivar y eliminar el DKIM <a name="enable-switch"></a>
+#### Desactivar y eliminar el DKIM <a name="disable-switch"></a>
 
 > [!warning]
 >

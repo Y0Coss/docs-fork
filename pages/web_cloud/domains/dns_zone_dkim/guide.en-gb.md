@@ -1,7 +1,7 @@
 ---
 title: How to improve email security with a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email service
-updated: 2025-04-28
+updated: 2025-11-14
 ---
 
 <style>
@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,7 +31,21 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
-</style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
+</style>e>
 
 ## Objective
 
@@ -880,6 +891,27 @@ Select the email solution concerned in the following tabs:
 Select the email solution concerned in the following tabs:
 
 > [!tabs]
+> **Email (MX Plan)**
+>> To enable DKIM, use the following API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
+>> <br>
+>>
+>> - `domain` : enter the domain name attached to your email service on which the DKIM must be present. <br>
+>>
+>> *Example result:*
+>>
+>> ```console
+>> {
+>>  "domain": "guidesteam.ovh",
+>>  "id": 174219594,
+>>  "function": "domain/enableDKIM",
+>>  "status": "todo"
+>> }
+>> ```
+>>
 > **Exchange**
 >> To enable DKIM on a selector, use the following API call:
 >>
@@ -910,7 +942,7 @@ Select the email solution concerned in the following tabs:
 >
 > During a DKIM selector rotation, you can directly activate the second selector you have created to switch over to it, while keeping the first selector active until all emails delivered with it are properly scanned by their recipient.
 
-#### Disable and delete DKIM <a name="enable-switch"></a>
+#### Disable and delete DKIM <a name="disable-switch"></a>
 
 > [!warning]
 >
