@@ -1,6 +1,6 @@
 ---
-title: CLI - Launch an AI notebook
-excerpt: Learn how to run an AI Notebook using the CLI
+title: CLI - Lancer un AI Notebook (EN)
+excerpt: Découvrez comment lancer un AI Notebooks avec la CLI
 updated: 2025-11-17
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: AI Notebooks - Billing and lifecycle
-excerpt: Learn how we bill AI Notebooks
+title: AI Notebooks - Facturation et cycle de vie (EN)
+excerpt: Découvrez comment sont facturés les AI Notebooks
 updated: 2025-11-17
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: AI Notebooks - Getting started
-excerpt: Learn how to simply bootstrap an AI Notebook
+title: AI Notebooks - Premiers pas (EN)
+excerpt: Découvrez comment lancer un AI Notebooks
 updated: 2025-11-17
 ---
 
