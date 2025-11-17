@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Workspace
 excerpt: Learn how AI Notebooks workspaces work
-updated: 2025-11-12
+updated: 2025-11-17
 ---
 
 ## Objective
@@ -64,6 +64,7 @@ You can find and delete this data in the `notebooks_workspace` container of your
 This means that even if a notebook is deleted, its state stored in Object Storage (including your notebook files) remains accessible.
 
 ### Workspace billing
+
 The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](/links/public-cloud/prices) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept).
 
 ## Feedback
