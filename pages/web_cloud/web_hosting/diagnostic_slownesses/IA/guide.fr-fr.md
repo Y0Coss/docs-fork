@@ -1,1 +1,0 @@
-Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, consultez notre guide « [Hébergement web - Comment connaître son cluster et son filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».

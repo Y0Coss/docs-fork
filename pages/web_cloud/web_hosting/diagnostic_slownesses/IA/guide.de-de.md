@@ -1,1 +1,0 @@
-Um den Cluster und den Filer zu ermitteln, auf dem sich Ihr Shared Hosting befindet, konsultieren Sie unser Handbuch „[Webhosting - Wie erkenne ich meinen Cluster und Filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)“.

@@ -1,1 +1,0 @@
-Per conoscere il cluster e il filer in cui si trova il tuo spazio di hosting condiviso, consulta la nostra guida « [Hosting web - Come conoscere il proprio cluster e filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».

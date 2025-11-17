@@ -1,1 +1,0 @@
-Aby poznać klaster i filer, w których znajduje się Twoje hostingowanie współdzielone, zapoznaj się z naszym przewodnikiem « [Hostowanie sieci Web - Jak poznać swój klaster i filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».

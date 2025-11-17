@@ -1,1 +1,0 @@
-Para conocer el cluster y el filer donde se encuentra su alojamiento compartido, consulte nuestra guía « [Alojamiento web - Cómo conocer su cluster y filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».

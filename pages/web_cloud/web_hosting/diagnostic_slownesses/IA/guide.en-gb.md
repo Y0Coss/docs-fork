@@ -1,1 +1,0 @@
-To find out the cluster and filer where your shared hosting is located, refer to our guide "[Web hosting - How to find out your cluster and filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
