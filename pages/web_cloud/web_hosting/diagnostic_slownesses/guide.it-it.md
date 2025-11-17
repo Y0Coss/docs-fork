@@ -90,7 +90,7 @@ Tutte le diagnostiche dello step 1 devono essere eseguite **senza eccezione** pe
 
 Per garantire che i tuoi servizi (hosting condiviso **e** database) non siano oggetto di manutenzione o incidente, recupera le informazioni sul cluster e il filer del tuo hosting condiviso, così come le informazioni generali relative al tuo database. In seguito potrai verificare il loro stato su [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Per conoscere il cluster e il filer in cui si trova il tuo spazio di hosting condiviso, consulta la nostra guida « [Hosting Web - Come conoscere cluster e filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».
+Per conoscere il cluster e il filer in cui si trova il tuo spazio di hosting condiviso, consulta la nostra guida "[Hosting Web - Come conoscere cluster e filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >

@@ -94,7 +94,7 @@ Wszystkie diagnozy z etapu 1 muszą być wykonane **bez wyjątku**, aby określi
 
 Aby mieć pewność, że Twoje usługi (hosting współdzielony **i** baza danych) nie podlegają konserwacji lub awarii, pobierz informacje o klastrze i przędz z hostingu współdzielonego oraz ogólne informacje dotyczące bazy danych. Następnie możesz sprawdzić ich status na stronie [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Aby poznać klaster i filer, w których znajduje się Twoje hostingowanie współdzielone, zapoznaj się z naszym przewodnikiem « [Hosting www - Poznaj klaster i syn](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».
+Aby poznać klaster i filer, w których znajduje się Twoje hostingowanie współdzielone, zapoznaj się z naszym przewodnikiem "[Hosting www - Poznaj klaster i syn](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >

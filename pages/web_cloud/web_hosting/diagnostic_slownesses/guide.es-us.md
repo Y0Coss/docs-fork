@@ -90,7 +90,7 @@ Todos los diagnósticos del etapa 1 deben realizarse **sin excepción** para det
 
 Para asegurarse de que sus servicios (alojamiento compartido **et** de la base de datos) no son objeto de mantenimiento o de incidente, consulte la información del cluster y el filer de su alojamiento compartido, así como la información general relativa a su base de datos. Compruebe su estado en [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conocer el cluster y el filer donde se encuentra su alojamiento compartido, consulte nuestra guía « [Web hosting - Cómo conocer su cluster y su filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».
+Para conocer el cluster y el filer donde se encuentra su alojamiento compartido, consulte nuestra guía "[Web hosting - Cómo conocer su cluster y su filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
