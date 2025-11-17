@@ -78,6 +78,9 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: VMware Tanzu
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-secnumcloud: SecNumCloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migracja
+hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
+hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Pierwsze kroki
+hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Koncepcje
 hosted-private-cloud-sap-ovhcloud-getting-started: Pierwsze kroki
@@ -113,8 +116,10 @@ public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutorials
 public-cloud-quantum-computing: Quantum computing
 public-cloud-quantum-computing-general-information: General information
-public-cloud-quantum-computing-emulator: Quantum emulators
+public-cloud-quantum-computing-emulators: Quantum emulators
 public-cloud-quantum-computing-emulators-guides: Guides
+public-cloud-quantum-computing-qpu: Quantum QPUs
+public-cloud-quantum-computing-qpu-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
@@ -225,41 +230,32 @@ web-cloud-clouddb-configuration: Konfiguracja
 web-cloud-clouddb-migration: Migracja
 web-cloud-clouddb-additional-resources: Dodatkowe zasoby
 web-cloud-email-collaborative-solutions: Rozwiązania e-mail i narzędzia do pracy zespołowej
-web-cloud-email-collaborative-solutions-getting-started: Pierwsze kroki
-web-cloud-email-collaborative-solutions-configuration: Konfiguracja
-web-cloud-email-collaborative-solutions-security: Bezpieczeństwo
+web-cloud-email-collaborative-solutions-common-email-features: Funkcje wspólne dla ofert e-mail
 web-cloud-email-collaborative-solutions-using-outlook-web-access-owa: Korzystanie z Outlook Web Application (OWA)
-web-cloud-email-collaborative-solutions-using-outlook-web-access-owa-getting-started: Pierwsze kroki
-web-cloud-email-collaborative-solutions-using-outlook-web-access-owa-configuration: Konfiguracja
-web-cloud-email-collaborative-solutions-migration: Migracja
-web-cloud-email-collaborative-solutions-troubleshooting: Diagnostyka
+web-cloud-email-collaborative-solutions-migration: Migracja usług
+web-cloud-email-collaborative-solutions-troubleshooting: Rozwiązywanie problemów
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Pierwsze kroki
-web-cloud-email-collaborative-solutions-mx-plan-configuration: Konfiguracja
-web-cloud-email-collaborative-solutions-mx-plan-configuration-email-address-features: Funkcje adresu e-mail
-web-cloud-email-collaborative-solutions-mx-plan-configuration-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-mx-plan-configuration-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
-web-cloud-email-collaborative-solutions-mx-plan-configuration-adding-email-address-on-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
+web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funkcje adresu e-mail
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
 web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Pierwsze kroki
-web-cloud-email-collaborative-solutions-email-pro-configuration: Konfiguracja
-web-cloud-email-collaborative-solutions-email-pro-configuration-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-email-pro-configuration-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
-web-cloud-email-collaborative-solutions-email-pro-configuration-adding-email-address-on-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Pierwsze kroki
-web-cloud-email-collaborative-solutions-microsoft-exchange-configuration: Konfiguracja
-web-cloud-email-collaborative-solutions-microsoft-exchange-configuration-exchange-account-features: Funkcje konta Exchange
-web-cloud-email-collaborative-solutions-microsoft-exchange-configuration-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-microsoft-exchange-configuration-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
-web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostyka
+web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funkcje konta Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Rozwiązywanie problemów
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-email-collaborative-solutions-microsoft-office-configuration: Konfiguracja
 web-cloud-email-collaborative-solutions-zimbra: Zimbra
 web-cloud-email-collaborative-solutions-zimbra-getting-started: Pierwsze kroki
-web-cloud-email-collaborative-solutions-zimbra-configuration: Konfiguracja
-web-cloud-email-collaborative-solutions-zimbra-configuration-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-zimbra-configuration-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
 web-cloud-domains: Domeny
 web-cloud-domains-api: API
 web-cloud-domains-api-key-concepts: Kluczowe pojęcia
