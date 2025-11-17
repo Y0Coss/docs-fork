@@ -1,5 +1,5 @@
 ---
-title: title: AI Notebooks - Notebook concept (EN)
+title: AI Notebooks - Notebook concept (EN)
 excerpt: Découvrez le concept des AI Notebooks
 updated: 2025-11-17
 ---
