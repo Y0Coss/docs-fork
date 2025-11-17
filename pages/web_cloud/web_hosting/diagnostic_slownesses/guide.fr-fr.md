@@ -168,7 +168,8 @@ Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 > Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
-### Etape 2 - identifiez la (les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a
+### Etape 2 - identifiez la (les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a>
+
 A ce stade, vous savez désormais que les ralentissements sont générés par les pages/scripts/fichiers qui composent votre site web.
 
 > [!warning]
@@ -273,7 +274,8 @@ Si votre hébergement web et votre base de données **ne sont pas en cause** et 
 
 Vous pouvez envisager une [offre d'hébergement mutualisée](/links/web/hosting) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](/links/bare-metal/vps) ou un [Serveur Dédié](/links/bare-metal/bare-metal). 
 
-## Aller plus loin <a name="go-further"></a
+## Aller plus loin <a name="go-further"></a>
+
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](/links/support).
