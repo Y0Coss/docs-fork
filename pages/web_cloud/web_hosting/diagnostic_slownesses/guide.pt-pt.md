@@ -172,7 +172,8 @@ As seguintes afirmações aplicam-se **todas** à sua situação:
 
 > Serão necessárias investigações no lado da OVHcloud. Contacte os nossos serviços de assistência sobre as soluções Web, para que possam confirmar consigo a origem dos abrandamentos que encontra.
 
-### Etapa 2 - identifique a(s) fonte(s) que gera(m) a lentidão do seu website <a name="step2"></a
+### Etapa 2 - identifique a(s) fonte(s) que gera(m) a lentidão do seu website <a name="step2"></a>
+
 Neste momento, sabe que as lentidões são geradas pelas páginas/scripts/ficheiros que compõem o seu website.
 
 > [!warning]
@@ -277,7 +278,8 @@ Se o seu alojamento web e a sua base de dados ***não estiverem em causa** e o s
 
 Pode considerar uma [oferta de alojamento partilhado](/links/web/hosting) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) ou um [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
-## Quer saber mais? <a name="go-further"></a
+## Quer saber mais? <a name="go-further"></a>
+
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).

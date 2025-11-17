@@ -167,7 +167,8 @@ Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 
 > Weitere Untersuchungen seitens OVHcloud sind erforderlich. Kontaktieren Sie unseren Support für Web Cloud, um die Verlangsamungen zu bestätigen.
 
-### Schritt 2 - Identifizieren Sie die Quelle der Verzögerungen auf Ihrer Webseite <a name="step2"></a
+### Schritt 2 - Identifizieren Sie die Quelle der Verzögerungen auf Ihrer Webseite <a name="step2"></a>
+
 An dieser Stelle sollte eindeutig sein, dass Verlangsamungen von Seiten/Skripte/Dateien verursacht werden, aus denen Ihre Website besteht.
 
 > [!warning]
@@ -272,7 +273,8 @@ Wenn Ihr Webhosting und Ihre Datenbank **nicht betroffen sind** und Ihre Website
 
 Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](/links/web/hosting) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](/links/bare-metal/vps) oder einen [Dedicated Server](/links/bare-metal/bare-metal).
 
-## Weiterführende Informationen <a name="go-further"></a
+## Weiterführende Informationen <a name="go-further"></a>
+
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).

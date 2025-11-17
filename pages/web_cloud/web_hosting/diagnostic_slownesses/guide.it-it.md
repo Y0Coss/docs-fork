@@ -168,7 +168,8 @@ Le seguenti affermazioni si applicano **tutte** alla tua situazione:
 
 > Saranno necessarie ulteriori indagini da parte di OVHcloud. Contatta i nostri servizi di assistenza sulle soluzioni Web per confermare con te l'origine dei rallentamenti riscontrati.
 
-### Step 2 - identifica la(le) fonte(e) che genera(no) la(le) lentezza(e) del tuo sito Web <a name="step2"></a
+### Step 2 - identifica la(le) fonte(e) che genera(no) la(le) lentezza(e) del tuo sito Web <a name="step2"></a>
+
 A questo punto, sai che i rallentamenti sono generati dalle pagine/script/file che compongono il tuo sito Web.
 
 > [!warning]
@@ -273,7 +274,8 @@ Se il tuo hosting Web e il tuo database **non sono in causa** e il tuo sito Web 
 
 È possibile scegliere una [offerta di hosting condiviso](/links/web/hosting) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o un [Server Dedicato](/links/bare-metal/bare-metal). 
 
-## Per saperne di più <a name="go-further"></a
+## Per saperne di più <a name="go-further"></a>
+
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).

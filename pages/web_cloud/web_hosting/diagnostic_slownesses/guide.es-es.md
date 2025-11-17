@@ -168,7 +168,8 @@ Se aplican las siguientes declaraciones **todas** a su situación:
 
 > Se realizarán investigaciones en OVHcloud. Póngase en contacto con nuestros servicios de soporte en las soluciones web para que confirmen con usted el origen de las ralentizaciones que experimenta.
 
-### Etapa 2 - identifique la(s) fuente(s) que genera(n) la lentitud a nivel de su sitio web <a name="step2"></a
+### Etapa 2 - identifique la(s) fuente(s) que genera(n) la lentitud a nivel de su sitio web <a name="step2"></a>
+
 En este punto, ya sabrá que la ralentización es causada por las páginas, scripts o archivos que componen su sitio web.
 
 > [!warning]
@@ -273,7 +274,8 @@ Si su alojamiento web y su base de datos **no están en juego** y su sitio web s
 
 Puede considerar un [plan de hosting](/links/web/hosting) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) o un [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
-## Más información <a name="go-further"></a
+## Más información <a name="go-further"></a>
+
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).

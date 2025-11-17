@@ -172,7 +172,8 @@ Do Twojej sytuacji stosuje się następujące stwierdzenia **wszystkie**:
 
 > Konieczne będzie przeprowadzenie dochodzenia po stronie OVHcloud. Skontaktuj się z naszymi usługami wsparcia w zakresie rozwiązań internetowych, aby potwierdzić z Tobą przyczyny spowolnień, które napotykasz.
 
-### Etap 2 - podaj źródło (źródła), które generuje powolne tempo na stronie internetowej <a name="step2"></a
+### Etap 2 - podaj źródło (źródła), które generuje powolne tempo na stronie internetowej <a name="step2"></a>
+
 Na tym etapie już wiesz, że spowolnienia są generowane przez strony/skrypty/pliki, które tworzą Twoją stronę WWW.
 
 > [!warning]
@@ -277,7 +278,8 @@ Jeśli Twój hosting WWW i baza danych **nie są przedmiotem dyskusji** i Twoja 
 
 Możesz rozważyć ofertę [hostingu współdzielonego](/links/web/hosting) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](/links/bare-metal/vps) lub [Serwer dedykowany](/links/bare-metal/bare-metal). 
 
-## Sprawdź również <a name="go-further"></a
+## Sprawdź również <a name="go-further"></a>
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
