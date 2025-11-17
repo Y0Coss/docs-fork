@@ -133,7 +133,6 @@ phpinfo();
 > Si l'appel du fichier « **phpinfo.php** » affiche **instantanément** un tableau de configuration, cela signifie que les ralentissements ne proviennent pas de l'hébergement mutualisé où se trouve votre site web. En effet, dans le cas contraire, ce fichier s'afficherait aussi lentement que vos autres pages. 
 >
 > En d'autres termes, si les lenteurs sont présentes uniquement sur une partie des pages ou du contenu de votre site web, cela signifie que l'hébergement mutualisé **n'est pas la cause des lenteurs** rencontrées sur votre site web.
->
 
 #### 1.4 - Testez la connectivité de votre base de données :
 
@@ -148,7 +147,6 @@ Si la connexion est réussie, vous arrivez sur l'interface suivante :
 > [!warning]
 >
 > Si vous rencontrez une erreur, consultez notre documentation sur les [erreurs courantes rencontrées avec une base de données](/pages/web_cloud/web_hosting/diagnosis_database_errors). Agissez ensuite à l'aide du guide ci-dessus pour corriger votre situation puis tentez à nouveau de vous connecter à votre base de données.
->
 
 #### 1.5 - Interprétation des diagnostics effectués
 
@@ -170,14 +168,12 @@ Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 > Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
-### Etape 2 - identifiez la (les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a>
-
+### Etape 2 - identifiez la (les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a
 A ce stade, vous savez désormais que les ralentissements sont générés par les pages/scripts/fichiers qui composent votre site web.
 
 > [!warning]
 >
 > Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](/links/partner). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'optimisation du contenu de votre site web.
->
 
 Retrouvez ci-après les actions à réaliser pour identifier la ou les source(s) des lenteurs et optimiser votre site web.
 
@@ -227,21 +223,18 @@ En effet, moins le nombre de requêtes sera élevé, moins les ressources allou�
 > Pour cela, appuyez sur la touche `F12` lorsque vous êtes sur votre navigateur Firefox puis sélectionnez l'onglet `Réseau`. Rechargez votre page web à l'aide des touches `Ctrl + Maj + R` pour que l'outil vous affiche les requêtes exécutées pour charger votre page. Identifiez les éléments les plus longs à charger pour ensuite les optimiser.
 >
 > ![Analyse réseau Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous pouvez également mettre en place un Content Delivery Network (CDN). Celui-ci permettra de mettre en cache le contenu statique de votre site web. Votre hébergement web sera moins sollicité et disposera de plus de ressources pour traiter le reste des requêtes qui ne peuvent pas être mises en cache.
 
 > [!primary]
 >
 > OVHcloud propose plusieurs [offres CDN](/links/web/hosting-options). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - optimisez votre base de données
 
 > [!warning]
 >
 > Les actions que vous réalisez dans votre base de données peuvent avoir des conséquences irréversibles si elles ne sont pas réalisées méthodiquement et correctement. Faites appel à un [prestataire spécialisé](/links/partner) si vous n'êtes pas certain des actions à réaliser. 
->
 
 Vérifiez si un nombre conséquent de requêtes sont effectuées vers votre base de données.<br>
 En effet, cette situation peut engendrer une sur-sollicitation et aboutir à des ralentissements, voire à des codes « 504 Gateway Timeout ».
@@ -273,7 +266,6 @@ Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur
 > [!success]
 >
 > Indépendamment des lenteurs, plus votre site web sera optimisé, plus son référencement naturel dans les moteurs de recherche sera également optimisé.
->
 
 ### Conclusion
 
@@ -281,8 +273,7 @@ Si votre hébergement web et votre base de données **ne sont pas en cause** et 
 
 Vous pouvez envisager une [offre d'hébergement mutualisée](/links/web/hosting) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](/links/bare-metal/vps) ou un [Serveur Dédié](/links/bare-metal/bare-metal). 
 
-## Aller plus loin <a name="go-further"></a>
-
+## Aller plus loin <a name="go-further"></a
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](/links/support).

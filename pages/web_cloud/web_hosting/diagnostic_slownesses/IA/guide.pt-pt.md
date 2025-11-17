@@ -1,0 +1,1 @@
+Para conhecer o cluster e o filer onde se encontra o seu alojamento partilhado, consulte o nosso guia « [Alojamento web - Como saber o seu cluster e filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer) ».
