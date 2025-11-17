@@ -27,7 +27,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 >
 > Users share the resources of the web hosting infrastructure their websites are using. If one of them overloads the shared infrastructure, this can have consequences for the other hosting services on the same infrastructure.
 >
-> Our shared hosting plans do not have a Service Level Agreement (SLA).
+> Our web hosting plans do not have a Service Level Agreement (SLA).
 >
 > If you need a service with a guaranteed availability rate higher than 99%, we recommend that you consider using a [Virtual Private Server (VPS)](/links/bare-metal/vps) or a [Dedicated Server](/links/bare-metal/bare-metal).
 >
@@ -89,13 +89,13 @@ All diagnostics in step 1 must be performed **without exception** to determine w
 
 #### 1.1 - Check the status of your OVHcloud services
 
-To ensure that your services (shared hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
+To ensure that your services (web hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-To find out the cluster and filer where your shared hosting is located, refer to our guide "[Web hosting - How to know your cluster and filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
+To find out the cluster and filer where your web hosting is located, refer to our guide "[Web hosting - How to know your cluster and filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
-> If an incident or maintenance is reported on the infrastructure on which your shared hosting is located, wait until they are resolved by our administrators. **No further action is required on your side**.
+> If an incident or maintenance is reported on the infrastructure on which your web hosting is located, wait until they are resolved by our administrators. **No further action is required on your side**.
 >
 > You can subscribe to the incident or maintenance updates with your email address, in order to receive an email notification of the progress of the operations.
 >
@@ -109,7 +109,7 @@ Test your website from another device/computer, then from another Internet acces
 
 #### 1.3 - Test the hosting with a file independent from your website
 
-Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your shared hosting](/pages/web_cloud/web_hosting/ftp_connection).
+Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your web hosting](/pages/web_cloud/web_hosting/ftp_connection).
 
 In this file, insert the following code:
 
@@ -131,9 +131,9 @@ phpinfo();
 
 > [!primary]
 >
-> If the call to the file **phpinfo.php*** displays a configuration table **instantly**, this means that the slowdowns do not come from the shared hosting where your website is located. Otherwise, this file will appear as slowly as your other pages. 
+> If the call to the file **phpinfo.php*** displays a configuration table **instantly**, this means that the slowdowns do not come from the web hosting where your website is located. Otherwise, this file will appear as slowly as your other pages. 
 >
-> In other words, if the delays are only present on some pages or content of your website, this means that the shared hosting **is not the cause of the delays** encountered on your website.
+> In other words, if the delays are only present on some pages or content of your website, this means that the web hosting **is not the cause of the delays** encountered on your website.
 
 #### 1.4 - Test your database connectivity
 
