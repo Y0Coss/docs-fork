@@ -123,8 +123,6 @@ vous pouvez commander un service Load Balancer dans les zones `gra` et `bhs` et 
 - un frontend dans la zone gra avec une ferme (farm) par défaut dans la zone gra qui contient des serveurs dans le datacentre de Gravelines;
 - un frontend dans la zone bhs avec une ferme (farm) par défaut dans la zone bhs qui contient des serveurs dans le datacentre de Beauharnois.
 
-Voici la traduction en français :
-
 ### Déploiement Multi-AZ
 
 OVHcloud déploie actuellement son plan stratégique pour les régions à multiples Zones de Disponibilité (multi-AZ), en commençant par le lancement de Paris 3-AZ en avril 2024.
