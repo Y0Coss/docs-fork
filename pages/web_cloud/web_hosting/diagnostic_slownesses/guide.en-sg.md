@@ -1,7 +1,7 @@
 ---
 title: "My website is slow. What to do?"
-excerpt: "Identify the cause of your website's slowdowns and find out how to resolve this situation"
-updated: 2025-11-20
+excerpt: "Identify the cause of your website's slowdowns and find out how to improve this situation"
+updated: 2025-11-17
 ---
 
 ## Objective
@@ -27,7 +27,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 >
 > Users share the resources of the web hosting infrastructure their websites are using. If one of them overloads the shared infrastructure, this can have consequences for the other hosting services on the same infrastructure.
 >
-> Our shared hosting plans do not have a Service Level Agreement (SLA).
+> Our web hosting plans do not have a Service Level Agreement (SLA).
 >
 > If you need a service with a guaranteed availability rate higher than 99%, we recommend that you consider using a [Virtual Private Server (VPS)](/links/bare-metal/vps) or a [Dedicated Server](/links/bare-metal/bare-metal).
 >
@@ -44,7 +44,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
-> 
+>
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you with issues **not caused by the relevant hosting infrastructure itself**. You can find more information in the [Go further](#go-further) section of this guide.
 
 > [!success]
@@ -89,13 +89,13 @@ All diagnostics in step 1 must be performed **without exception** to determine w
 
 #### 1.1 - Check the status of your OVHcloud services
 
-To ensure that your services (shared hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
+To ensure that your services (web hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-To find out the cluster and filer where your shared hosting is located, refer to our guide "[Web hosting - How to know your cluster and filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
+To find out the cluster and filer where your web hosting is located, refer to our guide "[Web hosting - How to know your cluster and filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
-> If an incident or maintenance is reported on the infrastructure on which your shared hosting is located, wait until they are resolved by our administrators. **No further action is required on your side**.
+> If an incident or maintenance is reported on the infrastructure on which your web hosting is located, wait until they are resolved by our administrators. **No further action is required on your side**.
 >
 > You can subscribe to the incident or maintenance updates with your email address, in order to receive an email notification of the progress of the operations.
 >
@@ -109,7 +109,7 @@ Test your website from another device/computer, then from another Internet acces
 
 #### 1.3 - Test the hosting with a file independent from your website
 
-Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your shared hosting](/pages/web_cloud/web_hosting/ftp_connection).
+Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your web hosting](/pages/web_cloud/web_hosting/ftp_connection).
 
 In this file, insert the following code:
 
@@ -121,23 +121,25 @@ phpinfo();
 
 > [!warning]
 >
-> In some cases, the "**.htaccess**" files in the upstream directories/folders or at the same level as where you placed your "**phpinfo.php**" file may affect the display of the **phpinfo.php** in an Internet browser. 
+> In some cases, the **.htaccess** files in the upstream directories/folders or at the same level as where you placed your **phpinfo.php** file may affect the display of the **phpinfo.php** in an Internet browser.
 >
-> Changes to a "**.htaccess**" file may affect your website’s display. Contact a [specialist provider](/links/partner) if you have difficulty in doing the following.
+> Changes to a **.htaccess** file may affect your website’s display. Contact a [specialist provider](/links/partner) if you have difficulty in doing the following.
 >
-> If it does not appear and **only for informed users**, rename your files "**.htaccess**" to "**.htaccess_OLD**" so that the server does not run them for your test. Rename them correctly after your diagnostic.
+> If it does not appear and **only for informed users**, rename your files **.htaccess** to **.htaccess_OLD** so that the server does not run them for your test. Rename them correctly after your diagnostic.
 
-**Example**: if your website’s domain name is “domain.tld” and the file “**phpinfo.php**” has been placed in the root directory of your website, you can access it via the following URL: `http://domain.tld/phpinfo.php` (or `https://domain.tld/phpinfo.php`).
+**Example**: if your website’s domain name is “domain.tld” and the file **phpinfo.php** has been placed in the document root folder of your website, you can access it via the following URL: `http://domain.tld/phpinfo.php` (or `https://domain.tld/phpinfo.php`).
 
 > [!primary]
 >
-> If the call to the file **phpinfo.php*** displays a **instantly** configuration table, this means that the slowdowns do not come from the shared hosting where your website is located. Otherwise, this file will appear as slowly as your other pages. 
+> If the call to the file **phpinfo.php*** displays a configuration table **instantly**, this means that the slowdowns do not come from the web hosting where your website is located. Otherwise, this file will appear as slowly as your other pages. 
 >
-> In other words, if the delays are only present on some pages or content of your website, this means that the shared hosting **is not the cause of the delays** encountered on your website.
+> In other words, if the delays are only present on some pages or content of your website, this means that the web hosting **is not the cause of the delays** encountered on your website.
 
-#### 1.4 - Test your database connectivity:
+#### 1.4 - Test your database connectivity
 
 Log in to your database by following **step 3** in our guide on [web hosting databases](/pages/web_cloud/web_hosting/sql_create_database).
+
+If you are using a database of a **Web Cloud Databases** solution, please refer to our guide on [Web Cloud Databases databases](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 
 If the connection is successful, you will land on the following interface:
 
@@ -180,11 +182,11 @@ Below, you will find the actions you need to take to identify the source(s) of t
 
 Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-If you are using an outdated PHP version on your web hosting plan, the "**PHP CGI**" engine and/or the "**legacy**" environment, and **if your website is compatible**, you should use the "**PHP**" engine (PHP FPM), the "**stable**" environment, or "**stable64**" with the most recent PHP version possible.
+If you are using an outdated PHP version on your web hosting plan, the **PHP CGI** engine and/or the **legacy** environment, and **if your website is compatible**, you should use the **PHP** engine (PHP FPM), the **stable** or **stable64** environment, with the most recent PHP version possible.
 
-To compare the available PHP versions depending on the runtime environment you are using, see **Step 2** in the guide on [configuring the PHP version on your hosting system](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+To compare the available PHP versions depending on the runtime environment you are using, see **Step 2** in the guide on [configuring the PHP version on your web hosting](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Using a recent PHP version, the "**stable**" or "**stable64**" runtime environment with the "**PHP**" engine (PHP FPM) makes your website much smoother and faster. As a guide, the "**PHP**" engine (PHP FPM) can be up to 50 times more efficient than the "**PHP CGI**" engine to perform its tasks.
+Using a recent PHP version, the **stable** or **stable64** runtime environment with the **PHP** engine (PHP FPM) makes your website much smoother and faster. As a guide, the **PHP** engine (PHP FPM) can be up to 50 times more efficient than the **PHP CGI** engine to perform its tasks.
 
 #### 2.2 - Analyse outgoing connections / TCP connections made by your web hosting plan
 
@@ -193,8 +195,6 @@ Outgoing connections are very resource intensive. When these connections are num
 This results in slowdowns or even **504 Gateway Timeout** codes.
 
 To analyse outgoing connections to your hosting plan, please read its **OUT** logs. You can use our documentation on [web hosting logs](/pages/web_cloud/web_hosting/logs_and_statistics).
-
-If you notice that there are a lot of outgoing connections on your hosting, compare your **OUT** logs with your **WEB** logs by using their timestamps. This will help you identify the script(s) responsible for this situation.
 
 If you notice that there are a lot of outgoing connections on your hosting, compare your **OUT** logs with your **WEB** logs by using their timestamps. This will help you identify the script(s) responsible for this situation.
 
@@ -231,7 +231,7 @@ To reduce the flow of requests each time your pages load, you can also set up a 
 >
 > OVHcloud offers several [CDN options](/links/web/hosting-options). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then read our guide on [Using the OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 
-#### 2.4 - optimise your database
+#### 2.4 - Optimise your database
 
 > [!warning]
 >

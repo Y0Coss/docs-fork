@@ -1,7 +1,7 @@
 ---
 title: "My website is slow. What to do?"
 excerpt: "Identify the cause of your website's slowdowns and find out how to improve this situation"
-updated: 2025-11-20
+updated: 2025-11-17
 ---
 
 ## Objective

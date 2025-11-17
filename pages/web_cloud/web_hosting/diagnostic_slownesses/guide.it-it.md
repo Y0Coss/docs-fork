@@ -1,7 +1,7 @@
 ---
 title: "Il mio sito è lento. Cosa fare?" 
 excerpt: "Individua l'origine delle lentezze del tuo sito Web e scopri come risolvere questa situazione"
-updated: 2025-11-20
+updated: 2025-11-17
 ---
 
 ## Obiettivo
