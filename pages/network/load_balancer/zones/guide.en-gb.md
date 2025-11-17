@@ -6,13 +6,20 @@ updated: 2025-07-30
 
 ## Introduction
 
-The OVH Load Balancer service is located in one or more availability area(s),
-defined when subscribing to the service.
+The OVHcloud Load Balancer is a critical component for distributing network traffic across your infrastructure. To ensure the highest level of service and optimal user experience, it is essential to deploy your Load Balancer across multiple availability zones (AZ). When subscribing to an OVHcloud Load Balancer service, **you may choose one or more availability zones** in which the service will be located. You also have the possibility to **order additional zones** for an existing service.
 
-You have the possibility to order additional zones for your service.
-This increases the availability of your Load Balancer service in case a zone is unavailable.
+Configuring your OVHcloud Load Balancer in multiple availability zones will help you increase the reliability of your Load Balancer service in case a zone is unavailable, or minimize latency for your users by directing the traffic to the service nearest to them. Most regions only have one zone, but specific regions offer several availability zones (**Multi-AZ**), thus providing enhanced performance and availability for local users.
 
-It is also possible, if configured appropriately, to use multiple zones to minimize latency for your visitors.
+This guide details how to configure and utilize these multiple zones to leverage enhanced performance and resilience.
+
+> [!primary]
+>
+> Due to technical restrictions, when configuring an OVHcloud Load Balancer with two zones, if one is located in an APAC region and the other is not, traffic will be preferentially routed through the non-APAC zone first, even when the Load Balancer service is out of order in that zone.
+>
+> This behavior is specific to cross-continent setups involving APAC zones. Therefore, we do not recommend configuring your Load Balancer in this manner.
+>
+> You may find a list of OVHcloud regions on [our website](https://www.ovhcloud.com/en/about-us/global-infrastructure/regions/).
+>
 
 ## Instructions
 
@@ -45,28 +52,28 @@ To order a zone via the API, you first need to create a cart.
 
 Please make a note of the cart number ("cart"), it will be useful for the rest.
 
-Then you assign it via
+Then you assign it via:
 
 > [!api]
 >
 > @api {v1} /order POST /order/cart/{cartId}/assign
 >
 
-You can list the options available on your Load Balancer service via
+You can list the options available on your Load Balancer service via:
 
 > [!api]
 >
 > @api {v1} /order GET /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-When you have found the option corresponding to the desired area, you can add it to your shopping cart ("cart") via
+When you have found the option corresponding to the desired area, you can add it to your shopping cart ("cart") via:
 
 > [!api]
 >
 > @api {v1} /order POST /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-Finally, you can validate your cart ("cart") via
+Finally, you can validate your cart ("cart") via:
 
 > [!api]
 > @api {v1} /order POST /order/cart/{cartId}/checkout
@@ -74,7 +81,7 @@ Finally, you can validate your cart ("cart") via
 
 Don't forget to pay the order form thus generated.
 
-### Add a zone
+### Configure your frontend
 
 Once your zone order is finalized, you can add it from your OVHcloud Control Panel.
 
@@ -100,7 +107,7 @@ This special `all` zone will allow you to deploy the same configuration on all z
 
 ### To reduce latency
 
-If the goal is to reduce latency, we can imagine directing requests coming from the zone1 load balancer to backend servers geographically close to zone1, and similarly, directing requests coming from the zone2 load balancer to backend servers close to zone2.
+If the goal is to reduce latency, we can imagine directing requests coming from the Zone 1 load balancer to backend servers geographically close to Zone 1, and similarly, directing requests coming from the Zone 2 load balancer to backend servers close to Zone 2.
 
 To achieve this, you need to specify a frontend in each zone that uses a cluster in the same zone.
 This will allow us to declare backend servers in different clusters per zone and to control which backend servers are used in which zone.
@@ -121,7 +128,7 @@ Load balancing across multiple regions offers **maximum disaster recovery agains
 
 In contrast, load balancing across several Availability Zones (AZs) within the same region ensures **high availability**, **high performance** and **fault tolerance against local outages** using fast, **low-latency connections**.
 
-![Difference between multi-AZ and multi-zone deployments](images/multi-az-comparison.png)
+![Difference between multi-AZ and multi-zone deployments](images/multi-az-comparison.png){.thumbnail}
 
 ## Go further
 
