@@ -552,6 +552,7 @@
             + [Migrating OmniOS datastores](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_omnios)
     + [On-Prem Cloud Platform](products/hosted-private-cloud-hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-opcp-getting-started)
+            + [OPCP - Node lifecycle](hosted_private_cloud/opcp/node-lifecycle)
             + [OPCP - How to use the APIs and obtain the credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
             + [OPCP - How to install an instance from the Horizon interface](hosted_private_cloud/opcp/how-to-setup-instance)
             + [OPCP - How to setup an instance using the OpenStack API](hosted_private_cloud/opcp/how-to-setup-instance-openstack-api)
