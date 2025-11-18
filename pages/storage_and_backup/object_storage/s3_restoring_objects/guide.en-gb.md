@@ -19,11 +19,12 @@ In this guide, learn how you can restore an object from the Cold Archive tier in
 The **Cold Archive** storage class is an archival storage class. Also existing on its own as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started), Cold Archive is now also available as an Object Storage class in a general-purpose object storage container. 
 
 Objects in a Cold Archive storage class **must be restored** before they are available for download. Moreover the Cold Archive storage class has a minimum storage duration and additional fees to consider:
+
 - The minimum storage duration for Cold Archive is 180 days. If an object is deleted during this period, an additional charge will be applied (prorated cost of storing the object for the full 180 days).
-- When a restoration request is made, users are asked to set a period of time (in Days) during which the requested objects are available to download and are billed upfront at the Standard class rate.
+- When a restoration request is made, users are asked to set a period of time (in *days*) during which the requested objects are available to download and are billed upfront at the Standard class rate.
 - Once a restoration request is made, it is not possible to add another restoration request with a shortern period of time. The first request can't be preempted.
 - If you are using [multipart upload (MPU)](pages/storage_and_backup/object_storage/s3_performance_optimization), you need to know that in-progress multipart parts are billed at Standard class rate until you complete the upload.
-- There are no storage overhead charges
+- There are no storage overhead charges.
 
 Restore process can take up to 48 hours depending on the size of the objects. Download action is then available when the restore process is done.
 
@@ -51,11 +52,11 @@ You can restore an object in the Cold Archive storage class by using the [OVHclo
 >> ```
 >> > [!primary]
 >> >
->> > Cold Archive does not support the `GlacierJobParameters` from the S3 API. When restored, objects remained in the Cold Archive class from an object storage class point-of-view but are available for download.
+>> > Cold Archive does not support the `GlacierJobParameters` from the S3 API. When restored, objects remained in the Cold Archive class from an object storage class point-of-view but are available for download.  
 >> > Cold Archive class is mapped with `DEEP_ARCHIVE` AWS S3 tier. To know more about mapping between OVHcloud Object Storage tiers and AWS S3 tiers, please read the [Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location) guide.
 >> > 
 >> >
->>You can also monitor the status of your restoration:
+>> You can also monitor the status of your restoration:
 >>
 >> ```bash
 >> aws s3api head-object --bucket <bcket-name> --key <object-name>
