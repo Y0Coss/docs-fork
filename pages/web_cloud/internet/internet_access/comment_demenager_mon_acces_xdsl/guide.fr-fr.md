@@ -152,4 +152,6 @@ C'est pourquoi, pendant une période, vous disposerez d'un accès à Internet fo
 
 ## Aller plus loin
 
+[VoIP / Accès Internet - Déroulement d'un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma)
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).
