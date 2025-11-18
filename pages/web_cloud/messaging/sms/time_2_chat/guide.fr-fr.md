@@ -1,7 +1,7 @@
 ---
-title: Découvrir Time2Chat, la solution de messagerie conversationnelle par SMS pour les entreprises
+title: Time2Chat, la messagerie conversationnelle par SMS pour les entreprises
 excerpt: Lancez vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09
-updated: 2025-11-10
+updated: 2025-11-18
 ---
 
 ## Objectif
