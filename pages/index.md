@@ -549,7 +549,7 @@
         + [Migration](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration)
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Zerto](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)
-            + [Migrating OmniOS datastores](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_omnios)   
+            + [Migrating OmniOS datastores](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_omnios)
     + [On-Prem Cloud Platform](products/hosted-private-cloud-hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-opcp-getting-started)
             + [OPCP - Node lifecycle](hosted_private_cloud/opcp/node-lifecycle)
