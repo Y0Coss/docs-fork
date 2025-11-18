@@ -1,36 +1,36 @@
 ---
-title: "OPCP - Comment installer une instance depuis les API Openstack"
-excerpt: "Découvrez déployer une instance OPCP via les API Openstack en configurant réseaux, sous-réseaux, instance et clés SSH"
+title: "OPCP - How to Deploy an Instance via OpenStack APIs"
+excerpt: "Learn how to deploy an OPCP instance via OpenStack APIs by configuring networks, subnets, instances, and SSH keys"
 updated: 2025-11-18
 ---
 
-## Objectif
+## Objective
 
-Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’une instance installé et actif.  
-Ce guide détaille les étapes à suivre pour installer un serveur sur un noeud OPCP grâce à la création d'une instance Openstack à partir des API.
+Before you can deploy services on your **OPCP** clusters, you need to have at least one installed and active instance.  
+This guide details the steps to install a server on an OPCP node by creating an OpenStack instance via the APIs.
 
-## Prérequis
+## Prerequisites
 
-- Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
-- Posséder un compte utilisateur avec les droits suffisants pour se connecter aux API Openstack.
-- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
-- [Charger les variables d'environnement pour le projet](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
+- Have an active [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) service.
+- Have a user account with sufficient rights to access the OpenStack APIs.
+- [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Load the environment variables for the project](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
 
-## En pratique
+## Practical Steps
 
-Vous pouvez obtenir la liste des commandes possible en lisant la documentation du client :
+You can get the list of available commands by consulting the client documentation:
 
 ```bash
 openstack command list
 ```
 
-Vous pouvez filtrer les commandes affichées en indiquant le groupe : 
+You can filter the displayed commands by specifying a group: 
 
 ```bash
 openstack command list --group compute
 ```
 
-Il est aussi possible d'avoir des informations concernant une commande en ajoutant `help` devant celle ci :
+You can also get information about a specific command by adding `help` before it:
 
 ```bash
 openstack help flavor list 
@@ -48,17 +48,17 @@ List flavors ...
 
 > [!success]
 >
-> Consultez la documentation du client directement sur le [site OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> Check the client documentation directly on the [OpenStack website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
 >
 
-### Récupérer les paramètres nécessaires à la création d'une instance
+### Retrieve the Parameters Needed to Create an Instance
 
-#### Créer un network et un subnet
+#### Create a Network and a Subnet
 
-##### Etape 1 : Créer le network
+##### Step 1: Create the Network
 
-Avant de déployer votre instance, il est généralement nécessaire de créer un **réseau privé** afin qu’il soit accessible au sein de votre infrastructure locale.
-Si vous avez déjà un Network avec un subnet sur votre projet que vous souhaitez utiliser, vous pouvez ignorer cette étape l'étape de création et directement lister vos network pour récupérer le nom ou l'ID du network concerné.
+Before deploying your instance, it is generally necessary to create a **private network** so that it is accessible within your local infrastructure.  
+If you already have a network with a subnet in your project that you want to use, you can skip this creation step and directly list your networks to get the name or ID of the desired network.
 
 ```bash
 openstack network create $NETWORK_NAME
@@ -95,18 +95,18 @@ openstack network create $NETWORK_NAME
 +---------------------------+--------------------------------------+
 ```
 
-Par défaut, un réseau n’est visible que par le projet qui l’a créé (ainsi que par les utilisateurs administrateurs).  
-Si vous souhaitez créer un réseau **partagé entre tous vos projets**, vous pouvez utiliser le paramètre `--share`.  
-Pour partager un réseau uniquement avec certains projets spécifiques, il est nécessaire d’utiliser le mécanisme **Role-Based Access Control (RBAC)** d’OpenStack :  
-[Documentation RBAC Neutron](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
+By default, a network is visible only to the project that created it (as well as to administrator users).  
+If you want to create a network **shared across all your projects**, you can use the `--share` parameter.  
+To share a network only with specific projects, you must use OpenStack's **Role-Based Access Control (RBAC)** mechanism:  
+[Neutron RBAC Documentation](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
 
-Par ailleurs, si vous souhaitez créer le réseau dans un **VLAN particulier**, vous pouvez le préciser à l’aide des paramètres suivants :
+Additionally, if you want to create the network in a **specific VLAN**, you can specify it with the following parameters:
 
 - `--provider-network-type vlan`
 - `--provider-physical-network physnet1`
 - `--provider-segment $VLAN_ID`
 
-Par exemple, si vous souhaitez créer un réseau privé partagé dans le VLAN 2025 qui se nomme opcpdocs
+For example, if you want to create a shared private network in VLAN 2025 named `opcpdocs`:
 
 ```bash
 openstack network create --share --provider-network-type vlan --provider-physical-network physnet1 --provider-segment 2025 opcpdocs
@@ -143,7 +143,7 @@ openstack network create --share --provider-network-type vlan --provider-physica
 +---------------------------+--------------------------------------+
 ```
 
-Une fois le network créé, vous pouvez le lister via la commande :
+Once the network is created, you can list it using the command:
 
 ```bash
 openstack network list --name $NETWORK_NAME
@@ -154,18 +154,18 @@ openstack network list --name $NETWORK_NAME
 +--------------------------------------+-----------+---------+
 ```
 
-Au besoin vous pouvez lister l'ensemble des networks en retirant l'argument `--name`.
+If needed, you can list all networks by removing the `--name` argument.
 
-##### Etape 2 : Créer le subnet
+##### Step 2: Create the Subnet
 
-Par défaut, le seul élément nécessaire pour créer un subnet sur votre réseau est le CIDR que vous souhaitez configurer et le network que vous venez de créer :
+By default, the only required information to create a subnet on your network is the CIDR you want to configure and the network you just created:
 
 ```bash
 openstack subnet create --network $NETWORK_NAME --subnet-range 192.168.120.0/24 $SUBNET_NAME
 ```
 
-Si vous souhaitez cependant préciser l'allocation pool , vous pouvez le spécifier via différents paramètres.
-Par exemple, si vous souhaitez créer un sous réseau avec le CIDR 192.168.120.0/24 en allouant uniquement 50 adresses IP du CIDR et avec une gateway spécifique, vous pouvez utiliser la commande suivante :
+However, if you want to specify an allocation pool, you can define it using various parameters.  
+For example, to create a subnet with CIDR 192.168.120.0/24, allocating only 50 IP addresses from the CIDR, and using a specific gateway, you can use the following command:
 
 ```bash
 openstack subnet create --network opcpdocs --subnet-range 192.168.120.0/24 --allocation-pool start=192.168.120.11,end=192.168.120.60 --gateway 192.168.120.8 opcpdocs-subnet
@@ -197,29 +197,29 @@ openstack subnet create --network opcpdocs --subnet-range 192.168.120.0/24 --all
 +----------------------+--------------------------------------+
 ```
 
-Ce subnet pourra être utilisé pour déployer une instance et qu'Openstack puisse allouer une IP à celle_ci lors de son installation.
+This subnet can be used to deploy an instance, allowing OpenStack to allocate an IP during its installation.
 
-#### Ajout d'une clé SSH publique
+#### Adding a Public SSH Key
 
-Dans un premier temps, il est nécessaire d'ajouter une clé SSH publique qui permettra de se connecter sur les instances.
+First, you need to add a public SSH key to connect to your instances.
 
-- Lister les commandes liées aux clés SSH :
+- List the SSH key-related commands:
 
 ```bash
-openstack help | grep keypair         
+openstack help | grep keypair
   keypair create  Create new public or private key for server ssh access
   keypair delete  Delete public or private key(s)
   keypair list    List key fingerprints
   keypair show    Display key details
 ```
 
-- Ajouter la clé SSH publique :
+- Add the public SSH key:
 
 ```bash
 openstack keypair create --public-key ~/.ssh/id_rsa.pub $SSHKEY
 ```
 
-- Lister les clés SSH disponibles :
+- List available SSH keys:
 
 ```bash
 openstack keypair list
@@ -230,9 +230,9 @@ openstack keypair list
 +---------------+-------------------------------------------------+------+
 ```
 
-#### Lister les modèles d'instance
+#### List Instance Flavors
 
-Il faudra ensuite récupérer l'ID ou le nom du modèle que l'on souhaite utiliser :
+Next, retrieve the ID or name of the flavor you want to use:
 
 ```bash
 openstack flavor list
@@ -247,12 +247,12 @@ openstack flavor list
 +--------------------------------------+---------------------+---------+------+-----------+-------+-----------+
 ```
 
-#### Lister les images disponibles
+#### List Available Images
 
-Pour finir, il suffit de récupérer l'ID ou le nom de l'image qui sera utilisée pour l'instance :
+Finally, get the ID or name of the image to use for the instance:
 
 ```bash
-openstack image list 
+openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 | ID                                   | Name                                          | Status |
 +--------------------------------------+-----------------------------------------------+--------+
@@ -263,9 +263,9 @@ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 ```
 
-### Installation d'une instance
+### Instance Installation
 
-Avec les éléments récupérés précédemment, vous pouvez créer une instance pour installer une instance sur la flavor souhaitée :
+With the elements retrieved previously, you can create an instance to deploy on the desired flavor:
 
 ```bash
 openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12 LVM OPCP" --network opcpdocs OPCPdocs-server
@@ -321,9 +321,9 @@ openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Par défaut, l'instance qui va être installée est sélectionnée automatiquement dans le pool de noeuds en `Available` et pour lesquels les **traits** requis par la flavor correspondent avec l'installation demandée. Cela signifie qu'un serveur physique correpondant aux contraintes décrites par les **traits** sera sélectionné.
+By default, the instance to be installed is automatically selected from the pool of nodes in `Available` status, for which the **required traits** of the flavor match the requested installation. This means a physical server meeting the constraints described by the **traits** will be selected.
 
-Après plusieurs minutes, l'instance est déployée et vous pouvez retrouver vos instances installées via la commande suivante :
+After a few minutes, the instance is deployed, and you can list your installed instances using the following command:
 
 ```bash
 openstack server list
@@ -334,31 +334,31 @@ openstack server list
 +--------------------------------------+-----------------+--------+-------------------------+---------------------+---------+
 ```
 
-Si vous souhaitez installer l'instance sur un noeud spécifique, vous pouvez spécifier l'identifiant de votre noeud dans votre commande :
+If you want to install the instance on a specific node, you can specify the node ID in your command:
 
 ```bash
-openstack server create --flavor $flavor_ID --image $image_ID --network $network_ID --key-name $your_keyname --availability-zone nova::$baremetal_noeud_ID $server_name
+openstack server create --flavor $flavor_ID --image $image_ID --network $network_ID --key-name $your_keyname --availability-zone nova::$baremetal_node_ID $server_name
 ```
 
-Il faudra cependant vous assurer que le noeud est bien `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
+You must ensure that the node is `Available` and has the required **traits** to deploy the desired flavor.
 
-Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez suivre notre documentation [Cycle de vie d'un noeud OPCP](pages/hosted_private_cloud/opcp/node-lifecycle)
+To check the current state of a node and retrieve its ID, you can follow our documentation: [OPCP Node Lifecycle](pages/hosted_private_cloud/opcp/node-lifecycle)
 
-Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre notre documentation [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor)
+To verify the compatibility between your node and the required traits of a flavor, you can follow our documentation: [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor)
 
-#### Suppression d'une instance
+#### Deleting an Instance
 
-Vous pouvez supprimer une instance grâce à la commande suivante :
+You can delete an instance with the following command:
 
 ```bash
 openstack server delete $INSTANCE_ID
 ```
 
-Votre noeud passera en état `Cleaning`. Cette étape consiste à la réinitialisation matérielle du serveur physique et de l'effacement des données présentes sur les disques.
-Durant cette étape, vous ne verrez plus l'instance dans la liste des instances, cependant le noeud ne sera pas disponible immédiatement pour une nouvelle installation. N'oubliez pas de prendre en compte ce délai lors de vos opérations de maintenance.
-L'opération peut prendre plusieurs minutes avant que le noeud soit de nouveau `Available` et disponible pour une nouvelle installation.
+Your node will go into `Cleaning` state. This step involves a hardware reset of the physical server and erasure of the data on its disks.  
+During this step, the instance will no longer appear in the instance list; however, the node will not be immediately available for a new installation. Please consider this delay during your maintenance operations.  
+The operation may take several minutes before the node is `Available` again and ready for a new deployment.
 
-### Références
+### References
 
-- [Openstack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
-- [Openstack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html)
+- [OpenStack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+- [OpenStack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html)
