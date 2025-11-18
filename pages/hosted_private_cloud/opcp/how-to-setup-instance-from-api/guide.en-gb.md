@@ -6,25 +6,25 @@ updated: 2025-11-18
 
 ## Objective
 
-This guide details the steps to install an OPCP node by creating an instance through the OpenStack APIs.
+This guide details the steps to install an OPCP node by creating an instance through the OpenStack APIs. 
 Before deploying services on your OPCP clusters, you must have at least one installed and active node.
 
-## Prerequisites
+## Requirements
 
 - Have an active [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) service.
 - Have a user account with sufficient rights to access the OpenStack APIs.
-- [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
-- [Load the environment variables for the project](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
+- [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+- [Load the environment variables for the project](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
 
-## Practical Steps
+### Practical Steps
 
-You can get the list of available commands by consulting the client documentation:
+You can get the list of available commands by consulting the OpenStack client list:
 
 ```bash
 openstack command list
 ```
 
-You can filter the displayed commands by specifying a group: 
+You can filter the displayed commands by specifying a group:
 
 ```bash
 openstack command list --group compute
@@ -48,16 +48,16 @@ List flavors ...
 
 > [!success]
 >
-> Check the client documentation directly on the [OpenStack website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> Check the OpenStack client documentation directly on the [OpenStack website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
 >
 
 ### Retrieve the Parameters Needed to Create an Instance
 
 #### Create a Network and a Subnet
 
-##### Step 1: Create the Network
+**Step 1: Create the Network**
 
-Before deploying your instance, it is generally necessary to create a **private network** so that it is accessible within your local infrastructure.  
+Before deploying your instance, it is generally necessary to create a **private network** so that it is accessible within your local infrastructure.
 If you already have a network with a subnet in your project that you want to use, you can skip this creation step and directly list your networks to get the name or ID of the desired network.
 
 ```bash
@@ -95,10 +95,9 @@ openstack network create $NETWORK_NAME
 +---------------------------+--------------------------------------+
 ```
 
-By default, a network is visible only to the project that created it (as well as to administrator users).  
-If you want to create a network **shared across all your projects**, you can use the `--share` parameter.  
-To share a network only with specific projects, you must use OpenStack's **Role-Based Access Control (RBAC)** mechanism:  
-[Neutron RBAC Documentation](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
+By default, a network is visible only to the project that created it (as well as to administrator users).
+If you want to create a network **shared across all your projects**, you can use the `--share` parameter.
+To share a network only with specific projects, you must use OpenStack's **Role-Based Access Control (RBAC)** mechanism: [Neutron RBAC Documentation](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
 
 Additionally, if you want to create the network in a **specific VLAN**, you can specify it with the following parameters:
 
@@ -156,7 +155,7 @@ openstack network list --name $NETWORK_NAME
 
 If needed, you can list all networks by removing the `--name` argument.
 
-##### Step 2: Create the Subnet
+**Step 2: Create the Subnet**
 
 By default, the only required information to create a subnet on your network is the CIDR you want to configure and the network you just created:
 
@@ -164,7 +163,7 @@ By default, the only required information to create a subnet on your network is 
 openstack subnet create --network $NETWORK_NAME --subnet-range 192.168.120.0/24 $SUBNET_NAME
 ```
 
-However, if you want to specify an allocation pool, you can define it using various parameters.  
+However, if you want to specify an allocation pool, you can define it using various parameters.<br>
 For example, to create a subnet with CIDR 192.168.120.0/24, allocating only 50 IP addresses from the CIDR, and using a specific gateway, you can use the following command:
 
 ```bash
@@ -342,9 +341,9 @@ openstack server create --flavor $flavor_ID --image $image_ID --network $network
 
 You must ensure that the node is `Available` and has the required **traits** to deploy the desired flavor.
 
-To check the current state of a node and retrieve its ID, you can follow our documentation: [OPCP Node Lifecycle](pages/hosted_private_cloud/opcp/node-lifecycle)
+To check the current state of a node and retrieve its ID, you can consult our documentation: [OPCP Node Lifecycle](pages/hosted_private_cloud/opcp/node-lifecycle).
 
-To verify the compatibility between your node and the required traits of a flavor, you can follow our documentation: [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor)
+To verify the compatibility between your node and the required traits of a flavor, you can consult our documentation: [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor).
 
 #### Deleting an Instance
 
@@ -354,11 +353,17 @@ You can delete an instance with the following command:
 openstack server delete $INSTANCE_ID
 ```
 
-Your node will go into `Cleaning` state. This step involves a hardware reset of the physical server and erasure of the data on its disks.  
-During this step, the instance will no longer appear in the instance list; however, the node will not be immediately available for a new installation. Please consider this delay during your maintenance operations.  
+Your node will go into `Cleaning` state. This step involves a hardware reset of the physical server and erasure of the data on its disks.
+During this step, the instance will no longer appear in the instance list; however, the node will not be immediately available for a new installation. Please consider this delay during your maintenance operations.
 The operation may take several minutes before the node is `Available` again and ready for a new deployment.
 
 ### References
 
 - [OpenStack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
 - [OpenStack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html)
+
+## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+
+Join our [community of users](/links/community).
