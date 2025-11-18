@@ -1,7 +1,7 @@
 ---
 title: "Melhorar a segurança dos e-mails através do registo DKIM"
 excerpt: "Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud"
-updated: 2025-11-14
+updated: 2025-11-17
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Poprawa bezpieczeństwa e-maili dzięki rejestracji DKIM"
 excerpt: "Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud"
-updated: 2025-11-14
+updated: 2025-11-17
 ---
 
 <style>

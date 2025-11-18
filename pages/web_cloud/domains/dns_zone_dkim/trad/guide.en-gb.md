@@ -208,7 +208,6 @@ Click on the tab corresponding to your offer:
 ##### **For MX Plan and Zimbra** <a name="confemail"></a>
 
 Follow the **5 steps** by clicking successively on each of the 5 tabs below:
-```
 
 > [!tabs]
 > **1. Enable DKIM on your domain name**

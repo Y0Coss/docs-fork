@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch DKIM-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und E-Mail-Dienste bei OVHcloud einrichten
-updated: 2025-11-14
+updated: 2025-11-17
 ---
 
 <style>
@@ -82,7 +82,7 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
     - [Warum müssen die DNS-Server konfiguriert werden?](#dns-and-dkim)
     - [Beispiel einer unter Verwendung von DKIM gesendeten E-Mail](#example)
     - [Was ist ein DKIM-Selektor?](#selector)
-- [DKIM automatisch für OVHcloud Exchange oder E-Mail Pro konfigurieren](#auto-dkim)
+- [DKIM automatisch für ein E-Mail-Angebot von OVHcloud konfigurierenn](#auto-dkim)
 - [DKIM manuell für OVHcloud Exchange oder E-Mail Pro konfigurieren](#internal-dkim)
     - [API - Vollständige Konfiguration von DKIM](#firststep)
         - [Für MX Plan und Zimbra](#confemail)
