@@ -10,9 +10,9 @@ OpenNebula is a powerful, open-source cloud management platform (CMP) designed t
 
 It acts as an orchestrator, turning physical infrastructure into a managed IaaS (Infrastructure as a Service) cloud that is accessible via a unified control interface. It supports major hypervisors and allows for hybrid deployments by integrating with public cloud providers, such as OVHcloud.
 
-OpenNebula supports the deployment of their solution on OVHcloud infrastructure, which results in a cloud environment that is validated as part of the **OpenNebula Cloud-Ready Certification Program**.
+OpenNebula supports the deployment of its solution on OVHcloud infrastructure, which results in a cloud environment that is validated as part of the **OpenNebula Cloud-Ready Certification Program**.
 
-To streamline this process, OpenNebula provides [a set of **Ansible playbooks** called Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud) for automated deployment and verification, which you will need to use.
+To streamline this process, OpenNebula provides [a set of **Ansible playbooks** called Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud) for automated deployment and verification, **which you will need to use** in this guide.
 
 ## Objective
 
@@ -20,16 +20,16 @@ This guide details the complete path to creating an OpenNebula Hosted Cloud on O
 
 Following this guide, you will be able to:
 
-- Request necessary resources using your OVHcloud account.
-- Prepare the Ansible deployment project with all required configuration.
-- Perform OpenNebula deployment over these resources.
+- Request necessary resources using your OVHcloud account,
+- Prepare the Ansible deployment project with all required configuration,
+- Perform OpenNebula deployment over these resources,
 - Check the operation with an automated verification procedure.
 
 ## Requirements
 
-- **Two** [dedicated servers](/links/bare-metal/bare-metal) from the Scale or High Grade ranges ;
-- An active [vRack](/links/network/vrack) service ;
-- A public block of Additional IP addresses, sized according to your needs ;
+- **Two** [dedicated servers](/links/bare-metal/bare-metal) from the Scale or High Grade ranges,
+- An active [vRack](/links/network/vrack) service,
+- A public block of Additional IP addresses, sized according to your needs,
 - Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
@@ -44,7 +44,7 @@ Finally, from the OVHcloud Control Panel, open the `Network`{.action} section, t
 
 ### Collecting the infrastructure configuration
 
-To proceed with OpenNebula deployment, extract the required parameters that the deployment automation relies upon. **Update the inventory values** for the [Hosted Cloud OVHcloud repository](https://github.com/OpenNebula/hosted-cloud-ovhcloud) using all collected settings to match the provisioned infrastructure. For further details on the automated deployment procedure, refer to the following section: [Initial setup](#Initial_setup)
+To begin with the OpenNebula deployment, extract the required parameters that the deployment automation relies upon. **Update the inventory values** for the [Hosted Cloud OVHcloud repository](https://github.com/OpenNebula/hosted-cloud-ovhcloud) using all collected settings to match the provisioned infrastructure. For further details on the automated deployment procedure, refer to the following section: [Initial setup](#Initial_setup)
 
 Each server is equipped with two network adapters dedicated to public connectivity and two adapters for private connectivity. The two interfaces within each segment will be **bonded** using the [OVHcloud Link Aggregation](https://www.ovhcloud.com/en/bare-metal/ovhcloud-link-aggregation/) service.
 
@@ -79,7 +79,7 @@ To collect the network adapter names, connect to your dedicated server and execu
 
 **Public IP addresses**
 
-The public IP block ordered in the previous steps allows to attach direct public connectivity to virtual servers. For a public IP range deployed on vRack, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below :
+The public IP block ordered in the previous steps allows to attach direct public connectivity to virtual servers. For a public IP range deployed on vRack, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below :
 ```
 46.105.135.96   Reserved : Network address
 46.105.135.97   First usable IP
@@ -112,7 +112,7 @@ Declare a bridge network for public IP addresses using all usable addresses of y
 
 **Private IP addresses**
 
-On private network bond, deploy one 802.1Q virtual network per private network. For each virtual network, create a section in the Ansible inventory file, and declare the VLAN ID, IP range and netmask.
+On the private network bond, deploy one 802.1Q virtual network per private network. For each virtual network, create a section in the Ansible inventory file, and declare the VLAN ID, IP range and netmask.
 
 | Description                              | Variable Names                                                | Files/Location                                         |
 |------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
@@ -127,9 +127,9 @@ The deployment uses the **OpenNebula Hosted Cloud OVHcloud repository**.
 
 The high-level deployment steps are:
 
-1.  **Clone** the deployment repository ;
-2.  **Install** the dependencies listed in the [Requirements section](https://github.com/OpenNebula/hosted-cloud-ovhcloud?tab=readme-ov-file#requirements) ;
-3.  **Update** the inventory parameters in the repository with the configuration gathered above ;
+1.  **Clone** the deployment repository,
+2.  **Install** the dependencies listed in the [Requirements section](https://github.com/OpenNebula/hosted-cloud-ovhcloud?tab=readme-ov-file#requirements),
+3.  **Update** the inventory parameters in the repository with the configuration gathered above,
 4.  **Launch deployment commands** :
     * `make pre-tasks-ovhcloud` : Patch Ubuntu kernel and perform networking setup.
     * `make deployment` : Deploy OpenNebula.
