@@ -6,17 +6,18 @@ updated: 2025-11-18
 
 ## Objective
 
-This guide details the different statuses of a node in an OPCP rack and how to modify them.  
 A node in OpenStack represents the configuration of a physical server in the OPCP rack. It must be distinguished from instances, which represent the operating system running on a node.
 
-## Prerequisites
+**This guide details the different statuses of a node in an OPCP rack and how to modify them.**
+
+## Requirements
 
 - Have an active [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) service.
 - Have a user account with admin rights to log in to Horizon on the OPCP offering.
 - (Optional) Have access to the OpenStack APIs for your project.
 - (Optional) Have installed the Ironic client.
 
-## In practice
+## Instructions
 
 Log in to the Horizon interface of your OPCP on the admin project.
 
@@ -70,11 +71,11 @@ When a node is installed and booted in an OPCP rack, its discovery is automatica
 
 Once the node is in the `Enroll` state, you can change its state so that it is managed by Ironic.
 
-*From the Horizon interface:*
+**From the Horizon interface:**
 
 ![server-manageable](images/03-server-status-to-manageable.png){.thumbnail}
 
-*From the OpenStack APIs:*
+**From the OpenStack APIs:**
 
 ```bash
 baremetal node manage $BAREMETAL_NODE_ID
@@ -82,11 +83,11 @@ baremetal node manage $BAREMETAL_NODE_ID
 
 To make the node available for installation, it must then be transitioned to the `Available` state:
 
-*From the Horizon interface:*
+**From the Horizon interface:**
 
 ![server-available](images/03-server-status-to-available.png){.thumbnail}
 
-*From the OpenStack APIs:*
+**From the OpenStack APIs:**
 
 ```bash
 baremetal node provide $BAREMETAL_NODE_ID
@@ -98,7 +99,7 @@ The node then transitions to the `Cleaning` state before reaching `Available`, m
 
 This mode can be enabled to ensure a node cannot be used for installation, even if it is in the `Available` state.
 
-*From the Horizon interface:*
+**From the Horizon interface:**
 
 ![Maintenance-on](images/04-server-to-maintenance-on.png){.thumbnail}
 
@@ -110,7 +111,7 @@ Once your maintenance operations are complete, you can disable maintenance:
 
 ![Maintenance-off](images/04-server-to-maintenance-off.png){.thumbnail}
 
-*From the OpenStack APIs:*
+**From the OpenStack APIs:**
 
 ```bash
 baremetal node maintenance set $BAREMETAL_NODE_ID --reason "Maintenance reason"
@@ -140,3 +141,9 @@ baremetal node maintenance unset $BAREMETAL_NODE_ID
 - [OpenStack Official Documentation - Horizon](https://docs.openstack.org/horizon/latest/)
 - [OpenStack Ironic States](https://docs.openstack.org/ironic/7.0.1/api/ironic.common.states.html)
 - [OpenStack Ironic Troubleshooting - Maintenance](https://docs.openstack.org/ironic/latest/install/troubleshooting.html)
+
+## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+
+Join our [community of users](/links/community).
