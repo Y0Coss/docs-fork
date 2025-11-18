@@ -14,7 +14,7 @@ OVHcloud Managed Kubernetes Service (MKS) offers two plans **Free Plan** and **S
 
 ### Control Plane
 
-The control plane orchestrates the Kubernetes cluster, handling scheduling, scaling, and API requests. The Free plan provides a single managed control plane suitable for development or small projects. In contrast, the Standard plan includes cross-availability-zone (AZ) resilience, ensuring the cluster continues to operate even if one AZ experiences an outage.
+The control plane orchestrates the Kubernetes cluster, handling scheduling, scaling, and API requests. The Free plan provides a single zone managed control plane suitable for development or small projects. In contrast, the Standard plan includes cross-availability-zone (AZ) resilience, ensuring the cluster continues to operate even if one AZ experiences an outage.
 
 Example: A Standard plan cluster can remain fully functional during an AZ failure, whereas a Free plan cluster relies on a single zone.
 
@@ -26,21 +26,11 @@ Example: A Free plan cluster may experience roughly 43 minutes of downtime per m
 
 ### etcd Storage
 
-etcd maintains cluster state and configuration. The Free plan uses a shared etcd instance with a maximum capacity of 400 MB, which suffices for small deployments. The Standard plan uses dedicated etcd instances up to 8 GB, supporting larger clusters and heavier workloads.
-
-Example: A Free plan cluster with many microservices may quickly reach the etcd storage limit, whereas a Standard plan cluster can handle extensive workloads without performance degradation.
+etcd maintains cluster state and configuration. The Free plan uses a shared etcd storage with a maximum capacity of 400 MB, which suffices for small deployments. The Standard plan uses dedicated etcd storage up to 8 GB, supporting larger clusters and heavier workloads.
 
 ### Maximum Cluster Size
 
 Cluster size defines the number of worker nodes in the Kubernetes cluster. The Free plan supports up to 100 nodes, suitable for learning, testing, or small-scale projects. The Standard plan scales up to 500 nodes, enabling medium to large production deployments.
-
-Example: A test environment may run on 10 nodes (Free plan), while an enterprise application may require 200–300 nodes (Standard plan).
-
-### Regional Availability
-
-Regional availability determines the number of zones across which the cluster is deployed. The Free plan is limited to a single zone, whereas the Standard plan is deployed across three availability zones, improving resilience and minimizing the impact of zone-level outages.
-
-Example: A Standard plan cluster can maintain application continuity if one zone fails, while a Free plan cluster’s services would be interrupted.
 
 ### Summary
 
@@ -52,7 +42,7 @@ The following table summarizes the key differences between the Free plan and the
 | Availability          | 99,5% SLO                                           | 99,99 SLA (at General Availability stage) |
 | etcd                  | Shared, up to 400MB                                 | Dedicated, up to 8GB                      |
 | Max cluster size      | Up to 100 nodes                                     | Up to 500 nodes                           |
-| Regional availability | Single-zone regions                                 | 3-AZ region for now                       |
+| Regional availability | Single-zone regions for now                         | 3-AZ region for now                       |
 
 This summary provides a quick overview of the differences between the Free plan and the Standard plan, highlighting architecture, availability, storage, cluster size, and regional deployment.
 

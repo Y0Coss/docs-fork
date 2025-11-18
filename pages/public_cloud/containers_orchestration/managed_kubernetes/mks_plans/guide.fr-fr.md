@@ -14,7 +14,7 @@ OVHcloud Managed Kubernetes Service (MKS) propose deux plans **Plan Free** et **
 
 ### Plan de contrôle
 
-Le plan de contrôle orchestre le cluster Kubernetes, en gérant le planification, l'échelle et les demandes d'API. Le plan Free propose un seul plan de contrôle géré adapté au développement ou aux petits projets. En revanche, le plan Standard inclut une résilience entre les zones d'availability (AZ), assurant que le cluster continue à fonctionner même si une zone AZ subit une panne.
+Le plan de contrôle orchestre le cluster Kubernetes, en gérant le planification, l'échelle et les demandes d'API. Le plan Free propose un seul plan de contrôle géré à zone unique adapté au développement ou aux petits projets. En revanche, le plan Standard inclut une résilience entre les zones d'availability (AZ), assurant que le cluster continue à fonctionner même si une zone AZ subit une panne.
 
 Exemple : Un cluster au plan Standard peut rester entièrement fonctionnel en cas de panne AZ, alors qu'un cluster au plan Free dépend d'une seule zone.
 
@@ -26,15 +26,11 @@ Exemple : Un cluster au plan Free peut connaître environ 43 minutes d'indisponi
 
 ### Stockage etcd
 
-etcd maintient l'état et la configuration du cluster. Le plan Free utilise une instance partagée d'étcd avec une capacité maximale de 400 Mo, ce qui suffit pour de petites déploiements. Le plan Standard utilise des instances dédiées d'étcd jusqu'à 8 Go, supportant des clusters plus grands et des charges de travail plus lourdes.
-
-Exemple : Un cluster au plan Free avec de nombreux microservices peut rapidement atteindre la limite de stockage d'étcd, alors qu'un cluster au plan Standard peut gérer des charges de travail étendues sans dégradation de performance.
+etcd maintient l'état et la configuration du cluster. Le plan Free utilise un stockage partagé d'étcd avec une capacité maximale de 400 Mo, ce qui suffit pour de petites déploiements. Le plan Standard utilise un stockage dédié d'étcd jusqu'à 8 Go, supportant des clusters plus grands et des charges de travail plus lourdes.
 
 ### Taille maximale du cluster
 
 La taille du cluster définit le nombre de nœuds de travail dans le cluster Kubernetes. Le plan Free supporte jusqu'à 100 nœuds, adapté à l'apprentissage, aux tests ou aux projets à petite échelle. Le plan Standard évolue jusqu'à 500 nœuds, permettant des déploiements de production moyens à grands.
-
-Exemple : Un environnement de test peut fonctionner sur 10 nœuds (plan Free), tandis qu'une application d'entreprise peut nécessiter 200 à 300 nœuds (plan Standard).
 
 ### Disponibilité régionale
 
@@ -46,13 +42,13 @@ Exemple : Un cluster au plan Standard peut maintenir la continuité de l'applica
 
 Le tableau suivant résume les différences clés entre le plan Free et le plan Standard du service OVHcloud Managed Kubernetes (MKS) :
 
-| Plan                  | Free                                                | Standard                                  |
-| --------------------- | --------------------------------------------------- | ----------------------------------------- |
-| ControlPlane          | Géré                                             | Géré & résilient entre les zones AZ              |
-| Disponibilité          | 99,5 % SLO                                           | 99,99 % SLA (à l'étape de disponibilité générale) |
-| etcd                  | Partagé, jusqu'à 400 Mo                                 | Dédiqué, jusqu'à 8 Go                      |
-| Taille maximale du cluster      | Jusqu'à 100 nœuds                                     | Jusqu'à 500 nœuds                           |
-| Disponibilité régionale | Zone unique                                         | 3 zones AZ pour l'instant                       |
+| Plan                       | Free                        | Standard                                          |
+| -------------------------- | --------------------------- | ------------------------------------------------- |
+| ControlPlane               | Géré                        | Géré & résilient entre les zones AZ               |
+| Disponibilité              | 99,5 % SLO                  | 99,99 % SLA (à l'étape de disponibilité générale) |
+| etcd                       | Partagé, jusqu'à 400 Mo     | Dédiqué, jusqu'à 8 Go                             |
+| Taille maximale du cluster | Jusqu'à 100 nœuds           | Jusqu'à 500 nœuds                                 |
+| Disponibilité régionale    | Zone unique pour l'instant  | 3 zones AZ pour l'instant                         |
 
 Ce résumé fournit un aperçu rapide des différences entre le plan Free et le plan Standard, en mettant en évidence l'architecture, la disponibilité, le stockage, la taille du cluster et le déploiement régional.
 
