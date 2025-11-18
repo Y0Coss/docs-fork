@@ -6,8 +6,8 @@ updated: 2025-11-18
 
 ## Objective
 
-Before you can deploy services on your **OPCP** clusters, you need to have at least one installed and active instance.  
-This guide details the steps to install a server on an OPCP node by creating an OpenStack instance via the APIs.
+This guide details the steps to install an OPCP node by creating an instance through the OpenStack APIs.
+Before deploying services on your OPCP clusters, you must have at least one installed and active node.
 
 ## Prerequisites
 
@@ -265,7 +265,7 @@ openstack image list
 
 ### Instance Installation
 
-With the elements retrieved previously, you can create an instance to deploy on the desired flavor:
+With the previously gathered information, you can create an instance to deploy an operating system along with your SSH public key on the desired flavor:
 
 ```bash
 openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12 LVM OPCP" --network opcpdocs OPCPdocs-server
