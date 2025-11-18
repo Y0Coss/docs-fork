@@ -21,7 +21,7 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 
 Time2Chat est une solution de messagerie conversationnelle bidirectionnelle (marque ↔ utilisateur) permettant à une entreprise et à ses utilisateurs d’échanger par SMS en France.
 
-Contrairement à un envoi de campagne classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Ce numéro peut être utilisé à la fois pour envoyer et recevoir des SMS, mais aussi pour être joint directement par appel ou par SMS.
+Contrairement à un envoi de campagne classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Ce numéro peut être utilisé à la fois pour envoyer et recevoir des SMS.
 
 Une « session » de conversation débute dès qu’un premier message est envoyé — qu’il provienne de la marque ou du client. À partir de cet instant, la session reste active pendant 24 heures. Durant ce laps de temps, les deux interlocuteurs peuvent échanger un nombre illimité de SMS via le même canal. Une fois la période écoulée, tout nouveau message relance automatiquement une nouvelle session de 24 heures.
 
