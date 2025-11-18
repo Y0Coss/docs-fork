@@ -46,10 +46,72 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 
 > [!tabs]
 > Via Presigned URLs
+>> Presigned URLs provide temporary access to a private object without changing bucket permissions.
+>>
+>> Steps:
+>>
+>> - Generate a presigned URL using the OVHcloud API or an S3-compatible SDK.
+>> - Set an expiration time.
+>> - Share the URL with the external user.
+>>
+>> Example (AWS CLI compatible):
+>>
+>> ```bash
+>> aws s3 presign s3://my-bucket/reports/data.csv --expires-in 3600 \
+>>  --endpoint-url https://s3.gra.io.cloud.ovh.net
+>> ```
+>>
+>> This command returns a temporary link valid for 1 hour.
+>>
+>> After expiration, access is automatically blocked and the object remains private.
 >>
 > Via Public Objects
+>> Specific objects can be publicly accessible by applying a public-read ACL. Only those objects become public; the bucket and its listing stay private.
+>>
+>> Steps:
+>>
+>> - Select the object via API.
+>> - Apply the public-read ACL.
+>> - Share the object's URL.
+>>
+>> Example (AWS CLI compatible):
+>>
+>> ```bash
+>> aws s3api put-object-acl \
+>>  --bucket my-bucket \
+>>  --key docs/manual.pdf \
+>>  --acl public-read \
+>>  --endpoint-url https://s3.gra.io.cloud.ovh.net
+>> ```
+>>
+>> The object becomes accessible at: `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
 >>
 > Via Bucket Policies
+>> Bucket policies allow long-term or structured sharing by defining access rules for specific objects, prefixes, or IP ranges.
+>>
+>> Steps:
+>>
+>> - Write a JSON policy specifying the allowed actions and objects.
+>> - Apply the policy to the bucket through the Control Panel or the API.
+>> - Share the appropriate URL or credentials depending on the rule.
+>>
+>> Example: Allow public read access on a specific folder/prefix
+>>
+>> ```json
+>> {
+>>   "Version": "2012-10-17",
+>>   "Statement": [
+>>     {
+>>       "Effect": "Allow",
+>>       "Principal": "*",
+>>       "Action": "s3:GetObject",
+>>       "Resource": "arn:aws:s3:::my-bucket/public/*"
+>>     }
+>>   ]
+>> }
+>> ```
+>>
+>> Once applied, any object under the `public/` prefix becomes publicly readable, while the rest of the bucket remains private.
 >>
 
 ## Go further
