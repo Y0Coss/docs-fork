@@ -59,7 +59,7 @@ If an incident is detected by the OVHcloud monitoring, as part of auto-healing, 
 To avoid data loss in case of node failure, patch or upgrade, it is recommended to save your data Persistent Volumes (PV) based on Persistent Storage classes (such as Block or File Storage), not directly on nodes (including NVMe additional disks).
 Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) for more information.
 
-By default, OVHcloud provide [storage classes](https://github.com/ovh/docs/blob/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume/guide.en-gb.md#storage-classes){.external} based on Cinder block-storage solution through Cinder CSI.
+By default, OVHcloud provides [storage classes](https://github.com/ovh/docs/blob/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume/guide.en-gb.md#storage-classes){.external} based on Cinder block-storage solution through Cinder CSI.
 A worker node can have a maximum of 100 Cinder persistent volumes attached to it, and a Cinder persistent volume can only be attached to a single worker node.
 
 You can manually [configure multi-attach persistent volumes with NAS-HA](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha).
@@ -78,7 +78,8 @@ MKS clusters deployed on regions with 3 availability zones can use Cinder Persis
 
 ### Volumes Resizing
 
-Kubernetes `Persistent Volume Claims` resizing only allows to __expand__ volumes, not to __decrease__ them.  
+Kubernetes `Persistent Volume Claims` resizing only allows to expand volumes, not to decrease them.
+
 If you try to decrease the storage size, you will get a message like:
 
 ```bash
@@ -97,21 +98,24 @@ For more information, see [expose services through a LoadBalancer](/pages/public
 
 ## Resources & Quota
 
-Managed Kubernetes service resources including nodes, persistent volumes and load balancers are based on standard Public Cloud resources deployed on user Project. As such, you can see them in the [OVHcloud Public Cloud Control Panel](/links/manager) or through APIs. Though it doesn't mean that you can interact directly with these resources the same way you can do it for other Public Cloud instances. The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those resources to be part of our Managed Kubernetes.  
+Managed Kubernetes service resources including nodes, persistent volumes and load balancers are based on standard Public Cloud resources deployed on user Project. As such, you can see them in the [OVHcloud Public Cloud Control Panel](/links/manager) or through APIs. Though it doesn't mean that you can interact directly with these resources the same way you can do it for other Public Cloud instances. The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those resources to be part of our Managed Kubernetes.
+
 Please avoid manipulating them 'manually' (modifying ports left opened, renaming, deleting, resizing volumes...), as you could break them. As part of our auto-healing process, any deletion or modification may lead to a new ressource creation or duplication.
 
-By default, there is a quota of __20__ Managed Kubernetes 'Free' plan cluster by Project (also named Openstack tenant).
+By default, there is a quota of 20 Managed Kubernetes 'Free' plan cluster by Project (also named Openstack tenant).
+
 MKS Cluster's quotas relies on your project's quota. If necessary, consult [this documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) to increase your quota.
 
 ### Node naming
 
-Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
+Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant **including** your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
 
 ## Ports
 
 To ensure proper operation of your OVHcloud Managed Kubernetes cluster, certain ports must remain open.
 
 ### Free plan
+
 #### Ports to open from public network (INGRESS)
 
 | Port(s)       | Protocol | Usage |
@@ -175,6 +179,8 @@ For more details, please refer to the [Creating and configuring a security group
 The OpenStack security group for worker nodes is the default one. It allows all egress and ingress traffic by default on your private network.
 
 openstack security group rule list default
+
+```bash
 +--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
 | ID                                   | IP Protocol | Ethertype | IP Range  | Port Range | Direction | Remote Security Group | Remote Address Group |
 +--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
@@ -183,6 +189,7 @@ openstack security group rule list default
 | 4b0b0ed2-ed16-4834-a5be-828906ce4f06 | None        | IPv4      | 0.0.0.0/0 |            | ingress   | None                  | None                 |
 | 9ac372e3-6a9f-4015-83df-998eec33b790 | None        | IPv6      | ::/0      |            | egress    | None                  | None                 |
 +--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
+```
 
 For now it is recommended to leave these security rules in their "default" configuration or the nodes could be disconnected from the cluster.
 
@@ -205,7 +212,7 @@ For now it is recommended to leave these security rules in their "default" confi
 
 The following subnets can generate some incoherent behaviours with our used overlay networks:
 
-```text
+```bash
 10.2.0.0/16 # Subnet used by pods
 10.3.0.0/16 # Subnet used by services
 172.17.0.0/16 # Subnet used by the Docker daemon
@@ -229,19 +236,19 @@ To prevent network conflicts, it is recommended to **keep the DHCP service runni
 
 The following ranges are used by the cluster, and should not be used elsewhere on the private network attached to the cluster.
 
+```bash
 10.240.0.0/13 # Subnet used by pods
 10.3.0.0/16 # Subnet used by services
+```
 
 > [!warning]
 >
 > These ranges are fixed for now but will be configurable in a future release. Do not use them elsewhere in your private network.
 >
 
-
 ## Cluster health
 
 The command `kubectl get componentstatus` is reporting the scheduler, the controller manager and the etcd service as unhealthy. This is a limitation due to our implementation of the Kubernetes control plane as the endpoints needed to report the health of these components are not accessible.
-
 
 ## Go further
 
