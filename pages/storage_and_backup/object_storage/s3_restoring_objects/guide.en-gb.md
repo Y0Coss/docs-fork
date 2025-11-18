@@ -44,7 +44,7 @@ You can restore an object in the Cold Archive storage class by using the [OVHclo
 >>
 >> @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/object/{key}/restore
 >> 
->> Via AWS CLI
+> Via AWS CLI
 >>
 >> ```bash
 >> aws s3api restore-object --bucket <bucket-name> --key <object-name> --restore-request '{"Days":10}'
