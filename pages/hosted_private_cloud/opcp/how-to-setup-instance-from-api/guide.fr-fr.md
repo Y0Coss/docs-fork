@@ -1,30 +1,30 @@
 ---
 title: "OPCP - Comment installer une instance depuis les API Openstack"
-excerpt: "Découvrez déployer une instance OPCP via les API Openstack en configurant réseaux, sous-réseaux, instance et clés SSH"
+excerpt: "Découvrez comment déployer une instance OPCP via les API Openstack en configurant réseaux, sous-réseaux, instance et clés SSH"
 updated: 2025-11-18
 ---
 
 ## Objectif
 
-Ce guide détaille les étapes à suivre pour installer un noeud OPCP via la création d'une instance à partir des API Openstack.
+Ce guide détaille les étapes à suivre pour installer un noeud OPCP via la création d'une instance à partir des API OpenStack.
 Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’un noeud installé et actif.
 
 ## Prérequis
 
 - Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
-- Posséder un compte utilisateur avec les droits suffisants pour se connecter aux API Openstack.
-- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
-- [Charger les variables d'environnement pour le projet](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
+- Posséder un compte utilisateur avec les droits suffisants pour se connecter aux API OpenStack.
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+- [Charger les variables d'environnement pour le projet](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
 
 ## En pratique
 
-Vous pouvez obtenir la liste des commandes possible en lisant la documentation du client :
+Vous pouvez obtenir la liste des commandes OpenStack disponibles à l'aide de la commande suivante :
 
 ```bash
 openstack command list
 ```
 
-Vous pouvez filtrer les commandes affichées en indiquant le groupe : 
+Vous pouvez filtrer les commandes affichées en indiquant le groupe :
 
 ```bash
 openstack command list --group compute
@@ -48,17 +48,17 @@ List flavors ...
 
 > [!success]
 >
-> Consultez la documentation du client directement sur le [site OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> Consultez la documentation du client OpenStack directement sur le [site OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
 >
 
 ### Récupérer les paramètres nécessaires à la création d'une instance
 
-#### Créer un network et un subnet
+#### Créer un réseau privé (*private network*) et un sous réseau (*subnet*)
 
-##### Etape 1 : Créer le network
+**Etape 1 : Créer le réseau privé**
 
 Avant de déployer votre instance, il est généralement nécessaire de créer un **réseau privé** afin qu’il soit accessible au sein de votre infrastructure locale.
-Si vous avez déjà un Network avec un subnet sur votre projet que vous souhaitez utiliser, vous pouvez ignorer cette étape l'étape de création et directement lister vos network pour récupérer le nom ou l'ID du network concerné.
+Si vous avez déjà un réseau privé avec un subnet sur votre projet que vous souhaitez utiliser, vous pouvez ignorer l'étape de création et directement lister vos réseaux pour récupérer le nom ou l'ID du réseau concerné.
 
 ```bash
 openstack network create $NETWORK_NAME
@@ -95,18 +95,17 @@ openstack network create $NETWORK_NAME
 +---------------------------+--------------------------------------+
 ```
 
-Par défaut, un réseau n’est visible que par le projet qui l’a créé (ainsi que par les utilisateurs administrateurs).  
-Si vous souhaitez créer un réseau **partagé entre tous vos projets**, vous pouvez utiliser le paramètre `--share`.  
-Pour partager un réseau uniquement avec certains projets spécifiques, il est nécessaire d’utiliser le mécanisme **Role-Based Access Control (RBAC)** d’OpenStack :  
-[Documentation RBAC Neutron](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
+Par défaut, un réseau n’est visible que par le projet qui l’a créé (ainsi que par les utilisateurs administrateurs).
+Si vous souhaitez créer un réseau **partagé entre tous vos projets**, vous pouvez utiliser le paramètre `--share`.
+Pour partager un réseau uniquement avec certains projets spécifiques, il est nécessaire d’utiliser le mécanisme **Role-Based Access Control (RBAC)** d’OpenStack : [Documentation RBAC Neutron](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
 
-Par ailleurs, si vous souhaitez créer le réseau dans un **VLAN particulier**, vous pouvez le préciser à l’aide des paramètres suivants :
+Par ailleurs, si vous souhaitez créer le réseau privé dans un **VLAN particulier**, vous pouvez le préciser à l’aide des paramètres suivants :
 
 - `--provider-network-type vlan`
 - `--provider-physical-network physnet1`
 - `--provider-segment $VLAN_ID`
 
-Par exemple, si vous souhaitez créer un réseau privé partagé dans le VLAN 2025 qui se nomme opcpdocs
+Par exemple, si vous souhaitez créer un réseau privé partagé dans le VLAN 2025 qui se nomme opcpdocs:
 
 ```bash
 openstack network create --share --provider-network-type vlan --provider-physical-network physnet1 --provider-segment 2025 opcpdocs
@@ -143,7 +142,7 @@ openstack network create --share --provider-network-type vlan --provider-physica
 +---------------------------+--------------------------------------+
 ```
 
-Une fois le network créé, vous pouvez le lister via la commande :
+Une fois le réseau créé, vous pouvez le lister via la commande :
 
 ```bash
 openstack network list --name $NETWORK_NAME
@@ -154,17 +153,17 @@ openstack network list --name $NETWORK_NAME
 +--------------------------------------+-----------+---------+
 ```
 
-Au besoin vous pouvez lister l'ensemble des networks en retirant l'argument `--name`.
+Au besoin vous pouvez lister l'ensemble des réseaux en retirant l'argument `--name`.
 
-##### Etape 2 : Créer le subnet
+**Etape 2 : Créer le subnet**
 
-Par défaut, le seul élément nécessaire pour créer un subnet sur votre réseau est le CIDR que vous souhaitez configurer et le network que vous venez de créer :
+Par défaut, le seul élément nécessaire pour créer un subnet sur votre réseau est le CIDR que vous souhaitez configurer et le réseau que vous venez de créer :
 
 ```bash
 openstack subnet create --network $NETWORK_NAME --subnet-range 192.168.120.0/24 $SUBNET_NAME
 ```
 
-Si vous souhaitez cependant préciser l'allocation pool , vous pouvez le spécifier via différents paramètres.
+Si vous souhaitez cependant préciser un *allocation pool*, vous pouvez le spécifier via différents paramètres.
 Par exemple, si vous souhaitez créer un sous réseau avec le CIDR 192.168.120.0/24 en allouant uniquement 50 adresses IP du CIDR et avec une gateway spécifique, vous pouvez utiliser la commande suivante :
 
 ```bash
@@ -197,7 +196,7 @@ openstack subnet create --network opcpdocs --subnet-range 192.168.120.0/24 --all
 +----------------------+--------------------------------------+
 ```
 
-Ce subnet pourra être utilisé pour déployer une instance et qu'Openstack puisse allouer une IP à celle_ci lors de son installation.
+Ce subnet pourra être utilisé pour déployer une instance, permettant ainsi à OpenStack d'attribuer une adresse IP à celle-ci lors de l'installation.
 
 #### Ajout d'une clé SSH publique
 
@@ -321,7 +320,7 @@ openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Par défaut, l'instance qui va être installée est sélectionnée automatiquement dans le pool de noeuds en `Available` et pour lesquels les **traits** requis par la flavor correspondent avec l'installation demandée. Cela signifie qu'un serveur physique correpondant aux contraintes décrites par les **traits** sera sélectionné.
+Par défaut, l'instance qui va être installée est sélectionnée automatiquement parmi le pool de nœuds ayant le statut `Available` et pour lesquels les **traits** requis par la flavor correspondent avec l'installation demandée. Cela signifie qu'un serveur physique correpondant aux contraintes décrites par les **traits** sera sélectionné.
 
 Après plusieurs minutes, l'instance est déployée et vous pouvez retrouver vos instances installées via la commande suivante :
 
@@ -340,11 +339,11 @@ Si vous souhaitez installer l'instance sur un noeud spécifique, vous pouvez sp�
 openstack server create --flavor $flavor_ID --image $image_ID --network $network_ID --key-name $your_keyname --availability-zone nova::$baremetal_noeud_ID $server_name
 ```
 
-Il faudra cependant vous assurer que le noeud est bien `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
+Il faudra cependant vous assurer que le noeud a le statut `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
 
-Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez suivre notre documentation [Cycle de vie d'un noeud OPCP](pages/hosted_private_cloud/opcp/node-lifecycle)
+Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez consultez notre documentation : [Cycle de vie d'un noeud OPCP](pages/hosted_private_cloud/opcp/node-lifecycle).
 
-Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre notre documentation [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor)
+Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre consultez documentation : [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor).
 
 #### Suppression d'une instance
 
@@ -360,5 +359,11 @@ L'opération peut prendre plusieurs minutes avant que le noeud soit de nouveau `
 
 ### Références
 
-- [Openstack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
-- [Openstack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html)
+- [Openstack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
+- [Openstack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html).
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
