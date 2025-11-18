@@ -6,8 +6,8 @@ updated: 2025-11-18
 
 ## Objectif
 
-Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’une instance installé et actif.  
-Ce guide détaille les étapes à suivre pour installer un serveur sur un noeud OPCP grâce à la création d'une instance Openstack à partir des API.
+Ce guide détaille les étapes à suivre pour installer un noeud OPCP via la création d'une instance à partir des API Openstack.
+Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’un noeud installé et actif.
 
 ## Prérequis
 
@@ -265,7 +265,7 @@ openstack image list
 
 ### Installation d'une instance
 
-Avec les éléments récupérés précédemment, vous pouvez créer une instance pour installer une instance sur la flavor souhaitée :
+Avec les éléments récupérés précédemment, vous pouvez créer une instance pour déployer un système d'exploitation, ainsi que votre clé publique ssh sur la flavor souhaitée :
 
 ```bash
 openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12 LVM OPCP" --network opcpdocs OPCPdocs-server
