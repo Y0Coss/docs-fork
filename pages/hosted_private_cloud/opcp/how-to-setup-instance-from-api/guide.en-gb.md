@@ -16,9 +16,9 @@ Before deploying services on your OPCP clusters, you must have at least one inst
 - [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 - [Load the environment variables for the project](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
 
-### Practical Steps
+## Instructions
 
-You can get the list of available commands by consulting the OpenStack client list:
+You can obtain a list of available OpenStack commands using the following command:
 
 ```bash
 openstack command list
@@ -53,9 +53,9 @@ List flavors ...
 
 ### Retrieve the Parameters Needed to Create an Instance
 
-#### Create a Network and a Subnet
+#### Create a Private Network and a Subnet
 
-**Step 1: Create the Network**
+**Step 1: Create the Private Network**
 
 Before deploying your instance, it is generally necessary to create a **private network** so that it is accessible within your local infrastructure.
 If you already have a network with a subnet in your project that you want to use, you can skip this creation step and directly list your networks to get the name or ID of the desired network.
@@ -196,7 +196,7 @@ openstack subnet create --network opcpdocs --subnet-range 192.168.120.0/24 --all
 +----------------------+--------------------------------------+
 ```
 
-This subnet can be used to deploy an instance, allowing OpenStack to allocate an IP during its installation.
+This subnet can be used to deploy an instance, allowing OpenStack to assign an IP address to it during installation.
 
 #### Adding a Public SSH Key
 
