@@ -1,13 +1,14 @@
 ---
 title: "Cycle de vie d'un noeud OPCP"
 excerpt: "Découvrez le cycle de vie d'un noeud OPCP et ses différents status"
-updated: 2025-11-10
+updated: 2025-11-18
 ---
 
 ## Objectif
 
-Ce guide vous détaille les différents status d'un noeud dans une baie OPCP et comment les modifier.
 Un noeud dans openstack représente la configuration d'un serveur physique du rack OPCP. Il faut les différencer des instances qui représente le système d'exploitation sur un noeud.
+
+Ce guide vous détaille les différents status d'un noeud dans une baie OPCP et comment les modifier.
 
 ## Prérequis
 
@@ -27,7 +28,6 @@ Si vous souhaitez suivre la partie API Openstack, il sera nécessaire d'installe
 ```bash
 pip install python-ironicclient
 ```
-
 
 ### Vérifier le status d'un noeud
 
@@ -71,11 +71,11 @@ Lorsqu'un noeud est installé et démarré dans une baie OPCP, la découverte du
 
 Une fois que le noeud est dans l'état `Enroll`, vous pouvez modifier son état pour qu'il soit géré par Ironic.
 
-*Depuis l'interface Horizon :*
+**Depuis l'interface Horizon :**
 
 ![server-manageable](images/03-server-status-to-manageable.png){.thumbnail}
 
-*Depuis les API Openstack :*
+**Depuis les API Openstack :**
 
 ```bash
 baremetal node manage $BAREMETAL_NODE_ID
@@ -83,11 +83,11 @@ baremetal node manage $BAREMETAL_NODE_ID
 
 Pour rendre le noeud disponible à l'installation, il faut ensuite le passer en statut `Available` :
 
-*Depuis l'interface Horizon :*
+**Depuis l'interface Horizon :**
 
 ![server-available](images/03-server-status-to-available.png){.thumbnail}
 
-*Depuis les API Openstack :*
+**Depuis les API Openstack :**
 
 ```bash
 baremetal node provide $BAREMETAL_NODE_ID
@@ -99,11 +99,11 @@ Le noeud passe alors en status `Cleaning` puis `Available`, ce qui le rend insta
 
 Ce mode peut être activé afin de rendre un noeud non disponible pour un installation, même si celui-ci est dans le statut `Available`.
 
-*Depuis l'interface Horizon :*
+**Depuis l'interface Horizon :**
 
 ![Maintenance-on](images/04-server-to-maintenance-on.png){.thumbnail}
 
-Lors de la mise en maintenance, vous pouvez préciser une raison afin que les personnes en charge des noeuds aient l'information ou comme note. Cette raison reste optionnelle.
+Lors de la mise en maintenance, vous pouvez indiquer un motif afin que l'équipe responsable des nœuds dispose de cette information. Cette raison reste optionnelle.
 
 ![Maintenance-reason](images/04-server-to-maintenance-reason.png){.thumbnail}
 
@@ -111,13 +111,13 @@ Une fois votre maintenance terminée, vous pouvez retirer la maintenance :
 
 ![Maintenance-off](images/04-server-to-maintenance-off.png){.thumbnail}
 
-*Depuis les API openstack :*
+**Depuis les API openstack :**
 
 ```bash
 baremetal node maintenance set $BAREMETAL_NODE_ID --reason "Maintenance reason"
 ```
 
-Vous pouvez ensuite retrouver la maintenance et la raison via la commande suivantes :
+Vous pouvez ensuite retrouver la maintenance et la raison via la commande suivante :
 
 ```bash
 baremetal node show $BAREMETAL_NODE_ID
@@ -141,3 +141,9 @@ baremetal node maintenance unset $BAREMETAL_NODE_ID
 - [Openstack Official Documentation - Horizon](https://docs.openstack.org/horizon/latest/)
 - [Openstack Ironic States](https://docs.openstack.org/ironic/7.0.1/api/ironic.common.states.html)
 - [Openstack Ironic Troubleshooting - Maintenance](https://docs.openstack.org/ironic/latest/install/troubleshooting.html)
+
+## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+
+Join our [community of users](/links/community).
