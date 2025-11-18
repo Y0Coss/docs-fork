@@ -22,7 +22,7 @@ It’s designed to make cloud management easier, faster, and accessible even if 
 
 ## Benefits of Using CloudShell
 
-Using OVHcloud CloudShell directly from the OVHcloud Manager provides key advantages for managing your entire OVHcloud infrastructure, including Public Cloud, Bare Metal, VPS, storage, networking, containers, and more:
+Using OVHcloud CloudShell directly from the OVHcloud Manager provides key advantages for managing your entire OVHcloud infrastructure, including Public Cloud, Private Cloud, Bare Metal, VPS, storage, networking, containers, and more:
 
 1. **No Local Setup Required:** Start working immediately without installing SDKs, CLI tools, or other dependencies on your computer. Ideal for quick troubleshooting, demos, or temporary access.
 2. **Secure & Managed Environment:** Access all your OVHcloud resources safely, with credentials managed automatically by OVHcloud. Provides a controlled and reliable environment for your operations.
@@ -58,7 +58,7 @@ Once OVHcloud CloudShell is open, you can use the `help` command to view all ava
 help
 ```
 
-The `help` output lists commands to manage your OVHcloud infrastructure, including Public Cloud, Bare Metal, VPS, storage, networking, containers, and more.
+The `help` output lists commands to manage your OVHcloud infrastructure, including Public Cloud, Private Cloud, Bare Metal, VPS, storage, networking, containers, and more.
 
 Example output:
 

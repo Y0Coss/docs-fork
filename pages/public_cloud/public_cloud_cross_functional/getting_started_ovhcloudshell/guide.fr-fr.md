@@ -22,7 +22,7 @@ Il est conçu pour simplifier la gestion du cloud, l'accélérer et la rendre ac
 
 ## Avantages de l'utilisation de CloudShell
 
-L'utilisation d'OVHcloud CloudShell directement depuis l'espace client OVHcloud offre des avantages clés pour la gestion de toute votre infrastructure OVHcloud, y compris le Public Cloud, Bare Metal, VPS, stockage, réseau, conteneurs, et plus encore :
+L'utilisation d'OVHcloud CloudShell directement depuis l'espace client OVHcloud offre des avantages clés pour la gestion de toute votre infrastructure OVHcloud, y compris le Public Cloud, Private Cloud, Bare Metal, VPS, stockage, réseau, conteneurs, et plus encore :
 
 1. **Aucune configuration locale requise :** Commencez immédiatement sans installer de SDK, d'outils CLI ou d'autres dépendances sur votre ordinateur. Idéal pour le dépannage rapide, les démonstrations ou l'accès temporaire.
 2. **Environnement sécurisé et géré :** Accédez à toutes vos ressources OVHcloud en toute sécurité, avec des identifiants gérés automatiquement par OVHcloud. Fournit un environnement contrôlé et fiable pour vos opérations.
@@ -58,7 +58,7 @@ Une fois OVHcloud CloudShell ouvert, vous pouvez utiliser la commande `help` pou
 help
 ```
 
-La sortie `help` liste les commandes pour gérer votre infrastructure OVHcloud, y compris le Public Cloud, Bare Metal, VPS, stockage, réseau, conteneurs, et plus encore.
+La sortie `help` liste les commandes pour gérer votre infrastructure OVHcloud, y compris le Public Cloud, Private Cloud, Bare Metal, VPS, stockage, réseau, conteneurs, et plus encore.
 
 Exemple de sortie :
 
