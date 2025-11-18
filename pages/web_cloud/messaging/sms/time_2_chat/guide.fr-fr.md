@@ -1,7 +1,7 @@
 ---
 title: Time2Chat, la messagerie conversationnelle par SMS pour les entreprises
 excerpt: Lancez vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09
-updated: 2025-11-18
+updated: 2025-11-25
 ---
 
 ## Objectif
@@ -49,7 +49,7 @@ Le service Time2Chat repose sur un modèle conversationnel, différent des envoi
 | Canal utilisé | Numéro court mutualisé | Numéro dédié en 09 |
 | Type d’usage | Envoi unidirectionnel (notification, alerte) | Conversation bidirectionnelle |
 | Gestion des réponses | Réponses ponctuelles, sans fil de discussion | Fil de conversation de 24 heures entre la marque et le client |
-| Facturation | Au message envoyé | Crédits SMS consommés sur les échanges durant les sessions |
+| Facturation | 1 SMS envoyé = 1 crédit | 1 SMS envoyé = 2 crédits |
 
 > [!primary]
 >
@@ -57,11 +57,15 @@ Le service Time2Chat repose sur un modèle conversationnel, différent des envoi
 
 #### Conditions d'accès
 
-La première phase de lancement de Time2Chat est réservée aux clients déjà détenteurs d’un [compte SMS OVHcloud](/links/telecom/sms).
+La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs d’un expéditeur SMS de type numéro virtuel VLN.
 
-Si vous disposez déjà d’un compte SMS, vos crédits existants peuvent être utilisés sur Time2Chat.
+Nous proposerons prochainement ce service à tous les clients possédant un [compte SMS OVHcloud](/links/telecom/sms).
 
-Si besoin, vous pouvez également acheter un pack de crédits SMS depuis votre [espace client OVHcloud](/links/manager-telecom), rubrique `Télécom`{.action} puis section `SMS`{.action}. Choisissez l'un de vos comptes SMS et cliquez sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
+> [!primary]
+>
+> Les crédits SMS existants peuvent être utilisés sur Time2Chat.
+>
+> Vous pouvez également acheter un pack de crédits SMS depuis votre [espace client OVHcloud](/links/manager-telecom), rubrique `Télécom`{.action} puis section `SMS`{.action}. Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
 
 ### Commander un numéro Time2Chat
 
@@ -87,8 +91,9 @@ Une fois votre numéro Time2Chat commandé, cliquez sur l’onglet `Expéditeurs
 
 Dans cette interface, vous pouvez :
 
-- définir les informations de réponse automatique : Si un client final répond par le mot-clé « contact », il recevra automatiquement un message contenant votre nom commercial, votre numéro de téléphone et votre site web.
-- configurer la réponse en cas d’absence : Si vous ne répondez pas à un message client sous 24 heures, une réponse automatique (par exemple : « Votre message a bien été reçu ») sera envoyée pour indiquer la fin de la conversation.
+- définir les informations de réponse automatique :
+    - Si un client final répond par le mot-clé « contact », il recevra automatiquement un message contenant votre nom commercial, votre numéro de téléphone et votre site web.
+    - Si vous ne répondez pas à un message client sous 24 heures, une réponse automatique (par exemple : « Votre message a bien été reçu ») sera envoyée pour indiquer la fin de la conversation.
 - compléter les informations KYC (**K**now **Y**our **C**ustomer) : Renseignez la raison sociale, la marque utilisant le service, le cas d’utilisation principal, ainsi que les coordonnées du contact principal (nom et e-mail).
 
 Ces éléments permettent de personnaliser votre numéro Time2Chat et de garantir le bon fonctionnement des échanges bidirectionnels entre votre marque et vos clients.
