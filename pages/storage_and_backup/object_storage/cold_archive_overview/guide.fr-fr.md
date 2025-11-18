@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2025-10-20
+updated: 2025-11-19
 ---
 
 <style>
@@ -9,6 +9,19 @@ updated: 2025-10-20
     width:100% !important;
 }
 </style>
+
+> [!warning]
+>
+> **Cette page est uniquement destinée aux clients existants de Cold Archive (granularité au bucket), service standalone introduit en 2023.**
+>
+> **OVHcloud Object Storage** propose désormais une d'archiver individuellement les objets plutôt que d'archiver l'ensemble du conteneur grâce à l'ajout de la classe **Cold Archive** dans le cycle de vie Object Storage. En effet, la fonctionnalité est maintenant directement disponible dans votre dashboard Object Storage, depuis vos conteneurs Object Storage existants pour les régions éligibles :
+>
+> - téléchargez vos objets en choisissant la classe Cold Archive ou,
+> - utilisez les transitions de cycle de vie pour déplacer les données vers la classe Cold Archive
+>
+> Pour en savoir plus sur cette classe de stockage, voir [Choisir la bonne classe de stockage pour vos besoins](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
+>
+> De plus, le service standalone Cold Archive (granularité au bucket) ne sera plus disponible à partir de l'espace client pour les nouveaux utilisateurs, sans impact pour les clients existants. Les API continueront à fonctionner et les données resteront bien sûr disponibles et sécurisées à tout moment. Nous ne modifions que la façon dont les utilisateurs accèderont et géreront les objets.
 
 ## Objectif
 
