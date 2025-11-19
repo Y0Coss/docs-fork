@@ -82,9 +82,9 @@ To order a zone via the API, you first need to create a cart.
 > @api {v1} /order POST /order/cart
 >
 
-Please make a note of the cart number ("cart"), it will be useful for the rest.
+Please make a note of the cart ID ("cart"), it will be useful later in the order process.
 
-Then you assign it via:
+Then, assign the cart to your OVHcloud account via:
 
 > [!api]
 >
