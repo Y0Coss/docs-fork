@@ -39,8 +39,7 @@ To achieve this, you need to specify a frontend in each zone that uses a cluster
 ![Operation with several zones and several clusters](images/multi_zones_multi_backends.png){.thumbnail}
 *Diagram representing a load balancer distributing traffic across two regions*
 
-For example, if we have backend servers in the data centers of Gravelines (GRA) and Beauharnois (BHS),
-you can order a Load Balancer service in the `GRA` and `BHS` areas and configure :
+For example, if you have backend servers in the Gravelines (GRA) and Beauharnois (BHS) regions, you can order a Load Balancer service in the `GRA` and `BHS` zones and configure :
 
 - A frontend in the GRA zone with as default cluster in the GRA zone which contains servers in the Gravelines datacenter
 - A frontend in the BHS zone with a default cluster in the BHS zone that contains servers in the Beauharnois datacenter
@@ -131,7 +130,6 @@ Once the frontend is configured, click `Add`{.action} or `Modify`{.action} depen
 Don't forget to deploy the configuration. To do this, click `Apply configuration`{.action} in the reminder banner stating that the configuration is not applied.
 
 ![Applying a Load Balancer Configuration](images/apply-configuration.PNG){.thumbnail}
-
 
 ## Go further
 
