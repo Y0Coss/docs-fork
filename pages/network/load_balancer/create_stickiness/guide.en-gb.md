@@ -1,16 +1,16 @@
 ---
 title: 'Tracking connections'
 excerpt: 'This guide explores the methods available for tracking connections on the OVHcloud Load Balancer.'
-updated: 2021-02-05
+updated: 2025-11-19
 ---
 
 ## Objective
 
 The [OVHcloud Load Balancer](/links/network/load-balancer) service offers several methods for **tracking connections** (also known as *session persistence* or *stickiness*) to your services.
 
-Each session on the OVHcloud Load Balancer service is maintained by a persistent connection system. This system is configured on the **application layer** of the OVHcloud Load Balancer service to ensure a persistent connection to the server.
+Each session on the OVHcloud Load Balancer service is maintained by a persistent connection system. This system is configured at the **application layer** of the OVHcloud Load Balancer service to ensure persistent connections to the server.
 
-This guide provides an introduction to configuring these session persistence options for the OVHcloud Load Balancer.
+**This guide provides different methods to configure connection tracking for the OVHcloud Load Balancer.**
 
 ## Requirements
 
@@ -37,35 +37,34 @@ The following elements will affect traffic redirection:
 
 > [!warning]
 >
-> Once you have applied your configuration, existing connections will be rebalanced, and their associated HTTP sessions will be lost as a result.
+> Once you have applied your configuration, existing connections will be rebalanced, and their associated HTTP sessions will be lost.
 > 
 
 ### Modify a server farm’s connection tracking method via the OVHcloud Control Panel
 
-To modify connection tracking for a server farm, you need to edit it by navigating to the `Server clusters`{.action} section (*1* on the screenshot below), then clicking the `...`{.action} options button (*2* on the screenshot below) for the farm you want to edit, and selecting `Edit`{.action} (*3* on the screenshot below):
+To modify connection tracking for a server farm, navigate to the `Server clusters`{.action} tab, then click the options button `...`{.action} to the right of the desired farm and select `Edit`{.action}:
 
-![Modify a farm](images/farm_edit.png){.thumbnail}
+![Modify a farm](images/farm_edit-2022.png){.thumbnail}
 
-In the `Advanced settings`, you will be able to access the `Track session` section:
+In the `Advanced settings`{.action} section, you will be able to access the `Track session`{.action} section:
 
-![Modifying connection tracking](images/tracking_session.png){.thumbnail}
+![Modifying connection tracking](images/tracking_session-2022.png){.thumbnail}
 
 Once you have configured the farm, click `Add`{.action} or `Edit`{.action}, depending on whether you are configuring a new or modifying an existing farm.
-Please remember to deploy the configuration afterward.
 
-There are two ways of doing this:
+Please remember to deploy the configuration afterward. There are two ways to do so:
 
 - via the `Status`{.action} section of the Control Panel, by clicking on your Load Balancer’s `...`{.action} button, then selecting `Apply configuration`{.action}
 
 - via the reminder box in the Control Panel, notifying you that the configuration has not been applied, by clicking `Apply configuration`{.action}
 
-![Apply a Load Balancer configuration](images/apply_configuration.png){.thumbnail}
+![Apply a Load Balancer configuration](images/apply_configuration-2022.png){.thumbnail}
 
 ### Modify a server farm’s connection tracking method via the API
 
 #### View details on a server farm
 
-This API call allows you to view details for a server farm if you know its ID. In this example, we will work on an HTTP farm.
+This API call allows you to view details for a server farm if you know its ID. For this example, we will work on an HTTP farm.
 
 > [!api]
 >
@@ -74,12 +73,12 @@ This API call allows you to view details for a server farm if you know its ID. I
 
 |Setting|Meaning|
 |---|---|
-|serviceName*|Your Load Balancer service ID|
-|farmId*|The farm’s ID number|
+|serviceName*|The ID of your Load Balancer service|
+|farmId*|The ID number of the farm|
 
 |Response (BackendHttp)|Meaning|
 |---|---|
-|farmId|The farm’s ID number|
+|farmId|The ID number of the farm|
 |balance|Load balancing algorithm currently enabled for the farm|
 |zone|Name of the zone in which the farm is configured|
 |port|Port used to contact the backend servers configured on the farm|
@@ -98,8 +97,8 @@ This API call allows you to edit the settings of a server farm if you know its I
 
 |Setting|Meaning|
 |---|---|
-|serviceName*|Your Load Balancer service ID|
-|farmId*|The farm’s ID number|
+|serviceName*|The ID of your Load Balancer service|
+|farmId*|The ID number of the farm|
 |BackendHttp.stickiness|The connection tracking method chosen for the farm|
 
 #### Apply the modifications
@@ -113,9 +112,9 @@ This API call is required to deploy the configuration changes to the Load Balanc
 
 |Setting|Meaning|
 |---|---|
-|serviceName*|Your Load Balancer service ID|
+|serviceName*|The ID of your Load Balancer service|
 |zone|Name of the zone in which to deploy the configuration (e.g., "all" or "rbx")|
 
 ## Go further
 
-Join our community of users on <https://community.ovhcloud.com/en/>.
+Join our [community of users](/links/community).
