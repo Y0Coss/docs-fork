@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Choosing the right storage class for your needs
-updated: 2025-11-18
+updated: 2025-11-19
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -33,7 +33,7 @@ This offer is suitable for the following use cases: long-term storage, backups, 
 
 ### Object Storage - Cold Archive class (S3 compatible)
 
-The Cold Archive storage class is an archival storage class. Also existing on its own as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started), Cold Archive is also available as a class in a general-purpose object storage container. Cold Archive is designed for long-term data storage and data archiving with a very low cost per GiB-hour and per GiB restore fee. Indeed, data in the Cold Archive class are not available in real-time and need to be restored before being available.
+The Cold Archive storage class is an archival storage class. Also existing on its own as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started) (bucket-level granularity), Cold Archive is also available as a class in a general-purpose object storage container. Cold Archive is designed for long-term data storage and data archiving with a very low cost per GiB-hour and per GiB restore fee. Indeed, data in the Cold Archive class is not available in real-time and needs to be restored before being available.
 
 
 ### Comparison Table
@@ -71,7 +71,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
     </tr>
     <tr>
         <td><strong>Infrequent Access<strong></td>
-        <td>Long-term storage, backups, disaster recovery.</td>
+        <td>Long-term storage, backups, disaster recovery</td>
         <td>milliseconds</td>
         <td>1-AZ and 3-AZ</td>
         <td>1-AZ regions: 99,9% - 3-AZ regions: 99,99%</td>
@@ -81,7 +81,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
     </tr>
     <tr>
         <td><strong>Cold Archive*<strong></td>
-        <td>Very long-term storage, backups, disaster recovery.</td>
+        <td>Very long-term storage, backups, disaster recovery</td>
         <td>hours</td>
         <td>Paris, 3-AZ region</td>
         <td>99,9%</td>
@@ -92,6 +92,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
    </table>
 
 More details about available regions [here](/pages/storage_and_backup/object_storage/s3_location).
+
 > [!primary]
 >
 > Before November 2025, Cold Archive only existed with a bucket-level granularity, as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started). The product has been updated to allow object-level granularity and Cold Archive is now considered as a class of Object Storage compatible with [**lifecycle management feature**](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
@@ -121,9 +122,9 @@ More details about lifecycle management [here](/pages/storage_and_backup/object_
 
 #### Cold Archive (Object-level management) class considerations
 
-When using the Cold Archive class in an Object Storage general-purpose bucket, **archived objects are not available in real-time**. The user is asked to first restore the object through a "restore" request and then, after some time (from minutes up to multiple hours), the object is available to download for a duration set by the user when requesting it and is billed upfront at the Standard class rate. However its class will remain as Cold Archive but will be available for GET requests or other actions. In summary, for each object restored, a one time restoration fee per GiB of data plus the storage cost at the Standard rate of the object are billed. 
+When using the Cold Archive class in an Object Storage general-purpose bucket, **archived objects are not available in real-time**. The user is asked to first restore the object through a "restore" request and then, after some time (from minutes up to multiple hours), the object is available to download for a duration set by the user when requesting it and is billed upfront at the Standard class rate. However its class will remain as Cold Archive but will be available for GET requests or other actions. In summary, for each object restored, a one time restoration fee per GiB of data plus the storage cost at the Standard rate of the object are billed.
 
-For official prices, see [Object Storage pricing](https://www.ovhcloud.com/en-gb/public-cloud/prices/#storage).
+For official prices, see our page "[Object Storage pricing](https://www.ovhcloud.com/en-gb/public-cloud/prices/#storage)".
 
 ## OpenStack SWIFT Object Storage tiers
 

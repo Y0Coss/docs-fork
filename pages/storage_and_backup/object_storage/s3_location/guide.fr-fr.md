@@ -25,7 +25,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <th>Protocole</th>
         <th>Version de la signature</th>
         <th>Mode de déploiement</th>
-        <th>classe de stockage supportée</th>
+        <th>Classe de stockage supportée</th>
     </tr>
     <tr>
         <td rowspan=8><strong>Europe</strong></td>
@@ -34,7 +34,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Roubaix</td>
@@ -42,7 +42,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Strasbourg</td>
@@ -50,7 +50,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Paris</td>
@@ -58,14 +58,14 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 3-AZ</td>
-        <td>Standard et Cold Archive</td>
+        <td>Standard, Infrequent Access, Cold Archive</td>
     </tr>
     <tr>
         <td>Milan</td>
         <td>eu-south-mil</td>
         <td>HTTPS</td>
         <td>4</td>
-        <td>3-AZ region</td>
+        <td>région 3-AZ</td>
         <td>Standard, Infrequent Access</td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Londres</td>
@@ -82,7 +82,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Varsovie</td>
@@ -90,7 +90,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td rowspan=2><strong>Amerique du Nord<br>(hors USA)</strong></td>
@@ -99,7 +99,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Toronto</td>
@@ -107,7 +107,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td rowspan=3><strong>Asie-Pacifique</strong></td>
@@ -116,7 +116,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Sydney</td>
@@ -124,7 +124,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Mumbai</td>
@@ -132,7 +132,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 1-AZ</td>
-        <td>Standard, Infrequent Access & High Performance</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
 </table>
 
@@ -163,7 +163,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=4>Standard Infrequent Access</td>
+        <td rowspan=4>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
@@ -199,7 +199,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td>Standard Infrequent Access</td>
+        <td>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
@@ -247,7 +247,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=2>Standard Infrequent Access</td>
+        <td rowspan=2>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -277,7 +277,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard Infrequent Access</td>
+        <td>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>

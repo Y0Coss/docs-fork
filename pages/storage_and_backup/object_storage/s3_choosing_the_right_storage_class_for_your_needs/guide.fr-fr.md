@@ -15,30 +15,30 @@ Nous proposons deux solutions de stockage d'objets : notre **dernière générat
 
 La classe de stockage Standard offre un service de stockage objet scalable, compatible avec la grande majorité des cas d'usages, adapté à tous types de volumétrie. L’offre s’appuie sur un stockage sur disques HDD au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API S3.
 
-Cette offre est adaptée aux cas d'usage suivants : media / content storage & delivery, datalake, website, backup, logs et métriques d'applications.
+Cette offre est adaptée aux cas d'usages suivants : media / content storage & delivery, datalake, website, backup, logs et métriques d'applications.
 
 ### Object Storage - High Performance
 
 La classe de stockage High Performance est un espace de stockage objet hautement performant, pour les applicatifs ayant de gros besoins en bande passante et nécessitant des accès à la donnée en lecture et en écriture extrêmement rapides et intensifs. L’offre s’appuie sur un stockage sur des disques performants de type SSD NVMe au sein d'une architecture résiliente dans un datacentre.
 
-Cette offre est adaptée aux cas d'usage suivants : AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
+Cette offre est adaptée aux cas d'usages suivants : AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
 
 ### Object Storage - Infrequent Access ou *accès peu fréquent*
 
 La classe de stockage Infrequent Access est conçue pour les données qui sont rarement consultées, également appelées « données froides », mais nécessitant un accès rapide. Elle offre des performances similaires (TTFB en millisecondes, faible latence) et une disponibilité comparable à la classe Standard, à un coût inférieur par Gio-heure consommé mais avec un coût de récupération par Gio.
 
-Cette offre est adaptée aux cas d'usage suivants : stockage long durée, sauvegardes, reprise après sinistre.
+Cette offre est adaptée aux cas d'usages suivants : stockage long durée, sauvegardes, reprise après sinistre.
 
-### Stockage d'objets - Classe Cold Archive
+### Object Storage - Classe Cold Archive (compatible S3)
 
-La classe de stockage Cold Archive est une classe de stockage d'archives. Existant également en tant que produit dédié chez OVHcloud (granularité au bucket), Cold Archive est désormais disponible en tant que classe à part entière pour un bucket dit *general-prupose*. La classe Cold Archive est conçue pour le stockage de données à long terme et l'archivage de données avec un coût très bas par GiB-heure et un coût additionel de restauration par GiB restauré. En effet, les données dans la classe Cold Archive ne sont pas disponibles en temps réel et doivent être restaurées avant d'être disponibles.
+La classe de stockage Cold Archive est une classe de stockage d'archives. Existant également en tant que [produit dédié chez OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started) (granularité au niveau du bucket), Cold Archive est désormais disponible en tant que classe à part entière pour un bucket dit « general-purpose ». La classe Cold Archive est conçue pour le stockage de données à long terme et l'archivage de données avec un coût très bas par GiB-heure et un coût additionnel de restauration par GiB restauré. En effet, les données dans la classe Cold Archive ne sont pas disponibles en temps réel et doivent être restaurées avant d'être disponibles.
 
-### Détails des classes de stockage d'objets compatibles S3
+### Tableau comparatif
 
 <table>
     <tr>
-        <td><strong>Classe de stockage></td>
-        <td><strong>Cas d'utilisation<strong></td>
+        <td><strong>Classe de stockage<strong></td>
+        <td><strong>Cas d'usages<strong></td>
         <td><strong>Performance (TTFB)<strong></td>
         <td><strong>Régions prises en charge<strong></td>
         <td><strong>SLA de disponibilité<strong></td>
@@ -58,7 +58,7 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
     </tr>
     <tr>
         <td><strong>Standard<strong></td>
-        <td>media / content storage & delivery, datalake, website, backup, logs et métriques d'applications</td>
+        <td>Media / content storage & delivery, datalake, website, backup, logs et métriques d'application</td>
         <td>millisecondes</td>
         <td>1-AZ et 3-AZ</td>
         <td>régions 1-AZ : 99,9% - régions 3-AZ : 99,99%</td>
@@ -68,7 +68,7 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
     </tr>
     <tr>
         <td><strong>Infrequent Access<strong></td>
-        <td>stockage longue durée, sauvegardes, reprise après sinistre.</td>
+        <td>Stockage de longue durée, sauvegardes, reprise après sinistre</td>
         <td>millisecondes</td>
         <td>1-AZ et 3-AZ</td>
         <td>régions 1-AZ : 99,9% - régions 3-AZ : 99,99%</td>
@@ -89,9 +89,10 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
    </table>
 
 Plus de détails sur les régions disponibles [ici](/pages/storage_and_backup/object_storage/s3_location).
+
 > [!primary]
 >
-> Avant novembre 2025, Cold Archive n'existait qu'avec une granularité au bucket, en tant que [produit dédié chez OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started). Le produit a été mis à jour pour permettre une granularité à l'objet et Cold Archive est maintenant considéré comme une classe de Stockage d'objets compatible avec la [**fonctionnalité de gestion du cycle de vie**](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
+> Avant novembre 2025, Cold Archive n'existait qu'avec une granularité au niveau du bucket, en tant que [produit dédié chez OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started). Le produit a été mis à jour pour permettre une granularité au niveau de l'objet et Cold Archive est maintenant considéré comme une classe Object Storage compatible avec la [**fonctionnalité de gestion du cycle de vie**](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
 
 ### Détails supplémentaires
 
@@ -117,9 +118,9 @@ Plus de détails sur la gestion du cycle de vie [ici](/pages/storage_and_backup/
 
 #### Considérations pour la classe Cold Archive (granularité à l'objet)
 
-Lorsque vous utilisez la classe Cold Archive dans un bucket dit *general-purpose*, **les objets archivés ne sont pas disponibles en temps réel**. L'utilisateur est invité à restaurer l'objet au préalable via une demande de **restauration** et ensuite, après un certain temps (de quelques minutes à plusieurs heures), l'objet est disponible pour lecture/téléchargement pendant une durée définie par l'utilisateur lors de la demande et est facturé à l'avance au tarif de la classe Standard. Cependant, sa classe restera Cold Archive mais sera disponible pour les requêtes GET ou d'autres actions. En résumé, pour chaque objet restauré, un frais de restauration unique par GiB de données plus le coût de stockage au tarif Standard de l'objet sont facturés.
+Lorsque vous utilisez la classe Cold Archive dans un bucket Object Storage dit « general-purpose », **les objets archivés ne sont pas disponibles en temps réel**. L'utilisateur est invité à restaurer l'objet au préalable via une demande de **restauration** et ensuite, après un certain temps (de quelques minutes à plusieurs heures), l'objet est disponible en lecture et au téléchargement pendant une durée définie par l'utilisateur lors de la demande et est facturé à l'avance au tarif de la classe Standard. Cependant, sa classe restera Cold Archive mais sera disponible pour les requêtes GET ou d'autres actions. En résumé, pour chaque objet restauré, des frais de restauration uniques par GiB de données, ainsi que le coût de stockage au tarif Standard de l'objet, sont facturés.
 
-Pour les tarifs officiels, voir [Tarifs du Stockage d'objets](https://www.ovhcloud.com/fr/public-cloud/prices/#storage).
+Pour les tarifs officiels, consultez notre page « [Tarifs - Object Storage](https://www.ovhcloud.com/fr/public-cloud/prices/#storage) ».
 
 ## Object Storage - SWIFT API
 

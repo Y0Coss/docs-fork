@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2025-10-03
+updated: 2025-11-19
 ---
 
 <style>
@@ -34,7 +34,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Roubaix</td>
@@ -42,7 +42,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Strasbourg</td>
@@ -50,7 +50,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Paris</td>
@@ -58,7 +58,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard, Infrequent Access and Cold Archive</td>
+        <td>Standard, Infrequent Access, Cold Archive</td>
     </tr>
     <tr>
         <td>Milan</td>
@@ -74,7 +74,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>London</td>
@@ -82,7 +82,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Warsaw</td>
@@ -90,7 +90,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td rowspan=2><strong>North America<br>(excluding USA)</strong></td>
@@ -99,7 +99,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Toronto</td>
@@ -107,7 +107,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td rowspan=3><strong>Asia-Pacific</strong></td>
@@ -116,7 +116,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Sydney</td>
@@ -124,7 +124,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>Mumbai</td>
@@ -132,7 +132,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>1-AZ region</td>
-        <td>High Performance, Standard and Infrequent Access</td>
+        <td>High Performance, Standard, Infrequent Access</td>
     </tr>
 </table>
 
@@ -163,7 +163,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=4>Standard Infrequent Access</td>
+        <td rowspan=4>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
@@ -199,7 +199,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td>Standard Infrequent Access</td>
+        <td>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
@@ -247,7 +247,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=2>Standard Infrequent Access</td>
+        <td rowspan=2>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -277,7 +277,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard Infrequent Access</td>
+        <td>Standard, Infrequent Access</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>

@@ -6,16 +6,18 @@ updated: 2025-11-19
 
 > [!warning]
 >
-> **Cette page est uniquement destinée aux clients existants de Cold Archive (granularité au bucket), service standalone introduit en 2023.**
+> **Cette page est uniquement destinée aux clients existants du service Cold Archive standalone (granularité au niveau du bucket), introduit en 2023.**
 >
-> **OVHcloud Object Storage** propose désormais une d'archiver individuellement les objets plutôt que d'archiver l'ensemble du conteneur grâce à l'ajout de la classe **Cold Archive** dans le cycle de vie Object Storage. En effet, la fonctionnalité est maintenant directement disponible dans votre dashboard Object Storage, depuis vos conteneurs Object Storage existants pour les régions éligibles :
+> **Vous recherchez des solutions d'archivage compatibles S3<sup>1</sup> ?**
 >
-> - téléchargez vos objets en choisissant la classe Cold Archive ou,
-> - utilisez les transitions de cycle de vie pour déplacer les données vers la classe Cold Archive
+> OVHcloud Object Storage propose désormais d'archiver individuellement les objets plutôt que d'archiver l'ensemble du conteneur, grâce à l'ajout de la classe **Cold Archive** dans le cycle de vie Object Storage. En effet, la fonctionnalité est maintenant directement disponible dans votre dashboard Object Storage, depuis vos conteneurs Object Storage existants pour les régions éligibles :
 >
-> Pour en savoir plus sur cette classe de stockage, voir [Choisir la bonne classe de stockage pour vos besoins](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
+> - Téléversez vos objets en choisissant la classe Cold Archive,
+> - ou utilisez les transitions de cycle de vie pour déplacer les données vers la classe Cold Archive.
 >
-> De plus, le service standalone Cold Archive (granularité au bucket) ne sera plus disponible à partir de l'espace client pour les nouveaux utilisateurs, sans impact pour les clients existants. Les API continueront à fonctionner et les données resteront bien sûr disponibles et sécurisées à tout moment. Nous ne modifions que la façon dont les utilisateurs accèderont et géreront les objets.
+> Pour en savoir plus sur cette classe de stockage, consultez notre guide « [Choisir la bonne classe de stockage pour vos besoins](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs) ».
+>
+> De plus, le service Cold Archive standalone (granularité au niveau du bucket) ne sera plus disponible à partir de l'espace client pour les nouveaux utilisateurs, sans impact pour les clients existants. Les API continueront à fonctionner et les données resteront bien sûr sécurisées et disponibles à tout moment. Nous ne modifions que la façon dont les utilisateurs accéderont et géreront les objets.
 
 ## Objectif
 
