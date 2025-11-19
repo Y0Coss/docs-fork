@@ -10,8 +10,8 @@ This guide is designed to help you get started using the Load Balancer, by intro
 
 ## Requirements
 
-- You must have access to your OVH Control Panel.
-- You must have ordered a [Load Balancer](/links/network/load-balancer).
+- An [OVHcloud Load Balancer](/links/network/load-balancer) service
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
