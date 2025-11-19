@@ -1,5 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
+excerpt: Discover OVHcloud Object Storage endpoints and regions
 updated: 2025-11-19
 ---
 
@@ -284,7 +285,6 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
         <td>Cold Archive</td>
     </tr>
 </table>
-
 
 ## Object Storage Swift
 

@@ -1,5 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
+excerpt: Découvrez les points de terminaison et régions de l'Object Storage OVHcloud
 updated: 2025-11-19
 ---
 
@@ -284,6 +285,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <td>Cold Archive</td>
     </tr>
 </table>
+
 ## Object Storage Swift
 
 | Solution de stockage | URL du point de terminaison | Région disponible<br><b><i>À saisir en minuscules</i></b> |
@@ -296,4 +298,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-_<sup>1</sup : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit._
+_<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit._

@@ -58,7 +58,7 @@ The service allows you to focus on building and deploying cloud applications whi
 
 ### Concepts
 
-The service is fully managed by OVHcloud and accessible through the S3<sup>1</sup> compatible API.
+The service is fully managed by OVHcloud and accessible through the S3-compatible API.
 
 ![Archive](images/restoring.PNG){.thumbnail}
 

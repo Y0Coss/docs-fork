@@ -1,5 +1,6 @@
 ---
 title: Object Storage - Choosing the right storage class for your needs
+excerpt: Discover the different OVHcloud Object Storage classes and choose the one that best suits your needs
 updated: 2025-11-19
 ---
 

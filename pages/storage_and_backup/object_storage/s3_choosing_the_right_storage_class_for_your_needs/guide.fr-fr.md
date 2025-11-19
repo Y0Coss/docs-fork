@@ -1,5 +1,6 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
+excerpt: Découvrez les différentes classes de stockage Object Storage OVHcloud et choisissez celle qui convient le mieux à vos besoins
 updated: 2025-11-19
 ---
 
