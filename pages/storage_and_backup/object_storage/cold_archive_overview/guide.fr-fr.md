@@ -23,7 +23,7 @@ updated: 2025-11-19
 >
 > Pour en savoir plus sur cette classe de stockage, consultez notre guide « [Choisir la bonne classe de stockage pour vos besoins](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs) ».
 >
-> De plus, le service Cold Archive standalone (granularité au niveau du bucket) ne sera plus disponible à partir de l'espace client pour les nouveaux utilisateurs, sans impact pour les clients existants. Les API continueront à fonctionner et les données resteront bien sûr sécurisées et disponibles à tout moment. Nous ne modifions que la façon dont les utilisateurs accéderont et géreront les objets.
+> De plus, le service Cold Archive standalone (granularité au niveau du bucket) ne sera plus disponible à partir de l'espace client pour les nouveaux utilisateurs, sans impact pour les clients existants. Les API continueront à fonctionner et les données resteront bien sûr sécurisées et disponibles à tout moment. Nous modifions uniquement la manière dont les utilisateurs accéderont aux objets et les géreront.
 
 ## Objectif
 
