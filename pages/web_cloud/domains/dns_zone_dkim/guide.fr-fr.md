@@ -1,7 +1,7 @@
 ---
 title: Améliorer la sécurité des e-mails via un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2025-11-14
+updated: 2025-11-19
 ---
 
 <style>
@@ -1234,6 +1234,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre, pour constater l'�
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 >> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
 >> 1. Sélectionnez la plateforme concernée.
+>> 1. Enfin, allez dans l'onglet `Domaines associés`{.action}.
 >>
 >> Dans la rubrique `Domaines associés`{.action}, vérifiez la couleur de l'icône `DKIM` à droite du nom de domaine concerné (voir l'image ci-dessous).
 >>
@@ -1320,5 +1321,3 @@ Retrouvez ci-dessous les états qui peuvent bloquer le fonctionnement de votre D
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
-Dans le cadre de la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un wildcard (caractère `*`) dans la case `sous-domaine`{.action} du formulaire d'un enregistrement DNS est indisponible.
