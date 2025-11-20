@@ -1,14 +1,14 @@
 ---
 title: Getting started with OVHcloud Cloudshell
 excerpt: Learn how to quickly use, and manage OVHcloud CloudShell directly from the OVHcloud Control Panel to streamline your cloud operations and workflows.
-updated: 2025-11-18
+updated: 2025-11-21
 ---
 
 ## Objective
 
 This guide explains how to access and use OVHcloud CloudShell directly from the OVHcloud Manager. It provides an introduction to the environment, its main features, and the essential commands to help you start working efficiently with your OVHcloud resources. By the end of this guide, you will be able to launch CloudShell, manage your cloud projects from the command-line, and integrate it into your daily workflows.
 
-## What is OVHcloud CloudShell?
+### What is OVHcloud CloudShell?
 
 OVHcloud CloudShell is a web-based command-line environment that you can access directly from your OVHcloud Manager. Think of it as a mini computer in your browser, ready to use without any installation.
 
@@ -20,7 +20,7 @@ With CloudShell, you can:
 
 It’s designed to make cloud management easier, faster, and accessible even if you’re not a command-line expert. You don’t need to install anything just open CloudShell and start working.
 
-## Benefits of Using CloudShell
+### Benefits of Using CloudShell
 
 Using OVHcloud CloudShell directly from the OVHcloud Manager provides key advantages for managing your entire OVHcloud infrastructure, including Public Cloud, Private Cloud, Bare Metal, VPS, storage, networking, containers, and more:
 
@@ -167,5 +167,7 @@ Example output:
 ```
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
