@@ -1,144 +1,149 @@
 ---
-title: "Cómo administrar Intel SGX en un servidor dedicado"
-excerpt: "Descubra cómo habilitar SGX en su servidor dedicado e instalar la pila de software SGX para Linux"
-updated: 2025-11-18
+title: "Cómo gestionar Intel SGX en un servidor dedicado"
+excerpt: "Descubra cómo activar SGX en su servidor dedicado e instalar la pila de software SGX para Linux"
+updated: 2025-11-20
 ---
 
 ## Objetivo
 
-Habilitar las Intel Software Guard Extensions (SGX) en su servidor le permite ejecutar aplicaciones listas para SGX. Intel SGX ofrece funciones avanzadas de cifrado de hardware y memoria, con el fin de aislar partes de código y datos específicas de cada aplicación.
+La activación de las Intel Software Guard Extensions (SGX) en su servidor le permite ejecutar aplicaciones compatibles con SGX. Intel SGX proporciona funciones avanzadas de cifrado de seguridad de hardware y memoria RAM, para aislar partes específicas del código y los datos para cada aplicación.
 
-**Esta guía explica cómo habilitar la función SGX, en el área de cliente de OVHcloud o a través de la API de OVHcloud.**
+**Este guía explica cómo activar la función SGX, a través del área de cliente de OVHcloud o a través de la API de OVHcloud.**
 
 ## Requisitos
 
-- Un servidor dedicado compatible con la [opción SGX](/links/bare-metal/sgx) en su cuenta de OVHcloud
-- Disponer de las claves de conexión recibidas por correo electrónico tras la instalación
 - Tener acceso al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/links/api)
-- Ubuntu 24.04 o equivalente instalado en el servidor
+- Tener un servidor dedicado compatible con la [opción SGX](/links/bare-metal/sgx) en su cuenta de OVHcloud
+- Disponer de las credenciales recibidas por correo electrónico tras la instalación
+- Tener instalado Ubuntu 24.04 o equivalente en el servidor
 
 ## Procedimiento
 
-### Desde el área de cliente de OVHcloud
+### Activar SGX
 
-#### Paso 1: Iniciar sesión en el área de cliente de OVHcloud
+La activación de SGX es posible desde el área de cliente de OVHcloud, la API de OVHcloud o el BIOS de su servidor.
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager), vaya a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en el que desea habilitar SGX desde **Servidores dedicados** en la barra lateral izquierda.
+> [!tabs]
+> **A través del área de cliente de OVHcloud**
+>>
+>> **1 - Conexión al área de cliente de OVHcloud**
+>>
+>> Inicie sesión en el [área de cliente de OVHcloud](/links/manager), vaya a la sección `Bare Metal Cloud`{.action} y haga clic en `Servidores dedicados`{.action}. Seleccione a continuación el servidor en el que desea activar SGX.
+>>
+>> **2 - Activar SGX**
+>>
+>> Desde la pestaña `Información general`{.action}, en el marco **Funcionalidades avanzadas**, haga clic en `...`{.action} junto a la mención **Seguridad - Intel SGX (Software Guard Extensions)** y seleccione `Activar SGX`{.action} en el menú desplegable.
+>>
+>> ![Activación SGX](images/enable_sgx.png){.thumbnail}
+>>
+>> En la pantalla siguiente, haga clic en el botón `Activar`{.action}.
+>>
+>> ![Activación SGX](images/enable_sgx2.png){.thumbnail}
+>>
+>> Puede elegir activar SGX con una cantidad específica de memoria reservada o permitiendo que su aplicación reserve automáticamente la memoria que necesita. Una vez realizado su elección, haga clic en `Confirmar`{.action}.
+>>
+>> ![Gestión SGX](images/manage_sgx.png){.thumbnail}
+>>
+>> Aparecerá una ventana de confirmación. Confirme que ha entendido que la activación de la tecnología Intel SGX provocará un reinicio de su servidor.
+>>
+>> ![Activación SGX](images/confirmation-popup_sgx.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Esto provocará uno o varios reinicios de su servidor, según su modelo.
+>>
+> **A través de la API de OVHcloud**
+>>
+>> **1 - Conexión a la consola API**
+>>
+>> En la página de las [API de OVHcloud](/links/console):
+>>
+>> - Haga clic en `Authentication`{.action} en la esquina superior izquierda.
+>> - Haga clic a continuación en `Login with OVHcloud SSO`{.action}.
+>> - Introduzca sus credenciales de OVHcloud.
+>> - Haga clic en el botón `Authorize`{.action} para autorizar las llamadas a las API desde este sitio.
+>>
+>> **2 - Activar SGX**
+>>
+>> Recupere el nombre de su servidor en la lista devuelta por la llamada siguiente:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /dedicated/server GET /dedicated/server
+>>
+>> Compruebe que su servicio dispone de la opción SGX utilizando esta llamada:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
+>>
+>> ![SGX desactivado](images/get-disabled.png){.thumbnail}
+>>
+>> Active SGX utilizando el nombre del servidor:
+>>
+>> > [!warning]
+>> >
+>> > Esto provocará uno o varios reinicios de su servidor, según su modelo.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/biosSettings/sgx/configure
+>>
+>> ![Configuración SGX](images/post-configure.png){.thumbnail}
+>>
+>> Compruebe el progreso de la tarea de configuración llamando a este punto de finalización con el *taskId* devuelto por la llamada anterior:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/task/{taskId}
+>>
+>> ![Obtener la tarea de configuración SGX](images/get-task.png){.thumbnail}
+>>
+>> Puede comprobar que el estado está activado:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
+>>
+>> ![SGX activado](images/get-enabled.png){.thumbnail}
+>>
+> **Configuración manual en el BIOS**
+>>
+>> **1 - Iniciar una sesión Remote KVM**
+>>
+>> Inicie sesión en el [área de cliente de OVHcloud](/links/manager), vaya a la sección `Bare Metal Cloud`{.action} y haga clic en `Servidores dedicados`{.action}. Seleccione a continuación el servidor en el que desea activar SGX.
+>>
+>> Desde la pestaña `IPMI / KMV`{.action}, inicie una sesión Remote KVM:
+>>
+>> ![Iniciar una sesión Remote KVM](images/manager.png){.thumbnail}
+>>
+>> **2 - Activar SGX**
+>>
+>> A continuación, desde el KVM, inicie un reinicio del servidor y entre en el BIOS (normalmente pulsando la tecla `DEL`{.action} o `F2`{.action}).
+>>
+>> En el BIOS, vaya a la parte `Advanced` > `Processor Configuration`.
+>>
+>> Active las opciones TME y SGX y configure el tamaño PRMRR deseado:
+>>
+>> ![Activar SGX](images/sgx_bios.png){.thumbnail}
+>>
+>> Guarde los cambios pulsando la tecla `F10`{.action}. Aparecerá una ventana de confirmación, confirme con la opción `Yes`.
+>>
+>> Su servidor reiniciará a continuación en su sistema operativo.
+>>
 
-#### Paso 2: Habilitar SGX
+### Instalar la pila de software SGX
 
-Desplácese hacia abajo hasta la caja "Características avanzadas" y haga clic en `...`{.action} junto a "Seguridad - Intel SGX (Software Guard Extensions)". Seleccione `Habilitar SGX`{.action} del menú desplegable.
+Utilice los siguientes comandos para instalar el SDK de Intel para poder desarrollar y ejecutar aplicaciones SGX.
 
-![Habilitar SGX](images/enable_sgx.png){.thumbnail}
-
-En la pantalla siguiente, haga clic en el botón `Habilitar`{.action}.
-
-![Habilitar SGX](images/enable_sgx2.png){.thumbnail}
-
-Puede elegir habilitar SGX con una cantidad específica de memoria reservada o habilitarlo permitiendo que su software reserve automáticamente la memoria que necesita. Una vez que haya tomado su decisión, haga clic en `Confirmar`{.action}.
-
-![Habilitar SGX](images/manage_sgx.png){.thumbnail}
-
-Aparecerá una ventana emergente de confirmación. Confirme que ha entendido que la activación de la tecnología Intel SGX provocará que su servidor se reinicie.
-
-![Activación SGX](images/confirmation-popup_sgx.png){.thumbnail}
-
-> [!warning]
->
-> Esto provocará que su servidor se reinicie una o varias veces, dependiendo del modelo de su servidor.
-
-Siga con el [paso 3](#sgx-softwares) de las instrucciones a continuación.
-
-### Usando la API de OVHcloud
-
-#### Paso 1: Iniciar sesión en la consola de la API
-
-En la [página de la API de OVHcloud](/links/api) haga clic en `Login`{.action} en la esquina superior derecha. En la página siguiente, introduzca las credenciales de su cuenta de OVHcloud.
-
-#### Paso 2: Habilitar SGX
-
-Obtenga el nombre de su servidor de la lista devuelta por esta llamada:
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server
-
-Verifique que su servicio tiene la opción SGX, llamando a: 
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
-
-![SGX deshabilitado](images/get-disabled.png){.thumbnail}
-
-Habilite SGX usando el nombre del servidor:
-
-> [!warning]
->
-> Esto provocará que su servidor se reinicie una o varias veces, dependiendo del modelo de su servidor.
-
-> [!api]
->
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/biosSettings/sgx/configure
-
-![Configurar SGX](images/post-configure.png){.thumbnail}
-
-Compruebe el progreso de la tarea de configuración llamando a este punto final con el *taskId* devuelto por la llamada anterior:
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/task/{taskId}
-
-![Obtener tarea de configuración de SGX](images/get-task.png){.thumbnail}
-
-Puede verificar que el estado se ha establecido como habilitado:
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
-
-![SGX habilitado](images/get-enabled.png){.thumbnail}
-
-Siga con el [paso 3](#sgx-softwares) de las instrucciones a continuación.
-
-### Configuración manual en el BIOS
-
-#### Paso 1: Iniciar una sesión de KVM remoto
-
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager), vaya a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en el que desea habilitar SGX desde **Servidores dedicados** en la barra lateral izquierda.
-
-A continuación, inicie una sesión de KVM remoto:
-
-![Iniciar una sesión de KVM remoto](images/manager.png){.thumbnail}
-
-#### Paso 2: Habilitar SGX
-
-A continuación, a través del KVM, inicie un reinicio del servidor y entre en el BIOS (normalmente pulsando la tecla `DEL`{.action} o `F2`{.action}).
-
-En el BIOS, vaya a `Advanced` > `Processor Configuration`.
-
-Habilite las opciones TME y SGX, y configure el tamaño de PRMRR deseado:
-
-![Habilitar SGX](images/sgx_bios.png){.thumbnail}
-
-Guarde los cambios pulsando la tecla `F10`{.action}. Aparecerá una ventana emergente de confirmación, confirme con la opción `Yes`.
-
-Su servidor se reiniciará y arrancará en su sistema operativo.
-
-Siga con el [paso 3](#sgx-softwares) de las instrucciones a continuación.
-
-### Paso 3: Instalar la pila de software SGX <a name="sgx-softwares"></a>
-
-Use los siguientes comandos para instalar el SDK de Intel para poder desarrollar y ejecutar aplicaciones SGX.  
-
-Primero, instale algunas dependencias:
+En primer lugar, instale algunas dependencias:
 
 ```bash
 sudo apt update
-sudo apt install autoconf automake build-essential cmake debhelper git libcurl4-openssl-dev libprotobuf-dev libssl-dev libtool lsb-release ocaml ocamlbuild protobuf-compiler python-is-python3 reprepro wget perl unzip pkgconf libboost-dev libboost-system-dev libboost-thread-dev lsb-release libsystemd0
+sudo apt install autoconf automake build-Essential cmake debhelper git libcurl4-openssl-dev libprotobuf-dev libssl-dev libtool lsb-release ocaml ocamlbuild protobuf-compiler python-is-python3 reprepro wget perl unzip pkgconf libboost-dev libboost-system-dev libboost-thread-dev libsystemd0
 ```
 
-A continuación, descargue el código fuente y prepare los submódulos y los binarios preconstruidos:
+A continuación, descargue el código fuente y prepare los submódulos y los binarios listos para usar:
 
 ```bash
 BASE_DIR=/opt/intel
@@ -152,16 +157,16 @@ git checkout sgx_2.26
 make preparation
 ```
 
-Construya e instale el SDK de SGX:
+Construya e instale el SDK SGX:
 
 ```bash
 make sdk_install_pkg
 $ ./linux/installer/bin/sgx_linux_x64_sdk_2.26.100.0.bin --prefix=$BASE_DIR/
 ```
 
-### Paso 4: Probar la aplicación de ejemplo en modo Simulador
+### Probar la aplicación de ejemplo en modo simulador
 
-Para construir y ejecutar el código de ejemplo LocalAttestation en modo Simulador:
+Para construir y ejecutar el código de ejemplo *LocalAttestation* en modo simulador:
 
 ```bash
 BASE_DIR=/opt/intel
@@ -178,9 +183,9 @@ Succeed to exchange secure message...
 Succeed to close Session...
 ```
 
-### Paso 5: Construir e instalar el PSW de Intel SGX
+### Construir e instalar el PSW Intel SGX
 
-El software de plataforma de Intel SGX (PSW) proporciona bibliotecas de software para ejecutar aplicaciones SGX en modo Hardware. Para construir el repositorio local de paquetes Debian que aloja los paquetes, introduzca los siguientes comandos:
+El software Intel SGX Platform Software (PSW) proporciona bibliotecas de software que permiten ejecutar aplicaciones SGX en modo hardware. Para crear el repositorio local Debian que aloje los paquetes, ejecute los siguientes comandos:
 
 ```bash
 BASE_DIR=/opt/intel
@@ -188,7 +193,7 @@ cd $BASE_DIR/linux-sgx
 make deb_local_repo
 ```
 
-Cree el siguiente archivo para añadir el repositorio local de paquetes Debian al sistema de configuración del repositorio:
+Cree el siguiente archivo para añadir el repositorio local de paquetes Debian al sistema de configuración de repositorios:
 
 ```bash
 $ cat /etc/apt/sources.list.d/sgx.sources
@@ -206,9 +211,9 @@ sudo apt update
 sudo apt-get install libsgx-epid libsgx-quote-ex libsgx-dcap-ql
 ```
 
-### Paso 6: Probar la aplicación de ejemplo en modo Hardware (opcional)
+### Probar la aplicación de ejemplo en modo hardware (opcional)
 
-Para construir y ejecutar el código de ejemplo LocalAttestation en modo Hardware:
+Para construir y ejecutar el código de ejemplo *LocalAttestation* en modo hardware:
 
 ```bash
 BASE_DIR=/opt/intel
@@ -227,7 +232,7 @@ Succeed to close Session...
 
 ## Más información
 
-Para ir más lejos (desarrollar su propia aplicación, registrarse para la atestación remota, etc.), aquí hay algunos recursos útiles:
+Para ir más lejos (desarrollar su propia aplicación, registrarse en la atestación remota, etc.), aquí hay algunas fuentes útiles:
 
 - [Intel SGX](https://software.intel.com/en-us/sgx)
 - [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
