@@ -1,6 +1,6 @@
 ---
 title: "Jak zarządzać Intel SGX na serwerze dedykowanym"
-excerpt: "Dowiedz się, jak włączyć SGX na swoim serwerze dedykowanym i zainstalować oprogramowanie SGX dla systemu Linux"
+excerpt: "Odkryj, jak aktywować opcję SGX na swoim serwerze dedykowanym i zainstalować stos oprogramowania SGX dla systemu Linux"
 updated: 2025-11-20
 ---
 

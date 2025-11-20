@@ -1,6 +1,6 @@
 ---
 title: "Come gestire Intel SGX su un server dedicato"
-excerpt: "Scopri come abilitare SGX sul tuo server dedicato e installare la pila software SGX per Linux"
+excerpt: "Scopri come attivare l'opzione SGX sul tuo server dedicato e installare la pila software SGX per Linux"
 updated: 2025-11-20
 ---
 

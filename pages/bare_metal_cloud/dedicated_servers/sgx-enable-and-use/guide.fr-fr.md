@@ -1,12 +1,12 @@
 ---
 title: "Comment gérer Intel SGX sur un serveur dédié"
-excerpt: "Découvrez comment activer SGX sur votre serveur dédié et installer la pile logicielle SGX pour Linux"
+excerpt: "Découvrez comment activer l'option SGX sur votre serveur dédié et installer la pile logicielle SGX pour Linux"
 updated: 2025-11-20
 ---
 
 ## Objectif
 
-L'activation des Intel Software Guard Extensions (SGX) sur votre serveur vous permet d'exécuter des applications compatibles SGX. Intel SGX propose des fonctionnalités avancées de chiffrement de la sécurité matérielle et de la mémoire RAM, afin d'isoler des parties spécifiques du code et des données pour chaque application.
+L'activation des Intel Software Guard Extensions (SGX) sur votre serveur vous permet d'exécuter des applications compatibles SGX. Intel SGX offre des fonctionnalités avancées de chiffrement matériel et de sécurité de la mémoire vive, afin d'isoler les parties de code et de données spécifiques à chaque application.
 
 **Ce guide explique comment activer la fonctionnalité SGX, via l'espace client OVHcloud ou via l'API OVHcloud.**
 
