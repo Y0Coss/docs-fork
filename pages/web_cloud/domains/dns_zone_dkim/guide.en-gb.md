@@ -103,7 +103,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ### How does DKIM work? <a name="how-dkim-work"></a>
 
-To understand why DKIM helps secure your email exchanges, it is necessary to understand how it works. DKIM uses "**hashing**" and "**asymmetric encryption**" to create a secure signature. The **email platform** and the **DNS zone** of your domain name will help transmit the DKIM information to your recipients.
+To understand why DKIM helps secure your email exchanges, it is necessary to understand how it works. DKIM uses **hashing** and **asymmetric encryption** to create a secure signature. The **email platform** and the **DNS zone** of your domain name will help transmit the DKIM information to your recipients.
 
 /// details | Hashing <a name="hash"></a>
 
@@ -180,10 +180,10 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 Automatic DKIM configuration is available for all our email offers:
 
-- MX Plan included with a [Cloud Web Hosting](/links/web/hosting), a [free 100M hosting](/links/web/domains-free-hosting) or ordered separately.
-- [Exchange](/links/web/emails).
-- [E-mail Pro](/links/web/email-pro).
-- [Zimbra](/links/web/zimbra).
+- MX Plan included with a [Cloud Web Hosting](/links/web/hosting), a [free 100M hosting](/links/web/domains-free-hosting) or ordered separately
+- [Exchange](/links/web/emails)
+- [E-mail Pro](/links/web/email-pro)
+- [Zimbra](/links/web/zimbra)
 
 When you configure your domain name on an OVHcloud email solution, automatic DKIM configuration is proposed and performed by default if you do not disable it.
 
@@ -274,7 +274,7 @@ Automatic DKIM activation takes between 30 minutes and a maximum of 24 hours. To
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
-If after 24 hours your `DKIM` badge is still red, refer to the section [« Why is DKIM not working and appears red in the Control Panel? »](#reddkim) of this guide.
+If after 24 hours your `DKIM` badge is still red, refer to the section "[Why is DKIM not working and appears red in the Control Panel?](#reddkim)" of this guide.
 
 ### Configure DKIM via API for an OVHcloud email offer <a name="internal-dkim"></a>
 
@@ -322,9 +322,9 @@ To configure DKIM, go to the [OVHcloud API page](/links/console) and log in:
 
 > [!primary]
 >
-> Refer to our guide « [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) » if you have never used APIs before.
+> Refer to our guide "[Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps)" if you have never used APIs before.
 
-Go to the `/email/domain/` (MX Plan and Zimbra offers), `/email/exchange` (Exchange offer) or `/email/pro` (E-mail Pro offer) section of the APIs and enter « dkim » in the `Filter` field to display only the API functions related to DKIM.
+Go to the API section `/email/domain/` (MX Plan and Zimbra offers), `/email/exchange` (Exchange offer) or `/email/pro` (E-mail Pro offer) and enter "dkim" in the `Filter` field to display only the API functions related to DKIM.
 
 Click on the tab corresponding to your offer:
 
@@ -1007,7 +1007,7 @@ Select the email solution concerned in the following tabs:
 Select the email solution concerned in the following tabs:
 
 > [!tabs]
-> **MX Plan and zimbra**
+> **MX Plan and Zimbra**
 >> If you want to disable the DKIM without removing the selectors and their key pair, use the following API call:
 >>
 >> > [!api]
