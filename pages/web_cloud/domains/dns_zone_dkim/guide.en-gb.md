@@ -946,16 +946,16 @@ Select the email solution concerned in the following tabs:
 
 > [!tabs]
 > **MX Plan and Zimbra**
->> Pour activer le DKIM, utilisez l'appel API suivant :
+>> To enable DKIM, use the following API call:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >> <br>
 >>
->> - `domain` : saisissez le nom de domaine attaché à votre service E-mail sur lequel le DKIM doit être présent. <br>
+>> - `domain` : enter the domain name attached to your email service on which the DKIM must be present. <br>
 >>
->> *Exemple de résultat :*
+>> *Example result:*
 >>
 >> ```console
 >> {
