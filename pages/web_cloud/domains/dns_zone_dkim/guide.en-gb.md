@@ -953,7 +953,7 @@ Select the email solution concerned in the following tabs:
 >> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >> <br>
 >>
->> - `domain` : enter the domain name attached to your email service on which the DKIM must be present. <br>
+>> - `domain`: Enter the domain name attached to your email service on which the DKIM must be present. <br>
 >>
 >> *Example result:*
 >>
