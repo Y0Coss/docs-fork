@@ -1,28 +1,30 @@
 ---
-title: Commencer avec OVHcloud Cloudshell
-excerpt: Découvrez comment utiliser rapidement et gérer OVHcloud CloudShell directement depuis le OVHcloud Control Panel pour simplifier vos opérations et workflows cloud.
-updated: 2025-11-18
+title: Commencer avec OVHcloud Shell
+excerpt: Découvrez comment utiliser rapidement et gérer OVHcloud Shell directement depuis l'espace client OVHcloud pour simplifier vos opérations et workflows cloud.
+updated: 2025-11-21
 ---
 
 ## Objectif
 
-Ce guide explique comment accéder et utiliser OVHcloud CloudShell directement depuis l'espace client OVHcloud. Il présente un aperçu de l'environnement, ses principales fonctionnalités et les commandes essentielles pour vous aider à commencer à travailler efficacement avec vos ressources OVHcloud. À la fin de ce guide, vous serez en mesure de lancer CloudShell, de gérer vos projets cloud depuis la ligne de commande et de l'intégrer à vos workflows quotidiens.
+Ce guide explique comment accéder et utiliser OVHcloud Shell directement depuis l'espace client OVHcloud. Il présente un aperçu de l'environnement, ses principales fonctionnalités et les commandes essentielles pour vous aider à commencer à travailler efficacement avec vos ressources OVHcloud.
 
-## Qu'est-ce que OVHcloud CloudShell ?
+À la fin de ce guide, vous serez en mesure de lancer le OVHcloud Shell, de gérer vos projets cloud depuis la ligne de commande et de l'intégrer à vos workflows quotidiens.
 
-OVHcloud CloudShell est un environnement en ligne de commande accessible directement depuis votre espace client OVHcloud. Pensez-y comme à un mini-ordinateur dans votre navigateur, prêt à l'emploi sans aucune installation.
+## Qu'est-ce que OVHcloud Shell ?
 
-Avec CloudShell, vous pouvez :
+OVHcloud Shell est un environnement en ligne de commande accessible directement depuis votre espace client OVHcloud. Pensez-y comme à un mini-ordinateur dans votre navigateur, prêt à l'emploi sans aucune installation.
+
+Avec OVHcloud Shell, vous pouvez :
 
 - Exécuter des commandes pour gérer vos ressources OVHcloud.
 - Accéder à vos serveurs, projets et services en toute sécurité.
 - Automatiser des tâches et des scripts sans quitter votre navigateur.
 
-Il est conçu pour simplifier la gestion du cloud, l'accélérer et la rendre accessible même si vous n'êtes pas un expert en ligne de commande. Vous n'avez pas besoin d'installer quoi que ce soit : ouvrez simplement CloudShell et commencez à travailler.
+Il est conçu pour simplifier la gestion du cloud, l'accélérer et la rendre accessible même si vous n'êtes pas un expert en ligne de commande. Vous n'avez pas besoin d'installer quoi que ce soit : ouvrez simplement le OVHcloud Shell et commencez à travailler.
 
-## Avantages de l'utilisation de CloudShell
+## Avantages de l'utilisation du OVHcloud Shell
 
-L'utilisation d'OVHcloud CloudShell directement depuis l'espace client OVHcloud offre des avantages clés pour la gestion de toute votre infrastructure OVHcloud, y compris le Public Cloud, Private Cloud, Bare Metal, VPS, stockage, réseau, conteneurs, et plus encore :
+L'utilisation du OVHcloud Shell directement depuis l'espace client offre des avantages clés pour la gestion de toute votre infrastructure OVHcloud, y compris le Public Cloud, Private Cloud, Bare Metal, VPS, stockage, réseau, conteneurs, et plus encore :
 
 1. **Aucune configuration locale requise :** Commencez immédiatement sans installer de SDK, d'outils CLI ou d'autres dépendances sur votre ordinateur. Idéal pour le dépannage rapide, les démonstrations ou l'accès temporaire.
 2. **Environnement sécurisé et géré :** Accédez à toutes vos ressources OVHcloud en toute sécurité, avec des identifiants gérés automatiquement par OVHcloud. Fournit un environnement contrôlé et fiable pour vos opérations.
@@ -30,29 +32,29 @@ L'utilisation d'OVHcloud CloudShell directement depuis l'espace client OVHcloud 
 4. **Efficacité et productivité :** Automatisez les tâches courantes, exécutez des scripts et effectuez des opérations rapidement sans quitter le navigateur. Réduit la complexité opérationnelle et accélère vos workflows.
 5. **Accessible depuis n'importe où :** L'accès en ligne vous permet de vous connecter depuis n'importe quel appareil disposant d'une connexion Internet. Idéal pour le travail à distance ou la gestion de ressources en déplacement.
 
-**En résumé :** CloudShell centralise la gestion, améliore la productivité et offre un accès rapide, sécurisé et flexible à toute votre infrastructure OVHcloud, rendant les opérations cloud plus simples et plus efficaces.
+**En résumé :** OVHcloud Shell centralise la gestion, améliore la productivité et offre un accès rapide, sécurisé et flexible à toute votre infrastructure OVHcloud, rendant les opérations cloud plus simples et plus efficaces.
 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Accès au [OVHcloud Control Panel](/links/manager)
+- Accès à l'[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-### Comment accéder à OVHcloud CloudShell
+### Comment accéder à OVHcloud Shell
 
-Connectez-vous au [OVHcloud Control Panel](/links/manager) et cliquez sur le bouton `Cloudshell`{.action} OVHcloud pour lancer le terminal.
+Connectez-vous à l'[espace client OVHcloud](/links/manager) et cliquez sur le bouton `OVHcloud Shell`{.action} pour lancer le terminal.
 
 ![Bouton Cloudshell](images/cloudshell_button.png){.thumbnail}
 
 > [!primary]
 >
-> **Remarque :** Les utilisateurs sont déjà authentifiés avec leurs identifiants Customer Panel et ont un accès immédiat à leurs ressources, sans connexion supplémentaire requise.
+> **Remarque :** Les utilisateurs sont déjà authentifiés avec leurs identifiants clients et ont un accès immédiat à leurs ressources, sans connexion supplémentaire requise.
 >
 
-### Comment utiliser OVHcloud CloudShell
+### Comment utiliser OVHcloud Shell
 
-Une fois OVHcloud CloudShell ouvert, vous pouvez utiliser la commande `help` pour afficher toutes les commandes et options disponibles :
+Une fois le Shell ouvert, vous pouvez utiliser la commande `help` pour afficher toutes les commandes et options disponibles :
 
 ```bash
 help
@@ -126,11 +128,11 @@ Exemple de sortie :
 
 Utilisez `ovhcloud [command] --help` pour obtenir des instructions détaillées sur n'importe quelle commande.
 
-**Conseil clé :** CloudShell fournit un environnement prêt à l'emploi, sécurisé et entièrement authentifié pour gérer toutes vos ressources OVHcloud sans avoir à installer quoi que ce soit localement.
+**Conseil clé :** OVHcloud Shell fournit un environnement prêt à l'emploi, sécurisé et entièrement authentifié pour gérer toutes vos ressources OVHcloud sans avoir à installer quoi que ce soit localement.
 
 ### Exemples de premières commandes
 
-Pour commencer, vous pouvez lister tous vos projets Public Cloud en utilisant :
+Pour commencer, vous pouvez lister tous vos projets Public Cloud en utilisant la commande suivante :
 
 ```bash
 ovhcloud cloud project list
@@ -154,7 +156,7 @@ Une fois que vous avez votre ID de projet (obtenu via `ovhcloud cloud project li
 ovhcloud cloud instance list --cloud-project <cloud-project>
 ```
 
-Remplacez `<cloud-project>` par l'`project_id` réel de votre projet.
+Remplacez `<cloud-project>` par le `project_id` réel de votre projet.
 
 Exemple de sortie :
 
@@ -169,5 +171,3 @@ Exemple de sortie :
 ## Aller plus loin
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).
-
-```
