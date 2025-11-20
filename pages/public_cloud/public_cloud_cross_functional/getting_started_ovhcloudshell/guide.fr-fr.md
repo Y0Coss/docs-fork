@@ -45,7 +45,7 @@ L'utilisation du OVHcloud Shell directement depuis l'espace client offre des ava
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager) et cliquez sur le bouton `OVHcloud Shell`{.action} pour lancer le terminal.
 
-![Bouton Cloudshell](images/cloudshell_button.png){.thumbnail}
+![Bouton Cloudshell](images/OVHcloud_Shell.png){.thumbnail}
 
 > [!primary]
 >
@@ -156,7 +156,7 @@ Une fois que vous avez votre ID de projet (obtenu via `ovhcloud cloud project li
 ovhcloud cloud instance list --cloud-project <cloud-project>
 ```
 
-Remplacez `<cloud-project>` par le `project_id` réel de votre projet.
+Remplacez `<cloud-project>` par l'ID réel de votre projet.
 
 Exemple de sortie :
 
