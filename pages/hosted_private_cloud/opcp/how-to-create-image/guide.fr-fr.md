@@ -1,7 +1,7 @@
 ---
-title: "Construire une image Openstack pour OPCP"
-excerpt: "Découvrez comment créer votre propre image Openstack pour On-Prem Cloud Platform"
-updated: 2025-11-18
+title: "Création d'une image OpenStack personnalisée sur OPCP"
+excerpt: "Découvrez comment créer votre propre image OpenStack pour On-Prem Cloud Platform"
+updated: 2025-11-21
 ---
 
 ## Objectif
@@ -16,30 +16,30 @@ C’est un bon point de départ pour comprendre le fonctionnement de [diskimage-
 
 ### Format de l’image
 
-* **qcow2** (recommandé) : image disque compressée
-* **raw** : image disque non compressée
+- **qcow2** (recommandé) : image disque compressée
+- **raw** : image disque non compressée
 
 L’image doit être une **image disque complète** qui inclut :
 
-* Le secteur de boot / la partition système EFI
-* La ou les partitions du système d’exploitation
-* Le noyau et l’initramfs présents sur le disque
+- Le secteur de boot / la partition système EFI
+- La ou les partitions du système d’exploitation
+- Le noyau et l’initramfs présents sur le disque
 
 ### Partitionnement et exigences de démarrage
 
 #### Pour un démarrage BIOS :
 
-* Table de partition GPT ou MBR
-* Partition de démarrage BIOS (1–2 Mo, type `ef02` pour GPT)
-* Partition racine avec un chargeur de démarrage installé (GRUB2)
-* Le chargeur de démarrage doit être installé dans le MBR / secteur de boot
+- Table de partition GPT ou MBR
+- Partition de démarrage BIOS (1–2 Mo, type `ef02` pour GPT)
+- Partition racine avec un chargeur de démarrage installé (GRUB2)
+- Le chargeur de démarrage doit être installé dans le MBR / secteur de boot
 
 #### Pour un démarrage EFI :
 
-* Table de partition GPT obligatoire
-* Partition système EFI (ESP) : 512 Mo, FAT32, montée sur `/boot/efi`
-* Partition racine avec GRUB2 en mode EFI
-* Entrées de démarrage EFI correctement configurées
+- Table de partition GPT obligatoire
+- Partition système EFI (ESP) : 512 Mo, FAT32, montée sur `/boot/efi`
+- Partition racine avec GRUB2 en mode EFI
+- Entrées de démarrage EFI correctement configurées
 
 #### Pour Ironic en bare metal (configuration recommandée) :
 
@@ -56,9 +56,9 @@ L’image doit être une **image disque complète** qui inclut :
 
 **Pré-requis système :**
 
-* Droits root
-* Au moins 10 Go d’espace disponible
-* Quelques paquets nécessaires :
+- Droits root
+- Au moins 10 Go d’espace disponible
+- Quelques paquets nécessaires :
 
 ```bash
 # Debian/Ubuntu
@@ -84,7 +84,7 @@ python3 -m venv venv
 pip install diskimage-builder
 ```
 
-## Comprendre les éléments diskimage-builder
+### Comprendre les éléments diskimage-builder
 
 Les *elements* sont des composants modulaires qui permettent de personnaliser votre image.
 
@@ -101,7 +101,7 @@ Les *elements* sont des composants modulaires qui permettent de personnaliser vo
 
 Les scripts dans ces répertoires sont exécutés dans l’ordre numérique / alphabétique.
 
-## Créer un élément de personnalisation avec Ansible
+### Créer un élément de personnalisation avec Ansible
 
 Créez un *element* qui utilise Ansible pour la personnalisation :
 
@@ -115,7 +115,7 @@ mkdir -p elements/os-custom/post-install.d
 
 **Scripts post-install :**
 
-`elements/os-custom/post-install.d/00-install-ansible`:
+`elements/os-custom/post-install.d/00-install-ansible` :
 
 ```bash
 #!/bin/bash
@@ -123,7 +123,7 @@ set -eux
 apt install --yes ansible
 ```
 
-`elements/os-custom/post-install.d/01-apply-ansible`:
+`elements/os-custom/post-install.d/01-apply-ansible` :
 
 ```bash
 #!/bin/bash
@@ -134,7 +134,7 @@ cd /tmp/in_target.d/extra-data.d/ansible
 ANSIBLE_STDOUT_CALLBACK=debug ansible-playbook -i inventory main.yml
 ```
 
-`elements/os-custom/post-install.d/02-remove-ansible`:
+`elements/os-custom/post-install.d/02-remove-ansible` :
 
 ```bash
 #!/bin/bash
@@ -143,7 +143,7 @@ apt remove --yes ansible
 apt autoremove --yes
 ```
 
-Rendre les scripts exécutables :
+**Rendre les scripts exécutables :**
 
 ```bash
 chmod +x elements/os-custom/post-install.d/*
@@ -161,7 +161,7 @@ chmod +x elements/os-custom/post-install.d/*
     - name: customize
 ```
 
-`elements/os-custom/extra-data.d/ansible/inventory/hosts`:
+`elements/os-custom/extra-data.d/ansible/inventory/hosts` :
 
 ```ini
 [all]
@@ -170,9 +170,9 @@ sys_image sys_image ansible_connection=local ansible_become=no
 
 Dans cet exemple, nous utilisons `cloud-init` avec le moteur `netplan` pour configurer `systemd-networkd`. Il s’agit d’un exemple fonctionnel de personnalisation de la configuration réseau ; adaptez-le librement à vos besoins.
 
-Note : lorsque Ironic configure le bare metal au premier démarrage, il fournit un manifeste `network_metadata` (configdrive) que `cloud-init` peut interpréter pour configurer automatiquement le réseau (IP statique, LACP, etc.).
+**Note :** lorsque Ironic configure le bare metal au premier démarrage, il fournit un manifeste `network_metadata` (configdrive) que `cloud-init` peut interpréter pour configurer automatiquement le réseau (IP statique, LACP, etc.).
 
-`elements/os-custom/extra-data.d/ansible/roles/customize/tasks/main.yml`:
+`elements/os-custom/extra-data.d/ansible/roles/customize/tasks/main.yml` :
 
 ```yaml
 ---
@@ -202,7 +202,7 @@ Note : lorsque Ironic configure le bare metal au premier démarrage, il fournit 
     mode: 0644
 ```
 
-`elements/os-custom/extra-data.d/ansible/roles/customize/files/50-netplan.cfg`:
+`elements/os-custom/extra-data.d/ansible/roles/customize/files/50-netplan.cfg` :
 
 ```yaml
 system_info:
@@ -223,7 +223,7 @@ iputils-ping:
 
 **Dépendances de l’élément :**
 
-`elements/os-custom/element-deps`:
+`elements/os-custom/element-deps` :
 
 ```
 debian
@@ -314,4 +314,3 @@ openstack image create \
 ```
 
 C’est terminé ! Vous pouvez maintenant créer une instance bare metal ou une machine virtuelle avec cette nouvelle image.
-
