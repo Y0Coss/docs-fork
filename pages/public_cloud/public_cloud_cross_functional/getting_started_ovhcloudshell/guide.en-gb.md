@@ -6,7 +6,9 @@ updated: 2025-11-21
 
 ## Objective
 
-This guide explains how to access and use OVHcloud Shell directly from the OVHcloud Manager. It provides an introduction to the environment, its main features, and the essential commands to help you start working efficiently with your OVHcloud resources. By the end of this guide, you will be able to launch CloudShell, manage your cloud projects from the command-line, and integrate it into your daily workflows.
+This guide explains how to access and use OVHcloud Shell directly from the OVHcloud Manager. It provides an introduction to the environment, its main features, and the essential commands to help you start working efficiently with your OVHcloud resources. 
+
+By the end of this guide, you will be able to launch CloudShell, manage your cloud projects from the command-line, and integrate it into your daily workflows.
 
 ### What is OVHcloud Shell?
 
@@ -30,7 +32,7 @@ Using OVHcloud Shell directly from the OVHcloud Manager provides key advantages 
 4. **Efficiency and Productivity:** Automate routine tasks, run scripts, and perform operations quickly without leaving the browser. Reduces operational complexity and accelerates your workflows.
 5. **Accessible Anywhere:** Web-based access lets you log in from any device with an internet connection. Perfect for remote work or managing resources on the go.
 
-**In short:** CloudShell centralizes management, boosts productivity, and provides fast, secure, and flexible access to your entire OVHcloud infrastructure, making cloud operations simpler and more efficient.
+**In short:** OVHcloud Shell centralizes management, boosts productivity, and provides fast, secure, and flexible access to your entire OVHcloud infrastructure, making cloud operations simpler and more efficient.
 
 ## Requirements
 
@@ -159,6 +161,7 @@ Replace `<cloud-project>` with the actual ID of your project.
 Example output:
 
 ```bash
+ovhcloud cloud instance list --cloud-project fbbc9b79-****-****-****-************
 +----+-------------+--------------------------------------+-----------------------------------+-------------+--------+
 |    | flavor.name |                  id                  |               name                |   region    | status |
 +----+-------------+--------------------------------------+-----------------------------------+-------------+--------+
