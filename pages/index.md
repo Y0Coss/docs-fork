@@ -643,6 +643,7 @@
             + [All you need to know to get started with Public Cloud](public_cloud/public_cloud_cross_functional/00-essential-info-to-get-started-on-public-cloud)
             + [How to use the Public Cloud interface](public_cloud/public_cloud_cross_functional/03-public-cloud-interface-walk-me)
             + [Creating your first OVHcloud Public Cloud project](public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+            + [Getting started with OVHcloud Shell](public_cloud/public_cloud_cross_functional/getting_started_ovhcloudshell)
         + [General Information](public-cloud-cross-functional-general-information)
             + [FAQ](public_cloud/public_cloud_cross_functional/faq_pci)
             + [Public Cloud Glossary](public_cloud/public_cloud_cross_functional/introduction_about_instances)
