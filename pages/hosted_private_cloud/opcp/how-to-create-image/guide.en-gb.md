@@ -1,5 +1,5 @@
 ---
-title: "Building Custom OpenStack Image on OPCP"
+title: "Building a custom OpenStack Image on OPCP"
 excerpt: "Find out how to create your own operating system image on On-Prem Cloud Platform"
 updated: 2025-11-21
 ---
@@ -12,7 +12,7 @@ It's a good starting point to understand how [diskimage-builder](https://github.
 
 At the end, we will generate a `debian13.qcow2` whole disk image (with the kernel and initramfs), ready to be imported into OpenStack Glance.
 
-## Openstack Ironic/Nova expectations
+## OpenStack Ironic/Nova expectations
 
 ### Image Format
 
@@ -171,7 +171,7 @@ sys_image sys_image ansible_connection=local ansible_become=no
 
 In this example, we are using `cloud-init` with the `netplan` renderer to configure `systemd-networkd`. This is a working example of customizing network configuration; feel free to adapt it to your needs.
 
-**Note**: When Ironic configures bare metal on first boot, it will propagate a `network_metadata` manifest (configdrive) that can be interpreted by `cloud-init` to automatically configure the network (such as static IP, LACP, etc.).
+**Note:** When Ironic configures bare metal on first boot, it will propagate a `network_metadata` manifest (configdrive) that can be interpreted by `cloud-init` to automatically configure the network (such as static IP, LACP, etc.).
 
 `elements/os-custom/extra-data.d/ansible/roles/customize/tasks/main.yml`:
 
