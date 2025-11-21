@@ -1,16 +1,16 @@
 ---
-title: "Building Custom Openstack Image on OPCP"
+title: "Building Custom OpenStack Image on OPCP"
 excerpt: "Find out how to create your own operating system image on On-Prem Cloud Platform"
-updated: 2025-11-18
+updated: 2025-11-21
 ---
 
 ## Objective
 
-This guide focus on building customized disk images for both OpenStack Ironic (bare metal) and Nova (compute) using [diskimage-builder](https://github.com/openstack/diskimage-builder).
+This guide focuses on building customized disk images for both OpenStack Ironic (bare metal) and Nova (compute) using [diskimage-builder](https://github.com/openstack/diskimage-builder).
 
 It's a good starting point to understand how [diskimage-builder](https://github.com/openstack/diskimage-builder) (DiB) works with a practical example. We will build a custom Debian 13 image from the upstream image and customize it with Ansible.
 
-At the end, we will generate a debian13.qcow2 whole disk image (with the kernel and initramfs), ready to be imported into OpenStack Glance.
+At the end, we will generate a `debian13.qcow2` whole disk image (with the kernel and initramfs), ready to be imported into OpenStack Glance.
 
 ## Openstack Ironic/Nova expectations
 
@@ -20,6 +20,7 @@ At the end, we will generate a debian13.qcow2 whole disk image (with the kernel 
 - **raw**: Uncompressed disk image
 
 The image should be a **whole disk image** that includes:
+
 - Boot sector/EFI system partition
 - Operating system partition(s)
 - Kernel and initramfs embedded in the disk
@@ -27,12 +28,14 @@ The image should be a **whole disk image** that includes:
 ### Partitioning and Boot Requirements
 
 #### For BIOS Boot:
+
 - GPT or MBR partition table
 - BIOS boot partition (1-2MB, type `ef02` for GPT)
 - Root partition with bootloader installed (GRUB2)
 - Bootloader must be installed to MBR/boot sector
 
 #### For EFI Boot:
+
 - GPT partition table required
 - EFI System Partition (ESP): 512MB, FAT32, mounted at `/boot/efi`
 - Root partition with GRUB2 EFI bootloader
@@ -41,6 +44,7 @@ The image should be a **whole disk image** that includes:
 #### For Ironic Bare Metal (Recommended Configuration):
 
 **Standard Partition Layout (Simple):**
+
 ```yaml
 # GPT partition table
 - EFI System Partition (ESP): 512MiB, type EF00, FAT32, mounted at /boot/efi
@@ -51,8 +55,10 @@ The image should be a **whole disk image** that includes:
 ## Requirements
 
 **System Requirements:**
+
 - Root permissions
 - At least 10GB available
+
 - Some packages:
 
 ```bash
@@ -79,7 +85,7 @@ python3 -m venv venv
 pip install diskimage-builder
 ```
 
-## Understanding diskimage-builder Elements
+### Understanding diskimage-builder Elements
 
 Elements are modular components that customize your image.
 
@@ -96,7 +102,7 @@ Elements are modular components that customize your image.
 
 Scripts in these directories execute in numerical/alphabetical order.
 
-## Creating a Customization Element with Ansible
+### Creating a Customization Element with Ansible
 
 Create an element that uses Ansible for customization:
 
@@ -111,6 +117,7 @@ mkdir -p elements/os-custom/post-install.d
 **Post-install Scripts:**
 
 `elements/os-custom/post-install.d/00-install-ansible`:
+
 ```bash
 #!/bin/bash
 set -eux
@@ -118,6 +125,7 @@ apt install --yes ansible
 ```
 
 `elements/os-custom/post-install.d/01-apply-ansible`:
+
 ```bash
 #!/bin/bash
 set -eux
@@ -128,6 +136,7 @@ ANSIBLE_STDOUT_CALLBACK=debug ansible-playbook -i inventory main.yml
 ```
 
 `elements/os-custom/post-install.d/02-remove-ansible`:
+
 ```bash
 #!/bin/bash
 set -eux
@@ -135,7 +144,7 @@ apt remove --yes ansible
 apt autoremove --yes
 ```
 
-Make scripts executable:
+**Make scripts executable:**
 
 ```bash
 chmod +x elements/os-custom/post-install.d/*
@@ -144,6 +153,7 @@ chmod +x elements/os-custom/post-install.d/*
 **Ansible Configuration:**
 
 `elements/os-custom/extra-data.d/ansible/main.yml`:
+
 ```yaml
 ---
 - hosts: all
@@ -153,6 +163,7 @@ chmod +x elements/os-custom/post-install.d/*
 ```
 
 `elements/os-custom/extra-data.d/ansible/inventory/hosts`:
+
 ```ini
 [all]
 sys_image sys_image ansible_connection=local ansible_become=no
@@ -160,9 +171,10 @@ sys_image sys_image ansible_connection=local ansible_become=no
 
 In this example, we are using `cloud-init` with the `netplan` renderer to configure `systemd-networkd`. This is a working example of customizing network configuration; feel free to adapt it to your needs.
 
-Note: When Ironic configures bare metal on first boot, it will propagate a `network_metadata` manifest (configdrive) that can be interpreted by `cloud-init` to automatically configure the network (such as static IP, LACP, etc.).
+**Note**: When Ironic configures bare metal on first boot, it will propagate a `network_metadata` manifest (configdrive) that can be interpreted by `cloud-init` to automatically configure the network (such as static IP, LACP, etc.).
 
 `elements/os-custom/extra-data.d/ansible/roles/customize/tasks/main.yml`:
+
 ```yaml
 ---
 - name: Install additional packages
@@ -211,6 +223,7 @@ iputils-ping:
 **Element Dependencies:**
 
 `elements/os-custom/element-deps`:
+
 ```
 debian
 ```
@@ -236,7 +249,7 @@ source debian13.env
 disk-image-create -t qcow2 --image-size 16GB -a amd64 vm block-device-efi os-custom debian -o debian13
 ```
 
-You should get a file `debian13.qcow2`
+You should get a file `debian13.qcow2`.
 
 If you want environment and packages SBOM files:
 
@@ -245,11 +258,11 @@ cp debian13.d/dib-manifests/dib_environment debian13.env.sbom
 cp debian13.d/dib-manifests/dib-manifest-dpkg-debian13 debian13.pkg.sbom
 ```
 
-## Testing the Image
+### Testing the Image
 
 A quick way to test the generated image is using qemu to spawn a virtual machine using the qcow2 image and a VNC client to connect to the monitor. We can test both EFI and BIOS boot.
 
-### BIOS Boot
+#### BIOS Boot
 
 ```bash
 qemu-system-x86_64 -enable-kvm -vnc 0.0.0.0:0,password=on -monitor stdio -m 2048 -drive file=debian13.qcow2,if=virtio,format=qcow2
@@ -264,7 +277,7 @@ Password: ********
 
 Use any VNC client to connect :5200
 
-### EFI
+#### EFI
 
 ```bash
 # Copy OVMF vars to avoid modifying the original
@@ -289,7 +302,7 @@ Password: ********
 
 Use any VNC client to connect :5200
 
-## Upload Image to OpenStack:
+### Upload Image to OpenStack:
 
 ```bash
 openstack image create \
@@ -300,4 +313,3 @@ openstack image create \
 ```
 
 Done! You can now create a baremetal instance or compute instance with the new created image.
-
