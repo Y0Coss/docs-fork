@@ -58,7 +58,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit à l'une des offres e-mail ci-dessous :
-    - MX Plan OVHcloud (disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément.
+    - MX Plan OVHcloud (disponible via une [offre d’hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément).
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
@@ -90,7 +90,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
         - [Pour E-mail Pro](#confemp)
     - [API - Les différents états du DKIM](#dkim-status)
     - [API - Activer ou changer un sélecteur DKIM](#enable-switch)
-    - [API - Désactiver et supprimer le DKIM](#disable-delete)
+    - [API - Désactiver et supprimer le DKIM](#disable-switch)
 - [Configurer DKIM pour une offre e-mail hors de votre compte OVHcloud](#external-dkim)
     - [Enregistrement DKIM](#dkim-record)
     - [Enregistrement TXT](#txt-record)
@@ -103,7 +103,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 ### Comment le DKIM fonctionne-t-il ? <a name="how-dkim-work"></a>
 
-Pour bien comprendre pourquoi le DKIM permet de sécuriser vos échanges d'e-mails, il est nécessaire de comprendre comment il fonctionne. Le DKIM fait appel au «**hachage**» et au «**chiffrement asymétrique**» pour créer une signature sécurisée. La **plateforme e-mail** et la **zone DNS** de votre nom de domaine vont aider à transmettre les informations du DKIM à vos destinataires.
+Pour bien comprendre pourquoi le DKIM permet de sécuriser vos échanges d'e-mails, il est nécessaire de comprendre comment il fonctionne. Le DKIM fait appel au « **hachage** » et au « **chiffrement asymétrique** » pour créer une signature sécurisée. La **plateforme e-mail** et la **zone DNS** de votre nom de domaine vont aider à transmettre les informations du DKIM à vos destinataires.
 
 /// details | Le hachage <a name="hash"></a>
 
@@ -204,7 +204,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
->> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
+>> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Activer`{.action} depuis la fenêtre d'activation qui apparaît.
 >> 
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 >>
@@ -226,7 +226,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
->> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
+>> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Activer`{.action} depuis la fenêtre d'activation qui apparaît.
 >> 
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 >>
@@ -242,7 +242,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
->> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
+>> Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` rouge puis sur `Activer`{.action} depuis la fenêtre d'activation qui apparaît.
 >> 
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 >>
@@ -274,7 +274,7 @@ L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pou
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
-Au-delà des 24 heures, si votre pastille `DKIM` est rouge, consultez la rubrique [« Pourquoi le DKIM n'est pas fonctionnel et apparait en rouge dans l'espace client ? »](#reddkim) de ce guide.
+Au-delà des 24 heures, si votre pastille `DKIM` est rouge, consultez la rubrique « [Pourquoi le DKIM n'est pas fonctionnel et apparait en rouge dans l'espace client ?](#reddkim) » de ce guide.
 
 ### Configurer le DKIM par API pour une e-mail OVHcloud <a name="internal-dkim"></a>
 
@@ -578,7 +578,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage « [Comment changer sa paire de clés DKIM](#2selectors) » lorsque vous souhaiterez basculer sur le deuxième sélecteur.
 >> <br>
 >>
 >> *Exemple de résultat :*
@@ -716,7 +716,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors).
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage « [Comment changer sa paire de clés DKIM](#2selectors) ».
 >> <br>
 >> Pour cela, utilisez l'appel API suivant :<br>
 >>
@@ -743,7 +743,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage « [Comment changer sa paire de clés DKIM](#2selectors) » lorsque vous souhaiterez basculer sur le deuxième sélecteur.
 >>
 >> *Exemple de résultat :*
 >>

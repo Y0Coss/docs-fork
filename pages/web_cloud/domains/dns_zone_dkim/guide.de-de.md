@@ -90,7 +90,7 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
         - [Für E-Mail Pro](#confemp)
     - [API - Die verschiedenen DKIM-Zustände](#dkim-status)
     - [API - DKIM-Selektor aktivieren oder ändern](#enable-switch)
-    - [API - DKIM deaktivieren und löschen](#disable-delete)
+    - [API - DKIM deaktivieren und löschen](#disable-switch)
 - [DKIM für einen E-Mail-Dienst außerhalb Ihres OVHcloud Kunden-Accounts konfigurieren](#external-dkim)
     - [DKIM-Eintrag](#dkim-record)
     - [TXT-Eintrag](#txt-record)

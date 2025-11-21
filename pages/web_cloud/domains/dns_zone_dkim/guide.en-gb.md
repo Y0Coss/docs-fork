@@ -89,8 +89,8 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
         - [For Exchange](#confex)
         - [For Email Pro](#confemp)
     - [API - The different states of DKIM](#dkim-status)
-    - [API - Enable or change DKIM selector](#enable-switch)
-    - [API - Disable and delete DKIM](#disable-delete)
+    - [API - Activate or change a DKIM selector](#enable-switch)
+    - [API - Disable and delete DKIM](#disable-switch)
 - [Configuring DKIM for an email solution outside of your OVHcloud account](#external-dkim)
     - [DKIM record](#dkim-record)
     - [TXT record](#txt-record)
@@ -876,7 +876,7 @@ Select the email solution concerned in the following tabs:
 >>
 >> - `set`: The selector is correctly configured and active.
 >> - `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for MX Plan and Zimbra](#confemail).
->> - `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails (MX Plan)](#confemail).
+>> - `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails MX Plan and Zimbra](#confemail).
 >>
 > **Exchange**
 >> When you are running DKIM on your Exchange service, use the API call below to check the current DKIM status.
@@ -1303,7 +1303,7 @@ Below, you will find the states that may block your DKIM from working, and the a
 > [!tabs]
 > **Exchange and Email Pro**
 >> - `WaitingRecord`: The DNS records are pending configuration or being validated in the DNS zone. A regular automatic check is carried out to see if the DNS record is present and correctly entered. Depending on your solution, follow **step 5** in the section “[API - Full DKIM configuration](#firststep)” to configure the DNS zone correctly for the domain name concerned.
->> - `ready`: DNS records are present in the zone. DKIM can now be enabled. Simply activate the selector by going to the section [API - Enable or change a DKIM selector](#enable-switch).
+>> - `ready`: DNS records are present in the zone. DKIM can now be enabled. Simply activate the selector by going to the section [API - Activate or change a DKIM selector](#enable-switch).
 >> - `deleting`: DKIM configuration is being deleted. Once you have deleted it, you will need to follow the section “[API - Full DKIM configuration](#firststep)”.
 >> - `disabling`: DKIM is being disabled. Once you have done this, you can activate the selector by going to [API - Activate or change a DKIM selector](#enable-switch).
 >> - `todo`: The task has been initialised, it must be launched. After 24 hours, if your selector is still in this state, please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help), specifying the number of the selector concerned.
