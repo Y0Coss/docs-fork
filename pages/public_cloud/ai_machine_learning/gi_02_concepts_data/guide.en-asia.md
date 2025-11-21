@@ -99,7 +99,7 @@ User can enable a `cache` feature that allow jobs and notebooks to re-use availa
 
 > [!warning]
 >
-> Unused volume data is regularly deleted. Users should not rely on this `cache` feature for long time persistence.
+> Unused volume data is deleted after 3 days. Users should not rely on this `cache` feature for long time persistence.
 
 ## Going further
 
