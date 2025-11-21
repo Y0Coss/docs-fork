@@ -1,6 +1,6 @@
 ---
 title: Commencer avec OVHcloud Shell
-excerpt: Découvrez comment utiliser rapidement et gérer OVHcloud Shell directement depuis l'espace client OVHcloud pour simplifier vos opérations et workflows cloud.
+excerpt: Découvrez comment utiliser rapidement et gérer le OVHcloud Shell directement depuis l'espace client OVHcloud pour simplifier vos opérations et workflows cloud.
 updated: 2025-11-21
 ---
 
@@ -8,7 +8,7 @@ updated: 2025-11-21
 
 Ce guide explique comment accéder et utiliser OVHcloud Shell directement depuis l'espace client OVHcloud. Il présente un aperçu de l'environnement, ses principales fonctionnalités et les commandes essentielles pour vous aider à commencer à travailler efficacement avec vos ressources OVHcloud.
 
-À la fin de ce guide, vous serez en mesure de lancer le OVHcloud Shell, de gérer vos projets cloud depuis la ligne de commande et de l'intégrer à vos workflows quotidiens.
+À la fin de ce guide, vous serez en mesure de lancer OVHcloud Shell, de gérer vos projets cloud depuis la ligne de commande et de l'intégrer à vos workflows quotidiens.
 
 ## Qu'est-ce que OVHcloud Shell ?
 
@@ -20,7 +20,7 @@ Avec OVHcloud Shell, vous pouvez :
 - Accéder à vos serveurs, projets et services en toute sécurité.
 - Automatiser des tâches et des scripts sans quitter votre navigateur.
 
-Il est conçu pour simplifier la gestion du cloud, l'accélérer et la rendre accessible même si vous n'êtes pas un expert en ligne de commande. Vous n'avez pas besoin d'installer quoi que ce soit : ouvrez simplement le OVHcloud Shell et commencez à travailler.
+Il est conçu pour faciliter et accélérer la gestion du cloud, et le rendre accessible même si vous n'êtes pas un expert en ligne de commande. Vous n'avez pas besoin d'installer quoi que ce soit : ouvrez simplement OVHcloud Shell et commencez à travailler.
 
 ## Avantages de l'utilisation du OVHcloud Shell
 
@@ -161,6 +161,7 @@ Remplacez `<cloud-project>` par l'ID réel de votre projet.
 Exemple de sortie :
 
 ```bash
+ovhcloud cloud instance list --cloud-project fbbc9b79-****-****-****-************
 +----+-------------+--------------------------------------+-----------------------------------+-------------+--------+
 |    | flavor.name |                  id                  |               name                |   region    | status |
 +----+-------------+--------------------------------------+-----------------------------------+-------------+--------+
