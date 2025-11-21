@@ -559,6 +559,7 @@
             + [OPCP - How to setup LACP on a Node](hosted_private_cloud/opcp/how-to-setup-lacp-on-node)
         + [Additional resources](hosted-private-cloud-hosted-private-cloud-opcp-additional-resources)
             + [OPCP - Object Storage features and specifications](hosted_private_cloud/opcp/s3-opcp-limitations)
+            + [OPCP - How to create a custom OS image](hosted_private_cloud/opcp/how-to-create-image)
             + [OPCP - Ceph RBD Block Storage - Performance, Resilience and Scalability with OpenStack](hosted_private_cloud/opcp/storage-ceph-rbd-overview)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
