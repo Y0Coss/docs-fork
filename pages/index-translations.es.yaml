@@ -180,8 +180,8 @@ public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
-public-cloud-compute-getting-started: Primeros pasos
 public-cloud-compute-key-concepts: Conceptos clave
+public-cloud-compute-getting-started: Primeros pasos
 public-cloud-compute-configuration: Configuración
 public-cloud-compute-configuration-project-management: Gestión del proyecto
 public-cloud-compute-configuration-instance-management: Gestión de las instancias
