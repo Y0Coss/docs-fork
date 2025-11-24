@@ -8,7 +8,7 @@ updated: 2025-11-20
 
 Die Aktivierung der Intel Software Guard Extensions (SGX) auf Ihrem Server erlaubt es Ihnen, SGX-kompatible Anwendungen auszuführen. Intel SGX bietet erweiterte Hardware- und RAM-Verschlüsselungsfunktionen, um anwendungsspezifische Code- und Datenbereiche zu isolieren.
 
-**In dieser Anleitung wird erklärt, wie Sie die SGX-Funktion über den OVHcloud Kundenbereich oder über die OVHcloud API aktivieren können.**
+**Diese Anleitung erklärt, wie Sie die SGX-Funktion aktivieren können.**
 
 ## Voraussetzungen
 
