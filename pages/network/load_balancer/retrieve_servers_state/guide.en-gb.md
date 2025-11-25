@@ -1,7 +1,7 @@
 ---
 title: "Retrieving server health status"
 excerpt: Retrieve server status
-updated: 2022-03-29
+updated: 2026-11-25
 ---
 
 ## Objective
@@ -57,13 +57,13 @@ In the API, the server health status is available in the `serverState` table:
 
 ### From the OVHcloud Control Panel
 
-In the `Server farms`{.action} tab, after selecting one of them, the status of each of its servers is displayed on the corresponding line.
+In the `Server clusters`{.action} tab, after selecting one of them, the status of each of its servers is displayed on the corresponding line.
 
 #### Result
 
 ![Result server health status via the OVHcloud Control Panel](images/farm_server_health.png){.thumbnail}
 
-To obtain details on a server's health status, click on the pictogram in the "**Status**" column.
+To obtain details on a server's health status, click on the text in the "**Status**" column, or click the `(...)`{.action} button and select `See status`{.action}.
 
 ![Result server health status via the OVHcloud Control Panel (details)](images/server_health_detail.png){.thumbnail}
 

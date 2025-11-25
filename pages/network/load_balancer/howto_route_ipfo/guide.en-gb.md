@@ -1,7 +1,7 @@
 ---
 title: 'How to route an Additional IP'
 excerpt: 'Find out how to route an Additional IP and link it to the OVHcloud Load Balancer'
-updated: 2022-10-06
+updated: 2025-11-25
 ---
 
 ## Objective
@@ -20,6 +20,8 @@ For more information on the OVHcloud Load Balancer solution, please read our [In
 
 - A configured [OVHcloud Load Balancer](/links/network/load-balancer)
 - An [Additional IP](/links/bare-metal/ip)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud API](/links/api)
 
 > [!primary]
 >
