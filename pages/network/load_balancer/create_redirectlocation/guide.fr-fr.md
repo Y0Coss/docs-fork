@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec les redirections"
 excerpt: Intégrez vos services web derrière un Load Balancer avec les redirections
-updated: 2025-11-14
+updated: 2025-11-26
 ---
 
 ## Objectif
@@ -61,9 +61,9 @@ Une fois le frontend configuré, cliquez sur `Ajouter`{.action} ou `Modifier`{.a
 N'oubliez pas de déployer la configuration.
 Pour ce faire, vous pouvez au choix :
 
-- dans la section `Statut` de l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} de votre Load Balancer puis cliquez sur `Appliquer la configuration`{.action}.
+- Dans la section `Statut` de l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} de votre Load Balancer puis cliquez sur `Appliquer la configuration`{.action}.
 
-- dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée, cliquez sur `Appliquer la configuration`{.action}.
+- Dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée, cliquez sur `Appliquer la configuration`{.action}.
 
 ![Application d'une Configuration d'un Load Balancer](images/apply_configuration.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Pour ce faire, vous pouvez au choix :
 
 Dans l'[API OVHcloud](/links/api), les redirections sont spécifiées dans la chaîne de caractère redirectLocation :
 
-#### Création d'un nouveau frontend
+**Création d'un nouveau frontend**
 
 > [!api]
 >
@@ -85,7 +85,7 @@ Dans l'[API OVHcloud](/links/api), les redirections sont spécifiées dans la ch
 |zone|Zone de déploiement du frontend|
 |redirectLocation|URL de redirection HTTP|
 
-#### Mise à jour d'un frontend existant
+**Mise à jour d'un frontend existant**
 
 > [!api]
 >
@@ -98,7 +98,7 @@ Dans l'[API OVHcloud](/links/api), les redirections sont spécifiées dans la ch
 |frontendId|Identifiant du frontend à mettre à jour|
 |redirectLocation|URL de redirection HTTP|
 
-#### Appliquer les modifications :
+**Appliquer les modifications**
 
 > [!api]
 >
