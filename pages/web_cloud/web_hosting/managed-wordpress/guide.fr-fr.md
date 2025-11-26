@@ -1,16 +1,16 @@
 ---
-title: Découvrir le Managed Hosting for WordPress (version Alpha)
+title: Découvrir le Managed Hosting for WordPress (version Beta)
 excerpt: Découvrez la solution OVHcloud qui gère pour vous l’hébergement, la sécurité et la maintenance de vos sites web WordPress.
-updated: 2025-11-17
+updated: 2025-11-27
 ---
 
 ## Objectif
 
-Le **Managed Hosting for WordPress** est une nouvelle offre OVHcloud permettant d’héberger et d’administrer vos sites web WordPress en toute simplicité. Pensé pour les professionnels, les agences et les indépendants, ce service vous libère des tâches techniques liées à la gestion de l’infrastructure et des mises à jour, afin que vous puissiez vous concentrer sur votre contenu et votre activité. Ce guide présente le concept du produit, ses principaux avantages et les fonctionnalités disponibles dans le cadre de la **phase Alpha**.
+Le **Managed Hosting for WordPress** est une nouvelle offre OVHcloud permettant d’héberger et d’administrer vos sites web WordPress en toute simplicité. Pensé pour les professionnels, les agences et les indépendants, ce service vous libère des tâches techniques liées à la gestion de l’infrastructure et des mises à jour, afin que vous puissiez vous concentrer sur votre contenu et votre activité. Ce guide présente le concept du produit, ses principaux avantages et les fonctionnalités disponibles dans le cadre de la **phase Beta**.
 
 ## Prérequis
 
-- Avoir accès au programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/) pour la phase Alpha.
+- Avoir accès au programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/) pour la phase Beta.
 - Être connecté à l’[espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -41,12 +41,12 @@ Chaque site web bénéficie d’un environnement optimisé, prêt à l’emploi 
 
 #### Une approche progressive
 
-Le produit est actuellement disponible en **version Alpha** dans le cadre du programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/). Cette première phase permet de tester les fonctionnalités essentielles :
+Le produit est actuellement disponible en **version Beta** dans le cadre du programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/). Cette première phase permet de tester les fonctionnalités essentielles :
 
 - Création et gestion de sites WordPress managés.
 - Import de sites externes.
 - Mise à jour automatique du CMS et des plugins.
-- Affichage du statut de vos sites web dans le **DataGrid Manager**.
+- Affichage du statut de vos sites web dans un tableau de bord de votre espace client.
 
 > [!primary]
 >
@@ -154,11 +154,11 @@ Lorsque vos sites web sont définitivement supprimés, leurs lignes correspondan
 
 #### Gérer ses sites web
 
-Pour gérer tous vos sites web, dirigez-vous dans l’onglet `Mes sites`{.action} puis cliquez sur `Gérer mes sites`{.action}. Ce bouton ouvre automatiquement le tableau de bord MainWP, intégré au Managed Hosting for WordPress. Cet espace vous permet de gérer plusieurs sites web WordPress simultanément, depuis une interface unifiée.
+Pour gérer tous vos sites web, dirigez-vous dans l’onglet `Mes sites`{.action} puis cliquez sur `Gérer mes sites`{.action}. Ce bouton ouvre automatiquement le gestionnaire de flotte, intégré au Managed Hosting for WordPress. Cet espace vous permet de gérer plusieurs sites web WordPress simultanément, depuis une interface unifiée.
 
-##### Tableau de bord MainWP
+##### Tableau de bord
 
-MainWP est un outil de supervision et de gestion centralisée fourni automatiquement avec votre offre. Il vous permet d’administrer vos sites web WordPress managés sans avoir à vous connecter à chaque site web individuellement.
+Le gestionnaire de flotte est un outil de supervision et de gestion centralisée fourni automatiquement avec votre offre. Il vous permet d’administrer vos sites web WordPress managés sans avoir à vous connecter à chaque site web individuellement.
 
 Depuis ce tableau de bord, vous pouvez notamment :
 
@@ -167,8 +167,6 @@ Depuis ce tableau de bord, vous pouvez notamment :
 - Accéder rapidement à chaque site web pour vérifier son état ou intervenir.
 - Superviser les activités récentes (changements, mises à jour, synchronisations).
 - Utiliser les fonctionnalités intégrées de sécurité, monitoring, sauvegardes, et analyses (dans les phases futures).
-
-Pour en savoir plus sur le fonctionnement de MainWP et découvrir l’ensemble des possibilités offertes, consultez la [documentation officielle MainWP](https://mainwp.com/kb/).
 
 ## Aller plus loin
 
