@@ -1,7 +1,7 @@
 ---
 title: "Configuring an OVHcloud Load Balancer service with redirects"
 excerpt: Integrate your web services behind a Load Balancer with redirects
-updated: 2025-11-14
+updated: 2025-11-26
 ---
 
 ## Objective
@@ -20,7 +20,7 @@ The **OVHcloud Load Balancer** operates by default as a proxy. It can also be co
 
 ### Overview
 
-An HTTP redirect looks like this :
+An HTTP redirect looks like this:
 
 ```bash
 HTTP/1.1 301 Moved Permanently
@@ -31,7 +31,7 @@ Content-Length: 174
 
 Custom redirects must be formatted as `<scheme>://<net_loc>/<path>;<params>?<query>#<fragment>`. Only one redirect can be specified per frontend.
 
-Custom redirects can be specified via the OVHcloud sControl Panel or via the API, on a new or existing frontend.
+Custom redirects can be specified via the OVHcloud Control Panel or via the API, on a new or existing frontend.
 
 ### Adding a custom redirect from the OVHcloud Control Panel
 
@@ -59,19 +59,20 @@ In the advanced settings, fill in the `HTTP redirect`{.action}.
 
 Once the frontend is configured, click on `Add`{.action} or `Edit`{.action} depending on whether you are configuring a new frontend or an existing one.
 Do not forget to deploy the configuration.
-To do this, you can either :
 
-- in the `Status` section of the `Home`{.action} tab, click on the `...`{.action} button of your Load Balancer and then click on `Apply the configuration`{.action}.
+To do this, you can either:
 
-- in the reminder banner informing you that the configuration is not applied, click on `Apply the configuration`{.action}.
+- In the `Status` section of the `Home`{.action} tab, click on the `...`{.action} button of your Load Balancer and then click on `Apply the configuration`{.action}.
+
+- In the reminder banner informing you that the configuration is not applied, click on `Apply the configuration`{.action}.
 
 ![Application of a Load Balancer Configuration](images/apply_configuration.png){.thumbnail}
 
 ### Adding a custom redirect from the OVHcloud API
 
-In the [OVHcloud API](/links/api), redirects are specified in the redirectLocation string :
+In the [OVHcloud API](/links/api), redirects are specified in the redirectLocation string:
 
-#### Creating a new frontend
+**Creating a new frontend**
 
 > [!api]
 >
@@ -85,7 +86,7 @@ In the [OVHcloud API](/links/api), redirects are specified in the redirectLocati
 |zone|Deployment zone of the frontend|
 |redirectLocation|HTTP redirect URL|
 
-#### Updating an existing frontend
+**Updating an existing frontend**
 
 > [!api]
 >
@@ -98,7 +99,7 @@ In the [OVHcloud API](/links/api), redirects are specified in the redirectLocati
 |frontendId|Identifier of the frontend to update|
 |redirectLocation|HTTP redirect URL|
 
-#### Applying the changes :
+**Applying the changes**
 
 > [!api]
 >
