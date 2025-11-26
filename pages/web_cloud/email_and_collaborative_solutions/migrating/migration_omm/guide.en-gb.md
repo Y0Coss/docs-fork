@@ -15,15 +15,15 @@ updated: 2025-11-25
 
 ## Objective
 
-[OVH Mail Migrator](/links/web/omm) is a tool created by OVHcloud to meet the need for reversibility. It allows you to migrate your email accounts to your OVHcloud email addresses or an external email service. The process supports different types of content, such as emails, contacts, calendars, and tasks, provided they are compatible with your email addresses.
+[OVH Mail Migrator](/links/web/omm) is a tool created by OVHcloud to meet the need for reversibility. It allows you to migrate your email accounts to your OVHcloud email addresses or an external email service. The process supports different types of content, such as emails, contacts, calendars, and tasks, provided they are compatible with your email accounts.
 
 **Learn how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool.**
 
 ## Requirements
 
-- Have an external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) offer, or MX Plan (via the MX Plan offer alone or included in a [OVHcloud web hosting offer](/links/web/hosting)).
-- Have the credentials for the email accounts you want to migrate (the source email accounts).
-- Have the credentials for the destination email accounts.
+- An external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) offer, or MX Plan (via the MX Plan offer alone or included in a [OVHcloud web hosting offer](/links/web/hosting)).
+- Login details for the email accounts you want to migrate (the source accounts)
+- Login details for the destination email accounts
 
 ## Instructions
 
@@ -72,32 +72,32 @@ A new page appears where you will define the connection information for the sour
 Before starting your migration, it is important to know the 3 types of accounts that can be migrated and where you can migrate them to:
 
 - **OVHcloud**: `Auto detection` is recommended if you need to migrate an account hosted on any OVHcloud email offer. If you have a large number of OVHcloud email accounts, select from the offers `MX plan`, `E-mail Pro`, `Exchange`, and `Zimbra`. You will be asked to log in to the OVHcloud account associated with the offer related to the migration. For more information, see the section "[Migrating via a connection to an OVHcloud customer account](#sso-migration)".
-- **Others**: They refer to email services subscribed outside of OVHcloud. You will find a non-exhaustive list of email services supported by OMM. If the type of service of your email account is not listed, use the `Imap` or `Pop` protocols, which are compatible with most email servers.
-- **Importing files**: It is possible to migrate the content of PST, ICS, CSV, and Xml Rules files via OMM to a destination email account. When this function is selected, simply drag and drop your document into the designated area or browse your terminal using the `Browse your files`{.action} button.
+- **Others**: They refer to email services outside of OVHcloud. You will find a non-exhaustive list of email services supported by OMM. If the type of service of your email account is not listed, use the `IMAP` or `POP` protocols, which are compatible with most email servers.
+- **Importing files**: It is possible to migrate the content of PST, ICS, CSV, and XML rules files via OMM to a destination email account. When this function is selected, simply drag and drop your document into the designated area or browse your files using the `Browse your files`{.action} button.
 
 ![omm](images/omm-create-migration-03.png){.thumbnail .w-600}
 
 Complete the information according to the type of account:
 
 - **Source account**
-    - **Account type**: select the type of source account.
-    - **Email**: enter the source account's email address.
-    - **Password**: enter the password for the source account.
-    - **Server URL** / **Server domain** *(depending on the type)*: enter the hostname of the email server associated with the email account you want to migrate.
+    - **Account type**: Select the type of source account.
+    - **Email**: Enter the source account's email address.
+    - **Password**: Enter the password for the source account.
+    - **Server URL** / **Server domain** *(depending on the type)*: Enter the hostname of the email server associated with the email account you want to migrate.
     - **OVHcloud Account ID** *(depending on the type)*: this field is automatically filled in when you are logged in to an OVHcloud account. For more information, see the section "[Migrating via a connection to an OVHcloud customer account](#sso-migration)".
-    - **Organization** *(depending on the type)*: select the organization associated with the source email account.
-    - **Platform** *(depending on the type)*: select the platform associated with the source email account.
-    - **Service** *(depending on the type)*: select the service associated with the source email account.
+    - **Organization** *(depending on the type)*: Select the organization associated with the source email account.
+    - **Platform** *(depending on the type)*: Select the platform associated with the source email account.
+    - **Service** *(depending on the type)*: Select the service associated with the source email account.
     - **Advanced settings** > **Delegation account ID** *(depending on the type)*: When the email account you are migrating is a shared account, you must enter the email address of the administrator account on this delegation account.
 - **Destination account**
-    - **Account type**: select the type of destination account.
-    - **Email**: enter the destination email address.
-    - **Password**: enter the password associated with the destination account.
-    - **Server URL** / **Server domain** *(depending on the type)*: enter the hostname of the email server associated with the destination email account.
+    - **Account type**: Select the type of destination account.
+    - **Email**: Enter the destination email address.
+    - **Password**: Enter the password associated with the destination account.
+    - **Server URL** / **Server domain** *(depending on the type)*: Enter the hostname of the email server associated with the destination email account.
     - **OVHcloud Account ID** *(depending on the type)*: this field is automatically filled in when you are logged in to an OVHcloud account. For more information, see the section "[Migrating via a connection to an OVHcloud customer account](#sso-migration)".
-    - **Organization** *(depending on the type)*: select the organization associated with the destination email account.
-    - **Platform** *(depending on the type)*: select the platform associated with the destination email account.
-    - **Service** *(depending on the type)*: select the service associated with the destination email account.
+    - **Organization** *(depending on the type)*: Select the organization associated with the destination email account.
+    - **Platform** *(depending on the type)*: Select the platform associated with the destination email account.
+    - **Service** *(depending on the type)*: Select the service associated with the destination email account.
     - **Advanced settings** > **Delegation account ID** *(depending on the type)*: When the destination email account is a shared account, you must enter the email address of the administrator account on this delegation account.
 - **Start of transfer**: You can launch the migration `immediately` or check `Later` to defer the migration. The deferred migration allows you to launch it automatically at a date and time you define.
 - **Data to transfer**: Depending on the type of email account you are migrating and the destination account, this section will indicate the different types of data supported during the migration. This depends on the source account and the destination account.
@@ -106,11 +106,11 @@ Complete the information according to the type of account:
 
 > [!warning]
 >
-> If you are migrating an account that has features the destination account does not have, you will need to save the items that cannot be migrated by OMM yourself. To help you, refer to our guide "[Manually Migrating Your Email Address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+> If you are migrating an account that has features the destination account does not have, you will need to save the items that cannot be migrated by OMM. To help you, refer to our guide "[Manually Migrating Your Email Address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 Once the source and destination account settings are completed, click on:
 
-- `Migrate and add another account`{.action} if you want to add another migration to your project's list
+- `Migrate and add another account`{.action} if you want to add another migration to your project's list.
 - `Migrate my account`{.action} to launch the configured migration and return to the project homepage.
 
 ### Migrate via a connection to an OVHcloud customer account <a name="sso-migration"></a>
@@ -124,7 +124,7 @@ When you select one of these offers, follow the steps below:
 > [!tabs]
 > **Step 1**
 >>
->> - Click on `Login`{.action} to display the login window to the OVHcloud customer area.
+>> - Click on `Login`{.action} to display the login window to the OVHcloud Control Panel.
 >>
 >> ![omm](images/omm-migration-sso-01.png){.thumbnail .w-600}
 >>
@@ -143,7 +143,7 @@ When you select one of these offers, follow the steps below:
 >>
 > **Step 3**
 >>
->> - A new window appears, which allows you to authorize OMM to access the functions of your customer area listing the offers and email accounts present. By default, the validity of these rights is 24h. Set the time frame that suits you, then click on `Authorize`{.action}.
+>> - A new window appears, which allows you to authorize OMM to access the functions of your Control Panel listing the offers and email accounts present. By default, the validity of these rights is 24 hours. Set the time frame that suits you, then click on `Authorize`{.action}.
 >>
 >> ![omm](images/omm-migration-sso-03.png){.thumbnail .w-600}
 >>
@@ -157,7 +157,7 @@ When you select one of these offers, follow the steps below:
 
 > [!warning]
 >
-> You can disconnect ongoing accesses from an OVHcloud customer area by clicking on `Log out`{.action}, then under the `OVHcloud account ID` mention, click on `Log out the account`{.action}.
+> You can disconnect ongoing OVHcloud Control Panel logins by clicking on `Log out`{.action}, then under `OVHcloud account ID`, click on `Log out the account`{.action}.
 >
 > ![omm](images/omm-migration-sso-05.png){.thumbnail .w-300}
 
