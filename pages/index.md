@@ -713,6 +713,7 @@
                 + [Creating and configuring a security group in Horizon](public_cloud/compute/setup_security_group)
                 + [Managing snapshots of an instance in Horizon](public_cloud/compute/managing_snapshots_in_horizon)
                 + [Creating, launching and deleting images in Horizon](public_cloud/compute/creation_launch_deletion_of_images_in_horizon)
+                + [Resize an instance](public_cloud/compute/resize_of_an_instance)
                 + [How to revert a flex instance](public_cloud/compute/revert_a_flex_instance)
             + [Instance management using OpenStack](public-cloud-compute-configuration-instance-management-openstack)
                 + [Getting started with the OpenStack API](public_cloud/compute/starting_with_nova)
