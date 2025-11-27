@@ -19,11 +19,11 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 
 ### Informations générales sur Time2Chat
 
-Time2Chat est une solution de messagerie conversationnelle bidirectionnelle (marque ↔ utilisateur) permettant à une entreprise et à ses utilisateurs d’échanger par SMS en France.
+Time2Chat est une solution de messagerie conversationnelle bidirectionnelle (marque ↔ client) permettant à une entreprise et à ses clients d’échanger par SMS en France.
 
-Contrairement à un envoi de campagne classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Ce numéro peut être utilisé à la fois pour envoyer et recevoir des SMS.
+Contrairement à un envoi de SMS classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Ce numéro peut être utilisé à la fois pour envoyer et recevoir des SMS.
 
-Une « session » de conversation débute dès qu’un premier message est envoyé — qu’il provienne de la marque ou du client. À partir de cet instant, la session reste active pendant 24 heures. Durant ce laps de temps, les deux interlocuteurs peuvent échanger un nombre illimité de SMS via le même canal. Une fois la période écoulée, tout nouveau message relance automatiquement une nouvelle session de 24 heures.
+Une « session » de conversation débute dès qu’un premier message est envoyé — qu’il provienne de la marque ou du client. À partir de cet instant, la session reste active pendant 24 heures. Durant ce laps de temps, les deux interlocuteurs peuvent échanger un nombre illimité de SMS via le même canal, sous réserve de crédits disponibles côté marque. Une fois la période écoulée, tout nouveau message provenant de la marque ou du client relance automatiquement une nouvelle session de 24 heures.
 
 #### Exemples d’usage
 
@@ -35,29 +35,29 @@ Une « session » de conversation débute dès qu’un premier message est envoy
 
 #### Avantages pour votre entreprise
 
-- **Canal universel** : Le SMS reste accessible à tous les utilisateurs.
+- **Canal universel** : Le SMS reste accessible à toute personne disposant d'un forfait de téléphonie mobile.
 - **Numéro unique et identifiable** (en « 09 »), renforçant la reconnaissance de marque.
 - **Expérience fluide** : Échanges naturels et continus, sans contrainte de format.
 - **Conformité** : Respect de la réglementation française sur la messagerie professionnelle.
 
 #### Différences avec l’offre SMS historique
 
-Le service Time2Chat repose sur un modèle conversationnel, différent des envois de campagnes SMS classiques :
+Le service Time2Chat repose sur un modèle conversationnel, différent des envois de SMS classiques :
 
-| Fonctionnalité | Campagne SMS classique | Time2Chat |
+| Fonctionnalité | SMS classique | Time2Chat |
 |----------------|------------------------|-----------|
-| Canal utilisé | Numéro court mutualisé | Numéro dédié en 09 |
-| Type d’usage | Envoi unidirectionnel (notification, alerte) | Conversation bidirectionnelle |
-| Gestion des réponses | Réponses ponctuelles, sans fil de discussion | Fil de conversation de 24 heures entre la marque et le client |
-| Facturation | 1 SMS envoyé = 1 crédit | 1 SMS envoyé = 2 crédits |
+| Expéditeurs | Numéro court mutualisé permettant la réponse, pouvant changer.<br> Expéditeur alphanumérique. | Numéro dédié en 09. |
+| Type d’usage | Envoi unidirectionnel (notification, alerte). | Conversation bidirectionnelle. |
+| Gestion des réponses | Réponses ponctuelles sur le numéro court, sans fil de discussion.<br> Pas de réponse possible pour un expéditeur alphanumérique. | Fil de conversation de 24 heures entre la marque et le client. |
+| Facturation | 1 SMS envoyé = 1 crédit. | 1 SMS envoyé = 2 crédits. |
 
 > [!primary]
 >
-> Le client s’engage à utiliser le service de manière équilibrée, en visant un **ratio d’échange proche de 1:1** entre les messages envoyés et reçus.
+> Le client s’engage à utiliser le service Time2Chat de manière équilibrée, en visant un **ratio d’échange proche de 1:1** entre les messages envoyés et reçus.
 
 #### Conditions d'accès
 
-La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs d’un expéditeur SMS de type numéro virtuel VLN.
+La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs d’un expéditeur SMS de type numéro virtuel commençant par « 06 » ou « 07 ».
 
 Nous proposerons prochainement ce service à tous les clients possédant un [compte SMS OVHcloud](/links/telecom/sms).
 
