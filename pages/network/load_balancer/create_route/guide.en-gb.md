@@ -1,7 +1,7 @@
 ---
 title: "Configuring an OVHcloud Load Balancer with HTTP routes"
 excerpt: "Find out how to dynamically direct your requests to a specific farm"
-updated: 2025-11-26
+updated: 2025-11-27
 ---
 
 ## Objective
