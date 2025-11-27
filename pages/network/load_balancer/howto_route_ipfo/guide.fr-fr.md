@@ -1,7 +1,7 @@
 ---
 title: 'Comment router une Additional IP'
-excerpt: 'Découvrez comment router une Additional IP et la lier au Load Balancer OVHcloud'
-updated: 2025-11-25
+excerpt: 'Découvrez comment router une Additional IP et la lier au service OVHcloud Load Balancer'
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Pour plus d'informations sur l'Additional IP, nous vous recommandons la lecture 
 
 Le service OVHcloud Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une Additional IP, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'Additional IP, donc pas de délai de propagation des DNS.
 
-Pour plus d'informations sur la solution Load Balancer OVHcloud, veuillez lire notre [Introduction à Load Balancer OVHcloud](/pages/network/load_balancer/use_presentation).
+Pour plus d'informations sur le service OVHcloud Load Balancer, veuillez lire notre [Introduction à Load Balancer OVHcloud](/pages/network/load_balancer/use_presentation).
 
 **Ce guide explique comment utiliser une Additional IP avec le service Load Balancer OVHcloud.**
 
@@ -29,7 +29,7 @@ Pour plus d'informations sur la solution Load Balancer OVHcloud, veuillez lire n
 >
 > Une fois que vous confirmez les modifications dans la liste des Additional IPs associées au Load Balancer, la configuration doit être rafraîchie. Plusieurs conditions doivent être remplies pour que cela fonctionne :
 > 
-> - **Configuration vRack :** Si le Load Balancer est dans un vRack, toutes les fermes doivent également être dans le vRack, et le Load Balancer doit avoir son vLAN défini. Sinon, il ne doit pas y avoir de fermes dans un vRack.
+> - **Configuration du vRack :** Si le Load Balancer est dans un vRack, toutes les fermes doivent également être dans le vRack, et le Load Balancer doit avoir son vLAN défini. Sinon, il ne doit pas y avoir de fermes dans un vRack.
 >
 > - **Validité du frontend :** Il doit exister au moins un frontend, et tous les frontends doivent être valides. Ils peuvent être activés ou désactivés, mais doivent avoir soit :
 >    - une route valide (avec des règles de routage)
@@ -48,7 +48,7 @@ Dans ce document, nous aborderons deux cas d'utilisation distincts :
 
 ### Ajouter une Additional IP au Load Balancer OVHcloud
 
-Vous pouvez lier ces adresses IP à votre Load Balancer OVHcloud via l'[API OVHcloud](https://api.ovh.com).
+Vous pouvez lier ces adresses IP à votre Load Balancer OVHcloud via l'[API OVHcloud](/links/api).
 L'appel API correspondant est le suivant :
 
 > [!api]
@@ -73,7 +73,7 @@ Quel que soit le type de frontend, vous pouvez définir une liste d'Additional I
 
 **Si vous créez un frontend :**
 
-Depuis l'[API OVHcloud](https://api.ovh.com), vous pouvez utiliser les appels suivants pour définir une ou plusieurs Additional IPs sur un frontend lors de sa création :
+Depuis l'[API OVHcloud](/links/api), vous pouvez utiliser les appels suivants pour définir une ou plusieurs Additional IPs sur un frontend lors de sa création :
 
 - Protocole HTTP
 
@@ -98,7 +98,7 @@ Depuis l'[API OVHcloud](https://api.ovh.com), vous pouvez utiliser les appels su
 
 **Si vous mettez à jour un frontend existant :**
 
-Depuis l'[API OVHcloud](https://api.ovh.com), vous pouvez utiliser les appels suivants pour définir une ou plusieurs Additional IPs sur un frontend existant :
+Depuis l'[API OVHcloud](/links/api), vous pouvez utiliser les appels suivants pour définir une ou plusieurs Additional IPs sur un frontend existant :
 
 - Protocole HTTP
 
@@ -135,7 +135,7 @@ Une fois le frontend configuré, cliquez sur `Ajouter`{.action} ou `Mettre à jo
 
 N’oubliez pas de déployer la configuration. Il existe deux façons de le faire :
 
-- via la section `Statut`{.action} de l’onglet `Accueil`{.action} de votre espace client OVHcloud, en cliquant sur le bouton `(...)`{.action} à côté de l’ID de votre Load Balancer et en sélectionnant `Appliquer la configuration`{.action}
+- via la section `Statut`{.action} de l’onglet `Accueil`{.action} de votre espace client OVHcloud, en cliquant sur le bouton `...`{.action} à côté de l’ID de votre Load Balancer et en sélectionnant `Appliquer la configuration`{.action}
 
 - via la bannière dans l’espace client OVHcloud, qui vous informe que la configuration n’a pas été appliquée, en cliquant sur `Appliquer la configuration`{.action}.
 
@@ -143,4 +143,4 @@ N’oubliez pas de déployer la configuration. Il existe deux façons de le fair
 
 ## Aller plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
