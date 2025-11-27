@@ -1,7 +1,7 @@
 ---
 title: "Retrieving server health status"
 excerpt: Retrieve server status
-updated: 2026-11-25
+updated: 2025-11-27
 ---
 
 ## Objective
@@ -20,20 +20,19 @@ This tutorial explains how to find out the health status of each server for each
 
 ## Requirements
 
-- An [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
-- Access to the [OVHcloud API](/links/api).
+- An [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud API](/links/api)
 - A configured farm
 - A configured front-end
 
 ## Instructions
 
->[!primary]
+> [!primary]
 >
 > In order to have valid server status checks, you need to have a probe configured on your farm, and servers that allow access to that probe.
 >
 > If you need to configure probes on your Load Balancer, please refer to [this guide](/pages/network/load_balancer/create_probes).
->
 
 ### From the OVHcloud API
 
@@ -63,7 +62,7 @@ In the `Server clusters`{.action} tab, after selecting one of them, the status o
 
 ![Result server health status via the OVHcloud Control Panel](images/farm_server_health.png){.thumbnail}
 
-To obtain details on a server's health status, click on the text in the "**Status**" column, or click the `(...)`{.action} button and select `See status`{.action}.
+To obtain details on a server's health status, click on the text in the "**Status**" column, or click the `...`{.action} button and select `See status`{.action}.
 
 ![Result server health status via the OVHcloud Control Panel (details)](images/server_health_detail.png){.thumbnail}
 
@@ -83,4 +82,4 @@ For each instance, we have the following information:
 
 ## Go further
 
-Discuss with our [user community](/links/community).
+Join our [community of users](/links/community).
