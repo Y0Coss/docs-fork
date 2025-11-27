@@ -59,7 +59,7 @@ Load balancing across several Availability Zones (AZs) within the same region, i
 
 #### From the OVHcloud Control Panel
 
-You can order an additional zone from the [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, click `Network`{.action}, then `Load Balancer`{.action}.
+You can order an additional zone from the [OVHcloud Control Panel](/links/manager). In the `Network`{.action} section, under `Network services`{.action,} select `Load Balancer`{.action}.
 
 Select your Load Balancer, then in the `Home`{.action} tab and the `Configuration`{.action} menu, click `Add`{.action} in the "Availability zones" section.
 
