@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec les routes HTTP"
 excerpt: "Dirigez dynamiquement vos requêtes vers une ferme spécifique"
-updated: 2025-11-14
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Dans certains cas, il est possible d'aller plus loin et de router, rediriger ou 
 > Bien que ce guide se concentre sur les **routes HTTP**, le même principe s'applique aux routes **TCP**. Cela peut servir pour diriger le trafic HTTP/2 vers une ferme spécifique ou rejeter les requêtes entrantes provenant de certaines adresses IP.
 >
 
-Cette fonctionnalité n'est disponible que via l'API. Ce guide vous présentera les principes généraux ainsi que des scénarii d'utilisation des routes tirés de cas d'usages réels.
+Cette fonctionnalité n'est disponible que via l'API. Ce guide vous présentera les principes généraux ainsi que des scénarios d'utilisation des routes tirés de cas d'usages réels.
 
 ### Introduction aux routes
 
@@ -53,7 +53,7 @@ L'API des routes de votre service OVHcloud Load Balancer a été pensée spécia
 
 > [!primary]
 >
-> Pour afficher uniquement les appels API liés aux routes dans la console de l'API OVHcloud, vous pouvez utiliser le champ `filter`{.action} avec le mot-clé "[a-z]*".
+> Pour afficher uniquement les appels API liés aux routes dans la console de l'API OVHcloud, vous pouvez utiliser le champ `filter`{.action} avec le mot-clé "*[a-z]*".
 >
 
 Lorsque vous souhaitez configurer une route ou des règles, la première chose à faire est de consulter les **actions et règles disponibles**. Cela vous donnera les valeurs possibles pour les champs de configuration de l'API des routes et des règles.
@@ -64,10 +64,10 @@ Lorsque vous souhaitez configurer une route ou des règles, la première chose �
 
 Quand une requête arrive sur votre service OVHcloud Load Balancer, les routes sont évaluées successivement selon les principes suivants :
 
-1. d'abord, les **routes de type reject et rewrite**, puis les **routes de type farm** ;
-2. à l'intérieur de ces catégories, les routes sont évaluées par **poids croissant** ;
-3. si deux routes ont le même poids, la **première route créée** est évaluée en premier ;
-4. seule la **première action** de toutes les règles validées est exécutée.
+1. D'abord, les **routes de type reject et rewrite**, puis les **routes de type farm** ;
+2. À l'intérieur de ces catégories, les routes sont évaluées par **poids croissant** ;
+3. Si deux routes ont le même poids, la **première route créée** est évaluée en premier ;
+4. Seule la **première action** de toutes les règles validées est exécutée.
 
 ### Règles et actions disponibles
 
@@ -108,10 +108,9 @@ Avec ces principes de base sur les actions et règles disponibles, et l'ordre d'
 
 Pour plus d'informations sur ces méthodes, vous pouvez consulter la section "[Manipulation des routes](#handling-routes)", en bas de ce guide.
 
-
 ## Exemples
 
-Afin de démontrer l'utilité des routes, cette section offrira quelques exemples pratiques de l'utilisation de cette technologie pour les besoins internes d'OVH, sans entrer dans les détails des appels API.
+Afin de démontrer l'utilité des routes, cette section offrira quelques exemples pratiques de l'utilisation de cette technologie pour les besoins internes d'OVHcloud, sans entrer dans les détails des appels API.
 
 Vous trouverez le détail des appels API dans la section "[Manipulation des routes](#handling-routes)", en bas de ce guide et les sections suivantes.
 
@@ -121,7 +120,7 @@ Le protocole HTTPS est devenu la norme. Son objectif est de rendre tous les site
 
 Migrer un site web vers HTTPS demande du travail, notamment pour éviter les problèmes de [Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content). Il peut être intéressant de migrer votre site web section par section, en commençant par sécuriser les pages qui envoient des identifiants de connexion.
 
-Une approche pourrait être de s'appuyer sur le début des URLs WordPress. Par défaut, l'URL des pages de connexion de WordPress commence par `/wp-login`. Nous aurions donc besoin de :
+Une approche pourrait être de s'appuyer sur le début des URLs WordPress. Par défaut, l'URL des pages de connexion de WordPress commence par `/wp-login`. Nous aurions donc besoin des élements suivants :
 
 - une route avec une **action de redirection** ;
 - une règle dans cette route qui détecte les URLs commençant par **"/wp-login"**.
@@ -165,10 +164,10 @@ Par exemple, si votre infrastructure est composée d'un VPS pour votre site web,
 
 Avec les routes, vous pouvez partager le même frontend et choisir la ferme de serveurs dynamiquement, grâce au **champ "[a-z]*"**.
 
-Pour cela, vous aurez besoin de :
+Pour cela, vous aurez besoin :
 
-- une route par VHost ;
-- une règle par route détectant un domaine spécifique.
+- d'une route par VHost ;
+- d'une règle par route détectant un domaine spécifique.
 
 En pratique, pour router le domaine **www.example.com**, cela donnera la route suivante :
 
@@ -312,7 +311,9 @@ Il ne reste plus qu'à appliquer la configuration dans la zone concernée.
 
 #### Router les WebSockets vers une ferme dédiée
 
-Lorsqu'un site dispose de fonctions interactives basées sur des WebSockets telles qu'un chat-bot, on peut souhaiter diriger ces connexions vers une ferme de serveurs dédiée à cette tâche. Et c'est en fait très simple. Quand un navigateur cherche à ouvrir une connexion WebSockets, il envoie une requête HTTP standard avec les en-têtes :
+Lorsqu'un site dispose de fonctions interactives basées sur des WebSockets telles qu'un chat-bot, on peut souhaiter diriger ces connexions vers une ferme de serveurs dédiée à cette tâche. Et c'est en réalité très simple.
+
+Quand un navigateur cherche à ouvrir une connexion WebSockets, il envoie une requête HTTP standard avec les en-têtes :
 
 ```
 Upgrade: websocket
@@ -344,7 +345,6 @@ Et sur cette route, on vient attacher une règle :
 | pattern | "websocket" (sensible aux majuscules / minuscules) |
 
 Il ne reste plus qu'à appliquer la configuration dans la zone concernée.
-
 
 ### Références
 
@@ -406,14 +406,14 @@ Cet appel permet de consulter le détail d'une route HTTP, connaissant son ident
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-Requête :
+- Requête :
 
 | Paramètre | Signification |
 | :--- | :--- |
 | serviceName | Identifiant de votre service Load Balancer |
 | routeId | Identifiant numérique de la route |
 
-Réponse :
+- Réponse :
 
 | Paramètre | Signification |
 | :--- | :--- |
@@ -613,7 +613,7 @@ Cet appel permet de lister l'ensemble des identifiants, noms d'affichage et type
 | :--- | :--- |
 | serviceName | Identifiant de votre service Load Balancer |
 
-Réponse
+- Réponse :
 
 | Paramètre | Signification |
 | :--- | :--- |
