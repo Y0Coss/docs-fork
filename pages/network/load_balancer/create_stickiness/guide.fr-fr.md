@@ -1,7 +1,7 @@
 ---
-title: 'Suivi des connexions'
+title: 'Suivi des connexions sur l’OVHcloud Load Balancer'
 excerpt: 'Ce guide explore les méthodes disponibles pour suivre les connexions sur l’OVHcloud Load Balancer.' 
-updated: 2025-11-19
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -117,4 +117,4 @@ Cette requête API est nécessaire pour déployer les modifications de configura
 
 ## Aller plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
