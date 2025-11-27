@@ -1,7 +1,7 @@
 ---
 title: Time2Chat, la messagerie conversationnelle par SMS pour les entreprises
 excerpt: Lancez vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09
-updated: 2025-11-25
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -57,7 +57,7 @@ Le service Time2Chat repose sur un modèle conversationnel, différent des envoi
 
 #### Conditions d'accès
 
-La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs d’un expéditeur SMS de type numéro virtuel commençant par « 06 » ou « 07 ».
+La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs d’un expéditeur SMS de type numéro virtuel (VLN) commençant par « 06 » ou « 07 ».
 
 Nous proposerons prochainement ce service à tous les clients possédant un [compte SMS OVHcloud](/links/telecom/sms).
 
