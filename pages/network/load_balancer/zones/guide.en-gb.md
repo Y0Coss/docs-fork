@@ -32,7 +32,7 @@ This guide details how to configure and utilize these multiple zones to achieve 
 
 Load balancing across multiple regions offers **maximum disaster recovery against widespread regional outages** and allows for worldwide entry points that significantly **reduce latency** by routing users to the **nearest server**. Most regions only have one availability zone, which means that working with several zones usually involves working with several regions.
 
-By leveraging **Anycast**, the OVHcloud Load Balancer can redirect requests coming from Region 1 to backend servers geographically close to Region 1, and similarly, directing requests coming from Region 2 to backend servers close to Region 2.
+By leveraging an **Anycast network**, the OVHcloud Load Balancer can redirect requests coming from a specific region to the geographically nearest backend servers.
 
 To achieve this, you need to specify a frontend in each zone that uses a cluster in the same zone. This will allow you to declare backend servers in different clusters per zone and to control which backend servers are used in which zone.
 
