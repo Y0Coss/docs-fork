@@ -1,7 +1,7 @@
 ---
 title: 'How to route an Additional IP'
 excerpt: 'Find out how to route an Additional IP and link it to the OVHcloud Load Balancer'
-updated: 2025-11-25
+updated: 2025-11-27
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ For more information on Additional IPs, please consult our [webpage](/links/bare
 
 The OVHcloud Load Balancer solution provides load balancing features for various protocols, including HTTP, HTTPS, TCP, and UDP. Linking it to an Additional IP allows you to switch your existing infrastructure to the Load Balancer without service interruption. Since you continue using the Additional IP, you avoid the need to change your public IP address and wait for DNS zone propagation. Using an additional IP means you avoid the need to change your service's IP address, and no longer have to wait for your DNS zone to propagate changes.
 
-For more information on the OVHcloud Load Balancer solution, please read our [Introduction to the OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation).
+For more information on the OVHcloud Load Balancer solution, please read our [Introduction to the OVHcloud Load Balancer](/pages/network/load_balancer/use_presentation) guide.
 
 **This guide explains how to use an Additional IP with the OVHcloud Load Balancer service.**
 
@@ -48,7 +48,7 @@ In this document, we will cover two distinct use cases:
 
 ### Add an Additional IP to the OVHcloud Load Balancer
 
-You can link these IPs to your OVHcloud Load Balancer via the [OVHcloud API](https://api.ovh.com).
+You can link these IPs to your OVHcloud Load Balancer via the [OVHcloud API](/links/api).
 The API call for this is:
 
 > [!api]
@@ -73,7 +73,7 @@ Regardless of the front-end type, you can define a list of dedicated Additional 
 
 **If you are creating a front-end:**
 
-From the [OVHcloud API](https://api.ovh.com), you can use the following calls to define one or more Additional IPs on a front-end during its creation:
+From the [OVHcloud API](/links/api), you can use the following calls to define one or more Additional IPs on a front-end during its creation:
 
 - HTTP protocol
 
@@ -98,7 +98,7 @@ From the [OVHcloud API](https://api.ovh.com), you can use the following calls to
 
 **If you are updating an existing front-end:**
 
-From the [OVHcloud API](https://api.ovh.com), you can use the following calls to define one or more Additional IPs on an existing front-end:
+From the [OVHcloud API](/links/api), you can use the following calls to define one or more Additional IPs on an existing front-end:
 
 - HTTP protocol
 
@@ -135,7 +135,7 @@ Once the front-end has been configured, click `Add`{.action} or `Modify`{.action
 
 Remember to deploy the configuration. There are two ways to do this:
 
-- via the `Status`{.action} section of the `Home`{.action} tab of your OVHcloud Control Panel, by clicking on the `(...)`{.action} button next to your Load Balancer's ID and selecting `Apply configuration`{.action}
+- via the `Status`{.action} section of the `Home`{.action} tab of your OVHcloud Control Panel, by clicking on the `...`{.action} button next to your Load Balancer's ID and selecting `Apply configuration`{.action}
 
 - via the reminder box in the OVHcloud Control Panel, which notifies you that the configuration has not been applied, by clicking `Apply configuration`{.action}.
 
