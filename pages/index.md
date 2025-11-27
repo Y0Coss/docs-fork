@@ -1905,6 +1905,7 @@
         + [SMS](products/web-cloud-messaging-sms)
             + [Getting started](web-cloud-messaging-sms-getting-started)
                 + [Launching your first SMS campaign](web_cloud/messaging/sms/ma_premiere_campagne_sms)
+                + [Time2Chat, la messagerie conversationnelle par SMS pour les entreprises](web_cloud/messaging/sms/time_2_chat)
             + [Configuration](web-cloud-messaging-sms-configuration)
                 + [Sending SMS messages](web-cloud-messaging-sms-configuration-sending-sms-messages)
                     + [Sending SMS messages via the OVHcloud Control Panel](web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client)
