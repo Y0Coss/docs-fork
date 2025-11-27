@@ -1,14 +1,16 @@
 ---
 title: "Configuring an OVHcloud Load Balancer with HTTP routes"
 excerpt: "Find out how to dynamically direct your requests to a specific farm"
-updated: 2025-11-14
+updated: 2025-11-26
 ---
 
 ## Objective
 
 The OVHcloud Load Balancer service redirects the front-end’s incoming traffic to the servers that make up the front-end’s default farm, or its default redirection.
 
-In some cases, you can go further and route, redirect, or block traffic according to a range of criteria. For example, in the case of an HTTP(S) service, you can filter traffic based on the HTTP method, the URL, or even the value of a cookie or header. In the OVHcloud Load Balancer service, these elements are called **routes**. A route is a specific action to perform if one or more conditions are met.
+In some cases, you can go further and route, redirect, or block traffic according to a range of criteria. For example, in the case of an HTTP(S) service, you can filter traffic based on the HTTP method, the URL, or even the value of a cookie or header. 
+
+In the OVHcloud Load Balancer service, these elements are called **routes**. A route is a specific action to perform if one or more conditions are met.
 
 **This guide will show you how to direct your requests dynamically to a specific farm using routes.**
 
@@ -17,7 +19,7 @@ In some cases, you can go further and route, redirect, or block traffic accordin
 - Have an [OVHcloud Load Balancer](/links/network/load-balancer) on an offer allowing the creation of routes.
 - Have access to the [OVHcloud API](/links/api).
 
-## In practice
+## Instructions
 
 > [!primary]
 >
@@ -34,7 +36,7 @@ For example, *IF* the URL _starts with_ '/wp-admin/' (1) *AND* the connection _i
 
 In this example, there are two rules :
 
-- the connection must come from an HTTP frontend (2) ;
+- the connection must come from an HTTP frontend (2);
 - its URL must start with the WordPress administration pages (1).
 
 There is an action associated with these rules: redirect to the HTTPS version of the page (3).
@@ -45,7 +47,7 @@ This is what is known as an "end action". That means if the rules are validated,
 
 Route management is only available through the [OVHcloud API](/links/api). It is only valid for the **http** and **tcp** protocols, and the path `/ipLoadbalancing/{serviceName}/{protocol}/route/`{.action} exposes the dedicated route API.
 
-The OVHcloud Load Balancer service route API has been specifically designed to be flexible, powerful, and scalable. It is organized around three main sections :
+The OVHcloud Load Balancer service route API has been specifically designed to be flexible, powerful, and scalable. It is organized around three main sections:
 
 1. API calls listing the available rules and actions.
 2. API calls listing the routes configured on your OVHcloud Load Balancer service.
@@ -62,11 +64,11 @@ When you want to configure a route or rules, the first thing to do is to consult
 - A route can only be attached to a single frontend.
 - A frontend can have several routes. In this case, the evaluation order depends on its type and weight.
 
-When a request arrives on your OVHcloud Load Balancer service, the routes are evaluated successively according to the following principles :
+When a request arrives on your OVHcloud Load Balancer service, the routes are evaluated successively according to the following principles:
 
-1. first, the **reject and rewrite routes**, then the **farm routes** ;
-2. within these categories, the routes are evaluated in **increasing weight order** ;
-3. if two routes have the same weight, the **first route created** is evaluated first ;
+1. first, the **reject and rewrite routes**, then the **farm routes**;
+2. within these categories, the routes are evaluated in **increasing weight order**;
+3. if two routes have the same weight, the **first route created** is evaluated first;
 4. only the **first action** of all validated rules is executed.
 
 ### Available rules and actions
@@ -108,12 +110,11 @@ With these basic principles on available actions and rules, and the route evalua
 
 For more information on these methods, you can consult the section " [Route Handling](#handling-routes) ", at the bottom of this guide.
 
-
 ## Examples
 
-To demonstrate the utility of routes, this section will offer some practical examples of the use of this technology for OVH's internal needs, without going into the details of the API calls.
+To demonstrate the utility of routes, this section will offer some practical examples of the use of this technology for OVHcloud's internal needs, without going into the details of the API calls.
 
-You will find the details of the API calls in the section " [Route Handling](#handling-routes) ", at the bottom of this guide and the following sections.
+You will find the details of the API calls in the section [Route Handling](#handling-routes), at the bottom of this guide and the following sections.
 
 ### Force HTTPS for WordPress login pages
 
@@ -121,12 +122,12 @@ The HTTPS protocol has become the norm. Its objective is to make all websites av
 
 Migrating a website to HTTPS requires work, especially to avoid [Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) problems. It may be interesting to migrate your website section by section, starting by securing the pages that send login credentials.
 
-An approach could be to rely on the beginning of WordPress URLs. By default, the URLs of WordPress login pages start with "/wp-login". We would therefore need to :
+An approach could be to rely on the beginning of WordPress URLs. By default, the URLs of WordPress login pages start with "/wp-login". We would therefore need to:
 
-- a route with a **redirection action** ;
+- a route with a **redirection action**;
 - a rule in this route that detects URLs starting with **"/wp-login"**.
 
-In practice, this gives a route as follows :
+In practice, this gives a route as follows:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -138,7 +139,7 @@ In practice, this gives a route as follows :
 | action.status | 302 for a temporary redirect, 301 for a permanent redirect |
 | action.target | "`https://\${host}\${path}\${arguments}`" to take the same host, path and arguments |
 
-On this route, we will attach a rule :
+On this route, we will attach a rule:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -163,14 +164,14 @@ This is the feature that made the web possible when it was in its infancy, with 
 
 For example, if your infrastructure is composed of a VPS for your website, an OVHcloud Load Balancer for SSL/TLS termination, and redirections to a maintenance page with a backup server in the farms, you would have needed an Additional IP per website, routed to your OVHcloud Load Balancer, and a frontend per IP in the past.
 
-With routes, you can share the same frontend and choose the server farm dynamically, thanks to the **[a-z]* field**.
+With routes, you can share the same frontend and choose the server farm dynamically, thanks to the *[a-z]* field.
 
-For this, you will need :
+For this, you will need:
 
-- a route per VHost ;
+- a route per VHost;
 - a rule per route detecting a specific domain.
 
-In practice, to route the domain **www.example.com**, this will give the following route :
+In practice, to route the domain **www.example.com**, this will give the following route:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -182,7 +183,7 @@ In practice, to route the domain **www.example.com**, this will give the followi
 | action.status | (empty) |
 | action.target | Identifier of the farm to which to direct this domain |
 
-And on this route, we will attach a rule :
+And on this route, we will attach a rule:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -204,7 +205,7 @@ However, what will happen if another client detects this and configures their do
 
 In such scenarios, the solution is to add a rule that **rejects requests if the domain is not a premium domain**. You can do this with a reject route and a rule.
 
-In practice, to reserve a frontend with a dedicated IP for the domain **www.example.com**, this will give the following route :
+In practice, to reserve a frontend with a dedicated IP for the domain **www.example.com**, this will give the following route:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -216,7 +217,7 @@ In practice, to reserve a frontend with a dedicated IP for the domain **www.exam
 | action.status | 403 |
 | action.target | (empty) |
 
-And on this route, we will attach a rule :
+And on this route, we will attach a rule:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -234,14 +235,14 @@ Finally, apply the configuration.
 
 On some specific infrastructures, certain requests must be routed to a specific farm. For example, to handle rare but data-intensive requests without impacting production, such as analytical requests that work on a read-only copy of the data with a server having a higher memory volume.
 
-If, for example, the request is sent :
+If, for example, the request is sent:
 
-- with the **POST** method ;
+- with the **POST** method;
 - on a URL matching **"^/.*/batch-analytics$"**.
 
 Then, you would need a route with two rules, one of which uses a regular expression.
 
-In practice, this gives a route as follows :
+In practice, this gives a route as follows:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -253,7 +254,7 @@ In practice, this gives a route as follows :
 | action.status | (empty) |
 | action.target | Identifier of the farm to which to direct these operations |
 
-And on this route, we will attach two rules :
+And on this route, we will attach two rules:
 
 | Field | Rule 1 | Rule 2 |
 | :--- | :--- | :--- |
@@ -275,12 +276,12 @@ When a site grows, you may want to set up a preproduction environment to validat
 
 Instead of setting up rules based on the domain name, you could set up rules based on the source IP address (for example, an enterprise proxy) and possibly a cookie for voluntary clients. These configurations can be detected with two routes on your OVHcloud Load Balancer service.
 
-For this example, we will consider :
+For this example, we will consider:
 
-- that the enterprise proxy can use the addresses 42.42.42.0/24 and the VPN uses 1.2.3.4/32 ;
+- that the enterprise proxy can use the addresses 42.42.42.0/24 and the VPN uses 1.2.3.4/32;
 - that the voluntary users have a "PreprodOptIn" cookie, the value of which is not important.
 
-In practice, you will need two identical routes :
+In practice, you will need two identical routes:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -292,7 +293,7 @@ In practice, you will need two identical routes :
 | action.status | (empty) |
 | action.target | Identifier of the preproduction farm |
 
-Next, we attach the following 2 rules, each on one of the routes (1 rule per route) :
+Next, we attach the following 2 rules, each on one of the routes (1 rule per route):
 
 | Field | Rule 1 | Rule 2 |
 | :--- | :--- | :--- |
@@ -312,14 +313,16 @@ All that remains is to apply the configuration in the concerned area.
 
 #### Route WebSockets to a dedicated farm
 
-When a site has interactive functions based on WebSockets such as a chatbot, you may want to direct these connections to a server farm dedicated to this task. And it is actually very simple. When a browser tries to open a WebSocket connection, it sends a standard HTTP request with the headers :
+When a site has interactive functions based on WebSockets such as a chatbot, you may want to direct these connections to a server farm dedicated to this task. In fact, it is quite simple.W
+
+When a browser tries to open a WebSocket connection, it sends a standard HTTP request with the headers:
 
 ```
 Upgrade: websocket
 Connection: Upgrade
 ```
 
-In practice, it is sufficient to detect the first header. This can be done very easily with a route and a rule :
+In practice, it is sufficient to detect the first header. This can be done very easily with a route and a rule:
 
 | Field | Value and description |
 | :--- | :--- |
@@ -406,14 +409,14 @@ This call allows you to view the details of an HTTP route, knowing its identifie
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-Request:
+- Request:
 
 | Parameter | Meaning |
 | :--- | :--- |
 | serviceName | Identifier of your Load Balancer service |
 | routeId | Numeric identifier of the route |
 
-Response:
+- Response:
 
 | Parameter | Meaning |
 | :--- | :--- |
@@ -426,7 +429,7 @@ Response:
 | action.target | Numeric identifier of the farm or associated URL pattern |
 | rules | List of rules that must be validated to trigger the action of the route. More details are available in the section " [Handling Rules](#handling-rules) ". |
 
-For more information on the actions handled and the format of the parameters, we invite you to consult the section " [Available actions](#available-actions) " further down in this guide.
+For more information on the actions handled and the format of the parameters, we invite you to consult the section "[Available actions](#available-actions)" further down in this guide.
 
 ##### **Modify a route**
 
@@ -613,7 +616,7 @@ This call allows you to list all the identifiers, display names and types ("http
 | :--- | :--- |
 | serviceName | Identifier of your Load Balancer service |
 
-Response
+- Response:
 
 | Parameter | Meaning |
 | :--- | :--- |
@@ -742,13 +745,13 @@ If a field is "null", it means no value is expected. If an invalid value is prov
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 >
 
-- Request :
+- Request:
 
 | Parameter | Meaning |
 | :--- | :--- |
 | serviceName | Identifier of your Load Balancer service |
 
-- Response :
+- Response:
 
 | Parameter | Meaning |
 | :--- | :--- |
@@ -759,7 +762,7 @@ If a field is "null", it means no value is expected. If an invalid value is prov
 | pattern | Type of expected value for the `pattern` field |
 | enum | List of possible values for the `pattern` field if it is an enumeration |
 
-The different types of `pattern` are :
+The different types of `pattern` are:
 
 | Value | Meaning |
 | :--- | :--- |
