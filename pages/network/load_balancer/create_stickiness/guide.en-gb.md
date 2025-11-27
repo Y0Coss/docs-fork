@@ -1,7 +1,7 @@
 ---
 title: 'Tracking connections'
 excerpt: 'This guide explores the methods available for tracking connections on the OVHcloud Load Balancer.'
-updated: 2025-11-19
+updated: 2025-11-27
 ---
 
 ## Objective
@@ -113,7 +113,7 @@ This API call is required to deploy the configuration changes to the Load Balanc
 |Setting|Meaning|
 |---|---|
 |serviceName*|The ID of your Load Balancer service|
-|zone|Name of the zone in which to deploy the configuration (e.g., "all" or "rbx")|
+|zone|Name of the zone in which to deploy the configuration (e.g. "all" or "rbx")|
 
 ## Go further
 
