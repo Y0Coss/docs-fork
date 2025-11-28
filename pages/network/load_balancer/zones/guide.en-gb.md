@@ -1,7 +1,7 @@
 ---
 title: How to configure the OVHcloud Load Balancer in multiple zones
 excerpt: Use zones to increase availability and decrease latency
-updated: 2025-11-19
+updated: 2025-11-28
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ This guide details how to configure and utilize these multiple zones to achieve 
 >
 > This behavior is specific to cross-continent setups involving APAC zones. Therefore, we do not recommend configuring your Load Balancer in this manner.
 >
-> You may find a list of OVHcloud regions on [our website](https://www.ovhcloud.com/en/about-us/global-infrastructure/regions/).
+> You may find a list of OVHcloud regions on [our website](/links/infrareg).
 >
 
 ## Requirements
@@ -39,10 +39,10 @@ To achieve this, you need to specify a frontend in each zone that uses a cluster
 ![Operation with several zones and several clusters](images/multi_zones_multi_backends.png){.thumbnail}
 *Diagram representing a load balancer distributing traffic across two regions*
 
-For example, if you have backend servers in the Gravelines (GRA) and Beauharnois (BHS) regions, you can order a Load Balancer service in the `GRA` and `BHS` zones and configure :
+For example, if you have backend servers in the Gravelines (GRA) and Beauharnois (BHS) regions, you can order a Load Balancer service in the `GRA` and `BHS` zones and configure:
 
-- A frontend in the GRA zone with as default cluster in the GRA zone which contains servers in the Gravelines datacenter
-- A frontend in the BHS zone with a default cluster in the BHS zone that contains servers in the Beauharnois datacenter
+- A frontend in the GRA zone with a default cluster in the GRA zone which contains servers in the Gravelines datacenter.
+- A frontend in the BHS zone with a default cluster in the BHS zone that contains servers in the Beauharnois datacenter.
 
 ### Multi-AZ regions
 
@@ -59,7 +59,7 @@ Load balancing across several Availability Zones (AZs) within the same region, i
 
 #### From the OVHcloud Control Panel
 
-You can order an additional zone from the [OVHcloud Control Panel](/links/manager). In the `Network`{.action} section, under `Network services`{.action,} select `Load Balancer`{.action}.
+You can order an additional zone from the [OVHcloud Control Panel](/links/manager). In the `Network`{.action} section, under `Network services`{.action}, click on `Load Balancer`{.action}.
 
 Select your Load Balancer, then in the `Home`{.action} tab and the `Configuration`{.action} menu, click `Add`{.action} in the "Availability zones" section.
 
@@ -82,30 +82,30 @@ To order a zone via the API, you first need to create a cart.
 > @api {v1} /order POST /order/cart
 >
 
-Please make a note of the cart ID ("cart"), it will be useful later in the order process.
+Please make a note of the cart ID ("cart"), it will be useful later in the ordering process.
 
-Then, assign the cart to your OVHcloud account via:
+Then, assign the cart to your OVHcloud account via the following call:
 
 > [!api]
 >
 > @api {v1} /order POST /order/cart/{cartId}/assign
 >
 
-You can list the options available on your Load Balancer service via:
+You can list the options available on your Load Balancer service via the following call:
 
 > [!api]
 >
 > @api {v1} /order GET /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-When you have found the option corresponding to the desired area, you can add it to your shopping cart ("cart") via:
+When you have found the option corresponding to the desired area, you can add it to your shopping cart ("cart") via the following call:
 
 > [!api]
 >
 > @api {v1} /order POST /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-Finally, you can validate your cart ("cart") via:
+Finally, you can validate your cart ("cart") via the following call:
 
 > [!api]
 > @api {v1} /order POST /order/cart/{cartId}/checkout

@@ -1,14 +1,14 @@
 ---
 title: Configurer le Load Balancer OVHcloud en plusieurs zones
 excerpt: Utilisez les zones pour augmenter la disponibilité et réduire la latence
-updated: 2025-11-19
+updated: 2025-11-28
 ---
 
 ## Objectif
 
-Le Load Balancer OVHcloud est un composant essentiel pour répartir le trafic réseau sur votre infrastructure. Pour garantir le meilleur niveau de service et une expérience utilisateur optimale, il est essentiel de déployer votre Load Balancer sur plusieurs zones de disponibilité (AZ). Lors de l'abonnement à un service Load Balancer OVHcloud, **vous pouvez choisir une ou plusieurs zones de disponibilité** dans lesquelles le service sera situé. Vous avez également la possibilité d'**ajouter des zones supplémentaires** à un service existant.
+Le Load Balancer OVHcloud est un composant essentiel pour répartir le trafic réseau sur votre infrastructure. Pour garantir le meilleur niveau de service et une expérience utilisateur optimale, il est essentiel de déployer votre Load Balancer sur plusieurs zones de disponibilité (AZ). Lors de l'abonnement à un service Load Balancer OVHcloud, **vous pouvez choisir une ou plusieurs zones de disponibilité** dans lesquelles le service sera situé. Vous avez également la possibilité **d'ajouter des zones supplémentaires** à un service existant.
 
-La configuration de votre Load Balancer OVHcloud sur plusieurs zones de disponibilité vous aidera à **accroître la fiabilité** de votre service Load Balancer en cas de panne d'une zone, ou à **réduire la latence** pour vos utilisateurs en dirigeant le trafic vers le service le plus proche d'eux.
+La configuration de votre service Load Balancer OVHcloud sur plusieurs zones de disponibilité vous aidera à **accroître la fiabilité** de votre service Load Balancer en cas de panne d'une zone, ou à **réduire la latence** pour vos utilisateurs en dirigeant le trafic vers le service le plus proche d'eux.
 
 Ce guide explique comment configurer et utiliser ces zones multiples afin d'obtenir des performances et une résilience améliorées.
 
@@ -18,7 +18,7 @@ Ce guide explique comment configurer et utiliser ces zones multiples afin d'obte
 >
 > Ce comportement est spécifique aux configurations transcontinentales impliquant des zones APAC. Par conséquent, nous ne recommandons pas de configurer votre Load Balancer de cette manière.
 >
-> Vous pouvez trouver une liste des régions OVHcloud sur [notre site web](https://www.ovhcloud.com/en/about-us/global-infrastructure/regions/).
+> Vous pouvez trouver une liste des régions OVHcloud sur [notre site web](/links/infrareg).
 >
 
 ## Prérequis
@@ -41,8 +41,8 @@ Pour cela, vous devez spécifier un frontend dans chaque zone utilisant une ferm
 
 Par exemple, si vous avez des serveurs backend dans les régions Gravelines (GRA) et Beauharnois (BHS), vous pouvez commander un service Load Balancer dans les zones `GRA` et `BHS` et configurer :
 
-- Un frontend dans la zone GRA avec une ferme par défaut dans la zone GRA contenant des serveurs dans le datacenter de Gravelines
-- Un frontend dans la zone BHS avec une ferme par défaut dans la zone BHS contenant des serveurs dans le datacenter de Beauharnois
+- Un frontend dans la zone GRA avec une ferme par défaut dans la zone GRA contenant des serveurs dans le datacenter de Gravelines.
+- Un frontend dans la zone BHS avec une ferme par défaut dans la zone BHS contenant des serveurs dans le datacenter de Beauharnois.
 
 ### Régions multi-AZ
 
@@ -73,7 +73,7 @@ Une commande sera générée, que vous devrez régler.
 
 ![Paiement de la commande de zone Load Balancer depuis le manager](images/Paybill_Zone_IPLB.png){.thumbnail}
 
-#### Depuis l'API
+#### Depuis l'API OVHcloud
 
 Pour commander une zone via l'API, vous devez d'abord créer un panier ("cart").
 
@@ -84,34 +84,34 @@ Pour commander une zone via l'API, vous devez d'abord créer un panier ("cart").
 
 Veuillez noter l'ID du panier ("cart"), il sera utile plus tard dans le processus de commande.
 
-Ensuite, attribuez le panier à votre compte OVHcloud via :
+Ensuite, attribuez le panier à votre compte OVHcloud via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /order POST /order/cart/{cartId}/assign
 >
 
-Vous pouvez lister les options disponibles sur votre service Load Balancer via :
+Vous pouvez lister les options disponibles sur votre service Load Balancer via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /order GET /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-Lorsque vous avez trouvé l'option correspondant à la zone souhaitée, vous pouvez l'ajouter à votre panier ("cart") via :
+Lorsque vous avez trouvé l'option correspondant à la zone souhaitée, vous pouvez l'ajouter à votre panier ("cart") via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /order POST /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-Enfin, vous pouvez valider votre panier ("cart") via :
+Enfin, vous pouvez valider votre panier ("cart") via l'appel suivant :
 
 > [!api]
 > @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
-N'oubliez pas de régler le formulaire de commande ainsi généré.
+N'oubliez pas de régler le bon de commande ainsi généré.
 
 ### Configurer votre frontend
 
@@ -133,4 +133,4 @@ N'oubliez pas de déployer la configuration. Pour cela, cliquez sur `Appliquer l
 
 ## Aller plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
