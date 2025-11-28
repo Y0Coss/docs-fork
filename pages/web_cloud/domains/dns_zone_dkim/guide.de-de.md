@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch DKIM-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und E-Mail-Dienste bei OVHcloud einrichten
-updated: 2025-11-19
+updated: 2025-11-28
 ---
 
 <style>
@@ -265,10 +265,6 @@ Klicken Sie auf das unten stehende Registerblatt, das zu Ihrem Angebot passt.
 >> >
 >> > Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, in dem der Domainname Ihres E-Mail-Dienstes gehostet wird. Gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Domainnamen`{.action} in der linken Spalte und wählen Sie den betreffenden Domainnamen aus.<br>
 >> > Wählen Sie das Registerblatt `DNS-Zone`{.action} und klicken Sie auf `Eintrag hinzufügen`{.action} im angezeigten Fenster. Wählen Sie `CNAME` und füllen Sie die Werte entsprechend den von Ihnen notierten Werten aus.
-
-Um DKIM zu aktivieren, klicken Sie einfach auf die rote Schaltfläche `DKIM` und dann auf `Bestätigen`{.action} im Aktivierungsdialog, der angezeigt wird.
-
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
 Die automatische DKIM-Aktivierung dauert zwischen 30 Minuten und 24 Stunden. Um zu prüfen, ob Ihr DKIM funktioniert, kehren Sie einfach in den Bereich zur Domainverwaltung zurück, der in den oben genannten Tabs erwähnt wird, und stellen Sie sicher, dass die Schaltfläche `DKIM` grün ist oder für Zimbra, dass `DKIM` keine Warnung mehr anzeigt.
 

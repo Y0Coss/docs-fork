@@ -1,7 +1,7 @@
 ---
 title: How to improve email security with a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email service
-updated: 2025-11-19
+updated: 2025-11-28
 ---
 
 <style>
@@ -265,10 +265,6 @@ Click on the tab below corresponding to your offer.
 >> >
 >> > From the [OVHcloud Control Panel](/links/manager) where the domain name of your email service is hosted, in the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name.<br>
 >> > Select the `DNS zone`{.action} tab and then click on `Add an entry`{.action} in the window that appears. Choose `CNAME` and complete the fields according to the values you have noted.
-
-To activate DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
-
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
 Automatic DKIM activation takes between 30 minutes and a maximum of 24 hours. To check that your DKIM is working, simply return to the domain management section mentioned in the tabs above and check that the `DKIM` badge is green, or for a Zimbra offer, that the `DKIM` tab no longer displays the warning icon.
 
