@@ -22,7 +22,7 @@ startup-program-general-information: General information
 startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Credits & Billing
 startup-program-technical-resources: Technical resources
-bare-metal-cloud-dedicated-servers: Dedizierte Server
+bare-metal-cloud-dedicated-servers: Dedicated Server
 bare-metal-cloud-dedicated-servers-key-concepts: Schlüsselkonzepte
 bare-metal-cloud-dedicated-servers-getting-started: Erste Schritte
 bare-metal-cloud-dedicated-servers-configuration: Konfiguration
@@ -30,11 +30,11 @@ bare-metal-cloud-dedicated-servers-configuration-system: System
 bare-metal-cloud-dedicated-servers-configuration-storage: Speicher
 bare-metal-cloud-dedicated-servers-configuration-network: Netzwerk
 bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
-bare-metal-cloud-dedicated-servers-configuration-deployments: Bereitstellungen
+bare-metal-cloud-dedicated-servers-configuration-deployments: Deployments
 bare-metal-cloud-dedicated-servers-migration: Migration
 bare-metal-cloud-dedicated-servers-tutorials: Tutorials
 bare-metal-cloud-dedicated-servers-security: Sicherheit
-bare-metal-cloud-dedicated-servers-security-hardening: Systemsicherheitshärtung
+bare-metal-cloud-dedicated-servers-security-hardening: Systemabsicherung
 bare-metal-cloud-dedicated-servers-security-backup: Backup
 bare-metal-cloud-dedicated-servers-security-network: Netzwerk
 bare-metal-cloud-dedicated-servers-troubleshooting: Störungsbehebung
@@ -43,7 +43,7 @@ bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Erste Schritte
 bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Verwalten von virtuellen Maschinen
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: OVHcloud Funktionen
-bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Dienste und Optionen von OVHcloud
+bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Dienste und Zusatzfunktionen von OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funktionen von VMware vSphere
 bare-metal-cloud-virtual-private-servers: Virtual Private Server
 bare-metal-cloud-virtual-private-servers-configuration-advanced-usage: Fortgeschrittene Anwendung
