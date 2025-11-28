@@ -23,17 +23,21 @@ startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Credits & Billing
 startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Serwery dedykowane
-bare-metal-cloud-dedicated-servers-advanced-usage: Zaawansowane użycie
+bare-metal-cloud-dedicated-servers-key-concepts: Kluczowe pojęcia
 bare-metal-cloud-dedicated-servers-getting-started: Pierwsze kroki
-bare-metal-cloud-dedicated-servers-managing-servers: Zarządzanie serwerami
-bare-metal-cloud-dedicated-servers-backup-restore: Tworzenie kopii zapasowych i przywracanie serwera
-bare-metal-cloud-dedicated-servers-miscellaneous: Różne
-bare-metal-cloud-dedicated-servers-network-and-ip-management: Sieć i adres IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID i dyski
-bare-metal-cloud-dedicated-servers-security: Bezpieczeństwo
-bare-metal-cloud-dedicated-servers-troubleshooting: Rozwiązywanie problemów
+bare-metal-cloud-dedicated-servers-configuration: Konfiguracja
+bare-metal-cloud-dedicated-servers-configuration-system: System
+bare-metal-cloud-dedicated-servers-configuration-storage: Pamięć masowa
+bare-metal-cloud-dedicated-servers-configuration-network: Sieć
+bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
+bare-metal-cloud-dedicated-servers-configuration-deployments: Wdrożenia
+bare-metal-cloud-dedicated-servers-migration: Migracja
 bare-metal-cloud-dedicated-servers-tutorials: Samouczki
-bare-metal-cloud-dedicated-servers-vrack: vRack
+bare-metal-cloud-dedicated-servers-security: Bezpieczeństwo
+bare-metal-cloud-dedicated-servers-security-hardening: Wzmacnianie bezpieczeństwa
+bare-metal-cloud-dedicated-servers-security-backup: Kopie zapasowe
+bare-metal-cloud-dedicated-servers-security-network: Sieć
+bare-metal-cloud-dedicated-servers-troubleshooting: Rozwiązywanie problemów
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Pierwsze kroki

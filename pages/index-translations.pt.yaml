@@ -23,17 +23,21 @@ startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Credits & Billing
 startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Servidores dedicados
-bare-metal-cloud-dedicated-servers-advanced-usage: Utilização avançada
+bare-metal-cloud-dedicated-servers-key-concepts: Conceitos chave
 bare-metal-cloud-dedicated-servers-getting-started: Primeiros passos
-bare-metal-cloud-dedicated-servers-managing-servers: Gestão dos servidores
-bare-metal-cloud-dedicated-servers-backup-restore: Fazer backup e restaurar um servidor
-bare-metal-cloud-dedicated-servers-miscellaneous: Varie
-bare-metal-cloud-dedicated-servers-network-and-ip-management: Rede e IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID e discos
-bare-metal-cloud-dedicated-servers-security: Segurança
-bare-metal-cloud-dedicated-servers-troubleshooting: Diagnóstico
+bare-metal-cloud-dedicated-servers-configuration: Configuração
+bare-metal-cloud-dedicated-servers-configuration-system: Sistema
+bare-metal-cloud-dedicated-servers-configuration-storage: Armazenamento
+bare-metal-cloud-dedicated-servers-configuration-network: Rede
+bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
+bare-metal-cloud-dedicated-servers-configuration-deployments: Implantação
+bare-metal-cloud-dedicated-servers-migration: Migração
 bare-metal-cloud-dedicated-servers-tutorials: Tutoriais
-bare-metal-cloud-dedicated-servers-vrack: vRack
+bare-metal-cloud-dedicated-servers-security: Segurança
+bare-metal-cloud-dedicated-servers-security-hardening: Hardening
+bare-metal-cloud-dedicated-servers-security-backup: Backup
+bare-metal-cloud-dedicated-servers-security-network: Rede
+bare-metal-cloud-dedicated-servers-troubleshooting: Diagnóstico
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Primeiros passos
