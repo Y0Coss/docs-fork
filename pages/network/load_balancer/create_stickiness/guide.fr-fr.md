@@ -1,6 +1,6 @@
 ---
 title: 'Suivi des connexions sur l’OVHcloud Load Balancer'
-excerpt: 'Ce guide explore les méthodes disponibles pour suivre les connexions sur l’OVHcloud Load Balancer.' 
+excerpt: 'Découvrez les méthodes disponibles pour suivre les connexions sur l’OVHcloud Load Balancer.'
 updated: 2025-11-27
 ---
 

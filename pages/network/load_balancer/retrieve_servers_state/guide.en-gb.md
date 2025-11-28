@@ -1,6 +1,6 @@
 ---
 title: "Retrieving server health status"
-excerpt: Retrieve server status
+excerpt: Find out how to retrieve a server health status
 updated: 2025-11-27
 ---
 
@@ -50,7 +50,7 @@ In the API, the server health status is available in the `serverState` table:
 
 #### Result
 
-![Result server health status via the API](images/result_serversStateAPI.png){.thumbnail}
+![Result server health status via the API](images/result_servers_state_api.png){.thumbnail}
 
 *The image above illustrates the result of the command in the API.*
 

@@ -1,6 +1,6 @@
 ---
 title: Récupération de l'état de santé des serveurs
-excerpt: Récupérer l'état des serveurs de votre Load Balancer OVHcloud
+excerpt: Découvrez comment récupérer l'état des serveurs de votre Load Balancer OVHcloud
 updated: 2025-11-27
 ---
 
@@ -50,7 +50,7 @@ Dans l'API, l'état de santé du serveur est disponible dans le tableau `serverS
 
 #### Résultat
 
-![Résultat état de santé du serveur via l'API](images/result_serversStateAPI.png){.thumbnail}
+![Résultat état de santé du serveur via l'API](images/result_servers_state_api.png){.thumbnail}
 
 *L'image ci-dessus illustre le résultat de la commande dans l'API.*
 
