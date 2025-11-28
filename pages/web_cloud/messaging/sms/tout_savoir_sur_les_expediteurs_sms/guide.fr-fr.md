@@ -55,7 +55,7 @@ Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer
 
 - **Ajouter manuellement des expéditeurs** : Vous devez saisir l'expéditeur souhaité, la description et une justification pour l'utilisation de cet expéditeur (4). Une pièce justificative est également nécessaire.
 
-**Exemple:** si vous souhaitez envoyer votre sms avec le nom de votre societé comme expéditeur, un justificatif de la societé vous sera demandé.
+**Exemple** : si vous souhaitez envoyer votre sms avec le nom de votre societé comme expéditeur, un justificatif de la societé vous sera demandé.
 
 La validation d'un expéditeur alphanumérique est effectuée en moyenne dans les 72 heures après sa création.
 

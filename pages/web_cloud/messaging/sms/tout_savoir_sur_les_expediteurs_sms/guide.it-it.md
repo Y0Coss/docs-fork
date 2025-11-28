@@ -52,11 +52,11 @@ Se desideri aggiungere un mittente SMS aggiuntivo, fai clic sul pulsante `Azioni
 
 ![invio sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 
-Una volta nella pagina di aggiunta, hai diverse opzioni per configurare un nuovo mittente SMS (3) :
+Una volta nella pagina di aggiunta, hai diverse opzioni per configurare un nuovo mittente SMS (3):
 
-- **Aggiungi manualmente i mittenti** : Devi inserire il mittente desiderato, una descrizione e una motivazione per l'utilizzo di questo mittente (4). È inoltre richiesta una documentazione a supporto.
+- **Aggiungi manualmente i mittenti**: Devi inserire il mittente desiderato, una descrizione e una motivazione per l'utilizzo di questo mittente (4). È inoltre richiesta una documentazione a supporto.
 
-**Esempio:** se desideri inviare il tuo SMS con il nome della tua azienda come mittente, ti verrà richiesta una documentazione relativa all'azienda.
+**Esempio**: se desideri inviare il tuo SMS con il nome della tua azienda come mittente, ti verrà richiesta una documentazione relativa all'azienda.
 
 La validazione di un mittente alfanumerico avviene in media entro 72 ore dopo la sua creazione.
 
@@ -65,9 +65,9 @@ La validazione di un mittente alfanumerico avviene in media entro 72 ore dopo la
 > Ti richiediamo una documentazione a supporto in base alla nostra politica di sicurezza. Si tratta di default di un documento intestato dell'azienda o del marchio, incluso l'autorizzazione di un responsabile con firma e timbro della stessa azienda, di un documento d'identità, o estratto Kbis se non si tratta di un marchio registrato.
 >
 
-- **Aggiungi mittenti a partire da dati personali** : Puoi richiedere un mittente basato sui dati del tuo account OVHcloud. Verrà visualizzata una lista a discesa dei mittenti disponibili.
+- **Aggiungi mittenti a partire da dati personali**: Puoi richiedere un mittente basato sui dati del tuo account OVHcloud. Verrà visualizzata una lista a discesa dei mittenti disponibili.
 
-- **Aggiungi mittenti a partire dai tuoi domini OVHcloud** : Puoi utilizzare un nome di dominio disponibile nel tuo account OVHcloud come mittente. Verrà visualizzata una lista a discesa dei mittenti disponibili.
+- **Aggiungi mittenti a partire dai tuoi domini OVHcloud**: Puoi utilizzare un nome di dominio disponibile nel tuo account OVHcloud come mittente. Verrà visualizzata una lista a discesa dei mittenti disponibili.
 
 #### Numero mobile virtuale
 

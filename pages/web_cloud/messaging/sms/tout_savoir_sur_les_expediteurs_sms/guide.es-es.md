@@ -52,11 +52,11 @@ Si desea añadir un remitente SMS adicional, haga clic en el botón `Acciones`{.
 
 ![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 
-Una vez en la página de añadido, dispone de varias opciones para configurar un nuevo remitente SMS (3) :
+Una vez en la página de añadido, dispone de varias opciones para configurar un nuevo remitente SMS (3):
 
-- **Añadir manualmente remitentes** : Debe introducir el remitente deseado, la descripción y una justificación para el uso de este remitente (4). También se requiere un documento justificativo.
+- **Añadir manualmente remitentes**: Debe introducir el remitente deseado, la descripción y una justificación para el uso de este remitente (4). También se requiere un documento justificativo.
 
-**Ejemplo:** si desea enviar su SMS con el nombre de su empresa como remitente, se le pedirá un justificativo de la empresa.
+**Ejemplo**: si desea enviar su SMS con el nombre de su empresa como remitente, se le pedirá un justificativo de la empresa.
 
 La validación de un remitente alfanumérico se realiza en promedio en 72 horas después de su creación.
 
@@ -65,9 +65,9 @@ La validación de un remitente alfanumérico se realiza en promedio en 72 horas 
 > Le pedimos un justificativo en el marco de nuestra política de seguridad. Por defecto, se trata de un papel con membrete de la empresa o de la marca, incluyendo la autorización de un responsable con firma y sello de esta misma empresa, de un documento de identidad, o extracto Kbis si no es una marca registrada.
 >
 
-- **Añadir remitentes a partir de datos personales** : Puede solicitar un remitente basado en las coordenadas de su cuenta OVHcloud. A continuación, se mostrará una lista desplegable de los remitentes disponibles.
+- **Añadir remitentes a partir de datos personales**: Puede solicitar un remitente basado en las coordenadas de su cuenta OVHcloud. A continuación, se mostrará una lista desplegable de los remitentes disponibles.
 
-- **Añadir remitentes a partir de sus dominios OVHcloud** : Puede utilizar un nombre de dominio disponible en su cuenta OVHcloud como remitente. A continuación, se mostrará una lista desplegable de los remitentes disponibles.
+- **Añadir remitentes a partir de sus dominios OVHcloud**: Puede utilizar un nombre de dominio disponible en su cuenta OVHcloud como remitente. A continuación, se mostrará una lista desplegable de los remitentes disponibles.
 
 #### Número de móvil virtual
 
