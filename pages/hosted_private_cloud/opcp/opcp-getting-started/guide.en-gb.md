@@ -26,7 +26,7 @@ Once you have used your login details to register, you will have access to the p
 ![Dashboard visible once identified](images/dashboard.png){.thumbnail}
 
 Your interface allows you to access
-* To the configuration of users within *Keycloak* via the menu under your login.
+* To the configuration of users within *Keycloak* via the IAM link under your login.
 * To the Openstack management interface, *Horizon*. It is a graphical web interface for managing the entire Openstack infrastructure. It allows the user to make use of the machine resources provided by the administrators. You can do this by creating, launching and stopping instances, configuring networks, and managing instance accessibility.
 
 The **OPCP** administration interface also groups together access to various APIs such as Keystone (authentication and identity management), Glance (image management), Nova (computing service), Neutron (network management), Ironic (bare metal hardware management), which can be used within your automations.
@@ -106,7 +106,7 @@ You can manage images of the OS available for creating instances. You can also d
 
 #### Key Pairs section
 
-To authenticate yourself via SSH on your machines after installation, you will need to use asymmetric encryption keys. This interface allows you to import the public keys that will be deployed during the installation of the dedicated servers to ensure an SSH connection.
+To authenticate yourself via SSH on your machines after installation, you will need to use asymmetric encryption keys. This interface allows you to import the public keys or create keypair that will be deployed during the installation of the dedicated servers to ensure an SSH connection.
 
 ![Screenshot of the Key Pairs section](images/horizon_sshkey_list.png){.thumbnail}
 
