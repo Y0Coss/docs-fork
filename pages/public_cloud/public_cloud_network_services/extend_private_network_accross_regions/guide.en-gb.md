@@ -324,17 +324,148 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> > **Required:** OVHcloud application key configured in your environment variables
 >> >
 >>
->> **1. Configure your SSH public key in the `terraform.tfvars` file.**
+>> **1. Create Terraform variable file `variables.tf`**
 >>
->> **2. **
+>> Define all variables needed for the deployment:
 >>
->> 
+>> ```hcl
+>> variable "region" {
+>>   type    = string
+>>   default = "RBX-A"
+>> }
+>>
+>> variable "private_network_vlan_id" {
+>>   type    = string
+>>   default = "1"
+>> }
+>>
+>> variable "bare_metal_server_name" {
+>>   type    = string
+>>   default = "ns3044214.ip-162-19-106.eu"
+>> }
+>>
+>> variable "ssh_public_key" {
+>>   type = string
+>> }
+>> ```
+>>
+>> **2. Create the private network file `private-network.tf`**
+>>
+>> ```hcl
+>> resource "ovh_cloud_project_network_private" "private-net" {
+>>   name    = "stretch-private-network-vlan-${var.private_network_vlan_id}"
+>>   vlan_id = var.private_network_vlan_id
+>>   regions = [var.region]
+>> }
+>>
+>> resource "ovh_cloud_project_network_private_subnet_v2" "private-subnet" {
+>>   name              = "stretch-private-subnet-vlan-${var.private_network_vlan_id}"
+>>   network_id        = tolist(ovh_cloud_project_network_private.private-net.regions_attributes[*].openstackid)[0]
+>>   region            = var.region
+>>   gateway_ip        = "10.${var.private_network_vlan_id}.0.1"
+>>   cidr              = "10.${var.private_network_vlan_id}.0.0/16"
+>>   dns_nameservers   = ["213.186.33.99"]
+>>   dhcp              = true
+>>   enable_gateway_ip = true
+>>
+>>   allocation_pools {
+>>     start = "10.${var.private_network_vlan_id}.0.2"
+>>     end   = "10.${var.private_network_vlan_id}.254.254"
+>>   }
+>> }
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > This file ensures a private network and subnet are created in the specified region, with DHCP enabled and a dedicated allocation pool.
+>> >
+>>
+>> 3. **Create the Bare Metal file `bare-metal.tf`**
+>>
+>> ```hcl
+>> data "ovh_dedicated_server" "server" {
+>>   service_name = var.bare_metal_server_name
+>> }
+>>
+>> resource "openstack_networking_port_v2" "bare_metal_port" {
+>>   name           = "bare-metal-${var.bare_metal_server_name}-port"
+>>   region         = var.region
+>>   network_id     = tolist(ovh_cloud_project_network_private.private-net.regions_attributes[*].openstackid)[0]
+>>   mac_address    = data.ovh_dedicated_server.server.vnis[index(data.ovh_dedicated_server.server.vnis.*.mode, "vrack")].name
+>>   admin_state_up = "true"
+>>
+>>   depends_on = [ovh_cloud_project_network_private_subnet_v2.private-subnet]
+>> }
+>>
+>> data "ovh_dedicated_installation_template" "template" {
+>>   template_name = "ubuntu2404-server_64"
+>> }
+>>
+>> resource "ovh_dedicated_server_reinstall_task" "server_reinstall" {
+>>   service_name = data.ovh_dedicated_server.server.service_name
+>>   os           = data.ovh_dedicated_installation_template.template.template_name
+>>
+>>   customizations {
+>>     hostname                 = data.ovh_dedicated_server.server.name
+>>     post_installation_script = base64encode(templatefile("templates/custom-bare-metal.tftpl", {
+>>       mac_address = data.ovh_dedicated_server.server.vnis[index(data.ovh_dedicated_server.server.vnis.*.mode, "vrack")].name
+>>       vlan_id     = var.private_network_vlan_id
+>>     }))
+>>     ssh_key                  = var.ssh_public_key
+>>   }
+>> }
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > This configuration attaches the Bare Metal server to the private network via a virtual port and executes a post-installation script to configure networking.
+>> >
+>>
+>> 4. **Create the post-installation template `templates/custom-bare-metal.tftpl`**
+>>
+>> ```bash
+>> cat <<EOF | sudo tee /etc/netplan/90-private-interface.yaml
+>> network:
+>>   version: 2
+>>   ethernets:
+>>     privint:
+>>       match:
+>>         macaddress: "${mac_address}"
+>>       dhcp4: false
+>>       dhcp6: false
+>>   vlans:
+>>     vlan${vlan_id}:
+>>       id: ${vlan_id}
+>>       link: privint
+>>       dhcp4: true
+>> EOF
+>>
+>> sudo chmod 600 /etc/netplan/90-private-interface.yaml
+>> sudo netplan apply
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > This script creates a netplan configuration for the private VLAN interface, enabling DHCP to assign an IP from the Public Cloud network.
+>> >
+>>
+>> **5. Apply the configuration**
+>>
+>> ```bash
+>> terraform apply
+>> ```
 >>
 >> > [!warning]
 >> >
 >> > Running the Terraform script may reinstall your Bare Metal server, so ensure you have backups or are prepared for a reinstall.
 >> >
 >>
+
+## Notes / Best Practices
+
+- Verify the VLAN ID matches between the Public Cloud network and Bare Metal server.
+- Confirm the Bare Metal server receives an IP from the Public Cloud DHCP service after installation.
+- Each server should use a dedicated IP allocation pool to avoid conflicts.
 
 ## Go further
 
