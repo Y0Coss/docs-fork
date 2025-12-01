@@ -1,6 +1,6 @@
 ---
 title: Web Cloud Databases - EOL und EOS Ankündigungen
-updated: 2025-10-21
+updated: 2025-12-01
 ---
 
 ## Ziel
@@ -17,7 +17,6 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |MariaDB 11.8|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MySQL 8.0|2025-03-17|2025-09-30|2026-04-01|
 |MySQL 8.4|Noch festzulegen|Noch festzulegen|Noch festzulegen|
-|PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
 |PostgreSQL 14|2025-02-12|2026-05-13|2026-11-12|
 |PostgreSQL 15|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |PostgreSQL 16|Noch festzulegen|Noch festzulegen|Noch festzulegen|
