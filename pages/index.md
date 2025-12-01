@@ -1039,6 +1039,7 @@
                 + [Managed Kubernetes - Responsibility model](public_cloud/containers_orchestration/managed_kubernetes/responsibility-model)
                 + [Orchestration product reversibility policy](account_and_service_management/reversibility/12-reversibility-orchestration)
                 + [Known limits](public_cloud/containers_orchestration/managed_kubernetes/known-limits)
+                + [Choosing the right OVHcloud Managed Kubernetes Plan, Free or Standard](public_cloud/containers_orchestration/managed_kubernetes/mks_plans)
                 + [Available and planned features](public_cloud/containers_orchestration/managed_kubernetes/available-upcoming-features)
                 + [Recommended external resources for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/recommended-external-resources)
                 + [Available datacenters, worker nodes and persistent storage flavors](public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors)
