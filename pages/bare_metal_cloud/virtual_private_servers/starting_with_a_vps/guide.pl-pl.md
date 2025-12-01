@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2024-11-22
+updated: 2025-09-11
 ---
 
 ## Wprowadzenie
@@ -14,6 +14,11 @@ Prywatny serwer wirtualny (VPS) to zwirtualizowany serwer dedykowany, który zap
 
 - Posiadanie serwera [VPS](/links/bare-metal/vps) w Panelu klienta OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+> [!warning]
+> Nie wszystkie funkcje VPS wymienione na tej stronie są dostępne w Local Zones OVHcloud.
+>
+> Aby uzyskać więcej informacji, zobacz [stronie WWW Local Zones](/links/bare-metal/vps-lz).
 
 ## W praktyce
 
@@ -54,7 +59,7 @@ Poniżej znajdziesz podstawowe informacje o Twoim serwerze VPS oraz o stanie us�
 >>
 > OS / Dystrybucja
 >>
->> est to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny spośród dostępnych opcji](#reinstalacjavps).
+>> est to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny spośród dostępnych opcji](#reinstallvps).
 >>
 >> > [!warning]
 >> >
@@ -65,7 +70,7 @@ Poniżej znajdziesz podstawowe informacje o Twoim serwerze VPS oraz o stanie us�
 >> > Jeśli zamówiłeś VPS **Windows**, możesz wybrać tylko system Windows do reinstalacji. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
 >>
 >>
->> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji [poniżej](#reinstalacjavps) znajdziesz w naszym przewodniku "[Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)".
+>> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji [poniżej](#reinstallvps) znajdziesz w naszym przewodniku "[Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)".
 >> 
 > Strefa / Lokalizacja
 >>
@@ -110,7 +115,7 @@ Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
 ### Kopia zapasowa
 
-Opcje te dotyczą dodatkowych usług VPS, które można zamówić w Panelu klienta.
+Opcje te odnoszą się do dodatkowych usług VPS służących do wykonywania kopii zapasowych i przywracania systemu.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +124,13 @@ Opcje te dotyczą dodatkowych usług VPS, które można zamówić w Panelu klien
 >>
 > Automatyczny backup
 >>
->> Opcja `Automatyczny backup` pozwala na zaplanowanie regularnych kopii zapasowych serwera VPS. W przeciwieństwie do snapshotów wykonywanych ręcznie, funkcja ta zachowuje kilka punktów przywracania w czasie, zapewniając w ten sposób ciągłą i automatyczną ochronę danych (z wyłączeniem dodatkowych dysków).
+>> Codzienna kopia zapasowa systemu jest tworzona automatycznie (z wyłączeniem dysków dodatkowych) i przechowywana przez 24 godziny (dotyczy wyłącznie usług zamówionych od 7 sierpnia 2025 r.). Po zamówieniu opcji **Automatyczny backup Premium** będziesz miał do dyspozycji 7 ostatnich codziennych kopii zapasowych serwera VPS do zamontowania i przywrócenia.  
+W porównaniu z migawkami ręcznymi funkcja ta zwiększa bezpieczeństwo danych, tworząc kilka punktów przywracania w regularnych odstępach czasu.
+>>
 
-Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-servers-backups).
+Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
-### Subskrypcja
+### Moja oferta
 
 W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania usługi. Wszystkie informacje na ten temat znajdziesz w odpowiedniej [dokumentacji](/products/account-and-service-management-managing-billing-payments-and-services).
 
@@ -135,10 +142,10 @@ W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania
 >
 > OVHcloud udostępnia Ci usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Do Twoich obowiązków należy zatem upewnienie się, że działają one prawidłowo.
 >
-> Celem niniejszego przewodnika jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług lub [naszą społecznością](https://community.ovh.com/en/).
+> Celem niniejszego przewodnika jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym](/links/partner) dostawcą usług lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
-### Reinstalacja serwera VPS <a name="reinstalacjavps"></a>
+### Reinstalacja serwera VPS <a name="reinstallvps"></a>
 
 Reinstalacja serwera VPS może zostać przeprowadzona z poziomu panelu klienta. Kliknij przycisk`...`{.action} po prawej stronie `OS / Distribution`{.action}, a następnie `Reinstaluj mój VPS`{.action}.
 
@@ -257,6 +264,8 @@ O ile nie określono inaczej, wszystkie operacje administracyjne opisane w dokum
 Należy pamiętać, że w przypadku wyboru **dystrybucji z aplikacją** (Plesk, cPanel, Docker) ogólne środki bezpieczeństwa mogą nie mieć zastosowania do Twojego systemu. Zapoznaj się z przewodnikami Pierwsze [kroki z wstępnie zainstalowanymi](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) aplikacjami i [wdrażaj cPanel na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), a także z oficjalną dokumentacją producenta.
 >
 
+Jeśli utraciłeś hasło użytkownika lub root, zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password), aby dowiedzieć się, jak je zresetować.
+
 <a name="winconnect"></a>
 
 #### VPS Windows
@@ -364,7 +373,7 @@ Po skonfigurowaniu Twojego serwera VPS, masz możliwość zabezpieczenia nazwy T
 
 Certyfikat SSL można zainstalować ręcznie, bezpośrednio na serwerze VPS. Zapoznaj się z oficjalną dokumentacją dotyczącą Twojej dystrybucji VPS.
 
-W przypadku bardziej zautomatyzowanego procesu OVHcloud oferuje również rozwiązanie SSL Gateway. Więcej informacji znajdziesz na [stronie produktu](https://www.ovh.pl/ssl-gateway/) lub w [przewodniku](/links/web/ssl-gateway) OVHcloud.
+W przypadku bardziej zautomatyzowanego procesu OVHcloud oferuje również rozwiązanie SSL Gateway. Więcej informacji znajdziesz na [stronie produktu](/links/web/ssl-gateway) lub w [przewodniku](/links/web/ssl-gateway) OVHcloud.
 
 ## Sprawdź również
 
@@ -373,5 +382,7 @@ W przypadku bardziej zautomatyzowanego procesu OVHcloud oferuje również rozwi�
 [Wprowadzenie do protokołów SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Dołącz do [grona naszych użytkowników](/links/community).
