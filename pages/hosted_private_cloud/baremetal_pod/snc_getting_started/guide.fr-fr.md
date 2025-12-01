@@ -40,7 +40,7 @@ L'interface graphique d'OpenStack Horizon offre la possibilité de réaliser dif
 
 #### Accès à l'interface d'administration OpenStack Horizon
 
-Depuis l'espace client de **Bare Metal Pod**, l’interface OpenStack Horizon est accessible via le lien dans le tableau de bord. 
+Depuis l'espace client de **Bare Metal Pod**, l’interface OpenStack Horizon est accessible via le lien dans le tableau de bord.
 
 ![Emplacement du raccourci vers Horizon](images/dashboard_login_horizon.png){.thumbnail}
 
@@ -52,8 +52,8 @@ Le menu latéral situé à gauche de l'interface offre un accès aux différents
 
 ![Menu de l’interface OpenStack Horizon](images/horizon_menu.png){.thumbnail}
 
-* **Projet** qui comprend quatre éléments : Aperçu (Overview), Accès à l'API (API Access), Compute et Réseau (Network). Ces éléments regroupent l'ensemble des fonctionnalités de gestion des serveurs dédiés, de leurs réseaux, dans les limites de quotas définis.
-* **Identité (Identity)** qui inclut les éléments Projets, Utilisateurs et identifiants d'application qui contiennent les fonctionnalités de gestion des utilisateurs.
+- **Projet** qui comprend quatre éléments : Aperçu (Overview), Accès à l'API (API Access), Compute et Réseau (Network). Ces éléments regroupent l'ensemble des fonctionnalités de gestion des serveurs dédiés, de leurs réseaux, dans les limites de quotas définis.
+- **Identité (Identity)** qui inclut les éléments Projets, Utilisateurs et identifiants d'application qui contiennent les fonctionnalités de gestion des utilisateurs.
 
 #### Vue projet
 
