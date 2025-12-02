@@ -1,8 +1,7 @@
 ---
-
 title: "Automatiser l'envoi de SMS avec n8n via l'API OVHcloud"
-excerpt: "Découvrez comment envoyer des SMS depuis n8n en utilisant l'API OVHcloud."
-updated: 2025-07-15
+excerpt: "Découvrez comment envoyer des SMS depuis n8n en utilisant l'API OVHcloud"
+updated: 2025-12-02
 ---
 
 ## Objectif
@@ -13,40 +12,36 @@ Ce guide vous explique comment intégrer l'API SMS d'OVHcloud dans **n8n**, afin
 
 ## Prérequis
 
-- Disposer d'un compte OVHcloud actif avec le service **SMS** activé
-- Des identifiants API OVHcloud (application key, application secret, consumer key)
-- Un numéro d’expéditeur (ex. : votre nom ou numéro valide déclaré dans le Manager OVHcloud)
-- Un VPS, un serveur ou un poste local avec [n8n](https://n8n.io/) installé et accessible
+- Disposer d'un [compte SMS OVHcloud](/links/telecom/sms) et d'un [expéditeur SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms) valide.
+- Disposer d'un [VPS OVHcloud](/links/bare-metal/vps), d'un serveur ou d'un poste local avec [n8n](https://n8n.io/) installé et accessible.
 
 ## En pratique
 
-Si vous n'avez pas encore installé N8N sur votre VPS, suivez les instructions de notre guide [Installer n8n sur un VPS OVHcloud]().
+Si vous n'avez pas encore installé [n8n](https://n8n.io/) sur votre VPS, suivez les instructions de notre guide « [Installer n8n sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_n8n_on_vps) ».
 
 ### Étape 1 – Générer les identifiants API OVHcloud
 
-Avant de pouvoir envoyer des SMS via l’API OVHcloud, récupérez les trois identifiants suivants :
+Avant de pouvoir envoyer des SMS via l’API OVHcloud, vous devez être en possession des trois identifiants suivants :
 
 - Application key
 - Application secret
 - Consumer key
 
-Consultez la section « Utilisation avancée : coupler les API OVHcloud avec une application » de notre guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) puis copiez et conservez les trois identifiants `Application key`, `Application secret` et `Consumer key`.
+Pour cela, consultez la section **Utilisation avancée : coupler les API OVHcloud avec une application** de notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) », puis copiez et conservez les trois identifiants `Application key`, `Application secret` et `Consumer key`.
 
 ### Étape 2 — Créer le workflow et les nœuds
-
-Schéma (dans cet ordre) :
 
 Connectez-vous à votre interface n8n puis cliquez sur le bouton **Create Workflow**.
 
 Créez les nœuds suivants (vides pour le moment) :
 
-- `Set - Credentials` : de type **Edit Fields (Set)**
-- `Set - Request Details` : de type **Edit Fields (Set)**
-- `Merge` : de type **Merge**
-- `Sign - Generate Signature` : de type **Code**
-- `SMS - Send` : de type **HTTP Request**
+- `Set - Credentials` : de type **Edit Fields (Set)**.
+- `Set - Request Details` : de type **Edit Fields (Set)**.
+- `Merge` : de type **Merge**.
+- `Sign - Generate Signature` : de type **Code**.
+- `SMS - Send` : de type **HTTP Request**.
 
-Pour plus de détails concernant la création de nœud, consultez la [documentation officielle de n8n](https://docs.n8n.io/integrations/creating-nodes/overview/).
+Pour plus de détails concernant la création de nœuds, consultez la [documentation officielle de n8n](https://docs.n8n.io/integrations/creating-nodes/overview/).
 
 Reliez les nœuds dans cet ordre :
 
@@ -60,13 +55,13 @@ Ajoutez les paramètres suivants dans votre nœud `Set - Credentials` :
 
 - Mode : `Manual Mapping`.
 
-| Nom          | Valeur         |
-|---------------|--------------------------|
-| applicationKey | "VOTRE_APPLICATION_KEY" |
-| consumerKey    | "VOTRE_CONSUMER_KEY"    |
-| serviceName    | "sms-ovh-123456"        |
-| applicationSecret | "AS_xxxxxxxxxxxxx" |
-| timestamp | {{ Math.floor(Date.now() / 1000) }} |
+| Nom               | Valeur                                                      |
+| ----------------- | ----------------------------------------------------------- |
+| applicationKey    | "VOTRE_APPLICATION_KEY"                                     |
+| consumerKey       | "VOTRE_CONSUMER_KEY"                                        |
+| serviceName       | "VOTRE_COMPTE_SMS_OVHCLOUD" (par exemple : "sms-ab12345-1") |
+| applicationSecret | "VOTRE_APPLICATION_SECRET"                                  |
+| timestamp         | {{ Math.floor(Date.now() / 1000) }}                         |
 
 ### Étape 4 — Paramétrer le nœud `Set – Request Details`
 
@@ -83,14 +78,14 @@ Paramétrez le nœud `Set - Request Details` :
   "noStopClause": true,
   "priority": "high",
   "receivers": ["+33612345678"],
-  "sender": "SENDER"
+  "sender": "Your_sender"
 }
 ```
 
-Assurez-vous :
-
-- D'utiliser un numéro au format international (ex. : +336...).
-- D'avoir défini votre expéditeur dans votre compte OVHcloud. Pour tester sans déclarer d'expéditeur, remplacez `"sender": "SENDER"` par `"senderForResponse": true`.
+> [!primary]
+>
+> - Le numéro du destinataire (`receivers`) doit être au format international et commencer par exemple par « +336 » ou « +337 » pour un numéro de mobile français.
+> - [L'expéditeur doit être défini dans votre compte OVHcloud](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms). Pour réaliser un test sans déclarer d'expéditeur et utiliser un numéro court, remplacez `"sender": "Your_sender"` par `"senderForResponse": true`.
 
 ### Étape 5 — Paramétrer le nœud `Merge`
 
@@ -100,7 +95,7 @@ Paramétrez le nœud `Merge` :
 - Combine by : `Position`.
 - Number of Inputs : `2`.
 
-Reliez `Set - Credentials` en **Input 1** et `Set - Request Details` en **Input 2**.
+Reliez `Set - Credentials` en **Input 1** et `Set - Request Details` en **Input 2**.<br>
 En sortie (output), vous devez avoir au même niveau : `applicationKey`, `applicationSecret`, `consumerKey`, `serviceName`, `timestamp` et `body`.
 
 ### Étape 6 — Paramétrer le nœud `Sign – Generate Signature`
@@ -143,7 +138,7 @@ function sha1(input) {
   return (hex(H0)+hex(H1)+hex(H2)+hex(H3)+hex(H4)).toLowerCase();
 }
 
-// -- SIGNATURE OVH --
+// -- SIGNATURE OVHcloud --
 const j = $json;
 const method = 'POST';
 // Utilise l'endpoint EU standard recommandé:
@@ -160,7 +155,7 @@ return { json: { ...j, url, bodyString, timestamp, signature } };
 
 > [!warning]
 >
-> N'utilisez pas de **HMAC** ici (OVH attend8 `"$1$" + SHA1(AppSecret + … + Timestamp)`). Le paramètre `bodyString` est **exactement** le JSON qui sera envoyé ensuite (pas d’autre `stringify`). L’URL signée doit être **strictement identique** à celle de l’envoi (même host, pas de `/` final en plus).
+> N'utilisez pas de **HMAC** ici (OVHcloud attend `"$1$" + SHA1(AppSecret + … + Timestamp)`). Le paramètre `bodyString` est **exactement** le JSON qui sera envoyé ensuite (pas d’autre `stringify`). L’URL signée doit être **strictement identique** à celle de l’envoi (même host, pas de `/` final en plus).
 
 ### Étape 7 — Paramétrer le nœud `SMS - Send`
 
@@ -174,21 +169,21 @@ Paramétrez le nœud `SMS - Send` :
 
 Ajoutez les paramètres de header suivants :
 
-| Nom          | Valeur          |
-|---------------|--------------------------|
-| Content-Type | application/json |
+| Nom                | Valeur                     |
+| ------------------ | -------------------------- |
+| Content-Type       | application/json           |
 | X-Ovh-Application  | {{$json.applicationKey}}   |
-| X-Ovh-Consumer    | {{$json.consumerKey}}   |
-| X-Ovh-Timestamp    | {{$json.timestamp}}   |
-| X-Ovh-Signature    | {{$json.signature}}   |
+| X-Ovh-Consumer     | {{$json.consumerKey}}      |
+| X-Ovh-Timestamp    | {{$json.timestamp}}        |
+| X-Ovh-Signature    | {{$json.signature}}        |
 
 Activez le `Send Body` et ajoutez les paramètres de body suivants :
 
-| Nom          | Valeur          |
-|---------------|--------------------------|
-| Body Content Type | Raw |
-| Content Type  | application/json   |
-| Body  | {{$json.bodyString}}   |
+| Nom               | Valeur               |
+| ----------------- | -------------------- |
+| Body Content Type | Raw                  |
+| Content Type      | application/json     |
+| Body              | {{$json.bodyString}} |
 
 ### Tester votre workflow
 
@@ -208,21 +203,21 @@ Le message est alors transmis via l’API OVHcloud à votre destinataire.
 
 - L’URL signée est différente de l'URL envoyée (host différent, `/` final en trop).
 - Le body signé est différent du body envoyé (re-`stringify`, espaces, ordre, etc.).
-- L'horloge locale est trop décalée. Utilisez plutôt l’heure serveur OVH (voir la partie [Industrialisation et sécurité](#industrialisation)).
+- L'horloge locale est trop décalée. Utilisez plutôt l’heure serveur OVHcloud (voir la partie [Industrialisation et sécurité](#industrialisation)).
 
 #### **Sms sender ... does not exist (403)**
 
-Le `sender` (expéditeur) n’est pas déclaré/validé dans votre espace client OVHcloud. Testez avec `senderForResponse: true` ou validez votre émetteur.
+Le `sender` (expéditeur) n’est pas déclaré/validé dans votre espace client OVHcloud. Testez avec `"senderForResponse": true` ou validez votre expéditeur.
 
 #### **Bad Request**
 
 - Vérifiez dans chaque nœud le nom et la valeur de vos paramètres.
 - Assurez-vous que les headers et les body soient complets.
-- Vérifiez que l'URL du nœud Send - SMS respecte bien le format suivant : `https://eu.api.ovh.com/1.0/sms/sms-ab12345/jobs`
+- Vérifiez que l'URL du nœud `SMS - Send` respecte bien le format suivant : `https://eu.api.ovh.com/1.0/sms/sms-ab12345-1/jobs`
 
 #### **Erreurs de nœud Code**
 
-- N'utilisez pas de `require('crypto')` dans n8n mais plutôt **SHA-1 pur Javascript** ci-dessus.
+- N'utilisez pas de `require('crypto')` dans n8n mais plutôt **SHA-1 pur JavaScript** ci-dessus.
 - Utilisez le mode *par item* et évitez d'appeler `$input.all()` dans votre code.
 
 ### Industrialisation et sécurité <a name="industrialisation"></a>
@@ -238,7 +233,7 @@ Ajoutez un nœud de type **HTTP Request** avant la signature :
 
 #### Ne pas faire transiter l’`applicationSecret`
 
-- Stockez-le comme **variable d’environnement** (ex. `OVH_APP_SECRET`) et lisez-le dans le nœud de type Code (Sign - Generate Signature) via `$env.OVH_APP_SECRET`, ou via la fonctionnalité **Secrets/Credentials** de n8n.
+- Stockez-le comme **variable d’environnement** (par exemple : `OVH_APP_SECRET`) et lisez-le dans le nœud de type Code (Sign - Generate Signature) via `$env.OVH_APP_SECRET`, ou via la fonctionnalité **Secrets/Credentials** de n8n.
 - À défaut, **ne retournez jamais** le secret en sortie du nœud.
 
 #### Gestion des caractères
