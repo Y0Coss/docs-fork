@@ -1,7 +1,7 @@
 ---
 title: "Gestion et reconstruction d'un RAID logiciel sur les serveurs utilisant le mode de démarrage UEFI"
 excerpt: Découvrez comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur un serveur utilisant le mode de démarrage UEFI
-updated: 2025-12-02
+updated: 2025-12-03
 ---
 
 ## Objectif
