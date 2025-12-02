@@ -23,17 +23,21 @@ startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Credits & Billing
 startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Servidores dedicados
-bare-metal-cloud-dedicated-servers-advanced-usage: Utilização avançada
+bare-metal-cloud-dedicated-servers-key-concepts: Conceitos chave
 bare-metal-cloud-dedicated-servers-getting-started: Primeiros passos
-bare-metal-cloud-dedicated-servers-managing-servers: Gestão dos servidores
-bare-metal-cloud-dedicated-servers-backup-restore: Fazer backup e restaurar um servidor
-bare-metal-cloud-dedicated-servers-miscellaneous: Varie
-bare-metal-cloud-dedicated-servers-network-and-ip-management: Rede e IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID e discos
-bare-metal-cloud-dedicated-servers-security: Segurança
-bare-metal-cloud-dedicated-servers-troubleshooting: Diagnóstico
+bare-metal-cloud-dedicated-servers-configuration: Configuração
+bare-metal-cloud-dedicated-servers-configuration-system: Sistema
+bare-metal-cloud-dedicated-servers-configuration-storage: Armazenamento
+bare-metal-cloud-dedicated-servers-configuration-network: Rede
+bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
+bare-metal-cloud-dedicated-servers-configuration-deployments: Implantação
+bare-metal-cloud-dedicated-servers-migration: Migração
 bare-metal-cloud-dedicated-servers-tutorials: Tutoriais
-bare-metal-cloud-dedicated-servers-vrack: vRack
+bare-metal-cloud-dedicated-servers-security: Segurança
+bare-metal-cloud-dedicated-servers-security-hardening: Hardening
+bare-metal-cloud-dedicated-servers-security-backup: Backup
+bare-metal-cloud-dedicated-servers-security-network: Rede
+bare-metal-cloud-dedicated-servers-troubleshooting: Diagnóstico
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Primeiros passos
@@ -81,6 +85,8 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migraçã
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Primeiros passos
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Recursos adicionais
+hosted-private-cloud-baremetal-pod: Bare Metal Pod
+hosted-private-cloud-baremetal-pod-getting-started: Primeiros passos
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Conceitos
 hosted-private-cloud-sap-ovhcloud-getting-started: Primeiros passos
@@ -170,27 +176,29 @@ public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
+public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
 public-cloud-data-analytics-kafka-guides: Kafka - User guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
 public-cloud-databases-cassandra: Cassandra
 public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
-public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
+public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
+public-cloud-compute-key-concepts: Conceitos-chave
 public-cloud-compute-getting-started: Introdução
-public-cloud-compute-general-information: Informações gerais
-public-cloud-compute-project-management: Gestão do projeto
-public-cloud-compute-instance-management: Gestão das instâncias
-public-cloud-compute-instance-management-getting-started: Gestão das instâncias - Introdução
-public-cloud-compute-instance-management-control-panel: Gestão a partir da Área de Cliente OVHcloud
-public-cloud-compute-instance-management-horizon: Gestão a partir do Horizon
-public-cloud-compute-instance-management-openstack: Gestão via OpenStack API
-public-cloud-compute-block-storage: Block Storage
+public-cloud-compute-configuration: Configuration
+public-cloud-compute-configuration-project-management: Gestão do projeto
+public-cloud-compute-configuration-instance-management: Gestão das instâncias
+public-cloud-compute-configuration-instance-management-horizon: Gestão a partir do Horizon
+public-cloud-compute-configuration-instance-management-openstack: Gestão via OpenStack API
 public-cloud-compute-tutorials: Tutoriais
+public-cloud-compute-migration: Migração
+public-cloud-compute-security: Segurança
+public-cloud-compute-Troubleshooting: Diagnóstico
+public-cloud-compute-additional-resources: Recursos adicionais
 public-cloud-cross-functional: Public Cloud - Informações gerais
 public-cloud-cross-functional-getting-started: Introdução
 public-cloud-cross-functional-general-information: Informações gerais
@@ -204,13 +212,23 @@ public-cloud-cross-functional-infrastructure: Infraestrutura
 public-cloud-cross-functional-billing-information: Informações de faturação
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-general-information: General information
-public-cloud-storage-object-storage-general-guides-to-start: General guides to start
-public-cloud-storage-object-storage-tutorials: Tutorials
-public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-object-storage-s3: S3 compatible
+public-cloud-storage-object-storage-s3-key-concepts: Conceitos
+public-cloud-storage-object-storage-s3-getting-started: Introdução
+public-cloud-storage-object-storage-s3-configuration: Configuração
+public-cloud-storage-object-storage-s3-migration: Migração
+public-cloud-storage-object-storage-s3-tutorials: Tutoriais
+public-cloud-storage-object-storage-s3-security: Segurança
+public-cloud-storage-object-storage-s3-troubleshooting: Diagnóstico
+public-cloud-storage-object-storage-s3-additional-resources: Recursos adicionais
+public-cloud-storage-object-storage-swift: Swift
+public-cloud-storage-object-storage-swift-getting-started: Introdução
+public-cloud-storage-object-storage-swift-configuration: Configuração
+public-cloud-storage-object-storage-swift-migration: Migração
+public-cloud-storage-object-storage-swift-tutorials: Tutoriais
+public-cloud-storage-object-storage-swift-security: Segurança
+public-cloud-storage-object-storage-swift-troubleshooting: Diagnóstico
+public-cloud-storage-object-storage-swift-additional-resources: Recursos adicionais
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
 public-cloud-storage-file-storage: File Storage
@@ -341,13 +359,23 @@ web-cloud-hosting-tutorials-cloud-web: Tutoriais Cloud Web
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeiros passos
 storage-object-storage: Object Storage
-storage-object-storage-general-information: General information
-storage-object-storage-general-guides-to-start: General guides to start
-storage-object-storage-tutorials: Tutorials
-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+storage-object-storage-s3: S3 compatible
+storage-object-storage-s3-key-concepts: Conceitos
+storage-object-storage-s3-getting-started: Introdução
+storage-object-storage-s3-configuration: Configuração
+storage-object-storage-s3-migration: Migração
+storage-object-storage-s3-tutorials: Tutoriais
+storage-object-storage-s3-security: Segurança
+storage-object-storage-s3-troubleshooting: Diagnóstico
+storage-object-storage-s3-additional-resources: Recursos adicionais
+storage-object-storage-swift: Swift
+storage-object-storage-swift-getting-started: Introdução
+storage-object-storage-swift-configuration: Configuração
+storage-object-storage-swift-migration: Migração
+storage-object-storage-swift-tutorials: Tutoriais
+storage-object-storage-swift-security: Segurança
+storage-object-storage-swift-troubleshooting: Diagnóstico
+storage-object-storage-swift-additional-resources: Recursos adicionais
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
 storage-file-storage-ha-nas: HA-NAS

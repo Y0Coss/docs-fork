@@ -107,4 +107,6 @@ Les nouveaux services liés à votre nouvelle offre Pro seront accessibles une f
 
 ## Aller plus loin
 
+[VoIP / Accès Internet - Déroulement d'un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma)
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).
