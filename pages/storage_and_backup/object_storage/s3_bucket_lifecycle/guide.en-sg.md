@@ -656,7 +656,7 @@ In this scenario, there are two rules that direct OVHcloud Object Storage to per
 
 ### Using the CLI
 
-As a prerequisite, you must have a bucket containing data on which you want to apply the lifecycle configuration and have the necessary permissions (by default the bucket owner or the **s3:putLifecycleConfiguration** permission given via a user access policy) to do so.
+As a prerequisite, you must have a bucket containing data on which you want to apply the lifecycle configuration and have the necessary permissions (by default the bucket owner or the `s3:putLifecycleConfiguration` permission given via a user access policy) to do so.
 
 /// details | Create a lifecycle configuration file using your favorite editor.
 
