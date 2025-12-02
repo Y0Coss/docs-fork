@@ -6,6 +6,7 @@ disable_languages:
 - fr-ca
 - en-ca
 - en-asia
+- en-in
 - en-au
 - en-sg
 - en-us
