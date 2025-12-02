@@ -52,12 +52,11 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 Le tableau ci-dessous vous indique les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM (Mo)|Taille du volume (Go)|Volumes|Snapshots|Taille des sauvegardes (Go)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM (Mo)|Taille du volume (Go)|Volumes|Sauvegarde|Taille des sauvegardes (Go)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
-|10 VMs|10|34|430080|20000|100|600|60000|15|5|2|
 |20 VMs|20|40|430080|20000|200|1200|120000|30|10|4|
 |50 VMs|50|64|507904|20000|500|3000|300000|75|25|10|
-|100 VMs|100|128|1015808|40000|1000|6000|600000|300|10|10|
+|100 VMs|100|128|1015808|40000|1000|6000|600000|300|50|10|
 |200 VMs|200|512|4063232|80000|2000|12000|1200000|600|50|50|
 
 Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre paiement sera pris en compte dans les plus brefs délais.
@@ -70,7 +69,7 @@ Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre pai
 
 #### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
 
-Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Votre quota sera augmenté en fonction de votre utilisation et de critères internes.
+Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera relevé en fonction de votre utilisation réelle (si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs), ainsi que sur la base d’un ensemble de critères internes et financiers.
 
 Veuillez noter que le processus n'est pas immédiat. Le quota de ressources est augmenté au fil du temps.
 

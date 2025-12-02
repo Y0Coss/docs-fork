@@ -53,12 +53,11 @@ Next, click on the drop down arrow next to "Select the volume" to view the list 
 
 The table below shows the resources you get for each quota:
 
-|Quota|Instances|CPU/Cores|RAM (MB)|Volume Size (GB)|Volumes|Snapshots|Backup Size (GB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM (MB)|Volume Size (GB)|Volumes|Backup|Backup Size (GB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
-|10 VMs|10|34|430080|20000|100|600|60000|15|5|2|
 |20 VMs|20|40|430080|20000|200|1200|120000|30|10|4|
 |50 VMs|50|64|507904|20000|500|3000|300000|75|25|10|
-|100 VMs|100|128|1015808|40000|1000|6000|600000|300|10|10|
+|100 VMs|100|128|1015808|40000|1000|6000|600000|300|50|10|
 |200 VMs|200|512|4063232|80000|2000|12000|1200000|600|50|50|
 
 
@@ -73,7 +72,7 @@ Once you have selected your volume, click on `Confirm`{.action}. Your payment wi
 
 #### Increasing your resources quota automatically with the "Auto-scaling quota" feature
 
-This option allows you to request an automatic and gradual increase of your resources quota. Your quota will be increased depending on your usage, and based on a certain number of internal criteria.
+This option allows you to request an automatic and gradual increase of your resource quota. The quota will be raised based on your actual usage (if you exceed 60% of your current quota over 30 consecutive days), as well as on a set of internal and financial criteria.
 
 This is not an instant process and the resources quota are increased over the course of time.
 
