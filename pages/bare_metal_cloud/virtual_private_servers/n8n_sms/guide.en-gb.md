@@ -12,8 +12,8 @@ This guide explains how to integrate the OVHcloud SMS API into **n8n**, in order
 
 ## Requirements
 
-- Have an [OVHcloud SMS account](/links/telecom/sms) and a valid [SMS sender](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms).
-- Have an [OVHcloud VPS](/links/bare-metal/vps), a server, or a local machine with [n8n](https://n8n.io/) installed and accessible.
+- An [OVHcloud SMS account](/links/telecom/sms) and a valid [SMS sender](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms).
+- An [OVHcloud VPS](/links/bare-metal/vps), a server, or a local machine with [n8n](https://n8n.io/) installed and accessible.
 
 ## Instructions
 
