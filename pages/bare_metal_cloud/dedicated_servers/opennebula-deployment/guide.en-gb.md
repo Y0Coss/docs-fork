@@ -6,17 +6,17 @@ updated: 2025-11-18
 
 ## Introduction
 
-OpenNebula is a powerful, open-source cloud management platform (CMP) designed to manage and provision virtualized infrastructure.
+OpenNebula is a powerful, open-source **Cloud Management Platform** (CMP) designed to manage and provision virtualized infrastructure.
 
-It acts as an orchestrator, turning physical infrastructure into a managed IaaS (Infrastructure as a Service) cloud that is accessible via a unified control interface. It supports major hypervisors and allows for hybrid deployments by integrating with public cloud providers, such as OVHcloud.
+Acting as an orchestrator, it turns physical infrastructure into a managed **Infrastructure as a Service** (IaaS) cloud, accessible via a unified control interface. It supports major hypervisors and allows for hybrid deployments by integrating with public cloud providers, such as OVHcloud.
 
-OpenNebula supports the deployment of its solution on OVHcloud infrastructure, which results in a cloud environment that is validated as part of the **OpenNebula Cloud-Ready Certification Program**.
+The deployment of OpenNebula on OVHcloud infrastructure is validated as part of the **OpenNebula Cloud-Ready Certification Program**.
 
-To streamline this process, OpenNebula provides [a set of **Ansible playbooks** called Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud) for automated deployment and verification, **which you will need to use** in this guide.
+To streamline this process, OpenNebula provides a set of **Ansible playbooks** called [Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud) for automated deployment and verification. **You will use these playbooks** throughout this guide.
 
 ## Objective
 
-This guide details the complete path to creating an OpenNebula Hosted Cloud on OVHcloud, including the custom architecture and hardware specifications.
+This guide details the complete process of creating an OpenNebula Hosted Cloud on OVHcloud, including the custom architecture and hardware specifications.
 
 Following this guide, you will be able to:
 
@@ -29,30 +29,71 @@ Following this guide, you will be able to:
 
 - **Two** [dedicated servers](/links/bare-metal/bare-metal) from the Scale or High Grade ranges,
 - An active [vRack](/links/network/vrack) service,
-- A public block of Additional IP addresses, sized according to your needs,
+- A public block of [Additional IP](/links/network/additional-ip) addresses, sized according to your needs,
 - Access to the [OVHcloud Control Panel](/links/manager).
+
+> [!Primary]
+>
+> The reference OpenNebula deployment uses the following configuration:
+> 
+> | Hardware specifications | |
+> |:---|:---|
+> | Processor | AMD EPYC GENOA 9124 - 16 cores / 32 threads - 3GHz/3.6GHz |
+> | Memory | 128GB DDR5 ECC 4800MHz |
+> | Storage | 2x SSD NVMe 960GB Datacenter Class Soft RAID |
+> | Public bandwidth | 2 adapters, 5Gbit/s unmetered and guaranteed |
+> | Private bandwidth | 2 adapters, 50Gbit/s unmetered and guaranteed|
+>
+> | Software specifications | |
+> |:---|:---|
+> | OpenNebula version | 7.0 |
+> | Frontend node count | 1 |
+> | Frontend node configuration | Ubuntu 24.04 LTS |
+> | Virtualization node count| 2 (First node co-hosts frontend application) |
+> | Virtualisation node configuration | Ubuntu 24.04 LTS - KVM Hypervisor |
+> 
+> Servers from the [Scale range](/links/bare-metal/scale) are suitable for small to medium cloud environments.
+> 
+> Servers from the [High Grade range](/links/bare-metal/hg) are more appropriate for heavier production workloads.
+>
+> For more information about scaling, please consult the [OpenNebula guide for Scalability Testing and Tuning](https://docs.opennebula.io/7.0/product/control_plane_configuration/large-scale_deployment/scalability/).
 
 ## Instructions
 
-### Setting up your infrastructure <a name="Infrastructure_Provisioning"></a>
+### Step 1 - Setting up your OVHcloud infrastructure <a name="Infrastructure_Provisioning"></a>
 
 First, you need to install Ubuntu 24.04 LTS on both of your dedicated servers, by following the instructions in [this guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 
 Subsequently, add both servers to your vRack service by following step 2 of [this vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server). 
 
-Finally, from the OVHcloud Control Panel, open the `Network`{.action} section, then select `Public IP Addresses`{.action} under **Public Network**. Once you have reached the IP management interface, click on the `Order IPs`{.action} button near the top of the page. Choose the IP version, then select the vRack your servers are attached to, and the region where those servers are hosted.
+Finally, from the OVHcloud Control Panel, open the `Network`{.action} section, then select `Public IP Addresses`{.action} under **Public Network**. Once you have reached the IP management interface, click on the `Order IPs`{.action} button near the top of the page. Choose the IP version, then **select the vRack your servers are attached to**, and the region where those servers are hosted.
 
-### Collecting the infrastructure configuration
+> [!warning]
+> 
+> **Important:** To ensure functionality, please make sure that the IP block you ordered is **routed to the vRack** attached to the servers, and not used as a classic failover configuration.
+>
+> If you are unsure or need more information, please consult the following guide : [Configuring an Additional IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack/).
+>
 
-To begin with the OpenNebula deployment, extract the required parameters that the deployment automation relies upon. **Update the inventory values** for the [Hosted Cloud OVHcloud repository](https://github.com/OpenNebula/hosted-cloud-ovhcloud) using all collected settings to match the provisioned infrastructure. For further details on the automated deployment procedure, refer to the following section: [Initial setup](#Initial_setup)
+### Step 2 - Collecting the Bare Metal & Network settings
 
-Each server is equipped with two network adapters dedicated to public connectivity and two adapters for private connectivity. The two interfaces within each segment will be **bonded** using the [OVHcloud Link Aggregation](https://www.ovhcloud.com/en/bare-metal/ovhcloud-link-aggregation/) service.
+Before starting the OpenNebula deployment, gather all parameters required for the automation process. **Update the inventory values** in the [Hosted Cloud OVHcloud repository](https://github.com/OpenNebula/hosted-cloud-ovhcloud) with these settings to match the provisioned infrastructure. 
+
+For further details on the automated deployment procedure, refer to the following section: [Configure and deploy the Hosted Cloud OVHcloud repository](#Initial_setup)
+
+Each server is equipped with two network adapters dedicated to public connectivity and two adapters for private connectivity. The two interfaces within each segment will be **bonded** using the **default LACP parameters for Scale and High Grade servers**.
 
 The **Public network bond** is exclusively for OpenNebula service management, including cluster deployment, administration via the Sunstone Web UI or OpenNebula CLI, and connectivity between the Front-end and Virtualization hosts.
 
 The **Private network bond** provides network to virtual servers, leveraging the OVHcloud vRack. This bond supports private networking, which is segmented using 802.1Q VLANs, and enables public IP addressing for virtual servers. To assign public addresses to virtual servers, a dedicated IP range must be purchased and routed via the vRack. This setup ensures cluster management traffic is isolated from virtual machine networking.
 
 ![Network](images/opennebula_network.png)
+
+> [!warning]
+> This guide assumes the default bonding setup. If you change the network mode (e.g. OLA), please double check that your interface names and bonds are correct before running the playbooks.
+>
+> For more information about the link aggregation settings, please consult the following guide : [Improving Network Resilience on Bare Metal servers](/pages/bare_metal_cloud/dedicated_servers/lacp-resilience-scale-hg/).
+>
 
 #### Bare Metal network settings <a name="Bare_metal_network_settings"></a>
 
@@ -75,11 +116,13 @@ To collect the network adapter names, connect to your dedicated server and execu
 | Frontend/KVM Host public NICs name       | `public_nics.name`                                            | public_aggregation network adapter names               |
 | Frontend/KVM Host private NICs name      | `private_nics.name`                                           | private_aggregation network adapter names              |
 
-#### VRack network settings
+#### vRack network settings
 
 **Public IP addresses**
 
-The public IP block ordered in the previous steps allows to attach direct public connectivity to virtual servers. For a public IP range deployed on vRack, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below :
+The public IP block ordered in the previous steps allows to attach direct public connectivity to virtual servers. For a public IP range deployed on vRack, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. 
+
+This means that the first usable address is the second address in the block, as shown below :
 ```
 46.105.135.96   Reserved : Network address
 46.105.135.97   First usable IP
@@ -121,7 +164,7 @@ On the private network bond, deploy one 802.1Q virtual network per private netwo
 | VMs Private IP Range, number of usable addresses                    | `vn.vm_vlan*.template.AR.SIZE`  | Number of usable addresses, for example 50 fo IP range 10.1.10.100-10.1.10.149   |
 | VMs Private NETWORK MASK                 | `vn.vm_vlan*.template.NETWORK_MASK`                           | IP range netmask: 255.255.255.0 for example for a /24 network   |
 
-### Initial setup <a name="Initial_setup"></a>
+### Step 3 - Configure and deploy the Hosted Cloud OVHcloud repository <a name="Initial_setup"></a>
 
 The deployment uses the **OpenNebula Hosted Cloud OVHcloud repository**.
 
@@ -135,15 +178,15 @@ The high-level deployment steps are:
     * `make deployment` : Deploy OpenNebula.
     * `make validation` : Validate the automated deployment.
 
-### Adding dedicated servers to an active infrastructure
+### Step 4 - Adding dedicated servers to an active OpenNebula infrastructure
 
 To extend the cloud with new servers:
 
-1.  **Provision** the new host as detailed in the [Setting up your infrastructure](#Infrastructure_Provisioning) section ;
+1.  **Provision** the new host as detailed in the [Setting up your OVHcloud infrastructure](#Infrastructure_Provisioning) section ;
 2.  **Collect** the necessary configuration parameters, especially the bare-metal network settings ;
-3.  **Re-execute** the deployment and verification commands from the [Initial setup](#Initial_setup) section.
+3.  **Re-execute** the deployment and verification commands from the [Configure and deploy the Hosted Cloud OVHcloud repository](#Initial_setup) section.
 
-## User guide
+### Step 5 - Operate your cloud infrastructure
 
 The following section explains how to access a Hosted OpenNebula Cloud Deployment via the web UI, and instantiate and access a virtual machine.
 
