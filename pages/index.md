@@ -1016,7 +1016,7 @@
                 + [Orchestration product reversibility policy](account_and_service_management/reversibility/12-reversibility-orchestration)
                 + [Known limits](public_cloud/containers_orchestration/managed_kubernetes/known-limits)
                 + [Available and planned features](public_cloud/containers_orchestration/managed_kubernetes/available-upcoming-features)
-                + [Recommended external resourFOPces for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/recommended-external-resources)
+                + [Recommended external resources for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/recommended-external-resources)
                 + [Available datacenters, worker nodes and persistent storage flavors](public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors)
                 + [Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources](public_cloud/containers_orchestration/managed_kubernetes/software-versions-reserved-resources)
                 + [Managed Kubernetes End-of-Sale, End-of-Service and End-of-Life policies](public_cloud/containers_orchestration/managed_kubernetes/eos-eol-policies)
