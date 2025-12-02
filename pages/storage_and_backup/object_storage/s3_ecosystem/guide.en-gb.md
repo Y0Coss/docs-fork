@@ -62,6 +62,8 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
 | **Pure Storage FlashBlade** | Compatible - Certified | Officially supported as an external S3-compatible object storage replication target. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
+| **Nasuni** | Compatible - Certified | Officially supported as an external S3-compatible cloud object storage service. Details can be found on [Compatibility & Support page](https://docs.nasuni.com/docs/compatibility-support). | Coming Soon |
+
 
 ## Go further
  
