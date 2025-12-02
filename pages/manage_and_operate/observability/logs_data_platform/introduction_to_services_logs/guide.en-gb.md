@@ -1,7 +1,7 @@
 ---
 title: Introduction to OVHcloud Service Logs with Logs Data Platform
 excerpt: Discover how to retrieve your OVHcloud managed products logs in Logs Data Platform
-updated: 2025-12-01
+updated: 2025-12-02
 ---
 
 ## Objective
