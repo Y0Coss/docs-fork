@@ -8,7 +8,7 @@ updated: 2021-02-04
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js**, **Python** or **Ruby** applications, and you want to begin developing your project.
 
-This guide will explain how to manage your POWER web hosting using the [OVHcloud Control Panel](/links/manager) and the [OVHcloud APIs](https://api.ovh.com/).
+This guide will explain how to manage your POWER web hosting using the [OVHcloud Control Panel](/links/manager) and the [OVHcloud APIs](/links/api).
 
 **Find out how to get started with a POWER web hosting plan.**
 
@@ -180,9 +180,9 @@ Then [restart your instance](#restart).
 
 ### From the API
 
-This tutorial presupposes that you already have some familiarity with the [OVHcloud APIs](https://api.ovh.com/). If you want to know more on this topic, please look at the [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide.
+This tutorial presupposes that you already have some familiarity with the [OVHcloud APIs](/links/api). If you want to know more on this topic, please look at the [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide.
 
-The [OVHcloud APIs](https://api.ovh.com/) currently available for POWER hosting plans are:
+The [OVHcloud APIs](/links/api) currently available for POWER hosting plans are:
 
 #### List available configurations
 

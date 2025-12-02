@@ -134,7 +134,7 @@ When versioning is enabled:
 > Via the OVHcloud Control Panel
 >> You can show or hide object versions in an Object Storage bucket by clicking on the following button:
 >>
->> [enable version objects](images/bucket_enable_versions.png){.thumbnail}
+>> ![enable version objects](images/bucket_enable_versions.png){.thumbnail}
 >>
 
 #### View the different versions of an object
@@ -189,7 +189,7 @@ When versioning is enabled:
 >> To delete a specific version of an object:
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> aws s3api delete-object --bucket <bucket> --key <object> --version-id <version-id>
 >> ```
 >>
 >> If you wish to delete a `delete marker` to recover your object version, proceed as follows:

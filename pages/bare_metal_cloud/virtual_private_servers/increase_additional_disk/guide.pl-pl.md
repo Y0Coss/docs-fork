@@ -1,12 +1,8 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-updated: 2023-03-14
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -21,6 +17,10 @@ Jeśli osiągnąłeś maksymalną pojemność dodatkowego dysku, możesz zwięks
 - Dostęp do [Panelu client OVHcloud](/links/manager).
 - Dostęp do serwera VPS przez SSH lub RDP.
 
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## W praktyce
 
 Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).
@@ -29,7 +29,7 @@ Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z inst
 
 Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer spośród `Prywatne serwery wirtualne`{.action}.
 
-W sekcji **Podsumowanie opcji** kliknij przycisk `...`{.action} w sekcji `Dodatkowe dyski`. Wybierz `Zwiększ rozmiar dysku`{.action}.
+W zakładce `Strona główna`{.action} przejdź do sekcji **Twoja konfiguracja**. Kliknij `...`{.action} obok opcji `Dodatkowe dyski` i w menu kontekstowym kliknij na `Zwiększ rozmiar dysku`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Wybierz nowy rozmiar dysku w oknie, które się wyświetli, po czym kliknij `Zwi
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Pojawi się komunikat potwierdzający zlecenie. Kliknij link w wiadomości i postępuj zgodnie z poleceniami. Możliwe, że nowa zakładka nawigacyjna dla zamówienia została automatycznie otwarta.
+Pojawi się komunikat potwierdzający zlecenie. Kliknij link w wiadomości i postępuj zgodnie z poleceniami. Otworzy się nowa zakładka przeglądarki, aby sfinalizować zamówienie.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -213,4 +213,4 @@ Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dysk
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

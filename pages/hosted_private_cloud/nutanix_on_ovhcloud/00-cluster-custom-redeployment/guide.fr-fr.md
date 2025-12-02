@@ -18,7 +18,7 @@ updated: 2022-12-13
 
 - Disposer d'un Cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+- Être connecté sur la page des [API OVHcloud](/links/api)
 
 > [!warning]
 > Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences: [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL](/pages/hosted_private_cloud/nutanix_on_ovhcloud/12-activate-licenses-on-byol).

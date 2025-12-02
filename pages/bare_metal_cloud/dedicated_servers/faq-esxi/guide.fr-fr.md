@@ -4,9 +4,6 @@ excerpt: "Retrouvez les questions les plus fréquemment posées sur la vague d'a
 updated: 2024-09-13
 ---
 
-> [!warning]
-> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
-
 ## Objectif
 
 Suite à un événement majeur survenu sur des serveurs ESXi de version antérieure à la 7.0 U3i le 03 février 2023, une vague d'attaques est actuellement en cours sur ce type de serveurs.
@@ -29,7 +26,7 @@ Renseignez votre IP ou nom de serveur dans un navigateur pour déterminer si un 
 Si vous souhaitez tenter de récupérer les données présentes sur votre serveur, vous pouvez vous appuyer sur les étapes de la documentation suivante : [Activer et utiliser le mode rescue - Montage d'un datastore](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#montage-dun-datastore).
 Cependant, nous ne disposons pas de tous les dispositifs nécessaires pour récupérer l'ensemble de vos données.
 
-L'agence nationale américaine pour la cybersécurité et la sécurité des infrastructures ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) a également mis à disposition [un outil](https://github.com/cisagov/ESXiArgs-Recover) pour récupérer les données d'un serveur ESXi ciblé par le ransomware ESXIArgs.<br>
+L'agence nationale américaine pour la cybersécurité et la sécurité des infrastructures ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script)) a également mis à disposition [un outil](https://github.com/cisagov/ESXiArgs-Recover) pour récupérer les données d'un serveur ESXi ciblé par le ransomware ESXIArgs.<br>
 L'utilisation de cet outil nécessite des compétences avancées en administration de système. Nous vous conseillons de ne l'utiliser qu'en connaissance de cause, OVHcloud ne pouvant vous fournir d'assistance sur son utilisation.
 
 En cas de difficultés, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou de contacter nos équipes en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
