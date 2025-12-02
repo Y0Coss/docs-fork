@@ -1,7 +1,7 @@
 ---
 title: How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster
 excerpt: Learn how to manage nodes and node pools using the OVHcloud Control Panel, the OVHcloud API, and the NodePools Custom Resource Definition (CRD)
-updated: 2025-12-01
+updated: 2025-12-02
 ---
 
 ## Objective
@@ -48,7 +48,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>
 >> If your cluster have been created in a 3AZ Region, you also must specify an AZ with the `availabilityZones` parameter.
 >>
->> You can enable the creation of floating IPS with the `attachFloatingIps` parameter. If `enabled` boolean is true, a floating IP will be attached to each node.
+>> You can enable the creation of Floating IPS with the `attachFloatingIps` parameter. If `enabled` boolean is true, a Floating IP will be attached to each node.
 >>
 >> Finally the boolean `monthlyBilled` ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
 >>
@@ -152,7 +152,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>       nullable: true
 >>       properties:
 >>         enabled:
->>           description: Enabled describe the node network exposition. If True, a FloatingIP will be assign to each node.
+>>           description: Enabled describe the node network exposition. If True, a FloatingIP will be assigned to each node.
 >>           type: boolean
 >>       type: object
 >>     autoscale:
