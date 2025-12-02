@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2025-12-01
+updated: 2025-12-02
 ---
 
 <style>
@@ -163,10 +163,11 @@ In case you want to apply OpenStack security groups onto your nodes, it is manda
 
 > [!primary]
 > In order to simplify your policy, you can add these rules which do not specify any port and will allow all internal traffic between pods and services within the cluster:
->> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
->> |---|---|---|---|---|---|
->> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow traffic from pods|
->> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow traffic from services|
+>
+> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
+> |---|---|---|---|---|---|
+> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow traffic from pods|
+> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow traffic from services|
 >
 > It allows you to trust the internal traffic between pods and services within the cluster.
 
@@ -180,7 +181,7 @@ The OpenStack security group for worker nodes is the default one. It allows all 
 
 ```bash
 openstack security group rule list default
-````
+```
 
 ```bash
 +--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
