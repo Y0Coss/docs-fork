@@ -1,7 +1,7 @@
 ---
 title: How to configure the OVHcloud Load Balancer in multiple zones
 excerpt: Use zones to increase availability and decrease latency
-updated: 2025-11-28
+updated: 2025-12-02
 ---
 
 ## Objective
