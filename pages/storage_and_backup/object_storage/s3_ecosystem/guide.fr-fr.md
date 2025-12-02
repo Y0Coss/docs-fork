@@ -63,6 +63,8 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
 | **Pure Storage FlashBlade** | Compatible - Certifié |  Officiellement pris en charge comme cible de réplication compatible S3. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
+| **Nasuni** | Compatible - Certifié | Officiellement pris en charge comme service object storage externe compatible S3. Plus de détails sur la page [Compatibility & Support](https://docs.nasuni.com/docs/compatibility-support) | À venir |
+
 
 ## Aller plus loin
  
