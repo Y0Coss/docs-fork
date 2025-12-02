@@ -238,8 +238,6 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo netplan apply
 >> ```
 >>
->> Wiederholen Sie diesen Vorgang für jede Additional IP-Adresse.
->>
 > **AlmaLinux / Rocky Linux**
 >> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
 >>
@@ -291,13 +289,13 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> Wenden Sie die Änderungen mit folgendem Befehl an:
 >>
 >> ```bash
->> sudo systemctl restart network
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
->> AlmaLinux und Rocky Linux
+>> CentOS
 >>
 >> ```bash
->> sudo systemctl restart NetworkManager
+>> sudo systemctl restart network
 >> ```
 >>
 > **Fedora 42**
