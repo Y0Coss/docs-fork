@@ -427,28 +427,6 @@ OVHcloud Object Storage will prevent any transition to any storage tier for obje
      }
   ]
 }
-``` However, you can allow transitions and expirations for smaller objects by using `ObjectSizeGreaterThan` or `ObjectSizeLessThan` parameters to filter with a minimum size or maximum size. In the following example, objects smaller than 128KB are also allowed to transition to Standard class.
-
-```json
-{
-  "Rules": [
-    {
-      "ID": "123456",
-      "Status": "Enabled",
-      "Filter": {
-        "And":{
-            "ObjectSizeGreaterThan": 1
-        }
-      },      
-      "Transitions": [
-        {
-          "Days": 30,
-          "StorageClass": "STANDARD"
-        }
-      ]
-     }
-  ]
-}
 ```
 
 ### Minimum transition delay
