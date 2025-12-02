@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2025-04-29
+updated: 2025-12-02
 ---
 
 <style>
@@ -405,7 +405,29 @@ Les transitions actuellement prises en charge sont les suivantes :
 
 ### Taille minimale de l'objet
 
-OVHcloud Object Storage empêchera toute transition vers un autre niveau de stockage pour les objets inférieurs à **128KB**.
+OVHcloud Object Storage empêchera toute transition vers un autre niveau de stockage pour les objets inférieurs à **128Ko**. Cependant, vous pouvez autoriser les transitions et les expirations pour les objets plus petits en utilisant les paramètres `ObjectSizeGreaterThan` ou `ObjectSizeLessThan` pour filtrer avec une taille minimale ou maximale. Dans l'exemple suivant, les objets de moins de 128 Ko sont également autorisés à passer à la classe Standard.
+
+```json
+{
+  "Rules": [
+    {
+      "ID": "123456",
+      "Status": "Enabled",
+      "Filter": {
+        "And":{
+            "ObjectSizeGreaterThan": 1
+        }
+      },      
+      "Transitions": [
+        {
+          "Days": 30,
+          "StorageClass": "STANDARD"
+        }
+      ]
+     }
+  ]
+}
+```
 
 ### Délai de transition minimal
 
