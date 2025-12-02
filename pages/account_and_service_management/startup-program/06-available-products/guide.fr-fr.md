@@ -45,7 +45,7 @@ Voici un résumé des solutions éligibles :
 | **Storage & Backup** : Block Storage, Object Storage, Cloud Archive, Cold Archive, Snapshot, Backup | ✅ |
 | **Network** : Load Balancer, vRack (Free), Bande passante, Floating IP, Gateway, Anti-DDoS | ✅ |
 | **Containers & Orchestration** : Managed K8s Service, Managed Rancher Service, Managed K8s Load Balancer, Managed Private Registry, Workflow Management, Image Catalog | ✅ |
-| **Databases** : MySQL, PostgreSQL, MongoDB, Valkey, Cassandra | ✅ |
+| **Databases** : MySQL, PostgreSQL, MongoDB, Valkey | ✅ |
 | **Data Analytics** : Data Processing, Kafka,Caching, Managed OpenSearch, Kafka MirrorMaker, Kafka Connect, Grafana, Logs Data Platform | ✅ |
 | **AI & Machine Learning** : AI Notebooks, AI Training, AI Deploy, AI Endpoints | ✅ |
 | **Quantum computing** : Quantum Notebooks | ✅ |

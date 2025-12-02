@@ -182,8 +182,6 @@ public-cloud-data-analytics-kafka-guides: Kafka - User guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
 public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
-public-cloud-databases-cassandra: Cassandra
-public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
