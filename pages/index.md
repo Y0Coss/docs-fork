@@ -2161,7 +2161,7 @@
             + [Tracking connections on the OVHcloud Load Balancer](network/load_balancer/create_stickiness)
             + [Configuring an OVHcloud Load Balancer service with redirects](network/load_balancer/create_redirectlocation)
             + [ProxyProtocol get Source IP](network/load_balancer/create_proxyprotocol)
-            + [Working with zones](network/load_balancer/zones)
+            + [How to configure the OVHcloud Load Balancer in multiple zones](network/load_balancer/zones)
             + [How to route an Additional IP](network/load_balancer/howto_route_ipfo)
             + [Configuring an OVHcloud Load Balancer with HTTP routes](network/load_balancer/create_route)
             + [Working with probes](network/load_balancer/create_probes)
