@@ -1,6 +1,6 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2025-12-01
+updated: 2025-12-02
 ---
 
 ## Wprowadzenie

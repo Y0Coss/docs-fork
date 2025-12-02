@@ -1,6 +1,6 @@
 ---
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
-updated: 2025-12-01
+updated: 2025-12-02
 ---
 
 ## Objectif

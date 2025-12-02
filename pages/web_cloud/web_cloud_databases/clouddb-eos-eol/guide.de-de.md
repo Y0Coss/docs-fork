@@ -1,6 +1,6 @@
 ---
 title: Web Cloud Databases - EOL und EOS Ankündigungen
-updated: 2025-12-01
+updated: 2025-12-02
 ---
 
 ## Ziel
