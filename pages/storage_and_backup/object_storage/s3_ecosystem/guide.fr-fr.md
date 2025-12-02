@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-10-27
+updated: 2025-12-02
 ---
 
 ## Objectif
@@ -65,9 +65,8 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **Pure Storage FlashBlade** | Compatible - Certifié |  Officiellement pris en charge comme cible de réplication compatible S3. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
 | **Nasuni** | Compatible - Certifié | Officiellement pris en charge comme service object storage externe compatible S3. Plus de détails sur la page [Compatibility & Support](https://docs.nasuni.com/docs/compatibility-support) | À venir |
 
-
 ## Aller plus loin
- 
+
 Rejoignez notre [communauté d'utilisateurs](/links/community).
 
 <sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
