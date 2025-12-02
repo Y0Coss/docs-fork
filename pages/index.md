@@ -561,6 +561,7 @@
             + [Mise en route de votre Bare Metal POD SecNumCloud](hosted_private_cloud/baremetal_pod/snc_getting_started)
     + [On-Prem Cloud Platform](products/hosted-private-cloud-hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-opcp-getting-started)
+            + [Getting started with your OPCP](hosted_private_cloud/opcp/opcp-getting-started)
             + [OPCP - Node lifecycle](hosted_private_cloud/opcp/node-lifecycle)
             + [OPCP - How to use the APIs and obtain the credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
             + [OPCP - How to install an instance from the Horizon interface](hosted_private_cloud/opcp/how-to-setup-instance)
