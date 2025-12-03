@@ -1,6 +1,6 @@
 ---
-title: 'How to install CloudPanel on an OVHcloud VPS or dedicated server'
-excerpt: "Find out how to install the CloudPanel administration interface on an OVHcloud VPS or dedicated server"
+title: 'How to install CloudPanel on a VPS or a Dedicated Server'
+excerpt: "Find out how to install the CloudPanel administration interface on a VPS or a Dedicated Server"
 updated: 2025-12-03
 ---
 
@@ -14,7 +14,7 @@ CloudPanel is a modern, lightweight, and high-performance hosting control panel,
 - users;
 - a firewall.
 
-This guide explains how to install CloudPanel on an OVHcloud VPS or dedicated server and how to connect to it to perform the initial configuration.
+This guide explains how to install CloudPanel on a VPS or a Dedicated Server and how to connect to it to perform the initial configuration.
 
 > [!warning]
 >
@@ -24,7 +24,7 @@ This guide explains how to install CloudPanel on an OVHcloud VPS or dedicated se
 
 ## Requirements
 
-- A [VPS](/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal) with a [recommended configuration](https://www.cloudpanel.io/docs/v2/requirements/) in your [OVHcloud Control Panel](/links/manager).
+- A [VPS](/links/bare-metal/vps) or a [Dedicated Server](/links/bare-metal/bare-metal) with a [recommended configuration](https://www.cloudpanel.io/docs/v2/requirements/) in your [OVHcloud Control Panel](/links/manager).
 - An administrative access (sudo) via SSH to your server.
 
 ## Instructions
@@ -33,7 +33,7 @@ This guide explains how to install CloudPanel on an OVHcloud VPS or dedicated se
 
 #### Connect to the server
 
-Open a terminal and connect to your VPS (or dedicated server) using the following command:
+Open a terminal and connect to your VPS (or Dedicated Server) using the following command:
 
 ````bash
 ssh user@IP_VPS
@@ -180,7 +180,7 @@ On the first launch, CloudPanel asks you to create the administrator account by 
 
 [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[How to secure a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner)
 

@@ -1,6 +1,6 @@
 ---
-title: 'Installer CloudPanel sur un VPS ou un serveur dédié OVHcloud'
-excerpt: "Découvrez comment installer l'interface d’administration CloudPanel sur un VPS ou un serveur dédié OVHcloud"
+title: 'Installer CloudPanel sur un VPS ou un serveur dédié'
+excerpt: "Découvrez comment installer l'interface d’administration CloudPanel sur un VPS ou un serveur dédié"
 updated: 2025-12-03
 ---
 
@@ -14,7 +14,7 @@ CloudPanel est un panneau de contrôle d’hébergement moderne, léger et perfo
 - des utilisateurs ;
 - un pare-feu.
 
-Ce guide explique comment installer CloudPanel sur un VPS ou un serveur dédié OVHcloud et comment vous y connecter pour réaliser la configuration initiale.
+Ce guide explique comment installer CloudPanel sur un VPS ou un serveur dédié et comment vous y connecter pour réaliser la configuration initiale.
 
 > [!warning]
 >
