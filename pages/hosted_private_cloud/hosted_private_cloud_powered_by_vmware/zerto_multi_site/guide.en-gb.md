@@ -1,12 +1,12 @@
 ---
-title: Setting up Multi-Site Replication on OVH Private Cloud
-excerpt: Step-by-step guide to connect multiple Zerto deployments on OVH Private Cloud for secure and efficient disaster recovery.
+title: Setting up Multi-Site Replication on Managed vSphere
+excerpt: Step-by-step guide to connect multiple Zerto deployments on Managed vSphere for secure and efficient disaster recovery.
 updated: 2025-12-02
 ---
 
 ## Objective
 
-The purpose of this guide is to provide step-by-step instructions to connect multiple on-premise Zerto deployments to an OVH Private Cloud (PCC) instance. By following this guide, users will be able to establish secure multi-site replication, ensure disaster recovery readiness, and manage data protection across different sites.
+The purpose of this guide is to provide step-by-step instructions to connect multiple on-premise Zerto deployments to an Managed vSphere (PCC) instance. By following this guide, users will be able to establish secure multi-site replication, ensure disaster recovery readiness, and manage data protection across different sites.
 
 **Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
 
@@ -69,7 +69,7 @@ Once paired, your multi-site replication setup is complete.
 
 ## Network Diagram
 
-The following diagram illustrates the connectivity setup for multi-site Zerto replication between the customer site and OVH Private Cloud (PCC):
+The following diagram illustrates the connectivity setup for multi-site Zerto replication between the customer site and Managed vSphere (PCC):
 
 ![network diagram](images/network_diagram.png){.thumbnail}
 
@@ -79,16 +79,15 @@ Diagram Explanation:
 - OPNSense Private IP – The internal IP address of the customer firewall.
 - ZVM Private IP – The internal IP of the customer Zerto Virtual Manager.
 - Internal ZVM Network – The LAN connecting customer ZVM and vRAs.
-- OVH Cloud Public IP – Public-facing IP for the OVH Private Cloud.
+- OVH Cloud Public IP – Public-facing IP for the Managed vSphere.
 - OVHCloud ZVM Network /23 – Private network within the hosted PCC.
-- ZVM Private IP (PCC) – Private IP addresses of Zerto VMs (ZVM and vRAs) hosted in OVH Private Cloud.
+- ZVM Private IP (PCC) – Private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
 
 This setup ensures secure VPN connectivity between on-premise Zerto and OVHcloud PCC, allowing multi-site replication and disaster recovery.
 
 ## Troubleshooting Tips
 
 - **VPN issues:** Check credentials, firewall, and network settings.
-- **Status not updating:** Check PCC logs and robot processes.
 - **Token/site pairing:** Verify token, ZVM IP, and license.
 
 ## Security Considerations
