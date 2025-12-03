@@ -1,18 +1,26 @@
 ---
 title: 'Installer CloudPanel sur un VPS ou un serveur dédié OVHcloud'
-excerpt: 'Découvrez comment installer le panneau d’administration CloudPanel sur un VPS ou un serveur dédié OVHcloud'
+excerpt: "Découvrez comment installer l'interface d’administration CloudPanel sur un VPS ou un serveur dédié OVHcloud"
 updated: 2025-12-03
 ---
 
 ## Objectif
 
-CloudPanel est un panneau d’hébergement moderne, léger et rapide pour déployer et gérer des sites PHP/Node.js, des bases de données, des certificats SSL/TLS (Let’s Encrypt), des utilisateurs et un pare-feu via une interface web. Ce guide explique comment l’installer sur un VPS ou un serveur dédié OVHcloud, puis comment s’y connecter pour la configuration initiale.
+CloudPanel est un panneau de contrôle d’hébergement moderne, léger et performant, offrant une interface web pour déployer et gérer :
+
+- des sites web utilisant PHP ou Node.js ;
+- des bases de données ;
+- des certificats SSL/TLS (Let’s Encrypt) ;
+- des utilisateurs ;
+- un pare-feu.
+
+Ce guide explique comment installer CloudPanel sur un VPS ou un serveur dédié OVHcloud et comment vous y connecter pour réaliser la configuration initiale.
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section [Aller plus loin](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 
 ## Prérequis
 
@@ -81,7 +89,7 @@ Pour autoriser les connexions entrantes et sortantes, référez-vous à la secti
     sudo ufw status
     ```
 
-#### Exemple d’ouverture de ports pour AlmaLinux et Rocky Linux
+#### Exemple d’ouverture de ports pour AlmaLinux 9 et Rocky Linux 8
 
 1. Installez `firewalld` :
 
@@ -122,7 +130,7 @@ Pour autoriser les connexions entrantes et sortantes, référez-vous à la secti
 >> sudo apt -y install wget
 >> ```
 >>
-> AlmaLinux et Rocky Linux
+> AlmaLinux 9 et Rocky Linux 8
 >>
 >> ```bash
 >> sudo dnf -y install wget
@@ -150,7 +158,7 @@ Exemple avec MariaDB 11.4 :
 sudo DB_ENGINE=MARIADB_11.4 bash install.sh
 ```
 
-L’installation peut durer plusieurs minutes : le script installe automatiquement les dépendances nécessaires.
+L’installation peut durer plusieurs minutes, car le script installe automatiquement les dépendances nécessaires.
 
 ### Étape 4 — Première connexion
 
@@ -158,13 +166,13 @@ Une fois l’installation terminée, entrez l’URL `https://<IP_VPS>:8443` dans
 
 > [!primary]
 >
-> Au premier accès, un certificat autosigné est utilisé. Acceptez l’avertissement du navigateur pour continuer.
+> Lors du premier accès, un certificat autosigné est utilisé. Acceptez l’avertissement du navigateur pour continuer.
 
 L’interface ci-dessous s’affiche :
 
 ![cloudpanel install](images/cloudpanel-setup-interface.png){.thumbnail}
 
-Au premier lancement, CloudPanel vous demande de créer le compte administrateur (nom d'utilisateur, adresse e-mail et mot de passe). Après avoir effectué cette étape, entrez le nom d'utilisateur et le mot de passe que vous venez de définir pour vous connecter. Vous arrivez ensuite sur l’interface d’administration CloudPanel.
+Au premier lancement, CloudPanel vous demande de créer le compte administrateur en renseignant un nom d'utilisateur, une adresse e-mail et un mot de passe. Après avoir effectué cette étape, entrez le nom d'utilisateur et le mot de passe que vous venez de définir pour vous connecter. Vous arrivez ensuite sur l’interface d’administration CloudPanel.
 
 ## Aller plus loin <a name="go-further"></a>
 
