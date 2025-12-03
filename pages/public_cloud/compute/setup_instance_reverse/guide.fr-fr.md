@@ -26,15 +26,15 @@ Le menu déroulant sous « **Mes adresses IP publiques et services associés** �
 
 ![Reverse IP](images/filterippci.png){.thumbnail}
 
-Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Modifier le reverse`{.action}.
+Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
 
 ![Reverse DNS](images/modifyreversepc.png){.thumbnail}
 
-Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.action}.
+Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
 
 ![Reverse DNS](images/enterreverse.png){.thumbnail}
 
-Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
+Vous pouvez également éditer le reverse directement via l'icône `crayon`{.action} de la colonne **Reverse DNS** du tableau.
 
 > [!primary]
 >

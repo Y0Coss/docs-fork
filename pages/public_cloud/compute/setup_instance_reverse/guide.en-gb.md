@@ -26,15 +26,15 @@ The drop-down menu underneath **My public IP addresses and associated services**
 
 ![Reverse IP](images/filterippci.png){.thumbnail}
 
-Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
+Click on `...`{.action} in the row of the IP address concerned and select `Configure the reverse DNS`{.action}.
 
 ![Reverse DNS](images/modifyreversepc.png){.thumbnail}
 
-In the new window, enter your reverse path and click on `Validate`{.action}.
+In the new window, enter your reverse path and click on `Confirm`{.action}.
 
 ![Reverse DNS](images/enterreverse.png){.thumbnail}
 
-You can also edit the reverse path directly via the icon in the **Reverse DNS** column of the table.
+You can also edit the reverse path directly via the `pencil`{.action} icon in the **Reverse DNS** column of the table.
 
 > [!primary]
 >
