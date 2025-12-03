@@ -51,22 +51,11 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `N
 
 ![filtrer les service](images/selectservice_cut.png){.thumbnail}
 
-Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée et sélectionnez d'abord `Créer un pare-feu`{.action}.
+Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Configurer le Edge Network Firewall`{.action}.
 
-![Activation du Edge Network Firewall](images/firewallcreation2022.png){.thumbnail}
+![Activation du Edge Network Firewall](images/firewall_config.png){.thumbnail}
 
-Une confirmation vous sera alors demandée. Après confirmation, un pare-feu sera créé et disponible à la configuration.
-
-> [!primary]
-> Le bouton `Créer un pare-feu`{.action} ne sera disponible que pour les IP n'ayant jamais eu de pare-feu configuré. Si ce n'est pas la première fois que vous configurez votre pare-feu, vous pouvez ignorer cette étape.
->
-
-| ![Activation de la configuration](images/activationconfig.png) |
-|:--:|
-| Cliquez ensuite sur `Edge Network Firewall Configuration`{.action} pour commencer à le configurer. |
-
-Sur cette page, vous pouvez choisir d'**activer** ou de **désactiver** le pare-feu à l'aide du bouton dédié.
-Il est également possible de le faire d'une autre manière expliquée ci-dessous.
+Vous serez amené vers la page de configuration du pare-feu.
 
 Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 
@@ -90,7 +79,7 @@ Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 > Pour plus d'informations, reportez-vous aux guides suivants : [Configuration du pare-feu sous Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) et [Configuration du pare-feu sous Linux avec iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**Pour ajouter une règle :**
+**Pour ajouter une règle**, cliquez sur le bouton `+ Ajouter une règle`{.action}, en haut à gauche de la page.
 
 | ![add-rule-btn](images/enf_add_rule.png) |
 |:--:|
@@ -98,7 +87,7 @@ Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 
 Pour chaque règle (hors TCP), vous devez choisir :
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp.png) | 
 |:--| 
 | &bull; Une priorité (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) |
 
@@ -122,21 +111,13 @@ Pour chaque règle **TCP**, vous devez choisir :
 > Les configurations de pare-feu avec seulement des règles de mode « Accept » ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
 > 
 
-**Activer le pare-feu :**
+**Activer/désactiver le pare-feu :**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) |
+| ![activate-desactivate](images/enf_enable_disable.png) |
 |:--:| 
-| Utilisez le bouton `Activer`{.action} pour activer le pare-feu. |
+| Utilisez le bouton commutateur pour activer ou désactiver le pare-feu. |
 
-Après validation, le firewall sera activé.
-
-**Désactiver le pare-feu :**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:--:|
-| Utilisez le bouton `Désactiver`{.action} pour le désactiver. |
-
-Après validation, le firewall sera désactivé.
+Après validation, le firewall sera activé ou désactivé.
 
 Notez que les règles sont désactivées jusqu'au moment où une attaque est détectée, puis qu'elles sont activées. Cette logique peut être utilisée pour les règles qui ne sont actives que lorsqu'une attaque répétée connue arrive.
 
@@ -148,7 +129,7 @@ Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (5
 
 Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet.
 
-Par exemple, un paquet pour le port TCP 80 sera intercepté par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port TCP 25 ne sera capturé que par la dernière règle (19), ce qui le bloquera car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
+Par exemple, un paquet pour le port TCP 123 sera intercepté par la règle 0 et les règles qui suivent ne seront pas appliquées. Un paquet provenant de l'adresse IP 10.0.0.1 ne sera capturé que par la dernière règle (19), ce qui le bloquera car le pare-feu n'autorise pas la communication depuis cette adresse dans les règles précédentes.
 
 > [!warning]
 > La configuration ci-dessus n'est qu'un exemple et ne doit être utilisée comme référence que si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est indispensable de configurer les règles de votre firewall pour qu'elles correspondent aux services hébergés sur votre serveur. Une configuration incorrecte de vos règles de pare-feu peut entraîner le blocage du trafic légitime et l'inaccessibilité des services du serveur.

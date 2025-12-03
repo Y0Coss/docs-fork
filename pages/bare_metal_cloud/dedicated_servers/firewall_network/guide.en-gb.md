@@ -52,22 +52,11 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 
 ![filter service](images/selectservice_cut.png){.thumbnail}
 
-Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Create Firewall`{.action}.
+Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action}.
 
-![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
+![Enabling the Network Firewall](images/firewall_config.png){.thumbnail}
 
-You will then be asked to confirm. The firewall will be created and you can configure the rules.
-
-> [!primary]
-> The `Create Firewall`{.action} button will only be available for IPs that have never configured a firewall. If it is not the first time you are configuring your firewall, you can skip this step. 
->
-
-| ![Enabling the configuration](images/activationconfig.png) | 
-|:--:| 
-| Click on `Edge Network Firewall configuration`{.action} to start configuring it. |
-
-On this page you can choose to **Enable** or **Disable** the firewall using the switch button.
-It is also possible to do it another way explained just below.
+You will then be taken to the firewall configuration page.
 
 You can set up to **20 rules per IP**.
 
@@ -94,7 +83,7 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**To add a rule:**
+**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left :
 
 | ![add-rule-btn](images/enf_add_rule.png) | 
 |:--:| 
@@ -102,7 +91,7 @@ You can set up to **20 rules per IP**.
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
 
@@ -126,21 +115,13 @@ For each **TCP** rule, you must choose:
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
 > 
 
-**Enable firewall:**
+**Enable/disable firewall:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) | 
+| ![activate-desactivate](images/enf_enable_disable.png) | 
 |:--:| 
 | `Switch on`{.action} to enable |
 
-After confirmation, the firewall will be enabled.
-
-**Disable firewall:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) | 
-|:--:| 
-| `Switch on`{.action} to enable |
-
-After confirmation, the firewall will be disabled.
+After confirmation, the firewall will be enabled or disabled.
 
 Note that rules are disabled until the moment an attack is detected - then they are activated. This logic can be used for rules that are only active when a known repeated attack is incoming.
 
@@ -152,7 +133,7 @@ To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) a
 
 The rules are sorted from 0 (the first rule read) to 19 (the last). The rule chain stops as soon as a rule is applied to the packet.
 
-For example, a packet for TCP port 80 will be intercepted by rule 2 and the rules that follow will not be applied. A packet for TCP port 25 will only be captured by the last rule (19), which will block it because the firewall does not allow communication on port 25 in the previous rules.
+For example, a packet for TCP port 123 will be intercepted by rule 0 and the rules that follow will not be applied. A packet coming from the IP address 10.0.0.1 will only be captured by the last rule (19), which will block it because the firewall does not allow communication from that address in the previous rules.
 
 > [!warning]
 > The above configuration is only an example and should only be used as a reference if the rules do not apply to the services hosted on your server. It is essential that you configure the rules in your firewall to match the services hosted on your server. Incorrect configuration of your firewall rules can result in legitimate traffic being blocked and server services being inaccessible.
