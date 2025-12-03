@@ -64,7 +64,7 @@ Pour configurer les règles de protection de jeu de votre serveur Bare Metal Gam
 - Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
 - Cliquez sur `Adresses IP Publiques`{.action}.
 
-Vous pouvez filtrer les adresses IP en utilisant le menu déroulant `Tous les services`{.action}. Renseignez le nom ou la catégorie du serveur correspondant :
+Vous pouvez filtrer les adresses IP en utilisant le menu déroulant `Tous les types de services`{.action}, ou entrer directement l'adresse IP désirée dans la barre de recherche. Renseignez le nom ou la catégorie du serveur correspondant :
 
 | ![configure-game-firewall](images/ip_listing.png) |
 |:--:|
