@@ -121,7 +121,7 @@ Pour autoriser les connexions entrantes et sortantes, référez-vous à la secti
 
 ### Étape 3 — Installer CloudPanel
 
-1. Installez `wget`
+1. Installez `wget` :
 
 > [!tabs]
 > Debian et Ubuntu
@@ -142,23 +142,23 @@ Pour autoriser les connexions entrantes et sortantes, référez-vous à la secti
     wget https://installer.cloudpanel.io/ce/v2/install.sh -O install.sh
     ```
 
-3. Lancez l’installateur avec le moteur de base de données souhaité
+3. Lancez l’installateur avec le moteur de base de données souhaité :
 
-Exécutez le script en indiquant la base de données que vous souhaitez installer (MySQL ou MariaDB) :
+    Exécutez le script en indiquant la base de données que vous souhaitez installer (MySQL ou MariaDB).
 
-Exemple avec MySQL 8.4 :
+    - Exemple avec MySQL 8.4 :
 
-```bash
-sudo DB_ENGINE=MYSQL_8.4 bash install.sh
-```
+    ```bash
+    sudo DB_ENGINE=MYSQL_8.4 bash install.sh
+    ```
 
-Exemple avec MariaDB 11.4 :
+    - Exemple avec MariaDB 11.4 :
 
-```bash
-sudo DB_ENGINE=MARIADB_11.4 bash install.sh
-```
+    ```bash
+    sudo DB_ENGINE=MARIADB_11.4 bash install.sh
+    ```
 
-L’installation peut durer plusieurs minutes, car le script installe automatiquement les dépendances nécessaires.
+    L’installation peut durer plusieurs minutes, car le script installe automatiquement les dépendances nécessaires.
 
 ### Étape 4 — Première connexion
 

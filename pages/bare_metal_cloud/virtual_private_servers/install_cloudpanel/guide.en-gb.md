@@ -60,7 +60,6 @@ Update your operating system. This operation may take several minutes.
 >> ```bash
 >> sudo dnf -y update
 >> ```
->> 
 
 ### Step 2 — Open required ports (firewall)
 
@@ -122,7 +121,7 @@ To allow incoming and outgoing connections, refer to the **Port Firewall** secti
 
 ### Step 3 — Install CloudPanel
 
-1. Install `wget`
+1. Install `wget`:
 
 > [!tabs]
 > Debian and Ubuntu
@@ -144,23 +143,23 @@ To allow incoming and outgoing connections, refer to the **Port Firewall** secti
     wget https://installer.cloudpanel.io/ce/v2/install.sh -O install.sh
     ```
 
-3. Run the installer with the desired database engine
+3. Run the installer with the desired database engine:
 
-Run the script specifying the database you want to install (MySQL or MariaDB):
+    Run the script specifying the database you want to install (MySQL or MariaDB).
 
-Example with MySQL 8.4:
+    - Example with MySQL 8.4:
 
-```bash
-sudo DB_ENGINE=MYSQL_8.4 bash install.sh
-```
+    ```bash
+    sudo DB_ENGINE=MYSQL_8.4 bash install.sh
+    ```
 
-Example with MariaDB 11.4:
+    - Example with MariaDB 11.4:
 
-```bash
-sudo DB_ENGINE=MARIADB_11.4 bash install.sh
-```
+    ```bash
+    sudo DB_ENGINE=MARIADB_11.4 bash install.sh
+    ```
 
-The installation may take several minutes, as the script automatically installs the necessary dependencies.
+    The installation may take several minutes, as the script automatically installs the necessary dependencies.
 
 ### Step 4 — First connection
 
