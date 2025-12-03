@@ -24,7 +24,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse IP](images/filterippc.png){.thumbnail}
 
 Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
 
