@@ -478,7 +478,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >>
 >> > [!warning]
 >> >
->> > Attention, le serveur ne sera plus accessible si vous entrez des informations incorrectes. Vous devrez alors effectuer les corrections en mode [WinRescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) ou via l'[IPMI](pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+>> > Attention, le serveur ne sera plus accessible si vous entrez des informations incorrectes. Vous devrez alors effectuer les corrections en mode [WinRescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) ou via l'[IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >> > 
 >>
 >> Dans l’invite de commande :

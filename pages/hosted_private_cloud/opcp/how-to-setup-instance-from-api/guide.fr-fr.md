@@ -14,7 +14,7 @@ Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessai
 - Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
 - Posséder un compte utilisateur avec les droits suffisants pour se connecter aux API OpenStack.
 - [Préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
-- [Charger les variables d'environnement pour le projet](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
+- [Charger les variables d'environnement pour le projet](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
 
 ## En pratique
 
@@ -341,9 +341,9 @@ openstack server create --flavor $flavor_ID --image $image_ID --network $network
 
 Il faudra cependant vous assurer que le noeud a le statut `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
 
-Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez consultez notre documentation : [Cycle de vie d'un noeud OPCP](pages/hosted_private_cloud/opcp/node-lifecycle).
+Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez consultez notre documentation : [Cycle de vie d'un noeud OPCP](/pages/hosted_private_cloud/opcp/node-lifecycle).
 
-Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre consultez documentation : [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor).
+Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre consultez documentation : [Traits & Flavor](/pages/hosted_private_cloud/opcp/traits-and-flavor).
 
 #### Suppression d'une instance
 

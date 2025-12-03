@@ -14,7 +14,7 @@ Before deploying services on your OPCP clusters, you must have at least one inst
 - Have an active [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) service.
 - Have a user account with sufficient rights to access the OpenStack APIs.
 - [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
-- [Load the environment variables for the project](pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
+- [Load the environment variables for the project](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
 
 ## Instructions
 
@@ -341,9 +341,9 @@ openstack server create --flavor $flavor_ID --image $image_ID --network $network
 
 You must ensure that the node is `Available` and has the required **traits** to deploy the desired flavor.
 
-To check the current state of a node and retrieve its ID, you can consult our documentation: [OPCP Node Lifecycle](pages/hosted_private_cloud/opcp/node-lifecycle).
+To check the current state of a node and retrieve its ID, you can consult our documentation: [OPCP Node Lifecycle](/pages/hosted_private_cloud/opcp/node-lifecycle).
 
-To verify the compatibility between your node and the required traits of a flavor, you can consult our documentation: [Traits & Flavor](pages/hosted_private_cloud/opcp/traits-and-flavor).
+To verify the compatibility between your node and the required traits of a flavor, you can consult our documentation: [Traits & Flavor](/pages/hosted_private_cloud/opcp/traits-and-flavor).
 
 #### Deleting an Instance
 
