@@ -201,7 +201,7 @@ Płatny certyfikat SSL Sectigo (EV) jest ważny dla jednej domeny i jej subdomen
 > - Posiadanie upoważnienia organizacji do zamawiania certyfikatu SSL Sectigo EV.
 > - Być w stanie dokładnie uzasadnić informacje i dane kontaktowe dotyczące organizacji.
 >
-> Aby sprawdzić, czy możesz zamówić certyfikat SSL Sectigo EV, przejdź do [link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+> Aby sprawdzić, czy możesz zamówić certyfikat SSL Sectigo EV, przejdź do [link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **6**:
 

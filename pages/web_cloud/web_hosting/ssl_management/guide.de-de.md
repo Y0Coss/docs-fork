@@ -201,7 +201,7 @@ Das kostenpflichtige SSL-Zertifikat von Sectigo (EV) gilt nur für einen Domainn
 > - Sie haben die Genehmigung Ihrer Organisation, ein Sectigo EV SSL-Zertifikat zu bestellen.
 > - Sie sind in der Lage, Kontaktdaten und weitere Auskünfte zu Ihrer Organisation korrekt anzugeben.
 >
-> Sie können über [diese Adresse](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} prüfen, ob Sie für die Bestellung eines Sectigo EV SSL-Zertifikats infrage kommen.
+> Sie können über [diese Adresse](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-) prüfen, ob Sie für die Bestellung eines Sectigo EV SSL-Zertifikats infrage kommen.
 
 Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen:
 
