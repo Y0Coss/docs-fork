@@ -89,7 +89,7 @@ Pour plus d'information sur cet appel, nous vous invitons à consulter la sectio
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 >
 
-Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Règles disponibles](#available-rules){.internal}, en bas de ce guide.
+Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Règles disponibles](#available-rules), en bas de ce guide.
 
 ### Routes configurées
 

@@ -201,7 +201,7 @@ Il certificato SSL a pagamento Sectigo (EV) è valido per un solo dominio e il s
 > - Disporre dell'autorizzazione della tua organizzazione per ordinare un certificato SSL Sectigo EV.
 > - Essere in grado di giustificare con esattezza le informazioni e le coordinate relative alla tua organizzazione.
 >
-> Per verificare se hai diritto alla sottoscrizione di un certificato SSL Sectigo EV, clicca su [questo link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+> Per verificare se hai diritto alla sottoscrizione di un certificato SSL Sectigo EV, clicca su [questo link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi:
 

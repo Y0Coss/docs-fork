@@ -80,7 +80,7 @@ Via l'API OVHcloud, utilisez l'appel suivant :
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
-Pour plus d'informations sur les fonctionnalités de l'API, consultez la page [Détails des fonctions API](/pages/network/load_balancer/use_api_details){.ref}
+Pour plus d'informations sur les fonctionnalités de l'API, consultez la page [Détails des fonctions API](/pages/network/load_balancer/use_api_details)
 
 ### Ajouter une ferme de serveurs <a name="farm"></a>
 
