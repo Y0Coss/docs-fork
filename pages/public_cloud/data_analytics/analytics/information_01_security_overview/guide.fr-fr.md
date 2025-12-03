@@ -6,7 +6,7 @@ updated: 2025-11-04
 
 ## Objective
 
-In addition to [the responsibility model for Analytics services](/pages/public_cloud/data_analytics/analytics/information_06_shared_responsibility/), this security fact sheets aims at describing security features and functions associated to the service. It describes also best practices that customers can adopt to secure their services.
+In addition to [the responsibility model for Analytics services](/pages/public_cloud/data_analytics/analytics/information_06_shared_responsibility/), this security fact sheet aims at describing security features and functions associated to the service. It describes also best practices that customers can adopt to secure their services.
 
 ## 1.Certifications
 
@@ -60,7 +60,7 @@ If you need to restore your data using a backup, you can follow [this guide](/pa
 | **Source** | **Content** | **Documentation** |
 | --- | --- | --- |
 | Control Panel | Logs of interactions made by admin, technical or billing contacts in the Control Panel and services they have access to, using API calls. |- <https://api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>-[Get your audit logs](https://api.ovh.com/console/#/me/logs/audit~GET) |
-| Service | 1000 last logs for service usage | See Sheet 'log' in the Control Panel<br>- or via API (for Cassandra service as an example `/cloud/project/{serviceName}/database/cassandra/{clusterId}/logs`<br>- `/cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs` |
+| Service | 1000 last logs for service usage | See sheet 'log' in the Control Panel<br>- or via API (for Cassandra service as an example `/cloud/project/{serviceName}/database/cassandra/{clusterId}/logs`<br>- `/cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs` |
 
 ## 6.API
 
@@ -103,7 +103,7 @@ These operations are made, by default, by the OVHcloud operation team.
 > Currently, OVHcloud does not offer KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
 >
 
-For a MongoDB engine :
+For a MongoDB engine:
 
 - **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
 The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
@@ -132,7 +132,7 @@ Data is encrypted client-side with customer-controlled encryption keys, before b
 
 ### 8.3 CVE monitoring
 
-The OVHcloud operation team in charge of the maintenance of Public Cloud Analytics services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check...<br>
+The OVHcloud operation team in charge of the maintenance of Public Cloud Analytics services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check, etc.<br>
 
 We are also in constant communication with the MongoDB team, in order to provide fast and smooth transition to the latest security version of MongoDB.
 
