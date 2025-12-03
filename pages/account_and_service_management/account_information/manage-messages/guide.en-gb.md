@@ -1,6 +1,6 @@
 ---
-title: 'Manage messages to your OVHcloud customer account'
-excerpt: 'Discover how to add additional email contact addresses to your OVHcloud account and configure message delivery rules'
+title: "How to manage messages in your OVHcloud Control Panel"
+excerpt: "Discover how to add additional contact email addresses to your OVHcloud account and configure notification delivery rules"
 updated: 2025-12-03
 ---
 
@@ -8,17 +8,17 @@ updated: 2025-12-03
 
 When you created your OVHcloud account, you specified a contact email address. If you want to share or delegate the management of your messages related to your customer account, you can add new contact email addresses and configure rules to manage these messages.
 
-**Discover how to add additional email contact addresses to your OVHcloud account and configure message delivery rules.**
+**This guide explains how to add additional email contact addresses to your OVHcloud account and configure notification delivery rules.**
 
 ## Requirements
 
-- An active OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-To access communication management on your OVHcloud customer account:
+To access the communication management page for your OVHcloud customer account:
 
-1. Log in to your [OVHcloud customer account](/links/manager).
+1. Log in to your [OVHcloud Control Pane](/links/manager).
 1. Click on your name in the top right corner, then click on `My messages`{.action}.
 
 ### My messages
@@ -48,7 +48,7 @@ In addition to your default contact, you can add new contact email addresses to 
 
 ### Delivery settings
 
-From the `delivery settings`{.action} tab, you can create rules to organize the delivery of messages to your contact email addresses.
+From the `Delivery settings`{.action} tab, you can create rules to organize the delivery of messages to your contact email addresses.
 
 - **(1)**: Click on the `Create a rule`{.action} button to define which contacts will receive the messages, based on the categories and priority levels you select.
 
@@ -62,11 +62,11 @@ From the `delivery settings`{.action} tab, you can create rules to organize the 
 Rules are applied based on two criteria:
 
 - **The category**: Account, Billing, Incident, Maintenance, Product, and Security.
-- **The priority**, set on 3 levels: Low, Medium, and High.
+- **The priority**: Set on 3 levels: Low, Medium, and High.
 
 You can create your rules one by one; they will all be applied when a message is sent to your account.
 
-You can also create a rule that includes multiple conditions that will be applied in sequence. To do this, when configuring a rule, click on the `Add condition`{.action} **(1)** button. You can add as many conditions as needed.<br>
+You can also create a rule that includes multiple conditions that will be applied in sequence. To do this, when configuring a rule, click on the `Add condition`{.action} **(1)** button. You can add as many conditions as needed.  
 By default, if a condition applies, the process stops. If you want the process to continue applying the following conditions, enable the `And continue the processing of rules`{.action} **(2)** button under the rule you have configured.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
