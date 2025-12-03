@@ -1,7 +1,7 @@
 ---
 title: Additional IP konfigurieren
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
-updated: 2025-11-12
+updated: 2025-12-03
 ---
 
 > [!primary]
@@ -64,8 +64,9 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 
 > [!tabs]
 > **Debian 11**
+>> Debian 11
 >>
->> Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
+>> **Schritt 1: Automatische Netzwerkkonfiguration deaktivieren**
 >>
 >> Öffnen Sie diesen Dateipfad mit einem Texteditor:
 >>
@@ -81,7 +82,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> Die Erstellung dieser Konfigurationsdatei verhindert die automatische Ausführung von Änderungen an der Konfiguration Ihres Netzwerks.
 >>
->> Schritt 2: Netzwerkkonfigurationsdatei bearbeiten
+>> **Schritt 2: Netzwerkkonfigurationsdatei bearbeiten**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -104,7 +105,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >> netmask 255.255.255.255
 >> ```
 >>
->> Schritt 3: Interface neu starten
+>> **Schritt 3: Interface neu starten**
 >>
 >> Wenden Sie die Änderungen mit folgendem Befehl an:
 >>
@@ -112,11 +113,13 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Ubuntu 22.04 & Debian 12**
+> **Debian 12+ und Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 und spätere Versionen
 >>
->> Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie "50-cloud-init.yaml". Bevor Sie Änderungen vornehmen, überprüfen Sie am besten den tatsächlichen Dateinamen in diesem Ordner. Jede Additional IP benötigt in der Datei eine eigene Zeile.
+>> Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. 
+>> In diesem Beispiel heißt sie "50-cloud-init.yaml". Bevor Sie Änderungen vornehmen, überprüfen Sie am besten den tatsächlichen Dateinamen in diesem Ordner. Jede Additional IP benötigt in der Datei eine eigene Zeile.
 >>
->> Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
+>> **Schritt 1: Automatische Netzwerkkonfiguration deaktivieren**
 >>
 >> Öffnen Sie diesen Dateipfad mit einem Texteditor:
 >>
@@ -132,7 +135,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> Die Erstellung dieser Konfigurationsdatei verhindert die automatische Ausführung von Änderungen an der Konfiguration Ihres Netzwerks.
 >>
->> Schritt 2: Konfigurationsdatei bearbeiten
+>> **Schritt 2: Konfigurationsdatei bearbeiten**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -168,7 +171,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> Speichern und schließen Sie die Datei.
 >>
->> Schritt 3: Neue Netzwerkkonfiguration anwenden
+>> **Schritt 3: Neue Netzwerkkonfiguration anwenden**
 >>
 >> Sie können Ihre Konfiguration mit folgendem Befehl testen:
 >>
@@ -184,63 +187,10 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> Wiederholen Sie diesen Vorgang für jede Additional IP.
 >>
->> **Windows Server**
+> **cPanel (CentOS 7) /  RedHat Derivate**
+>> cPanel (CentOS 7) / AlmaLinux (8/9/10) / Rocky Linux (8/9/10)
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Gehen Sie zum Bereich  `Public Cloud`{.action} und wählen Sie Ihr Projekt aus.
->>
->> Öffnen Sie im linken Menü `Instanzen`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
->>
->> Schritt 1: Netzwerkkonfiguration überprüfen
->>
->> Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
->>
->> Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwendung zu öffnen.
->>
->> ![cmdprompt](images/pci_win07.png){.thumbnail}
->>
->> Um die aktuelle IP-Konfiguration anzuzeigen, geben Sie `ipconfig` in der Eingabeaufforderung ein.
->>
->> ![IP-Konfiguration überprüfen](images/image1-1.png){.thumbnail}
->>
->> Schritt 2: IPv4 Eigenschaften ändern
->>
->> Die IP-Eigenschaften müssen nun zu einer statischen Konfiguration geändert werden.
->>
->> Öffnen Sie die Adaptereinstellungen in der Windows-Systemsteuerung und öffnen Sie die `Eigenschaften`{.action} von `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
->>
->> ![IP-Konfiguration ändern](images/image2.png){.thumbnail}
->>
->> Wählen Sie in den IPv4-Eigenschaften `Folgende IP-Adresse verwenden`{.action}. Geben Sie die IP-Adresse ein, die Sie im ersten Schritt ausgelesen haben, und klicken Sie dann auf `Erweitert`{.action}.
->>
->> Schritt 3: Die Additional IP in "Erweiterte TCP/IP Einstellungen" hinzufügen
->>
->> Klicken Sie im neuen Fenster auf `Hinzufügen...`{.action} unter "IP-Adressen". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
->>
->> ![Konfiguration](images/image4-4.png){.thumbnail}
->>
->> Bestätigen Sie, indem Sie auf `Hinzufügen`{.action} klicken.
->>
->> ![Konfiguration Additional IP](images/image5-5.png){.thumbnail}
->>
->> Schritt 4: Netzwerk-Interface neu starten
->>
->> Wieder in der Systemsteuerung (`Netzwerkverbindungen`{.action}), klicken Sie mit der rechten Maustaste auf Ihr Netzwerkinterface und wählen Sie `Deaktivieren`{.action}.
->>
->> ![Netzwerkdeaktivierung](images/image6.png){.thumbnail}
->>
->> Um es neu zu starten klicken Sie mit der rechten Maustaste darauf und wählen Sie `Aktivieren`{.action}.
->>
->> ![Netzwerkaktivierung](images/image7.png){.thumbnail}
->>
->> Schritt 5: Überprüfung der neuen Netzwerkkonfiguration
->>
->> Öffnen Sie die Eingabeaufforderung (cmd) und geben Sie `ipconfig` ein. Die Konfiguration sollte nun die neue Additional IP enthalten.
->>
->> ![Aktuelle Netzwerkkonfiguration überprüfen](images/image8-8.png){.thumbnail}
->>
-> **cPanel (CentOS 7) / RedHat Derivate**
->>
->> Schritt 1: Netzwerkkonfigurationsdatei bearbeiten
+>> **Schritt 1: Netzwerkkonfigurationsdatei bearbeiten**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -265,7 +215,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >> ONBOOT=yes
 >> ```
 >>
->> #### Schritt 2: Interface neu starten
+>> **Schritt 2: Interface neu starten**
 >>
 >> Wenden Sie die Änderungen mit folgendem Befehl an:
 >>
@@ -274,8 +224,9 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >> ```
 >>
 > **Plesk**
+>> Plesk
 >>
->> Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen
+>> **Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen**
 >>
 >> Wählen Sie im Plesk Konfigurationspanel `Tools & Settings`{.action} im linken Menü aus.
 >>
@@ -283,7 +234,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> Klicken Sie auf `IP Addresses`{.action} unter **Tools & Resources**.
 >>
->> Schritt 2: Die zusätzliche IP-Information hinzufügen
+>> **Schritt 2: Die zusätzliche IP-Information hinzufügen**
 >>
 >> Klicken Sie in diesem Abschnitt auf den Button `Add IP Address`{.action}.
 >>
@@ -293,11 +244,65 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> ![IP-Informationen hinzufügen](images/pleskip3-3.png){.thumbnail}
 >>
->> Schritt 3: Aktuelle IP-Konfiguration überprüfen
+>> **Schritt 3: Aktuelle IP-Konfiguration überprüfen**
 >>
 >> Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
 >>
 >> ![aktuelle IP-Konfiguration](images/pleskip4-4.png){.thumbnail}
+>>
+> **Windows Server**
+>> Windows Server
+>>
+>> Öffnen Sie im Public Cloud Bereich im linken Menü `Instances`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
+>>
+>> **Schritt 1: Netzwerkkonfiguration überprüfen**
+>>
+>> Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
+>>
+>> Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwendung zu öffnen.
+>>
+>> ![cmdprompt](images/pci_win07.png){.thumbnail}
+>>
+>> Um die aktuelle IP-Konfiguration anzuzeigen, geben Sie `ipconfig` in der Eingabeaufforderung ein.
+>>
+>> ![IP-Konfiguration überprüfen](images/image1-1.png){.thumbnail}
+>>
+>> **Schritt 2: IPv4 Eigenschaften ändern**
+>>
+>> Die IP-Eigenschaften müssen nun zu einer statischen Konfiguration geändert werden.
+>>
+>> Öffnen Sie die Adaptereinstellungen in der Windows-Systemsteuerung und öffnen Sie die `Eigenschaften`{.action} von `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
+>>
+>> ![IP-Konfiguration ändern](images/image2.png){.thumbnail}
+>>
+>> Wählen Sie in den IPv4-Eigenschaften `Folgende IP-Adresse verwenden`{.action}. Geben Sie die IP-Adresse ein, die Sie im ersten Schritt ausgelesen haben, und klicken Sie dann auf `Erweitert`{.action}.
+>>
+>> **Schritt 3: Die Additional IP in "Erweiterte TCP/IP Einstellungen" hinzufügen**
+>>
+>> Klicken Sie im neuen Fenster auf `Hinzufügen...`{.action} unter "IP-Adressen". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
+>>
+>> ![Konfiguration](images/image4-4.png){.thumbnail}
+>>
+>> Bestätigen Sie, indem Sie auf `Hinzufügen`{.action} klicken.
+>>
+>> ![Konfiguration Additional IP](images/image5-5.png){.thumbnail}
+>>
+>> **Schritt 4: Netzwerk-Interface neu starten**
+>>
+>> Wieder in der Systemsteuerung (`Netzwerkverbindungen`{.action}), klicken Sie mit der rechten Maustaste auf Ihr Netzwerkinterface und wählen Sie `Deaktivieren`{.action}.
+>>
+>> ![Netzwerkdeaktivierung](images/image6.png){.thumbnail}
+>>
+>> Um es neu zu starten klicken Sie mit der rechten Maustaste darauf und wählen Sie `Aktivieren`{.action}.
+>>
+>> ![Netzwerkaktivierung](images/image7.png){.thumbnail}
+>>
+>> **Schritt 5: Überprüfung der neuen Netzwerkkonfiguration**
+>>
+>> Öffnen Sie die Eingabeaufforderung (cmd) und geben Sie `ipconfig` ein. Die Konfiguration sollte nun die neue Additional IP enthalten.
+>>
+>> ![Aktuelle Netzwerkkonfiguration überprüfen](images/image8-8.png){.thumbnail}
+>>
 
 ### Diagnose
 

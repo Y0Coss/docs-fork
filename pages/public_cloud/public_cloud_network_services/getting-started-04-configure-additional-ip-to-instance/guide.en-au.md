@@ -1,7 +1,7 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2025-11-12
+updated: 2025-12-03
 ---
 
 > [!primary]
@@ -59,10 +59,9 @@ Concerning different distribution releases, please note that the proper procedur
 
 > [!tabs]
 > **Debian 11**
->>
 >> Debian 11
 >>
->> Step 1: Disable automatic network configuration
+>> **Step 1: Disable automatic network configuration**
 >>
 >> Open the following file path with a text editor:
 >>
@@ -77,7 +76,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> Creating this configuration file will prevent changes to your network configuration from being made automatically.
 >>
->> Step 2: Edit the network configuration file
+>> **Step 2: Edit the network configuration file**
 >>
 >> You can verify your network interface name with this command:
 >>
@@ -100,7 +99,7 @@ Concerning different distribution releases, please note that the proper procedur
 >> netmask 255.255.255.255
 >> ```
 >>
->> Step 3: Restart the interface
+>> **Step 3: Restart the interface**
 >>
 >> Apply the changes with the following command:
 >>
@@ -108,12 +107,12 @@ Concerning different distribution releases, please note that the proper procedur
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Debian 12, Ubuntu 22.04+**
->> *Debian 12, Ubuntu 22.04+ and following
+> **Debian 12+, Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 and following
 >>
 >> The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
 >>
->> Step 1: Disable automatic network configuration
+>> **Step 1: Disable automatic network configuration**
 >>
 >> Open the following file path with a text editor:
 >>
@@ -129,7 +128,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> Creating this configuration file will prevent changes to your network configuration from being made automatically.
 >>
->> Step 2: Edit the configuration file
+>> **Step 2: Edit the configuration file**
 >>
 >> You can verify your network interface name with this command:
 >>
@@ -165,7 +164,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> Save and close the file.
 >>
->> Step 3: Apply the new network configuration
+>> **Step 3: Apply the new network configuration**
 >>
 >> You can test your configuration using this command:
 >>
@@ -181,10 +180,10 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> Repeat this procedure for each Additional IP address.
 >>
-> **CentOS 7 / Red Hat derivatives**
->> CentOS 7 / Red Hat derivatives
+> **cPanel (CentOS 7) / Red Hat derivatives**
+>> cPanel (CentOS 7) / AlmaLinux (8/9/10) / Rocky Linux (8/9/10)
 >>
->> Step 1: Edit the network configuration file
+>> **Step 1: Edit the network configuration file**
 >>
 >> You can verify your network interface name with this command:
 >>
@@ -209,7 +208,7 @@ Concerning different distribution releases, please note that the proper procedur
 >> ONBOOT=yes
 >> ```
 >>
->> Step 2: Restart the interface
+>> **Step 2: Restart the interface**
 >>
 >> Apply the changes with the following command:
 >>
@@ -220,7 +219,7 @@ Concerning different distribution releases, please note that the proper procedur
 > **Plesk**
 >> Plesk
 >>
->> Step 1: Access the Plesk IP management section
+>> **Step 1: Access the Plesk IP management section**
 >>
 >> In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
 >>
@@ -228,7 +227,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> Click on `IP Addresses`{.action} under **Tools & Resources**.
 >>
->> Step 2: Add the additional IP information
+>> **Step 2: Add the additional IP information**
 >>
 >> In this section, click on the button `Add IP Address`{.action}.
 >>
@@ -238,7 +237,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> ![add ip information](images/pleskip3-3.png){.thumbnail}
 >>
->> Step 3: Check the current IP configuration
+>> **Step 3: Check the current IP configuration**
 >>
 >> Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
 >>
@@ -247,11 +246,9 @@ Concerning different distribution releases, please note that the proper procedur
 > **Windows Server**
 >> Windows Server
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> In the Public Cloud area, open `Instances`{.action} in the left-hand menu and click on the name of your instance. Navigate to the `VNC Console`{.action} tab.
 >>
->> Open `Instances`{.action} in the left-hand menu and click on the name of your instance. Switch to the tab `VNC console`{.action}.
->>
->> Step 1: Verify the network configuration
+>> **Step 1: Verify the network configuration**
 >>
 >> Right-click on the `Start Menu`{.action} button and open `Run`{.action}.
 >>
@@ -263,7 +260,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> ![check main IP configuration](images/image1-1.png){.thumbnail}
 >>
->> Step 2: Change the IPv4 Properties
+>> **Step 2: Change the IPv4 Properties**
 >>
 >> Now you need to change the IP properties to a static configuration.
 >>
@@ -273,7 +270,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the IP address which you have retrieved in the first step, then click on `Advanced`{.action}.
 >>
->> Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"
+>> **Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"**
 >>
 >> In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
 >>
@@ -283,7 +280,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> ![Additional IP configuration](images/image5-5.png){.thumbnail}
 >>
->> Step 4: Restart the network interface
+>> **Step 4: Restart the network interface**
 >>
 >> Back in the control panel (`Network Connections`{.action}), right-click on your network interface and then select `Disable`{.action}.
 >>
@@ -293,7 +290,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> ![enabling network](images/image7.png){.thumbnail}
 >>
->> Step 5: Check the new network configuration
+>> **Step 5: Check the new network configuration**
 >>
 >> Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
 >>
@@ -320,4 +317,4 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).v
