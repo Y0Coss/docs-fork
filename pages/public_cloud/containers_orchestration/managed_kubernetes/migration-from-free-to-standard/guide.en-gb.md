@@ -73,7 +73,7 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 > [!primary]
 >
-> The Standard plan is currently available only in 3AZ regions (Paris). Make sure your migration targets a compatible region to avoid deployment issues.
+> The Standard plan is currently available only in 3AZ regions. Make sure your migration targets a compatible region to avoid deployment issues.
 >
 
 ### 4. Restore your backups onto the new cluster
