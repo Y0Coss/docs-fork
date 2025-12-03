@@ -1,6 +1,6 @@
 ---
-title: 'Zarządzaj komunikacją związaną z Twoim kontem OVHcloud'
-excerpt: 'Dowiedz się, jak dodać dodatkowe adresy e-mail kontaktowe do swojego konta OVHcloud i skonfigurować reguły dystrybucji wiadomości'
+title: "Zarządzanie komunikacją dotyczącą usług OVHcloud"
+excerpt: "Dowiedz się, jak dodać dodatkowe adresy e-mail kontaktowe do swojego konta OVHcloud i skonfigurować reguły dystrybucji wiadomości"
 updated: 2025-12-03
 ---
 
@@ -12,13 +12,13 @@ Podczas zakładania konta OVHcloud podałeś adres e-mail kontaktowy. Jeśli chc
 
 ## Wymagania początkowe
 
-- Posiadanie aktywnego konta OVHcloud.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
 Aby uzyskać dostęp do zarządzania komunikacją na Twoim koncie OVHcloud:
 
-1. Zaloguj się do [Twojego konta OVHcloud](/links/manager).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 1. Kliknij swój nick w prawym górnym rogu, a następnie wybierz `Połączenia`{.action}.
 
 ### Wiadomości
@@ -35,14 +35,14 @@ W zakładce `Kontakty`{.action} znajdziesz główny adres e-mail konta OVHcloud,
 >
 > Jeśli nie masz już dostępu do swojego głównego adresu e-mail kontaktowego i nie posiadasz adresu e-mail rezerwowego, musisz postępować zgodnie z [tą procedurą](/links/transversal/procedure-email-change), aby zażądać jego zmiany u naszych zespołów.
 
-Oprócz kontaktu `domyślnego`, możesz dodać nowe adresy e-mail kontaktowe do swojego konta OVHcloud:
+Oprócz kontaktu `domyślny`, możesz dodać nowe adresy e-mail kontaktowe do swojego konta OVHcloud:
 
-- **(1)** : Kliknij przycisk `Dodaj kontakt`{.action}, wprowadź adres e-mail i imię kontaktu, a następnie kliknij `Dodaj`{.action}. Kod weryfikacyjny zostanie wysłany na ten adres e-mail.
+- **(1)**: Kliknij przycisk `Dodaj kontakt`{.action}, wprowadź adres e-mail i imię kontaktu, a następnie kliknij `Dodaj`{.action}. Kod weryfikacyjny zostanie wysłany na ten adres e-mail.
 
-- **(2)** : Kliknij przycisk `⋮`{.action} obok nowego kontaktu, aby wyświetlić opcje:
-    - `Wprowadź kod weryfikacyjny`{.action} : Pozwala wpisać kod weryfikacyjny wysłany nowemu kontaktowi przez e-mail.
-    - `Prześlij ponownie e-mail potwierdzający`{.action} : Pozwala wysłać ponownie e-mail z kodem weryfikacyjnym do tego kontaktu.
-    - `Usuń`{.action} : Pozwala usunąć ten kontakt.
+- **(2)**: Kliknij przycisk `⋮`{.action} obok nowego kontaktu, aby wyświetlić opcje:
+    - `Wprowadź kod weryfikacyjny`{.action}: Pozwala wpisać kod weryfikacyjny wysłany nowemu kontaktowi przez e-mail.
+    - `Prześlij ponownie e-mail potwierdzający`{.action}: Pozwala wysłać ponownie e-mail z kodem weryfikacyjnym do tego kontaktu.
+    - `Usuń`{.action}: Pozwala usunąć ten kontakt.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
 
@@ -50,10 +50,10 @@ Oprócz kontaktu `domyślnego`, możesz dodać nowe adresy e-mail kontaktowe do 
 
 W zakładce `Ustawienia wysyłki wiadomości`{.action} możesz tworzyć reguły, aby zorganizować dystrybucję wiadomości do swoich adresów e-mail kontaktowych.
 
-- **(1)** : Kliknij przycisk `Utwórz regułę`{.action}, aby określić, którzy kontakt będzie otrzymywał komunikaty, w zależności od kategorii i poziomów priorytetu, które wybierzesz.
+- **(1)**: Kliknij przycisk `Utwórz regułę`{.action}, aby określić, którzy kontakt będzie otrzymywał komunikaty, w zależności od kategorii i poziomów priorytetu, które wybierzesz.
 
-- **(2)** : Kliknij przycisk `⋮`{.action} obok reguły, aby uzyskać dostęp do opcji:
-    - `Włącz / Wyłącz`{.action} : Pozwala włączyć lub wyłączyć regułę **bez jej usuwania**.
+- **(2)**: Kliknij przycisk `⋮`{.action} obok reguły, aby uzyskać dostęp do opcji:
+    - `Włącz / Wyłącz`{.action}: Pozwala włączyć lub wyłączyć regułę **bez jej usuwania**.
     - `Zmodyfikuj`{.action} regułę.
     - `Usuń`{.action} regułę.
 
@@ -61,7 +61,7 @@ W zakładce `Ustawienia wysyłki wiadomości`{.action} możesz tworzyć reguły,
 
 Reguły są stosowane zgodnie z dwoma kryteriami:
 
-- **Kategoria** : Konto, Faktury, Incydent, Konserwacja, Produkt i Bezpieczeństwo.
+- **Kategoria**: Konto, Płatności, Awaria, Konserwacja, Produkt i Bezpieczeństwo.
 - **Priorytet**, ustalony na 3 poziomach: Niski, Średni i Wysoki.
 
 Możesz tworzyć reguły po jednej, wszystkie zostaną zastosowane, gdy wiadomość zostanie wysłana na Twoje konto.

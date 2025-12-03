@@ -1,6 +1,6 @@
 ---
-title: 'Gérez les communications liées aux services OVHcloud'
-excerpt: 'Découvrez comment ajouter des adresses e-mail de contact supplémentaires à votre compte OVHcloud et configurer des règles de distribution des messages'
+title: "Gérer les communications liées aux services OVHcloud"
+excerpt: "Découvrez comment ajouter des adresses e-mail de contact supplémentaires à votre compte OVHcloud et configurer des règles de distribution des messages"
 updated: 2025-12-03
 ---
 
@@ -12,7 +12,7 @@ Lors de la création de votre compte OVHcloud, vous avez spécifié une adresse 
 
 ## Prérequis
 
-- Disposer d'un compte OVHcloud actif.
+- Avoir accès à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique
 

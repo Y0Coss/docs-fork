@@ -1,6 +1,6 @@
 ---
-title: 'Gestionar los mensajes para los servicios de OVHcloud'
-excerpt: 'Descubra cómo añadir direcciones de correo electrónico de contacto adicionales a su cuenta de OVHcloud y configurar reglas para la distribución de mensajes'
+title: "Gestionar las comunicaciones relacionadas con los servicios de OVHcloud"
+excerpt: "Descubra cómo añadir direcciones de correo electrónico de contacto adicionales a su cuenta de OVHcloud y configurar reglas para la distribución de mensajes"
 updated: 2025-12-03
 ---
 
@@ -12,13 +12,13 @@ Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónic
 
 ## Requisitos
 
-- Tener una cuenta de OVHcloud activa.
+- Tener acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
 Para acceder a la gestión de mensajes en su espacio cliente OVHcloud:
 
-1. Inicie sesión en su [espacio cliente OVHcloud](/links/manager).
+1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 1. Haga clic en su nombre en la parte superior derecha y luego en `Mis mensajes`{.action}.
 
 ### Mis mensajes
@@ -61,13 +61,13 @@ Desde la pestaña `Parámetros de envío`{.action}, puede crear reglas para orga
 
 Las reglas se aplican según dos criterios:
 
-- **La categoría**: Cuenta, Facturación, Incidente, Mantenimiento, Producto y Seguridad.
-- **La prioridad**, definida en 3 niveles: Baja, Media y Alta.
+- **La categoría**: Cuenta, Facturación, Incidencia, Mantenimiento, Producto y Seguridad.
+- **La prioridad**, definida en 3 niveles: Bajo, Medio y Alto.
 
 Puede crear sus reglas una por una, y todas se aplicarán cuando se transmita un mensaje a su cuenta.
 
 También puede crear una regla que incluya varias condiciones que se aplicarán en cascada. Para ello, durante la configuración de una regla, haga clic en el botón `Agregar una condición`{.action} **(1)**. Puede añadir tantas condiciones como sea necesario.<br>
-Por defecto, si se aplica una condición, el proceso se detiene. Si desea que el proceso siga aplicando las condiciones siguientes, active el botón `Y continuar el procesamiento de reglas`{.action} **(2)** debajo de la regla que ha configurado.
+Por defecto, si se aplica una condición, el proceso se detiene. Si desea que el proceso siga aplicando las condiciones siguientes, active el botón `Y continuar el tratamiento de reglas `{.action} **(2)** debajo de la regla que ha configurado.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
 

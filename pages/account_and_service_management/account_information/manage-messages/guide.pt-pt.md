@@ -1,5 +1,5 @@
 ---
-title: 'Gerir as comunicações associadas ao seu espaço cliente OVHcloud'
+title: 'Gerir comunicações relacionadas com os serviços da OVHcloud'
 excerpt: 'Descubra como adicionar endereços de correio eletrónico de contacto adicionais ao seu conta OVHcloud e configurar regras de distribuição de mensagens'
 updated: 2025-12-03
 ---
@@ -12,13 +12,13 @@ Ao criar a sua conta OVHcloud, especificou um endereço de correio eletrónico d
 
 ## Requisitos
 
-- Ter uma conta OVHcloud ativa.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
 Para aceder à gestão das comunicações no seu espaço cliente OVHcloud:
 
-1. Inicie sessão no seu [espaço cliente OVHcloud](/links/manager).
+1. Inicie sessão no seu [Área de Cliente OVHcloud](/links/manager).
 1. Clique no seu nome no canto superior direito, depois em `As minhas comunicações`{.action}.
 
 ### As minhas comunicações
@@ -35,13 +35,13 @@ A partir do separador `Contactos`{.action}, encontra o endereço de correio elet
 >
 > Se já não tiver acesso ao seu endereço de correio eletrónico de contacto principal e não tiver um endereço de correio eletrónico de recuperação, terá de seguir [esta procedimento](/links/transversal/procedure-email-change) para solicitar a sua alteração às nossas equipas.
 
-Além do seu contacto `por defeito`, pode adicionar novos endereços de correio eletrónico de contacto à sua conta OVHcloud:
+Além do seu contacto `predefinido`, pode adicionar novos endereços de correio eletrónico de contacto à sua conta OVHcloud:
 
 - **(1)**: Clique no botão `Adicionar um contacto`{.action}, preencha o endereço de correio eletrónico e o nome do contacto e clique em `Adicionar`{.action}. Um código de validação será enviado para esse endereço de correio eletrónico.
 
 - **(2)**: Clique no botão `⋮`{.action} à direita do novo contacto para visualizar as opções:
     - `Introduzir o código de validação`{.action}: Permite introduzir o código de validação enviado para o novo contacto por correio eletrónico.
-    - `Reenviar o código de validação`{.action}: Permite reenviar um correio eletrónico contendo um código de validação para este contacto.
+    - `Reenviar o e-mail de validação`{.action}: Permite reenviar um correio eletrónico contendo um código de validação para este contacto.
     - `Eliminar`{.action}: Permite eliminar este contacto.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
@@ -62,7 +62,7 @@ A partir do separador `Definições de difusão`{.action}, pode criar regras par
 As regras aplicam-se de acordo com dois critérios:
 
 - **A categoria**: Conta, Faturação, Incidente, Manutenção, Produto e Segurança.
-- **A prioridade**, definida em 3 níveis: Baixa, Média e Alta.
+- **A prioridade**, definida em 3 níveis: Baixo, Médio e Elevado.
 
 Pode criar as suas regras uma a uma, todas serão aplicadas quando uma mensagem for transmitida para a sua conta.
 
