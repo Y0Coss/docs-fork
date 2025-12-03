@@ -1,12 +1,12 @@
 ---
-title: 'Administre las comunicaciones relacionadas con su cuenta de OVHcloud'
+title: 'Gestionar los mensajes para los servicios de OVHcloud'
 excerpt: 'Descubra cómo añadir direcciones de correo electrónico de contacto adicionales a su cuenta de OVHcloud y configurar reglas para la distribución de mensajes'
 updated: 2025-12-03
 ---
 
 ## Objetivo
 
-Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónico de contacto. Si desea compartir o delegar la gestión de sus comunicaciones relacionadas con su espacio cliente, puede añadir nuevas direcciones de correo electrónico de contacto y configurar reglas para gestionar estas comunicaciones.
+Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónico de contacto. Si desea compartir o delegar la gestión de mensajes relacionadas con su espacio cliente, puede añadir nuevas direcciones de correo electrónico de contacto y configurar reglas para gestionar estas mensajes.
 
 **Descubra cómo añadir direcciones de correo electrónico de contacto adicionales a su cuenta de OVHcloud y configurar reglas de distribución de mensajes.**
 
@@ -16,7 +16,7 @@ Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónic
 
 ## Procedimiento
 
-Para acceder a la gestión de las comunicaciones en su espacio cliente OVHcloud:
+Para acceder a la gestión de mensajes en su espacio cliente OVHcloud:
 
 1. Inicie sesión en su [espacio cliente OVHcloud](/links/manager).
 1. Haga clic en su nombre en la parte superior derecha y luego en `Mis mensajes`{.action}.

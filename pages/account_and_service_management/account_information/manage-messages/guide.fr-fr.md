@@ -1,5 +1,5 @@
 ---
-title: 'Gérez les communications liées à votre espace client OVHcloud'
+title: 'Gérez les communications liées aux services OVHcloud'
 excerpt: 'Découvrez comment ajouter des adresses e-mail de contact supplémentaires à votre compte OVHcloud et configurer des règles de distribution des messages'
 updated: 2025-12-03
 ---
