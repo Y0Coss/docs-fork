@@ -196,12 +196,14 @@ public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics: Analytics
+public-cloud-data-analytics-general-information: General information
+public-cloud-data-analytics-general-guides: General guides
 public-cloud-compute: Compute
 public-cloud-compute-key-concepts: Schlüsselkonzepte
 public-cloud-compute-getting-started: Erste Schritte
 public-cloud-compute-configuration: Configuration
 public-cloud-compute-configuration-project-management: Projektverwaltung
-public-cloud-compute-configuration-instance-management:  Verwaltung von Instanzen
+public-cloud-compute-configuration-instance-management: Verwaltung von Instanzen
 public-cloud-compute-configuration-instance-management-horizon: Verwaltung über Horizon
 public-cloud-compute-configuration-instance-management-openstack: Verwaltung über OpenStack
 public-cloud-compute-tutorials: Tutorials

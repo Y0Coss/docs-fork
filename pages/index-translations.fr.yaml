@@ -22,7 +22,6 @@ startup-program-general-information: Informations générales
 startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Crédits & Facturation
 startup-program-technical-resources: Ressources techniques
-bare-metal-cloud-data-platforms-metrics-data-platform-visualisation: Visualisation
 bare-metal-cloud-dedicated-servers: Serveurs dédiés
 bare-metal-cloud-dedicated-servers-key-concepts: Concepts clés
 bare-metal-cloud-dedicated-servers-getting-started: Premiers pas
@@ -141,7 +140,7 @@ public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operator
 public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
 public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
 public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
-public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloadss
+public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloads
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
@@ -197,6 +196,8 @@ public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics: Analytics
+public-cloud-data-analytics-general-information: Informations générales
+public-cloud-data-analytics-general-guides: Guides généraux
 public-cloud-compute: Compute
 public-cloud-compute-key-concepts: Concepts clés
 public-cloud-compute-getting-started: Premiers pas

@@ -196,6 +196,8 @@ public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics: Analytics
+public-cloud-data-analytics-general-information: General information
+public-cloud-data-analytics-general-guides: General guides
 public-cloud-compute: Compute
 public-cloud-compute-key-concepts: Kluczowe pojęcia
 public-cloud-compute-getting-started: Pierwsze kroki
@@ -320,6 +322,7 @@ web-cloud-internet-internet-access-configuration-setting-up-your-access: Konfigu
 web-cloud-internet-internet-access-troubleshooting: Diagnostyka
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-configuration-managing-your-offer: Zarządzanie ofertą
+web-cloud-internet-overthebox-configuration-advanced-setup: Zaawansowane przygotowanie
 web-cloud-internet-overthebox-getting-started: Pierwsze kroki
 web-cloud-internet-overthebox-configuration: Konfiguracja
 web-cloud-internet-overthebox-configuration-initial-setup: Konfiguracja początkowa
