@@ -22,7 +22,7 @@ La configuration du reverse DNS d'un serveur est particulièrement utile lors de
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
-Les menus déroulants de la section **Mes adresses IP publiques et services associés** vous permettent de filtrer les éléments du tableau pour les services et de trouver rapidement l’adresse IP souhaitée.
+Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 

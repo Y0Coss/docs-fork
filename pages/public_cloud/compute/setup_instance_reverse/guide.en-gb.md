@@ -22,7 +22,7 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `Public IP Addresses`{.action}.
 
-The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category.
+The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar left of the drop-down menu. 
 
 ![Reverse IP](images/filterippc.png){.thumbnail}
 
