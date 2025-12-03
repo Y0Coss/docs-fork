@@ -1,30 +1,30 @@
 ---
-title: 'Public Cloud Instances : concepts clés'
-excerpt: 'Découvrez les fondamentaux du Public Cloud Compute : fonctionnement des instances, familles et tailles disponibles, déploiements multi-AZ, gestion des images, Sécurité SSH, mécanismes de sauvegarde, réseau public/privé, et avantages des Saving Plans.'
-updated: 2025-11-28
+title: 'Public Cloud Instances - Concepts clés'
+excerpt: 'Découvrez les fondamentaux du Public Cloud Compute : fonctionnement des instances, familles et tailles disponibles, déploiements multi-AZ, gestion des images, sécurité SSH, mécanismes de sauvegarde, réseau public/privé, et avantages des Savings Plans.'
+updated: 2025-12-03
 ---
 
 ## Objectif
 
-Ce guide vise à vous donner une compréhension claire des concepts fondamentaux nécessaires à la création, à la configuration et à la gestion de vos premières instances OVHcloud Public Cloud Compute. Vous apprendrez comment fonctionnent les instances, comment choisir le bon type d'instance, et comment les éléments clés tels que les images, les zones de disponibilité, le réseau, la Sécurité et les sauvegardes s'articulent au sein de l'écosystème OVHcloud.
+Ce guide vise à vous donner une compréhension claire des concepts fondamentaux nécessaires à la création, à la configuration et à la gestion de vos premières instances OVHcloud Public Cloud Compute. Vous apprendrez comment fonctionnent les instances, comment choisir le bon type d'instance, et comment les éléments-clés tels que les images, les zones de disponibilité, le réseau, la Sécurité et les sauvegardes s'articulent au sein de l'écosystème OVHcloud.
 
-## Qu'est-ce qu'une instance (Machine virtuelle) ?
+## Qu'est-ce qu'une instance (Machine Virtuelle) ?
 
-Une instance, ou Machine virtuelle (VM), est un serveur entièrement isolé s'exécutant sur l'infrastructure physique partagée d'OVHcloud. Elle fonctionne comme un serveur traditionnel, mais offre la flexibilité et l'évolutivité du cloud. Vous choisissez le système d'exploitation, définissez les ressources CPU, RAM et Stockage, et déployez vos applications, sites web ou environnements de développement.
+Une instance, ou Machine Virtuelle (VM), est un serveur entièrement isolé s'exécutant sur l'infrastructure physique partagée d'OVHcloud. Elle fonctionne comme un serveur traditionnel, mais offre la flexibilité et l'évolutivité du cloud. Vous choisissez le système d'exploitation, définissez les ressources CPU, RAM et Stockage, et déployez vos applications, sites web ou environnements de développement.
 
 Les instances Public Cloud Compute offrent :
 
 - Création à la demande et dimensionnement flexible – Échelonner les ressources selon vos besoins.
 - Facturation au fur et à mesure – Facturé à l'heure ou au mois selon l'utilisation réelle.
-- Intégration transparente avec les services OVHcloud – y compris le Stockage Objet, le Réseau, les Sauvegardes, et plus encore.
+- Intégration transparente avec les services OVHcloud – y compris le stockage objet (*Object Storage*), le réseau, les sauvegardes, et plus encore.
 
 Les instances peuvent être gérées via l'espace client OVHcloud, l'interface Horizon, les points d'accès API, ou via des outils d'automatisation et d'orchestration tels que l'OVHcloud CLI et Terraform.
 
 ## Types d'instances
 
-OVHcloud propose plusieurs familles d'instances conçues pour répondre à différents besoins de charge de travail. Chaque famille propose une gamme de tailles (flavors) pour correspondre précisément à vos besoins en ressources.
+OVHcloud propose plusieurs familles d'instances conçues pour répondre à différents besoins de charge de travail. Chaque famille propose une gamme de tailles (*flavors*) pour correspondre précisément à vos besoins en ressources.
 
-| Types d'instances | Description                      | Cas d'utilisation typiques                                                                                                                                                        |
+| Types d'instances  | Description                      | Cas d'utilisation typiques                                                                                                                                                        |
 | ------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Générale           | Équilibre CPU et Mémoire         | Adaptée aux serveurs de développement, applications web et charges de travail d'entreprise générales. Fournit un ratio équilibré entre CPU et RAM.                                            |
 | Optimisée CPU      | Haute performance processeur     | Idéale pour les applications intensives en calcul, les tâches de traitement parallèle, les pipelines CI/CD, ou les microservices nécessitant une fréquence CPU élevée.                                     |
@@ -43,13 +43,13 @@ Les instances Public Cloud d'OVHcloud sont déployées sur [plusieurs centres de
 - BHS – Beauharnois, Canada
 - DE – Francfort, Allemagne
 
-Types de zones de disponibilité
+**Types de zones de disponibilité :**
 
-| Types de zone                   | Description                                                                    | utilisation recommandée                                                                                        |
+| Types de zone                   | Description                                                                    | Utilisation recommandée                                                                                        |
 | ------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | 1-AZ (Single Availability Zone) | Les instances sont déployées dans une seule zone.                                   | Environnements simples, développement, tests, ou charges de travail non critiques.                                  |
 | 3-AZ (Triple Availability Zone) | Les instances sont réparties sur trois zones redondantes au sein de la même région. | Charges de travail de production nécessitant une haute disponibilité et une tolérance aux pannes.                                  |
-| Local Zones                     | emplacements périphériques plus proches des utilisateurs finaux pour réduire le délai.                          | Applications sensibles au délai telles que le traitement de données en temps réel, les jeux en ligne ou les services web interactifs. | 
+| Local Zones                     | Emplacements périphériques plus proches des utilisateurs finaux pour réduire le délai. | Applications sensibles au délai telles que le traitement de données en temps réel, les jeux en ligne ou les services web interactifs. | 
 
 > [!primary]
 > 
@@ -58,11 +58,11 @@ Types de zones de disponibilité
 
 ## Images système disponibles
 
-Lors de la création d'une instance, vous sélectionnez une image qui inclut le système d'exploitation et, éventuellement, des applications préinstallées. OVHcloud propose une variété d'images pour répondre à des besoins variés :
+Lors de la création d'une instance, vous sélectionnez une image qui inclut le système d'exploitation et, éventuellement, des applications préinstallées. OVHcloud propose une variété d'images pour répondre à des besoins divers :
 
-- **Distributions Linux :** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux, et autres. Ces images sont prêtes à l'emploi pour les serveurs web, les environnements de développement et les charges de travail générales.
+- **Distributions Linux :** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux et autres. Ces images sont prêtes à l'emploi pour les serveurs web, les environnements de développement et les charges de travail générales.
 - **Windows Server :** Versions avec licences intégrées, permettant un déploiement immédiat pour les applications basées sur Microsoft et les charges de travail d'entreprise.
-- **Applications préconfigurées :** Images qui incluent des logiciels tels que cPanel, Plesk, Docker, ou NVIDIA GPU Cloud (NGC). Elles simplifient le déploiement et accélèrent le passage à la production.
+- **Applications préconfigurées :** Images qui incluent des logiciels tels que cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Elles simplifient le déploiement et accélèrent le passage à la production.
 - **[Images personnalisées](/pages/public_cloud/Compute/upload_own_image) :** Vous pouvez importer vos propres images au format QCOW2 ou RAW, offrant un contrôle complet sur votre environnement et permettant des migrations, des modèles standardisés ou des configurations spécialisées.
 
 **Cycle de vie et support :** OVHcloud met régulièrement à jour le catalogue d'images. Consultez toujours les annonces sur le cycle de vie et la fin du support pour vous assurer que vos images restent sécurisées et supportées. Voir [ici](/pages/public_cloud/Compute/image-life-cycle).
@@ -82,21 +82,19 @@ Meilleures pratiques :
 - Utilisez une clé unique pour chaque utilisateur.
 - Stockez vos clés dans un gestionnaire ou un coffre-fort sécurisé.
 
-Pour des instructions détaillées sur la création et l'utilisation des clés SSH, consultez le guide officiel [OVHcloud SSH](/pages/public_cloud/Compute/creating-ssh-keys-pci).
+Pour des instructions détaillées sur la création et l'utilisation des clés SSH, consultez le guide [OVHcloud sur le SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## Sauvegardes
 
 Les sauvegardes protègent vos données et configurations contre les pertes accidentelles ou les erreurs. OVHcloud propose plusieurs mécanismes de sauvegarde pour assurer la sécurité de vos instances et de vos données :
 
 - **Types de sauvegardes :**
-
-  - Sauvegardes manuelles : Prenez un instantané de votre disque à tout moment.
-  - Sauvegardes automatiques : Sauvegardes planifiées créées à intervalles réguliers.
-  - Création et restauration d'instance : Déployez une nouvelle instance directement à partir d'une sauvegarde existante.
-
+    - Sauvegardes manuelles : Prenez un instantané de votre disque à tout moment.
+    - Sauvegardes automatiques : Sauvegardes planifiées créées à intervalles réguliers.
+    - Création et restauration d'instance : Déployez une nouvelle instance directement à partir d'une sauvegarde existante.
 - **Emplacements de sauvegarde :**
-  - Sauvegarde locale : Stockée dans la même région que votre instance.
-  - Sauvegarde distante : Crée automatiquement une copie de la sauvegarde locale dans une région de votre choix.
+    - Sauvegarde locale : Stockée dans la même région que votre instance.
+    - Sauvegarde distante : Crée automatiquement une copie de la sauvegarde locale dans une région de votre choix.
 
 > [!primary]
 >
@@ -108,9 +106,9 @@ Les sauvegardes protègent vos données et configurations contre les pertes acci
 Les instances Public Cloud d'OVHcloud peuvent être connectées à différents types de réseaux selon vos besoins d'application.
 
 | Types de réseau        | Description                                                                                   | Cas d'utilisation                                                                            |
-| ------------------------| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Réseau public          | Les instances sont connectées à Internet via une adresse IP publique.                              | Hébergement de sites web, d'API, ou fournir un accès distant à vos serveurs.                  |
-| Réseau privé (vRack)   | Une interconnexion privée entre vos ressources OVHcloud, isolée d'Internet public. | Connexion de bases de données, services backend, ou communication interne entre instances. | 
+| -----------------------| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Réseau public          | Les instances sont connectées à Internet via une adresse IP publique.                         | Hébergement de sites web, d'API, ou fournir un accès distant à vos serveurs.                  |
+| Réseau privé (vRack)   | Une interconnexion privée entre vos ressources OVHcloud, isolée d'Internet.                   | Connexion de bases de données, services backend, ou communication interne entre instances. | 
 
 Le vRack vous permet de créer un réseau sécurisé et isolé, même à travers différentes régions ou projets.
 
@@ -118,13 +116,13 @@ Le vRack vous permet de créer un réseau sécurisé et isolé, même à travers
 
 Pour plus de détails sur la configuration des réseaux Public Cloud, consultez le guide officiel [OVHcloud sur les réseaux](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
-## Saving Plans
+## Savings Plans
 
-Les Saving Plans vous permettent de réduire vos coûts Public Cloud Compute en échange d'un engagement d'utilisation constante sur une période définie, allant de 1 mois à 3 ans.
+Les Savings Plans vous permettent de réduire vos coûts Public Cloud Compute en échange d'un engagement d'utilisation constante sur une période définie, allant de 1 mois à 3 ans.
 
-**Avantages clés :**
+**Avantages-clés :**
 
-- **Coûts réduits :** Plus économique que la facturation au fur et à mesure.
+- **Coûts réduits :** Plus économique que la facturation en *pay-as-you-go*.
 - **Application automatique :** Les économies s'appliquent automatiquement à toutes les instances compatibles.
 - **Flexible :** Vous pouvez changer les types ou tailles d'instances tout en conservant les avantages de votre plan.
 
@@ -133,7 +131,7 @@ Les Saving Plans vous permettent de réduire vos coûts Public Cloud Compute en 
 - Charges de travail stables et prévisibles, telles que les applications de production ou les serveurs d'entreprise.
 - Services avec des besoins en ressources constants qui bénéficient d'une optimisation des coûts.
 
-Les Saving Plans vous aident à optimiser votre budget tout en maintenant les performances et la fiabilité de votre environnement cloud. Pour plus d'informations, consultez le guide officiel [OVHcloud sur les Saving Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans).
+Les Savings Plans vous aident à optimiser votre budget tout en maintenant les performances et la fiabilité de votre environnement cloud. Pour plus d'informations, consultez le guide officiel [OVHcloud sur les Savings Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans).
 
 ## Aller plus loin
 
@@ -141,7 +139,7 @@ Une fois que vous maîtrisez les concepts fondamentaux du Public Cloud Compute d
 
 - [Comment créer une instance Public Cloud et y accéder](/pages/public_cloud/Compute/public-cloud-first-steps)
 - [Gérer vos instances Public Cloud](/pages/public_cloud/Compute/first_steps_with_public_cloud_instance)
-- [Démarrer une instance sur un volume démarrable](/pages/public_cloud/Compute/start_instance_on_attached_volume)
+- [Démarrer une instance sur un volume bootable](/pages/public_cloud/Compute/start_instance_on_attached_volume)
 - [Mettre en veille ou suspendre une instance](/pages/public_cloud/Compute/suspend_or_pause_an_instance)
 - [Premiers pas avec des applications préinstallées](/pages/public_cloud/Compute/apps_first_steps)
 - [Ajouter des crédits cloud](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project)

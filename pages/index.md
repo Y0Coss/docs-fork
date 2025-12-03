@@ -683,7 +683,7 @@
             + [How to manage a Savings Plan](public_cloud/public_cloud_cross_functional/how_to_manage_savings_plan)
     + [Compute](products/public-cloud-compute)
         + [Key Concepts](public-cloud-compute-key-concepts)
-            + [Public Cloud Instances: key concepts](public_cloud/compute/key_concepts)
+            + [Public Cloud Instances - Key concepts](public_cloud/compute/key_concepts)
         + [Getting started](public-cloud-compute-getting-started)
             + [Adding cloud credit](account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project)
             + [How to create a Public Cloud instance and connect to it](public_cloud/compute/public-cloud-first-steps)

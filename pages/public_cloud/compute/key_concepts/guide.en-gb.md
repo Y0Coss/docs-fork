@@ -1,12 +1,12 @@
 ---
-title: 'Public Cloud Instances: key concepts'
-excerpt: 'Learn the fundamentals of Public Cloud Compute: how instances work, available families and flavors, multi-AZ deployments, image management, SSH security, backup mechanisms, public/private networking, and Saving Plan benefits.'
-updated: 2025-11-28
+title: 'Public Cloud Instances - Key concepts'
+excerpt: 'Learn the fundamentals of Public Cloud Compute: how instances work, available families and flavors, multi-AZ deployments, image management, SSH security, backup mechanisms, public/private networking, and Savings Plans benefits.'
+updated: 2025-12-03
 ---
 
 ## Objectives
 
-This guide aims to give you a clear understanding of the core concepts required to create, configure, and manage your first OVHcloud Public Cloud Compute instances. You will learn how instances work, how to choose the right instance type, and how key elements such as images, availability zones, networking, security, and backups fit together within the OVHcloud ecosystem.
+This guide aims at giving you a clear understanding of the core concepts required to create, configure, and manage your first OVHcloud Public Cloud Compute instances. You will learn how instances work, how to choose the right instance type, and how key elements such as images, availability zones, networking, security, and backups fit together within the OVHcloud ecosystem.
 
 ## What Is an Instance (Virtual Machine)?
 
@@ -43,9 +43,9 @@ OVHcloud Compute instances are deployed across [multiple datacenters worldwide](
 - BHS – Beauharnois, Canada
 - DE – Frankfurt, Germany
 
-Availability Zone Types
+**Availability Zone Types:**
 
-| Types of zone                   | Description                                                                    | recommended use                                                                                        |
+| Types of zones                  | Description                                                                    | Recommended use                                                                                        |
 | ------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | 1-AZ (Single Availability Zone) | Instances are deployed within a single zone.                                   | Simple environments, development, testing, or non-critical workloads.                                  |
 | 3-AZ (Triple Availability Zone) | Instances are distributed across three redundant zones within the same region. | Production workloads requiring high availability and fault tolerance.                                  |
@@ -62,7 +62,7 @@ When creating an instance, you select an image that includes the operating syste
 
 - **Linux Distributions:** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux, and others. These images are ready to use for web servers, development environments, and general-purpose workloads.
 - **Windows Server:** Versions with integrated licenses, allowing immediate deployment for Microsoft-based applications and enterprise workloads.
-- **Pre-configured Applications:** Images that come with software such as cPanel, Plesk, Docker, or NVIDIA GPU Cloud (NGC). They simplify deployment and accelerate time-to-production.
+- **Pre-configured Applications:** Images that come with softwares such as cPanel, Plesk, Docker, or NVIDIA GPU Cloud (NGC). They simplify deployment and accelerate time-to-production.
 - **[Custom Images](/pages/public_cloud/compute/upload_own_image):** You can import your own images in QCOW2 or RAW format, providing full control over your environment and enabling migrations, standardized templates, or specialized configurations.
 
 **Lifecycle and Support:** OVHcloud regularly updates the image catalog. Always consult the lifecycle and end-of-support announcements to ensure your images remain secure and supported. See [here](/pages/public_cloud/compute/image-life-cycle).
@@ -82,21 +82,19 @@ Best Practices:
 - Use a unique key for each user.
 - Store your keys in a secure manager or vault.
 
-For detailed instructions on creating and using SSH keys, refer to the official [OVHcloud SSH guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
+For detailed instructions on creating and using SSH keys, refer to the [OVHcloud SSH guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## Backups
 
 Backups protect your data and configurations against accidental loss or errors. OVHcloud provides several backup mechanisms to ensure your instances and data remain safe:
 
 - **Backup Types:**
-
-  - Manual Backups: Take a snapshot of your disk at any time.
-  - Automatic Backups: Scheduled backups created at regular intervals.
-  - Instance Creation and Restoration: Deploy a new instance directly from an existing backup.
-
+    - Manual Backups: Take a snapshot of your disk at any time.
+    - Automatic Backups: Scheduled backups created at regular intervals.
+    - Instance Creation and Restoration: Deploy a new instance directly from an existing backup.
 - **Backup Locations:**
-  - Local Backup: Stored within the same region as your instance.
-  - Remote Backup: Automatically creates a copy of the local backup in a different region of your choice.
+    - Local Backup: Stored within the same region as your instance.
+    - Remote Backup: Automatically creates a copy of the local backup in a different region of your choice.
 
 > [!primary]
 >
@@ -107,7 +105,7 @@ Backups protect your data and configurations against accidental loss or errors. 
 
 OVHcloud Compute instances can be connected to different types of networks depending on your application needs.
 
-| Types of network        | Description                                                                                   | Use Cases                                                                            |
+| Types of networks       | Description                                                                                   | Use Cases                                                                            |
 | ------------------------| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | Public Network          | Instances are connected to the Internet via a public IP address.                              | Hosting websites, APIs, or providing remote access to your servers.                  |
 | Private Network (vRack) | A private interconnection between your OVHcloud resources, isolated from the public Internet. | Connecting databases, backend services, or internal communication between instances. |
@@ -118,9 +116,9 @@ The vRack enables you to create a secure, isolated network, even across differen
 
 For more detailed guidance on configuring Public Cloud networks, refer to the official [OVHcloud networking guide](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
-## Saving Plans
+## Savings Plans
 
-Saving Plans let you reduce your Public Cloud Compute costs in exchange for a commitment to consistent usage over a defined period from 1 month up to 3 years.
+Savings Plans let you reduce your Public Cloud Compute costs in exchange for a commitment to consistent usage over a defined period from 1 month up to 3 years.
 
 **Key Benefits:**
 
@@ -133,7 +131,7 @@ Saving Plans let you reduce your Public Cloud Compute costs in exchange for a co
 - Stable and predictable workloads, such as production applications or business servers.
 - Services with consistent resource demands that benefit from cost optimization.
 
-Saving Plans help you optimize your budget while maintaining the performance and reliability of your cloud environment. For more details, refer to the official [OVHcloud Saving Plans guide](/pages/public_cloud/public_cloud_cross_functional/savings_plans).
+Saving Plans help you optimize your budget while maintaining the performance and reliability of your cloud environment. For more details, refer to the official [OVHcloud Savings Plans guide](/pages/public_cloud/public_cloud_cross_functional/savings_plans).
 
 ## Go further
 
