@@ -6,26 +6,26 @@ updated: 2025-12-02
 
 ## Objective
 
-The purpose of this guide is to provide step-by-step instructions to connect multiple on-premise Zerto deployments to an Managed vSphere (PCC) instance. By following this guide, users will be able to establish secure multi-site replication, ensure disaster recovery readiness, and manage data protection across different sites.
+The purpose of this guide is to provide step-by-step instructions to connect multiple on-premise Zerto deployments to an Managed vSphere (Managed vSphere) instance. By following this guide, users will be able to establish secure multi-site replication, ensure disaster recovery readiness, and manage data protection across different sites.
 
 **Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
 
 ## Requirements 
 
-- **PCC Setup:** A PCC environment with Zerto already deployed.
+- **Managed vSphere Setup:** A Managed vSphere environment with Zerto already deployed.
 - **On-Premise Zerto:** Zerto installed and configured on your local infrastructure.
-- **VPN Information:** All necessary VPN credentials, IP addresses, and keys for both on-premise and PCC environments.
+- **VPN Information:** All necessary VPN credentials, IP addresses, and keys for both on-premise and Managed vSphere environments.
 
 > [!primary]
 >
-> Appropriate administrative access to Zerto Manager on both PCC and on-premise sites.
+> Appropriate administrative access to Zerto Manager on both Managed vSphere and on-premise sites.
 >
 
 ## Instructions
 
-1. Access Zerto Manager on PCC
+1. Access Zerto Manager on Managed vSphere
 
-Go to the [OVHcloud Control Panel](/links/manager), log in to your `PCC Manager` and navigate to the `Zerto` tab.
+Go to the [OVHcloud Control Panel](/links/manager), log in to your `Managed vSphere Manager` and navigate to the `Zerto` tab.
 
 ![zerto manager tab](images/zerto_manager_tab.png){.thumbnail}
 
@@ -37,13 +37,13 @@ Click the `Add a site`{.action} button, enter your VPN information (IP addresses
 
 3. Start VPN Configuration
 
-Submit your information, the PCC will automatically start the VPN setup, allowing secure access to your on-premise Zerto.
+Submit your information, the Managed vSphere will automatically start the VPN setup, allowing secure access to your on-premise Zerto.
 
 ![zerto manager vpn configuration](images/zerto_manager_vpn_configuration.png){.thumbnail}
 
 4. Let Automated Processes Run
 
-PCC will run automated tasks to configure multi-site connectivity.
+Managed vSphere will run automated tasks to configure multi-site connectivity.
 
 ![zerto automated processes](images/zerto_automated_processes.png){.thumbnail}
 
@@ -53,15 +53,15 @@ Wait until the status shows `Configuration deployed`.
 
 5. Connect the VPN
 
-Connect your on-premise VPN to the PCC’s Zerto VPN, verify that the connection is active.
+Connect your on-premise VPN to the Managed vSphere’s Zerto VPN, verify that the connection is active.
 
 6. Pair the Zerto Sites
 
-- On PCC Zerto, go to `Sites` and get the token:
+- On Managed vSphere Zerto, go to `Sites` and get the token:
 
 ![zerto get token](images/zerto_get_token.png){.thumbnail}
 
-- On your on-premise Zerto, choose `Pair to a site` and enter the PCC Zerto IP and token.
+- On your on-premise Zerto, choose `Pair to a site` and enter the Managed vSphere Zerto IP and token.
 
 ![zerto pair site](images/zerto_pair_site.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Once paired, your multi-site replication setup is complete.
 
 ## Network Diagram
 
-The following diagram illustrates the connectivity setup for multi-site Zerto replication between the customer site and Managed vSphere (PCC):
+The following diagram illustrates the connectivity setup for multi-site Zerto replication between the customer site and Managed vSphere (Managed vSphere):
 
 ![network diagram](images/network_diagram.png){.thumbnail}
 
@@ -80,10 +80,10 @@ Diagram Explanation:
 - ZVM Private IP – The internal IP of the customer Zerto Virtual Manager.
 - Internal ZVM Network – The LAN connecting customer ZVM and vRAs.
 - OVH Cloud Public IP – Public-facing IP for the Managed vSphere.
-- OVHCloud ZVM Network /23 – Private network within the hosted PCC.
-- ZVM Private IP (PCC) – Private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
+- OVHCloud ZVM Network /23 – Private network within the hosted Managed vSphere.
+- ZVM Private IP (Managed vSphere) – Private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
 
-This setup ensures secure VPN connectivity between on-premise Zerto and OVHcloud PCC, allowing multi-site replication and disaster recovery.
+This setup ensures secure VPN connectivity between on-premise Zerto and OVHcloud Managed vSphere, allowing multi-site replication and disaster recovery.
 
 ## Troubleshooting Tips
 
@@ -94,9 +94,9 @@ This setup ensures secure VPN connectivity between on-premise Zerto and OVHcloud
 
 - Use strong encryption for all VPN connections.
 - Ensure secure authentication methods are in place.
-- Limit access to Zerto and PCC management interfaces.
+- Limit access to Zerto and Managed vSphere management interfaces.
 - Regularly review logs and monitor for suspicious activity.
-- Keep Zerto and PCC software up to date with security patches.
+- Keep Zerto and Managed vSphere software up to date with security patches.
 
 ## Go further 
 
