@@ -1,7 +1,7 @@
 ---
 title: Creating a volume backup
 excerpt: Discover how to back up your Block Storage volume in the OVHcloud Control Panel
-updated: 2025-04-28
+updated: 2025-12-05
 ---
 
 ## Objective
@@ -24,18 +24,22 @@ Both volume snapshot and volume backup allow you to:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
+- A detached [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 In the row of the volume concerned, click on the `...`{.action} button and select `Create a backup`{.action}.<br>
-It is not required to detach the volume from its instance first. However, if you wish to do so, please consult this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-linux) of the corresponding guide for Linux and this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-windows) for Windows.
+
+> [!primary]
+>
+> For Backups it is required to detach the volume from its instance first. Please consult this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-linux) of the corresponding guide for Linux and this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-windows) for Windows.
+>
 
 ![Volume Backup creation](images/volumebackup01.png){.thumbnail}
 
-Coming from the Block Storage volume section, the volume concerned is indicated. Otherwise, select the volume you want create a backup from.
+Select the volume you want create a backup from.
 
 Then select the type of backup you want to create: volume snapshot or volume backup.
 
