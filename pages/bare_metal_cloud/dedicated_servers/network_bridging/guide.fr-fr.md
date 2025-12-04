@@ -52,11 +52,9 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 > [!warning]
 > Dans le cas d'un bloc d'IP, les adresses MAC virtuelles se créent sur chaque IP individuelle dans le bloc.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur le menu `Bare Metal Cloud`{.action} puis sur la section `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
+Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** et séléctionner "Toutes les Additional IP" pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
-Cliquez sur l'onglet `Additional IP`{.action}.
-
-![manage IPs](images/manageIPs2022.png){.thumbnail}
+![espace client](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips.png){.thumbnail}
 
 Cliquez sur le bouton `...`{.action} à côté de l'Additional IP de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
 

@@ -54,9 +54,9 @@ Code samples in the following instructions have to be replaced with your own val
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
 
-Click the `Additional IP`{.action} tab.
+Then, you can use the drop-down menu underneath **"My public IP addresses and associated services"** and select "**All Additional IPs**" to filter your services accordingly, or directly type the desired IP address in the search bar.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail} 
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips.png){.thumbnail}
 
 Next, locate your Additional IP address in the table and click the `...`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
 
