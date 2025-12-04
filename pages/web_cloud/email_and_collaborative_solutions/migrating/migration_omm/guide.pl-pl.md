@@ -72,7 +72,7 @@ Na nowej stronie, która się pojawi, wprowadź dane logowania konta źródłowe
 Przed rozpoczęciem migracji ważne jest, aby wiedzieć o trzech typach kont, które można przenieść i gdzie można je przenieść:
 
 - **OVHcloud**: Opcja `Autodetect` jest zalecana, jeśli musisz przenieść konto hostowane na jednej z ofert poczty e-mail OVHcloud. Jeśli masz dużą liczbę kont poczty e-mail OVHcloud, wybierz jedną z poniższych ofert: `MX plan`, `E-mail Pro`, `Exchange` lub `Zimbra`. Będziesz musiał zalogować się do konta OVHcloud powiązanego z ofertą dotyczącą migracji. Aby uzyskać więcej informacji, zobacz sekcję "[Migrowanie za pomocą połączenia z kontem klienta OVHcloud](#sso-migration)".
-- **Others**: Są to usługi poczty e-mail subskrybowane poza OVHcloud. Dostępna jest niekompletna lista usług poczty e-mail obsługiwanych przez OMM. Jeśli typ usługi Twojego konta e-mail nie znajduje się na liście, użyj protokołów `Imap` lub `Pop`, kompatybilnych z większością serwerów poczty e-mail.
+- **Others**: Są to usługi poczty e-mail subskrybowane poza OVHcloud. Dostępna jest niekompletna lista usług poczty e-mail obsługiwanych przez OMM. Jeśli typ usługi Twojego konta e-mail nie znajduje się na liście, użyj protokołów `IMAP` lub `POP`, kompatybilnych z większością serwerów poczty e-mail.
 - **Importing files**: Możliwe jest przeniesienie zawartości plików PST, ICS, CSV i XML Rules przez OMM do konta poczty e-mail docelowego. Gdy ta funkcja zostanie wybrana, po prostu przeciągnij i upuść swój dokument do wyznaczonej strefy lub przejdź do terminala za pomocą przycisku `Browse your files`{.action}.
 
 ![omm](images/omm-create-migration-03.png){.thumbnail .w-600}
