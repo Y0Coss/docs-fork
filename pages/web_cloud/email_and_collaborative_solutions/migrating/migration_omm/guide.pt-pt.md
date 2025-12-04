@@ -72,7 +72,7 @@ Na nova página que aparece, preencha as informações de conexão da conta de o
 Antes de iniciar a sua migração, é importante conhecer bem os 3 tipos de contas que podem ser migradas e para onde pode migrar:
 
 - **OVHcloud**: O `Autodetect` é aconselhada se tiver de migrar uma conta alojada numa das ofertas de e-mail da OVHcloud. Se tiver um grande número de contas de e-mail OVHcloud, selecione uma das seguintes ofertas: `MX plan`, `E-mail Pro`, `Exchange` ou `Zimbra`. Será solicitado que faça login na conta OVHcloud associada à oferta em questão. Para mais informações, consulte a secção "[Migrar via conexão à conta cliente OVHcloud](#sso-migration)".
-- **Others**: Trata-se de serviços de e-mail subscritos fora da OVHcloud. Uma lista não exaustiva de serviços de e-mail suportados pelo OMM está disponível. Se o tipo de serviço da sua conta de e-mail não estiver lá, utilize os protocolos `Imap` ou `Pop`, compatíveis com a maioria dos servidores de e-mail.
+- **Others**: Trata-se de serviços de e-mail subscritos fora da OVHcloud. Uma lista não exaustiva de serviços de e-mail suportados pelo OMM está disponível. Se o tipo de serviço da sua conta de e-mail não estiver lá, utilize os protocolos `IMAP` ou `POP`, compatíveis com a maioria dos servidores de e-mail.
 - **Importing files**: É possível migrar o conteúdo de ficheiros PST, ICS, CSV e XML Rules através do OMM para uma conta de e-mail de destino. Quando esta função é selecionada, basta arrastar e largar o seu documento na área apropriada ou navegar no seu terminal através do botão `Browse your files`{.action}.
 
 ![omm](images/omm-create-migration-03.png){.thumbnail .w-600}

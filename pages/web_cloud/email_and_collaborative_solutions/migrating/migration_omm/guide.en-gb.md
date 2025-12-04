@@ -21,9 +21,9 @@ updated: 2025-11-25
 
 ## Requirements
 
-- Have an external email service or one from OVHcloud, such as an [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) or MX Plan (via the MX Plan offer alone or included in a [OVHcloud web hosting offer](/links/web/hosting)).
-- Have the credentials related to the email accounts you want to migrate (the source email accounts).
-- Have the credentials related to the destination email accounts.
+- An external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) offer, or MX Plan (via the MX Plan offer alone or included in a [OVHcloud web hosting offer](/links/web/hosting)).
+- Login details for the email accounts you want to migrate (the source accounts).
+- Login details for the destination email accounts.
 
 ## Instructions
 
@@ -73,7 +73,7 @@ Before starting your migration, it is important to know the 3 types of accounts 
 
 - **OVHcloud**: The `Autodetect` option is recommended if you need to migrate an account hosted on one of the OVHcloud email offers. If you have a large number of OVHcloud email accounts, select one of the following offers: `MX plan`, `Email Pro`, `Exchange` or `Zimbra`. You will be asked to connect to the OVHcloud account associated with the offer concerned by the migration. For more information, see the section "[Migrate via a connection to the OVHcloud customer account](#sso-migration)".
 - **Others**: They refer to email services outside of OVHcloud. You will find a non-exhaustive list of email services supported by OMM. If the type of service of your email account is not listed, use the `IMAP` or `POP` protocols, which are compatible with most email servers.
-- **Importing files**: It is possible to migrate the content of PST, ICS, CSV and XML Rules files via OMM to a destination email account. When this function is selected, simply drag and drop your document into the designated area or browse your terminal via the `Browse your files`{.action} button.
+- **Importing files**: It is possible to migrate the content of PST, ICS, CSV, and XML rules files via OMM to a destination email account. When this function is selected, simply drag and drop your document into the designated area or browse your files using the `Browse your files`{.action} button.
 
 ![omm](images/omm-create-migration-03.png){.thumbnail .w-600}
 
