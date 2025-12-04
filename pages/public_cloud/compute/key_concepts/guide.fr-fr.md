@@ -63,9 +63,9 @@ Lors de la création d'une instance, vous sélectionnez une image qui inclut le 
 - **Distributions Linux :** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux et autres. Ces images sont prêtes à l'emploi pour les serveurs web, les environnements de développement et les charges de travail générales.
 - **Windows Server :** Versions avec licences intégrées, permettant un déploiement immédiat pour les applications basées sur Microsoft et les charges de travail d'entreprise.
 - **Applications préconfigurées :** Images qui incluent des logiciels tels que cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Elles simplifient le déploiement et accélèrent le passage à la production.
-- **[Images personnalisées](/pages/public_cloud/Compute/upload_own_image) :** Vous pouvez importer vos propres images au format QCOW2 ou RAW, offrant un contrôle complet sur votre environnement et permettant des migrations, des modèles standardisés ou des configurations spécialisées.
+- **[Images personnalisées](/pages/public_cloud/compute/upload_own_image) :** Vous pouvez importer vos propres images au format QCOW2 ou RAW, offrant un contrôle complet sur votre environnement et permettant des migrations, des modèles standardisés ou des configurations spécialisées.
 
-**Cycle de vie et support :** OVHcloud met régulièrement à jour le catalogue d'images. Consultez toujours les annonces sur le cycle de vie et la fin du support pour vous assurer que vos images restent sécurisées et supportées. Voir [ici](/pages/public_cloud/Compute/image-life-cycle).
+**Cycle de vie et support :** OVHcloud met régulièrement à jour le catalogue d'images. Consultez toujours les annonces sur le cycle de vie et la fin du support pour vous assurer que vos images restent sécurisées et supportées. Voir [ici](/pages/public_cloud/compute/image-life-cycle).
 
 ## Clés SSH
 
@@ -137,11 +137,11 @@ Les Savings Plans vous aident à optimiser votre budget tout en maintenant les p
 
 Une fois que vous maîtrisez les concepts fondamentaux du Public Cloud Compute d'OVHcloud, vous pouvez explorer des opérations et tâches de gestion plus avancées.
 
-- [Comment créer une instance Public Cloud et y accéder](/pages/public_cloud/Compute/public-cloud-first-steps)
-- [Gérer vos instances Public Cloud](/pages/public_cloud/Compute/first_steps_with_public_cloud_instance)
-- [Démarrer une instance sur un volume bootable](/pages/public_cloud/Compute/start_instance_on_attached_volume)
-- [Mettre en veille ou suspendre une instance](/pages/public_cloud/Compute/suspend_or_pause_an_instance)
-- [Premiers pas avec des applications préinstallées](/pages/public_cloud/Compute/apps_first_steps)
+- [Comment créer une instance Public Cloud et y accéder](/pages/public_cloud/compute/public-cloud-first-steps)
+- [Gérer vos instances Public Cloud](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
+- [Démarrer une instance sur un volume bootable](/pages/public_cloud/compute/start_instance_on_attached_volume)
+- [Mettre en veille ou suspendre une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance)
+- [Premiers pas avec des applications préinstallées](/pages/public_cloud/compute/apps_first_steps)
 - [Ajouter des crédits cloud](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).
