@@ -28,7 +28,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 
 - Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben [OpenStack CLI auf Ihrem System installiert und konfiguriert](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
+- Sie haben [OpenStack CLI auf Ihrem System installiert und konfiguriert](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 
 ## In der praktischen Anwendung
 

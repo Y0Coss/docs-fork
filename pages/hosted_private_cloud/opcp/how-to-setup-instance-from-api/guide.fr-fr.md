@@ -1,6 +1,6 @@
 ---
-title: "OPCP - Comment installer une instance depuis les API Openstack"
-excerpt: "Découvrez comment déployer une instance OPCP via les API Openstack en configurant réseaux, sous-réseaux, instance et clés SSH"
+title: "OPCP - Comment installer une instance depuis les API OpenStack"
+excerpt: "Découvrez comment déployer une instance OPCP via les API OpenStack en configurant les réseaux, sous-réseaux, instances et clés SSH"
 updated: 2025-11-18
 ---
 
@@ -96,7 +96,9 @@ openstack network create $NETWORK_NAME
 ```
 
 Par défaut, un réseau n’est visible que par le projet qui l’a créé (ainsi que par les utilisateurs administrateurs).
+
 Si vous souhaitez créer un réseau **partagé entre tous vos projets**, vous pouvez utiliser le paramètre `--share`.
+
 Pour partager un réseau uniquement avec certains projets spécifiques, il est nécessaire d’utiliser le mécanisme **Role-Based Access Control (RBAC)** d’OpenStack : [Documentation RBAC Neutron](https://docs.openstack.org/neutron/pike/admin/config-rbac.html).
 
 Par ailleurs, si vous souhaitez créer le réseau privé dans un **VLAN particulier**, vous pouvez le préciser à l’aide des paramètres suivants :
@@ -153,7 +155,7 @@ openstack network list --name $NETWORK_NAME
 +--------------------------------------+-----------+---------+
 ```
 
-Au besoin vous pouvez lister l'ensemble des réseaux en retirant l'argument `--name`.
+Si nécessaire, vous pouvez lister l'ensemble des réseaux en retirant l'argument `--name`.
 
 **Etape 2 : Créer le subnet**
 
@@ -264,7 +266,7 @@ openstack image list
 
 ### Installation d'une instance
 
-Avec les éléments récupérés précédemment, vous pouvez créer une instance pour déployer un système d'exploitation, ainsi que votre clé publique ssh sur la flavor souhaitée :
+Avec les éléments récupérés précédemment, vous pouvez créer une instance pour déployer un système d'exploitation, ainsi que votre clé publique SSH sur la flavor souhaitée :
 
 ```bash
 openstack server create --key-name OPCPdocs2 --flavor scale-1 --image "Debian 12 LVM OPCP" --network opcpdocs OPCPdocs-server
@@ -343,8 +345,6 @@ Il faudra cependant vous assurer que le noeud a le statut `Available` et possèd
 
 Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez consultez notre documentation : [Cycle de vie d'un noeud OPCP](/pages/hosted_private_cloud/opcp/node-lifecycle).
 
-Pour vérifier la compatibilité entre votre noeud et les traits requis d'une flavor, vous pouvez suivre consultez documentation : [Traits & Flavor](/pages/hosted_private_cloud/opcp/traits-and-flavor).
-
 #### Suppression d'une instance
 
 Vous pouvez supprimer une instance grâce à la commande suivante :
@@ -354,13 +354,14 @@ openstack server delete $INSTANCE_ID
 ```
 
 Votre noeud passera en état `Cleaning`. Cette étape consiste à la réinitialisation matérielle du serveur physique et de l'effacement des données présentes sur les disques.
+
 Durant cette étape, vous ne verrez plus l'instance dans la liste des instances, cependant le noeud ne sera pas disponible immédiatement pour une nouvelle installation. N'oubliez pas de prendre en compte ce délai lors de vos opérations de maintenance.
 L'opération peut prendre plusieurs minutes avant que le noeud soit de nouveau `Available` et disponible pour une nouvelle installation.
 
 ### Références
 
-- [Openstack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
-- [Openstack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html).
+- [OpenStack Official Documentation - Client](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
+- [OpenStack Official Documentation - Network](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/network.html).
 
 ## Aller plus loin
 
