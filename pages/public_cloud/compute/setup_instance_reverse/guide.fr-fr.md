@@ -24,17 +24,17 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
 
-![Reverse IP](images/filterippc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 
 Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
 
-![Reverse DNS](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
 
 Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
 
-![Reverse DNS](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
-Vous pouvez également éditer le reverse directement via l'icône `crayon`{.action} de la colonne **Reverse DNS** du tableau.
+Vous pouvez également éditer le reverse directement via l'icône `crayon`{.action} dans la colonne **Reverse DNS** du tableau.
 
 > [!primary]
 >
