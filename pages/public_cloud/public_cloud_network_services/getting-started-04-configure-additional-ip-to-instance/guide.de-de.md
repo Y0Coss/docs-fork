@@ -1,7 +1,7 @@
 ---
 title: Additional IP konfigurieren
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
-updated: 2025-12-03
+updated: 2025-12-04
 ---
 
 > [!primary]

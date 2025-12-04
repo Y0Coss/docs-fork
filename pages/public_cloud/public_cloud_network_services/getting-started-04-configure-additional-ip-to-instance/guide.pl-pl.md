@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja Additional IP
 excerpt: Dowiedz się, jak dodawać adresy Additional IP do konfiguracji Twojej instancji
-updated: 2025-12-03
+updated: 2025-12-04
 ---
 
 > [!primary]

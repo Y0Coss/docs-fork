@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von IP-Aliasing"
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
-updated: 2025-12-02
+updated: 2025-12-04
 ---
 
 <style>

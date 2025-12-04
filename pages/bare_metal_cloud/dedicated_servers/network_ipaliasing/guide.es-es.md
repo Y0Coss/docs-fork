@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una IP como alias'
 excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
-updated: 2025-12-02
+updated: 2025-12-04
 ---
 
 <style>

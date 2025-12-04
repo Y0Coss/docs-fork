@@ -1,7 +1,7 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2025-12-03
+updated: 2025-12-04
 ---
 
 > [!primary]

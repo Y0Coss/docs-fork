@@ -1,7 +1,7 @@
 ---
 title: Configurar una Additional IP
 excerpt: Cómo añadir direcciones Additional IP a la configuración de la instancia
-updated: 2025-12-03
+updated: 2025-12-04
 ---
 
 > [!primary]
