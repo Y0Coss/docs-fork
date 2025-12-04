@@ -4,6 +4,12 @@ excerpt: "Find out how to install the CloudPanel administration interface on a V
 updated: 2025-12-03
 ---
 
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+</style>
+
 ## Objective
 
 CloudPanel is a modern, lightweight, and high-performance hosting control panel, offering a web interface to deploy and manage:
@@ -171,7 +177,7 @@ Once the installation is complete, enter the URL `https://<IP_VPS>:8443` in your
 
 The following interface appears:
 
-![cloudpanel install](images/cloudpanel-setup-interface.png){.thumbnail}
+![cloudpanel install](images/cloudpanel-setup-interface.png){.thumbnail .w-600}
 
 On the first launch, CloudPanel asks you to create the administrator account by providing a username, an email address, and a password. After completing this step, enter the username and password you just set to log in. You then arrive at the CloudPanel administration interface.
 
