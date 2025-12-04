@@ -76,8 +76,8 @@ Nach der Auswahl Ihres VPS klicken Sie im horizontalen Menü auf den Tab `Automa
 Klicken Sie auf den Link `Premium Backup bestellen`{.action} (für Dienste, die seit dem 07.08.25 bestellt wurden) oder den Button `Automatisches Backup aktivieren`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 Beachten Sie im nächsten Schritt die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozesses geführt und erhalten eine E-Mail zur Bestätigung.

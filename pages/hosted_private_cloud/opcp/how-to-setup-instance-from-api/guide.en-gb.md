@@ -343,8 +343,6 @@ You must ensure that the node is `Available` and has the required **traits** to 
 
 To check the current state of a node and retrieve its ID, you can consult our documentation: [OPCP Node Lifecycle](/pages/hosted_private_cloud/opcp/node-lifecycle).
 
-To verify the compatibility between your node and the required traits of a flavor, you can consult our documentation: [Traits & Flavor](/pages/hosted_private_cloud/opcp/traits-and-flavor).
-
 #### Deleting an Instance
 
 You can delete an instance with the following command:
