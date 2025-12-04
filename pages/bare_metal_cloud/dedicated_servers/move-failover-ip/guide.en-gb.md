@@ -69,17 +69,17 @@ If you order an additional IP block on a server but choose a different location 
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-Click the `Additional IP`{.action} tab.
+Then, you can use the drop-down menu underneath **"My public IP addresses and associated services"** and select "**All Additional IPs**" to filter your services accordingly, or directly type the desired IP address in the search bar.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![manage IPs](images/manage_ips.png){.thumbnail}
 
-Next, click the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action} or `Attach this IP block to another service`{.action}.
+Next, click the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action}.
 
-![move Additional](images/move_ip.png){.thumbnail}
+![move Additional](images/move_ip_1.png){.thumbnail}
 
 In the pop-up window, select the service to move the IP address to from the menu.
 
-![move Additional](images/moveadditionalIP2.png){.thumbnail}
+![move Additional](images/move_ip_2.png){.thumbnail}
 
 Click `Next`{.action}, then `Confirm`{.action}.
 
