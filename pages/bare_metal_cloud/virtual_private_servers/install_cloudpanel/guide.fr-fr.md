@@ -67,61 +67,61 @@ Pour autoriser les connexions entrantes et sortantes, référez-vous à la secti
 
 #### Exemple d’ouverture de ports pour Debian et Ubuntu
 
-1. Installez `UFW` :
+1\. Installez `UFW` :
 
-    ```bash
-    sudo apt -y install ufw
-    ```
+```bash
+sudo apt -y install ufw
+```
 
-2. Ouvrez les ports nécessaires (exemples : SSH, panneau CloudPanel, HTTP/HTTPS) :
+2\. Ouvrez les ports nécessaires (exemples : SSH, panneau CloudPanel, HTTP/HTTPS) :
 
-    ```bash
-    sudo ufw allow 22/tcp
-    sudo ufw allow 8443/tcp
-    sudo ufw allow 80/tcp
-    sudo ufw allow 443/tcp
-    ```
+```bash
+sudo ufw allow 22/tcp
+sudo ufw allow 8443/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+```
 
-3. Activez `UFW` et vérifiez son statut (la valeur « ALLOW » est attendue) :
+3\. Activez `UFW` et vérifiez son statut (la valeur « ALLOW » est attendue) :
 
-    ```bash
-    sudo ufw enable
-    sudo ufw status
-    ```
+```bash
+sudo ufw enable
+sudo ufw status
+```
 
 #### Exemple d’ouverture de ports pour AlmaLinux 9 et Rocky Linux 8
 
-1. Installez `firewalld` :
+1\. Installez `firewalld` :
 
-    ```bash
-    sudo dnf -y install firewalld
-    ```
+```bash
+sudo dnf -y install firewalld
+```
 
-2. Activez et démarrez le service :
+2\. Activez et démarrez le service :
 
-    ```bash
-    sudo systemctl enable --now firewalld
-    ```
+```bash
+sudo systemctl enable --now firewalld
+```
 
-3. Ouvrez les ports nécessaires (exemples : SSH, panneau CloudPanel, HTTP/HTTPS) :
+3\. Ouvrez les ports nécessaires (exemples : SSH, panneau CloudPanel, HTTP/HTTPS) :
 
-    ```bash
-    sudo firewall-cmd --add-service=ssh --permanent
-    sudo firewall-cmd --add-service=http --permanent
-    sudo firewall-cmd --add-service=https --permanent
-    sudo firewall-cmd --add-port=8443/tcp --permanent
-    ```
+```bash
+sudo firewall-cmd --add-service=ssh --permanent
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --add-service=https --permanent
+sudo firewall-cmd --add-port=8443/tcp --permanent
+```
 
-4. Appliquez la configuration :
+4\. Appliquez la configuration :
 
-    ```bash
-    sudo firewall-cmd --reload
-    sudo firewall-cmd --list-all
-    ```
+```bash
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-all
+```
 
 ### Étape 3 — Installer CloudPanel
 
-1. Installez `wget` :
+1\. Installez `wget` :
 
 > [!tabs]
 > Debian et Ubuntu
@@ -136,29 +136,29 @@ Pour autoriser les connexions entrantes et sortantes, référez-vous à la secti
 >> sudo dnf -y install wget
 >> ```
 
-2. Téléchargez le script d’installation de CloudPanel :
+2\. Téléchargez le script d’installation de CloudPanel :
 
-    ```bash
-    wget https://installer.cloudpanel.io/ce/v2/install.sh -O install.sh
-    ```
+```bash
+wget https://installer.cloudpanel.io/ce/v2/install.sh -O install.sh
+```
 
-3. Lancez l’installateur avec le moteur de base de données souhaité :
+3\. Lancez l’installateur avec le moteur de base de données souhaité :
 
-    Exécutez le script en indiquant la base de données que vous souhaitez installer (MySQL ou MariaDB).
+Exécutez le script en indiquant la base de données que vous souhaitez installer (MySQL ou MariaDB).
 
-    - Exemple avec MySQL 8.4 :
+- Exemple avec MySQL 8.4 :
 
-    ```bash
-    sudo DB_ENGINE=MYSQL_8.4 bash install.sh
-    ```
+```bash
+sudo DB_ENGINE=MYSQL_8.4 bash install.sh
+```
 
-    - Exemple avec MariaDB 11.4 :
+- Exemple avec MariaDB 11.4 :
 
-    ```bash
-    sudo DB_ENGINE=MARIADB_11.4 bash install.sh
-    ```
+```bash
+sudo DB_ENGINE=MARIADB_11.4 bash install.sh
+```
 
-    L’installation peut durer plusieurs minutes, car le script installe automatiquement les dépendances nécessaires.
+L’installation peut durer plusieurs minutes, car le script installe automatiquement les dépendances nécessaires.
 
 ### Étape 4 — Première connexion
 
