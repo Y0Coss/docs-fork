@@ -72,7 +72,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> Por defecto, el fichero de configuración se encuentra en `/etc/network/interfaces.d/`. Se recomienda realizar una copia de seguridad del archivo de configuración correspondiente.
 >>
->> **1\. Crear una copia de seguridad del archivo de configuración**
+>> **1. Crear una copia de seguridad del archivo de configuración**
 >>
 >> En nuestro ejemplo, nuestro archivo se llama `50-cloud-init`, por lo que copiamos el archivo `50-cloud-init` utilizando el siguiente comando:
 >>
@@ -87,7 +87,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> **2\. Editar el archivo de configuración**
+>> **2. Editar el archivo de configuración**
 >>
 >> > [!primary]
 >> >
@@ -176,7 +176,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> ```
 >> ///
 >>
->> **3\. Reiniciar la interfaz**
+>> **3. Reiniciar la interfaz**
 >>
 >> Por último, reinicie la interfaz con el siguiente comando:
 >>
@@ -191,7 +191,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> Fedora solía utilizar perfiles de red almacenados por NetworkManager en formato ifcfg en el directorio `/etc/sysconfig/network-scripts/`.<br>
 >> Como el ifcfg ya no está actualizado, NetworkManager ya no crea nuevos perfiles en este formato de forma predeterminada. El archivo de configuración se encuentra ahora en `/etc/NetworkManager/system-connections/`.
 >>
->> **1\. Crear una copia de seguridad del archivo de configuración**
+>> **1. Crear una copia de seguridad del archivo de configuración**
 >>
 >> > [!primary]
 >> >
@@ -211,7 +211,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> **2\. Editar el archivo de configuración**
+>> **2. Editar el archivo de configuración**
 >>
 >> > [!primary]
 >> > Tenga en cuenta que el nombre del archivo de red en nuestro ejemplo puede ser diferente del suyo. Adapte los comandos a su nombre de archivo.
@@ -260,7 +260,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> ```
 >> ///
 >>
->> 3\. **Reiniciar la interfaz**
+>> **3. Reiniciar la interfaz****
 >>
 >> A continuación, reinicie la interfaz:
 >>
@@ -275,7 +275,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> El mejor enfoque consiste en crear un archivo de configuración independiente para configurar las direcciones Additional IP. Esto facilita el retroceso en caso de error.
 >>
->> **1\. Determinar la interfaz**
+>> **1. Determinar la interfaz**
 >>
 >> ```sh
 >> ip a
@@ -283,7 +283,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> Anote el nombre de la interfaz (la interfaz en la que está configurada la dirección IP principal del servidor).
 >>
->> **2\. Crear el archivo de configuración**
+>> **2. Crear el archivo de configuración**
 >>
 >> A continuación, cree un archivo de configuración con la extensión `.yaml`. En nuestro ejemplo, nuestro archivo se llama `51-cloud-init.yaml`
 >>
@@ -340,7 +340,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> sudo netplan try
 >> ```
 >>
->> 3\. **Aplicar la configuración**
+>> **3. Aplicar la configuración**
 >>
 >> Por último, reinicie la interfaz con el siguiente comando:
 >>
@@ -359,7 +359,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> Para cada Additional IP que vaya a configurar, crearemos un fichero de configuración independiente con los siguientes parámetros: `ifcfg-NETWORK_INTERFACE:ID`. Donde `NETWORK_INTERFACE` representa la interfaz física y `ID` es la interfaz de red virtual o el alias ethernet que empieza por un valor de 0. Por ejemplo, para nuestra interfaz llamada `eth0`, el primer alias es `eth0:0`, el segundo alias es `eth0:1`, etc...
 >>
->> **1\. Crear una copia de seguridad del archivo de configuración**
+>> **1. Crear una copia de seguridad del archivo de configuración**
 >>
 >> ```sh
 >> ip a
@@ -367,7 +367,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> Anote el nombre de la interfaz (el nombre en el que está configurada la dirección IP principal del servidor).
 >>
->> **2\. Crear el archivo de configuración**
+>> **2. Crear el archivo de configuración**
 >>
 >> En primer lugar, cree el archivo de configuración. Sustituya `NETWORK_INTERFACE:ID` por sus propios valores.
 >>
@@ -398,7 +398,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> ```
 >> ///
 >>
->> **3\. Reinicio de la interfaz**
+>> **3. Reinicio de la interfaz**
 >>
 >> A continuación, reinicie la interfaz:
 >>
@@ -409,13 +409,13 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 > **cPanel**
 >> cPanel
 >>
->> **1\. Acceder a la sección Gestión IP de WHM**
+>> **1. Acceder a la sección Gestión IP de WHM**
 >>
 >> En el área de cliente WHM, haga clic en `IP Functions`{.action} y seleccione `Add a New IP Address`{.action} en el menú de la izquierda.
 >>
 >> ![Añadir una nueva dirección IP](images/Cpanel-1.png){.thumbnail}
 >>
->> **2\. Añadir la información de las Direcciones IP**
+>> **2. Añadir la información de las Direcciones IP**
 >>
 >> Introduzca su dirección IP adicional como "xxx.xxx.xxx.xxx" en el campo "New IP or IP range to add".
 >>
@@ -428,7 +428,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> > Atención: Si tiene varias IP que configurar en un mismo bloque y las añade todas al mismo tiempo, el sistema WHM le obligará a utilizar la máscara de subred `255.255.255.0`. No es recomendable utilizar esta configuración. Es necesario añadir cada IP individualmente para poder utilizar la máscara de subred adecuada `255.255.255.255`.
 >> >
 >>
->> **3\. Comprobar la configuración IP actual**
+>> **3. Comprobar la configuración IP actual**
 >>
 >> En la sección `IP Functions`{.action}, haga clic en `Show or Delete Current IP Addresses`{.action} para comprobar que la dirección Aditional IP se ha añadido correctamente.
 >>

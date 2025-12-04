@@ -225,7 +225,7 @@ También puede recuperar la dirección de la pasarela a través de [su área de 
 >> ///
 >>
 >> Guarde y cierre el archivo.<br>
-A continuación, edite o cree el archivo `/etc/resolv.conf`:
+>> A continuación, edite o cree el archivo `/etc/resolv.conf`:
 >>
 >> ```bash
 >> sudo nano /etc/resolv.conf

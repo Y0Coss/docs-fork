@@ -276,7 +276,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> **Debian 12+ e Ubuntu 20.04+ **
+> **Debian 12+ e Ubuntu 20.04+**
 >> Debian 12, Ubuntu 20.04 e versioni successive
 >>
 >> Per impostazione predefinita, i file di configurazione si trovano nella directory `/etc/netplan`.

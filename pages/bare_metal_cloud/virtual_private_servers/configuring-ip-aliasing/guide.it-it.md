@@ -155,8 +155,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Debian 12, Ubuntu 20.04**
->> Debian 12, Ubuntu 20.04 e versioni successive
+> **Debian 12+, Ubuntu 22.04**
+>> Debian 12, Ubuntu 22.04 e versioni successive
 >>
 >> Il file di configurazione degli indirizzi Additional IP si trova nel file `/etc/netplan/`. In questo esempio, si chiama `50-cloud-init.yaml`.
 >>

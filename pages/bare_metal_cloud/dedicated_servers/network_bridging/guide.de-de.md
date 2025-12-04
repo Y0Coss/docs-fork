@@ -223,7 +223,7 @@ Sie können das Gateway auch über [Ihr Kundencenter](#viacontrolpanel) oder die
 >> ///
 >>
 >> Speichern und schließen Sie die Datei.<br>
-Als Nächstes bearbeiten oder erstellen Sie die Datei `/etc/resolv.conf`:
+>> Als Nächstes bearbeiten oder erstellen Sie die Datei `/etc/resolv.conf`:
 >>
 >> ```bash
 >> sudo nano /etc/resolv.conf
@@ -236,7 +236,7 @@ Als Nächstes bearbeiten oder erstellen Sie die Datei `/etc/resolv.conf`:
 >> ```
 >>
 >> Speichern und schließen Sie die Datei.<br>
-Nun müssen Sie Ihr Netzwerkinterface online stellen. Geben Sie hierzu den folgenden Befehl ein (ersetzen Sie `ens192` durch eigene Werte):
+>> Nun müssen Sie Ihr Netzwerkinterface online stellen. Geben Sie hierzu den folgenden Befehl ein (ersetzen Sie `ens192` durch eigene Werte):
 >>
 >> ```bash
 >> sudo ip link set ens192 up

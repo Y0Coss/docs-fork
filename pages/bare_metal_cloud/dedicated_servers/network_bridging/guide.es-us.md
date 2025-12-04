@@ -225,7 +225,7 @@ Para todos los sistemas operativos y distribuciones, debe configurar su máquina
 >> ///
 >>
 >> Guarde y cierre el archivo.<br>
-A continuación, edite o cree el archivo `/etc/resolv.conf`:
+>> A continuación, edite o cree el archivo `/etc/resolv.conf`:
 >>
 >> ```bash
 >> sudo nano /etc/resolv.conf

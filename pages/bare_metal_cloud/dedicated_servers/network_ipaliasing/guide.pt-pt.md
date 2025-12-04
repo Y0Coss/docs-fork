@@ -360,7 +360,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
->> **AlmaLinux (8/9/10), Rocky Linux (8/9/10)**
+>> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
 >>
 >> O ficheiro de configuração principal encontra-se em `/etc/sysconfig/network-scripts/`. No nosso exemplo, é chamado `ifcfg-eth0`. Antes de fazer alterações, verifique o nome real do arquivo nessa pasta.
 >>

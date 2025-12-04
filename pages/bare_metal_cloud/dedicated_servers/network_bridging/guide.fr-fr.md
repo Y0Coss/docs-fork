@@ -134,7 +134,7 @@ Pour tous les systèmes d'exploitation et distributions, vous devez configurer v
 >> ![naviguer jusqu'au périphérique réseau](images/proxmox_01.png){.thumbnail}
 >>
 >> Ajoutez ensuite l'adresse MAC que vous avez créée précédemment.
-![ouvrir un périphérique réseau](images/proxmox_02.png){.thumbnail}
+>> ![ouvrir un périphérique réseau](images/proxmox_02.png){.thumbnail}
 >>
 >> Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes suivantes, en fonction du système d'exploitation choisi.
 >>
@@ -224,7 +224,7 @@ Pour tous les systèmes d'exploitation et distributions, vous devez configurer v
 >> ///
 >>
 >> Enregistrez et fermez le fichier.<br>
-Ensuite, éditez ou créez le fichier `/etc/resolv.conf` :
+>> Ensuite, éditez ou créez le fichier `/etc/resolv.conf` :
 >>
 >> ```bash
 >> sudo nano /etc/resolv.conf
@@ -237,7 +237,7 @@ Ensuite, éditez ou créez le fichier `/etc/resolv.conf` :
 >> ```
 >>
 >> Enregistrez et fermez le fichier.<br>
-Vous devez maintenant mettre en ligne votre interface réseau. Pour ce faire, entrez la commande suivante (remplacez `ens192` par vos propres valeurs) :
+>> Vous devez maintenant mettre en ligne votre interface réseau. Pour ce faire, entrez la commande suivante (remplacez `ens192` par vos propres valeurs) :
 >>
 >> ```bash
 >> sudo ip link set ens192 up

@@ -361,7 +361,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
->> AlmaLinux (8/9/10), Rocky Linux (8/9/10)**
+>> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
 >>
 >> Główny plik konfiguracyjny znajduje się w katalogu `/etc/sysconfig/network-scripts/`. W naszym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.
 >>

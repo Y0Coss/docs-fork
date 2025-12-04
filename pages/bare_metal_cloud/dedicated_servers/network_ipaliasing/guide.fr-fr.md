@@ -191,7 +191,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> **Fedora 42**
+> **Fedora 42+**
 >> Fedora 42 et versions ultérieures
 >>
 >> Fedora utilise dorénavant des fichiers clés (*keyfiles*).
@@ -374,7 +374,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >>
 >> Notez le nom de l'interface (celle sur laquelle l'adresse IP principale de votre serveur est configurée).
 >>
->>** Étape 2 : créer le fichier de configuration**
+>> **Étape 2 : créer le fichier de configuration**
 >>
 >> Commencez par créer le fichier de configuration. Remplacez `NETWORK_INTERFACE:ID` par vos propres valeurs.
 >>

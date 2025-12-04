@@ -150,7 +150,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Debian 12, Ubuntu 22.04+**
+> **Debian 12+, Ubuntu 22.04+**
 >> Debian 12, Ubuntu 22.04 und höher
 >>
 >> Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie `50-cloud-init.yaml`. 

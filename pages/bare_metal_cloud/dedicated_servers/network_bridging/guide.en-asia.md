@@ -150,7 +150,7 @@ You can retrieve the gateway address via [your customer area](#viacontrolpanel) 
 >>
 >> ![VM context menu](images/vmware_01.png){.thumbnail}
 >>
-Fold out `Network Adapter 1`, change the value in the `MAC Address` drop-down menu to `Manual` and enter the virtual MAC address created previously.
+>> Fold out `Network Adapter 1`, change the value in the `MAC Address` drop-down menu to `Manual` and enter the virtual MAC address created previously.
 >>
 >> ![Edit settings](images/vmware_02.png){.thumbnail}
 >>

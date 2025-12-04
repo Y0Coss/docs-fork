@@ -224,7 +224,7 @@ Per configurare le macchine virtuali per l’accesso a Internet, è necessario c
 >> ///
 >>
 >> Salvare e chiudere il file.<br>
-Successivamente, modifica o crea il file `/etc/resolv.conf`:
+>> Successivamente, modifica o crea il file `/etc/resolv.conf`:
 >>
 >> ```bash
 >> sudo nano /etc/resolv.conf
@@ -237,7 +237,7 @@ Successivamente, modifica o crea il file `/etc/resolv.conf`:
 >> ```
 >>
 >> Salvare e chiudere il file.<br>
-A questo punto, è necessario mettere online l’interfaccia di rete. Per farlo, inserisci questo comando (sostituisci `ens192` con i tuoi valori):
+>> A questo punto, è necessario mettere online l’interfaccia di rete. Per farlo, inserisci questo comando (sostituisci `ens192` con i tuoi valori):
 >>
 >> ```bash
 >> sudo ip link set ens192 up

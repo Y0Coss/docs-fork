@@ -224,7 +224,7 @@ Adres bramy możesz również pobrać z poziomu [Panelu klienta](#viacontrolpane
 >> ///
 >>
 >> Zapisz i zamknij plik.<br>
-Następnie edytuj lub utwórz plik '/etc/resolv.conf`:
+>> Następnie edytuj lub utwórz plik '/etc/resolv.conf`:
 >>
 >> ```bash
 >> sudo nano /etc/resolv.conf
@@ -237,7 +237,7 @@ Następnie edytuj lub utwórz plik '/etc/resolv.conf`:
 >> ```
 >>
 >> Zapisz i zamknij plik.<br>
-Przełącz teraz interfejs sieciowy do trybu online. W tym celu wprowadź następujące polecenie (zastąp `ens192` własnymi wartościami):
+>> Przełącz teraz interfejs sieciowy do trybu online. W tym celu wprowadź następujące polecenie (zastąp `ens192` własnymi wartościami):
 >>
 >> ```bash
 >> sudo ip link set ens192 up
