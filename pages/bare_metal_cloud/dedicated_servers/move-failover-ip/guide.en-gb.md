@@ -71,7 +71,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 
 Then, you can use the drop-down menu underneath **"My public IP addresses and associated services"** and select "**All Additional IPs**" to filter your services accordingly, or directly type the desired IP address in the search bar.
 
-![manage IPs](images/manage_ips.png){.thumbnail}
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips.png){.thumbnail}
 
 Next, click the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action}.
 
