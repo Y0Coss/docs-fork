@@ -52,7 +52,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 
 ![filter service](images/selectservice_cut.png){.thumbnail}
 
-Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action}.
+Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or simply click on the status badge in the "**Edge Firewall**" column).
 
 ![Enabling the Network Firewall](images/firewall_config.png){.thumbnail}
 
@@ -133,7 +133,7 @@ To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) a
 
 The rules are sorted from 0 (the first rule read) to 19 (the last). The rule chain stops as soon as a rule is applied to the packet.
 
-For example, a packet for TCP port 123 will be intercepted by rule 0 and the rules that follow will not be applied. A packet coming from the IP address 10.0.0.1 will only be captured by the last rule (19), which will block it because the firewall does not allow communication from that address in the previous rules.
+For example, a packet for TCP port 80 will be intercepted by rule 2 and the rules that follow will not be applied. A packet for TCP port 25 will only be captured by the last rule (19), which will block it because the firewall does not allow communication on port 25 in the previous rules.
 
 > [!warning]
 > The above configuration is only an example and should only be used as a reference if the rules do not apply to the services hosted on your server. It is essential that you configure the rules in your firewall to match the services hosted on your server. Incorrect configuration of your firewall rules can result in legitimate traffic being blocked and server services being inaccessible.

@@ -51,7 +51,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `N
 
 ![filtrer les service](images/selectservice_cut.png){.thumbnail}
 
-Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Configurer le Edge Network Firewall`{.action}.
+Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Configurer le Edge Network Firewall`{.action} (ou cliquez simplement sur l'icône de statut dans la colonne "**Edge Firewall**").
 
 ![Activation du Edge Network Firewall](images/firewall_config.png){.thumbnail}
 
@@ -129,7 +129,7 @@ Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (5
 
 Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet.
 
-Par exemple, un paquet pour le port TCP 123 sera intercepté par la règle 0 et les règles qui suivent ne seront pas appliquées. Un paquet provenant de l'adresse IP 10.0.0.1 ne sera capturé que par la dernière règle (19), ce qui le bloquera car le pare-feu n'autorise pas la communication depuis cette adresse dans les règles précédentes.
+Par exemple, un paquet pour le port TCP 80 sera intercepté par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port TCP 25 ne sera capturé que par la dernière règle (19), ce qui le bloquera car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
 
 > [!warning]
 > La configuration ci-dessus n'est qu'un exemple et ne doit être utilisée comme référence que si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est indispensable de configurer les règles de votre firewall pour qu'elles correspondent aux services hébergés sur votre serveur. Une configuration incorrecte de vos règles de pare-feu peut entraîner le blocage du trafic légitime et l'inaccessibilité des services du serveur.
