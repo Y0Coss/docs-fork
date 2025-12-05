@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre la solución Zimbra OVHcloud
 excerpt: "Encuentre las preguntas sobre la migración a Zimbra para la solución MX Plan de OVHcloud"
-updated: 2025-12-04
+updated: 2025-12-05
 ---
 
 <style>
