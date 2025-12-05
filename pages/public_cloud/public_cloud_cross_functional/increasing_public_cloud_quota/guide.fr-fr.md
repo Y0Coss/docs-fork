@@ -6,7 +6,9 @@ updated: 2025-05-30
 
 ## Objectif
 
-Par défaut, le nombre de ressources (RAM, CPU, espace disque, nombre d'instances...) et de projets que vous pouvez créer est limité.
+Par défaut, le nombre de ressources (RAM, CPU, espace disque, nombre d'instances...) et de projets que vous pouvez créer est limité. ( up au depart: pour proteger le client et usage abusif ... quota )
+
+ps: autoscalling/patience || manuel
 
 Si vous souhaitez en créer davantage, une augmentation de quota est alors nécessaire.
 
@@ -31,9 +33,28 @@ Vous avez la possibilté d'augmenter votre quota de ressources manuellement ou a
 
 ![Contact Support](images/contact_support_quota.png){.thumbnail}
 
+#### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
+
+Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera augmenté en fonction de votre utilisation réelle (si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs), ainsi que sur la base d’un ensemble de critères internes et financiers.
+
+Veuillez noter que ce processus n'est pas adapté pour des augmentations rapides de quota.
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
+<br> Dans la rubrique **Paramètres**, cliquez sur `Quota & Régions`{.action}.
+
+Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez ensuite sur le bouton dédié afin de passer l'état à « **Activé** ».
+
+![auto scaling](images/autoscaling2023.png){.thumbnail}
+
+L'auto-scaling sera alors activé sur votre projet et votre quota de ressources sera augmenté au fil du temps.
+
 #### Augmenter manuellement votre quota de ressources
 
-Cette procédure vous permet de demander manuellement une augmentation de quota et de la valider via un paiement initial (crédit Public Cloud).
+Cette procédure vous permet une augmentation rapide et importante de quota ( ex: scaling rapide, instance type GPU ,... ). Cette méthode passe par l'achat immédiat d'un crédit par lequel toutes les consommations cloud seront débitées.
+
+Il est possible d'acheter différents crédits comme le montre le tableau ci-dessous:
+
+<!-- array price -->
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 <br> Dans la rubrique **Paramètres**, cliquez sur `Quota & Régions`{.action}.
@@ -52,12 +73,12 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 Le tableau ci-dessous vous indique les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM (Mo)|Taille du volume (Go)|Volumes|Sauvegarde|Taille des sauvegardes (Go)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM (Go)|Taille du volume (To)|Volumes|Sauvegarde|Taille des sauvegardes (To)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
-|20 VMs|20|40|430080|20000|200|1200|120000|30|10|4|
-|50 VMs|50|64|507904|20000|500|3000|300000|75|25|10|
-|100 VMs|100|128|1015808|40000|1000|6000|600000|300|50|10|
-|200 VMs|200|512|4063232|80000|2000|12000|1200000|600|50|50|
+|20 VMs|20|40|430|20|200|1200|120|30|10|4|
+|50 VMs|50|64|507|20|500|3000|300|75|25|10|
+|100 VMs|100|128|1015|40|1000|6000|600|300|50|10|
+|200 VMs|200|512|4063|80|2000|12000|1200|600|50|50|
 
 Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre paiement sera pris en compte dans les plus brefs délais.
 
@@ -67,24 +88,13 @@ Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre pai
 > Une fois que vous cliquez sur le bouton `Confirmer`{.action}, la commande est automatiquement créée et débitée de votre moyen de paiement.
 >
 
-#### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
-
-Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera relevé en fonction de votre utilisation réelle (si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs), ainsi que sur la base d’un ensemble de critères internes et financiers.
-
-Veuillez noter que le processus n'est pas immédiat. Le quota de ressources est augmenté au fil du temps.
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
-<br> Dans la rubrique **Paramètres**, cliquez sur `Quota & Régions`{.action}.
-
-Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez ensuite sur le bouton dédié afin de passer l'état à « **Activé** ».
-
-![auto scaling](images/autoscaling2023.png){.thumbnail}
-
-L'auto-scaling sera alors activé sur votre projet et votre quota de ressources sera augmenté au fil du temps.
-
 ### Augmenter le quota de vos projets Public Cloud
 
+<!-- deux cas, nombre de projets max || toutes autres questions -->
+
 Si vous avez atteint le nombre maximum de projets Public Cloud autorisés dans votre espace client et que vous souhaitez créer des projets supplémentaires, vous devez en faire la demande auprès de nos équipes support.
+
+<!-- Le temps de gestion par le support peut prendre un certains temps ... -->
 
 ## Aller plus loin
 
