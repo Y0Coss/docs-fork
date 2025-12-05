@@ -176,7 +176,7 @@ source $BASE_DIR/sgxsdk/environment
 make clean
 SGX_MODE=SIM make
 cd bin
-./app
+sudo ./app
 succeed to load enclaves.
 succeed to establish secure channel.
 Succeed to exchange secure message...
@@ -223,7 +223,7 @@ source $BASE_DIR/sgxsdk/environment
 make clean
 SGX_MODE=HW make
 cd bin
-./app
+sudo ./app
 succeed to load enclaves.
 succeed to establish secure channel.
 Succeed to exchange secure message...

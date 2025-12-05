@@ -76,8 +76,8 @@ Haga clic en la pestaña `Backup automatizado`{.action} en el menú horizontal.
 Haga clic en el enlace `Contratar un backup automatizado premium`{.action} (para servicios pedidos desde el 7 de agosto de 2025) o en el botón `Activar el backup automatizado`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 En el siguiente paso, anote la información de precios y haga clic en `Contratar`{.action}. Se le guiará a través del proceso de pedido y recibirá un mensaje de correo electrónico de confirmación.
