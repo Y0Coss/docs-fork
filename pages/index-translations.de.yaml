@@ -381,23 +381,51 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-general-information: Allgemeine Informationen
 network-additional-ip: Additional IP
+network-additional-ip-key-concepts: Schlüsselkonzepte
+network-additional-ip-configuration: Konfiguration
+network-additional-ip-products: Produkt-spezifische Anleitungen
+network-additional-ip-products-dedicated-servers: Dedicated Server
+network-additional-ip-products-hosted-private-cloud: Hosted Private Cloud
+network-additional-ip-products-load-balancer: Load Balancer
+network-additional-ip-products-managed-bare-metal: Managed Bare Metal
+network-additional-ip-products-public-cloud: Public Cloud
+network-additional-ip-products-vps: Virtual Private Server
+network-additional-ip-troubleshooting: Problembehandlung
+network-additional-ip-b yoip: Bring Your Own IP
 network-bgp: BGP Service
-network-security: Netzwerk und Sicherheit
-network-ovhcloud-connect: OVHcloud Connect
-network-ovhcloud-connect-concepts: Konzepte
-network-ovhcloud-connect-configuration: Konfiguration
-network-ovhcloud-connect-getting-started: Erste Schritte
-network-ovhcloud-connect-technical-resources: Technische Ressourcen
+network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 network-load-balancer: Load Balancer
-network-load-balancer-faq: FAQ
-network-load-balancer-getting-started: Erste Schritte
-network-load-balancer-setting-up: Aktivierung
-network-load-balancer-use-cases: Einsatzmöglichkeiten
-network-load-balancer-viewing-statuses: Status einsehen
+network-load-balancer-key-concepts: Schlüsselkonzepte
+network-load-balancer-getting-started: Einstieg
+network-load-balancer-configuration: Konfiguration
+network-load-balancer-configuration-infrastructure: Infrastruktur
+network-load-balancer-configuration-administration: Traffic
+network-load-balancer-configuration-deployments: Deployments
+network-load-balancer-additional-resources: Zusätzliche Ressourcen
+network-load-balancer-troubleshooting: Problembehandlung
+network-security: Netzwerksicherheit
+network-ovhcloud-connect: OVHcloud Connect
+network-ovhcloud-connect-concepts: Schlüsselkonzepte
+network-ovhcloud-connect-getting-started: Einstieg
+network-ovhcloud-connect-configuration: Konfiguration
+network-ovhcloud-connect-troubleshooting: Problembehandlung
+network-ovhcloud-connect-technical-resources: Zusätzliche Ressourcen
+network-secnumcloud-connectivity: SecNumCloud
+network-vrack: vRack Private Network
+network-vrack-configuration: Konfiguration
+network-vrack-use-cases: Produkt-spezifische Anleitungen
+network-vrack-products-dedicated-servers: Dedicated Server
+network-vrack-products-hosted-private-cloud: Hosted Private Cloud
+network-vrack-products-hosted-private-cloud-nutanix: Nutanix on OVHcloud
+network-vrack-products-hosted-private-cloud-vmware: VMware on OVHcloud
+network-vrack-products-load-balancer: Load Balancer
+network-vrack-products-managed-bare-metal: Managed Bare Metal
+network-vrack-products-public-cloud: Public Cloud
+network-vrack-products-public-cloud-containers-orchestration: Containers & Orchestration
+network-vrack-products-public-cloud-network-services: Public Cloud Network Services
 network-vrack-services: vRack Services
-network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
+network-troubleshooting: Problembehandlung
 manage-operate-api: API
 manage-operate-api-getting-started: Erste Schritte
 manage-operate-user: Verwaltung der Benutzer und des Verbunds
