@@ -1,7 +1,7 @@
 ---
 title: Persistent Volumes on OVHcloud Managed Kubernetes Service
 excerpt: 'Learn how to create Persistent Volume Claims (PVCs) and Persistent Volumes (PVs), attach a Pod to a PVC, modify the PV reclaim policy, and delete the created objects.'
-updated: 2025-09-29
+updated: 2025-12-08
 ---
 
 This tutorial goes through the setup of a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on an OVHcloud Managed Kubernetes Service.
