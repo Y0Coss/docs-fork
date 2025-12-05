@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Instancje - Podstawowe pojęcia'
 excerpt: 'Dowiedz się podstaw Public Cloud Compute: jak działają instancje, dostępne rodziny i rozmiary, wdrożenia wielozonowe, zarządzanie obrazami, bezpieczeństwo SSH, mechanizmy kopii zapasowych, sieci publiczne/prywatne oraz korzyści z Savings Plans.'
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Wprowadzenie

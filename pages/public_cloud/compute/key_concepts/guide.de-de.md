@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Instances - Schlüsselkonzepte'
 excerpt: 'Erfahren Sie die Grundlagen von Public Cloud Compute: wie Instanzen funktionieren, verfügbare Arten und Größen, Multi-AZ-Bereitstellungen, Image-Management, SSH-Sicherheit, Backup-Mechanismen, öffentliche/private Netzwerke und Vorteile von Savings Plans.'
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Ziel

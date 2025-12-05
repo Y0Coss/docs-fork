@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Istanze - Concetti chiave'
 excerpt: 'Scopri i fondamenti del Public Cloud Compute: funzionamento delle istanze, famiglie e dimensioni disponibili, distribuzioni multi-AZ, gestione delle immagini, sicurezza SSH, meccanismi di backup, rete pubblica/privata e vantaggi dei Savings Plans.'
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Obiettivo

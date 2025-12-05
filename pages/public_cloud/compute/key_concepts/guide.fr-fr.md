@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Instances - Concepts clés'
 excerpt: 'Découvrez les fondamentaux du Public Cloud Compute : fonctionnement des instances, familles et tailles disponibles, déploiements multi-AZ, gestion des images, sécurité SSH, mécanismes de sauvegarde, réseau public/privé, et avantages des Savings Plans.'
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Instances - Key concepts'
 excerpt: 'Learn the fundamentals of Public Cloud Compute: how instances work, available families and flavors, multi-AZ deployments, image management, SSH security, backup mechanisms, public/private networking, and Savings Plans benefits.'
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Objectives
