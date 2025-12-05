@@ -1,5 +1,5 @@
 ---
-title: 'Public Cloud Instances - Podstawowe pojęcia'
+title: 'Public Cloud Instancje - Podstawowe pojęcia'
 excerpt: 'Dowiedz się podstaw Public Cloud Compute: jak działają instancje, dostępne rodziny i rozmiary, wdrożenia wielozonowe, zarządzanie obrazami, bezpieczeństwo SSH, mechanizmy kopii zapasowych, sieci publiczne/prywatne oraz korzyści z Savings Plans.'
 updated: 2025-12-03
 ---
@@ -53,26 +53,26 @@ Instancje OVHcloud Compute są wdrażane w [wielu centrach danych na całym świ
 
 > [!primary]
 > 
-> **Najlepsze praktyki:** Dla krytycznych obciążeń zaleca się wdrożenie [wielostrefowe](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture), aby zapewnić odporność usługi i ciągłość działania.
+> **Najlepsze praktyki**: Dla krytycznych obciążeń zaleca się wdrożenie [wielostrefowe](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture), aby zapewnić odporność usługi i ciągłość działania.
 >
 
 ## Dostępne obrazy systemowe
 
 Podczas tworzenia instancji wybierasz obraz zawierający system operacyjny i opcjonalnie wstępnie zainstalowane aplikacje. OVHcloud oferuje różnorodne obrazy, aby spełnić różne potrzeby:
 
-- **Dystrybucje Linux:** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux i inne. Te obrazy są gotowe do użycia dla serwerów internetowych, środowisk deweloperskich i ogólnych obciążeń.
-- **Windows Server:** Wersje z wbudowanymi licencjami, umożliwiającymi natychmiastowe wdrożenie aplikacji Microsoft i obciążeń przedsiębiorstwa.
-- **Wstępnie skonfigurowane aplikacje:** Obrazy z wstępnie zainstalowanym oprogramowaniem, takim jak cPanel, Plesk, Docker lub NVIDIA GPU Cloud (NGC). Ułatwiają one wdrożenie i przyspieszają czas wdrożenia.
-- **[Własne obrazy](/pages/public_cloud/compute/upload_own_image):** Możesz zaimportować własne obrazy w formacie QCOW2 lub RAW, zapewniając pełną kontrolę nad swoim środowiskiem i umożliwiając migracje, standardowe szablony lub specjalistyczne konfiguracje.
+- **Dystrybucje Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux i inne. Te obrazy są gotowe do użycia dla serwerów internetowych, środowisk deweloperskich i ogólnych obciążeń.
+- **Windows Server**: Wersje z wbudowanymi licencjami, umożliwiającymi natychmiastowe wdrożenie aplikacji Microsoft i obciążeń przedsiębiorstwa.
+- **Wstępnie skonfigurowane aplikacje**: Obrazy z wstępnie zainstalowanym oprogramowaniem, takim jak cPanel, Plesk, Docker lub NVIDIA GPU Cloud (NGC). Ułatwiają one wdrożenie i przyspieszają czas wdrożenia.
+- **[Własne obrazy](/pages/public_cloud/compute/upload_own_image)**: Możesz zaimportować własne obrazy w formacie QCOW2 lub RAW, zapewniając pełną kontrolę nad swoim środowiskiem i umożliwiając migracje, standardowe szablony lub specjalistyczne konfiguracje.
 
-**Cykl życia i wsparcie:** OVHcloud regularnie aktualizuje katalog obrazów. Zawsze sprawdzaj ogłoszenia dotyczące cyklu życia i końca wsparcia, aby upewnić się, że Twoje obrazy są bezpieczne i wspierane. Zobacz [tutaj](/pages/public_cloud/compute/image-life-cycle).
+**Cykl życia i wsparcie**: OVHcloud regularnie aktualizuje katalog obrazów. Zawsze sprawdzaj ogłoszenia dotyczące cyklu życia i końca wsparcia, aby upewnić się, że Twoje obrazy są bezpieczne i wspierane. Zobacz [tutaj](/pages/public_cloud/compute/image-life-cycle).
 
 ## Klucze SSH
 
 Klucze SSH zapewniają bezpieczny sposób uzyskiwania dostępu do instancji bez użycia haseł. Składają się z dwóch elementów:
 
-- **Klucz publiczny:** Zainstalowany na instancji, aby umożliwić dostęp.
-- **Klucz prywatny:** Bezpiecznie przechowywany na Twoim komputerze lokalnym i używany do uwierzytelnienia połączenia.
+- **Klucz publiczny**: Zainstalowany na instancji, aby umożliwić dostęp.
+- **Klucz prywatny**: Bezpiecznie przechowywany na Twoim komputerze lokalnym i używany do uwierzytelnienia połączenia.
 
 Uwierzytelnianie SSH zapewnia szyfrowany i niezawodny dostęp do Twoich serwerów.
 
@@ -98,7 +98,7 @@ Kopie zapasowe chronią Twoje dane i konfiguracje przed przypadkową utratą lub
 
 > [!primary]
 >
-> **Najlepsze praktyki:** Kopia zapasowa nie zastępuje [odporności architektury](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Dla krytycznych środowisk połącz kopie zapasowe z replikacją wielostrefową, aby zapewnić maksymalne ochronę danych i dostępność usługi.
+> **Najlepsze praktyki**: Kopia zapasowa nie zastępuje [odporności architektury](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Dla krytycznych środowisk połącz kopie zapasowe z replikacją wielostrefową, aby zapewnić maksymalne ochronę danych i dostępność usługi.
 >
 
 ## Sieci publiczne i prywatne
@@ -112,7 +112,7 @@ Instancje OVHcloud Compute mogą być podłączone do różnych typów sieci w z
 
 vRack umożliwia utworzenie bezpiecznej, izolowanej sieci, nawet w różnych regionach lub projektach.
 
-**Przykład:** Hostuj bazę danych na prywatnej sieci, jednocześnie udostępniając tylko serwer WWW na sieci publicznej.
+**Przykład**: Hostuj bazę danych na prywatnej sieci, jednocześnie udostępniając tylko serwer WWW na sieci publicznej.
 
 Aby uzyskać bardziej szczegółowe wskazówki dotyczące konfigurowania sieci Public Cloud, odwiedź oficjalny [przewodnik OVHcloud dotyczący sieci](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
@@ -122,9 +122,9 @@ Savings Plans pozwalają Ci obniżyć koszty Public Cloud Compute w zamian za zo
 
 **Główne korzyści:**
 
-- **Niższe koszty:** Więcej opłacalne niż rozliczanie za rzeczywiste użycie.
-- **Automatyczne stosowanie:** Zyski są automatycznie stosowane do wszystkich kompatybilnych instancji.
-- **Elastyczne:** Możesz zmieniać typy lub rozmiary instancji, zachowując korzyści z planu.
+- **Niższe koszty**: Więcej opłacalne niż rozliczanie za rzeczywiste użycie.
+- **Automatyczne stosowanie**: Zyski są automatycznie stosowane do wszystkich kompatybilnych instancji.
+- **Elastyczne**: Możesz zmieniać typy lub rozmiary instancji, zachowując korzyści z planu.
 
 **Idealne przypadki użycia:**
 

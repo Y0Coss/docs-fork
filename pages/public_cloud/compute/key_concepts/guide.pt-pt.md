@@ -1,5 +1,5 @@
 ---
-title: 'Public Cloud Instances - Conceitos-chave'
+title: 'Public Cloud Instâncias - Conceitos-chave'
 excerpt: 'Descubra os fundamentos do Public Cloud Compute: funcionamento das instâncias, famílias e tamanhos disponíveis, implantações multi-AZ, gestão de imagens, segurança SSH, mecanismos de backup, rede pública/privada e vantagens dos Savings Plans.'
 updated: 2025-12-03
 ---
@@ -53,26 +53,26 @@ As instâncias Public Cloud da OVHcloud são implantadas em [vários centros de 
 
 > [!primary]
 > 
-> **Boa prática:** Para cargas de trabalho críticas, prefira uma [implantação multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) para assegurar a resiliência e a continuidade do serviço.
+> **Boa prática**: Para cargas de trabalho críticas, prefira uma [implantação multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) para assegurar a resiliência e a continuidade do serviço.
 >
 
 ## Imagens do sistema disponíveis
 
 Ao criar uma instância, seleciona uma imagem que inclui o sistema operativo e, opcionalmente, aplicações pré-instaladas. A OVHcloud oferece uma variedade de imagens para responder a necessidades diversas:
 
-- **Distribuições Linux:** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux e outras. Estas imagens estão prontas para uso em servidores web, ambientes de desenvolvimento e cargas de trabalho gerais.
-- **Windows Server:** Versões com licenças integradas, permitindo um implantação imediata para aplicações baseadas em Microsoft e cargas de trabalho empresariais.
-- **Aplicações pré-configuradas:** Imagens que incluem software como cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Simplificam a implantação e aceleram a transição para a produção.
-- **[Imagens personalizadas](/pages/public_cloud/compute/upload_own_image):** Pode importar as suas próprias imagens nos formatos QCOW2 ou RAW, oferecendo um controlo total sobre o seu ambiente e permitindo migrações, modelos padronizados ou configurações especializadas.
+- **Distribuições Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux e outras. Estas imagens estão prontas para uso em servidores web, ambientes de desenvolvimento e cargas de trabalho gerais.
+- **Windows Server**: Versões com licenças integradas, permitindo um implantação imediata para aplicações baseadas em Microsoft e cargas de trabalho empresariais.
+- **Aplicações pré-configuradas**: Imagens que incluem software como cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Simplificam a implantação e aceleram a transição para a produção.
+- **[Imagens personalizadas](/pages/public_cloud/compute/upload_own_image)**: Pode importar as suas próprias imagens nos formatos QCOW2 ou RAW, oferecendo um controlo total sobre o seu ambiente e permitindo migrações, modelos padronizados ou configurações especializadas.
 
-**Ciclo de vida e suporte:** A OVHcloud atualiza regularmente o catálogo de imagens. Consulte sempre as anúncios sobre o ciclo de vida e o fim do suporte para assegurar que as suas imagens permaneçam seguras e suportadas. Veja [aqui](/pages/public_cloud/compute/image-life-cycle).
+**Ciclo de vida e suporte**: A OVHcloud atualiza regularmente o catálogo de imagens. Consulte sempre as anúncios sobre o ciclo de vida e o fim do suporte para assegurar que as suas imagens permaneçam seguras e suportadas. Veja [aqui](/pages/public_cloud/compute/image-life-cycle).
 
 ## Chaves SSH
 
 As chaves SSH oferecem um meio seguro de aceder às suas instâncias sem utilizar palavras-passe. São compostas por dois elementos:
 
-- **Chave pública:** Instalada na instância para permitir o acesso.
-- **Chave privada:** Guardada com segurança na sua máquina local e utilizada para autenticar a ligação.
+- **Chave pública**: Instalada na instância para permitir o acesso.
+- **Chave privada**: Guardada com segurança na sua máquina local e utilizada para autenticar a ligação.
 
 A autenticação SSH assegura um acesso encriptado e fiável aos seus servidores.
 
@@ -98,7 +98,7 @@ Os backups protegem os seus dados e configurações contra perdas acidentais ou 
 
 > [!primary]
 >
-> **Boa prática:** Os backups não substituem uma [arquitetura resiliente](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Para ambientes críticos, combine os backups com a replicação multi-AZ para assegurar uma proteção máxima dos dados e uma disponibilidade otimizada do serviço.
+> **Boa prática**: Os backups não substituem uma [arquitetura resiliente](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Para ambientes críticos, combine os backups com a replicação multi-AZ para assegurar uma proteção máxima dos dados e uma disponibilidade otimizada do serviço.
 >
 
 ## Redes públicas e privadas
@@ -112,7 +112,7 @@ As instâncias Public Cloud da OVHcloud podem ser ligadas a diferentes tipos de 
 
 O vRack permite-lhe criar uma rede segura e isolada, mesmo através de diferentes regiões ou projetos.
 
-**Exemplo:** Aloje a sua base de dados numa rede privada enquanto expõe apenas o seu servidor web na rede pública.
+**Exemplo**: Aloje a sua base de dados numa rede privada enquanto expõe apenas o seu servidor web na rede pública.
 
 Para mais detalhes sobre a configuração das redes Public Cloud, consulte o guia oficial [OVHcloud sobre redes](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
@@ -122,9 +122,9 @@ Os Savings Plans permitem-lhe reduzir os seus custos Public Cloud Compute em tro
 
 **Vantagens-chave:**
 
-- **Custos reduzidos:** Mais económico do que a faturação *pay-as-you-go*.
-- **Aplicação automática:** As economias aplicam-se automaticamente a todas as instâncias compatíveis.
-- **Flexível:** Pode alterar os tipos ou tamanhos de instâncias mantendo os benefícios do seu plano.
+- **Custos reduzidos**: Mais económico do que a faturação *pay-as-you-go*.
+- **Aplicação automática**: As economias aplicam-se automaticamente a todas as instâncias compatíveis.
+- **Flexível**: Pode alterar os tipos ou tamanhos de instâncias mantendo os benefícios do seu plano.
 
 **Casos de utilização ideais:**
 

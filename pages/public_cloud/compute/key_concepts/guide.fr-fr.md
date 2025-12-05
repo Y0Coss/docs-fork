@@ -53,26 +53,26 @@ Les instances Public Cloud d'OVHcloud sont déployées sur [plusieurs centres de
 
 > [!primary]
 > 
-> **Meilleure pratique :** Pour les charges de travail critiques, privilégiez un [déploiement multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) pour assurer la résilience et la continuité du service.
+> **Meilleure pratique** : Pour les charges de travail critiques, privilégiez un [déploiement multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) pour assurer la résilience et la continuité du service.
 >
 
 ## Images système disponibles
 
 Lors de la création d'une instance, vous sélectionnez une image qui inclut le système d'exploitation et, éventuellement, des applications préinstallées. OVHcloud propose une variété d'images pour répondre à des besoins divers :
 
-- **Distributions Linux :** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux et autres. Ces images sont prêtes à l'emploi pour les serveurs web, les environnements de développement et les charges de travail générales.
-- **Windows Server :** Versions avec licences intégrées, permettant un déploiement immédiat pour les applications basées sur Microsoft et les charges de travail d'entreprise.
-- **Applications préconfigurées :** Images qui incluent des logiciels tels que cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Elles simplifient le déploiement et accélèrent le passage à la production.
-- **[Images personnalisées](/pages/public_cloud/compute/upload_own_image) :** Vous pouvez importer vos propres images au format QCOW2 ou RAW, offrant un contrôle complet sur votre environnement et permettant des migrations, des modèles standardisés ou des configurations spécialisées.
+- **Distributions Linux** : Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux et autres. Ces images sont prêtes à l'emploi pour les serveurs web, les environnements de développement et les charges de travail générales.
+- **Windows Server** : Versions avec licences intégrées, permettant un déploiement immédiat pour les applications basées sur Microsoft et les charges de travail d'entreprise.
+- **Applications préconfigurées** : Images qui incluent des logiciels tels que cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Elles simplifient le déploiement et accélèrent le passage à la production.
+- **[Images personnalisées](/pages/public_cloud/compute/upload_own_image)** : Vous pouvez importer vos propres images au format QCOW2 ou RAW, offrant un contrôle complet sur votre environnement et permettant des migrations, des modèles standardisés ou des configurations spécialisées.
 
-**Cycle de vie et support :** OVHcloud met régulièrement à jour le catalogue d'images. Consultez toujours les annonces sur le cycle de vie et la fin du support pour vous assurer que vos images restent sécurisées et supportées. Voir [ici](/pages/public_cloud/compute/image-life-cycle).
+**Cycle de vie et support** : OVHcloud met régulièrement à jour le catalogue d'images. Consultez toujours les annonces sur le cycle de vie et la fin du support pour vous assurer que vos images restent sécurisées et supportées. Voir [ici](/pages/public_cloud/compute/image-life-cycle).
 
 ## Clés SSH
 
 Les clés SSH offrent un moyen sécurisé d'accéder à vos instances sans utiliser de mots de passe. Elles se composent de deux éléments :
 
-- **Clé publique :** Installée sur l'instance pour permettre l'accès.
-- **Clé privée :** Conservée en toute sécurité sur votre machine locale et utilisée pour authentifier la connexion.
+- **Clé publique** : Installée sur l'instance pour permettre l'accès.
+- **Clé privée** : Conservée en toute sécurité sur votre machine locale et utilisée pour authentifier la connexion.
 
 L'authentification SSH assure un accès chiffré et fiable à vos serveurs.
 
@@ -98,7 +98,7 @@ Les sauvegardes protègent vos données et configurations contre les pertes acci
 
 > [!primary]
 >
-> **Meilleure pratique :** Les sauvegardes ne remplacent pas une [architecture résiliente](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Pour les environnements critiques, combinez les sauvegardes avec la réplication multi-AZ pour assurer une protection maximale des données et une disponibilité optimale du service.
+> **Meilleure pratique** : Les sauvegardes ne remplacent pas une [architecture résiliente](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Pour les environnements critiques, combinez les sauvegardes avec la réplication multi-AZ pour assurer une protection maximale des données et une disponibilité optimale du service.
 >
 
 ## Réseaux publics et privés
@@ -112,7 +112,7 @@ Les instances Public Cloud d'OVHcloud peuvent être connectées à différents t
 
 Le vRack vous permet de créer un réseau sécurisé et isolé, même à travers différentes régions ou projets.
 
-**Exemple :** Hébergez votre base de données sur un réseau privé tout en exposant uniquement votre serveur web sur le réseau public.
+**Exemple** : Hébergez votre base de données sur un réseau privé tout en exposant uniquement votre serveur web sur le réseau public.
 
 Pour plus de détails sur la configuration des réseaux Public Cloud, consultez le guide officiel [OVHcloud sur les réseaux](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
@@ -122,9 +122,9 @@ Les Savings Plans vous permettent de réduire vos coûts Public Cloud Compute en
 
 **Avantages-clés :**
 
-- **Coûts réduits :** Plus économique que la facturation en *pay-as-you-go*.
-- **Application automatique :** Les économies s'appliquent automatiquement à toutes les instances compatibles.
-- **Flexible :** Vous pouvez changer les types ou tailles d'instances tout en conservant les avantages de votre plan.
+- **Coûts réduits** : Plus économique que la facturation en *pay-as-you-go*.
+- **Application automatique** : Les économies s'appliquent automatiquement à toutes les instances compatibles.
+- **Flexible** : Vous pouvez changer les types ou tailles d'instances tout en conservant les avantages de votre plan.
 
 **Cas d'utilisation idéaux :**
 

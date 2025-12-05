@@ -1,5 +1,5 @@
 ---
-title: 'Public Cloud Instances - Concetti chiave'
+title: 'Public Cloud Istanze - Concetti chiave'
 excerpt: 'Scopri i fondamenti del Public Cloud Compute: funzionamento delle istanze, famiglie e dimensioni disponibili, distribuzioni multi-AZ, gestione delle immagini, sicurezza SSH, meccanismi di backup, rete pubblica/privata e vantaggi dei Savings Plans.'
 updated: 2025-12-03
 ---
@@ -53,26 +53,26 @@ Le istanze Public Cloud di OVHcloud sono distribuite su [più centri dati in tut
 
 > [!primary]
 > 
-> **Buona pratica:** Per i carichi di lavoro critici, privilegia un [deploy multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) per garantire resilienza e continuità del servizio.
+> **Buona pratica**: Per i carichi di lavoro critici, privilegia un [deploy multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) per garantire resilienza e continuità del servizio.
 >
 
 ## Immagini di sistema disponibili
 
 Durante la creazione di un'istanza, selezioni un'immagine che include il sistema operativo e, eventualmente, applicazioni preinstallate. OVHcloud offre una varietà di immagini per soddisfare esigenze diverse:
 
-- **Distribuzioni Linux:** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux e altre. Queste immagini sono pronte all'uso per i server web, gli ambienti di sviluppo e i carichi di lavoro generali.
-- **Windows Server:** Versioni con licenze integrate, permettendo un immediato deployment per applicazioni basate su Microsoft e carichi di lavoro aziendali.
-- **Applicazioni preconfigurate:** Immagini che includono software come cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Semplicizzano il deployment e accelerano il passaggio alla produzione.
-- **[Immagini personalizzate](/pages/public_cloud/compute/upload_own_image):** Puoi importare le tue immagini in formato QCOW2 o RAW, offrendo un controllo completo sul tuo ambiente e permettendo migrazioni, modelli standardizzati o configurazioni specializzate.
+- **Distribuzioni Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux e altre. Queste immagini sono pronte all'uso per i server web, gli ambienti di sviluppo e i carichi di lavoro generali.
+- **Windows Server**: Versioni con licenze integrate, permettendo un immediato deployment per applicazioni basate su Microsoft e carichi di lavoro aziendali.
+- **Applicazioni preconfigurate**: Immagini che includono software come cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Semplicizzano il deployment e accelerano il passaggio alla produzione.
+- **[Immagini personalizzate](/pages/public_cloud/compute/upload_own_image)**: Puoi importare le tue immagini in formato QCOW2 o RAW, offrendo un controllo completo sul tuo ambiente e permettendo migrazioni, modelli standardizzati o configurazioni specializzate.
 
-**Ciclo di vita e supporto:** OVHcloud aggiorna regolarmente il catalogo delle immagini. Consulta sempre le notifiche sul ciclo di vita e la fine del supporto per assicurarti che le tue immagini rimangano sicure e supportate. Vedi [qui](/pages/public_cloud/compute/image-life-cycle).
+**Ciclo di vita e supporto**: OVHcloud aggiorna regolarmente il catalogo delle immagini. Consulta sempre le notifiche sul ciclo di vita e la fine del supporto per assicurarti che le tue immagini rimangano sicure e supportate. Vedi [qui](/pages/public_cloud/compute/image-life-cycle).
 
 ## Chiavi SSH
 
 Le chiavi SSH offrono un modo sicuro per accedere alle tue istanze senza utilizzare password. Sono composte da due elementi:
 
-- **Chiave pubblica:** Installata sull'istanza per permettere l'accesso.
-- **Chiave privata:** Conservata in modo sicuro sulla tua macchina locale e utilizzata per autenticare la connessione.
+- **Chiave pubblica**: Installata sull'istanza per permettere l'accesso.
+- **Chiave privata**: Conservata in modo sicuro sulla tua macchina locale e utilizzata per autenticare la connessione.
 
 L'autenticazione SSH garantisce un accesso crittografato e affidabile ai tuoi server.
 
@@ -98,7 +98,7 @@ I backup proteggono i tuoi dati e le configurazioni contro perdite accidentali o
 
 > [!primary]
 >
-> **Buona pratica:** I backup non sostituiscono un'architettura resiliente. Per gli ambienti critici, combina i backup con la replicazione multi-AZ per garantire una protezione massima dei dati e una disponibilità ottimale del servizio.
+> **Buona pratica**: I backup non sostituiscono un'architettura resiliente. Per gli ambienti critici, combina i backup con la replicazione multi-AZ per garantire una protezione massima dei dati e una disponibilità ottimale del servizio.
 >
 
 ## Reti pubbliche e private
@@ -112,7 +112,7 @@ Le istanze Public Cloud di OVHcloud possono essere collegate a diversi tipi di r
 
 Il vRack ti permette di creare una rete sicura e isolata, anche attraverso diverse regioni o progetti.
 
-**Esempio:** Ospita il tuo database su una rete privata esponendo solo il tuo server web sulla rete pubblica.
+**Esempio**: Ospita il tuo database su una rete privata esponendo solo il tuo server web sulla rete pubblica.
 
 Per ulteriori dettagli sulla configurazione delle reti Public Cloud, consulta la guida ufficiale [OVHcloud sulle reti](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
@@ -122,9 +122,9 @@ I Savings Plans ti permettono di ridurre i costi del Public Cloud Compute in cam
 
 **Vantaggi principali:**
 
-- **Costi ridotti:** Più economico rispetto alla fatturazione *pay-as-you-go*.
-- **Applicazione automatica:** Le economie si applicano automaticamente a tutte le istanze compatibili.
-- **Flessibile:** Puoi cambiare i tipi o le dimensioni delle istanze mantenendo i vantaggi del tuo piano.
+- **Costi ridotti**: Più economico rispetto alla fatturazione *pay-as-you-go*.
+- **Applicazione automatica**: Le economie si applicano automaticamente a tutte le istanze compatibili.
+- **Flessibile**: Puoi cambiare i tipi o le dimensioni delle istanze mantenendo i vantaggi del tuo piano.
 
 **Casi d'uso ideali:**
 

@@ -1,12 +1,12 @@
 ---
-title: 'Public Cloud Instances - Conceptos clave'
+title: 'Public Cloud Instancias - Conceptos clave'
 excerpt: 'Descubra los fundamentos del Public Cloud Compute: funcionamiento de las instancias, familias y tamaños disponibles, despliegues multi-AZ, gestión de imágenes, seguridad SSH, mecanismos de copia de seguridad, red pública/privada, y ventajas de los Savings Plans.'
 updated: 2025-12-03
 ---
 
 ## Objetivo
 
-Este guía tiene como objetivo brindarle una comprensión clara de los conceptos fundamentales necesarios para la creación, configuración y gestión de sus primeras instancias de OVHcloud Public Cloud Compute. Aprenderá cómo funcionan las instancias, cómo elegir el tipo de instancia adecuado y cómo los elementos clave, como las imágenes, las zonas de disponibilidad, la red, la seguridad y las copias de seguridad, se integran dentro del ecosistema de OVHcloud.
+Esta guía tiene como objetivo brindarle una comprensión clara de los conceptos fundamentales necesarios para la creación, configuración y gestión de sus primeras instancias de OVHcloud Public Cloud Compute. Aprenderá cómo funcionan las instancias, cómo elegir el tipo de instancia adecuado y cómo los elementos clave, como las imágenes, las zonas de disponibilidad, la red, la seguridad y las copias de seguridad, se integran dentro del ecosistema de OVHcloud.
 
 ## ¿Qué es una instancia (Máquina Virtual)?
 
@@ -53,26 +53,26 @@ Las instancias de Public Cloud de OVHcloud se despliegan en [varios centros de d
 
 > [!primary]
 > 
-> **Buena práctica:** Para cargas de trabajo críticas, elija un [despliegue multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) para garantizar la resiliencia y la continuidad del servicio.
+> **Buena práctica**: Para cargas de trabajo críticas, elija un [despliegue multi-AZ](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture) para garantizar la resiliencia y la continuidad del servicio.
 >
 
 ## Imágenes del sistema disponibles
 
 Al crear una instancia, selecciona una imagen que incluye el sistema operativo y, posiblemente, aplicaciones preinstaladas. OVHcloud ofrece una variedad de imágenes para satisfacer necesidades diversas:
 
-- **Distribuciones Linux:** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux y otras. Estas imágenes están listas para servidores web, entornos de desarrollo y cargas de trabajo generales.
-- **Windows Server:** Versiones con licencias integradas, permitiendo un despliegue inmediato para aplicaciones basadas en Microsoft y cargas de trabajo empresariales.
-- **Aplicaciones preconfiguradas:** Imágenes que incluyen software como cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Simplifican el despliegue y aceleran la transición a producción.
-- **[Imágenes personalizadas](/pages/public_cloud/Compute/upload_own_image):** Puede importar sus propias imágenes en formato QCOW2 o RAW, ofreciendo un control total sobre su entorno y permitiendo migraciones, modelos estándar o configuraciones especializadas.
+- **Distribuciones Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux y otras. Estas imágenes están listas para servidores web, entornos de desarrollo y cargas de trabajo generales.
+- **Windows Server**: Versiones con licencias integradas, permitiendo un despliegue inmediato para aplicaciones basadas en Microsoft y cargas de trabajo empresariales.
+- **Aplicaciones preconfiguradas**: Imágenes que incluyen software como cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Simplifican el despliegue y aceleran la transición a producción.
+- **[Imágenes personalizadas](/pages/public_cloud/Compute/upload_own_image)**: Puede importar sus propias imágenes en formato QCOW2 o RAW, ofreciendo un control total sobre su entorno y permitiendo migraciones, modelos estándar o configuraciones especializadas.
 
-**Ciclo de vida y soporte:** OVHcloud actualiza regularmente el catálogo de imágenes. Siempre consulte las anuncios sobre el ciclo de vida y el fin del soporte para asegurarse de que sus imágenes siguen seguras y soportadas. Ver [aquí](/pages/public_cloud/Compute/image-life-cycle).
+**Ciclo de vida y soporte**: OVHcloud actualiza regularmente el catálogo de imágenes. Siempre consulte las anuncios sobre el ciclo de vida y el fin del soporte para asegurarse de que sus imágenes siguen seguras y soportadas. Ver [aquí](/pages/public_cloud/Compute/image-life-cycle).
 
 ## Claves SSH
 
 Las claves SSH ofrecen un medio seguro para acceder a sus instancias sin utilizar contraseñas. Están compuestas por dos elementos:
 
-- **Clave pública:** Instalada en la instancia para permitir el acceso.
-- **Clave privada:** Conservada con seguridad en su máquina local y utilizada para autenticar la conexión.
+- **Clave pública**: Instalada en la instancia para permitir el acceso.
+- **Clave privada**: Conservada con seguridad en su máquina local y utilizada para autenticar la conexión.
 
 La autenticación SSH garantiza un acceso cifrado y confiable a sus servidores.
 
@@ -98,7 +98,7 @@ Las copias de seguridad protegen sus datos y configuraciones contra pérdidas ac
 
 > [!primary]
 >
-> **Buena práctica:** Las copias de seguridad no sustituyen una [arquitectura resistente](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Para entornos críticos, combine las copias de seguridad con la replicación multi-AZ para garantizar una protección máxima de los datos y una disponibilidad óptima del servicio.
+> **Buena práctica**: Las copias de seguridad no sustituyen una [arquitectura resistente](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Para entornos críticos, combine las copias de seguridad con la replicación multi-AZ para garantizar una protección máxima de los datos y una disponibilidad óptima del servicio.
 >
 
 ## Redes públicas y privadas
@@ -112,7 +112,7 @@ Las instancias de Public Cloud de OVHcloud pueden conectarse a diferentes tipos 
 
 El vRack le permite crear una red segura e aislada, incluso a través de diferentes regiones o proyectos.
 
-**Ejemplo:** Albergue su base de datos en una red privada mientras expone únicamente su servidor web en la red pública.
+**Ejemplo**: Albergue su base de datos en una red privada mientras expone únicamente su servidor web en la red pública.
 
 Para más detalles sobre la configuración de redes de Public Cloud, consulte la guía oficial [OVHcloud sobre redes](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
@@ -122,9 +122,9 @@ Los Savings Plans le permiten reducir sus costos de Public Cloud Compute a cambi
 
 **Ventajas clave:**
 
-- **Costos reducidos:** Más económico que la facturación en *pay-as-you-go*.
-- **Aplicación automática:** Las ahorros se aplican automáticamente a todas las instancias compatibles.
-- **Flexible:** Puede cambiar los tipos o tamaños de instancias manteniendo los beneficios de su plan.
+- **Costos reducidos**: Más económico que la facturación en *pay-as-you-go*.
+- **Aplicación automática**: Las ahorros se aplican automáticamente a todas las instancias compatibles.
+- **Flexible**: Puede cambiar los tipos o tamaños de instancias manteniendo los beneficios de su plan.
 
 **Casos de uso ideales:**
 
