@@ -1,7 +1,7 @@
 ---
 title: "Gestion et reconstruction d'un RAID logiciel sur les serveurs utilisant le mode de démarrage UEFI"
 excerpt: Découvrez comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur un serveur utilisant le mode de démarrage UEFI
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Objectif
@@ -45,7 +45,7 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
     - [Suppression du disque défectueux](#diskremove)
 - [Reconstruction du RAID](#raidrebuild)
     - [Reconstruction du RAID après le remplacement du disque principal (mode de secours)](#rescuemode)
-    - [Re création de la partition système EFI](#recreateesp)
+    - [Recréation de la partition système EFI](#recreateesp)
     - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](efiraodgrub)
     - [Ajout de l'étiquette à la partition SWAP (si applicable)](#swap-partition)
     - [Reconstruction du RAID en mode normal](#normalmode)
@@ -186,7 +186,7 @@ nvme0n1
 └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-08-05-14-55-41-00
 ```
 
-Notez les dispositifs, les partitions et leurs points de montage ; c'est important, surtout après le remplacement d'un disque.
+Prenez note des dispositifs, des partitions et de leurs points de montage ; c'est important, surtout après le remplacement d'un disque.
 
 À partir des commandes et résultats ci-dessus, nous avons :
 
@@ -383,7 +383,7 @@ unused devices: <none>
 
 #### Retrait du disque défectueux
 
-Tout d'abord, nous marquons les partitions **nvme0n1p2** et **nvme0n1p3** comme défectueuses. 
+Tout d'abord, nous marquons les partitions **nvme0n1p2** et **nvme0n1p3** comme défectueuses.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/nvme0n1p2
@@ -655,7 +655,7 @@ Ici, nous supposons que les deux partitions ont été synchronisées et contienn
 > Si une mise à jour majeure du système, telle qu'une mise à jour du noyau ou de GRUB, a eu lieu et que les deux partitions n'ont pas été synchronisées, consultez cette [section](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub) une fois que vous avez terminé la création de la nouvelle partition EFI System.
 >
 
-Tout d'abord, nous formattons la partition :
+Tout d'abord, nous formatons la partition :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkfs.vfat /dev/nvme0n1p1
@@ -699,7 +699,6 @@ total size is 6,097,843  speedup is 1.00
 ```
 
 Une fois cela fait, nous démontons les deux partitions :
-
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount /dev/nvme0n1p1
@@ -745,13 +744,13 @@ Les résultats ci-dessus montrent que la nouvelle partition EFI a été créée 
 
 #### Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (GRUB)
 
-/// details | Développer cette section
+/// details | Développez cette section
 
 > [!warning]
 > Veuillez suivre les étapes de cette section uniquement si cela s'applique à votre cas.
 > 
 
-Lorsque les partitions système EFI ne sont pas synchronisées après des mises à jour majeures du système qui modifient/affectent le GRUB, et que le disque principal sur lequel la partition est montée est remplacé, le démarrage à partir d'un disque secondaire contenant une ESP obsolète peut ne pas fonctionner. 
+Lorsque les partitions système EFI ne sont pas synchronisées après des mises à jour majeures du système qui modifient/affectent le GRUB, et que le disque principal sur lequel la partition est montée est remplacé, le démarrage à partir d'un disque secondaire contenant une ESP obsolète peut ne pas fonctionner.
 
 Dans ce cas, en plus de reconstruire le RAID et de recréer la partition système EFI en mode rescue, vous devez également réinstaller le GRUB sur celle-ci.
 
@@ -904,9 +903,9 @@ Nous avons maintenant terminé avec succès la reconstruction RAID sur le serveu
 
 #### Reconstruction du RAID en mode normal
 
-/// details | Développer cette section
+/// details | Développez cette section
 
-Si votre serveur est capable de démarrer en mode normal après un remplacement de disque, vous pouvez suivre les étapes suivantes pour reconstruire le RAID.
+Si votre serveur est capable de démarrer en mode normal après un remplacement de disque, vous pouvez suivre les étapes ci-dessous pour reconstruire le RAID.
 
 Une fois le disque remplacé, nous copions la table de partition du disque sain (dans cet exemple, nvme1n1) vers le nouveau (nvme0n1).
 
@@ -918,7 +917,7 @@ sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 
 La commande doit être dans ce format : `sgdisk -R /dev/nouveau disque /dev/disque sain`.
 
-Une fois cela fait, l'étape suivante consisteà attribuer un GUID aléatoire au nouveau disque pour éviter les conflits de GUID avec d'autres disques :
+Une fois cela fait, l'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque pour éviter les conflits de GUID avec d'autres disques :
 
 ```sh
 sgdisk -G /dev/nvme0n1
@@ -965,7 +964,7 @@ Tout d'abord, nous installons les outils nécessaires :
 [user@server_ip ~]# sudo yum install dosfstools
 ```
 
-Ensuite, nous formattons la partition. Dans notre exemple `nvme0n1p1` :
+Ensuite, nous formatons la partition. Dans notre exemple `nvme0n1p1` :
 
 ```sh
 [user@server_ip ~]# sudo mkfs.vfat /dev/nvme0n1p1
@@ -1056,9 +1055,9 @@ Nous avons maintenant terminé avec succès la reconstruction RAID.
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
 Pour les services spécialisés (SEO, développement, etc.), contactez [les partenaires OVHcloud](/links/partner).
- 
+
 Si vous avez besoin d'une assistance pour utiliser et configurer vos solutions OVHcloud, veuillez consulter nos [offres de support](/links/support).
 
-Si vous avez besoin de formation ou d'une assistance technique pour mettre en place nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de Services Professionnels d'intervenir sur votre cas d'utilisation spécifique.
+Si vous avez besoin de formation ou d'une assistance technique pour mettre en place nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de l'équipe Professional Services d'intervenir sur votre cas d'utilisation spécifique.
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

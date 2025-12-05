@@ -1,7 +1,7 @@
 ---
 title: Gestion et reconstruction du RAID logiciel sur les serveurs en mode legacy boot (BIOS)
 excerpt: "Découvrez comment gérer et reconstruire le RAID logiciel après un remplacement de disque sur votre serveur en mode legacy boot (BIOS)"
-updated: 2025-12-03
+updated: 2025-12-05
 ---
 
 ## Objectif
@@ -45,7 +45,8 @@ Pour vérifier si un serveur s'exécute en mode BIOS ou en mode UEFI, exécutez 
 
 ### Informations de base
 
-Dans une session de ligne de commande, tapez le code suivant pour déterminer l'état actuel du RAID
+Dans une session de ligne de commande, tapez le code suivant pour déterminer l'état actuel du RAID.
+
 ### Retrait du disque
 
 La vérification de l’état actuel du RAID s’effectue via la commande suivante :
@@ -337,7 +338,7 @@ Consistency Policy : bitmap
 
 <a name="normalmode"></a>
 
-#### Reconstruire le RAID in normal mode
+#### Reconstruire le RAID en mode normal
 
 Les étapes suivantes sont réalisées en mode normal. Dans notre exemple, nous avons remplacé le disque **sda**.
 
