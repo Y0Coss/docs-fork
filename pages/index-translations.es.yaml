@@ -98,6 +98,18 @@ hosted-private-cloud-nutanix-tutorials: Tutoriales
 hosted-private-cloud-nutanix-security: Seguridad
 hosted-private-cloud-nutanix-troubleshooting: Diagnóstico
 hosted-private-cloud-nutanix-additional-resources: Recursos adicionales
+hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
+hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Primeros pasos
+hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Recursos adicionales
+hosted-private-cloud-baremetal-pod: Bare Metal Pod
+hosted-private-cloud-baremetal-pod-getting-started: Primeros pasos
+hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
+hosted-private-cloud-sap-ovhcloud-concepts: Conceptos
+hosted-private-cloud-sap-ovhcloud-getting-started: Primeros pasos
+hosted-private-cloud-sap-ovhcloud-automated-deployments: Implementaciones automatizadas
+hosted-private-cloud-sap-ovhcloud-resilience: Resiliencia
+hosted-private-cloud-sap-ovhcloud-backups: Backups
+hosted-private-cloud-sap-ovhcloud-observability: Observabilidad
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Primeros pasos
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
