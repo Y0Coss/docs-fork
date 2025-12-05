@@ -86,6 +86,12 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ![espace client](images/move_ip_2.png){.thumbnail}
 
+> [!warning]
+> Veuillez noter que pour certains produits, les adresses IP (ou blocs) doivent d'abord être déplacées vers un **Parking IP** (un emplacement de stockage temporaire), avant de pouvoir être déplacées vers le produit souhaité.
+>
+> Pour déplacer des blocs IP vers un réseau vRack spécifique, veuillez utiliser [l'interface de gestion vRack](https://manager.eu.ovhcloud.com/#/dedicated/vrack) à la place.
+>
+
 ### Déplacer une IP via les API
 
 Connectez-vous sur la page web des [API OVHcloud](/links/api).

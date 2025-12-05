@@ -83,6 +83,12 @@ In the pop-up window, select the service to move the IP address to from the menu
 
 Click `Next`{.action}, then `Confirm`{.action}.
 
+> [!warning]
+> Please note that for some products, IP addresses (or blocks) have to be moved to an IP Parking first (a temporary storage location), before they can be moved to the desired product.
+>
+> To move IP blocks to a specific vRack network, please use [the vRack management interface](https://manager.eu.ovhcloud.com/#/dedicated/vrack) instead.
+>
+
 ### Moving an IP via the API
 
 Log in to the OVHcloud [API webpage](/links/api).
