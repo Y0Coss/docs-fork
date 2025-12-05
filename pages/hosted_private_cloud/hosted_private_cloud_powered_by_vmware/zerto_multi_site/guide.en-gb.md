@@ -1,47 +1,50 @@
 ---
-title: Setting up Multi-Site Replication on Managed vSphere
-excerpt: Step-by-step guide to connect multiple Zerto deployments on Managed vSphere for secure and efficient disaster recovery.
+title: "Setting up Multi-Site Replication on Managed vSphere"
+excerpt: "Step-by-step guide to connect multiple Zerto deployments on Managed vSphere for secure and efficient disaster recovery"
 updated: 2025-12-02
 ---
 
 ## Objective
 
-The purpose of this guide is to provide step-by-step instructions to connect multiple on-premise Zerto deployments to an Managed vSphere (Managed vSphere) instance. By following this guide, users will be able to establish secure multi-site replication, ensure disaster recovery readiness, and manage data protection across different sites.
+The purpose of this guide is to provide step-by-step instructions to connect multiple on-premises Zerto deployments to a Managed vSphere instance. By following this guide, users will be able to establish secure multi-site replication, ensure disaster recovery readiness, and manage data protection across different sites.
 
-**Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
+**Find out how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
 
 ## Requirements 
 
-- **Managed vSphere Setup:** A Managed vSphere environment with Zerto already deployed.
-- **On-Premise Zerto:** Zerto installed and configured on your local infrastructure.
-- **VPN Information:** All necessary VPN credentials, IP addresses, and keys for both on-premise and Managed vSphere environments.
+- **Managed vSphere Setup**: A Managed vSphere environment with Zerto already deployed.
+- **On-Premises Zerto**: Zerto installed and configured on your local infrastructure.
+- **VPN Information**: All necessary VPN credentials, IP addresses, and keys for both on-premises and Managed vSphere environments.
 
 > [!primary]
 >
-> Appropriate administrative access to Zerto Manager on both Managed vSphere and on-premise sites.
+> Appropriate administrative access to Zerto Manager on both Managed vSphere and on-premises sites.
 >
 
 ## Instructions
 
-1. Access Zerto Manager on Managed vSphere
+### 1 - Access Zerto Manager on Managed vSphere
 
-Go to the [OVHcloud Control Panel](/links/manager), log in to your `Managed vSphere Manager` and navigate to the `Zerto` tab.
+- Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Hosted Private Cloud`{.action} section.
+- Click the `Managed VMware vSphere`{.action} menu and select the infrastructure concerned.
+- Navigate to the `Datacenters`{.action} tab and select the datacenter.
+- Navigate to the `Zerto`{.action} tab.
 
 ![zerto manager tab](images/zerto_manager_tab.png){.thumbnail}
 
-2. Add your On-Premise Zerto Site
+### 2 - Add your On-Premises Zerto Site
 
-Click the `Add a site`{.action} button, enter your VPN information (IP addresses, keys, ...), enter the details of your on-premise Zerto deployment. Refer to our example screenshot for guidance:
+Click the `Add a website`{.action} button, enter your VPN information (IP address and encryption key), and enter the details of your on-premises Zerto deployment. Refer to our example screenshot for guidance:
 
 ![zerto manager add onprem zerto](images/zerto_manager_add_onprem_zerto.png){.thumbnail}
 
-3. Start VPN Configuration
+### 3 - Start VPN Configuration 
 
-Submit your information, the Managed vSphere will automatically start the VPN setup, allowing secure access to your on-premise Zerto.
+Submit your information. The Managed vSphere will automatically start the VPN setup, allowing secure access to your on-premises Zerto site.
 
 ![zerto manager vpn configuration](images/zerto_manager_vpn_configuration.png){.thumbnail}
 
-4. Let Automated Processes Run
+### 4 - Let Automated Processes Run
 
 Managed vSphere will run automated tasks to configure multi-site connectivity.
 
@@ -51,17 +54,17 @@ Wait until the status shows `Configuration deployed`.
 
 ![zerto manager status finished](images/zerto_status_finished.png){.thumbnail}
 
-5. Connect the VPN
+### 5 - Connect the VPN
 
-Connect your on-premise VPN to the Managed vSphere’s Zerto VPN, verify that the connection is active.
+Connect your on-premises VPN to the Managed vSphere’s Zerto VPN and verify that the connection is active.
 
-6. Pair the Zerto Sites
+### 6 - Pair the Zerto Sites
 
-- On Managed vSphere Zerto, go to `Sites` and get the token:
+- On Managed vSphere Zerto, go to `Sites`{.action} and get the token:
 
 ![zerto get token](images/zerto_get_token.png){.thumbnail}
 
-- On your on-premise Zerto, choose `Pair to a site` and enter the Managed vSphere Zerto IP and token.
+- On your on-premises Zerto, choose `Pair to a site`{.action} and enter the Managed vSphere Zerto IP and token:
 
 ![zerto pair site](images/zerto_pair_site.png){.thumbnail}
 
@@ -69,7 +72,7 @@ Once paired, your multi-site replication setup is complete.
 
 ## Network Diagram
 
-The following diagram illustrates the connectivity setup for multi-site Zerto replication between the customer site and Managed vSphere (Managed vSphere):
+The following diagram illustrates the connectivity setup for multi-site Zerto replication between the customer site and Managed vSphere:
 
 ![network diagram](images/network_diagram.png){.thumbnail}
 
@@ -79,16 +82,16 @@ Diagram Explanation:
 - OPNSense Private IP – The internal IP address of the customer firewall.
 - ZVM Private IP – The internal IP of the customer Zerto Virtual Manager.
 - Internal ZVM Network – The LAN connecting customer ZVM and vRAs.
-- OVH Cloud Public IP – Public-facing IP for the Managed vSphere.
-- OVHCloud ZVM Network /23 – Private network within the hosted Managed vSphere.
-- ZVM Private IP (Managed vSphere) – Private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
+- OVHcloud Public IP – The public-facing IP for the Managed vSphere.
+- OVHcloud ZVM Network /23 – The private network within the hosted Managed vSphere.
+- ZVM Private IP (Managed vSphere) – The private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
 
-This setup ensures secure VPN connectivity between on-premise Zerto and OVHcloud Managed vSphere, allowing multi-site replication and disaster recovery.
+This setup ensures secure VPN connectivity between on-premises Zerto and OVHcloud Managed vSphere, allowing multi-site replication and disaster recovery.
 
 ## Troubleshooting Tips
 
-- **VPN issues:** Check credentials, firewall, and network settings.
-- **Token/site pairing:** Verify token, ZVM IP, and license.
+- **VPN issues**: Check credentials, firewall and network settings.
+- **Token/site pairing**: Verify token, ZVM IP and licensing.
 
 ## Security Considerations
 
