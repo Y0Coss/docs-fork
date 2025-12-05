@@ -47,10 +47,6 @@ Pour vérifier si un serveur s'exécute en mode BIOS ou en mode UEFI, exécutez 
 
 Dans une session de ligne de commande, tapez le code suivant pour déterminer l'état actuel du RAID.
 
-### Retrait du disque
-
-La vérification de l’état actuel du RAID s’effectue via la commande suivante :
-
 ```sh
 [user@server_ip ~]# cat /proc/mdstat
 
