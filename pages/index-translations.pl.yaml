@@ -82,7 +82,7 @@ hosted-private-cloud-managed-vmware-tutorials-network: Sieć i NSX
 hosted-private-cloud-managed-vmware-tutorials-vsphere: Funkcje vSphere
 hosted-private-cloud-managed-vmware-tutorials-ha: Wysoka dostępność i odporność
 hosted-private-cloud-managed-vmware-security: Bezpieczeństwo
-hosted-private-cloud-managed-vsvmwarephere-security-iam: Zarządzanie tożsamością i dostępem
+hosted-private-cloud-managed-vmware-security-iam: Zarządzanie tożsamością i dostępem
 hosted-private-cloud-managed-vmware-security-encryption: Szyfrowanie i zarządzanie kluczami
 hosted-private-cloud-managed-vmware-security-nsx: Bezpieczeństwo sieci (NSX)
 hosted-private-cloud-managed-vmware-security-hardening: Wzmocnienie systemu i podatności
