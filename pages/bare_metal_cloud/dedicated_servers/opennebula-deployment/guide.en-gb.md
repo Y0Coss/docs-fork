@@ -12,7 +12,7 @@ Acting as an orchestrator, it turns physical infrastructure into a managed **Inf
 
 The deployment of OpenNebula on OVHcloud infrastructure is validated as part of the **OpenNebula Cloud-Ready Certification Program**.
 
-To streamline this process, OpenNebula provides a set of **Ansible playbooks** called [Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud) for automated deployment and verification. **You will use these playbooks** throughout this guide.
+To streamline this process, OpenNebula provides a set of **Ansible playbooks** called [Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud) for automated deployment and verification. **You will use these playbooks throughout this guide**.
 
 ## Objective
 
