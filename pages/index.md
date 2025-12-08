@@ -1125,7 +1125,6 @@
                 + [Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources](public_cloud/containers_orchestration/managed_kubernetes/software-versions-reserved-resources)
                 + [Managed Kubernetes End-of-Sale, End-of-Service and End-of-Life policies](public_cloud/containers_orchestration/managed_kubernetes/eos-eol-policies)
                 + [Exposed APIs, Kubernetes configuration and Feature gates](public_cloud/containers_orchestration/managed_kubernetes/exposed-apis)
-                + [MKS Standard Plan](public_cloud/containers_orchestration/managed_kubernetes/premium)
             + [Cluster](public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster)
                 + [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
                 + [Configuring the API server flags on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/apiserver-flags-configuration)
