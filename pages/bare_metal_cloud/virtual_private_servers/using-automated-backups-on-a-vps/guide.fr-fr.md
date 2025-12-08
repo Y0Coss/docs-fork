@@ -77,8 +77,8 @@ Cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.
 Cliquez sur le lien `Commander un backup premium`{.action} (services commandés à partir du 7 août 2025) ou le bouton `Activer le Backup Automatisé`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 Lors de l'étape suivante, veuillez prendre note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.

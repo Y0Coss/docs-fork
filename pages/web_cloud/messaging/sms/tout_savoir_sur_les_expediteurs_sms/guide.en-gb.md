@@ -56,7 +56,7 @@ On the addition page, you have several options to configure a new SMS sender (3)
 
 - **Add senders manually**: You must enter the desired sender, a description, and a justification for using this sender (4). A supporting document is also required.
 
-**Example:** if you want to send your SMS with the name of your company as the sender, a company document will be requested.
+**Example**: if you want to send your SMS with the name of your company as the sender, a company document will be requested.
 
 The validation of an alphanumeric sender is usually processed within 72 hours after its creation.
 

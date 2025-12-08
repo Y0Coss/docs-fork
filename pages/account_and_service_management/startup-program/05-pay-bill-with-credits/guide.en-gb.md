@@ -13,7 +13,7 @@ As a member of the OVHcloud Startup Program, you have credits to support your pr
 ## Requirements
 
 - Your Startup Program application must have been validated, and your contract signed. Find more information in our guides:
-    - [How to optimise your application to the Startup Program](pages/account_and_service_management/startup-program/01-optimise-application)
+    - [How to optimise your application to the Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application)
     - [How to sign your Startup Program contrac](/pages/account_and_service_management/startup-program/02-sign-agreement)
 - Access to the [OVHcloud Control Panel](/links/manager).
 - Knowledge of the [balance of your Startup Program credits](/pages/account_and_service_management/startup-program/04-view-credits).

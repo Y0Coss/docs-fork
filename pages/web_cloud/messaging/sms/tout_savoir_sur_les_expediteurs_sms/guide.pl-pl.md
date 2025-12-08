@@ -52,11 +52,11 @@ Jeśli chcesz dodać dodatkowego nadawcę SMS, kliknij przycisk `Operacje`{.acti
 
 ![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 
-Po wejściu na stronę dodawania, masz kilka opcji do skonfigurowania nowego nadawcy SMS (3) :
+Po wejściu na stronę dodawania, masz kilka opcji do skonfigurowania nowego nadawcy SMS (3):
 
-- **Dodaj ręcznie nadawców** : Musisz wpisać żądanego nadawcę, opis oraz uzasadnienie dla użycia tego nadawcy (4). Potrzebny jest również dokument potwierdzający.
+- **Dodaj ręcznie nadawców**: Musisz wpisać żądanego nadawcę, opis oraz uzasadnienie dla użycia tego nadawcy (4). Potrzebny jest również dokument potwierdzający.
 
-**Przykład:** jeśli chcesz wysłać swój SMS z nazwą swojej firmy jako nadawcą, zostanie żądany potwierdzający dokument firmy.
+**Przykład**: jeśli chcesz wysłać swój SMS z nazwą swojej firmy jako nadawcą, zostanie żądany potwierdzający dokument firmy.
 
 Weryfikacja nadawcy alfanumerycznego trwa średnio 72 godziny po jego utworzeniu.
 
@@ -65,9 +65,9 @@ Weryfikacja nadawcy alfanumerycznego trwa średnio 72 godziny po jego utworzeniu
 > Żądanie dokumentu potwierdzającego wynika z naszej polityki bezpieczeństwa. Domyślnie jest to papier firmowy firmy lub marki, zawierający autoryzację odpowiedzialnego osoby z podpisem i pieczątką tej samej firmy, dokument tożsamości, lub wyrys Kbis, jeśli to nie jest zarejestrowana marka.
 >
 
-- **Dodaj nadawców na podstawie danych osobowych** : Możesz zażądać nadawcy opartego na danych swojego konta OVHcloud. Wyświetlana będzie lista dostępnych nadawców.
+- **Dodaj nadawców na podstawie danych osobowych**: Możesz zażądać nadawcy opartego na danych swojego konta OVHcloud. Wyświetlana będzie lista dostępnych nadawców.
 
-- **Dodaj nadawców na podstawie swoich domen OVHcloud** : Możesz użyć domeny dostępnej w Twoim koncie OVHcloud jako nadawcę. Wyświetlana będzie lista dostępnych nadawców.
+- **Dodaj nadawców na podstawie swoich domen OVHcloud**: Możesz użyć domeny dostępnej w Twoim koncie OVHcloud jako nadawcę. Wyświetlana będzie lista dostępnych nadawców.
 
 #### Wirtualny numer komórkowy
 
