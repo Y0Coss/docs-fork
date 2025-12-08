@@ -110,7 +110,7 @@ Port 49152
 #ListenAddress 0.0.0.0
 ```
 
-> ![warning]
+> [!warning]
 > If a firewall is configured on your operating system (UFW or iptables), you must adjust its settings to allow traffic on the new port before restarting the service. If you are using iptables, refer to this guide: [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). If no firewall is configured by default, restart the service.
 >
 

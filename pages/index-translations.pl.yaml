@@ -23,17 +23,21 @@ startup-program-support-communication: Support & Communication
 startup-program-credits-billing: Credits & Billing
 startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Serwery dedykowane
-bare-metal-cloud-dedicated-servers-advanced-usage: Zaawansowane użycie
+bare-metal-cloud-dedicated-servers-key-concepts: Kluczowe pojęcia
 bare-metal-cloud-dedicated-servers-getting-started: Pierwsze kroki
-bare-metal-cloud-dedicated-servers-managing-servers: Zarządzanie serwerami
-bare-metal-cloud-dedicated-servers-backup-restore: Tworzenie kopii zapasowych i przywracanie serwera
-bare-metal-cloud-dedicated-servers-miscellaneous: Różne
-bare-metal-cloud-dedicated-servers-network-and-ip-management: Sieć i adres IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID i dyski
-bare-metal-cloud-dedicated-servers-security: Bezpieczeństwo
-bare-metal-cloud-dedicated-servers-troubleshooting: Rozwiązywanie problemów
+bare-metal-cloud-dedicated-servers-configuration: Konfiguracja
+bare-metal-cloud-dedicated-servers-configuration-system: System
+bare-metal-cloud-dedicated-servers-configuration-storage: Pamięć masowa
+bare-metal-cloud-dedicated-servers-configuration-network: Sieć
+bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
+bare-metal-cloud-dedicated-servers-configuration-deployments: Wdrożenia
+bare-metal-cloud-dedicated-servers-migration: Migracja
 bare-metal-cloud-dedicated-servers-tutorials: Samouczki
-bare-metal-cloud-dedicated-servers-vrack: vRack
+bare-metal-cloud-dedicated-servers-security: Bezpieczeństwo
+bare-metal-cloud-dedicated-servers-security-hardening: Wzmacnianie bezpieczeństwa
+bare-metal-cloud-dedicated-servers-security-backup: Kopie zapasowe
+bare-metal-cloud-dedicated-servers-security-network: Sieć
+bare-metal-cloud-dedicated-servers-troubleshooting: Rozwiązywanie problemów
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Pierwsze kroki
@@ -81,6 +85,8 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migracja
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Pierwsze kroki
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Dodatkowe zasoby
+hosted-private-cloud-baremetal-pod: Bare Metal Pod
+hosted-private-cloud-baremetal-pod-getting-started: Pierwsze kroki
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Koncepcje
 hosted-private-cloud-sap-ovhcloud-getting-started: Pierwsze kroki
@@ -116,10 +122,10 @@ public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutorials
 public-cloud-quantum-computing: Quantum computing
 public-cloud-quantum-computing-general-information: General information
-public-cloud-quantum-computing-emulator: Quantum emulators
+public-cloud-quantum-computing-emulators: Quantum emulators
 public-cloud-quantum-computing-emulators-guides: Guides
-public-cloud-quantum-computing-qpus: Quantum QPUs
-public-cloud-quantum-computing-qpus-guides: Guides
+public-cloud-quantum-computing-qpu: Quantum QPUs
+public-cloud-quantum-computing-qpu-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-key-concepts: Key concepts
@@ -149,53 +155,67 @@ public-cloud-containers-orchestration-managed-rancher-service-getting-started: G
 public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
 public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
+public-cloud-databases-cassandra-guides: Cassandra - Guides
+public-cloud-databases-cassandra: Cassandra
+public-cloud-databases-common-configuration: Configuration
+public-cloud-databases-common-getting-started: Getting started
+public-cloud-databases-common-key-concepts: Key concepts
+public-cloud-databases-common-migration: Migration
+public-cloud-databases-common-security: Security
+public-cloud-databases-common-troubleshooting: Troubleshooting
+public-cloud-databases-common: Common
+public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
+public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
+public-cloud-databases-mongodb-guides: MongoDB - User guides
+public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb: MongoDB
+public-cloud-databases-mysql-guides: MySQL - Guides
+public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql: MySQL
+public-cloud-databases-postgresql-guides: PostgreSQL - Guides
+public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
+public-cloud-databases-postgresql: PostgreSQL
+public-cloud-databases-valkey-guides: Valkey - Guides
+public-cloud-databases-valkey-tutorials: Valkey - Tutorials
+public-cloud-databases-valkey: Valkey
+public-cloud-databases: Public Cloud Databases
+public-cloud-data-analytics-common-configuration: Configuration
+public-cloud-data-analytics-common-getting-started: Getting started
+public-cloud-data-analytics-common-key-concepts: Key concepts
+public-cloud-data-analytics-common-migration: Migration
+public-cloud-data-analytics-common-security: Security
+public-cloud-data-analytics-common-troubleshooting: Troubleshooting
+public-cloud-data-analytics-common: Common
+public-cloud-data-analytics-grafana-guides: Dashboards - Guides
+public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
+public-cloud-data-analytics-grafana: Dashboards
+public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
+public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
+public-cloud-data-analytics-kafka-connect: Kafka Connect
+public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
+public-cloud-data-analytics-kafka-guides: Kafka - User guides
+public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
+public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
+public-cloud-data-analytics-kafka: Kafka
+public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
+public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics: Analytics
 public-cloud-data-analytics-general-information: General information
 public-cloud-data-analytics-general-guides: General guides
-public-cloud-databases: Public Cloud Databases
-public-cloud-databases-general-information: General information
-public-cloud-databases-general-guides: General guides
-public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
-public-cloud-databases-mysql: MySQL
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
-public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-public-cloud-databases-valkey: Valkey
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
-public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-grafana-guides: Dashboards - Guides
-public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
-public-cloud-data-analytics-kafka: Kafka
-public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
-public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
-public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
-public-cloud-data-analytics-kafka-guides: Kafka - User guides
-public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
-public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
-public-cloud-databases-cassandra: Cassandra
-public-cloud-databases-cassandra-guides: Cassandra - Guides
-public-cloud-data-analytics-opensearch: OpenSearch
-public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
+public-cloud-compute-key-concepts: Kluczowe pojęcia
 public-cloud-compute-getting-started: Pierwsze kroki
-public-cloud-compute-general-information: Informacje ogólne
-public-cloud-compute-project-management: Zarządzanie projektami
-public-cloud-compute-instance-management: Zarządzanie instancjami
-public-cloud-compute-instance-management-getting-started: Zarządzanie instancjami - Pierwsze kroki
-public-cloud-compute-instance-management-control-panel: Zarządzanie w Panelu klienta OVHcloud
-public-cloud-compute-instance-management-horizon: Zarządzanie w interfejsie Horizon
-public-cloud-compute-instance-management-openstack: Zarządzanie w OpenStack API
-public-cloud-compute-block-storage: Block Storage
+public-cloud-compute-configuration: Konfiguracja
+public-cloud-compute-configuration-project-management: Zarządzanie projektami
+public-cloud-compute-configuration-instance-management: Zarządzanie instancjami
+public-cloud-compute-configuration-instance-management-horizon: Zarządzanie w interfejsie Horizon
+public-cloud-compute-configuration-instance-management-openstack: Zarządzanie w OpenStack API
 public-cloud-compute-tutorials: Tutorials
+public-cloud-compute-migration: Migracja
+public-cloud-compute-security: Bezpieczeństwo
+public-cloud-compute-Troubleshooting: Rozwiązywanie problemów
+public-cloud-compute-additional-resources: Dodatkowe zasoby
 public-cloud-cross-functional: Public Cloud - Informacje ogólne
 public-cloud-cross-functional-getting-started: Pierwsze kroki
 public-cloud-cross-functional-general-information: Informacje ogólne
@@ -209,13 +229,23 @@ public-cloud-cross-functional-infrastructure: Infrastruktura
 public-cloud-cross-functional-billing-information: Informacje rozliczeniowe
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-general-information: General information
-public-cloud-storage-object-storage-general-guides-to-start: General guides to start
-public-cloud-storage-object-storage-tutorials: Tutorials
-public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-object-storage-s3: S3 compatible
+public-cloud-storage-object-storage-s3-key-concepts: Kluczowe pojęcia
+public-cloud-storage-object-storage-s3-getting-started: Pierwsze kroki
+public-cloud-storage-object-storage-s3-configuration: Konfiguracja
+public-cloud-storage-object-storage-s3-migration: Migracja
+public-cloud-storage-object-storage-s3-tutorials: Tutoriale
+public-cloud-storage-object-storage-s3-security: Bezpieczeństwo
+public-cloud-storage-object-storage-s3-troubleshooting: Rozwiązywanie problemów
+public-cloud-storage-object-storage-s3-additional-resources: Dodatkowe zasoby
+public-cloud-storage-object-storage-swift: Swift
+public-cloud-storage-object-storage-swift-getting-started: Pierwsze kroki
+public-cloud-storage-object-storage-swift-configuration: Konfiguracja
+public-cloud-storage-object-storage-swift-migration: Migracja
+public-cloud-storage-object-storage-swift-tutorials: Tutoriale
+public-cloud-storage-object-storage-swift-security: Bezpieczeństwo
+public-cloud-storage-object-storage-swift-troubleshooting: Rozwiązywanie problemów
+public-cloud-storage-object-storage-swift-additional-resources: Dodatkowe zasoby
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
 public-cloud-storage-file-storage: File Storage
@@ -297,6 +327,7 @@ web-cloud-internet-internet-access-configuration-setting-up-your-access: Konfigu
 web-cloud-internet-internet-access-troubleshooting: Diagnostyka
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-configuration-managing-your-offer: Zarządzanie ofertą
+web-cloud-internet-overthebox-configuration-advanced-setup: Zaawansowane przygotowanie
 web-cloud-internet-overthebox-getting-started: Pierwsze kroki
 web-cloud-internet-overthebox-configuration: Konfiguracja
 web-cloud-internet-overthebox-configuration-initial-setup: Konfiguracja początkowa
@@ -346,13 +377,23 @@ web-cloud-hosting-tutorials-cloud-web: Samouczki dla Cloud Web
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Pierwsze kroki
 storage-object-storage: Object Storage
-storage-object-storage-general-information: General information
-storage-object-storage-general-guides-to-start: General guides to start
-storage-object-storage-tutorials: Tutorials
-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+storage-object-storage-s3: S3 compatible
+storage-object-storage-s3-key-concepts: Kluczowe pojęcia
+storage-object-storage-s3-getting-started: Pierwsze kroki
+storage-object-storage-s3-configuration: Konfiguracja
+storage-object-storage-s3-migration: Migracja
+storage-object-storage-s3-tutorials: Tutoriale
+storage-object-storage-s3-security: Bezpieczeństwo
+storage-object-storage-s3-troubleshooting: Rozwiązywanie problemów
+storage-object-storage-s3-additional-resources: Dodatkowe zasoby
+storage-object-storage-swift: Swift
+storage-object-storage-swift-getting-started: Pierwsze kroki
+storage-object-storage-swift-configuration: Konfiguracja
+storage-object-storage-swift-migration: Migracja
+storage-object-storage-swift-tutorials: Tutoriale
+storage-object-storage-swift-security: Bezpieczeństwo
+storage-object-storage-swift-troubleshooting: Rozwiązywanie problemów
+storage-object-storage-swift-additional-resources: Dodatkowe zasoby
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
 storage-file-storage-ha-nas: HA-NAS

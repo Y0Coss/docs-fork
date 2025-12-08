@@ -104,7 +104,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > We recommend not to download snapshots directly to the VPS, to avoid using up the storage space.
 >
-> The downloaded file can be imported into your Public Cloud Project as an image (QCOW2) via [OpenStack](products/public-cloud-compute-instance-management). (Find an example of use in [this guide](/pages/public_cloud/compute/upload_own_image).) 
+> The downloaded file can be imported into your Public Cloud Project as an image (QCOW2) via [OpenStack](/products/public-cloud-compute-instance-management). (Find an example of use in [this guide](/pages/public_cloud/compute/upload_own_image).) 
 >
 
 ### Best practice for using snapshots
