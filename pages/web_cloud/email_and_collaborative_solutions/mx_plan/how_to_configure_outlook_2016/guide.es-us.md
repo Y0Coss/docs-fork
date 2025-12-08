@@ -118,7 +118,7 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 
 La ventana está dividida en dos partes, **Correo entrante** y **Correo saliente**. Haga clic en uno u otro para poder modificarlo.
 
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+![Outlook](images/config-outlook-mxplan07-ca.png){.thumbnail}
 
 ### Aviso de configuración POP, IMAP y SMTP <a name="popimap-settings"></a>
 
