@@ -2026,7 +2026,6 @@
     + [Block storage](products/storage-block-storage)
         + [Block volume](storage-block-storage-block-volume)
             + [Key concepts](storage-block-storage-block-volume-key-concepts)
-                <!-- + TO DO [Choosing the right volume type for your needs](storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs) TO DO -->
                 + [Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](public_cloud/compute/classic_block_multi_az_limitations)
             + [Getting Started](storage-block-storage-block-volume-getting-started)
                 + [Creating and configuring an additional disk on an instance](public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
@@ -2036,7 +2035,6 @@
                 + [Creating a volume from a backup](public_cloud/compute/create-volume-from-snapshot)
                 + [Increasing the size of an additional disk](public_cloud/compute/increase_the_size_of_an_additional_disk)
                 + [Test disk speed](public_cloud/compute/test_disk_speed)
-                <!-- + peut etre delete [Transfer a volume backup from one datacentre to another](public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another) -->
             + [Migration](storage-block-storage-block-volume-migration)
                 + [Migrating a Block Storage volume to an encrypted LUKS volume](public_cloud/compute/migrating-non-encrypted-to-encrypted-volume)
                 + [Change your Block Storage volume type](public_cloud/compute/switch_volume_type)
