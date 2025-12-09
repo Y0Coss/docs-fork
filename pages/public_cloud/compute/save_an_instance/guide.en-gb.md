@@ -189,20 +189,28 @@ You can select the instance to back up.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **The schedule** 
+#### **The name** 
+
+Enter a name for the automatic backup schedule. Take note of the pricing information and create the schedule with `Confirm`{.action}.
+ 
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+#### **The schedule**
 
 You can set up a custom backup schedule or choose one of the default frequencies:
 
 - Daily backup with retention of the last 7 backups
 - Daily backup with retention of the last 14 backups
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **The name** 
-
-Enter a name for the automatic backup schedule. Take note of the pricing information and create the schedule with `Confirm`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Adding a remote backup**
+
+Click the `Add a remote backup`{.action} button, select a location, review the pricing information, and press the `Create`{.action} button.
+
+![public-cloud-instance-backup-distant](images/createbackup8distant.png)
+
+///
 
 ### Managing backups and schedules
 
