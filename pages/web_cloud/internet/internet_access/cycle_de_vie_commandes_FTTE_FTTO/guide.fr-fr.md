@@ -26,7 +26,7 @@ Les architectures FTTE et FTTO diffèrent au niveau de l'infrastructure et du po
 
 | Offre | Infrastructure | Point de distribution optique |
 | :--------- | :------------- | :------ |
-| FTTE       | Fibre mutualisée entre le **N**oeud de **R**accordement **O**ptique (**NRO**) et le **P**oint de **M**utualisation (**PM**).<br> Fibre dédiée du PM au site client. | PTO dédié |
+| FTTE       | Fibre mutualisée entre le **N**oeud de **R**accordement **O**ptique (**NRO**) et le **P**oint de **M**utualisation (**PM**).<br> Fibre dédiée du PM au site client. | PTO dédié ou bandeau optique |
 | FTTO       | Fibre entièrement dédiée du NRO au site client. | Bandeau optique |
 
 Nos offres FTTE et FTTO permettent d'obtenir un débit symétrique garanti de 100 Mbps, 300 Mbps ou de 1 Gbps.
@@ -55,7 +55,7 @@ Cliquez sur votre offre pour voir les détails du délai de livraison applicable
 >> > [!success]
 >> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de votre commande sera moindre.
 >>
->> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45).
+>> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.
 >>
 > Commande FTTO
 >> 
@@ -70,10 +70,12 @@ Cliquez sur votre offre pour voir les détails du délai de livraison applicable
 >> > [!success]
 >> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de votre commande sera moindre.
 >>
->> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45).
+>> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.
 
 > [!primary]
 > Le délai moyen de mise en service est plus élevé sur un accès FTTE, en raison d’une infrastructure qui n’est pas totalement dédiée et de la nécessité de coordonner une intervention avec une entité tierce au niveau du PM.
+>
+> Le délai d'une commande FTTE ou FTTO varie également en fonction de la complexité du site à raccorder.
 
 ## Aller plus loin
 
