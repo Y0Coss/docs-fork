@@ -187,5 +187,3 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 [Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
-.nI_Y(MITem
