@@ -46,7 +46,7 @@ In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**
 
 Click on the `?`{.action} button for more information on this feature, then click on the `toggle icon`{.action} to switch the status to "**Enabled**".
 
-![auto scaling](images/autoscaling2023.png){.thumbnail}
+![auto scaling](images/autoscaling.png){.thumbnail}
 
 Once activated, auto-scaling will gradually increase your project's quota based on your actual needs.
 
