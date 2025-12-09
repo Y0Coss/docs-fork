@@ -231,6 +231,7 @@
             + [How to use SFTP to transfer files](bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
             + [How to create a Palworld compatible server](bare_metal_cloud/virtual_private_servers/palworld-server-on-vps)
             + [Installing a web development environment on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
+            + [How to deploy and verify an OpenNebula Hosted Cloud on Bare Metal servers](bare_metal_cloud/dedicated_servers/opennebula-deployment)
             + [How to install CloudPanel on a VPS or a Dedicated Server](bare_metal_cloud/virtual_private_servers/install_cloudpanel)
             + [Installing WordPress with Docker on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
             + [Installing WordPress with WP-CLI on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
