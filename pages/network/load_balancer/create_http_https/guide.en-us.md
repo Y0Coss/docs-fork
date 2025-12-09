@@ -78,7 +78,7 @@ Via the OVHcloud API, use the following call:
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
-For more information on the API features, consult the page [API function details](/pages/network/load_balancer/use_api_details){.ref}
+For more information on the API features, consult the page [API function details](/pages/network/load_balancer/use_api_details)
 
 ### Add a server farm <a name="farm"></a>
 

@@ -75,8 +75,8 @@ Clique na aba `Backup automatizado`{.action} no menu horizontal.
 Clique no link `Encomendar uma cópia de segurança premium`{.action} (para serviços encomendados a partir de 7 AGO, 2025) ou no botão `Ativar o Backup Automatizado`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 Na etapa seguinte, tome nota da informação relativa ao preço e depois clique em `Encomendar`{.action}. Será então guiado através do processo de encomenda que será confirmado com o envio de um e-mail.
