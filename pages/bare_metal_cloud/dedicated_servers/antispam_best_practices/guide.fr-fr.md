@@ -64,19 +64,19 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran puis sur `Adresses IP Publiques`{.action}.
 
-Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
+Dans le cadre jaune dédié aux alertes, cliquez sur la flèche déroulante `Voir toutes mes alertes`{.action} pour afficher toutes les alertes sur votre ou vos adresses IP.
 
-Si vous avez une alerte sur l'une de vos IPs, vous trouverez un badge de statut rouge dans la colonne "**IP Alert**".
+Si l'une de vos adresses IP est concernée par une alerte, l'information sera affichée juste en dessous :
 
-![Alerte anti spam](images/blockedIP.png){.thumbnail}
+![Alerte anti spam](images/alertblockedip.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Déblocage Anti-spam`{.action}.
+Dans la rubrique « Mes adresses IP publiques et services associés », cliquez sur le bouton `...`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Anti-spam`{.action}.
 
 ![antispam](images/antispam.png){.thumbnail}
 
-Dans la fenêtre qui s'ouvre, cliquez sur `Débloquer l'IP`{.action} en bas et validez.
+Dans le nouvel onglet, cliquez sur `Débloquer l'antispam`{.action} en bas et validez.
 
-![Débloquer IP](images/unblockIP.png){.thumbnail}
+![Débloquer IP](images/unblockip.png){.thumbnail}
 
 L'IP est alors en cours de déblocage, l'opération peut prendre plusieurs minutes.
 
@@ -214,10 +214,9 @@ Dans certains cas, l'alerte antispam peut être un faux positif. Si vous avez v�
 
 Les RFC (Request For Comments) sont des documents destinés à décrire des aspects techniques d'Internet. Ces documents sont produits et publiés par l'IETF (Internet Engineering Task Force), un groupe qui produit et définit essentiellement des normes.
 Retrouvez plus d'informations sur les liens suivants : 
-<br>
-- [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)<br>
-- [IETF](https://www.ietf.org/)<br>
-- [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft)
+- [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)
+- [IETF](https://www.ietf.org/)
+- [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft).
 
 #### Bonnes pratiques <a name="bestpractices"></a>
 

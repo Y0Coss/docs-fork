@@ -27,9 +27,9 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-ca/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-ca/bare-metal/high-grade/).
-> 
-> Refer to the following guides instead: [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> As of May 2025, this guide can be used for servers of the [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/) ranges.
+>
+> Alternatively, to configure Additional IPs using in routed mode or in a vRack, please refer to [Configuring the network on Proxmox VE on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) or [Configuring the network on Windows Server with Hyper-V on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
 
 ## Instructions
@@ -54,17 +54,17 @@ Code samples in the following instructions have to be replaced with your own val
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
 
-Click the `Additional IP`{.action} tab.
+Then, you can use the drop-down menu underneath **"My public IP addresses and associated services"** and select "**All Additional IPs**" to filter your services accordingly, or directly type the desired IP address in the search bar.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail} 
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
 Next, locate your Additional IP address in the table and click the `...`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
 
-![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
+![Add a virtual MAC (1)](images/addvmac_new.png){.thumbnail}
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
+![Add a virtual MAC (2)](images/addvmac2_new.png){.thumbnail}
 
 After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your Additional IP row. This virtual MAC will be required when configuring your VM on the host.
 
@@ -80,7 +80,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cl
 
 The IPv4 gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied it, continue with applying the configuration.
 
-![gateway](images/ipv4_information.png){.thumbnail}
+![gateway](images/ipv4_information_new.png){.thumbnail}
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 

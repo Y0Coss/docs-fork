@@ -64,19 +64,19 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-In the yellow window for IP alerts, click on the `View all alerts`{.action} drop-down arrow to view all alerts on your IP(s).
+You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
 
-If you have an alert on any of your IP(s), the information will be displayed right underneath:
+If you have an alert on any of your IP(s), there will be a red status icon in the "**IP Alert**" column.
 
-![Anti spam alert](images/alertblockedip.png){.thumbnail}
+![Anti spam alert](images/blockedIP_new.png){.thumbnail}
 
-Next, in the section "My public IP addresses and associated services" , click on the `...`{.action} next to the corresponding IP/service and select `Anti-spam`{.action}.
+Click on the `...`{.action} next to the corresponding IP/service and select `Anti-spam unblocking`{.action}.
 
-![antispam](images/antispam.png){.thumbnail}
+![antispam](images/antispam_new.png){.thumbnail}
 
-In the new tab, click on `Unblock the anti-spam`{.action} at the bottom and confirm.
+In the window that appears, click on `Unblock the IP`{.action} at the bottom and confirm.
 
-![Unblock IP](images/unblockip.png){.thumbnail}
+![Unblock IP](images/unblockIP_new.png){.thumbnail}
 
 The IP is being released, the operation may take several minutes.
 

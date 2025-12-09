@@ -22,19 +22,19 @@ La configuration du reverse DNS d'un serveur est particulièrement utile lors de
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
-Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
+Les menus déroulants de la section **Mes adresses IP publiques et services associés** vous permettent de filtrer les éléments du tableau pour les services et de trouver rapidement l’adresse IP souhaitée.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 
-Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
+Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Modifier le reverse`{.action}.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
 
-Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
+Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.action}.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
-Vous pouvez également éditer le reverse directement via l'icône `crayon`{.action} dans la colonne **Reverse DNS** du tableau.
+Vous pouvez également éditer le reverse directement via l'icône en forme de plume dans la colonne **Reverse DNS** du tableau.
 
 > [!warning]
 > Lorsque vous entrez votre nom de domaine dans le *reverse*, il vérifie immédiatement si l'enregistrement A renvoie à la même IP. Ceci est utilisé dans les procédures anti-spam, donc votre enregistrement A doit être valide et propagé. Il y a certaines règles à suivre lors de la saisie du *reverse* :

@@ -22,20 +22,19 @@ Configurer la résolution **Reverse DNS** d’une instance est particulièrement
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Network`{.action} et cliquez sur `Adresses IP Publiques`{.action}.
 
-Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
+Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
+![Reverse IP](images/filterippci.png){.thumbnail}
 
-Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
+Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Modifier le reverse`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
+![Reverse DNS](images/modifyreversepc.png){.thumbnail}
 
-Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
+Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
-Vous pouvez également éditer le reverse directement via l'icône `crayon`{.action} dans la colonne **Reverse DNS** du tableau.
-
+Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
 > [!primary]
 >
 Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
