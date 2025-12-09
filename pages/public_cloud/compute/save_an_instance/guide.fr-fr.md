@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou via OpenStack'
-updated: 2025-10-14
+updated: 2025-12-09
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel or via OpenStack
-updated: 2025-11-04
+updated: 2025-12-09
 ---
 
 <style>
