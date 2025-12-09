@@ -191,7 +191,7 @@ Vous pouvez sélectionner l'instance à sauvegarder.
 
 #### **Le nom** 
 
-Enter a name for the automatic backup schedule and review the pricing information.
+Entrez un nom pour la planification de sauvegarde automatique et consultez les informations de tarification.
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
@@ -206,7 +206,7 @@ Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l
 
 /// details | **Ajout d'une sauvegarde distante**
 
-Cliquez sur le bouton `Ajouter un backup distant`{.action} , sélectionnez une localisation, prenez connaissance des informations de tarification et appuyez sur le bouton `Créer`{.action} 
+Cliquez sur le bouton `Ajouter un backup distant`{.action}, sélectionnez une localisation, prenez connaissance des informations de tarification et cliquez sur le bouton `Créer`{.action} 
 
 ![public-cloud-instance-backup-distant](images/createbackup8distant.png){.thumbnail}
 

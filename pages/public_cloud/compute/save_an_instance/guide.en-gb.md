@@ -206,9 +206,9 @@ You can set up a custom backup schedule or choose one of the default frequencies
 
 /// details | **Adding a remote backup**
 
-Click the `Add a remote backup`{.action} button, select a location, review the pricing information, and press the `Create`{.action} button.
+Click the `Add a remote backup`{.action} button, select a location, review the pricing information, and click the `Create`{.action} button.
 
-![public-cloud-instance-backup-distant](images/createbackup8distant.png)
+![public-cloud-instance-backup-distant](images/createbackup8distant.png){.thumbnail}
 
 ///
 
