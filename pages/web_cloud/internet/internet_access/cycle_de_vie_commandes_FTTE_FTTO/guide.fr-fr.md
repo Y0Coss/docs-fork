@@ -35,7 +35,7 @@ Nos offres FTTE et FTTO permettent d'obtenir un débit symétrique garanti de 10
 
 Retrouvez ci-dessous un schéma détaillé du déroulement d'une commande FTTE et FTTO :
 
-![parcours client](images/commandes-ftte-et-ftto.png)
+![parcours client](images/commandes-ftte-et-ftto.png){.thumbnail}
 
 ## Délais de livraison
 
