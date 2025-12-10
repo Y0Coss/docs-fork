@@ -8,7 +8,6 @@ updated: 2025-07-22
 > Cet article concerne le déplacement d'adresses Additional IPv4, qui est limité selon des [restrictions régionales](#limitations).
 > 
 > La configuration d'Additional IP dans un vRack (réseau privé) contourne ces restrictions régionales en perdant la dépendance à une seule région, tout en facilitant l'interconnexion sur une large gamme de services OVHcloud.
->
 > Apprenez à configurer des Additional IP dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
@@ -75,8 +74,6 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `N
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
-![gerer IP](images/manageIPs2024.png){.thumbnail}
-
 Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action} ou sur `Associer ce bloc d’IP à un autre service`{.action}.
 
 ![espace client](images/move_ip.png){.thumbnail}
@@ -133,7 +130,6 @@ Pour plus d'informations, consultez notre liste de [régions disponibles](/links
 | ca-east-tor    |    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ✅     | ❌      |     ❌      |
 | ap-southeast-sgp|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ✅       |     ❌      |
 | ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅       |
-
 
 
 ## Aller plus loin
