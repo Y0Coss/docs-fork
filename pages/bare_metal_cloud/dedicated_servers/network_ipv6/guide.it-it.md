@@ -1,7 +1,7 @@
 ---
 title: 'Configurare IPv6 sur un server dedicato'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -425,7 +425,7 @@ sudo netplan apply
 ```
 ///
 
-/// details | **CentOS 7, Alma Linux (8/9/10) e Rocky Linux (8/9/10)**
+/// details | **CentOS 7, AlmaLinux (8/9/10) e Rocky Linux (8/9/10)**
 
 La configurazione di esempio qui sotto è basata su CentOS 7.
 
@@ -495,13 +495,14 @@ Salvare le modifiche nel file e riavviare la rete con uno dei comandi seguenti:
 sudo systemctl restart network
 ```
 
-**Per Alma Linux e Rocky Linux**
+**Per AlmaLinux e Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
 ```
 
 È inoltre possibile riavviare il server per applicare le modifiche.
+
 ///
 
 /// details | **Windows Server 2016 e versioni successive**
@@ -533,6 +534,7 @@ Seleziona `Internet Protocol Versione 6`{.action}, quindi clicca su `Proprietà`
 Inserisci la configurazione IPv6 (`IPv6 address` e `Default gateway`), spunta la casella `Conferma le impostazioni all’uscita` e clicca sul pulsante `OK`{.action} per confermare le modifiche.
 
 ![Proprietà](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Verifica la configurazione e prova la connessione.

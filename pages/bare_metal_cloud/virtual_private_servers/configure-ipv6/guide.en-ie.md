@@ -1,7 +1,7 @@
 ---
 title: "How to configure IPv6 on a VPS"
 excerpt: "Find out how to configure IPv6 on your OVHcloud VPS"
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -143,7 +143,7 @@ There are two ways to configure your network depending on the operating system i
 
 - **For Debian 11**: use the [method based on the *interfaces* files](#interfaces)
 
-- **For Debian 12, Ubuntu 20.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
+- **For Debian 12, Ubuntu 22.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
 In some cases, the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.  
 Moreover, keep in mind that the exact file names may vary.
@@ -410,6 +410,7 @@ You also have the option of entering the IPv6 DNS resolvers of your choice under
 Finally, tick the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes. An error message may appear if the specified gateway is not on the same IPv6 subnet (/128 and /64 for example). You can ignore this message and continue to the next step regardless.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
+
 ///
 
 ### Step 3: Verify the configuration and test the connection

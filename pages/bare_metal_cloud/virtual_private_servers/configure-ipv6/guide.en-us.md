@@ -1,7 +1,7 @@
 ---
 title: "How to configure IPv6 on a VPS"
 excerpt: "Find out how to configure IPv6 on your OVHcloud VPS"
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -128,7 +128,11 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc) <a name="persistentdebian"></a>
+<a name="persistentdebian"></a>
+
+#### Persistent application on Debian and its derivatives 
+
+**Ubuntu, Crunchbang, SteamOS, etc** 
 
 > [!warning]
 >
@@ -284,7 +288,9 @@ sudo netplan apply
 ```
 ///
 
-/// details | **Persistent application on Red Hat and its derivatives** (CentOS, Rocky Linux & Alma Linux, etc.) <a name="persistentredhat"></a>
+/// details | **Persistent application on Red Hat and its derivatives** <a name="persistentredhat"></a>
+
+**CentOS, Rocky Linux & Alma Linux, etc.**
 
 The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. In our example, our file is called `ifcfg-eth0`, so we copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary. 
 
@@ -404,6 +410,7 @@ You also have the option of entering the IPv6 DNS resolvers of your choice under
 Finally, tick the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes. An error message may appear if the specified gateway is not on the same IPv6 subnet (/128 and /64 for example). You can ignore this message and continue to the next step regardless.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
+
 ///
 
 ### Step 3: Verify the configuration and test the connection

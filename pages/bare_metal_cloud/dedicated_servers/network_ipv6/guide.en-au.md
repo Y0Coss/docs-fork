@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -279,7 +279,7 @@ sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 
 ```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=2607:5300:adce:f2cd::1/64
@@ -290,7 +290,7 @@ For multiple IPV6 addresses:
 
 ```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=2607:5300:adce:f2cd::1/64
@@ -417,7 +417,7 @@ sudo netplan apply
 ```
 ///
 
-///  details | **CentOS 7, Alma Linux (8/9/10) and Rocky Linux (8/9/10)**
+///  details | **CentOS 7, AlmaLinux (8/9/10) and Rocky Linux (8/9/10)**
 
 The configuration example below is based on CentOS 7.
 
@@ -452,7 +452,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-For Alma Linux and Rocky linux, the contents of the configuration file may differ from that shown above, in which case simply add the missing items. Do not replace anything in the original file.
+For AlmaLinux and Rocky linux, the contents of the configuration file may differ from that shown above, in which case simply add the missing items. Do not replace anything in the original file.
 
 If you need to configure multiple IPv6 addresses, add the following line:
 
@@ -491,13 +491,14 @@ Save your changes to the file and then restart the network with one of the follo
 sudo systemctl restart network
 ```
 
-**For Alma Linux and Rocky Linux**
+**For AlmaLinux and Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
 ```
 
 You can also reboot your server to apply the changes.
+
 ///
 
 /// details | **Windows Server 2016 and later**
@@ -529,6 +530,7 @@ Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`), check the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Verify the configuration and test the connection

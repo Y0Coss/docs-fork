@@ -1,7 +1,7 @@
 ---
 title: 'Configurar IPv6 en un servidor dedicado'
 excerpt: 'Descubra cómo configurar direcciones IPv6 en nuestra infraestructura'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -257,7 +257,7 @@ Edite el archivo agregando las siguientes líneas, sin realizar ningún cambio e
 
 ```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=YOUR_IPV6/IPv6_PREFIX
@@ -269,7 +269,7 @@ Si necesita configurar más direcciones IPv6, la configuración debería ser sim
 
 ```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=ADDITIONAL_IPV6_1/IPv6_PREFIX
@@ -288,7 +288,7 @@ A continuación, editamos el archivo de configuración:
 
 ```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=2607:5300:adce:f2cd::1/64
@@ -297,7 +297,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 ```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=2607:5300:adce:f2cd::1/64
@@ -424,7 +424,7 @@ sudo netplan apply
 ```
 ///
 
-/// details | **CentOS 7, Alma Linux (8/9/10) y Rocky Linux (8/9/10)**
+/// details | **CentOS 7, AlmaLinux (8/9/10) y Rocky Linux (8/9/10)**
 
 El ejemplo de configuración siguiente está basado en CentOS 7.
 
@@ -477,7 +477,7 @@ IPV6ADDR=2607:5300:adce:f2cd::/64
 IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 ```
 
-Para Alma Linux y Rocky linux, el contenido del archivo de configuración puede diferir del mostrado arriba, en cuyo caso simplemente añada los elementos que faltan. No reemplace nada en el archivo original.
+Para AlmaLinux y Rocky linux, el contenido del archivo de configuración puede diferir del mostrado arriba, en cuyo caso simplemente añada los elementos que faltan. No reemplace nada en el archivo original.
 
 Adición de direcciones IPv6 adicionales:
 
@@ -496,13 +496,14 @@ Guarde los cambios en el archivo y reinicie la red mediante uno de los siguiente
 sudo systemctl restart network
 ```
 
-**Para Alma Linux y Rocky Linux**
+**Para AlmaLinux y Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
 ```
 
 También puede reiniciar el servidor para aplicar los cambios.
+
 ///
 
 /// details | **Windows Server 2016 y versiones posteriores**
@@ -533,6 +534,7 @@ Seleccione `Protocolo de internet versión 6`{.action}, y haga clic en `Propieda
 Introduzca su configuración IPv6 (`IPv6 address` y `Default gateway`), marque la casilla `Validar los parámetros al salir` y haga clic en el botón `OK`{.action} para aceptar los cambios.
 
 ![Propiedades](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Comprobar la configuración y probar la conexión.

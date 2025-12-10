@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -421,7 +421,7 @@ sudo netplan apply
 ```
 ///
 
-/// details | **CentOS 7, Alma Linux (8/9/10) i Rocky Linux (8/9/10)**
+/// details | **CentOS 7, AlmaLinux (8/9/10) i Rocky Linux (8/9/10)**
 
 Poniższa przykładowa konfiguracja oparta jest na systemie CentOS 7.
 
@@ -456,7 +456,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-W przypadku systemów Alma Linux i Rocky linux zawartość pliku konfiguracyjnego może różnić się od przedstawionej powyżej, w którym to przypadku wystarczy dodać brakujące elementy. Nie zastępuj niczego w oryginalnym pliku.
+W przypadku systemów AlmaLinux i Rocky linux zawartość pliku konfiguracyjnego może różnić się od przedstawionej powyżej, w którym to przypadku wystarczy dodać brakujące elementy. Nie zastępuj niczego w oryginalnym pliku.
 
 Jeśli potrzebujesz więcej adresów IPv6 na komputerze, dodaj je w wierszu `IPV6ADDR_SECONDARIES`, rozdzielając spacją.
 
@@ -497,13 +497,14 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć za pomocą jednego z 
 sudo systemctl restart network
 ```
 
-**Dla Alma Linux i Rocky Linux**
+**Dla AlmaLinux i Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
 ```
 
 Można również ponownie uruchomić serwer, aby zastosować zmiany.
+
 ///
 
 /// details | **Windows Server 2016 i nowsze wersje**
@@ -535,6 +536,7 @@ Wybierz pozycję `Protokół internetowy w wersji 6 (TCP/IPv6)`{.action}, a nast
 Wprowadź konfigurację IPv6 (`Adres IPv6` i `Default Gateway`), zaznacz kratkę `Zatwierdź parametry wychodząc` i kliknij przycisk `OK`{.action}, aby zatwierdzić zmiany.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Sprawdź konfigurację i przetestować połączenie.

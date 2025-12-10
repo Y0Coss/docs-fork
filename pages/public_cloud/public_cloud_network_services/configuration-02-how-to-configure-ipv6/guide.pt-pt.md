@@ -39,10 +39,10 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 
 ## Requisitos
 
-* Uma instância Public Cloud (qualquer modelo)
+* Uma instância Public Cloud (qualquer modelo).
 * Dispor de um acesso administrativo (sudo) via SSH ou ambiente de trabalho remoto (Windows) ao seu servidor.
 * Ter conhecimentos básicos de rede.
-* Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -291,6 +291,7 @@ Todas as informações necessárias serão visíveis na secção **Redes**.
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1
 >> ```
+>> ///
 >>
 >> Reinicie a interface de rede com o seguinte comando:
 >>

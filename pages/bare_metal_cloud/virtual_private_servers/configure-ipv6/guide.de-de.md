@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem VPS einrichten"
 excerpt: "Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren"
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -408,6 +408,7 @@ Sie können auch die DNS-Resolver Ihrer Wahl eintragen, unter `Use the following
 Setzen Sie schließlich einen Haken bei `Validate settings upon exit` und klicken Sie auf den Button `OK`{.action}, um die Änderungen zu bestätigen. Es kann eine Fehlermeldung angezeigt werden, wenn sich das angegebene Gateway nicht im gleichen IPv6-Subnetz befindet (/128 und /64, zum Beispiel). Sie können diese Nachricht ignorieren und zum nächsten Schritt übergehen.
 
 ![ipv6 konfigurieren](images/configure-ipv6-step4.png){.thumbnail}
+
 ///
 
 ### Schritt 3: Konfiguration überprüfen und die Verbindung testen.

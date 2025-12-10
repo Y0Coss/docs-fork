@@ -1,7 +1,7 @@
 ---
 title: 'Configurar IPv6 em servidores dedicados'
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -421,7 +421,7 @@ sudo netplan apply
 ```
 ///
 
-/// details | **CentOS 7, Alma Linux (8/9/10) e Rocky Linux (8/9/10)**
+/// details | **CentOS 7, AlmaLinux (8/9/10) e Rocky Linux (8/9/10)**
 
 O exemplo de configuração abaixo é baseado em CentOS 7.
 
@@ -456,7 +456,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Para Alma Linux e Rocky linux, o conteúdo do ficheiro de configuração pode ser diferente do indicado acima, caso em que basta adicionar os elementos em falta. Não substitua nada no arquivo original.
+Para AlmaLinux e Rocky linux, o conteúdo do ficheiro de configuração pode ser diferente do indicado acima, caso em que basta adicionar os elementos em falta. Não substitua nada no arquivo original.
 
 Se precisar de mais endereços IPv6 na máquina, adicione-os na linha `IPV6ADDR_SECONDARIES`, separados por um espaço em branco. 
 
@@ -489,7 +489,7 @@ Guarde as alterações no ficheiro e, em seguida, reinicie a rede utilizando um 
 sudo systemctl restart network
 ```
 
-**Para Alma Linux e Rocky Linux**
+**Para AlmaLinux e Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
@@ -525,6 +525,7 @@ Selecione `Internet Protocol Version 6`{.action} e clique em `Properties`{.actio
 Introduza a sua configuração IPv6 (`IPv6 address` e `Default Gateway`), marque a caixa `Validar os parâmetros ao sair` e clique no botão `OK`{.action} para validar as suas alterações.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Verificar a configuração e testar a ligação.

@@ -1,7 +1,7 @@
 ---
 title: "Configurare IPv6 su un server VPS"
 excerpt: "Come configurare IPv6 sul tuo VPS OVHcloud"
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -219,7 +219,7 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 ///
 
-/// details | **Configurazione tramite Netplan** <a name="netplan"></a>
+/// details | **Configurazione tramite *Netplan*** <a name="netplan"></a>
 
 I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Di default, il file di configurazione principale è `50-cloud-init.yaml`. Prima di continuare, controllare il file per verificare se l'indirizzo IPv6 è già stato configurato. In questo caso, non è necessario configurare nuovamente l'indirizzo IPv6 in quanto con il server VPS è disponibile un solo indirizzo IPv6.
 
@@ -410,6 +410,7 @@ Puoi anche inserire le risoluzioni DNS IPv6 che preferisci `utilizzando questo` 
 Seleziona la casella `Conferma le impostazioni lasciando` e clicca su `OK`{.action} per confermare le modifiche. Se il gateway specificato non si trova sulla stessa sottorete IPv6 (ad esempio, /128 e /64), può essere visualizzato un messaggio di errore. Puoi ignorare questo messaggio e passare allo step successivo.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
+
 ///
 
 ### Step 3: Verifica la configurazione e prova la connessione.

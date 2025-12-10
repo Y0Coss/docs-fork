@@ -1,7 +1,7 @@
 ---
 title: "Configurar la IPv6 en un VPS"
 excerpt: 'Cómo configurar la IPv6 en un VPS de OVHcloud'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -98,7 +98,7 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 Una vez que haya recuperado las direcciones, vaya al paso 2. [Aplicar la configuración IPv6](#applyipv6).
 
-### 2\. aplicar la configuración IPv6 <a name="applyipv6"></a>
+### 2\. Aplicar la configuración IPv6 <a name="applyipv6"></a>
 
 Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
@@ -139,7 +139,7 @@ Dos métodos para configurar su red:
 
 - **Para Debian 11**: utilice el [método basado en el archivo *interfaces*](#interfaces).
 
-- **para Debian 12, Ubuntu 22.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
+- **Para Debian 12, Ubuntu 22.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
 
 En algunos casos, el método a utilizar puede no ser el indicado anteriormente. Para asegurarse, navegue por el sistema para comprobar el método actual.  Visite el sitio <https://netplan.io/> para más información, si es necesario.
 
@@ -219,7 +219,7 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 ///
 
-/// details | **Configuración con Netplan** <a name="netplan"></a>
+/// details | **Configuración con *Netplan*** <a name="netplan"></a>
 
 Los archivos de configuración de red se encuentran en el directorio `/etc/netplan/`. Por defecto, el fichero de configuración principal se llama `50-cloud-init.yaml`. Antes de continuar, compruebe este archivo para ver si ya se ha configurado la dirección IPv6. En ese caso, no es necesario volver a configurar la dirección IPv6, ya que solo tiene una dirección IPv6 con su servidor VPS.
 
@@ -411,6 +411,7 @@ También puede introducir las resoluciones DNS IPv6 que desee en el apartado `Us
 Por último, marque la casilla `Aceptar configuración al salir` y haga clic en el botón `Aceptar`{.action} para aceptar los cambios. Si la puerta de enlace especificada no se encuentra en la misma subred IPv6 (/128 y /64, por ejemplo), puede aparecer un mensaje de error. Puede ignorar este mensaje y pasar a la siguiente etapa.
 
 ![Configuración IPv6](images/configure-ipv6-step4.png){.thumbnail}
+
 ///
 
 ### 3\. Comprobar la configuración y probar la conexión.

@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une adresse IPv6 principale sur un serveur dédié'
 excerpt: 'Découvrez comment configurer des adresses IPv6 sur notre infrastructure.'
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -424,7 +424,7 @@ sudo netplan apply
 ```
 ///
 
-/// details | **CentOS 7, Alma Linux (8/9/10) et Rocky Linux (8/9/10)**
+/// details | **CentOS 7, AlmaLinux (8/9/10) et Rocky Linux (8/9/10)**
 
 L'exemple de configuration ci-dessous est basé sur CentOS 7.
 
@@ -459,7 +459,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Pour Alma Linux et Rocky linux, le contenu du fichier de configuration peut différer de celui indiqué ci-dessus, auquel cas il suffit d'ajouter les éléments manquants. Ne remplacez rien dans le fichier original.
+Pour AlmaLinux et Rocky linux, le contenu du fichier de configuration peut différer de celui indiqué ci-dessus, auquel cas il suffit d'ajouter les éléments manquants. Ne remplacez rien dans le fichier original.
 
 Si vous devez configurer plusieurs adresses IPv6, ajoutez la ligne suivante :
 
@@ -496,13 +496,14 @@ Enregistrez vos modifications dans le fichier puis redémarrez le réseau à l'a
 sudo systemctl restart network
 ```
 
-**Pour Alma Linux et Rocky Linux**
+**Pour AlmaLinux et Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
 ```
 
 Vous pouvez également redémarrer votre serveur pour appliquer les changements.
+
 ///
 
 /// details | **Windows Server 2016 et versions ultérieures**
@@ -534,6 +535,7 @@ Sélectionnez `Internet Protocol Version 6`{.action}, puis cliquez sur `Proprié
 Entrez votre configuration IPv6 (`Adresse IPv6` et `Default Gateway`), cochez la case `Valider les paramètres en quittant` et cliquez sur le bouton `OK`{.action} pour valider vos changements.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Vérifier la configuration et tester la connexion.

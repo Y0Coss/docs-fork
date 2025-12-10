@@ -40,9 +40,9 @@ Domyślnie skonfigurowany jest tylko adres IPv4.
 ## Wymagania początkowe
 
 * Dowolny model instancji Public Cloud.
-* Dostęp administracyjny (sudo) przez SSH lub zdalny pulpit (Windows) do Twojego serwera
+* Dostęp administracyjny (sudo) przez SSH lub zdalny pulpit (Windows) do Twojego serwera.
 * Posiadanie podstawowej wiedzy w zakresie sieci informatycznych.
-* Dostęp do [Panelu klienta OVHcloud](/links/manager)
+* Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -292,6 +292,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1
 >> ```
+>> ///
 >>
 >> Uruchom ponownie interfejs sieciowy za pomocą polecenia:
 >>

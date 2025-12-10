@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem Dedicated Server konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren"
-updated: 2025-12-08
+updated: 2025-12-09
 ---
 
 <style>
@@ -425,7 +425,7 @@ sudo netplan apply
 ```
 ///
 
-/// details | **CentOS 7, Alma Linux (8/9/10) und Rocky Linux (8/9/10)**
+/// details | **CentOS 7, AlmaLinux (8/9/10) und Rocky Linux (8/9/10)**
 
 Die folgende Beispielkonfiguration basiert auf CentOS 7.
 
@@ -460,7 +460,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Bei Alma Linux und Rocky Linux kann der Inhalt der Konfigurationsdatei von dem oben genannten abweichen. In diesem Fall genügt es, die fehlenden Elemente hinzuzufügen. Ersetzen Sie nichts in der Originaldatei.
+Bei AlmaLinux und Rocky Linux kann der Inhalt der Konfigurationsdatei von dem oben genannten abweichen. In diesem Fall genügt es, die fehlenden Elemente hinzuzufügen. Ersetzen Sie nichts in der Originaldatei.
 
 Wenn Sie weitere IPv6-Adressen auf Ihrer Maschine benötigen, fügen Sie diese in der Zeile `IPV6ADDR_SECONDARIES` durch Leerzeichen getrennt hinzu.
 
@@ -497,13 +497,14 @@ Speichern Sie die Änderungen in der Datei, und starten Sie das Netzwerk dann mi
 sudo systemctl restart network
 ```
 
-**Für Alma Linux und Rocky Linux**
+**Für AlmaLinux und Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
 ```
 
 Sie können Ihren Server auch neu starten, um die Änderungen zu übernehmen.
+
 ///
 
 /// details | **Windows Server 2016 und höhere Versionen**
@@ -535,6 +536,7 @@ Wählen Sie `Internetprotokoll, Version 6 (TCP/IPv6)`{.action} aus und klicken S
 Geben Sie Ihre IPv6-Konfiguration ein (`IPv6-Adresse` und `Standardgateway`), setzen Sie einen Haken bei `Einstellungen beim Beenden bestätigen` und klicken Sie auf `OK`{.action}, um Ihre Änderungen zu bestätigen.
 
 ![Eigenschaften](images/ipv6_configuration.png){.thumbnail}
+
 ///
 
 ### Konfiguration überprüfen und die Verbindung testen.
@@ -631,4 +633,4 @@ Zögern Sie in jedem Fall nicht, sich an [unser Support-Team](https://help.ovhcl
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

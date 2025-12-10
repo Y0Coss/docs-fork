@@ -246,6 +246,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >> IPV6ADDR=2607:5300:201:abcd::7c5/128
 >> IPV6_DEFAULTGW=2607:5300:201:abcd::1
 >> ```
+>> ///
 >>
 >> Starten Sie anschließend den Netzwerkdienst mit einem der folgenden Befehle neu:
 >>
