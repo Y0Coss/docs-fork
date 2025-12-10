@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers using UEFI boot mode
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode
-updated: 2025-12-05
+updated: 2025-12-11
 ---
 
 ## Objective

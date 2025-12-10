@@ -1,7 +1,7 @@
 ---
 title: "Gestion et reconstruction d'un RAID logiciel sur les serveurs utilisant le mode de démarrage UEFI"
 excerpt: Découvrez comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur un serveur utilisant le mode de démarrage UEFI
-updated: 2025-12-05
+updated: 2025-12-11
 ---
 
 ## Objectif
@@ -203,7 +203,7 @@ La partition `nvme0n1p5` est une partition de configuration, c'est-à-dire un vo
 
 ***Qu'est-ce qu'une partition système EFI ?***
 
-**Une partition système EFI est une partition sur laquelle le serveur demarre. Elle contient les fichiers de démarrage, mais aussi les gestionnaires de démarrage ou les images de noyau d'un système d'exploitation installé. Elle peut également contenir des programmes utilitaires conçus pour être exécutés avant que le système d'exploitation ne démarre, ainsi que des fichiers de données tels que des journaux d'erreurs.
+Une partition système EFI est une partition sur laquelle le serveur demarre. Elle contient les fichiers de démarrage, mais aussi les gestionnaires de démarrage ou les images de noyau d'un système d'exploitation installé. Elle peut également contenir des programmes utilitaires conçus pour être exécutés avant que le système d'exploitation ne démarre, ainsi que des fichiers de données tels que des journaux d'erreurs.
 
 ***La partition système EFI est-elle incluse dans le RAID ?***
 
