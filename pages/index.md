@@ -950,6 +950,7 @@
                 + [MySQL - Connect with Python](public_cloud/public_cloud_databases/mysql_05_connect_python)
                 + [MySQL - Connect with MySQL Workbench](public_cloud/public_cloud_databases/mysql_06_connect_workbench)
                 + [MySQL - Advanced parameters references](public_cloud/public_cloud_databases/mysql_08_advanced_parameters_references)
+                + [MySQL - External database migration](public_cloud/public_cloud_databases/mysql_09_external_database_migration)                
             + [Tutorials](public-cloud-databases-mysql-tutorials)
                 + [MySQL - Tutorial - Connect an OVHcloud Managed Kubernetes service to an OVHcloud Managed MySQL service](public_cloud/public_cloud_databases/mysql_tuto_01_connect-k8s-to-managed-mysql)
         + [MongoDB](products/public-cloud-databases-mongodb)
