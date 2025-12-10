@@ -114,7 +114,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >> pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 >> ```
 >>
->> /// détails | **Exemple de configuration**
+>> /// details | **Exemple de configuration**
 >>
 >> ```console
 >> iface eth0 inet6 static
@@ -166,7 +166,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >>                 via: IPv6_GATEWAY
 >> ```
 >>
->> /// détails | **Exemple de configuration**
+>> /// details | **Exemple de configuration**
 >>
 >> ```yaml
 >> network:
@@ -230,7 +230,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >>
 >> Nous avons omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
 >>
->> /// détails | **Exemple de configuration**
+>> /// details | **Exemple de configuration**
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -273,7 +273,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >>
 >> Nous avons omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
 >>
->> /// détails | **Exemple de configuration**
+>> /// details | **Exemple de configuration**
 >>
 >> ```console
 >> [ipv6]
