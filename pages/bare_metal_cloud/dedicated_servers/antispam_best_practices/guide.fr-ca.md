@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
 excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
-updated: 2025-04-28
+updated: 2025-12-10
 ---
 
 ## Objectif
@@ -64,13 +64,13 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran puis sur `Adresses IP Publiques`{.action}.
 
-Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
-Si vous avez une alerte sur l'une de vos IPs, vous trouverez un badge de statut rouge dans la colonne "**IP Alert**".
+Si vous avez une alerte sur l'une de vos IPs, vous trouverez un badge de statut rouge dans la colonne **IP Alert**.
 
 ![Alerte anti spam](images/blockedIP_new.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Déblocage Anti-spam`{.action}.
+Cliquez sur le bouton `⁝`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Déblocage Anti-spam`{.action}.
 
 ![antispam](images/antispam_new.png){.thumbnail}
 

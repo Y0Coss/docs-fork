@@ -1,7 +1,7 @@
 ---
 title: 'Configurer des Additional IP en mode bridge sur vos machines virtuelles'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
-updated: 2025-12-04
+updated: 2025-12-10
 ---
 
 <style>
@@ -43,7 +43,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 >
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 >
-> Depuis mai 2025, ce guide peut être utilisé pour les serveurs des gammes [Scale](https://www.ovhcloud.com/fr/bare-metal/scale/) et [High Grade](https://www.ovhcloud.com/fr/bare-metal/high-grade/).
+> Depuis mai 2025, ce guide peut être utilisé pour les serveurs des gammes [Scale](/links/bare-metal/scale) et [High Grade](/links/bare-metal/hg).
 >
 > Il est aussi possible de configurer les Additional IP en mode routé ou via le vRack. Pour cela, vous pouvez consulter: [Configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) et [Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
@@ -66,7 +66,7 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 > [!warning]
 > Dans le cas d'un bloc d'IP, les adresses MAC virtuelles se créent sur chaque IP individuelle dans le bloc.
 
-Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** et séléctionner "Toutes les Additional IP" pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et séléctionner **Toutes les Additional IP** pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 

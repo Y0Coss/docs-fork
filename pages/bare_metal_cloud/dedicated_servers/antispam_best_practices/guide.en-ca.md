@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
-updated: 2025-04-28
+updated: 2025-12-10
 ---
 
 ## Objective
@@ -64,13 +64,13 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
+You can use the drop-down menu underneath **My public IP addresses and associated services** to filter your services according to category, or directly type the desired IP address in the search bar.
 
-If you have an alert on any of your IP(s), there will be a red status icon in the "**IP Alert**" column.
+If you have an alert on any of your IP(s), there will be a red status icon in the **IP Alert** column.
 
 ![Anti spam alert](images/blockedIP_new.png){.thumbnail}
 
-Click on the `...`{.action} next to the corresponding IP/service and select `Anti-spam unblocking`{.action}.
+Click the `⁝`{.action} button next to the corresponding IP/service and select `Anti-spam unblocking`{.action}.
 
 ![antispam](images/antispam_new.png){.thumbnail}
 

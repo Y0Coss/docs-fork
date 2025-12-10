@@ -1,7 +1,7 @@
 ---
 title: 'Configuring Additional IPs in bridge mode on your virtual machines'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2025-12-04
+updated: 2025-12-10
 ---
 
 <style>
@@ -41,7 +41,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> As of May 2025, this guide can be used for servers of the [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/) ranges.
+> As of May 2025, this guide can be used for servers of the [Scale](/links/bare-metal/scale/) and [High Grade](/links/bare-metal/hg) ranges.
 >
 > Alternatively, to configure Additional IPs using in routed mode or in a vRack, please refer to [Configuring the network on Proxmox VE on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) or [Configuring the network on Windows Server with Hyper-V on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
@@ -68,7 +68,7 @@ Code samples in the following instructions have to be replaced with your own val
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
 
-Then, you can use the drop-down menu underneath **"My public IP addresses and associated services"** and select "**All Additional IPs**" to filter your services accordingly, or directly type the desired IP address in the search bar.
+Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 

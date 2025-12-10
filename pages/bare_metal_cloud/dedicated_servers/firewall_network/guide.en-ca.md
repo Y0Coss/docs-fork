@@ -52,7 +52,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 
 ![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or simply click on the status badge in the "**Edge Firewall**" column).
+Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
 ![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 

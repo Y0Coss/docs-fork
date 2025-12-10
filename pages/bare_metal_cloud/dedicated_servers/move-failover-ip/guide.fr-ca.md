@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2025-07-22
+updated: 2025-12-10
 ---
 
 > [!primary]
@@ -72,11 +72,11 @@ Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez 
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
-Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** et séléctionner "Toutes les Additional IP" pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et séléctionner "Toutes les Additional IP" pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
+Cliquez sur le bouton `⁝`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
 
 ![espace client](images/move_ip_1_new.png){.thumbnail}
 
