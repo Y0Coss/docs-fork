@@ -19,7 +19,7 @@ This guide explain how to migrate an external Mysql database to a Mysql Public C
 ### Prerequise
 
 - The source database should be in >= 5.7 and <= 8.0
-- gtid_mode is ON on both the source and the target
+- gtid_mode is ON on both the source and the target (ON by default on Public Cloud MYSQL database)
 - User with read and replication data permission can be create on the source database
 
 ### Set up
