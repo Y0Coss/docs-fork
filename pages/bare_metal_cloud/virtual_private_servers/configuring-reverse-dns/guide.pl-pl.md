@@ -1,7 +1,7 @@
 ---
 title: "Jak skonfigurować rewers DNS Twojego serwera (rekord PTR)"
-excerpt: Dowiedz się, jak skonfigurować rewers DNS dla adresu IP z poziomu Panelu klienta OVHcloud
-updated: 2025-09-18
+excerpt: Dowiedz się, jak skonfigurować rewers DNS dla adresu IPv4 lub IPv6 z poziomu Panelu klienta OVHcloud
+updated: 2025-12-10
 ---
 
 ## Wprowadzenie
@@ -15,7 +15,7 @@ Konfiguracja rewersu DNS serwera jest szczególnie użyteczna podczas wysyłania
 ## Wymagania początkowe
 
 - Adres IP przypisany do usługi Twojego konta OVHcloud
-- Domena z jej rejestracją `A` powiązana z Twoją usługą
+- Domena z jej rejestracją `A` lub `AAAA` powiązana z Twoją usługą
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
@@ -37,7 +37,7 @@ W nowym oknie wpisz rewers i kliknij na `Zatwierdź`{.action}.
 Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolumnie **Rewers DNS** tabeli.
 
 > [!warning]
-> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
+> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu `A` / `AAAA` odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu DNS musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
 >
 >  - rewers nie może się rozpocząć od `-`
 >  - rewers nie może zawierać więcej niż 63 znaków
@@ -49,7 +49,7 @@ Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolum
 
 > [!primary]
 >
-> Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy rekord `A` jest poprawnie skonfigurowany w strefie DNS Twojej domeny. Wprowadzenie zmian w strefie DNS może potrwać do 24 godzin, w przypadku gdy właśnie zmieniłeś rekord `A`.
+> Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy rekord `A` / `AAAA` jest poprawnie skonfigurowany w strefie DNS Twojej domeny. Wprowadzenie zmian w strefie DNS może potrwać do 24 godzin, w przypadku gdy właśnie zmieniłeś rekord.
 >
 > Jeśli domena jest zarządzana przez OVHcloud jako operator **i korzysta z serwerów DNS OVHcloud**, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).
 >
