@@ -1203,7 +1203,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >>
 >> > [!api]
 >> >
->> @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `domainName`: wprowadź nazwę domeny przypisanej do Twojej platformy E-mail Pro, na której DKIM ma być obecny.<br>

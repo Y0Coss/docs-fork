@@ -106,7 +106,7 @@ Exemple:
 UUID=<UUID_of_volume> /mnt/data ext4 defaults 0 2
 ```
 
-> [primary]
+> [!primary]
 >
 > **Notes:**
 >

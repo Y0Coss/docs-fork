@@ -69,11 +69,11 @@ If you order an additional IP block on a server but choose a different location 
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-Then, you can use the drop-down menu underneath **"My public IP addresses and associated services"** and select "**All Additional IPs**" to filter your services accordingly, or directly type the desired IP address in the search bar.
+Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Next, click the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action}.
+Next, click the `⁝`{.action} button to the right of the Additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action}.
 
 ![move Additional](images/move_ip_1_new.png){.thumbnail}
 

@@ -345,7 +345,7 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 >> Passé le délai de clôture du RMA, une pénalité sera appliquée pour le matériel (modem et/ou ONT) non reçu. Une facture sera ainsi émise.
 >> 
 
-## Erreur d'envoi d'un téléphone, d'un modem ou d'un ONT
+### Erreur d'envoi d'un téléphone, d'un modem ou d'un ONT
 
 Si vous renvoyez à OVHcloud un matériel autre que celui concerné par le RMA, il est malgré tout indispensable de nous retourner le matériel réclamé sur le bon RMA. En effet, le délai de renvoi court toujours et le matériel correspondant au RMA doit nous être restitué. 
 

@@ -123,7 +123,7 @@ Wenn Ihre Backup-Datei als komprimiertes Archiv vorliegt, entkomprimieren Sie es
 
 > [!primary]
 >
-> OVHcloud bietet auch Web Cloud Databases Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf [unserer dedizierten Seite](products/web-cloud-clouddb).
+> OVHcloud bietet auch Web Cloud Databases Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf [unserer dedizierten Seite](/products/web-cloud-clouddb).
 >
 
 Ihre OVHcloud Datenbank muss mit der Konfigurationsdatei Ihrer Website im FTP-Speicherplatz Ihres OVHcloud Hostings verlinkt werden.

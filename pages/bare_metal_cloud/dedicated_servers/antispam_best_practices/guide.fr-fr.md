@@ -213,7 +213,8 @@ Dans certains cas, l'alerte antispam peut être un faux positif. Si vous avez v�
 #### RFC <a name="rfc"></a>
 
 Les RFC (Request For Comments) sont des documents destinés à décrire des aspects techniques d'Internet. Ces documents sont produits et publiés par l'IETF (Internet Engineering Task Force), un groupe qui produit et définit essentiellement des normes.
-Retrouvez plus d'informations sur les liens suivants : 
+Retrouvez plus d'informations sur les liens suivants :
+
 - [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)
 - [IETF](https://www.ietf.org/)
 - [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft).

@@ -201,7 +201,7 @@ El certificado SSL de pago Sectigo (EV) es válido para un único dominio y su s
 > - La autorización de su organización para contratar un certificado SSL Sectigo EV.
 > - Estar en condiciones de justificar con exactitud la información y los datos relativos a su organización.
 >
-> Para comprobar si puede contratar un certificado SSL Sectigo EV, acceda a [este enlace](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+> Para comprobar si puede contratar un certificado SSL Sectigo EV, acceda a [este enlace](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
 
 Haga clic en las fichas siguientes para ver cada uno de los **6** etapas:
 
