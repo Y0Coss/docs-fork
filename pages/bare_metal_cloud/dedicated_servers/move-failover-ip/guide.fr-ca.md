@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2025-07-22
+updated: 2025-12-10
 ---
 
 > [!primary]
@@ -89,7 +89,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 > [!warning]
 > Veuillez noter que pour certains produits, les adresses IP (ou blocs) doivent d'abord être déplacées vers un **Parking IP** (un emplacement de stockage temporaire), avant de pouvoir être déplacées vers le produit souhaité.
 >
-> Pour déplacer des blocs IP vers un réseau vRack spécifique, veuillez utiliser [l'interface de gestion vRack](https://manager.eu.ovhcloud.com/#/dedicated/vrack) à la place.
+> Pour déplacer des blocs IP vers un réseau vRack spécifique, veuillez utiliser **l'interface de gestion vRack**, à laquelle vous pouvez accéder en cliquant sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Réseau privé vRack`{.action}.
 >
 
 ### Déplacer une IP via les API

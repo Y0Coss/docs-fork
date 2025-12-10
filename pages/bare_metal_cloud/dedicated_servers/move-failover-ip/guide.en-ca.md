@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2025-07-22
+updated: 2025-12-10
 ---
 
 > [!primary]
@@ -86,7 +86,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 > [!warning]
 > Please note that for some products, IP addresses (or blocks) have to be moved to an IP Parking first (a temporary storage location), before they can be moved to the desired product.
 >
-> To move IP blocks to a specific vRack network, please use [the vRack management interface](https://manager.eu.ovhcloud.com/#/dedicated/vrack) instead.
+> To move IP blocks to a specific vRack network, please use **the vRack management interface**, which you can access by opening the `Network`{.action} menu in the left-hand sidebar, then selecting `vRack private network`{.action}.
 >
 
 ### Moving an IP via the API
