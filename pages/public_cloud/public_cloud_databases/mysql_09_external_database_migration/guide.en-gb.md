@@ -18,14 +18,14 @@ This guide explain how to migrate an external Mysql database to a Mysql Public C
 
 ### Prerequise
 
-- The source database should be in >= 5.7 and <= 8.0
-- gtid_mode is ON on both the source and the target (ON by default on Public Cloud MYSQL database)
-- User with read and replication data permission can be create on the source database
+- The source database should be in >= 5.7 and <= 8.0.
+- gtid_mode is ON on both the source and the target (ON by default on Public Cloud MYSQL database).
+- User with read and replication data permission can be create on the source database.
 
 ### Set up
 
-- Create a managed Mysql in your public cloud project
-- Create a user on the source database with replication and read data permissions
+- Create a managed Mysql in your public cloud project.
+- Create a user on the source database with replication and read data permissions.
 
 ### Using API
 
@@ -44,7 +44,7 @@ This guide explain how to migrate an external Mysql database to a Mysql Public C
 >> }
 >> ```
 >>
->> Create a task to check if the migration is possible
+>> Create a task to check if the migration is possible.
 >>
 
 >> > [!api]
@@ -71,7 +71,7 @@ This guide explain how to migrate an external Mysql database to a Mysql Public C
 >> }
 >> ```
 >>
->> Create a task to migrate the external database to the managed database
+>> Create a task to migrate the external database to the managed database.
 >>
 
 >> > [!api]
@@ -79,7 +79,7 @@ This guide explain how to migrate an external Mysql database to a Mysql Public C
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/migration
 >> >
 >>
->> Get the result of the migration 
+>> Get the result of the migration.
 >>
 
 >> > [!api]
@@ -93,7 +93,7 @@ This guide explain how to migrate an external Mysql database to a Mysql Public C
 
 ### Users
 
-Curently the users are not migrate in this process and need to be recreated in the managed database manually
+Curently the users are not migrate in this process and need to be recreated in the managed database manually.
 
 ## Go further
 
