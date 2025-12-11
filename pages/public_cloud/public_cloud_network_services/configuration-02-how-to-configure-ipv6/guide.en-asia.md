@@ -204,7 +204,7 @@ All the information you need is in the **Networks** section.
 >> sudo netplan apply
 >> ```
 >>
-> **RedHat / CentOS / Rocky Linux / Alma Linux**
+> **RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file.
 >>
@@ -252,7 +252,7 @@ All the information you need is in the **Networks** section.
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Fedora**
+> **Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
 >> The network configuration file is located in the `/etc/NetworkManager/system-connections/`. We recommend that you start by backing up the relevant configuration file. 
 >>
