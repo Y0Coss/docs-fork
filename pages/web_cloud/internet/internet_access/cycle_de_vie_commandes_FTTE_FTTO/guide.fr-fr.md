@@ -1,7 +1,7 @@
 ---
 title: "Comprendre le cycle de vie des commandes FTTE et FTTO"
 excerpt: "Découvrez comment se déroule le parcours complet des commandes FTTE et FTTO, de la commande à la livraison"
-updated: 2026-01-02
+updated: 2025-12-15
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ Il est possible d'utiliser le modem fourni par OVHcloud ou un modem personnel.
 
 La livraison de votre accès a lieu dans les jours suivant sa mise en service.
 
-## Différences entre architectures FTTE et FTTO
+### Différences entre architectures FTTE et FTTO
 
 Les architectures FTTE et FTTO diffèrent au niveau de l'infrastructure et du point de distribution optique :
 
@@ -31,13 +31,13 @@ Les architectures FTTE et FTTO diffèrent au niveau de l'infrastructure et du po
 
 Nos offres FTTE et FTTO permettent d'obtenir un débit symétrique garanti de 100 Mbps, 300 Mbps ou de 1 Gbps.
 
-## Vue d'ensemble du cycle de vie des commandes FTTE et FTTO
+### Vue d'ensemble du cycle de vie des commandes FTTE et FTTO
 
 Retrouvez ci-dessous un schéma détaillé du déroulement d'une commande FTTE et FTTO :
 
 ![parcours client](images/commandes-ftte-et-ftto.png){.thumbnail}
 
-## Délais de livraison
+### Délais de livraison
 
 Cliquez sur votre offre pour voir les détails du délai de livraison applicable.
 
@@ -53,9 +53,10 @@ Cliquez sur votre offre pour voir les détails du délai de livraison applicable
 >> - Mise en service et installation du RAD
 >>
 >> > [!success]
->> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de votre commande sera moindre.
+>> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de mise en service sera moindre.
 >>
->> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.
+>> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.<br>
+>> Si vous utilisez la box OVHcloud, l'activation sera réalisée sur le port Ethernet.
 >>
 > Commande FTTO
 >> 
@@ -68,9 +69,10 @@ Cliquez sur votre offre pour voir les détails du délai de livraison applicable
 >> - Mise en service et installation du RAD.
 >>
 >> > [!success]
->> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de votre commande sera moindre.
+>> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de mise en service sera moindre.
 >>
->> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.
+>> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.<br>
+>> Si vous utilisez la box OVHcloud, l'activation sera réalisée sur le port Ethernet.
 
 > [!primary]
 > Le délai moyen de mise en service est plus élevé sur un accès FTTE, en raison d’une infrastructure qui n’est pas totalement dédiée et de la nécessité de coordonner une intervention avec une entité tierce au niveau du PM.
