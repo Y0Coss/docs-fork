@@ -78,9 +78,9 @@ time=2025-12-09T15:57:06.165626171Z level=info msg="  --enable-service-topology=
 
 ## Aller plus loin
 
-Pour avoir une vue d'ensemble du service Managed Kubernetes OVHcloud, consultez la [page Managed Kubernetes Service d'OVHcloud](/links/public-cloud/kubernetes).
+Pour avoir une vue d'ensemble de Managed Kubernetes Service d'OVHcloud, consultez [cette page](/links/public-cloud/kubernetes).
 
-Pour en savoir plus sur l'utilisation pratique de votre cluster Kubernetes, nous vous invitons à consulter nos [tutoriels](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
+Pour en savoir plus sur l'utilisation pratique de votre cluster Kubernetes, nous vous invitons à consulter [nos tutoriels](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Si vous avez besoin de formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander l'assistance des experts de notre équipe Professional Services pour votre cas d'utilisation et projet spécifiques.
 
