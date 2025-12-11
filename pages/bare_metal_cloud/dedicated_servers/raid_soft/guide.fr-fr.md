@@ -4,6 +4,20 @@ excerpt: "Découvrez comment gérer et reconstruire le RAID logiciel après un r
 updated: 2025-12-11
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 Le RAID (Redundant Array of Independent Disks) est un ensemble de techniques prévues pour atténuer la perte de données sur un serveur en répliquant celles-ci sur plusieurs disques.
@@ -195,7 +209,7 @@ unused devices: <none>
 
 #### Retrait du disque défaillant
 
-Nous commençons par marquer les partitions **sda2** et **sda4** comme **failed**.
+Nous commençons par marquer les partitions **sda2** et **sda4** défectueuses (*Failed*).
 
 ```sh
 root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/sda2
@@ -225,7 +239,7 @@ unused devices: <none>
 
 Comme nous pouvons le voir ci-dessus, le [F] à côté des partitions indique que le disque est défaillant ou défectueux.
 
-Ensuite, nous retirons ces partitions des baies RAID.
+Ensuite, nous retirons ces partitions de leurs matrices RAID respectives.
 
 ```sh
 root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/md2 --remove /dev/sda2
@@ -240,6 +254,16 @@ root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/
 Pour nous assurer que nous obtenons un disque qui est similaire à un disque vide, nous utilisons la commande suivante. Remplacez **sda** par vos propres valeurs :
 
 ```sh
+shred -s10M -n1 /dev/sda1
+shred -s10M -n1 /dev/sda2
+shred -s10M -n1 /dev/sda3
+shred -s10M -n1 /dev/sda4
+shred -s10M -n1 /dev/sda
+```
+
+Le disque apparaît désormais comme un disque neuf et vide :
+
+```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk 
 NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda       8:0    0   1.8T  0 disk
@@ -252,7 +276,7 @@ sdb       8:16   0   1.8T  0 disk
   └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-Si nous exécutons la commande suivante, nous voyons que notre disque a été correctement « nettoyé » :
+Si nous exécutons la commande suivante, nous voyons que notre disque a été correctement « effacé » :
 
 ```sh
 parted /dev/sda
@@ -286,7 +310,7 @@ unused devices: <none>
 
 Les résultats ci-dessus montrent que seules deux partitions apparaissent désormais dans les matrices RAID. Nous avons réussi à faire échouer le disque **sda** et nous pouvons maintenant procéder au remplacement du disque.
 
-Pour plus d'informations sur la préparation et la demande de remplacement d'un disque, consultez ce [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
+Pour plus d'informations sur la préparation et la demande de remplacement d'un disque, consultez ce [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
 La commande suivante permet d'avoir plus de détails sur la ou les matrices RAID :
 
@@ -326,6 +350,10 @@ Consistency Policy : bitmap
 <a name="raidrebuild"></a>
 
 ### Reconstruire le RAID
+
+> [!primary]
+> Ce processus peut varier selon le système d'exploitation installé sur votre serveur. Nous vous recommandons de consulter la documentation officielle de votre système d'exploitation pour obtenir les commandes appropriées.
+>
 
 > [!warning]
 >
@@ -372,7 +400,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> [user@server_ip ~]# sudo sfdisk -d /dev/sdX | sfdisk /dev/sdX
 >> ```
 >>
->> La commande doit être au format suivant : `sfdisk -d /dev/disksain | sfdisk /dev/nnouveaudisk`.
+>> La commande doit être au format suivant : `sfdisk -d /dev/disque sain | sfdisk /dev/nouveau disque`.
 >>
 
 Ensuite, nous ajoutons les partitions au RAID :
@@ -414,27 +442,50 @@ Ensuite, récupérez les UUID des deux partitions swap :
 
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
+/dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
 [user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
+/dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-Nous remplaçons l'ancien UUID de la partition swap (**sda4**) par le nouveau dans `/etc/fstab` :
+Nous remplaçons l'ancien UUID de la partition swap (**sda4**) par le nouveau dans `/etc/fstab`.
+
+Exemple :
 
 ```sh
 [user@server_ip ~]# sudo nano etc/fstab
+
+UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
+UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
+LABEL=BIOS       /boot       vfat    defaults        0     1
+UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
+UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
 ```
+
+D'après les résultats ci-dessus, l'ancien UUID est `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` et doit être remplacé par le nouveau `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. 
 
 Assurez-vous de remplacer le bon UUID.
 
-Ensuite, rechargez le système avec la commande suivante :
+Ensuite, nous vérifions que tout est correctement monté à l'aide de la commande suivante :
 
 ```sh
-[user@server_ip ~]# sudo systemctl daemon-reload
+[user@server_ip ~]# sudo mount -av
+/                        : ignored
+/boot                    : successfully mounted
+/boot/efi                : successfully mounted
+swap                     : ignored
+swap                     : ignored
 ```
 
 Exécutez la commande suivante pour activer la partition swap :
 
 ```sh
 [user@server_ip ~]# sudo swapon -av
+```
+
+Puis rechargez le système à l'aide de la commande suivante :
+
+```sh
+[user@server_ip ~]# sudo systemctl daemon-reload
 ```
 
 La reconstruction du RAID est maintenant terminée.
@@ -655,6 +706,7 @@ Quittez l'environnement Chroot avec `exit` et démontez tous les disques :
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
 ```
+///
 
 Nous avons maintenant terminé avec succès la reconstruction du RAID sur le serveur et nous pouvons maintenant le redémarrer en mode normal.
 

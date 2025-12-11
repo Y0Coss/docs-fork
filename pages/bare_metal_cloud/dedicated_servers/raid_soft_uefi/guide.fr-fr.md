@@ -4,6 +4,20 @@ excerpt: Découvrez comment gérer et reconstruire un RAID logiciel après un re
 updated: 2025-12-11
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 Un Redundant Array of Independent Disks (RAID) est une technologie qui atténue la perte de données sur un serveur en répliquant les données sur deux disques ou plus.
@@ -12,7 +26,7 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est le RA
 
 **Ce guide explique comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur votre serveur en mode EFI**
 
-Avant de commencer, veuillez noter que ce guide se concentre sur les serveurs dédiés qui utilisent le mode UEFI comme mode de démarrage. C'est le cas des cartes mères modernes. Si votre serveur utilise le mode de démarrage legacy (BIOS), veuillez consulter ce guide : [Gestion et reconstruction d'un RAID logiciel sur des serveurs en mode de démarrage legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Avant de commencer, veuillez noter que ce guide se concentre sur les serveurs dédiés qui utilisent le mode UEFI comme mode de démarrage. C'est le cas des cartes mères modernes. Si votre serveur utilise le mode de démarrage legacy (BIOS), veuillez consulter ce guide : [Gestion et reconstruction d'un RAID logiciel sur des serveurs en mode de démarrage legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 Pour vérifier si un serveur fonctionne en mode BIOS legacy ou en mode UEFI, exécutez la commande suivante :
 
@@ -46,7 +60,7 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
 - [Reconstruction du RAID](#raidrebuild)
     - [Reconstruction du RAID après le remplacement du disque principal (mode de secours)](#rescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
-    - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](efiraodgrub)
+    - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](efiraidgrub)
     - [Ajout de l'étiquette à la partition SWAP (si applicable)](#swap-partition)
     - [Reconstruction du RAID en mode normal](#normalmode)
 
@@ -138,7 +152,8 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 La commande `fdisk -l` permet également d'identifier le type de vos partitions. C'est une information importante lors de la reconstruction de votre RAID en cas de panne de disque.
 
-Pour les partitions **GPT**, la ligne 6 affichera : `Disklabel type: gpt`.
+Pour les partitions **GPT**, la ligne 6 affichera : `Disklabel type: gpt`. 
+Ces informations ne sont visibles que lorsque le serveur est en mode normal.
 
 Toujours en se basant sur les résultats de `fdisk -l`, nous pouvons voir que `/dev/md2` se compose de 1022 MiB et `/dev/md3` contient 474,81 GiB. Si nous exécutons la commande `mount`, nous pouvons également trouver la disposition des disques.
 
@@ -209,7 +224,7 @@ Une partition système EFI est une partition sur laquelle le serveur demarre. El
 
 Non, à partir d'août 2025, lorsqu'une installation du système d'exploitation est effectuée par OVHcloud, la partition ESP n'est pas incluse dans le RAID. Lorsque vous utilisez nos modèles d'OS pour installer votre serveur avec un RAID logiciel, plusieurs partitions système EFI sont créées : une par disque. Cependant, seule une partition EFI est montée à la fois. Toutes les ESP créées contiennent les mêmes fichiers. Tous les ESP créés au moment de l'installation contiennent les mêmes fichiers.
 
-La partition système EFI est montée à `/boot/efi` et le disque sur lequel elle est montée est sélectionné par Linux au démarrage.
+La partition système EFI est montée à l'emplacement `/boot/efi` et le disque sur lequel elle est montée est sélectionné par Linux au démarrage.
 
 Exemple :
 
@@ -383,7 +398,7 @@ unused devices: <none>
 
 #### Retrait du disque défectueux
 
-Tout d'abord, nous marquons les partitions **nvme0n1p2** et **nvme0n1p3** comme défectueuses.
+Tout d'abord, nous marquons les partitions **nvme0n1p2** et **nvme0n1p3** comme défectueuses (*Failed*).
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/nvme0n1p2
@@ -469,7 +484,7 @@ nvme1n1     259:0    0 476.9G  0 disk
 nvme0n1     259:5    0 476.9G  0 disk
 ```
 
-Si nous exécutons la commande suivante, nous constatons que notre disque a été correctement "effacé" :
+Si nous exécutons la commande suivante, nous constatons que notre disque a été correctement « effacé » :
 
 ```sh
 parted /dev/nvme0n1
@@ -487,7 +502,7 @@ Disk Flags:
 
 Pour plus d'informations sur la préparation et la demande de remplacement d'un disque, consultez ce [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
-Si vous exécutez la commande suivante, vous pouvez obtenir davantage de détails sur les tableaux RAID :
+Si vous exécutez la commande suivante, vous pouvez obtenir davantage de détails sur les matrices RAID :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md3
@@ -727,7 +742,7 @@ mount --make-slave /mnt/run
 Ensuite, nous utilisons la commande `chroot` pour accéder au point de montage et nous assurer que la nouvelle partition système EFI a été correctement créée et que le système reconnaît les deux ESP :
 
 ```sh
-root@rescue12-customer-eu:/# chroot /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
 Pour afficher les partitions ESP, nous exécutons la commande `blkid -t LABEL=EFI_SYSPART` :
@@ -1041,6 +1056,7 @@ Ensuite, nous rechargeons le système :
 ```sh
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
+///
 
 Nous avons maintenant terminé avec succès la reconstruction RAID.
 

@@ -4,6 +4,20 @@ excerpt: Find out how to manage and rebuild software RAID after a disk replaceme
 updated: 2025-12-11
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 Redundant Array of Independent Disks (RAID) is a technology that mitigates data loss on a server by replicating data across two or more disks.
@@ -12,7 +26,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 **This guide explains how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode**
 
-Before we begin, please note that this guide focuses on Dedicated servers that use UEFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Before we begin, please note that this guide focuses on Dedicated servers that use UEFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 To check whether a server runs on legacy BIOS mode or UEFI boot mode, run the following command:
 
@@ -46,7 +60,7 @@ When you purchase a new server, you may feel the need to perform a series of tes
 - [Rebuilding the RAID](#raidrebuild)
     - [Rebuilding the RAID after the main disk is replaced (rescue mode)](#rescuemode)
     - [Recreating the EFI System Partition](#recreateesp)
-    - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](efiraodgrub)
+    - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](efiraidgrub)
     - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
     - [Rebuilding the RAID in normal mode](#normalmode)
 
@@ -139,6 +153,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
 
 For **GPT** partitions, line 6 will display: `Disklabel type: gpt`.
+This information can only been seen when the server is in normal mode.
 
 Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 1022 MiB and `/dev/md3` contains 474.81 GiB. If we were to run the `mount` command we can also find out the layout of the disk.
 
@@ -727,7 +742,7 @@ mount --make-slave /mnt/run
 Next, we use the `chroot` command to access the mount point and make sure the new EFI System Partition has been properly created and the system recongnises both ESPs:
 
 ```sh
-root@rescue12-customer-eu:/# chroot /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
 To view the ESP partitions, we run the command `blkid -t LABEL=EFI_SYSPART`:
@@ -1042,6 +1057,7 @@ Next, we reload the system:
 ```sh
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
+///
 
 We have now successfully completed the RAID rebuild.
 
