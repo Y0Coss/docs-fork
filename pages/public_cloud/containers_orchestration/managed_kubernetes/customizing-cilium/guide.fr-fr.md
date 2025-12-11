@@ -1,51 +1,53 @@
 ---
 title: Customizing Cilium on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to customize Cilium on an OVHcloud Managed Kubernetes cluster'
-updated: 2025-12-09
+updated: 2025-12-11
 ---
 
 ## Objective
 
 The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
 
-The Standard plan of OVHcloud Managed Kubernetes clusters are using [Cilium](https://cilium.io/) as default cni.
+The Standard plan of OVHcloud Managed Kubernetes clusters uses [Cilium](https://cilium.io/) as the default CNI.
 
-The Cilium agent process (a.k.a. DaemonSet) supports setting configuration on a per-node basis.
+The Cilium agent process (a.k.a. DaemonSet) allows configuration on a per-node basis.
 
 This allows overriding cilium-config ConfigMap for a node or set of nodes by using `CiliumNodeConfig` objects.
 
 > [!warning]
-> Without using `CiliumNodeConfig` object it will not be possible to update cilium-config ConfigMap.
+> Without using a `CiliumNodeConfig` object, it will not be possible to update cilium-config ConfigMap.
 
-## What is CiliumNodeConfig
+## Requirements
 
-As stated in [cilium documentation](https://docs.cilium.io/en/stable/configuration/per-node-config/#ciliumnodeconfig-objects).
+- An OVHcloud Managed Kubernetes cluster with Standard plan.
+
+## Instructions
+
+### What is CiliumNodeConfig
+
+As stated in [Cilium documentation](https://docs.cilium.io/en/stable/configuration/per-node-config/#ciliumnodeconfig-objects):
 
 A `CiliumNodeConfig` object allows for overriding ConfigMap / Agent arguments.
 
 It consists of a set of fields and a label selector. The label selector defines to which nodes the configuration applies.
 
-As is the standard with Kubernetes, an empty LabelSelector (e.g. {}) selects all nodes.
+As is the standard with Kubernetes, an empty LabelSelector (e.g. `{}`) selects all nodes.
 
-## CiliumNodeConfig possible values
+### CiliumNodeConfig possible values
 
-You can retrieve all keys / values in the cilium-configmap file of the [Cilium](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml) github repository.
+You can retrieve all keys and values in the cilium-configmap file of the [Cilium github repository](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
 
 > [!warning]
-> Be aware that some keys could need some feature enablement in the cilium operator which could be disabled by default
+> Be aware that some keys may require enabling certain features in the Cilium operator, which are disabled by default.
 
-## Requirements
+### Customization example
 
-- An OVHcloud Managed Kubernetes cluster with standard plan.
+#### Enable topology aware routing for 3AZ region
 
-## Customization example
+> [!success]
+> To discover this feature, you can read the following page: [Discover Kubernetes 1.33 features – Topology aware routing in multi-zones Kubernetes clusters](https://blog.ovhcloud.com/discover-kubernetes-1-33-features-topology-aware-routing-in-multi-zones-kubernetes-clusters/), by [Aurélie Vache](https://blog.ovhcloud.com/author/aurelie-vache/).
 
-### Enable topology aware routing for 3AZ region
-
-> [!note]
-> To discover this feature you can read [Discover Kubernetes 1.33 features – Topology aware routing in multi-zones Kubernetes clusters](https://blog.ovhcloud.com/discover-kubernetes-1-33-features-topology-aware-routing-in-multi-zones-kubernetes-clusters/) By [Aurélie Vache](https://blog.ovhcloud.com/author/aurelie-vache/).
-
-To enable it on cilium side, apply this configuration of `CiliumNodeConfig`.
+To enable it on the Cilium side, apply this configuration of `CiliumNodeConfig`:
 
 ```yaml
 apiVersion: cilium.io/v2
@@ -59,13 +61,13 @@ spec:
     enable-service-topology: "true"
 ```
 
-Then restart the cilium agent.
+Then restart the Cilium agent:
 
 ```bash
 kubectl -n kube-system rollout restart daemonset cilium
 ```
 
-Check if the configuration as been applied.
+Verify that the configuration has been applied:
 
 ```bash
 kubectl -n kube-system logs $(kubectl -n kube-system get pod -l k8s-app=cilium -o name) | head -n 500 | grep enable-service-topology
