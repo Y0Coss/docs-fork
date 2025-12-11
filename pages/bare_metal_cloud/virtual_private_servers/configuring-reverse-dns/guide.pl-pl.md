@@ -37,7 +37,7 @@ W nowym oknie wpisz rewers i kliknij na `Zatwierdź`{.action}.
 Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolumnie **Rewers DNS** tabeli.
 
 > [!warning]
-> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu `A` / `AAAA` odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu DNS musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
+> Gdy wpiszesz nazwę swojego domeny w reverse, natychmiast sprawdza, czy rekordy `A` i `AAAA` odpowiadają skonfigurowanym adresom IP dla tej domeny. Jest to używane w procedurach antyspamowych, więc rekordu DNS musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
 >
 >  - rewers nie może się rozpocząć od `-`
 >  - rewers nie może zawierać więcej niż 63 znaków
@@ -45,14 +45,12 @@ Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolum
 >  - rewers musi się kończyć znakiem `.`
 >
 > Przykład: "domain.tld" w polu rewers byłoby `domain.tld.`.
->
 
 > [!primary]
 >
-> Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy rekord `A` / `AAAA` jest poprawnie skonfigurowany w strefie DNS Twojej domeny. Wprowadzenie zmian w strefie DNS może potrwać do 24 godzin, w przypadku gdy właśnie zmieniłeś rekord.
+> Jeśli zmiana nie działa tak, jak się spodziewałeś, sprawdź, czy rekordy `A` i `AAAA` są poprawnie skonfigurowane w strefie DNS Twojej nazwy domeny. Wprowadzenie zmian w strefie DNS może potrwać do 24 godzin, w przypadku gdy właśnie zmieniłeś rekord.
 >
 > Jeśli domena jest zarządzana przez OVHcloud jako operator **i korzysta z serwerów DNS OVHcloud**, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).
->
 
 ## Sprawdź również
 

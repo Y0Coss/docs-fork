@@ -37,7 +37,7 @@ Na nova janela, indique a sua reverse e clique em `Validar`{.action}.
 Pode igualmente editar a reverse diretamente a partir do ícone em forma de caneta na coluna **Reverse DNS** da tabela.
 
 > [!warning]
-> Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo `A` / `AAAA` remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo DNS deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
+> Quando introduzir o nome do seu domínio no reverse, será verificado de imediato se os registos `A` e `AAAA` correspondem aos endereços IP configurados para este domínio. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo DNS deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
 >
 >  - a reverse não pode começar por um `-`
 >  - a reverse não pode ter mais de 63 caracteres
@@ -45,14 +45,12 @@ Pode igualmente editar a reverse diretamente a partir do ícone em forma de cane
 >  - a reverse deve terminar com um `.`
 >
 > Por exemplo: "domain.tld" no registo reverse seria `domain.tld.`.
->
 
 > [!primary]
 >
-> Se a alteração não funcionar como esperado, verifique se o registo `A` / `AAAA` está corretamente configurado na zona DNS do seu domínio. A aplicação das alterações na zona DNS pode demorar até 24 horas, no caso de ter alterado recentemente o registo.
+> Se a alteração não funcionar conforme o esperado, verifique se os registros `A` e `AAAA` estão corretamente configurados na zona DNS do seu nome de domínio. A aplicação das alterações na zona DNS pode demorar até 24 horas, no caso de ter alterado recentemente o registo.
 >
 > Se o domínio for gerido pela OVHcloud como agente de registo **e utilizar os servidores DNS da OVHcloud**, pode consultar [este manual](/pages/web_cloud/domains/dns_zone_edit).
->
 
 ## Quer saber mais?
 
