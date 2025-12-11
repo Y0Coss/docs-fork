@@ -128,28 +128,33 @@ public-cloud-quantum-computing-qpu: Quantum QPUs
 public-cloud-quantum-computing-qpu-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
+public-cloud-containers-orchestration-managed-kubernetes-k8s-key-concepts: Key concepts
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
-public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
-public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
-public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup, Restore and Migrate
-public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
-public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
-public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration: Configuration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-backup-and-restore: Backup and Restore
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-observability-monitoring: Monitoring & Observability
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-traffic-management: Traffic management
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-operators: Operators
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-cluster: Cluster
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-nodepools-and-nodes: Nodepools & Nodes
+public-cloud-containers-orchestration-managed-kubernetes-k8s-migration: Migration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
-public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
-public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
-public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
-public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
-public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloads
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-kubernetes-k8s-additional-resources: Additional resources
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
-public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-private-registry-configuration: Configuration
+public-cloud-containers-orchestration-managed-private-registry-security: Security
+public-cloud-containers-orchestration-managed-private-registry-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-private-registry-additional-resources: Additional resources
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
-public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
-public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
+public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
+public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
 public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-databases-cassandra: Cassandra
 public-cloud-databases-common-configuration: Configuration
@@ -213,15 +218,18 @@ public-cloud-compute-Troubleshooting: Diagnóstico
 public-cloud-compute-additional-resources: Recursos adicionais
 public-cloud-cross-functional: Public Cloud - Informações gerais
 public-cloud-cross-functional-getting-started: Introdução
-public-cloud-cross-functional-general-information: Informações gerais
-public-cloud-cross-functional-project-management: Gestão de projectos Public Cloud
+public-cloud-cross-functional-key-concepts: Conceitos-chave
+public-cloud-cross-functional-configuration: Configuração
+public-cloud-cross-functional-configuration-billing-information: Informações de faturação
+public-cloud-cross-functional-configuration-project-management: Gestão de projectos Public Cloud
 public-cloud-cross-functional-migration: Migração
 public-cloud-cross-functional-tutorials: Tutoriais
-public-cloud-cross-functional-services-management: Gestão de serviços
-public-cloud-cross-functional-horizon: Gestão a partir do Horizon
-public-cloud-cross-functional-openstack: Gestão via OpenStack API
-public-cloud-cross-functional-infrastructure: Infraestrutura
-public-cloud-cross-functional-billing-information: Informações de faturação
+public-cloud-cross-functional-tutorials-horizon: Gestão a partir do Horizon
+public-cloud-cross-functional-tutorials-openstack: Gestão a partir do Openstack
+public-cloud-cross-functional-tutorials-terraform: Gestão a partir do Terraform
+public-cloud-cross-functional-security: Segurança
+public-cloud-cross-functional-troubleshooting: Diagnóstico
+public-cloud-cross-functional-additional-resources: Recursos adicionais
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-s3: S3 compatible
@@ -242,17 +250,33 @@ public-cloud-storage-object-storage-swift-security: Segurança
 public-cloud-storage-object-storage-swift-troubleshooting: Diagnóstico
 public-cloud-storage-object-storage-swift-additional-resources: Recursos adicionais
 public-cloud-storage-block-storage: Block Storage
-public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-block-storage-key-concepts: Conceitos-chave
+public-cloud-storage-block-storage-getting-started: Introdução
+public-cloud-storage-block-storage-configuration: Configuração
+public-cloud-storage-block-storage-migration: Migração
+public-cloud-storage-block-storage-additional-resources: Recursos adicionais
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-getting-started: Introdução
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
-public-cloud-network-concepts: Conceitos
+public-cloud-network-key-concepts: Conceitos-chave
 public-cloud-network-getting-started: Introdução
-public-cloud-network-additional-ip: Additional IP
+public-cloud-network-getting-started-private-network: Private Network
+public-cloud-network-getting-started-load-balancer: Load Balancer
+public-cloud-network-getting-started-public-ips: Public IPs
 public-cloud-network-configuration: Configuração
-public-cloud-network-technical-resources: Recursos Técnicos
+public-cloud-network-configuration-private-network: Private Network
+public-cloud-network-configuration-load-balancer: Load Balancer
+public-cloud-network-configuration-public-ips: Public IPs
+public-cloud-network-configuration-gateway: Gateway
 public-cloud-network-tutorials: Tutoriais
+public-cloud-network-tutorials-general: geral
+public-cloud-network-tutorials-private-network: Private Network
+public-cloud-network-tutorials-load-balancer: Load Balancer
+public-cloud-network-security: Segurança
+public-cloud-network-troubleshooting: Diagnóstico
+public-cloud-network-additional-resources: Recursos adicionais
 public-cloud-data-platform: Data Platform
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeiros passos
@@ -391,9 +415,32 @@ storage-object-storage-swift-troubleshooting: Diagnóstico
 storage-object-storage-swift-additional-resources: Recursos adicionais
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-ha-nas: HA-NAS
+storage-file-storage-enterprise-file-storage-key-concepts: Conceitos-chave
+storage-file-storage-enterprise-file-storage-getting-started: Primeiros passos
+storage-file-storage-enterprise-file-storage-configuration: Configuração
+storage-file-storage-enterprise-file-storage-migration: Migração
+storage-file-storage-enterprise-file-storage-additional-resources: Recursos adicionais
+storage-file-storage-ha-nas: NAS-HA
+storage-file-storage-ha-nas-key-concepts: Conceitos-chave
+storage-file-storage-ha-nas-getting-started: Primeiros passos
+storage-file-storage-ha-nas-configuration: Configuração
+storage-file-storage-ha-nas-migration: Migração
+storage-file-storage-ha-nas-additional-resources: Recursos adicionais
+storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-getting-started: Primeiros passos
 storage-block-storage: Block Storage
+storage-block-storage-block-volume: Block volume
+storage-block-storage-block-volume-key-concepts: Conceitos-chave
+storage-block-storage-block-volume-getting-started: Primeiros passos
+storage-block-storage-block-volume-configuration: Configuração
+storage-block-storage-block-volume-migration: Migração
+storage-block-storage-block-volume-additional-resources: Recursos adicionais
 storage-block-storage-cloud-disk-array: Cloud Disk Array
+storage-block-storage-cloud-disk-array-key-concepts: Conceitos-chave
+storage-block-storage-cloud-disk-array-getting-started: Primeiros passos
+storage-block-storage-cloud-disk-array-configuration: Configuração
+storage-block-storage-cloud-disk-array-tutorials: Tutorials
+storage-block-storage-cloud-disk-array-additional-resources: Recursos adicionais
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
