@@ -247,8 +247,13 @@ public-cloud-storage-object-storage-swift-security: Sicherheit
 public-cloud-storage-object-storage-swift-troubleshooting: Störungsbehebung
 public-cloud-storage-object-storage-swift-additional-resources: Zusätzliche Ressourcen
 public-cloud-storage-block-storage: Block Storage
-public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-block-storage-key-concepts: Schlüsselkonzepte
+public-cloud-storage-block-storage-getting-started: Erste Schritte
+public-cloud-storage-block-storage-configuration: Konfiguration
+public-cloud-storage-block-storage-migration: Migration
+public-cloud-storage-block-storage-additional-resources: Zusätzliche Ressourcen
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-getting-started: Erste Schritte
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
@@ -407,9 +412,32 @@ storage-object-storage-swift-troubleshooting: Störungsbehebung
 storage-object-storage-swift-additional-resources: Zusätzliche Ressourcen
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-ha-nas: HA-NAS
+storage-file-storage-enterprise-file-storage-key-concepts: Schlüsselkonzepte
+storage-file-storage-enterprise-file-storage-getting-started: Erste Schritte
+storage-file-storage-enterprise-file-storage-configuration: Konfiguration
+storage-file-storage-enterprise-file-storage-migration: Migration
+storage-file-storage-enterprise-file-storage-additional-resources: Zusätzliche Ressourcen
+storage-file-storage-ha-nas: NAS-HA
+storage-file-storage-ha-nas-key-concepts: Schlüsselkonzepte
+storage-file-storage-ha-nas-getting-started: Erste Schritte
+storage-file-storage-ha-nas-configuration: Konfiguration
+storage-file-storage-ha-nas-migration: Migration
+storage-file-storage-ha-nas-additional-resources: Zusätzliche Ressourcen
+storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-getting-started: Erste Schritte
 storage-block-storage: Block Storage
+storage-block-storage-block-volume: Block volume
+storage-block-storage-block-volume-key-concepts: Schlüsselkonzepte
+storage-block-storage-block-volume-getting-started: Erste Schritte
+storage-block-storage-block-volume-configuration: Konfiguration
+storage-block-storage-block-volume-migration: Migration
+storage-block-storage-block-volume-additional-resources: Zusätzliche Ressourcen
 storage-block-storage-cloud-disk-array: Cloud Disk Array
+storage-block-storage-cloud-disk-array-key-concepts: Schlüsselkonzepte
+storage-block-storage-cloud-disk-array-getting-started: Erste Schritte
+storage-block-storage-cloud-disk-array-configuration: Konfiguration
+storage-block-storage-cloud-disk-array-tutorials: Tutorials
+storage-block-storage-cloud-disk-array-additional-resources: Zusätzliche Ressourcen
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
