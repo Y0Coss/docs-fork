@@ -76,7 +76,7 @@ Cliquez sur le bouton `⁝`{.action} à côté de l'IP ou le service corresponda
 
 Dans la fenêtre qui s'ouvre, cliquez sur `Débloquer l'IP`{.action} en bas et validez.
 
-![Débloquer IP](images/unblockIP_new.png){.thumbnail}
+![Débloquer IP](images/unblockip_new.png){.thumbnail}
 
 L'IP est alors en cours de déblocage, l'opération peut prendre plusieurs minutes.
 

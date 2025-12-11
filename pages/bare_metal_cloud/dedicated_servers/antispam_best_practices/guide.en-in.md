@@ -76,7 +76,7 @@ Click the `⁝`{.action} button next to the corresponding IP/service and select 
 
 In the window that appears, click on `Unblock the IP`{.action} at the bottom and confirm.
 
-![Unblock IP](images/unblockIP_new.png){.thumbnail}
+![Unblock IP](images/unblockip_new.png){.thumbnail}
 
 The IP is being released, the operation may take several minutes.
 
