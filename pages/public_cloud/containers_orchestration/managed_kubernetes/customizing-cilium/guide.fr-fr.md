@@ -1,53 +1,53 @@
 ---
-title: Customizing Cilium on an OVHcloud Managed Kubernetes cluster
-excerpt: 'Find out how to customize Cilium on an OVHcloud Managed Kubernetes cluster'
+title: "Personnaliser Cilium sur un cluster Managed Kubernetes OVHcloud"
+excerpt: "Découvrez comment personnaliser Cilium sur un cluster Managed Kubernetes OVHcloud"
 updated: 2025-12-11
 ---
 
-## Objective
+## Objectif
 
-The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
+Managed Kubernetes Service d'OVHcloud vous fournit des clusters Kubernetes sans les contraintes d'installation ou de gestion.
 
-The Standard plan of OVHcloud Managed Kubernetes clusters uses [Cilium](https://cilium.io/) as the default CNI.
+Le plan Standard des clusters Managed Kubernetes OVHcloud utilise [Cilium](https://cilium.io/) comme CNI par défaut.
 
-The Cilium agent process (a.k.a. DaemonSet) allows configuration on a per-node basis.
+Le processus de l'agent Cilium (également connu sous le nom « DaemonSet ») permet une configuration par nœud.
 
-This allows overriding cilium-config ConfigMap for a node or set of nodes by using `CiliumNodeConfig` objects.
-
-> [!warning]
-> Without using a `CiliumNodeConfig` object, it will not be possible to update cilium-config ConfigMap.
-
-## Requirements
-
-- An OVHcloud Managed Kubernetes cluster with Standard plan.
-
-## Instructions
-
-### What is CiliumNodeConfig
-
-As stated in [Cilium documentation](https://docs.cilium.io/en/stable/configuration/per-node-config/#ciliumnodeconfig-objects):
-
-A `CiliumNodeConfig` object allows for overriding ConfigMap / Agent arguments.
-
-It consists of a set of fields and a label selector. The label selector defines to which nodes the configuration applies.
-
-As is the standard with Kubernetes, an empty LabelSelector (e.g. `{}`) selects all nodes.
-
-### CiliumNodeConfig possible values
-
-You can retrieve all keys and values in the cilium-configmap file of the [Cilium github repository](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
+Cela permet de remplacer le ConfigMap `cilium-config` pour un nœud ou un ensemble de nœuds en utilisant des objets `CiliumNodeConfig`.
 
 > [!warning]
-> Be aware that some keys may require enabling certain features in the Cilium operator, which are disabled by default.
+> Sans utiliser un objet `CiliumNodeConfig`, il ne sera pas possible de modifier le ConfigMap `cilium-config`.
 
-### Customization example
+## Prérequis
 
-#### Enable topology aware routing for 3AZ region
+- Disposer d'un cluster Managed Kubernetes OVHcloud avec le plan Standard.
+
+## En pratique
+
+### Qu'est-ce que CiliumNodeConfig
+
+Comme indiqué dans la [documentation Cilium](https://docs.cilium.io/en/stable/configuration/per-node-config/#ciliumnodeconfig-objects) :
+
+Un objet `CiliumNodeConfig` permet de remplacer les arguments du ConfigMap / Agent.
+
+Il se compose d'un ensemble de champs et d'un sélecteur d'étiquettes. Le sélecteur d'étiquettes définit à quels nœuds la configuration s'applique.
+
+Comme c'est la norme dans Kubernetes, un sélecteur d'étiquettes vide (par exemple : `{}`) sélectionne tous les nœuds.
+
+### Valeurs possibles de CiliumNodeConfig
+
+Vous pouvez retrouver toutes les clés et valeurs dans le fichier **cilium-configmap** du [dépôt GitHub Cilium](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
+
+> [!warning]
+> Notez que certaines clés peuvent nécessiter l'activation de certaines fonctionnalités désactivées par défaut dans l'opérateur Cilium.
+
+### Exemple de personnalisation
+
+#### Activer le routage conscient de la topologie pour une région 3AZ
 
 > [!success]
-> To discover this feature, you can read the following page: [Discover Kubernetes 1.33 features – Topology aware routing in multi-zones Kubernetes clusters](https://blog.ovhcloud.com/discover-kubernetes-1-33-features-topology-aware-routing-in-multi-zones-kubernetes-clusters/), by [Aurélie Vache](https://blog.ovhcloud.com/author/aurelie-vache/).
+> Pour découvrir cette fonctionnalité, référez-vous à la page suivante : [Découvrez les fonctionnalités de Kubernetes 1.33 – Routage conscient de la topologie dans des clusters Kubernetes multi-zones](https://blog.ovhcloud.com/discover-kubernetes-1-33-features-topology-aware-routing-in-multi-zones-kubernetes-clusters/), par [Aurélie Vache](https://blog.ovhcloud.com/author/aurelie-vache/).
 
-To enable it on the Cilium side, apply this configuration of `CiliumNodeConfig`:
+Pour activer le routage conscient de la topologie pour une région 3AZ côté Cilium, appliquez cette configuration de `CiliumNodeConfig` :
 
 ```yaml
 apiVersion: cilium.io/v2
@@ -61,13 +61,13 @@ spec:
     enable-service-topology: "true"
 ```
 
-Then restart the Cilium agent:
+Redémarrez ensuite l'agent Cilium :
 
 ```bash
 kubectl -n kube-system rollout restart daemonset cilium
 ```
 
-Verify that the configuration has been applied:
+Vérifiez que la configuration a été appliquée :
 
 ```bash
 kubectl -n kube-system logs $(kubectl -n kube-system get pod -l k8s-app=cilium -o name) | head -n 500 | grep enable-service-topology
@@ -76,12 +76,12 @@ time=2025-12-09T15:57:06.161145191Z level=info msg="  --config-sources='[{\"kind
 time=2025-12-09T15:57:06.165626171Z level=info msg="  --enable-service-topology='true'"
 ```
 
-## Go further
+## Aller plus loin
 
-To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
+Pour avoir une vue d'ensemble du service Managed Kubernetes OVHcloud, vous pouvez consulter la [page Managed Kubernetes Service d'OVHcloud](/links/public-cloud/kubernetes).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to read our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
+Pour en savoir plus sur l'utilisation pratique de votre cluster Kubernetes, nous vous invitons à consulter nos [tutoriels](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+Si vous avez besoin de formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander l'assistance des experts de notre équipe Professional Services pour votre cas d'utilisation et projet spécifiques.
 
-- Join our [community of users](/links/community).
+Rejoignez notre [communauté d'utilisateurs](/links/community).

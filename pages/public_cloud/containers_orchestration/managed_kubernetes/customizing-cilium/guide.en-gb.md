@@ -6,16 +6,16 @@ updated: 2025-12-11
 
 ## Objective
 
-The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
+The OVHcloud Managed Kubernetes Service provides you with Kubernetes clusters without the hassle of installing or operating them.
 
 The Standard plan of OVHcloud Managed Kubernetes clusters uses [Cilium](https://cilium.io/) as the default CNI.
 
 The Cilium agent process (a.k.a. DaemonSet) allows configuration on a per-node basis.
 
-This allows overriding cilium-config ConfigMap for a node or set of nodes by using `CiliumNodeConfig` objects.
+This allows overriding `cilium-config` ConfigMap for a node or set of nodes by using `CiliumNodeConfig` objects.
 
 > [!warning]
-> Without using a `CiliumNodeConfig` object, it will not be possible to update cilium-config ConfigMap.
+> Without using a `CiliumNodeConfig` object, it will not be possible to update `cilium-config` ConfigMap.
 
 ## Requirements
 
@@ -35,19 +35,19 @@ As is the standard with Kubernetes, an empty LabelSelector (e.g. `{}`) selects a
 
 ### CiliumNodeConfig possible values
 
-You can retrieve all keys and values in the cilium-configmap file of the [Cilium github repository](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
+You can retrieve all keys and values in the **cilium-configmap** file of the [Cilium github repository](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
 
 > [!warning]
-> Be aware that some keys may require enabling certain features in the Cilium operator, which are disabled by default.
+> Be aware that some keys may require enabling certain features disabled by default in the Cilium operator.
 
 ### Customization example
 
 #### Enable topology aware routing for 3AZ region
 
 > [!success]
-> To discover this feature, you can read the following page: [Discover Kubernetes 1.33 features – Topology aware routing in multi-zones Kubernetes clusters](https://blog.ovhcloud.com/discover-kubernetes-1-33-features-topology-aware-routing-in-multi-zones-kubernetes-clusters/), by [Aurélie Vache](https://blog.ovhcloud.com/author/aurelie-vache/).
+> To discover this feature, please refer to the following page: [Discover Kubernetes 1.33 features – Topology aware routing in multi-zones Kubernetes clusters](https://blog.ovhcloud.com/discover-kubernetes-1-33-features-topology-aware-routing-in-multi-zones-kubernetes-clusters/), by [Aurélie Vache](https://blog.ovhcloud.com/author/aurelie-vache/).
 
-To enable it on the Cilium side, apply this configuration of `CiliumNodeConfig`:
+To enable topology aware routing for 3AZ region on the Cilium side, apply this configuration of `CiliumNodeConfig`:
 
 ```yaml
 apiVersion: cilium.io/v2
@@ -78,7 +78,7 @@ time=2025-12-09T15:57:06.165626171Z level=info msg="  --enable-service-topology=
 
 ## Go further
 
-To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
+To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes Service page](/links/public-cloud/kubernetes).
 
 To learn more about how to use your Kubernetes cluster the practical way, we invite you to read our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
