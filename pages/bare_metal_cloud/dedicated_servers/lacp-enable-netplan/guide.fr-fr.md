@@ -43,7 +43,9 @@ Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses M
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Veuillez noter que l'adresse MAC de l'interface publique **principale** est celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:c6`.
+> Veuillez noter que l'interface **publique principale** est celle qui répond aux requêtes DHCP.
+>
+> Quant à l'adresse MAC de l'interface **privée principale**, il s'agit de celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:d6`.
 
 Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.
 
