@@ -24,8 +24,6 @@ Internet Protocol version 6 (IPv6) is the latest version of Internet Protocol (I
 
 Each Public Cloud instance is delivered with an IPv4 address and an IPv6 address.
 
-By default, only the IPv4 address is configured.
-
 **This guide will show you how to configure an IPv6 address on a Public Cloud instance.**
 
 > [!primary]
@@ -46,7 +44,7 @@ The following sections contain configurations for the distributions we currently
 
 > [!warning]
 >
-> Please note that on recent versions of Linux operating systems, the IPv6 address is configured by default on Public Cloud instances. In this case, you do not need to configure it. Please check your operating system configuration file before making any changes.
+> Please note that the IPv6 address is configured by default on our Public Cloud instances. Make sure you check operating system configuration file before making any changes.
 >
 
 ### Glossary
@@ -270,7 +268,7 @@ All the information you need is in the **Networks** section.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=YOUR_IPV6/IPV6_PREFIX
 >> route1=::/0,IPV6_GATEWAY
@@ -282,7 +280,7 @@ All the information you need is in the **Networks** section.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1

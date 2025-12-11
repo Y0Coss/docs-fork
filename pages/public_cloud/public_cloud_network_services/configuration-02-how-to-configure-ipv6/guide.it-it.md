@@ -1,7 +1,7 @@
 ---
 title: "Configurare IPv6 su un’istanza Public Cloud"
 excerpt: "Come configurare il protocollo IPv6 su un'istanza Public Cloud"
-updated: 2025-12-08
+updated: 2025-12-11
 ---
 
 <style>
@@ -50,7 +50,7 @@ Nelle sezioni seguenti vengono illustrate le configurazioni delle distribuzioni 
 
 > [!warning]
 >
-> Si noti che nelle versioni recenti dei sistemi operativi Linux, l’indirizzo IPv6 è configurato di default sulle istanze Public Cloud. In questo caso, non è necessario configurarla. Prima di apportare qualsiasi modifica, assicurati di controllare il file di configurazione del sistema operativo.
+> Si prega di notare che l'indirizzo IPv6 è configurato di default sulle nostre istanze Public Cloud. Assicurarsi di controllare il file di configurazione del sistema operativo prima di apportare qualsiasi modifica.
 >
 
 ### Lessico
@@ -209,7 +209,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >> sudo netplan apply
 >> ``` 
 >>
-> **RedHat/CentOS/Rocky Linux/Alma Linux**
+> **RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> I file di configurazione di rete si trovano nella directory `/etc/sysconfig/network-scripts/`. Prima di iniziare ti consigliamo di effettuare un backup dei file di configurazione.
 >>
@@ -257,7 +257,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >> sudo systemctl restart networking
 >> ``` 
 >>
-> **Fedora**
+> **Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
 >> Il file di configurazione di rete si trova nella directory `/etc/NetworkManager/system-connections/`. Prima di iniziare ti consigliamo di effettuare un backup dei file di configurazione.
 >>
@@ -273,7 +273,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=YOUR_IPV6/IPV6_PREFIX
 >> route1=::/0,IPV6_GATEWAY
@@ -285,7 +285,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1

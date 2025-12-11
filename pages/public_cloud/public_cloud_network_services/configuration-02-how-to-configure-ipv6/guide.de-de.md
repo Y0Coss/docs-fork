@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einer Public Cloud Instanz konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie das IPv6-Protokoll auf einer Public Cloud-Instanz konfigurieren"
-updated: 2025-12-08
+updated: 2025-12-11
 ---
 
 <style>
@@ -50,8 +50,7 @@ Die folgenden Abschnitte enthalten die Konfigurationen der derzeit von uns angeb
 
 > [!warning]
 >
-> Bitte beachten Sie, dass bei den neuesten Linux-Betriebssystemversionen die IPv6-Adresse standardmäßig auf Public-Cloud-Instanzen konfiguriert ist. In diesem Fall müssen Sie sie nicht konfigurieren. Überprüfen Sie die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
->
+> Bitte beachten Sie, dass die IPv6-Adresse auf unseren Public Cloud-Instanzen standardmäßig konfiguriert ist. Überprüfen Sie unbedingt die Konfigurationsdatei des Betriebssystems, bevor Sie Änderungen vornehmen.
 
 ### Glossar
 
@@ -210,7 +209,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >> sudo netplan apply
 >> ```
 >>
-> **RedHat / CentOS / Rocky Linux / Alma Linux**
+> **RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/sysconfig/network-scripts/`. Wir empfehlen, zunächst ein Backup der betreffenden Konfigurationsdatei zu erstellen.
 >>
@@ -258,7 +257,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Fedora**
+> **Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
 >> Die Netzwerkkonfigurationsdatei befindet sich im Verzeichnis `/etc/NetworkManager/system-connections/`. Wir empfehlen Ihnen, zunächst ein Backup der betreffenden Konfigurationsdatei zu erstellen.
 >>
@@ -274,7 +273,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=YOUR_IPV6/IPV6_PREFIX
 >> route1=::/0,IPV6_GATEWAY
@@ -286,7 +285,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1
