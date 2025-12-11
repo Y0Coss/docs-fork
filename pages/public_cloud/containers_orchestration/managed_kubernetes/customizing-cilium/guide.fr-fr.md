@@ -35,10 +35,10 @@ Comme c'est la norme dans Kubernetes, un sélecteur d'étiquettes vide (par exem
 
 ### Valeurs possibles de CiliumNodeConfig
 
-Vous pouvez retrouver toutes les clés et valeurs dans le fichier **cilium-configmap** du [dépôt GitHub Cilium](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
+Vous trouverez la liste complète des clés et valeurs possibles dans le fichier [cilium-configmap sur GitHub](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
 
 > [!warning]
-> Notez que certaines clés peuvent nécessiter l'activation de certaines fonctionnalités désactivées par défaut dans l'opérateur Cilium.
+> Notez que certaines clés disponibles sur notre plateforme peuvent nécessiter l’activation de certaines fonctionnalités dans l’opérateur Cilium.
 
 ### Exemple de personnalisation
 

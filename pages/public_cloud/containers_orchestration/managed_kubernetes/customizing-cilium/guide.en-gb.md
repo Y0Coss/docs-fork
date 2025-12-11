@@ -35,10 +35,10 @@ As is the standard with Kubernetes, an empty LabelSelector (e.g. `{}`) selects a
 
 ### CiliumNodeConfig possible values
 
-You can retrieve all keys and values in the **cilium-configmap** file of the [Cilium github repository](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
+You can find the full list of possible keys and values in the [cilium-configmap file on GitHub](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
 
 > [!warning]
-> Be aware that some keys may require enabling certain features disabled by default in the Cilium operator.
+> Be aware that some keys available on our platform may require certain features to be enabled in the Cilium operator.
 
 ### Customization example
 
