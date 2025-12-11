@@ -247,12 +247,23 @@ public-cloud-storage-file-storage: File Storage
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
-public-cloud-network-concepts: Conceptos
+public-cloud-network-key-concepts: Conceptos clave
 public-cloud-network-getting-started: Primeros pasos
-public-cloud-network-additional-ip: Additional IP
+public-cloud-network-getting-started-private-network: Private Network
+public-cloud-network-getting-started-load-balancer: Load Balancer
+public-cloud-network-getting-started-public-ips: Public IPs
 public-cloud-network-configuration: Configuración
-public-cloud-network-technical-resources: Recursos Técnicos
+public-cloud-network-configuration-private-network: Private Network
+public-cloud-network-configuration-load-balancer: Load Balancer
+public-cloud-network-configuration-public-ips: Public IPs
+public-cloud-network-configuration-gateway: Gateway
 public-cloud-network-tutorials: Tutoriales
+public-cloud-network-tutorials-general: General
+public-cloud-network-tutorials-private-network: Private Network
+public-cloud-network-tutorials-load-balancer: Load Balancer
+public-cloud-network-security: Seguridad
+public-cloud-network-troubleshooting: Resolución de problemas
+public-cloud-network-additional-resources: Recursos adicionales
 public-cloud-data-platform: Data Platform
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeros pasos
