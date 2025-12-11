@@ -137,7 +137,7 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> - **Le voyant NET 5 est éteint (utilisation d'un routeur personnel disposant d'un module SFP)** : vérifiez que la jarretière optique est bien raccordée du module SFP connecté au port **NET 5** du RAD au module SFP de votre routeur personnel. Remplacez ensuite si besoin la jarretière optique. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
->> - - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que le RAD est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
+>> - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que le RAD est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
 
 ### Étape 3 : vérifier le fonctionnement jusqu'à la box OVHcloud <a name="check-box"></a>
 
