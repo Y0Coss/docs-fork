@@ -1,99 +1,97 @@
 ---
 title: MySQL - External database migration
-excerpt: This guide explain how to migrate an external Mysql database to a managed Mysql database
-updated: 2025-12-09
+excerpt: This guide explains how to migrate an external MySQL database to an OVHcloud managed MySQL database
+updated: 2025-12-12
 ---
 
 ## Objective
 
-This guide explain how to migrate an external Mysql database to a Mysql Public Cloud Databases.
+This guide explain how to migrate an external MySQL database to an OVHcloud MySQL Public Cloud Databases service.
 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement).
-- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api).
+- Access to the [OVHcloud Control Panel](/links/manager) and to the [OVHcloud API](/links/api).
 
 ## Instructions
 
-### Prerequise
+### Prerequisites
 
 - The source database should be in >= 5.7 and <= 8.0.
-- gtid_mode is ON on both the source and the target (ON by default on Public Cloud MYSQL database).
-- User with read and replication data permission can be create on the source database.
+- gtid_mode is ON on both the source and the target (ON by default on Public Cloud MySQL database).
+- A user with read and replication data permission can be created on the source database.
 
 ### Set up
 
-- Create a managed Mysql in your public cloud project.
+- Create a managed MySQL database in your Public Cloud project.
 - Create a user on the source database with replication and read data permissions.
 
-### Using API
+### Using the OVHcloud API
 
->> > [!api]
->> >
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/migration/check
->> >
->>
->> ```console
->> body : {
->>    "sourceHost": <hostmane>,
->>    "sourcePassword": <replication user password>,
->>    "sourcePort": 3306,
->>    "sourceSsl": true,
->>    "sourceUsername": <replication user name>
->> }
->> ```
->>
->> Create a task to check if the migration is possible.
->>
+- First, create a task to check if the migration is possible.
 
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/migration/check
->> >
->>
->> Get the result of the migration check task.
->> If the Success field is true you can continue.
->> If not, you can see the reason in the result field.
+> [!api]
+>
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/migration/check
+>
 
->> > [!api]
->> >
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/migration
->> >
->>
->> ```console
->> body : {
->>    "sourceHost": <hostmane>,
->>    "sourcePassword": <replication user password>,
->>    "sourcePort": 3306,
->>    "sourceSsl": true,
->>    "sourceUsername": <replication user name>
->> }
->> ```
->>
->> Create a task to migrate the external database to the managed database.
->>
+```console
+body : {
+   "sourceHost": <hostmane>,
+   "sourcePassword": <replication user password>,
+   "sourcePort": 3306,
+   "sourceSsl": true,
+   "sourceUsername": <replication user name>
+}
+```
 
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/migration
->> >
->>
->> Get the result of the migration.
->>
+- Then get the result of the migration check task with the following API call:
 
->> > [!api]
->> >
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/migration/stop
->> >
->>
->> When the migration is finished, the task continues to replicate the source database.
->> You need to stop it with this request to fully finish the process.
->> Take care if you do not do it and delete data in the source database, these updates will be replicated to the target database.
+> [!api]
+>
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/migration/check
+>
+
+If the Success field is `true` you can continue.
+If not, you can see the reason in the result field.
+
+- Create a task to migrate the external database to the managed database:
+
+> [!api]
+>
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/migration
+>
+
+```console
+body : {
+   "sourceHost": <hostmane>,
+   "sourcePassword": <replication user password>,
+   "sourcePort": 3306,
+   "sourceSsl": true,
+   "sourceUsername": <replication user name>
+}
+```
+
+- Get the result of the migration:
+
+> [!api]
+>
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/migration
+>
+
+When the migration is finished, the task continues to replicate the source database.
+You need to stop it with the following request to fully finish the process.
+Be careful, if you do not do it and delete data in the source database, these updates will be replicated to the target database.
+
+> [!api]
+>
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/migration/stop
+>
 
 ### Users
 
-Curently the users are not migrate in this process and need to be recreated in the managed database manually.
+Curently the users are not migrated in this process and need to be recreated in the managed database manually.
 
 ## Go further
 
