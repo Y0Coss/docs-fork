@@ -60,7 +60,7 @@ When you purchase a new server, you may feel the need to perform a series of tes
 - [Rebuilding the RAID](#raidrebuild)
     - [Rebuilding the RAID after the main disk is replaced (rescue mode)](#rescuemode)
     - [Recreating the EFI System Partition](#recreateesp)
-    - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](efiraidgrub)
+    - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](#efiraidgrub)
     - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
     - [Rebuilding the RAID in normal mode](#normalmode)
 

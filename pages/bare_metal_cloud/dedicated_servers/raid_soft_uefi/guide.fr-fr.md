@@ -60,7 +60,7 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
 - [Reconstruction du RAID](#raidrebuild)
     - [Reconstruction du RAID après le remplacement du disque principal (mode de secours)](#rescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
-    - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](efiraidgrub)
+    - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](#efiraidgrub)
     - [Ajout de l'étiquette à la partition SWAP (si applicable)](#swap-partition)
     - [Reconstruction du RAID en mode normal](#normalmode)
 
