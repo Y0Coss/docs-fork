@@ -29,7 +29,7 @@ In conformità ai criteri interni (anzianità, esistenza di fatture pagate, ecc.
 
 È possibile aumentare la quota delle risorse manualmente o automaticamente.
 
-> [!primario]
+> [!primary]
 > Se hai bisogno di aumentare la tua quota e il pulsante `Aumenta la quota disponibili`{.action} non è disponibile nel tuo Spazio Cliente, clicca sul pulsante `Contatta il supporto`{.action}.
 >
 
