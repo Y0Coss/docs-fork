@@ -27,12 +27,6 @@ En accord avec des critères internes (ancienneté, existence de factures acquit
 
 Vous avez la possibilté d'augmenter votre quota de ressources manuellement ou automatiquement.
 
-> [!primary]
-> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas!`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
->
-
-![Contact Support](images/contact_support_quota.png){.thumbnail}
-
 #### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
 
 Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera ajusté en fonction de votre utilisation réelle (si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs), ainsi que selon un ensemble de critères internes et financiers.
@@ -52,6 +46,13 @@ Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton 
 Une fois activé, l’auto-scaling augmentera progressivement le quota de votre projet en fonction de vos besoins réels.
 
 #### Augmenter manuellement votre quota de ressources
+
+> [!primary]
+>
+> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas!`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 Cette procédure permet une augmentation rapide et importante de vos quotas (par exemple : scaling rapide, instances GPU, etc.). Cette méthode repose sur l'achat immédiat d'un crédit, dont toutes les consommations cloud seront automatiquement déduites.
 

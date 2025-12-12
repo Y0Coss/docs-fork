@@ -25,12 +25,6 @@ In compliance with internal criteria (seniority, existence of paid invoices, etc
 
 You can increase your resources quota manually or automatically.
 
-> [!primary]
-> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact Support`{.action} button.
->
-
-![Contact Support](images/contact_support_quota.png){.thumbnail}
-
 #### Increasing your resources quota automatically with the "Auto-scaling quota" feature
 
 This option allows you to request an automatic and gradual increase in your resource quota. The quota will be adjusted based on your actual usage (if you exceed 60% of your current quota for 30 consecutive days), as well as a set of internal and financial criteria.
@@ -51,6 +45,13 @@ Click on the `?`{.action} button for more information on this feature, then clic
 Once activated, auto-scaling will gradually increase your project's quota based on your actual needs.
 
 #### Increasing your resources quota manually
+
+> [!primary]
+>
+> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact Support`{.action} button.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 This procedure allows for a rapid and significant increase in your quotas (e.g., rapid scaling, GPU instances, etc.). This method is based on the immediate purchase of credit, from which all cloud consumption will be automatically deducted.
 
