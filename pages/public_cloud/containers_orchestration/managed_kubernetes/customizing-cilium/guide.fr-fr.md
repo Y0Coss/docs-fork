@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser Cilium sur un cluster Managed Kubernetes OVHcloud"
 excerpt: "Découvrez comment personnaliser Cilium sur un cluster Managed Kubernetes OVHcloud"
-updated: 2025-12-11
+updated: 2025-12-12
 ---
 
 ## Objectif
