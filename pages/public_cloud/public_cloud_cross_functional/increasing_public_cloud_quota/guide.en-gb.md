@@ -55,9 +55,7 @@ Once activated, auto-scaling will gradually increase your project's quota based 
 
 This procedure allows for a rapid and significant increase in your quotas (e.g., rapid scaling, GPU instances, etc.). This method is based on the immediate purchase of credit, from which all cloud consumption will be automatically deducted.
 
-It is possible to purchase different amounts of credit, as shown in the table below:
-
-<!-- array price -->
+It is possible to purchase different amounts of credit.
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 

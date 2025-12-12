@@ -56,9 +56,7 @@ Une fois activé, l’auto-scaling augmentera progressivement le quota de votre 
 
 Cette procédure permet une augmentation rapide et importante de vos quotas (par exemple : scaling rapide, instances GPU, etc.). Cette méthode repose sur l'achat immédiat d'un crédit, dont toutes les consommations cloud seront automatiquement déduites.
 
-Il est possible d'acheter différents crédits, comme le montre le tableau ci-dessous :
-
-<!-- array price -->
+Il est possible d'acheter différents crédits.
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 
