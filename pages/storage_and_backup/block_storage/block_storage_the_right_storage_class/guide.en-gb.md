@@ -18,7 +18,9 @@ Our **Block Storage classes** are designed to meet different requirements for yo
 
 ### Regional Classic Volume
 
-The Regional Classic Volume class provides high availability by automatically replicating data across three availability zones within a region (3-AZ). Volumes are backed by NVMe over Fabric storage for fast and reliable access.
+The Regional Classic Volume class provides high availability by automatically replicating data across three availability zones within a region (3-AZ). Volumes are backed by NVMe over Fabric storage for fast, consistent and reliable access.
+
+To ensure service continuity even in the event of an AZ failure, this class also supports [multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations), allowing multiple instances located in different availability zones to simultaneously attach and use the same volume.
 
 This class is suitable for workloads requiring high availability and resilience, such as critical databases and distributed applications.
 
@@ -33,7 +35,7 @@ This class is suitable for standard workloads where low-latency and reliability 
 High Speed Volume comes in two generations, offering different performance profiles:
 
 - Gen 1: Up to 3,000 IOPS and 128 MB/s – suitable for general high-speed workloads.
-- Gen 2: 30 IOPS/GB (max 20,000 IOPS) and 0.5 MB/s per GB (max 320 MB/s) – recommended for intensive applications requiring maximum I/O and throughput.
+- Gen 2: 30 IOPS/GB (max 20,000 IOPS) and 0.5 MB/s per GB (max 512 MB/s) – recommended for intensive applications requiring maximum I/O and throughput.
 
 Choose Gen 1 for standard high-speed use cases, and Gen 2 for heavy workloads like analytics, large databases, or high-performance computing.
 
@@ -41,7 +43,7 @@ Choose Gen 1 for standard high-speed use cases, and Gen 2 for heavy workloads li
 
 | Storage Class | Use Cases | Performance | Supported Regions | Availability SLA | Replication | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | High-performance workloads, analytics, large databases | Gen 1: up to 3,000 IOPS, 128 MB/s </br> Gen 2: 30 IOPS/GB (max 20,000 IOPS), 0.5 MB/s per GB (max 320 MB/s) | 3-AZ, 1-AZ, Local Zones | 99,9% | Zonal | Optimized NVMe, scalable performance |
+| **High Speed Volume** | High-performance workloads, analytics, large databases | Gen 1: up to 3,000 IOPS, 128 MB/s </br> Gen 2: 30 IOPS/GB (max 20,000 IOPS), 0.5 MB/s per GB (max 512 MB/s) | 3-AZ, 1-AZ, Local Zones | 99,9% | Zonal | Optimized NVMe, scalable performance |
 | **Regional Classic Volume** | Critical applications, distributed systems | 500 IOPS guaranteed, 64 MB/s | 3-AZ | 99,99% | Multi-zone | NVMe over Fabric, high availability |
 | **Classic Volume** | Everyday workloads, VMs, backups | 500 IOPS guaranteed, 64 MB/s | 1-AZ, Local Zones  | 99,9% | Zonal | NVMe over Fabric, standard performance |
 
@@ -53,7 +55,7 @@ For Block Storage, there is no minimum storage duration, you can attach or delet
 
 #### Backup and snapshot fees
 
-While standard volume usage is billed per GB/month, [snapshots](/pages/public_cloud/compute/creating_a_volume_snapshot) and [backups](/pages/public_cloud/compute/volume-backup) stored on Object Storage may incur additional storage costs. Snapshots allow you to capture the state of a volume at a given time, and backups enable data protection and recovery.
+While standard volume usage is billed per GB/month, [snapshots](/pages/public_cloud/compute/creating_a_volume_snapshot) stored on **Block Storage** and [backups](/pages/public_cloud/compute/volume-backup) stored on **Object Storage** may incur additional storage costs. Snapshots allow you to capture the state of a volume at a given time, and backups enable data protection and recovery.
 
 #### Lifecycle and resizing
 
@@ -61,7 +63,12 @@ Block Storage volumes are fully flexible: you can [increase their size](/pages/p
 
 #### Encrypted Volumes
 
-Each Block Storage volume type is also available in an encrypted version (LUKS). These volumes ensure data confidentiality without impacting performance.
+Each Block Storage volume type is also available in an encrypted version (LUKS), depending on the region. These encrypted variants ensure data confidentiality without impacting performance.
+
+> [!primary]
+>
+> Please note that Regional Classic Volumes and volumes in Local Zones do not support LUKS encryption.
+> 
 
 Encrypted volumes can be created directly from the OVHcloud Control Panel or via CLI/API tools by specifying the volume type with the suffix `-luks` (for example, classic-luks or highspeed-luks). This provides an easy and secure way to protect sensitive data while leveraging the same performance and features as standard volumes.
 

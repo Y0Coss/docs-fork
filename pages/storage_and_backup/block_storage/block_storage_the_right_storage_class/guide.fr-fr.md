@@ -20,7 +20,9 @@ Nos classes Block Storage sont conçues pour répondre à différents besoins de
 
 ### Regional Classic Volume
 
-La classe Regional Classic Volume offre une haute disponibilité en répliquant automatiquement les données sur trois zones de disponibilité (3-AZ) au sein d’une même région. Les volumes reposent sur des disques NVMe over Fabric, garantissant un accès rapide et fiable.
+La classe Regional Classic Volume offre une haute disponibilité en répliquant automatiquement les données dans trois zones de disponibilité au sein d'une région (3-AZ). Les volumes sont pris en charge par le stockage NVMe over Fabric pour un accès rapide, cohérent et fiable.
+
+Afin de garantir la continuité du service même en cas de défaillance d'une zone de disponibilité, cette classe prend également en charge la [multi-connexion](/pages/public_cloud/compute/classic_block_multi_az_limitations), ce qui permet à plusieurs instances situées dans différentes zones de disponibilité de se connecter simultanément et d'utiliser le même volume.
 
 Cette classe est adaptée aux workloads nécessitant une haute disponibilité et une forte résilience, comme les bases de données critiques et les applications distribuées.
 
@@ -35,7 +37,7 @@ Cette classe convient aux workloads standards où la faible latence et la fiabil
 La classe High Speed Volume est proposée en deux générations, offrant des profils de performance différents :
 
 - Gen 1 : jusqu’à 3 000 IOPS et 128 Mo/s – adaptée aux workloads nécessitant une vitesse élevée standard.
-- Gen 2 : 30 IOPS/Go (maximum 20 000 IOPS) et 0,5 Mo/s par Go (maximum 320 Mo/s) – recommandée pour les applications intensives nécessitant un maximum d’IO et de débit.
+- Gen 2 : 30 IOPS/Go (maximum 20 000 IOPS) et 0,5 Mo/s par Go (maximum 512 Mo/s) – recommandée pour les applications intensives nécessitant un maximum d’IO et de débit.
 
 Choisissez Gen 1 pour les workloads haute vitesse classiques, et Gen 2 pour les workloads lourds tels que l’analytique, les grandes bases de données ou le calcul haute performance.
 
@@ -43,7 +45,7 @@ Choisissez Gen 1 pour les workloads haute vitesse classiques, et Gen 2 pour les 
 
 | Classe de stockage | Cas d’usage | Performance | Régions disponibles | SLA de disponibilité | Réplication | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | Workloads haute performance, analytique, grandes bases de données | Gen 1 : jusqu’à 3 000 IOPS, 128 Mo/s </br> Gen 2 : 30 IOPS/Go (max 20 000 IOPS), 0,5 Mo/s par Go (max 320 Mo/s) | 3-AZ, 1-AZ, Local Zones | 99,9% | Zonale | NVMe optimisé, performance évolutive |
+| **High Speed Volume** | Workloads haute performance, analytique, grandes bases de données | Gen 1 : jusqu’à 3 000 IOPS, 128 Mo/s </br> Gen 2 : 30 IOPS/Go (max 20 000 IOPS), 0,5 Mo/s par Go (max 512 Mo/s) | 3-AZ, 1-AZ, Local Zones | 99,9% | Zonale | NVMe optimisé, performance évolutive |
 | **Regional Classic Volume** | Applications critiques, systèmes distribués | 500 IOPS garantis, 64 Mo/s | 3-AZ | 99,99% | Multi-zone | NVMe over Fabric, haute disponibilité |
 | **Classic Volume** | Workloads quotidiens, VMs, sauvegardes | 500 IOPS garantis, 64 Mo/s | 1-AZ, Local Zones  | 99,9% | Zonale | NVMe over Fabric, performance standard |
 
@@ -55,7 +57,7 @@ Pour le Block Storage, il n’existe pas de durée minimale de stockage : vous p
 
 #### Frais de snapshots et de sauvegardes
 
-Bien que l’utilisation standard des volumes soit facturée par Go/mois, les [snapshots](/pages/public_cloud/compute/creating_a_volume_snapshot) et les [sauvegardes](/pages/public_cloud/compute/volume-backup) stockés sur Object Storage peuvent générer des coûts supplémentaires. Les snapshots permettent de capturer l’état d’un volume à un instant donné, et les sauvegardes assurent la protection et la récupération des données.
+Bien que l’utilisation standard des volumes soit facturée par Go/mois, les [snapshots](/pages/public_cloud/compute/creating_a_volume_snapshot) stockés sur **Block Storage** et les [sauvegardes](/pages/public_cloud/compute/volume-backup) stockés sur **Object Storage** peuvent générer des coûts supplémentaires. Les snapshots permettent de capturer l’état d’un volume à un instant donné, et les sauvegardes assurent la protection et la récupération des données.
 
 #### Gestion du cycle de vie et redimensionnement
 
@@ -63,7 +65,12 @@ Les volumes Block Storage sont entièrement flexibles : vous pouvez [augmenter l
 
 #### Volumes chiffrés
 
-Chaque type de volume Block Storage est également disponible en version chiffrée (LUKS). Ces volumes garantissent la confidentialité des données sans impact sur les performances.
+Chaque type de volume Block Storage est également disponible en version chiffrée (LUKS), selon la région. Ces variantes chiffrées garantissent la confidentialité des données sans impact sur les performances.
+
+> [!primary]
+>
+> Veuillez noter que les volumes classiques régionaux et les volumes dans les locals zones ne prennent pas en charge le chiffrement LUKS.
+>
 
 Les volumes chiffrés peuvent être créés directement depuis l’espace client OVHcloud ou via les outils CLI/API en précisant le type de volume avec le suffixe `-luks` (par exemple classic-luks ou highspeed-luks). Cela permet de protéger facilement les données sensibles tout en conservant les mêmes performances et fonctionnalités que les volumes standards.
 
