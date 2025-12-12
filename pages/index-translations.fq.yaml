@@ -410,7 +410,7 @@ network-additional-ip-products-managed-bare-metal: Managed Bare Metal
 network-additional-ip-products-public-cloud: Public Cloud
 network-additional-ip-products-vps: Serveurs Privés Virtuels
 network-additional-ip-troubleshooting: Dépannage
-network-additional-ip-b yoip: Bring Your Own IP
+network-additional-ip-byoip: Bring Your Own IP
 network-bgp: Service BGP
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 network-load-balancer: Load Balancer
