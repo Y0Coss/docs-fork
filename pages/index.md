@@ -1166,6 +1166,7 @@
                     + [Working with vRack example - Communicating between different private networks](public_cloud/containers_orchestration/managed_kubernetes/vrack-example-between-private-networks)
                     + [Customizing Kube-proxy on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-kubeproxy)
                     + [Customizing CoreDNS on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-coredns)
+                    + [Customizing Cilium on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-cilium)
                 + [Traffic Management](public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-traffic-management)
                     + [Installing Nginx Ingress on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-nginx-ingress)
                     + [Expose your applications using OVHcloud Public Cloud Load Balancer](public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer)
