@@ -45,7 +45,7 @@ Les comptes MX Plan peuvent être configurés sur différents logiciels de messa
 
 > [!alert]
 >
-> Antes de comenzar la configuración con esta guía, asegúrese de que la bandera situada en la parte superior derecha de esta página corresponde a su país o región, ya que los parámetros dependen de su ubicación.
+> Avant de débuter votre configuration à l'aide de ce guide, assurez-vous que le drapeau situé tout en haut à droite de cette page correspond bien à votre pays ou votre région, car les paramètres dépendent de votre localisation.
 
 ### Ajouter le compte
 
