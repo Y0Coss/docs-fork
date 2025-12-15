@@ -873,7 +873,6 @@
                 + [Creating a volume from a backup](public_cloud/compute/create-volume-from-snapshot)
                 + [Increasing the size of an additional disk](public_cloud/compute/increase_the_size_of_an_additional_disk)
                 + [Test disk speed](public_cloud/compute/test_disk_speed)
-                + [Transfer a volume backup from one datacentre to another](public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another)
             + [Migration](public-cloud-storage-block-storage-migration)
                 + [Migrating a Block Storage volume to an encrypted LUKS volume](public_cloud/compute/migrating-non-encrypted-to-encrypted-volume)
                 + [Change your Block Storage volume type](public_cloud/compute/switch_volume_type)
