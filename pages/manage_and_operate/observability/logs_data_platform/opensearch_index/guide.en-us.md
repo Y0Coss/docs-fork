@@ -36,7 +36,7 @@ Simply choose a suffix for your index. The final name will follow this conventio
 
 The service name is the identifier of your Logs Data Platform service. It is different from the username used by non IAM users. The service name starts with `ldp` (e.g. `ldp-ab-12345`). On the other hand, the username starts with `logs` (e.g. `logs-ab-12345`). In this guide we will use **<service_name>** or **<username>** as tags to let you differentiate both usages. You can find both pieces of information in the **Logs Data Platform control panel**.
 
-> [!info]
+> [!primary]
 >
 > Prior to IAM migration the prefix was <username>. It has now been changed to <service_name> for all indices created after September 17, 2025.
 >
