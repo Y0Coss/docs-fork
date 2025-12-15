@@ -1,7 +1,7 @@
 ---
-title: Managing and rebuilding software RAID on servers using UEFI boot mode
-excerpt: Find out how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode
-updated: 2025-12-11
+title: Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie uruchamiania UEFI
+excerpt: Dowiedz się, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI
+updated: 2025-12-15
 ---
 
 <style>
@@ -18,57 +18,57 @@ details[open]>summary::before {
 }
 </style>
 
-## Objective
+## Wprowadzenie
 
-Redundant Array of Independent Disks (RAID) is a technology that mitigates data loss on a server by replicating data across two or more disks.
+Redundant Array of Independent Disks (RAID) to technologia, która zmniejsza utratę danych na serwerze, replikując dane na dwóch lub więcej dyskach.
 
-The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
+Domyślny poziom RAID dla instalacji serwerów OVHcloud to RAID 1, który podwaja zajęte przez dane miejsce, skutecznie zmniejszając dostępne miejsce na dysku o połowę.
 
-**This guide explains how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode**
+**Ten przewodnik wyjaśnia, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI**
 
-Before we begin, please note that this guide focuses on Dedicated servers that use UEFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
+Zanim zaczniemy, zwróć uwagę, że ten przewodnik skupia się na Serwerach dedykowanych, które używają UEFI jako trybu uruchamiania. Jest to typowe dla nowoczesnych płyt głównych. Jeśli Twój serwer używa trybu uruchamiania zgodnego (BIOS), odwiedź ten przewodnik: [Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie uruchamiania zgodnym (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
 
-To check whether a server runs on legacy BIOS mode or UEFI boot mode, run the following command:
+Aby sprawdzić, czy serwer działa w trybie zgodnym BIOS czy trybie uruchamiania UEFI, uruchom następującą komendę:
 
 ```sh
 [user@server_ip ~]# [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
 ```
 
-For more information on UEFI, consult the following [article](https://uefi.org/about).
+Aby uzyskać więcej informacji na temat UEFI, zapoznaj się z poniższym [artykułem](https://uefi.org/about).
 
-## Requirements
+## Wymagania początkowe
 
-- A [dedicated server](/links/bare-metal/bare-metal) with a software RAID configuration
-- Administrative (sudo) access to the server via SSH
-- Understanding of RAID, partitions and GRUB
+- Serwer [dedykowany](/links/bare-metal/bare-metal) z konfiguracją oprogramowania RAID
+- Dostęp administracyjny (sudo) do serwera przez SSH
+- Zrozumienie RAID, partycji i GRUB
 
-Throughout this guide, we use the terms **primary disk** and **secondary disk**. In this context:
+W trakcie tego przewodnika używamy pojęć **główny dysk** i **dyski pomocnicze**. W tym kontekście:
 
-- The primary disk is the disk whose ESP (EFI System Partition) is mounted by Linux
-- The secondary disk(s) are all the other disks in the RAID
+- Główny dysk to dysk, którego ESP (EFI System Partition) jest montowany przez system Linux
+- Dyski pomocnicze to wszystkie inne dyski w RAID
 
-## Instructions
+## Instrukcje
 
-When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure in order to understand the RAID rebuild process and prepare yourself in case it ever happens.
+Kiedy zakupisz nowy serwer, możesz poczuć potrzebę wykonania serii testów i działań. Jednym z takich testów może być symulacja awarii dysku, aby zrozumieć proces odbudowy RAID i przygotować się na wypadek, gdyby to się kiedykolwiek zdarzyło.
 
-### Content overview
+### Omówienie treści
 
-- [Basic Information](#basicinformation)
-- [Understanding the EFI System Partition (ESP)](#efisystemparition)
-- [Simulating a disk failure](#diskfailure)
-    - [Removing the failed disk](#diskremove)
-- [Rebuilding the RAID](#raidrebuild)
-    - [Rebuilding the RAID after the main disk is replaced (rescue mode)](#rescuemode)
-    - [Recreating the EFI System Partition](#recreateesp)
-    - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](#efiraidgrub)
-    - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
-    - [Rebuilding the RAID in normal mode](#normalmode)
+- [Podstawowe informacje](#basicinformation)
+- [Zrozumienie partycji systemu EFI (ESP)](#efisystemparition)
+- [Symulowanie awarii dysku](#diskfailure)
+    - [Usunięcie awaryjnego dysku](#diskremove)
+- [Odbudowanie RAID](#raidrebuild)
+    - [Odbudowanie RAID po wymianie głównego dysku (tryb ratunkowy)](#rescuemode)
+    - [Ponowne utworzenie partycji systemu EFI](#recreateesp)
+    - [Odbudowanie RAID, gdy partycje EFI nie są zsynchronizowane po dużych aktualizacjach systemu (np. GRUB)](#efiraidgrub)
+    - [Dodanie etykiety do partycji SWAP (jeśli dotyczy)](#swap-partition)
+    - [Odbudowanie RAID w trybie normalnym](#normalmode)
 
 <a name="basicinformation"></a>
 
-### Basic Information
+### Podstawowe informacje
 
-In a command line session, type the following code to determine the current RAID status:
+W sesji linii poleceń wpisz następujące polecenie, aby określić bieżący stan RAID:
 
 ```sh
 [user@server_ip ~]# cat /proc/mdstat
@@ -83,11 +83,11 @@ md2 : active raid1 nvme1n1p2[1] nvme0n1p2[0]
 unused devices: <none>
 ```
 
-This command shows us that we currently have two software RAID devices configured, **md2** and **md3**, with **md3** being the larger of the two. **md3** consists of two partitions, called **nvme1n1p3** and **nvme0n1p3**. 
+To polecenie pokazuje nam, że obecnie mamy skonfigurowane dwa urządzenia RAID oprogramowania, **md2** i **md3**, z **md3** będącym większym z nich. **md3** składa się z dwóch partycji o nazwach **nvme1n1p3** i **nvme0n1p3**. 
 
-The [UU] means that all the disks are working normally. A `_` would indicate a failed disk.
+[UU] oznacza, że wszystkie dyski działają normalnie. `_` wskazywałby na awaryjny dysk.
 
-If you have a server with SATA disks, you would get the following results:
+Jeśli masz serwer z dyskami SATA, otrzymasz następujące wyniki:
 
 ```sh
 [user@server_ip ~]# cat /proc/mdstat
@@ -102,7 +102,7 @@ md2 : active raid1 sda2[0] sdb2[1]
 unused devices: <none>
 ```
 
-Although this command returns our RAID volumes, it doesn't tell us the size of the partitions themselves. We can find this information with the following command:
+Choć to polecenie zwraca nasze objęte RAID woluminy, nie mówi nam o rozmiarze partycji samych w sobie. Możemy znaleźć tę informację za pomocą poniższego polecenia:
 
 ```sh
 [user@server_ip ~]# sudo fdisk -l
@@ -150,14 +150,14 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 
-The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
+Polecenie `fdisk -l` umożliwia również identyfikację typu partycji. Jest to ważna informacja przy odbudowie RAID w przypadku awarii dysku.
 
-For **GPT** partitions, line 6 will display: `Disklabel type: gpt`.
-This information can only been seen when the server is in normal mode.
+Dla partycji **GPT**, linia 6 będzie wyświetlać: `Disklabel type: gpt`.
+Informacje te są widoczne tylko wtedy, gdy serwer działa w trybie normalnym.
 
-Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 1022 MiB and `/dev/md3` contains 474.81 GiB. If we were to run the `mount` command we can also find out the layout of the disk.
+Zgodnie z wynikami `fdisk -l`, możemy stwierdzić, że `/dev/md2` składa się z 1022 MiB, a `/dev/md3` zawiera 474,81 GiB. Jeśli uruchomimy polecenie `mount`, możemy również ustalić układ dysku.
 
-Alternatively, the `lsblk` command offers a different view of the partitions:
+Alternatywnie, polecenie `lsblk` oferuje inny widok partycji:
 
 ```sh
 [user@server_ip ~]# lsblk
@@ -179,7 +179,7 @@ nvme0n1     259:1    0 476.9G  0 disk
 └─nvme0n1p5 259:6    0     2M  0 part
 ```
 
-Furthermore, if we run `lsblk -f`, we obtain more information about these partitions, such as the LABEL and UUID:
+Ponadto, jeśli uruchomimy `lsblk -f`, otrzymamy więcej informacji o tych partycjach, takich jak Eтикетка i UUID:
 
 ```sh
 [user@server_ip ~]# sudo lsblk -f
@@ -201,32 +201,32 @@ nvme0n1
 └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-08-05-14-55-41-00
 ```
 
-Take note of the devices, partitions, and their mount points; this is important, especially after replacing a disk.
+Zwróć uwagę na urządzenia, partycje i ich punkty montowania; to jest ważne, zwłaszcza po wymianie dysku.
 
-From the above commands and results, we have:
+Z powyższych poleceń i wyników mamy:
 
-- Two RAID arrays: `/dev/md2` and `/dev/md3`.
-- Four partitions are part of the RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2**, **nvme0n1p3** with the mount points `/boot` and `/`.
-- Two partitions not part of the RAID, with mount points: `/boot/efi` and [SWAP].
-- One partition does not have a mount point: **nvme1n1p1**
+- Dwa tablice RAID: `/dev/md2` i `/dev/md3`.
+- Cztery partycje, które są częścią RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2**, **nvme0n1p3** z punktami montowania `/boot` i `/`.
+- Dwie partycje, które nie są częścią RAID, z punktami montowania: `/boot/efi` i [SWAP].
+- Jedna partycja, która nie ma punktu montowania: **nvme1n1p1**
 
-The `nvme0n1p5` partition is a configuration partition, i.e. a read-only volume connected to the server that provides it with the initial configuration data.
+Partycja **nvme0n1p5** to partycja konfiguracyjna, czyli tylko do odczytu, połączona z serwerem, która dostarcza mu początkowe dane konfiguracyjne.
 
 <a name="efisystempartition"></a>
 
-### Understanding the EFI System Partition (ESP)
+### Zrozumienie partycji systemu EFI (ESP)
 
-***What is an EFI System Partition?***
+***Co to jest partycja systemu EFI?***
 
-An EFI System Partition is a partition which can contain the boot loaders, boot managers, or kernel images of an installed operating system. It may also contain system utility programs designed to be run before the operating system boots, as well as data files such as error logs.
+Partycja systemu EFI to partycja, która może zawierać programy uruchamiające system operacyjny, zarządzacze uruchamiania, obrazy jądra lub inne programy systemowe. Może również zawierać programy narzędziowe systemowe zaprojektowane do uruchomienia przed uruchomieniem systemu operacyjnego, a także pliki danych, takie jak dzienniki błędów.
 
-***Is the EFI System Partition mirrored in RAID?***
+***Czy partycja systemu EFI jest lustrzana w RAID?***
 
-No, as of August 2025, when the OS installation is performed by OVHcloud, the ESP is not included in the RAID. When you use our OS templates to install your server with software RAID, several EFI System Partitions are created: one per disk. However, only one EFI partition is mounted at once. All ESPs created at the time of installation contain the same files.
+Nie, jak na sierpień 2025, gdy instalacja systemu operacyjnego jest wykonywana przez OVHcloud, ESP nie jest włączona do RAID. Gdy używasz naszych szablonów systemów operacyjnych do instalacji serwera z oprogramowaniem RAID, tworzone są kilka partycji systemu EFI: jedna na dysku. Jednak tylko jedna partycja EFI jest montowana jednocześnie. Wszystkie ESP utworzone w czasie instalacji zawierają te same pliki.
 
-The EFI System Partition is mounted at `/boot/efi` and the disk on which it is mounted is selected by Linux at boot.
+Partycja systemu EFI jest montowana w `/boot/efi` i dysk, na którym jest montowana, jest wybierany przez Linux w czasie uruchamiania.
 
-Example:
+Przykład:
 
 ```sh
 [user@server_ip ~]# sudo lsblk -f
@@ -248,53 +248,53 @@ nvme0n1
 └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-08-05-14-55-41-00
 ```
 
-From the output above, we see that we have two identical EFI System Partitions (nvme0n1p1 and nvme1n1p1) but only **nvme0n1p1** is mounted on `/boot/efi`. Both partitions have the LABEL: `EFI_SYSPART` (this naming is specific to OVHcloud).
+Na podstawie powyższych wyników widzimy, że mamy dwie identyczne partycje systemowe EFI (nvme0n1p1 i nvme1n1p1), ale tylko **nvme0n1p1** jest zamontowana na `/boot/efi`. Obie partycje mają etykietę: `EFI_SYSPART` (nazwa ta jest specyficzna dla OVHcloud).
 
-***Does the content of the EFI System Partition change regularly?***
+***Czy zawartość partycji systemowej EFI zmienia się regularnie?***
 
-In general, the contents of this partition do not change much, its content should only change on bootloader (e.g. GRUB) updates.
+Zasadniczo zawartość tej partycji nie zmienia się zbytnio, powinna ulegać zmianom jedynie podczas aktualizacji programu rozruchowego (*bootloader*).
 
-However, we recommend running an automatic or manual script to synchronise all ESPs, so that they all contain the same up-to-date files. This way, if the drive on which this partition is mounted fails, the server will be able to restart on the ESP of one of the other drives.
+Zalecamy jednak uruchomienie automatycznego lub ręcznego skryptu w celu zsynchronizowania wszystkich partycji ESP, tak aby zawierały one te same aktualne pliki. Dzięki temu, jeśli dysk, na którym zamontowana jest ta partycja, ulegnie awarii, serwer będzie mógł uruchomić się ponownie na partycji ESP jednego z pozostałych dysków.
 
-***What if the primary disk mounted on `boot/efi` fails?***
-
-> [!primary]
-> Please note that we explore the most common cases below, but there are several other reasons why a server may not start in normal mode after a disk replacement.
-> 
-
-**Case study 1** - There have been no changes or major system updates (e.g GRUB) to the OS
-
-- The server is able to boot in normal mode and you can proceed with the RAID rebuild.
-- The server is unable to boot in normal mode, the server is rebooted into rescue mode, where you can rebuild the RAID and recreate the EFI partition on the new disk.
-
-**Case study 2** - There have been major system updates (e.g GRUB) to the OS and the ESPs have been synchronised
-
-- The server is able to boot in normal mode because all the ESPs contain up-to-date information and the RAID rebuild can be carried out in normal mode.
-- The server is unable to boot in normal mode, the server is rebooted into rescue mode, where you can rebuild the RAID and recreate the EFI partition on the new disk.
-
-**Case study 3** - There have been major system updates (e.g GRUB) to the OS and the ESPs partitions have not been synchronised
-
-- The server is unable to boot in normal mode, the server is rebooted in rescue mode, where you can rebuild the RAID, recreate the EFI System partition on the new disk and reinstall the bootloader (e.g. GRUB) on it.
-- The server is able to boot in normal mode (this can occur when an operating system is updated to a newer version, but the version of GRUB remains unchanged) and you can proceed with the RAID rebuild.
-
-Indeed, in some cases, booting from an out-of-date ESP may not work. For instance, a major GRUB update could cause the old GRUB binary present in the ESP to be incompatible with newer GRUB modules installed in the `/boot` partition.
-
-***How can I synchronise my EFI System Partitions, and how often should I synchronise them?***
+***Co się stanie, jeśli główny dysk zamontowany na `boot/efi` ulegnie awarii?***
 
 > [!primary]
-> Please note that depending on your operating system, the process might be different. Ubuntu for example is able to keep several EFI System Partitions synchronized at every GRUB update. However, it is the only operating system doing so. We recommend that you consult the official documentation of your operating system to understand how to manage ESPs.
+> Należy pamiętać, że poniżej omówiono najczęstsze przypadki, ale istnieje wiele innych powodów, dla których serwer może nie uruchomić się w trybie normalnym po wymianie dysku.
 >
-> In this guide, the operating system used is Debian.
 
-We recommend that you synchronise your ESPs regularly or after each major system update. By default, all the EFI System partitions contain the same files after installation. However, if a major system update is involved, synchronising the ESPs is essential to keep the content up-to-date.
+**Studium przypadku 1** — Nie wprowadzono żadnych istotnych zmian ani aktualizacji systemu (np. GRUB).
+
+- Serwer może uruchomić się w trybie normalnym i można przystąpić do odbudowy macierzy RAID.
+- Serwer nie może uruchomić się w trybie normalnym, serwer jest ponownie uruchamiany w trybie ratunkowym, w którym można odbudować macierz RAID i ponownie utworzyć partycję EFI na nowym dysku.
+
+**Studium przypadku 2** — Wprowadzono istotne aktualizacje systemu (np. GRUB) i zsynchronizowano ESP.
+
+— Serwer może uruchomić się w trybie normalnym, ponieważ wszystkie ESP zawierają aktualne informacje, a odbudowę macierzy RAID można przeprowadzić w trybie normalnym.
+- Serwer nie jest w stanie uruchomić się w trybie normalnym, serwer jest ponownie uruchamiany w trybie ratunkowym, w którym można odbudować macierz RAID i ponownie utworzyć partycję systemową EFI na nowym dysku.
+
+**Studium Przypadek 3** — nastąpiły poważne aktualizacje systemu (np. GRUB), a partycje ESP nie zostały zsynchronizowane.
+
+- Serwer nie może uruchomić się w trybie normalnym, serwer jest ponownie uruchamiany w trybie ratunkowym, w którym można odbudować macierz RAID, odtworzyć partycję systemową EFI na nowym dysku i ponownie zainstalować na nim program rozruchowy (bootloader).
+- Serwer może uruchomić się w trybie normalnym (może się to zdarzyć w przypadku aktualizacji systemu operacyjnego do nowszej wersji, ale wersja GRUB pozostaje niezmieniona) i można przystąpić do odbudowy macierzy RAID.
+
+W niektórych przypadkach uruchomienie z nieaktualnego ESP nie działa. Na przykład poważna aktualizacja GRUB może spowodować, że stara wersja GRUB obecna w ESP będzie niezgodna z nowszymi modułami GRUB zainstalowanymi w partycji `/boot`.
+
+***Jak mogę zsynchronizować partycje systemowe EFI i jak często powinienem to robić?***
+
+> [!primary]
+> Należy pamiętać, że w zależności od systemu operacyjnego proces ten może się różnić. Na przykład Ubuntu jest w stanie synchronizować wiele partycji systemowych EFI przy każdej aktualizacji GRUB. Jest to jednak jedyny system operacyjny, który to robi. Zalecamy zapoznanie się z oficjalną dokumentacją systemu operacyjnego, aby zrozumieć, jak zarządzać ESP.
+>
+> W tym przewodniku używany jest system operacyjny Debian.
+
+Zalecamy regularną synchronizację ESP lub po każdej większej aktualizacji systemu. Domyślnie wszystkie partycje systemowe EFI zawierają te same pliki po instalacji. Jednak w przypadku większej aktualizacji systemu synchronizacja ESP jest niezbędna do aktualizacji zawartości
 
 <a name="script"></a>
 
 #### Script
 
-Below is a script that you can use to manually synchronise them. You can also run an automated script to synchronise the partitions daily or whenever the service boots up.
+Oto skrypt, którego można użyć do ręcznej synchronizacji. Można również uruchomić skrypt automatyczny, aby synchronizować partycje codziennie lub przy każdym uruchomieniu usługi.
 
-Before you execute the script, make sure `rsync` is installed on your system:
+Przed uruchomieniem skryptu należy upewnić się, że w systemie zainstalowano program `rsync`:
 
 **Debian/Ubuntu**
 
@@ -302,24 +302,24 @@ Before you execute the script, make sure `rsync` is installed on your system:
 sudo apt install rsync
 ```
 
-**CentOS, Red Hat and Fedora**
+**CentOS, Red Hat et Fedora**
 
 ```sh
 sudo yum install rsync
 ```
 
-To execute a script in linux, you need an executable file:
+Aby uruchomić skrypt w systemie Linux, potrzebny jest plik wykonywalny:
 
-- Start by creating a .sh file in the directory of your choice, replacing `script-name` with the name of your choice
+- Najpierw utwórz plik .sh w wybranym katalogu, zastępując `nazwa-skryptu` wybraną nazwą.
 
 ```sh
-sudo touch script-name.sh
+sudo touch nazwa-skryptu.sh
 ```
 
-- Open the file with a text editor and include the following lines
+- Otwórz plik w edytorze tekstowym i dodaj następujące wiersze:
 
 ```sh
-sudo nano script-name.sh
+sudo nano nazwa-skryptu.sh
 ```
 
 ```sh
@@ -345,39 +345,39 @@ while read -r partition; do
 done < <(blkid -o device -t LABEL=EFI_SYSPART)
 ```
 
-Save and exit the file.
+Zapisz i zamknij plik.
 
-- Make the script executable
-
-```sh
-sudo chmod +x script-name.sh
-```
-
-- Run the script
+- Ustaw skrypt jako wykonywalny
 
 ```sh
-sudo ./script-name.sh
+sudo chmod +x nazwa-skryptu.sh
 ```
 
-- If you are not in the folder
+- Uruchom skrypt
 
 ```sh
-./path/to/folder/script-name.sh
+sudo ./nazwa-skryptu.sh
 ```
 
-When the script is executed, the contents of the mounted EFI partition will be synchronised with the others. To access the contents, you can mount any of these unmounted EFI partitions on the mount point: `/var/lib/grub/esp`.
+- Jeśli nie jesteś w odpowiednim folderze
+
+```sh
+./path/to/folder/nazwa-skryptu.sh
+```
+
+Po wykonaniu skryptu zawartość zainstalowanej partycji EFI zostanie zsynchronizowana z pozostałymi. Aby uzyskać dostęp do zawartości, możesz zainstalować dowolną z tych niezainstalowanych partycji EFI na punkcie montażu: `/var/lib/grub/esp`.
 
 <a name="diskfailure"></a>
 
-### Simulating a disk failure
+### Symulowanie awarii dysku
 
-Now that we have all the necessary information, we can simulate a disk failure and proceed with the tests. In this first example, we will fail the primary disk `nvme0n1`.
+Teraz, gdy mamy wszystkie niezbędne informacje, możemy zasymulować awarię dysku i przystąpić do testów. W tym pierwszym przykładzie zasymulujemy awarię głównego dysku `nvme0n1`.
 
-The preferred way to do this is via the OVHcloud rescue mode environment.
+Preferowanym sposobem jest użycie środowiska trybu ratunkowego OVHcloud.
 
-First reboot the server in rescue mode and log in with the provided credentials.
+Najpierw uruchom serwer w trybie ratunkowym i zaloguj się przy użyciu dostarczonych poświadczeń.
 
-To remove a disk from the RAID, the first step is to mark it as **Failed** and remove the partitions from their respective RAID arrays.
+Aby usunąć dysk z tablicy RAID, pierwszym krokiem jest oznaczenie go jako **Nieprawidłowy** i usunięcie partycji z odpowiednich tablic RAID.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -392,13 +392,13 @@ md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
 unused devices: <none>
 ```
 
-From the above output, nvme0n1 consists of two partitions in RAID which are **nvme0n1p2** and **nvme0n1p3**.
+Z powyższego wyniku wynika, że dysk `nvme0n1` składa się z dwóch partycji w RAID, które to są **nvme0n1p2** i **nvme0n1p3**.
 
 <a name="removedisk"></a>
 
-#### Removing the failed disk
+#### Usunięcie zepsutego dysku
 
-First we mark the partitions **nvme0n1p2** and **nvme0n1p3** as failed. 
+Najpierw oznacz partycje **nvme0n1p2** i **nvme0n1p3** jako zepsute (*Failed*).
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/nvme0n1p2
@@ -410,7 +410,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md3 -
 # mdadm: set /dev/nvme0n1p3 faulty in /dev/md3
 ```
 
-When we run the `cat /proc/mdstat` command, we have the following output:
+Po uruchomieniu polecenia `cat /proc/mdstat`, otrzymujemy następujące dane wyjściowe:
 
 ```sh
 root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -425,9 +425,9 @@ md2 : active raid1 nvme0n1p2[2](F) nvme1n1p2[1]
 unused devices: <none>
 ```
 
-As we can see above, the [F] next to the partitions indicates that the disk has failed or is faulty.
+Jak widać powyżej, [F] obok partycji wskazuje, że dysk uległ awarii lub jest uszkodzony.
 
-Next, we remove these partitions from the RAID arrays to completely remove the disk from RAID.
+Następnie usuwamy te partycje z tablic RAID, aby całkowicie usunąć dysk z RAID.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --remove /dev/nvme0n1p2
@@ -439,7 +439,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md3 -
 # mdadm: hot removed /dev/nvme0n1p3 from /dev/md3
 ```
 
-Our RAID status should now look like this:
+Status naszego RAID powinien teraz wyglądać tak:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -454,9 +454,9 @@ md2 : active raid1 nvme1n1p2[1]
 unused devices: <none>
 ```
 
-From the results above, we can see that only two partitions now appear in the RAID arrays. We have successfully failed the disk **nvme0n1**.
+Z powyższych wyników widać, że teraz tylko dwie partycje pojawiają się w tablicach RAID. Pomyślnie zakończyliśmy symulację awarii dysku **nvme0n1**.
 
-To make sure that we get a disk that is similar to an empty disk, we use the following command on each partition, then on the disk:
+Aby upewnić się, że otrzymamy dysk podobny do pustego, używamy poniższego polecenia na każdej partycji, a następnie na samym dysku:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
@@ -468,7 +468,7 @@ shred -s10M -n1 /dev/nvme0n1p5
 shred -s10M -n1 /dev/nvme0n1
 ```
 
-The disk now appears as a new, empty drive:
+Dysk teraz wygląda jak nowy, pusty dysk:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk
@@ -484,7 +484,7 @@ nvme1n1     259:0    0 476.9G  0 disk
 nvme0n1     259:5    0 476.9G  0 disk
 ```
 
-If we run the following command, we see that our disk has been successfully "wiped":
+Jeśli uruchomimy poniższe polecenie, zobaczymy, że nasz dysk został pomyślnie "wyczyszczony":
 
 ```sh
 parted /dev/nvme0n1
@@ -500,9 +500,9 @@ Partition Table: unknown
 Disk Flags:
 ```
 
-For more information on how to prepare and request for a disk replacement, consult this [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
+Aby uzyskać więcej informacji na temat przygotowania i złożenia wniosku o wymianę dysku, zapoznaj się z tym [przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
-If you run the following command, you can have more details on the RAID arrays:
+Jeśli uruchomisz poniższe polecenie, możesz uzyskać więcej szczegółów na temat tablic RAID:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md3
@@ -537,39 +537,39 @@ Consistency Policy : bitmap
        1     259        4        1      active sync   /dev/nvme1n1p3
 ```
 
-We can now proceed with the disk replacement.
+Teraz możemy przystąpić do wymiany dysku.
 
 <a name="raidrebuild"></a>
 
-### Rebuilding the RAID
+### Odbudowanie RAID
 
 > [!primary]
-> This process might be different depending on the operating system you have installed on your server. We recommend that you consult the official documentation of your operating system to have access to the proper commands.
+> Ten proces może się różnić w zależności od systemu operacyjnego zainstalowanego na Twoim serwerze. Zalecamy, abyś zapoznał się z oficjalną dokumentacją swojego systemu operacyjnego, aby uzyskać dostęp do odpowiednich poleceń.
 >
 
 > [!warning]
 >
-> For most servers in software RAID, after a disk replacement, the server is able to boot in normal mode (on the healthy disk) and the rebuild can be done in normal mode. However, if the server is not able to boot in normal mode after a disk replacement, it will be rebooted in rescue mode to proceed with the RAID rebuild.
+> Dla większości serwerów w oprogramowaniu RAID po wymianie dysku serwer jest w stanie uruchomić się w normalnym trybie (na zdrowym dysku) i odbudować RAID w normalnym trybie. Jednak, jeśli serwer nie będzie mógł uruchomić się w normalnym trybie po wymianie dysku, zostanie uruchomiony w trybie ratunkowym, aby kontynuować odbudowę RAID.
 >
-> If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#rebuilding-the-raid-in-normal-mode).
+> Jeśli Twój serwer będzie mógł uruchomić się w normalnym trybie po wymianie dysku, po prostu wykonaj kroki z [tej sekcji](#rebuilding-the-raid-in-normal-mode).
 
 <a name="rescuemode"></a>
 
-#### Rebuilding the RAID in rescue mode
+#### Odbudowanie RAID w trybie ratunkowym
 
-Once the disk has been replaced, the next step is to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
+Po wymianie dysku następnym krokiem jest skopiowanie tabeli partycji z zdrowego dysku (w tym przykładzie `nvme1n1`) na nowy (dysk `nvme0n1`).
 
-**For GPT partitions**
+**Dla partycji GPT**
 
-The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`
+Polecenie powinno mieć następującą postać: `sgdisk -R /dev/new disk /dev/healthy disk`
 
-In our example:
+W naszym przykładzie:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 ```
 
-Run `lsblk` to make sure the partition tables have been properly copied:
+Uruchom `lsblk`, aby upewnić się, że tabele partycji zostały poprawnie skopiowane:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk
@@ -589,13 +589,13 @@ nvme0n1     259:5    0 476.9G  0 disk
 └─nvme0n1p4 259:13   0   512M  0 part
 ```
 
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Po wykonaniu tego kroku następnym krokiem jest losowe ustawienie GUID nowego dysku, aby uniknąć konfliktów GUID z innymi dyskami:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
 ```
 
-If you receive the message below:
+Jeśli otrzymasz poniższy komunikat:
 
 ```console
 Warning: The kernel is still using the old partition table.
@@ -603,9 +603,9 @@ The new table will be used at the next reboot or after you run partprobe(8) or k
 The operation has completed successfully.
 ```
 
-Simply run the `partprobe` command.
+Po prostu uruchom polecenie `partprobe`.
 
-We can now rebuild the RAID array. The following code snippet shows how to add the new partitions (nvme0n1p2 and nvme0n1p3) back in the RAID array.
+Teraz możemy odbudować tablicę RAID. Poniższy fragment kodu pokazuje, jak dodać nowe partycje (nvme0n1p2 i nvme0n1p3) z powrotem do tablicy RAID.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md2 /dev/nvme0n1p2
@@ -615,7 +615,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md3 /dev
 # mdadm: re-added /dev/nvme0n1p3
 ```
 
-To check the rebuild process:
+Aby sprawdzić proces odbudowy:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -629,7 +629,7 @@ md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
       1046528 blocks super 1.2 [2/2] [UU]
 ```
 
-Once the RAID rebuild is complete, run the following command to make sure that the partitions have been properly added to the RAID:
+Po zakończeniu odbudowy RAID uruchom poniższe polecenie, aby upewnić się, że partycje zostały poprawnie dodane do RAID:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -f
@@ -650,52 +650,52 @@ nvme0n1
 └─nvme0n1p4
 ```
 
-Based on the above results, the partitions on the new disk have been correctly added to the RAID. However, the EFI System Partition and the SWAP partition (in some cases) have not been duplicated, which is normal as they are not included in the RAID.
+Na podstawie powyższych wyników partycje na nowym dysku zostały poprawnie dodane do RAID. Jednak partycja systemowa EFI i partycja SWAP (w niektórych przypadkach) nie zostały zduplikowane, co jest normalne, ponieważ nie są one uwzględniane w RAID.
 
 > [!warning]
-> The examples above are merely illustrating the necessary steps based on a default server configuration. The information in the output table depends on your server's hardware and its partition scheme. When in doubt, consult the documentation of your operating system.
+> Powyższe przykłady ilustrują tylko niezbędne kroki na podstawie domyślnej konfiguracji serwera. Informacje w tabeli wyników zależą od sprzętu serwera i jego schematu partycji. W przypadku wątpliwości skonsultuj dokumentację swojego systemu operacyjnego.
 > 
-> If you require professional assistance with server administration, consider the details in the [Go further](#go-further) section of this guide.
+> Jeśli potrzebujesz profesjonalnej pomocy z administracją serwerem, zapoznaj się z sekcją [Sprawdź również](#go-further) tego przewodnika.
 >
 
 <a name="recreateesp"></a>
 
-#### Recreating the EFI System Partition
+#### Odbudowanie partycji systemowej EFI
 
-To recreate the EFI system partition, we need to format **nvme0n1p1** and then replicate the contents of the healthy partition (in our example: nvme1n1p1) onto it.
+Aby odbudować partycję systemową EFI, należy sformatować **nvme0n1p1** i następnie zrekopilować zawartość zdrowej partycji (w naszym przykładzie: nvme1n1p1) na nią.
 
-Here, we assume that both partitions have been synchronised and contain up-to-date files.
+Zakładamy, że obie partycje zostały zsynchronizowane i zawierają aktualne pliki.
 
 > [!warning]
-> If there was a major system update such as kernel or grub and both partitions were not synchronised, consult this [section](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub) once you are done creating the new EFI System Partition.
+> Jeśli miało miejsce znaczące uaktualnienie systemu, takie jak jądro lub GRUB, i partycje nie zostały zsynchronizowane, skorzystaj z tej [sekcji](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub), gdy skończysz tworzyć nową partycję systemową EFI.
 >
 
-First, we format the partition:
+Najpierw formatujemy partycję:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkfs.vfat /dev/nvme0n1p1
 ```
 
-Next, we label the partition as `EFI_SYSPART` (this naming is specific to OVHcloud):
+Następnie nadajemy partycji etykietę `EFI_SYSPART` (ta nazwa jest specyficzna dla OVHcloud):
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-Next, we duplicate the contents of nvme1n1p1 to nvme0n1p1. We start by creating two folders, We start by creating two folders, which we name "old" and "new" in our example:
+Następnie kopiujemy zawartość nvme1n1p1 do nvme0n1p1. Najpierw tworzymy dwa katalogi, które nazwiemy "old" i "new" w naszym przykładzie:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkdir old new
 ```
 
-Next, we mount **nvme1n1p1** in the 'old' folder and **nvme0n1p1** in the 'new' folder to make the distinction:
+Następnie montujemy **nvme1n1p1** w katalogu "old" i **nvme0n1p1** w katalogu "new", aby odróżnić je od siebie:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme1n1p1 old
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme0n1p1 new
 ```
 
-Next, we copy the files from the 'old' folder to 'new' one:
+Następnie kopiujemy pliki z katalogu "old" do "new":
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # rsync -axv old/ new/
@@ -713,20 +713,20 @@ sent 6,099,848 bytes  received 165 bytes  12,200,026.00 bytes/sec
 total size is 6,097,843  speedup is 1.00
 ```
 
-Once this is done, we unmount both partitions:
+Po wykonaniu tej czynności odmontowujemy obie partycje:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount /dev/nvme0n1p1
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount /dev/nvme1n1p1
 ```
 
-Next, we mount the partition containing the root of our operating system on `/mnt`. In our example, that partition is **md3**.
+Następnie montujemy partycję zawierającą korzeń naszego systemu operacyjnego na `/mnt`. W naszym przykładzie jest to partycja **md3**.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md3 /mnt
 ```
 
-We mount the following directories to make sure any manipulation we make in the `chroot` environment works properly:
+Montujemy następujące katalogi, aby upewnić się, że wszystkie operacje w środowisku `chroot` przebiegną poprawnie:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
@@ -739,13 +739,13 @@ mount --bind /run /mnt/run
 mount --make-slave /mnt/run
 ```
 
-Next, we use the `chroot` command to access the mount point and make sure the new EFI System Partition has been properly created and the system recongnises both ESPs:
+Następnie korzystamy z polecenia `chroot`, aby uzyskać dostęp do punktu montażowego i upewnić się, że nowa partycja systemowa EFI została poprawnie utworzona i system rozpoznaje obie partycje ESP:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
-To view the ESP partitions, we run the command `blkid -t LABEL=EFI_SYSPART`:
+Aby wyświetlić partycje ESP, uruchamiamy polecenie `blkid -t LABEL=EFI_SYSPART`:
 
 ```sh
 root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
@@ -753,36 +753,36 @@ root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
 /dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
 ```
 
-The above results show that the new EFI partition has been created correctly and that the LABEL has been applied correctly.
+Wyniki powyższe pokazują, że nowa partycja EFI została poprawnie utworzona i etykieta została poprawnie zastosowana.
 
 <a name="efiraidgrub"></a>
 
-#### Rebuilding RAID when EFI partitions are not synchronized after major system updates (GRUB)
+#### Odbudowa RAID, gdy partycje EFI nie są zsynchronizowane po znaczących uaktualnieniach systemu (GRUB)
 
-/// details | Unfold this section
+/// details | **Rozwiń tę sekcję**
 
 > [!warning]
-> Please only follow the steps in this section if it applies to your case.
+> Postępuj zgodnie z krokami w tej sekcji tylko wtedy, gdy dotyczy to Twojego przypadku.
 > 
 
-When EFI system partitions are not synchronised after major system updates that modify/affect the GRUB, and the primary disk on which the partition is mounted is replaced, booting from a secondary disk containing an out-of-date ESP may not work. 
+Gdy partycje systemowe EFI nie są zsynchronizowane po znaczących uaktualnieniach systemu, które modyfikują/lub wpływają na GRUB, a podstawowy dysk, na którym jest zamontowana partycja, zostaje wymieniony, uruchomienie z dysku pomocniczego zawierającego przestarzałą partycję ESP może się nie powieść. 
 
-In this case, in addition to rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on it.
+W takim przypadku, oprócz odbudowy RAID i ponownego utworzenia partycji systemowej EFI w trybie ratunkowym, należy również ponownie zainstalować GRUB na niej.
 
-So once we have recreated the EFI partition and made sure the system recognises both partitions (previous steps in `chroot`), we create the `/boot/efi` folder in order to mount the new EFI System Partition **nvme0n1p1**:
+Po utworzeniu partycji EFI i upewnieniu się, że system rozpoznaje obie partycje (poprzednie kroki w `chroot`), tworzymy katalog `/boot/efi`, aby zamontować nową partycję systemową EFI **nvme0n1p1**:
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
 root@rescue12-customer-eu:/# mount /dev/nvme0n1p1 /boot/efi
 ```
 
-Next, we reinstall the GRUB bootloader:
+Następnie ponownie instalujemy bootloader GRUB:
 
 ```sh
 root@rescue12-customer-eu:/# grub-install --efi-directory=/boot/efi /dev/nvme0n1p1
 ```
 
-Once done, run the following command:
+Po wykonaniu tej czynności uruchamiamy poniższe polecenie:
 
 ```sh
 root@rescue12-customer-eu:/# update-grub
@@ -791,11 +791,11 @@ root@rescue12-customer-eu:/# update-grub
 
 <a name="swap-partition"></a>
 
-#### Adding the label to the SWAP partition (if applicable)
+#### Dodanie etykiety do partycji SWAP (jeśli dotyczy)
 
-Once we are done with the EFI partition, we move to the SWAP partition.
+Po zakończeniu pracy z partycją EFI przechodzimy do partycji SWAP.
 
-We exit the `chroot` environment with `exit` in order to recreate our [SWAP] partition **nvme0n1p4** and add the label `swap-nvmenxxx`:
+Wyjdź z środowiska `chroot` za pomocą `exit`, aby ponownie utworzyć naszą [SWAP] partycję **nvme0n1p4** i dodać etykietę `swap-nvme0n1p4`:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
@@ -803,7 +803,7 @@ Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
 LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
 ```
 
-We verify that the label has been properly applied:
+Sprawdzamy, czy etykieta została poprawnie zastosowana:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -f
@@ -842,13 +842,13 @@ nvme0n1
                         b3c9e03a-52f5-4683-81b6-cc10091fcd15
 ```
 
-We then access the `chroot` environment again:
+Następnie ponownie uzyskujemy dostęp do środowiska `chroot`:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
-We retrieve the UUID of both SWAP partitions:
+Pobieramy identyfikator UUID obu partycji SWAP:
 
 ```sh
 root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme0n1p4
@@ -858,13 +858,9 @@ root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-Next, we replace the old UUID of the SWAP partition (**nvme0n1p4**) with the new one in the `/etc/fstab` file:
+Następnie zastępujemy stary identyfikator UUID partycji swap (**nvme0n1p4**) nowym w pliku `/etc/fstab`:
 
-```sh
-root@rescue12-customer-eu:/# nano /etc/fstab
-```
-
-Example:
+Przykład:
 
 ```sh
 UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
@@ -874,9 +870,9 @@ UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0
 UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
 ```
 
-Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Make sure you replace the correct UUID.
+Na podstawie powyższych wyników stary identyfikator UUID to `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` i należy go zastąpić nowym identyfikatorem `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Upewnij się, że zastępujesz właściwy identyfikator UUID.
 
-Next, we verify that everything is properly mounted with the following command:
+Następnie sprawdzamy, czy wszystko jest poprawnie zamontowane, używając następującego polecenia:
 
 ```sh
 root@rescue12-customer-eu:/# mount -av
@@ -887,7 +883,7 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-We activate the SWAP partition:
+Aktywujemy partycję SWAP:
 
 ```sh
 root@rescue12-customer-eu:/# swapon -av
@@ -900,45 +896,45 @@ swapon: /dev/nvme1n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/nvme1n1p4
 ```
 
-We exit the chroot environment with `exit` and reload the system:
+Wychodzimy ze środowiska chroot za pomocą polecenia `exit` i ponownie ładujemy system:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
 ```
 
-We umount all the disks:
+Odmontowujemy wszystkie dyski:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -Rl /mnt
 ```
 
-We have now successfully completed the RAID rebuild on the server and we can now reboot it in normal mode.
+W ten sposób pomyślnie zakończyliśmy odbudowę macierzy RAID na serwerze i możemy teraz uruchomić go ponownie w trybie normalnym.
 
 <a name="normalmode"></a>
 
-#### Rebuilding the RAID in normal mode
+#### Odbudowa macierzy RAID w trybie 
 
-/// details | Unfold this section
+/// details |  **Rozwiń tę sekcję**
 
-If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild the RAID.
+Jeśli serwer może uruchomić się w trybie normalnym po wymianie dysku, można wykonać poniższe czynności, aby odbudować macierz RAID.
 
-Once the disk has been replaced, we copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
+Po wymianie dysku kopiujemy tabelę partycji z dysku sprawnego (w tym przykładzie nvme1n1) na nowy dysk (nvme0n1).
 
-**For GPT partitions**
+**W przypadku partycji GPT**
 
 ```sh
 sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 ```
 
-The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
+Polecenie powinno mieć następujący format: `sgdisk -R /dev/nowy dysk /dev/prawidłowy dysk`.
 
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Następnie należy przypisać losowy identyfikator GUID do nowego dysku, aby uniknąć konfliktów identyfikatorów GUID z innymi dyskami:
 
 ```sh
 sgdisk -G /dev/nvme0n1
-```
+```  
 
-If you receive the following message:
+Jeśli pojawi się następujący komunikat:
 
 ```console
 Warning: The kernel is still using the old partition table.
@@ -947,9 +943,9 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
+Wystarczy wykonać polecenie `partprobe`. Jeśli nadal nie widzisz nowo utworzonych partycji (np. za pomocą `lsblk`), przed kontynuowaniem należy ponownie uruchomić serwer.
 
-Next, we add the partitions to the RAID:
+Następnie dodajemy partycje do macierzy RAID:
 
 ```sh
 [user@server_ip ~]# sudo mdadm --add /dev/md2 /dev/nvme0n1p2
@@ -961,13 +957,13 @@ Next, we add the partitions to the RAID:
 # mdadm: re-added /dev/nvme0n1p3
 ```
 
-Use the following command to follow the RAID rebuild: `cat /proc/mdstat`.
+Użyj poniższego polecenia, aby śledzić odbudowę RAID: `cat /proc/mdstat`.
 
-**Recreating the EFI System Partition on the disk**
+**Odbudowanie partycji systemu EFI na dysku**
 
-First, we install the necessary tools:
+Najpierw instalujemy niezbędne narzędzia:
 
-**Debian and Ubuntu**
+**Debian i Ubuntu**
 
 ```sh
 [user@server_ip ~]# sudo apt install dosfstools
@@ -979,21 +975,21 @@ First, we install the necessary tools:
 [user@server_ip ~]# sudo yum install dosfstools
 ```
 
-Next, we format the partition. In our example `nvme0n1p1`:
+Następnie formatujemy partycję. W naszym przykładzie `nvme0n1p1`:
 
 ```sh
 [user@server_ip ~]# sudo mkfs.vfat /dev/nvme0n1p1
 ```
 
-Next, we label the partition as `EFI_SYSPART` (this naming is specific to OVHcloud)
+Następnie nadajemy partycji etykietę `EFI_SYSPART` (ta nazwa jest specyficzna dla OVHcloud)
 
 ```sh
 [user@server_ip ~]# sudo fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-Once done, you can synchronize both partitions using the script we provided [here](#script).
+Po wykonaniu tej czynności możesz zsynchronizować obie partycje za pomocą skryptu, który udostępniliśmy [tutaj](#script).
 
-We verify that the new EFI System Partition has been properly created and the system recongnises it:
+Sprawdzamy, czy nowa partycja systemu EFI została poprawnie utworzona i system ją rozpoznaje:
 
 ```sh
 [user@server_ip ~]# sudo blkid -t LABEL=EFI_SYSPART
@@ -1001,16 +997,16 @@ We verify that the new EFI System Partition has been properly created and the sy
 /dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
 ```
 
-Lastly, we activate the [SWAP] partition (if applicable):
+Na koniec aktywujemy partycję [SWAP] (jeśli dotyczy):
 
 
-- We create and add the label:
+- Tworzymy i dodajemy etykietę:
 
 ```sh
 [user@server_ip ~]# sudo mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
 ```
 
-- We retrieve the UUIDs of both SWAP partitions:
+- Pobieramy UUID obu partycji SWAP:
 
 ```sh
 [user@server_ip ~]# sudo blkid -s /dev/nvme0n1p4
@@ -1019,13 +1015,13 @@ Lastly, we activate the [SWAP] partition (if applicable):
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-- We replace the old UUID of the SWAP partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
+- Zastępujemy stary UUID partycji SWAP (**nvme0n1p4)** nowym w pliku `/etc/fstab`:
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
 ```
 
-Example:
+Przykład:
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
@@ -1036,11 +1032,11 @@ UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0
 UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
 ```
 
-Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. 
+Na podstawie powyższych wyników, stary UUID to `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` i powinien zostać zastąpiony nowym `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. 
 
-Make sure you replace the correct UUID.
+Upewnij się, że zastępujesz poprawny UUID.
 
-Next, we run the following command to activate the SWAP partition:
+Następnie uruchamiamy poniższe polecenie, aby aktywować partycję SWAP:
 
 ```sh
 [user@server_ip ~]# sudo swapon -av
@@ -1052,29 +1048,29 @@ swapon: /dev/nvme1n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/nvme1n1p4
 ```
 
-Next, we reload the system:
+Następnie ponownie ładowujemy system:
 
 ```sh
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
 ///
 
-We have now successfully completed the RAID rebuild.
+Pomyślnie ukończono odbudowę RAID.
 
-## Go Further
+## Sprawdź również
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API i Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
-[Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
+[Zarządzanie hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
- 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+Dla usług specjalistycznych (SEO, programowanie itp.), skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+Jeśli potrzebujesz pomocy w użyciu i konfiguracji rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Join our [community of users](/links/community).
+Jeśli potrzebujesz szkoleń lub pomocy technicznej w wdrożeniu naszych rozwiązań, skontaktuj się ze swoim przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i zapytać ekspertów z Professional Services o pomoc w konkretnym przypadku użycia projektu.
+
+Dołącz do [grona naszych użytkowników](/links/community).

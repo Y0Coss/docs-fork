@@ -272,7 +272,7 @@ Cependant, nous recommandons d'exécuter un script automatique ou manuel pour sy
 - Le serveur est capable de démarrer en mode normal car toutes les ESP contiennent des informations à jour et la reconstruction du RAID peut être effectuée en mode normal.
 - Le serveur n'est pas capable de démarrer en mode normal, le serveur est redémarré en mode rescue, où vous pouvez reconstruire le RAID et recréer la partition système EFI sur le nouveau disque.
 
-**Étude de cas 3** - Il y a eu des mises à jour majeures du système (par exemple GRUB) et les partitions ESP n'ont pas été synchronisées
+**Étude de cas 3** - Il y a eu des mises à jour majeures du système (par exemple GRUB) et les partitions ESP n'ont pas été synchronisées.
 
 - Le serveur n'est pas capable de démarrer en mode normal, le serveur est redémarré en mode rescue, où vous pouvez reconstruire le RAID, recréer la partition système EFI sur le nouveau disque et réinstaller le chargeur de démarrage (bootloader) sur celui-ci.
 - Le serveur est capable de démarrer en mode normal (cela pourrait arriver dans le cas où un système d'exploitation est mis à jour vers une version plus récente mais que la version de GRUB reste inchangée) et vous pouvez procéder à la reconstruction du RAID.
@@ -330,7 +330,7 @@ set -euo pipefail
 MOUNTPOINT="/var/lib/grub/esp"
 MAIN_PARTITION=$(findmnt -n -o SOURCE /boot/efi)
 
-echo "${MAIN_PARTITION} est la partition principale"
+echo "${MAIN_PARTITION} is the main partition"
 
 mkdir -p "${MOUNTPOINT}"
 
@@ -338,7 +338,7 @@ while read -r partition; do
     if [[ "${partition}" == "${MAIN_PARTITION}" ]]; then
         continue
     fi
-    echo "Travail sur ${partition}"
+    echo "Working on ${partition}"
     mount "${partition}" "${MOUNTPOINT}"
     rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
     umount "${MOUNTPOINT}"
@@ -561,7 +561,7 @@ Une fois le disque remplacé, l'étape suivante consiste à copier la table de p
 
 **Pour les partitions GPT**
 
-La commande doit être dans ce format : `sgdisk -R /dev/nouveau disque /dev/disque sain`
+La commande doit être dans ce format : `sgdisk -R /dev/nouveau disque /dev/disque sain`.
 
 Dans notre exemple :
 
@@ -664,7 +664,7 @@ D'après les résultats ci-dessus, les partitions du nouveau disque ont été co
 
 Pour recréer la partition EFI System, nous devons formater **nvme0n1p1** et répliquer le contenu de la partition EFI System saine (dans notre exemple : nvme1n1p1) sur celle-ci.
 
-Ici, nous supposons que les deux partitions ont été synchronisées et contiennent des fichiers à jour ou n'ont tout simplement pas subi de mises à jour système ayant un impact sur le *bootloader*.
+Ici, nous supposons que les deux partitions ont été synchronisées et contiennent des fichiers à jour.
 
 > [!warning]
 > Si une mise à jour majeure du système, telle qu'une mise à jour du noyau ou de GRUB, a eu lieu et que les deux partitions n'ont pas été synchronisées, consultez cette [section](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub) une fois que vous avez terminé la création de la nouvelle partition EFI System.
@@ -759,7 +759,7 @@ Les résultats ci-dessus montrent que la nouvelle partition EFI a été créée 
 
 #### Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (GRUB)
 
-/// details | Développez cette section
+/// details | **Développez cette section**
 
 > [!warning]
 > Veuillez suivre les étapes de cette section uniquement si cela s'applique à votre cas.
@@ -848,7 +848,7 @@ Nous accédons ensuite à nouveau à l'environnement `chroot` :
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
-Nous récupérons l'UUID des deux partitions swap :
+Nous récupérons l'UUID des deux partitions SWAP :
 
 ```sh
 root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme0n1p4
@@ -858,7 +858,7 @@ root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-Ensuite, nous remplaçons l'ancien UUID de la partition swap (**nvme0n1p4**) par le nouveau dans le fichier `/etc/fstab` :
+Ensuite, nous remplaçons l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans le fichier `/etc/fstab` :
 
 ```sh
 root@rescue12-customer-eu:/# nano /etc/fstab
@@ -887,7 +887,7 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-Nous activons la partition swap :
+Nous activons la partition SWAP :
 
 ```sh
 root@rescue12-customer-eu:/# swapon -av
@@ -918,7 +918,7 @@ Nous avons maintenant terminé avec succès la reconstruction RAID sur le serveu
 
 #### Reconstruction du RAID en mode normal
 
-/// details | Développez cette section
+/// details | **Développez cette section**
 
 Si votre serveur est capable de démarrer en mode normal après un remplacement de disque, vous pouvez suivre les étapes ci-dessous pour reconstruire le RAID.
 
@@ -1009,7 +1009,7 @@ Enfin, nous activons la partition [SWAP] (si applicable) :
 [user@server_ip ~]# sudo mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
 ```
 
-- Nous récupérons les UUID des deux partitions swap :
+- Nous récupérons les UUID des deux partitions SWAP :
 
 ```sh
 [user@server_ip ~]# sudo blkid -s /dev/nvme0n1p4
@@ -1018,7 +1018,7 @@ Enfin, nous activons la partition [SWAP] (si applicable) :
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-- Nous remplaçons l'ancien UUID de la partition swap (**nvme0n1p4)** par le nouveau dans `/etc/fstab` :
+- Nous remplaçons l'ancien UUID de la partition SWAP (**nvme0n1p4)** par le nouveau dans `/etc/fstab` :
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
@@ -1039,7 +1039,7 @@ D'après les résultats ci-dessus, l'ancien UUID est `b7b5dd38-9b51-4282-8f2d-26
 
 Assurez-vous de remplacer le bon UUID.
 
-Ensuite, nous exécutons la commande suivante pour activer la partition swap :
+Ensuite, nous exécutons la commande suivante pour activer la partition SWAP :
 
 ```sh
 [user@server_ip ~]# sudo swapon -av
