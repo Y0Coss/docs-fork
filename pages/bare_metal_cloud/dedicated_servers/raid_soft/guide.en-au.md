@@ -430,10 +430,10 @@ Lastly, we add a label and mount the [SWAP] partition (if applicable).
 To add a label the SWAP partition:
 
 ```sh
-[user@server_ip ~]# sudo  mkswap /dev/sda4 -L swap-sda4
+[user@server_ip ~]# sudo mkswap /dev/sda4 -L swap-sda4
 ```
 
-Next, retrieve the UUIDs of both swap partitions:
+Next, retrieve the UUIDs of both SWAP partitions:
 
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
@@ -489,9 +489,9 @@ We have now successfully completed the RAID rebuild.
 
 /// details | **Rebuilding the RAID in rescue mode**
 
-If you server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode.
+If you server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode by our datacentre team.
 
-In this example, we are replacing the disk `sdb`.
+In this example, we have replaced the disk `sdb`.
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sda) to the new one (sdb).
 

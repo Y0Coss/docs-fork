@@ -435,10 +435,10 @@ Enfin, nous ajoutons un label et montons la partition [SWAP] (le cas échéant).
 Pour ajouter un libellé à la partition SWAP :
 
 ```sh
-[user@server_ip ~]# sudo  mkswap /dev/sdb4 -L swap-sdb4
+[user@server_ip ~]# sudo mkswap /dev/sda4 -L swap-sda4
 ```
 
-Ensuite, récupérez les UUID des deux partitions swap :
+Ensuite, récupérez les UUID des deux partitions SWAP :
 
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
@@ -476,7 +476,7 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-Exécutez la commande suivante pour activer la partition swap :
+Exécutez la commande suivante pour activer la partition SWAP :
 
 ```sh
 [user@server_ip ~]# sudo swapon -av
@@ -493,6 +493,10 @@ La reconstruction du RAID est maintenant terminée.
 <a name="rescuemode"></a>
 
 /// details | **Reconstruction du RAID en mode rescue**
+
+Si votre serveur ne parvient pas à redémarrer en mode normal après un remplacement de disque, il sera redémarré en mode rescue par notre équipe du datacenter.
+
+Dans cet exemple, nous avons remplacé le disque `sdb`.
 
 Une fois le disque remplacé, nous devons copier la table de partition du disque sain (dans cet exemple, sda) vers le nouveau (sdb).
 
@@ -526,7 +530,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> The operation has completed successfully.
 >> ```
 >>
->> Vous pouvez simplement exécuter la commande `partprobe`. Si vous ne voyez toujours pas les partitions nouvellement créées (par exemple avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
+>> Vous pouvez simplement exécuter la commande `partprobe`.
 >>
 > **Pour les partitions MBR**
 >>
@@ -648,14 +652,11 @@ Exemple:
 ```sh
 blkid /dev/sda4
 /dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-```
-
-```sh
 blkid /dev/sdb4
 /dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-Ensuite, nous remplaçons l'ancien UUID de la partition swap (**sdb4**) par le nouveau dans `/etc/fstab` :
+Ensuite, nous remplaçons l'ancien UUID de la partition SWAP (**sdb4**) par le nouveau dans `/etc/fstab` :
 
 ```sh
 root@rescue12-customer-eu:/# nano etc/fstab
@@ -682,12 +683,6 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-Rechargez le système avec la commande suivante :
-
-```sh
-root@rescue12-customer-eu:/# systemctl daemon-reload
-```
-
 Activez la partition swap avec la commande suivante :
 
 ```sh
@@ -701,7 +696,13 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-Quittez l'environnement Chroot avec `exit` et démontez tous les disques :
+Nous quittons l'environnement `chroot` avec exit et rechargeons le système :
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
+```
+
+Nous démontons tous les disques :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
@@ -709,7 +710,6 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
 ///
 
 Nous avons maintenant terminé avec succès la reconstruction du RAID sur le serveur et nous pouvons maintenant le redémarrer en mode normal.
-
 
 ## Aller plus loin
 
