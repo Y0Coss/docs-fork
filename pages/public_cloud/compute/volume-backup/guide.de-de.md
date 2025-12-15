@@ -4,10 +4,6 @@ excerpt: "Erfahren Sie hier, wie Sie über Ihr Kundencenter ein Backup Ihres Blo
 updated: 2025-12-15
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Für Ihre auf Block Storage Volumes liegenden wichtigen Daten ist es sinnvoll, Backups zu organisieren. Damit verhindern Sie Datenverluste, etwa aufgrund menschlicher Fehler oder Störungen auf Cluster-Ebene.
