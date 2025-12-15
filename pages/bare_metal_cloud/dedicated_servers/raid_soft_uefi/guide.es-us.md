@@ -664,7 +664,7 @@ Según los resultados anteriores, las particiones del nuevo disco se han agregad
 
 Para recrear la partición del sistema EFI, debemos formatear **nvme0n1p1** y replicar el contenido de la partición del sistema EFI sana (en nuestro ejemplo: nvme1n1p1) en esta última.
 
-Aquí, asumimos que ambas particiones se han sincronizado y contienen archivos actualizados o simplemente no han sufrido actualizaciones del sistema que afecten al *bootloader*.
+Aquí, asumimos que ambas particiones se han sincronizado y contienen archivos actualizados.
 
 > [!warning]
 > Si se ha realizado una actualización importante del sistema, como una actualización del kernel o de GRUB, y las dos particiones no se han sincronizado, consulte esta [sección](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub) una vez que haya terminado de crear la nueva partición del sistema EFI.
@@ -858,7 +858,7 @@ root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-A continuación, sustituimos el antiguo UUID de la partición swap (**nvme0n1p4**) por el nuevo en el archivo `/etc/fstab`:
+A continuación, sustituimos el antiguo UUID de la partición SWAP (**nvme0n1p4**) por el nuevo en el archivo `/etc/fstab`:
 
 ```sh
 root@rescue12-customer-eu:/# nano /etc/fstab
@@ -1018,7 +1018,7 @@ Finalmente, activamos la partición [SWAP] (si aplica):
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-- Reemplazamos el antiguo UUID de la partición swap (**nvme0n1p4)** por el nuevo en `/etc/fstab`:
+- Reemplazamos el antiguo UUID de la partición SWAP (**nvme0n1p4)** por el nuevo en `/etc/fstab`:
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
@@ -1039,7 +1039,7 @@ Según los resultados anteriores, el antiguo UUID es `b7b5dd38-9b51-4282-8f2d-26
 
 Asegúrese de reemplazar el UUID correcto.
 
-A continuación, ejecutamos el siguiente comando para activar la partición swap:
+A continuación, ejecutamos el siguiente comando para activar la partición SWAP:
 
 ```sh
 [user@server_ip ~]# sudo swapon -av

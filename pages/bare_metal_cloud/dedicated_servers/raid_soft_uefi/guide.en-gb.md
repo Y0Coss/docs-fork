@@ -848,7 +848,7 @@ We then access the `chroot` environment again:
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
-We retrieve the UUID of both swap partitions:
+We retrieve the UUID of both SWAP partitions:
 
 ```sh
 root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme0n1p4
@@ -858,7 +858,7 @@ root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-Next, we replace the old UUID of the swap partition (**nvme0n1p4**) with the new one in the `/etc/fstab` file:
+Next, we replace the old UUID of the SWAP partition (**nvme0n1p4**) with the new one in the `/etc/fstab` file:
 
 ```sh
 root@rescue12-customer-eu:/# nano /etc/fstab
@@ -887,7 +887,7 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-We activate the swap partition:
+We activate the SWAP partition:
 
 ```sh
 root@rescue12-customer-eu:/# swapon -av
@@ -1010,7 +1010,7 @@ Lastly, we activate the [SWAP] partition (if applicable):
 [user@server_ip ~]# sudo mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
 ```
 
-- We retrieve the UUIDs of both swap partitions:
+- We retrieve the UUIDs of both SWAP partitions:
 
 ```sh
 [user@server_ip ~]# sudo blkid -s /dev/nvme0n1p4
@@ -1019,7 +1019,7 @@ Lastly, we activate the [SWAP] partition (if applicable):
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-- We replace the old UUID of the swap partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
+- We replace the old UUID of the SWAP partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
@@ -1040,7 +1040,7 @@ Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58e
 
 Make sure you replace the correct UUID.
 
-Next, we run the following command to activate the swap partition:
+Next, we run the following command to activate the SWAP partition:
 
 ```sh
 [user@server_ip ~]# sudo swapon -av

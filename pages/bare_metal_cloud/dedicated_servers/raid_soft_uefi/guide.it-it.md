@@ -1,7 +1,7 @@
 ---
 title: "Gestione e ricostruzione di un RAID software sui server in modalità di avvio UEFI"
 excerpt: Scopri come gestire e ricostruire un RAID software dopo il ripristino di un disco su un server in modalità di avvio UEFI
-updated: 2025-12-11
+updated: 2025-12-15
 ---
 
 <style>
@@ -668,7 +668,7 @@ In base ai risultati sopra riportati, le partizioni del nuovo disco sono state c
 
 Per ricostruire la partizione EFI System, dobbiamo formattare **nvme0n1p1** e replicare il contenuto della partizione EFI System sana (nel nostro esempio: nvme1n1p1) su questa.
 
-In questo caso, assumiamo che le due partizioni siano state sincronizzate e contengano file aggiornati o non abbiano subito aggiornamenti del sistema che influenzano il *bootloader*.
+In questo caso, assumiamo che le due partizioni siano state sincronizzate e contengano file aggiornati.
 
 > [!warning]
 > Se è avvenuto un aggiornamento importante del sistema, ad esempio un aggiornamento del kernel o di GRUB, e le due partizioni non sono state sincronizzate, consulta questa [sezione](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub) una volta completata la creazione della nuova partizione EFI System.
@@ -862,7 +862,7 @@ root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-Quindi, sostituiamo il vecchio UUID della partizione swap (**nvme0n1p4**) con quello nuovo nel file `/etc/fstab`:
+Quindi, sostituiamo il vecchio UUID della partizione SWAP (**nvme0n1p4**) con quello nuovo nel file `/etc/fstab`:
 
 ```sh
 root@rescue12-customer-eu:/# nano /etc/fstab
@@ -1022,7 +1022,7 @@ Infine, attiviamo la partizione [SWAP] (se applicabile):
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-- Sostituiamo l'UUID vecchio della partizione swap (**nvme0n1p4)** con il nuovo in `/etc/fstab`:
+- Sostituiamo l'UUID vecchio della partizione SWAP (**nvme0n1p4)** con il nuovo in `/etc/fstab`:
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
@@ -1043,7 +1043,7 @@ Secondo i risultati sopra, l'UUID vecchio è `b7b5dd38-9b51-4282-8f2d-26c65e8d58
 
 Assicurati di sostituire l'UUID corretto.
 
-Successivamente, eseguiamo il comando seguente per attivare la partizione di swap:
+Successivamente, eseguiamo il comando seguente per attivare la partizione di SWAP:
 
 ```sh
 [user@server_ip ~]# sudo swapon -av
