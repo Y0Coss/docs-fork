@@ -49,9 +49,9 @@ A destra del volume, clicca sul pulsante `...`{.action} e poi su `Crea un backup
 
 ![Volume Backup - creazione](images/volumebackup01.png){.thumbnail}
 
-Se hai scelto Block Storage, indica il volume corrispondente. Altrimenti, seleziona il volume da salvare.
+Seleziona il volume da cui desideri creare un backup.
 
-Seleziona il tipo di backup che vuoi creare: **Volume Snapshot** ou **Volume Backup**.
+Seleziona quindi il tipo di backup che vuoi creare: **Volume Snapshot** ou **Volume Backup**.
 
 - Scegliendo **Volume Snapshot**, hai la possibilità di modificare il nome del Volume Snapshot da creare prima di confermare cliccando su `Creare il backup`{.action}.
 - Selezionando **Volume Backup**, ti verrà chiesto di scollegare il volume dall'istanza per poter continuare. È possibile modificare il nome del Volume Snapshot da creare prima di confermare il mount `Creare il backup`{.action}.
