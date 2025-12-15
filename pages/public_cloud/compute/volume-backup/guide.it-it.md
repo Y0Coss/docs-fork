@@ -1,7 +1,7 @@
 ---
 title: Creare un backup di un volume
 excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente OVHcloud
-updated: 2025-04-28
+updated: 2025-12-15
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Il Volume Snapshot e il Volume Backup ti permettono di:
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](/links/public-cloud/public-cloud)
+- Un [volume Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) scollegato creato nel tuo [progetto Public Cloud](/links/public-cloud/public-cloud)
 
 ## Procedura
 
@@ -38,7 +38,14 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome utent
 
 Apri il menu `Block Storage`{.action} nella barra di navigazione a sinistra con **Storage e Backup**.
 
-A destra del volume, clicca sul pulsante `...`{.action} poi su `Crea un backup`{.action}. Non è necessario scollegare il volume dell'istanza Se vuoi scollegare il tuo volume dall'istanza, consulta questa [sezione](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-linux) della guida corrispondente per Linux e questa [sezione](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-windows) per Windows.
+A destra del volume, clicca sul pulsante `...`{.action} e poi su `Crea un backup`{.action}.
+
+> [!primary]
+>
+> **Per effettuare un backup, il volume deve essere precedentemente scollegato dalla sua istanza.**
+> 
+> - Per un ambiente Linux, consulta la sezione **Con Linux** della guida "[Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
+> - Per un ambiente Windows, consulta la sezione **Con Windows** della guida "[Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
 
 ![Volume Backup - creazione](images/volumebackup01.png){.thumbnail}
 
