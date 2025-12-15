@@ -4,10 +4,6 @@ excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w 
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
-
 ## Wprowadzenie
 
 Jeśli przywiązujesz dużą wagę do danych przechowywanych w wolumenach Block Storage, zorganizuj ich kopię zapasową, aby ograniczyć potencjalny wpływ problemów na dane, czy to z powodu błędu występującego u człowieka, czy z powodu incydentu na poziomie klastra.

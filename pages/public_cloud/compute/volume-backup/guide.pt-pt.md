@@ -4,10 +4,6 @@ excerpt: "Saiba como criar um backup do volume Block Storage a partir da Área d
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Se atribui importância aos dados armazenados nos seus volumes Block Storage, convém organizar o backup deles para limitar o impacto potencial de qualquer problema sobre esses dados, quer se trate de um erro humano ou de um incidente ao nível do cluster.

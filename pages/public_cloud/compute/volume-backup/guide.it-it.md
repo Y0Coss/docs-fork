@@ -4,10 +4,6 @@ excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Se attribuisci importanza ai dati archiviati nei tuoi volumi Block Storage, è necessario organizzarne il backup per limitare l'impatto potenziale di qualsiasi problema su questi dati, sia che si tratti di errore umano o di un incidente a livello di cluster.
