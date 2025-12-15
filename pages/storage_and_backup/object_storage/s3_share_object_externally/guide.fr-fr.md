@@ -86,38 +86,6 @@ L'Object Storage OVHcloud propose trois principales méthodes pour partager des 
 >>
 >> L'objet devient accessible à l'adresse : `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
 >>
-> Via des politiques de bucket
->> > [!warning]
->> >
->> > Cette méthode n'est pas encore disponible dans OVHcloud Object Storage et est présentée en avant-première d'une fonctionnalité à venir.
->> >
->>
->> Les politiques de bucket permettent un partage à long terme ou structuré en définissant des règles d'accès pour des objets, des préfixes ou des plages d'IP spécifiques.
->>
->> Étapes :
->>
->> - Écrivez une politique JSON spécifiant les actions autorisées et les objets.
->> - Appliquez la politique au bucket via le panneau de configuration ou l'API.
->> - Partagez l'URL ou les identifiants appropriés selon la règle.
->>
->> Exemple : Autoriser l'accès public en lecture sur un dossier/préfixe spécifique
->>
->> ```json
->> {
->>   "Version": "2012-10-17",
->>   "Statement": [
->>     {
->>       "Effect": "Allow",
->>       "Principal": "*",
->>       "Action": "s3:GetObject",
->>       "Resource": "arn:aws:s3:::my-bucket/public/*"
->>     }
->>   ]
->> }
->> ```
->>
->> Une fois appliquée, tout objet sous le préfixe `public/` devient publiquement lisible, tandis que le reste du bucket reste privé.
->>
 
 ## Aller plus loin
 

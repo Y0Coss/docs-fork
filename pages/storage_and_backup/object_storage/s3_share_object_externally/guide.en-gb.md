@@ -86,38 +86,6 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 >>
 >> The object becomes accessible at: `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
 >>
-> Via Bucket Policies
->> > [!warning]
->> >
->> > This method is not yet available in OVHcloud Object Storage and is presented as a preview of an upcoming feature.
->> >
->>
->> Bucket policies allow long-term or structured sharing by defining access rules for specific objects, prefixes, or IP ranges.
->>
->> Steps:
->>
->> - Write a JSON policy specifying the allowed actions and objects.
->> - Apply the policy to the bucket through the Control Panel or the API.
->> - Share the appropriate URL or credentials depending on the rule.
->>
->> Example: Allow public read access on a specific folder/prefix
->>
->> ```json
->> {
->>   "Version": "2012-10-17",
->>   "Statement": [
->>     {
->>       "Effect": "Allow",
->>       "Principal": "*",
->>       "Action": "s3:GetObject",
->>       "Resource": "arn:aws:s3:::my-bucket/public/*"
->>     }
->>   ]
->> }
->> ```
->>
->> Once applied, any object under the `public/` prefix becomes publicly readable, while the rest of the bucket remains private.
->>
 
 ## Go further
 
