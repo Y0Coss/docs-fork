@@ -75,8 +75,8 @@ Kliknij kartę `Zautomatyzowany backup`{.action} w poziomym menu.
 Kliknij link `Wła̧cz zautomatyzowany backup premium`{.action} (dla usług zamówionych od 7 sierpnia 2025) lub przycisk `Włącz zautomatyzowany backup`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem.

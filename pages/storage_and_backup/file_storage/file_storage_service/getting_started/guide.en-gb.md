@@ -838,10 +838,10 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> **Useful resources**
 >>
->> [Your ReadWriteMany (RWX) Storage in k8s with Manila CSI](https://www.youtube.com/watch?v=WSMZDKx4JAI){.external}
->> [Manila/Concepts](https://wiki.openstack.org/wiki/Manila/Concepts#share_type){.external}
->> [Generic approach for share provisioning](https://docs.openstack.org/manila/latest/admin/generic_driver.html){.external}
->> [Official Manila CSI Plugin on GitHub](https://github.com/kubernetes/cloud-provider-openstack/tree/master/examples/manila-csi-plugin){.external}
+>> [Your ReadWriteMany (RWX) Storage in k8s with Manila CSI](https://www.youtube.com/watch?v=WSMZDKx4JAI)
+>> [Manila/Concepts](https://wiki.openstack.org/wiki/Manila/Concepts#share_type)
+>> [Generic approach for share provisioning](https://docs.openstack.org/manila/latest/admin/generic_driver.html)
+>> [Official Manila CSI Plugin on GitHub](https://github.com/kubernetes/cloud-provider-openstack/tree/master/examples/manila-csi-plugin)
 >>
 > Via Terraform
 >> **1\. Additional requirements**
@@ -850,7 +850,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> > [!primary]
 >> >
->> > You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service){.external}
+>> > You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
 >> >
 >>
 >> **2\. Declare the OpenStack provider**

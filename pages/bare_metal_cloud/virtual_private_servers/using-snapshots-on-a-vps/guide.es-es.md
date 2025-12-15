@@ -103,7 +103,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > No obstante, para no consumir demasiado espacio de almacenamiento, le recomendamos que no descargue los snapshots directamente en el VPS.
 >
-> El archivo cargado puede importarse en un proyecto de Public Cloud como imagen (QCOW2) mediante [OpenStack](products/public-cloud-compute-instance-management). (Consulte un ejemplo de uso en [esta guía](/pages/public_cloud/compute/upload_own_image).)
+> El archivo cargado puede importarse en un proyecto de Public Cloud como imagen (QCOW2) mediante [OpenStack](/products/public-cloud-compute-instance-management). (Consulte un ejemplo de uso en [esta guía](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Buenas prácticas para la creación de un snapshot

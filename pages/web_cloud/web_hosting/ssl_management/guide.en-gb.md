@@ -201,7 +201,7 @@ The Sectigo (EV) paid SSL certificate is valid for a single domain name and its 
 > - You have your organisation’s permission to order a Sectigo EV SSL certificate.
 > - You are able to provide an accurate account of your organisation's information and contact details.
 >
-> To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to [this web page](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+> To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to [this web page](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
 
 Click on the tabs below to view each of the **6** steps in succession:
 

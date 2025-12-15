@@ -310,8 +310,8 @@ Note the type value (apache or syslog or apache-error) that indicates the source
 
 Filebeat is a handy tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
 
-- Getting started: [https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-overview.html](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-overview.html){.external}
-- Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/7.12/configuring-howto-filebeat.html](https://www.elastic.co/guide/en/beats/filebeat/7.12/configuring-howto-filebeat.html){.external}
+- Getting started: [https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-overview.html](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-overview.html)
+- Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/7.12/configuring-howto-filebeat.html](https://www.elastic.co/guide/en/beats/filebeat/7.12/configuring-howto-filebeat.html)
 - Learn how to configure Filebeat and Logstash to add your own extra filters: [Dedicated input - Logstash](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input)
 
 ## Going further
