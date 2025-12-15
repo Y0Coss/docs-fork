@@ -87,6 +87,11 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 >> The object becomes accessible at: `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
 >>
 > Via Bucket Policies
+>> > [!warning]
+>> >
+>> > This method is not yet available in OVHcloud Object Storage and is presented as a preview of an upcoming feature.
+>> >
+>>
 >> Bucket policies allow long-term or structured sharing by defining access rules for specific objects, prefixes, or IP ranges.
 >>
 >> Steps:

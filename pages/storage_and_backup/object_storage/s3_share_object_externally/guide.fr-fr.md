@@ -87,6 +87,11 @@ L'Object Storage OVHcloud propose trois principales méthodes pour partager des 
 >> L'objet devient accessible à l'adresse : `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
 >>
 > Via des politiques de bucket
+>> > [!warning]
+>> >
+>> > Cette méthode n'est pas encore disponible dans OVHcloud Object Storage et est présentée en avant-première d'une fonctionnalité à venir.
+>> >
+>>
 >> Les politiques de bucket permettent un partage à long terme ou structuré en définissant des règles d'accès pour des objets, des préfixes ou des plages d'IP spécifiques.
 >>
 >> Étapes :
