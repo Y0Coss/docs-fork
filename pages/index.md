@@ -864,6 +864,7 @@
                     + [Cloud Archive Swift - Swift Command Memo](storage_and_backup/object_storage/pca_swift_commands_memo)
         + [Block storage](products/public-cloud-storage-block-storage)
             + [Key concepts](public-cloud-storage-block-storage-key-concepts)
+                + [Choosing the Right Block Storage Class](storage_and_backup/block_storage/block_storage_the_right_storage_class)
                 + [Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](public_cloud/compute/classic_block_multi_az_limitations)
             + [Getting Started](public-cloud-storage-block-storage-getting-started)
                 + [Creating and configuring an additional disk on an instance](public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
