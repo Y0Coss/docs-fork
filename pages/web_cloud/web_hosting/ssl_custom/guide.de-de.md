@@ -208,7 +208,7 @@ Wenn das SSL-Zertifikat vom SSL-Anbieter korrekt generiert wurde und die Vorauss
 > Wenn der Fehler `error check SAN from certificate` auftritt, liegt mindestens eine der folgenden Ursachen vor:
 >
 > - Mindestens eine in Ihrem SSL-Zertifikat deklarierte Domain oder Subdomain verweist nicht auf die IP-Adresse Ihres Webhostings.
-> - Mindestens eine Domain/Subdomain, die in Ihrem SSL-Zertifikat deklariert ist, ist nicht im Tab `Multisite` Ihres Webhostings deklariert.
+> - Mindestens ein in Ihrem SSL-Zertifikat angegebener Domain-/Subdomainname ist mit keiner der Websites Ihres Webhostings verknüpft.
 >
 > Lesen Sie unsere Anleitungen „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ und „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“, um diese Situation zu beheben.
 
