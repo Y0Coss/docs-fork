@@ -24,9 +24,9 @@ Redundant Array of Independent Disks (RAID) to technologia, która zmniejsza utr
 
 Domyślny poziom RAID dla instalacji serwerów OVHcloud to RAID 1, który podwaja zajęte przez dane miejsce, skutecznie zmniejszając dostępne miejsce na dysku o połowę.
 
-**Ten przewodnik wyjaśnia, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI**
+**Ten przewodnik wyjaśnia, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI.**
 
-Zanim zaczniemy, zwróć uwagę, że ten przewodnik skupia się na Serwerach dedykowanych, które używają UEFI jako trybu uruchamiania. Jest to typowe dla nowoczesnych płyt głównych. Jeśli Twój serwer używa trybu uruchamiania zgodnego (BIOS), odwiedź ten przewodnik: [Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie uruchamiania zgodnym (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Zanim zaczniemy, zwróć uwagę, że ten przewodnik skupia się na Serwerach dedykowanych, które używają UEFI jako trybu uruchamiania. Jest to typowe dla nowoczesnych płyt głównych. Jeśli Twój serwer używa trybu uruchamiania zgodnego (BIOS), odwiedź ten przewodnik: [Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie uruchamiania zgodnym (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 Aby sprawdzić, czy serwer działa w trybie zgodnym BIOS czy trybie uruchamiania UEFI, uruchom następującą komendę:
 
@@ -58,7 +58,7 @@ Kiedy zakupisz nowy serwer, możesz poczuć potrzebę wykonania serii testów i 
 - [Symulowanie awarii dysku](#diskfailure)
     - [Usunięcie awaryjnego dysku](#diskremove)
 - [Odbudowanie RAID](#raidrebuild)
-    - [Odbudowanie RAID po wymianie głównego dysku (tryb ratunkowy)](#rescuemode)
+    - [Odbudowanie RAID po wymianie głównego dysku (trybie Rescue)](#rescuemode)
     - [Ponowne utworzenie partycji systemu EFI](#recreateesp)
     - [Odbudowanie RAID, gdy partycje EFI nie są zsynchronizowane po dużych aktualizacjach systemu (np. GRUB)](#efiraidgrub)
     - [Dodanie etykiety do partycji SWAP (jeśli dotyczy)](#swap-partition)
@@ -262,17 +262,17 @@ Zalecamy jednak uruchomienie automatycznego lub ręcznego skryptu w celu zsynchr
 > Należy pamiętać, że poniżej omówiono najczęstsze przypadki, ale istnieje wiele innych powodów, dla których serwer może nie uruchomić się w trybie normalnym po wymianie dysku.
 >
 
-**Studium przypadku 1** — Nie wprowadzono żadnych istotnych zmian ani aktualizacji systemu (np. GRUB).
+**Studium przypadku 1** - Nie wprowadzono żadnych istotnych zmian ani aktualizacji systemu (np. GRUB).
 
 - Serwer może uruchomić się w trybie normalnym i można przystąpić do odbudowy macierzy RAID.
 - Serwer nie może uruchomić się w trybie normalnym, serwer jest ponownie uruchamiany w trybie ratunkowym, w którym można odbudować macierz RAID i ponownie utworzyć partycję EFI na nowym dysku.
 
-**Studium przypadku 2** — Wprowadzono istotne aktualizacje systemu (np. GRUB) i zsynchronizowano ESP.
+**Studium przypadku 2** - Wprowadzono istotne aktualizacje systemu (np. GRUB) i zsynchronizowano ESP.
 
-— Serwer może uruchomić się w trybie normalnym, ponieważ wszystkie ESP zawierają aktualne informacje, a odbudowę macierzy RAID można przeprowadzić w trybie normalnym.
+- Serwer może uruchomić się w trybie normalnym, ponieważ wszystkie ESP zawierają aktualne informacje, a odbudowę macierzy RAID można przeprowadzić w trybie normalnym.
 - Serwer nie jest w stanie uruchomić się w trybie normalnym, serwer jest ponownie uruchamiany w trybie ratunkowym, w którym można odbudować macierz RAID i ponownie utworzyć partycję systemową EFI na nowym dysku.
 
-**Studium Przypadek 3** — nastąpiły poważne aktualizacje systemu (np. GRUB), a partycje ESP nie zostały zsynchronizowane.
+**Studium Przypadek 3** - Nastąpiły poważne aktualizacje systemu (np. GRUB), a partycje ESP nie zostały zsynchronizowane.
 
 - Serwer nie może uruchomić się w trybie normalnym, serwer jest ponownie uruchamiany w trybie ratunkowym, w którym można odbudować macierz RAID, odtworzyć partycję systemową EFI na nowym dysku i ponownie zainstalować na nim program rozruchowy (bootloader).
 - Serwer może uruchomić się w trybie normalnym (może się to zdarzyć w przypadku aktualizacji systemu operacyjnego do nowszej wersji, ale wersja GRUB pozostaje niezmieniona) i można przystąpić do odbudowy macierzy RAID.
@@ -561,7 +561,7 @@ Po wymianie dysku następnym krokiem jest skopiowanie tabeli partycji z zdrowego
 
 **Dla partycji GPT**
 
-Polecenie powinno mieć następującą postać: `sgdisk -R /dev/new disk /dev/healthy disk`
+Polecenie powinno mieć następującą postać: `sgdisk -R /dev/nowy dysk /dev/prawidłowy dysk`
 
 W naszym przykładzie:
 
@@ -859,6 +859,10 @@ root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
 ```
 
 Następnie zastępujemy stary identyfikator UUID partycji swap (**nvme0n1p4**) nowym w pliku `/etc/fstab`:
+
+```sh
+root@rescue12-customer-eu:/# nano /etc/fstab
+```
 
 Przykład:
 

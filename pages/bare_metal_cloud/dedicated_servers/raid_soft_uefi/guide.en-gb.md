@@ -759,7 +759,7 @@ The above results show that the new EFI partition has been created correctly and
 
 #### Rebuilding RAID when EFI partitions are not synchronized after major system updates (GRUB)
 
-/// details | Unfold this section
+/// details | **Unfold this section**
 
 > [!warning]
 > Please only follow the steps in this section if it applies to your case.
@@ -918,7 +918,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 #### Rebuilding the RAID in normal mode
 
-/// details | Unfold this section
+/// details | **Unfold this section**
 
 If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild the RAID.
 

@@ -24,9 +24,9 @@ Ein Redundanter Array unabhängiger Festplatten (RAID) ist eine Technologie, die
 
 Die Standard-RAID-Ebene für OVHcloud-Serverinstallationen ist RAID 1, wodurch der von Ihren Daten belegte Platz verdoppelt wird, was effektiv den nutzbaren Festplattenplatz halbiert.
 
-**Dieses Handbuch erklärt, wie Sie Software-RAID nach einem Festplattentausch auf einem Server mit UEFI-Boot-Modus verwalten und neu aufbauen können**
+**Dieses Handbuch erklärt, wie Sie Software-RAID nach einem Festplattentausch auf einem Server mit UEFI-Boot-Modus verwalten und neu aufbauen können.**
 
-Bevor wir beginnen, beachten Sie bitte, dass dieses Handbuch sich auf dedizierte Server konzentriert, die den UEFI-Boot-Modus verwenden. Dies ist bei modernen Motherboards der Fall. Wenn Ihr Server den Legacy-Boot-Modus (BIOS) verwendet, konsultieren Sie bitte dieses Handbuch: [Verwalten und Neuaufbauen von Software-RAID auf Servern im Legacy-Boot-Modus (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Bevor wir beginnen, beachten Sie bitte, dass dieses Handbuch sich auf dedizierte Server konzentriert, die den UEFI-Boot-Modus verwenden. Dies ist bei modernen Motherboards der Fall. Wenn Ihr Server den Legacy-Boot-Modus (BIOS) verwendet, konsultieren Sie bitte dieses Handbuch: [Verwalten und Neuaufbauen von Software-RAID auf Servern im Legacy-Boot-Modus (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 Um zu prüfen, ob ein Server im Legacy-BIOS-Modus oder im UEFI-Boot-Modus läuft, führen Sie den folgenden Befehl aus:
 
@@ -58,7 +58,7 @@ Wenn Sie einen neuen Server erwerben, können Sie sich möglicherweise dazu ents
 - [Simulieren eines Festplattenausfalls](#diskfailure)
     - [Entfernen der defekten Festplatte](#diskremove)
 - [Neuaufbau des RAIDs](#raidrebuild)
-    - [Neuaufbau des RAIDs nach Austausch der Hauptfestplatte (Rettungsmodus)](#rescuemode)
+    - [Neuaufbau des RAIDs nach Austausch der Hauptfestplatte (Rescue-Modus)](#rescuemode)
     - [Neuanlegen der EFI-Systempartition](#recreateesp)
     - [Neuaufbau des RAIDs, wenn die EFI-Partitionen nach wichtigen Systemaktualisierungen (z. B. GRUB) nicht synchronisiert sind](#efiraidgrub)
     - [Hinzufügen der Bezeichnung zur SWAP-Partition (falls zutreffend)](#swap-partition)
@@ -262,19 +262,19 @@ Wir empfehlen jedoch, ein automatisches oder manuelles Skript auszuführen, um a
 > Bitte beachten Sie, dass wir im Folgenden die häufigsten Fälle untersuchen, es jedoch mehrere andere Gründe gibt, warum ein Server nach einem Festplattenaustausch nicht im normalen Modus starten könnte.
 >
 
-**Fallstudie 1** – Es gab keine wesentlichen Änderungen oder Aktualisierungen des Systems (z. B. GRUB).
+**Fallstudie 1** - Es gab keine wesentlichen Änderungen oder Aktualisierungen des Systems (z. B. GRUB).
 
-– Der Server kann im normalen Modus gestartet werden, und Sie können mit der Wiederherstellung des RAID fortfahren.
-– Der Server kann nicht im normalen Modus gestartet werden, der Server wird im Rettungsmodus neu gestartet, wo Sie das RAID wiederherstellen und die EFI-Partition auf der neuen Festplatte neu erstellen können.
+- Der Server kann im normalen Modus gestartet werden, und Sie können mit der Wiederherstellung des RAID fortfahren.
+- Der Server kann nicht im normalen Modus gestartet werden, der Server wird im Rescue-Modus neu gestartet, wo Sie das RAID wiederherstellen und die EFI-Partition auf der neuen Festplatte neu erstellen können.
 
-**Fallstudie 2** – Es gab größere Aktualisierungen des Systems (z. B. GRUB) und die ESPs wurden synchronisiert.
+**Fallstudie 2** - Es gab größere Aktualisierungen des Systems (z. B. GRUB) und die ESPs wurden synchronisiert.
 
-– Der Server kann im normalen Modus starten, da alle ESPs aktuelle Informationen enthalten und die Wiederherstellung des RAID im normalen Modus durchgeführt werden kann.
-– Der Server kann nicht im normalen Modus starten, der Server wird im Rettungsmodus neu gestartet, wo Sie das RAID neu aufbauen und die EFI-Systempartition auf der neuen Festplatte neu erstellen können.
+- Der Server kann im normalen Modus starten, da alle ESPs aktuelle Informationen enthalten und die Wiederherstellung des RAID im normalen Modus durchgeführt werden kann.
+- Der Server kann nicht im normalen Modus starten, der Server wird im Rescue-Modus neu gestartet, wo Sie das RAID neu aufbauen und die EFI-Systempartition auf der neuen Festplatte neu erstellen können.
 
-**Fallbeispiel 3** – Es gab größere Systemaktualisierungen (z. B. GRUB) und die ESP-Partitionen wurden nicht synchronisiert.
+**Fallbeispiel 3** - Es gab größere Systemaktualisierungen (z. B. GRUB) und die ESP-Partitionen wurden nicht synchronisiert.
 
-- Der Server kann nicht im normalen Modus gestartet werden. Der Server wird im Rettungsmodus neu gestartet, wo Sie das RAID neu aufbauen, die EFI-Systempartition auf der neuen Festplatte neu erstellen und den Bootloader darauf neu installieren können.
+- Der Server kann nicht im normalen Modus gestartet werden. Der Server wird im Rescue-Modus neu gestartet, wo Sie das RAID neu aufbauen, die EFI-Systempartition auf der neuen Festplatte neu erstellen und den Bootloader darauf neu installieren können.
 - Der Server kann im normalen Modus starten (dies kann vorkommen, wenn ein Betriebssystem auf eine neuere Version aktualisiert wird, die GRUB-Version jedoch unverändert bleibt) und Sie können mit dem Wiederherstellen des RAID fortfahren.
 
 In einigen Fällen funktioniert der Start von einer veralteten ESP nicht. Beispielsweise könnte ein größeres GRUB-Update dazu führen, dass die alte GRUB-Version in der ESP mit den neueren GRUB-Modulen, die in der Partition `/boot` installiert sind, nicht mehr kompatibel ist.
@@ -484,7 +484,7 @@ nvme1n1     259:0    0 476.9G  0 disk
 nvme0n1     259:5    0 476.9G  0 disk
 ```
 
-Wenn wir den folgenden Befehl ausführen, sehen wir, dass unsere Festplatte erfolgreich „gelöscht“ wurde:
+Wenn wir den folgenden Befehl ausführen, sehen wir, dass unsere Festplatte erfolgreich "gelöscht" wurde:
 
 ```sh
 parted /dev/nvme0n1
@@ -695,7 +695,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme1n1p1 old
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme0n1p1 new
 ```
 
-Nun kopieren wir die Dateien vom Ordner "old" in den Ordner "old":
+Nun kopieren wir die Dateien vom Ordner "old" in den Ordner "new":
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # rsync -axv old/ new/
@@ -922,7 +922,7 @@ Nachdem die Festplatte ausgetauscht wurde, kopieren wir die Partitionstabelle de
 sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 ```
 
-Der Befehl muss folgendes Format haben: `sgdisk -R /dev/neue Festplatte /dev/intaktes Festplatte`.
+Der Befehl muss folgendes Format haben: `sgdisk -R /dev/neue Festplatte /dev/intakte Festplatte`.
 
 Anschließend muss der neuen Festplatte eine zufällige GUID zugewiesen werden, um GUID-Konflikte mit anderen Festplatten zu vermeiden:
 
