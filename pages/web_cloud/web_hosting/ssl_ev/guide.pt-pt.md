@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL Sectigo EV"
 excerpt: "Saiba como encomendar e instalar um certificado SSL Sectigo EV no seu alojamento Web OVHcloud"
-updated: 2025-11-20
+updated: 2025-12-16
 ---
 
 ## Objetivo

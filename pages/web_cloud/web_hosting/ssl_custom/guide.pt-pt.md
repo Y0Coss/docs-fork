@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Instalar um certificado SSL personalizado"
 excerpt: "Saiba como importar e instalar um certificado SSL personalizado no seu alojamento Web OVHcloud"
-updated: 2025-11-20
+updated: 2025-12-16
 ---
 
 ## Objetivo
@@ -208,7 +208,7 @@ Se o certificado SSL tiver sido gerado corretamente pelo fornecedor SSL e os req
 > Se você encontrar o erro `error check SAN from certificate`, isso é devido a pelo menos uma das seguintes situações:
 >
 > - pelo menos um domínio/subdomínio declarado no seu certificado SSL não aponta para o endereço IP do seu alojamento web;
-> - Pelo menos um domínio/subdomínio declarado no seu certificado SSL não é declarado no separador `Multisite` do seu alojamento web.
+> - Pelo menos um domínio/subdomínio declarado no seu certificado SSL não  está declarado num dos sítios web do seu alojamento web.
 >
 > Consulte os nossos manuais "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" para resolver esta situação.
 

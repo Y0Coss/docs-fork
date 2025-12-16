@@ -1,7 +1,7 @@
 ---
 title: "Hosting - Instalacja spersonalizowanego certyfikatu SSL"
 excerpt: "Dowiedz się, jak importować i instalować spersonalizowany certyfikat SSL na Twoim hostingu OVHcloud"
-updated: 2025-11-20
+updated: 2025-12-16
 ---
 
 ## Wprowadzenie
@@ -208,7 +208,7 @@ Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymag
 > Jeśli wystąpi błąd `error check SAN from certificate`, jest to spowodowane co najmniej jedną z dwóch poniższych sytuacji:
 >
 > - przynajmniej jedna domena/subdomena zadeklarowana w Twoim certyfikacie SSL nie wskazuje na adres IP Twojego hostingu;
-> - w zakładce `MultiSite` Twojego hostingu nie zadeklarowano co najmniej jednej domeny/subdomeny zadeklarowanej w Twoim certyfikacie SSL.
+> - co najmniej jedno nazwa domena/subdomena zadeklarowana w Twoim certyfikacie SSL nie jest zadeklarowana na jednym z witryn Twojej oferty hostingu.
 >
 > Sprawdź przewodniki "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)" i "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)", aby rozwiązać ten problem.
 

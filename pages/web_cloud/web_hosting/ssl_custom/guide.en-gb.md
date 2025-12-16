@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to install a custom SSL certificate"
 excerpt: "Find out how to import and install a custom SSL certificate on your OVHcloud Web Hosting plan"
-updated: 2025-11-20
+updated: 2025-12-16
 ---
 
 ## Objective
@@ -208,7 +208,7 @@ If the SSL certificate has been generated successfully by the SSL provider, and 
 > If you encounter the error `error check SAN from certificate`, this is due to at least one of the following two situations:
 >
 > - At least one domain/subdomain name declared in your SSL certificate does not point to your web hosting plan’s IP address.
-> - At least one domain name/subdomain declared in your SSL certificate is not declared in the `Multisite` tab of your web hosting plan.
+> - At least one domain name/subdomain declared in your SSL certificate is not declared on one of your web hosting websites.
 >
 > Refer to our guides “[Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)” and “[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)” to resolve this situation.
 

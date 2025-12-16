@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - SSL-Zertifikat einrichten"
 excerpt: "Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting installieren und verwalten"
-updated: 2025-11-20
+updated: 2025-12-16
 ---
 
 ## Ziel 
