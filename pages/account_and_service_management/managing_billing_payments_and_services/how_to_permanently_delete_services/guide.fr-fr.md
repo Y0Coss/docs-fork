@@ -1,7 +1,7 @@
 ---
 title: 'RGPD - Comment supprimer immédiatement vos services OVHcloud'
 excerpt: "Découvrez comment supprimer vos services OVHcloud immédiatement et de manière irréversible, dans le cadre d'une demande RGPD d'effacement des données"
-updated: 2025-12-15
+updated: 2025-12-16
 hidden: true
 ---
 
@@ -234,7 +234,7 @@ Suivez les étapes décrites dans le guide « [Comment résilier un accès xDSL/
 
 /// details | SMS
 
-Il n'existe pas de procédure de résiliation concernant les [offres SMS](https://www.ovhtelecom.fr/sms/). Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
+Il n'existe pas de procédure de résiliation concernant les [offres SMS](/links/telecom/sms). Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
 
 Pour supprimer un compte SMS, nous vous invitons à créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
 
