@@ -170,6 +170,8 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 1. Dans le cadre `Mon offre`, cliquez sur `Résilier`{.action}. Sélectionnez alors `Résilier le service immédiatement`{.action} et validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
+Un délai de 30 jours peut être observé avant la suppression effective du service.
+
 ///
 
 /// details | Serveur dédié
@@ -206,6 +208,8 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 1. Cliquez sur `Project settings`{.action} puis sur `Supprimer le projet`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
+Un délai de 30 jours peut être observé avant la suppression effective des services.
+
 ///
 
 ### Télécom
@@ -224,7 +228,7 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 
 /// details | Accès Internet
 
-Suivez les étapes décrites dans le guide » [Comment résilier un accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl) ». Vous pouvez ensuite créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander l'application immédiate de la résiliation.
+Suivez les étapes décrites dans le guide « [Comment résilier un accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl) ». Vous pouvez ensuite créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander l'application immédiate de la résiliation.
 
 ///
 
