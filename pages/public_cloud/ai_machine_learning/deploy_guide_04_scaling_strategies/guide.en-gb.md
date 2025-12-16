@@ -135,8 +135,6 @@ This feature can be used through the UI and CLI, and requires an API endpoint to
 >>
 >> Use the `ovhai app run` command with the following parameters:
 >>
->> All parameters for custom metrics are required:
->>
 >> | Parameter | Description |
 >> |--------|-------------|
 >> | `--auto-custom-api-url`          | URL of the API operation to call to get the metric value. A specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself. |
