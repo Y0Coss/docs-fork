@@ -99,7 +99,7 @@ Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la
 1. Une fois les domaines associés supprimés, cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
     1. Utilisez l'outil `Filtrer`{.action} sur la droite pour lister uniquement les services `Compte Email Zimbra`. Cliquez sur `Ajouter`{.action} pour valider le filtre.
     1. Sélectionnez tous les services `Compte Email Zimbra` puis cliquez sur le bouton `Actions`{.action} et sur `Désactiver le paiement automatique`{.action}.
-1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander application immédiate de la suppression des services..
+1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander l'application immédiate de la suppression des services.
 
 ///
 
