@@ -208,7 +208,7 @@ Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymag
 > Jeśli wystąpi błąd `error check SAN from certificate`, jest to spowodowane co najmniej jedną z dwóch poniższych sytuacji:
 >
 > - przynajmniej jedna domena/subdomena zadeklarowana w Twoim certyfikacie SSL nie wskazuje na adres IP Twojego hostingu;
-> - co najmniej jedna nazwa domeny lub subdomeny zadeklarowana w Twoim certyfikacie SSL nie jest powiązana z żadną ze stron internetowych w ramach Twojego planu hostingowego.
+> - co najmniej jedna nazwa domeny/subdomeny zadeklarowana w Twoim certyfikacie SSL nie jest powiązana z żadną ze stron internetowych w ramach Twojego planu hostingowego.
 >
 > Sprawdź przewodniki "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)" i "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)", aby rozwiązać ten problem.
 
