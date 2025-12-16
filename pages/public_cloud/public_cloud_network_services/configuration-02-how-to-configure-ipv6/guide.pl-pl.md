@@ -1,7 +1,7 @@
 ---
 title: "Jak konfigurować IPv6 w instancji Public Cloud"
 excerpt: "Dowiedz się, jak skonfigurować protokół IPv6 w instancji Public Cloud"
-updated: 2025-12-08
+updated: 2025-12-16
 ---
 
 <style>
@@ -50,7 +50,7 @@ Poniższe sekcje zawierają konfiguracje aktualnie oferowanych przez nas dystryb
 
 > [!warning]
 >
-> Należy pamiętać, że w najnowszych wersjach systemów operacyjnych Linux adres IPv6 jest skonfigurowany domyślnie w instancjach Public Cloud. W tym przypadku nie musisz jej konfigurować. Przed wprowadzeniem jakichkolwiek zmian sprawdź plik konfiguracyjny systemu operacyjnego.
+> Należy pamiętać, że adres IPv6 jest domyślnie skonfigurowany na naszych instancjach Public Cloud. Przed wprowadzeniem jakichkolwiek zmian należy sprawdzić plik konfiguracyjny systemu operacyjnego.
 >
 
 ### Słowniczek
@@ -210,7 +210,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >> sudo netplan apply
 >> ```
 >>
-> **W systemie RedHat / CentOS / Rocky Linux / Alma Linux**
+> **W systemie RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> Pliki konfiguracyjne sieci znajdują się w katalogu `/etc/sysconfig/network-scripts/`. Zalecamy, abyś przed podjęciem jakichkolwiek działań wykonał kopię zapasową odpowiedniego pliku konfiguracyjnego.
 >>
@@ -258,7 +258,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >> sudo systemctl restart networking
 >> ```
 >>
-> **W systemie Fedora**
+> **W systemie Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
 >> Plik konfiguracji sieci znajduje się w katalogu`/etc/NetworkManager/system-connections/`. Zalecamy, abyś przed podjęciem jakichkolwiek działań wykonał kopię zapasową odpowiedniego pliku konfiguracyjnego.
 >>
@@ -274,7 +274,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=YOUR_IPV6/IPV6_PREFIX
 >> route1=::/0,IPV6_GATEWAY
@@ -287,7 +287,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1

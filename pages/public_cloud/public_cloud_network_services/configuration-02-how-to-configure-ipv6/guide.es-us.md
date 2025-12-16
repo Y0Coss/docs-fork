@@ -1,7 +1,7 @@
 ---
 title: "Configurar IPv6 en una instancia de Public Cloud"
 excerpt: "Cómo configurar el protocolo IPv6 en una instancia de Public Cloud"
-updated: 2025-12-08
+updated: 2025-12-16
 ---
 
 <style>
@@ -50,7 +50,7 @@ Las siguientes secciones contienen las configuraciones de las distribuciones que
 
 > [!warning]
 >
-> Tenga en cuenta que, en las versiones recientes de los sistemas operativos Linux, la dirección IPv6 está configurada por defecto en las instancias Public Cloud. En este caso, no es necesario configurarla. Asegúrese de comprobar el archivo de configuración del sistema operativo antes de realizar cualquier cambio.
+> Tenga en cuenta que la dirección IPv6 está configurada por defecto en nuestras instancias de Public Cloud. Asegúrese de comprobar el archivo de configuración del sistema operativo antes de realizar cualquier cambio.
 >
 
 ### Léxico
@@ -208,7 +208,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >> sudo netplan apply
 >> ```
 >>
-> **RedHat / CentOS / Rocky Linux / Alma Linux**
+> **RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> Los archivos de configuración de red se encuentran en el directorio `/etc/sysconfig/network-scripts/`. Le recomendamos que realice una copia de seguridad del archivo de configuración correspondiente.
 >>
@@ -256,7 +256,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Fedora**
+> **Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
 >> El archivo de configuración de red se encuentra en el directorio `/etc/NetworkManager/system-connections/`. Le recomendamos que realice una copia de seguridad del archivo de configuración correspondiente.
 >>
@@ -272,7 +272,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=YOUR_IPV6/IPV6_PREFIX
 >> route1=::/0,IPV6_GATEWAY
@@ -284,7 +284,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1

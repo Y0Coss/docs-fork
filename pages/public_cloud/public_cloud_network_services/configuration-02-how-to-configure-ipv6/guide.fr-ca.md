@@ -1,7 +1,7 @@
 ---
 title: 'Configuration IPv6 sur une instance Public Cloud'
 excerpt: 'Découvrez comment configurer le protocole IPv6 sur une instance Public Cloud'
-updated: 2025-12-08
+updated: 2025-12-16
 ---
 
 <style>
@@ -46,7 +46,7 @@ Les sections suivantes contiennent les configurations des distributions que nous
 
 > [!warning]
 >
-> Veuillez noter que sur les versions récentes des systèmes d’exploitation Linux, l’adresse IPv6 est configurée par défaut sur les instances Public Cloud. Dans ce cas, vous n'avez pas besoin de la configurer. Assurez-vous de vérifier le fichier de configuration de votre système d'exploitation avant d'effectuer tout changement.
+> Veuillez noter que l'adresse IPv6 est configurée par défaut sur nos instances Public Cloud. Assurez-vous de vérifier le fichier de configuration du système d'exploitation avant d'effectuer toute modification.
 
 ### Lexique
 
@@ -201,7 +201,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >> sudo netplan apply
 >> ```
 >> 
-> **RedHat / CentOS / Rocky Linux / Alma Linux**
+> **RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> Les fichiers de configuration du réseau sont situés dans le répertoire `/etc/sysconfig/network-scripts/`. Nous vous recommandons de commencer par sauvegarder le fichier de configuration concerné.
 >>
@@ -249,7 +249,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Fedora**
+> **Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
 >> Le fichier de configuration du réseau se trouve dans le répertoire `/etc/NetworkManager/system-connections/`. Nous vous recommandons de commencer par sauvegarder le fichier de configuration concerné. 
 >>
@@ -265,7 +265,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=YOUR_IPV6/IPV6_PREFIX
 >> route1=::/0,IPV6_GATEWAY
@@ -277,7 +277,7 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 >>
 >> ```console
 >> [ipv6]
->> method=auto
+>> method=manual
 >> may-fail=true
 >> address1=2607:5300:201:abcd::7c5/128
 >> route1=::/0,2607:5300:201:abcd::1
