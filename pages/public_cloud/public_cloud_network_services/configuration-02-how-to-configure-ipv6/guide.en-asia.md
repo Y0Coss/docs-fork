@@ -44,7 +44,7 @@ The following sections contain configurations for the distributions we currently
 
 > [!warning]
 >
-> Please note that the IPv6 address is configured by default on our Public Cloud instances. Make sure you check operating system configuration file before making any changes.
+> Please note that the IPv6 address is configured by default on our Public Cloud instances. Be sure to check the operating system configuration file before making any changes.
 >
 
 ### Glossary
