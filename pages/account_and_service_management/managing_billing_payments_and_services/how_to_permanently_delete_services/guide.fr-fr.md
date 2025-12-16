@@ -1,7 +1,7 @@
 ---
 title: 'RGPD - Comment supprimer immédiatement vos services OVHcloud'
 excerpt: "Découvrez comment supprimer vos services OVHcloud immédiatement et de manière irréversible, dans le cadre d'une demande RGPD d'effacement des données"
-updated: 2025-12-16
+updated: 2025-12-15
 hidden: true
 ---
 
@@ -27,12 +27,12 @@ Dans le cadre du Règlement Général sur la Protection des Données (RGPD), vou
 
 ## Prérequis
 
-- Ëtre connecté à votre [espace client OVHcloud](/links/manager).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir vérifié que toutes vos données ont été sauvegardées.
 
 ## En pratique
 
-Pour lister vos services, connnectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+Pour lister vos services, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 
 > [!alert]
 >
@@ -48,7 +48,7 @@ Pour lister vos services, connnectez-vous à votre [espace client OVHcloud](/lin
 
 /// details | Nom de domaine
 
-1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Résilier mon service`{.action}. Sélectionnez `Résilier le service immédiatement`{.action} et validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -63,7 +63,7 @@ Un délai de 45 à 60 jours, selon l'extension du domaine, peut être observé a
 > La suppression d'un hébergement entraîne l'effacement définitif de toutes ses données.
 >
 
-1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement l'hébergement`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -79,7 +79,7 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 
 Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la suppression de celui-ci (voir ci-dessus).
 
-1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement le MX Plan`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -97,7 +97,7 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action} puis sur `Zimbra Mail`{.action}.
 1. Cliquez sur l'onglet `Compte email`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque compte e-mail à supprimer puis sur `Supprimer`{.action}.
 1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaine`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque domaine puis sur `Supprimer`{.action}.
-1. Lorsque les domaines associés ont été supprimés, cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+1. Lorsque les domaines associés ont été supprimés, cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
     1. Utilisez l'outil `Filtrer`{.action} sur la droite pour lister uniquement les services `Compte Email Zimbra`. Cliquez sur `Ajouter`{.action} pour valider le filtre.
     1. Sélectionnez tous les comptes Zimbra puis cliquez successivement sur le bouton `Actions`{.action} et `Désactiver le paiement automatique`{.action}.
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
@@ -134,7 +134,7 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 
 /// details | Zone DNS
 
-1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite de la zone DNS concernée, puis sur `Résilier mon service`{.action}.
 1. Une fois la résiliation demandée, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander son application immédiate.
 
@@ -144,13 +144,13 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 
 > [!alert]
 >
-> La suppression d'un service Web Cloud Dabatases entraîne l'effacement définitif de toutes ses données.
+> La suppression d'un service Web Cloud Databases entraîne l'effacement définitif de toutes ses données.
 
 > [!primary]
 >
 > Utilisez l'outil `Filtrer`{.action} dans `Mes offres & services`{.action} pour retrouver les services Web Cloud Databases qui sont nommés « Hébergement base SQL privée ».
 
-1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer mon hébergement SQL privé`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -181,7 +181,7 @@ Un délai de 30 jours peut être observé avant la suppression effective du serv
 > La suppression immédiate d'un serveur dédié entraîne l'effacement définitif et irrémédiable de toutes ses données.
 
 1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} puis sur `Serveurs dédiés`{.action} et sélectionnez le serveur concerné.
-1. Dans le cadre `Etat des services`, cliquez le bouton  sur `...`{.action} à droite de `Statut` puis sur `Résilier mon service`{.action}. Sélectionnez alors `Résilier le service immédiatement`{.action} et validez en cliquant sur `Valider`{.action}.
+1. Dans le cadre `État des services`, cliquez le bouton  sur `...`{.action} à droite de `Statut` puis sur `Résilier mon service`{.action}. Sélectionnez alors `Résilier le service immédiatement`{.action} et validez en cliquant sur `Valider`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression.
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
 
@@ -196,7 +196,7 @@ Un délai de 30 jours peut être observé avant la suppression effective du serv
 
 ///
 
-#### Public Cloud
+### Public Cloud
 
 /// details | Projet Public Cloud
 
