@@ -24,9 +24,9 @@ Um Redundant Array of Independent Disks (RAID) é uma tecnologia que atenua a pe
 
 O nível RAID predefinido para as instalações de servidores OVHcloud é o RAID 1, que duplica o espaço ocupado pelos seus dados, reduzindo assim o espaço de disco utilizável para metade.
 
-**Este guia explica como gerir e reconstruir um RAID software após a substituição de disco no seu servidor em modo EFI**
+**Este guia explica como gerir e reconstruir um RAID software após a substituição de disco no seu servidor em modo UEFI.**
 
-Antes de começar, note que este guia foca-se nos servidores dedicados que utilizam o modo UEFI como modo de arranque. Este é o caso das placas-mãe modernas. Se o seu servidor utiliza o modo de arranque legacy (BIOS), consulte este guia: [Gestão e reconstrução de um RAID software em servidores no modo de arranque legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Antes de começar, note que este guia foca-se nos servidores dedicados que utilizam o modo UEFI como modo de arranque. Este é o caso das placas-mãe modernas. Se o seu servidor utiliza o modo de arranque legacy (BIOS), consulte este guia: [Gestão e reconstrução de um RAID software em servidores no modo de arranque legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 Para verificar se um servidor está a funcionar no modo BIOS legacy ou no modo UEFI, execute o seguinte comando:
 
@@ -58,7 +58,7 @@ Quando compra um novo servidor, pode sentir a necessidade de realizar uma série
 - [Simulação de uma falha de disco](#diskfailure)
     - [Remoção do disco defeituoso](#diskremove)
 - [Reconstrução do RAID](#raidrebuild)
-    - [Reconstrução do RAID após a substituição do disco principal (modo de recuperação)](#rescuemode)
+    - [Reconstrução do RAID após a substituição do disco principal (modo rescue)](#rescuemode)
     - [Recriação da partição do sistema EFI](#recreateesp)
     - [Reconstrução do RAID quando as partições EFI não estão sincronizadas após atualizações maiores do sistema (ex. GRUB)](#efiraidgrub)
     - [Adição da etiqueta à partição SWAP (se aplicável)](#swap-partition)
@@ -262,7 +262,7 @@ No entanto, recomendamos executar um script automático ou manual para sincroniz
 > Observe que exploramos abaixo os casos mais comuns, mas existem várias outras razões pelas quais um servidor pode não iniciar no modo normal após uma substituição de disco.
 >
 
-**Estudo de caso 1** - Não houve nenhuma alteração ou atualização significativa no sistema (por exemplo, GRUB)
+**Caso de estudo 1** - Não houve nenhuma alteração ou atualização significativa no sistema (por exemplo, GRUB)
 
 - O servidor consegue arrancar no modo normal e pode proceder à reconstrução do RAID.
 - O servidor não consegue arrancar no modo normal, o servidor é reiniciado no modo de recuperação, onde pode reconstruir o RAID e recriar a partição EFI no novo disco.
@@ -398,7 +398,7 @@ A partir do resultado acima, nvme0n1 contém duas partições em RAID que são *
 
 #### Remoção do disco defeituoso
 
-Primeiro, marcamos as partições **nvme0n1p2** e **nvme0n1p3** como defeituosas.
+Primeiro, marcamos as partições **nvme0n1p2** e **nvme0n1p3** como defeituosas (*Failed*).
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/nvme0n1p2
@@ -759,7 +759,7 @@ Os resultados acima mostram que a nova partição EFI foi criada corretamente e 
 
 #### Reconstrução do RAID quando as partições EFI não estão sincronizadas após actualizações importantes do sistema (GRUB)
 
-/// details | **Desenvolva esta secção**
+/// details | **Expanda esta secção**
 
 > [!warning]
 > Siga as etapas desta secção apenas se se aplicarem ao seu caso.

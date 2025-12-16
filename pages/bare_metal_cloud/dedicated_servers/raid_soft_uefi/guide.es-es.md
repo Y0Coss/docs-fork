@@ -24,9 +24,9 @@ Un Redundant Array of Independent Disks (RAID) es una tecnología que atenúa la
 
 El nivel RAID predeterminado para las instalaciones de servidores de OVHcloud es el RAID 1, que duplica el espacio ocupado por sus datos, reduciendo así el espacio de disco utilizable a la mitad.
 
-**Este tutorial explica cómo gestionar y reconstruir un RAID software tras un reemplazo de disco en su servidor en modo EFI**
+**Este tutorial explica cómo gestionar y reconstruir un RAID software tras un reemplazo de disco en su servidor en modo UEFI.**
 
-Antes de comenzar, tenga en cuenta que este tutorial se centra en los servidores dedicados que utilizan el modo UEFI como modo de arranque. Este es el caso de las placas base modernas. Si su servidor utiliza el modo de arranque legacy (BIOS), consulte este tutorial: [Gestión y reconstrucción de un RAID software en servidores en modo de arranque legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Antes de comenzar, tenga en cuenta que este tutorial se centra en los servidores dedicados que utilizan el modo UEFI como modo de arranque. Este es el caso de las placas base modernas. Si su servidor utiliza el modo de arranque legacy (BIOS), consulte este tutorial: [Gestión y reconstrucción de un RAID software en servidores en modo de arranque legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 Para verificar si un servidor funciona en modo BIOS legacy o en modo UEFI, ejecute el siguiente comando:
 
@@ -330,7 +330,7 @@ set -euo pipefail
 MOUNTPOINT="/var/lib/grub/esp"
 MAIN_PARTITION=$(findmnt -n -o SOURCE /boot/efi)
 
-echo "${MAIN_PARTITION} es la partición principal"
+echo "${MAIN_PARTITION} is the main partition"
 
 mkdir -p "${MOUNTPOINT}"
 
@@ -338,7 +338,7 @@ while read -r partition; do
     if [[ "${partition}" == "${MAIN_PARTITION}" ]]; then
         continue
     fi
-    echo "Trabajo en ${partition}"
+    echo "Working on ${partition}"
     mount "${partition}" "${MOUNTPOINT}"
     rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
     umount "${MOUNTPOINT}"
@@ -742,7 +742,7 @@ mount --make-slave /mnt/run
 Luego, utilizamos el comando `chroot` para acceder al punto de montaje y asegurarnos de que la nueva partición del sistema EFI se ha creado correctamente y que el sistema reconoce las dos ESP:
 
 ```sh
-root@rescue12-customer-eu:/# chroot /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
 Para mostrar las particiones ESP, ejecutamos el comando `blkid -t LABEL=EFI_SYSPART`:
@@ -759,7 +759,7 @@ Los resultados anteriores muestran que la nueva partición EFI se ha creado corr
 
 #### Reconstrucción del RAID cuando las particiones EFI no están sincronizadas después de actualizaciones importantes del sistema (GRUB)
 
-/// details | **Despliegue esta sección**
+/// details | **Expanda esta sección**
 
 > [!warning]
 > Siga los pasos de esta sección solo si se aplica a su caso.

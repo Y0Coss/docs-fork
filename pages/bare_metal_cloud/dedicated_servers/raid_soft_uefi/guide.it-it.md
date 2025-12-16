@@ -24,9 +24,9 @@ Un Redundant Array of Independent Disks (RAID) è una tecnologia che riduce la p
 
 Il livello RAID predefinito per le installazioni dei server OVHcloud è il RAID 1, che raddoppia lo spazio occupato dai vostri dati, riducendo quindi la capacità di archiviazione utilizzabile a metà.
 
-**Questa guida spiega come gestire e ricostruire un RAID software dopo il ripristino di un disco sul vostro server in modalità EFI**
+**Questa guida spiega come gestire e ricostruire un RAID software dopo il ripristino di un disco sul vostro server in modalità UEFI.**
 
-Prima di iniziare, notate che questa guida si concentra sui Server dedicati che utilizzano la modalità UEFI come modalità di avvio. Questo è il caso delle schede madri moderne. Se il vostro server utilizza la modalità di avvio legacy (BIOS), consultate questa guida: [Gestione e ricostruzione di un RAID software su server in modalità di avvio legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Prima di iniziare, notate che questa guida si concentra sui Server dedicati che utilizzano la modalità UEFI come modalità di avvio. Questo è il caso delle schede madri moderne. Se il vostro server utilizza la modalità di avvio legacy (BIOS), consultate questa guida: [Gestione e ricostruzione di un RAID software su server in modalità di avvio legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 Per verificare se un server funziona in modalità BIOS legacy o in modalità UEFI, eseguite il comando seguente:
 
@@ -58,7 +58,7 @@ Quando acquisti un nuovo server, potresti sentire il bisogno di effettuare una s
 - [Simulazione di un guasto del disco](#diskfailure)
     - [Rimozione del disco guasto](#diskremove)
 - [Ricostruzione del RAID](#raidrebuild)
-    - [Ricostruzione del RAID dopo la sostituzione del disco principale (modalità di salvataggio)](#rescuemode)
+    - [Ricostruzione del RAID dopo la sostituzione del disco principale (modalità Rescue)](#rescuemode)
     - [Ricreazione della partizione del sistema EFI](#recreateesp)
     - [Ricostruzione del RAID quando le partizioni EFI non sono sincronizzate dopo aggiornamenti importanti del sistema (es. GRUB)](#efiraidgrub)
     - [Aggiunta dell'etichetta alla partizione SWAP (se applicabile)](#swap-partition)
@@ -320,10 +320,6 @@ sudo touch nome-script.sh
 
 ```sh
 sudo nano nome-script.sh
-```
-
-```sh
-sudo nano nom-du-script.sh
 ```
 
 ```sh

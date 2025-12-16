@@ -24,7 +24,7 @@ Un Redundant Array of Independent Disks (RAID) est une technologie qui atténue 
 
 Le niveau RAID par défaut pour les installations de serveurs OVHcloud est le RAID 1, qui double l'espace occupé par vos données, réduisant ainsi l'espace disque utilisable de moitié.
 
-**Ce guide explique comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur votre serveur en mode EFI**
+**Ce guide explique comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur votre serveur en mode UEFI.**
 
 Avant de commencer, veuillez noter que ce guide se concentre sur les serveurs dédiés qui utilisent le mode UEFI comme mode de démarrage. C'est le cas des cartes mères modernes. Si votre serveur utilise le mode de démarrage legacy (BIOS), veuillez consulter ce guide : [Gestion et reconstruction d'un RAID logiciel sur des serveurs en mode de démarrage legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
@@ -58,7 +58,7 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
 - [Simulation d'une panne de disque](#diskfailure)
     - [Suppression du disque défectueux](#diskremove)
 - [Reconstruction du RAID](#raidrebuild)
-    - [Reconstruction du RAID après le remplacement du disque principal (mode de secours)](#rescuemode)
+    - [Reconstruction du RAID après le remplacement du disque principal (mode rescue)](#rescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
     - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](#efiraidgrub)
     - [Ajout de l'étiquette à la partition SWAP (si applicable)](#swap-partition)
@@ -985,7 +985,7 @@ Ensuite, nous formatons la partition. Dans notre exemple `nvme0n1p1` :
 [user@server_ip ~]# sudo mkfs.vfat /dev/nvme0n1p1
 ```
 
-Ensuite, nous attribuons l'étiquette `EFI_SYSPART` à la partition. (ce nommage est spécifique à OVHcloud):
+Ensuite, nous attribuons l'étiquette `EFI_SYSPART` à la partition. (ce nommage est spécifique à OVHcloud) :
 
 ```sh
 [user@server_ip ~]# sudo fatlabel /dev/nvme0n1p1 EFI_SYSPART
