@@ -208,7 +208,7 @@ Se il certificato SSL è stato generato correttamente dal provider SSL e i prere
 > Se riscontri l’errore `error check SAN from certificate`, ciò è dovuto ad almeno una delle due situazioni seguenti:
 >
 > - almeno un dominio/sottodominio dichiarato nel tuo certificato SSL non punta verso l'indirizzo IP del tuo hosting Web;
-> - almeno un dominio/sottodominio dichiarato nel tuo certificato SSL non è dichiarato su uno dei siti web del tuo hosting web.
+> - almeno un dominio/sottodominio dichiarato nel tuo certificato SSL non è associato a nessuno dei siti web del tuo hosting web.
 >
 > Consulta le nostre guide "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" e "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" per risolvere la situazione.
 
