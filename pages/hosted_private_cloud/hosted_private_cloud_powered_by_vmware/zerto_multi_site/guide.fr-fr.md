@@ -1,12 +1,12 @@
 ---
-title: "Mettre en place une réplication Zerto multi-sites sur Managed vSphere"
+title: "Mettre en place une réplication Zerto multi-site sur OVHcloud Managed vSphere"
 excerpt: "Découvrez comment connecter plusieurs déploiements Zerto sur Managed vSphere afin d’assurer une reprise d’activité sécurisée et efficace"
 updated: 2025-12-16
 ---
 
 ## Objectif
 
-L’objectif de ce guide est de fournir des instructions détaillées pour connecter plusieurs déploiements Zerto on-premises à une instance Managed vSphere. En suivant ce guide, les utilisateurs pourront mettre en place une réplication multi-sites sécurisée, garantir leur capacité de reprise après sinistre et gérer la protection des données entre différents sites.
+L’objectif de ce guide est de fournir des instructions détaillées pour connecter plusieurs déploiements Zerto on-premises à une instance Managed vSphere. En suivant ce guide, les utilisateurs pourront mettre en place une réplication multi-site sécurisée, garantir leur capacité de reprise après sinistre et gérer la protection des données entre différents sites.
 
 **Découvrez comment configurer Zerto Virtual Replication entre vos plateformes Hosted Private Cloud.**
 
@@ -46,7 +46,7 @@ Validez les informations saisies. Managed vSphere démarre automatiquement la co
 
 ### 4 - Laisser les processus automatisés s’exécuter
 
-Managed vSphere exécute automatiquement les tâches nécessaires pour configurer la connectivité multi-sites.
+Managed vSphere exécute automatiquement les tâches nécessaires pour configurer la connectivité multi-site.
 
 ![zerto automated processes](images/zerto_automated_processes.png){.thumbnail}
 
@@ -68,11 +68,11 @@ Connectez votre VPN on-premises au VPN Zerto du Managed vSphere et vérifiez que
 
     ![zerto pair site](images/zerto_pair_site.png){.thumbnail}
 
-Une fois l’appairage terminé, la configuration de la réplication multi-sites est complète.
+Une fois l’appairage terminé, la configuration de la réplication multi-site est complète.
 
 ## Schéma réseau
 
-Le schéma ci-dessous illustre la connectivité mise en place pour la réplication Zerto multi-sites entre le site client et le Managed vSphere :
+Le schéma ci-dessous illustre la connectivité mise en place pour la réplication Zerto multi-site entre le site client et le Managed vSphere :
 
 ![network diagram](images/network_diagram.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Explication du schéma :
 - **Réseau ZVM OVHcloud /23** : Réseau privé au sein du Managed vSphere hébergé.
 - **IP privée ZVM (Managed vSphere)** : Adresses IP privées des machines virtuelles Zerto (ZVM et vRA) hébergées sur Managed vSphere.
 
-Cette configuration garantit une connectivité VPN sécurisée entre Zerto on-premises et OVHcloud Managed vSphere, permettant la réplication multi-sites et la reprise après sinistre.
+Cette configuration garantit une connectivité VPN sécurisée entre Zerto on-premises et OVHcloud Managed vSphere, permettant la réplication multi-site et la reprise après sinistre.
 
 ## Conseils de dépannage
 
