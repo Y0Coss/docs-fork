@@ -526,7 +526,7 @@
             + [NSX-v Edge NAT configuration](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_le_nat_edge_gateway)
             + [NSX-v Edge Gateway VPN Configuration](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge)
             + [NSX-v Distributed Firewall Configuration](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_le_firewall_distribue)
-            + [How to set up NSX-v groups](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/fnsx_configurer_les_groupes_d_objets)
+            + [How to set up NSX-v groups](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_les_groupes_d_objets)
             + [How to edit the HA function of an NSX-v Edge](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_edge_enable_disable_after_update)
             + [Avoid IP spoofing with the SpoofGuard service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_spoofguard)
             + [Understanding the “Controller VM deleted” error message](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_controler_deleted_error)
