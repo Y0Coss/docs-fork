@@ -1,7 +1,7 @@
 ---
 title: 'RGPD - Comment supprimer immédiatement vos services OVHcloud'
 excerpt: "Découvrez comment supprimer vos services OVHcloud immédiatement et de manière irréversible, dans le cadre d'une demande RGPD d'effacement des données"
-updated: 2025-12-15
+updated: 2025-12-16
 hidden: true
 ---
 
@@ -39,6 +39,8 @@ Pour lister vos services, connnectez-vous à votre [espace client OVHcloud](/lin
 > Les étapes décrites ci-dessous décrivent comment supprimer des services OVHcloud de façon **immédiate** et **irréversible**.
 >
 > Il vous incombe de vérifier au préalable que vous disposez d'une sauvegarde de vos données et/ou que vous disposez d'un service de remplacement.
+>
+> L'action de supprimer un service OVHcloud n'octroie aucun remboursement.
 
 ### Web Cloud
 
@@ -61,7 +63,7 @@ Pour lister vos services, connnectez-vous à votre [espace client OVHcloud](/lin
 > [!alert]
 >
 > La suppression d'un hébergement entraîne l'effacement définitif de toutes ses données.
-> L'action de supprimer un hébergement n'octroie aucun remboursement.
+>
 
 1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement l'hébergement`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
@@ -69,13 +71,35 @@ Pour lister vos services, connnectez-vous à votre [espace client OVHcloud](/lin
 
 ///
 
+
 /// details | Service e-mail MX Plan
 
-Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la suppression du celui-ci (voir ci-dessus).
+> [!alert]
+>
+> La suppression de votre service E-mail MX Plan effacera définitivement tous les e-mails.
+
+Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la suppression de celui-ci (voir ci-dessus).
 
 1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement le MX Plan`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
+
+///
+
+/// details | Zimbra
+
+> [!alert]
+>
+> La suppression de votre service Zimbra Mail effacera définitivement tous les e-mails.
+>
+
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action} puis sur `Zimbra Mail`{.action}.
+1. Cliquez sur l'onglet `Compte email`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque compte e-mail à supprimer puis sur `Supprimer`{.action}.
+1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaine`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque domaine puis sur `Supprimer`{.action}.
+1. Une fois les domaines associés supprimés, cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
+    1. Utilisez l'outil `Filtrer`{.action} sur la droite pour lister uniquement les services `Compte Email Zimbra`. Cliquez sur `Ajouter`{.action} pour valider le filtre.
+    1. Sélectionnez tous les services `Compte Email Zimbra` puis cliquez sur le bouton `Actions`{.action} et sur `Désactiver le paiement automatique`{.action}.
+1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander application immédiate de la suppression des services..
 
 ///
 
@@ -109,7 +133,7 @@ Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la
 
 1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
 1. Cliquez sur le bouton `...`{.action} à droite de la zone DNS concernée, puis sur `Résilier mon service`{.action}.
-1. Une fois la résiliation demandée, créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander son application immédiate.
+1. Une fois la résiliation demandée, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander son application immédiate.
 
 ///
 
@@ -155,6 +179,15 @@ Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la
 
 ///
 
+/// details | vRack
+
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} puis sur `Network`{.action} et sélectionnez vRack concerné sous `Réseau Privé vRack`{.action}.
+1. Vous devez retirer tous les services d'un vRack afin de pouvoir le supprimer. Sélectionnez chaque service présent dans le vRack et cliquez sur `Retirer`{.action}.
+1. Une fois tous les services retirés du vRack, cliquez sur le bouton `Retirer`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
+1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression 
+
+///
+
 #### Public Cloud
 
 /// details | Projet Public Cloud
@@ -185,7 +218,7 @@ Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la
 
 /// details | Accès Internet
 
-Suivez les étapes décrites dans le guide » [Comment résilier un accès xDSL/Fibre](//pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl) » puis créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander l'application immédiate de la résiliation.
+Suivez les étapes décrites dans le guide » [Comment résilier un accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl) ». Vous pouvez ensuite créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander l'application immédiate de la résiliation.
 
 ///
 
