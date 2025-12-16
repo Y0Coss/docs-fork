@@ -537,6 +537,7 @@
             + [Restoring backups via the OVHcloud API](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_managed_backup_restoration)
             + [Activating and using Veeam Managed Backup](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)
             + [Setting up Zerto Virtual Replication between two OVHcloud datacenters](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
+            + [Setting up Zerto multi-site replication on Managed vSphere](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_multi_site)
             + [Using Zerto between OVHcloud and a third party platform](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud)
             + [Delete VM replica from Zerto recovery site](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_vm_replica_deletion)
             + [Reregister VMs in a new PCC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_register_vmx)

@@ -1,7 +1,7 @@
 ---
-title: "Setting up Multi-Site Replication on Managed vSphere"
-excerpt: "Step-by-step guide to connect multiple Zerto deployments on Managed vSphere for secure and efficient disaster recovery"
-updated: 2025-12-02
+title: "Setting up Zerto multi-site replication on Managed vSphere"
+excerpt: "Find out how to connect multiple Zerto deployments on Managed vSphere to ensure secure and efficient disaster recovery"
+updated: 2025-12-16
 ---
 
 ## Objective
@@ -34,7 +34,7 @@ The purpose of this guide is to provide step-by-step instructions to connect mul
 
 ### 2 - Add your On-Premises Zerto Site
 
-Click the `Add a website`{.action} button, enter your VPN information (IP address and encryption key), and enter the details of your on-premises Zerto deployment. Refer to our example screenshot for guidance:
+Click the `Add a site`{.action} button, enter your VPN information (IP address and encryption key), and enter the details of your on-premises Zerto deployment. Refer to our example screenshot for guidance:
 
 ![zerto manager add onprem zerto](images/zerto_manager_add_onprem_zerto.png){.thumbnail}
 
@@ -60,13 +60,13 @@ Connect your on-premises VPN to the Managed vSphere’s Zerto VPN and verify tha
 
 ### 6 - Pair the Zerto Sites
 
-- On Managed vSphere Zerto, go to `Sites`{.action} and get the token:
+- On Managed vSphere Zerto, go to `Sites`{.action} tab and get the token:
 
-![zerto get token](images/zerto_get_token.png){.thumbnail}
+    ![zerto get token](images/zerto_get_token.png){.thumbnail}
 
 - On your on-premises Zerto, choose `Pair to a site`{.action} and enter the Managed vSphere Zerto IP and token:
 
-![zerto pair site](images/zerto_pair_site.png){.thumbnail}
+    ![zerto pair site](images/zerto_pair_site.png){.thumbnail}
 
 Once paired, your multi-site replication setup is complete.
 
@@ -78,20 +78,20 @@ The following diagram illustrates the connectivity setup for multi-site Zerto re
 
 Diagram Explanation:
 
-- OPNSense Public IP – The public IP of the customer firewall/router.
-- OPNSense Private IP – The internal IP address of the customer firewall.
-- ZVM Private IP – The internal IP of the customer Zerto Virtual Manager.
-- Internal ZVM Network – The LAN connecting customer ZVM and vRAs.
-- OVHcloud Public IP – The public-facing IP for the Managed vSphere.
-- OVHcloud ZVM Network /23 – The private network within the hosted Managed vSphere.
-- ZVM Private IP (Managed vSphere) – The private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
+- **OPNSense Public IP**: The public IP of the customer firewall/router.
+- **OPNSense Private IP**: The internal IP address of the customer firewall.
+- **ZVM Private IP**: The internal IP of the customer Zerto Virtual Manager.
+- **Internal ZVM Network**: The LAN connecting customer ZVM and vRAs.
+- **OVHcloud Public IP**: The public-facing IP for the Managed vSphere.
+- **OVHcloud ZVM Network /23**: The private network within the hosted Managed vSphere.
+- **ZVM Private IP (Managed vSphere)**: The private IP addresses of Zerto VMs (ZVM and vRAs) hosted in Managed vSphere.
 
 This setup ensures secure VPN connectivity between on-premises Zerto and OVHcloud Managed vSphere, allowing multi-site replication and disaster recovery.
 
 ## Troubleshooting Tips
 
 - **VPN issues**: Check credentials, firewall and network settings.
-- **Token/site pairing**: Verify token, ZVM IP and licensing.
+- **Token/site pairing**: Verify the token, ZVM IP and Zerto license.
 
 ## Security Considerations
 

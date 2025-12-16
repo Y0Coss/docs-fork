@@ -1,7 +1,7 @@
 ---
-title: "Mise en place de la réplication multi-sites sur Managed vSphere"
-excerpt: "Guide pas à pas pour connecter plusieurs déploiements Zerto sur Managed vSphere afin d’assurer une reprise d’activité sécurisée et efficace"
-updated: 2025-15-02
+title: "Mettre en place une réplication Zerto multi-sites sur Managed vSphere"
+excerpt: "Découvrez comment connecter plusieurs déploiements Zerto sur Managed vSphere afin d’assurer une reprise d’activité sécurisée et efficace"
+updated: 2025-12-16
 ---
 
 ## Objectif
@@ -18,23 +18,23 @@ L’objectif de ce guide est de fournir des instructions détaillées pour conne
 
 > [!primary]
 >
-> Des droits d’administration appropriés sur Zerto Manager, à la fois sur Managed vSphere et sur les sites on-premises, sont requis.
+> Des droits d’administration appropriés sur Zerto Manager sont requis, à la fois sur Managed vSphere et sur les sites on-premises.
 >
 
 ## En pratique
 
 ### 1 - Accéder à Zerto Manager sur Managed vSphere
 
-- Connectez-vous a votre [espace client OVHcloud](/links/manager), puis accédez à la section `Hosted Private Cloud`{.action}.
+- Connectez-vous à votre [espace client OVHcloud](/links/manager), puis accédez à la section `Hosted Private Cloud`{.action}.
 - Cliquez sur le menu `Managed VMware vSphere`{.action} et sélectionnez l’infrastructure concernée.
-- Allez dans l’onglet `Datacenters`{.action} et sélectionnez le datacenter.
+- Accédez à l’onglet `Datacentres`{.action} et sélectionnez le datacentre.
 - Accédez à l’onglet `Zerto`{.action}.
 
 ![zerto manager tab](images/zerto_manager_tab.png){.thumbnail}
 
 ### 2 - Ajouter votre site Zerto on-premises
 
-Cliquez sur le bouton `Ajouter un site web`{.action}, renseignez vos informations VPN (adresse IP et clé de chiffrement), puis saisissez les informations de votre déploiement Zerto on-premises. Reportez-vous à la capture d’écran ci-dessous pour vous guider :
+Cliquez sur le bouton `Ajouter un site`{.action}, renseignez vos informations VPN (adresse IP et clé de chiffrement), puis saisissez les informations relatives à votre déploiement Zerto on-premises. Référez-vous à la capture d’écran ci-dessous pour vous guider :
 
 ![zerto manager add onprem zerto](images/zerto_manager_add_onprem_zerto.png){.thumbnail}
 
@@ -60,13 +60,13 @@ Connectez votre VPN on-premises au VPN Zerto du Managed vSphere et vérifiez que
 
 ### 6 - Appairer les sites Zerto
 
-- Sur Zerto Managed vSphere, accédez à `Sites`{.action} et récupérez le jeton (token) :
+- Sur Zerto Managed vSphere, accédez à l'onglet `Sites`{.action} et récupérez le jeton (token) :
 
-![zerto get token](images/zerto_get_token.png){.thumbnail}
+    ![zerto get token](images/zerto_get_token.png){.thumbnail}
 
 - Sur votre Zerto on-premises, sélectionnez `Associer à un site`{.action}, puis saisissez l’adresse IP Zerto du Managed vSphere ainsi que le jeton :
 
-![zerto pair site](images/zerto_pair_site.png){.thumbnail}
+    ![zerto pair site](images/zerto_pair_site.png){.thumbnail}
 
 Une fois l’appairage terminé, la configuration de la réplication multi-sites est complète.
 
@@ -78,13 +78,13 @@ Le schéma ci-dessous illustre la connectivité mise en place pour la réplicati
 
 Explication du schéma :
 
-- **IP publique OPNSense** – Adresse IP publique du pare-feu / routeur client.
-- **IP privée OPNSense** – Adresse IP interne du pare-feu client.
-- **IP privée ZVM** – Adresse IP interne du Zerto Virtual Manager côté client.
-- **Réseau interne ZVM** – Réseau LAN reliant le ZVM client et les vRA.
-- **IP publique OVHcloud** – Adresse IP publique exposée du Managed vSphere.
-- **Réseau ZVM OVHcloud /23** – Réseau privé au sein du Managed vSphere hébergé.
-- **IP privée ZVM (Managed vSphere)** – Adresses IP privées des machines virtuelles Zerto (ZVM et vRA) hébergées sur Managed vSphere.
+- **IP publique OPNSense** : Adresse IP publique du pare-feu / routeur client.
+- **IP privée OPNSense** : Adresse IP interne du pare-feu client.
+- **IP privée ZVM** : Adresse IP interne du Zerto Virtual Manager côté client.
+- **Réseau interne ZVM** : Réseau LAN reliant le ZVM client et les vRA.
+- **IP publique OVHcloud** : Adresse IP publique exposée du Managed vSphere.
+- **Réseau ZVM OVHcloud /23** : Réseau privé au sein du Managed vSphere hébergé.
+- **IP privée ZVM (Managed vSphere)** : Adresses IP privées des machines virtuelles Zerto (ZVM et vRA) hébergées sur Managed vSphere.
 
 Cette configuration garantit une connectivité VPN sécurisée entre Zerto on-premises et OVHcloud Managed vSphere, permettant la réplication multi-sites et la reprise après sinistre.
 
