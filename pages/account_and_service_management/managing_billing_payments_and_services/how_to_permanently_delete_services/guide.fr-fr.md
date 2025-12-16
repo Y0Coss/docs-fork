@@ -21,7 +21,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Dans le cadre du règlement général sur la protection des données (RGPD), vous pouvez exercer le droit de suppression de votre compte OVHcloud ainsi que de tous les services qu'il contient.
+Dans le cadre du Règlement Général sur la Protection des Données (RGPD), vous pouvez exercer le droit de suppression de votre compte OVHcloud ainsi que de tous les services qu'il contient.
 
 **Ce guide explique comment supprimer vos services OVHcloud immédiatement et de manière irréversible, dans le cadre d'une demande RGPD d'effacement des données.**
 
@@ -98,7 +98,7 @@ Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la
 1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaine`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque domaine puis sur `Supprimer`{.action}.
 1. Une fois les domaines associés supprimés, cliquez sur votre nom en haut à doite puis sur `Mes offres & services`{.action}.
     1. Utilisez l'outil `Filtrer`{.action} sur la droite pour lister uniquement les services `Compte Email Zimbra`. Cliquez sur `Ajouter`{.action} pour valider le filtre.
-    1. Sélectionnez tous les services `Compte Email Zimbra` puis cliquez sur le bouton `Actions`{.action} et sur `Désactiver le paiement automatique`{.action}.
+    1. Sélectionnez tous les comptes Zimbra puis cliquez successivement sur le bouton `Actions`{.action} et `Désactiver le paiement automatique`{.action}.
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander l'application immédiate de la suppression des services.
 
 ///
@@ -181,9 +181,9 @@ Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la
 
 /// details | vRack
 
-1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} puis sur `Network`{.action} et sélectionnez vRack concerné sous `Réseau Privé vRack`{.action}.
+1. Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} puis sur `Network`{.action} et sélectionnez le vRack concerné sous `Réseau Privé vRack`{.action}.
 1. Vous devez retirer tous les services d'un vRack afin de pouvoir le supprimer. Sélectionnez chaque service présent dans le vRack et cliquez sur `Retirer`{.action}.
-1. Une fois tous les services retirés du vRack, cliquez sur le bouton `Retirer`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
+1. Une fois tous les services retirés du vRack, cliquez sur le bouton `Résilier`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression 
 
 ///
