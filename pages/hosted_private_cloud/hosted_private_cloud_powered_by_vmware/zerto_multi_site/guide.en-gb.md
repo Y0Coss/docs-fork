@@ -13,7 +13,7 @@ The purpose of this guide is to provide step-by-step instructions to connect mul
 ## Requirements 
 
 - **Managed vSphere Setup**: A Managed vSphere environment with Zerto already deployed.
-- **On-Premises Zerto**: Zerto installed and configured on your local infrastructure.
+- **On-Premises Zerto**: Zerto is installed and configured on your local infrastructure.
 - **VPN Information**: All necessary VPN credentials, IP addresses, and keys for both on-premises and Managed vSphere environments.
 
 > [!primary]

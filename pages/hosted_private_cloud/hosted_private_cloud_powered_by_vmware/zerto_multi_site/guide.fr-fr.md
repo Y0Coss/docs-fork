@@ -13,7 +13,7 @@ L’objectif de ce guide est de fournir des instructions détaillées pour conne
 ## Prérequis 
 
 - **Environnement Managed vSphere** : Un environnement Managed vSphere avec Zerto déjà déployé.
-- **Zerto on-premises** : Zerto installé et configuré sur votre infrastructure locale.
+- **Zerto on-premises** : Zerto est installé et configuré sur votre infrastructure locale.
 - **Informations VPN** : L’ensemble des informations VPN nécessaires (identifiants, adresses IP et clés) pour les environnements on-premises et Managed vSphere.
 
 > [!primary]
