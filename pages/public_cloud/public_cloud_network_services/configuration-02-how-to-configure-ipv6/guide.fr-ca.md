@@ -1,7 +1,7 @@
 ---
 title: 'Configuration IPv6 sur une instance Public Cloud'
 excerpt: 'Découvrez comment configurer le protocole IPv6 sur une instance Public Cloud'
-updated: 2025-12-11
+updated: 2025-12-16
 ---
 
 <style>
