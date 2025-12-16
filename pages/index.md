@@ -70,6 +70,7 @@
             + [How to cancel your OVHcloud services](account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)
             + [Hosted Private Cloud](account-and-service-management-managing-billing-payments-and-services-terminating-a-service-hosted-private-cloud)
                 + [How to cancel your Private Cloud offer](account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud)
+            + [GDPR - How to immediately delete your services](account_and_service_management/managing_billing_payments_and_services/how_to_permanently_delete_services)
         + [FAQ](account-and-service-management-managing-billing-payments-and-services-faq)
             + [Billing and payment FAQ](account_and_service_management/managing_billing_payments_and_services/faq-billing)
             + [OVHcloud order tracking FAQ](account_and_service_management/managing_billing_payments_and_services/faq-order-tracking)
