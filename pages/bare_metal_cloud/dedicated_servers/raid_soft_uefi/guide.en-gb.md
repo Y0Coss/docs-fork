@@ -228,7 +228,7 @@ In this case, we have:
 
 - Two RAID arrays: `/dev/md2` and `/dev/md3`.
 - Partitions part of the RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** and **nvme0n1p3** with the mount points `/boot` and `/`.
-- Partitions not part of the RAID: **nvem0n1p1**, **nvme0n1p4**, **nvme1n1p4** with mount points `/boot/efi` and [SWAP].
+- Partitions not part of the RAID: **nvem0n1p1**, **nvme0n1p4** and **nvme1n1p4** with mount points `/boot/efi` and [SWAP].
 - One partition does not have a mount point: **nvme1n1p1**
 
 The `nvme0n1p5` partition is a configuration partition, i.e. a read-only volume connected to the server that provides it with the initial configuration data.
@@ -255,82 +255,91 @@ As of December 2025, only the following OS versions mirror the EFI System Partit
 
 For earlier versions, the EFI partition is not mirrored in RAID; multiple ESPs are created, one per disk. However, only one ESP is mounted at a time, and all ESPs contain the same files. The EFI System Partition is mounted at `/boot/efi`, and the disk on which it’s mounted is selected by Linux at boot.
 
-**With the EFI system partition not mirrored in RAID:**
+Running `lsblk` will show the following:
 
-```sh
-lsblk
-NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
-nvme0n1     259:0    0 476.9G  0 disk
-├─nvme0n1p1 259:6    0   511M  0 part
-├─nvme0n1p2 259:7    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme0n1p3 259:8    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-├─nvme0n1p4 259:9    0   512M  0 part  [SWAP]
-└─nvme0n1p5 259:10   0     2M  0 part
-nvme1n1     259:1    0 476.9G  0 disk
-├─nvme1n1p1 259:2    0   511M  0 part  /boot/efi
-├─nvme1n1p2 259:3    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme1n1p3 259:4    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-└─nvme1n1p4 259:5    0   512M  0 part  [SWAP]
-```
+> [!tabs]
+> **With the EFI system partition not mirrored in RAID**
+>>
+>> ```sh
+>> lsblk
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+>> nvme0n1     259:0    0 476.9G  0 disk
+>> ├─nvme0n1p1 259:6    0   511M  0 part
+>> ├─nvme0n1p2 259:7    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme0n1p3 259:8    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> ├─nvme0n1p4 259:9    0   512M  0 part  [SWAP]
+>> └─nvme0n1p5 259:10   0     2M  0 part
+>> nvme1n1     259:1    0 476.9G  0 disk
+>> ├─nvme1n1p1 259:2    0   511M  0 part  /boot/efi
+>> ├─nvme1n1p2 259:3    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme1n1p3 259:4    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> └─nvme1n1p4 259:5    0   512M  0 part  [SWAP]
+>> ```
+>>
+>> From the above results, we can see that only one EFI system partition is mounted at `/boot/efi`. Both partitions have the LABEL: `EFI_SYSPART` (this naming is specific to OVHcloud).
+>>
+> **With the EFI system partition mirrored in RAID:**
+>>
+>> ```sh
+>> lsblk
+>> nvme0n1     259:0    0 476.9G  0 disk
+>> ├─nvme0n1p1 259:1    0   511M  0 part
+>> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
+>> ├─nvme0n1p2 259:2    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme0n1p3 259:3    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> └─nvme0n1p4 259:4    0   512M  0 part  [SWAP]
+>> nvme1n1     259:5    0 476.9G  0 disk
+>> ├─nvme1n1p1 259:6    0   511M  0 part
+>> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
+>> ├─nvme1n1p2 259:7    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme1n1p3 259:8    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> ├─nvme1n1p4 259:9    0   512M  0 part  [SWAP]
+>> └─nvme1n1p5 259:10   0     2M  0 part
+>> ```
+>>
+>> From the above results, we can see that both EFI system partitions are mounted at `/boot/efi`.
 
-From the above results, we can see that only one EFI system partition is mounted at `/boot/efi`.
+***Does the content of the EFI System Partition change regularly?***
 
-**With the EFI system partition mirrored in RAID:**
+In general, the contents of this partition do not change much, its content should only change on bootloader (e.g. GRUB) updates.
 
-```sh
-lsblk
-nvme0n1     259:0    0 476.9G  0 disk
-├─nvme0n1p1 259:1    0   511M  0 part
-│ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
-├─nvme0n1p2 259:2    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme0n1p3 259:3    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-└─nvme0n1p4 259:4    0   512M  0 part  [SWAP]
-nvme1n1     259:5    0 476.9G  0 disk
-├─nvme1n1p1 259:6    0   511M  0 part
-│ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
-├─nvme1n1p2 259:7    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme1n1p3 259:8    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-├─nvme1n1p4 259:9    0   512M  0 part  [SWAP]
-└─nvme1n1p5 259:10   0     2M  0 part
-```
-
-From the above results, we can see that both EFI system partitions are mounted at `/boot/efi`.
+However, if you EFI partition is not mirrored, we recommend running an automatic or manual script to synchronise all ESPs, so that they all contain the same up-to-date files. This way, if the drive on which this partition is mounted fails, the server will be able to restart on the ESP of one of the other drives.
 
 ***What if the primary disk mounted on `/boot/efi` fails?***
 
-If your EFI System Partition is not mirrored, you can consider the following:
+If your EFI System Partition is not mirrored, you may experience the following:
 
 > [!primary]
 > Please note that while we explore the most common cases below, there are several other reasons a server may not start in normal mode after a disk replacement.
 
-**Case Study 1** – No changes or major system updates (e.g., GRUB) to the OS:
+**Case Study 1** – There have been no changes or major updates (e.g., GRUB) to the OS.
 
-- If the server boots in normal mode, you can proceed with the RAID rebuild.
-- If the server fails to boot in normal mode, reboot into rescue mode to rebuild the RAID and recreate the EFI partition on the new disk.
+- The server is able to boot in normal mode and you can proceed with the RAID rebuild.
+- The server is unable to boot in normal mode, use the rescue mode environment to rebuild the RAID and recreate the EFI partition on the new disk.
 
-**Case Study 2** – Major system updates (e.g., GRUB) to the OS and ESPs have been synchronized:
+**Case Study 2** – There have been major system updates (e.g., GRUB), and the ESPs are synchronized.
 
-- If the server boots in normal mode, all ESPs have up-to-date information, and you can proceed with the RAID rebuild.
-- If the server fails to boot in normal mode, reboot into rescue mode to rebuild the RAID and recreate the EFI partition on the new disk.
+- The server is able to boot in normal mode because all ESPs are up-to-date, and the RAID rebuild can be performed in normal mode.
+- The server is unable to boot in normal mode, it is rebooted into rescue mode, where you can rebuild the RAID and recreate the EFI partition on the new disk.
 
-**Case Study 3** – Major system updates (e.g., GRUB) to the OS and ESPs have not been synchronized:
+**Case Study 3** – There have been major system updates (e.g GRUB) to the OS and the ESPs partitions have not been synchronised
 
-- If the server fails to boot in normal mode, reboot into rescue mode to rebuild the RAID, recreate the EFI System partition on the new disk, and reinstall the bootloader (e.g., GRUB).
-- If the server boots in normal mode (which can happen when the OS is updated to a newer version, but GRUB remains unchanged), you can proceed with the RAID rebuild.
+- The server is unable to boot in normal mode and is rebooted into rescue mode, where you can rebuild the RAID, recreate the EFI System Partition on the new disk, and reinstall the bootloader (e.g., GRUB).
+- The server can boot in normal mode (for example, when the OS is upgraded but the GRUB version remains unchanged), allowing you to proceed with the RAID rebuild.
 
-Indeed, in some cases, booting from an out-of-date ESP may not work. For instance, a major GRUB update could cause the old GRUB binary present in the ESP to be incompatible with newer GRUB modules installed in the `/boot` partition.
+In some cases, booting from an out-of-date ESP may fail; for example, a major GRUB update can render the GRUB binary in the ESP incompatible with newer GRUB modules in the `/boot` partition.
 
 ***How can I synchronise my EFI System Partitions, and how often should I synchronise them?***
 
-If your EFI System Partition is not mirrored, you can consider the following:
+If your EFI System Partition is not mirrored, consider the following:
 
 > [!primary]
 > Please note that depending on your operating system, the process might differ. For example, Ubuntu can keep multiple EFI System Partitions synchronized with every GRUB update, but it is the only OS that does so. We recommend consulting the official documentation of your OS to understand how to manage ESPs.
