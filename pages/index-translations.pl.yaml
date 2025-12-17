@@ -56,32 +56,52 @@ bare-metal-cloud-virtual-private-servers-troubleshooting: Diagnostyka
 bare-metal-cloud-virtual-private-servers-additional-resources: Dodatkowe zasoby
 bare-metal-cloud-virtual-private-servers-migration: Migracja
 bare-metal-cloud-virtual-private-servers-tutorials: Samouczki
-hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
-hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Pierwsze kroki
-hosted-private-cloud-nutanix-on-ovhcloud-general-information: Informacje ogólne
-hosted-private-cloud-nutanix-on-ovhcloud-networking-and-security: Sieć i bezpieczeństwo
-hosted-private-cloud-nutanix-on-ovhcloud-backup: Backups
-hosted-private-cloud-nutanix-on-ovhcloud-upgrade: Upgrade
-hosted-private-cloud-nutanix-on-ovhcloud-advanced-usage: Zaawansowane użycie
-hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting: Diagnostyka
-hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recovery Plan
-hosted-private-cloud-nutanix-on-ovhcloud-raci: Podział odpowiedzialności (RACI)
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware: VMware on OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Pierwsze kroki
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vcd: Public VCF as-a-Service
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Dostęp i bezpieczeństwo
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Zarządzanie maszynami wirtualnymi
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Konserwacja i monitorowanie
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Zarządzanie zasobami
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Funkcje i opcje OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: VMware vSphere
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: VMware NSX
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v: VMware NSX-v
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-backup-drp: Kopie zapasowe i Rozwiązania Disaster recovery
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: VMware Tanzu
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-secnumcloud: SecNumCloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migracja
+hosted-private-cloud-public-VCF: Public VCF as-a-Service
+hosted-private-cloud-public-VCF-key-concepts: Kluczowe pojęcia
+hosted-private-cloud-public-VCF-getting-started: Pierwsze kroki
+hosted-private-cloud-public-VCF-configuration: Konfiguracja
+hosted-private-cloud-public-VCF-migration: Migracja
+hosted-private-cloud-public-VCF-tutorials: Tutorials
+hosted-private-cloud-public-VCF-security: Bezpieczeństwo
+hosted-private-cloud-public-VCF-troubleshooting: Diagnostyka
+hosted-private-cloud-public-VCF-additional-resources: Dodatkowe zasoby
+hosted-private-cloud-managed-vmware: Managed VMware
+hosted-private-cloud-managed-vmware-key-concepts: Kluczowe pojęcia
+hosted-private-cloud-managed-vmware-getting-started: Pierwsze kroki
+hosted-private-cloud-managed-vmware-configuration: Konfiguracja
+hosted-private-cloud-managed-vmware-configuration-vm: Maszyny wirtualne
+hosted-private-cloud-managed-vmware-configuration-storage: Pamięć masowa i zasoby
+hosted-private-cloud-managed-vmware-configuration-network: Sieć i łączność
+hosted-private-cloud-managed-vmware-configuration-vsphere: Funkcje vSphere
+hosted-private-cloud-managed-vmware-configuration-backup: Kopie zapasowe i replikacja
+hosted-private-cloud-managed-vmware-migration: Migracja
+hosted-private-cloud-managed-vmware-tutorials: Tutorials
+hosted-private-cloud-managed-vmware-tutorials-vm: Maszyny wirtualne
+hosted-private-cloud-managed-vmware-tutorials-storage: Pamięć masowa i replikacja
+hosted-private-cloud-managed-vmware-tutorials-network: Sieć i NSX
+hosted-private-cloud-managed-vmware-tutorials-vsphere: Funkcje vSphere
+hosted-private-cloud-managed-vmware-tutorials-ha: Wysoka dostępność i odporność
+hosted-private-cloud-managed-vmware-security: Bezpieczeństwo
+hosted-private-cloud-managed-vmware-security-iam: Zarządzanie tożsamością i dostępem
+hosted-private-cloud-managed-vmware-security-encryption: Szyfrowanie i zarządzanie kluczami
+hosted-private-cloud-managed-vmware-security-nsx: Bezpieczeństwo sieci (NSX)
+hosted-private-cloud-managed-vmware-security-hardening: Wzmocnienie systemu i podatności
+hosted-private-cloud-managed-vmware-security-secnumcloud: Zgodność i SecNumCloud
+hosted-private-cloud-managed-vmware-troubleshooting: Diagnostyka
+hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Konserwacja i aktualizacje
+hosted-private-cloud-managed-vmware-troubleshooting-logs: Monitorowanie i logi
+hosted-private-cloud-managed-vmware-troubleshooting-errors: Obsługa błędów
+hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitorowanie zgodności
+hosted-private-cloud-managed-vmware-additional-resources: Dodatkowe zasoby
+hosted-private-cloud-nutanix: Nutanix on OVHcloud
+hosted-private-cloud-nutanix-key-concepts: Kluczowe pojęcia
+hosted-private-cloud-nutanix-getting-started: Pierwsze kroki
+hosted-private-cloud-nutanix-configuration: Konfiguracja
+hosted-private-cloud-nutanix-migration: Migracja
+hosted-private-cloud-nutanix-tutorials: Tutorials
+hosted-private-cloud-nutanix-security: Bezpieczeństwo
+hosted-private-cloud-nutanix-troubleshooting: Diagnostyka
+hosted-private-cloud-nutanix-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Pierwsze kroki
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Dodatkowe zasoby
