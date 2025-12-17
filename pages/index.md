@@ -1678,6 +1678,7 @@
             + [Web Hosting - Activating a DV SSL certificate](web_cloud/web_hosting/ssl_dv)
             + [Web Hosting - Activating an EV SSL certificate](web_cloud/web_hosting/ssl_ev)
             + [Web Hosting - Installing a custom SSL certificate](web_cloud/web_hosting/ssl_custom)
+            + [Web Hosting - New SSL certificate management](web_cloud/web_hosting/ssl_management)
             + [Avoiding the common pitfalls of making your website secure with SSL](web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure)
         + [Troubleshooting](web-cloud-hosting-troubleshooting)
             + [Use cases - What to do if your Website is hacked](web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
