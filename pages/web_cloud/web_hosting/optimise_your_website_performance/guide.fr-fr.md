@@ -258,7 +258,7 @@ Si, en dépit de toutes les modifications et mesures d’optimisation que vous a
 
 ## Aller plus loin
 
-[Modifier la configuration d’un d’hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.externe}
+[Modifier la configuration d’un d’hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database)
 

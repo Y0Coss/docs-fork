@@ -76,8 +76,8 @@ Clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
 Clicca sul link `Ordina un backup Premium`{.action} (per i servizi ordinati a partire dal 7 AGO, 2025) o sul pulsante `Attiva il Backup automatico`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma.
