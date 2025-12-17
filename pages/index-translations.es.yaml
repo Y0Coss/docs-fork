@@ -148,28 +148,33 @@ public-cloud-quantum-computing-qpu: Quantum QPUs
 public-cloud-quantum-computing-qpu-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
+public-cloud-containers-orchestration-managed-kubernetes-k8s-key-concepts: Key concepts
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
-public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
-public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
-public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup, Restore and Migrate
-public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
-public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
-public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration: Configuration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-backup-and-restore: Backup and Restore
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-observability-monitoring: Monitoring & Observability
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-traffic-management: Traffic management
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-operators: Operators
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-cluster: Cluster
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-nodepools-and-nodes: Nodepools & Nodes
+public-cloud-containers-orchestration-managed-kubernetes-k8s-migration: Migration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
-public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
-public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
-public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
-public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
-public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloads
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-kubernetes-k8s-additional-resources: Additional resources
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
-public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-private-registry-configuration: Configuration
+public-cloud-containers-orchestration-managed-private-registry-security: Security
+public-cloud-containers-orchestration-managed-private-registry-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-private-registry-additional-resources: Additional resources
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
-public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
-public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
+public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
+public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
 public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-databases-cassandra: Cassandra
 public-cloud-databases-common-configuration: Configuration
@@ -233,15 +238,18 @@ public-cloud-compute-Troubleshooting: Resolución de problemas
 public-cloud-compute-additional-resources: Recursos adicionales
 public-cloud-cross-functional: Public Cloud - Información General
 public-cloud-cross-functional-getting-started: Primeros pasos
-public-cloud-cross-functional-general-information: Información General
-public-cloud-cross-functional-project-management: Gestión de proyectos Public Cloud
+public-cloud-cross-functional-key-concepts: Conceptos clave
+public-cloud-cross-functional-configuration: Configuración
+public-cloud-cross-functional-configuration-billing-information: Información de facturación
+public-cloud-cross-functional-configuration-project-management: Gestión de proyectos Public Cloud
 public-cloud-cross-functional-migration: Migración
 public-cloud-cross-functional-tutorials: Tutoriales
-public-cloud-cross-functional-services-management: Gestión de servicios
-public-cloud-cross-functional-horizon: Gestión desde Horizon
-public-cloud-cross-functional-openstack: Gestión a través de la API OpenStack
-public-cloud-cross-functional-infrastructure: Infrastructure
-public-cloud-cross-functional-billing-information: Información de facturación
+public-cloud-cross-functional-tutorials-horizon: Gestión desde Horizon
+public-cloud-cross-functional-tutorials-openstack: Gestión desde Openstack
+public-cloud-cross-functional-tutorials-terraform: Gestión desde Terraform
+public-cloud-cross-functional-security: Seguridad
+public-cloud-cross-functional-troubleshooting: Resolución de problemas
+public-cloud-cross-functional-additional-resources: Recursos adicionales
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-s3: S3 compatible
@@ -262,17 +270,33 @@ public-cloud-storage-object-storage-swift-security: Seguridad
 public-cloud-storage-object-storage-swift-troubleshooting: Resolución de problemas
 public-cloud-storage-object-storage-swift-additional-resources: Recursos adicionales
 public-cloud-storage-block-storage: Block Storage
-public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-block-storage-key-concepts: Conceptos clave
+public-cloud-storage-block-storage-getting-started: Primeros pasos
+public-cloud-storage-block-storage-configuration: Configuración
+public-cloud-storage-block-storage-migration: Migración
+public-cloud-storage-block-storage-additional-resources: Recursos adicionales
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-getting-started: Primeros pasos
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
-public-cloud-network-concepts: Conceptos
+public-cloud-network-key-concepts: Conceptos clave
 public-cloud-network-getting-started: Primeros pasos
-public-cloud-network-additional-ip: Additional IP
+public-cloud-network-getting-started-private-network: Private Network
+public-cloud-network-getting-started-load-balancer: Load Balancer
+public-cloud-network-getting-started-public-ips: Public IPs
 public-cloud-network-configuration: Configuración
-public-cloud-network-technical-resources: Recursos Técnicos
+public-cloud-network-configuration-private-network: Private Network
+public-cloud-network-configuration-load-balancer: Load Balancer
+public-cloud-network-configuration-public-ips: Public IPs
+public-cloud-network-configuration-gateway: Gateway
 public-cloud-network-tutorials: Tutoriales
+public-cloud-network-tutorials-general: General
+public-cloud-network-tutorials-private-network: Private Network
+public-cloud-network-tutorials-load-balancer: Load Balancer
+public-cloud-network-security: Seguridad
+public-cloud-network-troubleshooting: Resolución de problemas
+public-cloud-network-additional-resources: Recursos adicionales
 public-cloud-data-platform: Data Platform
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeros pasos
@@ -411,31 +435,82 @@ storage-object-storage-swift-troubleshooting: Resolución de problemas
 storage-object-storage-swift-additional-resources: Recursos adicionales
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-ha-nas: HA-NAS
+storage-file-storage-enterprise-file-storage-key-concepts: Primeros pasos
+storage-file-storage-enterprise-file-storage-getting-started: Premiers pas
+storage-file-storage-enterprise-file-storage-configuration: Configuración
+storage-file-storage-enterprise-file-storage-migration: Migración
+storage-file-storage-enterprise-file-storage-additional-resources: Recursos adicionales
+storage-file-storage-ha-nas: NAS-HA
+storage-file-storage-ha-nas-key-concepts: Primeros pasos
+storage-file-storage-ha-nas-getting-started: Premiers pas
+storage-file-storage-ha-nas-configuration: Configuración
+storage-file-storage-ha-nas-migration: Migración
+storage-file-storage-ha-nas-additional-resources: Recursos adicionales
+storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-getting-started: Premiers pas
 storage-block-storage: Block Storage
+storage-block-storage-block-volume: Block volume
+storage-block-storage-block-volume-key-concepts: Primeros pasos
+storage-block-storage-block-volume-getting-started: Primeros pasos
+storage-block-storage-block-volume-configuration: Configuración
+storage-block-storage-block-volume-migration: Migración
+storage-block-storage-block-volume-additional-resources: Recursos adicionales
 storage-block-storage-cloud-disk-array: Cloud Disk Array
+storage-block-storage-cloud-disk-array-key-concepts: Conceptos clave
+storage-block-storage-cloud-disk-array-getting-started: Primeros pasos
+storage-block-storage-cloud-disk-array-configuration: Configuración
+storage-block-storage-cloud-disk-array-tutorials: Tutorials
+storage-block-storage-cloud-disk-array-additional-resources: Recursos adicionales
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-general-information: Información General
 network-additional-ip: Additional IP
+network-additional-ip-key-concepts: Conceptos clave
+network-additional-ip-configuration: Configuración
+network-additional-ip-products: Guías específicas del producto
+network-additional-ip-products-dedicated-servers: Servidores dedicados
+network-additional-ip-products-hosted-private-cloud: Hosted Private Cloud
+network-additional-ip-products-load-balancer: Load Balancer
+network-additional-ip-products-managed-bare-metal: Managed Bare Metal
+network-additional-ip-products-public-cloud: Public Cloud
+network-additional-ip-products-vps: Virtual Private Servers
+network-additional-ip-troubleshooting: Solución de problemas
+network-additional-ip-byoip: Bring Your Own IP
 network-bgp: BGP Service
-network-security: Red y seguridad
-network-ovhcloud-connect: OVHcloud Connect
-network-ovhcloud-connect-concepts: Conceptos
-network-ovhcloud-connect-configuration: Configuración
-network-ovhcloud-connect-getting-started: Primeros pasos
-network-ovhcloud-connect-technical-resources: Recursos técnicos
-network-vrack-services: vRack Services
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 network-load-balancer: Load Balancer
-network-load-balancer-faq: FAQ
+network-load-balancer-key-concepts: Conceptos clave
 network-load-balancer-getting-started: Primeros pasos
-network-load-balancer-setting-up: Configuración
-network-load-balancer-use-cases: Casos de uso
-network-load-balancer-viewing-statuses: Consultar los estados
+network-load-balancer-configuration: Configuración
+network-load-balancer-configuration-infrastructure: Infraestructura
+network-load-balancer-configuration-administration: Tráfico
+network-load-balancer-configuration-deployments: Implementaciones
+network-load-balancer-additional-resources: Recursos adicionales
+network-load-balancer-troubleshooting: Solución de problemas
+network-security: Seguridad de red
+network-ovhcloud-connect: OVHcloud Connect
+network-ovhcloud-connect-concepts: Conceptos clave
+network-ovhcloud-connect-getting-started: Primeros pasos
+network-ovhcloud-connect-configuration: Configuración
+network-ovhcloud-connect-troubleshooting: Solución de problemas
+network-ovhcloud-connect-technical-resources: Recursos adicionales
+network-secnumcloud-connectivity: SecNumCloud
+network-vrack: Red privada vRack
+network-vrack-configuration: Configuración
+network-vrack-use-cases: Guías específicas del producto
+network-vrack-products-dedicated-servers: Servidores dedicados
+network-vrack-products-hosted-private-cloud: Hosted Private Cloud
+network-vrack-products-hosted-private-cloud-nutanix: Nutanix on OVHcloud
+network-vrack-products-hosted-private-cloud-vmware: VMware on OVHcloud
+network-vrack-products-load-balancer: Load Balancer
+network-vrack-products-managed-bare-metal: Managed Bare Metal
+network-vrack-products-public-cloud: Public Cloud
+network-vrack-products-public-cloud-containers-orchestration: Contenedores y orquestación
+network-vrack-products-public-cloud-network-services: Public Cloud Network Services
+network-vrack-services: vRack Services
+network-troubleshooting: Solución de problemas
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Primeros pasos

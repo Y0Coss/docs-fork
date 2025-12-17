@@ -1,6 +1,6 @@
 ---
-title: 'Migrowanie kont e-mailowych za pomocą OVH Mail Migrator'
-excerpt: 'Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVH Mail Migrator'
+title: 'Migrowanie kont e-mailowych za pomocą OVHcloud Mail Migrator'
+excerpt: 'Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVHcloud Mail Migrator'
 updated: 2025-11-25
 ---
 
@@ -15,9 +15,9 @@ updated: 2025-11-25
 
 ## Wprowadzenie
 
-[Narzędzie OVH Mail Migrator](/links/web/omm) zostało stworzone przez OVHcloud, aby spełnić potrzebę odwracalności. Umożliwia ono migrację kont e-mailowych do adresów e-mail w OVHcloud lub zewnętrznego usługi poczty e-mail. Proces obsługuje różne typy treści, takie jak wiadomości e-mail, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi adresami e-mail.
+[Narzędzie OVHcloud Mail Migrator](/links/web/omm) zostało stworzone przez OVHcloud, aby spełnić potrzebę odwracalności. Umożliwia ono migrację kont e-mailowych do adresów e-mail w OVHcloud lub zewnętrznego usługi poczty e-mail. Proces obsługuje różne typy treści, takie jak wiadomości e-mail, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi adresami e-mail.
 
-**Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVH Mail Migrator.**
+**Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVHcloud Mail Migrator.**
 
 ## Wymagania początkowe
 
