@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurer son compte e-mail via ActiveSync sur Outlook classique pour Windows"
 excerpt: "Découvrez comment configurer votre adresse e-mail Zimbra Pro sur Outlook pour Windows via le protocole ActiveSync"
-updated: 2025-12-12
+updated: 2025-12-17
 ---
 
 <style>
@@ -59,7 +59,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ### Ajouter le compte <a name="add-account"></a>
 
-Pour ajouter un compte Zimbra Pro sur Outlook classique, suivez sur les étapes ci-dessous en cliquant successivement sur les onglets ci-dessous :
+Pour ajouter un compte Zimbra Pro sur Outlook classique, suivez les étapes ci-dessous en cliquant successivement sur les onglets ci-dessous :
 
 > [!tabs]
 > **Étape 1**

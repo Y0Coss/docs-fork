@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Outlook classique pour Windows
 excerpt: Découvrez comment configurer un compte Exchange sur Outlook pour Windows
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 <style>
@@ -72,11 +72,11 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-- Laissez `Compte de courrier` coché et complétez les inforamtions suivante:
-    - **Nom** : Définissez un nom d'affichage.
-    - **Adresse de courrier** : Saisissez votre adresse e-mail complète.
-    - **Mot de passe** : Saisissez le mot de passe associé à votre adresse e-mail.
-    - **Confirmer le mot de passe** : Saisissez à nouveau le mot de passe associé à votre adresse e-mail.
+- Laissez `Compte de courrier` coché et complétez les informations suivantes :
+    - **Nom** : définissez un nom d'affichage.
+    - **Adresse de courrier** : saisissez votre adresse e-mail complète.
+    - **Mot de passe** : saisissez le mot de passe associé à votre adresse e-mail.
+    - **Confirmer le mot de passe** : saisissez à nouveau le mot de passe associé à votre adresse e-mail.
 - Cliquez sur `Suivant`{.action} pour continuer.
 
 ![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
@@ -98,7 +98,7 @@ Votre adresse e-mail Exchange, ainsi que toutes ses fonctions collaboratives, so
 
 > [!warning]
 >
-> Il n'est pas possible de modifier les paramètres serveur d'un compte Exchange. Si vous rencontrez une anomalie liée à la synchronisation avec le serveur, il est nécessaire de supprimer le compte d'Outlook et de le reconfigurer. Pour ce la suivez les instructions ci-dessous.
+> Il n'est pas possible de modifier les paramètres serveur d'un compte Exchange. Si vous rencontrez une anomalie liée à la synchronisation avec le serveur, il est nécessaire de supprimer le compte d'Outlook et de le reconfigurer. Pour effectuer cela, suivez les instructions ci-dessous.
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour le supprimer :
 
@@ -113,7 +113,7 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 
 ![Outlook](images/config-outlook-exchange05.png){.thumbnail .h-500}
 
-Une fois le compte Exchange supprimé, pour reconfigurer votre compte e-mail, suivez la partie « [Ajouter le compte](#add-account) » de ce guide 
+Une fois le compte Exchange supprimé, suivez la partie « [Ajouter le compte](#add-account) » de ce guide pour reconfigurer votre compte e-mail.
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 

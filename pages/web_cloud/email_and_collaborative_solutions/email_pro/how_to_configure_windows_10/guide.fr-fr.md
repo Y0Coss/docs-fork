@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurer son compte E-mail Pro sur le nouvel Outlook pour Windows"
 excerpt: "Découvrez comment configurer votre adresse E-mail Pro sur le nouvel Outlook pour Windows"
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 <style>
@@ -56,7 +56,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Pour configurer votre adresse e-mail Pro sur Outlook classique, consulter notre guide « [E-mail Pro - Configurer un compte e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016) ».
+> Pour configurer votre adresse e-mail Pro sur Outlook classique, consultez notre guide « [E-mail Pro - Configurer un compte e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016) ».
 
 ### Ajouter le compte <a name="add-account"></a>
 

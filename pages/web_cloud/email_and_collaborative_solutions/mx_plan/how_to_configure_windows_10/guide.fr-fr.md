@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows'
 excerpt: "Apprenez à configurer votre adresse e-mail sur le nouvel Outlook pour Windowss"
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 <style>
@@ -45,7 +45,7 @@ Le **nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Pour configurer votre adresse e-mail MX plan ou Zimbra Starter sur Outlook classique, consulter notre guide « [MX Plan / Zimbra Starter - Configurer son adresse e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
+> Pour configurer votre adresse e-mail MX plan ou Zimbra Starter sur Outlook classique, consultez notre guide « [MX Plan / Zimbra Starter - Configurer son adresse e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
 
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 

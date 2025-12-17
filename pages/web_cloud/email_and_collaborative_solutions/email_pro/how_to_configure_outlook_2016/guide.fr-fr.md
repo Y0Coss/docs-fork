@@ -1,7 +1,7 @@
 ---
 title: 'E-mail Pro - Configurer un compte e-mail sur Outlook classique pour Windows'
 excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook pour Windows'
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 <style>
@@ -48,9 +48,9 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consulter notre guide [E-mail Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide [E-mail Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 >
-> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) », et installez-le.
+> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » et installez-le.
 >
 > Une fois l'installation terminée, pour distinguer les deux versions lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous.
 >
@@ -90,8 +90,8 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >> Saisissez les informations de connexion à votre compte **(1)** :
 >>
 >> Informations sur l'utilisateur <br>
->> **Votre nom** : Définissez un nom d'affichage.<br>
->> **Adresse de courrier** : Saisissez votre adresse e-mail complète.<br>
+>> **Votre nom** : définissez un nom d'affichage.<br>
+>> **Adresse de courrier** : daisissez votre adresse e-mail complète.<br>
 >>
 >> Informations sur le serveur <br>
 >> **Type de compte** : sélectionnez IMAP<br>
@@ -108,7 +108,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>
 > **Étape 3**
 >>
->> Depuis l'onglet `Serveur sortant`, cocher `Mon serveur sortant (SMTP) requiert une authentification`{.action} et laissez `Utilises les mêmes paramètres que mon serveur de courrier entrant`{.action} sélectionné.
+>> Depuis l'onglet `Serveur sortant`, cochez `Mon serveur sortant (SMTP) requiert une authentification`{.action} et laissez `Utilise les mêmes paramètres que mon serveur de courrier entrant`{.action} sélectionné.
 >>
 >> Depuis l'onglet `Options avancées` :
 >>
@@ -166,16 +166,16 @@ Sélectionnez l'onglet correspondant à votre type de configuration :
 > [!tabs]
 > **Configuration IMAP**
 >>
->> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
->> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+>> - **Nom d'utilisateur** : renseignez l'adresse e-mail **complète**.
+>> - **Mot de passe** : renseignez le mot de passe de l'adresse e-mail.
 >> - **Serveur entrant** : pro?.mail.ovh.net (remplacez bien le «?» par le numéro de votre serveur).
 >> - **Port** : 993.
 >> - **Type de sécurité** : SSL/TLS.
 >>
 > **Configuration POP**
 >>
->> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
->> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+>> - **Nom d'utilisateur** : renseignez l'adresse e-mail **complète**.
+>> - **Mot de passe** : renseignez le mot de passe de l'adresse e-mail.
 >> - **Serveur entrant** : pro?.mail.ovh.net (remplacez bien le «?» par le numéro de votre serveur).
 >> - **Port** : 995.
 >> - **Type de sécurité** : SSL/TLS.
@@ -186,8 +186,8 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 
 **Configuration SMTP**
 
-- **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
-- **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+- **Nom d'utilisateur** : renseignez l'adresse e-mail **complète**.
+- **Mot de passe** : renseignez le mot de passe de l'adresse e-mail.
 - **Serveur sortant** : pro?.mail.ovh.net (remplacez bien le «?» par le numéro de votre serveur).
 - **Port** : 587.
 - **Type de sécurité** : STARTTLS.

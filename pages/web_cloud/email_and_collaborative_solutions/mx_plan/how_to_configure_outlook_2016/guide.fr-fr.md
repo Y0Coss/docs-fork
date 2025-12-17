@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Configurer son adresse e-mail sur Outlook classique pour Windows"
 excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook classique pour Windows"
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 <style>
@@ -58,11 +58,11 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consulter notre guide [MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/ppages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide [MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >
-> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) », et installez-le.
+> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » et installez-le.
 >
-> Une fois l'installation terminée, pour distinguer les deux versions lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous.
+> Une fois l'installation terminée, afin de distinguer les deux versions lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
@@ -86,7 +86,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 
 > [!warning]
 >
-> Il est nécessaire de bien renseigner la valeur correspondante à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
+> Il est nécessaire de bien renseigner la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
 > **Étape 1**
 >>
@@ -102,8 +102,8 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >> Saisissez les informations de connexion à votre compte **(1)** :
 >>
 >> Informations sur l'utilisateur <br>
->> **Votre nom** : Définissez un nom d'affichage.<br>
->> **Adresse de courrier** : Saisissez votre adresse e-mail complète.<br>
+>> **Votre nom** : définissez un nom d'affichage.<br>
+>> **Adresse de courrier** : daisissez votre adresse e-mail complète.<br>
 >>
 >> Informations sur le serveur <br>
 >> - **Type de compte** : sélectionnez IMAP<br>
@@ -115,8 +115,8 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>      - **AMERIQUE/ASIE-PACIFIQUE** : smtp.mail.ovh.ca <br>
 >>
 >> Informations de connexion <br>
->> **Nom d'utilisateur** : Saisissez votre adresse e-mail complète.<br>
->> **Mot de passe** : Saisissez le mot de passe associé à votre adresse e-mail.<br>
+>> **Nom d'utilisateur** : saisissez votre adresse e-mail complète.<br>
+>> **Mot de passe** : saisissez le mot de passe associé à votre adresse e-mail.<br>
 >>
 >> Cliquez sur `Paramètres supplémentaires...`{.action} **(2)** et passez à l'étape suivante
 >>
@@ -124,7 +124,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>
 > **Étape 3**
 >>
->> Depuis l'onglet `Serveur sortant`, cocher `Mon serveur sortant (SMTP) requiert une authentification`{.action} et laissez `Utilises les mêmes paramètres que mon serveur de courrier entrant`{.action} sélectionné.
+>> Depuis l'onglet `Serveur sortant`, cochez `Mon serveur sortant (SMTP) requiert une authentification`{.action} et laissez `Utilise les mêmes paramètres que mon serveur de courrier entrant`{.action} sélectionné.
 >>
 >> Depuis l'onglet `Options avancées` :
 >>
@@ -139,11 +139,10 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>
 > **Étape 4**
 >>
->> Cliquez sur `Suivant`{.action} pour lancer la configuration du compte. Si les paramètres sont validés, vous obtiendrez la fenêtre ci-dessous.mo337373
+>> Cliquez sur `Suivant`{.action} pour lancer la configuration du compte. Si les paramètres sont validés, vous obtiendrez la fenêtre ci-dessous.
 >>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-500}
 >>
-
 
 ### Utiliser l'adresse e-mail
 
@@ -178,15 +177,15 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 
 > [!warning]
 >
-> Il est nécessaire de bien relever la valeur correspondante à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
+> Il est nécessaire de bien relever la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
 Sélectionnez l'onglet correspondant à votre type de configuration :
 
 > [!tabs]
 > **Configuration IMAP**
 >>
->> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
->> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+>> - **Nom d'utilisateur** : renseignez l'adresse e-mail **complète**.
+>> - **Mot de passe** : renseignez le mot de passe de l'adresse e-mail.
 >> - **Serveur EUROPE (entrant)** : imap.mail.ovh.net **ou** ssl0.ovh.net.
 >> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : imap.mail.ovh.ca.
 >> - **Port** : 993.
@@ -194,8 +193,8 @@ Sélectionnez l'onglet correspondant à votre type de configuration :
 >>
 > **Configuration POP**
 >>
->> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
->> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+>> - **Nom d'utilisateur** : renseignez l'adresse e-mail **complète**.
+>> - **Mot de passe** : renseignez le mot de passe de l'adresse e-mail.
 >> - **Serveur EUROPE (entrant)** : pop.mail.ovh.net **ou** ssl0.ovh.net.
 >> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : pop.mail.ovh.ca.
 >> - **Port** : 995.
@@ -207,13 +206,12 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 
 **Configuration SMTP**
 
-- **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
-- **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+- **Nom d'utilisateur** : renseignez l'adresse e-mail **complète**.
+- **Mot de passe** : renseignez le mot de passe de l'adresse e-mail.
 - **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net.
 - **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca.
 - **Port** : 465.
 - **Type de sécurité** : SSL/TLS.
-
 
 ### POP ou IMAP, quelle est la différence ? <a name="popimap"></a>
 
