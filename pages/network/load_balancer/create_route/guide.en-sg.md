@@ -91,7 +91,7 @@ For more information on this call, we invite you to consult the section [Availab
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 >
 
-For more information on this call, we invite you to consult the section [Available Rules](#available-rules){.internal}, at the bottom of this guide.
+For more information on this call, we invite you to consult the section [Available Rules](#available-rules), at the bottom of this guide.
 
 ### Configured routes
 

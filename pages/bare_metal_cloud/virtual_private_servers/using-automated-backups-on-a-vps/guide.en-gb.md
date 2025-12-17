@@ -75,8 +75,8 @@ Click the `Automated backup`{.action} tab in the horizontal menu.
 Click the link `Order a premium backup`{.action} (for services ordered from 7 AUG, 2025) or the button `Enable Automated backup`{.action}.
 
 <div class="grid-gallery">
-  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.

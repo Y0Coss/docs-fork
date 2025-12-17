@@ -1,7 +1,7 @@
 ---
 title: "Quels produits sont disponibles avec les crédits du Startup Program ?"
 excerpt: "Découvrez quelles solutions OVHcloud sont éligibles avec les crédits du Startup Program pour soutenir votre startup"
-updated: 2025-10-14
+updated: 2025-12-11
 ---
 
 ## Objectif
@@ -41,7 +41,7 @@ Voici un résumé des solutions éligibles :
 
 | Solutions | Éligibilité |
 |---|---|
-| **Compute** : Instances (ne sont pas comprises les instances utilisant les GPU A100, H100, H200, L4, L40S), Baremetal Cloud | ✅ |
+| **Compute** : Instances (Seulement les instances utilisant des GPU RTX5000, V100 et V100s GPUs, à l'exception de tout autre GPU), Baremetal Cloud | ✅ |
 | **Storage & Backup** : Block Storage, Object Storage, Cloud Archive, Cold Archive, Snapshot, Backup | ✅ |
 | **Network** : Load Balancer, vRack (Free), Bande passante, Floating IP, Gateway, Anti-DDoS | ✅ |
 | **Containers & Orchestration** : Managed K8s Service, Managed Rancher Service, Managed K8s Load Balancer, Managed Private Registry, Workflow Management, Image Catalog | ✅ |
@@ -83,11 +83,8 @@ Voici un résumé des solutions éligibles :
 
 ### Que faire en cas d’erreur de commande de GPU non-éligibles ?
 
-Si des solutions non-éligibles sont commandées par erreur, voici la procédure à suivre :
+Si des solutions non-éligibles sont commandées, elles seront débités sur le moyen de paiement attaché à votre compte OVHcloud.
 
-- **Transfert des instances** : Si vous avez commandé des instances GPU non-éligibles, nous vous contacterons pour les arrêter et les recréer sur un autre compte client qui n'est pas dans le Startup Program.
-    - Consultez [notre guide](/pages/public_cloud/compute/change_project_contacts) pour transférer vos instances vers un autre compte client.
-- **Si vous ne souhaitez pas arrêter les instances** : Si vous choisissez de ne pas couper les instances non-éligibles, OVHcloud pourra mettre fin à votre participation au Startup Program.
 
 ## Conclusion
 

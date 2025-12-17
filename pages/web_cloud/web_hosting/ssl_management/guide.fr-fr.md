@@ -201,7 +201,7 @@ Le certificat SSL payant Sectigo (EV) est valable pour un seul nom de domaine et
 > - Disposer de l'autorisation de votre organisation pour commander un certificat SSL Sectigo EV.
 > - Être en capacité de justifier avec exactitude des informations et coordonnées relatives à votre organisation.
 >
-> Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Sectigo EV, rendez-vous sur [ce lien](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+> Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Sectigo EV, rendez-vous sur [ce lien](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes :
 
