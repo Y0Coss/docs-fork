@@ -124,7 +124,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>
 > **Étape 3**
 >>
->> Depuis l'onglet `Serveur sortant`, cochez `Mon serveur sortant (SMTP) requiert une authentification`{.action} et laissez `Utilise les mêmes paramètres que mon serveur de courrier entrant`{.action} sélectionné.
+>> Depuis l'onglet `Serveur sortant`, cochez `Mon serveur sortant (SMTP) requiert une authentification`{.action} et laissez `Utiliser les mêmes paramètres que mon serveur de courrier entrant`{.action} sélectionné.
 >>
 >> Depuis l'onglet `Options avancées` :
 >>
