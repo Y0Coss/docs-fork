@@ -352,6 +352,14 @@ chroot /mnt/
 
 You should now be able now apply all necessary changes to your system, for example to [regain server access](#gofurther).
 
+### Link Aggregation configuration in rescue mode
+
+Link Aggregation (LACP) is highly beneficial, as it increases your server's total bandwidth while providing network redundancy in case a network interface fails.
+
+Although rescue mode is based on the Debian 12 operating system, its network configuration relies on the *ifupdown* utility.
+
+If you have a server that supports link aggregation and you wish to configure it in rescue mode, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+
 ### Exiting rescue mode
 
 If relevant, return to the rescue mode login shell by entering:
