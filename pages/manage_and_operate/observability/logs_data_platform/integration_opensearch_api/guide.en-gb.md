@@ -1,14 +1,19 @@
 ---
 title: Exposing your logs to third-party tools via the OpenSearch API
 excerpt: 'Leverage any software that can use the OpenSearch API by using aliases.'
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 ## Objective
 
 As explained in our [introductory documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP), Logs Data Platform heavily relies on [OpenSearch](https://github.com/opensearch-project/OpenSearch) to work. OpenSearch has a rich ecosystem and allows very complex queries.
 
-**This documentation explains how you can use third‑party software that integrates with OpenSearch by using aliases.**
+**This documentation explains how to use third‑party softwares that integrate with OpenSearch by using aliases.**
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Logs Data Platform account](/links/manage-operate/ldp)
 
 ## Instructions
 
@@ -20,13 +25,13 @@ As explained in the documentation mentioned above, a Logs Data Platform *alias* 
 
 When attached to *streams* or *indices*, an *alias* allows you to expose the content of your *streams* exactly as if they were stored in a single OpenSearch *index*. This feature can be used only for read/query purposes.
 
-> [!info]
+> [!primary]
 > If you want to ingest logs to a *stream* using the OpenSearch API, we provide a shared input that works as a special *index* pre‑configured for this purpose and accessible to any Logs Data Platform user.
 > You can follow [this documentation](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input) to use it.
 
 #### Creating an alias
 
-To create an *alias* in the management interface, go to the *alias* section of your Logs Data Platform account as shown in this picture.
+To create an *alias* in the management interface, go to the `Alias`{.action} section of your Logs Data Platform account as shown in this picture:
 
 ![Logs Data Platform homepage alias button location](images/ldp-homepage-circled.png){.thumbnail}
 
@@ -40,28 +45,22 @@ In this section, you can:
 
 ![Logs Data Platform homepage alias creation](images/alias-create-blurred.png){.thumbnail}
 
-- Once created, you can edit the description, access the alias via OpenSearch's web UI or delete the alias via the `...`{.action} button.
-
+- Once created, you can edit the description, access the alias via the OpenSearch web UI or delete the alias via the `...`{.action} button.
 
 #### Attach an alias to a stream
 
-- Attach and detach *streams* and/or *indices* to an alias by clicking on the `...`{.action} button and then on the `Attach content to the alias`{.action} button.
-
+- Attach and detach *streams* and/or *indices* to an alias by clicking the `...`{.action} button and then on the `Attach content to the alias`{.action} button.
 - Then you choose the stream you want to attach to the alias.
 
 ![Logs Data Platform alias content attachment](images/alias-attach-blurred.png){.thumbnail}
 
-
 #### Attach an alias to an index
 
-If you use the [managed OpenSearch index as a service feature](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index), you can also attach multiple *indices* to an *alias*. In that case, attach the alias and configure it as described above.
+If you use the [managed OpenSearch index as a service feature](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index), you can also attach multiple *indices* to an *alias*. In that case, attach the alias and configure it as described below.
 
-- Attach and detach *streams* and/or *indices* to an alias by clicking on the `...`{.action} button and then on the `Attach content to the alias`{.action} button.
-
+- Attach and detach *streams* and/or *indices* to an alias by clicking  the `...`{.action} button and then on the `Attach content to the alias`{.action} button.
 - Then you choose the indices tab you want to attach to the alias.
-
 - Finally you select the indices you want to attach to the alias.
-
 
 #### Retrieving credentials
 
@@ -69,7 +68,7 @@ If you use the [managed OpenSearch index as a service feature](/pages/manage_and
 
 [IAM enabled accounts](/pages/manage_and_operate/observability/logs_data_platform/iam_presentation_faq) have two ways to obtain credentials for both OVHcloud APIs and Logs Data Platform data planes APIs:
 
-- **Personal Access Token (PAT)** for a local user: [generate a token](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) via the IAM console or API.  
+- **Personal Access Token (PAT)** for a local user: [generate a token](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) via the IAM console or API.
 - **Service account token**: obtained by first creating a [service account](/pages/manage_and_operate/api/manage-service-account) and using the OAuth2 client‑credentials flow.
 
 Both tokens can be used as a **bearer token** or with a **basic authentication scheme** by using `pat_jwt_<your_suffix>` as a username. Replace `<your_suffix>` with any ASCII string of your choosing.
@@ -80,10 +79,10 @@ Both tokens can be used as a **bearer token** or with a **basic authentication s
 
 ### Alias access management
 
-Like all features of Logs Data Platform, with IAM enabled, aliases can be shared with other OVHcloud identities. If you are not familiar with IAM, we encourage you to read the [IAM documentation](/pages/account_and_service_management/account_information/iam-policy-ui) and the specific Logs Data Platform [IAM access management](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management). 
+Like all features of Logs Data Platform, with IAM enabled, aliases can be shared with other OVHcloud identities. If you are not familiar with IAM, we encourage you to read the [IAM documentation](/pages/account_and_service_management/account_information/iam-policy-ui) and the specific Logs Data Platform [IAM access management](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
 
 The rights relative to the management of OpenSearch aliases through the **OVHcloud APIs** are:
-   
+
 |Rights                                             |LDP product types|Description|
 |---------------------------------------------------|-----------------|-----------|
 |ldp:apiovh:url/get                                 |service          |Get Logs Data Platform service useful urls|
@@ -111,45 +110,47 @@ There is no write related right because aliases are **read-only**.
 
 Legacy users can use [this documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission).
 
-
 ### Quick recap guide to configure alias access
 
-1. **Create a local user** 
-   To create a local user, log in to your [OVHcloud Control Panel](/links/manager). In the sidebar, click on `Identity, Security & Operations`{.action}, then on `Identities`{.action}. A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
+1\. **Create a local user**
 
-   Navigate to the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management) for more information about them.
+To create a local user, log in to your [OVHcloud Control Panel](/links/manager). In the sidebar, click on `Identity, Security & Operations`{.action}, then on `Identities`{.action}. A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
 
+Navigate to the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management) for more information about users.
 
-2. **Generate a PAT** 
-   A [Personal Access Token](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) is needed to interact with the Logs Data Platform or OVHcloud API when using a local user. As said in the corresponding guide, you can create one by using the API.
+2\. **Generate a PAT**
 
-   > [!api]
-   >
-   > @api {v1} /me POST /me/identity/user/{user}/token
-   >
+A [Personal Access Token](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) is needed to interact with the Logs Data Platform or OVHcloud API when using a local user. As said in the corresponding guide, you can create one by using the API:
 
-   The response contains an `access_token` field which is your PAT.
+> [!api]
+>
+> @api {v1} /me POST /me/identity/user/{user}/token
+>
 
-
-3. **Create the IAM Policy**
-   [IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management) allow an identity to interact with Logs Data Platform resources. Create or modify an existing policy and add the corresponding rights for your local user. 
-   
-   Read the guide or the IAM documentation for detailed information on this feature. Don't forget to add your new alias as a resource managed by this IAM policy. 
-   
-   Be sure to separate service rights and specific aliases rights in different policies if needed since all aliases inherit the rights put on a Logs Data Service (ie: putting `ldp:opensearch:alias/read` on a service policy gives read rights to **all aliases of this service**).   
+The response contains an `access_token` field which is your PAT.
 
 
-4. **Query the alias** using the bearer token:
-   ```bash
-   curl -H "Authorization: Bearer <access_token>" \
-        "https://<your_cluster>.logs.ovh.com:9200/<service_name>-a-<alias>/_search?pretty"
-   ```
-   Or alternatively use the hybrid authentication mechanism:
+3\. **Create the IAM Policy**
 
-   ```bash
-   curl -u "pat_jwt_<any_suffix>:<access_token>" \
-        "https://<your_cluster>.logs.ovh.com:9200/<service_name>-a-<alias>/_search?pretty"
-   ```
+[IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management) allow an identity to interact with Logs Data Platform resources. Create or modify an existing policy and add the corresponding rights for your local user. 
+
+Read the guide or the IAM documentation for detailed information on this feature. Don't forget to add your new alias as a resource managed by this IAM policy.
+
+Make sure to separate service rights and specific aliases rights in different policies if needed since all aliases inherit the rights put on a Logs Data Service (ie: putting `ldp:opensearch:alias/read` on a service policy gives read rights to **all aliases of this service**).
+
+4\. **Query the alias** using the bearer token:
+
+```bash
+curl -H "Authorization: Bearer <access_token>" \
+    "https://<your_cluster>.logs.ovh.com:9200/<service_name>-a-<alias>/_search?pretty"
+```
+
+Or alternatively use the hybrid authentication mechanism:
+
+```bash
+curl -u "pat_jwt_<any_suffix>:<access_token>" \
+    "https://<your_cluster>.logs.ovh.com:9200/<service_name>-a-<alias>/_search?pretty"
+```
 
 **Legacy user example (for reference only)**
 
@@ -157,7 +158,6 @@ Legacy users can use [this documentation](/pages/manage_and_operate/observabilit
 curl -u logs-ab-12345:<password> \
      "https://<your_cluster>.logs.ovh.com:9200/<username>-a-<alias>/_search?pretty"
 ```
-
 
 ### Third-party tool configuration
 

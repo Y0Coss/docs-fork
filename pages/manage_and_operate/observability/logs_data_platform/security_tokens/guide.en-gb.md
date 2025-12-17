@@ -1,7 +1,7 @@
 ---
 title: Securing Logs Data Platform's APIs with tokens
 excerpt: If you want to give access to your logs to a software application or automate tasks that depend on your logs, you may need to access them through the API.
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ All these accesses are secured by your username and password. But what if you do
 
 ### Generating tokens with IAM
 
-Before generating tokens with IAM you will need to create [a Local User or a Service Account](/pages/manage_and_operate/iam/identities-management). Both have specificities detailed in IAM documentation. Don't forget to attach these new identities to your [IAM Policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
+Before generating tokens with IAM you will need to create [a local user or a service account](/pages/manage_and_operate/iam/identities-management). Both have specificities detailed in the IAM documentation. Don't forget to attach these new identities to your [IAM Policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
 
 #### Local Users
 
@@ -43,7 +43,7 @@ You can then use this token on Logs Data Platform backend APIs:
 ldp@laptop curl -H 'content-type: application/json' --oauth2-bearer <access_token> -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
 ```
 
-Or with the Bearer header
+Or with the Bearer header:
 
 ```bash
 ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <access_token>" -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
@@ -59,7 +59,7 @@ These tokens do not expire but can be deleted whenever needed with this call:
 
 #### Service accounts
 
-Create a service account and tokens by following the [documentation](/pages/manage_and_operate/api/manage-service-account). Service accounts are a identifier/token pair following the OAuth2 **client- credentials** authentication mechanism. If you are familiar with OAuth2 clients, here are the API calls to create them. We still recommend you to read the dedicated guide to understand its specificities. We encourage you to use local users if you can since they are easier to setup.
+Create a service account and tokens by following the [documentation](/pages/manage_and_operate/api/manage-service-account). Service accounts are an identifier/token pair following the OAuth2 **client- credentials** authentication mechanism. If you are familiar with OAuth2 clients, here are the API calls to create them. We still recommend you to read the dedicated guide to understand its specificities. We encourage you to use local users if you can since they are easier to set up.
 
 To create a service account, use the following API call:
 
@@ -155,7 +155,7 @@ Once the token is created, you can use its value or remove it:
 
 #### Using your legacy tokens
 
-Using your legacy token is no different than using your credentials. You just have to replace your username with the word **token** and your password with the legacy token (the opposite works too).
+Using your legacy token is not different than using your credentials. You just have to replace your username with the word **token** and your password with the legacy token (the opposite works too).
 For example, to issue a search against the Graylog API with the legacy token obtained above, you can do the following:
 
 ```shell-session
