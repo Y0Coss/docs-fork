@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Descubra cómo solicitar el aumento de sus cuotas de Public Cloud'
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 ## Objetivo
@@ -116,10 +116,12 @@ Para acelerar el tratamiento, le rogamos que especifique en su solicitud:
 
 Para ciertos recursos o servicios, pueden aplicarse cuotas específicas. Para obtener más información:
 
-**Cuota S3**: Consulte la documentación oficial "[Object Storage - Límites técnicos (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
+**Cuota S3**<sup>1</sup>: Consulte la documentación oficial "[Object Storage - Límites técnicos (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
 
 **Cuota Managed Kubernetes Service (MKS)**: Consulte la documentación oficial "[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
 
 ## Más información
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

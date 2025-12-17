@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar as quotas Public Cloud'
 excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 ## Objetivo
@@ -116,10 +116,12 @@ Para acelerar o processamento, por favor indique no seu pedido:
 
 Para certos recursos ou serviços, podem aplicar-se quotas específicos. Para mais informações:
 
-**Quota S3**: Consulte a documentação oficial "[Object Storage - Limites técnicos (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
+**Quota S3**<sup>1</sup>: Consulte a documentação oficial "[Object Storage - Limites técnicos (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
 
 **Quota Managed Kubernetes Service (MKS)**: Consulte a documentação oficial "[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
 
 ## Quer saber mais?
- 
+
 Fale com a nossa [comunidade de utilizadores](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

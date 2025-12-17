@@ -1,7 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 ## Wprowadzenie
@@ -116,10 +116,12 @@ Aby przyspieszyć przetwarzanie, prosimy określić w swoim żądaniu:
 
 Dla niektórych zasobów lub usług mogą obowiązywać specjalne limity. Aby uzyskać więcej informacji:
 
-**Limit S3**: zobacz oficjalne dokumenty "[Object Storage - Ograniczenia techniczne (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
+**Limit S3**<sup>1</sup>: zobacz oficjalne dokumenty "[Object Storage - Ograniczenia techniczne (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
 
 **Limit zarządzanego Kubernetes (MKS)**: zobacz oficjalne dokumenty "[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
 
 ## Sprawdź również
 
 Dołącz do [grona naszych użytkowników](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

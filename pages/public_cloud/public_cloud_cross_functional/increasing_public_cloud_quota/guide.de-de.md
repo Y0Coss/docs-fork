@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-updated: 2025-12-16
+updated: 2025-12-17
 ---
 
 ## Ziel
@@ -116,10 +116,12 @@ Um die Bearbeitung zu beschleunigen, geben Sie bitte Folgendes in Ihrer Anfrage 
 
 Für bestimmte Ressourcen oder Dienste können spezifische Quoten gelten. Weitere Informationen finden Sie unter:
 
-**S3 Quoten**: siehe die offizielle Dokumentation „[Object Storage - Technische Grenzen (EN)](/pages/storage_and_backup/object_storage/s3_limitations)“.
+**S3 Quoten**<sup>1</sup>: siehe die offizielle Dokumentation „[Object Storage - Technische Grenzen (EN)](/pages/storage_and_backup/object_storage/s3_limitations)“.
 
 **Quoten für den Managed Kubernetes Service (MKS)**: siehe die offizielle Dokumentation „[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)“.
 
 ## Weiterführende Informationen
 
 Treten Sie unserer [User Community](/links/community) bei.
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
