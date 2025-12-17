@@ -8,7 +8,7 @@ updated: 2024-11-26
 
 La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible.
 
-**Découvrez comment regrouper vos NIC (Network Interface Controller) pour les utiliser avec le service OLA sur Debian (versions de 9 à 11).**  
+**Découvrez comment regrouper vos NIC (Network Interface Controller) pour les utiliser avec le service OLA sur Debian (versions de 9 à 11).**
 
 ## Prérequis
 
@@ -22,6 +22,13 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 > ```
 > apt install ifenslave
 > ```
+>
+
+> [!primary]
+>
+> Ce guide fournit des instructions pour configurer l'agrégation d'interfaces réseau spécifiquement avec `ifupdown`. Il est aussi applicable au mode rescue.
+>
+> Si la configuration réseau de votre système utilise plutôt `netplan`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## En pratique
@@ -65,6 +72,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> Pour le paramètre `hwaddress`, nous recommandons d'utiliser la plus petite des deux adresses MAC de vos NIC, car il elle appartient à l'interface de secours (fallback) LACP.
+>
 
 > [!primary]
 >

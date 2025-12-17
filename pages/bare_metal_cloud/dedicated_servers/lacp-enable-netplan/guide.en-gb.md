@@ -22,7 +22,13 @@ details[open]>summary::before {
 
 Link Aggregation Control Protocol (LACP) technology is designed to increase your server’s availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 / Ubuntu 24.04 (Netplan configuration).**
+**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 (*or newer*) / Ubuntu 24.04 (Netplan configuration).**
+
+> [!warning]
+> Although rescue mode is based on the Debian 12 operating system, its network configuration relies on the *ifupdown* utility.
+>
+> If you wish to configure link aggregation in rescue mode, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+>
 
 ## Requirements
 
@@ -43,9 +49,10 @@ Switch to the tab `Network Interfaces`{.action} and take note of the MAC address
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Please note that the **main public** interface is the one answering to DHCP requests.
+> Please note that the **main public** interface is the one answering DHCP requests.
 >
 > Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
+>
 
 Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
 
