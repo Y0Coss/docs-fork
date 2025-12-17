@@ -45,7 +45,7 @@ Switch to the tab `Network Interfaces`{.action} and take note of the MAC address
 > [!primary]
 > Please note that the **main public** interface is the one answering to DHCP requests.
 >
-> Additionnally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
+> Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
 
 Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
 
