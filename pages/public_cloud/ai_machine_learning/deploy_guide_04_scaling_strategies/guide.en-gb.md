@@ -140,7 +140,7 @@ This feature can be used through the UI and CLI, and requires an API endpoint to
 >> | `--auto-custom-api-url`          | URL of the API operation to call to get the metric value. A specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself. |
 >> | `--auto-custom-metric-format`    | Format of the metric to scale on (`JSON`, `XML`, `YAML`, `PROMETHEUS`). Default is `JSON`.          |
 >> | `--auto-custom-value-location`   | Location of the metric value in the response payload. This value is format-specific. See the valueLocation from the parameters list in the [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details. |
->> | `--auto-custom-target-value`     | Target value for metric to scale on.  When the metric provided by the API is equal to or greater than this value, scaling occurs upwards. If the metric is less than or equal to 0, scaling is brought back to 0. This value can be a decimal number. |
+>> | `--auto-custom-target-value`     | Target value for metric to scale on. When the metric provided by the API is equal to or greater than this value, scaling occurs upwards. If the metric is less than or equal to 0, scaling is brought back to 0. This value can be a decimal number. |
 >> | `--auto-custom-metric-aggregation-type` | Type of aggregation to perform before comparing the aggregated metric value to the target value. For example, if you choose AVERAGE, the value compared to the target value for scaling will be the average of the metric values from each replica of your AI Deploy app. Options are (`AVERAGE`, `MIN`, `MAX`, `SUM`). Default is `AVERAGE`. |
 >>
 >> **Example**:
