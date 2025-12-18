@@ -29,31 +29,28 @@ Dans la pratique, il s'agit souvent de l’envoi d’un e-mail ou d'un SMS vous 
 
 ## En pratique
 
-### J'ai reçu un e-mail ou un SMS au nom d'OVHcloud, comment déterminer s'il est légitime ?
+### J'ai reçu un e-mail ou un SMS au nom d'OVHcloud, comment savoir s'il est légitime ?
 
 #### Identifier un e-mail de phishing
 
-Vous avez reçu un e-mail au nom d'OVHcloud et vous voulez être sûr qu'il est légitime ? <br>
-Voici quelques éléments pour vous aider à distinguer visuellement un e-mail OVHcloud d'une tentative de phishing.
+En priorité, vérifiez si l'e-mail que vous avez reçu est aussi visible dans votre [espace client OVHcloud](/links/manager). Connectez-vous, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action} (ou `Mes communications`{.action}). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
+
+Par ailleurs, voici quelques éléments pour vous aider à distinguer visuellement un authentique e-mail OVHcloud d'une tentative de phishing.
 
 Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans le tableau ci-dessous.
 
-![Différence entre e-mail OVHcloud et e-mail de phishing](images/phishing-email-2025-FR.png){.thumbnail}
+![Différence entre e-mail OVHcloud et e-mail de phishing](images/FR-legit-and-phishing-email.png){.thumbnail}
 
-En cas de doute, depuis votre [espace client OVHcloud](/links/manager), vous pouvez vérifier si vous avez reçu le même e-mail. Connectez-vous, cliquez sur votre nom en haut à droite puis `E-mails de service`{.action} ou `Mes communications`{.action}.
-
-> [!alert]
+> [!primary]
 > 
-> Pensez à bien vérifier que les 4 conditions suivantes sont remplies.
-> 
-> Les numéros du tableau correspondent à ceux de l'exemple ci-dessus.
+> Les numéros du tableau correspondent à ceux visibles dans l'image ci-dessus.
 
 |Numéro - description|E-mail OVHcloud légitime|E-mail de phishing frauduleux|
 |---|---|---|
-|1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par un nom de domaine appartenant à OVHcloud (voir la liste ci-dessous) |L'expéditeur de l'e-mail sera forcément une adresse qui ne vient pas d'OVHcloud.|
+|1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par un nom de domaine (ou un sous-domaine, par exemple `events.ovhcloud.com` ) appartenant à OVHcloud (voir la liste ci-dessous) |L'expéditeur de l'e-mail sera forcément une adresse qui ne vient pas d'OVHcloud.|
 |2 - Objet|Vérifiez que votre identifiant **(qui commence généralement par les initiales de la personne ayant créé le compte OVHcloud)** et/ou l’adresse e-mail de votre compte figurent dans l’objet du message.|Très souvent, l'e-mail sera marqué comme \[SPAM] et **votre identifiant n'apparaîtra pas ou sera incorrect**.|
-|3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/.|Dans notre exemple, en passant le pointeur de la souris sur le lien, vous remarquez que celui-ci n'a rien à voir avec OVHcloud. **Ne cliquez pas dessus.**|
-|4 - En-tête et pied de page de l'e-mail|OVHcloud envoie des e-mails dans les format txt et HTML. L'en-tête contiendra le logo OVHcloud, le pied de l'e-mail contiendra des informations légales liées à OVHcloud|Il se peut que l'e-tête ou le pied de page contiennent des liens qui n'ont rien à voir avec OVHcloud. Ne cliquez pas sur ces liens.|
+|3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (juste en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/.|Dans un e-mail de phishing, le lien ne sera pas celui d'une page officielle OVHcloud. **Ne cliquez pas dessus.**|
+|4 - En-tête et pied de page de l'e-mail|OVHcloud envoie des e-mails dans les formats TXT et HTML. L'en-tête contiendra le logo OVHcloud, le pied de l'e-mail contiendra des informations légales liées à OVHcloud|Il se peut que l'en-tête ou le pied de page contiennent des liens qui n'ont rien à voir avec OVHcloud. **Ne cliquez pas sur ces liens.**|
 
 /// details | **Liste des noms de domaines OVHcloud légitimes** (cliquez pour l'afficher)
 
@@ -82,17 +79,23 @@ En cas de doute, depuis votre [espace client OVHcloud](/links/manager), vous pou
 - ovh.us
 - robot.ovh.net
 
+Des e-mails peuvent également vous être envoyés de notre part depuis des sous-domaines authentiques tels que :
+
+- events.ovhcloud.com
+- news.soyoustart.com
+- services.kimsufi.com
+
 ///
 
 #### Identifier un SMS de phishing
 
-OVHcloud ne vous transmettra **jamais** de lien par SMS. Les SMS que nous envoyons sont généralement liés à la [double authentification dans votre espace client](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa). 
+OVHcloud ne vous transmettra **jamais** de lien par SMS. Les SMS que nous envoyons sont généralement liés à la [double authentification dans votre espace client](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Vous trouverez ci-dessous 2 exemples de SMS, le premier est légitime et correspond à la double authentification. Le second SMS est frauduleux.
 
 ![SMS frauduleux](images/sms-phishing.png){.thumbnail}
 
-#### Signaler un e-mail de phishing
+#### Comment signaler un e-mail de phishing ?
 
 Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain que vous avez effectivement reçu un e-mail de phishing usurpant l'identité d'OVHcloud, vous pouvez nous faire parvenir un maximum d’informations (le contenu de l'e-mail au minimum) à l’adresse e-mail suivante : **<fraude@ovh.com>**.
 
@@ -103,7 +106,7 @@ Après avoir effectué les vérifications expliquées au-dessus, si vous êtes c
 
 ### J'ai saisi mes informations personnelles : que faire ?
 
-Cliquez sur les titres ci-dessous pour les afficher
+Cliquez sur les titres ci-dessous pour afficher les instructions.
 
 /// details | **Si vous avez entré votre numéro de carte bancaire sur un site frauduleux**
 

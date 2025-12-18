@@ -263,15 +263,15 @@ Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer vot
 
 /// details | Est-ce que je peux recevoir les notifications d’OVHcloud sur plusieurs adresses e-mail ?
 
-Depuis novembre 2025, vous pouvez ajouter de nouvelles adresses e-mail de contact pour répartir la distribution des e-mails envoyés par OVHcloud
+Depuis novembre 2025, vous pouvez ajouter de nouvelles adresses e-mail de contact pour répartir la distribution des e-mails envoyés par OVHcloud.
 
-Consultez notre guide dédié : [Gérer les communications liées aux services OVHcloud](:pages/account_and_service_management/account_information/manage-messages).
+Consultez notre guide dédié : [Gérer les communications liées aux services OVHcloud](/pages/account_and_service_management/account_information/manage-messages).
 
 ///
 
 /// details | J'ai reçu un e-mail d'OVHcloud. Comment savoir s'il est légitime ?
 
-Tous nos e-mails proviennent d'une adresse e-mail dont le nom de domaine est listé ci-dessous :
+Tous nos e-mails respectent nos standards de sécurité (SPF, DKIM, DMARC) et proviennent d'une adresse e-mail dont le nom de domaine (ou sous-domaine correspondant) est listé ci-dessous :
 
 - ovhcloud.com
 - ovh.com
@@ -298,12 +298,11 @@ Tous nos e-mails proviennent d'une adresse e-mail dont le nom de domaine est lis
 - ovh.us
 - robot.ovh.net
 
-Nous ne vous demanderons jamais de mot de passe ou de coordonnées bancaires par e-mail. Par ailleurs, nos e-mails respestent nos standards de sécurité (SPF, DKIM, DMARC).
-
 **En cas de doute sur l'authenticité d'un e-mail** :
 
-- Vérifiez s'il est listé dans votre [espace client OVHcloud](/links/manager). Connectez-vous, cliquez sur votre nom en haut à droite puis `E-mails de service`{.action} ou `Mes communications`{.action}. Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
-- Consultez également notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care)».
+- Sachez que nous ne vous demanderons jamais de mot de passe ou de coordonnées bancaires par e-mail.
+- Vérifiez si l'e-mail que vous avez reçu est aussi visible dans votre [espace client OVHcloud](/links/manager). Connectez-vous, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action} (ou `Mes communications`{.action}). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
+- Consultez également notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
 
