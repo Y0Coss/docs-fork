@@ -1,6 +1,6 @@
 ---
 title: "Jak skonfigurować rewers DNS Twojego serwera (rekord PTR)"
-excerpt: Dowiedz się, jak skonfigurować rewers DNS dla adresu IPv4 lub IPv6 z poziomu Panelu klienta OVHcloud
+excerpt: Dowiedz się, jak skonfigurować odwrotną rozpoznawalność DNS dla swojego adresu IP w Panelu klienta OVHcloud
 updated: 2025-12-22
 ---
 
@@ -37,7 +37,7 @@ W nowym oknie wprowadź swoją ścieżkę odwrotną i kliknij `Zatwierdź`{.acti
 Możesz również edytować ścieżkę odwrotną bezpośrednio za pomocą ikony `ołówek`{.action} w kolumnie **Rewers DNS** tabeli.
 
 > [!warning]
-> Gdy wpiszesz nazwę swojego domeny w reverse, natychmiast sprawdza, czy rekordy `A` i `AAAA` odpowiadają skonfigurowanym adresom IP dla tej domeny. Jest to używane w procedurach antyspamowych, więc rekordu DNS musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
+> Gdy wprowadzisz nazwę domeny w odwrotnym DNS, natychmiast sprawdzana jest, czy rekord `A` odnosi się z powrotem do tego samego adresu IP. Jest to wykorzystywane w procedurach antyspamowych, więc Twój rekord A musi być prawidłowo skonfigurowany i rozpropagowany. Istnieją pewne zasady, które należy przestrzegać podczas wprowadzania odwrotnej ścieżki:
 >
 >  - rewers nie może się rozpocząć od `-`
 >  - rewers nie może zawierać więcej niż 63 znaków

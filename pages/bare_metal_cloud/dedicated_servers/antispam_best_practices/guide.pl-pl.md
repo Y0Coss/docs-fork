@@ -27,12 +27,12 @@ Gdy IP zostanie "zablokowana z powodu SPAMU", zostanie wysłana wiadomość e-ma
 > Aby zapewnić bezpieczeństwo naszej sieci, ruch wychodzący z Twojego serwera na port 25 został zawieszony.
 > Poniżej znajduje się próbka zablokowanych e-maili, aby móc przeprowadzić weryfikację:
 >
-> Destination IP: 188.95.235.33 - Wiadomość-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score 300 <br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score 300
+> Destination IP: 188.95.235.33 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score 300 <br>
+> Destination IP: 188.95.235.33 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score 300
 > <br>
 > <br>
 
@@ -272,7 +272,7 @@ Google ma również [artykuł poświęcony](https://support.google.com/mail/answ
 Jeśli Twoje wiadomości są zgodne, możesz poinformować nas, wysyłając przykład swojej wiadomości (w tym nagłówek). Nasz zespół wsparcia technicznego pomoże Ci w kolejnych krokach. Utwórz po prostu zgłoszenie wsparcia z poziomu Panelu klienta OVHcloud i dołącz poniższe informacje:
 
 - Adres IP usługi zablokowanej ze względu na SPAM.
-- Oryginalna kopia wiadomości(e) oznaczonej jako SPAM (powinieneś być w stanie to zidentyfikować za pomocą **identyfikatora wiadomości** zawartego w wiadomości ANTISPAM). Jeśli nie podano **identyfikatora wiadomości**, po prostu prześlij nam kopię wiadomości wysłanych przed otrzymaniem alertu. Prosimy, dostarczaj tylko kopię wiadomości oznaczonej jako SPAM.
+- Oryginalna kopia wiadomości(e) oznaczonej jako SPAM (powinieneś być w stanie to zidentyfikować za pomocą **Message-ID** zawartego w wiadomości ANTISPAM). Jeśli nie podano **Message-ID**, po prostu prześlij nam kopię wiadomości wysłanych przed otrzymaniem alertu. Prosimy, dostarczaj tylko kopię wiadomości oznaczonej jako SPAM.
 - Plik .EML wiadomości, który powinien zawierać **nagłówek** i **stopkę** wiadomości. Jeśli nie wiesz, jak wyodrębnić plik .EML, zapoznaj się z poniższym przewodnikiem: [Pobieranie nagłówków wiadomości e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 Po wysłaniu informacji nasz zespół wsparcia skontaktuje się z Vade Secure w celu dalszej analizy sprawy.
