@@ -21,7 +21,9 @@ This guide explains how to set up the Kubernetes External Secret Operator to use
 
 ### Setup the Secret Manager
 
-To allow access to the Secret Manager you will need to create credentials.
+To allow access to the Secret Manager you will need to have a `token`, and the `region` and `okms-id` of your Secret Manager.
+
+#### Credential creation
 
 Create an [IAM local user](/pages/account_and_service_management/account_information/ovhcloud-users-management) with access right on your domain.
 
@@ -33,49 +35,64 @@ The user should be a member of a group with the ADMIN role, or if using [IAM pol
 
 Then create a Personnal Acces Token (PAT) `user_pat`:
 
-> [!api]
->
-> @api {v1} /me POST /me/identity/user/{user}/token
-
-API will answer with:
-
-```json
-{
-  "creation": "2025-11-13T10:38:44.658926311Z",
-  "description": "my first PAT",
-  "expiresAt": null,
-  "lastUsed": null,
-  "name": "my_PAT",
-  "token": "eyJhbGciOiJFZERXXXXXXXXDyI23Q7euIDmw9Pn__SDA"
-}
-```
+> [!tabs]
+> API
+>> > [!api]
+>> >
+>> > @api {v1} /me POST /me/identity/user/{user}/token
+>>
+>> With the following payload (fill with your values):
+>>
+>> ```json
+>> {
+>>   "description": "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+>>   "name": "pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+>> }
+>> ```
+>>
+>> API will answer with:
+>>
+>> ```json
+>> {
+>>   "creation": "2025-11-13T10:38:44.658926311Z",
+>>   "description": "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+>>   "expiresAt": null,
+>>   "lastUsed": null,
+>>   "name": "pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+>>   "token": "eyJhbGciOiJ...punpVAg"
+>> }
+>> ```
+>>
+> CLI
+>> PAT can also created with the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) and the command (fill with your values) :
+>>
+>> ```bash
+>> ovhcloud iam user {user} token create --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+>> ```
+>>
+>> CLI will answer with the `token` value :
+>>
+>> ```bash
+>> ✅ Token Secret-Manager created successfully, value: eyJhbGciOiJ...punpVAg
+>> ```
 
 Keep safe the value of `token` field as it will never be prompt again and will be used to authenticate on the Secret Manager as `user_pat`.
 
-You will also need the `okms-id` of the OKMS domain you want to use. This ID can be found on the OVHcloud Control Panel.
+#### Secret Manager info
 
-### Setup Sealed Secret (optionnal)
+You will also need the `region` and the `okms-id` of the OKMS domain you want to use. This ID and this region can be found on the OVHcloud Control Panel.
 
-Sealed Secret allows you to safely store Kubernetes Secrets wherever you want by encrypting them.
-This step is optionnal but highly recommended.
-
-First, install the controller in your cluster.  It will automatically decrypt Sealed Secrets into standard Kubernetes Secrets
+Or through the [`ovhcloud` CLI](https://github.com/ovh/ovhcloud-cli):
 
 ```bash
-helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
-helm install sealed-secrets -n kube-system sealed-secrets/sealed-secrets
+$ ovhcloud okms list
+┌──────────────────────────────────────┬─────────────┐
+│ id                                   │ region      │
+├──────────────────────────────────────┼─────────────┤
+│ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx │ eu-west-par │
+│ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx │ eu-west-par │
+└──────────────────────────────────────┴─────────────┘
 ```
-
-Then, install kubeseal cli to encrypt Secrets into Sealed Secrets
-
-```bash
-KUBESEAL_VERSION='' # Set this to, for example, KUBESEAL_VERSION='0.23.0'
-curl -OL "https://github.com/bitnami-labs/sealed-secrets/releases/download/v${KUBESEAL_VERSION:?}/kubeseal-${KUBESEAL_VERSION:?}-linux-amd64.tar.gz"
-tar -xvzf kubeseal-${KUBESEAL_VERSION:?}-linux-amd64.tar.gz kubeseal
-sudo install -m 755 kubeseal /usr/local/bin/kubeseal
-```
-
-More information: (<https://github.com/bitnami-labs/sealed-secrets>)
 
 ### Setup the Secret Provider in Kubernetes
 
@@ -86,56 +103,66 @@ helm repo add external-secrets https://charts.external-secrets.io
 helm repo update
 
 helm install external-secrets \
-external-secrets/external-secrets \
--n external-secrets \
---create-namespace \
+   external-secrets/external-secrets \
+    -n external-secrets \
+    --create-namespace \
+    --set installCRDs=true
+```
+
+Check ESO is running :
+
+```bash
+$  kubectl get all -n external-secrets
+NAME                                                    READY   STATUS    RESTARTS   AGE
+pod/external-secrets-8cbc56569-9875p                    1/1     Running   0          12s
+pod/external-secrets-cert-controller-565fcd479b-xbkcp   0/1     Running   0          12s
+pod/external-secrets-webhook-7fb59d4b88-9tkl6           0/1     Running   0          12s
+
+NAME                               TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+service/external-secrets-webhook   ClusterIP   10.3.43.102   <none>        443/TCP   13s
+
+NAME                                               READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/external-secrets                   1/1     1            1           13s
+deployment.apps/external-secrets-cert-controller   0/1     1            0           13s
+deployment.apps/external-secrets-webhook           0/1     1            0           13s
+
+NAME                                                          DESIRED   CURRENT   READY   AGE
+replicaset.apps/external-secrets-8cbc56569                    1         1         1       13s
+replicaset.apps/external-secrets-cert-controller-565fcd479b   1         1         0       13s
+replicaset.apps/external-secrets-webhook-7fb59d4b88           1         1         0       13s
 ```
 
 #### Configure External Secret Operator
 
-First, setup a `ClusterSecretStore` that is responsible of the synchronization with the Secret Manager.
-We configure the ClusterSecretStore using HashiCorp Vault with token authentification and with the OKMS endpoint as backend.
+First, setup a `SecretStore` that is responsible of the synchronization with the Secret Manager.
+We configure the SecretStore using HashiCorp Vault with token authentification and with the OKMS endpoint as backend.
 
 Add the `user_pat` as a secret to be able to use it in the charts.
 
-```yaml
----
-apiVersion: bitnami.com/v1alpha1
-kind: SealedSecret
-metadata:
-  name: token-secret
-  namespace: default
-spec:
-  encryptedData:
-      token: <user_pat>
-  template:
-      metadata:
-        name: token-secret
-        namespace: default
-        type: Opaque
-```
-
-The `ClusterSecretStore` resource:
+To define a new `SecretStore` resource, create a `secretstore.yaml` file with the followong content:
 
 ```yaml
 apiVersion: external-secrets.io/v1
-kind: ClusterSecretStore
+kind: SecretStore
 metadata:
   name: vault-secret-store
 spec:
   provider:
       vault:
-        server: "https://{region}.okms.ovh.net/api/<okms_id>" # OKMS endpoint, fill with the correct region and your okms_id 
+        server: "https://<region>.okms.ovh.net/api/<okms_id>" # OKMS endpoint, fill with the correct region and your okms_id 
         path: "secret"
         version: "v2" 
         auth:
             tokenSecretRef:
-              name: token-secret # The k8s secret that contain your PAT
+              name: ovhcloud-vault-token # The k8s secret that contain your PAT
               key: token 
 ```
 
 > [!info]
 > Only [token authentication](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) is supported
+
+> [!info]
+> This integration works with a `ClusterSecretStore` as well
 
 Region name can be translated from your region location using:
 
@@ -145,47 +172,56 @@ Region name can be translated from your region location using:
 
 As an example for **Europe (France - Paris)**, OKMS endpoint is **eu-west-par.okms.ovh.net**
 
+Deploy the resource in your cluster:
+
+```bash
+kubectl apply -f secretstore.yaml
+```
+
 #### Use External Secret Operator
 
-Once the `ClusterSecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
-In the example we use a secret already created on the Secret Manager:
-
-- Path: `prod/database/MySQL`
-- Value:
-  - `login: admin`
-  - `password: my_secret_password`
+Once the `SecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
+Create a `externalsecret.yaml` file with this content:
 
 ```yaml
 apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
-  name: vault-external-secret
-  namespace: default
+  name: docker-config-secret
+  namespace: external-secrets
 spec:
+  refreshInterval: 30m
   secretStoreRef:
     name: vault-secret-store
     kind: ClusterSecretStore
-  refreshInterval: "10s"
   target:
-    name: creds-secret
+    template:
+      type: kubernetes.io/dockerconfigjson
+      data:
+        .dockerconfigjson: "{{ .mysecret | toString }}"
+    name: ovhregistrycred
     creationPolicy: Owner
   data:
-    - secretKey: login
-      remoteRef:
-        key: prod/database/MySQL # Path of the secret in the Secret Manager
-        property: login # Key to find in the JSON data of the secret
-    - secretKey: password
-      remoteRef:
-        key: prod/database/MySQL
-        property: password
+  - secretKey: mysecret
+    remoteRef:
+      key: prod/va1/dockerconfigjson
 ```
 
-> [!info]
-> Only `ExternalSecret` are supported yet.
+Apply the resource in your cluster:
 
-#### Deploy your application
+```bash
+kubectl apply -f externalsecret.yaml
+```
 
-The secret should be created and available in kubernetes.
+It will create a Kubernetes Secret object.
+
+```bash
+$ kubectl get secret -n external-secrets
+NAME                                     TYPE                             DATA   AGE
+...
+ovhregistrycred                          kubernetes.io/dockerconfigjson   1      15m
+...
+```
 
 For any additionnal informations on how to manage the External Secret Operator refer to the dedicated documentation, using the HashiCorp Vault provider: <https://external-secrets.io/latest/>.
 
