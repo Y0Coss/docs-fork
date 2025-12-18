@@ -1,12 +1,3 @@
-Maxime LacanThu, 18 Dec 2025 14:55:16
-
-que le code markdown stp
-Serge - Serge GenericThu, 18 Dec 2025 14:55:43 (26.984s) - Meta-Llama-3_1-70B-Instruct
-
-Voici le code Markdown traduit en anglais :
-
-markdown
-
 ---
 title: "Nutanix on OVHcloud Lifecycle Policy"
 excerpt: "Nutanix on OVHcloud"
