@@ -129,7 +129,7 @@ Ti consigliamo vivamente di attivare anche l'[autenticazione a doppio fattore](/
 >
 > - contenere almeno dodici caratteri ;
 > - contenere almeno 1 lettera maiuscola, 1 lettera minuscola e 1 numero ;
-> - contenere caratteri speciali (ad esempio : `%`, `#`, `:`, `$`, `*`)
+> - contenere caratteri speciali (ad esempio : `%`, `#`, `:`, `$`, `*`) ;
 > - non essere tratta dal dizionario ;
 > - non contenere informazioni personali (il tuo nome, cognome o data di nascita) ;
 > - non essere utilizzata per diversi accessi utente ;

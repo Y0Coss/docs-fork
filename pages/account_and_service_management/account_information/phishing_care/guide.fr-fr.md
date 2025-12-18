@@ -130,7 +130,7 @@ Nous vous conseillons fortement d’activer également la [double authentificati
 >
 > - comporter au minimum douze caractères ;
 > - comporter au moins 1 lettre majuscule, 1 lettre minuscule et 1 chiffre ;
-> - comporter des caractères spéciaux (par exemple : `%`, `#`, `:`, `$`, `*`)
+> - comporter des caractères spéciaux (par exemple : `%`, `#`, `:`, `$`, `*`) ;
 > - ne pas être tiré du dictionnaire ;
 > - ne pas comporter d’informations personnelles (votre prénom, nom ou date de naissance) ;
 > - ne pas être utilisé pour plusieurs accès utilisateur ;

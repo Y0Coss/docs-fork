@@ -142,10 +142,10 @@ We strongly advise you to enable [two-factor authentication](/pages/account_and_
 
 ## Go further
 
-[Set and manage your account password](/pages/account_and_service_management/account_information/manage-ovh-password)
+[Setting and managing an account password](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Secure your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-[Secure my OVHcloud account and manage my personal information](/pages/account_and_service_management/account_information/all_about_username)
+[Secure your OVHcloud account and manage your personal information](/pages/account_and_service_management/account_information/all_about_username)
 
 Join our [community of users](/links/community).

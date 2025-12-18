@@ -130,7 +130,7 @@ Recomendamos fortemente que ative também a [autenticação em dois fatores](/pa
 >
 > - ter pelo menos doze caracteres;
 > - conter pelo menos 1 letra maiúscula, 1 letra minúscula e 1 número;
-> - conter caracteres especiais (por exemplo: `%`, `#`, `:`, `$`, `*`)
+> - conter caracteres especiais (por exemplo: `%`, `#`, `:`, `$`, `*`);
 > - não ser tirada do dicionário;
 > - não conter informações pessoais (o seu primeiro nome, sobrenome ou data de nascimento);
 > - não ser utilizada para vários acessos de utilizador;
