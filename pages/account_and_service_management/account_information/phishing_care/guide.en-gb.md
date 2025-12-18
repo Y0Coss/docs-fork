@@ -60,7 +60,7 @@ Click on the image to enlarge it. Find the details and explanations in the table
 - services.ovhcloud.com
 - news.ovhcloud.com
 - clientmanager.fr
-- Kimsufi.com
+- kimsufi.com
 - soyoustart.com
 - ovh.ca
 - ovh.com.au
@@ -83,7 +83,7 @@ Emails may also be sent from genuine sub-domains such as:
 
 - events.ovhcloud.com
 - news.soyoustart.com
-- services.Kimsufi.com
+- services.kimsufi.com
 
 ///
 
@@ -93,7 +93,7 @@ OVHcloud will **never** send you a link via SMS. The SMS messages we send are us
 
 You will find below 2 examples of SMS messages, the first one is legitimate and corresponds to two-factor authentication. The second SMS is fraudulent.
 
-![Fraudulent SMS](images/SMS-phishing.png){.thumbnail}
+![Fraudulent SMS](images/sms-phishing.png){.thumbnail}
 
 #### How to report a phishing e-mail?
 

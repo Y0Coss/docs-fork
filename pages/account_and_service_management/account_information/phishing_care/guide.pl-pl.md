@@ -59,7 +59,7 @@ Kliknij na obrazek, aby powiększyć. Szczegóły i wyjaśnienia znajdziesz w ta
 - services.ovhcloud.com
 - news.ovhcloud.com
 - clientmanager.fr
-- Kimsufi.com
+- kimsufi.com
 - soyoustart.com
 - ovh.ca
 - ovh.com.au
@@ -82,7 +82,7 @@ Wiadomości e-mail mogą również pochodzić z autentycznych poddomen, takich j
 
 - events.ovhcloud.com
 - news.soyoustart.com
-- services.Kimsufi.com
+- services.kimsufi.com
 
 ///
 
