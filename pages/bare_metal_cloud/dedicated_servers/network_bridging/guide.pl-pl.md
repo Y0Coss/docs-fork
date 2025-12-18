@@ -72,7 +72,7 @@ Następnie możesz użyć menu rozwijanego pod pozycją **Moje publiczne adresy 
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Kliknij `...`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
+Kliknij `⁝`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/addvmac_new.png){.thumbnail}
 

@@ -74,7 +74,7 @@ Sprawdź konfigurację *Firewall Game*:
 
 | ![Game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
-| Kliknij przycisk`...`{.action} obok adresu IP Twojego serwera Game. |
+| Kliknij przycisk`⁝`{.action} obok adresu IP Twojego serwera Game. |
 
 | ![configure-Game-firewall](images/firewall_game_02_new.png) |
 |:--:|

@@ -66,13 +66,13 @@ Code samples in the following instructions have to be replaced with your own val
 > [!warning]
 > In the case of a block of IPs, virtual MAC addresses are created on each individual IP in the block.
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Next, locate your Additional IP address in the table and click the `...`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
+Next, locate your Additional IP address in the table and click the `⁝`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/addvmac_new.png){.thumbnail}
 
@@ -526,7 +526,7 @@ rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
 
 **For Windows**
 
-```sh
+```bash
 ping example.com
 
 Pinging example.com [93.184.215.14] with 32 bytes of data:
