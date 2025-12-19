@@ -1875,6 +1875,7 @@
         + [Internet access](products/web-cloud-internet-internet-access)
             + [Key concepts](web-cloud-internet-internet-access-key-concepts)
                 + [La desserte interne](web_cloud/internet/internet_access/la_desserte_interne)
+                + [Comprendre le cycle de vie des commandes FTTE et FTTO](web_cloud/internet/internet_access/cycle_de_vie_commandes_ftte_ftto)
             + [Getting started](web-cloud-internet-internet-access-getting-started)
                 + [FAQ](web_cloud/internet/internet_access/faq)
                 + [Obtenir les identifiants PPPoE](web_cloud/internet/internet_access/obtenir_id_ppp)
