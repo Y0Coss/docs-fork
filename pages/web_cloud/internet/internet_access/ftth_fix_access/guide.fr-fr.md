@@ -1,7 +1,7 @@
 ---
 title: 'Dépanner son accès Internet fibre'
 excerpt: 'Découvrez comment dépanner et remettre en service votre accès Internet fibre - FTTH, FTTE ou FTTO - OVHcloud'
-updated: 2025-12-15
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Vous n'avez actuellement pas accès à Internet ou rencontrez une dégradation d
 
 Afin de déterminer la cause précise du dysfonctionnement affectant votre accès Internet fibre, il est nécessaire de procéder étape par étape. Suivez ainsi les indications ci-dessous, dans l'ordre, jusqu'au rétablissement de votre accès.
 
-### Étape 1 : vérifier l'existence d'un incident déclaré
+### Étape 1 : vérifier l'existence d'un incident déclaré (**uniquement pour les accès FTTH**)
 
 Rendez-vous sur la page <https://status.isp.ovh.net/> et vérifiez si votre accès Internet fibre est affecté par un incident en cours.
 
@@ -119,13 +119,15 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >> |Voyant|États et significations|
 >> |---|---|
 >> |Power (« **PWR** »)|**Vert fixe** : le RAD est bien alimenté électriquement.<br>**Éteint** : le RAD n'est pas raccordé électriquement ou est hors service.|
->> |Test/Alarme (« **TST/ALM** »)|**Rouge fixe** : fonctionnement normal du RAD.<br>**Éteint** : le RAD n'est pas raccordé électriquement ou est hors service.|
+>> |Test/Alarme (« **TST/ALM** »)|**Rouge fixe** : fonctionnement normal du RAD.<br>**Éteint** : le RAD n'est pas raccordé électriquement ou est hors service (perte de configuration).|
 >> |Port « **NET 1** »|**Vert clignotant** : le signal optique est détecté. La jarretière optique est bien connectée entre le port « **NET 1** » du RAD et le PTO (ou bandeau optique).<br>**Éteint** : le signal optique n'est plus détecté.|
 >> |Port « **NET 3** »|**Vert clignotant** : le câble Ethernet est connecté entre le port « **NET 3** » du RAD et le port « **WAN** » de la box OVHcloud ou du routeur personnel.<br>**Éteint** : il n'y a pas de communication entre le RAD et la box OVHcloud, via un câble Ethernet.|
 >>
 >> Dès lors, plusieurs possibilités existent selon l'état des voyants.
 >>
 >> - **Aucun voyant n'est allumé sur le RAD** : vérifiez l'alimentation électrique du RAD, essayez de le redémarrer en débranchant puis en rebranchant le câble d'alimentation. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
+>>
+>> - **Le voyant TST/ALM est éteint** : essayez de redémarrer le RAD en débranchant puis en rebranchant le câble d'alimentation. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
 >> - **Le voyant NET 1 est éteint** : assurez-vous que la jarretière optique est correctement raccordée entre le PTO ou le bandeau optique et le module SFP connecté au port **NET 1** du RAD, et que celle-ci est en bon état (non pliée ou non coincée sous un meuble). Essayez de redémarrer le RAD, en débranchant puis en rebranchant le câble d'alimentation. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
