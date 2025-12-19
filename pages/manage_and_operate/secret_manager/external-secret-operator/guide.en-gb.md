@@ -169,16 +169,16 @@ ovhcloud-vault-token   Opaque   1      5m
 
 #### Configure External Secret Operator
 
-First, setup a `SecretStore` that is responsible of the synchronization with the Secret Manager.
+First, setup a `ClusterSecretStore` that is responsible of the synchronization with the Secret Manager.
 We configure the SecretStore using HashiCorp Vault with token authentification and with the OKMS endpoint as backend.
 
 Add the `user_pat` as a secret to be able to use it in the charts.
 
-To define a new `SecretStore` resource, create a `secretstore.yaml` file with the followong content:
+To define a new `ClusterSecretStore` resource, create a `clustersecretstore.yaml` file with the followong content:
 
 ```yaml
 apiVersion: external-secrets.io/v1
-kind: SecretStore
+kind: ClusterSecretStore
 metadata:
   name: vault-secret-store
 spec:
@@ -197,7 +197,7 @@ spec:
 > Only [token authentication](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) is supported
 
 > [!info]
-> This integration works with a `ClusterSecretStore` as well
+> This integration works with a `SecretStore` as well
 
 Region name can be translated from your region location using:
 
@@ -215,7 +215,7 @@ kubectl apply -f secretstore.yaml
 
 #### Use External Secret Operator
 
-Once the `SecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
+Once the `ClusterSecretStore` is setup you can define `ExternalSecret` that comes from the secret manager.
 Create a `externalsecret.yaml` file with this content:
 
 ```yaml

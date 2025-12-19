@@ -169,16 +169,16 @@ ovhcloud-vault-token   Opaque   1      5m
 
 #### Configuration de l'External Secret Operator
 
-Tout d'abord, configurez un `SecretStore` qui est chargé de la synchronisation avec le Secret Manager.
+Tout d'abord, configurez un `ClusterSecretStore` qui est chargé de la synchronisation avec le Secret Manager.
 Nous configurons le SecretStore en utilisant HashiCorp Vault avec l'authentification par jeton et l'endpoint OKMS en tant que backend.
 
 Ajoutez le `user_pat` en tant que secret pour pouvoir l'utiliser dans les chartes.
 
-Pour définir une nouvelle ressource `SecretStore`, créez un fichier `secretstore.yaml` avec le contenu suivant :
+Pour définir une nouvelle ressource `ClusterSecretStore`, créez un fichier `clustersecretstore.yaml` avec le contenu suivant :
 
 ```yaml
 apiVersion: external-secrets.io/v1
-kind: SecretStore
+kind: ClusterSecretStore
 metadata:
   name: vault-secret-store
 spec:
@@ -215,7 +215,7 @@ kubectl apply -f secretstore.yaml
 
 #### Utilisation de l'External Secret Operator
 
-Une fois le `SecretStore` configuré, vous pouvez définir des `ExternalSecret` provenant du gestionnaire de secrets.
+Une fois le `ClusterSecretStore` configuré, vous pouvez définir des `ExternalSecret` provenant du gestionnaire de secrets.
 Créez un fichier `externalsecret.yaml` avec le contenu suivant :
 
 ```yaml
