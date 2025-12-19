@@ -1,7 +1,7 @@
 ---
 title: "Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre"
-excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange, E-mail Pr, MX Plan ou Zimbra"
-updated: 2021-10-21
+excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange, E-mail Pro, MX Plan ou Zimbra"
+updated: 2025-12-22
 ---
 
 ## Objectif
@@ -50,8 +50,8 @@ La migration de vos comptes e-mail se fera en 3 grandes étapes, **Renommer** le
 >
 > Cas particulier:
 >
-> - Si vous devez migrer **un compte Exchange ou Zimbra PRO** vers un compte **E-mail Pro** ou **Zimbra STARTER**, vous devez vous assurer que vos comptes e-mail n'excèdent pas les 10Go(E-mail Pro) ou 15Go(Zimbra STARTER). Les fonctions collaboratives, la synchronisation des calendriers et contacts ne sont pas présentes sur E-mail Pro ou Zimbra STARTER et ne peuvent pas être migrées.
-> - Si vous devez migrer **un compte Exchange, E-mail Pro ou Zimbra** vers un compte **MX Plan**, vous devez vous assurer que votre compte e-mail n'excède pas les 5Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur MX Plan et ne peuvent pas être migrées.
+> - Si vous devez migrer **un compte Exchange ou Zimbra PRO** vers un compte **E-mail Pro** ou **Zimbra STARTER**, vous devez vous assurer que vos comptes e-mail n'excèdent pas les 10 Go (E-mail Pro) ou 15 Go (Zimbra STARTER). Les fonctions collaboratives, la synchronisation des calendriers et contacts ne sont pas présentes sur E-mail Pro ou Zimbra STARTER et ne peuvent pas être migrées.
+> - Si vous devez migrer **un compte Exchange, E-mail Pro ou Zimbra** vers un compte **MX Plan**, vous devez vous assurer que votre compte e-mail n'excède pas les 5 Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur MX Plan et ne peuvent pas être migrées.
 
 #### Renommer
 

@@ -1,7 +1,7 @@
 ---
 title: 'Migrer une adresse e-mail MX Plan vers un compte E-mail Pro, Exchange ou Zimbra'
 excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro, Exchange ou Zimbra'
-updated: 2025-04-28
+updated: 2025-12-22
 ---
 
 ## Objectif
@@ -49,7 +49,7 @@ Avant de débuter votre migration, il vous faudra identifier la version du MX Pl
 
 > [!primary]
 >
-> La technologie e-mail de votre offre MX Plan peut varier selon la date d’activation de votre offre ou si une migration a récemment eu lieu. Cette technologie se distingue notamment par l’interface de son webmail. Pour l'identifier depuis votre espace client, suivez ce cheminement :
+> La technologie e-mail de votre offre MX Plan peut varier selon la date d’activation de votre offre ou si une migration a récemment eu lieu. Cette technologie se distingue notamment par l’interface de son webmail. Pour l'identifier depuis votre espace client, suivez ces étapes :
 >
 > 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 > 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -117,7 +117,7 @@ Si vous souhaitez le supprimer, dirigez-vous dans l'onglet `Comptes e-mail`{.act
 
 > [!warning]
 >
-> Cette partie concerne uniquement les services MX Plan utilisant la technologie webamail Rouncube.
+> Cette partie concerne uniquement les services MX Plan utilisant la technologie webmail Rouncube.
 
 > [!primary]
 >
@@ -132,6 +132,7 @@ La migration peut être effectuée depuis deux interfaces :<br>
 - **celle du MX Plan**, dès que vous êtes en possession d'un service E-mail Pro ou Exchange (déjà configuré ou non) et d'une adresse MX Plan que vous souhaitez migrer.
 
 > Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** ou qu'aucun **répondeur** ne soient paramétrés sur votre MX Plan.
+>
 > ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selon l'interface sélectionnée. Nous vous rappelons que le délai de migration dépend de la quantité de contenu à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
