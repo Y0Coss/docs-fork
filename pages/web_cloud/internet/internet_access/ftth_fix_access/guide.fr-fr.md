@@ -110,12 +110,9 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> > [!primary]
 >> >
->> > En fonction du paramétrage effectué par le technicien lors de la mise en service du RAD, le raccordement du port « **WAN** » de la box OVHcloud ou d'un routeur personnel s'effectue soit :
+>> > Le port « **NET 1** » du RAD est utilisé pour raccorder le RAD au PTO ou au bandeau optique via un module SFP et une jarretière optique.
 >> >
->> > - sur le port « **NET 3** » via un câble Ethernet ;
->> > - sur le port « **NET 5** » via un module SFP et une jarretière optique (**uniquement pour un routeur personnel**).
->> >
->> > Le port « **NET 1** » est utilisé pour raccorder le RAD au PTO ou au bandeau optique via un module SFP et une jarretière optique.
+>> > Le port « **NET 3** » du RAD est utilisé pour raccorder le port « **WAN** » de la box OVHcloud ou d'un routeur personnel via un câble Ethernet.
 >>
 >> Commencez en relevant l'état des voyants mentionnés ci-dessous sur l'appareil :
 >>
@@ -124,8 +121,7 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >> |Power (« **PWR** »)|**Vert fixe** : le RAD est bien alimenté électriquement.<br>**Éteint** : le RAD n'est pas raccordé électriquement ou est hors service.|
 >> |Test/Alarme (« **TST/ALM** »)|**Rouge fixe** : fonctionnement normal du RAD.<br>**Éteint** : le RAD n'est pas raccordé électriquement ou est hors service.|
 >> |Port « **NET 1** »|**Vert clignotant** : le signal optique est détecté. La jarretière optique est bien connectée entre le port « **NET 1** » du RAD et le PTO (ou bandeau optique).<br>**Éteint** : le signal optique n'est plus détecté.|
->> |Port « **NET 3** »|**Vert clignotant** : le câble Ethernet est connecté entre le port « **NET 3** » du RAD et le port « **WAN** » de la box OVHcloud.<br>**Éteint** : il n'y a pas de communication entre le RAD et la box OVHcloud, via un câble Ethernet.|
->> |Port « **NET 5** »|**Vert clignotant** : la jarretière optique est raccordée entre le module SFP connecté au port « **NET 5** » du RAD et le module SFP du routeur personnel.<br>**Éteint** : il n'y a pas de communication entre le RAD et le routeur personnel, via une jarretière optique.|
+>> |Port « **NET 3** »|**Vert clignotant** : le câble Ethernet est connecté entre le port « **NET 3** » du RAD et le port « **WAN** » de la box OVHcloud ou du routeur personnel.<br>**Éteint** : il n'y a pas de communication entre le RAD et la box OVHcloud, via un câble Ethernet.|
 >>
 >> Dès lors, plusieurs possibilités existent selon l'état des voyants.
 >>
@@ -133,9 +129,7 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> - **Le voyant NET 1 est éteint** : assurez-vous que la jarretière optique est correctement raccordée entre le PTO ou le bandeau optique et le module SFP connecté au port **NET 1** du RAD, et que celle-ci est en bon état (non pliée ou non coincée sous un meuble). Essayez de redémarrer le RAD, en débranchant puis en rebranchant le câble d'alimentation. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
->> - **Le voyant NET 3 est éteint** : vérifiez que le câble Ethernet est bien raccordé du port **NET 3** du RAD au port **WAN** de la box OVHcloud. Remplacez ensuite si besoin le câble Ethernet. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
->>
->> - **Le voyant NET 5 est éteint (utilisation d'un routeur personnel disposant d'un module SFP)** : vérifiez que la jarretière optique est bien raccordée du module SFP connecté au port **NET 5** du RAD au module SFP de votre routeur personnel. Remplacez ensuite si besoin la jarretière optique. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> - **Le voyant NET 3 est éteint** : vérifiez que le câble Ethernet est bien raccordé du port **NET 3** du RAD au port **WAN** de la box OVHcloud ou du routeur personnel. Remplacez ensuite si besoin le câble Ethernet. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
 >> - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que le RAD est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
 

@@ -14,9 +14,9 @@ L’objectif de ce guide est de fournir une vision complète et structurée du t
 
 ## En pratique
 
-Une fois votre commande FTTE ou FTTO validée et payée, elle est confirmée dans les jours qui suivent. Une visite technique a ensuite lieu afin de réaliser un état des lieux et de planifier des travaux si nécessaire.<br>
+Une fois votre commande FTTE ou FTTO validée et payée, elle est confirmée dans les jours qui suivent. Une visite technique a ensuite lieu afin de réaliser un état des lieux et de planifier votre raccordement ou des travaux complémentaires si nécessaire.<br>
 Suite à cela, un technicien assure la livraison et l'installation du **RAD** (équipement d'accès au service, équivalent à l'ONT sur un accès FTTH).<br>
-Il est possible d'utiliser le modem fourni par OVHcloud ou un modem personnel.
+Il est possible d'utiliser la box fournie par OVHcloud ou un [routeur personnel](/pages/web_cloud/internet/internet_access/advanced_config_router_manually).
 
 La livraison de votre accès a lieu dans les jours suivant sa mise en service.
 
@@ -29,7 +29,7 @@ Les architectures FTTE et FTTO diffèrent au niveau de l'infrastructure et du po
 | FTTE       | Fibre mutualisée entre le **N**oeud de **R**accordement **O**ptique (**NRO**) et le **P**oint de **M**utualisation (**PM**).<br> Fibre dédiée du PM au site client. | PTO dédié ou bandeau optique |
 | FTTO       | Fibre entièrement dédiée du NRO au site client. | Bandeau optique |
 
-Nos offres FTTE et FTTO permettent d'obtenir un débit symétrique garanti de 100 Mbps, 300 Mbps ou de 1 Gbps.
+Nos offres FTTE et FTTO permettent d'obtenir un débit symétrique garanti de 100 Mbps, 300 Mbps ou 1 Gbps.
 
 ### Vue d'ensemble du cycle de vie des commandes FTTE et FTTO
 
@@ -48,31 +48,31 @@ Cliquez sur votre offre pour voir les détails du délai de livraison applicable
 >>
 >> Cela comprend 2 ou 3 rendez-vous :
 >>
->> - Pré-visite ou **P**lan d'**O**pération **C**lient (**POC**)
->> - Éventuels travaux
->> - Mise en service et installation du RAD
+>> - Pré-visite ou **P**lan d'**O**pération **C**lient (**POC**).
+>> - Raccordement de votre accès (mise en service et installation du RAD) ou réalisation d'éventuels travaux complémentaires.
+>> - Suite aux éventuels travaux, mise en service et installation du RAD.
 >>
 >> > [!success]
 >> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de mise en service sera moindre.
 >>
->> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.<br>
->> Si vous utilisez la box OVHcloud, l'activation sera réalisée sur le port Ethernet.
+>> Lors de la mise en service, le technicien assure le raccordement du RAD au PTO (ou au bandeau optique) grâce à une jarretière optique, connectée à la prise « NET 1 » du RAD, via un module SFP.<br>
+>> La prise « NET 3 » du RAD est reliée à la prise « WAN » de la box OVHcloud ou d'un routeur personnel grâce à un câble Ethernet.
 >>
 > Commande FTTO
 >> 
 >> Un accès FTTO est livré en moyenne sous 8 semaines.
 >>
->> Cela comprend 2 ou 3 rendez-vous :
+>> Cela comprend 1 à 3 rendez-vous :
 >>
->> - Visite technique
->> - Éventuels travaux
->> - Mise en service et installation du RAD.
+>> - Visite technique et raccordement de votre accès (mise en service et installation du RAD), si possible le jour même.
+>> - Réalisation d'éventuels travaux si nécessaire.
+>> - Suite aux éventuels travaux, mise en service et installation du RAD.
 >>
 >> > [!success]
 >> > Si votre commande ne nécessite pas de travaux complémentaires, le délai de mise en service sera moindre.
 >>
->> Lors de la mise en service, vous devrez spécifier au technicien d'activer sur le RAD soit le port SFP (optique), soit le port Ethernet (RJ45) pour raccorder votre installation.<br>
->> Si vous utilisez la box OVHcloud, l'activation sera réalisée sur le port Ethernet.
+>> Lors de la mise en service, le technicien assure le raccordement du RAD au PTO (ou au bandeau optique) grâce à une jarretière optique, connectée à la prise « NET 1 » du RAD, via un module SFP.<br>
+>> La prise « NET 3 » du RAD est reliée à la prise « WAN » de la box OVHcloud ou d'un routeur personnel grâce à un câble Ethernet.
 
 > [!primary]
 > Le délai moyen de mise en service est plus élevé sur un accès FTTE, en raison d’une infrastructure qui n’est pas totalement dédiée et de la nécessité de coordonner une intervention avec une entité tierce au niveau du PM.
