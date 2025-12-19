@@ -75,7 +75,7 @@ Cliquez sur votre offre pour voir les détails du délai de livraison applicable
 >> La prise « NET 3 » du RAD est reliée à la prise « WAN » de la box OVHcloud ou d'un routeur personnel grâce à un câble Ethernet.
 
 > [!primary]
-> Le délai moyen de mise en service est plus élevé sur un accès FTTE, en raison d’une infrastructure qui n’est pas totalement dédiée et de la nécessité de coordonner une intervention avec une entité tierce au niveau du PM.
+> Le délai moyen de mise en service est plus élevé sur un accès FTTE, en raison de la nécessité de coordonner une intervention avec une entité tierce au niveau du PM.
 >
 > Le délai d'une commande FTTE ou FTTO varie également en fonction de la complexité du site à raccorder.
 
