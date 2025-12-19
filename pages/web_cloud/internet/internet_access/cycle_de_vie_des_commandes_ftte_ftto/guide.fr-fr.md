@@ -6,7 +6,7 @@ updated: 2025-12-19
 
 ## Objectif
 
-L’objectif de ce guide est de fournir une vision complète et structurée du traitement des commandes FTTE et FTTO chez OVHcloud. Il décrit chaque étape du processus pour faciliter le suivi, anticiper les actions nécessaires et assurer une gestion optimale des commandes. 
+L’objectif de ce guide est de fournir une vision complète et structurée du traitement des commandes FTTE et FTTO chez OVHcloud. Il décrit chaque étape du processus pour faciliter le suivi, anticiper les actions nécessaires et assurer une gestion optimale des commandes.
 
 ## Prérequis
 
