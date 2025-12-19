@@ -1,7 +1,7 @@
 ---
-title: Object Storage – Comment partager un objet/fichier en externe
-excerpt: Découvrez comment partager en toute sécurité des fichiers Object Storage en externe dans OVHcloud, en utilisant des URLs signées, des objets public-read ou des politiques de bucket pour un accès contrôlé.
-updated: 2025-11-03
+title: Object Storage – Comment partager un objet ou fichier en externe
+excerpt: Découvrez comment partager en toute sécurité des fichiers Object Storage en externe dans OVHcloud, en utilisant des URLs signées, des objets public-read ou des politiques de bucket pour un accès contrôlé
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -10,10 +10,10 @@ Ce guide explique comment partager en toute sécurité des fichiers ou objets st
 
 ### Scénarios d'utilisation
 
-Les scénarios d'utilisation courants pour partager des objets dans l'Object Storage OVHcloud incluent :
+Les scénarios d'utilisation courants de partage d'objets dans l'Object Storage OVHcloud sont :
 
 - Vous souhaitez fournir un lien de téléchargement temporaire à un partenaire ou client sans accorder un accès complet au bucket.
-- Vous avez besoin de rendre certains objets publics, tels que des images ou des documents produits, tout en gardant le reste du bucket privé.
+- Vous avez besoin de rendre certains objets publics, tels que des images ou des documents de produits, tout en gardant le reste du bucket privé.
 - Vous souhaitez accorder un accès contrôlé à certains fichiers pour des collaborateurs ou utilisateurs externes.
 
 ## Comparaison des types d'URL
@@ -25,24 +25,24 @@ Lorsque vous partagez des objets dans l'Object Storage OVHcloud, il est importan
 | Format                     | `https://s3.<region>.io.cloud.ovh.net/<bucket>/<object-key>/<generated-code>` | `https://<bucket>.s3.<region>.io.cloud.ovh.net/<object-key>` |
 | Utilisation typique        | URLs signées générées via l'API                                               | URLs provenant du panneau de configuration ou des objets publics                |
 | Emplacement du nom de bucket | Dans le chemin de l'URL                                                       | Dans le sous-domaine                                             |
-| Meilleur pour              | Accès temporaire ou programmation                                              | Partage public ou liens stables                               |
+| Adapté pour                | Accès temporaire ou programmation                                              | Partage public ou liens stables                               |
 | Contrôle d'accès           | Limité par l'expiration de l'URL signée                                           | Contrôlé par les ACL ou les politiques de bucket                        |
 
 **Points clés :**
 
-- Utilisez les URL de type chemin pour un accès temporaire ou programmé.
+- Utilisez les URL Path-style pour un accès temporaire ou programmé.
 - Utilisez les URL Virtual-hosted-style pour le partage public ou à long terme, car elles sont plus standardisées et plus faciles à gérer.
 
 ## Prérequis
 
 - Un bucket
-- Un utilisateur et les droits d'accès requis définis sur le bucket
+- Un utilisateur avec les droits d'accès requis définis sur le bucket
 
 Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 ## En pratique
 
-L'Object Storage OVHcloud propose trois principales méthodes pour partager des objets en externe. Choisissez la méthode en fonction de vos besoins : accès temporaire, accès public ou partage contrôlé.
+L'Object Storage OVHcloud propose trois méthodes principales pour partager des objets en externe. Choisissez la méthode en fonction de vos besoins : accès temporaire, accès public ou partage contrôlé.
 
 > [!tabs]
 > Via des URLs signées
@@ -89,6 +89,6 @@ L'Object Storage OVHcloud propose trois principales méthodes pour partager des 
 
 ## Aller plus loin
 
-Si vous avez besoin de formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de Services Professionnels de vous aider dans le cadre de votre cas d'utilisation spécifique ou de votre projet.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
