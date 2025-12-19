@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Structured Output
 excerpt: Learn how to use Structured Output with OVHcloud AI Endpoints
-updated: 2025-08-06
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -43,7 +43,7 @@ The examples provided during this guide can be used with one of the following en
 >> pip install openai pydantic
 >> ```
 >> 
->> **Javascript**
+>> **JavaScript**
 >> 
 >> A [Node.js](https://nodejs.org/en) environment with the [request](https://www.npmjs.com/package/request) library.
 >> Request can be installed using [NPM](https://www.npmjs.com/):
@@ -114,7 +114,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> # Initialise the client
 >> api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> openai_client = openai.OpenAI(
->>     base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+>>     base_url='https://oai.endpoints.kepler.ai.cloud.ovh.net/v1',
 >>     api_key=api_key
 >> )
 >> 
@@ -151,7 +151,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> Input query:
 >>
 >> ```sh
->> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
+>> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions" \
 >>     -H 'accept: application/json'\
 >>     -H 'content-type: application/json' \
 >>     -d '{
@@ -160,6 +160,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>             { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
 >>             { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
 >>         ],
+>>         "model": "Meta-Llama-3_3-70B-Instruct",
 >>         "response_format": {
 >>             "type":"json_schema",
 >>             "json_schema": {
@@ -208,7 +209,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>
 >> As we can see, the response is matching the expected JSON schema!
 >>
-> **Javascript**
+> **JavaScript**
 >>
 >> ```javascript
 >> const request = require('request');
@@ -258,7 +259,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> // Initialise the client
 >> const apiKey = process.env.AI_ENDPOINT_API_KEY; // Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> const options = {
->>     url: 'https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions',
+>>     url: 'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions',
 >>     headers: {
 >>         'Content-Type': 'application/json',
 >>         'Authorization': `Bearer ${apiKey}`
@@ -266,6 +267,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>     json: true,
 >>     body: {
 >>         messages: messages,
+>>         model: 'Meta-Llama-3_3-70B-Instruct',
 >>         response_format: {
 >>             type: 'json_schema',
 >>             json_schema: jsonSchema
@@ -303,7 +305,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> Java is the n°3 most popular language (https://www.java.com/)
 >> ```
 >>
->> This example shows us how to use the JSON schema response format with Javascript.
+>> This example shows us how to use the JSON schema response format with JavaScript.
 >>
 
 ### JSON object
@@ -327,7 +329,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> # Initialise the client
 >> api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> openai_client = openai.OpenAI(
->>     base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+>>     base_url='https://oai.endpoints.kepler.ai.cloud.ovh.net/v1',
 >>     api_key=api_key
 >> )
 >> 
@@ -375,7 +377,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> Input query:
 >>
 >> ```sh
->> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
+>> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions" \
 >>     -H 'accept: application/json' \
 >>     -H 'content-type: application/json' \
 >>     -d '{
@@ -398,7 +400,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> {"id":"chatcmpl-dfdbf074ab864199bac48ec929179fed","object":"chat.completion","created":1750773314,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"rank\": [\n    {\"position\": 1, \"language\": \"JavaScript\", \"popularity\": \"94.5%\"},\n    {\"position\": 2, \"language\": \"HTML/CSS\", \"popularity\": \"93.2%\"},\n    {\"position\": 3, \"language\": \"Python\", \"popularity\": \"87.3%\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":77,"total_tokens":142}}%
 >> ```
 >>
-> **Javascript**
+> **JavaScript**
 >>
 >> ```javascript
 >> const request = require('request');
@@ -413,7 +415,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> // Initialise the client
 >> const apiKey = process.env.AI_ENDPOINT_API_KEY; // Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> const options = {
->>     url: 'https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions',
+>>     url: 'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions',
 >>     headers: {
 >>         'Content-Type': 'application/json',
 >>         'Authorization': `Bearer ${apiKey}`
@@ -421,6 +423,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >>     json: true,
 >>     body: {
 >>         messages: messages,
+>>         model: 'Meta-Llama-3_3-70B-Instruct',
 >>         response_format: {
 >>             type: 'json_object',
 >>         },
@@ -487,7 +490,7 @@ class LanguageRankings(BaseModel):
 # Initialise the client
 api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 openai_client = openai.OpenAI(
-    base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+    base_url='https://oai.endpoints.kepler.ai.cloud.ovh.net/v1',
     api_key=api_key
 )
 
@@ -557,8 +560,6 @@ In this guide, we have explained how to use Structured Output with the [AI Endpo
 ## Go further
 
 Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
-
-To discover how to build complete and powerful applications using AI Endpoints, explore our dedicated [AI Endpoints guides](/products/public-cloud-ai-and-machine-learning-ai-endpoints).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

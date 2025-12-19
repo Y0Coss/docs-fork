@@ -1,12 +1,8 @@
 ---
 title: "Como configurar a reverse DNS do seu servidor (registo PTR)"
-excerpt: Descubra como configurar a resolução reverse DNS do seu endereço IP a partir da Área de Cliente OVHcloud
-updated: 2025-04-28
+excerpt: Descubra como configurar a resolução reverse DNS do seu endereço IPv4 ou IPv6 a partir da Área de Cliente OVHcloud
+updated: 2025-12-10
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -19,7 +15,7 @@ A configuração da reverse DNS de um servidor é particularmente útil durante 
 ## Requisitos
 
 - Um endereço IP associado a um serviço da sua conta OVHcloud
-- Um nome de domínio com o seu registo `A` ligado ao seu serviço
+- Um nome de domínio com o seu registo `A` ou `AAAA` ligado ao seu serviço
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
@@ -41,22 +37,20 @@ Na nova janela, indique a sua reverse e clique em `Validar`{.action}.
 Pode igualmente editar a reverse diretamente a partir do ícone em forma de caneta na coluna **Reverse DNS** da tabela.
 
 > [!warning]
-> Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo A remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo A deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
+> Quando introduzir o nome do seu domínio no reverse, será verificado de imediato se os registos `A` e `AAAA` correspondem aos endereços IP configurados para este domínio. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo DNS deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
 >
 >  - a reverse não pode começar por um `-`
 >  - a reverse não pode ter mais de 63 caracteres
 >  - a reverse não pode conter caracteres maiúsculos
 >  - a reverse deve terminar com um `.`
 >
-> Por exemplo: "MyDomain.ca" no registo reverse seria **mydomain.ca.**
->
+> Por exemplo: "domain.tld" no registo reverse seria `domain.tld.`.
 
 > [!primary]
 >
-> Se a alteração não funcionar como esperado, verifique se o registo `A` está corretamente configurado na zona DNS do seu domínio. A aplicação das alterações na zona DNS pode demorar até 24 horas, no caso de ter alterado recentemente o registo `A`.
+> Se a alteração não funcionar conforme o esperado, verifique se os registros `A` e `AAAA` estão corretamente configurados na zona DNS do seu nome de domínio. A aplicação das alterações na zona DNS pode demorar até 24 horas, no caso de ter alterado recentemente o registo.
 >
 > Se o domínio for gerido pela OVHcloud como agente de registo **e utilizar os servidores DNS da OVHcloud**, pode consultar [este manual](/pages/web_cloud/domains/dns_zone_edit).
->
 
 ## Quer saber mais?
 

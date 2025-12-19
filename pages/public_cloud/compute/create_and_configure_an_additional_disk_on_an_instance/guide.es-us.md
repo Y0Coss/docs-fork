@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -101,7 +101,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>
 >> > [!warning]
 >>
->> > Nota: El volumen debe crearse en la misma región que la instancia a la que desea asociarlo. Si lo crea en otra región, puede eliminarlo y volver a crearlo en la región correcta o puede migrar la región siguiendo [esta guía](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Nota: El volumen debe crearse en la misma región que la instancia a la que desea asociarlo. Si lo crea en otra región, puede eliminarlo y volver a crearlo en la región correcta.
 >>
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
@@ -140,6 +140,13 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >> - High-speed-gen2-luks
 >>
 >> Los tipos que terminan en -luks están cifrados (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La creación de un volumen **-luks** genera automáticamente una llave dedicada.
+>> >
+>> > No modifique ni elimine esta clave si está asociada a un volumen Block Storage. De este modo, los datos de este volumen y todos sus snapshots serían irrecuperables definitivamente.
+>> >
 >>
 >> Para crear un volumen block storage simple, necesita 3 elementos:
 >>
@@ -267,6 +274,13 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >> - High-speed-gen2-luks
 >>
 >> Los tipos que terminan en -luks están cifrados (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La creación de un volumen **-luks** genera automáticamente una llave dedicada.
+>> >
+>> > No modifique ni elimine esta clave si está asociada a un volumen Block Storage. De este modo, los datos de este volumen y todos sus snapshots serían irrecuperables definitivamente.
+>> >
 >>
 >> Enumere los tipos de volúmenes disponibles en la región:
 >>

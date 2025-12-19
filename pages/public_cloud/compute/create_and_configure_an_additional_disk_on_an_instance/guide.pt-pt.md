@@ -1,7 +1,7 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -101,7 +101,7 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >>
 >> > [!warning]
 >> >
->> > Nota: O seu volume deve ser criado na mesma região que a instância à qual deseja associá-lo. Se o criar noutra região, poderá eliminá-lo e recriá-lo na região correta, ou migrá-lo seguindo [este manual](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Nota: O seu volume deve ser criado na mesma região que a instância à qual deseja associá-lo. Se o criar noutra região, poderá eliminá-lo e recriá-lo na região correta.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
@@ -120,15 +120,16 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >>
 >> O processo de associação do disco à sua instância vai então começar. A operação pode levar alguns minutos.
 >>
->> [!warning]
+>> > [!warning]
+>> >
 >> > Certifique-se de que não sai da página atual da sua Área de Cliente OVHcloud enquanto o disco estiver a ser ligado. Isso poderia interromper o processo.
->> > >
+>> >
 >>
 > **Via Terraform**
->> [!warning]
->> > >
+>> > [!warning]
+>> >
 >> > Tenha em conta que os tipos de volume "high-speed-gen2" ou "luks" podem não estar disponíveis em todas as regiões.
->> > >
+>> >
 >>
 >> Tipos de volumes:
 >>
@@ -140,6 +141,13 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >> - High-speed-gen2-luks
 >>
 >> Os tipos que terminam com -us são encriptados (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > A criação de um volume **-luks** gera automaticamente uma chave dedicada.
+>> >
+>> > Não altere nem elimine esta chave se esta estiver associada a um volume Block Storage. Isto tornaria os dados deste volume e todas as suas snapshots definitivamente irrecuperáveis.
+>> >
 >>
 >> Para criar um volume Block Storage simples, precisa de 3 elementos:
 >>
@@ -266,6 +274,13 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >> - High-speed-gen2-luks
 >>
 >> Os tipos que terminam com -us são encriptados (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > A criação de um volume **-luks** gera automaticamente uma chave dedicada.
+>> >
+>> > Não altere nem elimine esta chave se esta estiver associada a um volume Block Storage. Isto tornaria os dados deste volume e todas as suas snapshots definitivamente irrecuperáveis.
+>> >
 >>
 >> Listar os tipos de volumes disponíveis na região:
 >>
