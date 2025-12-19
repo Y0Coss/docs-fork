@@ -5,7 +5,7 @@ updated: 2025-11-07
 ---
 
 > [!primary]
-> Secret Manager is currently in beta phase. This guide can be updated in the future with the advances of our teams in charge of this product.
+> Secret Manager is currently in Beta phase. This guide can be updated in the future with the advancements made by our teams in charge of this product.
 
 ## Objective
 
@@ -21,7 +21,7 @@ This guide explains how to set up the Kubernetes External Secret Operator to use
 
 ### Setup the Secret Manager
 
-To allow access to the Secret Manager you will need to have a `token`, and the `region` and `okms-id` of your Secret Manager.
+To allow access to the Secret Manager you will need to have a `token`, the `region` and `okms-id` of your Secret Manager.
 
 #### Credential creation
 
@@ -64,10 +64,10 @@ Then create a Personnal Acces Token (PAT) `user_pat`:
 >> ```
 >>
 > CLI
->> PAT can also created with the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) and the command (fill with your values) :
+>> PAT can also created with the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) and the command (fill with your values):
 >>
 >> ```bash
->> ovhcloud iam user {user} token create --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+>> ovhcloud iam user token create {user} --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
 >> ```
 >>
 >> CLI will answer with the `token` value :
@@ -109,7 +109,7 @@ helm install external-secrets \
     --set installCRDs=true
 ```
 
-Check ESO is running :
+Check ESO is running:
 
 ```bash
 $  kubectl get all -n external-secrets
@@ -130,6 +130,41 @@ NAME                                                          DESIRED   CURRENT 
 replicaset.apps/external-secrets-8cbc56569                    1         1         1       13s
 replicaset.apps/external-secrets-cert-controller-565fcd479b   1         1         0       13s
 replicaset.apps/external-secrets-webhook-7fb59d4b88           1         1         0       13s
+```
+
+#### Create a secret containing the PAT
+
+Start by encoding your `user_pat` is base64 so it can be stored in a kubernetes secret.
+
+```bash
+$ echo -n "<token>" | base64
+ZXlKaG...wVkFn
+```
+
+Then create a `secret.yaml`:
+
+```yaml
+ apiVersion: v1
+kind: Secret
+metadata:
+  name: ovhcloud-vault-token
+  namespace: external-secrets
+data:
+  token: ZXlKaG...wVkFn
+```
+
+And apply the ressource to the cluster:
+
+```bash
+kubectl apply -f secret.yaml
+```
+
+The secret should have been created:
+
+```bash
+$ kubectl get secret ovhcloud-vault-token -n external-secrets
+NAME                   TYPE     DATA   AGE
+ovhcloud-vault-token   Opaque   1      5m
 ```
 
 #### Configure External Secret Operator

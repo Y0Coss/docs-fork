@@ -1,15 +1,15 @@
 ---
 title: "Utiliser Kubernetes External Secret Operator avec Secret Manager"
-excerpt: "Configurer External Secret Operator pour stocker des secrets Kubernetes sur le Secret Manager OVHcloud"
+excerpt: "Configurer External Secret Operator pour stocker les secrets Kubernetes sur le Secret Manager d'OVHcloud"
 updated: 2025-11-07
 ---
 
 > [!primary]
-> Secret Manager est actuellement en phase bêta. Ce guide peut être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
+> Secret Manager est actuellement en phase bêta. Ce guide peut être mis à jour à l'avenir avec les avancées apportées par nos équipes en charge de ce produit.
 
 ## Objectif
 
-Ce guide explique comment configurer le Kubernetes External Secret Operator pour utiliser le Secret Manager OVHcloud en tant que fournisseur.
+Ce guide explique comment configurer l'External Secret Operator Kubernetes pour utiliser le Secret Manager d'OVHcloud en tant que fournisseur.
 
 ## Prérequis
 
@@ -21,19 +21,19 @@ Ce guide explique comment configurer le Kubernetes External Secret Operator pour
 
 ### Configuration du Secret Manager
 
-Pour permettre l'accès au Secret Manager, vous aurez besoin d'avoir un `token`, ainsi que la `region` et l'`okms-id` de votre Secret Manager.
+Pour permettre l'accès au Secret Manager, vous aurez besoin d'un `token`, de la `region` et de l'`okms-id` de votre Secret Manager.
 
 #### Création des identifiants
 
 Créez un [utilisateur local IAM](/pages/account_and_service_management/account_information/ovhcloud-users-management) avec les droits d'accès à votre domaine.
 
-L'utilisateur doit appartenir à un groupe avec le rôle ADMIN, ou si vous utilisez les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui), il doit avoir au moins les droits suivants sur le domaine OKMS :
+L'utilisateur doit appartenir à un groupe avec le rôle ADMIN, ou si vous utilisez des [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui), il doit avoir au moins les droits suivants sur le domaine OKMS :
 
 - `okms:apikms:secret/create`
 - `okms:apikms:secret/version/getData`
 - `okms:apiovh:secret/get`
 
-Puis créez un Token d'Accès Personnel (PAT) `user_pat` :
+Puis créez un jeton d'accès personnel (PAT) `user_pat` :
 
 > [!tabs]
 > API
@@ -41,7 +41,7 @@ Puis créez un Token d'Accès Personnel (PAT) `user_pat` :
 >> >
 >> > @api {v1} /me POST /me/identity/user/{user}/token
 >>
->> Avec le payload suivant (remplissez avec vos valeurs) :
+>> Avec la charge utile suivante (remplissez avec vos valeurs) :
 >>
 >> ```json
 >> {
@@ -64,10 +64,10 @@ Puis créez un Token d'Accès Personnel (PAT) `user_pat` :
 >> ```
 >>
 > CLI
->> Le PAT peut également être créé avec la [CLI OVHcloud](https://github.com/ovh/ovhcloud-cli) et la commande suivante (remplissez avec vos valeurs) :
+>> Le PAT peut également être créé avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) et la commande suivante (remplissez avec vos valeurs) :
 >>
 >> ```bash
->> ovhcloud iam user {user} token create --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+>> ovhcloud iam user token create {user} --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
 >> ```
 >>
 >> La CLI répondra avec la valeur du `token` :
@@ -76,13 +76,13 @@ Puis créez un Token d'Accès Personnel (PAT) `user_pat` :
 >> ✅ Token Secret-Manager created successfully, Value: eyJhbGciOiJ...punpVAg
 >> ```
 
-Conservez la valeur du champ `token` car elle ne sera plus affichée et sera utilisée pour l'authentification sur le Secret Manager en tant que `user_pat`.
+Conservez la valeur du champ `token` car elle ne sera plus affichée et sera utilisée pour s'authentifier sur le Secret Manager en tant que `user_pat`.
 
 #### Informations du Secret Manager
 
 Vous aurez également besoin de la `region` et de l'`okms-id` du domaine OKMS que vous souhaitez utiliser. Cet ID et cette région peuvent être trouvés sur l'espace client OVHcloud.
 
-Ou via la [`ovhcloud` CLI](https://github.com/ovh/ovhcloud-cli) :
+Ou via l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) :
 
 ```bash
 $ ovhcloud okms list
@@ -132,12 +132,47 @@ replicaset.apps/external-secrets-cert-controller-565fcd479b   1         1       
 replicaset.apps/external-secrets-webhook-7fb59d4b88           1         1         0       13s
 ```
 
+#### Création d'un secret contenant le PAT
+
+Commencez par encoder votre `user_pat` en base64 afin de pouvoir le stocker dans un secret Kubernetes.
+
+```bash
+$ echo -n "<token>" | base64
+ZXlKaG...wVkFn
+```
+
+Puis créez un fichier `secret.yaml` :
+
+```yaml
+ apiVersion: v1
+kind: Secret
+metadata:
+  name: ovhcloud-vault-token
+  namespace: external-secrets
+data:
+  token: ZXlKaG...wVkFn
+```
+
+Et appliquez la ressource au cluster :
+
+```bash
+kubectl apply -f secret.yaml
+```
+
+Le secret devrait avoir été créé :
+
+```bash
+$ kubectl get secret ovhcloud-vault-token -n external-secrets
+NAME                   TYPE     DATA   AGE
+ovhcloud-vault-token   Opaque   1      5m
+```
+
 #### Configuration de l'External Secret Operator
 
-Tout d'abord, configurez un `SecretStore` qui est responsable de la synchronisation avec le Secret Manager.
-Nous configurons le SecretStore en utilisant HashiCorp Vault avec l'authentification par token et en utilisant l'endpoint OKMS en tant que backend.
+Tout d'abord, configurez un `SecretStore` qui est chargé de la synchronisation avec le Secret Manager.
+Nous configurons le SecretStore en utilisant HashiCorp Vault avec l'authentification par jeton et l'endpoint OKMS en tant que backend.
 
-Ajoutez le `user_pat` en tant que secret afin de pouvoir l'utiliser dans les chartes.
+Ajoutez le `user_pat` en tant que secret pour pouvoir l'utiliser dans les chartes.
 
 Pour définir une nouvelle ressource `SecretStore`, créez un fichier `secretstore.yaml` avec le contenu suivant :
 
@@ -159,12 +194,12 @@ spec:
 ```
 
 > [!info]
-> Seule l'[authentification par token](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) est prise en charge
+> Seule l'[authentification par jeton](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) est prise en charge
 
 > [!info]
 > Cette intégration fonctionne également avec un `ClusterSecretStore`
 
-Le nom de la région peut être traduit à partir de votre localisation régionale en utilisant :
+Le nom de la région peut être traduit à partir de votre emplacement régional en utilisant :
 
 > [!api]
 >
