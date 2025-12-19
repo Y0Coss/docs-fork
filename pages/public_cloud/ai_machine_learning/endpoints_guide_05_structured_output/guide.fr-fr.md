@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Sorties structurées
 excerpt: Découvrez comment utiliser les sorties structurées avec OVHcloud AI Endpoints
-updated: 2025-08-06
+updated: 2025-12-19
 ---
 
 > [!primary]

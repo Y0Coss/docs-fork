@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer son assistant audio (EN)
 excerpt: "Créez un chatbot vocal en utilisant des APIs d'ASR, de LLM et de TTS en moins de 100 lignes de code"
-updated: 2025-10-01
+updated: 2025-12-19
 ---
 
 > [!primary]

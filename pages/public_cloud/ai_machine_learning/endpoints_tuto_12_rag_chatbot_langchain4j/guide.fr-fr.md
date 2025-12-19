@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot de discussion RAG avec LangChain4j (EN)
 excerpt: Apprenez à construire un chatbot RAG (Retrieval Augmented Generation) en utilisant Java et LangChain4j
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]

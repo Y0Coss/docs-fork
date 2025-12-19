@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Appel de fonctions
 excerpt: Découvrez comment utiliser l'appel de fonctions avec OVHcloud AI Endpoints
-updated: 2025-08-06
+updated: 2025-12-19
 ---
 
 > [!primary]

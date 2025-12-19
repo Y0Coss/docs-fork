@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot en Python avec LangChain (EN)
 excerpt: Apprenez à développer un chatbot en Python en utilisant LangChain et AI Endpoints
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot avec mémoire en utilisant LangChain4j (EN)
 excerpt: "Apprenez à mettre en œuvre la mémoire dans un chatbot de discussion Java à l'aide de LangChain4j"
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]

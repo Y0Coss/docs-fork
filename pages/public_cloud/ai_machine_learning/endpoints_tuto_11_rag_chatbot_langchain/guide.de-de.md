@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Build a RAG Chatbot with LangChain
 excerpt: Learn how to build a RAG (Retrieval Augmented Generation) chatbot using Python, LangChain and AI Endpoints
-updated: 2025-10-30
+updated: 2025-12-19
 ---
 
 > [!primary]

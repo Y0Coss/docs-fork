@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Créer un assistant de code avec Continue (EN)
 excerpt: "Créez votre assistant de code directement dans votre IDE (VSCode ou JetBrains) à l'aide du plug-in Continue"
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
