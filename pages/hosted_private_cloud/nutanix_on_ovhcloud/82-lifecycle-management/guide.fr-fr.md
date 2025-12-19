@@ -1,5 +1,5 @@
 ---
-title: "Nutanix pn OVHcloud - Cycle de vie"
+title: "Nutanix on OVHcloud - Cycle de vie"
 excerpt: "La politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, à évaluer l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme."
 updated: 2025-12-19
 ---
