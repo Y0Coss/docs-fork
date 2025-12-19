@@ -1,7 +1,7 @@
 ---
 title: "Comprendre le cycle de vie des commandes FTTE et FTTO"
 excerpt: "Découvrez comment se déroule le parcours complet des commandes FTTE et FTTO, de la commande à la livraison"
-updated: 2025-12-15
+updated: 2025-12-19
 ---
 
 ## Objectif
