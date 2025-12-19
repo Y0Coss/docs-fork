@@ -608,6 +608,7 @@
             + [List of included services and licences](hosted_private_cloud/nutanix_on_ovhcloud/02-available-services)
             + [Disaster Recovery Plan in Nutanix](hosted_private_cloud/nutanix_on_ovhcloud/43-disaster-recovery-plan-overview)
             + [Responsibility sharing - Nutanix on OVHcloud](hosted_private_cloud/nutanix_on_ovhcloud/60-responsibility-sharing)
+            + [Nutanix on OVHcloud -  Lifecycle Policy](hosted_private_cloud/nutanix_on_ovhcloud/82-lifecycle-management)
         + [Getting started](hosted-private-cloud-nutanix-getting-started)
             + [Getting started with your Nutanix cluster](hosted_private_cloud/nutanix_on_ovhcloud/80-first-steps)
             + [Nutanix Hyperconvergence](hosted_private_cloud/nutanix_on_ovhcloud/03-nutanix-hci)
