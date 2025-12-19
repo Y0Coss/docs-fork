@@ -1,14 +1,14 @@
 ---
-title: "Mettre en ligne un site internet sur son hébergement web"
-excerpt: "Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud"
-updated: 2025-10-16
+title: "Mettre en ligne un site web sur son hébergement web"
+excerpt: "Découvrez comment mettre en ligne un site web sur votre hébergement web OVHcloud"
+updated: 2025-10-28
 ---
 
 ## Objectif
 
-Il existe une multitude de sites internet. Qu'il s'agisse de blogs, de boutiques en ligne, de sites personnels ou professionnels, votre [hébergement web OVHcloud](/links/web/hosting) vous permet de réaliser votre projet, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net).
+Il existe une multitude de sites web. Qu'il s'agisse de blogs, de boutiques en ligne, de sites personnels ou professionnels, votre [hébergement web OVHcloud](/links/web/hosting) vous permet de réaliser votre projet, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net).
 
-**Apprenez à mettre en ligne un site internet sur votre hébergement web OVHcloud.**
+**Apprenez à mettre en ligne un site web sur votre hébergement web OVHcloud.**
 
 ## Prérequis
 
@@ -22,15 +22,15 @@ Il existe une multitude de sites internet. Qu'il s'agisse de blogs, de boutiques
 
 ### 1 - Délimiter votre projet
 
-Avoir une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site internet ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVHcloud.
+Avoir une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site web ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVHcloud.
 
-- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre, compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud [« Créer un site Internet avec les modules en 1 clic »](/links/web/hosting-website). Vous pouvez également consulter le guide [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre, compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud [« Créer un site web avec les modules en 1 clic »](/links/web/hosting-website). Vous pouvez également consulter le guide [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVHcloud.
 
-- **Créer vous-même votre site internet** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
+- **Créer vous-même votre site web** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
 
-- **Migrer un site internet déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVHcloud »](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **Migrer un site web déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVHcloud »](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Après avoir évalué les différentes possibilités ci-dessus, deux choix s'offrent à vous :
 
@@ -46,13 +46,13 @@ Après avoir évalué les différentes possibilités ci-dessus, deux choix s'off
 
 ### 2 - Mise en ligne des fichiers du site sur l'espace de stockage
 
-Mettre en ligne un site manuellement sur un hébergement nécessite plusieurs manipulations. Certaines d'entre elles peuvent être facultatives selon le site que vous installez et il peut exister plusieurs manières de les réaliser. Cependant, pour la plupart des projets actuels, on peut distinguer deux grandes étapes accompagnant la mise en ligne d'un site internet ; la première étant le téléchargement des fichiers du site sur l'espace de stockage.
+Mettre en ligne un site manuellement sur un hébergement nécessite plusieurs manipulations. Certaines d'entre elles peuvent être facultatives selon le site que vous installez et il peut exister plusieurs manières de les réaliser. Cependant, pour la plupart des projets actuels, on peut distinguer deux grandes étapes accompagnant la mise en ligne d'un site web ; la première étant le téléchargement des fichiers du site sur l'espace de stockage.
 
 Cette mise en ligne se réalise en différentes sous-étapes.
 
 #### 2.1. Récupérer les fichiers du site
 
-Assurez-vous d'être en possession des fichiers du site que vous souhaitez mettre en ligne. Si vous êtes en train de migrer un site internet déjà existant, récupérez ces fichiers chez votre ancien hébergeur.
+Assurez-vous d'être en possession des fichiers du site que vous souhaitez mettre en ligne. Si vous êtes en train de migrer un site web déjà existant, récupérez ces fichiers chez votre ancien hébergeur.
 
 #### 2.2. Se connecter à l'espace de stockage
 
@@ -102,11 +102,11 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 #### 2.3. Télécharger les fichiers sur l'espace de stockage
 
-Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers.** Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour plusieurs sites internet, vous avez très probablement déclaré plusieurs **Multisite**.
+Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers**. Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour plusieurs sites web, vous avez très probablement déclaré plusieurs sites web.
 
-Pour vérifier le dossier dans lequel doit être publié le site internet, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site dans ce dernier.
+Pour vérifier le dossier dans lequel doit être publié le site web, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site dans ce dernier.
 
-Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulant « index.html ». Ce dernier peut avoir été créé par OVHcloud lors de l'installation de votre hébergement pour afficher une page par défaut sur votre site internet. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
+Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulant « index.html ». Ce dernier peut avoir été créé par OVHcloud lors de l'installation de votre hébergement pour afficher une page par défaut sur votre site web. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
 
 > [!primary]
 >
@@ -114,20 +114,20 @@ Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulan
 
 ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### 3 - Lier le site internet à une base de données
+### 3 - Lier le site web à une base de données
 
 > [!primary]
 >
-> Cette partie est facultative si votre site internet n'a pas besoin d'être relié à une base de données.
+> Cette partie est facultative si votre site web n'a pas besoin d'être relié à une base de données.
 >
 
-Aujourd'hui, la plupart des systèmes de gestion de contenu (CMS), tels que WordPress et Joomla! utilisent une base de données pour y stocker des éléments dits dynamiques, comme des commentaires ou des articles. Une connexion entre les fichiers du site et la base de données est donc indispensable afin que le site internet puisse fonctionner correctement. Pour cela, il existe un fichier de configuration disposant des informations de la base qui permet cette connexion.
+Aujourd'hui, la plupart des systèmes de gestion de contenu (CMS), tels que WordPress et Joomla! utilisent une base de données pour y stocker des éléments dits dynamiques, comme des commentaires ou des articles. Une connexion entre les fichiers du site et la base de données est donc indispensable afin que le site web puisse fonctionner correctement. Pour cela, il existe un fichier de configuration disposant des informations de la base qui permet cette connexion.
 
-Selon le site internet utilisé, ce lien doit être créé manuellement ou via une interface générée par le site lui-même. Il est réalisé en différentes sous-étapes, dont certaines peuvent être facultatives.
+Selon le site web utilisé, ce lien doit être créé manuellement ou via une interface générée par le site lui-même. Il est réalisé en différentes sous-étapes, dont certaines peuvent être facultatives.
 
 #### 3.1. Récupérer la base de données existante
 
-Si vous êtes en train de migrer un site internet, récupérez la base de données existante chez votre ancien hébergeur. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
+Si vous êtes en train de migrer un site web, récupérez la base de données existante chez votre ancien hébergeur. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
 
 #### 3.2. Créer la base de données chez OVHcloud
 
@@ -143,7 +143,7 @@ Dès lors, cliquez sur le bouton `Créer une base de données`{.action} ou, si c
 
 #### 3.3. Importer la base de données existante
 
-Si vous migrez un site internet, importez la base de données existante dans celle nouvellement créée. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
+Si vous migrez un site web, importez la base de données existante dans celle nouvellement créée. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
 
 Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une depuis son espace client. Une fois positionné sur la liste des bases de données créées sur votre service dans votre espace client OVHcloud, cliquez sur le bouton `...`{.action} à droite de votre base de données, puis sur `Importer un fichier`{.action}.
 
@@ -151,11 +151,11 @@ Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une
 
 Une fois la base de données disponible et les fichiers téléchargés sur votre espace de stockage, il ne vous reste plus qu'à les relier. Pour cela, vous devez être en possession des informations permettant de vous connecter à la base de données : un nom d'utilisateur, son mot de passe, le nom de la base de données ainsi que de l'adresse du serveur.
 
-Créer ce lien dépend du site internet que vous êtes en train de mettre en ligne. Celui-ci est inhérent à la configuration du site internet et non à OVHcloud. Nous vous recommandons donc de vous rapprocher de l'éditeur de votre site ou de faire appel à un professionnel tel qu'un [prestataire spécialisé](/links/partner) si vous souhaitez obtenir de l'aide pour réaliser cette manipulation.
+Créer ce lien dépend du site web que vous êtes en train de mettre en ligne. Celui-ci est inhérent à la configuration du site web et non à OVHcloud. Nous vous recommandons donc de vous rapprocher de l'éditeur de votre site ou de faire appel à un professionnel tel qu'un [prestataire spécialisé](/links/partner) si vous souhaitez obtenir de l'aide pour réaliser cette manipulation.
 
-### 4 - Accéder à votre site internet
+### 4 - Accéder à votre site web
 
-Une fois les fichiers téléchargés sur votre espace de stockage et la base de données liée à ce dernier (si votre site en utilise une), vous pouvez à présent accéder à votre site internet. Celui-ci devrait ainsi s'afficher correctement par le biais de votre navigateur.
+Une fois les fichiers téléchargés sur votre espace de stockage et la base de données liée à ce dernier (si votre site en utilise une), vous pouvez à présent accéder à votre site web. Celui-ci devrait ainsi s'afficher correctement par le biais de votre navigateur.
 
 Si vous constatez que celui-ci ne s'affiche pas correctement:
 
@@ -163,9 +163,9 @@ Si vous constatez que celui-ci ne s'affiche pas correctement:
 
 - **vous assurer qu'aucun fichier n'est manquant** : il se peut que lors du téléchargement des fichiers vers votre hébergement web OVHcloud, vous ayez oublié des fichiers ou qu'une erreur se soit produite. Soyez tout de même vigilant lors de vos manipulations afin de ne pas briser le lien entre les fichiers du site et la base de données (si ce dernier en utilise une) ;
 
-- **vérifier que le code du site ne comporte pas d'erreurs** : cette vérification est sûrement la plus technique, mais il se peut que les fichiers que vous avez téléchargés comportent des erreurs et ne permettent pas au serveur d'afficher correctement, voir pas du tout, votre site internet.
+- **vérifier que le code du site ne comporte pas d'erreurs** : cette vérification est sûrement la plus technique, mais il se peut que les fichiers que vous avez téléchargés comportent des erreurs et ne permettent pas au serveur d'afficher correctement, voir pas du tout, votre site web.
 
-Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de votre site internet, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service (du CMS installé par exemple).
+Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de votre site web, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service (du CMS installé par exemple).
 
 ## Aller plus loin
 
@@ -177,7 +177,7 @@ Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de vot
 
 [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

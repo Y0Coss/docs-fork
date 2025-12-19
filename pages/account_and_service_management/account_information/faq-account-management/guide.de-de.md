@@ -1,20 +1,50 @@
 ---
 title: FAQ zur Verwaltung des OVHcloud Kunden-Accounts
 excerpt: Hier finden Sie Antworten auf die häufigsten Fragen zur Verwaltung Ihres OVHcloud Kunden-Accounts 
-updated: 2025-09-12
+updated: 2025-12-18
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -216,13 +246,48 @@ Wenn alle oben genannten Bedingungen erfüllt sind, können Sie die Löschung Ih
 
 ### Verwalten von Benachrichtigungen und Logs
 
-/// details | Kann ich alle Benachrichtigungen von OVHcloud an mehrere E-Mail-Adressen senden lassen?
+/// details | Erhalte ich Benachrichtigungen von OVHcloud auf mehrere E-Mail-Adressen?
 
-Leider ist es nicht möglich, E-Mails an mehrere Adressen zu senden.
+Ab November 2025 können Sie neue Kontakte-Mailadressen hinzufügen, um die Verteilung der von OVHcloud gesendeten E-Mails besser zu verwalten.
 
-Im [OVHcloud Kundencenter](/links/manager) können Sie jedoch eine Ersatz-E-Mail-Adresse konfigurieren, die nicht für den Empfang aller Kommunikationen (Verlängerungen, Dienstlöschungen etc.) verwendet wird.
+Weitere Informationen finden Sie in unserem dedizierten Guide: [Verwalten von Kommunikationen zu OVHcloud-Diensten](/pages/account_and_service_management/account_information/manage-messages).
 
-Diese Ersatz-E-Mail-Adresse ist nützlich, um den Login zu ermöglichen falls Sie den Zugriff auf Ihre primäre E-Mail-Adresse verlieren.
+///
+
+/// details | Ich habe eine E-Mail von OVHcloud erhalten. Wie kann ich prüfen, ob sie echt ist?
+
+Alle unsere E-Mails entsprechen unseren Sicherheitsstandards (SPF, DKIM, DMARC) und stammen von einer E-Mail-Adresse, deren Domainname (oder der entsprechende Unterdomain) unten aufgelistet ist:
+
+- ovhcloud.com
+- ovh.com
+- ovh.fr
+- services.ovhcloud.com
+- news.ovhcloud.com
+- clientmanager.fr
+- kimsufi.com
+- soyoustart.com
+- ovh.ca
+- ovh.com.au
+- ovh.co.uk
+- ovh.ie
+- ovh.de
+- ovh.es
+- ovh.it
+- ovh.lt
+- ovh-hosting.fi
+- ovh.net
+- ovh.nl
+- ovh.pl
+- ovh.pt
+- ovh.sn
+- ovh.us
+- robot.ovh.net
+
+**Falls Sie sich bezüglich der Echtheit einer E-Mail unsicher sind**:
+
+- Wissen Sie, dass wir niemals per E-Mail nach Ihrem Passwort oder Bankdaten fragen.
+- Prüfen Sie, ob die von Ihnen empfangene E-Mail auch in Ihrem [OVHcloud Kundencenter](/links/manager) sichtbar ist. Melden Sie sich an, klicken Sie auf Ihren Namen in der oberen rechten Ecke und dann auf `E-Mails von OVHcloud`{.action} (oder `Meine Kommunikation`{.action}). Dort finden Sie Kopien aller offiziellen E-Mails, die von OVHcloud gesendet wurden.
+- Informieren Sie sich auch in unserem Guide: [Phishing – Wie erkenne ich betrügerische E-Mails oder SMS?](/pages/account_and_service_management/account_information/phishing_care).
 
 ///
 

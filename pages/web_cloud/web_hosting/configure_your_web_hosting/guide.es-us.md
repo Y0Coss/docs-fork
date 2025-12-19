@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Entorno, versión PHP, .ovhconfig"
 excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el .ovhconfig de un alojamiento web"
-updated: 2025-10-21
+updated: 2025-12-15
 ---
 
 ## Objetivo
@@ -93,7 +93,7 @@ Algunas versiones de PHP solo funcionan en determinados entornos de ejecución. 
 |---|---|
 |5.4, 5.5, 5.6 y 7.0|Legacy, Stable|
 |7.1, 7.2 y 7.3|Stable|
-|7.4, 8.0, 8.1,8.2 y 8.3|stable64|
+|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 y 8.5|stable64|
 
 > [!primary]
 >
@@ -384,11 +384,11 @@ Una vez modificado el archivo ".ovhconfig", cárguelo en su [espacio de almacena
 
 ### 4 - Uso avanzado de los archivos ".ovhconfig" <a name="ovhconfig-more"></a>
 
-Si utiliza su alojamiento web para alojar varios sitios web (en *multisites*), existen diversos motivos por los que podría tener que disfrutar de una versión de PHP diferente para algunos de sus *multisites*.
+Si utiliza su alojamiento web para alojar varios sitios web, puede que tenga razones para querer beneficiarse de una versión de PHP diferente para algunos de sus sitios web.
 
-Cree un archivo ".ovhconfig" que contenga la versión de PHP deseada para el o los *multisites* afectados. Si necesita ayuda para realizar las operaciones descritas en el apartado "[3.3 - Modificar el contenido del archivo ".ovhconfig"](#update-ovhconfig) de esta guía. Cuando descargue el archivo ".ovhconfig" en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz en la que se encuentren los archivos que componen el sitio web "*multisites*" en cuestión. Consulte la carpeta raíz de sus *multisites* desde su [área de cliente de OVHcloud](/links/manager) en la pestaña `Multisite`{.action} del alojamiento correspondiente.
+Cree un archivo ".ovhconfig" que contenga la versión de PHP deseada para el o los sitios web afectados. Siga las manipulaciones descritas en la parte "[3.3 - Modificar el contenido del archivo ".ovhconfig"](#update-ovhconfig)" de este guía si es necesario. Cuando cargue el archivo ".ovhconfig" en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz donde se encuentran los archivos que componen el sitio web afectado. Puede encontrar la carpeta raíz de su sitio web desde su [área de cliente de OVHcloud](/links/manager) en la pestaña `Multisite`{.action} del alojamiento afectado.
 
-Si lo necesita, consulte nuestra guía "[Configurar un multisitio en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Consulte nuestro guía detallando cómo [configurar un sitio web en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si es necesario.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2025-10-16
+updated: 2025-10-28
 ---
 
 ## Sumário
@@ -104,7 +104,7 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 #### 2.3. Carregar os ficheiros para o espaço de armazenamento
 
-Depois de aceder ao espaço de armazenamento, apenas precisará de publicar os ficheiros no site. **Preste especial atenção ao repertório no qual vai colocar os ficheiros.** Num caso de utilização clássica, o site deve ser carregado para a pasta “www”. No entanto, se utiliza o seu alojamento web para alojar vários sites, tedeverá utilizar a opção **Multi-site**.
+Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas carregar os ficheiros do seu site. **Convidamo-lo a prestar especial atenção ao diretório para o qual vai carregar os ficheiros**. Num cenário de utilização comum, o site deve ser carregado para a pasta "www". No entanto, se estiver a utilizar o seu alojamento para vários sítios Web, é muito provável que tenha declarado vários sítios Web.
 
 Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site`{.action} a partir da Área de Cliente OVHcloud. Aparecerá uma tabela onde poderá consultar a `Pasta raiz`{.action} do domínio correspondente. Esse é o diretório no qual deve colocar os ficheiros do site.
 

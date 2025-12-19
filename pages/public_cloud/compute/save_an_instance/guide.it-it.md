@@ -1,7 +1,7 @@
 ---
 title: "Effettuare il backup di un'istanza"
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-updated: 2025-10-14
+updated: 2025-12-09
 ---
 
 <style>
@@ -47,7 +47,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >
 > Ogni backup è fatturato separatamente. Il backup remoto verrà fatturato in base alla tariffa di archiviazione della regione remota selezionata.
 >
-> Al momento, la creazione di un backup remoto non è disponibile tramite il Spazio Cliente OVHcloud. Puoi eseguirla solo tramite l'API OVHcloud e Openstack.
+> **Nota :** le Local Zones non sono idonee per i backup remoti.
 
 > [!tabs]
 > Attraverso il Spazio Cliente OVHcloud
@@ -66,17 +66,31 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >>
 >> ///
 >>
->> Non è possibile seguire in tempo reale l'avanzamento del backup. Tuttavia, puoi consultare lo stato del backup nella sezione `Instance Backup`{.action} sotto la voce **Compute** del menu a sinistra, dove verrà visualizzato lo stato `Backup in corso`.
+>> /// details | Backup remoto
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Inserisci un nome per il backup e verifica le informazioni sui costi. Clicca su `Aggiungi un backup remoto (Opzione)`{.action}, inserisci un nome per il backup remoto, seleziona una regione e clicca su `Conferma`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> Non è possibile seguire in tempo reale l'avanzamento del backup. Tuttavia, puoi consultare lo stato del backup nella sezione `Instance Backup`{.action} sotto la voce **Compute** del menu a sinistra, dove verrà visualizzato lo stato `Backup in corso` durante il processo.
 >>
 >> Una volta completato il backup, sarà disponibile nella sezione `Instance Backup`{.action} sotto la voce **Compute** nel menu a sinistra.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Attraverso l'API OVHcloud <a name="createinstanceviaapi"></a>
+>> Accedi a [l'API OVHcloud](/links/console).
 >>
->> Accedi all'[API OVHcloud](/links/console) e utilizza la seguente chiamata API:
+>> Puoi elencare tutte le regioni disponibili utilizzando il seguente chiamata API :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
+>>
+>> Utilizza quindi la seguente chiamata API :
 >>
 >> > [!api]
 >> >
@@ -109,6 +123,12 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Puoi elencare tutte le regioni disponibili utilizzando il seguente comando :
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Backup locale
@@ -167,6 +187,12 @@ Al momento esiste un unico workflow. Crea un backup per l'istanza e il suo volum
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
+#### **Il nome** 
+
+Inserisci un nome per la pianificazione del backup automatico. Leggi le informazioni relative alla tariffazione e imposta il calendario cliccando sul pulsante `Crea`{.action}.
+ 
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
 #### **La pianificazione** 
 
 È possibile definire una pianificazione di backup personalizzata o scegliere una delle frequenze predefinite:
@@ -174,13 +200,15 @@ Al momento esiste un unico workflow. Crea un backup per l'istanza e il suo volum
 - Backup giornaliero con retention degli ultimi 7 backup
 - Backup giornaliero con retention degli ultimi 14 backup
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **Il nome** 
-
-Inserisci un nome per la pianificazione del backup automatico. Leggi le informazioni relative alla tariffazione e imposta il calendario cliccando sul pulsante `Crea`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Aggiunta di un backup remoto**
+
+Clicca sul pulsante `Aggiungere un backup remoto`{.action}, seleziona una località, consulta le informazioni sui prezzi e clicca sul pulsante `Crea`{.action}.
+
+![public-cloud-instance-Backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
 
 ### Gestione di backup e pianificazione
 

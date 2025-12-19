@@ -41,6 +41,7 @@ Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en per
 > [!primary]
 >
 > À date, cette fonctionnalité n'est disponible que pour les adresses IPv4.
+>
 
 > [!primary]
 >

@@ -1,20 +1,50 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2025-09-12
+updated: 2025-12-18
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -24,7 +54,7 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ## FAQ
 
-### Creating an OVHcloud account, loggin in, and securing it
+### Creating an OVHcloud account, logging in, and securing it
 
 /// details | How do I create an OVHcloud account?
 
@@ -213,13 +243,48 @@ If the above conditions are met, you can request to delete your OVHcloud account
 
 ### Managing your notifications and logs
 
-/// details | Can I receive all OVHcloud notifications on several email addresses?
+/// details | Can I receive OVHcloud notifications on multiple e-mail addresses?
 
-Unfortunately, it is not possible to send communication emails to multiple addresses.
+Since November 2025, you can add new contact email addresses to better manage the distribution of emails sent by OVHcloud.
 
-However, in your [OVHcloud Control Panel](/links/manager), you can configure a backup email address, which will not be used to send all of our communications (renewals, service deletions, etc.).
+Refer to our dedicated guide: [Manage communications related to OVHcloud services](/pages/account_and_service_management/account_information/manage-messages).
 
-This backup email address is useful if you lose access to your primary email address, as this would prevent you from logging in to the OVHcloud Control Panel.
+///
+
+/// details | I received an e-mail from OVHcloud. How can I know if it is legitimate?
+
+All our e-mails comply with our security standards (SPF, DKIM, DMARC) and come from an e-mail address whose domain name (or corresponding sub-domain) is listed below:
+
+- ovhcloud.com
+- ovh.com
+- ovh.fr
+- services.ovhcloud.com
+- news.ovhcloud.com
+- clientmanager.fr
+- kimsufi.com
+- soyoustart.com
+- ovh.ca
+- ovh.com.au
+- ovh.co.uk
+- ovh.ie
+- ovh.de
+- ovh.es
+- ovh.it
+- ovh.lt
+- ovh-hosting.fi
+- ovh.net
+- ovh.nl
+- ovh.pl
+- ovh.pt
+- ovh.sn
+- ovh.us
+- robot.ovh.net
+
+**If you are in doubt about the authenticity of an e-mail**:
+
+- Know that we will never ask for your password or banking details by e-mail.
+- Check whether the e-mail you received is also visible in your [OVHcloud Control Panel](/links/manager). Log in, click on your name in the top right corner and then on `Service emails`{.action} (or `My messages`{.action}). You will find copies of all official e-mails sent by OVHcloud there.
+- Also refer to our guide: [Phishing - How to identify fraudulent e-mails or SMS?](/pages/account_and_service_management/account_information/phishing_care).
 
 ///
 
@@ -269,10 +334,10 @@ The service delegation must be validated via email both by the service administr
 
 Before you make any changes, please ensure that all contact email addresses are valid, otherwise the request will not be successful.
 
-If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change)
+If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change).
 
 > [!success]
-> A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
+> A full contact management guide is available here: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ///
 

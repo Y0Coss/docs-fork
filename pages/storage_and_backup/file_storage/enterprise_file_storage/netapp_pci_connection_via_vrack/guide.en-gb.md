@@ -106,7 +106,7 @@ For detailed guidance, see OVHcloud’s official documentation: [vRack Services 
 
 2. Then click `Activate vRack Services`{.action}.
 
-3. Select the same region as your vRack, Public Cloud instance and EFS service. Then click `Activate vRack Services`{.action}. <span id="step4-a-region-selection"></span>
+3. Select the same region as your vRack, Public Cloud instance and EFS service. Then click `Activate vRack Services`{.action}. <a name="step4-a-region-selection"></a>
 
 4. Select `No thanks, i already have a vRack`{.action} and accept the terms and conditions to confirm. 
 
@@ -153,7 +153,7 @@ For detailed guidance, see OVHcloud’s official documentation: [vRack Services 
 
 3. Select your vRack.
 
-4. If no vRack Services have been created yet, activate the vRack Services and follow the [first method: creating via vRack Services](step4-a-region-selection) from the third point.
+4. If no vRack Services have been created yet, activate the vRack Services and follow the [first method: creating via vRack Services](#step4-a-region-selection) from the third point.
 
 5. If you have already created a vRack service, select your dedicated service.
 

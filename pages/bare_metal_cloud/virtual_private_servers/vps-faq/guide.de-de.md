@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS FAQ"
 excerpt: "Finden Sie Antworten auf die am häufigsten gestellten Fragen zu unseren VPS-Angeboten"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
@@ -14,7 +14,7 @@ details {
 }
 details > summary {
     padding: 0.1rem 1rem;
-	font-weight: 500;
+    font-weight: 500;
     color: #268fd4ff;
     cursor: pointer;
     list-style: none;
@@ -37,8 +37,9 @@ details[open] > summary {
     background: #ffffffff;
 }
 details > :not(summary) {
-    padding: 0.5rem 0.75rem;
+    padding: 0.25rem 0.5rem;
     box-sizing: border-box;
+    list-style-position: inside;
 }
 .smallish-gap {
     display: block;
@@ -125,28 +126,40 @@ Nein, unsere VPS-Lösungen enthalten keinen Domainnamen oder E-Mail-Dienst. Dies
 ///
 
 /// details | Wie wähle ich zwischen einem VPS und einem Hosting-Paket?
-<span class="smallish-gap"></span>
 
-- Hosting-Paket: ideal für grundlegende Hosting-Anforderungen mit einer vorab konfigurierten Einrichtung.
-- VPS: mehr Flexibilität und Kontrolle, perfekt für skalierbare Projekte mit komplexen Konfigurationsanforderungen.
+**Hosting-Paket**
+
+- Ideal für grundlegende Hosting-Anforderungen mit einer vorab konfigurierten Einrichtung.
+
+**VPS**
+
+- Mehr Flexibilität und Kontrolle, perfekt für skalierbare Projekte mit komplexen Konfigurationsanforderungen.
 
 Die Einrichtung von Webdiensten auf einem VPS ermöglicht es Ihnen, Ihre bevorzugte Software zu installieren, Servereinstellungen zu anpassen und mehrere Webseiten mit dedizierten Ressourcen zu hosten. Beachten Sie, dass ein VPS so konfiguriert werden muss, dass er Ihren Anforderungen entspricht und sich an Ihr Wachstum anpasst.
 
 ///
 
 /// details | Was ist der Unterschied zwischen einem VPS und Public Cloud Lösungen?
-<span class="smallish-gap"></span>
 
-- VPS: eine optimierte und dedizierte virtuelle Maschine, geeignet sowohl für Präproduktion als auch für Produktion, die mehrere Webprojekte hosten kann.
-- OVHcloud Public Cloud: bietet eine Multi-Server-Infrastruktur mit hoher Verfügbarkeit und einem privaten Netzwerk (vRack) und ist für komplexe, skalierbare Architekturen konzipiert.
+**VPS**
+
+- Eine optimierte und dedizierte virtuelle Maschine, geeignet sowohl für Präproduktion als auch für Produktion, die mehrere Webprojekte hosten kann.
+
+**OVHcloud Public Cloud**
+
+- Bietet eine Multi-Server-Infrastruktur mit hoher Verfügbarkeit und einem privaten Netzwerk (vRack) und ist für komplexe, skalierbare Architekturen konzipiert.
 
 ///
 
 /// details | Welche Vorteile bietet ein VPS im Vergleich zu einem dedizierten Server?
-<span class="smallish-gap"></span>
 
-- VPS: bietet vereinfachte Administration ohne Hardware-Verwaltung, ideal für Projekte, die strikte Kontrolle benötigen.  
-- Dedizierter Server: wird für komplexe Infrastrukturen empfohlen, die eine vollständige Hardware-Kontrolle und garantierte Leistung erfordern.
+**VPS**
+
+- Bietet vereinfachte Administration ohne Hardware-Verwaltung, ideal für Projekte, die strikte Kontrolle benötigen.  
+
+**Dedicated Server**
+
+- Wird für komplexe Infrastrukturen empfohlen, die eine vollständige Hardware-Kontrolle und garantierte Leistung erfordern.
 
 Ein VPS beseitigt die Notwendigkeit, physische Hardware wie Speicher, RAM und CPU zu verwalten, wodurch er sich gut für die meisten Webanwendungen eignet. Wenn Ihr Unternehmen wächst, können Sie Ihren VPS upgraden oder auf einen dedizierten Server oder eine Public Cloud Lösung migrieren, um eine flexiblere und leistungsfähigere Infrastruktur zu erhalten.
 
@@ -353,11 +366,8 @@ Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_met
 Es gibt mehrere Optionen, z. B.:
 
 - Download über SFTP: Verbinden Sie sich mit Ihrem VPS mit einem Software-Client, der SFTP unterstützt (z. B. [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), und übertragen Sie alle Dateien im Root-Verzeichnis des Systems.
-
 - Download über `rsync` (Kommandozeilentool): Verwenden Sie den Befehl `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/`, um alle Dateien und Ordner Ihres VPS herunterzuladen.
-
 - Download über die Option **Automatisches Backup**: Folgen Sie unserer Anleitung zur [Verwendung von automatischen Backups auf einem VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps), um Dateien aus einem Backup herunterzuladen.
-
 - Download über die Option **Snapshot**: Folgen Sie unserer Anleitung zur [Verwendung von Snapshots auf einem VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps), um einen VPS-Snapshot herunterzuladen.
 
 ///
@@ -417,9 +427,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 Obwohl OVHcloud Sicherheitsmaßnahmen anwendet, um die gesamte Infrastruktur zu schützen, ist der Administrator eines VPS für die Sicherheit der darauf gehosteten Anwendungen und Daten verantwortlich.
 
 - Folgen Sie unserer Anleitung zur [Konfiguration der OVHcloud Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), die in unserer Anti-DDoS-Infrastruktur integriert ist und die Exposition Ihrer Dienste gegenüber DDoS-Angriffen begrenzt.
-
 - Darüber hinaus können Sie unsere Anleitungen zur [Firewall-Konfiguration](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) mit `iptables` auf Linux-basierten Distributionen und zur [Windows-Firewall](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win) verwenden.
-
 - Für Linux-basierte Distributionen auf einem VPS können Sie die Anweisungen in unserer Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) befolgen, um zusätzliche Sicherheitsmaßnahmen anzuwenden.
 
 ///
