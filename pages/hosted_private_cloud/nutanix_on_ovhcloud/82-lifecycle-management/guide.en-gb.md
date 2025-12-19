@@ -1,7 +1,7 @@
 ---
-title: "Nutanix on OVHcloud Lifecycle Policy"
-excerpt: "Nutanix on OVHcloud"
-updated: 2025-12-18
+title: "Nutanix on OVHcloud -  Lifecycle Policy"
+excerpt: "The lifecycle policy is provided to help customers understand the underlying reasons for version or range changes, evaluate the impact of each phase of the lifecycle on the service, and prepare for the transition to a new version or range."
+updated: 2025-12-19
 ---
 
 > [!warning]
@@ -11,39 +11,18 @@ updated: 2025-12-18
 
 ## Objective
 
+The Nutanix on OVHcloud service offers a dedicated infrastructure based on Nutanix technologies, on OVHcloud services: Bare Metal servers, Load Balancer, vRack.
+
 **This page provides an overview of the lifecycle policy for Nutanix on OVHcloud services.**
-
-The Nutanix on OVHcloud service offers a dedicated infrastructure based on Nutanix technologies.
-
-OVHcloud has a lifecycle policy for the service to take into account several factors, such as:
-
-* The lifecycle policy of integrated software components, as determined by their publisher;
-* The lifecycle of hardware components;
-* The compatibility between hardware and/or software components;
-* Other factors affecting the quality of the service.
-
-This lifecycle policy is provided to help customers understand the underlying reasons for version or range changes, evaluate the impact of each phase of the lifecycle on the service, and prepare for the transition to a new version or range.
-
-### Commercial Range Concerned
-
-**Nutanix on OVHcloud**
-
-* High Grade Gen1: Intel Cascade Lake
-* Scale Gen2: Intel Emerald Rapid
-* High Grade Gen2: Intel Emerald Rapid
-
-## Overview
-
-The Nutanix on OVHcloud service offers a dedicated infrastructure based on Nutanix technologies, on OVHcloud services: baremetal servers, load balancer, vrack.
 
 ## Lifecycle Policy
 
-OVHcloud has a lifecycle policy for the service to take into account several factors, such as:
+OVHcloud has a lifecycle policy for the service so to take into account several factors, such as:
 
-* The lifecycle policy of integrated software components, as determined by Nutanix
-* The lifecycle of hardware components
-* The compatibility between hardware and/or software components
-* Any factor affecting the quality of the service
+- The lifecycle policy of integrated software components, as determined by Nutanix
+- The lifecycle of hardware components
+- The compatibility between hardware and/or software components
+- Any factor affecting the quality of the service
 
 This lifecycle policy is provided to help customers understand the underlying reasons for version or range changes, evaluate the impact of each phase of the lifecycle on the service, and prepare for the transition to a new version or range.
 
@@ -61,9 +40,9 @@ This lifecycle policy is provided to help customers understand the underlying re
 
 | Model | Release Year | Processor | End of Sale | End of Support | Software Version |
 | --- | --- | --- | --- | --- | --- |
-| HGR-HCI-1 | 2021 | Intel Cascade Lake | 12/31/2025 | 07/31/2027 | 7.5.x |
-| HGR-HCI-2 | 2021 | Intel Cascade Lake | 12/31/2025 | 07/31/2027 | 7.5.x |
-| HGR-HCI-3 | 2021 | Intel Cascade Lake | 12/31/2025 | 07/31/2027 | 7.5.x |
+| HGR-HCI-1 | 2021 | Intel Cascade Lake | 2025-12-31 | 2027-07-31 | 7.5.x |
+| HGR-HCI-2 | 2021 | Intel Cascade Lake | 2025-12-31 | 2027-07-31 | 7.5.x |
+| HGR-HCI-3 | 2021 | Intel Cascade Lake | 2025-12-31 | 2027-07-31 | 7.5.x |
 | Scale-i1 | 2024 | Intel Emerald Rapid | - | - | - |
 | Scale-i2 | 2024 | Intel Emerald Rapid | - | - | - |
 | Scale-i3 | 2024 | Intel Emerald Rapid | - | - | - |
