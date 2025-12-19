@@ -1,7 +1,7 @@
 ---
 title: "Wszystko o rekordach DNS"
 excerpt: "Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud"
-updated: 2025-12-17
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie
@@ -25,7 +25,7 @@ Celem niniejszego przewodnika jest przedstawienie różnych typów rekordów DNS
 
 ### Rekordy DNS
 
-**[Edycja strefy DNS](/pages/web_cloud/domains/dns_zone_edit) jest operacją wymagającą odpowiedniej wiedzy** : omyłkowe działanie mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
+**[Edycja strefy DNS](/pages/web_cloud/domains/dns_zone_edit) jest operacją wymagającą odpowiedniej wiedzy**: omyłkowe działanie mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
 
 Poniższa lista przedstawia cele i specyfikacje każdego rekordu. Pozwoli Ci to lepiej monitorować operacje wykonywane na usługach DNS.
 
@@ -187,8 +187,8 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> Ten rekord ma **2** tryby:
 >>
->> - **Tryb Aliasu** : ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
->> - **Tryb Usługi** : ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
+>> - **Tryb Aliasu**: ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
+>> - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
 >>
 >> W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 >>
@@ -198,8 +198,8 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> Ten rekord ma **2** tryby:
 >>
->> - **Tryb Aliasu** : ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
->> - **Tryb Usługi** : ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
+>> - **Tryb Aliasu**: ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
+>> - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
 >>
 >> W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
