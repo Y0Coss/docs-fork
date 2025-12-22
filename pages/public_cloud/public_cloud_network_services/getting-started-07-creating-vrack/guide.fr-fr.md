@@ -90,7 +90,7 @@ Suivant la couche que vous souhaitez gérer, vous devrez utilisez le client Nova
 
 Grâce à l’API OpenStack, vous pouvez aussi facilement automatiser cette gestion au travers de vos scripts.
 
-Afin de vous familariser avec l'API OpenStack, consultez tout d'abord les guides suivants :
+Afin de vous familiariser avec l'API OpenStack, consultez tout d'abord les guides suivants :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
@@ -125,14 +125,14 @@ Cette interface permet de gérer toutes les couches OpenStack :
 
 La CLI centralise ces fonctionnalités et peut être intégrée à vos scripts pour automatiser vos tâches.
 
-Avant de commencer, consultez tout d'abord les guides suivants :
+Avant de commencer, consultez les guides suivants :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 > [!primary]
 >
-> La CLI OpenStack est pratique pour gérer votre vRack, mais certaines fonctions peuvent varier selon la version du client ou du système d’exploitation. Consultez la [documentation officielle d'OpenStack](https://docs.openstack.org/fr/).
+> La CLI OpenStack est pratique pour gérer votre vRack, cependant certaines fonctions peuvent différer selon la version du client ou du système d’exploitation. Consultez la [documentation officielle d'OpenStack](https://docs.openstack.org/fr/).
 >
 
 ///
@@ -151,14 +151,14 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 
 > [!warning]
 >
-> Le vRack est géré au niveau de l’infrastructure OVHcloud, ce qui signifie que vous ne pouvez l’administrer que dans votre espace client et l’APIv6 OVHcloud.
+> Le vRack est géré au niveau de l’infrastructure OVHcloud, ce qui signifie que vous ne pouvez l’administrer que depuis votre espace client et les APIv6 OVHcloud.
 >
 
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >> > [!primary]
 >> >
->> > Ceci ne s'applique pas aux projets nouvellement créés qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans le section `Network`{.action} dans l’onglet de gauche. Cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
+>> > Cette étape ne s'applique pas aux projets nouvellement créés, qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
 >> >
 >>
 >> Si vous avez un projet plus ancien et que vous n'avez pas de vRack, vous devez en commander un. Ce produit est gratuit et la mise à disposition ne prend que quelques minutes.
@@ -169,21 +169,21 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 >> Vous serez redirigé vers une autre page pour valider la commande, l'opération prendra quelques minutes.
 >>
->> Une fois le service actif, vous le retrouverez dans votre espace client dans la section `Network`{.action} > `Réseau Privé vRack`{.action}. Sous l’appellation « pn-xxxxxx ».
+>> Une fois le service actif, vous le retrouverez dans votre espace client dans la section `Network`{.action} > `Réseau Privé vRack`{.action}, sous l’appellation « pn-xxxxxx ».
 >>
->> Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack et cliquez sur le bouton `Ajouter`{.action}.
+>> Cliquez sur votre vRack, sélectionnez le projet que vous souhaitez y ajouter dans la liste des services éligibles puis cliquez sur le bouton `Ajouter`{.action}.
 >>
 >> ![ajouter le projet](images/addprojectvrack.png){.thumbnail}
 >>
->> Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un réseau privé depuis l'espace client OVHcloud](./#creer-un-reseau-prive-depuis-lespace-client-ovhcloud).
+>> Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de l'[étape 2 : Créer un réseau privé dans le vRack](#create-pn-in-vrack), onglet **Depuis l'espace client OVHcloud**.
 >>
 > Depuis les APIv6 OVHcloud
 >>
 >> **Étape 1 : Activer et gérer un vRack**
 >>
->> Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
+>> Connectez-vous aux APIv6 OVHcloud en suivant le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 >>
->> Une fois identifié, suivez les étapes décrites ci-dessous :
+>> Une fois authentifié, suivez les étapes décrites ci-dessous :
 >>
 >> **Création du panier**
 >>
@@ -257,8 +257,8 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 >> Pour valider la commande, vous avez deux méthodes possibles :
 >>
->> - Passer par l'url visible lorsque le panier est validé. Exemple :  
->> > url : https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=12345678&orderPassword=xxxxxxxxxx
+>> - Passer par l'URL visible lorsque le panier est validé.  
+>>     Exemple d'URL : https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=12345678&orderPassword=xxxxxxxxxx
 >>
 >> - Valider par l'appel suivant :
 >>
@@ -278,7 +278,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 >> Une fois le vRack actif, il vous faudra intégrer votre ou vos projets Public Cloud dans le vRack.
 >>
->> Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
+>> Connectez-vous aux APIv6 OVHcloud en suivant le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 >>
 >> Dans le cas ou l’identifiant du projet Public Cloud n’est pas connu, les appels suivants vous permettront de le connaître.
 >>
@@ -313,14 +313,14 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> > @api {v1} /vrack POST /vrack/{serviceName}/cloudProject
 >> >
 >>
->> Renseignez les champs de l'appel avec les informations récoltées précédemment :
+>> Renseignez les champs de l'appel avec les informations relevées précédemment :
 >>
->> **serviceName** : nom du vRack sous sa forme « pn-xxxxxx »
->> <br>**project** : identifiant du projet Public Cloud, sous la forme d’une chaîne de 32 caractères.
+>> **serviceName** : nom du vRack sous la forme « pn-xxxxxx ».  
+>> **project** : identifiant du projet Public Cloud, sous la forme d’une chaîne de 32 caractères.
 >>
 >> > [!primary]
 >> >
->> > Cet appel initialise l’association du projet au vRack, il faut ensuite récupérer l’id de la tâche pour vérifier son avancement.
+>> > Cet appel initialise l’association du projet au vRack, il faut ensuite récupérer l’identifiant de la tâche pour vérifier son avancement.
 >> >
 >>
 >> **Vérification de l'avancement de la tâche d'ajout**
@@ -338,7 +338,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> >
 >>
  
-### Étape 2 : Créer un réseau privé dans le vRack
+### Étape 2 : Créer un réseau privé dans le vRack <a name="create-pn-in-vrack"></a>
 
 Il est nécessaire de créer un réseau privé avec un réseau local virtuel (VLAN) afin que les instances reliées au vRack puissent communiquer entre elles.
 
@@ -354,19 +354,19 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >
 > Contrairement aux serveurs dédiés, il n’est pas nécessaire de « tagguer » le VLAN directement sur une instance Public Cloud. 
 >
-> Pour plus d'informations sur la gestion des VLAN du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
+> Pour plus d'informations sur la gestion des VLAN du vRack des serveurs dédiés, consultez ce guide : [Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
 > [!warning]
 > Le vRack étant une infrastructure gérée au niveau d'OVHcloud, vous ne pourrez l'administrer qu'au travers de l'espace client OVHcloud et des APIv6 OVHcloud.
 >
-> OpenStack n'étant pas située au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les VLAN au travers de l'interface Horizon ou des API OpenStack.
+> OpenStack n'étant pas situé au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les VLAN au travers de l'interface Horizon ou des API OpenStack.
 >
 
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >> Une fois votre vRack créé, l’étape suivante consiste à créer un réseau privé.
 >>
->> Dans l'onglet Public cloud , cliquez sur `Private Network`{.action} dans le menu de gauche sous **Network**.
+>> Dans l'onglet Public cloud, cliquez sur `Private Network`{.action} dans le menu de gauche sous **Network**.
 >>
 >> ![VLAN creation](images/vrack2022-03.png){.thumbnail}
 >>
@@ -393,7 +393,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >>
 >> **Options réseau du layer 2**
 >>
->> Si vous cochez la case `Définir un VLAN`, vous devrez choisir un numéro de VLAN allant de 0 à 4000.
+>> Si vous cochez la case `Définir un ID de VLAN`, vous devrez choisir un numéro de VLAN allant de 0 à 4000.
 >>
 >> Si vous ne cochez pas cette case, le système attribuera un numéro de VLAN aléatoire.
 >>
@@ -401,7 +401,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >>
 >> **Options de distribution des adresses DHCP**
 >>
->> La plage DHCP par défaut est en 10.0.0.0/16. Vous pouvez utiliser une autre plage privée de votre choix.
+>> La plage DHCP par défaut est en 10.1.0.0/16. Vous pouvez utiliser une autre plage privée de votre choix.
 >>
 >> Une fois vos choix faits, cliquez sur `Créer`{.action} pour lancer le processus.
 >>
@@ -708,7 +708,7 @@ Deux situations peuvent se présenter à vous :
 >> ><br>OpenStack n'étant pas en mesure de prioriser l'interface publique de l'interface vRack, il peut arriver que cette dernière passe en tant que route par défaut.
 >> ><br>La conséquence directe est que l'instance est injoignable depuis une IP publique.
 >> ><br>Un ou plusieurs redémarrages de l'instance depuis l'espace client peut permettre de rétablir la situation.
->> ><br>L'autre solution consite à vous connecter à l'instance  en  SSH au travers d'un autre de vos serveurs présents dans le même réseau privé. Vous pouvez aussi corriger la configuration réseau de l'instance au travers du mode Rescue.
+>> ><br>L'autre solution consiste à vous connecter à l'instance  en  SSH au travers d'un autre de vos serveurs présents dans le même réseau privé. Vous pouvez aussi corriger la configuration réseau de l'instance au travers du mode Rescue.
 >> >
 >>
 > Depuis la CLI Openstack
@@ -749,7 +749,7 @@ Deux situations peuvent se présenter à vous :
 >> ><br> - Celui du ou des VLAN nécessaires à votre configuration
 >> >
 >>
->> Pensez également à noter les informations suivantes, comme indiqueé dans le [guide d'utilisation de l'API Nova](/pages/public_cloud/compute/starting_with_nova) :
+>> Pensez également à noter les informations suivantes, comme indiqué dans le [guide d'utilisation de l'API Nova](/pages/public_cloud/compute/starting_with_nova) :
 >>
 >> - ID ou nom de la clé SSH OpenStack
 >> - ID du type d'instance (flavor)
@@ -987,7 +987,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> >
 >> > Détacher une interface réseau entraîne sa suppression immédiate.
 >> >
->> > Cependant, il est important de noter que si vous detacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
+>> > Cependant, il est important de noter que si vous détacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
 >> ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (réseau privée) ou dans le cas contraire la sortir d'un ou plusieurs VLAN.
 >> >
 >>
@@ -1040,7 +1040,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> >
 >> > Détacher une interface réseau entraîne sa suppression immédiate.
 >> >
->> > Cependant, il est important de noter que si vous detacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
+>> > Cependant, il est important de noter que si vous détacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
 >> ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (réseau privée) ou dans le cas contraire la sortir d'un ou plusieurs VLAN.
 >> >
 >>
@@ -1159,7 +1159,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 > [!warning]
 > Détacher une interface réseau entraîne sa suppression immédiate.
 >
-> Cependant, il est important de noter que si vous detacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
+> Cependant, il est important de noter que si vous détacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
 ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (réseau privée) ou dans le cas contraire la sortir d'un ou plusieurs VLAN.
 >
 

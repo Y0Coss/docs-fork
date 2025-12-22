@@ -127,7 +127,7 @@ Before you begin, please consult the following guides:
 
 > [!primary]
 >
-> The OpenStack CLI is useful for managing your vRack, but some functions may vary depending on the version of the client or operating system. Please refer to the [official OpenStack documentation](https://docs.openstack.org/fr/).
+> The OpenStack CLI is useful for managing your vRack, but some functions may vary depending on the version of the client or operating system. Please refer to the [official OpenStack documentation](https://docs.openstack.org/).
 >
 
 ///
@@ -164,13 +164,13 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be setup in your account.
 >>
->> Once the service is active, you will find it in your Control Panel in the `Nerwork`{.action} section > `vRack private network`{.action}. Labelled "pn-xxxxxx".
+>> Once the service is active, you will find it in your Control Panel in the `Nerwork`{.action} section > `vRack private network`{.action}, labelled "pn-xxxxxx".
 >>
 >> From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 >>
 >> ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 >>
->> To continue the configuration of your vRack in the OVHcloud Control Panel, skip to the section [Creating a private network in the OVHcloud Control Panel](./#creating-a-private-network-in-the-ovhcloud-control-panel) of this guide.
+>> To continue configuring your vRack from the OVHcloud Control Panel, continue reading this guide from [Step 2: Create a private network in the vRack](#create-pn-in-vrack), under the **From the OVHcloud Control Panel** tab.
 >>
 > Via the OVHcloud APIv6
 >> **Step 1: Activating and managing a vRack**
@@ -326,7 +326,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> >
 >>
 
-### Step 2: Creating a private network in the vRack
+### Step 2: Creating a private network in the vRack <a name="create-pn-in-vrack"></a>
 
 It is necessary to create a private network with a virtual local area network (VLAN) so that the connected instances can communicate with each other.
 
@@ -388,7 +388,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >>
 >> **DHCP address distribution options**
 >>
->> The default DHCP range is 10.0.0.0/16. You can use a different private range of your choice.
+>> The default DHCP range is 10.1.0.0/16. You can use a different private range of your choice.
 >>
 >> Once done, click on `Create`{.action} to start the process.
 >>
