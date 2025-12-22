@@ -874,6 +874,7 @@
             + [Importing an Additional IP](public_cloud/public_cloud_network_services/additional-ip-import)
             + [Migrating an Additional IP](public_cloud/public_cloud_network_services/additional-ip-migrate)
         + [Configuration](public-cloud-network-configuration)
+            + [Extending a Private OVHcloud Network Across Public Cloud Regions](public_cloud/public_cloud_network_services/extend_private_network_accross_regions)
             + [L3 services SNAT configuration](public_cloud/public_cloud_network_services/configuration-01-snat-configuration)
             + [Configuring IPv6 on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
             + [Configuring a public IP block in a vRack on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance)
