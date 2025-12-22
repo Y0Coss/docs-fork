@@ -26,7 +26,7 @@ The drop-down menu underneath **My public IP addresses and associated services**
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Click on `...`{.action} in the row of the IP address concerned and select `Configure the reverse DNS`{.action}.
+Click the `⁝`{.action} button in the row of the IP address concerned and select `Configure the reverse DNS`{.action}.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
