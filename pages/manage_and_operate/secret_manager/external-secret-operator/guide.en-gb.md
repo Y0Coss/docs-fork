@@ -75,6 +75,12 @@ Then create a Personnal Acces Token (PAT) `user_pat`:
 >> ```bash
 >> ✅ Token Secret-Manager created successfully, value: eyJhbGciOiJ...punpVAg
 >> ```
+>>
+>> As an alternative, it's suggest to store directly PAT in a environment variable:
+>>
+>> ```bash
+>> PAT_TOKEN=$(ovhcloud iam user token create {user} --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx" -j  | jq .details.token |  tr -d '"') ; echo $PAT_TOKEN
+>> ```
 
 Keep safe the value of `token` field as it will never be prompt again and will be used to authenticate on the Secret Manager as `user_pat`.
 
@@ -141,6 +147,12 @@ $ echo -n "<token>" | base64
 ZXlKaG...wVkFn
 ```
 
+Or if `user_pat` was store in a environment variable:
+
+```bash
+PAT_TOKEN_B64=$(echo -n $PAT_TOKEN | base64) ; echo $PAT_TOKEN_B64
+```
+
 Then create a `secret.yaml`:
 
 ```yaml
@@ -151,6 +163,14 @@ metadata:
   namespace: external-secrets
 data:
   token: ZXlKaG...wVkFn
+```
+
+Or if using an environment variable:
+
+```bash
+kubectl create secret generic ovhcloud-vault-token -n external-secrets --from-literal=token=$PAT_TOKEN_B64
+
+secret/ovhcloud-vault-token created
 ```
 
 And apply the ressource to the cluster:
@@ -191,6 +211,7 @@ spec:
             tokenSecretRef:
               name: ovhcloud-vault-token # The k8s secret that contain your PAT
               key: token 
+              namespace: external-secrets
 ```
 
 > [!info]
