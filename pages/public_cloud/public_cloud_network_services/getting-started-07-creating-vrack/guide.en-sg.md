@@ -37,7 +37,7 @@ Creating a vRack or adding an instance into the network can be done using the OV
 
 Depending on your technical profile and needs, it is mostly up to you which interface or method to use. For each option, the guide instructions below describe the necessary steps.
 
-**To begin with, the following provides a brief description of the possible actions according to the chosen method/interface.**
+**To begin with, the following provides a brief description of the possible actions according to the chosen method/interface.** <a name="horizon"></a>
 
 /// details | OVHcloud Control Panel
 
@@ -48,8 +48,6 @@ The VLAN will be deployed to the selected Region. You will also have the option 
 You can also manage billing for your services in the OVHcloud Control Panel.
 
 ///
-
-<a name="horizon"></a>
 
 /// details | Horizon
 

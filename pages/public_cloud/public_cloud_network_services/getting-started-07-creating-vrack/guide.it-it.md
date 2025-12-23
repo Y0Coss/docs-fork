@@ -37,7 +37,7 @@ Che si tratti di creare il tuo vRack o di aggiungere un'istanza all'interno di q
 
 A seconda del tuo profilo tecnico e delle tue esigenze, potresti dover scegliere quale interfaccia o metodo utilizzare. Pertanto, per ogni azione, ti proporremo le diverse procedure possibili.
 
-**Ecco una descrizione rapida delle azioni possibili in base al metodo/interfaccia scelto:**
+**Ecco una descrizione rapida delle azioni possibili in base al metodo/interfaccia scelto:** <a name="horizon"></a>
 
 /// details | Spazio Cliente OVHcloud
 
@@ -47,9 +47,7 @@ I VLAN verranno distribuiti nella Regione selezionata. Avrai inoltre la possibil
 
 Potrai inoltre gestire la fatturazione dei tuoi servizi attraverso il tuo Spazio Cliente OVHcloud.
 
-/// 
-
-<a name="horizon"></a>
+///
 
 /// details | Interfaccia Horizon
 
