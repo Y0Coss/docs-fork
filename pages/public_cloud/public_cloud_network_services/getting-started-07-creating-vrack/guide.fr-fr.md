@@ -41,7 +41,7 @@ Selon votre profil technique et vos besoins, vous serez amenés à devoir choisi
 
 /// details | Espace client OVHcloud
 
-[L'espace client OVHcloud](/links/manager) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale à la gestion de plusieurs VLAN. Vous aurez également la possibilité de personnaliser la plage d'IP privée qui, par défaut, est 10.x.x.x/16.
+[L'espace client OVHcloud](/links/manager) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale à la gestion de plusieurs VLAN. Vous aurez également la possibilité de personnaliser la plage d'IP privée qui, par défaut, est 10.1.0.0/16.
 
 Les VLAN seront déployés dans la Région sélectionnée. Vous aurez également la possibilité d'activer ou non les passerelles, d'activer les distributions DHCP, etc.
 
@@ -372,7 +372,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >>
 >> Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vous permettra de personnaliser plusieurs paramètres.
 >>
->> À l'étape 1, sélectionnez la région dans laquelle vous souhaitez créer le réseau privé.
+>> Pour commencer, sélectionnez un mode de déploiement ainsi que la région dans laquelle vous souhaitez créer le réseau privé.
 >>
 >> ![select region](images/vrack5-2024.png){.thumbnail}
 >>
@@ -514,7 +514,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >> Par défaut, si vous ne n'ajoutez pas de sous réseau, la plage IP utilisée est la suivante :
 >>
 >> ```
->> 10.0.0.0/16
+>> 10.1.0.0/16
 >> ```
 >>
 >> Si vous souhaitez gérer vous même les affectations IP, vous devrez créer un sous-réseau.
@@ -572,7 +572,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >> resource "openstack_networking_subnet_v2" "tf_subnet"{
 >>   name       = "tf_subnet"
 >>   network_id = openstack_networking_network_v2.tf_network.id
->>   cidr       = "10.0.0.0/16"
+>>   cidr       = "10.1.0.0/16"
 >>   enable_dhcp       = true
 >> }
 >> ```
@@ -584,7 +584,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >>
 >> ```bash 
 >> openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
->> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
+>> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.1.0.0/16
 >> ```
 >> 
 
@@ -894,11 +894,11 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 > Depuis l'espace client OVHcloud
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud concerné en haut à gauche.
 >>
->> Cliquez alors sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `...`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
+>> Cliquez alors sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `⁝`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
 >>
 >> ![detail instance](images/instance_details.png){.thumbnail}
 >>
->> Le tableau de bord de votre instance vous est alors présenté. Cliquez sur le bouton `...`{.action} à droite de « Réseau(x) privé(s) » puis sur `Attacher un réseau`{.action}.
+>> Le tableau de bord de votre instance vous est alors présenté. Cliquez sur le bouton `⁝`{.action} à droite de « Réseau(x) privé(s) » puis sur `Attacher un réseau`{.action}.
 >>
 >> ![attacher réseau](images/vrack2021-01.png){.thumbnail}
 >>
