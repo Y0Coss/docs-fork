@@ -40,9 +40,9 @@ Vous pouvez restaurer un objet dans la classe de stockage Cold Archive en utilis
 >> Vous pouvez également surveiller l'état de votre restauration dans la liste des objets, via un statut dédié.
 >>
 > Via les API OVHcloud
->> [!api]
->>
->> @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/object/{key}/restore
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/object/{key}/restore
 >> 
 > Via AWS CLI
 >>
