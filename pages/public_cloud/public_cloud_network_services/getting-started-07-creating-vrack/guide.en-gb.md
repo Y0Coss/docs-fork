@@ -1,7 +1,7 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-updated: 2025-04-28
+updated: 2025-12-23
 ---
 
 <style>
@@ -49,6 +49,8 @@ You can also manage billing for your services in the OVHcloud Control Panel.
 
 ///
 
+<a name="horizon"></a>
+
 /// details | Horizon
 
 The [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface (independent from OVHcloud) is the original implementation of the OpenStack dashboard, which provides a web user interface to OpenStack services, including Nova, Swift, Keystone, etc.
@@ -65,23 +67,28 @@ Please refer to [this guide](/pages/public_cloud/public_cloud_cross_functional/i
 
 /// details | OVHcloud APIv6
 
-Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud APIv6](/links/api). It even offers more possibilities than the graphical interface.
+Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud APIv6](/links/api).
+It even offers more possibilities than the graphical interface.
 
 The API interface is less visual than the OVHcloud Control Panel but will allow you to perform a large number of actions. You can manage and customise your VLAN, add interfaces to your instances, or create highly customised servers.
 
-You can simply access it from [our web page](/links/api) but also use it to create your PHP or Python scripts. This way, you can freely automate basic tasks with scripts, optimise your own functions and much more.
+You can simply access it from [our web page](/links/api) but also use it to create your PHP or Python scripts.
+
+This way, you can freely automate basic tasks with scripts, optimise your own functions and much more.
 
 You may need to retrieve various information before using some API calls because a specific input is required.
 
 Please refer to [this guide](/pages/manage_and_operate/api/first-steps) to get started with the OVHcloud APIv6.
 
+///
+
 /// details | OpenStack API
 
-Public Cloud services can be adminstrated using Linux or Windows command lines after downloading and installing OpenStack tools.
+Public Cloud services can be administrated using Linux or Windows command lines after downloading and installing OpenStack tools.
 
 This method requires a good knowledge of Linux or Windows to take advantage of it, but it allows you to leverage all the power of OpenStack.
 
-Depending on the layer you want to manage, you will need to use the Nova (compute), Neutron (network), Glance (image) or Swift (object storage) client. The latest addition to this assortment, the OpenStack client, makes it possible to manage almost all OpenStack layers directly.
+Depending on the layer you want to manage, you will need to use the Nova (compute), Neutron (network), Glance (image) or Swift (Object Storage) client. The latest addition to this assortment, the OpenStack client, makes it possible to manage almost all OpenStack layers directly.
 
 With the OpenStack API, you can also easily automate this management through your scripts.
 
@@ -164,15 +171,16 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be setup in your account.
 >>
->> Once the service is active, you will find it in your Control Panel in the `Nerwork`{.action} section > `vRack private network`{.action}, labelled "pn-xxxxxx".
+>> Once the service is active, you will find it in your Control Panel in the `Network`{.action} section > `vRack private network`{.action}, labelled "pn-xxxxxx".
 >>
->> From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
+>> Click on your vRack, then select the project you want to add to the vRack from the list of eligible services and click the `Add`{.action} button.
 >>
 >> ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 >>
 >> To continue configuring your vRack from the OVHcloud Control Panel, continue reading this guide from [Step 2: Create a private network in the vRack](#create-pn-in-vrack), under the **From the OVHcloud Control Panel** tab.
 >>
 > Via the OVHcloud APIv6
+>>
 >> **Step 1: Activating and managing a vRack**
 >>
 >> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)) and follow these steps:
@@ -185,6 +193,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> >
 >>
 >> > [!primary]
+>> >
 >> > This call will create an ID for your 'shopping cart'. You can add as many articles as you want before you validate it.
 >> >
 >> > In this case, the order of a vRack alone is free. Remember your cart number (cartId), it will be required for the rest.
@@ -198,9 +207,11 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> >
 >>
 >> > [!primary]
+>> >
 >> > This call will allow you to retrieve all the information needed to order the vRack. Copy the following:
 >> >
 >> > *cartId*, *duration*, *planCode*, and *pricingMode*.
+>> >
 >>
 >> **Adding the vRack to the cart**
 >>
@@ -210,6 +221,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> >
 >>
 >> > [!primary]
+>> >
 >> > This call allows you to add the vRack to the cart by adding all the necessary information to the order.
 >> >
 >> > For a vRack, this would be, for example:
@@ -245,8 +257,8 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> To validate the order, you have two possibilities:
 >>
->> - Pass through the visible URL when the cart is validated. Example:
->> > URL: https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=12345678&orderPassword=xxxxxxxxxx
+>> - Pass through the visible URL when the cart is validated.
+>> URL example: https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=12345678&orderPassword=xxxxxxxxxx
 >>
 >> - Validate using this call:
 >>
@@ -266,7 +278,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> Once the vRack is active, you will need to integrate your Public Cloud project(s) into the vRack.
 >>
->> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)).
+>> Log in to the OVHcloud APIv6 interface according to the relevant guide: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >>
 >> In case the project ID is unknown, the calls below allow you to retrieve it.
 >>
@@ -303,12 +315,12 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> Fill in the fields with the information previously retrieved:
 >>
->> **serviceName**: vRack name in the form "pn-xxxxxx"
->> <br>**project**: The Public Cloud project ID in the form of a 32-character string
+>> - **serviceName**: vRack name in the form "pn-xxxxxx".
+>> - **project**: The Public Cloud project ID in the form of a 32-character string.
 >>
 >> > [!primary]
 >> >
->> > This call initialises the association of the project and the vRack. The task ID must then be retrieved to check the progress.
+>> > This call initializes the association of the project and the vRack. The task ID must then be retrieved to check the progress.
 >> >
 >>
 >> **Checking the progress of the task**
@@ -330,18 +342,19 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 
 It is necessary to create a private network with a virtual local area network (VLAN) so that the connected instances can communicate with each other.
 
-With the Public Cloud service, you can create up to 4,000 VLANs within one vRack. This means that you can use each private IP address up to 4,000 times.
+With the Public Cloud service, you can create up to 4 000 VLANs within one vRack. This means that you can use each private IP address up to 4 000 times.
 Thus, for example, 192.168.0.10 of VLAN 2 is different from IP 192.168.0.10 of VLAN 42.
+
 This can be useful in order to segment your vRack between multiple virtual networks.
 
-In the OVHcloud Control Panel, you can assign the VLAN of your choice and customise the private IP range.
+From the OVHcloud Control Panel and OVHcloud APIv6, you can customise all settings: deployment mode and region, VLAN name and ID, private IP address range (e.g. 10.0.0.0/16), DHCP, and gateway.
 
 > [!primary]
 > On dedicated servers, you are using VLAN 0 by default. The OpenStack infrastructure requires to specify your VLAN ID directly at the infrastructure level.
 >
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
-> To learn more about this topic, please refer to the guide [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+> To learn more about this topic, please refer to the guide "[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)".
 
 > [!warning]
 > vRack is managed at the OVHcloud infrastructure level, meaning you can only administrate it in the OVHcloud Control Panel and the OVHcloud APIv6.
@@ -353,7 +366,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 > Via the OVHcloud Control Panel
 >> Once you have your vRack set, the next step is to create a private network.
 >>
->> In the Public cloud tab, click on `Private Network`{.action} in the left-hand menu under **Network**.
+>> In the `Public Cloud`{.action} tab, click on `Private Network`{.action} in the left-hand menu under **Network**.
 >>
 >> ![VLAN creation](images/vrack2022-03.png){.thumbnail}
 >>
@@ -369,18 +382,9 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >>
 >> In the **Private Network Name** field, set a name for your private network.
 >>
->> **Create a Gateway and connect to the private network**
+>> **Layer 2 network option**
 >>
->> Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps).
->>
->> > [!warning]
->> >
->> > If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](/links/public-cloud/regions-pci) page. 
->> > 
->>
->> **Layer 2 network options**
->>
->> If you tick the `Set a VLAN ID` box, you will be able to manually choose a VLAN ID number between 0 and 4,000.
+>> If you tick the `Set VLAN ID`{.action} box, you will be able to manually choose a VLAN ID number between 0 and 4 000.
 >>
 >> If you do not tick the box, the system will assign a random VLAN ID number to your private network.
 >>
@@ -388,9 +392,19 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >>
 >> **DHCP address distribution options**
 >>
->> The default DHCP range is 10.1.0.0/16. You can use a different private range of your choice.
+>> The default DHCP range is 10.1.0.0/16. You can use a different private range of your choice, or disable DHCP for this private network.
 >>
->> Once done, click on `Create`{.action} to start the process.
+>> **Network Gateway Options**
+>>
+>> - **Announce the first address of a given CIDR. as the default gateway (DHCP option 3)**: When this option is enabled, the DHCP server advertises the first address in the CIDR as the default gateway to machines connected to the network.
+>> - **Assign a Gateway and connect to the private network**:Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps).
+>>
+>> > [!warning]
+>> >
+>> > If the second option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](/links/public-cloud/regions-pci) page. 
+>> > 
+>>
+>> Once done, click on `Configure your private network`{.action} to start the process.
 >>
 >> > [!primary]
 >> >
@@ -398,28 +412,6 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> >
 >>
 > Via the OVHcloud APIv6 <a name="vlansetup"></a>
->> It is necessary to create a VLAN so that instances connected to the vRack can communicate with each other.
->>
->> With the Public Cloud service, you can create up to 4,000 VLANs within one vRack. This means that you can use each private IP address up to 4,000 times. Thus, for example, 192.168.0.10 of VLAN 2 is different from IP 192.168.0.10 of VLAN 42.
->>
->> This can be useful in order to segment your vRack between multiple virtual networks.
->>
->> Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 for example), deployment zone, DCHP, Gateway, etc.
->>
->> > [!primary]
->> >
->> > On dedicated servers, you are using VLAN 0 by default. The OpenStack infrastructure requires to specify your VLAN ID directly at the infrastructure level.
->> >
->> > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
->> >
->> > To learn more about this topic, please refer to the guide [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
->>
->> > [!warning]
->> >
->> > vRack is managed at the OVHcloud infrastructure level, meaning you can only administrate it in the OVHcloud Control Panel and the OVHcloud APIv6.
->> >
->> > Because OpenStack is not located at the same level, you will not be able to customise VLANs through the Horizon interface or OpenStack APIs.
->> >
 >>
 >> Once logged in to the [OVHcloud APIv6 interface](/links/api), follow these steps:
 >>
@@ -470,9 +462,8 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> >
 >> > Fill in the fields with the information previously obtained:
 >> >
->> > **serviceName** : project ID
->> >
->> > **name** : name of your VLAN
+>> > - **serviceName**: project ID.
+>> > - **name**: name of your VLAN.
 >> >
 >> > You can leave the "Region" field blank in order to enable it for all regions.
 >> >
@@ -481,7 +472,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >>
 >> The creation will take a few moments.
 >>
->> You can check your VLAN information with the following call
+>> You can check your VLAN information with the following call:
 >>
 >> > [!api]
 >> >
@@ -492,7 +483,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> >
 >> > This call retrieves the "networkId" in this form: name-vrack_vlanId.
 >> >
->> > For example, VLAN 42: pn-xxxxxx_42
+>> > For example, VLAN 42: pn-xxxxxx_42.
 >> >
 >>
 >> **Step 3: Creating a subnet**
@@ -516,13 +507,13 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >>
 >> |Field|Description| 
 >> |---|---| 
->> |serviceName|ID of the project|
->> |networkId|Your network ID, retrieved with previous steps. Example: pn-xxxxxx_42 for VLAN 42|
->> |dhcp|Check box for enabling / uncheck for disabling DHCP in the VLAN|
->> |end|Last address of the subnet in this region. Example: 192.168.1.50|
->> |network|Subnet IP block. Example: 192.168.1.0/24|
->> |region|Example: SBG3|
->> |start|First address of the subnet in this region. Example: 192.168.1.15|
+>> |serviceName|ID of the project.|
+>> |networkId|Your network ID, retrieved with previous steps. Example: pn-xxxxxx_42 for VLAN 42.|
+>> |dhcp|Check box for enabling / uncheck for disabling DHCP in the VLAN.|
+>> |end|Last address of the subnet in this region. Example: 192.168.1.50.|
+>> |network|Subnet IP block. Example: 192.168.1.0/24.|
+>> |region|Example: SBG3.|
+>> |start|First address of the subnet in this region. Example: 192.168.1.15.|
 >>
 >> > [!primary]
 >> > This is the stage of creating the subnet by region. You can enable or disable private IP address assignment dynamically through DHCP.
@@ -534,13 +525,12 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> >
 >> > Be careful to separate your IP address pools for different regions. For example:
 >> >
->> > From 192.168.0.2 to 192.168.0.254 for SBG1
->> >
->> > From 192.168.1.2 to 192.168.1.254 for GRA1
+>> > - From 192.168.0.2 to 192.168.0.254 for SBG1.
+>> > - From 192.168.1.2 to 192.168.1.254 for GRA1.
 >> >
 >>
 > Via Terraform
->> In Terraform, you will need to use the openstack provider. You can download an example of a complete terraform script in [this repository](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network).
+>> In Terraform, you will need to use the OpenStack provider. You can download an example of a complete terraform script in [this GitHub repository](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network).
 >>
 >> The OVHcloud specific part for vRack integration is the `value_specs` parameter.
 >>
@@ -561,7 +551,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> }
 >> ```
 >>
-> Via the Openstack CLI
+> Via the OpenStack CLI
 >> In the following example we specify the `VLAN_ID` to which we want the network to be part of through `--provider-network-type` and `--provider-segment`.
 >>
 >> You can remove those parameters. In that case, an available `VLAN_ID` will be used.
@@ -613,8 +603,8 @@ There are two possible scenarios:
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >> >
 >>
->> **Retrieving the networkID of the private network (vRack interface previously created)
->>**
+>> **Retrieving the networkID of the private network (vRack interface previously created)**
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
@@ -676,26 +666,26 @@ There are two possible scenarios:
 >>
 >> |Field|Description| 
 >> |---|---| 
->> |serviceName|ID of the Public Cloud project|
->> |flavorId|ID of the instance type (example: D2-2, B2-7, WIN-R2-15...)|
->> |imageId|ID of the image for the deployment (example: Debian 9, Centos 7...)|
->> |name|name for your instance.|
+>> |serviceName|ID of the Public Cloud project.|
+>> |flavorId|ID of the instance type (example: D2-2, B2-7, WIN-R2-15, etc.).|
+>> |imageId|ID of the image for the deployment (example: Debian 9, Centos 7, etc.).|
+>> |name|Name for your instance.|
 >> |networks|In the "networkId" section, indicate the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy). You can click the "+" button to add more networks.|
->> |region|Region for your instance deployment (example: GRA5)|
->> |sshKeyId|ID of your OpenStack SSH key|
+>> |region|Region for your instance deployment (example: GRA5).|
+>> |sshKeyId|ID of your OpenStack SSH key.|
 >>
 >> Once the call is complete, if all information is correctly filled in, the instance will be created with one or more network interfaces.
 >>
 >> > [!warning]
 >> >
->> > Depending on operating systems, you will need to manually configure your private network interfaces to be considered.
->> ><br>Because OpenStack is unable to prioritise the public interface of the vRack interface, the vRack interface may sometimes pass as the default route.
->> ><br>The direct consequence is that the instance is unreachable from a public IP.
->> ><br>One or more reboots of the instance from the Control Panel can resolve this situation.
->> ><br>The other solution is to connect to the instance via another server in the same private network. You can also correct the network configuration of the instance through Rescue mode.
+>> > Depending on operating systems, you will need to manually configure your private network interfaces to be considered.<br>
+>> > Because OpenStack is unable to prioritise the public interface of the vRack interface, the vRack interface may sometimes pass as the default route.<br>
+>> > The direct consequence is that the instance is unreachable from a public IP.<br>
+>> > One or more reboots of the instance from the Control Panel can resolve this situation.<br>
+>> > The other solution is to connect to the instance via another server in the same private network. You can also correct the network configuration of the instance through Rescue mode.
 >> >
 >>
-> Via the Openstack CLI
+> Via the OpenStack CLI
 >> The following steps are necessary to create an instance directly in the vRack.
 >>
 >> **Retrieving the required information**
@@ -731,15 +721,16 @@ There are two possible scenarios:
 >> > [!primary]
 >> >
 >> > You will need to note the network IDs of interest:
->> ><br> - Ext-Net for a public IP address
->> ><br> - The VLAN(s) required for your configuration
+>> >
+>> > - Ext-Net for a public IP address.
+>> > - The VLAN(s) required for your configuration.
 >> >
 >>
->> Also note the information detailed in [this guide](/pages/public_cloud/compute/starting_with_nova):
+>> Also note the information detailed in the [Nova API user guide](/pages/public_cloud/compute/starting_with_nova):
 >>
->> - ID or name of the OpenStack SSH key
->> - ID of the instance type (flavor)
->> - ID of the desired image (operating system, snapshot, etc.)
+>> - ID or name of the OpenStack SSH key.
+>> - ID of the instance type (flavor).
+>> - ID of the desired image (operating system, snapshot, etc.).
 >>
 >> **Deploying the instance**
 >>
@@ -848,7 +839,7 @@ There are two possible scenarios:
 >> +--------------------------------------+---------------------+--------+--------------------------------------------------+--------------------+
 >> | ID                                   |       Name          | Status | Networks                                         |     Image Name     |
 >> +--------------------------------------+---------------------+--------+--------------------------------------------------+--------------------+
->> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx | [Name of instance] | ACTIVE | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack] | [Name-of-instance]|
+>> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx | [Name of instance]  | ACTIVE | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack]  | [Name-of-instance] |
 >> +--------------------------------------+---------------------+--------+--------------------------------------------------+--------------------+
 >> ```
 >>
@@ -857,7 +848,7 @@ There are two possible scenarios:
 >> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 >> | ID                                   | Name               | Status | Task State | Power State | Networks                                         |
 >> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
->> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   | [Name of instance]| ACTIVE | -          | Running     | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack] |
+>> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   | [Name of instance] | ACTIVE | -          | Running     | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack]  |
 >> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 >> ```
 >>
@@ -889,7 +880,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> ![attach network](images/vrack2021-01.png){.thumbnail}
 >>
->> In the popup window that appears, select the private network(s) to attach to your instance and click `Attach`{.action}.
+>> In the popup window that appears, select the private network(s) to attach to your instance and click `Confirm`{.action}.
 >>
 >> ![attach network](images/vrack9.png){.thumbnail}
 >>
@@ -907,7 +898,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> > You will therefore need to set a static IP or configure DHCP, depending on your infrastructure.
 >> >
 >>
->> **The steps below describe how to manage your instances' network interfaces.**
+>> **The steps below describe how to manage the network interfaces of your instances.**
 >>
 >> **Step 1: Retrieving the required information**
 >>
@@ -957,19 +948,18 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> |Field|Description| 
 >> |---|---| 
->> |serviceName|ID of the Public Cloud project|
->> |instanceId|ID of the instance|
->> |networkId|Enter the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy)|
->> |ip|Define a specific IP (only works for private interfaces)|
+>> |serviceName|ID of the Public Cloud project.|
+>> |instanceId|ID of the instance.|
+>> |networkId|Enter the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy).|
+>> |ip|Define a specific IP (only works for private interfaces).|
 >>
 >> Once the call is complete, if all information is correctly filled in, a new interface will be added to your instance.
 >>
 >> > [!primary]
 >> >
->> > Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).
->> > Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).
->> ><br>In the instance summary, you can see the private IP address that is automatically assigned to your interface.
->> ><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
+>> > Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).<br>
+>> > In the instance summary, you can see the private IP address that is automatically assigned to your interface.<br>
+>> > It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >> >
 >>
 >> **Step 3: Removing an interface from your instance**
@@ -978,8 +968,8 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> >
 >> > Detaching a network interface is permanent.
 >> >
->> > However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.
->> ><br>This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
+>> > However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.<br>
+>> > This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
 >> >
 >>
 >> Once all the necessary information is retrieved, you can use the following call to remove an interface:
@@ -993,12 +983,12 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> |Field|Description| 
 >> |---|---| 
->> |serviceName|ID of the Public Cloud project|
->> |instanceId|ID of the instance|
->> |networkId|Enter the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy)|
+>> |serviceName|ID of the Public Cloud project.|
+>> |instanceId|ID of the instance.|
+>> |networkId|Enter the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy).|
 >>
 > Via Horizon
->> Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) as mentioned [above](./#horizon).
+>> Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) as mentioned [above](#horizon).
 >>
 >> Choose the proper work zone.
 >>
@@ -1010,7 +1000,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> **Adding a private interface**
 >>
->> To add an interface, click on the arrow in the "Actions" column to access the possible actions on the instance. Select `Attach Interface`{.action}.
+>> To add an interface, click on the arrow in the `Actions` column to access the possible actions on the instance. Select `Attach Interface`{.action}.
 >>
 >> ![Horizon attach interface](images/horizon3.png){.thumbnail}
 >>
@@ -1020,9 +1010,9 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> > [!primary]
 >> >
->> > Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).
->> ><br>In the instance summary, you can see the private IP address that is automatically assigned to your interface.
->> ><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
+>> > Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).<br>
+>> > In the instance summary, you can see the private IP address that is automatically assigned to your interface.<br>
+>> > It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >> >
 >>
 >> **Detaching a network private interface**
@@ -1031,11 +1021,11 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> >
 >> > Detaching a network interface is permanent.
 >> >
->> > However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.
->> ><br>This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
+>> > However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.<br>
+>> > This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
 >> >
 >>
->> To detach a private interface, click on the arrow in the "Actions" column to access the possible actions on the instance. Select `Detach Interface`{.action}.
+>> To detach a private interface, click on the arrow in the `Actions` column to access the possible actions on the instance. Select `Detach Interface`{.action}.
 >>
 >> ![Horizon detach interface](images/horizon5.png){.thumbnail}
 >>
@@ -1043,7 +1033,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> ![Horizon detach interface](images/horizon6.png){.thumbnail}
 >>
-> Via the Openstack CLI
+> Via the OpenStack CLI
 >> The following steps are necessary to integrate an existing instance into the vRack.
 >>
 >> **Retrieving the required information**
@@ -1056,7 +1046,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> +--------------------------------------+--------------+--------+------------------------------------------------------------------------+------------+
 >> | ID                                   | Name         | Status | Networks                                                               | Image Name |
 >> +--------------------------------------+--------------+--------+------------------------------------------------------------------------+------------+
->> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | My-Instance | ACTIVE | Ext-Net=xx.xx.xx.xx, 2001:41d0:yyyy:yyyy::yyyy; MyVrack=192.168.0.124 | Debian 9   |
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | My-Instance  | ACTIVE | Ext-Net=xx.xx.xx.xx, 2001:41d0:yyyy:yyyy::yyyy; MyVrack=192.168.0.124  | Debian 9   |
 >> +--------------------------------------+--------------+--------+------------------------------------------------------------------------+------------+
 >> ```
 >>
@@ -1068,7 +1058,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> +--------------------------------------+--------------+--------+------------+-------------+----------------------------------------------------------------------+
 >> | ID                                   | Name         | Status | Task State | Power State | Networks                                                             |
 >> +--------------------------------------+--------------+--------+------------+-------------+----------------------------------------------------------------------+
->> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | My-Instance | ACTIVE | -          | Running     | Ext-Net=xx.xx.xx.xx,2001:41d0:yyyy:yyyy::yyyy;MyVrack=192.168.0.124 |
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | My-Instance  | ACTIVE | -          | Running     | Ext-Net=xx.xx.xx.xx,2001:41d0:yyyy:yyyy::yyyy;MyVrack=192.168.0.124  |
 >> +--------------------------------------+--------------+--------+------------+-------------+----------------------------------------------------------------------+
 >> ```
 >>
@@ -1103,8 +1093,9 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> > [!primary]
 >> >
 >> > You will need to note the network IDs of interest:
->> ><br> - Ext-Net for a public IP address
->> ><br> - The VLAN(s) required for your configuration
+>> >
+>> > - Ext-Net for a public IP address
+>> > - The VLAN(s) required for your configuration
 >> >
 >>
 >> **Adding a private network interface**
@@ -1153,8 +1144,8 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >
 > Detaching a network interface is permanent.
 >
-> However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.
-><br>This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
+> However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.<br>
+> This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
 >
 
 In order to detach an interface, you will first need to identify the Neutron port that has been created.
