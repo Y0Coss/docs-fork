@@ -392,15 +392,15 @@ In a versioned bucket, the following configuration does the following actions:
 
 > [!warning]
 >
-> Only transitions from a higher cost storage tier to a lower cost storage tier are allowed. Additionally, all transitions to Cold Archive are currently not supported.
+> Only transitions from a higher cost storage tier to a lower cost storage tier are allowed.
 
 The following are the currently supported transitions:
 
 | from/to          | High Performance | Standard  | Infrequent Access |Cold Archive |
 | ---------------- | ---------------- | --------- | ----------------- |------------ |
-| High Performance |        -         | yes       |    yes            | no          |
-| Standard         | forbidden        | -         |    yes            | no          |
-| Infrequent Access| forbidden        | forbidden |    -              | no          |
+| High Performance |        -         | yes       |    yes            | yes          |
+| Standard         | forbidden        | -         |    yes            | yes          |
+| Infrequent Access| forbidden        | forbidden |    -              | yes          |
 | Cold Archive     | forbidden        | forbidden |    forbidden      | -           |
 
 ### Minimum object size
