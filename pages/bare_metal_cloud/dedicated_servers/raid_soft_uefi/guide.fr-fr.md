@@ -66,6 +66,8 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
     - [Via le mode Rescue](#mirrored-esp-rescue)
     - [Via le mode Normal](#mirrored-esp-normal)
 - [Ajout de l'étiquette à la partition SWAP (si applicable)](#swap-partition)
+    - [Via le mode Rescue](#swap-rescue)
+    - [Via le mode Normal](#swap-normal)
     
 
 
@@ -965,7 +967,7 @@ Ensuite, consultez [cette section](#swap-normal) pour recréer la partition SWAP
 
 /// details | **Dépliez cette section**
 
-#### En mode rescue <a name="mirrored-esp-rescue"></a>
+#### Via le mode Rescue <a name="mirrored-esp-rescue"></a>
 
 La reconstruction du RAID avec toutes les partitions en miroir est plus facile ; il suffit de copier les données du disque sain vers le nouveau disque et de recréer la partition [SWAP] (le cas échéant).
 
@@ -1092,7 +1094,7 @@ nvme0n1
 
 Ensuite, consultez [cette section](#swap-rescue) pour recréer la partition SWAP (le cas échéant).
 
-#### En mode normal <a name="mirrored-esp-normal"></a>
+#### Via le mode Normal <a name="mirrored-esp-normal"></a>
 
 D'après les illustrations ci-dessus, l'état du RAID devrait être le suivant après une panne de disque :
 
@@ -1159,7 +1161,7 @@ Une fois la reconstruction du RAID terminée, consultez [cette section](#swap-no
 
 #### Ajout de l'étiquette à la partition SWAP (si applicable) <a name="swap-partition"></a>
 
-#### Via le mode rescue <a name="swap-rescue"></a>
+#### Via le mode Rescue <a name="swap-rescue"></a>
 
 Hors de l'environnement `chroot`, recréez la partition [SWAP] **nvme0n1p4** et ajoutez le label `swap-nvmenxxx` :
 
@@ -1262,7 +1264,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -Rl /mnt
 
 Nous avons maintenant terminé avec succès la reconstruction RAID sur le serveur et nous pouvons désormais le redémarrer en mode normal.
 
-#### Via le mode noraml <a name="swap-normal"></a>
+#### Via le mode Normal <a name="swap-normal"></a>
 
 Pour recréer la partition SWAP, procédez comme suit :
 

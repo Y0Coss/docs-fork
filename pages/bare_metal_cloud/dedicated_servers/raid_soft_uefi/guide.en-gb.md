@@ -66,6 +66,8 @@ When you purchase a new server, you may feel the need to perform a series of tes
     - [In rescue mode](#mirrored-esp-rescue)
     - [In normal mode](#mirrored-esp-normal)
 - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
+    - [Using rescue mode](#swap-rescue)
+    - [Using normal mode](#swap-normal)
 
 <a name="basicinformation"></a>
 
