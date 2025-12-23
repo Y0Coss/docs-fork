@@ -37,7 +37,7 @@ Que ce soit pour créer votre vRack ou ajouter une instance au sein de ce résea
 
 Selon votre profil technique et vos besoins, vous serez amenés à devoir choisir quelle interface ou méthode utiliser. Ainsi, pour chaque action, nous vous proposerons les différentes démarches envisageables.
 
-**Voici un descriptif rapide des actions possibles suivant la méthode/interface choisie :**
+**Voici un descriptif rapide des actions possibles suivant la méthode/interface choisie :** <a name="horizon"></a>
 
 /// details | Espace client OVHcloud
 
@@ -47,9 +47,7 @@ Les VLAN seront déployés dans la Région sélectionnée. Vous aurez également
 
 Vous pourrez également gérer la facturation de vos services au travers de votre espace client OVHcloud.
 
-/// 
-
-<a name="horizon"></a>
+///
 
 /// details | Interface Horizon
 

@@ -37,7 +37,7 @@ Tworzenie vRacka lub dodawanie instancji do sieci można wykonać za pomocą Pan
 
 W zależności od Twojego profilu technicznego i potrzeb, wybór interfejsu lub metody należy do Ciebie. Dla każdej opcji poniższe instrukcje opisują niezbędne kroki.
 
-**Na początek poniżej przedstawiono krótki opis możliwych działań w zależności od wybranej metody/interfejsu.**
+**Na początek poniżej przedstawiono krótki opis możliwych działań w zależności od wybranej metody/interfejsu.** <a name="horizon"></a>
 
 /// details | Panelu klienta OVHcloud
 
@@ -48,8 +48,6 @@ VLAN zostanie wdrożony w wybranej Regionie. Będziesz również miał możliwo�
 Zarządzanie rachunkami za swoje usługi również możesz wykonać w Panelu klienta OVHcloud.
 
 ///
-
-<a name="horizon"></a>
 
 /// details | Horizon
 

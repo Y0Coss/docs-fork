@@ -37,7 +37,7 @@ Ein vRack erstellen oder eine Instanz in das Netzwerk hinzufügen kann mit dem O
 
 Je nach Ihrem technischen Profil und Ihren Anforderungen können Sie selbst entscheiden, welche Schnittstelle oder Methode Sie verwenden möchten. Für jede Option beschreibt die folgende Anleitung die notwendigen Schritte.
 
-**Zu Beginn finden Sie hier eine kurze Beschreibung der möglichen Aktionen je nach gewählter Methode/Schnittstelle.**
+**Zu Beginn finden Sie hier eine kurze Beschreibung der möglichen Aktionen je nach gewählter Methode/Schnittstelle.** <a name="horizon"></a>
 
 /// details | OVHcloud Kundencenter
 
@@ -48,8 +48,6 @@ Das VLAN wird in die ausgewählte Region bereitgestellt. Sie haben außerdem die
 Sie können außerdem die Abrechnung Ihrer Dienste im OVHcloud Kundencenter verwalten.
 
 ///
-
-<a name="horizon"></a>
 
 /// details | Horizon
 
