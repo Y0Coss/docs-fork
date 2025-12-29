@@ -63,10 +63,9 @@ L'élément principal *Projet* est composé de divers sous-éléments qui permet
 
 La section *Overview* (Aperçu) est composée de deux parties principales :
 
-- **Limit Summary** : Les limites de quotas attribuées au projet pour chaque type de ressource. Ceci permet également de visualiser le niveau de consommation des ressources par rapport aux capacités disponibles.
-Les quotas sont regroupés en deux catégories, telles que représentées dans l'image ci-dessous :
+- **Limit Summary** : Les limites de quotas attribuées au projet pour chaque type de ressource. Ceci permet également de visualiser le niveau de consommation des ressources par rapport aux capacités disponibles. Les quotas sont regroupés en deux catégories, telles que représentées dans l'image ci-dessous :
 
-![Capture d'écran de la section Limit Summary](images/horizon_quota_categories.png){.thumbnail}
+    ![Capture d'écran de la section Limit Summary](images/horizon_quota_categories.png){.thumbnail}
 
     - **Compute** qui comprend les limites des instances, les vCPUs et la RAM.
     - **Network** qui surveille les quotas des ressources réseau : les IP flottantes, les groupes de sécurité, les règles de sécurité des groupes, les réseaux et les ports.

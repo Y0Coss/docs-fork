@@ -87,7 +87,7 @@ Add the public cloud project to a vRack:
 >>
 >> ![Add Public Cloud project to Vrack](images/add_pcp_to_vrack.png){.thumbnail}
 >>
->> > [!tabs]
+>> > [!primary]
 >> >
 >> > **Note:** At this stage, using the same VLAN ID across regions without separate IP pools is exactly what must be avoided.
 >> >
