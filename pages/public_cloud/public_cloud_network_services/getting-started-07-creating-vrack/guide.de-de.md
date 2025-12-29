@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-Der OVHcloud [vRack](/links/network/vrack) ist eine Lösung für private Netzwerke, die es unseren Kunden ermöglicht, den Datenverkehr zwischen OVHcloud-Dedizierten Servern sowie anderen OVHcloud-Diensten zu leiten. Gleichzeitig können Sie [Public Cloud-Instanzen](/links/public-cloud/Compute) in Ihr privates Netzwerk einfügen, um eine Infrastruktur aus physischen und virtuellen Ressourcen zu erstellen.
+Der OVHcloud [vRack](/links/network/vrack) ist eine Lösung für private Netzwerke, die es unseren Kunden ermöglicht, den Datenverkehr zwischen OVHcloud-Dedizierten Servern sowie anderen OVHcloud-Diensten zu leiten. Gleichzeitig können Sie [Public Cloud-Instanzen](/links/public-cloud/compute) in Ihr privates Netzwerk einfügen, um eine Infrastruktur aus physischen und virtuellen Ressourcen zu erstellen.
 
 **Dieses Handbuch erklärt, wie Sie Public Cloud-Instanzen in Ihrem vRack konfigurieren.**
 
