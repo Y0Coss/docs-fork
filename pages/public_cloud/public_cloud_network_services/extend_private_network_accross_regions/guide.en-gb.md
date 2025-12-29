@@ -1,7 +1,7 @@
 ---
-title: Extending a Private OVHcloud Network Across Public Cloud Regions
-excerpt: Learn how to configure a multi-region OVHcloud private network, manage VLANs and IP pools to prevent conflicts, and integrate with other OVHcloud products.
-updated: 2025-12-02
+title: How to extend a private OVHcloud network across Public Cloud regions
+excerpt: Learn how to configure a multi-region OVHcloud private network, manage VLANs and IP pools to prevent conflicts, and integrate with other OVHcloud products
+updated: 2025-12-29
 ---
 
 ## Objective
@@ -35,7 +35,7 @@ This problem becomes more severe as environments scale across multiple regions o
 
 ### Solution Overview
 
-To prevent IP conflicts and ensure stable communication across a stretched vRack network, each Public Cloud region must use a dedicated IP pool within the same private subnet. By segmenting the subnet into non-overlapping allocation ranges, OVHcloud ensures that OpenStack DHCP services in different regions never assign duplicate IP addresses—even when all networks share the same VLAN ID.
+To prevent IP conflicts and ensure stable communication across a stretched vRack network, each Public Cloud region must use a dedicated IP pool within the same private subnet. By segmenting the subnet into non-overlapping allocation ranges, OVHcloud ensures that OpenStack DHCP services in different regions never assign duplicate IP addresses even when all networks share the same VLAN ID.
 
 The diagram below illustrates the corrected configuration:
 
@@ -50,7 +50,7 @@ With this approach:
 - Additional OVHcloud products (such as Bare Metal, Dedicated Servers, or Private Cloud) can join the same VLAN without creating address conflicts.
 - Multi-region workloads, migrations, and hybrid deployments operate reliably on a unified private network.
 
-This solution preserves the flexibility of a single stretched VLAN while enforcing predictable, conflict-free IP management. The next section explains how to configure this setup using the OVHcloud Control Panel, Horizon, OpenStack CLI, or Terraform.
+This solution preserves the flexibility of a single stretched VLAN while enforcing predictable, conflict-free IP management. This guide explains how to configure this setup using the OVHcloud Control Panel, Horizon, OpenStack CLI, or Terraform.
 
 ## Use case examples
 
@@ -81,7 +81,7 @@ Add the public cloud project to a vRack:
 
 > [!tabs]
 > Via the OVHcloud Control Panel and Horizon
->> **1. Create private networks in each region**
+>> **\. Create private networks in each region**
 >>
 >> Create a private network in each desired region using the same VLAN ID.
 >>
@@ -92,7 +92,7 @@ Add the public cloud project to a vRack:
 >> > **Note:** At this stage, using the same VLAN ID across regions without separate IP pools is exactly what must be avoided.
 >> >
 >>
->> **2. Configure subnets and IP pools**
+>> **2\. Configure subnets and IP pools**
 >>
 >> Edit each subnet in Horizon, configure the gateway reserved IP and the IP pool.
 >>
@@ -108,7 +108,7 @@ Add the public cloud project to a vRack:
 >>
 >> ![Edit subnet region 2 - 2](images/configure_subnet_region2_2.png){.thumbnail}
 >>
->> **3. Refresh network status**
+>> **3\. Refresh network status**
 >>
 >> Go back to the OVHcloud Control Panel and refresh the network page.
 >>
@@ -116,19 +116,19 @@ Add the public cloud project to a vRack:
 >>
 >> You should now see a single VLAN stretched across multiple regions, each with its own IP pool.
 >>
-> Via the Openstack CLI
+> Via the OpenStack CLI
 >> > [!primary]
 >> >
 >> > **Required:** OpenStack authentication configured in your environment variables
 >> >
 >>
->> **1. Load OpenStack credentials:**
+>> **1\. Load OpenStack credentials:**
 >>
 >> ```bash
 >> source openrc.sh
 >> ```
 >>
->> **2. Select the first region**
+>> **2\. Select the first region**
 >>
 >> ```bash
 >> export OS_REGION_NAME=RBX-A
@@ -137,7 +137,7 @@ Add the public cloud project to a vRack:
 >> --allocation-pool start=10.1.1.2,end=10.1.1.254 --dns-nameserver 213.186.33.99 --gateway 10.1.1.1 stretch-private-subnet
 >> ```
 >>
->> **3. Select the second region**
+>> **3\. Select the second region**
 >>
 >> ```bash
 >> export OS_REGION_NAME=GRA11
@@ -149,10 +149,10 @@ Add the public cloud project to a vRack:
 > Via Terraform
 >> > [!primary]
 >> >
->> > **Required:** OVHcloud application key configured in your environment variables
+>> > **Required:** OVHcloud application key configured in your environment variables.
 >> >
 >>
->> 1. Create a main Terraform configuration file (e.g., `main.tf`) with the following content:
+>> **1\. Create a main Terraform configuration file (e.g., `main.tf`) with the following content:**
 >>
 >> ```hcl
 >> resource "ovh_cloud_project_network_private" "private-net" {
@@ -179,7 +179,7 @@ Add the public cloud project to a vRack:
 >> }
 >> ```
 >>
->> 2. Create a variables file (e.g., `variables.tf`) with the following content:
+>> **2\. Create a variables file (e.g., `variables.tf`) with the following content:**
 >>
 >> ```hcl
 >> variable regions {
@@ -193,7 +193,7 @@ Add the public cloud project to a vRack:
 >> }
 >> ```
 >>
->> 3. Apply the configuration
+>> **3\. Apply the configuration:**
 >>
 >> ```bash
 >> terraform apply
@@ -212,7 +212,7 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 
 > [!tabs]
 > Via the OVHcloud Control Panel and Horizon
->> **1. Create a Public Cloud private network**
+>> **1\. Create a Public Cloud private network**
 >>
 >> ![Create Public Cloud private network](images/create_private_network.png){.thumbnail}
 >>
@@ -221,15 +221,15 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> > **Note:** Use the same VLAN ID that will be used for the Bare Metal server.
 >> >
 >>
->> **2. Obtain the MAC address of the Bare Metal server’s private interface.**
+>> **2\. Obtain the MAC address of the Bare Metal server’s private interface.**
 >>
 >> ![Obtain mac address](images/obtain_mac_address.png){.thumbnail}
 >>
->> **3. Create a virtual port on the Public Cloud private network using the MAC address of the Bare Metal server.**
+>> **3\. Create a virtual port on the Public Cloud private network using the MAC address of the Bare Metal server.**
 >>
 >> ![Create virtual port](images/create_virtual_port.png){.thumbnail}
 >>
->> **4. Install an operating system on the Bare Metal server (e.g., Ubuntu 24.04).**
+>> **4\. Install an operating system on the Bare Metal server (e.g., Ubuntu 24.04).**
 >>
 >> ```bash
 >> cat <<EOF | sudo tee /etc/netplan/90-private-interface.yaml
@@ -257,25 +257,25 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> > **Note:** Post-installation scripts may need to be updated with the correct MAC address and VLAN ID.
 >> >
 >>
-> Via the Opentsack CLI
+> Via the OpenStack CLI
 >> > [!primary]
 >> >
->> > **Required:** OpenStack atuthentication configured in your environment variables
+>> > **Required:** OpenStack atuthentication configured in your environment variables.
 >> >
 >>
->> **1. Load OpenStack credentials.**
+>> **1\. Load OpenStack credentials:**
 >>
 >> ```bash
 >> source openrc.sh
 >> ```
 >>
->> **2. Select the region:**
+>> **2\. Select the region:**
 >>
 >> ```bash
 >> export OS_REGION_NAME=RBX-A
 >> ```
 >>
->> 3. Create the private network and subnet:
+>> **3\. Create the private network and subnet:**
 >>
 >> ```bash
 >> openstack network create --provider-network-type vrack --provider-segment 1 stretch-private-network-vlan-1
@@ -284,13 +284,13 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> --allocation-pool start=10.1.0.2,end=10.1.254.254 --dns-nameserver 213.186.33.99 --gateway 10.1.0.1 stretch-private-subnet
 >> ```
 >>
->> **4. Create a virtual port for the Bare Metal server.**
+>> **4\. Create a virtual port for the Bare Metal server:**
 >>
 >> ```bash
 >> openstack port create --network stretch-private-network-vlan-1 <BARE_METAL_MAC_ADDRESS> bare_metal_port
 >> ```
 >>
->> 5. Install the OS on the Bare Metal server (Ubuntu 24.04 used in this example).
+>> **5\. Install the OS on the Bare Metal server (Ubuntu 24.04 used in this example):**
 >>
 >> ```bash
 >> cat <<EOF | sudo tee /etc/netplan/90-private-interface.yaml
@@ -321,10 +321,10 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 > Via Terraform
 >> > [!primary]
 >> >
->> > **Required:** OVHcloud application key configured in your environment variables
+>> > **Required:** OVHcloud application key configured in your environment variables.
 >> >
 >>
->> **1. Create Terraform variable file `variables.tf`**
+>> **1\. Create Terraform variable file `variables.tf`**
 >>
 >> Define all variables needed for the deployment:
 >>
@@ -349,7 +349,7 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> }
 >> ```
 >>
->> **2. Create the private network file `private-network.tf`**
+>> **2\. Create the private network file `private-network.tf`**
 >>
 >> ```hcl
 >> resource "ovh_cloud_project_network_private" "private-net" {
@@ -380,7 +380,7 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> > This file ensures a private network and subnet are created in the specified region, with DHCP enabled and a dedicated allocation pool.
 >> >
 >>
->> 3. **Create the Bare Metal file `bare-metal.tf`**
+>> **3\. Create the Bare Metal file `bare-metal.tf`**
 >>
 >> ```hcl
 >> data "ovh_dedicated_server" "server" {
@@ -421,7 +421,7 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> > This configuration attaches the Bare Metal server to the private network via a virtual port and executes a post-installation script to configure networking.
 >> >
 >>
->> 4. **Create the post-installation template `templates/custom-bare-metal.tftpl`**
+>> **4\. Create the post-installation template `templates/custom-bare-metal.tftpl`**
 >>
 >> ```bash
 >> cat <<EOF | sudo tee /etc/netplan/90-private-interface.yaml
@@ -449,7 +449,7 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 >> > This script creates a netplan configuration for the private VLAN interface, enabling DHCP to assign an IP from the Public Cloud network.
 >> >
 >>
->> **5. Apply the configuration**
+>> **5\. Apply the configuration**
 >>
 >> ```bash
 >> terraform apply

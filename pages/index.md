@@ -927,7 +927,7 @@
         + [Configuration](public-cloud-network-configuration)
             + [Private Network](public-cloud-network-configuration-private-network)
                 + [How to share a private network between 2 Public Cloud projects](public_cloud/public_cloud_network_services/configuration-05-create-share-private-network-between-projects)
-                + [Extending a Private OVHcloud Network Across Public Cloud Regions](public_cloud/public_cloud_network_services/extend_private_network_accross_regions) 
+                + [How to extend a private OVHcloud network across Public Cloud regions](public_cloud/public_cloud_network_services/extend_private_network_accross_regions)
                 + [Update a subnet properties](public_cloud/public_cloud_network_services/configuration-04-update_subnet)
                 + [Changing the MTU size for an existing network using OpenStack CLI/API](public_cloud/public_cloud_network_services/configuration-03-change-mtu-size)
             + [Load Balancer](public-cloud-network-configuration-load-balancer)
