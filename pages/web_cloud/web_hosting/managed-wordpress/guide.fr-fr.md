@@ -1,17 +1,17 @@
 ---
-title: Découvrir le Managed Hosting for WordPress (version Beta)
+title: Découvrir le Managed Hosting for WordPress (version Bêta)
 excerpt: Découvrez la solution OVHcloud qui gère pour vous l’hébergement, la sécurité et la maintenance de vos sites web WordPress.
-updated: 2025-11-27
+updated: 2025-12-29
 ---
 
 ## Objectif
 
-Le **Managed Hosting for WordPress** est une nouvelle offre OVHcloud permettant d’héberger et d’administrer vos sites web WordPress en toute simplicité. Pensé pour les professionnels, les agences et les indépendants, ce service vous libère des tâches techniques liées à la gestion de l’infrastructure et des mises à jour, afin que vous puissiez vous concentrer sur votre contenu et votre activité. Ce guide présente le concept du produit, ses principaux avantages et les fonctionnalités disponibles dans le cadre de la **phase Beta**.
+Le **Managed Hosting for WordPress** est une nouvelle offre OVHcloud permettant d’héberger et d’administrer vos sites web WordPress en toute simplicité. Pensé pour les professionnels, les agences et les indépendants, ce service vous libère des tâches techniques liées à la gestion de l’infrastructure et des mises à jour, afin que vous puissiez vous concentrer sur votre contenu et votre activité. Ce guide présente le concept du produit, ses principaux avantages et les fonctionnalités disponibles dans le cadre de la **phase Bêta**.
 
 ## Prérequis
 
-- Avoir accès au programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/) pour la phase Beta.
-- Être connecté à l’[espace client OVHcloud](/links/manager)
+- Avoir accès au programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/) pour la phase Bêta.
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -25,7 +25,7 @@ Avec Managed Hosting for WordPress, **OVHcloud s’occupe de tout** :
 - Installation et maintenance du CMS.
 - Sauvegardes et mises à jour automatiques.
 - Supervision des performances et de la disponibilité.
-- Gestion simplifiée des domaines, des plugins et des environnements de staging (phases Beta et GA).
+- Gestion simplifiée des domaines, des plugins et des environnements de staging (phases Bêta et GA (*General Availability*)).
 
 Aucune connaissance serveur n’est nécessaire : tout est **accessible depuis l’espace client OVHcloud** ou via **l’API**. Vous pouvez ainsi **créer, importer et administrer vos sites WordPress en quelques clics**, sans jamais avoir à manipuler de FTP, de base de données ni de ligne de commande.
 
@@ -33,15 +33,15 @@ Aucune connaissance serveur n’est nécessaire : tout est **accessible depuis l
 
 Chaque site web bénéficie d’un environnement optimisé, prêt à l’emploi :
 
-- **Installation WordPress automatique** dès la commande.  
-- **Infrastructure managée** : maintenance, patchs, mises à jour logicielles et sécurité gérés par OVHcloud.  
-- **Performances garanties** : cache WordPress intégré, hébergement sur infrastructure dédiée, et monitoring continu.
+- **Installation WordPress automatique** dès la commande.
+- **Infrastructure managée** : maintenance, patchs, mises à jour logicielles et sécurité gérés par OVHcloud.
+- **Performances garanties** : cache WordPress intégré, hébergement sur infrastructure dédiée et monitoring continu.
 - **Évolutivité intégrée** : possibilité d’upgrade ou d’ajout de ressources (boost, staging, clone) selon vos besoins.
 - **Compatibilité totale** : accès via l’espace client OVHcloud et l’API publique, permettant l’intégration dans vos workflows existants.
 
 #### Une approche progressive
 
-Le produit est actuellement disponible en **version Beta** dans le cadre du programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/). Cette première phase permet de tester les fonctionnalités essentielles :
+Le produit est actuellement disponible en **version Bêta** dans le cadre du programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/). Cette première phase permet de tester les fonctionnalités essentielles :
 
 - Création et gestion de sites WordPress managés.
 - Import de sites externes.
@@ -50,7 +50,7 @@ Le produit est actuellement disponible en **version Beta** dans le cadre du prog
 
 > [!primary]
 >
-> D’autres fonctionnalités, comme la gestion avancée des domaines, le clonage, le staging et l’accès FTP/SSH — seront progressivement ajoutées lors des phases **Beta** et **GA (General Availability)**.
+> D’autres fonctionnalités, comme la gestion avancée des domaines, le clonage, le staging et l’accès FTP/SSH — seront progressivement ajoutées lors des phases **Bêta** et **GA (*General Availability*)**.
 
 ### Fonctionnalités
 
@@ -58,7 +58,7 @@ Connectez-vous à [l’espace client OVHcloud](/links/manager), rendez-vous dans
 
 #### Créer un site web
 
-Pour créer un site web, cliquez sur le bouton `Créer`{.action}. L’écran ci-dessous s’affiche :
+Pour créer un site web, cliquez sur le bouton `Créer`{.action}. La page ci-dessous s’affiche :
 
 ![managed_wordpress](images/managed_wordpress_create_site.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Vous pouvez importer un site web WordPress existant vers le Managed Hosting for 
 
 > [!primary]
 >
-> L’import automatique d’un site web WordPress hébergé sur un Hébergement Web OVHcloud (mutualisé) sera disponible lors de la phase Beta.
+> L’import automatique d’un site web WordPress hébergé sur un Hébergement Web OVHcloud (mutualisé) sera disponible lors de la phase Bêta.
 
 Pour importer un site web WordPress, cliquez sur le bouton `Importer`{.action}. L’écran ci-dessous s’affiche :
 
@@ -116,13 +116,22 @@ Ces informations permettent au système d’accéder à votre site web existant 
 
 Une fois les champs obligatoires remplis, cliquez sur `Continuer`{.action} pour lancer le processus d’import.
 
-<!-- TODO finish this step when testing is available -->
+Vous pourrez alors sélectionner les éléments à importer, y compris les plugins, thèmes, médias et bases de données.
+
+> [!warning]
+> Pour garantir une parfaite cohérence des données, veillez à ne plus effectuer de modifications sur votre site jusqu'à la fin de l'import.
+>
+> Nous vous conseillons d'activer le mode maintenance sur votre site à importer ou de prendre les mesures nécessaires pour éviter toute divergence de données pendant l'import.
+
+Une fois tous les éléments sélectionnés, cliquez sur `Lancer l'import`{.action}.
+
+![managed_wordpress](images/managed_wordpress_import_site_selection.png){.thumbnail}
 
 #### Supprimer un site web
 
 ##### Supprimer un seul site web
 
-Pour supprimer un site web, dirigez-vous dans l’onglet `Mes sites`{.action} et identifiez la ligne du tableau correspondant à votre site web. Cliquez sur le bouton `...`{.action} puis sur `Supprimer`{.action}.
+Pour supprimer un site web, dirigez-vous dans l’onglet `Mes sites`{.action} et identifiez la ligne du tableau correspondant à votre site web. Cliquez sur le bouton `⋮`{.action} puis sur `Supprimer`{.action}.
 
 ![managed_wordpress](images/managed_wordpress_delete_site_button.png){.thumbnail}
 
