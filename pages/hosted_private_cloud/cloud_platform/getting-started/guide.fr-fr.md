@@ -1,7 +1,7 @@
 ---
 title: "Mise en route de votre projet SNC Cloud Platform"
 excerpt: "Découvrez comment prendre en main et configurer votre environnement SNC Cloud Platform"
-updated: 2025-11-13
+updated: 2025-12-29
 ---
 
 ## Objectif
@@ -38,7 +38,7 @@ L'interface graphique d'OpenStack Horizon offre la possibilité de réaliser dif
 
 #### Accès à l'interface d'administration OpenStack Horizon
 
-Depuis l'interface du Regional Manager de la **SNC Cloud Platform**, l’interface OpenStack Horizon est accessible via le lien dans le dashboard. 
+Depuis l'interface du Regional Manager de la **SNC Cloud Platform**, l’interface OpenStack Horizon est accessible via le lien dans le tableau de bord.
 
 ![Emplacement du raccourci vers Horizon](images/dashboard_login_horizon.png){.thumbnail}
 
@@ -62,15 +62,18 @@ L'élément principal *Projet* est composé de divers sous-éléments qui permet
 ![Capture d'écran de la section Overview (vue d'ensemble)](images/horizon_project_overview.png){.thumbnail}
 
 La section *Overview* (Aperçu) est composée de deux parties principales :
-* **Limit Summary** : Les limites de quotas attribuées au projet pour chaque type de ressource. Ceci permet également de visualiser le niveau de consommation des ressources par rapport aux capacités disponibles.
+
+- **Limit Summary** : Les limites de quotas attribuées au projet pour chaque type de ressource. Ceci permet également de visualiser le niveau de consommation des ressources par rapport aux capacités disponibles.
 Les quotas sont regroupés en deux catégories, telles que représentées dans l'image ci-dessous :
 
-  ![Capture d'écran de la section Limit Summary](images/horizon_quota_categories.png){.thumbnail}
-  * **Compute** qui comprend les limites des instances, les vCPUs et la RAM.
-  * **Network** qui surveille les quotas des ressources réseau : les IP flottantes, les groupes de sécurité, les règles de sécurité des groupes, les réseaux et les ports.
+![Capture d'écran de la section Limit Summary](images/horizon_quota_categories.png){.thumbnail}
 
-* **Usage Summary** (Résumé de l'utilisation) : historique d’utilisation des ressources sur une période qui permet d'observer l'évolution de l'usage des ressources dans le temps.
-  ![Capture d'écran de la section Usage Summary](images/horizon_quota_historical.png){.thumbnail}
+    - **Compute** qui comprend les limites des instances, les vCPUs et la RAM.
+    - **Network** qui surveille les quotas des ressources réseau : les IP flottantes, les groupes de sécurité, les règles de sécurité des groupes, les réseaux et les ports.
+
+- **Usage Summary** (Résumé de l'utilisation) : historique d’utilisation des ressources sur une période qui permet d'observer l'évolution de l'usage des ressources dans le temps.
+
+![Capture d'écran de la section Usage Summary](images/horizon_quota_historical.png){.thumbnail}
 
 #### Vue Compute
 
@@ -81,7 +84,7 @@ La section **Compute** regroupe les fonctionnalités permettant de configurer le
 Interface permettant de lister et de gérer les instances déjà configurées.
 
 ![Capture d'écran de la section Instances](images/horizon_instance_list.png){.thumbnail}
-  
+
 ##### Section Images
 
 Vous avez la possibilité de gérer les images des OS disponibles pour créer des instances. Il est aussi possible de télécharger de nouvelles images ou de sélectionner parmi les images déjà disponibles afin de mettre en place des instances. Vous pouvez ainsi générer vos propres images pour gérer des systèmes d'exploitation supplémentaires.
@@ -98,7 +101,7 @@ Afin de vous authentifier en SSH sur vos machines après l'installation, il faut
 
 La Vue Network (réseau) vous permet de visualiser et de gérer les réseaux de votre projet. Cette interface permet de créer des réseaux mutualisés ou distincts entre vos instances.
 
-> [!info]
+> [!primary]
 >
 > L'ensemble de votre configuration réseau est piloté par cette interface graphique ou via les API d'**OpenStack** avec le composant réseau **Neutron**. Les switchs de votre infrastructure seront automatiquement configuré à partir des informations provenant d'OpenStack.
 >
@@ -109,7 +112,7 @@ Cette section vous représente l'ensemble des réseaux créés sur ce projet via
 
 ![Capture d'écran de la section Network Topology](images/horizon_network_topology.png){.thumbnail}
 
-#### Section Networks
+##### Section Networks
 
 Cette section contient la liste des réseaux disponibles pour les instances sur votre projet.
 
@@ -119,11 +122,11 @@ Pour en savoir plus sur le fonctionnement des réseaux avec OpenStack, nous vous
 
 ### Présentation de l'interface Object Storage
 
-Depuis l'interface du Regional Manager de la **SNC Cloud Platform**, l’interface du Stockage objet est accessible via le lien dans le dashboard. 
+Depuis l'interface du Regional Manager de la **SNC Cloud Platform**, l’interface Object Storage est accessible via le lien dans le tableau de bord.
 
 ![Emplacement du raccourci vers Object Storage](images/dashboard_objet_storage.png){.thumbnail}
 
-##### Onglet Buckets
+#### Onglet Buckets
 
 Dans cet onglet, vous trouverez la liste des buckets Object Storage créés sur votre projet.
 
@@ -131,7 +134,7 @@ Dans cet onglet, vous trouverez la liste des buckets Object Storage créés sur 
 
 Il est aussi possible d'en créer de nouveau via le bouton **Create bucket**
 
-##### Onglet Access Keys
+#### Onglet Access Keys
 
 Dans cet onglet, vous trouverez la liste des Access Keys Object Storage créés sur votre projet. Cela permet l'usage d'outils externes pour envoyer ou récupérer des objets sur Object Storage.
 

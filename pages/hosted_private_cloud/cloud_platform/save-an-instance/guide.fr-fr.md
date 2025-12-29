@@ -1,7 +1,7 @@
 ---
-title: 'Sauvegarder une instance'
+title: 'Comment sauvegarder une instance SNC Platform'
 excerpt: 'Découvrez comment sauvegarder une instance SNC Cloud Platform sur Object Storage'
-updated: 2025-12-22
+updated: 2025-12-29
 ---
 
 ## Objectif
@@ -30,7 +30,6 @@ Renseignez la commande suivante :
 ```bash
 $ s3cmd mb s3://backup
 ```
-
 
 ### Initialiser le dépôt de sauvegarde
 
