@@ -1575,7 +1575,7 @@
             + [MySQL migration to Percona Server for MySQL](web_cloud/web_hosting/percona_server_mysql_migration_info)
     + [Managed Hosting for WordPress](web-cloud-managed-hosting-for-wordpress)
         + [Getting started](web-cloud-managed-hosting-for-wordpress-getting-started)
-            + [Discover Managed Hosting for WordPress (Beta version)](web_cloud/web_hosting/managed-wordpress)
+            + [Discover Managed Hosting for WordPress (Beta version)](web_cloud/managed_hosting/01-managed-wordpress-getting-started)
     + [SSL Gateway](products/web-cloud-ssl-gateway)
         + [Getting started](web-cloud-ssl-gateway-getting-started)
             + [Order an SSL Gateway](web_cloud/ssl_gateway/order-ssl-gateway)
