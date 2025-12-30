@@ -1,7 +1,7 @@
 ---
 title: Découvrir le Managed Hosting for WordPress (version Bêta)
 excerpt: Découvrez la solution OVHcloud qui gère pour vous l’hébergement, la sécurité et la maintenance de vos sites web WordPress.
-updated: 2025-12-29
+updated: 2025-12-30
 ---
 
 ## Objectif
@@ -27,7 +27,7 @@ Avec Managed Hosting for WordPress, **OVHcloud s’occupe de tout** :
 - Supervision des performances et de la disponibilité.
 - Gestion simplifiée des domaines, des plugins et des environnements de staging (phases Bêta et GA (*General Availability*)).
 
-Aucune connaissance serveur n’est nécessaire : tout est **accessible depuis l’espace client OVHcloud** ou via **l’API**. Vous pouvez ainsi **créer, importer et administrer vos sites WordPress en quelques clics**, sans jamais avoir à manipuler de FTP, de base de données ni de ligne de commande.
+Aucune connaissance serveur n’est nécessaire : tout est **accessible depuis l’espace client OVHcloud**. Vous pouvez ainsi **créer, importer et administrer vos sites WordPress en quelques clics**, sans jamais avoir à manipuler de FTP, de base de données ni de ligne de commande.
 
 #### Une solution clé en main
 
@@ -35,9 +35,9 @@ Chaque site web bénéficie d’un environnement optimisé, prêt à l’emploi 
 
 - **Installation WordPress automatique** dès la commande.
 - **Infrastructure managée** : maintenance, patchs, mises à jour logicielles et sécurité gérés par OVHcloud.
-- **Performances garanties** : cache WordPress intégré, hébergement sur infrastructure dédiée et monitoring continu.
-- **Évolutivité intégrée** : possibilité d’upgrade ou d’ajout de ressources (boost, staging, clone) selon vos besoins.
-- **Compatibilité totale** : accès via l’espace client OVHcloud et l’API publique, permettant l’intégration dans vos workflows existants.
+- **Performances garanties** : cache WordPress intégré, hébergement sur infrastructure optimisée et monitoring continu.
+- **Évolutivité intégrée** : surveillez l'utilisation en temps réel à l'aide d'indicateurs clés (stockage, trafic, nombre de sites) et adaptez-vous facilement à l'évolution de vos besoins.
+- **Compatibilité totale** : accès via l’espace client OVHcloud, permettant l’intégration dans vos workflows existants.
 
 #### Une approche progressive
 
@@ -90,7 +90,7 @@ Vous pouvez également suivre la progression de la création de votre site web e
 
 Vous pouvez importer un site web WordPress existant vers le Managed Hosting for WordPress. L’import vous permet de transférer automatiquement :
 
-- Le contenu WordPress (articles, pages, médias).
+- Le contenu WordPress (plugins, themes, médias, articles, pages, utilisateurs).
 - Les fichiers.
 - La base de données.
 

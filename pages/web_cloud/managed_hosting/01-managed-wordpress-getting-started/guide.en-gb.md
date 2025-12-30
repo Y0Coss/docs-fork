@@ -1,7 +1,7 @@
 ---
 title: Discover Managed Hosting for WordPress (Beta version)
 excerpt: Discover the OVHcloud solution that manages your WordPress website hosting, security, and maintenance for you.
-updated: 2025-12-29
+updated: 2025-12-30
 ---
 
 ## Objective
@@ -27,7 +27,7 @@ With Managed Hosting for WordPress, **OVHcloud takes care of everything**:
 - Performance and availability monitoring.
 - Simplified management of domains, plugins, and staging environments (Beta and General Availability phases).
 
-No server knowledge is required: everything is **accessible from the OVHcloud Control Panel** or via the **API**. You can thus **create, import, and manage your WordPress sites in just a few clicks**, without ever having to use FTP, a database, or the command line.
+No server knowledge is required: everything is **accessible from the OVHcloud Control Panel**. You can thus **create, import, and manage your WordPress sites in just a few clicks**, without ever having to use FTP, a database, or the command line.
 
 #### A complete solution
 
@@ -35,9 +35,9 @@ Each website benefits from an optimized, ready-to-use environment:
 
 - **Automatic WordPress installation** as soon as you place your order.
 - **Managed infrastructure**: maintenance, patches, software updates, and security handled by OVHcloud.
-- **Guaranteed performance**: integrated WordPress cache, hosting on a dedicated infrastructure, and continuous monitoring.
-- **Built-in scalability**: possibility to upgrade or add resources (Boost, staging, clone) according to your needs.
-- **Full compatibility**: access via the OVHcloud Control Panel and the public API, allowing integration into your existing workflows.
+- **Guaranteed performance**: integrated WordPress cache, optimised infrastructure hosting and continuous monitoring.
+- **Built-in scalability**: monitor usage in real time across key metrics (storage, traffic, site count), and scale effortlessly as your needs evolve.
+- **Full compatibility**: access via the OVHcloud Control Panel, allowing integration into your existing workflows.
 
 #### A phased approach
 
@@ -88,9 +88,9 @@ You can also track the progress of your website creation by clicking on the `Tas
 
 #### Import a website
 
-You can import an existing WordPress website into Managed Hosting for WordPress. The import automatically transfers:
+You can import an existing WordPress website into Managed Hosting for WordPress. The import can automatically transfer:
 
-- WordPress content (posts, pages, media).
+- WordPress content (plugins, themes, media, articles, pages, users).
 - Files.
 - Database.
 
