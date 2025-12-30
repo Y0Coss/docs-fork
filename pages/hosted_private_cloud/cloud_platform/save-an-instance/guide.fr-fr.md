@@ -1,5 +1,5 @@
 ---
-title: 'Comment sauvegarder une instance SNC Platform'
+title: 'Comment sauvegarder une instance SNC Cloud Platform'
 excerpt: 'Découvrez comment sauvegarder une instance SNC Cloud Platform sur Object Storage'
 updated: 2025-12-29
 ---
