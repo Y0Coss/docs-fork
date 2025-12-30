@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Outlook classique pour Windows
-excerpt: Découvrez comment configurer un compte Exchange sur Outlook pour Windows
-updated: 2025-12-17
+excerpt: Découvrez comment configurer un compte Exchange sur Outlook classique pour Windows
+updated: 2025-12-31
 ---
 
 <style>

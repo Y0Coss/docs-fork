@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu Windows'
-excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook na urządzeniu z systemem Windows'
-updated: 2025-10-23
+title: 'Exchange - Konfiguracja konta e-mail w programie Outlook dla systemu Windows'
+excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook dla systemu Windows'
+updated: 2025-12-31
 ---
 
 <style>

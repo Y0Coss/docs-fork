@@ -1,7 +1,7 @@
 ---
-title: 'Email Pro - Skonfiguruj konto e-mail w programie Outlook dla systemu Windows'
-excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu z systemem Windows'
-updated: 2025-04-28
+title: 'Email Pro - Konfiguracja konta e-mail w programie Outlook dla systemu Windows'
+excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w klasycznym programie Outlook na urządzeniu z systemem Windows'
+updated: 2025-12-31
 ---
 
 <style>

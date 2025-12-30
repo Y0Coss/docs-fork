@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Configure su cuenta de correo electrónico en Outlook para Windows'
-excerpt: 'Cómo configurar una cuenta Exchange en Outlook para Windows'
-updated: 2025-10-23
+title: 'Exchange - Configurar una cuenta de correo en Outlook clásico para Windows'
+excerpt: 'Cómo configurar una cuenta Exchange en Outlook clásico para Windows'
+updated: 2025-12-31
 ---
 
 <style>

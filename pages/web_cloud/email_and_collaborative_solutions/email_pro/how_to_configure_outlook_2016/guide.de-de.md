@@ -1,7 +1,7 @@
 ---
-title: 'Email Pro - Richten Sie ein E-Mail-Konto in Outlook für Windows ein'
-excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Outlook für Windows einrichten'
-updated: 2025-04-28
+title: 'E-Mail Pro - Einrichten eines E-Mail-Accounts auf klassischem Outlook für Windows'
+excerpt: 'So konfigurieren Sie Ihren E-Mail Pro Account mit dem klassischen Outlook für Windows'
+updated: 2025-12-31
 ---
 
 <style>

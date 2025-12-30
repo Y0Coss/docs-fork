@@ -1,6 +1,6 @@
 ---
-title: "MX Plan - Configurar una dirección de correo electrónico en Outlook para Windows"
-excerpt: "Cómo configurar una cuenta MX Plan en Outlook para Windows"
+title: "MX Plan / Zimbra Starter - Configurar una dirección de correo electrónico en Outlook clásico para Windows"
+excerpt: "Cómo configurar una cuenta MX Plan en Outlook clásico para Windows"
 updated: 2025-12-31
 ---
 
