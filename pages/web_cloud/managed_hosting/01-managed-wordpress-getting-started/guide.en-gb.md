@@ -1,7 +1,7 @@
 ---
 title: Discover Managed Hosting for WordPress (Beta version)
 excerpt: Discover the OVHcloud solution that manages your WordPress website hosting, security, and maintenance for you.
-updated: 2025-12-30
+updated: 2025-12-31
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ updated: 2025-12-30
 With Managed Hosting for WordPress, **OVHcloud takes care of everything**:
 
 - Hosting, infrastructure, cache, and security.
-- Installation and maintenance of the CMS.
+- Installation and maintenance of WordPress.
 - Automatic backups and updates.
 - Performance and availability monitoring.
 - Simplified management of domains, plugins, and staging environments (Beta and General Availability phases).
@@ -45,12 +45,12 @@ The product is currently available in **Beta version** as part of the [OVHcloud 
 
 - Creation and management of managed WordPress sites.
 - Import of external sites.
-- Automatic CMS and plugin updates.
+- Automatic WordPress and plugin updates.
 - Display of your website status in a dashboard in your Control Panel.
 
 > [!primary]
 >
-> Other features, such as advanced domain management, cloning, staging, and FTP/SSH access — will be gradually added during the **Beta** and **GA (General Availability)** phases.
+> Other features, such as advanced domain management, cloning and staging will be gradually added during the **Beta** and **GA (General Availability)** phases.
 
 ### Features
 
@@ -65,7 +65,7 @@ To create a website, click the `Create`{.action} button. The following page appe
 Fill in the form fields to define the credentials for your WordPress website:
 
 - `WordPress admin language`{.action}: select the default language for the administration interface.
-- `PHP version`{.action}: choose the desired PHP version for your WordPress environment.
+- `PHP version`{.action}: choose the desired PHP version for your WordPress environment. Check the available PHP versions on [this page](/pages/web_cloud/web_hosting/web_hosting_main_info).
 - `Admin email`{.action}: enter the administrator's email address for the WordPress site.
 - `Admin password`{.action}: set the password associated with this administrator account.
 
@@ -104,7 +104,7 @@ To import a WordPress website, click on the `Import`{.action} button. The follow
 
 > [!primary]
 >
-> An information message informs you that your website will be installed on an environment using a stable PHP version (PHP 8.4 in our example) and the latest version of WordPress, ensuring migration to an up-to-date, stable, and secure environment.
+> An information message informs you that your website will be installed on an environment using a stable PHP version (PHP 8.4 in our example) and the latest version of WordPress.
 
 Fill in the form fields:
 
@@ -176,6 +176,22 @@ From this dashboard, you can:
 - Quickly access each website to check its status or take action.
 - Monitor recent activities (changes, updates, synchronizations).
 - Use the integrated security, monitoring, backup, and analysis features (in future phases).
+
+#### Smart Automatic Updates
+
+Automatic updates can introduce compatibility issues that affect site stability, performance, and user experience. When managing multiple WordPress sites, manually handling updates increases operational overhead and the risk of service disruption for end users.
+
+Managed WordPress Hosting mitigates these risks through a controlled update process:
+
+- **Pre-deployment testing**
+    All updates—including WordPress core, plugins, and themes—are first applied to a cloned environment of your site.
+- **Validation checks**
+    The cloned site is evaluated for performance, functionality, and user experience to detect regressions or errors before deployment.
+- **Automated decision process**
+    - If no issues are detected, the update is automatically deployed to the live site.
+    - If issues are identified, the live site remains unchanged. You are notified via the dashboard and receive an email outlining the detected problems along with recommended remediation steps.
+
+This approach ensures updates are applied safely while preserving site reliability and minimizing impact on end users.
 
 ## Go further
 

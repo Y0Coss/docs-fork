@@ -1,7 +1,7 @@
 ---
 title: Découvrir le Managed Hosting for WordPress (version Bêta)
 excerpt: Découvrez la solution OVHcloud qui gère pour vous l’hébergement, la sécurité et la maintenance de vos sites web WordPress.
-updated: 2025-12-30
+updated: 2025-12-31
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Le **Managed Hosting for WordPress** est une nouvelle offre OVHcloud permettant 
 Avec Managed Hosting for WordPress, **OVHcloud s’occupe de tout** :
 
 - Hébergement, infrastructure, cache et sécurité.
-- Installation et maintenance du CMS.
+- Installation et maintenance de WordPress.
 - Sauvegardes et mises à jour automatiques.
 - Supervision des performances et de la disponibilité.
 - Gestion simplifiée des domaines, des plugins et des environnements de staging (phases Bêta et GA (*General Availability*)).
@@ -45,12 +45,12 @@ Le produit est actuellement disponible en **version Bêta** dans le cadre du pro
 
 - Création et gestion de sites WordPress managés.
 - Import de sites externes.
-- Mise à jour automatique du CMS et des plugins.
+- Mise à jour automatique de WordPress et des plugins.
 - Affichage du statut de vos sites web dans un tableau de bord de votre espace client.
 
 > [!primary]
 >
-> D’autres fonctionnalités, comme la gestion avancée des domaines, le clonage, le staging et l’accès FTP/SSH — seront progressivement ajoutées lors des phases **Bêta** et **GA (*General Availability*)**.
+> D’autres fonctionnalités, comme la gestion avancée des domaines, le clonage, et le staging seront progressivement ajoutées lors des phases **Bêta** et **GA (*General Availability*)**.
 
 ### Fonctionnalités
 
@@ -65,7 +65,7 @@ Pour créer un site web, cliquez sur le bouton `Créer`{.action}. La page ci-des
 Remplissez les champs du formulaire afin de définir les identifiants de votre site web WordPress :
 
 - `Langue de l’admin WordPress`{.action} : sélectionnez la langue par défaut de l’interface d’administration.
-- `Version PHP`{.action} : choisissez la version PHP souhaitée pour votre environnement WordPress.
+- `Version PHP`{.action} : choisissez la version PHP souhaitée pour votre environnement WordPress. Consultez les versions disponibles de PHP sur [cette page](/pages/web_cloud/web_hosting/web_hosting_main_info).
 - `E-mail de l’admin`{.action} : saisissez l’adresse e-mail de l’administrateur du site WordPress.
 - `Mot de passe admin`{.action} : définissez le mot de passe associé à ce compte administrateur.
 
@@ -104,7 +104,7 @@ Pour importer un site web WordPress, cliquez sur le bouton `Importer`{.action}. 
 
 > [!primary]
 >
-> Un message d’information vous indique que votre site web sera installé sur un environnement utilisant une version de PHP stable (PHP 8.4 dans notre exemple) et la dernière version de WordPress, garantissant une migration vers un environnement à jour, stable et sécurisé.
+> Un message d’information vous indique que votre site web sera installé sur un environnement utilisant une version de PHP stable (PHP 8.4 dans notre exemple) et la dernière version de WordPress.
 
 Renseignez les champs du formulaire :
 
@@ -176,6 +176,22 @@ Depuis ce tableau de bord, vous pouvez notamment :
 - Accéder rapidement à chaque site web pour vérifier son état ou intervenir.
 - Superviser les activités récentes (changements, mises à jour, synchronisations).
 - Utiliser les fonctionnalités intégrées de sécurité, monitoring, sauvegardes, et analyses (dans les phases futures).
+
+#### Mises à jour automatiques intelligentes
+
+Les mises à jour automatiques peuvent entraîner des problèmes de compatibilité qui affectent la stabilité, les performances et l'expérience utilisateur du site. Lorsque vous gérez plusieurs sites WordPress, la gestion manuelle des mises à jour augmente les frais généraux opérationnels et le risque d'interruption de service pour les utilisateurs finaux.
+
+La solution Managed Hosting for WordPress atténue ces risques grâce à un processus de mise à jour contrôlé :
+
+- **Tests avant déploiement**
+    Toutes les mises à jour, y compris celles du cœur de WordPress, des plugins et des thèmes, sont d'abord appliquées à un environnement cloné de votre site.
+- **Contrôles de validation**
+    Le site cloné est évalué en termes de performances, de fonctionnalités et d'expérience utilisateur afin de détecter les régressions ou les erreurs avant le déploiement.
+- **Processus de décision automatisé**
+    - Si aucun problème n'est détecté, la mise à jour est automatiquement déployée sur le site en ligne.
+    - Si des problèmes sont identifiés, le site en ligne reste inchangé. Vous êtes averti via le tableau de bord et recevez un e-mail décrivant les problèmes détectés ainsi que les mesures correctives recommandées.
+
+Cette approche garantit que les mises à jour sont appliquées en toute sécurité tout en préservant la fiabilité du site et en minimisant l'impact sur les utilisateurs finaux.
 
 ## Aller plus loin
 
