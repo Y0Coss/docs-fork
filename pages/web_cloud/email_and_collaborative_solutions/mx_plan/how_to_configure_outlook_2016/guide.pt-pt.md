@@ -1,41 +1,50 @@
 ---
 title: "MX Plan - Configurar um endereço de e-mail no Outlook para Windows"
 excerpt: "Saiba como configurar um endereço de e-mail MX Plan no Outlook para Windows"
-updated: 2024-10-01
+updated: 2025-12-31
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
 }
-.h-600 {
-  max-height:600px !important;
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
+.h-500 {
+  max-width:500px !important;
 }
 </style>
 
-> [!success]
-> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
-> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
-> [Aceda ao inquérito.](https://s.elq.fr/ovhext/RULMVWH)
-
 ## Objetivo
 
-As contas MX Plan podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
+Os endereços de e-mail das ofertas **MX Plan** e [Zimbra Starter](/links/web/emails-zimbra) podem ser configurados em um cliente de e-mail compatível. Isso permite enviar e receber mensagens do aplicativo de sua escolha.
 
 **Saiba como configurar o endereço de e-mail MX Plan no Outlook para Windows.**
 
-> [!warning]
->
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
-> 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
-> 
-
 ## Requisitos
 
-- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](/links/web/hosting)).
-- Dispor de um programa Microsoft Outlook ou posterior.
-- Dispor das credenciais do endereço de e-mail que pretende configurar.
+- Ter uma solução de e-mail OVHcloud previamente configurada, dentre as seguintes:
+    - **MX Plan** oferecido com nossas [ofertas de hospedagem web](/links/web/hosting) ou incluído em um [hospedagem gratuito 100M](/links/web/domains-free-hosting).
+    - [Zimbra](/links/web/emails-zimbra) Starter (apenas).
+- Ter a [nova versão do Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) instalada no Windows.
+- Possuir as credenciais do endereço de e-mail que deseja configurar.
+
+/// details | Informações relativas à gestão e configuração dos serviços OVHcloud
+
+A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+
+Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+
+///
 
 > [!primary]
 >
@@ -44,19 +53,17 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 
 ## Instruções
 
-> [!alert]
+> [!warning]
 >
-> Antes de iniciar a configuração com este guia, certifique-se de que a bandeira no canto superior direito desta página corresponde ao seu país ou região, uma vez que os parâmetros dependem da sua localização.
+> Esta documentação aplica-se apenas ao **Outlook clássico** disponível na suite Microsoft 365. Se utilizar o novo Outlook, consulte o nosso guia [MX Plan / Zimbra Starter - Adicionar uma conta de e-mail no novo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+>
+> Para instalar o Outlook clássico no seu computador Windows, descarregue-o a partir da página Microsoft « [Instalar ou reinstalar o Outlook clássico num PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » e instale-o.
+>
+> Após a instalação, para distinguir as duas versões quando estiverem instaladas, escreva « Outlook » na barra de pesquisa do Windows. Poderá então constatar a diferença como abaixo.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Adicionar a conta
-
-- **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
-
-- **Se já tem uma conta configurada**, clique em `Ficheiro`{.action} e selecione `Adicionar Conta`{.action}.
-
-- Introduza o seu endereço de e-mail e clique em `Opções avançadas`{.action}. De seguida, selecione a caixa `Permitir configurar manualmente a minha conta`{.action} e clique em `Ligar`{.action}. 
-
-![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
+### Adicionar a conta <a name="add-account"></a>
 
 > [!primary]
 >
@@ -66,34 +73,76 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 >
 > Nas configurações seguintes, verá a possibilidade de inserir 2 nomes de hosts diferentes para o mesmo servidor (entrada ou saída). Estes valores referem-se exatamente ao mesmo servidor e foram implementados para facilitar a introdução e evitar a confusão entre os protocolos POP, IMAP e SMTP que utilizam portas diferentes.
 
+- **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
+
+- **Se já tem uma conta configurada**, clique em `Ficheiro`{.action} e selecione `Adicionar Conta`{.action}.
+
+![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
+
+Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.
+
+> [!warning]
+>
+> É necessário preencher corretamente o valor correspondente à sua localização (**EUROPA** ou **AMÉRICA / ÁSIA-PACÍFICO**).
+
 Para configurar o seu endereço de e-mail, clique nos separadores abaixo para seguir os passos.
 
 > [!tabs]
-> **Etapa 1**
->> Entre os diferentes tipos de conta, escolha entre IMAP e POP. <br>Aconselhamos uma utilização em IMAP.
+> **Passo 1**
 >>
->> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-600}
+>> - A partir da janela **Adicionar uma conta**, selecione `Configuração manual ou tipos de servidores adicionais`{.action}.
+>> - Clique em `Seguinte`{.action} para continuar.
+>> - Selecione `POP ou IMAP`{.action}.
+>> - Clique em `Seguinte`{.action} para continuar.
 >>
-> **Etapa 2**
->> Introduza a palavra-passe do seu endereço de e-mail e clique em `Seguinte`{.action}.
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-500}
 >>
->> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-600}
+> **Passo 2**
 >>
-> **Etapa 3**
->> Se não for possível configurar o endereço automaticamente no Outlook, será exibida esta janela. Clique em `Editar definições da conta`{.action}. Em função da sua escolha (**POP** ou **IMAP**), passe à etapa 4 correspondente.
+>> Introduza as informações de ligação à sua conta **(1)** :
 >>
->> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-600}
+>> Informações do utilizador <br>
+>> **O seu nome** : defina um nome de exibição.<br>
+>> **Endereço de correio** : introduza o seu endereço de e-mail completo.<br>
 >>
-> **4 - IMAP**
->> Se escolheu IMAP, insira os parâmetros a seguir. Se tiver escolhido o POP, clique no separador « **Passo 4 - POP** ».<br>
->> Em **Correio a Receber**, introduza:<br>- O servidor **imap.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **993**<br>- Método de encriptação **SSL/TLS**<br><br>Em **E-mail de saída**, introduza:<br>- O servidor **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **465**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar.<br>
+>> Informações do servidor <br>
+>> - **Tipo de conta** : selecione IMAP<br>
+>> - **Servidor de correio entrante** : <br>
+>>      - **EUROPA** : imap.mail.ovh.net **ou** ssl0.ovh.net <br>
+>>      - **AMÉRICA/ÁSIA-PACÍFICO** : imap.mail.ovh.ca <br>
+>> - **Servidor de correio saínte (SMTP)** : <br>
+>>      - **EUROPA** : smtp.mail.ovh.net **ou** ssl0.ovh.net <br>
+>>      - **AMÉRICA/ÁSIA-PACÍFICO** : smtp.mail.ovh.ca <br>
 >>
->> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-600}
+>> Informações de ligação <br>
+>> **Nome de utilizador** : introduza o seu endereço de e-mail completo.<br>
+>> **Palavra-passe** : introduza a palavra-passe associada ao seu endereço de e-mail.<br>
 >>
-> **Passo 4 - POP**
->> Em **Correio a Receber**, introduza:<br>- O servidor **pop.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **995**<br>- Método de encriptação **SSL/TLS**<br><br>Em **E-mail de saída**, introduza:<br>- O servidor **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **465**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar.<br>
+>> Clique em `Definições adicionais...`{.action} **(2)** e passe ao passo seguinte
 >>
->> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail .h-600}
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-500}
+>>
+> **Passo 3**
+>>
+>> A partir do separador `Servidor saínte`, marque `O meu servidor saínte (SMTP) requer autenticação`{.action} e deixe `Utilizar as mesmas definições que o meu servidor de correio entrante`{.action} selecionado.
+>>
+>> A partir do separador `Definições avançadas` :
+>>
+>> - **Servidor entrante (IMAP)** : 993
+>> - **Utilizar o tipo de ligação encriptada seguinte** : SSL/TLS
+>> - **Servidor de correio saínte (SMTP)** : 465
+>> - **Utilizar o tipo de ligação encriptada seguinte** : SSL/TLS
+>>
+>> Clique em `OK`{.action} para validar as informações. Clique em `Seguinte`{.action} para iniciar a configuração da conta.
+>>
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-500}
+>>
+> **Passo 4**
+>>
+>> Clique em `Seguinte`{.action} para iniciar a configuração da conta. Se os parâmetros forem validados, obterá a janela abaixo.
+>>
+>> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-500}
+>>
 
 ### Utilizar o endereço de e-mail
 
@@ -109,51 +158,60 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 
 Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
 
-- Aceda ao `Ficheiro`{.action} a partir da barra de menu na parte superior do ecrã e selecione a conta a alterar no menu pendente **(1)**.
-- Clique em `Parâmetros da conta`{.action}**(2)**.
-- Clique em `Parâmetros do servidor`{.action}**(3)** para aceder à janela de configuração.
+- Vá a `Ficheiro`{.action} a partir da barra de menu no topo do seu ecrã.
+- Selecione a conta a modificar no menu pendente **(1)**.
+- Clique em `Definições da conta`{.action} **(2)** em baixo.
+- Clique em `Definições da conta...`{.action} **(3)** para aceder à janela de definições.
 
 ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
 
-A janela está dividida em duas partes, **Correio de entrada** e **Correio de saída**. Clique em qualquer uma para as poder alterar.
+- A janela de definições das contas aparece, selecione a conta de e-mail em questão e clique em `Modificar...`{.action}.
 
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 
-### Lembrete dos parâmetros POP, IMAP e SMTP <a name="popimap-settings"></a>
+### Definições gerais de envio e receção <a name="settings-account"></a>
 
-Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma utilização em **IMAP**. No entanto, pode selecionar **POP**. Para compreender o funcionamento respetivo, consulte a secção « [POP ou IMAP, qual é a diferença?](#popimap) ».
+#### Definições de receção IMAP e POP <a name="imap-pop"></a>
 
-- **Configuração em POP**
+Para a receção de e-mails, ao escolher o tipo de conta, recomendamos a utilização em **IMAP**. Pode, no entanto, selecionar **POP**.
 
-|Informação|Descrição|
-|---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo**|
-|Palavra-passe|Insira a palavra-passe do endereço de e-mail|
-|Servidor (entrada)|pop.mail.ovh.net **ou** ssl0.ovh.net|
-|Porta|995|
-|Tipo de segurança|SSL/TLS|
+> [!warning]
+>
+> É necessário preencher corretamente o valor correspondente à sua localização (**EUROPA** ou **AMÉRICA / ÁSIA-PACÍFICO**).
 
-- **Configuração em IMAP**
+Selecione o separador correspondente ao seu tipo de configuração :
 
-|Informação|Descrição|
-|---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo**|
-|Palavra-passe|Insira a palavra-passe do endereço de e-mail|
-|Servidor (entrada)|imap.mail.ovh.net **ou** ssl0.ovh.net|
-|Porta|993|
-|Tipo de segurança|SSL/TLS|
+> [!tabs]
+> **Configuração IMAP**
+>>
+>> - **Nome de utilizador** : introduza o endereço de e-mail **completo**.
+>> - **Palavra-passe** : introduza a palavra-passe do endereço de e-mail.
+>> - **Servidor EUROPA (entrante)** : imap.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Servidor AMÉRICA/ÁSIA-PACÍFICO (entrante)** : imap.mail.ovh.ca.
+>> - **Porto** : 993.
+>> - **Tipo de segurança** : SSL/TLS.
+>>
+> **Configuração POP**
+>>
+>> - **Nome de utilizador** : introduza o endereço de e-mail **completo**.
+>> - **Palavra-passe** : introduza a palavra-passe do endereço de e-mail.
+>> - **Servidor EUROPA (entrante)** : pop.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Servidor AMÉRICA/ÁSIA-PACÍFICO (entrante)** : pop.mail.ovh.ca.
+>> - **Porto** : 995.
+>> - **Tipo de segurança** : SSL/TLS.
 
-Se necessitar de inserir manualmente as definições de **SMTP** nas preferências da conta para enviar uma mensagem de correio eletrónico, poderá encontrar em seguida as definições a utilizar:
+#### Definições de envio SMTP <a name="smtp"></a>
 
-- **Configuração SMTP**
+Para o envio de e-mails, encontre abaixo as definições **SMTP** a utilizar :
 
-|Informação|Descrição|
-|---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo**|
-|Palavra-passe|Insira a palavra-passe do endereço de e-mail|
-|Servidor (de saída)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
-|Porta|465|
-|Tipo de segurança|SSL/TLS|
+**Configuração SMTP**
+
+- **Nome de utilizador** : introduza o endereço de e-mail **completo**.
+- **Palavra-passe** : introduza a palavra-passe do endereço de e-mail.
+- **Servidor EUROPA (saínte)** : smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Servidor AMÉRICA/ÁSIA-PACÍFICO (saínte)** : smtp.mail.ovh.ca.
+- **Porto** : 465.
+- **Tipo de segurança** : SSL/TLS.
 
 ### POP ou IMAP, qual é a diferença? <a name="popimap"></a>
 

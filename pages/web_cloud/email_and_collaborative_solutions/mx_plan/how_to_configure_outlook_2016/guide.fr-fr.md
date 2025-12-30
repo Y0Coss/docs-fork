@@ -26,13 +26,15 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les comptes MX Plan peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
+Les adresses e-mail de l'offre **MX Plan** et [Zimbra Starter](/links/web/emails-zimbra) peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
 **Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows.**
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
+- Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
+    - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
+    - [Zimbra](/links/web/emails-zimbra) Starter (**uniquement**).
 - Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -44,6 +46,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ///
 
+> [!primary]
 >
 > Vous utilisez Outlook pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
 >
@@ -82,6 +85,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >
 > Il est nécessaire de bien renseigner la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
+> [!tabs]
 > **Étape 1**
 >>
 >> - Depuis la fenêtre **Ajouter un compte**, sélectionnez `Configuration manuelle ou types de serveurs supplémentaires`{.action}.
@@ -239,4 +243,4 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 
 [Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community)

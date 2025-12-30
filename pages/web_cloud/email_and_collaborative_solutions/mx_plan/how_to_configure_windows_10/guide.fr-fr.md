@@ -37,16 +37,6 @@ Le **nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier
 - Disposer du [nouvel Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) pour Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
-> [!warning]
->
-> Cette documentation s’applique uniquement au **nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
->
-> Pour distinguer les deux versions d'Outlook lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous. Le nouvel Outlook n'a pas de mention spéciale.
->
-> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
->
-> Pour configurer votre adresse e-mail MX plan ou Zimbra Starter sur Outlook classique, consultez notre guide « [MX Plan / Zimbra Starter - Configurer son adresse e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
-
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
 OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
@@ -56,6 +46,16 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 ///
 
 ## En pratique
+
+> [!warning]
+>
+> Cette documentation s’applique uniquement au **nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
+>
+> Pour distinguer les deux versions d'Outlook lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous. Le nouvel Outlook n'a pas de mention spéciale.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Pour configurer votre adresse e-mail MX plan ou Zimbra Starter sur Outlook classique, consultez notre guide « [MX Plan / Zimbra Starter - Configurer son adresse e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
 
 ### Ajouter le compte <a name="add-account"></a>
 
@@ -117,7 +117,7 @@ L'application Outlook ne permet pas de modifier les paramètres serveur de votre
 
 Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétrer à nouveau, vous devez alors le supprimer et le recréer :
 
-- Cliquez sur l'icöne de réglage « &#9965; » dans le bas de la colonne de gauche.
+- Cliquez sur l'icöne de réglage `⛭`{.action} dans le bas de la colonne de gauche.
 - Dans la section « Vos comptes » cliquez sur `Gérer` {.action} à droite de l'adresse e-mail concernée.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}

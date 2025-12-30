@@ -19,26 +19,24 @@ details[open]>summary::before {
 .w-600 {
   max-width:600px !important;
 }
+.h-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Ziel
- 
+
 Die E-Mail-Accounts des [Email Pro](/links/web/email-pro) Angebots können in einem kompatiblen E-Mail-Client konfiguriert werden. Dies ermöglicht es Ihnen, Nachrichten von der Anwendung Ihrer Wahl zu senden und zu empfangen.
 
-Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Januar 2025. Für weitere Informationen zu diesem Thema besuchen Sie die offizielle Microsoft-Seite:  
-[Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
+Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Januar 2025. Für weitere Informationen zu diesem Thema besuchen Sie die offizielle Microsoft-Seite [Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
 
 **Diese Anleitung erklärt, wie Sie Ihren Email Pro Account im neuen Outlook für Windows konfigurieren.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Email Pro](/links/web/email-pro) E-Mail-Account.
-- Sie verwenden das neue [Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) für Windows.
+- Das [neue Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) für Windows besitzen.
 - Sie haben Zugangsdaten für den zu konfigurierenden E-Mail-Account.
-
-> [!warning]
->
-> Diese Dokumentation gilt ausschließlich für das **Neue Outlook** und nicht für [Outlook Classic](https://support.microsoft.com/en-us/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5), das in der Microsoft 365 Suite auf Ihrem Computer installiert ist.
 
 /// details | Informationen zur Verwaltung und Konfiguration von OVHcloud Diensten
 
@@ -50,13 +48,30 @@ Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wi
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Dokumentation gilt ausschließlich für **Outlook** und nicht für „[Outlook classic](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)“, das in der Microsoft 365-Suite oder zuvor auf Ihrem Computer installiert wurde.
+>
+> Um die beiden Outlook-Versionen zu unterscheiden, wenn beide installiert sind, geben Sie „Outlook“ in die Windows-Suchleiste ein. Sie können dann den Unterschied wie unten sehen. Das neue Outlook hat keine besondere Kennzeichnung.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Um Ihre E-Mail Pro-Adresse in Outlook classic zu konfigurieren, konsultieren Sie unseren Leitfaden „[E-Mail Pro - Ein Konto in Outlook classic für Windows konfigurieren](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)“.
+
 ### E-Mail-Account hinzufügen <a name="add-account"></a>
 
 > [!warning]
 >
-> In unserem Beispiel verwenden wir den Servernamen: `pro?.mail.ovh.net`. Sie müssen das `?` durch die Zahl ersetzen, die Ihrem Email Pro Server entspricht.
-> 
-> Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Abschnitt `Web Cloud`{.action}, dann `Email Pro`{.action}. Der Servername ist im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
+> In unserem Beispiel verwenden wir die Serverbezeichnung: pro?.mail.ovh.net. Sie müssen das „?“ durch die Zahl ersetzen, die Ihren E-Mail Pro-Server identifiziert.
+>
+> 1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an.
+> 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
+> 1. Klicken Sie auf `E-Mail Pro`{.action}.
+> 1. Wählen Sie die betreffende Plattform aus.
+> 1. Der Servername ist im Bereich **Verbindung** des Reiters `Allgemeine Informationen`{.action} sichtbar.
+>
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die entsprechenden Registerkarten klicken.
 
 > [!tabs]
 > **Schritt 1**
@@ -148,9 +163,7 @@ Für das Senden von E-Mails finden Sie unten die **SMTP**-Einstellungen:
 - **Port**: 587.
 - **Sicherheitstyp**: STARTTLS.
 
-<a name="go-further"></a>
-
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 > [!primary]
 >

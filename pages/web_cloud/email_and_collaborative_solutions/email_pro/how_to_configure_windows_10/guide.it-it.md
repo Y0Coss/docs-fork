@@ -19,6 +19,9 @@ details[open]>summary::before {
 .w-600 {
   max-width:600px !important;
 }
+.h-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Obiettivo
@@ -35,10 +38,6 @@ Il **nuovo Outlook** sostituisce, dal 1° gennaio 2025, l'applicazione **Posta**
 - Disponi del [nuovo Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) per Windows.
 - Possiedi le credenziali dell'indirizzo e-mail che desideri configurare.
 
-> [!warning]
->
-> Questa documentazione si applica esclusivamente al **nuovo Outlook** e non al "[Outlook classico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponibile nel pacchetto Microsoft 365 o precedentemente installato sul tuo computer.
-
 /// details | Informazioni sulla gestione e configurazione dei servizi OVHcloud
 
 OVHcloud mette a tua disposizione servizi di cui sei responsabile per la configurazione, gestione e funzionamento. Pertanto, spetta a te assicurarsi che funzionino correttamente.
@@ -48,6 +47,16 @@ Ti forniamo questa guida per aiutarti nelle operazioni più comuni. Tuttavia, ti
 ///
 
 ## Procedura
+
+> [!warning]
+>
+> Questa documentazione si applica esclusivamente al **nuovo Outlook** e non a « [Outlook classico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponibile nella suite Microsoft 365 o precedentemente installato sul tuo computer.
+>
+> Per distinguere le due versioni di Outlook quando sono installate, digita « Outlook » nella barra di ricerca di Windows. Potrai quindi notare la differenza come mostrato di seguito. Il nuovo Outlook non ha un'indicazione speciale.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Per configurare il tuo indirizzo email Pro su Outlook classico, consulta la nostra guida « [E-mail Pro - Configurare un account email su Outlook classico per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016) ».
 
 ### Aggiungere l'account <a name="add-account"></a>
 
@@ -61,6 +70,8 @@ Ti forniamo questa guida per aiutarti nelle operazioni più comuni. Tuttavia, ti
 > 1. Seleziona la piattaforma interessata. 
 > 1. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 >
+
+Per configurare il tuo indirizzo email, segui le fasi cliccando sui tab sottostanti.
 
 > [!tabs]
 > **Passaggio 1**

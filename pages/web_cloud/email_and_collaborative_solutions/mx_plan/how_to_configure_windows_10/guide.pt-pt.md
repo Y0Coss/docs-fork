@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan / Zimbra Starter - Adicionar uma conta de e-mail no novo Outlook para Windows'
 excerpt: "Saiba como configurar seu endereço de e-mail no novo Outlook para Windows"
-updated: 2025-09-26
+updated: 2025-12-31
 ---
 
 <style>
@@ -37,10 +37,6 @@ O **novo Outlook** substitui, desde 1º de janeiro de 2025, o aplicativo **Corre
 - Ter a [nova versão do Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) instalada no Windows.
 - Possuir as credenciais do endereço de e-mail que deseja configurar.
 
-> [!warning]
->
-> Esta documentação se aplica exclusivamente ao **novo Outlook** e não ao "[Outlook clássico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponível no pacote Microsoft 365 ou previamente instalado no computador.
-
 /// details | Informações relacionadas ao gerenciamento e configuração dos serviços OVHcloud
 
 OVHcloud fornece serviços cuja configuração, gerenciamento e responsabilidade cabem a você. Portanto, é sua responsabilidade garantir o funcionamento correto.
@@ -51,11 +47,23 @@ Fornecemos esta guia para ajudá-lo nas tarefas mais comuns. No entanto, recomen
 
 ## Instruções
 
+> [!warning]
+>
+> Esta documentação aplica-se apenas ao **novo Outlook** e não a « [Outlook clássico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponível na suite Microsoft 365 ou anteriormente instalado no seu computador.
+>
+> Para distinguir as duas versões do Outlook quando estão instaladas, escreva « Outlook » na barra de pesquisa do Windows. Poderá então verificar a diferença como abaixo. O novo Outlook não tem qualquer menção especial.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Para configurar o seu endereço de e-mail MX plan ou Zimbra Starter no Outlook clássico, consulte o nosso guia « [MX Plan / Zimbra Starter - Configurar o seu endereço de e-mail no Outlook clássico para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
+
 ### Adicionar a conta <a name="add-account"></a>
 
 > [!warning]
 >
 > É necessário selecionar a aba da etapa 3 correspondente à sua localização (**EUROPA** ou **AMÉRICA/ÁSIA-PACÍFICO**) para obter os valores corretos.
+
+Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.
 
 > [!tabs]
 > **Etapa 1**

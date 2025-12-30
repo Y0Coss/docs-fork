@@ -30,7 +30,6 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 **Découvrez comment configurer un compte Exchange sur Microsoft Outlook pour Windows.**
 
-
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/zx7LAzmDrFw?si=DAWV56-E1or1Vgnr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prérequis
