@@ -244,7 +244,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> ```
 >>
 > **AlmaLinux / Rocky Linux**
->> **AlmaLinux (8/9/10), Rocky Linux (8/9/10)
+>> **AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> Główny plik konfiguracyjny znajduje się w folderze `/etc/sysconfig/network-scripts/`. W tym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.
 >>
@@ -303,8 +303,8 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> sudo systemctl restart network
 >> ```
 >>
-> **Fedora 42**
->> Fedora 42
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> Fedora używa teraz kluczowych plików. NetworkManager przechowywał wcześniej profile sieciowe w formacie ifcfg w tym katalogu: `/etc/sysconfig/network-scripts/`. Jednak format ifcfg jest teraz przestarzały. Domyślnie program NetworkManager nie tworzy już nowych profilów w tym formacie. Plik konfiguracyjny znajduje się teraz w `/etc/NetworkManager/system-connections/`.
 >>

@@ -176,7 +176,7 @@ Voici un exemple de résultat :
 
 > [!alert]
 > IMPORTANT !
-Ne débloquez en aucun cas l'IP sans avoir suspendu l'envoi des e-mails depuis votre serveur et vidé votre file d'attente d'emails. Dans le cas contraire, vous serez immédiatement bloqué une seconde fois, pour une durée plus longue. 
+> Ne débloquez en aucun cas l'IP sans avoir suspendu l'envoi des e-mails depuis votre serveur et vidé votre file d'attente d'emails. Dans le cas contraire, vous serez immédiatement bloqué une seconde fois, pour une durée plus longue. 
 >
 
 Pour débloquer votre adresse IP, utilisez l'appel suivant :

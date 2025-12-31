@@ -1,7 +1,7 @@
 ---
 title: "Die Sicherheit Ihrer Website optimieren"
 excerpt: "Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Ziel 
@@ -76,9 +76,16 @@ Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsm
 
 ### Schritt 6: Überprüfen, dass Ihre Website auf dem neuesten Stand ist
 
-Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
+Stellen Sie sicher, dass Ihre Website sowohl inhaltlich als auch hinsichtlich der technischen Komponenten (CMS, Erweiterungen, PHP-Versionen und Abhängigkeiten) auf dem neuesten Stand bleibt.
 
-Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Hosting zu verwenden.
+Wenn Sie ein CMS verwenden, konsultieren Sie dessen offizielle Dokumentation für Updates:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/de)
+
+Außerdem sollten Sie sicherstellen, dass Sie auf Ihrem Webhosting-Plan eine aktuelle Version der [PHP-Programmiersprache](/pages/web_cloud/web_hosting/configure_your_web_hosting) verwenden.
 
 ### Schritt 7: HTTPS aktivieren
 

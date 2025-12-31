@@ -96,6 +96,8 @@ hosted-private-cloud-managed-vmware-additional-resources: Risorse aggiuntive
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Per iniziare
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Risorse aggiuntive
+hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
+hosted-private-cloud-snc-cloud-platform-getting-started: Per iniziare
 hosted-private-cloud-baremetal-pod: Bare Metal Pod
 hosted-private-cloud-baremetal-pod-getting-started: Per iniziare
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
@@ -176,8 +178,6 @@ public-cloud-containers-orchestration-managed-rancher-service-getting-started: G
 public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
 public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
-public-cloud-databases-cassandra-guides: Cassandra - Guides
-public-cloud-databases-cassandra: Cassandra
 public-cloud-databases-common-configuration: Configuration
 public-cloud-databases-common-getting-started: Getting started
 public-cloud-databases-common-key-concepts: Key concepts
