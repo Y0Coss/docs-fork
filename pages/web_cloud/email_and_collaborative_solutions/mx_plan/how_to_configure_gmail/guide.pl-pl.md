@@ -10,7 +10,7 @@ updated: 2025-12-31
 >
 > Nie będzie już można konfigurować Twoich adresów e-mail OVHcloud w Gmailu.
 >
-> Twoje konta e-mail OVHcloud są zawsze dostępne poprzez [Webmail](/links/email).
+> Twoje konta e-mail OVHcloud są zawsze dostępne poprzez [Webmail](/links/web/email).
 
 ## Wprowadzenie
 
