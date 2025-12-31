@@ -10,7 +10,7 @@ updated: 2025-12-31
 >
 > Ihre OVHcloud E-Mail-Adressen können also nicht mehr mit Google Mail konfiguriert werden.
 >
-> Ihre E-Mail-Accounts von OVHcloud sind immer über unsere [Webmail](/links/email) erreichbar.
+> Ihre E-Mail-Accounts von OVHcloud sind immer über unsere [Webmail](/links/web/email) erreichbar.
 
 ## Ziel
 
