@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Intégration en Python avec LiteLLM (EN)
 excerpt: Apprenez à utiliser facilement OVHcloud AI Endpoints en Python avec LiteLLM
-updated: 2025-09-23
+updated: 2026-01-05
 ---
 
 > [!primary]
