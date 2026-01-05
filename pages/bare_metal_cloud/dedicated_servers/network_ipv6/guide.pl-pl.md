@@ -105,7 +105,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >
 
 > [!tabs]
->> **Debian i jego pochodne (z wyjątkiem Debiana 12)**
+> **Debian i jego pochodne (z wyjątkiem Debiana 12)**
 >>
 >> Poniższy przykład konfiguracji opiera się na dystrybucji Debian 11 (Bullseye).
 >>

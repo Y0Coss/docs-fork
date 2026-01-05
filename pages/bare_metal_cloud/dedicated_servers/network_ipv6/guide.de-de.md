@@ -107,7 +107,7 @@ IPv6_GATEWAY `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60
 >
 
 > [!tabs]
->> **Debian y sus derivados (excepto Debian 12)**
+> **Debian y sus derivados (excepto Debian 12)**
 >>
 >> Die folgende Beispielkonfiguration basiert auf Debian 11 (Bullseye).
 >>
@@ -280,7 +280,7 @@ IPv6_GATEWAY `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60
 >> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 >> ```
 >>
->> /// details |**Beispielkonfiguration**
+>> /// details | **Beispielkonfiguration**
 >>
 >> ```sh
 >> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -425,6 +425,7 @@ IPv6_GATEWAY `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60
 >> ```sh
 >> sudo netplan apply
 >> ```
+>>
 > **AlmaLinux (8/9) und Rocky Linux (8/9)**
 >>
 >> Die folgende Beispielkonfiguration basiert auf AlmaLinux 9.

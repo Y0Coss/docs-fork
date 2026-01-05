@@ -102,7 +102,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 > 
 
 > [!tabs]
->> **Debian and derivatives (excluding Debian 12)**
+> **Debian and derivatives (excluding Debian 12)**
 >>
 >> The configuration example below is based on Debian 11 (Bullseye).
 >>

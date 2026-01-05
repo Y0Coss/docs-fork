@@ -105,8 +105,8 @@ Una vez que disponga de la información necesaria para configurar la IPv6, coné
 Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes enlaces para ir directamente a la necesite, según su caso:
 
 - [Aplicación no persistente](#nonpersistent)
-- [Aplicación persistente en Debian y derivados (Ubuntu, Crunchbang, SteamOS…)](#persistentdebian)
-- [Aplicación persistente en Red Hat y derivados (CentOS, Rocky Linux, Alma Linux…)](#persistentredhat)
+- [Aplicación persistente en Debian y derivados (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian)
+- [Aplicación persistente en Red Hat y derivados (CentOS, Rocky Linux, AlmaLinux, etc.)](#persistentredhat)
 - [Aplicación persistente en Fedora 42 y versiones posteriores](#persistentfedora)
 - [Aplicación persistente en Windows Server](#persistentwindows)
 
@@ -139,7 +139,7 @@ Existen dos métodos para configurar su red según el sistema operativo instalad
 
 - **Para Debian 11**: utilice el método basado en el archivo *interfaces*.
 
-- **Para Debian 12, Ubuntu 22.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*].
+- **Para Debian 12, Ubuntu 22.04 y versiones posteriores**: utilice el método basado en la función *Netplan*.
 
 En algunos casos, el método a utilizar puede no ser el indicado anteriormente. Para asegurarse, navegue por el sistema para comprobar el método actual.  Visite el sitio <https://netplan.io/> para más información, si es necesario.
 
@@ -219,7 +219,7 @@ En algunos casos, el método a utilizar puede no ser el indicado anteriormente. 
 >> sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 >> ```
 >>
-> **Configuración con Netplan**
+> **Configuración con *Netplan***
 >>
 >> Los archivos de configuración de red se encuentran en el directorio `/etc/netplan/`. Por defecto, el fichero de configuración principal se llama `50-cloud-init.yaml`. Antes de continuar, compruebe este archivo para ver si ya se ha configurado la dirección IPv6. En ese caso, no es necesario volver a configurar la dirección IPv6, ya que solo tiene una dirección IPv6 con su servidor VPS.
 >>
@@ -286,11 +286,11 @@ En algunos casos, el método a utilizar puede no ser el indicado anteriormente. 
 >> Si es correcta, puede aplicarla con el siguiente comando:
 >>
 >> ```bash
-sudo netplan apply
+>> sudo netplan apply
 >> ```
 >>
 
-#### **Aplicación persistente en Red Hat y sus derivados** (CentOS, Rocky Linux, Alma Linux, etc.) <a name="persistentredhat"></a>
+#### Aplicación persistente en Red Hat y sus derivados (CentOS, Rocky Linux, AlmaLinux, etc.) <a name="persistentredhat"></a>
 
 Existen dos métodos para configurar su red según el sistema operativo instalado en su servidor:
 
@@ -399,7 +399,7 @@ Existen dos métodos para configurar su red según el sistema operativo instalad
 >> ```
 >>
 
-#### **Aplicación persistente en Fedora 42 y versiones posteriores** <a name="persistentfedora"></a>
+#### Aplicación persistente en Fedora 42 y versiones posteriores <a name="persistentfedora"></a>
 
 El archivo de configuración de red se encuentra en `/etc/NetworkManager/system-connections/`. Se recomienda realizar una copia de seguridad del archivo de configuración correspondiente. En nuestro ejemplo, nuestro archivo se llama `cloud-init-eth0.nmconnection`, por lo que copiamos el archivo `cloud-init-eth0.nmconnection` utilizando los siguientes comandos. Si lo necesita, sustituya **eth0** por su interfaz actual.
 
@@ -423,7 +423,7 @@ route1=::/0,IPV6_GATEWAY
 
 Omitimos la configuración IPv4 para evitar confusiones, pero la configuración IPv6 se realiza en el mismo archivo de configuración.
 
-**A continuación ofrecemos un ejemplo concreto:**
+**Ejemplo de configuración:**
 
 ```console
 [ipv6]
@@ -433,7 +433,7 @@ address1=2607:5300:201:abcd::7c5/128
 route1=::/0,2607:5300:201:abcd::1
 ```
 
-#### **Aplicación persistente en Windows Server** <a name="persistentwindows"></a>
+#### Aplicación persistente en Windows Server <a name="persistentwindows"></a>
 
 Por defecto, IPv6 no está configurado en los servidores Windows. Para activarlo, abra el `Panel de control`{.action} y haga clic en `Mostrar estado y tareas de la red`{.action} y luego en `Cambiar configuración del mapa`{.action}.
 

@@ -289,11 +289,11 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 >> ```
 >>
 
-#### Application persistante sur Red Hat et ses dérivés (CentOS, Rocky Linux & Alma Linux, etc.) <a name="persistentredhat"></a>
+#### Application persistante sur Red Hat et ses dérivés (CentOS, Rocky Linux & AlmaLinux, etc.) <a name="persistentredhat"></a>
 
 Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour CentOS 7, Rocky Linux & AlmaLinux (8/9)** : Utilisez la méthode basée sur les fichiers *network-scripts*. ;
+- **pour CentOS 7, Rocky Linux & AlmaLinux (8/9)** : Utilisez la méthode basée sur les fichiers *network-scripts* ;
 
 - **pour Rocky Linux & AlmaLinux (10)** : Utilisez la méthode basée sur les fichiers *system-connections*.
 

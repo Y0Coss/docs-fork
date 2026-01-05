@@ -290,13 +290,13 @@ Em certos casos, o método a utilizar pode não ser o acima especificado. Navegu
 >> ```
 >>
 
-#### **Aplicação persistente em Red Hat e seus derivados** (CentOS, Rocky Linux, Alma Linux, etc.) <a name="persistentredhat"></a>
+#### Aplicação persistente em Red Hat e seus derivados (CentOS, Rocky Linux, AlmaLinux, etc.) <a name="persistentredhat"></a>
 
 Existem dois métodos para configurar a sua rede de acordo com o sistema operativo instalado no seu servidor:
 
 - **para CentOS 7, Rocky Linux e AlmaLinux (8/9)**: utilize o método baseado no ficheiro *network-scripts*;
 
-- **para Rocky Linux e AlmaLinux (10)**: use o método baseado no ficheiro *system-connections*
+- **para Rocky Linux e AlmaLinux (10)**: use o método baseado no ficheiro *system-connections*.
 
 > [!tabs]
 > **Configuração dos ficheiros *network-scripts***

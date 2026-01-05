@@ -291,13 +291,13 @@ W niektórych przypadkach może to nie być metoda określona powyżej. Aby się
 >> ```
 >>
 
-#### **Konfiguracja trwała dla Red Hat i jego pochodnych** (CentOS, Rocky Linux, Alma Linux, itp.) <a name="persistentredhat"></a>
+#### Konfiguracja trwała dla Red Hat i jego pochodnych (CentOS, Rocky Linux, AlmaLinux, itp.) <a name="persistentredhat"></a>
 
 Istnieją dwie metody konfiguracji Twojej sieci zgodnie z systemem operacyjnym zainstalowanym na Twoim serwerze:
 
 - **CentOS 7, Rocky Linux & AlmaLinux (8/9)**: należy użyć metody opartej na pliku *network-scripts*;
 
-- **Rocky Linux & AlmaLinux (10)**: użyj metody opartej na pliku *system-connections*
+- **Rocky Linux & AlmaLinux (10)**: użyj metody opartej na pliku *system-connections*.
 
 > [!tabs]
 > **Konfiguracja plików *network-scripts***
@@ -400,7 +400,7 @@ Istnieją dwie metody konfiguracji Twojej sieci zgodnie z systemem operacyjnym z
 >> ```
 >>
 
-#### **Konfiguracja trwała dla Fedora 42 i nowszych wersji** <a name="persistentfedora"></a>
+#### Konfiguracja trwała dla Fedora 42 i nowszych wersji <a name="persistentfedora"></a>
 
 Plik konfiguracji sieci znajduje się w katalogu `/etc/NetworkManager/system-connections/`. Zalecamy, aby najpierw wykonać kopię zapasową odpowiedniego pliku konfiguracyjnego. W naszym przykładzie nasz plik nosi nazwę `cloud-init-eth0.nmconnection`, dlatego kopiujemy plik `cloud-init-eth0.nmconnection` przy użyciu następujących poleceń. W razie potrzeby zmień **eth0** na aktualny interfejs.
 
@@ -434,7 +434,7 @@ address1=2607:5300:201:abcd::7c5/128
 route1=::/0,2607:5300:201:abcd::1
 ```
 
-#### **Konfiguracja trwała dla Windows Server** <a name="persistentwindows"></a>
+#### Konfiguracja trwała dla Windows Server <a name="persistentwindows"></a>
 
 Domyślnie IPv6 nie jest skonfigurowany na serwerach Windows. Aby go aktywować, otwórz `Panel konfiguracyjny`{.action} i kliknij `Wyświetl stan i zadania sieci`{.action}, a następnie `Zmień parametry karty`{.action}.
 
