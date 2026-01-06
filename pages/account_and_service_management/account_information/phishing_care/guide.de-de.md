@@ -1,7 +1,7 @@
 ---
 title: 'Betrug erkennen − So schützen Sie sich vor Phishing und betrügerischen E-Mails'
 excerpt: 'Wie können Sie eine Phishing-Mail erkennen und was ist zu tun, wenn Sie auf einen betrügerischen Link geklickt haben?'
-updated: 2025-12-18
+updated: 2026-01-06
 ---
 
 <style>
@@ -48,7 +48,7 @@ Klicken Sie auf das Bild, um es zu vergrößern. Die Details und Erklärungen fi
 |---|---|---|
 |1 - Absender|Stellen Sie sicher, dass die E-Mail von einer Adresse gesendet wird, die mit einem Domain-Namen (oder Subdomain, z. B. `events.ovhcloud.com`) endet, der zu OVHcloud gehört (siehe Liste unten)|Der E-Mail-Absender ist sehr wahrscheinlich eine Adresse, die nicht von OVHcloud stammt.|
 |2 - Betreff|Stellen Sie sicher, dass Ihre OVHcloud-Kontonummer (NIC Handle) **(die normalerweise mit den Initialen der Person beginnt, die das OVHcloud-Konto erstellt hat)** und/oder Ihre Kontoe-Mail-Adresse im Betreff der Nachricht erscheinen.|Häufig ist die E-Mail als \[SPAM] markiert und **Ihr NIC Handle wird nicht angezeigt oder ist falsch**.|
-|3 - Link|**Klicken Sie nicht darauf, sondern bewegen Sie den Mauszeiger über den Link oder die Schaltfläche**, und Sie sehen direkt, wohin er führt (unten oder am unteren Rand Ihres Browsers). In unserem Beispiel zeigt der Link korrekt auf eine Adresse unter https://www.ovh.com/.|In einer Phishing-E-Mail stammt der Link nicht von einer offiziellen OVHcloud-Seite. **Klicken Sie ihn nicht an.**|
+|3 - Link|**Klicken Sie nicht darauf, sondern bewegen Sie den Mauszeiger über den Link oder die Schaltfläche**, und Sie sehen direkt, wohin er führt (unten oder am unteren Rand Ihres Browsers). In unserem Beispiel zeigt der Link korrekt auf eine Adresse unter https://www.ovh.com/. Wenn Sie auf einen Link klicken, überprüfen Sie immer die Adresse im Browser. OVHcloud verwendet eine Reihe bekannter Domainnamen, normalerweise ovhcloud.com oder ovh.com (siehe nachfolgende Liste). |In einer Phishing-E-Mail stammt der Link nicht von einer offiziellen OVHcloud-Seite. **Klicken Sie ihn nicht an.**|
 |4 - E-Mail-Kopf- und Fußzeile|OVHcloud sendet E-Mails in beiden Formaten, TXT und HTML. Der Kopf enthält das OVHcloud-Logo, und die Fußzeile enthält rechtliche Informationen zu OVHcloud|Der Kopf oder die Fußzeile kann Links enthalten, die nichts mit OVHcloud zu tun haben. **Klicken Sie nicht auf diese Links.**|
 
 /// details | **Liste der legitimen OVHcloud-Domänennamen** (klicken Sie, um anzuzeigen)
