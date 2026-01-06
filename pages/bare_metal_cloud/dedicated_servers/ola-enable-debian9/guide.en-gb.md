@@ -26,7 +26,7 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 > [!primary]
 >
-> This guide provides instructions for configuring network interface bonding specifically using `ifupdown`. It also applies to the rescue system.
+> This guide provides instructions for configuring network interface bonding specifically using the configuration file for `ifupdown`, located at `/etc/network/interfaces`. It also applies to the rescue system.
 >
 > If your system's network configuration uses `netplan` instead, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >

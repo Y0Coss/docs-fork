@@ -26,7 +26,7 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 
 > [!primary]
 >
-> Ce guide fournit des instructions pour configurer l'agrégation d'interfaces réseau spécifiquement avec `ifupdown`. Il est aussi applicable au mode rescue.
+> Ce guide fournit des instructions pour configurer l'agrégation d'interfaces réseau spécifiquement avec le fichier de configuration d'`ifupdown`, situé à l'emplacement `/etc/network/interfaces`. Il est aussi applicable au mode rescue.
 >
 > Si la configuration réseau de votre système utilise plutôt `netplan`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >

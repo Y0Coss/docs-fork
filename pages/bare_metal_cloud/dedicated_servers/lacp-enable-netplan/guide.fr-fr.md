@@ -49,7 +49,7 @@ Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses M
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Veuillez noter que l'adresse MAC de l'interface **publique principale** est celle qui reçoit les offres DHCP dans le système d'exploitation du serveur. Cette interface gère la connectivité publique dans la configuration par défaut.
+> Veuillez noter que l'adresse MAC de l'interface **publique principale** est celle qui reçoit les offres DHCP à la fois dans le système d'exploitation du serveur et en mode rescue. Cette interface gère la connectivité publique dans la configuration par défaut.
 >
 > Quant à l'adresse MAC de l'interface **privée principale**, il s'agit de celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:d6`.
 >

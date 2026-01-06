@@ -356,7 +356,7 @@ Vous devriez maintenant pouvoir appliquer toutes les modifications nécessaires 
 
 L'agrégation de liens (LACP) est très avantageuse, car elle permet d'augmenter la bande passante totale de votre serveur tout en offrant une redondance réseau en cas de défaillance d'une interface réseau.
 
-Bien que le mode rescue soit basé sur le système d'exploitation Debian 12, sa configuration réseau repose sur l'utilitaire *ifupdown*.
+Bien que le mode rescue soit basé sur le système d'exploitation Debian 12, sa configuration réseau repose sur l'utilitaire `ifupdown`, plutôt que `netplan`.
 
 Si vous disposez d'un serveur supportant l'agrégation de liens, et que vous souhaitez configurer celle-ci en mode rescue, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
