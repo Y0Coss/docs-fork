@@ -28,7 +28,7 @@ details[open]>summary::before {
 
 Die E-Mail-Accounts des [Email Pro](/links/web/email-pro) Angebots können in einem kompatiblen E-Mail-Client konfiguriert werden. Dies ermöglicht es Ihnen, Nachrichten von der Anwendung Ihrer Wahl zu senden und zu empfangen.
 
-Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Januar 2025. Für weitere Informationen zu diesem Thema besuchen Sie die offizielle Microsoft-Seite [Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
+Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Januar 2025. Für weitere Informationen zu diesem Thema besuchen Sie die offizielle Microsoft-Seite [Outlook für Windows: Die Zukunft von Mail, Kalender und Personen auf Windows 11](https://support.microsoft.com/de-de/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
 
 **Diese Anleitung erklärt, wie Sie Ihren Email Pro Account im neuen Outlook für Windows konfigurieren.**
 
@@ -42,7 +42,7 @@ Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Janua
 
 OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 
-Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen.
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen. Weitere Informationen finden Sie im Abschnitt „[Weiterführende Informationen](#go-further)“ dieser Anleitung.
 
 ///
 
@@ -56,7 +56,7 @@ Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wi
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Um Ihre E-Mail Pro-Adresse in Outlook classic zu konfigurieren, konsultieren Sie unseren Leitfaden „[E-Mail Pro - Ein Konto in Outlook classic für Windows konfigurieren](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)“.
+> Um Ihre E-Mail Pro-Adresse in Outlook classic zu konfigurieren, konsultieren Sie unseren Leitfaden „[E-Mail Pro - Einrichten eines E-Mail-Accounts auf klassischem Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)“.
 
 ### E-Mail-Account hinzufügen <a name="add-account"></a>
 

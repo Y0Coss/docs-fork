@@ -36,20 +36,20 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 - Tener un servicio [Exchange](/links/web/emails).
 - Tener la [versión clásica de Outlook](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) en Windows.
-- Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
-- El registro SRV de OVHcloud debe estar correctamente configurado en la zona DNS del dominio. No dude en consultar nuestra guía [Añadir un dominio a un servicio Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+- Disponer del nombre de usuario y de la contraseña de la cuenta de correo electrónico que quiera configurar.
+- El registro SRV de OVHcloud debe estar correctamente configurado en la zona DNS del dominio. No dude en consultar nuestra guía "[Añadir un dominio a un servicio Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
 
 /// details | Información relativa a la gestión y configuración de los servicios OVHcloud
 
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 
-Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un [proveedor de servicios especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado "[Más información](#go-further)" de esta guía.
 
 ///
 
 > [!primary]
 >
-> Si utiliza Outlook y posterior para Mac, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+> Si utiliza Outlook y posterior para Mac, consulte nuestra guía "[Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)".
 
 ## Procedimiento
 
@@ -61,7 +61,7 @@ Esta guía le ayudará a realizar las operaciones más habituales. No obstante, 
 >
 > Una vez finalizada la instalación, para distinguir entre las dos versiones una vez instaladas, escriba "Outlook" en la barra de búsqueda de Windows. Podrá ver la diferencia como se muestra a continuación.
 >
->![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Añadir la cuenta
 
@@ -71,11 +71,11 @@ Esta guía le ayudará a realizar las operaciones más habituales. No obstante, 
 
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-- Deje `Cuenta de correo` seleccionada y complete la siguiente información :
-    - **Nombre** : defina un nombre de visualización.
-    - **Dirección de correo** : introduzca su dirección de correo electrónico completa.
-    - **Contraseña** : introduzca la contraseña asociada a su dirección de correo electrónico.
-    - **Confirmar la contraseña** : introduzca de nuevo la contraseña asociada a su dirección de correo electrónico.
+- Deje `Cuenta de correo` seleccionada y complete la siguiente información:
+    - **Nombre**: defina un nombre de visualización.
+    - **Dirección de correo**: introduzca su dirección de correo electrónico completa.
+    - **Contraseña**: introduzca la contraseña asociada a su dirección de correo electrónico.
+    - **Confirmar la contraseña**: introduzca de nuevo la contraseña asociada a su dirección de correo electrónico.
 - Haga clic en `Siguiente`{.action} para continuar.
 
 ![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
@@ -91,7 +91,7 @@ Después de la autorización y la autenticación en el servidor Exchange de OVHc
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-Su dirección de correo Exchange y todas sus funciones colaborativas también están disponibles en la interfaz [OWA](/links/web/email). Si tiene cualquier duda sobre su uso, no dude en consultar nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+Su dirección de correo Exchange y todas sus funciones colaborativas también están disponibles en la interfaz [OWA](/links/web/email). Si tiene cualquier duda sobre su uso, no dude en consultar nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
 ### Modificar los parámetros existentes
 
@@ -99,7 +99,7 @@ Su dirección de correo Exchange y todas sus funciones colaborativas también es
 >
 > No es posible modificar los parámetros del servidor de una cuenta Exchange. Si experimenta un problema relacionado con la sincronización con el servidor, es necesario eliminar la cuenta de Outlook y configurarla de nuevo. Para hacer esto, siga las instrucciones que se indican a continuación.
 
-Si su cuenta de correo electrónico ya está configurada y debe acceder a los parámetros de la cuenta para eliminarla :
+Si su cuenta de correo electrónico ya está configurada y debe acceder a los parámetros de la cuenta para eliminarla:
 
 - Vaya a `Archivo`{.action} desde la barra de menú superior de su pantalla.
 - Seleccione la cuenta a modificar en el menú desplegable **(1)**.
@@ -112,13 +112,13 @@ Si su cuenta de correo electrónico ya está configurada y debe acceder a los pa
 
 ![Outlook](images/config-outlook-exchange05.png){.thumbnail .h-500}
 
-Una vez eliminada la cuenta Exchange, siga la sección « [Añadir la cuenta](#add-account) » de este guía para configurar de nuevo su cuenta de correo electrónico.
+Una vez eliminada la cuenta Exchange, siga la sección "[Añadir la cuenta](#add-account)" de este guía para configurar de nuevo su cuenta de correo electrónico.
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar desde Windows**" en nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exportar-desde-windows).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar desde Windows**" en nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exportar-desde-windows)".
 
-## Más información
+## Más información <a name="go-further"></a>
 
 > [!primary]
 >

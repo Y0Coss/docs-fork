@@ -43,7 +43,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 OVHcloud oferuje usługi, których konfiguracja, zarządzanie i odpowiedzialność należy do Ciebie. Musisz więc zadbać o ich poprawne działanie.
 
-Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niemniej, w przypadku trudności, zalecamy kontakt z [specjalistycznym partnerem](/links/transversal/marketplace-support-collaboration) i/lub z twórcą usługi. Nie będziemy bowiem mogli udzielić wsparcia. Więcej informacji w sekcji „[Sprawdź również](go-further)”.
+Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niemniej, w przypadku trudności, zalecamy kontakt z [specjalistycznym partnerem](/links/partners) i/lub z twórcą usługi. Nie będziemy bowiem mogli udzielić wsparcia. Więcej informacji w sekcji "[Sprawdź również](#go-further)".
 
 ///
 
@@ -59,7 +59,7 @@ Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niem
 >
 > Aby zainstalować klasyczną wersję Outlook na swoim komputerze z Windows, pobierz ją ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego programu Outlook na komputerze z systemem Windows](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", a następnie zainstaluj.
 >
-> Po zakończeniu instalacji, aby odróżnić dwie wersje, gdy są zainstalowane, wpisz „Outlook” w pasku wyszukiwania systemu Windows. Możesz następnie zobaczyć różnicę, jak poniżej.
+> Po zakończeniu instalacji, aby odróżnić dwie wersje, gdy są zainstalowane, wpisz "Outlook" w pasku wyszukiwania systemu Windows. Możesz następnie zobaczyć różnicę, jak poniżej.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
@@ -71,11 +71,11 @@ Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niem
 
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-- Zaznacz `Konto poczty` i uzupełnij poniższe informacje :
-    - **Imię i nazwisko** : ustaw nazwę do wyświetlenia.
-    - **Adres poczty** : wpisz pełny adres e-mail.
-    - **Hasło** : wpisz hasło przypisane do adresu e-mail.
-    - **Potwierdź hasło** : ponownie wpisz hasło przypisane do adresu e-mail.
+- Zaznacz `Konto poczty` i uzupełnij poniższe informacje:
+    - **Imię i nazwisko**: ustaw nazwę do wyświetlenia.
+    - **Adres poczty**: wpisz pełny adres e-mail.
+    - **Hasło**: wpisz hasło przypisane do adresu e-mail.
+    - **Potwierdź hasło**: ponownie wpisz hasło przypisane do adresu e-mail.
 - Kliknij `Dalej`{.action}, aby kontynuować.
 
 ![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
@@ -99,7 +99,7 @@ Twój adres e-mail Exchange oraz wszystkie jego funkcje do pracy zespołowej są
 >
 > Nie można zmodyfikować ustawień serwera dla konta Exchange. Jeśli napotkasz problem z synchronizacją z serwerem, konieczne będzie usunięcie konta z Outlooka i jego ponowne skonfigurowanie. Aby to zrobić, wykonaj poniższe instrukcje.
 
-Jeśli konto e-mail zostało już skonfigurowane i musisz uzyskać dostęp do ustawień konta, aby je usunąć :
+Jeśli konto e-mail zostało już skonfigurowane i musisz uzyskać dostęp do ustawień konta, aby je usunąć:
 
 - Przejdź do `Plik`{.action} w górnym pasku menu.
 - Wybierz konto do modyfikacji w rozwijanej liście **(1)**.
@@ -112,13 +112,13 @@ Jeśli konto e-mail zostało już skonfigurowane i musisz uzyskać dostęp do us
 
 ![Outlook](images/config-outlook-exchange05.png){.thumbnail .h-500}
 
-Po usunięciu konta Exchange, przejdź do sekcji „[Dodawanie konta](#add-account)” tego przewodnika, aby ponownie skonfigurować swoje konto e-mail.
+Po usunięciu konta Exchange, przejdź do sekcji "[Dodawanie konta](#add-account)" tego przewodnika, aby ponownie skonfigurować swoje konto e-mail.
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
 Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport z systemu Windows**" w przewodniku [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#eksport-z-systemu-windows).
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >

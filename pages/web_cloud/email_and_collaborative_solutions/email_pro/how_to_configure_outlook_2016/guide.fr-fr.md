@@ -40,7 +40,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 
-Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](go-further) » de ce guide.
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 ///
 
@@ -48,7 +48,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide [E-mail Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide « [E-mail Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) ».
 >
 > Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » et installez-le.
 >
@@ -91,18 +91,18 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>
 >> Informations sur l'utilisateur <br>
 >> **Votre nom** : définissez un nom d'affichage.<br>
->> **Adresse de courrier** : daisissez votre adresse e-mail complète.<br>
+>> **Adresse de courrier** : saisissez votre adresse e-mail complète.<br>
 >>
 >> Informations sur le serveur <br>
->> **Type de compte** : sélectionnez IMAP<br>
->> **Serveur de courrier entrant** : pro?.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)<br>
->> **Serveur de courrier sortant (SMTP)** : pro?.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)<br>
+>> **Type de compte** : sélectionnez IMAP.<br>
+>> **Serveur de courrier entrant** : pro?.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur).<br>
+>> **Serveur de courrier sortant (SMTP)** : pro?.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur).<br>
 >>
 >> Informations de connexion <br>
 >> **Nom d'utilisateur** : Saisissez votre adresse e-mail complète.<br>
 >> **Mot de passe** : Saisissez le mot de passe associé à votre adresse e-mail.<br>
 >>
->> Cliquez sur `Paramètres supplémentaires...`{.action} **(2)** et passez à l'étape suivante
+>> Cliquez sur `Paramètres supplémentaires...`{.action} **(2)** et passez à l'étape suivante.
 >>
 >> ![Outlook](images/config-outlook-emailpro03.png){.thumbnail .h-500}
 >>
@@ -132,11 +132,11 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, n'hésitez pas à consulter notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Le Webmail OVHcloud est accessible [ici](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, n'hésitez pas à consulter notre guide « [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ».
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter-depuis-windows).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter depuis Windows** » sur notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter-depuis-windows) ».
 
 ### Modifier les paramètres existants
 
@@ -192,7 +192,7 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 - **Port** : 587.
 - **Type de sécurité** : STARTTLS.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 > [!primary]
 >

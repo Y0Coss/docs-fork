@@ -35,14 +35,14 @@ Email addresses from the **MX Plan** and [Zimbra Starter](/links/web/emails-zimb
 - Have an OVHcloud email solution already configured, from the following:
     - **MX Plan** offered with our [web hosting offers](/links/web/hosting) or included in a [free 100M hosting](/links/web/domains-free-hosting).
     - [Zimbra](/links/web/emails-zimbra) Starter (**only**).
-- Have the [new Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows.
+- Have the [new Outlook](https://support.microsoft.com/en-gb/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows.
 - Have the credentials related to the email address you wish to configure.
 
 /// details | Information related to the management and configuration of OVHcloud services
 
 This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 
-If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 
 ///
 
@@ -55,13 +55,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!warning]
 >
-> This documentation applies only to the **new Outlook** and not to the " [classic Outlook](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) " available in the Microsoft 365 suite or previously installed on your computer.
+> This documentation applies only to the **new Outlook** and not to the "[classic Outlook](https://support.microsoft.com/en-gb/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" available in the Microsoft 365 suite or previously installed on your computer.
 >
 > To distinguish between the two Outlook versions when both are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below. The new Outlook has no special mention.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> To configure your MX Plan or Zimbra Starter email address on classic Outlook, refer to our guide " [MX Plan / Zimbra Starter - Configure your email address on classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ".
+> To configure your MX Plan or Zimbra Starter email address on classic Outlook, refer to our guide "[MX Plan / Zimbra Starter - Configure your email address on classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)".
 
 ### Add the account <a name="add-account"></a>
 
@@ -69,13 +69,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 >
 > Are you unsure whether you should configure your e-mail account in **POP** or **IMAP**?
 >
-> Before proceeding, consult the section « [POP or IMAP, what is the difference?](#popimap) » in this guide.
+> Before proceeding, consult the section "[POP or IMAP, what is the difference?](#popimap)" in this guide.
 >
 > In the following settings, you will notice the possibility to enter 2 different host names for the same server (incoming or outgoing). These values refer exactly to the same server, they have been set up to facilitate entry and avoid confusion between the POP, IMAP and SMTP protocols which use different ports.
 
-- **When launching the application for the first time** : a configuration wizard appears and asks you to enter your e-mail address. Proceed directly to step 1 below on this page.
+- **When launching the application for the first time**: a configuration wizard appears and asks you to enter your e-mail address. Proceed directly to step 1 below on this page.
 
-- **If an account has already been set up** : click on `File`{.action} in the menu bar at the top of your screen, then on `Add an account`{.action}.
+- **If an account has already been set up**: click on `File`{.action} in the menu bar at the top of your screen, then on `Add an account`{.action}.
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail .h-500}
 
@@ -97,24 +97,24 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >>
 > **Step 2**
 >>
->> Enter your account connection information **(1)** :
+>> Enter your account connection information **(1)**:
 >>
 >> User information <br>
->> **Your name** : set a display name.<br>
->> **E-mail address** : enter your full e-mail address.<br>
+>> **Your name**: set a display name.<br>
+>> **E-mail address**: enter your full e-mail address.<br>
 >>
 >> Server information <br>
->> - **Account type** : select IMAP<br>
->> - **Incoming mail server** : <br>
->>      - **EUROPE** : imap.mail.ovh.net **or** ssl0.ovh.net <br>
->>      - **AMERICA/ASIA-PACIFIC** : imap.mail.ovh.ca <br>
->> - **Outgoing mail server (SMTP)** : <br>
->>      - **EUROPE** : smtp.mail.ovh.net **or** ssl0.ovh.net <br>
->>      - **AMERICA/ASIA-PACIFIC** : smtp.mail.ovh.ca <br>
+>> - **Account type**: select IMAP<br>
+>> - **Incoming mail server**: <br>
+>>      - **EUROPE**: imap.mail.ovh.net **or** ssl0.ovh.net <br>
+>>      - **AMERICA/ASIA-PACIFIC**: imap.mail.ovh.ca <br>
+>> - **Outgoing mail server (SMTP)**: <br>
+>>      - **EUROPE**: smtp.mail.ovh.net **or** ssl0.ovh.net <br>
+>>      - **AMERICA/ASIA-PACIFIC**: smtp.mail.ovh.ca <br>
 >>
 >> Connection information <br>
->> **User name** : enter your full e-mail address.<br>
->> **Password** : enter the password associated with your e-mail address.<br>
+>> **User name**: enter your full e-mail address.<br>
+>> **Password**: enter the password associated with your e-mail address.<br>
 >>
 >> Click on `More settings...`{.action} **(2)** and proceed to the next step
 >>
@@ -124,12 +124,12 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >>
 >> From the `Outgoing Server` tab, check `My outgoing server (SMTP) requires authentication`{.action} and leave `Use same settings as my incoming mail server`{.action} selected.
 >>
->> From the `Advanced` tab :
+>> From the `Advanced` tab:
 >>
->> - **Incoming Server (IMAP)** : 993
->> - **Use the following type of encrypted connection** : SSL/TLS
->> - **Outgoing mail server (SMTP)** : 465
->> - **Use the following type of encrypted connection** : SSL/TLS
+>> - **Incoming Server (IMAP)**: 993
+>> - **Use the following type of encrypted connection**: SSL/TLS
+>> - **Outgoing mail server (SMTP)**: 465
+>> - **Use the following type of encrypted connection**: SSL/TLS
 >>
 >> Click on `OK`{.action} to validate the information. Click on `Next`{.action} to start the account configuration.
 >>
@@ -146,15 +146,15 @@ To configure your email address, follow the steps by clicking on the tabs below.
 
 Once the e-mail address is configured, you can now use it! You can now send and receive messages.
 
-OVHcloud also offers a web application allowing you to access your e-mail address from a web browser. It is accessible at [Webmail](/links/web/email). You can log in using the credentials of your e-mail address. For any questions regarding its use, feel free to consult our guide [Accessing your Exchange account from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also offers a web application allowing you to access your e-mail address from a web browser. OVHcloud Webmail is available [here](/links/web/email). You can log in using the credentials of your e-mail address. For any questions regarding its use, feel free to consult our guide "[Accessing your Exchange account from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
 ### Recover a backup of your e-mail address
 
-If you need to perform an operation that could result in the loss of your e-mail account data, we recommend that you make a backup of the concerned e-mail account beforehand. To do this, consult the paragraph « **Export from Windows** » on our guide [Manually migrate your e-mail address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter-depuis-windows).
+If you need to perform an operation that could result in the loss of your e-mail account data, we recommend that you make a backup of the concerned e-mail account beforehand. To do this, consult the paragraph "**Export from Windows**" in our guide "[Manually migrate your e-mail address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter-depuis-windows)".
 
 ### Modify existing settings <a name="modify-settings"></a>
 
-If your e-mail account is already set up and you need to access the account settings to modify them :
+If your e-mail account is already set up and you need to access the account settings to modify them:
 
 - Go to `File`{.action} from the menu bar at the top of your screen.
 - Select the account to modify in the drop-down menu **(1)**.
@@ -177,39 +177,39 @@ For receiving e-mails, when choosing the account type, we recommend using **IMAP
 >
 > It is essential to correctly note the value corresponding to your location (**EUROPE** or **AMERICA / ASIA-PACIFIC**).
 
-Select the tab corresponding to your configuration type :
+Select the tab corresponding to your configuration type:
 
 > [!tabs]
 > **IMAP configuration**
 >>
->> - **User name** : enter the **full** e-mail address.
->> - **Password** : enter the e-mail address password.
->> - **EUROPE (incoming) server** : imap.mail.ovh.net **or** ssl0.ovh.net.
->> - **AMERICA/ASIA-PACIFIC (incoming) server** : imap.mail.ovh.ca.
->> - **Port** : 993.
->> - **Security type** : SSL/TLS.
+>> - **User name**: enter the **full** e-mail address.
+>> - **Password**: enter the e-mail address password.
+>> - **EUROPE (incoming) server**: imap.mail.ovh.net **or** ssl0.ovh.net.
+>> - **AMERICA/ASIA-PACIFIC (incoming) server**: imap.mail.ovh.ca.
+>> - **Port**: 993.
+>> - **Security type**: SSL/TLS.
 >>
 > **POP configuration**
 >>
->> - **User name** : enter the **full** e-mail address.
->> - **Password** : enter the e-mail address password.
->> - **EUROPE (incoming) server** : pop.mail.ovh.net **or** ssl0.ovh.net.
->> - **AMERICA/ASIA-PACIFIC (incoming) server** : pop.mail.ovh.ca.
->> - **Port** : 995.
->> - **Security type** : SSL/TLS.
+>> - **User name**: enter the **full** e-mail address.
+>> - **Password**: enter the e-mail address password.
+>> - **EUROPE (incoming) server**: pop.mail.ovh.net **or** ssl0.ovh.net.
+>> - **AMERICA/ASIA-PACIFIC (incoming) server**: pop.mail.ovh.ca.
+>> - **Port**: 995.
+>> - **Security type**: SSL/TLS.
 
 #### SMTP sending settings <a name="smtp"></a>
 
-For sending e-mails, find below the **SMTP** settings to use :
+For sending e-mails, find below the **SMTP** settings to use:
 
 **SMTP configuration**
 
-- **User name** : enter the **full** e-mail address.
-- **Password** : enter the e-mail address password.
-- **EUROPE (outgoing) server** : smtp.mail.ovh.net **or** ssl0.ovh.net.
-- **AMERICA/ASIA-PACIFIC (outgoing) server** : smtp.mail.ovh.ca.
-- **Port** : 465.
-- **Security type** : SSL/TLS.
+- **User name**: enter the **full** e-mail address.
+- **Password**: enter the e-mail address password.
+- **EUROPE (outgoing) server**: smtp.mail.ovh.net **or** ssl0.ovh.net.
+- **AMERICA/ASIA-PACIFIC (outgoing) server**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Security type**: SSL/TLS.
 
 ### POP or IMAP, what is the difference? <a name="popimap"></a>
 
@@ -219,13 +219,13 @@ When you configure your e-mail client, you must provide it with the information 
 
 ![mxplan](images/mxplan-popimap-01.png){.thumbnail .w-400}
 
-To understand the difference between using the POP and IMAP protocols, we will detail the elements that make up the processing of your e-mails when received :
+To understand the difference between using the POP and IMAP protocols, we will detail the elements that make up the processing of your e-mails when received:
 
-1. **Your device** : a computer, a smartphone or a tablet. This is your consultation support.
-2. **Your e-mail client** : application dedicated to the management of your e-mails. The choice of this application will determine the level of ergonomics and features you will need to consult your e-mails.
-3. **The receiving protocol** : choice determining the way to retrieve e-mails on your device. This choice has an impact on other devices that access this same e-mail account.
-    - **IMAP** : your e-mail client queries the e-mail server and downloads the e-mails to your device. When you read an unread e-mail, the server marks it as « read » by default. Other devices configured in IMAP will be able to see this status and read this e-mail as long as it has not been deleted on one of the devices.
-    - **POP** : your e-mail client queries the e-mail server and downloads the e-mails to your device. By default, once the e-mail is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this e-mail address will not be able to read this e-mail.
+1. **Your device**: a computer, a smartphone or a tablet. This is your consultation support.
+2. **Your e-mail client**: application dedicated to the management of your e-mails. The choice of this application will determine the level of ergonomics and features you will need to consult your e-mails.
+3. **The receiving protocol**: choice determining the way to retrieve e-mails on your device. This choice has an impact on other devices that access this same e-mail account.
+    - **IMAP**: your e-mail client queries the e-mail server and downloads the e-mails to your device. When you read an unread e-mail, the server marks it as "read" by default. Other devices configured in IMAP will be able to see this status and read this e-mail as long as it has not been deleted on one of the devices.
+    - **POP**: your e-mail client queries the e-mail server and downloads the e-mails to your device. By default, once the e-mail is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this e-mail address will not be able to read this e-mail.
 
 ![mxplan](images/mxplan-popimap-02.png){.thumbnail .w-400}
 
@@ -233,11 +233,11 @@ To understand the difference between using the POP and IMAP protocols, we will d
 >
 > This description is a summary, it represents the standard operation of these two protocols. It is possible to configure POP so that e-mails are not deleted when you retrieve your e-mails. Our objective is to describe the native operation of these two protocols.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 > [!primary]
 >
-> For more information about configuring an email address from the Outlook app on macOS, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+> For more information about configuring an email address from the Outlook app on macOS, see [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configuring your Email Pro account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 

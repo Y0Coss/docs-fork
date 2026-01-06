@@ -28,7 +28,7 @@ details[open]>summary::before {
 
 Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Microsoft Outlook ist das empfohlene Programm, um eine Exchange E-Mail-Adresse mit kollaborativen Funktionen zu verwenden.
 
-**Erfahren Sie, wie Sie ein Exchange-Konto auf Microsoft Outlook für Windows konfigurieren.**
+**Diese Anleitung erklärt, wie Sie ein Exchange-Konto auf Microsoft Outlook für Windows konfigurieren.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2YeGXo10CX8?si=mINBBXq6qb4MiFEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -37,19 +37,19 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 - Sie verfügen über einen [Exchange Account](/links/web/emails-hosted-exchange).
 - Sie haben die Windows Anwendung [Outlook Classic](https://support.microsoft.com/de-de/office/installieren-oder-erneutes-installieren-des-klassischen-outlook-auf-einem-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5).
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
-- Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung "[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
+- Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung „[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)“.
 
 /// details | Informationen zur Verwaltung und Konfiguration der OVHcloud-Dienste
 
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 
-Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 ///
 
 > [!primary]
 >
-> Sie verwenden Outlook für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+> Sie verwenden Outlook für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 
 ## In der praktischen Anwendung
 
@@ -61,7 +61,7 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 >
 > Geben Sie nach Abschluss der Installation in der Windows-Suchleiste „Outlook“ ein, um die beiden Versionen bei der Installation voneinander zu unterscheiden. Sie können dann den Unterschied wie folgt sehen.
 >
->![Outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+> ![Outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Account hinzufügen <a name="add-account"></a>
 
@@ -72,10 +72,10 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
 - Lassen Sie `E-Mail-Konto` aktiviert und füllen Sie folgende Informationen aus:
-    - **Name** : Geben Sie einen Anzeigenamen ein.
-    - **E-Mail-Adresse** : Geben Sie Ihre vollständige E-Mail-Adresse ein.
-    - **Passwort** : Geben Sie das Passwort für Ihre E-Mail-Adresse ein.
-    - **Passwort bestätigen** : Geben Sie erneut das Passwort für Ihre E-Mail-Adresse ein.
+    - **Name**: Geben Sie einen Anzeigenamen ein.
+    - **E-Mail-Adresse**: Geben Sie Ihre vollständige E-Mail-Adresse ein.
+    - **Passwort**: Geben Sie das Passwort für Ihre E-Mail-Adresse ein.
+    - **Passwort bestätigen**: Geben Sie erneut das Passwort für Ihre E-Mail-Adresse ein.
 - Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 
 ![Exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
@@ -116,9 +116,9 @@ Nachdem das Exchange-Konto gelöscht wurde, folgen Sie dem Abschnitt „[Konto h
 
 ### Backup Ihrer E-Mail-Adresse
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#uber-windows-exportieren)".
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung „[E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#uber-windows-exportieren)“.
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 > [!primary]
 >

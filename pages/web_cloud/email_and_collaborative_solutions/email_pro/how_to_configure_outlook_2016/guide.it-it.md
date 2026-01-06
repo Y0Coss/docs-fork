@@ -33,14 +33,14 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 ## Prerequisiti
 
 - Disporre di un account email [Email Pro](/links/web/email-pro).
-- Disporre dell'applicazione [Outlook classico](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) su Windows.
+- Disporre dell'applicazione [Outlook classico](https://support.microsoft.com/it-it/office/installare-o-reinstallare-la-versione-classica-di-outlook-in-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) su Windows.
 - Disporre delle credenziali associate all’indirizzo email da configurare.
 
 /// details | Informazioni relative alla gestione e alla configurazione dei servizi OVHcloud
 
 OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 
-Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](/links/partner) o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “[Per saperne di più](#go-further)” di questa guida.
 
 ///
 
@@ -48,29 +48,29 @@ Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione de
 
 > [!warning]
 >
-> Questa documentazione si applica esclusivamente a **Outlook classico** disponibile nella suite Microsoft 365. Se utilizzi il nuovo Outlook, consulta la nostra guida [E-mail Pro - Aggiungere un account e-mail sul nuovo Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+> Questa documentazione si applica esclusivamente a **Outlook classico** disponibile nella suite Microsoft 365. Se utilizzi il nuovo Outlook, consulta la nostra guida [E-mail Pro - Configurazione del tuo account E-mail Pro sul nuovo Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10).
 >
-> Per installare Outlook classico sul tuo computer Windows, scaricalo dalla pagina Microsoft « [Installare o reinstallare Outlook classico su un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » e installalo.
+> Per installare Outlook classico sul tuo computer Windows, scaricalo dalla pagina Microsoft "[Installare o reinstallare Outlook classico su un PC Windows](https://support.microsoft.com/it-it/office/installare-o-reinstallare-la-versione-classica-di-outlook-in-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e installalo.
 >
-> Una volta completata l'installazione, per distinguere le due versioni quando sono installate, digita « Outlook » nella barra di ricerca Windows. Potrai quindi notare la differenza come mostrato di seguito.
+> Una volta completata l'installazione, per distinguere le due versioni quando sono installate, digita "Outlook" nella barra di ricerca Windows. Potrai quindi notare la differenza come mostrato di seguito.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Aggiungi l'account
+### Aggiungi l'account <a name="add-account"></a>
 
 > [!primary]
 >
-> Nel nostro esempio, utilizziamo la dicitura server: pro?.mail.ovh.net. Dovrai sostituire il « ? » con il numero che indica il server del tuo servizio E-mail Pro.
+> Nel nostro esempio, utilizziamo la dicitura server: pro?.mail.ovh.net. Dovrai sostituire il "?" con il numero che indica il server del tuo servizio E-mail Pro.
 >
-> 1. Accedi al tuo [spazio client OVHcloud](/links/manager).
+> 1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
 > 1. Vai alla sezione `Web Cloud`{.action}.
 > 1. Clicca su `Email Pro`{.action}.
 > 1. Seleziona la piattaforma interessata.
 > 1. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni Generali`{.action}.
 
-- **All'avvio iniziale dell'applicazione** : un assistente di configurazione appare e ti invita a inserire il tuo indirizzo e-mail. Passa direttamente all'etapa 1 più in basso su questa pagina.
+- **All'avvio iniziale dell'applicazione**: un assistente di configurazione appare e ti invita a inserire il tuo indirizzo e-mail. Passa direttamente all'etapa 1 più in basso su questa pagina.
 
-- **Se è già stato configurato un account** : clicca su `File`{.action} nella barra del menu in alto sul tuo schermo, quindi su `Aggiungi un account`{.action}.
+- **Se è già stato configurato un account**: clicca su `File`{.action} nella barra del menu in alto sul tuo schermo, quindi su `Aggiungi un account`{.action}.
 
 ![Outlook](images/config-outlook-emailpro01.png){.thumbnail .h-500}
 
@@ -87,22 +87,22 @@ Per configurare il tuo indirizzo e-mail, segui le tappe cliccando sui tab sottos
 >>
 > **Passo 2**
 >>
->> Inserisci le informazioni di accesso al tuo account **(1)** :
+>> Inserisci le informazioni di accesso al tuo account **(1)**:
 >>
 >> Informazioni sull'utente <br>
->> **Il tuo nome** : imposta un nome da visualizzare.<br>
->> **Indirizzo di posta** : lascia il tuo indirizzo e-mail completo.<br>
+>> **Il tuo nome**: imposta un nome da visualizzare.<br>
+>> **Indirizzo di posta**: lascia il tuo indirizzo e-mail completo.<br>
 >>
 >> Informazioni sul server <br>
->> **Tipo di account** : seleziona IMAP<br>
->> **Server di posta in arrivo** : pro?.mail.ovh.net (la dicitura **«?»** va sostituita con il numero del tuo server)<br>
->> **Server di posta in uscita (SMTP)** : pro?.mail.ovh.net (la dicitura **«?»** va sostituita con il numero del tuo server)<br>
+>> **Tipo di account**: seleziona IMAP.<br>
+>> **Server di posta in arrivo**: pro?.mail.ovh.net (la dicitura **"?"** va sostituita con il numero del tuo server).<br>
+>> **Server di posta in uscita (SMTP)**: pro?.mail.ovh.net (la dicitura **"?"** va sostituita con il numero del tuo server).<br>
 >>
 >> Informazioni di accesso <br>
->> **Nome utente** : Inserisci il tuo indirizzo e-mail completo.<br>
->> **Password** : Inserisci la password associata al tuo indirizzo e-mail.<br>
+>> **Nome utente**: Inserisci il tuo indirizzo e-mail completo.<br>
+>> **Password**: Inserisci la password associata al tuo indirizzo e-mail.<br>
 >>
->> Clicca su `Impostazioni aggiuntive...`{.action} **(2)** e vai al passo successivo
+>> Clicca su `Impostazioni aggiuntive...`{.action} **(2)** e vai al passo successivo.
 >>
 >> ![Outlook](images/config-outlook-emailpro03.png){.thumbnail .h-500}
 >>
@@ -110,12 +110,12 @@ Per configurare il tuo indirizzo e-mail, segui le tappe cliccando sui tab sottos
 >>
 >> Dalla scheda `Server in uscita`, seleziona `Il mio server in uscita (SMTP) richiede l'autenticazione`{.action} e lascia selezionato `Utilizzare gli stessi parametri del mio server di posta in entrata`{.action}.
 >>
->> Dalla scheda `Opzioni avanzate` :
+>> Dalla scheda `Opzioni avanzate`:
 >>
->> - **Server entrante (IMAP)** : 993
->> - **Utilizzare il tipo di connessione crittografata seguente** : SSL/TLS
->> - **Server di posta in uscita (SMTP)** : 587
->> - **Utilizzare il tipo di connessione crittografata seguente** : STARTTLS
+>> - **Server entrante (IMAP)**: 993
+>> - **Utilizzare il tipo di connessione crittografata seguente**: SSL/TLS
+>> - **Server di posta in uscita (SMTP)**: 587
+>> - **Utilizzare il tipo di connessione crittografata seguente**: STARTTLS
 >>
 >> Clicca su `OK`{.action} per confermare le informazioni. Clicca su `Avanti`{.action} per avviare la configurazione dell'account.
 >>
@@ -132,11 +132,11 @@ Per configurare il tuo indirizzo e-mail, segui le tappe cliccando sui tab sottos
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina [Webmail](/links/web/email) accessibile utilizzando le credenziali del tuo account. Per maggiori informazioni sul suo utilizzo, consulta la guida [Consultare il suo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. È possibile accedere alla Webmail OVHcloud [qui](/links/web/email) e connettersi con le credenziali del proprio indirizzo email. Per maggiori informazioni sul suo utilizzo, consulta la guida "[Consultare il suo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida [Migrare manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#esporta-da-windows).
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida "[Migrare manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#esporta-da-windows)".
 
 ### Modifica i parametri esistenti
 
@@ -166,33 +166,33 @@ Seleziona la scheda corrispondente al tipo di configurazione:
 > [!tabs]
 > **Configurazione IMAP**
 >>
->> - **Nome utente** : inserisci l'indirizzo e-mail **completo**.
->> - **Password** : inserisci la password dell'indirizzo e-mail.
->> - **Server entrante** : pro?.mail.ovh.net (sostituisci correttamente il «?» con il numero del tuo server).
->> - **Porta** : 993.
->> - **Tipo di sicurezza** : SSL/TLS.
+>> - **Nome utente**: inserisci l'indirizzo e-mail **completo**.
+>> - **Password**: inserisci la password dell'indirizzo e-mail.
+>> - **Server entrante**: pro?.mail.ovh.net (sostituisci correttamente il "?" con il numero del tuo server).
+>> - **Porta**: 993.
+>> - **Tipo di sicurezza**: SSL/TLS.
 >>
 > **Configurazione POP**
 >>
->> - **Nome utente** : inserisci l'indirizzo e-mail **completo**.
->> - **Password** : inserisci la password dell'indirizzo e-mail.
->> - **Server entrante** : pro?.mail.ovh.net (sostituisci correttamente il «?» con il numero del tuo server).
->> - **Porta** : 995.
->> - **Tipo di sicurezza** : SSL/TLS.
+>> - **Nome utente**: inserisci l'indirizzo e-mail **completo**.
+>> - **Password**: inserisci la password dell'indirizzo e-mail.
+>> - **Server entrante**: pro?.mail.ovh.net (sostituisci correttamente il "?" con il numero del tuo server).
+>> - **Porta**: 995.
+>> - **Tipo di sicurezza**: SSL/TLS.
 
 #### Impostazioni di invio SMTP <a name="smtp"></a>
 
-Per l'invio delle e-mail, troverai qui sotto le impostazioni **SMTP** da utilizzare :
+Per l'invio delle e-mail, troverai qui sotto le impostazioni **SMTP** da utilizzare:
 
 **Configurazione SMTP**
 
-- **Nome utente** : inserisci l'indirizzo e-mail **completo**.
-- **Password** : inserisci la password dell'indirizzo e-mail.
-- **Server in uscita** : pro?.mail.ovh.net (sostituisci correttamente il «?» con il numero del tuo server).
-- **Porta** : 587.
-- **Tipo di sicurezza** : STARTTLS.
+- **Nome utente**: inserisci l'indirizzo e-mail **completo**.
+- **Password**: inserisci la password dell'indirizzo e-mail.
+- **Server in uscita**: pro?.mail.ovh.net (sostituisci correttamente il "?" con il numero del tuo server).
+- **Porta**: 587.
+- **Tipo di sicurezza**: STARTTLS.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 > [!primary]
 >
@@ -200,6 +200,6 @@ Per l'invio delle e-mail, troverai qui sotto le impostazioni **SMTP** da utilizz
 
 [Configurare un account email su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Configurare un account Exchange su Outlook per Windows.](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
+[Configurare un account Exchange su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Contatta la nostra [Community di utenti](/links/community).

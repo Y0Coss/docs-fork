@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 Gli indirizzi e-mail delle offerte **MX Plan** e [Zimbra Starter](/links/web/emails-zimbra) possono essere configurati su un client di posta compatibile. Ciò ti consente di inviare e ricevere messaggi dall'applicazione che preferisci.
 
-Il **nuovo Outlook** sostituisce dall'1 gennaio 2025 l'applicazione **Posta** su Windows. Per ulteriori informazioni, consulta la pagina ufficiale di Microsoft "[Outlook per Windows: Il futuro di Posta, Calendario e Persone in Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+Il **nuovo Outlook** sostituisce dall'1 gennaio 2025 l'applicazione **Posta** su Windows. Per ulteriori informazioni, consulta la pagina ufficiale di Microsoft "[Outlook per Windows: Il futuro di Posta, Calendario e Persone in Windows 11](https://support.microsoft.com/it-it/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
 **Scopri come configurare il tuo indirizzo e-mail MX Plan sul nuovo Outlook per Windows.**
 
@@ -34,7 +34,7 @@ Il **nuovo Outlook** sostituisce dall'1 gennaio 2025 l'applicazione **Posta** su
 - Disporre di una soluzione e-mail OVHcloud precedentemente configurata, tra le seguenti:
     - **MX Plan** proposta con le nostre [offerte di hosting web](/links/web/hosting) o incluse in un [hosting gratuito 100M](/links/web/domains-free-hosting).
     - [Zimbra](/links/web/emails-zimbra) Starter (solo).
-- Disporre della [nuova versione di Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installata su Windows.
+- Disporre della [nuova versione di Outlook](https://support.microsoft.com/it-it/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installata su Windows.
 - Possedere le credenziali dell'indirizzo e-mail che si desidera configurare.
 
 /// details | Informazioni relative alla gestione e alla configurazione dei servizi OVHcloud
@@ -49,13 +49,13 @@ Ti mettiamo a disposizione questa guida per accompagnarti nel miglior modo possi
 
 > [!warning]
 >
-> Questa documentazione si applica esclusivamente al **nuovo Outlook** e non a « [Outlook classico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponibile nella suite Microsoft 365 o precedentemente installato sul tuo computer.
+> Questa documentazione si applica esclusivamente al **nuovo Outlook** e non a "[Outlook classico](https://support.microsoft.com/it-it/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponibile nella suite Microsoft 365 o precedentemente installato sul tuo computer.
 >
-> Per distinguere le due versioni di Outlook quando sono installate, digita « Outlook » nella barra di ricerca di Windows. Potrai quindi osservare la differenza come mostrato di seguito. Il nuovo Outlook non ha un'etichetta speciale.
+> Per distinguere le due versioni di Outlook quando sono installate, digita "Outlook" nella barra di ricerca di Windows. Potrai quindi osservare la differenza come mostrato di seguito. Il nuovo Outlook non ha un'etichetta speciale.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Per configurare il tuo indirizzo email MX Plan o Zimbra Starter su Outlook classico, consulta la nostra guida « [MX Plan / Zimbra Starter - Configurare l'indirizzo email su Outlook classico per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
+> Per configurare il tuo indirizzo email MX Plan o Zimbra Starter su Outlook classico, consulta la nostra guida "[MX Plan / Zimbra Starter - Configurare l'indirizzo email su Outlook classico per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)".
 
 
 ### Aggiungere l'account <a name="add-account"></a>
@@ -181,7 +181,7 @@ Per l'invio delle e-mail, ecco i parametri **SMTP** da utilizzare:
 
 > [!primary]
 >
-> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di posta nuovo Outlook per Windows, consulta [il centro di supporto di Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di posta nuovo Outlook per Windows, consulta [il centro di supporto di Microsoft](https://support.microsoft.com/it-it/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Primi passi con l'offerta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

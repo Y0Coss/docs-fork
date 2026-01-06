@@ -35,14 +35,14 @@ Gli indirizzi e-mail delle offerte **MX Plan** e [Zimbra Starter](/links/web/ema
 - Disporre di una soluzione e-mail OVHcloud precedentemente configurata, tra le seguenti:
     - **MX Plan** proposta con le nostre [offerte di hosting web](/links/web/hosting) o incluse in un [hosting gratuito 100M](/links/web/domains-free-hosting).
     - [Zimbra](/links/web/emails-zimbra) Starter (solo).
-- Disporre della [nuova versione di Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installata su Windows.
+- Disporre della [nuova versione di Outlook](https://support.microsoft.com/it-it/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installata su Windows.
 - Possedere le credenziali dell'indirizzo e-mail che si desidera configurare.
 
 /// details | Informazioni relative alla gestione e alla configurazione dei servizi OVHcloud
 
 OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 
-Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](/links/partner) o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](/links/partner) o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “[Per saperne di più](#go-further)” di questa guida.
 
 ///
 
@@ -57,13 +57,13 @@ Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in c
 >
 > Questa documentazione si applica esclusivamente a **Outlook classico** disponibile nella suite Microsoft 365. Se utilizzi il nuovo Outlook, consulta la nostra guida [MX Plan / Zimbra Starter - Aggiungere un account e-mail sul nuovo Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >
-> Per installare Outlook classico sul tuo computer Windows, scaricalo dalla pagina Microsoft « [Installare o reinstallare Outlook classico su un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » e installalo.
+> Per installare Outlook classico sul tuo computer Windows, scaricalo dalla pagina Microsoft "[Installare o reinstallare Outlook classico su un PC Windows](https://support.microsoft.com/it-it/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e installalo.
 >
-> Una volta completata l'installazione, per distinguere le due versioni quando sono installate, digita « Outlook » nella barra di ricerca Windows. Potrai quindi notare la differenza come mostrato di seguito.
+> Una volta completata l'installazione, per distinguere le due versioni quando sono installate, digita "Outlook" nella barra di ricerca Windows. Potrai quindi notare la differenza come mostrato di seguito.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Aggiungi l'account
+### Aggiungi l'account <a name="add-account"></a>
 
 > [!primary]
 >
@@ -73,9 +73,9 @@ Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in c
 >
 > Nei parametri che seguono è possibile inserire 2 diversi nomi host per lo stesso server (in entrata o in uscita). Questi valori fanno riferimento esattamente allo stesso server, sono stati impostati per facilitare la digitazione ed evitare la confusione tra i protocolli POP, IMAP e SMTP che utilizzano porte differenti.
 
-- **All'avvio iniziale dell'applicazione** : un assistente di configurazione appare e ti chiede di inserire il tuo indirizzo e-mail. Passa direttamente all'etapa 1 più in basso su questa pagina.
+- **All'avvio iniziale dell'applicazione**: un assistente di configurazione appare e ti chiede di inserire il tuo indirizzo e-mail. Passa direttamente all'etapa 1 più in basso su questa pagina.
 
-- **Se è già stato configurato un account** : clicca su `File`{.action} nella barra del menu in alto sul tuo schermo, quindi su `Aggiungi un account`{.action}.
+- **Se è già stato configurato un account**: clicca su `File`{.action} nella barra del menu in alto sul tuo schermo, quindi su `Aggiungi un account`{.action}.
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
@@ -97,24 +97,24 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 >>
 > **Fase 2**
 >>
->> Inserisci le informazioni di accesso al tuo account **(1)** :
+>> Inserisci le informazioni di accesso al tuo account **(1)**:
 >>
 >> Informazioni sull'utente <br>
->> **Il tuo nome** : imposta un nome da visualizzare.<br>
->> **Indirizzo di posta** : lascia il tuo indirizzo e-mail completo.<br>
+>> **Il tuo nome**: imposta un nome da visualizzare.<br>
+>> **Indirizzo di posta**: lascia il tuo indirizzo e-mail completo.<br>
 >>
 >> Informazioni sul server <br>
->> - **Tipo di account** : seleziona IMAP<br>
->> - **Server di posta in entrata** : <br>
->>      - **EUROPA** : imap.mail.ovh.net **o** ssl0.ovh.net <br>
->>      - **AMERICA/PACIFICO** : imap.mail.ovh.ca <br>
->> - **Server di posta in uscita (SMTP)** : <br>
->>      - **EUROPA** : smtp.mail.ovh.net **o** ssl0.ovh.net <br>
->>      - **AMERICA/PACIFICO** : smtp.mail.ovh.ca <br>
+>> - **Tipo di account**: seleziona IMAP<br>
+>> - **Server di posta in entrata**: <br>
+>>      - **EUROPA**: imap.mail.ovh.net **o** ssl0.ovh.net <br>
+>>      - **AMERICA/PACIFICO**: imap.mail.ovh.ca <br>
+>> - **Server di posta in uscita (SMTP)**: <br>
+>>      - **EUROPA**: smtp.mail.ovh.net **o** ssl0.ovh.net <br>
+>>      - **AMERICA/PACIFICO**: smtp.mail.ovh.ca <br>
 >>
 >> Informazioni di accesso <br>
->> **Nome utente** : inserisci il tuo indirizzo e-mail completo.<br>
->> **Password** : inserisci la password associata al tuo indirizzo e-mail.<br>
+>> **Nome utente**: inserisci il tuo indirizzo e-mail completo.<br>
+>> **Password**: inserisci la password associata al tuo indirizzo e-mail.<br>
 >>
 >> Clicca su `Impostazioni aggiuntive...`{.action} **(2)** e passa alla fase successiva
 >>
@@ -124,12 +124,12 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 >>
 >> Dal tab `Server in uscita`, seleziona `Il mio server in uscita (SMTP) richiede l'autenticazione`{.action} e lascia selezionato `Utilizza gli stessi parametri del mio server di posta in entrata`{.action}.
 >>
->> Dal tab `Opzioni avanzate` :
+>> Dal tab `Opzioni avanzate`:
 >>
->> - **Server entrante (IMAP)** : 993
->> - **Utilizza il tipo di connessione crittografata seguente** : SSL/TLS
->> - **Server di posta in uscita (SMTP)** : 465
->> - **Utilizza il tipo di connessione crittografata seguente** : SSL/TLS
+>> - **Server entrante (IMAP)**: 993
+>> - **Utilizza il tipo di connessione crittografata seguente**: SSL/TLS
+>> - **Server di posta in uscita (SMTP)**: 465
+>> - **Utilizza il tipo di connessione crittografata seguente**: SSL/TLS
 >>
 >> Clicca su `OK`{.action} per confermare le informazioni. Clicca su `Avanti`{.action} per avviare la configurazione dell'account.
 >>
@@ -146,11 +146,11 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina [Webmail](/links/web/email) accessibile utilizzando le credenziali del tuo account. Per maggiori informazioni sul suo utilizzo, consulta la guida [Consultare il suo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. È possibile accedere alla Webmail OVHcloud [qui](/links/web/email) e connettersi con le credenziali del proprio indirizzo email. Per maggiori informazioni sul suo utilizzo, consulta la guida [Consultare il suo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida [Migrare manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#esporta-da-windows).
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida "[Migrare manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#esporta-da-windows)".
 
 ### Modifica i parametri esistenti
 
@@ -177,39 +177,39 @@ Per la ricezione delle e-mail, durante la scelta del tipo di account, ti consigl
 >
 > È necessario prendere nota correttamente del valore corrispondente alla tua localizzazione (**EUROPA** o **AMERICA / PACIFICO**).
 
-Seleziona il tab corrispondente al tuo tipo di configurazione :
+Seleziona il tab corrispondente al tuo tipo di configurazione:
 
 > [!tabs]
 > **Configurazione IMAP**
 >>
->> - **Nome utente** : inserisci l'indirizzo e-mail **completo**.
->> - **Password** : inserisci la password dell'indirizzo e-mail.
->> - **Server EUROPA (entrante)** : imap.mail.ovh.net **o** ssl0.ovh.net.
->> - **Server AMERICA/PACIFICO (entrante)** : imap.mail.ovh.ca.
->> - **Porta** : 993.
->> - **Tipo di sicurezza** : SSL/TLS.
+>> - **Nome utente**: inserisci l'indirizzo e-mail **completo**.
+>> - **Password**: inserisci la password dell'indirizzo e-mail.
+>> - **Server EUROPA (entrante)**: imap.mail.ovh.net **o** ssl0.ovh.net.
+>> - **Server AMERICA/PACIFICO (entrante)**: imap.mail.ovh.ca.
+>> - **Porta**: 993.
+>> - **Tipo di sicurezza**: SSL/TLS.
 >>
 > **Configurazione POP**
 >>
->> - **Nome utente** : inserisci l'indirizzo e-mail **completo**.
->> - **Password** : inserisci la password dell'indirizzo e-mail.
->> - **Server EUROPA (entrante)** : pop.mail.ovh.net **o** ssl0.ovh.net.
->> - **Server AMERICA/PACIFICO (entrante)** : pop.mail.ovh.ca.
->> - **Porta** : 995.
->> - **Tipo di sicurezza** : SSL/TLS.
+>> - **Nome utente**: inserisci l'indirizzo e-mail **completo**.
+>> - **Password**: inserisci la password dell'indirizzo e-mail.
+>> - **Server EUROPA (entrante)**: pop.mail.ovh.net **o** ssl0.ovh.net.
+>> - **Server AMERICA/PACIFICO (entrante)**: pop.mail.ovh.ca.
+>> - **Porta**: 995.
+>> - **Tipo di sicurezza**: SSL/TLS.
 
 #### Parametri di invio SMTP <a name="smtp"></a>
 
-Per l'invio delle e-mail, troverai di seguito i parametri **SMTP** da utilizzare :
+Per l'invio delle e-mail, troverai di seguito i parametri **SMTP** da utilizzare:
 
 **Configurazione SMTP**
 
-- **Nome utente** : inserisci l'indirizzo e-mail **completo**.
-- **Password** : inserisci la password dell'indirizzo e-mail.
-- **Server EUROPA (uscita)** : smtp.mail.ovh.net **o** ssl0.ovh.net.
-- **Server AMERICA/PACIFICO (uscita)** : smtp.mail.ovh.ca.
-- **Porta** : 465.
-- **Tipo di sicurezza** : SSL/TLS.
+- **Nome utente**: inserisci l'indirizzo e-mail **completo**.
+- **Password**: inserisci la password dell'indirizzo e-mail.
+- **Server EUROPA (uscita)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
+- **Server AMERICA/PACIFICO (uscita)**: smtp.mail.ovh.ca.
+- **Porta**: 465.
+- **Tipo di sicurezza**: SSL/TLS.
 
 ### POP o IMAP, qual è la differenza? <a name="popimap"></a>
 
@@ -233,7 +233,7 @@ Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, andremo 
 >
 > Questa descrizione è una sintesi, rappresenta il funzionamento standard di entrambi i protocolli. È possibile configurare il POP in modo che le email non vengano eliminate quando si raccolgono i messaggi. Il nostro obiettivo è descrivere il funzionamento nativo di questi due protocolli.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 > [!primary]
 >

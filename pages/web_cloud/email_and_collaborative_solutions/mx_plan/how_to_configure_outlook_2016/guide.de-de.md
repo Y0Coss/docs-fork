@@ -1,6 +1,6 @@
 ---
-title: "MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse in Outlook Classic für Windows"
-excerpt: "Erfahren Sie, wie Sie Ihre MX Plan-E-Mail-Adresse in Outlook Classic für Windows konfigurieren"
+title: "MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse auf klassischem Outlook für Windows"
+excerpt: "Erfahren Sie, wie Sie Ihre MX Plan-E-Mail-Adresse mit dem klassischen Outlook für Windows konfigurieren"
 updated: 2025-12-31
 ---
 
@@ -35,14 +35,14 @@ Die E-Mail-Adressen der Angebote **MX Plan** und [Zimbra](/links/web/emails-zimb
 - Sie benötigen eine OVHcloud E-Mail-Lösung, wie:
     - **MX Plan**, angeboten mit unseren [Webhostings](/links/web/hosting) oder enthalten in [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
     - [Zimbra](/links/web/emails-zimbra) Starter.
-- Sie benötigen die [neue Outlook-Version](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627), installiert auf Ihrem Windows-System.
+- Sie benötigen die [neue Outlook-Version](https://support.microsoft.com/de-de/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627), installiert auf Ihrem Windows-System.
 - Sie benötigen die Zugangsdaten für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 /// details | Informationen zur Verwaltung und Konfiguration der OVHcloud-Dienste
 
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 
-Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 ///
 
@@ -55,9 +55,9 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 > [!warning]
 >
-> Dieses Dokument gilt ausschließlich für **Outlook Classic**, das in der Microsoft 365-Suite verfügbar ist. Falls Sie die neue Outlook-Version nutzen, konsultieren Sie unseren Leitfaden [MX Plan / Zimbra Starter - E-Mail-Konto in der neuen Outlook-Version für Windows hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+> Dieses Dokument gilt ausschließlich für **Klassisches Outlook**, das in der Microsoft 365-Suite verfügbar ist. Falls Sie die neue Outlook-Version nutzen, konsultieren Sie unseren Leitfaden [MX Plan / Zimbra Starter - E-Mail-Konto in der neuen Outlook-Version für Windows hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
 >
-> Um Outlook Classic auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite „[Outlook Classic auf einem Windows-PC installieren oder neu installieren](https://support.microsoft.com/de-de/office/outlook-classisch-installieren-oder-neu-installieren-auf-einem-pc-mit-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)“ herunter und installieren Sie es.
+> Um Klassisches Outlook auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite „[Installieren oder Erneutes Installieren des klassischen Outlook auf einem Windows-PC](https://support.microsoft.com/de-de/office/outlook-classisch-installieren-oder-neu-installieren-auf-einem-pc-mit-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)“ herunter und installieren Sie es.
 >
 > Nach Abschluss der Installation können Sie die beiden Versionen unterscheiden, wenn sie installiert sind. Geben Sie dazu „Outlook“ in der Windows-Suchleiste ein. Sie können dann den Unterschied wie unten gezeigt erkennen.
 >
@@ -97,24 +97,24 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 >>
 > **Schritt 2**
 >>
->> Geben Sie die Anmeldeinformationen für Ihr Konto ein **(1)** :
+>> Geben Sie die Anmeldeinformationen für Ihr Konto ein **(1)**:
 >>
 >> Benutzerinformationen <br>
->> **Ihr Name** : Legen Sie einen Anzeigename fest.<br>
->> **E-Mail-Adresse** : Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
+>> **Ihr Name**: Legen Sie einen Anzeigename fest.<br>
+>> **E-Mail-Adresse**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
 >>
 >> Serverinformationen <br>
->> - **Kontotyp** : Wählen Sie IMAP aus<br>
->> - **Eingehender E-Mail-Server** : <br>
->>      - **EUROPE** : imap.mail.ovh.net **oder** ssl0.ovh.net <br>
->>      - **AMERIKA/ASIEN-PACIFIK** : imap.mail.ovh.ca <br>
->> - **Ausgehender E-Mail-Server (SMTP)** : <br>
->>      - **EUROPE** : smtp.mail.ovh.net **oder** ssl0.ovh.net <br>
->>      - **AMERIKA/ASIEN-PACIFIK** : smtp.mail.ovh.ca <br>
+>> - **Kontotyp**: Wählen Sie IMAP aus<br>
+>> - **Eingehender E-Mail-Server**: <br>
+>>      - **EUROPE**: imap.mail.ovh.net **oder** ssl0.ovh.net <br>
+>>      - **AMERIKA/ASIEN-PACIFIK**: imap.mail.ovh.ca <br>
+>> - **Ausgehender E-Mail-Server (SMTP)**: <br>
+>>      - **EUROPE**: smtp.mail.ovh.net **oder** ssl0.ovh.net <br>
+>>      - **AMERIKA/ASIEN-PACIFIK**: smtp.mail.ovh.ca <br>
 >>
 >> Anmeldeinformationen <br>
->> **Benutzername** : Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
->> **Passwort** : Geben Sie das Passwort ein, das mit Ihrer E-Mail-Adresse verknüpft ist.<br>
+>> **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
+>> **Passwort**: Geben Sie das Passwort ein, das mit Ihrer E-Mail-Adresse verknüpft ist.<br>
 >>
 >> Klicken Sie auf `Weitere Einstellungen...`{.action} **(2)** und gehen Sie zum nächsten Schritt über.
 >>
@@ -124,12 +124,12 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 >>
 >> Gehen Sie zum Register `Ausgehender Server` und aktivieren Sie `Mein ausgehender Server (SMTP) benötigt eine Authentifizierung`{.action} und lassen Sie `Die gleichen Einstellungen wie bei meinem eingehenden E-Mail-Server verwenden`{.action} ausgewählt.
 >>
->> Gehen Sie zum Register `Erweiterte Optionen` :
+>> Gehen Sie zum Register `Erweiterte Optionen`:
 >>
->> - **Eingehender Server (IMAP)** : 993
->> - **Verwenden Sie den folgenden Verschlüsselungstyp** : SSL/TLS
->> - **Ausgehender E-Mail-Server (SMTP)** : 465
->> - **Verwenden Sie den folgenden Verschlüsselungstyp** : SSL/TLS
+>> - **Eingehender Server (IMAP)**: 993
+>> - **Verwenden Sie den folgenden Verschlüsselungstyp**: SSL/TLS
+>> - **Ausgehender E-Mail-Server (SMTP)**: 465
+>> - **Verwenden Sie den folgenden Verschlüsselungstyp**: SSL/TLS
 >>
 >> Klicken Sie auf `OK`{.action}, um die Informationen zu bestätigen. Klicken Sie auf `Weiter`{.action}, um die Konto-Konfiguration zu starten.
 >>
@@ -154,7 +154,7 @@ Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accoun
 
 ### Bestehende Einstellungen ändern
 
-Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf die Kontoeinstellungen zugreifen müssen, um sie zu ändern :
+Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf die Kontoeinstellungen zugreifen müssen, um sie zu ändern:
 
 - Gehen Sie zu `Datei`{.action} in der Menüleiste oben auf Ihrem Bildschirm.
 - Wählen Sie das zu ändernde Konto im Dropdown-Menü **(1)** aus.
@@ -177,39 +177,39 @@ Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps d
 >
 > Sie müssen den Wert entsprechend Ihrer Region (**EUROPE** oder **AMERIKA / ASIEN-PACIFIK**) richtig notieren.
 
-Wählen Sie das Register aus, das Ihrer Konfiguration entspricht :
+Wählen Sie das Register aus, das Ihrer Konfiguration entspricht:
 
 > [!tabs]
 > **IMAP-Konfiguration**
 >>
->> - **Benutzername** : Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort** : Geben Sie das Passwort der E-Mail-Adresse ein.
->> - **EUROPE (empfangen)** : imap.mail.ovh.net **oder** ssl0.ovh.net.
->> - **AMERIKA/ASIEN-PACIFIK (empfangen)** : imap.mail.ovh.ca.
->> - **Port** : 993.
->> - **Sicherheitstyp** : SSL/TLS.
+>> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **EUROPE (empfangen)**: imap.mail.ovh.net **oder** ssl0.ovh.net.
+>> - **AMERIKA/ASIEN-PACIFIK (empfangen)**: imap.mail.ovh.ca.
+>> - **Port**: 993.
+>> - **Sicherheitstyp**: SSL/TLS.
 >>
 > **POP-Konfiguration**
 >>
->> - **Benutzername** : Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort** : Geben Sie das Passwort der E-Mail-Adresse ein.
->> - **EUROPE (empfangen)** : pop.mail.ovh.net **oder** ssl0.ovh.net.
->> - **AMERIKA/ASIEN-PACIFIK (empfangen)** : pop.mail.ovh.ca.
->> - **Port** : 995.
->> - **Sicherheitstyp** : SSL/TLS.
+>> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **EUROPE (empfangen)**: pop.mail.ovh.net **oder** ssl0.ovh.net.
+>> - **AMERIKA/ASIEN-PACIFIK (empfangen)**: pop.mail.ovh.ca.
+>> - **Port**: 995.
+>> - **Sicherheitstyp**: SSL/TLS.
 
 #### Einstellungen zum Senden von SMTP <a name="smtp"></a>
 
-Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einstellungen :
+Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einstellungen:
 
 **SMTP-Konfiguration**
 
-- **Benutzername** : Geben Sie die **vollständige** E-Mail-Adresse ein.
-- **Passwort** : Geben Sie das Passwort der E-Mail-Adresse ein.
-- **EUROPE (senden)** : smtp.mail.ovh.net **oder** ssl0.ovh.net.
-- **AMERIKA/ASIEN-PACIFIK (senden)** : smtp.mail.ovh.ca.
-- **Port** : 465.
-- **Sicherheitstyp** : SSL/TLS.
+- **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+- **EUROPE (senden)**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
+- **AMERIKA/ASIEN-PACIFIK (senden)**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Sicherheitstyp**: SSL/TLS.
 
 ### POP oder IMAP, was ist der Unterschied? <a name="popimap"></a>
 
@@ -233,7 +233,7 @@ Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verst
 >
 > Diese Beschreibung ist eine Zusammenfassung der Standardfunktionen beider Protokolle. Sie können auch POP so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Unser Ziel ist es, die native Funktionsweise dieser beiden Protokolle zu beschreiben.
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 > [!primary]
 >

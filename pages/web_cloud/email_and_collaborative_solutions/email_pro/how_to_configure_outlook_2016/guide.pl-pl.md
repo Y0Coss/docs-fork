@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Konfiguracja konta e-mail w programie Outlook dla systemu Windows'
+title: 'Email Pro - Skonfigurowanie konta e-mail w klasycznym Outlooku dla Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w klasycznym programie Outlook na urządzeniu z systemem Windows'
 updated: 2025-12-31
 ---
@@ -32,15 +32,15 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail [E-mail Pro](/links/web/email-pro)
-- Posiadanie programu Microsoft Outlook lub późniejszego.
-- Dane do logowania do konta e-mail, które chcesz skonfigurować
+- Posiadanie konta e-mail [E-mail Pro](/links/web/email-pro).
+- Posiadanie [klasycznego programu Microsoft Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) lub późniejszego.
+- Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 
-Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie [z pomocy wyspecjalizowanego webmastera](/links/partner) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)".
 
 ///
 
@@ -48,25 +48,25 @@ Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonyw
 
 > [!warning]
 >
-> Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem [E-mail Pro - Dodawanie konta e-mail w nowym Outlooku dla Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+> Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem "[E-mail Pro - Konfiguracja konta E-Mail Pro w nowej aplikacji Outlook na Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
-> Aby zainstalować klasyczny Outlook na swoim komputerze z Windows, pobierz go ze strony Microsofta „[Instalowanie lub ponowne instalowanie klasycznego Outlooka na komputerze z systemem Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) ” i zainstaluj.
+> Aby zainstalować klasyczny Outlook na swoim komputerze z Windows, pobierz go ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego Outlooka na komputerze z systemem Windows](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" i zainstaluj.
 >
-> Po zakończeniu instalacji, aby odróżnić dwie wersje, gdy są zainstalowane, wpisz „Outlook” w pasku wyszukiwania systemu Windows. Możesz wtedy zauważyć różnicę jak poniżej.
+> Po zakończeniu instalacji, aby odróżnić dwie wersje, gdy są zainstalowane, wpisz "Outlook" w pasku wyszukiwania systemu Windows. Możesz wtedy zauważyć różnicę jak poniżej.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Dodaj konto
+### Dodaj konto <a name="add-account"></a>
 
 > [!primary]
 >
-> W naszym przykładzie używamy nazwy serwera: pro?.mail.ovh.net. Musisz zastąpić „?”, cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
+> W naszym przykładzie używamy nazwy serwera: pro?.mail.ovh.net. Musisz zastąpić "?", cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
 >
-> 1. Zaloguj się do [panelu klienta OVHcloud](/links/manager).
+> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
 > 1. Kliknij `Email Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w sekcji **Połączenie** na karcie `Informacje ogólne`{.action}.
+> 1. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
 
 - **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
 
@@ -87,20 +87,20 @@ Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając odpowi
 >>
 > **Krok 2**
 >>
->> Wprowadź dane logowania do swojego konta **(1)** :
+>> Wprowadź dane logowania do swojego konta **(1)**:
 >>
 >> Dane użytkownika <br>
->> **Twoje imię** : ustaw nazwę do wyświetlenia.<br>
->> **Adres e-mail** : wpisz pełny adres e-mail.<br>
+>> **Twoje imię**: ustaw nazwę do wyświetlenia.<br>
+>> **Adres e-mail**: wpisz pełny adres e-mail.<br>
 >>
 >> Dane serwera <br>
->> **Typ konta** : wybierz IMAP<br>
->> **Serwer poczty przychodzącej** : pro?.mail.ovh.net (znak **«?»** należy zastąpić numerem swojego serwera)<br>
->> **Serwer poczty wychodzącej (SMTP)** : pro?.mail.ovh.net (znak **«?»** należy zastąpić numerem swojego serwera)<br>
+>> **Typ konta**: wybierz IMAP.<br>
+>> **Serwer poczty przychodzącej**: pro?.mail.ovh.net (znak **«?»** należy zastąpić numerem swojego serwera).<br>
+>> **Serwer poczty wychodzącej (SMTP)**: pro?.mail.ovh.net (znak **«?»** należy zastąpić numerem swojego serwera).<br>
 >>
 >> Dane logowania <br>
->> **Nazwa użytkownika** : Wprowadź pełny adres e-mail.<br>
->> **Hasło** : Wprowadź hasło przypisane do adresu e-mail.<br>
+>> **Nazwa użytkownika**: Wprowadź pełny adres e-mail.<br>
+>> **Hasło**: Wprowadź hasło przypisane do adresu e-mail.<br>
 >>
 >> Kliknij `Dodatkowe ustawienia...`{.action} **(2)** i przejdź do następnego kroku
 >>
@@ -110,12 +110,12 @@ Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając odpowi
 >>
 >> Z zakładki `Serwer wychodzący`, zaznacz `Mój serwer wychodzący (SMTP) wymaga uwierzytelnienia`{.action} i pozostaw zaznaczone `Użyj tych samych ustawień co mój serwer poczty przychodzącej`{.action}.
 >>
->> Z zakładki `Zaawansowane opcje` :
+>> Z zakładki `Zaawansowane opcje`:
 >>
->> - **Serwer przychodzący (IMAP)** : 993
->> - **Użyj poniższego typu szyfrowania połączenia** : SSL/TLS
->> - **Serwer poczty wychodzącej (SMTP)** : 587
->> - **Użyj poniższego typu szyfrowania połączenia** : STARTTLS
+>> - **Serwer przychodzący (IMAP)**: 993
+>> - **Użyj poniższego typu szyfrowania połączenia**: SSL/TLS
+>> - **Serwer poczty wychodzącej (SMTP)**: 587
+>> - **Użyj poniższego typu szyfrowania połączenia**: STARTTLS
 >>
 >> Kliknij `OK`{.action}, aby potwierdzić dane. Kliknij `Dalej`{.action}, aby rozpocząć konfigurację konta.
 >>
@@ -132,7 +132,7 @@ Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając odpowi
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Webmail OVHcloud jest dostępny [tutaj](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Korzystanie z Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -166,19 +166,19 @@ Wybierz odpowiednią zakładkę dla swojej konfiguracji:
 > [!tabs]
 > **Konfiguracja IMAP**
 >>
->> - **Nazwa użytkownika** : wpisz pełny adres e-mail.
->> - **Hasło** : wpisz hasło do adresu e-mail.
->> - **Serwer przychodzący** : pro?.mail.ovh.net (upewnij się, że zastąpiłeś „?”, numerem swojego serwera).
->> - **Port** : 993.
->> - **Typ zabezpieczeń** : SSL/TLS.
+>> - **Nazwa użytkownika**: wpisz pełny adres e-mail.
+>> - **Hasło**: wpisz hasło do adresu e-mail.
+>> - **Serwer przychodzący**: pro?.mail.ovh.net (upewnij się, że zastąpiłeś "?", numerem swojego serwera).
+>> - **Port**: 993.
+>> - **Typ zabezpieczeń**: SSL/TLS.
 >>
 > **Konfiguracja POP**
 >>
->> - **Nazwa użytkownika** : wpisz pełny adres e-mail.
->> - **Hasło** : wpisz hasło do adresu e-mail.
->> - **Serwer przychodzący** : pro?.mail.ovh.net (upewnij się, że zastąpiłeś „?”, numerem swojego serwera).
->> - **Port** : 995.
->> - **Typ zabezpieczeń** : SSL/TLS.
+>> - **Nazwa użytkownika**: wpisz pełny adres e-mail.
+>> - **Hasło**: wpisz hasło do adresu e-mail.
+>> - **Serwer przychodzący**: pro?.mail.ovh.net (upewnij się, że zastąpiłeś "?", numerem swojego serwera).
+>> - **Port**: 995.
+>> - **Typ zabezpieczeń**: SSL/TLS.
 
 #### Ustawienia wysyłania SMTP <a name="smtp"></a>
 
@@ -186,19 +186,19 @@ W przypadku wysyłania wiadomości e-mail, poniżej znajdziesz ustawienia **SMTP
 
 **Konfiguracja SMTP**
 
-- **Nazwa użytkownika** : wpisz pełny adres e-mail.
-- **Hasło** : wpisz hasło do adresu e-mail.
-- **Serwer wychodzący** : pro?.mail.ovh.net (upewnij się, że zastąpiłeś „?”, numerem swojego serwera).
-- **Port** : 587.
-- **Typ zabezpieczeń** : STARTTLS.
+- **Nazwa użytkownika**: wpisz pełny adres e-mail.
+- **Hasło**: wpisz hasło do adresu e-mail.
+- **Serwer wychodzący**: pro?.mail.ovh.net (upewnij się, że zastąpiłeś "?", numerem swojego serwera).
+- **Port**: 587.
+- **Typ zabezpieczeń**: STARTTLS.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
 > Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem macOS, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/dodawanie-konta-e-mail-do-programu-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
-[Konfiguracja konta e-mail w Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
+[Konfiguracja konta e-mail w Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
 [Konfiguracja konta Exchange w Outlook na systemie Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 

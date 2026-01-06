@@ -43,13 +43,13 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 
-If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 
 ///
 
 > [!primary]
 >
-> Are you using Outlook for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook for Mac.](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+> Are you using Outlook for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook for Mac.](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 
 ## Instructions
 
@@ -93,7 +93,7 @@ Once you have configured your email address, you can start using it! You can now
 
 Your Exchange email address and all of its collaborative features are also available via the [OWA interface](/links/web/email). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### Modify existing settings
+### Modifying existing settings
 
 > [!warning]
 >
@@ -112,13 +112,13 @@ If your email account is already set up and you need to access the account setti
 
 ![Outlook](images/config-outlook-exchange05.png){.thumbnail .h-500}
 
-Once the Exchange account is deleted, follow the « [Add the account](#add-account) » section of this guide to reconfigure your email account.
+Once the Exchange account is deleted, follow the "[Add the account](#add-account)" section of this guide to reconfigure your email account.
 
 ### Retrieving a backup of your email address
 
 If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporting-from-windows).
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 > [!primary]
 >

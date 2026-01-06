@@ -28,7 +28,7 @@ details[open]>summary::before {
 
 Gli indirizzi e-mail dell'offerta [E-mail Pro](/links/web/email-pro) possono essere configurati su un client di posta compatibile. Ciò ti consente di inviare e ricevere messaggi dall'applicazione che preferisci.
 
-Il **nuovo Outlook** sostituisce, dal 1° gennaio 2025, l'applicazione **Posta** su Windows. Per ulteriori informazioni, consulta la pagina ufficiale di Microsoft "[Outlook per Windows: Il futuro di Posta, Calendario e Persone in Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+Il **nuovo Outlook** sostituisce, dal 1° gennaio 2025, l'applicazione **Posta** su Windows. Per ulteriori informazioni, consulta la pagina ufficiale di Microsoft "[Outlook per Windows: Il futuro di Posta, Calendario e Persone in Windows 11](https://support.microsoft.com/it-it/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
 **Scopri come configurare il tuo indirizzo E-mail Pro sul nuovo Outlook per Windows.**
 
@@ -50,13 +50,13 @@ Ti forniamo questa guida per aiutarti nelle operazioni più comuni. Tuttavia, ti
 
 > [!warning]
 >
-> Questa documentazione si applica esclusivamente al **nuovo Outlook** e non a « [Outlook classico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponibile nella suite Microsoft 365 o precedentemente installato sul tuo computer.
+> Questa documentazione si applica esclusivamente al **nuovo Outlook** e non a "[Outlook classico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponibile nella suite Microsoft 365 o precedentemente installato sul tuo computer.
 >
-> Per distinguere le due versioni di Outlook quando sono installate, digita « Outlook » nella barra di ricerca di Windows. Potrai quindi notare la differenza come mostrato di seguito. Il nuovo Outlook non ha un'indicazione speciale.
+> Per distinguere le due versioni di Outlook quando sono installate, digita "Outlook" nella barra di ricerca di Windows. Potrai quindi notare la differenza come mostrato di seguito. Il nuovo Outlook non ha un'indicazione speciale.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Per configurare il tuo indirizzo email Pro su Outlook classico, consulta la nostra guida « [E-mail Pro - Configurare un account email su Outlook classico per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016) ».
+> Per configurare il tuo indirizzo email Pro su Outlook classico, consulta la nostra guida "[E-mail Pro - Configurare un account email su Outlook classico per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
 
 ### Aggiungere l'account <a name="add-account"></a>
 

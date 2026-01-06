@@ -33,14 +33,14 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 ## Voraussetzungen
 
 - Sie verfügen über einen [E-Mail Pro Account](/links/web/email-pro).
-- Die Anwendung [Outlook Classic](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5) auf Windows besitzen.
+- Die Anwendung [klassisches Outlook](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5) auf Windows besitzen.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 /// details | Informationen zur Verwaltung und Konfiguration der OVHcloud-Dienste
 
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 
-Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 ///
 
@@ -48,9 +48,9 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 > [!warning]
 >
-> Diese Dokumentation gilt ausschließlich für **Outlook Classic**, der in der Microsoft 365-Suite erhältlich ist. Wenn Sie die neue Outlook-Version verwenden, konsultieren Sie bitte unseren Leitfaden [E-Mail Pro - Ein E-Mail-Konto in der neuen Outlook-Version für Windows hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+> Diese Dokumentation gilt ausschließlich für **Klassisches Outlook**, der in der Microsoft 365-Suite erhältlich ist. Wenn Sie die neue Outlook-Version verwenden, konsultieren Sie bitte unseren Leitfaden „[Email Pro - Konfigurieren Ihres Email Pro Accounts im neuen Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)“.
 >
-> Um Outlook Classic auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite „[Outlook Classic auf einem Windows-PC installieren oder neu installieren](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5)“ herunter und installieren Sie es.
+> Um Klassisches Outlook auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite „[Installieren oder Erneutes Installieren des klassischen Outlook auf einem Windows-PC](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5)“ herunter und installieren Sie es.
 >
 > Nach Abschluss der Installation können Sie die beiden Versionen unterscheiden, wenn sie installiert sind, indem Sie „Outlook“ in der Windows-Suchleiste eingeben. Sie können dann den Unterschied wie unten sehen.
 >
@@ -87,20 +87,20 @@ Um Ihre E-Mail-Adresse einzurichten, folgen Sie den Schritten, indem Sie auf die
 >>
 > **Schritt 2**
 >>
->> Geben Sie die Anmeldeinformationen für Ihr Konto ein **(1)** :
+>> Geben Sie die Anmeldeinformationen für Ihr Konto ein **(1)**:
 >>
 >> Benutzerinformationen <br>
->> **Ihr Name** : Legen Sie einen Anzeigename fest.<br>
->> **E-Mail-Adresse** : Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
+>> **Ihr Name**: Legen Sie einen Anzeigename fest.<br>
+>> **E-Mail-Adresse**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
 >>
 >> Serverinformationen <br>
->> **Kontotyp** : Wählen Sie IMAP aus<br>
->> **Eingehender E-Mail-Server** : pro?.mail.ovh.net (ersetzen Sie das **„?“** durch die Nummer Ihres Servers)<br>
->> **Ausgehender E-Mail-Server (SMTP)** : pro?.mail.ovh.net (ersetzen Sie das **„?“** durch die Nummer Ihres Servers)<br>
+>> **Kontotyp**: Wählen Sie IMAP aus.<br>
+>> **Eingehender E-Mail-Server**: pro?.mail.ovh.net (ersetzen Sie das **„?“** durch die Nummer Ihres Servers).<br>
+>> **Ausgehender E-Mail-Server (SMTP)**: pro?.mail.ovh.net (ersetzen Sie das **„?“** durch die Nummer Ihres Servers).<br>
 >>
 >> Anmeldeinformationen <br>
->> **Benutzername** : Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
->> **Passwort** : Geben Sie das Passwort ein, das mit Ihrer E-Mail-Adresse verknüpft ist.<br>
+>> **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
+>> **Passwort**: Geben Sie das Passwort ein, das mit Ihrer E-Mail-Adresse verknüpft ist.<br>
 >>
 >> Klicken Sie auf `Weitere Einstellungen...`{.action} **(2)** und wechseln Sie zum nächsten Schritt.
 >>
@@ -110,12 +110,12 @@ Um Ihre E-Mail-Adresse einzurichten, folgen Sie den Schritten, indem Sie auf die
 >>
 >> Wählen Sie im Reiter `Ausgehender Server` die Option `Mein ausgehender Server (SMTP) erfordert eine Authentifizierung`{.action} aus und lassen Sie `Die gleichen Einstellungen wie bei meinem eingehenden E-Mail-Server verwenden`{.action} ausgewählt.
 >>
->> Im Reiter `Erweiterte Optionen` :
+>> Im Reiter `Erweiterte Optionen`:
 >>
->> - **Eingehender Server (IMAP)** : 993
->> - **Verwenden Sie den folgenden verschlüsselten Verbindungstyp** : SSL/TLS
->> - **Ausgehender E-Mail-Server (SMTP)** : 587
->> - **Verwenden Sie den folgenden verschlüsselten Verbindungstyp** : STARTTLS
+>> - **Eingehender Server (IMAP)**: 993
+>> - **Verwenden Sie den folgenden verschlüsselten Verbindungstyp**: SSL/TLS
+>> - **Ausgehender E-Mail-Server (SMTP)**: 587
+>> - **Verwenden Sie den folgenden verschlüsselten Verbindungstyp**: STARTTLS
 >>
 >> Klicken Sie auf `OK`{.action}, um die Informationen zu bestätigen. Klicken Sie auf `Weiter`{.action}, um die Einrichtung des Kontos zu starten.
 >>
@@ -136,7 +136,7 @@ OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser au
 
 ### Backup Ihrer E-Mail-Adresse
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#uber-windows-exportieren)".
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Über Windows exportieren** in unserer Anleitung „[E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#uber-windows-exportieren)“.
 
 ### Bestehende Einstellungen ändern
 
@@ -161,38 +161,38 @@ Folgen Sie den Anweisungen zum Einrichten Ihres Accounts ab **Schritt 2** im Ber
 
 Beim Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können jedoch auch **POP** auswählen.
 
-Wählen Sie das Registerblatt entsprechend Ihrer Konfiguration aus :
+Wählen Sie das Registerblatt entsprechend Ihrer Konfiguration aus:
 
 > [!tabs]
 > **IMAP-Konfiguration**
 >>
->> - **Benutzername** : Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort** : Geben Sie das Passwort der E-Mail-Adresse ein.
->> - **Eingehender Server** : pro?.mail.ovh.net (ersetzen Sie das „?“ durch die Nummer Ihres Servers).
->> - **Port** : 993.
->> - **Sicherheitstyp** : SSL/TLS.
+>> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **Eingehender Server**: pro?.mail.ovh.net (ersetzen Sie das „?“ durch die Nummer Ihres Servers).
+>> - **Port**: 993.
+>> - **Sicherheitstyp**: SSL/TLS.
 >>
 > **POP-Konfiguration**
 >>
->> - **Benutzername** : Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort** : Geben Sie das Passwort der E-Mail-Adresse ein.
->> - **Eingehender Server** : pro?.mail.ovh.net (ersetzen Sie das „?“ durch die Nummer Ihres Servers).
->> - **Port** : 995.
->> - **Sicherheitstyp** : SSL/TLS.
+>> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **Eingehender Server**: pro?.mail.ovh.net (ersetzen Sie das „?“ durch die Nummer Ihres Servers).
+>> - **Port**: 995.
+>> - **Sicherheitstyp**: SSL/TLS.
 
 #### Einstellungen zum Senden von SMTP <a name="smtp"></a>
 
-Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einstellungen :
+Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einstellungen:
 
 **SMTP-Konfiguration**
 
-- **Benutzername** : Geben Sie die **vollständige** E-Mail-Adresse ein.
-- **Passwort** : Geben Sie das Passwort der E-Mail-Adresse ein.
-- **Ausgehender Server** : pro?.mail.ovh.net (ersetzen Sie das „?“ durch die Nummer Ihres Servers).
-- **Port** : 587.
-- **Sicherheitstyp** : STARTTLS.ama
+- **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+- **Ausgehender Server**: pro?.mail.ovh.net (ersetzen Sie das „?“ durch die Nummer Ihres Servers).
+- **Port**: 587.
+- **Sicherheitstyp**: STARTTLS.ama
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 > [!primary]
 >

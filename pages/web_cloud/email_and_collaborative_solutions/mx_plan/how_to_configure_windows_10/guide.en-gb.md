@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 The email addresses from the **MX Plan** and [Zimbra Starter](/links/web/emails-zimbra) offers can be configured on a compatible email client. This allows you to send and receive messages from your preferred application.
 
-The **New Outlook** replaces the **Mail** application on Windows starting from January 1, 2025. For more information, visit Microsoft's official pag " [Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) "
+The **New Outlook** replaces the **Mail** application on Windows starting from January 1, 2025. For more information, visit Microsoft's official page: [Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-gb/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199).
 
 **Learn how to configure your MX Plan email account on the New Outlook for Windows.**
 
@@ -34,7 +34,7 @@ The **New Outlook** replaces the **Mail** application on Windows starting from J
 - You have an OVHcloud email solution such as:
     - **MX Plan** offered with our [web hosting services](/links/web/hosting) or included in a [free 100M hosting](/links/web/domains-free-hosting).
     - [Zimbra](/links/web/emails-zimbra) Starter.
-- You have the [new version of Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installed on your Windows system.
+- You have the [new version of Outlook](https://support.microsoft.com/en-gb/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installed on your Windows system.
 - You have the credentials for the email account you wish to configure.
 
 /// details | Information related to the management and configuration of OVHcloud services
@@ -49,13 +49,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!warning]
 >
-> This documentation applies only to the **new Outlook** and not to the " [classic Outlook](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) " available in the Microsoft 365 suite or previously installed on your computer.
+> This documentation applies only to the **new Outlook** and not to the "[classic Outlook](https://support.microsoft.com/en-gb/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" available in the Microsoft 365 suite or previously installed on your computer.
 >
 > To distinguish between the two Outlook versions when both are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below. The new Outlook has no special mention.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> To configure your MX Plan or Zimbra Starter email address on classic Outlook, refer to our guide " [MX Plan / Zimbra Starter - Configure your email address on classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ".
+> To configure your MX Plan or Zimbra Starter email address on classic Outlook, refer to our guide "[MX Plan / Zimbra Starter - Configure your email address on classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)".
 
 ### Add the account <a name="add-account"></a>
 
@@ -180,7 +180,7 @@ For sending emails, use the following **SMTP** parameters:
 
 > [!primary]
 >
-> For more information on configuring an email address from the New Outlook messaging client on Windows, please refer to [Microsoft's help center](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> For more information on configuring an email address from the New Outlook messaging client on Windows, please refer to [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Getting Started with MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

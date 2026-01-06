@@ -1,6 +1,6 @@
 ---
 title: 'Email Pro - Configuring an email account in Outlook Classic for Windows'
-excerpt: 'Find out how to configure your Email Pro account on Outlook Classic for Windows''
+excerpt: 'Find out how to configure your Email Pro account on Outlook Classic for Windows'
 updated: 2025-12-31
 ---
 
@@ -28,19 +28,19 @@ details[open]>summary::before {
 
 You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
-
+**Find out how to configure your Email Pro account on Outlook Classic for Windows.**
 
 ## Requirements
 
-- an [Email Pro](/links/web/email-pro) account
+- An [Email Pro](/links/web/email-pro) account.
 - [Outlook classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) installed on your Windows.
-- login credentials for the email account to be configured
+- Login credentials for the email account to be configured.
 
 /// details | Information related to the management and configuration of OVHcloud services
 
 This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 
-If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 
 ///
 
@@ -48,19 +48,19 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!warning]
 >
-> This documentation applies only to **Outlook classic** available in the Microsoft 365 suite. If you are using the new Outlook, please refer to our guide [E-mail Pro - Adding an email account to the new Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+> This documentation applies only to **Outlook classic** available in the Microsoft 365 suite. If you are using the new Outlook, please refer to our guide "[Email Pro - Configure your Email Pro account on the New Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
-> To install Outlook classic on your Windows computer, download it from the Microsoft page « [Install or reinstall classic Outlook on a Windows PC](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) » and install it.
+> To install Outlook classic on your Windows computer, download it from the Microsoft page "[Install or reinstall classic Outlook on a Windows PC](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5)" and install it.
 >
-> Once the installation is complete, to distinguish the two versions when they are installed, type « Outlook » in the Windows search bar. You will then be able to see the difference as shown below.
+> Once the installation is complete, to distinguish the two versions when they are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Adding the account
+### Adding the account <a name="add-account"></a>
 
 > [!primary]
 >
-> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the « ? » with the number corresponding to your E-mail Pro service server.
+> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your E-mail Pro service server.
 >
 > 1. Log in to your [OVHcloud Control Panel](/links/manager).
 > 1. Go to the `Web Cloud`{.action} section.
@@ -68,7 +68,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 > 1. Select the relevant platform.
 > 1. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
 
-- **When you start the application for the first time**: A setup wizard will appear and prompt you to enter your email address.
+- **When you start the application for the first time**: a setup wizard will appear and prompt you to enter your email address.
 
 - **If you have already added an account**: Click `File`{.action} in the menu bar at the top of your screen, then `Add account`{.action}.
 
@@ -87,22 +87,22 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >>
 > **Step 2**
 >>
->> Enter your account connection details **(1)** :
+>> Enter your account connection details **(1)**:
 >>
 >> User information <br>
->> **Your name** : set a display name.<br>
->> **Email address** : enter your full email address.<br>
+>> **Your name**: set a display name.<br>
+>> **Email address**: enter your full email address.<br>
 >>
 >> Server information <br>
->> **Account type** : select IMAP<br>
->> **Incoming mail server** : pro?.mail.ovh.net (the «?» must be replaced by your server number)<br>
->> **Outgoing mail server (SMTP)** : pro?.mail.ovh.net (the «?» must be replaced by your server number)<br>
+>> **Account type**: select IMAP.<br>
+>> **Incoming mail server**: pro?.mail.ovh.net (the "?" must be replaced by your server number).<br>
+>> **Outgoing mail server (SMTP)**: pro?.mail.ovh.net (the "?" must be replaced by your server number).<br>
 >>
 >> Logon information <br>
->> **User Name** : Enter your full email address.<br>
->> **Password** : Enter the password associated with your email address.<br>
+>> **User Name**: Enter your full email address.<br>
+>> **Password**: Enter the password associated with your email address.<br>
 >>
->> Click on `More settings...`{.action} **(2)** and go to the next step
+>> Click on `More settings...`{.action} **(2)** and go to the next step.
 >>
 >> ![Outlook](images/config-outlook-emailpro03.png){.thumbnail .h-500}
 >>
@@ -110,12 +110,12 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >>
 >> From the `Outgoing Server` tab, check `My outgoing server (SMTP) requires authentication`{.action} and leave `Use same settings as my incoming mail server`{.action} selected.
 >>
->> From the `Advanced` tab :
+>> From the `Advanced` tab:
 >>
->> - **Incoming server (IMAP)** : 993
->> - **Use the following type of encrypted connection** : SSL/TLS
->> - **Outgoing server (SMTP)** : 587
->> - **Use the following type of encrypted connection** : STARTTLS
+>> - **Incoming server (IMAP)**: 993
+>> - **Use the following type of encrypted connection**: SSL/TLS
+>> - **Outgoing server (SMTP)**: 587
+>> - **Use the following type of encrypted connection**: STARTTLS
 >>
 >> Click on `OK`{.action} to validate the information. Click on `Next`{.action} to start the account configuration.
 >>
@@ -132,7 +132,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also has a web application you can use to access your email address from your browser. OVHcloud Webmail is available [here](/links/web/email). You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieving a backup of your email address
 
@@ -166,19 +166,19 @@ Select the tab corresponding to your configuration type:
 > [!tabs]
 > **IMAP configuration**
 >>
->> - **Username** : enter the **full** email address.
->> - **Password** : enter the email address password.
->> - **Incoming server** : pro?.mail.ovh.net (make sure to replace the «?» with your server number).
->> - **Port** : 993.
->> - **Security type** : SSL/TLS.
+>> - **Username**: enter the **full** email address.
+>> - **Password**: enter the email address password.
+>> - **Incoming server**: pro?.mail.ovh.net (make sure to replace the "?" with your server number).
+>> - **Port**: 993.
+>> - **Security type**: SSL/TLS.
 >>
 > **POP configuration**
 >>
->> - **Username** : enter the **full** email address.
->> - **Password** : enter the email address password.
->> - **Incoming server** : pro?.mail.ovh.net (make sure to replace the «?» with your server number).
->> - **Port** : 995.
->> - **Security type** : SSL/TLS.
+>> - **Username**: enter the **full** email address.
+>> - **Password**: enter the email address password.
+>> - **Incoming server**: pro?.mail.ovh.net (make sure to replace the "?" with your server number).
+>> - **Port**: 995.
+>> - **Security type**: SSL/TLS.
 
 #### SMTP send settings <a name="smtp"></a>
 
@@ -186,17 +186,17 @@ For sending emails, find below the **SMTP** settings to use:
 
 **SMTP configuration**
 
-- **Username** : enter the **full** email address.
-- **Password** : enter the email address password.
-- **Outgoing server** : pro?.mail.ovh.net (make sure to replace the «?» with your server number).
-- **Port** : 587.
-- **Security type** : STARTTLS.
+- **Username**: enter the **full** email address.
+- **Password**: enter the email address password.
+- **Outgoing server**: pro?.mail.ovh.net (make sure to replace the "?" with your server number).
+- **Port**: 587.
+- **Security type**: STARTTLS.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 > [!primary]
 >
-> For more information about configuring an email address from the Outlook app on macOS, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+> For more information about configuring an email address from the Outlook app on macOS, see [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configuring your MX Plan address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
