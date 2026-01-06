@@ -48,8 +48,6 @@ Validez les informations saisies. Managed vSphere démarre automatiquement la co
 
 Managed vSphere exécute automatiquement les tâches nécessaires pour configurer la connectivité multi-site.
 
-![zerto automated processes](images/zerto_automated_processes.png){.thumbnail}
-
 Attendez que le statut indique `Configuration déployée`.
 
 ![zerto manager status finished](images/zerto_status_finished.png){.thumbnail}

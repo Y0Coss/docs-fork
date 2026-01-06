@@ -48,8 +48,6 @@ Submit your information. The Managed vSphere will automatically start the VPN se
 
 Managed vSphere will run automated tasks to configure multi-site connectivity.
 
-![zerto automated processes](images/zerto_automated_processes.png){.thumbnail}
-
 Wait until the status shows `Configuration deployed`.
 
 ![zerto manager status finished](images/zerto_status_finished.png){.thumbnail}
