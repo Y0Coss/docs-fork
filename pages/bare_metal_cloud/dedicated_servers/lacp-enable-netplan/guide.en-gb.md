@@ -49,7 +49,7 @@ Switch to the tab `Network Interfaces`{.action} and take note of the MAC address
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Please note that the **main public** interface is the one answering to DHCP requests.
+> Please note that the **main public** interface is the one answering DHCP requests.
 >
 > Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
 >

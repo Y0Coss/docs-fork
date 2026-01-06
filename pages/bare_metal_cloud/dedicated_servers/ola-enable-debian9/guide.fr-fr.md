@@ -8,7 +8,7 @@ updated: 2024-11-26
 
 La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible.
 
-**Découvrez comment regrouper vos NICs (Network Interface Controller) pour les utiliser avec le service OLA sur Debian (versions de 9 à 11).**  
+**Découvrez comment regrouper vos NIC (Network Interface Controller) pour les utiliser avec le service OLA sur Debian (versions de 9 à 11).**
 
 ## Prérequis
 
@@ -26,14 +26,14 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 
 > [!primary]
 >
-> Ce guide fournit des instructions pour configurer l'agrégation d'interfaces réseau spécifiquement avec `ifupdown`.
+> Ce guide fournit des instructions pour configurer l'agrégation d'interfaces réseau spécifiquement avec `ifupdown`. Il est aussi applicable au mode rescue.
 >
 > Si la configuration réseau de votre système utilise plutôt `netplan`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## En pratique
 
-Étant donné que nous avons une configuration privée-privée pour nos NICs sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
+Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
 <br>Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) et allez à l'onglet `Bare Metal Cloud`{.action}. Sélectionnez votre serveur dans la liste sous la rubrique `Serveurs dédiés`{.action}.
 
 Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
@@ -42,7 +42,7 @@ Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un a
 
 Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
 
-Par défaut, en utilisant un modèle d’OVHcloud, les NICs seront nommés soit *ethX*, soit *enoX*. Si vous n’utilisez pas un modèle OVHcloud, vous pouvez retrouver les noms de vos interfaces en utilisant la commande suivante :
+Par défaut, en utilisant un modèle d’OVHcloud, les NIC seront nommés soit *ethX*, soit *enoX*. Si vous n’utilisez pas un modèle OVHcloud, vous pouvez retrouver les noms de vos interfaces en utilisant la commande suivante :
 
 ```bash
 ip a
@@ -50,10 +50,10 @@ ip a
 
 > [!primary]
 >
-> Cette commande retournera plusieurs « interfaces ». Si vous avez du mal à identifier vos NICs physiques, la première interface aura toujours l’adresse IP publique du serveur assignée par défaut.
+> Cette commande retournera plusieurs « interfaces ». Si vous avez du mal à identifier vos NIC physiques, la première interface aura toujours l’adresse IP publique du serveur assignée par défaut.
 >
 
-Une fois les noms de vos deux NICs identifiés, il faut à présent créer le NIC bonding ou agrégation de lien sur le système d’exploitation. Pour ce faire, créez le fichier d’interfaces sur l'éditeur de texte de votre choix à l’aide de la commande suivante :
+Une fois les noms de vos deux NIC identifiés, il faut à présent créer le NIC bonding ou agrégation de lien sur le système d’exploitation. Pour ce faire, créez le fichier d’interfaces sur l'éditeur de texte de votre choix à l’aide de la commande suivante :
 
 ```bash
 vi /etc/network/interfaces
@@ -74,8 +74,8 @@ iface bond0 inet static
 ```
 
 > [!primary]
-> 
-> Pour le paramètre `hwaddress`, nous recommandons d'utiliser la plus petite des deux adresses MAC de vos NICs, car il s'agit également de l'adresse de secours (fallback) LACP.
+>
+> Pour le paramètre `hwaddress`, nous recommandons d'utiliser la plus petite des deux adresses MAC de vos NIC, car il elle appartient à l'interface de secours (fallback) LACP.
 >
 
 > [!primary]

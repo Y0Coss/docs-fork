@@ -26,9 +26,9 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 > [!primary]
 >
-> This guide provides instructions for configuring network interface bonding specifically using `ifupdown`. 
+> This guide provides instructions for configuring network interface bonding specifically using `ifupdown`. It also applies to the rescue system.
 >
-> If your system's network configuration instead uses `netplan`, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+> If your system's network configuration uses `netplan` instead, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## Instructions
@@ -75,8 +75,8 @@ iface bond0 inet static
 ```
 
 > [!primary]
-> 
-> For the `hwaddress` parameter, we recommend using the smaller of the two MAC addresses of your NICs, as it is also the LACP fallback address.
+>
+> For the `hwaddress` parameter, we recommend using the smaller of the two MAC addresses of your NICs, as it belongs to the LACP fallback interface.
 >
 
 > [!primary]
