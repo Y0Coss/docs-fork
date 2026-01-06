@@ -10,7 +10,7 @@ The purpose of this guide is to show you how to change a block storage volume ty
 
 ## Requirements
 
-- [Access to the Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Access the [OVHcloud Control Panel](/links/manager) or [access to the Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - A [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
 
 ## Instructions
@@ -25,51 +25,64 @@ This modification can be made via Horizon or the Openstack CLI.
 > If the block storage volume is attached to an Instance, you must first detach it before proceeding. For more information, consult [this section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume) of the corresponding guide.
 >
 
-### From the Horizon Interface
-
-Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
-
-![Region selection](images/region2021.png){.thumbnail}
-
-Next, click on the `Volumes`{.action} menu on the left side and click on `Volumes`{.action}.
-Click on the drop-down arrow next to `Edit Volume`{.action} and select `Change Volume Type`{.action}.
-
-![Option selection](images/selectoption.png){.thumbnail}
-
-In the pop-up window, click on the drop-down menu underneath `Type` and select `high-speed-gen-2`{.action}. Next, click on the drop-down arrow underneath `Migration Policy`, and select `On Demand`{.action}.
-
-Once done, click on `Change Volume Type`{.action} to confirm the change.
-
-![Option selection](images/changevolume.png){.thumbnail}
-
-### From the OpenStack CLI
-
-Make sure to consult the following guide before proceeding:
-
-- [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
-
-First, list the type of volumes available in your region with the following command:
-
-```bash
-#~$ openstack image list
-+--------------------------------------+-----------------------------------------------+----------+
-| ID                                   | Name                                          | Is Public |
-+--------------------------------------+-----------------------------------------------+----------+
-| 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
-| 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
-| 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
-----------------------------------------------------------------------------------------------------
-```
-
-> [!warning]
-> Please note that if the volume type "high-speed-gen2" does not appear in the list, this means that it is not available in this region.
->
-
-Next, switch volume types with the following command:
-
-```bash
-$ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
-```
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> Log in to your [OVHcloud Control Panel](/links/manager) and access the Public Cloud universe.
+>>
+>> Locate the relevant volume in the list, then click the `...`{.action} button on the right. Select `Change the volume type`{.action}.
+>>
+>> A new window opens, displaying the available volume types. Select the desired type, then confirm by clicking `Edit`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > Changing the volume type (retyping) may take a few minutes.
+>> >
+>>
+> Via the Horizon Interface
+>> Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
+>>
+>> ![Region selection](images/region2021.png){.thumbnail}
+>>
+>> Next, click on the `Volumes`{.action} menu on the left side and click on `Volumes`{.action}.
+>> Click on the drop-down arrow next to `Edit Volume`{.action} and select `Change Volume Type`{.action}.
+>>
+>> ![Option selection](images/selectoption.png){.thumbnail}
+>>
+>> In the pop-up window, click on the drop-down menu underneath `Type` and select `high-speed-gen-2`{.action}. Next, click on the drop-down arrow underneath `Migration Policy`, and select `On Demand`{.action}.
+>>
+>> Once done, click on `Change Volume Type`{.action} to confirm the change.
+>>
+>> ![Option selection](images/changevolume.png){.thumbnail}
+>>
+> Via the OpenStack CLI
+>>
+>> Make sure to consult the following guide before proceeding:
+>>
+>> - [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+>>
+>> First, list the type of volumes available in your region with the following command:
+>>
+>> ```bash
+>> #~$ openstack image list
+>> +--------------------------------------+-----------------------------------------------+----------+
+>> | ID                                   | Name                                          | Is Public |
+>> +--------------------------------------+-----------------------------------------------+----------+
+>> | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
+>> | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
+>> | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
+>> ----------------------------------------------------------------------------------------------------
+>> ```
+>>
+>> > [!warning]
+>> > Please note that if the volume type "high-speed-gen2" does not appear in the list, this means that it is not available in this region.
+>> >
+>>
+>> Next, switch volume types with the following command:
+>>
+>> ```bash
+>> $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
+>> ```
+>>
 
 ## Go further
 

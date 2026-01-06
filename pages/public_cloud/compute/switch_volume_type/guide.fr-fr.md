@@ -10,7 +10,7 @@ L'objectif de ce guide est de vous montrer comment changer un type de volume Blo
 
 ## Prérequis
 
-- [Accéder à l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Accéder à l'[espace client OVHcloud](/links/manager) ou [accéder à l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet [Public Cloud](/links/public-cloud/public-cloud)
 
 ## En pratique
@@ -25,52 +25,65 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 > Si le volume est attaché à une Instance, vous devez d'abord le détacher avant de continuer. Pour plus d'informations, consultez [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detacher-un-volume) du guide correspondant.
 >
 
-### Depuis l'interface Horizon
-
-Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
-
-![Sélection de région](images/region2021.png){.thumbnail}
-
-Cliquez sur le menu `Volumes`{.action} à gauche puis sur `Volumes`{.action}.
-
-Cliquez sur la flèche déroulante à côté de `Edit Volume`{.action} et sélectionnez `Change Volume Type`{.action}.
-
-![Choix de l'option](images/selectoption.png){.thumbnail}
-
-Dans la fenêtre qui s'affiche, cliquez sur le menu déroulant sous `Type` et sélectionnez `high-speed-gen-2`{.action}. Cliquez ensuite sur la flèche déroulante sous `Migration Policy` et sélectionnez `On Demand`{.action}.
-
-Une fois ces actions effectuées, cliquez sur `Change Volume Type`{.action} pour valider le changement.
-
-![Choix de l'option](images/changevolume.png){.thumbnail}
-
-### Depuis la CLI OpenStack
-
-Avant de commencer, consultez le guide suivant :
-
-- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
-
-Tout d'abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
-
-```bash
-#~$ openstack image list
-+--------------------------------------+-----------------------------------------------+----------+
-| ID                                   | Name                                          | Is Public |
-+--------------------------------------+-----------------------------------------------+----------+
-| 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
-| 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
-| 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
-----------------------------------------------------------------------------------------------------
-```
-
-> [!warning]
-> Veuillez noter que si le type de volume « high-speed-gen2 » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
->
-
-Modifiez ensuite le type de volume avec la commande suivante :
-
-```bash
-$ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
-```
+> [!tabs]
+> Depuis l'espace client OVHcloud
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager) puis accédez à l’univers Public Cloud.
+>>
+>> Repérez le volume concerné dans la liste, puis cliquez sur le bouton `...`{.action} situé à droite de celui-ci. Choisissez ensuite `Modifier le type du volume`{.action}.
+>>
+>> Une fenêtre s’ouvre et vous permet de consulter les différents types de volumes disponibles. Sélectionnez le type souhaité, puis confirmez votre choix en cliquant sur `Modifier`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > La mise à jour du type de volume (retyping) peut prendre quelques minutes.
+>> >
+>>
+> Depuis l'interface Horizon
+>> Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
+>>
+>> ![Sélection de région](images/region2021.png){.thumbnail}
+>>
+>> Cliquez sur le menu `Volumes`{.action} à gauche puis sur `Volumes`{.action}.
+>>
+>> Cliquez sur la flèche déroulante à côté de `Edit Volume`{.action} et sélectionnez `Change Volume Type`{.action}.
+>>
+>> ![Choix de l'option](images/selectoption.png){.thumbnail}
+>>
+>> Dans la fenêtre qui s'affiche, cliquez sur le menu déroulant sous `Type` et sélectionnez `high-speed-gen-2`{.action}. Cliquez ensuite sur la flèche déroulante sous `Migration Policy` et sélectionnez `On Demand`{.action}.
+>>
+>> Une fois ces actions effectuées, cliquez sur `Change Volume Type`{.action} pour valider le changement.
+>>
+>> ![Choix de l'option](images/changevolume.png){.thumbnail}
+>>
+> Depuis la CLI OpenStack
+>>
+>> Avant de commencer, consultez le guide suivant :
+>>
+>> - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+>>
+>> Tout d'abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
+>>
+>> ```bash
+>> #~$ openstack image list
+>> +--------------------------------------+-----------------------------------------------+----------+
+>> | ID                                   | Name                                          | Is Public |
+>> +--------------------------------------+-----------------------------------------------+----------+
+>> | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
+>> | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
+>> | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
+>> ----------------------------------------------------------------------------------------------------
+>> ```
+>>
+>> > [!warning]
+>> > Veuillez noter que si le type de volume « high-speed-gen2 » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> >
+>>
+>> Modifiez ensuite le type de volume avec la commande suivante :
+>>
+>> ```bash
+>> $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
+>> ```
+>>
 
 ## Aller plus loin
 
