@@ -76,7 +76,7 @@ Klicken Sie auf den Button `⁝`{.action} neben der entsprechenden IP/Dienst und
 
 Klicken Sie im angezeigten Fenster auf `IP entsperren`{.action} unten und bestätigen Sie.
 
-![IP entsperren](images/unblockIP_new.png){.thumbnail}
+![IP entsperren](images/unblockip_new.png){.thumbnail}
 
 Die IP wird nun entsperrt. Die Operation kann einige Minuten in Anspruch nehmen.
 
