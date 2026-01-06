@@ -41,10 +41,10 @@ Le dashboard affiche :
 
 - L'état des services OpenStack  
 - Le nombre total de noeuds : **Total enrolled Ironic nodes**  
-- Le nombre de noeuds utilisés : **Allocated Ironic nodes**  
-- Le nombre de noeuds disponibles : **Available Ironic nodes**  
-- Le nombre de noeuds en attente : **Waiting Ironic nodes**  
-- La liste des noeuds en erreur ou en maintenance : **List of failed and maintenance nodes**
+- Le nombre de noeuds utilisé : **Allocated Ironic nodes**  
+- Le nombre de noeuds disponible et pas en maintenance : **Available Ironic nodes**  
+- Le nombre de noeuds en attente/erreur : **Waiting Ironic nodes**  
+- La liste des noeuds en erreurs ou en maintenance : **List of failed and maintenance nodes**
 
 ### 2. Inventaire matériel et logique avec NetBox
 
