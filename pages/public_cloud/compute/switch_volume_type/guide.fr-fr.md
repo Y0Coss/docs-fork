@@ -22,7 +22,14 @@ Par défaut, la politque de migration est définie sur `Never` car le volume res
 Cette modification peut être réalisée via Horizon ou via l’interface de ligne de commande OpenStack.
 
 > [!warning]
+>
 > Si le volume est attaché à une Instance, vous devez d'abord le détacher avant de continuer. Pour plus d'informations, consultez [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detacher-un-volume) du guide correspondant.
+>
+> Le changement de type de volume (retyping) via l'espace client OVHcloud ou l’API OVHcloud est disponible uniquement pour les volumes non chiffrés. Les volumes chiffrés de type **-LUKS** ne peuvent pas être retypés via ces interfaces.
+>
+> Le retyping est possible via OpenStack / Horizon uniquement pour des volumes **-LUKS** vers **-LUKS**. Dans ce cas, la restauration du volume après retyping n’est pas possible.
+> 
+> Les conversions **-LUKS** vers non **-LUKS** ne sont pas prises en charge, y compris via OpenStack / Horizon.
 >
 
 > [!tabs]
@@ -35,7 +42,7 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >>
 >> > [!primary]
 >> >
->> > La mise à jour du type de volume (retyping) peut prendre quelques minutes.
+>> > La mise à jour du type de volume (retyping) peut prendre plusieurs minutes.
 >> >
 >>
 > Depuis l'interface Horizon

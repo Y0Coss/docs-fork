@@ -22,7 +22,14 @@ The migration policy is set by default to `Never` as the volume stays on the sam
 This modification can be made via Horizon or the Openstack CLI.
 
 > [!warning]
+>
 > If the block storage volume is attached to an Instance, you must first detach it before proceeding. For more information, consult [this section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume) of the corresponding guide.
+>
+> Changing the volume type (retyping) via the OVHcloud Control Panel or API is available only for unencrypted volumes. Encrypted volumes of type **-LUKS** cannot be retyped using these interfaces.
+>
+> Retyping is supported via OpenStack / Horizon only for **-LUKS** to **-LUKS** volumes. In this case, volume restoration after retyping is not possible.
+>
+> Conversions from **-LUKS** to non **-LUKS** (or vice versa) are not supported, including via OpenStack / Horizon.
 >
 
 > [!tabs]
