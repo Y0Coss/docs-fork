@@ -1,7 +1,7 @@
 ---
 title: "Configurer le reverse DNS d'une instance Public Cloud"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 ## Objectif

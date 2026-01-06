@@ -1,7 +1,7 @@
 ---
 title: Eine Additional IP umziehen
 excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 > [!primary]

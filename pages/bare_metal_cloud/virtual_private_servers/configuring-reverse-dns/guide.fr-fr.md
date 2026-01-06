@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer le reverse DNS de votre serveur (enregistrement PTR)"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS de votre adresse IP depuis votre espace client
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 ## Objectif

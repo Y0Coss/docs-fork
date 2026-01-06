@@ -1,7 +1,7 @@
 ---
 title: Configurar direcciones Additional IP en modo bridge en sus máquinas virtuales
 excerpt: 'Cómo utilizar el modo bridge para configurar el acceso a Internet de las máquinas virtuales'
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title:  Mover una Additional IP
 excerpt: Cómo mover una Additional IP desde el área de cliente o a través de la API de OVHcloud
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 > [!primary]

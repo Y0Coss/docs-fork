@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor de jogos com a firewall aplicacional"
 excerpt: "Descubra como configurar o OVHcloud Game DDoS Protection firewall"
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 <style>

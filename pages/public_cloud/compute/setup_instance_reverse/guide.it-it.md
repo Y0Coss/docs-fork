@@ -1,7 +1,7 @@
 ---
 title: "Configura il reverse DNS di un'istanza Public Cloud"
 excerpt: Come impostare la risoluzione reverse DNS
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 ## Obiettivo

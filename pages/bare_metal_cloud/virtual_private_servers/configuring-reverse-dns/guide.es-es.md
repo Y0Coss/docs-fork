@@ -1,7 +1,7 @@
 ---
 title: "Cómo configurar el registro DNS inverso de su servidor (registro PTR)"
 excerpt: Cómo implementar la resolución inversa DNS de su dirección IP desde el área de cliente de OVHcloud
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 ## Objetivo

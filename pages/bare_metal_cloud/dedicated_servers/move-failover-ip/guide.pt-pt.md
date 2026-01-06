@@ -1,7 +1,7 @@
 ---
 title:  Migrar um Additional IP
 excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS Ihres Servers konfigurieren (PTR record)
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IP-Adresse im Kundencenter einrichten
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 ## Ziel

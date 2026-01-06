@@ -1,7 +1,7 @@
 ---
 title: Konfiguration von Additional IPs im Bridge-Modus auf Ihren virtuellen Maschinen
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen konfigurieren
-updated: 2026-01-05
+updated: 2026-01-06
 ---
 
 <style>
