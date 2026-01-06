@@ -92,7 +92,7 @@ OVHcloud **nigdy** nie wyśle Ci linku przez Usługa SMS. Wiadomości Usługa SM
 
 Poniżej znajdziesz dwa przykłady wiadomości Usługa SMS, pierwsza z nich jest autentyczna i odpowiada uwierzytelnieniu dwuetapowemu. Druga wiadomość Usługa SMS jest oszustwowa.
 
-![Oszustwowa wiadomość Usługa SMS](images/SMS-phishing.png){.thumbnail}
+![Oszustwowa wiadomość Usługa SMS](images/sms-phishing.png){.thumbnail}
 
 #### Jak zgłosić phishingową wiadomość e-mail?
 
