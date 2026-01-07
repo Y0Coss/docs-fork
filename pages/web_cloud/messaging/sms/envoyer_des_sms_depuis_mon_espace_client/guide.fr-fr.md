@@ -63,7 +63,7 @@ Tapez votre message dans le cadre prévu à cet effet (1). Un compteur est prés
 >
 > Nous préconisons de ne pas dépasser 8 SMS par message. Au-delà, les opérateurs ne garantissent plus la délivrabilité du message.
 
-Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. 
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau « **Extensions** » comptent double. 
 
 La taille maximum d’un SMS est de 160 caractères en encodage 7bit (norme GSM 03.38).
 
