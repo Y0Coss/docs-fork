@@ -70,26 +70,14 @@ openstack baremetal node maintenance set <node-id> --reason "Configuration RAID 
 
 Ironic supporte plusieurs niveaux de RAID software. Les valeurs suivantes sont acceptées dans la configuration JSON :
 
-| Niveau RAID | Valeur JSON | Description | Nombre minimum de disques | Avantages |
-|-------------|-------------|-------------|---------------------------|-----------|
-| **RAID 0** | `"0"` | Striping (agrégation par bandes) | 2 | Performance maximale, pas de redondance |
-| **RAID 1** | `"1"` | Mirroring (miroir) | 2 | Redondance complète, performance en lecture |
-| **RAID 5** | `"5"` | Striping avec parité | 3 | Bon compromis performance/redondance |
-| **RAID 6** | `"6"` | Striping avec double parité | 4 | Redondance élevée (tolère 2 disques défaillants) |
-| **RAID 10** | `"1+0"` | RAID 1+0 (mirroring + striping) | 4 | Performance et redondance optimales |
-| **RAID 50** | `"5+0"` | RAID 5+0 (striping de groupes RAID 5) | 6 | Performance et redondance pour grands volumes |
-| **RAID 60** | `"6+0"` | RAID 6+0 (striping de groupes RAID 6) | 8 | Redondance maximale pour grands volumes |
+| Niveau RAID | Valeur JSON | Description | Nombre minimum de disques |
+|-------------|-------------|-------------|---------------------------|
+| **RAID 1** | `"1"` | Mirroring (miroir) | 2 |
 
-> [!warning]
+> [!important]
 > 
-> **Important** : Dans la configuration JSON, les niveaux RAID combinés doivent utiliser la syntaxe avec le signe `+`. Par exemple :
-> - RAID 10 → `"1+0"` (et non `"10"`)
-> - RAID 50 → `"5+0"`
-> - RAID 60 → `"6+0"`
-
-> [!primary]
-> 
-> Le RAID 10 est généralement recommandé pour les environnements de production nécessitant à la fois de hautes performances et une redondance élevée.
+> **Contrainte importante** : Le premier disque logique avec `is_root_volume: true` **doit obligatoirement être en RAID 1**. Les autres niveaux RAID (RAID 0, 5, 6, 10, etc.) ne sont pas autorisés pour le volume racine.
+Il est donc possible de faire uniquement du raid 1 pour le deploiement de l'instance.
 
 ### 4. Configurer le RAID software
 
@@ -109,14 +97,6 @@ Si la sortie est `null` ou différente de `"agent"`, activez l'interface agent p
 openstack baremetal node set <node-id> --raid-interface=agent
 ```
 
-Vérifiez que l'interface a bien été activée :
-
-```bash
-openstack baremetal node show <node-id> -f json | jq '.raid_interface'
-```
-
-La sortie doit afficher `"agent"`.
-
 #### 4.2. Créer le fichier de configuration RAID
 
 Créez un fichier JSON contenant la configuration RAID souhaitée. Voici un exemple pour créer un RAID 1 (mirroring) avec deux disques :
@@ -130,51 +110,6 @@ cat > /tmp/raid1.json <<EOF
     "raid_level": "1",
     "is_root_volume": true,
     "physical_disks": [
-      {"size": "<1000"},
-      {"size": "<1000"}
-    ]
-  }]
-}
-EOF
-```
-
-**Exemple de configuration RAID 10 (striping + mirroring) :**
-
-> [!warning]
-> 
-> **Important** : Dans la configuration JSON, le RAID 10 doit être spécifié comme `"1+0"` et non `"10"`.
-
-```bash
-cat > /tmp/raid10.json <<EOF
-{
-  "logical_disks": [{
-    "controller": "software",
-    "size_gb": "MAX",
-    "raid_level": "1+0",
-    "is_root_volume": true,
-    "physical_disks": [
-      {"size": "<1000"},
-      {"size": "<1000"},
-      {"size": "<1000"},
-      {"size": "<1000"}
-    ]
-  }]
-}
-EOF
-```
-
-**Exemple de configuration RAID 5 :**
-
-```bash
-cat > /tmp/raid5.json <<EOF
-{
-  "logical_disks": [{
-    "controller": "software",
-    "size_gb": "MAX",
-    "raid_level": "5",
-    "is_root_volume": true,
-    "physical_disks": [
-      {"size": "<1000"},
       {"size": "<1000"},
       {"size": "<1000"}
     ]
@@ -287,7 +222,7 @@ mdadm --detail /dev/md0
 | Erreur | Cause | Solution |
 |--------|-------|----------|
 | `Driver redfish does not support raid (disabled or not implemented). (HTTP 404)` | L'interface RAID n'est pas configurée sur `agent` | Voir section [4.1](#41-vérifier-et-activer-linterface-agent-si-nécessaire) |
-| `RAID config validation error: '10' is not one of ['JBOD', '0', '1', '2', '5', '6', '1+0', '5+0', '6+0'] (HTTP 400)` | Le niveau RAID est mal formaté dans le JSON | Voir section [3](#3-niveaux-de-raid-supportés) |
+| `Software RAID Configuration requires RAID-1 for the first logical disk` | Le premier disque logique avec `is_root_volume: true` doit être en RAID 1 | Utiliser RAID 1 pour le volume racine.<br/> Voir section [3](#3-niveaux-de-raid-supportés) |
 
 ## Références
 
