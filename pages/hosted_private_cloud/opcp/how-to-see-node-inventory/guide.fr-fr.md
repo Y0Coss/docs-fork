@@ -1,12 +1,12 @@
 ---
 title: "OPCP - Comment visualiser l'inventaire des noeuds"
 excerpt: "Apprenez à consulter l'inventaire des noeuds"
-updated: 2025-12-02
+updated: 2026-01-07
 ---
 
 ## Objectif
 
-Ce guide explique comment consulter l’inventaire matériel, les ressources consommées et disponibles dans une plateforme **OVHcloud OnPrem Cloud Platform (OPCP)**, à l’aide de :
+Ce guide explique comment consulter l’inventaire matériel, les ressources consommées et ressources disponibles sur une plateforme **OVHcloud OnPrem Cloud Platform (OPCP)**, à l’aide de :
 
 - **Grafana** : monitoring en temps réel de l’infrastructure  
 - **NetBox** : inventaire physique et logique  
@@ -33,18 +33,35 @@ Grafana fournit une vue de monitoring en temps réel et permet de suivre facilem
 3. Cliquez sur **Dashboards** et recherchez le dashboard **OpenStack overview**.  
 
 Vous devriez voir un dashboard similaire à l'image suivante :  
-![grafana-dashboard-home](images/01-grafana-dashboard-home.png){.thumbnail}
+![grafana-dashboard-openstack-overview](images/01-grafana-dashboard-openstack-overview.png){.thumbnail}
 
-#### 1.2 Comprendre le dashboard Home
+#### 1.2 Comprendre le dashboard OpenStack overview
 
-Le dashboard affiche :
+Le dashboard permet de visualiser :
 
-- L'état des services OpenStack  
+- L'état des services OpenStack : **Service status**
+- L'utilisation des ressources : **Resource usage**
+- Une vue détaillé du service Keystone : **Keystone**  
+- Une vue détaillé du service Ironic : **Ironic**  
+- Une vue détaillé du service Nova : **Nova**  
+- Une vue détaillé du service Neutron : **Neutron**  
+- Une vue détaillé du service Cinder : **Cinder**
+- Une vue détaillé du service Glance : **Glance**
+
+#### 1.3 Comprendre et utiliser la section Ironic
+
+Nous allons nous focaliser sur la partie "Ironic", c'est ici que nous allons pouvoir voir l'état des différents noeuds.
+![grafana-dashboard-openstack-overview-ironic](images/01-grafana-dashboard-openstack-overview-ironic.png){.thumbnail}
+
+Cette section permet de visualiser :
+
 - Le nombre total de noeuds : **Total enrolled Ironic nodes**  
-- Le nombre de noeuds utilisé : **Allocated Ironic nodes**  
 - Le nombre de noeuds disponible et pas en maintenance : **Available Ironic nodes**  
-- Le nombre de noeuds en attente/erreur : **Waiting Ironic nodes**  
+- Le nombre de noeuds en erreur : **Errorg Ironic nodes**  
 - La liste des noeuds en erreurs ou en maintenance : **List of failed and maintenance nodes**
+- Le nombre de noeuds utilisé : **Allocated Ironic nodes**  
+- Le nombre de noeuds en attente : **Waiting Ironic nodes**  
+- Le nombre de noeuds en maintenance : **Maintenance Ironic nodes**  
 
 ### 2. Inventaire matériel et logique avec NetBox
 
@@ -147,8 +164,8 @@ Pour récupérer toutes les informations concernant un noeud, par exemple pour i
 openstack baremetal node show <node-id>
 ```
 
-## Notes & bonnes pratiques
+## Aller plus loin
 
-- Vérifiez régulièrement Grafana pour anticiper la saturation des ressources et détecter les noeuds inactifs.
-- Utilisez NetBox comme **source de vérité** pour le matériel et les adresses IP.  
-- Documentez toujours les changements dans NetBox pour conserver un inventaire fiable.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
