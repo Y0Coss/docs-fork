@@ -177,8 +177,6 @@ Or if using an environment variable:
 
 ```bash
 kubectl create secret generic ovhcloud-vault-token -n external-secrets --from-literal=token=$PAT_TOKEN_B64
-
-secret/ovhcloud-vault-token created
 ```
 
 The secret should have been created:
