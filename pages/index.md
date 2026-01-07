@@ -2210,7 +2210,7 @@
         + [Manage your OKMS access certificate](manage_and_operate/kms/okms-certificate-management)
         + [OKMS Architecture overview](manage_and_operate/kms/architecture-overview)
         + [OKMS - Shared responsibilities](manage_and_operate/kms/responsibility-model-kms)
-        + [Use Kubernetes External Secret Operator with Secret Manager](manage_and_operate/secret_manager/external-secret-operator)
+        + [How to use Kubernetes External Secret Operator with Secret Manager](manage_and_operate/secret_manager/external-secret-operator)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)

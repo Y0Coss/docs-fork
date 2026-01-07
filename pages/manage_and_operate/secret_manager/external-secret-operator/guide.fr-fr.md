@@ -1,7 +1,7 @@
 ---
-title: "Utiliser Kubernetes External Secret Operator avec Secret Manager"
-excerpt: "Configurer External Secret Operator pour stocker les secrets Kubernetes sur le Secret Manager d'OVHcloud"
-updated: 2025-11-07
+title: "Comment utiliser Kubernetes External Secret Operator avec Secret Manager"
+excerpt: "Découvrez comment configurer External Secret Operator pour stocker les secrets Kubernetes sur le Secret Manager d'OVHcloud"
+updated: 2026-01-07
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ Ce guide explique comment configurer l'External Secret Operator Kubernetes pour 
 
 - Un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Avoir [commandé un domaine OKMS](/pages/manage_and_operate/kms/quick-start) ou [créé un premier secret](/pages/manage_and_operate/secret_manager/secret-manager-ui).
-- Avoir un cluster Kubernetes.
+- Avoir un cluster [Managed Kubernetes Service](/links/public-cloud/kubernetes).
 
 ## En pratique
 
@@ -33,21 +33,23 @@ L'utilisateur doit appartenir à un groupe avec le rôle ADMIN, ou si vous utili
 - `okms:apikms:secret/version/getData`
 - `okms:apiovh:secret/get`
 
-Autrement, il est aussi possible de créer un user avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
+Il est aussi possible de créer un utilisateur avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) :
 
 ```bash
 ovhcloud iam user create --login "secretmanager-b1033fdd-xxxx-xxxx-xxxx-xxxxxxxxx" --group ADMIN --description "A user create for Secret Manager, linked to xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" --password "secretmanager-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" --email "secretmanager-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx@ovhcloud.com"
 ```
 
-Puis créez un jeton d'accès personnel (PAT) `user_pat` :
+Puis créez un token d'accès personnel (*Personal Access Token* ou PAT) `user_pat` :
 
 > [!tabs]
-> API
+> Via l'API
+>> Utilisez l'appel API suivant :
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /me POST /me/identity/user/{user}/token
 >>
->> Avec la charge utile suivante (remplissez avec vos valeurs) :
+>> Avec la charge utile suivante (remplissez-la avec vos valeurs) :
 >>
 >> ```json
 >> {
@@ -69,8 +71,8 @@ Puis créez un jeton d'accès personnel (PAT) `user_pat` :
 >> }
 >> ```
 >>
-> CLI
->> Le PAT peut également être créé avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) et la commande suivante (remplissez avec vos valeurs) :
+> Via la CLI
+>> Le PAT peut être créé avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) et la commande suivante (complétez-la avec vos valeurs) :
 >>
 >> ```bash
 >> ovhcloud iam user token create {user} --name pat-secretmanager-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx --description "PAT secret manager for domain xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
@@ -92,9 +94,7 @@ Conservez la valeur du champ `token` car elle ne sera plus affichée et sera uti
 
 #### Informations du Secret Manager
 
-Vous aurez également besoin de la `region` et de l'`okms-id` du domaine OKMS que vous souhaitez utiliser. Cet ID et cette région peuvent être trouvés sur l'espace client OVHcloud.
-
-Ou via l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) :
+Vous aurez également besoin de la `region` et de l'`okms-id` du domaine OKMS que vous souhaitez utiliser. Cet ID et cette région peuvent être trouvés sur [l'espace client OVHcloud](/links/manager) ou via l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) :
 
 ```bash
 $ ovhcloud okms list
@@ -106,7 +106,7 @@ $ ovhcloud okms list
 └──────────────────────────────────────┴─────────────┘
 ```
 
-### Configuration du fournisseur de secrets dans Kubernetes
+### Configuration du Secret Provider dans Kubernetes
 
 #### Installation de l'External Secret Operator (ESO) sur votre cluster Kubernetes
 
@@ -171,7 +171,7 @@ data:
   token: ZXlKaG...wVkFn
 ```
 
-Et appliquer la ressource au cluster avec la commande `kubectl apply -f secret.yaml`.
+Et appliquez la ressource au cluster avec la commande `kubectl apply -f secret.yaml`.
 
 Ou si on utilise une variable d'environnement :
 
@@ -190,7 +190,7 @@ ovhcloud-vault-token   Opaque   1      5m
 #### Configuration de l'External Secret Operator
 
 Tout d'abord, configurez un `ClusterSecretStore` qui est chargé de la synchronisation avec le Secret Manager.
-Nous configurons le SecretStore en utilisant HashiCorp Vault avec l'authentification par jeton et l'endpoint OKMS en tant que backend.
+Nous configurons le SecretStore en utilisant HashiCorp Vault avec l'authentification par token et l'endpoint OKMS en tant que backend.
 
 Ajoutez le `user_pat` en tant que secret pour pouvoir l'utiliser dans les chartes.
 
@@ -214,11 +214,11 @@ spec:
               namespace: external-secrets
 ```
 
-> [!info]
-> Seule l'[authentification par jeton](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) est prise en charge
+> [!primary]
+> Seule l'[authentification par token](https://external-secrets.io/latest/provider/hashicorp-vault/#token-based-authentication) est prise en charge.
 
-> [!info]
-> Cette intégration fonctionne également avec un `ClusterSecretStore`
+> [!primary]
+> Cette intégration fonctionne également avec un `ClusterSecretStore`.
 
 Le nom de la région peut être traduit à partir de votre emplacement régional en utilisant :
 
@@ -226,7 +226,7 @@ Le nom de la région peut être traduit à partir de votre emplacement régional
 >
 > @api {v1} /location GET /location
 
-Par exemple, pour **Europe (France - Paris)**, l'endpoint OKMS est **eu-west-par.okms.ovh.net**
+Par exemple, pour **Europe (France - Paris)**, l'endpoint OKMS est **eu-west-par.okms.ovh.net**.
 
 Déployez la ressource dans votre cluster :
 
@@ -279,7 +279,7 @@ ovhregistrycred                          kubernetes.io/dockerconfigjson   1     
 ...
 ```
 
-Pour toute information supplémentaire sur la gestion de l'External Secret Operator, veuillez consulter la documentation dédiée, en utilisant le fournisseur HashiCorp Vault : <https://external-secrets.io/latest/>.
+Pour plus d'informations sur la gestion de l'External Secret Operator, veuillez consulter la documentation dédiée, en utilisant le fournisseur HashiCorp Vault : <https://external-secrets.io/latest/>.
 
 ## Aller plus loin
 
