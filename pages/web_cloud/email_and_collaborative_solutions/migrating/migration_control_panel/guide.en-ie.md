@@ -6,14 +6,14 @@ updated: 2025-04-28
 
 ## Objective
 
-OVHcloud offers several email solutions: MX Plan (standalone or included in a Web Hosting plan), Email Pro and Exchange. They have their individual features, and can be adapted to suit a number of uses. Are your needs changing? OVHcloud offers a migration tool you can use to switch from one solution to another.
+OVHcloud offers several email solutions: MX Plan (standalone or included in a Web Hosting plan), Zimbra, Email Pro and Exchange. They have their individual features, and can be adapted to suit a number of uses. Are your needs changing? OVHcloud offers a migration tool you can use to switch from one solution to another.
 
 **Find out how to migrate an MX Plan email account to an Email Pro or Exchange account.**
 
 ## Requirements
 
 - An MX Plan email account (as MX Plan standalone or included in an OVHcloud [Web Hosting plan](/links/web/hosting))
-- An [Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) service with at least one unconfigured account (which will appear as “@configureme.me”)
+- An [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or [Zimbra](/links/web/zimbra) service with at least one unconfigured account (which will appear as “@configureme.me”)
 - **No redirections set on the MX Plan email account you want to migrate**
 - Access to the [OVHcloud Control Panel](/links/manager)
 
