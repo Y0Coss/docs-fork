@@ -1,6 +1,6 @@
 ---
 title: "MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse auf klassischem Outlook für Windows"
-excerpt: "Erfahren Sie, wie Sie Ihre MX Plan-E-Mail-Adresse mit dem klassischen Outlook für Windows konfigurieren"
+excerpt: "Erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse mit dem klassischen Outlook für Windows konfigurieren"
 updated: 2025-12-31
 ---
 
@@ -38,7 +38,7 @@ Die E-Mail-Adressen der Angebote **MX Plan** und [Zimbra](/links/web/emails-zimb
 - Sie benötigen die [neue Outlook-Version](https://support.microsoft.com/de-de/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627), installiert auf Ihrem Windows-System.
 - Sie benötigen die Zugangsdaten für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
-/// details | Informationen zur Verwaltung und Konfiguration der OVHcloud-Dienste
+/// details | Informationen zur Verwaltung und Konfiguration der OVHcloud Dienste
 
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 
@@ -55,11 +55,11 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 > [!warning]
 >
-> Dieses Dokument gilt ausschließlich für **Klassisches Outlook**, das in der Microsoft 365-Suite verfügbar ist. Falls Sie die neue Outlook-Version nutzen, konsultieren Sie unseren Leitfaden [MX Plan / Zimbra Starter - E-Mail-Konto in der neuen Outlook-Version für Windows hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
+> Diese Dokumentation gilt ausschließlich für **Klassisches Outlook**, das in der Microsoft 365-Suite verfügbar ist. Falls Sie die neue Outlook-Version nutzen, konsultieren Sie unsere Anleitung [MX Plan / Zimbra Starter - E-Mail-Account in der neuen Outlook-Version für Windows hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
 >
-> Um Klassisches Outlook auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite „[Installieren oder Erneutes Installieren des klassischen Outlook auf einem Windows-PC](https://support.microsoft.com/de-de/office/outlook-classisch-installieren-oder-neu-installieren-auf-einem-pc-mit-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)“ herunter und installieren Sie es.
+> Um Klassisches Outlook auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite "[Installieren oder Erneutes Installieren des klassischen Outlook auf einem Windows-PC](https://support.microsoft.com/de-de/office/outlook-classisch-installieren-oder-neu-installieren-auf-einem-pc-mit-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" herunter und installieren Sie es.
 >
-> Nach Abschluss der Installation können Sie die beiden Versionen unterscheiden, wenn sie installiert sind. Geben Sie dazu „Outlook“ in der Windows-Suchleiste ein. Sie können dann den Unterschied wie unten gezeigt erkennen.
+> Nach Abschluss der Installation können Sie die beiden Versionen unterscheiden, wenn sie installiert sind. Geben Sie dazu "Outlook" in der Windows-Suchleiste ein. Sie können dann den Unterschied wie unten gezeigt erkennen.
 >
 > ![Outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
@@ -67,19 +67,19 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 > [!primary]
 >
-> Wissen Sie nicht, ob Sie Ihr E-Mail-Konto in **POP** oder **IMAP** konfigurieren müssen?
+> Wissen Sie nicht, ob Sie Ihren E-Mail-Account in **POP** oder **IMAP** konfigurieren müssen?
 >
-> Bevor Sie fortfahren, konsultieren Sie den Abschnitt „[POP oder IMAP, was ist der Unterschied?](#popimap)“ in diesem Leitfaden.
+> Bevor Sie fortfahren, konsultieren Sie den Abschnitt "[POP oder IMAP, was ist der Unterschied?](#popimap)" in dieser Anleitung.
 >
 > In den folgenden Einstellungen können Sie zwei verschiedene Hostnamen für denselben Server (empfangen oder senden) eingeben. Diese Werte verweisen exakt auf denselben Server. Sie wurden eingerichtet, um die Eingabe zu erleichtern und die Verwirrung zwischen den Protokollen POP, IMAP und SMTP zu vermeiden, die unterschiedliche Ports nutzen.
 
 - **Wenn Sie die Anwendung zum ersten Mal starten**: Es öffnet sich ein Konfigurationsassistent und Sie werden dazu aufgefordert, Ihre E-Mail-Adresse einzugeben.
 
-- **Falls Sie bereits einen Account eingerichtet haben**: Klicken Sie am oberen Rand Ihres Bildschirms auf `Datei`{.action} und anschließend auf `Konto hinzufügen`{.action}.
+- **Falls Sie bereits einen Account eingerichtet haben**: Klicken Sie am oberen Rand Ihres Bildschirms auf `Datei`{.action} und anschließend auf `Account hinzufügen`{.action}.
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail .h-500}
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die untenstehenden Registerkarten klicken.
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die untenstehenden Tabs klicken.
 
 > [!warning]
 >
@@ -88,7 +88,7 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 > [!tabs]
 > **Schritt 1**
 >>
->> - Wählen Sie in dem Fenster **Konto hinzufügen** die Option `Manuelle Konfiguration oder zusätzliche Servertypen`{.action} aus.
+>> - Wählen Sie in dem Fenster **Account hinzufügen** die Option `Manuelle Konfiguration oder zusätzliche Servertypen`{.action} aus.
 >> - Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 >> - Wählen Sie `POP oder IMAP`{.action} aus.
 >> - Klicken Sie auf `Weiter`{.action}, um fortzufahren.
@@ -97,14 +97,14 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 >>
 > **Schritt 2**
 >>
->> Geben Sie die Anmeldeinformationen für Ihr Konto ein **(1)**:
+>> Geben Sie die Anmeldeinformationen für Ihren Account ein **(1)**:
 >>
 >> Benutzerinformationen <br>
->> **Ihr Name**: Legen Sie einen Anzeigename fest.<br>
+>> **Ihr Name**: Legen Sie einen Anzeigenamen fest.<br>
 >> **E-Mail-Adresse**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
 >>
 >> Serverinformationen <br>
->> - **Kontotyp**: Wählen Sie IMAP aus<br>
+>> - **Accounttyp**: Wählen Sie IMAP aus<br>
 >> - **Eingehender E-Mail-Server**: <br>
 >>      - **EUROPE**: imap.mail.ovh.net **oder** ssl0.ovh.net <br>
 >>      - **AMERIKA/ASIEN-PACIFIK**: imap.mail.ovh.ca <br>
@@ -131,13 +131,13 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 >> - **Ausgehender E-Mail-Server (SMTP)**: 465
 >> - **Verwenden Sie den folgenden Verschlüsselungstyp**: SSL/TLS
 >>
->> Klicken Sie auf `OK`{.action}, um die Informationen zu bestätigen. Klicken Sie auf `Weiter`{.action}, um die Konto-Konfiguration zu starten.
+>> Klicken Sie auf `OK`{.action}, um die Informationen zu bestätigen. Klicken Sie auf `Weiter`{.action}, um die Account-Konfiguration zu starten.
 >>
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-500}
 >>
 > **Schritt 4**
 >>
->> Klicken Sie auf `Weiter`{.action}, um die Konto-Konfiguration zu starten. Wenn die Einstellungen bestätigt werden, erhalten Sie das untenstehende Fenster.
+>> Klicken Sie auf `Weiter`{.action}, um die Account-Konfiguration zu starten. Wenn die Einstellungen bestätigt werden, erhalten Sie das untenstehende Fenster.
 >>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-500}
 >>
@@ -146,7 +146,7 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 
 Sobald Ihr E-Mail-Account eingerichtet ist, können Sie ihn verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihren E-Mail-Account zugreifen können:[Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) heranziehen.
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihren E-Mail-Account zugreifen können: [Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) heranziehen.
 
 ### Backup Ihres E-Mail-Accounts
 
@@ -154,16 +154,16 @@ Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accoun
 
 ### Bestehende Einstellungen ändern
 
-Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf die Kontoeinstellungen zugreifen müssen, um sie zu ändern:
+Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf die Accounteinstellungen zugreifen müssen, um sie zu ändern:
 
 - Gehen Sie zu `Datei`{.action} in der Menüleiste oben auf Ihrem Bildschirm.
-- Wählen Sie das zu ändernde Konto im Dropdown-Menü **(1)** aus.
-- Klicken Sie auf `Kontoeinstellungen`{.action} **(2)** darunter.
-- Klicken Sie auf `Kontoeinstellungen...`{.action} **(3)**, um zum Einstellungsfenster zu gelangen.
+- Wählen Sie das zu ändernde Account im Dropdown-Menü **(1)** aus.
+- Klicken Sie auf `Accounteinstellungen`{.action} **(2)** darunter.
+- Klicken Sie auf `Accounteinstellungen...`{.action} **(3)**, um zum Einstellungsfenster zu gelangen.
 
 ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
 
-- Das Kontoeinstellungsfenster wird angezeigt. Wählen Sie das betroffene E-Mail-Konto aus und klicken Sie auf `Ändern...`{.action}.
+- Das Accounteinstellungsfenster wird angezeigt. Wählen Sie das betroffene E-Mail-Account aus und klicken Sie auf `Ändern...`{.action}.
 
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 
@@ -171,19 +171,19 @@ Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf die Kontoeinstellunge
 
 #### Einstellungen für den Empfang von IMAP und POP <a name="imap-pop"></a>
 
-Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Nutzung von **IMAP**. Sie können jedoch auch **POP** auswählen.
+Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Accounttyps die Nutzung von **IMAP**. Sie können jedoch auch **POP** auswählen.
 
 > [!warning]
 >
 > Sie müssen den Wert entsprechend Ihrer Region (**EUROPE** oder **AMERIKA / ASIEN-PACIFIK**) richtig notieren.
 
-Wählen Sie das Register aus, das Ihrer Konfiguration entspricht:
+Wählen Sie den Tab aus, das Ihrer Konfiguration entspricht:
 
 > [!tabs]
 > **IMAP-Konfiguration**
 >>
 >> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
 >> - **EUROPE (empfangen)**: imap.mail.ovh.net **oder** ssl0.ovh.net.
 >> - **AMERIKA/ASIEN-PACIFIK (empfangen)**: imap.mail.ovh.ca.
 >> - **Port**: 993.
@@ -192,7 +192,7 @@ Wählen Sie das Register aus, das Ihrer Konfiguration entspricht:
 > **POP-Konfiguration**
 >>
 >> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
 >> - **EUROPE (empfangen)**: pop.mail.ovh.net **oder** ssl0.ovh.net.
 >> - **AMERIKA/ASIEN-PACIFIK (empfangen)**: pop.mail.ovh.ca.
 >> - **Port**: 995.
@@ -205,7 +205,7 @@ Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einste
 **SMTP-Konfiguration**
 
 - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
-- **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
 - **EUROPE (senden)**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
 - **AMERIKA/ASIEN-PACIFIK (senden)**: smtp.mail.ovh.ca.
 - **Port**: 465.
@@ -224,7 +224,7 @@ Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verst
 1. **Ihr Gerät**: Computer, Smartphone oder Tablet auf dem ein E-Mail-Client läuft.
 2. **Ihr E-Mail-Client**: Anwendung zur Verwaltung Ihrer E-Mail-Accounts und deren Inhalte. Mit der Auswahl entscheiden Sie über die Funktionalität des E-Mail-Zugriffs.
 3. **Empfangsprotokoll**: Das ausgewählte Protokoll bestimmt, wie E-Mails vom Client abgerufen werden. Diese Wahl wirkt sich auf andere E-Mail-Clients aus, die denselben E-Mail-Account nutzen.
-    - **IMAP**: Ihr E-Mail-Client fragt den Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als „gelesen“ markiert. Andere IMAP-fähige Geräte können diesen Status sehen und die E-Mail so lamge abrufen, bis sie von einem der Clients gelöscht wird.
+    - **IMAP**: Ihr E-Mail-Client fragt den Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als "gelesen" markiert. Andere IMAP-fähige Geräte können diesen Status sehen und die E-Mail so lamge abrufen, bis sie von einem der Clients gelöscht wird.
     - **POP**: Ihr E-Mail-Client fragt den Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Standardmäßig wird die Nachricht vom Server gelöscht, sobald sie auf Ihr Gerät heruntergeladen wurde. Daher können andere Geräte, die diesen E-Mail-Account nutzen, die entsprechende E-Mail nicht anzeigen.
 
 ![mxplan](images/mxplan-popimap-02.png){.thumbnail .w-400}

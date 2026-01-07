@@ -49,13 +49,13 @@ Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wi
 
 > [!warning]
 >
-> Diese Dokumentation gilt **ausschließlich** für die **neue Outlook**-Anwendung und nicht für „[klassischen Outlook](https://support.microsoft.com/de-de/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)“, das in der Microsoft 365-Suite oder zuvor auf Ihrem Computer installiert ist.
+> Diese Dokumentation gilt **ausschließlich** für die **neue Outlook**-Anwendung und nicht für "[klassischen Outlook](https://support.microsoft.com/de-de/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", das in der Microsoft 365-Suite oder zuvor auf Ihrem Computer installiert ist.
 >
-> Um die beiden Outlook-Versionen zu unterscheiden, wenn beide installiert sind, geben Sie „Outlook“ in der Windows-Suchleiste ein. Sie können dann den Unterschied wie unten erkennen. Die neue Outlook-Anwendung hat keine besondere Bezeichnung.
+> Um die beiden Outlook-Versionen zu unterscheiden, wenn beide installiert sind, geben Sie "Outlook" in der Windows-Suchleiste ein. Sie können dann den Unterschied wie unten erkennen. Die neue Outlook-Anwendung hat keine besondere Bezeichnung.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Um Ihre MX Plan- oder Zimbra Starter-E-Mail-Adresse auf klassischen Outlook zu konfigurieren, konsultieren Sie unser Handbuch „[MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse auf klassischem Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)“.
+> Um Ihre MX Plan- oder Zimbra Starter-E-Mail-Adresse auf klassischen Outlook zu konfigurieren, konsultieren Sie unsere Anleitung "[MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse auf klassischem Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)".
 
 ### E-Mail-Account hinzufügen <a name="add-account"></a>
 
@@ -63,11 +63,11 @@ Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wi
 >
 > Es ist erforderlich, den entsprechenden Tab in Schritt 3 auszuwählen, der Ihrer Standortauswahl entspricht (**EUROPA** oder **AMERIKA / ASIEN-PAZIFIK**), um die richtigen Werte zu erhalten.
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Registerblätter klicken.
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
 
 > [!tabs]
 > **Schritt 1**
->> - Öffnen Sie Outlook. Klicken Sie in der linken Spalte auf `Ein Konto hinzufügen`{.action}, um die Konfiguration zu starten.
+>> - Öffnen Sie Outlook. Klicken Sie in der linken Spalte auf `Ein Account hinzufügen`{.action}, um die Konfiguration zu starten.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-600}
 >>
@@ -118,7 +118,7 @@ Die Outlook Anwendung erlaubt nicht, die Servereinstellungen für Ihren E-Mail-A
 Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie ihn erneut konfigurieren möchten, müssen Sie ihn zuerst löschen und dann neu erstellen:
 
 - Klicken Sie auf das Einstellungen-Symbol `⛭`{.action} am unteren Ende der linken Spalte.
-- Im Bereich "Ihre Konten" klicken Sie auf `Verwalten`{.action} rechts neben der betreffenden E-Mail-Adresse.
+- Im Bereich "Ihre Accounts" klicken Sie auf `Verwalten`{.action} rechts neben der betreffenden E-Mail-Adresse.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}
 
@@ -130,7 +130,7 @@ Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie ihn erneut konfiguriere
 
 > [!success]
 >
-> Nachdem Sie den E-Mail-Account gelöscht haben, folgen Sie den Anweisungen im Abschnitt "[Konto hinzufügen](#add-account)" dieser Dokumentation.
+> Nachdem Sie den E-Mail-Account gelöscht haben, folgen Sie den Anweisungen im Abschnitt "[Account hinzufügen](#add-account)" dieser Dokumentation.
 
 ### Allgemeine Senden- und Empfangseinstellungen <a name="settings-account"></a>
 
@@ -148,7 +148,7 @@ Wählen Sie den entsprechenden Tab je nach Konfigurationstyp:
 > **IMAP-Konfiguration**
 >>
 >> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
 >> - **EUROPE-Eingangsserver**: imap.mail.ovh.net **oder** ssl0.ovh.net.
 >> - **AMERIKA/ASIEN-PACIFIK-Eingangsserver**: imap.mail.ovh.ca.
 >> - **Port**: 993.
@@ -157,7 +157,7 @@ Wählen Sie den entsprechenden Tab je nach Konfigurationstyp:
 > **POP-Konfiguration**
 >>
 >> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
->> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
 >> - **EUROPE-Eingangsserver**: pop.mail.ovh.net **oder** ssl0.ovh.net.
 >> - **AMERIKA/ASIEN-PACIFIK-Eingangsserver**: pop.mail.ovh.ca.
 >> - **Port**: 995.
@@ -170,7 +170,7 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP**-Parameter:
 **SMTP-Konfiguration**
 
 - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
-- **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
 - **EUROPE-Ausgangsserver**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
 - **AMERIKA/ASIEN-PACIFIK-Ausgangsserver**: smtp.mail.ovh.ca.
 - **Port**: 465.
@@ -180,7 +180,7 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP**-Parameter:
 
 > [!primary]
 >
-> Weitere Informationen zur Konfiguration von Accounts im neuen Outlook Client für Windows finden Sie im [Hilfezentrum von Microsoft](https://support.microsoft.com/de-de/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Weitere Informationen zur Konfiguration von Accounts im neuen Outlook Client für Windows finden Sie im [Help Center von Microsoft](https://support.microsoft.com/de-de/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Erste Schritte mit dem MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

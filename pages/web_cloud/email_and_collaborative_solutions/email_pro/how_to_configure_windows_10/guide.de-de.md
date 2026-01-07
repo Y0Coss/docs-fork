@@ -42,7 +42,7 @@ Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Janua
 
 OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 
-Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen. Weitere Informationen finden Sie im Abschnitt „[Weiterführende Informationen](#go-further)“ dieser Anleitung.
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen. Weitere Informationen finden Sie im Abschnitt "[Weiterführende Informationen](#go-further)" dieser Anleitung.
 
 ///
 
@@ -50,32 +50,32 @@ Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wi
 
 > [!warning]
 >
-> Diese Dokumentation gilt ausschließlich für **Outlook** und nicht für „[Outlook classic](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)“, das in der Microsoft 365-Suite oder zuvor auf Ihrem Computer installiert wurde.
+> Diese Dokumentation gilt ausschließlich für **Outlook** und nicht für "[Outlook classic](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", das in der Microsoft 365-Suite oder zuvor auf Ihrem Computer installiert wurde.
 >
-> Um die beiden Outlook-Versionen zu unterscheiden, wenn beide installiert sind, geben Sie „Outlook“ in die Windows-Suchleiste ein. Sie können dann den Unterschied wie unten sehen. Das neue Outlook hat keine besondere Kennzeichnung.
+> Um die beiden Outlook-Versionen zu unterscheiden, wenn beide installiert sind, geben Sie "Outlook" in die Windows-Suchleiste ein. Sie können dann den Unterschied wie unten sehen. Das neue Outlook hat keine besondere Kennzeichnung.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Um Ihre E-Mail Pro-Adresse in Outlook classic zu konfigurieren, konsultieren Sie unseren Leitfaden „[E-Mail Pro - Einrichten eines E-Mail-Accounts auf klassischem Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)“.
+> Um Ihre E-Mail Pro-Adresse in Outlook classic zu konfigurieren, konsultieren Sie unsere Anleitung "[E-Mail Pro - Einrichten eines E-Mail-Accounts auf klassischem Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
 
 ### E-Mail-Account hinzufügen <a name="add-account"></a>
 
 > [!warning]
 >
-> In unserem Beispiel verwenden wir die Serverbezeichnung: pro?.mail.ovh.net. Sie müssen das „?“ durch die Zahl ersetzen, die Ihren E-Mail Pro-Server identifiziert.
+> In unserem Beispiel verwenden wir die Serverbezeichnung: pro?.mail.ovh.net. Sie müssen das "?" durch die Zahl ersetzen, die Ihren E-Mail Pro-Server identifiziert.
 >
 > 1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an.
 > 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
 > 1. Klicken Sie auf `E-Mail Pro`{.action}.
 > 1. Wählen Sie die betreffende Plattform aus.
-> 1. Der Servername ist im Bereich **Verbindung** des Reiters `Allgemeine Informationen`{.action} sichtbar.
+> 1. Der Servername ist im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
 >
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die entsprechenden Registerkarten klicken.
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die entsprechenden Tabs klicken.
 
 > [!tabs]
 > **Schritt 1**
->> - Öffnen Sie Outlook. Klicken Sie in der linken Spalte auf `Konto hinzufügen`{.action}, um die Konfiguration zu starten.
+>> - Öffnen Sie Outlook. Klicken Sie in der linken Spalte auf `Account hinzufügen`{.action}, um die Konfiguration zu starten.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-400}
 >>
@@ -112,7 +112,7 @@ Die Outlook Anwendung erlaubt nicht, die Servereinstellungen für Ihren E-Mail-A
 Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie ihn erneut konfigurieren möchten, müssen Sie ihn zuerst löschen und dann neu erstellen:
 
 - Klicken Sie auf das Einstellungen-Symbol (&#9965;) am unteren Rand der linken Spalte.
-- Im Abschnitt "Ihre Konten" klicken Sie auf `Verwalten`{.action} rechts neben dem relevanten E-Mail-Account.
+- Im Abschnitt "Ihre Accounts" klicken Sie auf `Verwalten`{.action} rechts neben dem relevanten E-Mail-Account.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
 
@@ -124,13 +124,13 @@ Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie ihn erneut konfiguriere
 
 > [!success]
 >
-> Sobald Ihr E-Mail-Account gelöscht ist, folgen Sie den Anweisungen im Abschnitt "[Konto hinzufügen](#add-account)" dieser Dokumentation.
+> Sobald Ihr E-Mail-Account gelöscht ist, folgen Sie den Anweisungen im Abschnitt "[Account hinzufügen](#add-account)" dieser Dokumentation.
 
 ### Allgemeine Einstellungen zum Senden und Empfangen <a name="settings-account"></a>
 
 #### IMAP und POP Empfangseinstellungen <a name="imap-pop"></a>
 
-Für den Empfang von E-Mails empfehlen wir, bei der Auswahl des Kontotyps **IMAP** zu wählen. Sie können jedoch auch **POP** auswählen.
+Für den Empfang von E-Mails empfehlen wir, bei der Auswahl des Accounttyps **IMAP** zu wählen. Sie können jedoch auch **POP** auswählen.
 
 Wählen Sie den Tab entsprechend Ihrer Konfiguration aus:
 
@@ -167,7 +167,7 @@ Für das Senden von E-Mails finden Sie unten die **SMTP**-Einstellungen:
 
 > [!primary]
 >
-> Weitere Informationen zur Konfiguration von Accounts im neuen Outlook Client für Windows finden Sie im [Hilfezentrum von Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Weitere Informationen zur Konfiguration von Accounts im neuen Outlook Client für Windows finden Sie im [Help Center von Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Erste Schritte mit der Email Pro Lösung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
