@@ -66,6 +66,7 @@ Cette section permet de visualiser :
 ### 2. Inventaire matériel et logique avec NetBox
 
 NetBox est la référence pour gérer l’inventaire physique, réseau et logique de votre infrastructure.
+L'inventaire de Netbox est automatiquement renseigné, aucune action manuelle n’est requise pour l’ajout ou la modification des nœuds.
 
 #### 2.1 Accéder à NetBox
 
