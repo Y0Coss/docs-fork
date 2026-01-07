@@ -33,6 +33,12 @@ The user should be a member of a group with the ADMIN role, or if using [IAM pol
 - `okms:apikms:secret/version/getData`
 - `okms:apiovh:secret/get`
 
+Alternatively, it's possible to create a user using [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
+
+```bash
+ovhcloud iam user create --login "secretmanager-b1033fdd-xxxx-xxxx-xxxx-xxxxxxxxx" --group ADMIN --description "A user create for Secret Manager, linked to xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" --password "secretmanager-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" --email "secretmanager-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx@ovhcloud.com"
+```
+
 Then create a Personnal Acces Token (PAT) `user_pat`:
 
 > [!tabs]
@@ -102,7 +108,7 @@ $ ovhcloud okms list
 
 ### Setup the Secret Provider in Kubernetes
 
-#### Install the External Secret Operator on your kubernetes
+#### Install the External Secret Operator (ESO) on your Kubernetes cluster
 
 ```bash
 helm repo add external-secrets https://charts.external-secrets.io
@@ -140,7 +146,7 @@ replicaset.apps/external-secrets-webhook-7fb59d4b88           1         1       
 
 #### Create a secret containing the PAT
 
-Start by encoding your `user_pat` is base64 so it can be stored in a kubernetes secret.
+Start by encoding your `user_pat` is base 64 so it can be stored in a kubernetes secret.
 
 ```bash
 $ echo -n "<token>" | base64
@@ -153,7 +159,7 @@ Or if `user_pat` was store in a environment variable:
 PAT_TOKEN_B64=$(echo -n $PAT_TOKEN | base64) ; echo $PAT_TOKEN_B64
 ```
 
-Then create a `secret.yaml`:
+Then create a `secret.yaml` file:
 
 ```yaml
  apiVersion: v1
@@ -165,18 +171,14 @@ data:
   token: ZXlKaG...wVkFn
 ```
 
+And apply it with the `kubectl apply -f secret.yaml` command.
+
 Or if using an environment variable:
 
 ```bash
 kubectl create secret generic ovhcloud-vault-token -n external-secrets --from-literal=token=$PAT_TOKEN_B64
 
 secret/ovhcloud-vault-token created
-```
-
-And apply the ressource to the cluster:
-
-```bash
-kubectl apply -f secret.yaml
 ```
 
 The secret should have been created:
@@ -194,7 +196,7 @@ We configure the SecretStore using HashiCorp Vault with token authentification a
 
 Add the `user_pat` as a secret to be able to use it in the charts.
 
-To define a new `ClusterSecretStore` resource, create a `clustersecretstore.yaml` file with the followong content:
+To define a new `ClusterSecretStore` resource, create a `clustersecretstore.yaml` file with the following content:
 
 ```yaml
 apiVersion: external-secrets.io/v1

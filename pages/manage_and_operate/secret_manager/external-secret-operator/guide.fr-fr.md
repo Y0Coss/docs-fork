@@ -33,6 +33,12 @@ L'utilisateur doit appartenir à un groupe avec le rôle ADMIN, ou si vous utili
 - `okms:apikms:secret/version/getData`
 - `okms:apiovh:secret/get`
 
+Autrement, il est aussi possible de créer un user avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
+
+```bash
+ovhcloud iam user create --login "secretmanager-b1033fdd-xxxx-xxxx-xxxx-xxxxxxxxx" --group ADMIN --description "A user create for Secret Manager, linked to xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" --password "secretmanager-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" --email "secretmanager-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx@ovhcloud.com"
+```
+
 Puis créez un jeton d'accès personnel (PAT) `user_pat` :
 
 > [!tabs]
@@ -102,7 +108,7 @@ $ ovhcloud okms list
 
 ### Configuration du fournisseur de secrets dans Kubernetes
 
-#### Installation de l'External Secret Operator sur votre Kubernetes
+#### Installation de l'External Secret Operator (ESO) sur votre cluster Kubernetes
 
 ```bash
 helm repo add external-secrets https://charts.external-secrets.io
@@ -140,7 +146,7 @@ replicaset.apps/external-secrets-webhook-7fb59d4b88           1         1       
 
 #### Création d'un secret contenant le PAT
 
-Commencez par encoder votre `user_pat` en base64 afin de pouvoir le stocker dans un secret Kubernetes.
+Commencez par encoder votre `user_pat` en base 64 afin de pouvoir le stocker dans un secret Kubernetes.
 
 ```bash
 $ echo -n "<token>" | base64
@@ -165,18 +171,14 @@ data:
   token: ZXlKaG...wVkFn
 ```
 
+Et appliquer la ressource au cluster avec la commande `kubectl apply -f secret.yaml`.
+
 Ou si on utilise une variable d'environnement :
 
 ```bash
 kubectl create secret generic ovhcloud-vault-token -n external-secrets --from-literal=token=$PAT_TOKEN_B64
 
 secret/ovhcloud-vault-token created
-```
-
-Et appliquez la ressource au cluster :
-
-```bash
-kubectl apply -f secret.yaml
 ```
 
 Le secret devrait avoir été créé :
