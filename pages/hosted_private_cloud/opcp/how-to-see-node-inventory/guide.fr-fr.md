@@ -6,7 +6,7 @@ updated: 2026-01-07
 
 ## Objectif
 
-Ce guide explique comment consulter l’inventaire matériel, les ressources consommées et ressources disponibles sur une plateforme **OVHcloud OnPrem Cloud Platform (OPCP)**, à l’aide de :
+Ce guide explique comment consulter l’inventaire matériel, les ressources consommées et les ressources disponibles sur une plateforme **OVHcloud OnPrem Cloud Platform (OPCP)**, à l’aide de :
 
 - **Grafana** : monitoring en temps réel de l’infrastructure  
 - **NetBox** : inventaire physique et logique  
