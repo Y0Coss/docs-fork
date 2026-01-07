@@ -1,0 +1,302 @@
+---
+title: "OPCP - Comment configurer un RAID software sur un noeud"
+excerpt: "Apprenez à configurer et gérer un RAID software sur un noeud OpenStack Ironic dans OPCP"
+updated: 2026-01-07
+---
+
+## Objectif
+
+Ce guide vous explique comment configurer et gérer un **RAID software** (RAID logiciel) sur un noeud OpenStack Ironic dans votre environnement OPCP.
+
+Le RAID software permet de créer une configuration de redondance au niveau logiciel, sans nécessiter de contrôleur RAID matériel dédié. Cette solution est particulièrement utile pour améliorer la disponibilité et les performances de stockage de vos instances.
+
+**Ce guide couvre :**
+
+- La configuration du RAID software via l'interface agent d'Ironic
+- La vérification de la configuration RAID
+- Les bonnes pratiques pour la gestion du RAID software
+
+> [!warning]
+> La configuration du RAID software doit être effectuée **avant** le déploiement d'une instance sur le noeud.
+> 
+> Une fois une instance déployée, la modification de la configuration RAID nécessite la suppression de l'instance et la reconfiguration du noeud.
+
+## Prérequis
+
+Avant de commencer, assurez-vous de disposer des éléments suivants :
+
+- Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
+- Un accès **[OpenStack CLI configuré](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** avec les droits nécessaires (`clouds.yaml` ou variables d'environnement).
+- Le rôle **admin** et/ou des noeuds transférés dans votre projet.
+- Un noeud disponible (statut `available`) ou en mode maintenance.
+- Connaissances de base sur OpenStack Ironic et la gestion des noeuds baremetal.
+
+## Pourquoi utiliser un RAID software ?
+
+Le RAID software offre plusieurs avantages dans un environnement OPCP :
+
+- **Redondance des données** : Protection contre la perte de données en cas de défaillance d'un disque
+- **Amélioration des performances** : Répartition des opérations de lecture/écriture sur plusieurs disques
+- **Flexibilité** : Configuration adaptable selon vos besoins (RAID 0, RAID 1, RAID 5, RAID 10, etc.)
+- **Coût réduit** : Pas besoin de contrôleur RAID matériel dédié
+
+## En pratique
+
+### 1. Vérifier les disques disponibles sur le noeud
+
+Avant de configurer le RAID, vous devez identifier les disques disponibles sur votre noeud.
+
+**Lister les noeuds disponibles :**
+
+```bash
+openstack baremetal node list
+```
+
+**Vérifier les propriétés hardware du noeud :**
+
+```bash
+openstack baremetal node show <node-id>
+```
+
+### 2. Activer le mode maintenance
+
+Avant toute modification de configuration, placez le noeud en **mode maintenance** :
+
+```bash
+openstack baremetal node maintenance set <node-id> --reason "Configuration RAID software"
+```
+
+### 3. Niveaux de RAID supportés
+
+Ironic supporte plusieurs niveaux de RAID software. Les valeurs suivantes sont acceptées dans la configuration JSON :
+
+| Niveau RAID | Valeur JSON | Description | Nombre minimum de disques | Avantages |
+|-------------|-------------|-------------|---------------------------|-----------|
+| **RAID 0** | `"0"` | Striping (agrégation par bandes) | 2 | Performance maximale, pas de redondance |
+| **RAID 1** | `"1"` | Mirroring (miroir) | 2 | Redondance complète, performance en lecture |
+| **RAID 5** | `"5"` | Striping avec parité | 3 | Bon compromis performance/redondance |
+| **RAID 6** | `"6"` | Striping avec double parité | 4 | Redondance élevée (tolère 2 disques défaillants) |
+| **RAID 10** | `"1+0"` | RAID 1+0 (mirroring + striping) | 4 | Performance et redondance optimales |
+| **RAID 50** | `"5+0"` | RAID 5+0 (striping de groupes RAID 5) | 6 | Performance et redondance pour grands volumes |
+| **RAID 60** | `"6+0"` | RAID 6+0 (striping de groupes RAID 6) | 8 | Redondance maximale pour grands volumes |
+
+> [!warning]
+> 
+> **Important** : Dans la configuration JSON, les niveaux RAID combinés doivent utiliser la syntaxe avec le signe `+`. Par exemple :
+> - RAID 10 → `"1+0"` (et non `"10"`)
+> - RAID 50 → `"5+0"`
+> - RAID 60 → `"6+0"`
+
+> [!primary]
+> 
+> Le RAID 10 est généralement recommandé pour les environnements de production nécessitant à la fois de hautes performances et une redondance élevée.
+
+### 4. Configurer le RAID software
+
+Ironic permet de configurer le RAID software via l'interface **agent**. Cette configuration est appliquée automatiquement lors du déploiement d'une instance.
+
+#### 4.1. Vérifier et activer l'interface agent si nécessaire
+
+Avant de configurer le RAID, vérifiez l'interface RAID actuellement configurée sur le noeud :
+
+```bash
+openstack baremetal node show <node-id> -f json | jq '.raid_interface'
+```
+
+Si la sortie est `null` ou différente de `"agent"`, activez l'interface agent pour le RAID :
+
+```bash
+openstack baremetal node set <node-id> --raid-interface=agent
+```
+
+Vérifiez que l'interface a bien été activée :
+
+```bash
+openstack baremetal node show <node-id> -f json | jq '.raid_interface'
+```
+
+La sortie doit afficher `"agent"`.
+
+#### 4.2. Créer le fichier de configuration RAID
+
+Créez un fichier JSON contenant la configuration RAID souhaitée. Voici un exemple pour créer un RAID 1 (mirroring) avec deux disques :
+
+```bash
+cat > /tmp/raid1.json <<EOF
+{
+  "logical_disks": [{
+    "controller": "software",
+    "size_gb": "MAX",
+    "raid_level": "1",
+    "is_root_volume": true,
+    "physical_disks": [
+      {"size": "<1000"},
+      {"size": "<1000"}
+    ]
+  }]
+}
+EOF
+```
+
+**Exemple de configuration RAID 10 (striping + mirroring) :**
+
+> [!warning]
+> 
+> **Important** : Dans la configuration JSON, le RAID 10 doit être spécifié comme `"1+0"` et non `"10"`.
+
+```bash
+cat > /tmp/raid10.json <<EOF
+{
+  "logical_disks": [{
+    "controller": "software",
+    "size_gb": "MAX",
+    "raid_level": "1+0",
+    "is_root_volume": true,
+    "physical_disks": [
+      {"size": "<1000"},
+      {"size": "<1000"},
+      {"size": "<1000"},
+      {"size": "<1000"}
+    ]
+  }]
+}
+EOF
+```
+
+**Exemple de configuration RAID 5 :**
+
+```bash
+cat > /tmp/raid5.json <<EOF
+{
+  "logical_disks": [{
+    "controller": "software",
+    "size_gb": "MAX",
+    "raid_level": "5",
+    "is_root_volume": true,
+    "physical_disks": [
+      {"size": "<1000"},
+      {"size": "<1000"},
+      {"size": "<1000"}
+    ]
+  }]
+}
+EOF
+```
+
+> [!primary]
+> 
+> Le paramètre `"size": "<1000"` dans `physical_disks` permet de sélectionner automatiquement des disques de moins de 1000 Go. Vous pouvez ajuster cette valeur selon la taille de vos disques ou utiliser d'autres critères de sélection.
+
+#### 4.3. Appliquer la configuration RAID
+
+Une fois le fichier de configuration créé, appliquez-le au noeud :
+
+```bash
+openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json
+```
+
+#### 4.4. Vérifier la configuration RAID
+
+Pour vérifier la configuration RAID appliquée sur un noeud :
+
+```bash
+openstack baremetal node show <node-id> -f json | jq '.target_raid_config'
+```
+
+### 5. Désactiver le mode maintenance
+
+Une fois la configuration RAID terminée, désactivez le mode maintenance :
+
+```bash
+openstack baremetal node maintenance unset <node-id>
+```
+
+### 6. Déployer une instance sur le noeud configuré
+
+Une fois le RAID configuré, vous pouvez déployer une instance sur le noeud :
+
+```bash
+openstack server create \
+  --image <image-name> \
+  --flavor <flavor-id> \
+  --key-name <keypair-name> \
+  --nic net-id=<network-id> \
+  --availability-zone "nova::<node-id>" \
+  <instance-name>
+```
+
+> [!success]
+> 
+> Pour vous assurer que votre instance est déployée sur le noeud configuré avec RAID, utilisez la zone de disponibilité `nova::<node-id>`.
+
+### 7. Vérifier la configuration RAID après déploiement
+
+Une fois l'instance déployée, vous pouvez vérifier la configuration RAID depuis l'instance :
+
+**Vérifier les périphériques RAID :**
+
+```bash
+cat /proc/mdstat
+```
+
+**Exemple de sortie :**
+
+```
+Personalities : [raid1] [raid10] [linear] [multipath] [raid0] [raid6] [raid5] [raid4]
+md0 : active raid1 sda[0] sdb[1]
+      500G 0 blocks super 1.2 [2/2] [UU]
+
+unused devices: <none>
+```
+
+**Vérifier les détails d'un périphérique RAID :**
+
+```bash
+mdadm --detail /dev/md0
+```
+
+## Résumé des commandes principales
+
+| Action | Commande |
+|--------|----------|
+| Lister les noeuds | `openstack baremetal node list` |
+| Activer le mode maintenance | `openstack baremetal node maintenance set <node-id>` |
+| Vérifier l'interface RAID | `openstack baremetal node show <node-id> -f json \| jq '.raid_interface'` |
+| Activer l'interface agent RAID | `openstack baremetal node set <node-id> --raid-interface=agent` |
+| Appliquer la configuration RAID | `openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json` |
+| Vérifier la configuration RAID | `openstack baremetal node show <node-id> -f json \| jq '.target_raid_config'` |
+| Désactiver le mode maintenance | `openstack baremetal node maintenance unset <node-id>` |
+| Déployer une instance | `openstack server create --image <image-name> --flavor <flavor-id> --key-name <keypair-name> --nic net-id=<network-id> --availability-zone "nova::<node-id>" <instance-name>` |
+| Vérifier l'état RAID (depuis l'instance) | `cat /proc/mdstat` |
+
+## Bonnes pratiques
+
+- **Toujours configurer le RAID avant le déploiement** : La configuration doit être effectuée sur un noeud sans instance active
+- **Utiliser le mode maintenance** : Placez toujours le noeud en maintenance avant toute modification
+- **Sauvegardes régulières** : Le RAID n'est pas une solution de sauvegarde, effectuez des sauvegardes régulières de vos données
+
+## Limitations et considérations
+
+- **Performance** : Le RAID software peut avoir un impact sur les performances CPU par rapport au RAID matériel
+- **Compatibilité** : Tous les systèmes d'exploitation ne supportent pas tous les niveaux de RAID software
+- **Espace disque** : Certains niveaux de RAID (RAID 1, 5, 6, 10) réduisent l'espace disque disponible
+- **Reconstruction** : La reconstruction d'un RAID après remplacement d'un disque peut prendre du temps et consommer des ressources
+
+## Dépannage
+
+| Erreur | Cause | Solution |
+|--------|-------|----------|
+| `Driver redfish does not support raid (disabled or not implemented). (HTTP 404)` | L'interface RAID n'est pas configurée sur `agent` | Voir section [4.1](#41-vérifier-et-activer-linterface-agent-si-nécessaire) |
+| `RAID config validation error: '10' is not one of ['JBOD', '0', '1', '2', '5', '6', '1+0', '5+0', '6+0'] (HTTP 400)` | Le niveau RAID est mal formaté dans le JSON | Voir section [3](#3-niveaux-de-raid-supportés) |
+
+## Références
+
+- [OpenStack Ironic Documentation - RAID Configuration](https://docs.openstack.org/ironic/latest/admin/raid.html)
+- [mdadm Documentation](https://linux.die.net/man/8/mdadm)
+- [Guide OPCP - Cycle de vie d'un noeud](/pages/hosted_private_cloud/opcp/node-lifecycle)
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour demander un devis et faire analyser votre projet par nos experts de l'équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
