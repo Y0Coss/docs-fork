@@ -71,24 +71,29 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >> Tout d'abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
 >>
 >> ```bash
->> #~$ openstack image list
->> +--------------------------------------+-----------------------------------------------+----------+
->> | ID                                   | Name                                          | Is Public |
->> +--------------------------------------+-----------------------------------------------+----------+
->> | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
->> | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
->> | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
->> ----------------------------------------------------------------------------------------------------
+>> #~$ openstack volume list
+>> +--------------------------------------+----------------------------------------------------+-----------+
+>> | ID                                   | Name                                               | Is Public |
+>> +--------------------------------------+----------------------------------------------------+-----------+
+>> | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True      |
+>> | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True      |
+>> | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True      |
+>> | 9c5b1e42-3d8f-4a67-a9d2-84f3b2e7c1aa | high-speed-gen2-luks                               | True      |
+>> | f41d7c8e-6a2b-4b91-9e73-2d6c0a58e94f | classic-luks                                       | True      |
+>> | c8e92a5d-0f6e-4e3b-b1a4-7a9d6f3c2e8b | high-speed-luks                                    | True      |
+>> ---------------------------------------------------------------------------------------------------------
 >> ```
 >>
 >> > [!warning]
->> > Veuillez noter que si le type de volume « high-speed-gen2 » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> > Veuillez noter que si le type de volume « high-speed-gen2 » ou les types **-LUKS** n'apparaîssent pas dans la liste, cela signifie qu'ils ne sont pas disponibles dans cette région.
+>> >
+>> > Les types de volumes **-LUKS** ne sont affichés que lorsqu’ils sont pris en charge dans la région et compatibles avec le type de chiffrement du volume.
 >> >
 >>
 >> Modifiez ensuite le type de volume avec la commande suivante :
 >>
 >> ```bash
->> $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
+>> $ openstack volume set --type <VOLUME_TYPE> --retype-policy on-demand <VOLUME_NAME_OR_ID>
 >> ```
 >>
 
