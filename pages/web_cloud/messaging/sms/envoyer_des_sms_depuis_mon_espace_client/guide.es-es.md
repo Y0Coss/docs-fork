@@ -1,7 +1,7 @@
 ---
 title: Enviar SMS desde el área de cliente
 excerpt: Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Objetivo

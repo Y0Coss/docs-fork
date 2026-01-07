@@ -1,7 +1,7 @@
 ---
 title: Wysyłanie wiadomości SMS z Panelu klienta
 excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Wprowadzenie
