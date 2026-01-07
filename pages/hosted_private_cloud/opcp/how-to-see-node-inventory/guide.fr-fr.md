@@ -30,7 +30,7 @@ Grafana fournit une vue de monitoring en temps réel et permet de suivre facilem
 
 1. Connectez-vous à l’URL d'administration `admin.dashboard`.  
 2. Cliquez sur **Grafana**.  
-3. Cliquez sur **Dashboards** et recherchez le dashboard **Home**.  
+3. Cliquez sur **Dashboards** et recherchez le dashboard **OpenStack overview**.  
 
 Vous devriez voir un dashboard similaire à l'image suivante :  
 ![grafana-dashboard-home](images/01-grafana-dashboard-home.png){.thumbnail}
