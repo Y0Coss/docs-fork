@@ -57,6 +57,10 @@ Nach dem Neustart zeigt eine Statusleiste den Fortschritt des Tasks an. Bitte be
 > Sie erhalten eine automatische E-Mail mit den SSH-Login-Daten, um im Rescue-Modus auf den VPS zuzugreifen. Bitte warten Sie auf den Eingang der E-Mail, bevor Sie weitere Maßnahmen ergreifen. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbar. Klicken Sie in der rechten oberen Ecke auf den mit Ihrem OVHcloud Kunden-Account assoziierten Namen und wählen Sie `E-Mails von OVHcloud`{.action} aus.
 >
 
+> [!warning]
+> Bitte beachten Sie, dass Sie die E-Mail nicht erhalten, wenn Sie nicht mehr der technische Ansprechpartner für den Server sind. Weitere Informationen finden Sie in unserem Leitfaden: [Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts).
+>
+
 Anschließend müssen Sie [über SSH auf Ihren Server zugreifen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), indem Sie das für den Rescue-Modus generierte temporäre Root-Passwort verwenden.
 
 Beispiel:

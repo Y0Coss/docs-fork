@@ -55,6 +55,10 @@ Una volta avviato il riavvio, comparirà un indicatore di stato che indica la du
 > Riceverai un’email automatica con le credenziali SSH per accedere in Rescue mode. Attendi la ricezione dell'email prima di proseguire con qualsiasi operazione. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Per recuperarlo, clicca sul nome associato al tuo identificativo OVHcloud nella barra dei menu situata nell’angolo in alto a destra e seleziona `Email di servizio`{.action}.
 >
 
+> [!warning]
+> Si prega di notare che se non si è più il contatto tecnico del server, non si riceverà l'e-mail. Per ulteriori informazioni, consultare la nostra guida: [Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
+>
+
 In seguito, dovrai [accedere al tuo server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizzando la password temporanea generata per la modalità rescue.
 
 Esempio:

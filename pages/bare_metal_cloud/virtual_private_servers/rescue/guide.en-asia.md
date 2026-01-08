@@ -55,6 +55,10 @@ After initiating the reboot, a progress bar will indicate the duration of the ta
 > You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](/links/manager): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 >
 
+> [!warning]
+> Please note that if you are no longer the technical contact of the server, your will not receive the email. For more information, refer to our guide on [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+>
+
 You will then need to [access your server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the temporary password generated for the rescue mode.
 
 Example:
