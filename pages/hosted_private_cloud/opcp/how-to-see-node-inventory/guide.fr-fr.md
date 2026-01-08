@@ -1,23 +1,27 @@
 ---
-title: "OPCP - Comment visualiser l'inventaire des noeuds"
-excerpt: "Apprenez à consulter l'inventaire des noeuds"
+title: "OPCP - Comment visualiser l'inventaire des nœuds"
+excerpt: "Découvrez comment consulter l'inventaire des nœuds OPCP"
 updated: 2026-01-07
 ---
 
 ## Objectif
 
-Ce guide explique comment consulter l’inventaire matériel, les ressources consommées et les ressources disponibles sur une plateforme **OVHcloud OnPrem Cloud Platform (OPCP)**, à l’aide de :
+Ce guide explique comment consulter l’inventaire matériel, les ressources consommées et les ressources disponibles sur une plateforme **OVHcloud On-Prem Cloud Platform (OPCP)**, à l’aide de :
 
-- **Grafana** : monitoring en temps réel de l’infrastructure  
-- **NetBox** : inventaire physique et logique  
-- **OpenStack Horizon** : inventaire ironic via Horizon
-- **OpenStack CLI** : inventaire ironic via CLI
+- **Grafana** : monitoring en temps réel de l’infrastructure
+- **NetBox** : inventaire physique et logique
+- **OpenStack Horizon** : inventaire Ironic via Horizon
+- **OpenStack CLI** : inventaire Ironic via CLI
 
-Un noeud dans OpenStack correspond à un serveur physique du rack OPCP. Dans ce guide, nous parlerons donc de **noeud** pour désigner un serveur physique.
+> [!primary]
+>
+> Dans OpenStack, un nœud correspond à un serveur physique du rack OPCP.
+>
+> Dans ce guide, le terme **nœud** est donc utilisé pour désigner un serveur physique.
 
 ## Prérequis
 
-- Être administrateur de l'infrastructure [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) et avoir accès à l'interface d'administration `admin.dashboard`.  
+- Être administrateur de l'infrastructure [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) et avoir accès à l'interface d'administration `admin.dashboard`.
 - Un accès **[OpenStack CLI configuré](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** avec les droits nécessaires (`clouds.yaml` ou variables d’environnement).
 
 ## En pratique
@@ -28,11 +32,12 @@ Grafana fournit une vue de monitoring en temps réel et permet de suivre facilem
 
 #### 1.1 Accéder au dashboard Home
 
-1. Connectez-vous à l’URL d'administration `admin.dashboard`.  
-2. Cliquez sur **Grafana**.  
-3. Cliquez sur **Dashboards** et recherchez le dashboard **OpenStack overview**.  
+1. Connectez-vous à l’URL d'administration `admin.dashboard`.
+2. Cliquez sur **Grafana**.
+3. Cliquez sur **Dashboards** et recherchez le dashboard **OpenStack overview**.
 
-Vous devriez voir un dashboard similaire à l'image suivante :  
+Vous devriez voir un dashboard similaire à l'image suivante :
+
 ![grafana-dashboard-openstack-overview](images/01-grafana-dashboard-openstack-overview.png){.thumbnail}
 
 #### 1.2 Comprendre le dashboard OpenStack overview
@@ -41,51 +46,53 @@ Le dashboard permet de visualiser :
 
 - L'état des services OpenStack : **Service status**
 - L'utilisation des ressources : **Resource usage**
-- Une vue détaillé du service Keystone : **Keystone**  
-- Une vue détaillé du service Ironic : **Ironic**  
-- Une vue détaillé du service Nova : **Nova**  
-- Une vue détaillé du service Neutron : **Neutron**  
-- Une vue détaillé du service Cinder : **Cinder**
-- Une vue détaillé du service Glance : **Glance**
+- Une vue détaillée du service Keystone : **Keystone**
+- Une vue détaillée du service Ironic : **Ironic**
+- Une vue détaillée du service Nova : **Nova**
+- Une vue détaillée du service Neutron : **Neutron**
+- Une vue détaillée du service Cinder : **Cinder**
+- Une vue détaillée du service Glance : **Glance**
 
 #### 1.3 Comprendre et utiliser la section Ironic
 
-Nous allons nous focaliser sur la partie "Ironic", c'est ici que nous allons pouvoir voir l'état des différents noeuds.
+Nous allons nous focaliser sur la partie « Ironic », c'est ici que nous allons pouvoir voir l'état des différents nœuds.
+
 ![grafana-dashboard-openstack-overview-ironic](images/01-grafana-dashboard-openstack-overview-ironic.png){.thumbnail}
 
 Cette section permet de visualiser :
 
-- Le nombre total de noeuds : **Total enrolled Ironic nodes**  
-- Le nombre de noeuds disponible et pas en maintenance : **Available Ironic nodes**  
-- Le nombre de noeuds en erreur : **Errorg Ironic nodes**  
-- La liste des noeuds en erreurs ou en maintenance : **List of failed and maintenance nodes**
-- Le nombre de noeuds utilisé : **Allocated Ironic nodes**  
-- Le nombre de noeuds en attente : **Waiting Ironic nodes**  
-- Le nombre de noeuds en maintenance : **Maintenance Ironic nodes**  
+- Le nombre total de nœuds : **Total enrolled Ironic nodes**
+- Le nombre de nœuds disponibles et pas en maintenance : **Available Ironic nodes**
+- Le nombre de nœuds en erreur : **Error Ironic nodes**
+- La liste des nœuds en erreur ou en maintenance : **List of failed and maintenance nodes**
+- Le nombre de nœuds utilisés : **Allocated Ironic nodes**
+- Le nombre de nœuds en attente : **Waiting Ironic nodes**
+- Le nombre de nœuds en maintenance : **Maintenance Ironic nodes**
 
 ### 2. Inventaire matériel et logique avec NetBox
 
 NetBox est la référence pour gérer l’inventaire physique, réseau et logique de votre infrastructure.
-L'inventaire de Netbox est automatiquement renseigné, aucune action manuelle n’est requise pour l’ajout ou la modification des nœuds.
+
+L'inventaire de NetBox est automatiquement renseigné, aucune action manuelle n’est requise pour l’ajout ou la modification des nœuds.
 
 #### 2.1 Accéder à NetBox
 
-1. Connectez-vous à l’URL d'administration `admin.dashboard`.  
-2. Cliquez sur **NetBox**.  
+1. Connectez-vous à l’URL d'administration `admin.dashboard`.
+2. Cliquez sur **NetBox**.
 
-#### 2.2 Consulter l’inventaire des noeuds
+#### 2.2 Consulter l’inventaire des nœuds
 
-Dans **Appareils**, vous pouvez voir la liste complète des équipements de votre rack OPCP (noeuds, équipements réseau, etc.).  
+Dans **Appareils**, vous pouvez voir la liste complète des équipements de votre rack OPCP (nœuds, équipements réseau, etc.).
 
-Vous pouvez :  
+Vous pouvez :
 
-- utiliser la recherche rapide pour trouver un élément par nom  
-- utiliser **Filtres** pour une recherche avancée  
+- utiliser la recherche rapide pour trouver un élément par nom ;
+- utiliser **Filtres** pour une recherche avancée.
 
-Exemple : lister tous les noeuds non en production en appliquant les filtres suivants :
+Par exemple, vous pouvez lister tous les nœuds hors production en appliquant les filtres suivants :
 
-- **Statut** : Démonté, Inventaire, Échoué, Planifié  
-- **Rôle** : server  
+- **Statut** : Démonté, Inventaire, Échoué, Planifié
+- **Rôle** : server
 
 ![netbox-devices-filters](images/02-netbox-devices-filters.png){.thumbnail}
 
@@ -95,24 +102,24 @@ Vous pouvez enregistrer la recherche pour la réutiliser plus tard.
 
 #### 3.1 Accéder à l'interface Ironic
 
-1. Connectez-vous à l’URL d'administration `admin.dashboard`  
-2. Cliquez sur **Horizon**  
-3. Cliquez sur **Admin**  
-4. Cliquez sur **System**, puis **Ironic Bare Metal Provisioning**
+1. Connectez-vous à l’URL d'administration `admin.dashboard`
+2. Cliquez sur **Horizon**
+3. Cliquez sur **Admin**
+4. Cliquez sur **System**, puis sur **Ironic Bare Metal Provisioning**
 
-#### 3.2 Lister tous les noeuds
+#### 3.2 Lister tous les nœuds
 
-Dans **Ironic Bare Metal Provisioning**, vous pouvez voir tous les noeuds.  
+Dans **Ironic Bare Metal Provisioning**, vous pouvez voir tous les nœuds.
 
-Vous pouvez filtrer les noeuds selon leur statut, par exemple : `Provisioning State = failed`.  
+Vous pouvez filtrer les nœuds selon leur statut, par exemple : `Provisioning State = failed`.
 
 ![openstack-horizon-ironic](images/03-openstack-horizon-ironic.png){.thumbnail}
 
 ### 4. État des ressources via OpenStack CLI
 
-Le CLI OpenStack permet d’obtenir l’état **en temps réel** des ressources allouées et disponibles.  
+Le CLI OpenStack permet d’obtenir l’état **en temps réel** des ressources allouées et disponibles.
 
-#### 4.1 Lister tous les noeuds
+#### 4.1 Lister tous les nœuds
 
 ```bash
 openstack baremetal node list
@@ -130,9 +137,10 @@ openstack baremetal node list
 +--------------------------------------+----------------+--------------------------------------+-------------+--------------------+-------------+
 ```
 
-#### 4.2 Filtrer les noeuds
+#### 4.2 Filtrer les nœuds
 
-Vous pouvez filtrer les résultats à l'aide de **--provision-state** pour voir les noeuds dans un statut spécifique, ou encore **--maintenance** pour voir les noeuds en maintenance.  
+Vous pouvez filtrer les résultats à l'aide de **--provision-state** pour voir les nœuds dans un statut spécifique, ou encore **--maintenance** pour voir les nœuds en maintenance.
+
 Tous les filtres sont disponibles via `--help`.
 
 **Exemple de sortie :**
@@ -157,9 +165,9 @@ $ openstack baremetal node list --maintenance
 +--------------------------------------+--------------+--------------------------------------+-------------+--------------------+-------------+
 ```
 
-#### 4.3 Détails d'un noeud
+#### 4.3 Détails d'un nœud
 
-Pour récupérer toutes les informations concernant un noeud, par exemple pour identifier la dernière erreur et comprendre pourquoi le déploiement a échoué :
+Pour récupérer toutes les informations concernant un nœud, par exemple pour identifier la dernière erreur et comprendre pourquoi le déploiement a échoué :
 
 ```bash
 openstack baremetal node show <node-id>

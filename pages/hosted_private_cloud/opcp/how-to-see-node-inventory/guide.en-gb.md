@@ -1,76 +1,83 @@
 ---
 title: "OPCP - How to see the node inventory"
-excerpt: "Learn how to consult the node inventory"
+excerpt: "Find out how to access the OPCP node inventory"
 updated: 2026-01-07
 ---
 
 ## Objective
 
-This guide explains how to consult the hardware inventory, consumed resources, and available resources on an **OVHcloud OnPrem Cloud Platform (OPCP)** using:
+This guide explains how to view the hardware inventory, consumed resources, and available resources on an **OVHcloud On-Prem Cloud Platform (OPCP)** using:
 
-- **Grafana**: real-time infrastructure monitoring  
-- **NetBox**: physical and logical inventory  
-- **OpenStack Horizon**: Ironic inventory via Horizon  
-- **OpenStack CLI**: Ironic inventory via CLI  
+- **Grafana**: real-time infrastructure monitoring
+- **NetBox**: physical and logical inventory
+- **OpenStack Horizon**: Ironic inventory via Horizon
+- **OpenStack CLI**: Ironic inventory via CLI
 
-A node in OpenStack corresponds to a physical server in the OPCP rack. In this guide, we will therefore use the term **node** to refer to a physical server.
+> [!primary]
+> 
+> In OpenStack, a node corresponds to a physical server in the OPCP rack.
+>
+> In this guide, the term **node** is therefore used to refer to a physical server.
 
 ## Prerequisites
 
-- Be an administrator of the [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) infrastructure and have access to the administration interface `admin.dashboard`.  
+- Be an administrator of the [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) infrastructure and have access to the administration interface `admin.dashboard`.
 - Have **[OpenStack CLI configured](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the required permissions (`clouds.yaml` or environment variables).
 
 ## Instructions
 
 ### 1. Inventory and monitoring via Grafana
 
-Grafana provides a real-time monitoring view and allows you to easily track the evolution of your OPCP infrastructure.
+Grafana provides a real-time monitoring view and allows you to easily track changes in your OPCP infrastructure.
 
 #### 1.1 Access the Home dashboard
 
-1. Log in to the administration URL `admin.dashboard`.  
-2. Click **Grafana**.  
-3. Click **Dashboards** and search for the **OpenStack overview** dashboard.  
+1. Log in to the administration URL `admin.dashboard`.
+2. Click **Grafana**.
+3. Click **Dashboards** and search for the **OpenStack overview** dashboard.
 
-You should see a dashboard similar to the following image:  
+You should see a dashboard similar to the following image:
+
 ![grafana-dashboard-openstack-overview](images/01-grafana-dashboard-openstack-overview.png){.thumbnail}
 
 #### 1.2 Understanding the OpenStack overview dashboard
 
 The dashboard allows you to visualize:
 
-- OpenStack service status: **Service status**  
-- Resource usage: **Resource usage**  
-- A detailed view of the Keystone service: **Keystone**  
-- A detailed view of the Ironic service: **Ironic**  
-- A detailed view of the Nova service: **Nova**  
-- A detailed view of the Neutron service: **Neutron**  
-- A detailed view of the Cinder service: **Cinder**  
+- OpenStack service status: **Service status**
+- Resource usage: **Resource usage**
+- A detailed view of the Keystone service: **Keystone**
+- A detailed view of the Ironic service: **Ironic**
+- A detailed view of the Nova service: **Nova**
+- A detailed view of the Neutron service: **Neutron**
+- A detailed view of the Cinder service: **Cinder**
 - A detailed view of the Glance service: **Glance**
 
 #### 1.3 Understanding and using the Ironic section
 
-We will focus on the "Ironic" section, as this is where you can see the status of the different nodes.  
+We will focus on the "Ironic" section, as this is where you can see the status of the different nodes.
+
 ![grafana-dashboard-openstack-overview-ironic](images/01-grafana-dashboard-openstack-overview-ironic.png){.thumbnail}
 
 This section allows you to view:
 
-- Total number of nodes: **Total enrolled Ironic nodes**  
-- Number of available nodes not in maintenance: **Available Ironic nodes**  
-- Number of nodes in error: **Errorg Ironic nodes**  
-- List of nodes in error or maintenance: **List of failed and maintenance nodes**  
-- Number of allocated nodes: **Allocated Ironic nodes**  
-- Number of waiting nodes: **Waiting Ironic nodes**  
+- Total number of nodes: **Total enrolled Ironic nodes**
+- Number of available nodes not in maintenance: **Available Ironic nodes**
+- Number of nodes in error: **Error Ironic nodes**
+- List of nodes in error or maintenance: **List of failed and maintenance nodes**
+- Number of allocated nodes: **Allocated Ironic nodes**
+- Number of waiting nodes: **Waiting Ironic nodes**
 - Number of nodes in maintenance: **Maintenance Ironic nodes**
 
 ### 2. Hardware and logical inventory with NetBox
 
-NetBox is the reference tool for managing the physical, network, and logical inventory of your infrastructure.  
+NetBox is the reference tool for managing the physical, network, and logical inventory of your infrastructure.
+
 The NetBox inventory is automatically populated; no manual action is required to add or modify nodes.
 
 #### 2.1 Access NetBox
 
-1. Log in to the administration URL `admin.dashboard`.  
+1. Log in to the administration URL `admin.dashboard`.
 2. Click **NetBox**.
 
 #### 2.2 View the node inventory
@@ -79,13 +86,13 @@ In **Devices**, you can see the complete list of equipment in your OPCP rack (no
 
 You can:
 
-- use the quick search to find an item by name  
-- use **Filters** for advanced searches  
+- use the quick search to find an item by name
+- use **Filters** for advanced searches
 
-Example: list all non-production nodes by applying the following filters:
+For example, you can list all non-production nodes by applying the following filters:
 
-- **Status**: Decommissioned, Inventory, Failed, Planned  
-- **Role**: server  
+- **Status**: Decommissioned, Inventory, Failed, Planned
+- **Role**: server
 
 ![netbox-devices-filters](images/02-netbox-devices-filters.png){.thumbnail}
 
@@ -95,9 +102,9 @@ You can save the search to reuse it later.
 
 #### 3.1 Access the Ironic interface
 
-1. Log in to the administration URL `admin.dashboard`  
-2. Click **Horizon**  
-3. Click **Admin**  
+1. Log in to the administration URL `admin.dashboard`
+2. Click **Horizon**
+3. Click **Admin**
 4. Click **System**, then **Ironic Bare Metal Provisioning**
 
 #### 3.2 List all nodes
@@ -132,7 +139,8 @@ openstack baremetal node list
 
 #### 4.2 Filter nodes
 
-You can filter results using --provision-state to view nodes in a specific state, or --maintenance to view nodes in maintenance.
+You can filter results using **--provision-state** to view nodes in a specific state, or **--maintenance** to view nodes in maintenance.
+
 All available filters can be found using `--help`.
 
 **Example output:**
@@ -159,7 +167,7 @@ $ openstack baremetal node list --maintenance
 
 #### 4.3 Node details
 
-To retrieve all information about a node, for example to identify the last error and understand why the deployment failed::
+To retrieve all information about a node, for example to identify the last error and understand why the deployment failed:
 
 ```bash
 openstack baremetal node show <node-id>
