@@ -22,8 +22,8 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 ## Voraussetzungen
 
-- Eine **Quellplattform** mit konfigurierten Konten [Exchange](/links/web/emails-hosted-exchange) oder [E-mail Pro](/links/web/email-pro) oder [Zimbra](/links/web/zimbra) vorliegen.
-- Sie verfügen über eine "**Ziel-Plattform**": [Exchange](/links/web/emails-hosted-exchange), [E-Mail Pro](/links/web/email-pro) oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten). Diese Plattform muss unkonfigurierte oder verfügbare Accounts haben, um die zu migrierenden E-Mail-Adressen zu empfangen.
+- Sie haben eine "**Quell-Plattform**" mit bereits eingerichteten [Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) oder [Zimbra](/links/web/zimbra) Accounts.
+- Sie verfügen über eine "**Ziel-Plattform**": [Exchange](/links/web/emails-hosted-exchange), [E-Mail Pro](/links/web/email-pro) oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten). Diese Plattform muss unkonfigurierte oder verfügbare Accounts haben, um die zu migrierenden E-Mail-Accounts zu empfangen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -32,7 +32,7 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 > [!warning]
 >
-> Vor Beginn der Migration, wenn Sie gerade Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zunächst den Domainnamen zu Ihrer E-Mail-Plattform hinzu. Wenn Sie zu einer MX Plan-Plattform migrieren, ist der angeschlossene Domainname „fest“, Sie können direkt zur [nächsten Etappe](#accountsmigration) übergehen.
+> Vor Beginn der Migration, wenn Sie Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zunächst den Domainnamen zu Ihrer E-Mail-Plattform hinzu. Wenn Sie zu einer MX Plan-Plattform migrieren, ist der angeschlossene Domainname nicht wählbar. Sie können direkt zum [nächsten Schritt](#accountsmigration) übergehen.
 >
 > Wählen Sie den Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform aus und klicken Sie auf `Domain hinzufügen`{.action}. Nachdem der Domainname hinzugefügt wurde, stellen Sie sicher, dass die Bezeichnung `OK` oder `Aktiv`{.action} in der Spalte `Status` angezeigt wird.
 >
@@ -50,8 +50,8 @@ Die Migration Ihrer E-Mail-Accounts erfolgt in 3 großen Schritten: **Umbenennen
 >
 > Sonderfälle:
 >
-> - Wenn Sie **ein Exchange- oder Zimbra PRO-Konto** zu einem **E-mail Pro-** oder **Zimbra STARTER-Konto** migrieren müssen, müssen Sie sicherstellen, dass Ihre E-Mail-Konten nicht mehr als 10 Go (E-mail Pro) oder 15 Go (Zimbra STARTER) enthalten. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei E-mail Pro oder Zimbra STARTER nicht vorhanden und können nicht migriert werden.
-> - Wenn Sie **ein Exchange-, E-mail Pro- oder Zimbra-Konto** zu einem **MX Plan-Konto** migrieren müssen, müssen Sie sicherstellen, dass Ihr E-Mail-Konto nicht mehr als 5 Go enthält. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei MX Plan nicht vorhanden und können nicht migriert werden.
+> - Wenn Sie **ein Exchange- oder Zimbra PRO-Konto** zu einem **E-mail Pro-** oder **Zimbra STARTER-Konto** migrieren, müssen Sie sicherstellen, dass Ihre E-Mail-Konten nicht mehr als 10 GB (E-mail Pro) oder 15 GB (Zimbra STARTER) enthalten. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei E-mail Pro oder Zimbra STARTER nicht vorhanden und können nicht migriert werden.
+> - Wenn Sie **ein Exchange-, E-mail Pro- oder Zimbra-Konto** zu einem **MX Plan-Konto** migrieren, müssen Sie sicherstellen, dass Ihr E-Mail-Konto nicht mehr als 5 GB enthält. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei MX Plan nicht vorhanden und können nicht migriert werden.
 
 #### Umbenennen
 
@@ -95,7 +95,7 @@ Nach der Migration können Sie den ursprünglichen Account mit dem geänderten N
 
 Um ihn zu löschen, gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Quell-Plattform, klicken Sie auf `...`{.action} und dann auf `Diesen Account zurücksetzen`{.action}.
 
-### Überprüfen oder ändern Sie die Konfiguration Ihres Domains
+### Die Konfiguration Ihrer Domain überprüfen oder ändern
 
 Ihre E-Mail-Adressen sollten bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 

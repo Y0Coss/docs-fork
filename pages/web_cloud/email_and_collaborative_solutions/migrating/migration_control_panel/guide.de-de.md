@@ -48,7 +48,7 @@ Bevor Sie mit der Migration beginnen, müssen Sie die Version des MX Plan identi
 
 > [!primary]
 >
-> Die E-Mail-Technologie Ihrer MX Plan-Angebot kann je nach Aktivierungsdatum Ihres Angebots oder bei kürzlich erfolgter Migration variieren. Diese Technologie ist besonders durch die Oberfläche ihres Webmails zu erkennen. Um sie in Ihrem Kundencenter zu identifizieren, folgen Sie diesen Schritten :
+> Die E-Mail-Technologie Ihrer MX Plan-Angebot kann je nach Aktivierungsdatum Ihres Angebots oder bei kürzlich erfolgter Migration variieren. Diese Technologie ist an der Oberfläche ihres Webmails zu erkennen. Um sie in Ihrem Kundencenter zu identifizieren, folgen Sie diesen Schritten:
 >
 > 1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an.
 > 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
@@ -64,9 +64,9 @@ Bevor Sie mit der Migration beginnen, müssen Sie die Version des MX Plan identi
 
 > [!warning]
 >
-> Dieser Abschnitt betrifft alle MX Plan-Dienste, die die Webmail-Technologie Rouncube, Zimbra oder OWA nutzen.
+> Dieser Abschnitt betrifft alle MX Plan-Dienste, die die Webmail-Technologie Roundcube, Zimbra oder OWA nutzen.
 >
-> Wenn Sie jedoch einen MX Plan-Dienst mit Rouncube-Webmail zu einer OVHcloud E-Mail Pro- oder Exchange-Plattform migrieren möchten, folgen Sie dem Abschnitt « [Automatische Migration eines MX Plan Rouncube-Angebots zu Exchange oder E-Mail Pro](#roundcube-mxplan) » in diesem Leitfaden.
+> Wenn Sie jedoch einen MX Plan-Dienst mit Roundcube Webmail zu einer OVHcloud E-Mail Pro- oder Exchange-Plattform migrieren möchten, folgen Sie dem Abschnitt [Automatische Migration eines MX Plan Roundcube Angebots zu Exchange oder E-Mail Pro](#roundcube-mxplan).
 
 > [!warning]
 >
@@ -113,11 +113,11 @@ Sie können den ursprünglichen Account nach dieser Migration mit dem vorläufig
 
 Wenn Sie ihn löschen möchten, gehen Sie in den Tab `E-Mails`{.action} Ihres MX Plans, klicken Sie auf `...`{.action} und dann auf `Konto löschen`{.action}.
 
-#### 3.2 Automatische Migration eines MX Plan Rouncube-Angebots zu Exchange oder E-Mail Pro <a name="roundcube-mxplan"></a>
+#### 3.2 Automatische Migration eines MX Plan Roundcube Angebots zu Exchange oder E-Mail Pro <a name="roundcube-mxplan"></a>
 
 > [!warning]
 >
-> Dieser Abschnitt betrifft ausschließlich MX Plan-Dienste, die die Webmail-Technologie Rouncube nutzen.
+> Dieser Abschnitt betrifft ausschließlich MX Plan-Dienste, die die Webmail-Technologie Roundcube nutzen.
 
 > [!primary]
 >
@@ -177,7 +177,7 @@ Dazu wählen Sie den betreffenden E-Mail Pro-, Exchange- oder Zimbra-Dienst aus 
 > Wenn Sie gerade die Migration durchgeführt oder einen DNS-Eintrag Ihres Domainnamens geändert haben, kann es einige Stunden dauern, bis die [OVHcloud Kundencenter](/links/manager) aktualisiert wird.
 >
 
-Um die Konfiguration zu ändern, klicken Sie auf das rote Symbol und führen Sie die geforderte Aktion durch. Diese benötigt eine Ausbreitungszeit von maximal 4 bis 24 Stunden, bevor sie vollständig wirksam ist.
+Um die Konfiguration zu ändern, klicken Sie auf das rote Symbol und führen Sie den gewünschten Vorgang durch. Eine Propagationszeit von 4 bis maximal 24 Stunden ist abzuwarten, bis die Änderung voll wirksam ist.
 
 ### Schritt 5: Migrierte E-Mail-Accounts verwenden
 
@@ -191,7 +191,7 @@ Wenn Sie sich zum ersten Mal in Ihrem neuen E-Mail-Account einloggen, können mi
 
 ![exchange](images/owa_migrate_content.png){.thumbnail}
 
-Standardordner wie „Gesendete Elemente“ oder „Papierkorb“ erscheinen auf Englisch („Sent items“ und „Trash“), mit Ausnahme der Ordner, die Sie selbst erstellt haben.
+Standardordner wie "Gesendete Elemente" oder "Papierkorb" erscheinen in englischer Benennung ("Sent items" und "Trash"), mit Ausnahme der Ordner, die Sie selbst erstellt haben.
 
 Nach einer Migration können Sie alle Ordner und Unterordner Ihres Accounts einsehen, um sicherzustellen, dass alle Elemente vorhanden sind.
 

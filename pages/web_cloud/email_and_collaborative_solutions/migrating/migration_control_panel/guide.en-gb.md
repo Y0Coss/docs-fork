@@ -66,7 +66,7 @@ Before starting your migration, you will need to identify the version of the MX 
 >
 > This section concerns all MX Plan services using the Rouncube, Zimbra or OWA webmail technology.
 >
-> However, if you want to migrate an MX Plan service using the Roundcube webmail to an OVHcloud Email Pro or Exchange platform, follow the section « [Automatic migration of an MX Plan Roundcube offer to Exchange or Email Pro](#roundcube-mxplan) » of this guide.
+> However, if you want to migrate an MX Plan service using the Roundcube webmail to an OVHcloud Email Pro or Exchange platform, follow the section [Automatic migration of an MX Plan Roundcube offer to Exchange or Email Pro](#roundcube-mxplan) of this guide.
 
 > [!warning]
 >
