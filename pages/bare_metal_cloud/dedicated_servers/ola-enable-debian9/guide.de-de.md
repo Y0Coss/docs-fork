@@ -8,7 +8,7 @@ updated: 2026-01-08
 
 Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen redundant machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
 
-**Erfahren Sie, wie Sie Ihre NICs (Network Interface Controller) für die Verwendung mit dem OLA-Dienst unter Debian (Versionen 9 bis 11) zusammenfassen können.**
+**Erfahren Sie, wie Sie Ihre NIC (Network Interface Controller) für die Verwendung mit dem OLA-Dienst unter Debian (Versionen 9 bis 11) zusammenfassen können.**
 
 ## Voraussetzungen
 

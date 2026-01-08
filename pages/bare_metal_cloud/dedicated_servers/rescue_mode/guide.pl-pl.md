@@ -352,7 +352,7 @@ chroot /mnt/
 
 Teraz należy móc zastosować wszystkie niezbędne zmiany w systemie, na przykład aby [odzyskać dostęp do serwera](#gofurther).
 
-### Konfiguracja agregacji łączy w ttrybu rescue
+### Konfiguracja agregacji łączy w trybu rescue
 
 Agregacja łączy (LACP) jest bardzo korzystna, ponieważ pozwala zwiększyć całkowitą przepustowość serwera, zapewniając jednocześnie redundancję sieci w przypadku awarii interfejsu sieciowego.
 
