@@ -27,7 +27,7 @@ Link Aggregation Control Protocol (LACP) technology is designed to increase your
 > [!warning]
 > While Debian 12 and newer images provided by OVHcloud utilize Netplan by default, there are two key exceptions where `ifupdown` (/etc/network/interfaces) is used instead:
 >
-> - **Rescue mode**: Although based on Debian 12, the rescue environment relies on the `ifupdown` utility.
+> - **Rescue mode** : Although based on Debian 12, the rescue environment relies on the `ifupdown` utility.
 > - **Custom images** : Debian installations performed using your own image may still use `ifupdown` for networking.
 >
 > If you wish to configure link aggregation in rescue mode, or on a custom OS relying on `ifupdown`, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) instead.

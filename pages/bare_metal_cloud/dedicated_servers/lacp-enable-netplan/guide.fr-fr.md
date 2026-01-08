@@ -31,6 +31,7 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 > - **Images personnalisées** : Les installations Debian effectuées à l'aide de votre propre image peuvent toujours utiliser `ifupdown` pour leur configuration réseau.
 >
 > Si vous souhaitez configurer l'agrégation de liens en mode rescue, ou sur un OS personnalisé s'appuyant sur `ifupdown`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) à la place.
+>
 
 ## Prérequis
 
