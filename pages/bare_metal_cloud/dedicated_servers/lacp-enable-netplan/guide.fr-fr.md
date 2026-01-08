@@ -25,10 +25,12 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 **Ce guide explique comment lier vos interfaces pour les utiliser pour l'agrégation de liens dans Debian 12 (*ou plus récent*) / Ubuntu 24.04 (configuration Netplan).**
 
 > [!warning]
-> Bien que le mode rescue soit basé sur le système d'exploitation Debian 12, sa configuration réseau repose sur l'utilitaire *ifupdown*.
+> Bien que les images Debian 12 (ou plus récentes) fournies par OVHcloud utilisent `Netplan` par défaut, il existe deux exceptions clés où `ifupdown` (/etc/network/interfaces) est utilisé à la place :
 >
-> Si vous souhaitez configurer l'agrégation de liens en mode rescue, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+> - **Mode rescue** : Bien qu'il soit basé sur Debian 12, le mode rescue s'appuie sur l'utilitaire `ifupdown`.
+> - **Images personnalisées** : Les installations Debian effectuées à l'aide de votre propre image peuvent toujours utiliser `ifupdown` pour leur configuration réseau.
 >
+> Si vous souhaitez configurer l'agrégation de liens en mode rescue, ou sur un OS personnalisé s'appuyant sur `ifupdown`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) à la place.
 
 ## Prérequis
 

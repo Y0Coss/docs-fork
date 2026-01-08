@@ -25,9 +25,12 @@ Link Aggregation Control Protocol (LACP) technology is designed to increase your
 **This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 (*or newer*) / Ubuntu 24.04 (Netplan configuration).**
 
 > [!warning]
-> Although rescue mode is based on the Debian 12 operating system, its network configuration relies on the *ifupdown* utility.
+> While Debian 12 and newer images provided by OVHcloud utilize Netplan by default, there are two key exceptions where `ifupdown` (/etc/network/interfaces) is used instead:
 >
-> If you wish to configure link aggregation in rescue mode, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+> - **Rescue mode**: Although based on Debian 12, the rescue environment relies on the `ifupdown` utility.
+> - **Custom images** : Debian installations performed using your own image may still use `ifupdown` for networking.
+>
+> If you wish to configure link aggregation in rescue mode, or on a custom OS relying on `ifupdown`, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) instead.
 >
 
 ## Requirements
