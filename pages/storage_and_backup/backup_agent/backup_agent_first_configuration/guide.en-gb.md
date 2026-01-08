@@ -1,78 +1,108 @@
 ---
-title: "How to configure your first backup"
+title: "Backup Agent - How to configure your first backup"
 excerpt: "How to configure your first backup on your Bare Metal server with the Backup Agent product"
-updated: 2026-01-07
+updated: 2026-01-12
 ---
 
 ## Objective
 
-You have just ordered your Backup Agent solution for your Bare Metal server, and you want to set up your first backups.
+You have just ordered your Backup Agent solution for your Bare Metal server, discover how to set up your first backups.
 
 ## Requirements
 
-* You must have ordered a Backup Agent via your bare metal server, or via the "Backup Agent" menu in your Manager.
-* You need to have booted and configured an operating system on your bare metal server.
+- Access to the [OVHcloud Control Panel](/links/manager). 
+- A Backup Agent ordered simultaneously with your Bare Metal server, or afterwards via the `Backup Agent`{.action} menu in the OVHcloud Control Panel.
+- You need to have booted and configured an Operating System on your Bare Metal server.
 
-## In practice
+## Instructions
 
-In order to configure your first backup, you must install the agent on your bare metal server.
+In order to configure your first backup, you must install the agent on your Bare Metal server.
 
 The functioning is as follows:
 
-* ![Backup Agent Functional Diagram](images/01-backup-agent-diagram.png){.thumbnail} 
+![Backup Agent Functional Diagram](images/01-backup-agent-diagram.png){.thumbnail} 
 
 Once the agent has been installed, it will receive the backup policy and allow backups to be performed.
 
-To install your agent on your bare metal server, follow the steps below:
+To install your agent on your Bare Metal server, follow the steps below:
 
 ### Windows
 
-* Go to your Manager, in the Backup Agent section.
-    * ![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
-* Click on your vspc-tenant, in the Services section.
-    * ![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-* Go to the "Agents" section
-    * ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-* Click on the "Download" button at the top of the table of your Agents.
-    * ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
-* Select your operating system and choose either to download the installation file or use one of the commands provided to retrieve it.
-    * ![Backup Agent Step 13](images/01-backup-agent-step13.png){.thumbnail}
-* Once the installation file is on your bare metal, you can run it and follow the procedure of the software:
-    * ![Backup Agent Step 01](images/01-backup-agent-step01.png){.thumbnail}
-    * ![Backup Agent Step 02](images/01-backup-agent-step02.png){.thumbnail}
-    * ![Backup Agent Step 03](images/01-backup-agent-step03.png){.thumbnail}
-    * ![Backup Agent Step 04](images/01-backup-agent-step04.png){.thumbnail}
-    * ![Backup Agent Step 05](images/01-backup-agent-step05.png){.thumbnail}
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Backup Agent`{.action} section.
+
+![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
+
+Click on your vspc-tenant, in the `Services`{.action} section.
+
+![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+
+Go to the `Agents`{.action} section.
+
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+
+Click the `Download`{.action} button at the top of the table listing your Agents.
+
+![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+
+Select your Operating System and choose either to download the installation file or use one of the commands provided to retrieve it.
+
+![Backup Agent Step 13](images/01-backup-agent-step13.png){.thumbnail}
+
+Once the installation file is on your Bare Metal server, you can run it and follow the procedure of the software:
+
+![Backup Agent Step 01](images/01-backup-agent-step01.png){.thumbnail}
+
+![Backup Agent Step 02](images/01-backup-agent-step02.png){.thumbnail}
+
+![Backup Agent Step 03](images/01-backup-agent-step03.png){.thumbnail}
+
+![Backup Agent Step 04](images/01-backup-agent-step04.png){.thumbnail}
+
+![Backup Agent Step 05](images/01-backup-agent-step05.png){.thumbnail}
 
 Once you have set it up, you will be able to see your agent connect to our infrastructure in order to go back to your backup policy:
-    * ![Backup Agent Step 06](images/01-backup-agent-step06.png){.thumbnail}
-    * ![Backup Agent Step 07](images/01-backup-agent-step07.png){.thumbnail}
+
+![Backup Agent Step 06](images/01-backup-agent-step06.png){.thumbnail}
+
+![Backup Agent Step 07](images/01-backup-agent-step07.png){.thumbnail}
 
 Finally, once you go back down, you can see your backup agent configured and present on your Bare Metal server:
-    * ![Backup Agent Step 08](images/01-backup-agent-step08.png){.thumbnail}
-    * ![Backup Agent Step 09](images/01-backup-agent-step09.png){.thumbnail}
 
-By default, your backups are triggered between 10pm and 6am, but you can launch backups manually by clicking the "Backup Now" button.
+![Backup Agent Step 08](images/01-backup-agent-step08.png){.thumbnail}
+
+![Backup Agent Step 09](images/01-backup-agent-step09.png){.thumbnail}
+
+By default, your backups are triggered between 10pm and 6am, but you can launch backups manually by clicking the `Backup Now`{.action} button.
 
 ### Linux
 
-* Go to your Manager, in the Backup Agent section.
-    * ![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
-* Click on your vspc-tenant, in the Services section.
-    * ![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-* Go to the "Agents" section
-    * ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-* Click on the "Download" button at the top of the table of your Agents.
-    * ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
-* Select your operating system and choose either to download the installation file or use one of the commands provided to retrieve it.
-    * ![Backup Agent Step 14](images/01-backup-agent-step14.png){.thumbnail}
-* Once you have installed the installation file on your bare metal, you can run it in the following manner by going to the folder containing it:
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Backup Agent`{.action} section.
+
+![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
+
+Click on your vspc-tenant, in the `Services`{.action} section.
+
+![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+
+Go to the `Agents`{.action} section.
+
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+
+Click the `Download`{.action} button at the top of the table listing your Agents.
+
+![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+
+Select your Operating System and choose either to download the installation file or use one of the commands provided to retrieve it.
+
+![Backup Agent Step 14](images/01-backup-agent-step14.png){.thumbnail}
+
+After installing the file on the Bare Metal server, navigate to its directory and run it as follows:
 
 ```bash
 sudo ./LinuxAgentPackages.<YOURCOMPANYNAME>.sh
 ```
 
-Once the installation is complete, you can check its installation with this command:
+Once the installation is done, you can check its completion with this command:
 
 ```bash
 sudo veeamconsoleconfig -s
@@ -85,6 +115,6 @@ Backup agent
 Status                 : Not installed
 ```
 
-# Go further
+## Go further
 
 Join our [community of users](/links/community).
