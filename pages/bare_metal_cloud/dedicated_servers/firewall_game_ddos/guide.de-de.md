@@ -93,7 +93,7 @@ Um Game DDoS Protection zu aktivieren, definieren Sie die Spieleanwendungen und 
 |:--:|
 | Klicken Sie auf die Schaltfläche `Regel hinzufügen`{.action}, um eine Regel zur *Game Firewall* hinzuzufügen. |
 
-Mit Game DDoS Protection können Sie bis zu **100 Regeln pro IP-Adresse** konfigurieren, die auf die aktuellen Bare-Metal-Spieleserver GAME-1 und GAME-2 (2024 und später) verweisen, oder bis zu **30 Regeln pro IP-Adresse** für die älteren Bare-Metal-Spielereihen (in der Regel als RISE-GAME oder SYS-GAME gekennzeichnet).
+Mit der Game DDoS Protection können Sie bis zu **100 Regeln pro IP-Adresse** konfigurieren, die auf die aktuellen Game Dedicated Server GAME-1 und GAME-2 (2024 und später) verweisen, oder bis zu **30 Regeln pro IP-Adresse** für die älteren Game Dedicated Server (in der Regel als RISE-GAME oder SYS-GAME gekennzeichnet).
 
 Beachten Sie, dass sich die unterstützten Spielprotokolle (Spieltitel und -versionen, die geschützt werden können) im Laufe der Zeit ändern. Darüber hinaus können sie sich zwischen älteren Bare Metal Game Serverreihen und neueren Modellen unterscheiden. Die aktuellste Liste der unterstützten Spielprofile finden Sie [hier](/links/security/ddos).
 
@@ -116,17 +116,19 @@ Außerdem empfehlen wir dringend, die Regel **"Default policy = DROP"** für jed
 #### Ark Survival Evolved
 
 - **Ark Survival Evolved**: Basis-Schutz-Engine.
-- **Ark Survival Evolved v.311.78**: Aktualisierte Schutz-Engine, hinzugefügt zu den aktuellen Bare-Metal-Spielservern GAME-1 und GAME-2 (2024 und später).
+- **Ark Survival Evolved v.311.78**: Aktualisierte Schutz-Engine, hinzugefügt zu den aktuellen Bare Metal Game Servern GAME-1 und GAME-2 (2024 und später).
 
 #### Counter Strike 2
 
-- **Counter Strike 2**: Neue Schutz-Engine, hinzugefügt zu den aktuellen Bare-Metal-Spielservern GAME-1 und GAME-2 (2024 und später).
+- **Counter Strike 2**: Neue Schutz-Engine, hinzugefügt zu den aktuellen Bare Metal Game Servern GAME-1 und GAME-2 (2024 und später).
 
 #### FiveM
 
-- **FiveM** ist ein Multiplayer-Mod für Grand Theft Auto V von *Cfx.re*, der nun vom Spielehersteller Rockstar anerkannt ist. Wir haben die FiveM-Unterstützung zu den aktuellen Bare-Metal-Spielservern GAME-1 und GAME-2 (2024 und später) hinzugefügt.
+- **FiveM** ist ein Grand Theft Auto V Multiplayer Mod von *Cfx.re*, der mittlerweile vom Herausgeber Rockstar anerkannt wird. Unterstützung für FiveM wurde zu den aktuellen Bare Metal Game Servern GAME-1 und GAME-2 (2024 und später) hinzugefügt.
 
 #### Rust
+
+- **Rust** wird von einem dedizierten Schutzprofil auf allen Generationen von Bare Metal Game Servern unterstützt. Beachten Sie, dass wir dieses Schutzprofil (d. h. Unterstützung von *RakNet* Cookies) für die dritte Generation von Game Dedicated Servern (2024, EPYC-basiert) aktualisiert haben.  
 
 - **Rust** wird mit einem dedizierten Schutzprofil auf allen Generationen von Bare-Metal-Gameservern unterstützt. Bitte beachten Sie, dass wir dieses Schutzprofil für die 3. Generation von Bare-Metal-Gameservern (2024, EPYC-basiert) aktualisiert haben (d. h. RakNet-Cookie-Unterstützung hinzugefügt).  
 
@@ -136,12 +138,12 @@ Minecraft wird von folgenden Profilen unterstützt:
 
 - **Minecraft Java**: Es sollte für alle Versionen von Minecraft Java am besten geeignet sein; schützt das Minecraft Query Protokoll und ist für TCP-Datenverkehr optimiert. Es wurde 2024 hinzugefügt aber ist auch für frühere Generationen von Game Dedicated Servern verfügbar. Seien Sie vorsichtig, wenn andere UDP-relevante Spiele auf derselben IP gehostet werden.
 - **Minecraft Query**: Es bietet allgemeinen Minecraft Query Protokollschutz.
-- **Minecraft Bedrock**: Minecraft Bedrock-Schutz (mit RakNet-Cookie-Unterstützung), hinzugefügt zu den aktuellen Bare-Metal-Gameservern GAME-1 und GAME-2 (2024 und später).
+- **Minecraft Bedrock**: Minecraft Bedrock Schutz (mit *RakNet* Cookies-Unterstützung), hinzugefügt zu den aktuellen Bare Metal Game Servern GAME-1 und GAME-2 (2024 und später).
 - **Minecraft Pocket Edition**: Minecraft PE/Bedrock-Schutz, identisch mit Bedrock, aus Kompatibilitätsgründen beibehalten.
 
 #### Valheim
 
-- **Valheim**: Neue Schutz-Engine, hinzugefügt zu den aktuellen Bare-Metal-Gameservern GAME-1 und GAME-2 (2024 und später).
+- **Valheim**: Neue Schutz-Engine, hinzugefügt zu den aktuellen Bare Metal Game Servern GAME-1 und GAME-2 (2024 und später).
 
 > [!primary]
 > Wenn Sie einen größeren Dienst mit einem der unterstützten Spiele hosten, aber dennoch Fehlalarme seitens der Anti-DDoS-Infrastruktursysteme feststellen, wenden Sie sich an unseren Support mit allen Details, um das Anwendungsprofil zu optimieren. Verwenden Sie dazu das [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
@@ -157,7 +159,7 @@ Additional IPs ermöglichen Flexibilität, doch gibt es hierbei Situationen, die
 Um eine möglichst flexible Konfiguration zu gewährleisten, können für verschiedene Additional IPs, die auf den gleichen Game Dedicated Server verweisen, verschiedene Spieleschutzregeln festgelegt werden.  
 Die maximale Anzahl von Regeln und verfügbaren Schutzeinstellungen gilt pro IP-Adresse, ist jedoch spezifisch für die betreffende Generation von Game Dedicated Servern hinter der Firewall.
 
-Es können Unterschiede zwischen den neueren Spielservern (3. Generation der Game Bare Metal-Server – 2024, EPYC-basiert) und den älteren Spielservern (vorherige Generationen, in der Regel als RISE-GAME oder SYS-GAME bezeichnet) festgestellt werden.
+Zwischen den neueren Game Servern (ab 2024 verfügbare 3. Generation der Game Bare Metal Server mit EPYC) und den älteren Game Servern (frühere Generationen, üblicherweise RISE-GAME oder SYS-GAME) können Unterschiede zu beobachten sein.
 
 ##### Überprüfen des unterstützten Spielschutzes
 

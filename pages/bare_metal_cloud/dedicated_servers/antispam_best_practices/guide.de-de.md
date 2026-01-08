@@ -175,7 +175,7 @@ Hier ein Beispiel:
 ##### **IP entsperren** <a name="unblockip"></a>
 
 > [!alert]
-> WICHTIG!
+>
 > Entsperren Sie die IP unter keinen Umständen, bevor Sie den Versand von E-Mails von Ihrem Server aus unterbrochen und Ihre Warteschlange für E-Mails geleert haben. Andernfalls erfolgt unmittelbar eine weitere Sperre für einen längeren Zeitraum.
 >
 
@@ -225,22 +225,22 @@ Best Practices sind empfohlene Methoden, die oft auf RFC-Dokumenten basieren und
 
 Wenn Ihr E-Mail-Volumen sehr hoch ist, empfehlen wir Ihnen:
 
-- eine IP-Adresse zu reservieren, die ausschließlich für E-Mail-Nutzung vorgesehen ist.
-- eine „abuse“-Adresse auf diesem Block bereitzustellen, um Beschwerden zu erhalten.
-- [Reverses](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configure-the-reverse-ip) auf allen IP-Adressen korrekt zu konfigurieren.
+- Eine IP-Adresse zu reservieren, die ausschließlich für E-Mail-Nutzung vorgesehen ist.
+- Eine Abuse-Adresse auf diesem Block bereitzustellen, um Beschwerden zu erhalten.
+- [Reverse-Auflösung](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configure-the-reverse-ip) auf allen IP-Adressen korrekt zu konfigurieren.
 
-Diese Maßnahme ermöglicht es Ihnen, gleichzeitig die Ruf der IP und des Domains zu isolieren, falls Sie E-Mails von verschiedenen Domains senden, Beschwerden zu erhalten und somit notwendige Maßnahmen zu ergreifen, um von verschiedenen Organisationen freigeschaltet zu werden. Sie ermöglicht es Ihnen auch, Probleme schneller zu lokalisieren, da E-Mails von Formularen, die den Domain X oder Y verwenden, nicht von der gleichen IP gesendet werden und nicht den gleichen Reverse haben.
+Diese Maßnahme ermöglicht es Ihnen, Ruf der IP und von Domainnamen zu isolieren, falls Sie E-Mails von verschiedenen Domains senden, Beschwerden zu erhalten und somit notwendige Maßnahmen zu ergreifen, um von verschiedenen Organisationen freigeschaltet zu werden. Sie ermöglicht es Ihnen auch, Probleme schneller zu lokalisieren, da E-Mails von Formularen, die den Domainnamen X oder Y verwenden, nicht von der gleichen IP gesendet werden und nicht den gleichen Reverse haben.
 
 **E-Mail-Inhalt**
 
-- Vermeiden Sie in Ihren E-Mails Wörter, die von Spammer verwendet werden, wie „kaufen“ und „letzte Chance“, und vermeiden Sie auch Großbuchstaben, unpersönliche Betreffzeilen, Ausrufezeichen und % Rabatte.
+- Vermeiden Sie in Ihren E-Mails Formulierungen, die von Spammern verwendet werden, wie „kaufen“ und „letzte Chance“, und vermeiden Sie auch Großbuchstaben, unpersönliche Betreffzeilen, Ausrufezeichen und "%"-Rabatte.
 - Vergessen Sie nicht, einen **Abmelde-Link** bereitzustellen, damit Personen, die Ihre E-Mail nicht angefordert haben oder sie für illegitim halten, sich abmelden können.
 - Achten Sie besonders darauf, dass Ihre E-Mails die E-Mail-Adresse des Absenders (oder einen Alias), eine Betreffzeile und ein korrektes Verhältnis von Text, Bildern und Links im E-Mail-Text enthalten.
 - Das Verhältnis von Text zu Bild und Text zu Link sollte hoch sein. Laden Sie die E-Mail nicht mit Hyperlinks über und vermeiden Sie JavaScript.
 
 **FBL - Feedback Loop**
 
-Dieses System ermöglicht es Ihnen, direkten Kontakt zu Feedback herzustellen, das von einigen Internetdienstanbietern bereitgestellt wird, und informiert Sie darüber, dass ihre Benutzer Ihre Nachricht als illegal markiert haben und sie daher als Spam klassifiziert wurde. Dies ermöglicht es Ihnen, direkt mit diesen ISPs bezüglich Ihres Rufes zu interagieren. Einige FBLs beinhalten:
+Dieses System ermöglicht es Ihnen, direkten Kontakt zu Feedback herzustellen, das von einigen Internetdienstanbietern bereitgestellt wird, und informiert Sie darüber, dass ihre Benutzer Ihre Nachricht als illegitim markiert haben und sie daher als Spam klassifiziert wurde. Dies ermöglicht es Ihnen, direkt mit diesen ISPs bezüglich Ihres Rufes zu interagieren. Einige FBLs beinhalten:
 
 - [Yahoo & AOL Postmaster](https://senders.yahooinc.com/contact)
 - [SpamCop](https://www.spamcop.net/)
@@ -250,18 +250,18 @@ Dieses System ermöglicht es Ihnen, direkten Kontakt zu Feedback herzustellen, d
 
 Einige Authentifizierungsdienste ermöglichen es Ihnen, Ihren Ruf zu schützen:
 
-- **Sender-ID**: Eine von Microsoft entwickelte E-Mail-Authentifizierungstechnologie, die die Echtheit Ihres Domain-Namens durch Überprüfung der IP-Adresse des Absenders bestätigt. Diese Technologie basiert auf dem IETF-Standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
+- **Sender-ID**: Eine von Microsoft entwickelte E-Mail-Authentifizierungstechnologie, die die Echtheit Ihres Domainnamens durch Überprüfung der IP-Adresse des Absenders bestätigt. Diese Technologie basiert auf dem IETF-Standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
 - **SPF**: Sender Policy Framework ist ein Standard zur Überprüfung der Absenderdomain. Er basiert auf [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) und besteht darin, einen SPF- oder TXT-Eintrag in die Domain-DNS hinzuzufügen, der die Liste der IP-Adressen enthält, die berechtigt sind, E-Mails von dieser Domain zu senden.
-- **Reverse DNS**: Reverse ermöglicht es, Ihre IP in Ihre Domain „zu übersetzen“. Damit kann die mit der IP-Adresse verknüpfte Domain gefunden werden.
+- **Reverse DNS**: Reverse ermöglicht es, Ihre IP zum Domainnamen aufzulösen. Damit kann die mit der IP-Adresse verknüpfte Domain gefunden werden.
 - **DKIM**: Dieser Standard wird in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871) beschrieben. AOL und Google (Gmail) arbeiten auf dieser Grundlage. 
 
-Für weitere Informationen zu den oben genannten Diensten konsultieren Sie bitte unser Handbuch zu [Optimierung des E-Mail-Versands](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
+Für weitere Informationen zu den oben genannten Diensten konsultieren Sie unsere Anleitung zur [Optimierung des E-Mail-Versands](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 #### Spezifische Arten des E-Mail-Versands
 
 - **An einen Microsoft-Server (Outlook, usw.)**
 
-Microsoft verwendet eine Whitelist-Politik. Das bedeutet, dass zunächst alles auf einer Blacklist steht und ein bestimmtes Verfahren erforderlich ist, um Ihren E-Mail-Server zu validieren. Weitere Informationen finden Sie im Abschnitt **Microsoft Server (Outlook)** unseres Leitfadens „[Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)“.
+Microsoft verwendet eine Whitelist-Policy. Das bedeutet, dass zunächst alles auf einer Blacklist steht und ein bestimmtes Verfahren erforderlich ist, um Ihren E-Mail-Server zu validieren. Weitere Informationen finden Sie im Abschnitt **Microsoft Server (Outlook)** unserer Anleitung „[Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)“.
 
 - **An einen Gmail-Server**
 
@@ -271,13 +271,13 @@ Google hat außerdem einen [dazu passenden Artikel](https://support.google.com/m
 
 ### Melden eines falsch positiven Ergebnisses
 
-Wenn Ihre E-Mails den Vorgaben entsprechen, können Sie uns dies mitteilen, indem Sie eine Beispielform Ihrer E-Mail (einschließlich des Headers) senden. Unser technischer Support-Team wird Ihnen dann bei den nächsten Schritten helfen. Erstellen Sie einfach ein Support-Ticket über Ihr OVHcloud Kundencenter und fügen Sie folgende Informationen hinzu:
+Wenn Ihre E-Mails den Vorgaben entsprechen, können Sie uns dies mitteilen, indem Sie eine Beispielform Ihrer E-Mail (einschließlich des Headers) senden. Unsere Support-Teams werden Ihnen dann bei den nächsten Schritten helfen. Erstellen Sie einfach eine Support-Anfrage über Ihr OVHcloud Kundencenter und fügen Sie folgende Informationen hinzu:
 
-- Die IP des blockierten SPAM-Dienstes.
+- Die IP des blockierten Dienstes.
 - Eine Originalkopie der als SPAM markierten E-Mail (Sie sollten diese anhand der **Message-ID** in der ANTISPAM-E-Mail identifizieren können). Falls keine **Message-ID** angegeben wird, senden Sie uns einfach eine Kopie der gesendeten E-Mails, die Sie vor dem Empfang der Warnung gesendet haben. Bitte senden Sie nur die Kopie der als SPAM markierten E-Mail.
-- Die .EML-Datei der bereitgestellten E-Mail, diese sollte den **Header** und **Footer** der E-Mail enthalten. Falls Sie nicht wissen, wie Sie eine .EML-Datei extrahieren, konsultieren Sie bitte das folgende Handbuch: [Abrufen von E-Mail-Headern](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+- Die .EML-Datei der bereitgestellten E-Mail. Diese sollte den **Header** und **Footer** der E-Mail enthalten. Falls Sie nicht wissen, wie Sie eine .EML-Datei extrahieren, konsultieren Sie: [Abrufen von E-Mail-Headern](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
-Sobald die Informationen gesendet wurden, wird unser Support-Team mit Vade Secure kommunizieren, um die weitere Analyse des Falls durchzuführen.
+Sobald die Informationen gesendet wurden, wird unser Support mit Vade Secure kommunizieren, um die weitere Analyse des Falls durchzuführen.
 
 ## Weiterführende Informationen
  
