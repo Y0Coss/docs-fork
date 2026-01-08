@@ -1,7 +1,7 @@
 ---
 title: "How to activate and use rescue mode"
 excerpt: "Find out how to use the OVHcloud customer rescue system to troubleshoot your dedicated server"
-updated: 2025-01-20
+updated: 2026-01-08
 ---
 
 <style>

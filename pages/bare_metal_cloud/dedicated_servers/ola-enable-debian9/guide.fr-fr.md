@@ -1,7 +1,7 @@
 ---
 title: 'Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Debian 9 à 11'
 excerpt: 'Activer OVHcloud Link Aggregation sur votre Debian (versions 9 à 11)'
-updated: 2024-11-26
+updated: 2026-01-08
 ---
 
 ## Objectif
@@ -65,6 +65,7 @@ Ceci ouvrira un fichier texte vide. Pour configurer l’interface d’agrégatio
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast

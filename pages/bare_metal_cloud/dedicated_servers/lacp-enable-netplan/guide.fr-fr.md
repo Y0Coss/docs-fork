@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
 excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
-updated: 2025-02-14
+updated: 2025-01-08
 ---
 
 <style>
