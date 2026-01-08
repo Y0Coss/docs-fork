@@ -28,7 +28,7 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 > Bien que les images Debian 12 (ou plus récentes) fournies par OVHcloud utilisent `Netplan` par défaut, il existe deux exceptions clés où `ifupdown` (/etc/network/interfaces) est utilisé à la place :
 >
 > - **Mode rescue** : Bien qu'il soit basé sur Debian 12, le mode rescue s'appuie sur l'utilitaire `ifupdown`.
-> - **Images personnalisées** : Les installations Debian effectuées à l'aide de votre propre image peuvent toujours utiliser `ifupdown` pour leur configuration réseau.
+> - **Images personnalisées** : Il se peut que les installations Debian effectuées à l'aide de votre propre image utilisent toujours `ifupdown` pour leur configuration réseau.
 >
 > Si vous souhaitez configurer l'agrégation de liens en mode rescue, ou sur un OS personnalisé s'appuyant sur `ifupdown`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) à la place.
 >
