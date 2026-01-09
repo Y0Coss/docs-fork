@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to see the node inventory"
 excerpt: "Find out how to access the OPCP node inventory"
-updated: 2026-01-07
+updated: 2026-01-08
 ---
 
 ## Objective
@@ -86,8 +86,8 @@ In **Devices**, you can see the complete list of equipment in your OPCP rack (no
 
 You can:
 
-- use the quick search to find an item by name
-- use **Filters** for advanced searches
+- use the quick search to find an item by name;
+- use **Filters** for advanced searches.
 
 For example, you can list all non-production nodes by applying the following filters:
 

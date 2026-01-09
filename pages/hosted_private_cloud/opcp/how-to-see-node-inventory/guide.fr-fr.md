@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment visualiser l'inventaire des nœuds"
 excerpt: "Découvrez comment consulter l'inventaire des nœuds OPCP"
-updated: 2026-01-07
+updated: 2026-01-08
 ---
 
 ## Objectif
