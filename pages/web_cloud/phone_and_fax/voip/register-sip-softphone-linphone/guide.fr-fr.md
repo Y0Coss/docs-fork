@@ -1,7 +1,7 @@
 ---
 title: 'Tutoriel - Utiliser une ligne SIP OVHcloud sur Linphone'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Linphone'
-updated: 2025-10-06
+updated: 2026-01-09
 ---
 
 <style>
@@ -141,7 +141,7 @@ Cliquez sur l'onglet correspondant au système sur lequel vous utilisez Linphone
 >> >
 >> > Remplacez les valeurs `0033972XXXXXX` par votre ligne SIP et `outbound-ovh-1`par votre proxy.
 >>
->> >> ![connexion linphone](images/linphone05windows.png){.thumbnail}
+>> ![connexion linphone](images/linphone05windows.png){.thumbnail}
 >>
 >> ///
 >>
