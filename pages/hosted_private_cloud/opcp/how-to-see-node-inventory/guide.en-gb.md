@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to see the node inventory"
 excerpt: "Find out how to access the OPCP node inventory"
-updated: 2026-01-08
+updated: 2026-01-09
 ---
 
 ## Objective
