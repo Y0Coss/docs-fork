@@ -1,7 +1,7 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-updated: 2025-09-15
+updated: 2026-01-09
 ---
 
 ## Objective
@@ -104,7 +104,7 @@ You can access the Edge Network Firewall settings in the OVHcloud Control Panel,
 
 ![Network_Firewall](images/firewall_network_1.png){.thumbnail}
 
-To the right of the table, click the `(...)`{.action} button corresponding to your dedicated server, then select `Configure Edge Network Firewall`{.action}.
+To the right of the table, click the `...`{.action} button corresponding to your dedicated server, then select `Configure Edge Network Firewall`{.action}.
 
 ![Network_Firewall](images/firewall_network_2.png){.thumbnail}
 

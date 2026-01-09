@@ -1,7 +1,7 @@
 ---
 title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-updated: 2025-09-15
+updated: 2026-01-09
 ---
 
 ## Objectif
@@ -104,7 +104,7 @@ Vous pouvez accéder aux paramètres du Edge Network Firewall depuis l'espace cl
 
 ![Edge_Network_Firewall](images/firewall_network_1.png){.thumbnail}
 
-Sur la droite du tableau, cliquez sur le bouton `(...)`{.action} correspondant à votre serveur dédié, puis sélectionnez `Configurer le Edge Network Firewall`{.action}.
+Sur la droite du tableau, cliquez sur le bouton `...`{.action} correspondant à votre serveur dédié, puis sélectionnez `Configurer le Edge Network Firewall`{.action}.
 
 ![Edge_Network_Firewall](images/firewall_network_2.png){.thumbnail}
 
