@@ -78,7 +78,7 @@ To understand what this CoreDNS configuration means, please read the [CoreDNS of
 ### Customizing the CoreDNS configuration
 
 > [!warning]
-> Changing the default CoreDNS configuration can lead to issues if not done correctly.
+> Changing the default CoreDNS configuration can lead to errors if not done correctly.
 >
 
 If you want to edit and customize the CoreDNS configuration, it can be done by editing the `coredns-custom` ConfigMap, which will never be altered by OVHCloud services:
