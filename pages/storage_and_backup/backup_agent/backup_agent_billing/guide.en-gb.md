@@ -21,7 +21,7 @@ However, you will be billed per GB per month for using OVHcloud Object Storage. 
 
 Find the price per GB per month on our [website](/links/public-cloud/prices-object-storage).
 
-You can use the `Billing`{.action} dashboard in your [OVHcloud Control Panel](/Links/manager) to view your current usage, and thus predict the final bill at the end of the month.
+You can use the `Billing`{.action} dashboard in your [OVHcloud Control Panel](/links/manager) to view your current usage, and thus predict the final bill at the end of the month.
 
 - Example 1: You have deployed the Backup Agent on 3 Bare Metal servers, and they send their data to their respective Vaults. The total capacity used by your backup data on the Vault servers is 600GB. You will be billed at the end of the month for 600GB.
 

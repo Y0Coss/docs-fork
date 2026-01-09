@@ -105,7 +105,7 @@ Sélectionnez le point de restauration souhaité dans l'assistant :
 
 Puis validez :
 
-![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-points-summary.png){.thumbnail}
+![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
 
 Enfin, cherchez votre fichier et sélectionnez une option :
 

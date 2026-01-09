@@ -101,11 +101,11 @@ Go to the menu and select `Restore File`{.action}:
 
 Select the desired restore point in the wizard:
 
-![Backup Agent Restore Points](images/01-backup-agent-restore-points.png){.thumbnail}
+![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
 
 Then confirm:
 
-![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-points-summary.png){.thumbnail}
+![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
 
 Finally, search for your file and select an option:
 
