@@ -15,7 +15,7 @@ The Cilium agent process (a.k.a. DaemonSet) allows configuration on a per-node b
 This allows overriding `cilium-config` ConfigMap for a node or set of nodes by using `CiliumNodeConfig` objects.
 
 > [!warning]
-> The **only** method supported by OVHcloud Managed Kubernetes Service to configure Cilium  is the [CiliumNodeConfig](https://docs.cilium.io/en/stable/configuration/per-node-config/#ciliumnodeconfig-objects) object. Alternative methods using the `helm` or the `cilium` commands are not supported.
+> The **only** method supported by OVHcloud Managed Kubernetes Service to configure Cilium is the [CiliumNodeConfig](https://docs.cilium.io/en/stable/configuration/per-node-config/#ciliumnodeconfig-objects) object. Alternative methods using the `helm` or the `cilium` commands are not supported.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ The Cilium project does not provide a complete list of the keys and values that 
 However these keys can be found by looking at the Helm template of the [cilium-configmap file](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
 
 > [!warning]
-> Make sure to read the limitation below when deciding to set values in a `CiliumNodeConfig` object.
+> Make sure to read the limitations below when deciding to set values in a `CiliumNodeConfig` object.
 
 ### Limitations when using CiliumNodeConfig
 
@@ -65,7 +65,7 @@ kubectl -n kube-system logs -l k8s-app=cilium
 ```
 
 > [!warning]
-> The following examples can have various effect depending on your setup and some might disrupt your cluster's operation.
+> The following examples can have various effects depending on your setup and some might disrupt your cluster's operation.
 > These examples come with no guarantee and you should always check Cilium's documentation to understand their effect.
 
 ### Enable topology aware routing for 3AZ region

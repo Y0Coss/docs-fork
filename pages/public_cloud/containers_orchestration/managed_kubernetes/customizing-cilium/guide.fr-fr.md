@@ -35,7 +35,7 @@ Comme c'est la norme dans Kubernetes, un sélecteur d'étiquettes vide (par exem
 
 ### Valeurs possibles de CiliumNodeConfig
 
-Le projet Cilium ne fournit pas de liste exhaustive des clés et valeurs possibles à positionner dans la ConfigMap (et par conséquence dans le champ `specs` d'un objet `CiliumNodeConfig`).
+Le projet Cilium ne fournit pas de liste exhaustive des clés et valeurs possibles à positionner dans la ConfigMap (et par conséquent dans le champ `specs` d'un objet `CiliumNodeConfig`).
 
 Cependant ces clés peuvent être trouvées dans le template Helm du fichier [cilium-configmap](https://github.com/cilium/cilium/blob/main/install/kubernetes/cilium/templates/cilium-configmap.yaml).
 
@@ -44,7 +44,7 @@ Cependant ces clés peuvent être trouvées dans le template Helm du fichier [ci
 
 ### Limite d'utilisation de CiliumNodeConfig
 
-En raison de la façon dont les Clusters Managed Kubernetes sont déployés, certaines configurations ne sont pas supportés bien que les object `CiliumNodeConfig` permettent de les utiliser.
+En raison de la façon dont les clusters Managed Kubernetes sont déployés, certaines configurations ne sont pas supportés bien que les object `CiliumNodeConfig` permettent de les utiliser.
 
 #### Remplacement de kube-proxy
 
@@ -58,7 +58,7 @@ Lors de la personnalisation de la configuration de Cilium à l'aide d'un object 
 kubectl -n kube-system rollout restart daemonset cilium
 ```
 
-Vous pouvez valider que la configuration a bien été appliquée en regardant les valeurs définies dans les journaux de `cilium` :
+Vous pouvez valider que la configuration a bien été appliquée en regardant les valeurs définies dans les logs de `cilium` :
 
 ```bash
 kubectl -n kube-system logs -l k8s-app=cilium
@@ -66,7 +66,7 @@ kubectl -n kube-system logs -l k8s-app=cilium
 
 > [!warning]
 > Les exemples suivants peuvent avoir divers effets en fonction de votre environnement et peuvent interrompore le fonctionnement de votre cluster.
-> Aucune garantie n'est fournie avec ces exemples and vous devez toujours consulter la documentation de Cilium pour en comprendre les effets.
+> Aucune garantie n'est fournie avec ces exemples et vous devez toujours consulter la documentation de Cilium pour en comprendre les effets.
 
 #### Activer le routage conscient de la topologie pour une région 3AZ
 
@@ -87,7 +87,7 @@ spec:
     enable-service-topology: "true"
 ```
 
-Après création, redémarrez `cilium` et vérifiez les journaux pour vous assurer que les paramètres sont pris en compte.
+Après création, redémarrez `cilium` et vérifiez les logs pour vous assurer que les paramètres sont pris en compte.
 
 ### Activer le chiffrement transparent avec wireguard
 
@@ -120,7 +120,7 @@ spec:
     wireguard-persistent-keepalive: "20s"
 ```
 
-Après création, redémarrez `cilium` et vérifiez les journaux pour vous assurer que les paramètres sont pris en compte.
+Après création, redémarrez `cilium` et vérifiez les logs pour vous assurer que les paramètres sont pris en compte.
 
 ### Tuning Cilium's performance
 
@@ -147,7 +147,7 @@ spec:
     enable-bpf-clock-probe: "true"
 ```
 
-Après création, redémarrez `cilium` et vérifiez les journaux pour vous assurer que les paramètres sont pris en compte.
+Après création, redémarrez `cilium` et vérifiez les logs pour vous assurer que les paramètres sont pris en compte.
 
 ## Aller plus loin
 
