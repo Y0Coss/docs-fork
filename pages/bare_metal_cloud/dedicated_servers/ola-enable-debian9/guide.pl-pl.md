@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debian 9-11'
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9-11'
-updated: 2026-01-08
+updated: 2026-01-09
 ---
 
 ## Wprowadzenie

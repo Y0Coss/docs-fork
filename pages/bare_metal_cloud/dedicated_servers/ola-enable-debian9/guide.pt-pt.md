@@ -1,7 +1,7 @@
 ---
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9 a 11'
 excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor Debian 9 a 11'
-updated: 2026-01-08
+updated: 2026-01-09
 ---
 
 ## Sumário

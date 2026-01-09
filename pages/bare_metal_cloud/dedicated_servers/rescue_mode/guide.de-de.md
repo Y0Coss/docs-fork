@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud Rescue-Modus aktivieren und verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das <i>Customer Rescue System</i> zur Fehlerbehebung bei einem Dedicated Server einsetzen"
-updated: 2026-01-08
+updated: 2026-01-09
 ---
 
 <style>

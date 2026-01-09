@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja i korzystanie z trybu Rescue"
 excerpt: "Dowiedz się, jak używać trybu customer rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym"
-updated: 2026-01-08
+updated: 2026-01-09
 ---
 
 <style>
