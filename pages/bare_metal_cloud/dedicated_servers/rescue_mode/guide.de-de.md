@@ -357,7 +357,7 @@ Die Link-Aggregation (LACP) ist sehr vorteilhaft, da sie die Gesamtbandbreite Ih
 
 Obwohl der Rescue-Modus auf dem Betriebssystem Debian 12 basiert, basiert seine Netzwerkkonfiguration auf dem Dienstprogramm `ifupdown` und nicht auf `Netplan`.
 
-Wenn Sie über einen Server verfügen, der Link Aggregation unterstützt, und diese im Rettungsmodus konfigurieren möchten, lesen Sie bitte [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+Wenn Sie über einen Server verfügen, der Link Aggregation unterstützt, und diese im Rescue-Modus konfigurieren möchten, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 ### Rescue-Modus verlassen
 

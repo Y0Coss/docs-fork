@@ -26,10 +26,10 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 
 > [!primary]
 >
-> Diese Anleitung enthält Anweisungen zum Konfigurieren der Netzwerk-Schnittstellenaggregation speziell mit `ifupdown`, dessen Konfigurationsdatei `/etc/network/interfaces` ist. Sie gilt auch für den Rettungsmodus.
+> Diese Anleitung enthält Anweisungen zum Konfigurieren der Netzwerk-Schnittstellenaggregation speziell mit `ifupdown`, dessen Konfigurationsdatei `/etc/network/interfaces` ist. Sie gilt auch für den Rescue-Modus.
 >
-> Wenn die Netzwerkkonfiguration Ihres Systems stattdessen `Netplan` verwendet, lesen Sie bitte [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
->
+> Wenn die Netzwerkkonfiguration Ihres Systems stattdessen `Netplan` verwendet, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+
 
 ## In der praktischen Anwendung
 
