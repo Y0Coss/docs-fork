@@ -43,7 +43,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 OVHcloud oferuje usługi, których konfiguracja, zarządzanie i odpowiedzialność należy do Ciebie. Musisz więc zadbać o ich poprawne działanie.
 
-Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niemniej, w przypadku trudności, zalecamy kontakt z [specjalistycznym partnerem](/links/partners) i/lub z twórcą usługi. Nie będziemy bowiem mogli udzielić wsparcia. Więcej informacji w sekcji "[Sprawdź również](#go-further)".
+Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niemniej, w przypadku trudności, zalecamy kontakt z [specjalistycznym partnerem](/links/partner) i/lub z twórcą usługi. Nie będziemy bowiem mogli udzielić wsparcia. Więcej informacji w sekcji "[Sprawdź również](#go-further)".
 
 ///
 
