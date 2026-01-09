@@ -128,9 +128,7 @@ Außerdem empfehlen wir dringend, die Regel **"Default policy = DROP"** für jed
 
 #### Rust
 
-- **Rust** wird von einem dedizierten Schutzprofil auf allen Generationen von Bare Metal Game Servern unterstützt. Beachten Sie, dass wir dieses Schutzprofil (d. h. Unterstützung von *RakNet* Cookies) für die dritte Generation von Game Dedicated Servern (2024, EPYC-basiert) aktualisiert haben.  
-
-- **Rust** wird mit einem dedizierten Schutzprofil auf allen Generationen von Bare-Metal-Gameservern unterstützt. Bitte beachten Sie, dass wir dieses Schutzprofil für die 3. Generation von Bare-Metal-Gameservern (2024, EPYC-basiert) aktualisiert haben (d. h. RakNet-Cookie-Unterstützung hinzugefügt).  
+- **Rust** wird von einem dedizierten Schutzprofil auf allen Generationen von Bare Metal Game Servern unterstützt. Beachten Sie, dass wir dieses Schutzprofil (d. h. Unterstützung von *RakNet* Cookies) für die dritte Generation von Game Dedicated Servern (2024, EPYC-basiert) aktualisiert haben.
 
 #### Minecraft
 
