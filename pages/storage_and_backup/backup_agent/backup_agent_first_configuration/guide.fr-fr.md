@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Comment configurer votre première sauvegarde"
 excerpt: "Comment configurer votre première sauvegarde sur votre serveur Bare Metal avec le produit Backup Agent"
-updated: 2026-01-12
+updated: 2026-01-09
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Le fonctionnement est le suivant :
 
 Une fois l'agent installé, celui-ci recevra la politique de sauvegarde et permettra d'opérer les sauvegardes.
 
-Pour installer votre agent sur votre serveur Bare Metal, voici la démarche à suivre :
+Pour installer votre agent sur votre serveur Bare Metal, voici la démarche à suivre selon votre système d'exploitation :
 
 ### Windows
 
@@ -40,7 +40,7 @@ Allez dans la partie `Agents`{.action}.
 
 ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Cliquez sur le bouton `Télécharger`{.action} en haut du tableau listant vos Agents.
+Cliquez sur le bouton `Télécharger`{.action} en haut du tableau listant vos agents.
 
 ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous 
 
 ![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
 
-Cliquer sur votre vspc-tenant, dans la partie Services.
+Cliquer sur votre vspc-tenant, dans la partie `Services`{.action}.
 
 ![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Allez dans la partie `Agents`{.action}.
 
 ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Cliquez sur le bouton `Télécharger`{.action} en haut du tableau listant vos Agents.
+Cliquez sur le bouton `Télécharger`{.action} en haut du tableau listant vos agents.
 
 ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
 
@@ -111,8 +111,6 @@ Management agent
     Connection state       : Connected
     Cloud gateway          : <OVHDOMAIN>:6180
     Connection account     : <UTILISATEUR>
-Backup agent
-    Status                 : Not installed
 ```
 
 ## Aller plus loin

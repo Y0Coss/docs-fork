@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Mise à jour du service"
 excerpt: "Cette page détaille les mises à jour périodiques de Backup Agent et leur impact sur vos services"
-updated: 2026-01-12
+updated: 2026-01-09
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Pour ce faire, nous allons vous envoyer des communications par e-mail afin de vo
 
 En pratique, au moment du déclenchement de la mise à jour le jour J, votre Backup Agent va être réinstallé sur votre système d'exploitation de manière silencieuse, sans aucune action nécessaire de votre part.
 
-Durant cette mise à jour, les opérations de sauvegarde et de restauration seront indisponibles. De ce fait, nous appliquerons les mises à jour sur la période de la journée (fuseaux horaires CET ou EST selon votre localisation) afin d'éviter d'interférer avec vos sauvegardes automatiques.
+Durant cette mise à jour, les opérations de sauvegarde et de restauration seront indisponibles. De ce fait, nous appliquerons les mises à jour sur la période de la journée (fuseaux horaires CET ou EST selon votre localisation) afin d'éviter d'interférer avec vos [sauvegardes automatiques](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore).
 
 Si vous avez des demandes spécifiques, n'hésitez pas à [contacter le support OVHcloud](/links/support).
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Billing"
 excerpt: "Backup Agent product billing"
-updated: 2026-01-12
+updated: 2026-01-09
 ---
 
 ## Objective

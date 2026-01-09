@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - How to configure your first backup"
 excerpt: "How to configure your first backup on your Bare Metal server with the Backup Agent product"
-updated: 2026-01-12
+updated: 2026-01-09
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ The functioning is as follows:
 
 Once the agent has been installed, it will receive the backup policy and allow backups to be performed.
 
-To install your agent on your Bare Metal server, follow the steps below:
+To install your agent on your Bare Metal server, follow the steps below according to your Operating System:
 
 ### Windows
 
@@ -40,7 +40,7 @@ Go to the `Agents`{.action} section.
 
 ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Click the `Download`{.action} button at the top of the table listing your Agents.
+Click the `Download`{.action} button at the top of the table listing your agents.
 
 ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Go to the `Agents`{.action} section.
 
 ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Click the `Download`{.action} button at the top of the table listing your Agents.
+Click the `Download`{.action} button at the top of the table listing your agents.
 
 ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
 
@@ -108,11 +108,9 @@ Once the installation is done, you can check its completion with this command:
 sudo veeamconsoleconfig -s
 
 Management agent
-Connection state       : Connected
-Cloud Gateway          : <OVHDOMAIN>:6180
-Connection account     : <USER>
-Backup agent
-Status                 : Not installed
+    Connection state       : Connected
+    Cloud gateway          : <OVHDOMAIN>:6180
+    Connection account     : <UTILISATEUR>
 ```
 
 ## Go further

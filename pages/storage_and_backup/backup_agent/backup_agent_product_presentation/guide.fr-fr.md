@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Présentation de l'offre"
 excerpt: "Présentation des fonctionnalités et avantages du produit Backup Agent"
-updated: 2026-01-12
+updated: 2026-01-09
 ---
 
 ## Objectif
@@ -28,7 +28,7 @@ Le schéma de principe est le suivant :
 Il est à noter que :
 
 - L'infrastructure VSPC est hébergée dans les datacenters OVHcloud et n'envoie pas de données vers les serveurs de Veeam.
-- Les points de stockage sont des buckets OVHcloud Object Storage qui sont hébergés dans les datacenters OVHcloud.
+- Les points de stockage sont des buckets [OVHcloud Object Storage](/links/public-cloud/object-storage) qui sont hébergés dans les datacenters OVHcloud.
 
 Plusieurs points forts sont présents dans cette offre :
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gérer vos sauvegardes et vos restaurations"
 excerpt: "Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare Metal avec Backup Agent"
-updated: 2026-01-12
+updated: 2026-01-09
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare M
 
 ### Créer une sauvegarde pour votre serveur
 
-Cela consiste à ajouter votre serveur dans votre Backup Agent, de télécharger l'agent et l'installer sur votre serveur.
+Cela consiste à ajouter votre serveur dans votre Backup Agent, télécharger l'agent et l'installer sur votre serveur.
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la partie `Backup Agent`{.action}.
 
