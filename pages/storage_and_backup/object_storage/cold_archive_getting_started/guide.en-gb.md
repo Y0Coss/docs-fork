@@ -181,7 +181,8 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 >>
 
 - Bucket status changes to "Restoring".
-- Objects become accessible in read-only mode once restoration completes.
+- Objects become accessible in read-only mode for 30 days once the restore is complete. After this period, a new restore operation must be launched to access the archived objects.
+- Objects in the archived bucket can still be listed at any time.
 
 ### Delete an archive
 
