@@ -109,14 +109,14 @@ Cliquez sur l'onglet correspondant au système sur lequel vous utilisez Linphone
 >>
 > Windows et macOS
 >>
->> La version Desktop de Linphone est identique sur Windows et sur macOS.
+>> La version Desktop de Linphone est identique sous Windows et macOS.
 >>
 >> Une fois Linphone ouvert, un assistant vous permet de configurer votre compte SIP. Sélectionnez `Utiliser un compte SIP`{.action}.
 >>
 >> ![assistant linphone](images/linphone01windows.png){.thumbnail}
 >>
 >> Renseignez alors vos identifiants SIP OVHcloud dans les champs correspondants. Vous pouvez également définir un nom d'affichage qui sera présenté lors de vos émissions d'appels.<br>
->> Choisissez `UDP`{.action} pour le transport et appuyez sur `Utiliser`{.action}.
+>> Choisissez `UDP`{.action} pour le transport et cliquez sur `Utiliser`{.action}.
 >>
 >> ![connexion linphone](images/linphone02windows.png){.thumbnail}
 >>
@@ -139,7 +139,9 @@ Cliquez sur l'onglet correspondant au système sur lequel vous utilisez Linphone
 >>
 >> > [!primary]
 >> >
->> > Remplacez les valeurs `0033972XXXXXX` par votre ligne SIP et `outbound-ovh-1`par votre proxy.
+>> > Remplacez les valeurs `0033972XXXXXX` par votre ligne SIP et `outbound-ovh-1` par votre proxy.
+>>
+>> Cliquez enfin sur `Confirmer`{.action}.
 >>
 >> ![connexion linphone](images/linphone05windows.png){.thumbnail}
 >>
