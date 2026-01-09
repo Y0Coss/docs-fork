@@ -1,7 +1,7 @@
 ---
 title: "E-Mail Pro - Configurar sua conta de E-Mail Pro no novo Outlook para Windows"
 excerpt: "Saiba como configurar sua conta de E-Mail Pro no novo Outlook para Windows"
-updated: 2025-12-31
+updated: 2026-01-09
 ---
 
 <style>

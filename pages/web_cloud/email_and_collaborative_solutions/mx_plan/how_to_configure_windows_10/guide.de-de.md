@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Konfigurieren eines E-Mail-Accounts im neuen Outlook für Windows"
 excerpt: "Erfahren Sie, wie Sie Ihre E-Mail-Adresse im neuen Outlook für Windows konfigurieren"
-updated: 2025-12-31
+updated: 2026-01-09
 ---
 
 <style>
