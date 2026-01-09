@@ -22,7 +22,7 @@ This guide explains how to view the hardware inventory, consumed resources, and 
 ## Prerequisites
 
 - Being an administrator of the [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) infrastructure and have access to the administration interface `admin.dashboard`.
-- Have **[OpenStack CLI configured](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the required permissions (`clouds.yaml` or environment variables).
+- **[OpenStack CLI configured](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the required permissions (`clouds.yaml` or environment variables).
 
 ## Instructions
 
