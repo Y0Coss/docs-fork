@@ -10,7 +10,7 @@ In dieser Anleitung wird erläutert, wie Sie einen Block Storage Volume vom Typ 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager) oder auf die [Horizon-Schnittstelle](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager) oder auf die [Horizon-Schnittstelle](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt.
 
 ## In der praktischen Anwendung

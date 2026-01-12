@@ -10,8 +10,8 @@ The purpose of this guide is to show you how to change a block storage volume ty
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- A [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
+- Access to the [OVHcloud Control Panel](/links/manager) or to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
+- A [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud).
 
 ## Instructions
 
