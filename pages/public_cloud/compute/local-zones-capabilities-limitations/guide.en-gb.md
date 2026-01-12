@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out the current features, capabilities and limitations of Local Zones for Public Cloud
-updated: 2025-03-27
+updated: 2026-01-12
 ---
 
 ## Objective
