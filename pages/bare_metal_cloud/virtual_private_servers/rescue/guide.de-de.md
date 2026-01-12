@@ -1,7 +1,7 @@
 ---
 title: Rescue-Modus für einen VPS aktivieren und verwenden
 excerpt: Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus für Ihren VPS zur Fehlerbehebung und zur Durchführung von Systemprüfungen verwenden
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Ziel

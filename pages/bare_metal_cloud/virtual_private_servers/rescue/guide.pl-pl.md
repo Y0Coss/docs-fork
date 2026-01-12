@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie i korzystanie z trybu Rescue na serwerze VPS
 excerpt: Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem VPS i przeprowadzania weryfikacji systemu
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: How to use rescue mode on a VPS
 excerpt: Find out how to activate the OVHcloud rescue mode to troubleshoot your VPS and run system checks
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Objective

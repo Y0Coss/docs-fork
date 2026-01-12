@@ -1,7 +1,7 @@
 ---
 title: Ativar e utilizar o modo rescue num VPS
 excerpt: Descubra como utilizar o modo rescue OVHcloud para solucionar problemas com o seu VPS e efetuar verificações do sistema
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Objetivo
