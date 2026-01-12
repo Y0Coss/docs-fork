@@ -16,26 +16,38 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 
 ## Available features
 
-| Action | General Availability |
-| --- | --- |
-| Instances | Yes |
-| User-data/cloud-init Support | Yes|
-| Add new/existing local private network | Yes |
-| Public IPv6 Support | Yes |
-| Public IPv4 Support | Yes |
-| Boot/Start | Yes |
-| Stop | Yes |
-| Block Storage | Yes |
-| Instance Backups | Yes |
-| Automatic Backups | Yes |
-| Volume Snapshots | Yes |
-| Volume Backups | Yes |
-| Object Storage | Yes |
-| Windows Images | No |
+| Public Cloud Services | Product                    | Local Zone Availability | Limitations |
+| --------------------- | -------------------------- | ------------------------ | ----------- |
+| Compute               | Instances                  | Yes | Suspend (shelve) action is not supported in Local Zones |
+|                       | Metal instances            | No | |
+|                       | GPU                        | No | |
+|                       | Instance backup            | No | |
+|                       | Distant backup             | No | |
+|                       | Image Linux                | No | |
+|                       | Images Windows             | No | |
+|                       | Workflow                   | No | |
+|                       | Upload your own image      | Yes | Image size limited to 25 GB maximum |
+| Network               | Load Balancer              | No | |
+|                       | Gateway                    | No | |
+|                       | Floating IP                | No | |
+|                       | Private Network with vRack | No | Local Zones are not compatible with vRack. Private networks are limited to the same Local Zone only. DHCP is supported on Local Private Networks. |
+| Storage               | Object Storage             | Yes | 1. User policies not supported. all access keys within a project can access all buckets across all Local Zones. </br> 2. Only Standard storage class supported. </br> 3. S3 features not supported: S3 tags, Legal Hold, SSE-OMK, S3 replication, Server access logging. |
+|                       | Block Storage              | Yes | No encryption support. Classic volumes cannot be multi-attached. Classic volumes limited to 250 IOPS (vs 500 IOPS in 3AZ regions). Maximum size 4 TB (vs 12 TB). |
+|                       | File Storage               | No | |
+| Container             | Managed Kubernetes Service | No | |
+|                       | Managed Rancher Service    | No | |
+|                       | Managed Private Registry   | No | |
+| DBaas                 | DBaas                      | No | |
+|                       | Analytics                  | No | |
+| AI                    | AI                         | No | |
 
 ## Capabilities and limitations
 
 All instance features which are not yet available in Local Zones will be implemented in the next months. Our goal is to support the entire feature set that is already available in global regions as soon as possible.
+
+### SMTP Server
+
+Instances in the Local Zone cannot contact SMTP servers.
 
 ## Go further
 
