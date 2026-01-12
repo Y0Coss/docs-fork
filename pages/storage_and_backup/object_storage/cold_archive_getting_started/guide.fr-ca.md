@@ -182,7 +182,7 @@ Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la co
 >>
 
 - Le statut du bucket passe à "Restauration".
-- Une fois la restauration terminée, les objets deviennent accessibles en mode lecture-seule pendant 30 jours. Passé ce délai, une nouvelle opération de restauration doit être lancée pour accéder aux objets archivés.
+- Une fois la restauration terminée, les objets deviennent accessibles en mode lecture seule pendant 30 jours. Passé ce délai, une nouvelle opération de restauration doit être lancée pour accéder aux objets archivés.
 - Les objets du bucket archivé peuvent toujours être listés à tout moment.
 
 ### Supprimer une archive
