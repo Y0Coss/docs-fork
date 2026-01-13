@@ -20,11 +20,11 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 | Compute               | Instances                  | Oui | La suspension (mise en attente) n'est pas prise en charge dans les zones locales |
 |                       | Metal instances            | Non | |
 |                       | GPU                        | Non | |
-|                       | Instance backup            | Non | |
+|                       | Instance backup            | Oui | |
 |                       | Distant backup             | Non | |
-|                       | Image Linux                | Non | |
+|                       | Image Linux                | Oui | |
 |                       | Images Windows             | Non | |
-|                       | Workflow                   | Non | |
+|                       | Workflow                   | Oui | |
 |                       | Téléchargez votre propre image | Oui | Taille d'image limitée à 25 Go maximum |
 | Network               | Load Balancer              | Non | |
 |                       | Gateway                    | Non | |

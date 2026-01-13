@@ -21,11 +21,11 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 | Compute               | Instances                  | Yes | Suspend (shelve) action is not supported in Local Zones |
 |                       | Metal instances            | No | |
 |                       | GPU                        | No | |
-|                       | Instance backup            | No | |
+|                       | Instance backup            | Yes | |
 |                       | Distant backup             | No | |
-|                       | Image Linux                | No | |
+|                       | Image Linux                | Yes | |
 |                       | Images Windows             | No | |
-|                       | Workflow                   | No | |
+|                       | Workflow                   | Yes | |
 |                       | Upload your own image      | Yes | Image size limited to 25 GB maximum |
 | Network               | Load Balancer              | No | |
 |                       | Gateway                    | No | |
