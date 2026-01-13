@@ -42,6 +42,11 @@ For more information on UEFI, consult the following [article](https://uefi.org/a
 - Administrative (sudo) access to the server via SSH
 - Understanding of RAID, partitions and GRUB
 
+Throughout this guide, we use the terms **primary disk** and **secondary disk**. In this context:
+
+- The primary disk is the disk whose ESP (EFI System Partition) is mounted by Linux.
+- The secondary disk(s) are all the other disks in the RAID.
+
 ## Instructions
 
 When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure in order to understand the RAID rebuild process.
@@ -225,7 +230,7 @@ nvme0n1
 
 Note the devices, partitions, and mount points, as this is important, especially after replacing a disk. This will allow you to verify that the partitions are correctly mounted on their respective mount points on the new disk.
 
-In our exmaple, we have:
+In our example, we have:
 
 - Two RAID arrays: `/dev/md2` and `/dev/md3`.
 - Partitions part of the RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** and **nvme0n1p3** with the mount points `/boot` and `/`.
@@ -611,8 +616,6 @@ We can now proceed with the disk replacement and RAID rebuild.
 > If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#mirrored-esp-normal) if your EFI system partition is mirrored.
 >
 
-The following instructions cover rebuilding the RAID after replacing the primary disk (disk with the the mounted ESP). However, if one of your secondary disks is replaced, the steps described in [this section](#nonmirrorednormalmode) will also apply. Simply replace the values with your own.
-
 <a name="nonmirroredrescuemode"></a>
 
 #### Rebuilding the RAID after the primary disk is replaced (rescue mode)
@@ -835,9 +838,9 @@ Next, consult [this section](#swap-rescue) to recreate the SWAP partition (if ap
 > Only follow the steps in this section if they apply to your case.
 > 
 
-If the primary disk is replaced while it contains EFI system partitions that have not been synchronised after major system updates that have modified GRUB, booting from one of the secondary disks with an obsolete ESP may fail.
+If the primary disk is replaced while it contains EFI system partitions that have not been synchronised after major system updates that have modified the GRUB, booting from one of the secondary disks with an obsolete ESP may fail.
 
-In this case, along with rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on the new partition.
+In this case, along with rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on it.
 
 Once the ESP has been created (as explained above) and the system recognises both partitions, still in the `choot` environment, create the /boot/efi folder to mount the new EFI system partition **nvme0n1p1**:
 
@@ -1098,7 +1101,7 @@ Once done, consult [this section](#swap-rescue) to reacreate the SWAP partition 
 
 #### In normal mode <a name="mirrored-esp-normal"></a>
 
-From the illustrations above, the RAID status should like this after a disk failure:
+From the illustrations above, the RAID status should look like this after a disk failure:
 
 ```sh
 Personalities : [raid1]
@@ -1323,9 +1326,10 @@ Next, reload the system:
 ```sh
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
-///
 
 We have now completed the RAID rebuild.
+
+///
 
 ## Go Further
 
