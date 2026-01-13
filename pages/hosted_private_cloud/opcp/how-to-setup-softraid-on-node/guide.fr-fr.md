@@ -18,8 +18,11 @@ Le RAID software permet de créer une configuration de redondance au niveau logi
 
 > [!warning]
 > La configuration du RAID software doit être effectuée **avant** le déploiement d'une instance sur le noeud.
-> 
 > Une fois une instance déployée, la modification de la configuration RAID nécessite la suppression de l'instance et la reconfiguration du noeud.
+> La création/modification d'un RAID efface les données présentes sur les disques utilisés.
+>
+> [!warning]
+> La supervision du RAID logiciel est à la charge du client final, nous n'avons pas d'accès à l'instance déployée pour gérer le monitoring. Il est recommandé de mettre en place un système d'alerte (par exemple en utilisant la commande `mdadm --monitor`)  et d'intégrer cette supervision à vos outils de monitoring existants.
 
 ## Prérequis
 
@@ -29,6 +32,7 @@ Avant de commencer, assurez-vous de disposer des éléments suivants :
 - Un accès **[OpenStack CLI configuré](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** avec les droits nécessaires (`clouds.yaml` ou variables d'environnement).
 - Le rôle **admin** et/ou des noeuds transférés dans votre projet.
 - Un noeud disponible (statut `available`) ou en mode maintenance.
+- Une image système **Linux** (type GNU/Linux) est requise pour l'instance. Cette image doit inclure le paquet `mdadm` ou permettre son installation. Les appliances VMware et les systèmes d'exploitation Windows par exemple ne sont pas compatibles avec cette procédure.
 - Connaissances de base sur OpenStack Ironic et la gestion des noeuds baremetal.
 
 ## Pourquoi utiliser un RAID software ?
@@ -129,6 +133,12 @@ Une fois le fichier de configuration créé, appliquez-le au noeud :
 ```bash
 openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json
 ```
+
+> [!note]
+> La configuration RAID est appliquée lors du prochain cycle de *cleaning* ou de déploiement. Si le *cleaning* automatique est désactivé, déclenchez un nettoyage manuel avant de remettre le noeud en `available` :
+> ```bash
+> openstack baremetal node clean <node-id>
+> ```
 
 #### 4.4. Vérifier la configuration RAID
 
