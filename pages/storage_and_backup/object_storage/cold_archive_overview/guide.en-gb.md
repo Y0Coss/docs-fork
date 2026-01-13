@@ -58,7 +58,7 @@ The service allows you to focus on building and deploying cloud applications whi
 
 Since November 2025, there are two ways of consuming Cold Archive are: (1) **Cold Archive v1, a standalone bucket-granular Cold Archive solution (legacy offering)**, and (2) **Cold Archive v2, an Object Storage class/tier that allows archiving individual objects within a container**. Although there are two underlying ways of consuming Cold Archive, we continue to refer to the solution as 'Cold Archive' in all customer-facing materials, including the product page and customer experience, without explicitly mentioning 'v1' or 'v2'. 
 
-We created a FAQ that will explain the main differences between the two underlying options for Cold Archive, please refer to //LINK// to know more about them.
+Please refer to the [Cold Archive FAQ](pages/storage_and_backup/object_storage/cold_archive_faq) to know more about the main differences between the two underlying options for Cold Archive
 
 ### Concepts
 
