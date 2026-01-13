@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Ziel
 
-Die automatische [Migration](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) einer E-Mail-Adresse ist über unseren [OVH Mail Migrator](https://omm.ovh.net/) möglich. Sie können Ihre E-Mail-Adresse auch manuell über einen E-Mail-Client migrieren.
+Die automatische [Migration](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) einer E-Mail-Adresse ist über unseren [OVHcloud Mail Migrator](/links/web/omm) möglich. Sie können Ihre E-Mail-Adresse auch manuell über einen E-Mail-Client migrieren.
 
 **Diese Anleitung erläutert, wie Sie Ihre E-Mail-Adresse manuell migrieren.**
 
@@ -25,13 +25,13 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister]
 ## In der praktischen Anwendung
 
 > [!primary]
-> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVH Mail Migrator](https://omm.ovh.net/) möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVHcloud Mail Migrator](/links/web/omm) möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVHcloud Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 In dieser Anleitung haben wir die Operationen mit den 3 meistverwendeten E-Mail-Programmen **Outlook**, **Mail** auf Mac OS und **Thunderbird** durchgeführt.
 
 Die folgenden Anweisungen sind in zwei Teile gegliedert:
 
-- **Export**: So können Sie ein vollständiges Backup Ihrer E-Mail-Adresse abrufen, um diese auf einen anderen Account, ein E-Mail-Programm oder einen anderen Account umzuziehen. Wenn Sie Elemente von einer E-Mail-Adresse auf eine andere Adresse verschieben müssen, die im gleichen E-Mail-Programm konfiguriert ist, können Sie diese kopieren/einfügen oder verschieben/ablegen. Es wird jedoch empfohlen, das von Ihnen verwendete Software-Exportsystem zu verwenden.
+- **Export**: So können Sie ein vollständiges Backup Ihres E-Mail-Accounts abrufen, um diese auf einen anderen Account, ein E-Mail-Programm oder einen anderen Account umzuziehen. Wenn Sie Elemente von einer E-Mail-Adresse auf eine andere Adresse verschieben müssen, die im gleichen E-Mail-Programm konfiguriert ist, können Sie diese kopieren/einfügen oder verschieben/ablegen. Es wird jedoch empfohlen, das von Ihnen verwendete Software-Exportsystem zu verwenden.
 
 - **Import**: So können Sie ein Backup, das Sie für Ihre neue Station oder Software erstellt haben, verwenden. Überprüfen Sie, ob die zu importierende Backup-Datei mit dem von Ihnen verwendeten E-Mail-Programm kompatibel ist.
 
@@ -231,6 +231,6 @@ In Ihrem Posteingang und in der linken Spalte finden Sie die Ordner und E-Mails 
 
 ## Weiterführende Informationen
 
-[E-Mail-Accounts mit dem OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+[E-Mail-Accounts mit dem OVHcloud Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 
 Treten Sie unserer [User Community](/links/community) bei.

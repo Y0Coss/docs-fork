@@ -1,5 +1,5 @@
 ---
-title: Getting started with VSPC
+title: Backup Agent - Getting started with VSPC
 excerpt: Discover the Veeam Service Provider Console (VSPC), a cloud-enabled platform provided by Veeam that helps you manage backups and data protection
 updated: 2025-04-29
 ---
@@ -256,7 +256,7 @@ Above the screen, you can see the amount of file added:
 
 #### **5. Verify Restoration**
 
-1. After completion, navigate to the `Audit Logs`{.action }tab for detailed records of the restore process.
+1. After completion, navigate to the `Audit Logs`{.action}tab for detailed records of the restore process.
 2. Check for errors or warnings and validate that the restored data is functional.
 
 > [!warning]

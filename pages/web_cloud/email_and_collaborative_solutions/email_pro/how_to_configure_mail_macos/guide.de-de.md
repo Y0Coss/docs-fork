@@ -41,7 +41,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Wählen `Sie Anderen Mail`{.action}-Account aus und klicken Sie auf `Mail-Account`{.action}.|
 |Geben Sie im Fenster "**Mail Account hinzufügen**"folgende Informationen ein: <br>- **Name** Ihres E-Mail Accounts <br>- Ihre **E-Mail Adresse** <br>- **Passwort** Ihrer E-Mail-Adresse |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>- Lassen Sie Ihre **E-Mail-Adresse** bereits eingeben <br>- Geben Sie Ihre vollständige E-Mail-Adresse unter **Benutzername** ein <br>- Lassen Sie Ihr **Passwort** bereits eingegeben <br>- Wählen Sie `POP` oder `IMAP`(empfohlen) aus in **Account-Typ**<br>- Geben Sie `pro?.mail.ovh.net` in **Empfangsserver** (ersetzen Sie bitte "?"durch die Nummer Ihres Servers)<br>- Geben Sie auch `pro?.mail.ovh.net` in **Versendungsserver** (ersetzen Sie gut "?"durch die Nummer Ihres Servers)<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>- Lassen Sie Ihre **E-Mail-Adresse** bereits eingeben <br>- Geben Sie Ihre vollständige E-Mail-Adresse unter **Benutzername** ein <br>- Lassen Sie Ihr **Passwort** bereits eingegeben <br>- Wählen Sie `POP` oder `IMAP`(empfohlen) aus in **Account-Typ**<br>- Geben Sie `pro?.mail.ovh.net` in **Empfangsserver** (ersetzen Sie "?" mit der  Nummer Ihres Servers)<br>- Geben Sie auch `pro?.mail.ovh.net` in **Versendungsserver** (ersetzen Sie "?" mit der Nummer Ihres Servers)<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
 
 ### E-Mail-Adresse verwenden
 
@@ -49,7 +49,7 @@ Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie könne
 
 OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Diese ist über [Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Für Fragen zur Verwendung lesen Sie unsere Anleitung [Ihren Account über OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### Backup Ihrer E-Mail-Adresse abrufen
+### Backup Ihres E-Mail-Accounts abrufen
 
 Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt “**Exportieren**“ im Abschnitt “**Mail auf Mac OS**“ unserer Anleitung [E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exportieren).
 

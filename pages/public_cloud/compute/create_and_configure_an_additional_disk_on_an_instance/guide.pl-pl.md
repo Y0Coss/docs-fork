@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -101,7 +101,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >>
 >> > [!warning]
 >> >
->> > Uwaga: Wolumen musi być utworzony w tym samym regionie, co instancja, do której chcesz go przypisać. Jeśli utworzysz ją w innym regionie, możesz ją usunąć i odtworzyć we właściwej lokalizacji lub możesz przenieść ją ponownie, postępując zgodnie z [tym przewodnikiem](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Uwaga: Wolumen musi być utworzony w tym samym regionie, co instancja, do której ma zostać przypisany. Jeśli utworzysz ją w innym regionie, możesz ją usunąć i odtworzyć w odpowiednim regionie.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
@@ -140,6 +140,13 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> - High-speed-gen2-luks
 >>
 >> Typy kończące się na -luks są zaszyfrowane (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Utwórz wolumin **-luks** automatycznie generuje dedykowany klucz.
+>> >
+>> > Nie modyfikuj ani nie usuwaj tego klucza, jeśli jest on związany z wolumenem Block Storage. Dzięki temu dane znajdujące się na tym woluminie oraz wszystkie migawki będą definitywnie nieodwracalne.
+>> >
 >>
 >> Aby utworzyć prosty wolumen Block Storage, potrzebujesz 3 elementów:
 >>
@@ -238,7 +245,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >>
 >> > [!warning]
 >> >
-> > > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
 >> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
@@ -254,7 +261,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 > **Za pośrednictwem CLI OpenStack**
 >> > [!warning]
 >> >
-> > > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
 >> >
 >>
 >> Typy woluminów:
@@ -267,6 +274,13 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> - High-speed-gen2-luks
 >>
 >> Typy kończące się na -luks są zaszyfrowane (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Utwórz wolumin **-luks** automatycznie generuje dedykowany klucz.
+>> >
+>> > Nie modyfikuj ani nie usuwaj tego klucza, jeśli jest on związany z wolumenem Block Storage. Dzięki temu dane znajdujące się na tym woluminie oraz wszystkie migawki będą definitywnie nieodwracalne.
+>> >
 >>
 >> Wyświetl dostępne typy woluminów w regionie:
 >>
