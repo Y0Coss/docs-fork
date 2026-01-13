@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment configurer un RAID software sur un noeud"
 excerpt: "Apprenez à configurer et gérer un RAID software sur un noeud OpenStack Ironic dans OPCP"
-updated: 2026-01-07
+updated: 2026-01-13
 ---
 
 ## Objectif
@@ -41,7 +41,6 @@ Le RAID software offre plusieurs avantages dans un environnement OPCP :
 
 - **Redondance des données** : Protection contre la perte de données en cas de défaillance d'un disque
 - **Amélioration des performances** : Répartition des opérations de lecture/écriture sur plusieurs disques
-- **Flexibilité** : Configuration adaptable selon vos besoins (RAID 0, RAID 1, RAID 5, RAID 10, etc.)
 - **Coût réduit** : Pas besoin de contrôleur RAID matériel dédié
 
 ## En pratique
@@ -219,12 +218,12 @@ mdadm --detail /dev/md0
 - **Toujours configurer le RAID avant le déploiement** : La configuration doit être effectuée sur un noeud sans instance active
 - **Utiliser le mode maintenance** : Placez toujours le noeud en maintenance avant toute modification
 - **Sauvegardes régulières** : Le RAID n'est pas une solution de sauvegarde, effectuez des sauvegardes régulières de vos données
+- **Supervision du RAID** : Mettez en place un monitoring du RAID (par exemple via `mdadm --monitor`) et intégrez les alertes à vos outils de supervision pour détecter rapidement toute dégradation ou panne de disque.
 
 ## Limitations et considérations
 
 - **Performance** : Le RAID software peut avoir un impact sur les performances CPU par rapport au RAID matériel
 - **Compatibilité** : Tous les systèmes d'exploitation ne supportent pas tous les niveaux de RAID software
-- **Espace disque** : Certains niveaux de RAID (RAID 1, 5, 6, 10) réduisent l'espace disque disponible
 - **Reconstruction** : La reconstruction d'un RAID après remplacement d'un disque peut prendre du temps et consommer des ressources
 
 ## Dépannage
