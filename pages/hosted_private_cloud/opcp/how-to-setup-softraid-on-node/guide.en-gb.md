@@ -1,12 +1,12 @@
 ---
-title: "OPCP - How to configure software RAID on a node"
-excerpt: "Learn how to configure and manage software RAID on an OpenStack Ironic node in OPCP"
+title: "OPCP - How to configure a software RAID on a node"
+excerpt: "Find out how to configure and manage a software RAID on an OpenStack Ironic node in OPCP"
 updated: 2026-01-13
 ---
 
 ## Objective
 
-This guide explains how to configure and manage **software RAID** on an OpenStack Ironic baremetal node in your OPCP environment.
+This guide explains how to configure and manage a **software RAID** on an OpenStack Ironic baremetal node in your OPCP environment.
 
 Software RAID allows you to create a redundancy configuration at the software level, without requiring a dedicated hardware RAID controller. This solution is particularly useful to improve the availability and storage performance of your instances.
 
@@ -21,15 +21,14 @@ Software RAID allows you to create a redundancy configuration at the software le
 > Once an instance has been deployed, changing the RAID configuration requires deleting the instance and reconfiguring the node.
 > Creating or modifying a RAID array erases the data present on the disks used.
 >
-> [!warning]
 > Monitoring of the software RAID is the responsibility of the end customer: we do not have access to the deployed instance to manage monitoring. You should configure alerting (for example using the `mdadm --monitor` command) and integrate this monitoring into your existing monitoring tools.
 
-## Prerequisites
+## Requirements
 
 Before you begin, make sure you have the following:
 
 - An active [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) service.
-- **[Configured OpenStack CLI](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the required permissions (`clouds.yaml` or environment variables).
+- Access to **[Configured OpenStack CLI](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the required permissions (`clouds.yaml` or environment variables).
 - The **admin** role and/or nodes transferred into your project.
 - An available node (status `available`) or a node in maintenance mode.
 - A **Linux** (GNU/Linux) system image is required for the instance. This image must include the `mdadm` package or allow its installation. VMware appliances and Windows operating systems, for example, are not compatible with this procedure.
@@ -39,11 +38,11 @@ Before you begin, make sure you have the following:
 
 Software RAID provides several benefits in an OPCP environment:
 
-- **Data redundancy**: Protection against data loss in the event of a disk failure
-- **Performance improvement**: Distribution of read/write operations across multiple disks
-- **Lower cost**: No need for a dedicated hardware RAID controller
+- **Data redundancy**: Protection against data loss in the event of a disk failure.
+- **Performance improvement**: Distribution of read/write operations across multiple disks.
+- **Lower cost**: No need for a dedicated hardware RAID controller.
 
-## In practice
+## Instructions
 
 ### 1. Check the disks available on the node
 
@@ -69,7 +68,7 @@ Before any configuration change, put the node in **maintenance mode**:
 openstack baremetal node maintenance set <node-id> --reason "Software RAID configuration"
 ```
 
-### 3. Supported RAID levels
+### 3. Supported RAID level <a name="raid-levels"></a>
 
 Ironic supports several software RAID levels. The following values are accepted in the JSON configuration:
 
@@ -77,16 +76,17 @@ Ironic supports several software RAID levels. The following values are accepted 
 |------------|------------|-------------|-------------------------|
 | **RAID 1** | `"1"` | Mirroring | 2 |
 
-> [!important]
+> [!warning]
 > 
-> **Important constraint**: The first logical disk with `is_root_volume: true` **must** be RAID 1. Other RAID levels (RAID 0, 5, 6, 10, etc.) are not allowed for the root volume.
+> **Important constraint**: The first logical disk with `is_root_volume: true` **must be in RAID 1**. Other RAID levels (RAID 0, 5, 6, 10, etc.) are not allowed for the root volume.
+
 It is therefore only possible to use RAID 1 for the instance deployment.
 
 ### 4. Configure software RAID
 
 Ironic allows you to configure software RAID via the **agent** interface. This configuration is applied automatically when an instance is deployed.
 
-#### 4.1. Check and enable the agent interface if necessary
+#### 4.1. Check and enable the agent interface if necessary <a name="check-agent"></a>
 
 Before configuring RAID, check the RAID interface currently configured on the node:
 
@@ -133,8 +133,9 @@ Once the configuration file has been created, apply it to the node:
 openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json
 ```
 
-> [!note]
+> [!primary]
 > The RAID configuration is applied during the next *cleaning* cycle or deployment. If automatic cleaning is disabled, trigger a manual cleaning before setting the node back to `available`:
+>
 > ```bash
 > openstack baremetal node clean <node-id>
 > ```
@@ -230,8 +231,8 @@ mdadm --detail /dev/md0
 
 | Error | Cause | Solution |
 |-------|-------|----------|
-| `Driver redfish does not support raid (disabled or not implemented). (HTTP 404)` | The RAID interface is not configured as `agent` | See section [4.1](#41-check-and-enable-the-agent-interface-if-necessary) |
-| `Software RAID Configuration requires RAID-1 for the first logical disk` | The first logical disk with `is_root_volume: true` must be RAID 1 | Use RAID 1 for the root volume.<br/> See section [3](#3-supported-raid-levels) |
+| `Driver redfish does not support raid (disabled or not implemented). (HTTP 404)` | The RAID interface is not configured as `agent` | See the [section 4.1 - Check and enable the agent interface if necessary](#check-agent) |
+| `Software RAID Configuration requires RAID-1 for the first logical disk` | The first logical disk with `is_root_volume: true` must be RAID 1 | Use RAID 1 for the root volume.<br/> See the [section 3 - Supported RAID levels](#raid-levels) |
 
 ## References
 
