@@ -612,9 +612,7 @@ Nous pouvons maintenant procéder au remplacement du disque et à la reconstruct
 > Si votre serveur peut démarrer en mode normal après le remplacement du disque, procédez simplement en suivant les étapes décrites dans [cette section](#nonmirrorednormalmode) si votre partition EFI n'est pas en miroir ou [cette section](#mirrored-esp-normal) si votre partition EFI est en miroir.
 >
 
-<a name="nonmirroredrescuemode"></a>
-
-#### Reconstruction du RAID après le remplacement du disque principal (mode rescue)
+#### Reconstruction du RAID après le remplacement du disque principal (mode rescue) <a name="nonmirroredrescuemode"></a>
 
 Une fois le disque remplacé, copiez la table de partition du disque sain (dans cet exemple, nvme1n1) vers le nouveau disque (nvme0n1).
 

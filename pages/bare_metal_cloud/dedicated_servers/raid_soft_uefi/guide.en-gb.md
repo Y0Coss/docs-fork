@@ -612,9 +612,7 @@ We can now proceed with the disk replacement and RAID rebuild.
 > If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#mirrored-esp-normal) if your EFI system partition is mirrored.
 >
 
-<a name="nonmirroredrescuemode"></a>
-
-#### Rebuilding the RAID after the primary disk is replaced (rescue mode)
+#### Rebuilding the RAID after the primary disk is replaced (rescue mode) <a name="nonmirroredrescuemode"></a>
 
 Once the disk has been replaced, copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
