@@ -123,11 +123,11 @@ Se configurou uma das contas migradas num cliente de e-mail (exemplo: Outlook, T
 
 ## Quer saber mais?
 
-[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
+[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Primeiros passos com a oferta E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Primeiros passos com a oferta E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Primeiros passos com a oferta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
+[Primeiros passos com a oferta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 [Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 

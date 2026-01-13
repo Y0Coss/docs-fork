@@ -1,6 +1,6 @@
 ---
-title: 'Migrating an MX Plan email account to an Email Pro or Exchange account'
-excerpt: 'Find out how to migrate an MX Plan email account to an Email Pro or Exchange account'
+title: 'Migrating an MX Plan email account to an Email Pro, Exchange account or Zimbra'
+excerpt: 'Find out how to migrate an MX Plan email address to an Email Pro, Exchange or Zimbra account'
 updated: 2025-04-28
 ---
 
@@ -10,12 +10,17 @@ OVHcloud offers several email solutions: MX Plan (standalone or included in a We
 
 **Find out how to migrate an MX Plan email account to an Email Pro or Exchange account.**
 
+> [!warning]
+>
+> [OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) allows you to migrate your messages from one email server to another.<br>
+> If your emails are only stored locally (POP configuration or local archiving), you can perform an [export from your email software](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), then [import your PST file via OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#realiser-une-migration-par-fichier) or [import directly from your email software](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
+
 ## Requirements
 
-- An MX Plan email account (as MX Plan standalone or included in an OVHcloud [Web Hosting plan](/links/web/hosting))
-- An [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or [Zimbra](/links/web/zimbra) service with at least one unconfigured account (which will appear as “@configureme.me”)
-- **No redirections set on the MX Plan email account you want to migrate**
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An MX Plan email account (as MX Plan standalone or included in an OVHcloud [Web Hosting plan](/links/web/hosting)).
+- An [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or [Zimbra](/links/web/zimbra) service with at least one unconfigured account (which will appear as “@configureme.me”).
+- **No redirections set on the MX Plan email account you want to migrate**.
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -106,7 +111,7 @@ Finally, confirm the password for the source email account (the one you want to 
 >
 >Select the `Associated domains`{.action} tab on your platform, then click `Add a domain`{.action}. Once you have added your domain name, ensure that `OK` is in the `Status` column.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > To find out more about adding a domain name, follow [the Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#step-2-add-your-domain-name) or [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 

@@ -107,7 +107,7 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 >
 >Sélectionnez l’onglet `Domaines associés`{.action} sur votre plateforme, puis cliquez sur `Ajouter un domaine`{.action}. Une fois le nom de domaine ajouté, assurez-vous que la mention `OK` est bien présente dans la colonne `Statut`.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 

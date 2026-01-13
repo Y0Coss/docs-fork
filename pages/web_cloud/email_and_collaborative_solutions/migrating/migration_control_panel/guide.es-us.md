@@ -102,7 +102,7 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 >
 >Seleccione la pestaña `Dominios asociados`{.action} en su plataforma y haga clic en `Añadir un dominio`{.action}. Una vez añadido el dominio, asegúrese de que la mención `OK` aparezca en la columna `Estado`.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Para más información sobre la adición de un dominio, consulte [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 

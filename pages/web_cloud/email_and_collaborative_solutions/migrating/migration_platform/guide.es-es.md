@@ -1,12 +1,12 @@
 ---
 title: "Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra"
-excerpt: "Cómo migrar las direcciones de correo de una plataforma Exchange o Email Pro a otra plataforma Exchange, E-mail Pro, MX Plan o Zimbra"
+excerpt: "Cómo migrar las direcciones de correo de una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro, MX Plan o Zimbra"
 updated: 2021-10-21
 ---
 
 ## Objetivo
 
-Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchange o Email Pro a otra plataforma Exchange, E-mail Pro, MX Plan o Zimbra, Esta guía explica cómo realizar la migración en dos fases:
+Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro, MX Plan o Zimbra, Esta guía explica cómo realizar la migración en dos fases:
 
 1. **Configurar la plataforma de destino**.
 2. **Migrar las cuentas de correo** de su plataforma actual a la nueva.
@@ -22,7 +22,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 ## Requisitos
 
-- Disponer de una plataforma **"fuente"** con cuentas configuradas de [Exchange](/links/web/emails-hosted-exchange) o [E-mail Pro](/links/web/email-pro) o [Zimbra](/links/web/zimbra).
+- Disponer de una plataforma **"fuente"** con cuentas configuradas de [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) o [Zimbra](/links/web/zimbra).
 - Disponer de una plataforma de **"destino"** con cuentas [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
@@ -34,11 +34,11 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 >
 > Antes de comenzar su migración, si acaba de pedir su nueva oferta de correo electrónico, primero agregue el nombre de dominio a su plataforma de correo electrónico. Si migra a una plataforma MX Plan, el nombre de dominio asociado siendo "fijo", puede pasar directamente a la [siguiente etapa](#accountsmigration).
 >
-> Seleccione la pestaña `Domaines associés`{.action} o `Domaine`{.action} en su plataforma, y haga clic en `Ajouter un domaine`{.action}. Una vez que el nombre de dominio se haya agregado, asegúrese de que la mención `OK` o `Actif`{.action} esté bien presente en la columna `Statut`.
+> Seleccione la pestaña `Dominios asociados`{.action} o `Dominio`{.action} en su plataforma, y haga clic en `Añadir un dominio`{.action}. Una vez que el nombre de dominio se haya agregado, asegúrese de que la mención `OK` o `Activo`{.action} esté bien presente en la columna `Estado`.
 >
 > ![email-migración](images/migration_platform02.png){.thumbnail}
 >
-> Para más detalles sobre la adición de un nombre de dominio, siga [la guía E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) o [la guía Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> Para más detalles sobre la adición de un nombre de dominio, siga [la guía Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) o [la guía Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### Migrar las cuentas de correo <a name="accountsmigration"></a>
 
@@ -50,8 +50,8 @@ La migración de sus cuentas de correo se realizará en 3 grandes etapas: **Reno
 >
 > Caso particular:
 >
-> - Si debe migrar **una cuenta Exchange o Zimbra PRO** a una cuenta **E-mail Pro** o **Zimbra STARTER**, debe asegurarse de que sus cuentas de correo electrónico no excedan los 10 Go (E-mail Pro) o 15 Go (Zimbra STARTER). Las funciones colaborativas, la sincronización de calendarios y contactos no están presentes en E-mail Pro o Zimbra STARTER y no pueden migrarse.
-> - Si debe migrar **una cuenta Exchange, E-mail Pro o Zimbra** a una cuenta **MX Plan**, debe asegurarse de que su cuenta de correo electrónico no exceda los 5 Go. Las funciones colaborativas, la sincronización de calendarios y contactos no están presentes en MX Plan y no pueden migrarse.
+> - Si debe migrar **una cuenta Exchange o Zimbra PRO** a una cuenta **Email Pro** o **Zimbra STARTER**, debe asegurarse de que sus cuentas de correo electrónico no excedan los 10 Go (Email Pro) o 15 Go (Zimbra STARTER). Las funciones colaborativas, la sincronización de calendarios y contactos no están presentes en Email Pro o Zimbra STARTER y no pueden migrarse.
+> - Si debe migrar **una cuenta Exchange, Email Pro o Zimbra** a una cuenta **MX Plan**, debe asegurarse de que su cuenta de correo electrónico no exceda los 5 Go. Las funciones colaborativas, la sincronización de calendarios y contactos no están presentes en MX Plan y no pueden migrarse.
 
 #### Renombrar
 
@@ -99,13 +99,13 @@ Si quiere eliminarlo, abra la pestaña `Cuentas de correo`{.action} de su plataf
 
 En este punto, sus direcciones de correo ya deben migrarse y ser funcionales. Por seguridad, le recomendamos que se asegure de que la configuración del dominio es correcta consultando su área de cliente.
 
-Para ello, seleccione el servicio E-mail Pro, Exchange o Zimbra concernido, y diríjase a la pestaña `Domaines associés`{.action} o `Domaine`{.action} en su plataforma. Verifique la sección o la columna `Diagnostic`{.action}.
+Para ello, seleccione el servicio Email Pro, Exchange o Zimbra concernido, y diríjase a la pestaña `Dominios asociados`{.action} o `Dominio`{.action} en su plataforma. Verifique la sección o la columna `Diagnóstico`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 > [!primary]
 >
-> Si acaba de realizar la migración o de modificar un registro DNS de su dominio, es posible que la visualización en el [espacio cliente OVHcloud](/links/manager) necesite algunas horas para actualizarse.
+> Si acaba de realizar la migración o de modificar un registro DNS de su dominio, es posible que la visualización en el [área de cliente de OVHcloud](/links/manager) necesite algunas horas para actualizarse.
 >
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.
@@ -125,11 +125,11 @@ Si ha configurado una de las cuentas migradas en un cliente de correo (p.ej.: Ou
 
 ## Más información
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Primeros pasos con la oferta E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Primeros pasos con la oferta Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Primeros pasos con la oferta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
+[Primeros pasos con la oferta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 [Primeros pasos con la oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 

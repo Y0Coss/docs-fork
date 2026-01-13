@@ -32,9 +32,9 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 
 > [!warning]
 >
-> Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, najpierw dodaj nazwę domeny do swojej platformy e-mail. Jeśli migrujesz do platformy MX Plan, ponieważ nazwa domeny jest „stała”, możesz przejść bezpośrednio do [następnej etapu](#accountsmigration).
+> Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, najpierw dodaj nazwę domeny do swojej platformy e-mail. Jeśli migrujesz do platformy MX Plan, ponieważ nazwa domeny jest "stała", możesz przejść bezpośrednio do [następnej etapu](#accountsmigration).
 >
-> Wybierz kartę `Domaines associés`{.action} lub `Domaine`{.action} na swojej platformie, a następnie kliknij `Ajouter un domaine`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Statut` widoczna jest marka `OK` lub `Actif`{.action}.
+> Wybierz kartę `Domeny przypisane`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Status` widoczna jest marka `OK` lub `Aktywny`{.action}.
 >
 > ![e-mail-migracja](images/migration_platform02.png){.thumbnail}
 >
@@ -99,7 +99,7 @@ Jeśli chcesz go usunąć, przejdź do karty `Konta e-mail`{.action} Twojej pier
 
 Na tym etapie Twoje konta e-mail muszą być migrowane i działać. Ze względów bezpieczeństwa sprawdź, czy konfiguracja Twojej domeny jest poprawna, sprawdzając w Panelu klienta.
 
-Aby to zrobić, wybierz odpowiedni serwis E-mail Pro, Exchange lub Zimbra, a następnie przejdź do karty `Domaines associés`{.action} lub `Domaine`{.action} na swojej platformie. Sprawdź sekcję lub kolumnę `Diagnostic`{.action}.
+Aby to zrobić, wybierz odpowiedni serwis E-mail Pro, Exchange lub Zimbra, a następnie przejdź do karty `Powiązane domeny`{.action} lub `Domeny`{.action} na swojej platformie. Sprawdź sekcję lub kolumnę `Diagnostic`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
@@ -123,12 +123,12 @@ Jeśli skonfigurowałeś jedno z kont przeniesionych na klienta poczty elektroni
 
 ## Sprawdź również
 
-[Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts).
+[Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Pierwsze kroki z ofertą E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Pierwsze kroki z ofertą E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Pierwsze kroki z ofertą Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
+[Pierwsze kroki z ofertą Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Pierwsze kroki z ofertą Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+[Pierwsze kroki z ofertą Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Dołącz do [grona naszych użytkowników](/links/community).

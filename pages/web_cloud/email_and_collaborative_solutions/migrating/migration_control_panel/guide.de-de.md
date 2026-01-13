@@ -74,7 +74,7 @@ Bevor Sie mit der Migration beginnen, müssen Sie die Version des MX Plan identi
 >
 > Wählen Sie den Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform aus und klicken Sie auf `Domain hinzufügen`{.action}. Sobald der Domainname hinzugefügt wurde, stellen Sie sicher, dass die Bezeichnung `OK` oder `Aktiv`{.action} in der Spalte `Status` angezeigt wird.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie in den Hilfen zu [E-Mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#schritt-2-ihre-domain-hinzufugen), [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) oder [Zimbra-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 .

@@ -1,6 +1,6 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
-excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, E-mail Pro, MX Plan or Zimbra platform"
+excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro, MX Plan or Zimbra platform"
 updated: 2021-10-21
 ---
 
@@ -22,9 +22,9 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 ## Requirements
 
-- You have a **"source"** platform with configured [Exchange](/links/web/emails-hosted-exchange) or [E-mail Pro](/links/web/email-pro) accounts or [Zimbra](/links/web/zimbra).
-- You have a "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
-- You have access to the [OVHcloud Control Panel](/links/manager).
+- A **"source"** platform with configured [Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) accounts or [Zimbra](/links/web/zimbra).
+- A "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -38,7 +38,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
-> For more details on adding a domain name, follow the [E-mail Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) or [the Zimbra guide](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> For more details on adding a domain name, follow [the Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) or [the Zimbra guide](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### Migrate email accounts <a name="accountsmigration"></a>
 
@@ -50,8 +50,8 @@ Your email accounts will be migrated in 3 main steps: **Rename** the original em
 >
 > Special cases:
 >
-> - If you need to migrate an **Exchange or Zimbra PRO** account to an **E-mail Pro** or **Zimbra STARTER** account, you must ensure that your email accounts do not exceed 10 GB (E-mail Pro) or 15 GB (Zimbra STARTER). Collaborative features, calendar and contact synchronization are not available on E-mail Pro or Zimbra STARTER and cannot be migrated.
-> - If you need to migrate an **Exchange, E-mail Pro or Zimbra** account to an **MX Plan** account, you must ensure that your email account does not exceed 5 GB. Collaborative features, calendar and contact synchronization are not available on MX Plan and cannot be migrated.
+> - If you need to migrate an **Exchange or Zimbra PRO** account to an **Email Pro** or **Zimbra STARTER** account, you must ensure that your email accounts do not exceed 10 GB (Email Pro) or 15 GB (Zimbra STARTER). Collaborative features, calendar and contact synchronization are not available on Email Pro or Zimbra STARTER and cannot be migrated.
+> - If you need to migrate an **Exchange, Email Pro or Zimbra** account to an **MX Plan** account, you must ensure that your email account does not exceed 5 GB. Collaborative features, calendar and contact synchronization are not available on MX Plan and cannot be migrated.
 
 #### Rename
 
@@ -99,7 +99,7 @@ If you would like to delete it, go to the `Email accounts`{.action} tab on your 
 
 At this stage, your email addresses should already be migrated and functional. For security reasons, please ensure that your domain is correctly configured in your Control Panel.
 
-To do this, select the relevant E-mail Pro, Exchange or Zimbra service, then go to the `Associated Domains`{.action} or `Domain`{.action} tab on your platform. Check the `Diagnostics`{.action} section or column.
+To do this, select the relevant Email Pro, Exchange or Zimbra service, then go to the `Associated Domains`{.action} or `Domain`{.action} tab on your platform. Check the `Diagnostics`{.action} section or column.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
@@ -127,9 +127,9 @@ If you have configured one of the migrated accounts on a local email client (e.g
 
 [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Getting started with the E-mail Pro offer](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Getting started with the Email Pro offer](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Getting started with the Exchange offer](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
+[Getting started with the Exchange offer](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 [Getting started with the Zimbra offer](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
