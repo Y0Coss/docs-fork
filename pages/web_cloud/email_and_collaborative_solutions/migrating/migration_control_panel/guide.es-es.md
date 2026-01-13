@@ -13,7 +13,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 > [!warning]
 >
 > [OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) permite migrar sus mensajes de un servidor de correo electrónico a otro.<br>
-> Si sus correos electrónicos están almacenados únicamente de forma local (configuración en POP o archivo local), puede realizar un [export desde su software de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), y luego [importar su archivo PST a través de OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#realiser-une-migration-par-fichier) o [importar directamente desde su software de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
+> Si sus correos electrónicos están almacenados únicamente de forma local (configuración en POP o archivo local), puede realizar un [export desde su software de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), y luego [importar su archivo PST a través de OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) o [importar directamente desde su software de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 
 ## Requisitos
 
@@ -75,7 +75,7 @@ Antes de realizar la migración, deberá identificar la versión del MX Plan des
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Para más información sobre la adición de un dominio, consulte [la guía Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-anadir-su-nombre-de-dominio) o [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para más información sobre la adición de un dominio, consulte [la guía Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config) o [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 La migración de su MX Plan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 

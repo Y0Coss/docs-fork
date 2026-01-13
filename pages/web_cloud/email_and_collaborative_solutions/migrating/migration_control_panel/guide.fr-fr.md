@@ -15,7 +15,7 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 > [!warning]
 >
 > [OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) permet de migrer vos messages d'un serveur e-mail à un autre.<br>
-> Si vos e-mails sont uniquement enregistrés en local (configuration en POP ou archivage en local), vous pouvez effectuer un [export depuis votre logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), puis [importer votre fichier PST via OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#realiser-une-migration-par-fichier) ou [importer directement depuis votre logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
+> Si vos e-mails sont uniquement enregistrés en local (configuration en POP ou archivage en local), vous pouvez effectuer un [export depuis votre logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), puis [importer votre fichier PST via OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ou [importer directement depuis votre logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 
 ## Prérequis
 
@@ -77,7 +77,7 @@ Avant de débuter votre migration, il vous faudra identifier la version du MX Pl
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), [le guide Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ou [le guide Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [le guide Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ou [le guide Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 La migration de votre MX Plan se fera en 3 grandes étapes, **Renommer**,**Créer** et **Migrer**.
 

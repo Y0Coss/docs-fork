@@ -38,7 +38,7 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 >
 > ![email-migração](images/migration_platform02.png){.thumbnail}
 >
-> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-adicionar-o-dominio) ou [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config) ou [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 ### Migrar as contas de e-mail <a name="accountsmigration"></a>
 

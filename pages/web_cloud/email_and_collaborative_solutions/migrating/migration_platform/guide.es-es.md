@@ -38,7 +38,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 >
 > ![email-migración](images/migration_platform02.png){.thumbnail}
 >
-> Para más detalles sobre la adición de un nombre de dominio, siga [la guía Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) o [la guía Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> Para más detalles sobre la adición de un nombre de dominio, siga [la guía Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) o [la guía Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### Migrar las cuentas de correo <a name="accountsmigration"></a>
 

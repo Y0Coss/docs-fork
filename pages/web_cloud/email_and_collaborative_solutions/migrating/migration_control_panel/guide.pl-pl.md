@@ -13,7 +13,7 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 > [!warning]
 >
 > [OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) umożliwia migrację wiadomości z jednego serwera e-mail do drugiego.<br>
-> Jeśli Twoje e-maile są zapisane lokalnie (konfiguracja POP lub archiwizacja lokalna), możesz wykonać [eksport z Twojego klienta poczty](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), a następnie [zaimportować plik PST przez OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#realiser-une-migration-par-fichier) lub [zaimportować bezpośrednio z Twojego klienta poczty](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
+> Jeśli Twoje e-maile są zapisane lokalnie (konfiguracja POP lub archiwizacja lokalna), możesz wykonać [eksport z Twojego klienta poczty](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), a następnie [zaimportować plik PST przez OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) lub [zaimportować bezpośrednio z Twojego klienta poczty](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 
 ## Wymagania początkowe
 
@@ -75,7 +75,7 @@ Przed rozpoczęciem migracji określ wersję programu MX Plan, z której chcesz 
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Aby uzyskać więcej informacji na temat dodania domeny, sprawdź [przewodnik E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etap-2-dodanie-domeny) lub [przewodnik Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Aby uzyskać więcej informacji na temat dodania domeny, sprawdź [przewodnik E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config) lub [przewodnik Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 Migracja MX Plan przebiega 3 etapach. **Zmień nazwę**, **Utwórz** i **Migracja**.
 

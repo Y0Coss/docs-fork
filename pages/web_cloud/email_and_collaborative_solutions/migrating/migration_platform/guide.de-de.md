@@ -38,7 +38,7 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie im [E-mail Pro-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etape-2-ajouter-votre-nom-de-domaine), im [Exchange-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) oder im [Zimbra-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie im [E-mail Pro-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), im [Exchange-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) oder im [Zimbra-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### E-Mail Accounts migrieren <a name="accountsmigration"></a>
 
