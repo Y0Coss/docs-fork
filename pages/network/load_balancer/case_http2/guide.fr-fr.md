@@ -30,10 +30,11 @@ Ce guide a deux objectifs principaux :
 
 Vous aurez besoin de :
 
-- Un service Load Balancer OVHcloud ;
+- Un service [Load Balancer OVHcloud](/links/network/load-balancer) ;
 - Un frontend TCP sur votre Load Balancer ;
 - Un cluster de serveurs (ferme) TCP avec au moins un serveur ajouté ;
-- Des serveurs backend configurés pour prendre en charge et répondre avec HTTP/2.
+- Des serveurs backend configurés pour prendre en charge et répondre avec HTTP/2 ;
+- Avoir accès à l'[API OVHcloud](/links/api).
 
 ## Pourquoi utiliser HTTP/2 ?
 
