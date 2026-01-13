@@ -1,7 +1,7 @@
 ---
 title: "Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
 excerpt: "This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA, OVHcloud Backint Agent and SAP logs on OVHcloud Logs Data Platform pre-installed"
-updated: 2025-09-16
+updated: 2026-01-13
 ---
 
 ## Objective
@@ -62,9 +62,9 @@ Below, you will find tables showing the sizes of SAP HANA virtual machines that 
 
 **We recommend reserving 100GB of memory for the ESXi host.*
 
-OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive an SAP HANA installation.
+OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive a SAP HANA installation.
 
-This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver an SAP HANA database.
+This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver a SAP HANA database.
 
 First, you must upload SAP HANA sources to your first Object Storage bucket, as described in the 'Requirements' section. The sources must be uploaded in the same format as the original download, for example, « 51056821.ZIP ».
 
@@ -84,7 +84,7 @@ Once the SAP HANA sources have been uploaded to your Object Storage bucket, you 
 
 1\. To begin the deployment process, go to the vSphere interface and select your datacenter. Then, click on `Action`{.action} menu and select `Deploy OVF template`{.action}.
 
-![new-virtual-machine](images/step-1.png)
+![new-virtual-machine](images/step-1.png){.thumbnail}
 
 2\. Enter the following URL in the 'URL' field to access the OVF template for SAP HANA, then click `Next`{.action}.
 <a name="ovf_link"></a>
@@ -97,31 +97,31 @@ The below URL is an example, you must replace the value `pcc-xxx-xxx-xxx-xxx.ovh
 | SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
 | SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
 
-![deploy-from-template](images/step-2.png)
+![deploy-from-template](images/step-2.png){.thumbnail}
 
 3\. Give a name to your virtual machine and select your datacenter. Then, click `Next`{.action} to continue.
 
-![virtual-machine](images/step-3.png)
+![virtual-machine](images/step-3.png){.thumbnail}
 
 4\. Select 'Cluster1'. Then, click `Next`{.action} to continue.
 
-![cluster1](images/step-4.png)
+![cluster1](images/step-4.png){.thumbnail}
 
 5\. The product name must be 'SLES for SAP SLE-15-SP5-Full-x86_64 for SAP HANA (BYOL)'. Then, click `Next`{.action} to continue.
 
 Note that the advanced configurations in the OVF template may trigger a warning block to appear.
 
-![review](images/step-5.png)
+![review](images/step-5.png){.thumbnail}
 
 6\. Select 'vsanDatastore' as the datastore for your SAP HANA virtual machine to comply with SAP and VMware recommendations. Then, click `Next`{.action} to continue.
 
-![storage](images/step-6.png)
+![storage](images/step-6.png){.thumbnail}
 
 7\. From the list of available networks, select the one where you want to deploy your SAP HANA database. Then, click '`Next`{.action} to continue.
 
 Note that you will have the opportunity to add another network card to your virtual machine after the deployment is complete, if necessary.
 
-![network](images/step-7.png)
+![network](images/step-7.png){.thumbnail}
 
 8\. The 'SLES for SAP SLE-15-SP5-Full-x86_64 for SAP HANA (BYOL)' model offers a wide range of customization options for your virtual machine. You can adjust settings such as the size of virtual disks, enable the SAP HANA installation, the OVHcloud Backint Agent installation or else SAP logs on OVHcloud Logs Data Platform.
 
@@ -134,7 +134,7 @@ In this guide, we focus on these four categories:
 
 In the `SAP HANA disks`{.action} category, you can set the size of the virtual disks that will be created. Our OVF template is pre-filled with default values for a virtual machine with 8 vCPUs and 128 GB of memory. These values are based on SAP's storage recommendations for this model.
 
-![disks](images/step-8.png)
+![disks](images/step-8.png){.thumbnail}
 
 Find below the table of SAP recommendations for sizing SAP HANA disks:
 
@@ -153,7 +153,7 @@ If you want to use our automated installation process for SAP HANA, check the bo
 > Take note of the [SAP Note 1979280](https://me.sap.com/notes/1979280/E) which lists all SAP HANA SIDs that are not supported by SAP.
 >
 
-![sap-hana-installation](images/step-9.png)
+![sap-hana-installation](images/step-9.png){.thumbnail}
 
 10\. To use our automated installation process for the OVHcloud Backint Agent for SAP HANA, check the box to enable installation and fill in the required information in the `OVHcloud Backint Agent installation`{.action} category.
 
@@ -162,11 +162,11 @@ If you want to use our automated installation process for SAP HANA, check the bo
 > Note that this option is only available if you have enabled the SAP HANA installation as described in the previous category.
 >
 
-![ovhcloud-backint-agent-installation](images/step-10.png)
+![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
 
 11\. To use our automated installation process for forwarding SAP logs to the OVHcloud Logs Data Platform, check the box to enable installation and fill in the required information in the `SAP logs on OVHcloud Logs Data Platform`{.action} category.
 
-![sap-ldp-installation](images/step-11.png)
+![sap-ldp-installation](images/step-11.png){.thumbnail}
 
 Once you have completed these steps, the deployment of your virtual machine from the OVF template created by OVHcloud will begin.
 
@@ -180,11 +180,11 @@ Although the OVF template created by OVHcloud supports a wide range of parameter
 
 1\. To make these additional adjustments, first select your virtual machine. Then, click on the `Action`{.action}, menu and select `Edit Settings`{.action}.
 
-![edit-vm](images/vm-step-1.png)
+![edit-vm](images/vm-step-1.png){.thumbnail}
 
 2\. From the `Edit Configuration`{.action} interface, click on the `Options VM`{.action} tab to access additional configuration options for your virtual machine. Then, expand the `Advanced`{.action} menu and select `Edit Configuration`{.action} to adjust the advanced settings as needed.
 
-![vm-options](images/vm-step-2.png)
+![vm-options](images/vm-step-2.png){.thumbnail}
 
 3\. These following parameters are included in the OVF template:
 
