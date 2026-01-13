@@ -1,7 +1,7 @@
 ---
 title: Block Storage Volume bearbeiten
 excerpt: "Erfahren Sie hier, wie Sie den Typ eines Block Storage Volumes mit OpenStack ändern"
-updated: 2026-01-12
+updated: 2026-01-13
 ---
 
 ## Ziel

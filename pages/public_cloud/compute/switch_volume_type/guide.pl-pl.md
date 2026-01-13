@@ -1,7 +1,7 @@
 ---
 title: Zmień wolumen Block Storage
 excerpt: "Dowiedz się, jak zmienić typ wolumenu block storage przy użyciu technologii Openstack"
-updated: 2026-01-12
+updated: 2026-01-13
 ---
 
 ## Wprowadzenie
