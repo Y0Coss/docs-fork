@@ -1,7 +1,7 @@
 ---
 title: How to create and configure an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -101,7 +101,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> > [!warning]
 >> >
->> > Please note: Your volume must be created in the same region as the instance to which you want to attach it. If you create it in another region, you can delete it and recreate it in the correct region, or you can migrate the region by following [this guide](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Please note: Your volume must be created in the same region as the instance to which you want to attach it. If you create it in another region, you can delete it and recreate it in the correct region.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
@@ -140,6 +140,13 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> - High-speed-gen2-luks
 >>
 >> The types ending in -luks are encrypted (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Creating a **-luks** volume automatically generates a dedicated key.
+>> >
+>> > Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
+>> >
 >>
 >> To create a simple block storage volume, you need 3 elements:
 >>
@@ -267,6 +274,13 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> - High-speed-gen2-luks
 >>
 >> The types ending in -luks are encrypted (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Creating a **-luks** volume automatically generates a dedicated key.
+>> >
+>> > Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
+>> >
 >>
 >> List the volume types available in the region:
 >>

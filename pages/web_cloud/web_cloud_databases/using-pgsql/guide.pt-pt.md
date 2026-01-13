@@ -31,9 +31,9 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 - Dispõe da password da sua base de dados
 - Dispõe do nome da sua base de dados
 
-Todas estas informações estão disponíveis no seu [Espaço Cliente Web](/links/manager){.external}.
+Todas estas informações estão disponíveis no seu [Espaço Cliente Web](/links/manager).
 
-Está igualmente disponível um guia : [Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
+Está igualmente disponível um guia : [Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ### Ligacao atraves de linha de comandos
 

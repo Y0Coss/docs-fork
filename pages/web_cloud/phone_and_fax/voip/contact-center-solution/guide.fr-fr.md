@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un Contact Center Solution'
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
-updated: 2025-04-28
+updated: 2026-01-07
 ---
 
 ## Objectif
@@ -19,8 +19,8 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ## Prérequis
 
-- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Vous pouvez ajouter deux types d'agents, des lignes SIP internes (appartenant à
 |**Ligne externe**<br><br>![ligne SIP externe](images/agent-externe2021.png){.thumbnail}|Pour ajouter une ligne téléphonique externe, renseignez son numéro au format international (0033xxxxxxxxx pour la France) directement dans le champ « Numéro ».<br><br>Validez l'ajout de chaque ligne en cliquant sur `Ajouter un agent`{.action}.|
 
 > [!warning]
-> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](/links/telecom/telephonie-decouvrez-tarifs-telephonie){.external}. Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
+> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](/links/telecom/telephonie-decouvrez-tarifs-telephonie). Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
 >
 
 Les agents et leurs attributs sont visibles dans la « Liste des agents ». Vous pouvez modifier ces attributs en cliquant sur le stylo à droite de chaque agent.
@@ -311,6 +311,14 @@ Une fois toutes vos plages horaires déifinies, cliquez sur le bouton `Modifier`
 > [!primary]
 > Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
 >
+
+##### **Double condition : « Jours exceptionnels » et « Plages horaires génériques »**
+
+Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l'étape 1 et les plages horaires génériques sur l'étape 2.
+
+En effet, le système lit les étapes dans l'ordre : si les conditions de l'étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
+
+![CCS - double condition](images/ccs-double-condition.png){.thumbnail}
 
 ##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
 

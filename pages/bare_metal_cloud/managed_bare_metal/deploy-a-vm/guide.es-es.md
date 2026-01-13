@@ -12,7 +12,7 @@ La interfaz vSphere permite instrumentar máquinas virtuales de varios modos.
 
 ## Requisitos
 
-- Haber contratado una solución [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+- Haber contratado una solución [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/).
 - Estar conectado a la [interfaz vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
 ## Procedimiento
@@ -42,7 +42,7 @@ El siguiente paso le permite definir el nombre de su máquina y elegir su locali
 
 ![emplacement de la machine virtuelle](images/vm03.png){.thumbnail}
 
-Luego, podrá elegir el clúster, el servidor, [el grupo de recursos](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link} o [la vApp](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} donde desee colocarla.
+Luego, podrá elegir el clúster, el servidor, [el grupo de recursos](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html) o [la vApp](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html) donde desee colocarla.
 
 En este caso, la máquina virtual se instrumentará según las reglas DRS configuradas y se colocará en la raíz del clúster.
 

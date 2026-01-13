@@ -40,7 +40,7 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 
 > [!primary]
 >
-> Zapoznaj się z naszym przewodnikiem dotyczącym [wtyczki OVHcloud Network](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/plugin_ovh_network){.external-link}, aby dowiedzieć się, jakie IP zarezerwowano dla Twojego bloku oraz jak są wykorzystywane.
+> Zapoznaj się z naszym przewodnikiem dotyczącym [wtyczki OVHcloud Network](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/plugin_ovh_network), aby dowiedzieć się, jakie IP zarezerwowano dla Twojego bloku oraz jak są wykorzystywane.
 >
 
 - Kraj bloku IP, ważny w niektórych przypadkach dla pozycjonowania Twoich witryn (strona internetowa skierowana do Polaków będzie lepiej pozycjonowana, jeśli ma polski adres IP).
@@ -93,7 +93,7 @@ Jeśli po odłączeniu bloku IP będziesz mógł użyć tego połączenia API do
 > To wywołanie odcina dostęp do sieci maszynom wirtualnym, które wykorzystują dane adresy IP.
 >
 
-Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager){.external} w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
+Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager) w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
 
 Odnośnik do operacji to „removeIpRipeBlock”.
 

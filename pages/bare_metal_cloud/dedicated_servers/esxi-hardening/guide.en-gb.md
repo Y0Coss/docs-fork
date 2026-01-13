@@ -1,11 +1,8 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-updated: 2024-09-13
+updated: 2026-01-09
 ---
-
-> [!warning]
-> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
@@ -40,7 +37,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A dedicated server with the ESXi solution deployed
 - An offer compatible with our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) feature, if you would like to use it for filtering
 
@@ -86,14 +83,14 @@ All this information is also available through the web administration interface.
 
 ![interface](images/gui_logs_.png){.thumbnail}
 
-### The Network Firewall solution
+### The Edge Network Firewall solution
 
 > [!primary]
 >
-> As a reminder, the Network Firewall is not taken into account within the OVHcloud network. As a result, the configured rules do not affect connections from this internal network.
+> As a reminder, the Edge Network Firewall is not taken into account within the OVHcloud network. As a result, the configured rules do not affect connections from this internal network.
 >
 
-You can enable and use our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) filtering solution.
+You can enable and use our [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) filtering solution.
 This solution will allow you to easily manage legitimate access, in addition to the access you have set up through your ESXi system.
 
 It will also prevent you from unexpectedly locking your administrator account in the event of an attack.
@@ -103,7 +100,13 @@ It is recommended that you filter legitimate access in this way:
 - Rule 1 (Priority 0) allows trusted external networks to access your ESXi system.
 - Rule 2 (Priority 1) blocks everything else.
 
-![Network_Firewall](images/firewall_network_.png){.thumbnail}
+You can access the Edge Network Firewall settings in the OVHcloud Control Panel, by selecting `Network`{.action}, then choosing `Public IP Addresses`{.action} under "Public Network". There, you can find your dedicated server by searching for its IP address.
+
+![Network_Firewall](images/firewall_network_1.png){.thumbnail}
+
+To the right of the table, click the `...`{.action} button corresponding to your dedicated server, then select `Configure Edge Network Firewall`{.action}.
+
+![Network_Firewall](images/firewall_network_2.png){.thumbnail}
 
 ### Filtering in ESXi
 
@@ -121,6 +124,11 @@ It is recommended that you filter legitimate access in this way:
 > Prioritise only what is strictly necessary for each of your needs.
 
 #### Manipulation via the graphical interface
+
+> [!primary]
+>
+> In ESXi 8.0 GA and newer, the SLP service is hardened, disabled by default, and filtered by the ESXi firewall. This means that you no longer have to disable it manually. You can find more information on [this official VMware blog post](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+>
 
 **Services**
 
@@ -157,6 +165,11 @@ Example that only allows connections from IP 192.168.1.10:
 #### Shell manipulation
 
 **Services**
+
+> [!primary]
+>
+> In ESXi 8.0 GA and newer, the SLP service is hardened, disabled by default, and filtered by the ESXi firewall. This means that you no longer have to disable it manually. You can find more information on [this official VMware blog post](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+>
 
 Disable unnecessary services:
 

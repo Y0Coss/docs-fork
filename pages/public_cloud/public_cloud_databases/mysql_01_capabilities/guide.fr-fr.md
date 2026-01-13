@@ -1,7 +1,7 @@
 ---
 title: MySQL - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-updated: 2025-02-19
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,10 +21,12 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
+- `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Entire database instances have to be in the same region. Multi-AZ is currently not supported.
+Entire database instances have to be in the same region.
 
 ### MySQL versions
 
@@ -36,23 +38,23 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### MySQL connectors
 
-You can use any of the [MySQL-recommended connectors and API](https://dev.mysql.com/doc/refman/8.0/en/connectors-apis.html){.external} to access your cluster.
+You can use any of the [MySQL-recommended connectors and API](https://dev.mysql.com/doc/refman/8.0/en/connectors-apis.html) to access your cluster.
 
 ### Plans
 
 Three plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas | MySQL License   |
-| ------------ | -------------------------- | ------------- | --------------- |
-| *Essential*  | 1                          | No            | Community       |
-| *Business*   | 2                          | Planned       | Community       |
-| *Enterprise* | 3                          | Planned       | Community       |
+| Plan                  | Number of nodes by default | Read replicas | MySQL License   |
+| --------------------- | -------------------------- | ------------- | --------------- |
+| *Essential*           | 1                          | No            | Community       |
+| *Business/Production* | 2                          | Planned       | Community       |
+| *Enterprise/Advanced* | 3                          | Planned       | Community       |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -62,8 +64,8 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Business/Production**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
+- **Enterprise/Advanced**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -143,9 +145,9 @@ You can further customise your MySQL by using advanced parameters. See the [Adva
 
 *Essential* plan clusters are automatically backed up daily. Backup retention is 2 days.
 
-*Business* plan clusters are automatically backed up daily. Backup retention is 14 days.
+*Business/Production* plan clusters are automatically backed up daily. Backup retention is 14 days.
 
-*Enterprise* plan clusters are automatically backed up daily. Backup retention is 30 days.
+*Enterprise/Advanced* plan clusters are automatically backed up daily. Backup retention is 30 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

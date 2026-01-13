@@ -12,7 +12,7 @@ A partir da interface vSphere, pode implementar máquinas virtuais de várias fo
 
 ## Requisitos
 
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 - Estar ligado à [interface vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
 ## Instruções
@@ -42,7 +42,7 @@ A etapa seguinte permite-lhe definir o nome da sua máquina e escolher a sua loc
 
 ![localização da máquina virtual](images/vm03.png){.thumbnail}
 
-De seguida, pode escolher o cluster, o host, [o pool de recursos](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link}, ou [a vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} onde a quer colocar.
+De seguida, pode escolher o cluster, o host, [o pool de recursos](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html), ou [a vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html) onde a quer colocar.
 
 Neste caso, a máquina virtual será implementada segundo as regras DRS configuradas, e será colocada na raiz do cluster.
 

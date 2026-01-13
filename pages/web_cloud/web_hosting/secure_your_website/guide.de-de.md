@@ -1,7 +1,7 @@
 ---
 title: "Die Sicherheit Ihrer Website optimieren"
 excerpt: "Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Ziel 
@@ -25,7 +25,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
+- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/).
 
 ## In der praktischen Anwendung
 
@@ -33,7 +33,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 
 Dieser erste Schritt ist von entscheidender Bedeutung. Die Infektion Ihrer Geräte mit böswilliger Software kann dazu führen, dass Angreifer Zugriff auf alle Ihre Tastatur-Eingaben haben. Jegliche Login-Daten, die Sie für die das OVHcloud Kundencenter oder dem Verwaltungsinterface Ihrer Website verwenden, könnten somit beeinträchtigt sein.
 
-Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware_node.html){.external}" (2020 in Frankreich etwa 400 Fälle) nicht nur zur Verschlüsselung Ihrer persönlichen Daten führen, sondern auch Ihre Geschäftstätigkeiten unterbrechen, da Ihre Software und Hardware nicht mehr funktional sind.
+Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware_node.html)" (2020 in Frankreich etwa 400 Fälle) nicht nur zur Verschlüsselung Ihrer persönlichen Daten führen, sondern auch Ihre Geschäftstätigkeiten unterbrechen, da Ihre Software und Hardware nicht mehr funktional sind.
 
 Überprüfen Sie zunächst die Sicherheit Ihres Windows-, Mac- oder Linux-Systems:
 
@@ -68,17 +68,24 @@ Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Webs
 
 ### Schritt 5: Einrichtung der automatischen Verlängerung
 
-Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
+Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.  
 Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
 
-Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
+Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.  
 Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
 ### Schritt 6: Überprüfen, dass Ihre Website auf dem neuesten Stand ist
 
-Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
+Stellen Sie sicher, dass Ihre Website sowohl inhaltlich als auch hinsichtlich der technischen Komponenten (CMS, Erweiterungen, PHP-Versionen und Abhängigkeiten) auf dem neuesten Stand bleibt.
 
-Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Hosting zu verwenden.
+Wenn Sie ein CMS verwenden, konsultieren Sie dessen offizielle Dokumentation für Updates:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/de)
+
+Außerdem sollten Sie sicherstellen, dass Sie auf Ihrem Webhosting eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) verwenden.
 
 ### Schritt 7: HTTPS aktivieren
 
@@ -92,10 +99,10 @@ Eingabe-Formulare auf Webseiten sind bevorzugte Ziele von Hackern/Spammern. Sch�
 
 Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplugin hinzu:
 
-- [WordPress](https://wordpress.com/de/){.external}
-- [Joomla](https://www.joomla.de/){.external}
-- [Drupal](https://www.drupal.de/){.external}
-- [PrestaShop](https://www.prestashop.com/de){.external}
+- [WordPress](https://wordpress.com/de/)
+- [Joomla](https://www.joomla.de/)
+- [Drupal](https://www.drupal.de/)
+- [PrestaShop](https://www.prestashop.com/de)
 
 ### Schritt 10: Überprüfen Sie Ihr Webhosting auf schädliche Dateien
 
@@ -107,7 +114,7 @@ Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung bes
 
 Die [Sicherungen](#backup) der Daten Ihrer Webseite (FTP-Dateien und Datenbanken) sollten regelmäßig durchgeführt werden. Es besteht aber keine Garantie, dass diese auch im Ernstfall Ihre Daten korrekt wiederherstellen können. Testen Sie auch die Sicherungen Ihrer Datenbank, um sicherzustellen, dass sie nicht korrupt sind.
 
-Sie können diese Tests lokal durchführen, etwa indem Sie Ihre Daten einer Software wie [WAMP](https://www.wampserver.com/en/){.external} importieren. Achten Sie daher darauf, Ihre lokale Lösung so einzurichten, dass die Konfiguration in allen Punkten der unserer [Shared Hosting Server entspricht](https://webhosting-infos.hosting.ovh.net/).
+Sie können diese Tests lokal durchführen, etwa indem Sie Ihre Daten einer Software wie [WAMP](https://www.wampserver.com/en/) importieren. Achten Sie daher darauf, Ihre lokale Lösung so einzurichten, dass die Konfiguration in allen Punkten der unserer [Shared Hosting Server entspricht](https://webhosting-infos.hosting.ovh.net/).
 
 Sie können auch in einem anderen Ordner Ihres Webhostings eine **Testversion** Ihrer Webseite erstellen (z.B.: test.meinedomain.tld). (Es ist hierbei möglich, ein Basistemplate zu verwenden).
 

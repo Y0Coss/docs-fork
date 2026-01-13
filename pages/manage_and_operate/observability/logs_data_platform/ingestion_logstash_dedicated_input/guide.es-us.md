@@ -5,7 +5,7 @@ updated: 2025-04-25
 
 ## Objective
 
-[Logstash](https://github.com/elastic/logstash){.external} is an open source software developed by Elastic. Based on its features, it is possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash){.external}.
+[Logstash](https://github.com/elastic/logstash) is an open source software developed by Elastic. Based on its features, it is possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash).
 
 This guide will demonstrate how to deploy a personalized Logstash having a specific configuration, and send logs from any source to your stream directly on the Logs Data Platform.
 
@@ -119,7 +119,7 @@ To host this collector in the Logs Data Platform, you will need to configure it 
 - Fill the main port of your input. We need to know which port you will use in your input configuration. We will put **4000** for now. This is also a setting you can change later.
 - If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it.
 - Select one of the streams you have to attached this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream.
-- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](/pages/manage_and_operate/observability/logs_data_platform/usecase_twitter)).
+- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1.
     - Note that you can also choose to *automatically scale the number of instances*. In this case, you need to select a minimum and maximum number of instances. Your input will then be started with the selected minimum number of instances. If these instances face a heavy load for a certain amount of time (more than 1 minute), your input will be automatically scaled up — one new instance at the time — until it reaches the selected maximum number of instances. On the other hand, if the load decreases, this number of instances will be scaled down until it reaches the minimum number of instances.
 
 ![logstash_creation](images/logstash_created.png){.thumbnail}
@@ -158,7 +158,7 @@ If we take the configuration example above and if we enable the SSL encryption, 
      ssl_certificate => "/etc/ssl/private/server.crt"
      ssl_key => "/etc/ssl/private/server.key"
      ssl_extra_chain_certs => ["/etc/ssl/private/ca.crt"]
- } 
+ }
 ```
 
 ![logstash_creation](images/input_section.png){.thumbnail}
@@ -212,7 +212,7 @@ This is an address of your collector for the cluster on Logs Data Platform. Send
 The version hosted by Logs Data Platform is the Latest Logstash 7 version (7.8 as of July 2020). Of course we will update to the new versions as soon as they become available.
 
 #### Logstash Plugins
-For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms).
 
 ##### Inputs plugins
 
@@ -359,11 +359,11 @@ To do this, please go to the dedicated page by clicking on the `Console output`{
 
 Here are some links to help you go further with Logstash
 
-- [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
-- [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
+- [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html)
+- [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html)
 - [Logstash + Groks + Filebeat = Awesome](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat)
-- [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
-- [A Ruby regular expression editor](https://rubular.com/){.external}
+- [Grok Constructor](http://grokconstructor.appspot.com/do/match)
+- [A Ruby regular expression editor](https://rubular.com/)
 
 That's all you need to know about the Logstash Collector on Logs Data Platform.
 
@@ -371,5 +371,5 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

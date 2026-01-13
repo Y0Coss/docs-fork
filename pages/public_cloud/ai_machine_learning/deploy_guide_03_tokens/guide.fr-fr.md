@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Accéder à vos apps via tokens (EN)
 excerpt: Découvrez comment créer un token pour votre app AI Deploy
-updated: 2023-04-04
+updated: 2025-07-28
 ---
 
 > [!primary]

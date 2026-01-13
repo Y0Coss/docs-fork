@@ -12,7 +12,7 @@ A clonagem de uma VM permite criar uma cópia da VM de origem.
 
 ## Requisitos
 
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 - Dispor de, pelo menos, uma VM no seu cluster.
 - Estar ligado à [interface vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
@@ -42,9 +42,9 @@ Defina a localização do armazenamento (espaço em disco) desta VM.
 
 O formato do disco virtual é de tipo “Thin Provision”, ou seja um disco virtual será criado mas só utilizará o espaço em disco realmente utilizado no armazenamento, independentemente do espaço em disco anteriormente utilizado na VM de origem.
 
-Pode consultar mais informações sobre os formatos de disco [neste manual](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type){.external-link}.
+Pode consultar mais informações sobre os formatos de disco [neste manual](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type).
 
-Poderá escolher, através da linha `VM Storage Policy`, a política de armazenamento predefinida se tiver datastores, ou ainda a opção [VM encryption](/pages/bare_metal_cloud/managed_bare_metal/vm_encrypt){.external-link}.
+Poderá escolher, através da linha `VM Storage Policy`, a política de armazenamento predefinida se tiver datastores, ou ainda a opção [VM encryption](/pages/bare_metal_cloud/managed_bare_metal/vm_encrypt).
 
 ![armazenamento vm](images/clonevm04.png){.thumbnail}
 

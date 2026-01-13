@@ -12,8 +12,8 @@ IP-Blöcke können verwendet werden, um Ihre Dienste über das Internet zugängl
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt.
-- Sie verfügen über eine [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/){.external} in Ihrem OVHcloud Account.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
+- Sie verfügen über eine [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/) in Ihrem OVHcloud Account.
 
 ## In der praktischen Anwendung
 
@@ -40,7 +40,7 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 
 > [!primary]
 >
-> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network){.external-link} nachlesen.
+> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network) nachlesen.
 >
 
 - Land des IP-Blocks. Dieses kann für das SEO-Ranking Ihrer Dienste von Bedeutung sein (zum Beispiel ist die Referenzierung einer deutschen Website in Deutschland besser, wenn auch ihre IP deutsch ist)
@@ -86,7 +86,7 @@ Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu 
 > Dieser Aufruf trennt das Netzwerk auf den VMs, die die betreffenden IPs verwenden.
 >
 
-Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](/links/manager){.external} im Bereich `Bare Metal Cloud`{.action} unter `Managed Bare Metal`{.action} nachverfolgen. Klicken Sie auf Ihren Managed Bare Metal Dienst und dann auf den Tab `Operationen`{.action}.
+Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Bare Metal Cloud`{.action} unter `Managed Bare Metal`{.action} nachverfolgen. Klicken Sie auf Ihren Managed Bare Metal Dienst und dann auf den Tab `Operationen`{.action}.
 
 Die Referenz der Operation lautet “removeIpRipeBlock”.
 

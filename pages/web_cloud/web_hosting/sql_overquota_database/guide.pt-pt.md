@@ -46,7 +46,7 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 >
 > Todas as seguintes ações descritas neste tutorial serão realizadas a partir de **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} está disponível em todas as bases de dados partilhadas da OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) está disponível em todas as bases de dados partilhadas da OVHcloud.
 > Esta aplicação de gestão de base de dados facilita a realização das ações manuais que pode efetuar com a sua base de dados.
 >
 > Se a base de dados estiver presente numa solução [Web Cloud Databases](/links/web/databases), consulte o guia "[Web Cloud Databases - Ligar-se à base de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)" e, em seguida, passe diretamente para a [etapa 1.2](#step1.2) deste guia.
@@ -74,7 +74,7 @@ Para se conectar ao banco de dados via phpMyAdmin, clique nas janelas abaixo par
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
@@ -126,10 +126,10 @@ Para os outros casos associados aos CMS, recomendamos que contacte diretamente o
 
 Encontre aqui as ligações para os sites oficiais dos CMS propostos em instalação "**Em apenas um clique**" pela OVHcloud:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >
@@ -249,7 +249,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

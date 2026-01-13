@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2025-06-04
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -10,19 +10,14 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 **This guide will show you how to configure the Edge Network Firewall for your services.**
 
-> [!warning]
->
-> **Warning**: Permanent Mitigation is reaching its End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
->
-
 > [!primary]
 >
 > You can find more information on our Anti-DDoS solution on [our website](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Anti-DDoS infrastructure & game protection services diagram at OVHcloud |
+| Anti-DDoS infrastructure & Game protection services diagram at OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Requirements
 
@@ -53,26 +48,17 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 > The Edge Network Firewall protects a specific IP associated with a server (or service). Therefore, if you have a server with multiple IP addresses, you must configure each IP separately.
 > 
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-![filter service](images/selectservice_cut.png){.thumbnail}
+You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
 
-Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Create Firewall`{.action}.
+![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
+Next, click the `⁝`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
-You will then be asked to confirm. The firewall will be created and you can configure the rules.
+![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
-> [!primary]
-> The `Create Firewall`{.action} button will only be available for IPs that have never configured a firewall. If it is not the first time you are configuring your firewall, you can skip this step. 
->
-
-| ![Enabling the configuration](images/activationconfig.png) | 
-|:--:| 
-| Click on `Edge Network Firewall configuration`{.action} to start configuring it. |
-
-On this page you can choose to **Enable** or **Disable** the firewall using the switch button.
-It is also possible to do it another way explained just below.
+You will then be taken to the firewall configuration page.
 
 You can set up to **20 rules per IP**.
 
@@ -99,21 +85,21 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**To add a rule:**
+**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left :
 
-| ![add-rule-btn](images/enf_add_rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_new.png) | 
 |:--:| 
-| Click on `Add a rule`{.action}. |
+| Click on `+ Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
 
 For each **TCP** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
 
@@ -131,21 +117,13 @@ For each **TCP** rule, you must choose:
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
 > 
 
-**Enable firewall:**
+**Enable/disable firewall:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) | 
+| ![activate-desactivate](images/enf_enable_disable_new.png) | 
 |:--:| 
 | `Switch on`{.action} to enable |
 
-After confirmation, the firewall will be enabled.
-
-**Disable firewall:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) | 
-|:--:| 
-| `Switch on`{.action} to enable |
-
-After confirmation, the firewall will be disabled.
+After confirmation, the firewall will be enabled or disabled.
 
 Note that rules are disabled until the moment an attack is detected - then they are activated. This logic can be used for rules that are only active when a known repeated attack is incoming.
 
@@ -165,29 +143,9 @@ For example, a packet for TCP port 80 will be intercepted by rule 2 and the rule
 
 ### Attack mitigation - scrubbing centre activity
 
-Our Anti-DDoS infrastructure (VAC) has two modes of operation: **automatic** and **permanent**. The mitigation process is done via the automated scrubbing centre. This is where our advanced technology takes a deep look at the packets and attempts to remove DDoS traffic while allowing legitimate traffic to pass through.
+Our Anti-DDoS infrastructure (VAC) operates automatically. The mitigation process is done via the automated scrubbing centre. This is where our advanced technology takes a deep look at the packets and attempts to remove DDoS traffic while allowing legitimate traffic to pass through.
 
-- **Automatic mitigation** is the default: All OVHcloud IPs are under automatic mitigation. Usually this is the best choice for your services. In case any malicious traffic is detected, the scrubbing centre activates. This state is indicated by the "Forced" status for a given IP address. At this time the Edge Network Firewall is also active. The situation comes back to normal when the attack is mitigated and no more suspicious activity is observed.
-
-- **Permanent mitigation** mode can be enabled or disabled via the OVHcloud Control Panel. With permanent mitigation, you permanently apply the first level of filtering so all traffic will always pass through the mitigation system before reaching the server. We do not recommend enabling this for longer periods of time unless you are experiencing latency jitter due to the scrubbing centre redirecting the traffic too frequently.
-
-Please note that compared to automatic mode, there is **no** increase in the level of protection when this mode is enabled.
-
-To enable it, follow these steps:
-
-- Open `Network`{.action} in the left-hand sidebar.
-- Open `Public IP Addresses`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) | 
-|:--:| 
-|  Next, click the `...`{.action} button to the right of the relevant IPv4. |
-
-
-| ![mitigation-option](images/mitigation_menu_step_2.png) | 
-|:--:| 
-|  Select `Mitigation: permanent mode`{.action}. |
-
-
+All OVHcloud IPs are under automatic mitigation. In case any malicious traffic is detected, the scrubbing centre activates. This state is indicated by the "Forced" status for a given IP address. At this time the Edge Network Firewall is also active. The situation comes back to normal when the attack is mitigated and no more suspicious activity is observed.
 
 > [!success]
 > **Tips**
@@ -201,11 +159,9 @@ To enable it, follow these steps:
 > Please note that our Anti-DDoS infrastructure cannot be disabled on a service. All OVHcloud products are delivered within the scope of protection and this cannot be changed.
 >
 
-
 ## Network Security Dashboard
 
 For detailed insight into detected attacks and the results of scrubbing centre activities, we encourage you to explore our [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
-
 
 ## Conclusion
 

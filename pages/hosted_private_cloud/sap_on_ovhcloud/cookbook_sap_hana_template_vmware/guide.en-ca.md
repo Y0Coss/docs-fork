@@ -1,7 +1,7 @@
 ---
 title: "Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
 excerpt: "This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
-updated: 2024-09-06
+updated: 2026-01-13
 ---
 
 ## Objective
@@ -25,19 +25,46 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 
 ### Deployment
 
-OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive an SAP HANA installation.
+The number of vCPUs depends on the number of vCPUs for a half socket or an entire socket. It is important to note that VMware and SAP do not support configurations with an odd multiple of 0.5 socket, such as 1.5 socket, 2.5 socket, etc.
 
-In order to meet the vCPU/RAM ratio requirements for OLAP and OLTP workloads in a production environment, OVHcloud recommends three models of virtual machines.
+Below, you will find tables showing the sizes of SAP HANA virtual machines that meet this recommendation and use all of the memory for each number of vCPUs.
 
-| Host               | vCPU   | Socket  | Memory    |
-|--------------------|--------|---------|-----------|
-| SAP HANA vSAN 1536 | 24     | 0.5     | 384 GB    |
-| SAP HANA vSAN 1536 | 48     | 1       | 768 GB    |
-| SAP HANA vSAN 1536 | 96     | 2       | 1436 GB<sup>1</sup>  |
+**First generation**
 
-<sup>[1] We suggest reserving 100 GB of memory for the ESXi host.</sup>
+| Host          | Socket | vCPUs | Memory | SAPS    |
+|---------------|:------:|:-----:--------:|:-------:|
+| SAP HANA 1536 | 0.5    | 24    | 384    | 41,664  |
+| SAP HANA 1536 | 1      | 48    | 768    | 83,329  |
+| SAP HANA 1536 | 2      | 96    | 1536*  | 166,658 |
 
-This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver an SAP HANA database.
+**Second generation**
+
+| Host          | Socket | vCPUs | Memory (GiB) | SAPS    |
+|---------------|:------:|:-----:|:------------:|:-------:|
+| H1-I1-32-1024 | 0.5    | 16    | 256          | 36,189  |
+| H1-I2-72-1024 | 0.5    | 36    | 256          | 70,564  |
+| H1-I1-32-2048 | 0.5    | 16    | 512          | 36,189  |
+| H1-I2-72-2048 | 0.5    | 36    | 512          | 70,564  |
+| H1-I1-32-1024 | 1      | 32    | 512          | 72,379  |
+| H1-I2-72-1024 | 1      | 72    | 512          | 141,129 |
+| H1-I1-32-4096 | 0.5    | 16    | 1024         | 36,189  |
+| H1-I2-72-4096 | 0.5    | 36    | 1024         | 70,564  |
+| H1-I1-32-2048 | 1      | 32    | 1024         | 72,379  |
+| H1-I2-72-2048 | 1      | 72    | 1024         | 141,129 |
+| H1-I1-32-1024 | 2      | 64    | 1024*        | 144,759 |
+| H1-I2-72-1024 | 2      | 144   | 1024*        | 282,259 |
+| H1-I1-32-4096 | 1      | 32    | 2048         | 72,379  |
+| H1-I2-72-4096 | 1      | 72    | 2048         | 141,129 |
+| H1-I1-32-2048 | 2      | 64    | 2048*        | 144,759 |
+| H1-I2-72-2048 | 2      | 144   | 2048*        | 282,259 |
+| H1-I1-32-4096 | 2      | 64    | 4096*        | 144,759 |
+| H1-I2-72-4096 | 2      | 144   | 4096*        | 282,259 |
+
+**We recommend reserving 100GB of memory for the ESXi host.*
+
+OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive a SAP HANA installation.
+
+This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver a SAP HANA database.
 
 First, you must upload SAP HANA sources to your first Object Storage bucket, as described in the 'Requirements' section. The sources must be uploaded in the same format as the original download, for example, « 51056821.ZIP ».
 
@@ -64,9 +91,11 @@ Once the SAP HANA sources have been uploaded to your Object Storage bucket, you 
 
 The below URL is an example, you must replace the value `pcc-xxx-xxx-xxx-xxx.ovh.xxx` with the URL of your VMware on OVHcloud service.
 
-```console
-https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
-```
+| Version            | URL                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| SLES4SAP-SLE15-SP5 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -180,21 +209,20 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 |-----------------------------------|--------------------------------|
 | Storage Type                      | VSAN                           |
 | Site disaster tolerance           | None - standard cluster        |
-| Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
-| Number of disk stripes per object | 6*                             |
+| Failures to tolerate              | 1 failure - RAID-1 (Mirroring)<sup>1</sup> |
+| Number of disk stripes per object | 2                              |
 | IOPS limit for object             | 0                              |
 | Object space reservation          | Thick provisioning             |
 | Flash read cache reservation      | 0%                             |
 | Disable object checksum           | No                             |
 | Force provisioning                | No                             |
 | Encryption services               | No preference                  |
-| Space efficiency                  | Deduplication and compression  |
+| Space efficiency                  | No preference                  |
 | Storage tier                      | All flash                      |
 
-<sup>* For a SAP HANA on Private Cloud solution.</sup>  
-<sup>The value for this rule will depend on the number of capacity disks (vSAN Capacity) on your hosts.</sup>
+<sup>1</sup> *If your cluster has more than 3 hosts, it is more advantageous to switch to RAID-5.*
 
-This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.
+This VM storage strategy should be applied to the disks hosting your virtual machine’s /hana/shared (Hard disk 3), /hana/data (Hard disk 4) and /hana/log (Hard disk 5) volumes.
 
 6\. You can now start your virtual machine.
 

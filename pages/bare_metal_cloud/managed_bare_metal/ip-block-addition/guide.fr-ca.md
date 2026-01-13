@@ -12,8 +12,8 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external} sur votre compte OVHcloud.
+* Être connecté à votre [espace client OVHcloud](/links/manager).
+* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/) sur votre compte OVHcloud.
 
 ## En pratique
 
@@ -40,7 +40,7 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 
 > [!primary]
 >
-> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
+> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network) afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
 >
 
 - Pays du bloc IP, important dans certains cas pour le référencement de vos services (un site à affluence française aura un meilleur référencement en France si l'IP est française également)
@@ -86,7 +86,7 @@ Utilisez ensuite cet appel API pour déplacer l'IP dans le parking des IPS :
 > Cet appel coupe le réseau sur les VMs qui utilisent les IPs en question.
 >
 
-Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](/links/manager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}. Cliquez sur votre service Managed Bare Metal puis sur l'onglet `Operations`{.action}.
+Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}. Cliquez sur votre service Managed Bare Metal puis sur l'onglet `Operations`{.action}.
 
 La référence de l'opération est « removeIpRipeBlock ».
 

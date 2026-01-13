@@ -26,7 +26,7 @@ Le premier vDS dispose d'un seul type de *portGroup*, le VMnetwork permettant de
 
 Le second vDS dispose également d'un seul type de *portGroup* , des VLAN permettant d'isoler des communications privées à l'intérieur du Managed Bare Metal et entre les différents services OVHcloud compatibles vRack (Serveur dédié, Public Cloud...). 
 
-Sur ce switch, 11 VLANs sont créés de base (VLAN10 à VLAN20). En donnant le droit `administrateur` sur l'`Accès au VLAN` dans [la gestion des utilisateurs de votre espace client](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#utilisateurs){.external-link}, vous pourrez créer des VLAN supplémentaires.
+Sur ce switch, 11 VLANs sont créés de base (VLAN10 à VLAN20). En donnant le droit `administrateur` sur l'`Accès au VLAN` dans [la gestion des utilisateurs de votre espace client](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#utilisateurs), vous pourrez créer des VLAN supplémentaires.
 
 En premier lieu, rendez vous dans la vue `mise en réseau` de votre client vSphere. Déployez le dossier **vrack** puis faites un clic droit sur le **dVS** finissant par *-vrack* et enfin cliquez sur `New Distributed Port Group`{.action}.
 
@@ -43,7 +43,7 @@ Puis configurez les paramètres recommandés par OVHcloud :
 - **Port Binding** : Static (Réservation et assignation du port à une machine virtuelle)
 - **Port allocation** : Elastic (Permet d'élargir à chaud le nombre de port)
 - **Number of ports** : 24
-- **VLAN type** : VLAN (Les autres sont [PVLAN](https://kb.vmware.com/s/article/1010691){.external} et Trunk)
+- **VLAN type** : VLAN (Les autres sont [PVLAN](https://kb.vmware.com/s/article/1010691) et Trunk)
 - **VLAN ID** : 21 (Sachant que l'ID peut-être configuré de 1 à 4096)
 - Cochez l'option *Customize default policies configuration*.
 
@@ -62,7 +62,7 @@ Vous avez 3 paramètres de sécurité qui peuvent être activés en fonction de 
 
 ![paramètres sécurité](images/11network4.png){.thumbnail}
 
-Nous laissons le [lissage de trafic](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} désactivé.
+Nous laissons le [lissage de trafic](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html) désactivé.
 
 ![lissage de traffic](images/12network5.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire il Load Balancer dallo Spazio Cliente OVH
 excerpt: Principali funzionalità e gestione del servizio Load Balancer dallo Spazio Cliente OVH
-updated: 2017-12-01
+updated: 2025-07-30
 ---
 
 ## Obiettivo
@@ -10,12 +10,12 @@ Questa guida ti mostra come utilizzare il Load Balancer e presenta le principali
 
 ## Prerequisiti
 
-- Avere accesso allo Spazio Cliente OVH
-- Disporre di un [Load Balancer](https://www.ovh.it/soluzioni/ip-load-balancing/){.external} attivo
+- Disporre di una soluzione [OVHcloud Load balancer](/links/network/load-balancer) disponibile nello Spazio Cliente OVHcloud.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
-### Gestisci il Load Balancer dallo Spazio Cliente OVH
+### Gestisci il Load Balancer dallo Spazio Cliente OVHcloud
 
 Per gestire il Load Balancer accedi alla sezione `Bare Metal Cloud`{.action} dello Spazio Cliente e clicca su `Network`{.action} e `Load Balancer`{.action}. Seleziona il servizio.
 
@@ -28,8 +28,8 @@ In questa interfaccia sono disponibili le seguenti informazioni:
 |Stato|Riepilogo delle informazioni relative al tuo Load Balancer: nome del servizio, frontend, server farm attive e server aggiunti|
 |Utilizzo|Riepilogo dei dati relativi ai consumi del tuo Load Balancer|
 |Grafici|Grafici associati al tuo servizio, elaborati in base alle connessioni simultanee o al numero di richieste al minuto|
-|Informazioni|IPv4 e Additional IP associati e numero di IPv4 di uscita (per visualizzare i dettagli, clicca sui tre puntini di sospensione)|
-|Configurazione|Sezione in cui è possibile personalizzare il nome del tuo servizio (che verrà visualizzato in alto e nella colonna di sinistra), i Cipher e il datacenter in cui è localizzato il Load Balancer |
+|Informazioni|I tuoi indirizzi IPv4 e IPv6 e gli Additional IP associati, e il numero di IPv4 di uscita (ottieni i dettagli cliccando sul pulsante `...`{.action})|
+|Configurazione|Personalizza qui il nome della tua offerta. Trova anche i cipher, che sono personalizzabili, e la zona di disponibilità in cui si trova il tuo Load Balancer|
 |Abbonamento|Sezione in cui vengono mostrati i dettagli amministrativi del servizio|
 
 Per aggiungere `Frontend`{.action} e `Server Farm`{.action}, è sufficiente cliccare sul pulsante corrispondente: un form ti guiderà nella configurazione. 
@@ -47,7 +47,7 @@ Ecco gli elementi del frontend:
 |Nome|È possibile assegnare un nome al tuo frontend per identificarlo più facilmente|
 |Protocollo|Puoi scegliere tra HTTP, HTTPS, TCP, TCP SSL (TLS) e UDP|
 |Porta|Scegli la porta da utilizzare|
-|Datacenter|Scegli un datacenter o seleziona “Tutti”|
+|Datacenter|È possibile scegliere tra una zona di disponibilità specifica o tutte le zone di disponibilità per la creazione del front-end|
 |Farm predefinita|Se hai configurato più farm, puoi sceglierne una predefinita per ogni frontend|
 
 Inoltre, hai accesso alle opzioni avanzate
@@ -62,6 +62,7 @@ Inoltre, hai accesso alle opzioni avanzate
 |Header HTTP|Aggiunta di un header HTTP|
 
 ### Gestisci le server farm
+
 Per aggiungere una server farm, seleziona la scheda `Server Farm`{.action} e clicca su `Aggiungi una Server Farm`{.action}. Le opzioni principali disponibili sono le stesse del frontend. Le opzioni avanzate sono invece differenti:
 
 ![Aggiungi una Server Farm](images/advanced_cluster.png){.thumbnail}
@@ -73,6 +74,7 @@ Per aggiungere una server farm, seleziona la scheda `Server Farm`{.action} e cli
 |Sonda|Scegli e attiva la sonda|
 
 ### Gestisci i server
+
 Una volta creata la farm, non ti resta che aggiungervi dei server. Di seguito, i dettagli delle opzioni standard e avanzate disponibili:
 
 ![Aggiungi un server](images/add_server.png){.thumbnail}
@@ -90,12 +92,13 @@ Una volta creata la farm, non ti resta che aggiungervi dei server. Di seguito, i
 |Cookie|Aggiunta di un cookie di sessione personalizzato|
 |Catena di certificazione|Aggiunta di una catena di certificazione|
 |Peso di bilanciamento|Scelta del peso di bilanciamento per la ripartizione del carico|
+|Versione protocollo PROXY|**Solo se è già stato configurato**, scegliere la versione del protocollo PROXY da utilizzare su questo server. </br> Per maggiori informazioni sul protocollo PROXY e sul suo utilizzo con il servizio OVHcloud Load Balancer, consulta [questa guida](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Gestisci i certificati SSL
 
 Dalla scheda `Certificati SSL`{.action} è possibile aggiungere un SSL al servizio di Load Balancer. Hai 2 possibilità: ordinare un certificato SSL OVH o aggiungerne uno esterno.
 
-#### Certificato SSL OVH
+#### Certificato SSL OVHcloud
 
 Per ordinare un certificato SSL, seleziona la scheda `Certificati SSL`{.action}, clicca su `Ordina un certificato SSL`{.action} e segui gli step:
 
@@ -122,4 +125,4 @@ Se hai già attivato il tuo certificato SSL, è possibile aggiungerlo direttamen
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

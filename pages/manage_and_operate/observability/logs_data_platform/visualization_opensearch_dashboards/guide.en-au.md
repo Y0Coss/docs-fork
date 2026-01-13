@@ -1,11 +1,11 @@
 ---
 title: Using OpenSearch Dashboards with Logs Data Platform
-updated: 2022-06-13
+updated: 2025-10-16
 ---
 
 ## Objective
 
-This guide will help you unleash the full power of [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/){.external} and craft some beautiful Dashboards from your logs.
+This guide will help you unleash the full power of [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/) and craft some beautiful Dashboards from your logs.
 
 ## Requirements
 
@@ -38,7 +38,7 @@ So now Logs Data Platform knows which stream you want to browse. Now let's confi
 
 ### Access your OpenSearch Dashboards instance
 
-To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximatively 20 minutes.
+To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximately 20 minutes.
 
 ![osd creation](images/osd_created.png){.thumbnail}
 
@@ -46,19 +46,19 @@ Use the **...** menu to the right and select `Access to your OpenSearch Dashboar
 
 ![osd access](images/url.png){.thumbnail}
 
-Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button. You can also use the "Stack Management" option in the left side menu, displayable by using the top left the sandwich button.
+Once there, use the right Identity provider to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button. You can also use the "Stack Management" option in the left side menu, displayable by using the top left the sandwich button.
 
-In this configuration page, you can configure as the Index name, the full name of your alias **logs-XXXXX-a-XXXXX**, but you can also use wildcards. Choose **timestamp** for the time field name then click on Discover tab to read your log entries.
+In this configuration page, you can configure as the Index name, the full name of your alias **ldp-XXXXX-a-XXXXX**, but you can also use wildcards. Choose **timestamp** for the time field name then click on Discover tab to read your log entries.
 
 ![osd setup](images/osd_setup.png){.thumbnail}
 
 You can also explore any [OpenSearch index](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index) you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
 
-To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
+To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/)
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

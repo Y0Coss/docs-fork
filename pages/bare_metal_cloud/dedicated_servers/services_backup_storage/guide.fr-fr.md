@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser Backup Storage sur un serveur dédié'
 excerpt: 'Découvrez comment activer et accéder à votre espace de stockage supplémentaire'
-updated: 2025-07-21
+updated: 2025-10-09
 ---
 
 ## Objectif
@@ -18,8 +18,8 @@ Les serveurs dédiés OVHcloud comprennent un espace de sauvegarde supplémentai
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
@@ -31,7 +31,7 @@ Les serveurs dédiés OVHcloud comprennent un espace de sauvegarde supplémentai
 
 ### Activer votre Backup Storage
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sous l'onglet `Backup Storage`{.action}, cliquez sur le bouton `Activer le Backup Storage`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sous l'onglet `Backup Storage`{.action}, cliquez sur le bouton `Activer le Backup Storage`{.action}.
 
 ![Activer votre Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ L'accès à votre espace de stockage est restreint par adresses IP à l'aide d'u
 
 #### Ajouter un accès backup
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Ajouter un accès`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Ajouter un accès`{.action}.
 
 ![Ajouter un accès backup](images/backup-storage03.png){.thumbnail}
 
@@ -112,19 +112,19 @@ Afin de vérifier que votre adresse IP est bien autorisée, utilisez l'appel sui
 
 ### Réinitialiser votre mot de passe
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}.
 
 Après avoir cliqué sur `Confirmer`{.action} dans la fenêtre qui apparaît alors, un e-mail de récupération de mot de passe sera envoyé à l'adresse e-mail enregistrée sur votre compte administrateur. Suivez les instructions qui y sont contenues pour réinitialiser votre mot de passe.
 
 ### Supprimer le Backup Storage
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
 
 Cliquez sur `Confirmer`{.action} sur le message d'avertissement pour procéder à la suppression. Votre Backup Storage sera supprimé après quelques minutes. Toutes les données de l'espace de stockage seront supprimées.
 
 ### Commander de l'espace disque supplémentaire
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
 
 ![Commander de l'espace disque supplémentaire](images/backup-storage06.png){.thumbnail}
 
@@ -346,7 +346,11 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
-Ce problème peut être résolu en modifiant le Registre Windows : ouvrez l'utilitaire Windows *regedit* et recherchez l'entrée `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Définissez la valeur de `AllowInsecureGuestAuth` sur « 1 ». Retrouvez plus d'informations sur ce sujet sur les [pages de support Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
+> [!primary]
+>
+> Pour corriger cette erreur, il convient de modifier la base de registre de Windows. Pour cela, ouvrez l’éditeur de registre (regedit), puis accédez à la clé `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Attribuez ensuite la valeur « 1 » au paramètre `AllowInsecureGuestAuth`.<br>
+> Retrouvez plus d'informations sur ce sujet sur les [pages d'assistance de Microsoft](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

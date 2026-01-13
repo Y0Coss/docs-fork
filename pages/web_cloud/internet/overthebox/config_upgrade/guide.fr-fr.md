@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox ?'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2025-06-05
+updated: 2025-12-12
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Teleco
 
 Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
-Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags){.external}.
+Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags).
 
 ![overthebox](images/manager-version-2024.png){.thumbnail}
 
@@ -129,8 +129,8 @@ Dans ce cas, les recommandations sont les suivantes :
 
 | Canal | OverTheBox | OpenWRT | Linux | MPTCP | IPv6 | Compatibilité du matériel |
 | ---  | :---: | :---: | :---: | :---: | :---: | ---: |
-| v0.8_deprecated | v0.8.2 | 19.07.10 | 4.14.276 | v0.94 | &#10060; | nuc, ITv1, rpi3 |
-| v0.9 | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | &#10060; | v2b, v2c |
+| v0.8_deprecated | v0.8.3 | 19.07.10 | 4.14.276 | v0.94 | &#10060; | nuc, ITv1, rpi3 |
+| v0.9 | v0.9.7 | 21.02.5 | 5.4.217 | v0.96 | &#10060; | v2b, v2c |
 | v1.0 | v1.0.4 | 23.05.5 | 5.15.167 | v1 | &#10060; | v3lte, v3, v2b, v2c |
 | v1.1 | v1.1.2 | 24.10.1 | 6.6.86 | v1 | &#9989; | v3lte, v3, v2b, v2c |
 | stable | v1.0.4 | 23.05.5 | 5.15.167 | v1 | &#10060; | v3lte, v3, v2b, v2c |

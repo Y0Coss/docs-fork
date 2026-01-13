@@ -1,11 +1,8 @@
 ---
 title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-updated: 2024-09-13
+updated: 2026-01-09
 ---
-
-> [!warning]
-> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objectif
 
@@ -40,7 +37,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Posséder un serveur dédié avec la solution ESXi déployée.
 - Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) si vous souhaitez l'utiliser pour effectuer le filtrage.
 
@@ -86,14 +83,14 @@ Toutes ces informations sont également disponibles à travers l'interface d'adm
 
 ![interface](images/gui_logs_.png){.thumbnail}
 
-### La solution Network Firewall
+### La solution Edge Network Firewall
 
 > [!primary]
 >
-> Pour rappel, le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions provenant de ce réseau interne.
+> Pour rappel, le Edge Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions provenant de ce réseau interne.
 >
 
-Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 Cette solution vous permettra de gérer facilement les accès légitimes, en complément de ceux que vous aurez mis en place à travers votre système ESXi.
 
 Elle vous évitera aussi de verrouiller inopinément votre compte administrateur en cas d'attaque.
@@ -103,7 +100,14 @@ Il est donc recommandé de filtrer les accès légitimes de cette manière :
 - La règle 1 (Priority 0) autorise des réseaux externes de confiance à accèder à votre système ESXi.
 - La règle 2 (Priority 1) bloque tout le reste.
 
-![Network_Firewall](images/firewall_network_.png){.thumbnail}
+Vous pouvez accéder aux paramètres du Edge Network Firewall depuis l'espace client OVHcloud, en sélectionnant `Network`{.action}, puis en choisissant `Adresses IP publiques`{.action} sous "Réseau public". Vous pouvez retrouver votre serveur dédié en recherchant son adresse IP.
+
+![Edge_Network_Firewall](images/firewall_network_1.png){.thumbnail}
+
+Sur la droite du tableau, cliquez sur le bouton `...`{.action} correspondant à votre serveur dédié, puis sélectionnez `Configurer le Edge Network Firewall`{.action}.
+
+![Edge_Network_Firewall](images/firewall_network_2.png){.thumbnail}
+
 
 ### Le filtrage sous ESXi
 
@@ -120,7 +124,13 @@ Il est donc recommandé de filtrer les accès légitimes de cette manière :
 > Ceci est valable également pour les accès au **shell**.
 > Ne prévilégiez que le strict nécessaire pour chacun de vos besoins.
 
+
 #### Manipulation via l'interface graphique
+
+> [!primary]
+>
+> Dans ESXi 8.0 GA et les versions ultérieures, le service SLP est renforcé, désactivé par défaut et filtré par le pare-feu ESXi. Cela signifie que vous n’avez plus besoin de le désactiver manuellement. Vous trouverez plus d’informations dans [cet article officiel du blog VMware](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+
 
 **Services**
 
@@ -155,6 +165,11 @@ Exemple autorisant uniquement les connexions depuis l'IP 192.168.1.10 :
 ![custom](images/custom_fw_rule.png){.thumbnail}
 
 #### Manipulation via le shell
+
+> [!primary]
+>
+> Dans ESXi 8.0 GA et les versions ultérieures, le service SLP est renforcé, désactivé par défaut et filtré par le pare-feu ESXi. Cela signifie que vous n’avez plus besoin de le désactiver manuellement. Vous trouverez plus d’informations dans [cet article officiel du blog VMware](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+
 
 **Services**
 

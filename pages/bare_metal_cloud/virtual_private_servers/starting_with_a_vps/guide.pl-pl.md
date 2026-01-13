@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2024-11-22
+updated: 2025-09-11
 ---
 
 ## Wprowadzenie
@@ -14,6 +14,11 @@ Prywatny serwer wirtualny (VPS) to zwirtualizowany serwer dedykowany, który zap
 
 - Posiadanie serwera [VPS](/links/bare-metal/vps) w Panelu klienta OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+> [!warning]
+> Nie wszystkie funkcje VPS wymienione na tej stronie są dostępne w Local Zones OVHcloud.
+>
+> Aby uzyskać więcej informacji, zobacz [stronie WWW Local Zones](/links/bare-metal/vps-lz).
 
 ## W praktyce
 
@@ -110,7 +115,7 @@ Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
 ### Kopia zapasowa
 
-Opcje te dotyczą dodatkowych usług VPS, które można zamówić w Panelu klienta.
+Opcje te odnoszą się do dodatkowych usług VPS służących do wykonywania kopii zapasowych i przywracania systemu.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +124,13 @@ Opcje te dotyczą dodatkowych usług VPS, które można zamówić w Panelu klien
 >>
 > Automatyczny backup
 >>
->> Opcja `Automatyczny backup` pozwala na zaplanowanie regularnych kopii zapasowych serwera VPS. W przeciwieństwie do snapshotów wykonywanych ręcznie, funkcja ta zachowuje kilka punktów przywracania w czasie, zapewniając w ten sposób ciągłą i automatyczną ochronę danych (z wyłączeniem dodatkowych dysków).
+>> Codzienna kopia zapasowa systemu jest tworzona automatycznie (z wyłączeniem dysków dodatkowych) i przechowywana przez 24 godziny (dotyczy wyłącznie usług zamówionych od 7 sierpnia 2025 r.). Po zamówieniu opcji **Automatyczny backup Premium** będziesz miał do dyspozycji 7 ostatnich codziennych kopii zapasowych serwera VPS do zamontowania i przywrócenia.  
+W porównaniu z migawkami ręcznymi funkcja ta zwiększa bezpieczeństwo danych, tworząc kilka punktów przywracania w regularnych odstępach czasu.
+>>
 
-Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-servers-backups).
+Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
-### Subskrypcja
+### Moja oferta
 
 W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania usługi. Wszystkie informacje na ten temat znajdziesz w odpowiedniej [dokumentacji](/products/account-and-service-management-managing-billing-payments-and-services).
 

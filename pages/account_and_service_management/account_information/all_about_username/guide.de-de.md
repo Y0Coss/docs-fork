@@ -4,11 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie die Account-Sicherheit optimieren, Ihre per
 updated: 2025-05-22
 ---
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/DItXnvw)
-
 ## Ziel
 
 Ihre Dienste und Daten werden hauptsächlich über das OVHcloud Kundencenter verwaltet.
@@ -116,11 +111,11 @@ Wenn Sie Ihre Angaben fertiggestellt haben, klicken Sie auf den Button `Bestäti
 
 #### Ausübung meiner Rechte an meinen persönlichen Daten
 
-In Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) können Sie [dieses Formular](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben){.external} verwenden, um Ihre Rechte in Bezug auf den Schutz Ihrer personenbezogenen Daten auszuüben.
+In Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) können Sie [dieses Formular](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben) verwenden, um Ihre Rechte in Bezug auf den Schutz Ihrer personenbezogenen Daten auszuüben.
 
 #### Meinen OVHcloud Kunden-Account löschen
 
-Sie können beantragen, Ihren OVHcloud Kunden-Account und die zugehörigen Daten zu löschen, indem Sie das Formular zur [Ausübung der DSGVO-Rechte](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben){.external} ausfüllen und dort das "Recht auf Löschung" auswählen.
+Sie können beantragen, Ihren OVHcloud Kunden-Account und die zugehörigen Daten zu löschen, indem Sie das Formular zur [Ausübung der DSGVO-Rechte](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben) ausfüllen und dort das "Recht auf Löschung" auswählen.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Jak zabezpieczyć Twoją stronę WWW?"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Wprowadzenie 
@@ -24,7 +24,7 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 - [OVHcloud Web Hosting plan](/links/web/hosting)
 - posiadanie [login details](/pages/web_cloud/web_hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
 - dostęp do [OVHcloud Control Panel](/links/manager)
-- dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/)
 
 ## W praktyce
 
@@ -75,9 +75,16 @@ Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów
 
 ### Etap 6 - Sprawdź, czy witryna sieci Web jest aktualna
 
-Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aktualizacja-strony-www).
+Upewnij się, że Twoja strona internetowa jest aktualizowana zarówno pod względem treści, jak i komponentów technicznych (CMS, rozszerzenia, wersje PHP i zależności).
 
-Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+Jeśli korzystasz z CMS, zapoznaj się z jego oficjalną dokumentacją dotyczącą aktualizacji:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/en)
+
+Ponadto upewnij się, że korzystasz z nowoczesnej wersji [języka programowania PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) na swoim planie Hosting.
 
 ### Etap 7 - Aktywuj HTTPS
 
@@ -91,10 +98,10 @@ Formularze stron internetowych są głównym celem hakerów/spammerów. Chroń s
 
 Dodaj do swojej strony wtyczkę bezpieczeństwa zalecaną przez producenta CMS:
 
-- [WordPress](https://pl.wordpress.org/){.external}
-- [Joomla](https://downloads.joomla.org/pl/){.external}
-- [Drupal](https://www.drupal.org.pl/){.external}
-- [PrestaShop](https://www.prestashop.com/pl){.external}
+- [WordPress](https://pl.wordpress.org/)
+- [Joomla](https://downloads.joomla.org/pl/)
+- [Drupal](https://www.drupal.org.pl/)
+- [PrestaShop](https://www.prestashop.com/pl)
 
 ### Etap 10 - Sprawdzanie, czy na Twoim hostingu znajdują się złośliwe pliki
 
@@ -108,7 +115,7 @@ Kopie [zapasowe danych](#backup) Twojej strony WWW (pliki FTP i baza danych) mus
 
 Nie stanowią one jednak absolutnego bezpieczeństwa. Sprawdź również, czy kopie zapasowe Twojej bazy danych nie są uszkodzone.
 
-Testy te będą przeprowadzane lokalnie, na przykład poprzez zaimportowanie danych do programu typu [WAMP](https://www.wampserver.com/){.external}. Skonfiguruj następnie Twoje lokalne rozwiązanie, aby wszystkie jego konfiguracje odpowiadały konfiguracji naszych [serwerów hostingowych](https://webhosting-infos.hosting.ovh.net/).
+Testy te będą przeprowadzane lokalnie, na przykład poprzez zaimportowanie danych do programu typu [WAMP](https://www.wampserver.com/). Skonfiguruj następnie Twoje lokalne rozwiązanie, aby wszystkie jego konfiguracje odpowiadały konfiguracji naszych [serwerów hostingowych](https://webhosting-infos.hosting.ovh.net/).
 
 Możesz również utworzyć **wersję testową** Twojej strony (np.: test.mojadomena.tld) w innym katalogu Twojego hostingu (możesz korzystać z szablonu bazowego).
 

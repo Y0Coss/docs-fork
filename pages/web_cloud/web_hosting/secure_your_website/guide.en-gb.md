@@ -1,7 +1,7 @@
 ---
 title: "How to secure your website?"
 excerpt: "Find out how to make your website more secure"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ However, if you experience any difficulties carrying out some of them, please do
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
 - The [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/)
 
 ## Instructions
 
@@ -33,7 +33,7 @@ However, if you experience any difficulties carrying out some of them, please do
 
 This first step is essential. Infecting your computer with a malicious software can potentially give the attacker access to all of your keyboard input. As a result, the credentials you use to log in on your OVHcloud Control Panel or the admin interface for your website would be compromised.
 
-In addition, the growing phenomenon of [ransomware](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks){.external} (about 400 cases in France in 2020) may not only lead to the encryption of all your personal data, but also jeopardise your business by making all your data, devices and software inaccessible. 
+In addition, the growing phenomenon of [ransomware](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks) (about 400 cases in France in 2020) may not only lead to the encryption of all your personal data, but also jeopardise your business by making all your data, devices and software inaccessible. 
 
 First, check the security of your Windows, Mac or Linux desktop:
 
@@ -76,9 +76,16 @@ We also recommend checking regularly the **validity of the payment methods** you
 
 ### Step 6 - Check that your website is up to date
 
-Check your website updates regularly, following the instructions in this [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-update-your-website).
+Make sure your website is kept up to date, both in terms of content and technical components (CMS, extensions, PHP versions, and dependencies).
 
-Also remember to use a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/configure_your_web_hosting) on your Web Hosting plan.
+If you are using a CMS, refer to its official documentation for updates:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/en)
+
+Also, ensure that you are using a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/configure_your_web_hosting) on your Web Hosting plan.
 
 ### Step 7 - Activate HTTPS
 
@@ -92,10 +99,10 @@ Forms on websites can be targeted by hackers/spammers. Protect your forms agains
 
 Add a security plugin recommended by the CMS publisher to your website:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://www.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/){.external}
-- [PrestaShop](https://www.prestashop.com/en){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla](https://www.joomla.org/)
+- [Drupal](https://www.drupal.org/)
+- [PrestaShop](https://www.prestashop.com/en)
 
 ### Step 10 - Check if your hosting contains malware
 
@@ -109,7 +116,7 @@ As explained in [step 2](#backup) of this guide, to regularly perform [backups o
 
 But even having backups of your website on your desktop can not be considered as sufficient: you also need to test these backups (especially the databases) to ensure that they will work properly the day you need them.
 
-You can perform these tests locally, for example by importing your data on [WAMP](https://www.wampserver.com/en/){.external}. Then you need to be sure that you configure your WAMP server with the same parameters as OVHcloud [Web Hosting servers](https://webhosting-infos.hosting.ovh.net/).
+You can perform these tests locally, for example by importing your data on [WAMP](https://www.wampserver.com/en/). Then you need to be sure that you configure your WAMP server with the same parameters as OVHcloud [Web Hosting servers](https://webhosting-infos.hosting.ovh.net/).
 
 You can also create a **test version** of your website (e.g. test.mydomain.tld) within another folder of your FTP storage space (you can still use a basic template).
 

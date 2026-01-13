@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Available extensions
 excerpt: List of available PostgreSQL extensions
-updated: 2025-05-05
+updated: 2026-01-08
 ---
 
 ## List of available extensions
@@ -38,7 +38,7 @@ Also some extensions may require disconnecting the client and reconnecting befor
 | `isn` | <https://www.postgresql.org/docs/current/isn.html> | Data types for international product numbering standards. |
 | `ltree` | <https://www.postgresql.org/docs/current/ltree.html> | Data type for hierarchical tree-like structures. |
 | `seg` | <https://www.postgresql.org/docs/current/seg.html> | Data type for representing line segments or floating-point intervals. |
-| `timescaledb` | <https://github.com/timescale/timescaledb> | Enables scalable inserts and complex queries for time-series data. |
+| `timescaledb` | <https://github.com/timescale/timescaledb> | Enables scalable inserts and complex queries for time-series data. `Not yet available on PG18` |
 | `unit` | <https://github.com/df7cb/postgresql-unit> | SI units extension. |
 | `uuid-ossp` | <https://www.postgresql.org/docs/current/uuid-ossp.html> | Generate universally unique identifiers (UUIDs). |
 
@@ -110,7 +110,7 @@ Also some extensions may require disconnecting the client and reconnecting befor
 | `pg_buffercache` | <https://www.postgresql.org/docs/current/pgbuffercache.html> | Examine the shared buffer cache. |
 | `pg_cron` | <https://github.com/citusdata/pg_cron> | Job scheduler for PostgreSQL. |
 | `pg_partman` | <https://github.com/pgpartman/pg_partman> | Extension to manage partitioned tables by time or ID. |
-| `pg_prewarm` | h<ttps://www.postgresql.org/docs/current/pgprewarm.html> | Prewarm relation data. PG11 and newer |
+| `pg_prewarm` | <https://www.postgresql.org/docs/current/pgprewarm.html> | Prewarm relation data. PG11 and newer |
 | `pg_prometheus` | <https://github.com/timescale/pg_prometheus> | Prometheus metrics for PostgreSQL. `PG12 and earlier` |
 | `pg_repack` | <https://pgxn.org/dist/pg_repack/1.4.6/> | Reorganize tables in PostgreSQL databases with minimal locks. |
 | `pg_stat_statements` | <https://www.postgresql.org/docs/current/pgstatstatements.html> | Track planning and execution statistics of all SQL statements executed. |

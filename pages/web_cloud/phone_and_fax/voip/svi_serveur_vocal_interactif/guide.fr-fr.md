@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un serveur vocal interactif (SVI)'
 excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
-updated: 2025-04-28
+updated: 2026-01-07
 ---
 
 ## Objectif
@@ -13,8 +13,8 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 
 ## Prérequis
 
-- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Vous pouvez ajouter plusieurs sons si vous souhaitez créer des choix de touches
 > [!warning]
 >
 > La création des fichiers-sons est à votre charge. Nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) car OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
-> <br>Sachez qu'il est également possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
+> <br>Sachez qu'il est également possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/).
 >
 
 Ouvrez le **menu du numéro** puis cliquez sur `Gérer les sons`{.action}.
@@ -221,6 +221,14 @@ Une fois toutes vos plages horaires définies, cliquez sur le bouton `Modifier`{
 > [!primary]
 > Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
 >
+
+##### **Double condition : « Jours exceptionnels » et « Plages horaires génériques »**
+
+Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l'étape 1 et les plages horaires génériques sur l'étape 2.
+
+En effet, le système lit les étapes dans l'ordre : si les conditions de l'étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
+
+![SVI - double condition](images/svi-double-condition.png){.thumbnail}
 
 ##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Fin du support Plesk et cPanel pour VPS - Assurer la continuité de vos services"
 excerpt: "Découvrez les dates de fin de support des systèmes d'exploitation de votre VPS OVHcloud affectant les licences Plesk et cPanel"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Objectif
@@ -20,15 +20,15 @@ Les éditeurs **Plesk** et **cPanel** annoncent la fin du support des systèmes 
 
 | Système d'exploitation | Produit        | Fin du support       |
 | ---------------------- | -------------- | -------------------- |
-| Ubuntu 18.04           | Plesk          | **1er janvier 2026** |
-| Debian 10              | Plesk          | **1er janvier 2026** |
-| CentOS 7               | Plesk / cPanel | **1er janvier 2026** |
-| CloudLinux 7           | Plesk / cPanel | **1er janvier 2026** |
+| Ubuntu 18.04           | Plesk          | **1er janvier 2027** |
+| Debian 10              | Plesk          | **1er janvier 2027** |
+| CentOS 7               | Plesk / cPanel | **1er janvier 2027** |
+| CloudLinux 7           | Plesk / cPanel | **1er janvier 2027** |
 
 Pour plus de détails concernant les fins de support, consultez les documentations officielles :
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}.
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
 
 ### Que faire concrètement ?
 
@@ -37,8 +37,8 @@ Pour plus de détails concernant les fins de support, consultez les documentatio
 > D’un point de vue **sécurité**, continuer à utiliser un OS non supporté vous expose à des attaques.
 > Nous vous recommandons de lire :
 >
-> - [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
-> - [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> - [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+> - [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
 
 #### 1. Vérifier votre système actuel
 
@@ -54,8 +54,8 @@ Si votre système d'exploitation fait partie des OS qui ne seront plus supporté
 
 Consultez la documentation officielle des OS supportés :
 
-- [Liste des OS supportés par Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [Liste des OS compatibles avec cPanel](https://docs.cpanel.net/installation-guide/system-requirements/){.external}.
+- [Liste des OS supportés par Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [Liste des OS compatibles avec cPanel](https://docs.cpanel.net/installation-guide/system-requirements/).
 
 #### 3. Migrer votre service
 
@@ -74,20 +74,26 @@ Commandez un nouveau VPS avec un OS compatible si ce n'est pas déjà fait. [Ins
 
 Utilisez l’outil de migration de votre choix. Ces outils permettent de transférer automatiquement vos sites web, bases de données, comptes e-mail et configurations d’un VPS à l’autre :
 
-- Plesk Migrator – [Documentation officielle](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
-- cPanel Transfer Tool – [Documentation officielle](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
+- Plesk Migrator – [Documentation officielle](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/).
+- cPanel Transfer Tool – [Documentation officielle](https://docs.cpanel.net/whm/transfers/transfer-tool/).
 
 **Option C — Mise à jour directe de l'OS sans réinstallation ou migration (utilisateurs avancés)**
 
 Si vous ne pouvez pas déployer un nouveau de VPS, certains outils permettent de **mettre à niveau directement votre système d’exploitation** tout en conservant Plesk ou cPanel installé. Cette méthode s'adresse aux utilisateurs expérimentés, car elle comporte des risques si elle est mal exécutée.
 
-- Pour **Plesk** (passage de CentOS 7 vers AlmaLinux 8), utilisez le script `centos2alma` proposé par la [documentation officielle de Plesk](https://github.com/plesk/centos2alma){.external}. Consultez aussi les instructions détaillées du [support de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
+- Pour **Plesk** (passage de CentOS 7 vers AlmaLinux 8), utilisez le script `centos2alma` proposé par la [documentation officielle de Plesk](https://github.com/plesk/centos2alma). Consultez aussi les instructions détaillées du [support de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983).
 
-- Pour **cPanel** (passage de CentOS 7 vers AlmaLinux 8), utilisez l'outil **Elevate** proposé par la [documentation officielle de cPanel](https://cpanel.github.io/elevate/){.external}.
+- Pour **cPanel** (passage de CentOS 7 vers AlmaLinux 8), utilisez l'outil **Elevate** proposé par la [documentation officielle de cPanel](https://cpanel.github.io/elevate/).
 
 > [!primary]
 >
 > Ces outils ne sont pas garantis à 100 % et nécessitent des sauvegardes complètes avant de procéder. Assurez-vous également que votre VPS dispose de ressources suffisantes (RAM, CPU, disque).
+
+### Bonnes pratiques de sécurité
+
+Indépendamment de Plesk/cPanel, il est essentiel de **maintenir le système d’exploitation de votre VPS** à jour afin de bénéficier des correctifs de sécurité, de la compatibilité logicielle et du support éditeur. Si votre distribution est en **fin de vie (EOL)**, planifiez une **mise à niveau** ou une **migration** vers une version encore supportée.
+
+Pour connaître les dates de fin de vie et de fin de support des images et des OS (VPS & Public Cloud), consultez notre guide « [Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions](/pages/public_cloud/compute/image-life-cycle) ».
 
 ## Aller plus loin
 

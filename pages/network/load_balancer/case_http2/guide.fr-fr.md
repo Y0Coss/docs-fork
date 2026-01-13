@@ -27,7 +27,6 @@ Ce guide a deux objectifs principaux :
 
 ## Prérequis
 
-
 Vous aurez besoin de :
 
 - Un service [Load Balancer OVHcloud](/links/network/load-balancer) ;

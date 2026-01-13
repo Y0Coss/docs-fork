@@ -1,7 +1,7 @@
 ---
 title: "Ajouter ou retirer un nœud dans un cluster Nutanix (Scale In/Out)"
 excerpt: "Ajustez dynamiquement votre cluster Nutanix on OVHcloud en ajoutant ou retirant des nœuds via l'espace client ou l'API OVHcloud"
-updated: 2025-05-23
+updated: 2025-08-05
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
 ## Informations techniques
 
-- Votre cluster doit comporter entre **3 et 15 nœuds**
+- Votre cluster doit comporter entre **3 et 32 nœuds**
 - Tous les nouveaux nœuds doivent utiliser la **même version d’AOS** que le cluster existant
 
 ## En pratique
@@ -34,11 +34,11 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
     ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
 
-2. Dans l’onglet **Informations générales**, la section **Nombre de noeuds** est visible. Cliquez sur `Gérer mes noeuds`{.action}.
+2. Dans l’onglet **Informations générales**, la section **Nombre de nœuds** est visible. Cliquez sur `Gérer mes nœuds`{.action}.
 
     ![Nombre de nœuds](images/manage-nodes.png){.thumbnail}
 
-3. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des noeuds`{.action}.
+3. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des nœuds`{.action}.
 
     ![Ajouter des nœuds](images/adding-nodes-03.png){.thumbnail}
 
@@ -48,7 +48,7 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
 Une fois le nœud livré, son statut s’affiche dans l’onglet **Informations générales**.
 
-La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être installé.
+La zone **Nombre de nœuds** indiquera qu’un nouveau nœud est prêt à être installé.
 
 ![Nouveau nœud à installer](images/adding-nodes-05.png){.thumbnail}
 
@@ -56,7 +56,7 @@ La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être 
 
 > [!tabs]
 > Espace client OVHcloud
->> Si vous cliquez à nouveau sur `Gérer mes noeuds`{.action}, vous verrez la liste des nœuds. Pour tout nœud avec le statut **OS not installed**, cliquez sur le bouton `...`{.action} et sélectionnez `Installer`{.action}.
+>> Si vous cliquez à nouveau sur `Gérer mes nœuds`{.action}, vous verrez la liste des nœuds. Pour tout nœud avec le statut **OS not installed**, cliquez sur le bouton `...`{.action} et sélectionnez `Installer`{.action}.
 >>
 >> ![Statut du nœud](images/install-os-01.png){.thumbnail}
 >>
@@ -71,7 +71,7 @@ La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être 
 >> ![Confirmation](images/install-os-03.png){.thumbnail}
 >>
 > API OVHcloud
->> Pour installer le nœud via l’[API OVHcloud](/links/api){.external}, utilisez l’appel suivant :
+>> Pour installer le nœud via l’[API OVHcloud](/links/api), utilisez l’appel suivant :
 >>
 >> > [!api]
 >> > @api {v1} /nutanix PUT /nutanix/{serviceName}/nodes/{server}/deploy
@@ -93,7 +93,7 @@ Consultez la documentation suivante :
 
     ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
 
-2. Dans l’onglet **General information**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes noeuds`{.action}.
+2. Dans l’onglet **General information**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes nœuds`{.action}.
 
     ![Manage my nodes](images/manage-nodes.png){.thumbnail}
 
@@ -161,7 +161,7 @@ Consultez la documentation suivante :
 >>
 > API OVHcloud
 >>
->> Pour désinstaller un nœud via l’[API OVHcloud](/links/api){.external}, utilisez l’appel suivant :
+>> Pour désinstaller un nœud via l’[API OVHcloud](/links/api), utilisez l’appel suivant :
 >>
 >> > [!api]
 >> > @api {v1} /nutanix POST /nutanix/{serviceName}/node/{server}/terminate

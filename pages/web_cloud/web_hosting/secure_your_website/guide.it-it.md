@@ -1,7 +1,7 @@
 ---
 title: "Come proteggere il tuo sito Web?"
 excerpt: "Questa guida ti mostra come migliorare la sicurezza del tuo sito Web"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Obiettivo
@@ -24,7 +24,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 - un [piano OVHcloud Web Hosting](/links/web/hosting)
 - avere le [informazioni di accesso](/pages/web_cloud/web_hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) per accedere allo spazio di archiviazione del piano di hosting
 - accesso a [OVHcloud Control Panel](/links/manager)
-- accesso all'interfaccia [admin per il sito Web](https://codex.wordpress.org/it:Primi_passi_con_WordPress){.external}
+- accesso all'interfaccia [admin per il sito Web](https://codex.wordpress.org/it:Primi_passi_con_WordPress)
 
 ## Procedura
 
@@ -32,7 +32,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 
 Questo primo passo è fondamentale. L'infezione da malware della tua postazione informatica può potenzialmente dare accesso a una persona malintenzionata a tutte le tue pignorazioni effettuate sulla tua tastiera. Le credenziali utilizzate per accedere al tuo Spazio Cliente OVHcloud o all'interfaccia di gestione del tuo sito possono quindi essere compromesse.
 
-Inoltre, il fenomeno crescente dei [Ransomware](https://www.commissariatodips.it/notizie/articolo/campagna-no-more-ransom/index.html){.external} (circa 400 casi nel 2020 in Francia) può non solo portare alla crittografia di tutti i tuoi dati personali, ma anche mettere in pericolo la tua attività rendendo inaccessibile l'insieme dei tuoi dati, dispositivi e software. 
+Inoltre, il fenomeno crescente dei [Ransomware](https://www.commissariatodips.it/notizie/articolo/campagna-no-more-ransom/index.html) (circa 400 casi nel 2020 in Francia) può non solo portare alla crittografia di tutti i tuoi dati personali, ma anche mettere in pericolo la tua attività rendendo inaccessibile l'insieme dei tuoi dati, dispositivi e software. 
 
 Per prima cosa verifica la sicurezza della tua postazione Windows, Mac o Linux:
 
@@ -75,9 +75,16 @@ Ti consigliamo inoltre di verificare regolarmente la **validità dei metodi di p
 
 ### Step 6 - Verificare che il sito Web sia aggiornato
 
-Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
+Assicurati che il tuo sito web sia aggiornato sia per quanto riguarda il contenuto che per i componenti tecnici (CMS, estensioni, versioni di PHP e dipendenze).
 
-Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sul tuo hosting.
+Se utilizzi un CMS, consulta la sua documentazione ufficiale per aggiornarlo :
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/it)
+
+Assicurati inoltre di utilizzare una versione recente del [linguaggio di programmazione PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull'ospedalità web.
 
 ### Step 7 - Attiva l’HTTPS
 
@@ -91,10 +98,10 @@ I form dei siti sono bersagli privilegiati dagli hackers/spammers. Proteggi i tu
 
 Aggiungi al tuo sito un plugin di sicurezza consigliato dall'editor del CMS:
 
-- [WordPress](https://it.wordpress.org){.external}
-- [Joomla](https://downloads.joomla.org/it/){.external}
-- [Drupal](http://www.drupalitalia.org/){.external}
-- [PrestaShop](https://www.prestashop.com/it){.external}
+- [WordPress](https://it.wordpress.org)
+- [Joomla](https://downloads.joomla.org/it/)
+- [Drupal](http://www.drupalitalia.org/)
+- [PrestaShop](https://www.prestashop.com/it)
 
 ### Step 10 - Verificare la presenza di file dannosi sull’hosting Web
 
@@ -108,7 +115,7 @@ I [backup dei dati](#backup) del tuo sito (file FTP e database) devono essere ef
 
 Tuttavia, esse non costituiscono una sicurezza assoluta. Per verificare che i backup del tuo database non siano corrotti, è necessario eseguire un test.
 
-Questi test possono essere effettuati localmente, ad esempio importando i dati su software di tipo [WAMP](https://www.wampserver.com/){.external}. Ti consigliamo di configurare la tua soluzione locale in modo che la sua configurazione corrisponda in ogni punto a quella dei nostri [server di hosting condiviso](https://webhosting-infos.hosting.ovh.net/).
+Questi test possono essere effettuati localmente, ad esempio importando i dati su software di tipo [WAMP](https://www.wampserver.com/). Ti consigliamo di configurare la tua soluzione locale in modo che la sua configurazione corrisponda in ogni punto a quella dei nostri [server di hosting condiviso](https://webhosting-infos.hosting.ovh.net/).
 
 Puoi anche creare una **versione di test** del tuo sito (ad esempio: test.miodominio.tld) in un'altra cartella del tuo hosting (sarà possibile utilizzare un template di base).
 

@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - Network concepts and best practices"
 excerpt: "Discover the powerful networking capabilities of Public VCF as-a-Service with this comprehensive guide (key concepts and features)"
-updated: 2025-03-03
+updated: 2025-11-04
 ---
 
 <style>
@@ -97,8 +97,7 @@ Here is a comparison of the 3 solutions offered by Public VCF as-a-Service.
 |              | Advanced Network & Security | vSAN Storage |
 |:------------:|:---------------------------:|:------------:|
 | Standard Public VCF as-a-Service |              -              |      -       |
-|Public VCF as-a-Service Advanced |              ✅              |      -       |
-|Public VCF as-a-Service Premium  |              ✅               |       ✅       |
+| Public VCF as-a-Service Advanced |              ✅              |      -       |
 
 Here we see that only the advanced networking and security features within Public VCF as-a-Service are available in the **Advanced and Premium** offers.
 
@@ -273,7 +272,7 @@ Of course, this can impact advanced networking features, although these features
 
 **IPsec VPN Limitations**
 
-When adding an IPsec tunnel, the parameter of adding a route-based IPsec session (route based IPsec tunnel) is not supported within Public VCF as-a-Service to date (see: [docs / VMware NSX / NSX administration guide / Adding an IPSec session based on a route](https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html){.external}).
+When adding an IPsec tunnel, the parameter of adding a route-based IPsec session (route based IPsec tunnel) is not supported within Public VCF as-a-Service to date (see: [docs / VMware NSX / NSX administration guide / Adding an IPSec session based on a route](https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html)).
 
 **Provider gateways limitations**
 

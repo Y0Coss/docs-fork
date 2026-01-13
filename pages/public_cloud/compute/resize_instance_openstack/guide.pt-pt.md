@@ -1,7 +1,7 @@
 ---
 title: Redimensionar uma instância de Public Cloud usando a CLI do OpenStack
 excerpt: Descubra como fazer evoluir os recursos da sua instância para fazer face a uma atividade acrescida
-updated: 2023-09-26
+updated: 2025-08-25
 ---
 
 > [!primary]

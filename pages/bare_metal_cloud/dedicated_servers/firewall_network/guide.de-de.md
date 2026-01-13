@@ -1,7 +1,7 @@
 ---
 title: Aktivieren und Konfigurieren der Edge Network Firewall
 excerpt: Erfahren Sie hier, wie Sie die Edge Network Firewall konfigurieren
-updated: 2025-06-04
+updated: 2026-01-06
 ---
 
 ## Ziel
@@ -10,19 +10,14 @@ Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bi
 
 **Diese Anleitung erklärt, wie Sie die Edge Network Firewall für Ihre Dienste konfigurieren.**
 
-> [!warning]
->
-> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
->
-
 > [!primary]
 >
 > Weitere Informationen zu unserer Anti-DDoS-Lösung finden Sie [hier](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Diagramm zu DDoS-Schutz & Infrastruktur bei OVHcloud |
+| OVHcloud Anti-DDoS-Infrastruktur & Game-Schutzdienste-Diagramm |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Voraussetzungen 
 
@@ -46,32 +41,22 @@ Die Edge Network Firewall reduziert die Anfälligkeit für DDoS-Angriffe im Netz
 > [!primary]
 >
 > Derzeit ist diese Funktion nur für IPv4-Adressen verfügbar.
+>
 
 > [!primary]
 >
 > Die Edge Network Firewall schützt eine bestimmte, mit einem Server (oder Dienst) verbundene IP. Wenn Sie also einen Server mit mehreren IP-Adressen haben, müssen Sie jede IP separat konfigurieren.
 > 
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und zugehörige Dienste** können Sie Ihre Dienste nach Kategorien filtern.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie Ihre Dienste nach Kategorien filtern, oder geben Sie die gewünschte IP-Adresse direkt in die Suchleiste ein.
 
-![filter service](images/selectservice_cut.png){.thumbnail}
+![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-Klicken Sie anschließend rechts neben der IPv4 auf `...`{.action} und wählen Sie `Firewall erstellen`{.action}.
+Klicken Sie anschließend auf die Schaltfläche `⁝`{.action} rechts neben der entsprechenden IPv4-Adresse und wählen Sie zunächst `Edge Network Firewall konfigurieren`{.action} (oder klicken Sie auf das Status-Symbol in der Spalte **Edge-Firewall**).
 
-![Netzwerkfirewall aktivieren](images/firewallcreation2022.png){.thumbnail}
+![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
-Sie werden dann um Bestätigung gebeten. Die Firewall wird erstellt, und Sie können die Regeln konfigurieren.
-
-> [!primary]
-> Die Schaltfläche `Firewall erstellen`{.action} ist nur für IPs verfügbar, für die keine Firewall konfiguriert wurde. Wenn Sie Ihre Firewall nicht zum ersten Mal konfigurieren, können Sie diesen Schritt überspringen. 
->
-
-| ![Konfiguration wird aktiviert](images/activationconfig.png) | 
-|:--:| 
-| Klicken Sie auf `Edge Network Firewall Konfiguration`{.action}, um mit der Konfiguration zu beginnen. |
-
-Auf dieser Seite können Sie die Firewall über den Slider-Button **aktivieren** oder **deaktivieren**.  
-Weiter unten wird die alternative Vorgehensweise beschrieben.
+Sie werden dann zur Seite für die Firewall-Konfiguration weitergeleitet.
 
 Sie können bis zu **20 Regeln pro IP** einrichten.
 
@@ -98,21 +83,21 @@ Sie können bis zu **20 Regeln pro IP** einrichten.
 > Weitere Informationen finden Sie in unseren Anleitungen: [Firewall auf einem Windows Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) und [Konfiguration der Linux Firewall mit iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-linux-iptable).
 >
 
-**Hinzufügen einer Regel:**
+**Um eine Regel hinzuzufügen**, klicken Sie oben links auf die Schaltfläche `+ Hinzufügen eine Regel`{.action}:
 
-| ![add-rule-btn](images/enf_add_rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_new.png) |
 |:--:| 
-| Auf `Regel hinzufügen`{.action} klicken |
+| Auf `+ Hinzufügen eine Regel`{.action} klicken |
 
 Für jede Regel (mit Ausnahme von TCP) müssen Sie Folgendes auswählen:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) |
 |:-| 
 | &bull; Eine Priorität (0 bis 19, wobei 0 die erste anzuwendende Regel ist) <br>&bull; Eine Aktion (`Accept`{.action} oder `Deny`{.action}) <br>&bull; Das Protokoll <br>&bull; Quell-IP (optional) |
 
 Für jede **TCP**-Regel müssen Sie Folgendes auswählen:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) |
 |:-| 
 | &bull; Eine Priorität (0 bis 19, 0 ist die erste anzuwendende Regel, gefolgt von den anderen) <br>&bull; Eine Aktion (`Accept`{.action} oder `Deny`{.action}) <br>&bull; Das Protokoll <br>&bull; Quell-IP (optional) <br>&bull; Der Quell-Port (optional) <br>&bull; Der Ziel-Port (optional) <br>&bull; Der TCP-Status (optional) <br>&bull; Fragmente (optional)|
 
@@ -130,21 +115,13 @@ Für jede **TCP**-Regel müssen Sie Folgendes auswählen:
 > Firewall-Setups, die nur akzeptierende Regeln enthalten, sind nicht wirksam. Es muss eine Anweisung geben, welcher Traffic von der Firewall abgelehnt werden soll. Es wird eine Warnung angezeigt, falls eine solche *Deny*-Regel nicht existiert.
 > 
 
-**Firewall aktivieren:**
+**Firewall aktivieren/deaktivieren:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) | 
+| ![activate-desactivate](images/enf_enable_disable_new.png) |
 |:--:| 
 | `Umschalten`{.action} zum Aktivieren |
 
-Nach der Bestätigung wird die Firewall aktiviert.
-
-**Firewall deaktivieren:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) | 
-|:--:| 
-| `Umschalten`{.action} zum Deaktivieren |
-
-Nach der Bestätigung wird die Firewall deaktiviert.
+Nach der Bestätigung wird die Firewall aktiviert oder deaktiviert.
 
 Regeln bleiben deaktiviert, bis ein Angriff erkannt wird und werden dann aktiv. Diese Logik kann für Regeln verwendet werden, die nur aktiv sein sollen, wenn ein bekannter wiederholter Angriff eintrifft.
 
@@ -164,30 +141,9 @@ Beispiel: Ein Paket für den TCP-Port 80 wird von Regel 2 abgefangen und die fol
 
 ### Schutz vor Angriffen - Aktivität im Scrubbing Center
 
-Unsere Anti-DDoS-Infrastruktur (VAC) verfügt über zwei Betriebsmodusse: **automatisch** und **permanent**. Der Schutz erfolgt über das automatische Scrubbing Center. In diesem Bereich untersucht unsere Technik die Datenpakete und versucht, den DDoS-Datenverkehr zu entfernen, während der legitime Datenverkehr durchgelassen wird.
+Unsere Infrastruktur für DDoS-Schutz (VAC) läuft automatisch. Der Schutz erfolgt über das Scrubbing Center. In diesem Bereich untersucht unsere Technik die Datenpakete und versucht, den DDoS-Datenverkehr zu entfernen, während der legitime Datenverkehr durchgelassen wird.
 
-- **Automatische Abwehr** ist die Standardeinstellung: Alle IPs von OVHcloud werden automatisch protektiert. In der Regel ist dies die beste Wahl für Ihre Dienste. Wird illegitimer Traffic entdeckt, wird das Scrubbing Center aktiviert. Dies wird durch den Status „Erzwungen“ für eine bestimmte IP-Adresse angezeigt. Zu diesem Zeitpunkt ist auch die Edge Network Firewall aktiv. Die Situation normalisiert sich wieder, wenn der Angriff abgemildert wurde und keine verdächtigen Aktivitäten mehr beobachtet werden.
-
-- **Der permanente Schutz** kann über das OVHcloud Kundencenter aktiviert und deaktiviert werden. Bei permanentem Schutz wird die erste Filterstufe permanent angewendet, damit der gesamte Traffic das Schutzsystem durchläuft, bevor er den Server erreicht. Es wird davon abgeraten, diese Option über längere Zeiträume zu aktivieren, es sei denn, Sie bemerken starke Latenzschwankungen, da das Scrubbing Center den Traffic zu häufig umleitet.
-
-Beachten Sie, dass im Vergleich zum automatischen Modus **keine** Erhöhung des Schutzniveaus erreicht wird, wenn dieser Modus aktiviert ist.
-
-So aktivieren Sie die Funktion:
-
-- Klicken Sie auf das Menü `Bare Metal Cloud`{.action}.
-- Gehen Sie zu `Netzwerk`{.action} in der linken Seitenleiste.
-- Gehen Sie zum Abschnitt `IP`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) | 
-|:--:| 
-| Als Nächstes klicken Sie auf die Schaltfläche `...`{.action} rechts von der betreffenden IPv4. |
-
-
-| ![mitigation-option](images/mitigation_menu_step_2.png) |
-|:--:| 
-| Wählen Sie `Mitigation: Permanent mode`{.action}. |
-
-
+Alle IPs von OVHcloud werden automatisch protektiert. In der Regel ist dies die beste Wahl für Ihre Dienste. Wird illegitimer Traffic entdeckt, wird das Scrubbing Center aktiviert. Dies wird durch den Status „Erzwungen“ für eine bestimmte IP-Adresse angezeigt. Zu diesem Zeitpunkt ist auch die Edge Network Firewall aktiv. Die Situation normalisiert sich wieder, wenn der Angriff abgemildert wurde und keine verdächtigen Aktivitäten mehr beobachtet werden.
 
 > [!success]
 > **Hinweis**
@@ -201,11 +157,9 @@ So aktivieren Sie die Funktion:
 > Beachten Sie, dass unsere DDoS-Schutz-Infrastruktur für einen Dienst nicht deaktiviert werden kann. Alle OVHcloud Produkte werden im Rahmen des Schutzes geliefert und können nicht ausgenommen werden.
 >
 
-
 ## Network Security Dashboard
 
 Detaillierte Einblicke in entdeckte Angriffe und die Ergebnisse der Aktivitäten des Scrubbing Centers erhalten Sie in unserem [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
-
 
 ## Fazit
 
@@ -215,4 +169,4 @@ Nachdem Sie dieses Tutorial gelesen haben, sollten Sie in der Lage sein, die Edg
 
 [Game Server mit der Application Firewall schützen](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

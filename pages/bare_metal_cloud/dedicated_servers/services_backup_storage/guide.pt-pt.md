@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar o Backup Storage num servidor dedicado'
 excerpt: 'Saiba como ativar e aceder ao espaço de armazenamento adicional'
-updated: 2025-07-21
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -18,8 +18,8 @@ Os servidores dedicados OVHcloud incluem um espaço de backup suplementar para a
 
 ## Requisitos
 
-* Dispor de um [servidor dedicado](/links/bare-metal/bare-metal){.external} na sua conta OVHcloud.
-* Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+* Dispor de um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud.
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -31,7 +31,7 @@ Os servidores dedicados OVHcloud incluem um espaço de backup suplementar para a
 
 ### Ativar o Backup Storage
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. No separador `Backup Storage`{.action}, clique no botão `Ativar Backup Storage`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. No separador `Backup Storage`{.action}, clique no botão `Ativar Backup Storage`{.action}.
 
 ![Ativar o Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ O acesso ao seu espaço de armazenamento é restrito por endereços IP através 
 
 #### Adicionar um acesso backup
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Adicionar acesso`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Adicionar acesso`{.action}.
 
 ![Adicionar um acesso backup](images/backup-storage03.png){.thumbnail}
 
@@ -111,19 +111,19 @@ Para verificar se o seu endereço IP está corretamente autorizado, utilize a se
 
 ### Reinicializar a sua password
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Perdeu a palavra-passe?`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Perdeu a palavra-passe?`{.action}.
 
 Depois de clicar em `Confirmar`{.action} na janela que aparecer, um e-mail de recuperação da password será enviado para o endereço de e-mail registado na sua conta de administrador. Siga as instruções para reinicializar a sua palavra-passe.
 
 ### Eliminar o Backup Storage
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Eliminar o Backup Storage`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Eliminar o Backup Storage`{.action}.
 
 Clique em `Confirmar`{.action} na mensagem de aviso para proceder à eliminação. O seu Backup Storage será eliminado após alguns minutos. Todos os dados do espaço de armazenamento serão eliminados.
 
 ### Encomendar espaço em disco adicional
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Encomendar espaço de disco`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Encomendar espaço de disco`{.action}.
 
 ![Encomendar espaço em disco adicional](images/backup-storage06.png){.thumbnail}
 
@@ -345,7 +345,11 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
-É possível resolver este problema alterando o registo do Windows: abra o utilitário Windows *regedit* e procure a entrada `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Defina o valor de `AllowInsecureGuestAuth` como "1". Encontre mais informações sobre este assumpto nas [páginas de suporte da Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
+> [!primary]
+>
+> Para corrigir este erro, é necessário alterar o registo do Windows. Para tal, abra o editor do registo (regedit) e aceda à chave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Atribua o valor "1" ao parâmetro `AllowInsecureGuestAuth`.<br>
+> Encontre mais informações sobre este tópico nas [páginas de suporte da Microsoft](https://learn.microsoft.com/pt-pt/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

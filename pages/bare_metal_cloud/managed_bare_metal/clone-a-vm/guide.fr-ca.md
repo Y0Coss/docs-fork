@@ -12,7 +12,7 @@ Le clonage d'une VM permet de créer une copie de la VM source.
 
 ## Prérequis
 
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
 - Disposer d'au moins une VM dans votre cluster.
 - Être connecté à votre [interface vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
@@ -42,9 +42,9 @@ Définissez alors l'emplacement de stockage (espace-disque) cette VM.
 
 Le format de disque virtuel est de type « Thin Provision » (Provisionnement dynamique), ce qui veut dire qu'un disque virtuel sera créé mais il n'utilisera que l'espace-disque réellement employé sur le stockage, peu importe l'espace-disque précédemment utilisé sur la VM source.
 
-Vous retrouverez plus d'explications sur les formats de disque dans [ce guide](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type){.external-link}.
+Vous retrouverez plus d'explications sur les formats de disque dans [ce guide](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type).
 
-Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou l'option [VM encryption](/pages/bare_metal_cloud/managed_bare_metal/vm_encrypt){.external-link}.
+Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou l'option [VM encryption](/pages/bare_metal_cloud/managed_bare_metal/vm_encrypt).
 
 ![stockage vm](images/clonevm04.png){.thumbnail}
 

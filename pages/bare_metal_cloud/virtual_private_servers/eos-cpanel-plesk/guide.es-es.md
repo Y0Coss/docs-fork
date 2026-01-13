@@ -1,7 +1,7 @@
 ---
 title: "Fin del soporte Plesk y cPanel para VPS - Garantizar la continuidad de sus servicios"
 excerpt: "Descubra las fechas de finalización del soporte de los sistemas operativos de su VPS OVHcloud que afectan a las licencias Plesk y cPanel"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Objetivo
@@ -20,15 +20,15 @@ Los editores **Plesk** y **cPanel** anuncian el fin del soporte para los siguien
 
 | Sistema operativo | Producto       | Fin del soporte        |
 | ----------------- | -------------- | ---------------------- |
-| Ubuntu 18.04      | Plesk          | **1 de enero de 2026** |
-| Debian 10         | Plesk          | **1 de enero de 2026** |
-| CentOS 7          | Plesk / cPanel | **1 de enero de 2026** |
-| CloudLinux 7      | Plesk / cPanel | **1 de enero de 2026** |
+| Ubuntu 18.04      | Plesk          | **1 de enero de 2027** |
+| Debian 10         | Plesk          | **1 de enero de 2027** |
+| CentOS 7          | Plesk / cPanel | **1 de enero de 2027** |
+| CloudLinux 7      | Plesk / cPanel | **1 de enero de 2027** |
 
 Para obtener más información sobre los fines de soporte técnico, consulte la documentación oficial:
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}.
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
 
 ### ¿Qué hacer en concreto?
 
@@ -37,8 +37,8 @@ Para obtener más información sobre los fines de soporte técnico, consulte la 
 > Desde un punto de vista **seguridad**, seguir utilizando un SO no compatible le expone a ataques.
 > Le recomendamos que lea:
 >
-> - [las recomendaciones de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
-> - [las recomendaciones de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> - [las recomendaciones de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+> - [las recomendaciones de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
 
 #### 1. Comprobar el sistema actual
 
@@ -54,8 +54,8 @@ Si su sistema operativo ya no es compatible, migre a un sistema compatible recom
 
 Consulte la documentación oficial de los SO compatibles:
 
-- [Lista de SO soportados por Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [Lista de SO compatibles con cPanel](https://docs.cpanel.net/installation-guide/system-requirements/){.external}.
+- [Lista de SO soportados por Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [Lista de SO compatibles con cPanel](https://docs.cpanel.net/installation-guide/system-requirements/).
 
 #### 3. Migrar el servicio
 
@@ -74,20 +74,26 @@ Contrate un nuevo VPS con un SO compatible si aún no lo ha hecho. [Instale cPan
 
 Utilice la herramienta de migración que prefiera. Estas herramientas permiten transferir automáticamente sitios web, bases de datos, cuentas de correo y configuraciones de un VPS a otro:
 
-- Plesk Migrator - [Documentación oficial](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
-- cPanel Transfer Tool - [Documentación oficial](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
+- Plesk Migrator - [Documentación oficial](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/).
+- cPanel Transfer Tool - [Documentación oficial](https://docs.cpanel.net/whm/transfers/transfer-tool/).
 
 **Opción C — Actualización directa del SO sin reinstalación ni migración (usuarios avanzados)**
 
 Si no puede desplegar un nuevo VPS, algunas herramientas permiten **actualizar directamente su sistema operativo** conservando Plesk o cPanel instalado. Este método es para usuarios avanzados, ya que puede suponer un riesgo si se ejecuta incorrectamente.
 
-- Para **Plesk** (cambio de CentOS 7 a AlmaLinux 8), utilice el script `centos2alma` ofrecido por la [documentación oficial de Plesk](https://github.com/plesk/centos2alma){.external}. Consulte también las instrucciones detalladas del [soporte de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
+- Para **Plesk** (cambio de CentOS 7 a AlmaLinux 8), utilice el script `centos2alma` ofrecido por la [documentación oficial de Plesk](https://github.com/plesk/centos2alma). Consulte también las instrucciones detalladas del [soporte de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983).
 
-- Para **cPanel** (cambio de CentOS 7 a AlmaLinux 8), utilice la herramienta **Elevate** que ofrece la [documentación oficial de cPanel](https://cpanel.github.io/elevate/){.external}.
+- Para **cPanel** (cambio de CentOS 7 a AlmaLinux 8), utilice la herramienta **Elevate** que ofrece la [documentación oficial de cPanel](https://cpanel.github.io/elevate/).
 
 > [!primary]
 >
 > Estas herramientas no están garantizadas al 100% y requieren copias de seguridad completas antes de proceder. Asimismo, asegúrese de que su VPS dispone de recursos suficientes (RAM, CPU y disco).
+
+### Buenas prácticas de seguridad
+
+Independientemente de Plesk/cPanel, es esencial **mantener el sistema operativo de su VPS actualizado** para beneficiarse de los parches de seguridad, la compatibilidad del software y el soporte del editor. Si su distribución está en **fin de vida (EOL)**, planifique una **actualización** o una **migración** a una versión aún soportada.
+
+Para conocer las fechas de fin de vida y de fin de soporte de las imágenes y los sistemas operativos (VPS & Public Cloud), consulte nuestro guía "[Public Cloud & VPS - Ciclo de vida y anuncios de fin de vida y soporte de imágenes y distribuciones](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Más información <a name="go-further"></a>
 

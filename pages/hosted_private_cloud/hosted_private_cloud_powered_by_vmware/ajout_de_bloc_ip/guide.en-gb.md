@@ -40,7 +40,7 @@ You will need to fill in several fields in order to create your IP block.
 
 > [!primary]
 >
-> Please feel free to refer to our guide on the [OVHcloud Network plugin](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/plugin_ovh_network){.external-link} to find out which IPs are reserved for your block, as well as how they are used.
+> Please feel free to refer to our guide on the [OVHcloud Network plugin](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/plugin_ovh_network) to find out which IPs are reserved for your block, as well as how they are used.
 >
 
 - The country an IP block is hosted in is important in some cases, for your services’ SEO ranking (a website based in France will have a higher SEO ranking in France if the IP address is French, too).
@@ -93,7 +93,7 @@ If you need to detach the IP block, you can use the following API call to move t
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager){.external} in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager) in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 

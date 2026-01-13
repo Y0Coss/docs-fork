@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2025-04-15
+updated: 2025-07-31
 ---
 
 ## Public Cloud Databases
@@ -35,22 +35,17 @@ See our [MongoDB Capabilities and limitations](/pages/public_cloud/public_cloud_
 Valkey is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
 See our [Valkey Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
 
-### Cassandra
-
-Apache Cassandra is an open-source fully managed NoSQL database. It's highly fault-tolerant with asynchronous replication.<br>
-See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_cloud_databases/cassandra_01_capabilities) guide.
-
 ## Feature Availability
 
-| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Valkey | Cassandra |
-|--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|-----------|
-| End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Read-only nodes                                                                                              | ✓     | ✓          | ✓                |       |           |
-| Point in Time Recovery                                                                                       | ✓     | ✓          | ✓ <sup>(1)</sup> |       |           |
-| Database forking                                                                                             | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Terraform Provider support ([more information](https://registry.terraform.io/providers/ovh/ovh/latest/docs)) | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Private network connectivity (vRack)                                                                         | ✓     | ✓          | ✓                | ✓     | ✓         |
+| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Valkey |
+|--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|
+| End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     |
+| Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     |
+| Read-only nodes                                                                                              | ✓     | ✓          | ✓                |       |
+| Point in Time Recovery                                                                                       | ✓     | ✓          | ✓ <sup>(1)</sup> |       |
+| Database forking                                                                                             | ✓     | ✓          | ✓                | ✓     |
+| Terraform Provider support ([more information](https://registry.terraform.io/providers/ovh/ovh/latest/docs)) | ✓     | ✓          | ✓                | ✓     |
+| Private network connectivity (vRack)                                                                         | ✓     | ✓          | ✓                | ✓     |
 
 (1) depends on the plan
 
@@ -61,24 +56,24 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 The Essential plan typically offers the basic features and functionalities required for managing a database.
 It is designed for test and development environments or non-critical projects.
 
-### Business
+### Business/Production
 
-The Business plan is more comprehensive and suitable for organizations with higher database demands.
+The Business/Production plan is more comprehensive and suitable for organizations with higher database demands.
 This is the first production-ready offering.
 
-### Enterprise
+### Enterprise/Advanced
 
-The enterprise pricing plan is the most advanced and robust option available for managed databases.
+The Enterprise/Advanced pricing plan is the most advanced and robust option available for managed databases.
 It is dedicated to organizations with complex and high-performance database requirements.
 
 ### Plan capabilities overview
 
 Here is an overview of the various plans' capabilities:
 
-| Feature           | Essential | Business | Enterprise |
-|-------------------|-----------|----------|------------|
-| SLA               | None      | 99.9%    | 99.95%     |
-| High availability |           | ✓        | ✓          |
+| Feature           | Essential | Business/Production Single AZ | Enterprise/Advanced Single AZ | Production Multi AZ | Advanced Multi AZ |
+|-------------------|-----------|-------------------------------|-------------------------------|---------------------|-------------------|
+| SLA               | None      | 99.9%                         | 99.95%                        | 99.95%              | 99.99%            |
+| High availability |           | ✓                             | ✓                             | ✓                   | ✓                 |
 
 Your choice of plan affects the number of nodes your cluster can run.
 

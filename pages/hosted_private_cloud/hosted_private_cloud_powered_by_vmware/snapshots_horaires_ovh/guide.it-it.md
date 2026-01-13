@@ -16,7 +16,7 @@ Per assicurare continuità di servizio ed evitare perdite di dati, OVHcloud real
 
 ## Prerequisiti
 
-* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} sul proprio account OVHcloud
+* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) sul proprio account OVHcloud
 * Accedere all'interfaccia di gestione vSphere Web Client HTML
 
 ## Procedura
@@ -79,7 +79,7 @@ Si tratta di una sicurezza normalmente utilizzata da OVHcloud, gli Snapshot orar
 
 Si tratta di una sicurezza aggiuntiva per uso interno installata sui datastore che deve essere utilizzata solo come ultima risorsa per prevenire una possibile perdita di dati.
 
-Ti consigliamo di utilizzare una soluzione completa di backup, come il servizio [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external-link} o qualsiasi altro sistema che effettui un backup completo delle tue macchine virtuali.
+Ti consigliamo di utilizzare una soluzione completa di backup, come il servizio [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) o qualsiasi altro sistema che effettui un backup completo delle tue macchine virtuali.
 
 ## Per saperne di più
 

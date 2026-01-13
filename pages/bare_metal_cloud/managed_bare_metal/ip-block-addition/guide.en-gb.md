@@ -12,8 +12,8 @@ IP blocks can be used to make your services accessible online.
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](/links/manager){.external}
-* a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/){.external} on your OVHcloud account
+* access to the [OVHcloud Control Panel](/links/manager)
+* a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/) on your OVHcloud account
 
 ## Instructions
 
@@ -40,7 +40,7 @@ You will need to fill in several fields in order to create your IP block.
 
 > [!primary]
 >
-> Please feel free to refer to our guide on the [OVHcloud Network plugin](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network){.external-link} to find out which IPs are reserved for your block, as well as how they are used.
+> Please feel free to refer to our guide on the [OVHcloud Network plugin](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network) to find out which IPs are reserved for your block, as well as how they are used.
 >
 
 - The country an IP block is hosted in is important in some cases, for your services’ SEO ranking (a website based in France will have a higher SEO ranking in France if the IP address is French, too).
@@ -86,7 +86,7 @@ Next, use this API call to move the IP into the IP parking space:
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager){.external} in the `Bare Metal Cloud`{.action} section, then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager) in the `Bare Metal Cloud`{.action} section, then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 

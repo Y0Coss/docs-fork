@@ -1,7 +1,7 @@
 ---
 title: 'Demander et suivre une portabilité de numéro'
 excerpt: "Apprenez à porter un ou plusieurs numéros chez OVHcloud et à suivre l'avancement du processus"
-updated: 2025-04-28
+updated: 2025-12-30
 ---
 
 ## Objectif
@@ -12,9 +12,9 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 
 ## Prérequis
 
-- Disposer d'au moins un numéro de téléphone chez un autre opérateur, dont le pays est compatible avec [la portabilité chez OVHcloud](/links/telecom/telephonie-services-inclus-portabilite-numero){.external}.
-- Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
+- Disposer d'au moins un numéro de téléphone chez un autre opérateur, dont le pays est compatible avec [la portabilité chez OVHcloud](/links/telecom/telephonie-services-inclus-portabilite-numero).
+- Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie).
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Vos choix faits, cliquez sur `Suivant`{.action}.
 
 La dernière étape consiste à finaliser votre demande de portabilité. Prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Cliquez ensuite sur `Commander`{.action} et validez le bon de commande qui vous sera présenté. 
 
-Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
+Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite) » de cette documentation. 
 
 #### Porter une tranche de numéros <a name="tranche-numeros"></a>
 
@@ -119,7 +119,7 @@ Verifiez bien que l'adresse et le nom du titulaire correspondent. En cas d'erreu
 
 Si les informations sont valides, prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Finalisez votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté.
 
-Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois, **depuis votre espace client**, au format PDF.
+Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois et comportant le cachet au nom de votre entreprise, **depuis votre espace client**, au format PDF.
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF.
 
@@ -132,7 +132,7 @@ Avant la validation manuelle du mandat par nos services techniques, vous pouvez,
 
 ![numberport](images/porting-number-step7-2.png){.thumbnail}
 
-Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
+Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite) » de cette documentation.
 
 #### Porter un numéro spécial de Services à Valeur Ajoutée (SVA) <a name="numero-special"></a>
 

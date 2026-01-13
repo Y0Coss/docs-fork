@@ -118,4 +118,4 @@ HTTP/2 200
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com).

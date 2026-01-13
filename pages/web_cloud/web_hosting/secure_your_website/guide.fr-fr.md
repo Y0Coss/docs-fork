@@ -1,7 +1,7 @@
 ---
 title: "Comment sécuriser un site Web ?"
 excerpt: "Découvrez les bonnes pratiques pour renforcer la sécurité de votre site Web en quelques étapes"
-updated: 2024-01-26
+updated: 2025-12-29
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
-- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress), ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
@@ -32,7 +32,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 
 Cette première étape est primordiale. En effet, l'infection de votre poste informatique par un logiciel malveillant peut potentiellement donner accès, à une personne mal intentionnée, à l'ensemble de vos saisies effectuées sur votre clavier. Par conséquent, les identifiants que vous utilisez pour vous connecter à votre espace client OVHcloud ou à l'interface d'administration de votre site peuvent être compromis.
 
-Par ailleurs, le phénomène croissant des [rançongiciels](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares){.external} (environ 400 cas en France en 2020) peut non seulement amener au chiffrement de l'ensemble de vos données personnelles, mais aussi mettre en péril votre activité en rendant inaccessible l'ensemble de vos données, appareils et logiciels. 
+Par ailleurs, le phénomène croissant des [rançongiciels](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares) (environ 400 cas en France en 2020) peut non seulement amener au chiffrement de l'ensemble de vos données personnelles, mais aussi mettre en péril votre activité en rendant inaccessible l'ensemble de vos données, appareils et logiciels. 
 
 Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
@@ -75,9 +75,16 @@ Nous vous recommandons aussi de vérifier régulièrement la **validité des moy
 
 ### Étape 6 - Vérifier que votre site web est à jour
 
-Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-mettre-a-jour-votre-site-internet).
+Assurez-vous que votre site web est maintenu à jour, tant au niveau du contenu que des composants techniques (CMS, extensions, versions de PHP et dépendances).
 
-Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
+Si vous utilisez un CMS, consultez sa documentation officielle pour le mettre à jour :
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/fr)
+
+Veillez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
 
 ### Étape 7 - Activer le HTTPS
 
@@ -91,10 +98,10 @@ Les formulaires des sites Internet sont des cibles privilégiées des hackers/sp
 
 Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS :
 
-- [WordPress](https://fr.wordpress.org/){.external}
-- [Joomla](https://www.joomla.fr/){.external}
-- [Drupal](https://www.drupal.fr/){.external}
-- [PrestaShop](https://www.prestashop.com/fr){.external}
+- [WordPress](https://fr.wordpress.org/)
+- [Joomla](https://www.joomla.fr/)
+- [Drupal](https://www.drupal.fr/)
+- [PrestaShop](https://www.prestashop.com/fr)
 
 ### Étape 10 - Vérifier si des fichiers malveillants sont présents sur votre hébergement web
 
@@ -108,7 +115,7 @@ Les [sauvegardes des données](#backup) de votre site (fichiers FTP et base de d
 
 Pour autant, elles ne constituent pas une sécurité absolue. Vous devez notamment aussi tester les sauvegardes de votre base de données, afin de vérifier qu'elles ne sont pas corrompues.
 
-Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tout point à celle de nos [serveurs d'hébergement mutualisé](https://webhosting-infos.hosting.ovh.net/).
+Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/). Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tout point à celle de nos [serveurs d'hébergement mutualisé](https://webhosting-infos.hosting.ovh.net/).
 
 Vous pouvez également créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
 

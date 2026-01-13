@@ -1,7 +1,7 @@
 ---
 title: "Plesk und cPanel: End of Support für VPS - Gewährleistung der Kontinuität Ihrer Dienste"
 excerpt: "Erfahren Sie, ab wann die Plesk- und cPanel-Betriebssysteme Ihres OVHcloud VPS nicht mehr unterstützt werden"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Ziel
@@ -20,15 +20,15 @@ Die Herausgeber von **Plesk** und **cPanel** kündigen das Ende der Unterstützu
 
 | Betriebssystem | Produkt      | Ende des Supports  |
 | -------------- | ------------ | ------------------ |
-| Ubuntu 18.04   | Plesk        | **1. Januar 2026** |
-| Debian 10      | Plesk        | **1. Januar 2026** |
-| CentOS 7       | Plesk/cPanel | **1. Januar 2026** |
-| CloudLinux 7   | Plesk/cPanel | **1. Januar 2026** |
+| Ubuntu 18.04   | Plesk        | **1. Januar 2027** |
+| Debian 10      | Plesk        | **1. Januar 2027** |
+| CentOS 7       | Plesk/cPanel | **1. Januar 2027** |
+| CloudLinux 7   | Plesk/cPanel | **1. Januar 2027** |
 
 Weitere Informationen zum Support finden Sie in der offiziellen Dokumentation:
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/)
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/)
 
 ### Was kann ich konkret tun?
 
@@ -37,8 +37,8 @@ Weitere Informationen zum Support finden Sie in der offiziellen Dokumentation:
 > Aus der Sicht der **Sicherheit** birgt die fortgesetzte Verwendung eines nicht unterstützten Betriebssystems ein erhöhtes Risiko für Angriffe.  
 > Wir empfehlen, hierzu die folgenden Informationen zu beachten:
 >
-> - [cPanel Recommendations](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}
-> - [Plesk Recommendations](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}
+> - [cPanel Recommendations](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/)
+> - [Plesk Recommendations](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/)
 
 #### 1. Aktuelles System überprüfen
 
@@ -54,8 +54,8 @@ Wenn Ihr installiertes Betriebssystem nicht mehr unterstützt wird, migrieren Si
 
 Weitere Informationen finden Sie in der offiziellen Dokumentation zu unterstützten Betriebssystemen:
 
-- [Liste der von Plesk unterstützten Betriebssysteme](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}
-- [Liste der cPanel kompatiblen Betriebssysteme](https://docs.cpanel.net/installation-guide/system-requirements/){.external}
+- [Liste der von Plesk unterstützten Betriebssysteme](https://docs.plesk.com/release-notes/obsidian/system-requirements/)
+- [Liste der cPanel kompatiblen Betriebssysteme](https://docs.cpanel.net/installation-guide/system-requirements/)
 
 #### 3. Dienst migrieren
 
@@ -74,20 +74,26 @@ Bestellen Sie einen neuen VPS mit einem kompatiblen Betriebssystem, falls Sie di
 
 Verwenden Sie ein Tool zur Migration. Mit diesen Tools können Sie Ihre Websites, Datenbanken, E-Mail-Accounts und Konfigurationen automatisch von einem VPS auf einen anderen übertragen:
 
-- Plesk Migrator - [Offizielle Dokumentation](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}
-- cPanel Transfer Tool - [Official documentation](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}
+- Plesk Migrator - [Offizielle Dokumentation](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/)
+- cPanel Transfer Tool - [Official documentation](https://docs.cpanel.net/whm/transfers/transfer-tool/)
 
 **Option C - Direktes Betriebssystem-Update ohne Neuinstallation oder Migration (erfahrene Benutzer)**
 
 Wenn Sie keinen neuen VPS bereitstellen können, können Sie bestimmte Tools verwenden, um **Ihr Betriebssystem direkt zu aktualisieren**, während Plesk oder cPanel installiert bleibt. Diese Methode ist für fortgeschrittene Benutzer vorgesehen, da sie Risiken birgt, wenn sie falsch ausgeführt wird.
 
-- **Plesk** (Wechsel von CentOS 7 zu AlmaLinux 8): Verwenden Sie das Skript `centos2alma`, wie in der [offiziellen Plesk-Dokumentation](https://github.com/plesk/centos2alma){.external} erklärt. Siehe auch die ausführlichen Anweisungen in [Plesk Support](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
+- **Plesk** (Wechsel von CentOS 7 zu AlmaLinux 8): Verwenden Sie das Skript `centos2alma`, wie in der [offiziellen Plesk-Dokumentation](https://github.com/plesk/centos2alma) erklärt. Siehe auch die ausführlichen Anweisungen in [Plesk Support](https://support.plesk.com/hc/en-us/articles/12377714344983).
 
-- **cPanel** (Wechsel von CentOS 7 zu AlmaLinux 8): Verwenden Sie das Tool **Elevate**, wie in der [offiziellen cPanel-Dokumentation](https://cpanel.github.io/elevate/){.external} beschrieben.
+- **cPanel** (Wechsel von CentOS 7 zu AlmaLinux 8): Verwenden Sie das Tool **Elevate**, wie in der [offiziellen cPanel-Dokumentation](https://cpanel.github.io/elevate/) beschrieben.
 
 > [!primary]
 >
-> Für diese Tools wird keine Garantie übernommen und sollten nicht ohne vorherige vollständige genutzt werden. Stellen Sie außerdem sicher, dass Ihr VPS über ausreichende Ressourcen verfügt (RAM, CPU, Storage).
+> Für diese Tools wird keine Garantie übernommen und sie sollten nicht ohne vorheriges Erzeugen von Backups genutzt werden. Stellen Sie außerdem sicher, dass Ihr VPS über ausreichende Ressourcen verfügt (RAM, CPU, Storage).
+
+### Best Practices Sicherheit
+
+Unabhängig von Plesk/cPanel ist es wichtig, das Betriebssystem Ihres VPS auf dem neuesten Stand zu halten, um Sicherheitsupdates, Softwarekompatibilität und Herstellersupport zu erhalten. Wenn Ihre Distribution **End-of-Life (EOL)** ist, planen Sie eine **Aktualisierung** oder eine **Migration** auf eine weiterhin unterstützte Version.
+
+Um die Terminierung von End-of-Life und End-of-Support für Images und Betriebssysteme (VPS & Public Cloud) zu erfahren, konsultieren Sie: "[Public Cloud & VPS - Lebenszyklus und End-of-Life-/Support für Images und Distributionen](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
