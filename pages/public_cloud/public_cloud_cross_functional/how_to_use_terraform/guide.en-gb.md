@@ -565,19 +565,25 @@ terraform apply
 
 #### Creating a Public Cloud project
 
-You can also create an OVHcloud project directly as code, through Terraform.
+You can create an OVHcloud Public Cloud project programmatically using Terraform.
 
-Nevertheless, two conditions apply:
+Before creating a project via Terraform, you must have created **at least one Public Cloud project** through the OVHcloud Control Panel.  
 
-- You must have at least 3 Public Cloud projects (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
-- You must have created a Public Cloud project during the last 3 months.
+This initial project creation is required to:
 
-If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
-In that case, the only solution is to use the [OVHcloud Control Panel](/links/manager) to create a project.<br>
-You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
+- Accept the Public Cloud Terms and Conditions
+- Register and validate a payment method on your account
 
-Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
-We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
+If this prerequisite is not met, the API will return the following error: `"Found eligibility issues: challengePaymentMethod"`.
+
+In this situation, project creation via Terraform is not possible.
+
+To resolve this issue, you must:
+
+1. Create a Public Cloud project manually from the OVHcloud Control Panel
+2. Complete the payment method ownership verification process (the exact challenge depends on the payment method and account configuration)
+
+Once this validation is completed, you will be able to create additional projects using Terraform.
 
 Create a file named `project.tf` and enter the following lines:
 

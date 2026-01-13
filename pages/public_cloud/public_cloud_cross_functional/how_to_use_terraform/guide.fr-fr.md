@@ -566,19 +566,25 @@ terraform apply
 
 #### Création d'un projet Public Cloud
 
-La création d'un projet OVHcloud est également possible directement par code, via Terraform.
+Vous pouvez créer un projet OVHcloud Public Cloud par programmation à l'aide de Terraform.
 
-Néanmoins, deux conditions s’appliquent :
+Avant de créer un projet via Terraform, vous devez avoir créé **au moins un projet Public Cloud** via l'espace client OVHcloud.  
 
-- Vous devez avoir au moins 3 projets Public Cloud (notez qu'il y a une limite par défaut de 3 projets maximum). Afin de débloquer cette limite, merci d’effectuer une demande auprès de notre support.
-- Avoir créé un projet Public Cloud au cours des 3 derniers mois.
+Cette création initiale de projet est nécessaire pour :
 
-Si l'une de ces conditions n'est pas remplie, vous obtiendrez l'erreur suivante :  `Found eligibility issues: challengePaymentMethod`.<br>
-Dans ce cas, la seule solution est de vous connecter à votre [espace client OVHcloud](/links/manager) pour créer un projet.<br>
-Vous serez alors invité à valider que vous êtes bien le propriétaire des moyens de paiement utilisés sur ce compte (cette validation dépend des moyens de paiement et d'autres paramètres).
+- Accepter les conditions générales d'utilisation du Public Cloud
+- Enregistrer et valider un moyen de paiement sur votre compte
 
-Ces règles et ces actions supplémentaires ont été mises en place pour offrir une sécurité supplémentaire aux clients ayant pu divulguer leurs identifiants OVHcloud. Nous vous remercions donc de votre compréhension.<br>
-Nous allons essayer de continuer à améliorer ces règles à l’avenir afin de faciliter les scénarii d’Infra-as-code, comme celui de « public cloud project as code ».
+Si cette condition préalable n'est pas remplie, l'API renverra l'erreur suivante : `"Found eligibility issues: challengePaymentMethod"`.
+
+Dans ce cas, la création de projet via Terraform n'est pas possible.
+
+Pour résoudre ce problème, vous devez :
+
+1. Créer manuellement un projet Public Cloud depuis l'espace client OVHcloud
+2. Effectuer la vérification de propriété du moyen de paiement (le défi exact dépend du moyen de paiement et de la configuration du compte)
+
+Une fois cette validation effectuée, vous pourrez créer des projets supplémentaires à l'aide de Terraform.
 
 Créez un fichier nommé `project.tf` et saisissez les lignes suivantes :
 
