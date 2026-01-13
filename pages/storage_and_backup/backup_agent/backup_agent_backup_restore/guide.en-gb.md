@@ -125,7 +125,7 @@ Launching a restore will give you a final window that will show the transfer:
 
 Baremetal Recovery is a Veeam feature that involves creating a custom ISO in advance, which can then be used to boot a system and restore it from a backup stored on a different server.
 
-Read this guide for more information: [Bare Metal recovery with Veeam Backup Agent](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_agent_bare_metal_recovery).
+Read this guide for more information: [Backup Agent - Bare Metal recovery with Veeam Backup Agent](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_agent_bare_metal_recovery).
 
 You will need to adapt the server and credentials to match the ones we have provided.
 
