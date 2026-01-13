@@ -10,7 +10,7 @@ In dieser Anleitung wird erläutert, wie Sie einen Block Storage Volume vom Typ 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager) oder auf die [Horizon-Schnittstelle](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
+- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager) oder auf das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt.
 
 ## In der praktischen Anwendung
@@ -23,9 +23,9 @@ Diese Änderung kann über Horizon oder OpenStack CLI vorgenommen werden.
 
 > [!warning]
 >
-> Wenn das Block Storage-Volumen an eine Instanz angeschlossen ist, müssen Sie es vorab abkoppeln. Weitere Informationen finden Sie im Abschnitt **Volume abtrennen** des Leitfadens "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/Compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume)".
+> Wenn das Block Storage-Volumen an eine Instanz angeschlossen ist, müssen Sie es abtrennen. Weitere Informationen finden Sie im Abschnitt **Volume abtrennen** in "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/Compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume)".
 >
-> Das Ändern des Volumetyps (Retyping) über das OVHcloud Kundencenter oder die OVHcloud API ist nur für nicht verschlüsselte Volumen verfügbar. Volumen des Typs **-LUKS** können über diese Schnittstellen nicht retypisiert werden.
+> Das Ändern des Volumetyps (Retyping) über das OVHcloud Kundencenter oder die OVHcloud API ist nur für nicht verschlüsselte Volumes verfügbar. Volumes des Typs **-LUKS** können über diese Schnittstellen nicht retypisiert werden.
 >
 > Retyping wird über OpenStack / Horizon nur für **-LUKS** zu **-LUKS** Volumen unterstützt. In diesem Fall ist die Wiederherstellung des Volumens nach dem Retyping nicht möglich.
 >
