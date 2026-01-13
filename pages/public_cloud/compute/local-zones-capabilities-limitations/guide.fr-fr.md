@@ -22,16 +22,17 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 |                       | GPU                        | Non | |
 |                       | Instance backup            | Oui | |
 |                       | Distant backup             | Non | |
+|                       | Backup Workflow management | Oui | |
 |                       | Image Linux                | Oui | |
 |                       | Images Windows             | Non | |
-|                       | Workflow                   | Oui | |
 |                       | Téléchargez votre propre image | Oui | Taille d'image limitée à 25 Go maximum |
 | Network               | Load Balancer              | Non | |
 |                       | Gateway                    | Non | |
 |                       | Floating IP                | Non | |
+|                       | Additional IP              | Non | |
 |                       | Private Network with vRack | Non | Les zones locales ne sont pas compatibles avec vRack. Les réseaux privés sont limités à la même zone locale uniquement. Le protocole DHCP est pris en charge sur les réseaux privés locaux. |
-| Storage               | Object Storage             | Oui | 1. Politiques utilisateur non prises en charge. Toutes les clés d'accès d'un projet peuvent accéder à tous les compartiments de toutes les zones locales. </br> 2. Seule la classe de stockage Standard est prise en charge. </br> 3. Fonctionnalités S3 non prises en charge : balises S3, conservation légale, SSE-OMK, réplication S3, journalisation des accès au serveur. |
-|                       | Block Storage              | Oui | Pas de prise en charge du chiffrement. Les volumes classiques ne peuvent pas être multi-connectés. Les volumes classiques sont limités à 250 IOPS (contre 500 IOPS dans les régions 3AZ). Taille maximale de 4 To (contre 12 To). |
+| Storage               | Object Storage             | Oui | 1. Politiques utilisateur non prises en charge. Toutes les clés d'accès d'un projet peuvent accéder à tous les compartiments de toutes les zones locales. </br> 2. Seule la classe de stockage Standard est prise en charge. </br> 3. 3. Fonctionnalités S3 non prises en charge : tags S3, Legal Hold, SSE-OMK, réplication S3, server access logging. |
+|                       | Block Storage              | Oui | Pas de prise en charge du chiffrement. Les volumes classiques ne peuvent pas être multi-connectés. Les volumes classiques sont limités à 250 IOPS (contre 500 IOPS dans les régions 1AZ et 3AZ). Taille maximale de 4 To (contre 12 To). |
 |                       | File Storage               | Non | |
 | Container             | Managed Kubernetes Service | Non | |
 |                       | Managed Rancher Service    | Non | |
@@ -55,3 +56,5 @@ Les instances en Local Zone ne peuvent pas contacter de serveurs SMTP.
 N’hésitez pas à nous faire part de vos questions, retours et suggestions pour améliorer le service :
 
 - Sur le [serveur Discord OVHcloud](https://discord.gg/ovhcloud)
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

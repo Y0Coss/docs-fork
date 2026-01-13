@@ -23,16 +23,17 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 |                       | GPU                        | No | |
 |                       | Instance backup            | Yes | |
 |                       | Distant backup             | No | |
+|                       | Backup Workflow management | Yes | |
 |                       | Image Linux                | Yes | |
 |                       | Images Windows             | No | |
-|                       | Workflow                   | Yes | |
 |                       | Upload your own image      | Yes | Image size limited to 25 GB maximum |
 | Network               | Load Balancer              | No | |
 |                       | Gateway                    | No | |
 |                       | Floating IP                | No | |
+|                       | Additional IP              | No | |
 |                       | Private Network with vRack | No | Local Zones are not compatible with vRack. Private networks are limited to the same Local Zone only. DHCP is supported on Local Private Networks. |
 | Storage               | Object Storage             | Yes | 1. User policies not supported. all access keys within a project can access all buckets across all Local Zones. </br> 2. Only Standard storage class supported. </br> 3. S3 features not supported: S3 tags, Legal Hold, SSE-OMK, S3 replication, Server access logging. |
-|                       | Block Storage              | Yes | No encryption support. Classic volumes cannot be multi-attached. Classic volumes limited to 250 IOPS (vs 500 IOPS in 3AZ regions). Maximum size 4 TB (vs 12 TB). |
+|                       | Block Storage              | Yes | No encryption support. Classic volumes cannot be multi-attached. Classic volumes limited to 250 IOPS (vs 500 IOPS in 1AZ and 3AZ regions). Maximum size 4 TB (vs 12 TB). |
 |                       | File Storage               | No | |
 | Container             | Managed Kubernetes Service | No | |
 |                       | Managed Rancher Service    | No | |
@@ -56,3 +57,5 @@ Instances in the Local Zone cannot contact SMTP servers.
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
