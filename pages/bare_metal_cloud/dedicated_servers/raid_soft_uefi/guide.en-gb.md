@@ -1164,7 +1164,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 
 /// details | **Unfold this section**
 
-> [tabs]
+> [!tabs]
 > **Using rescue mode**
 >>
 >> Outside the `chroot` environment, recreate the [SWAP] partition **nvme0n1p4** and add the label `swap-nvmenxxx`:

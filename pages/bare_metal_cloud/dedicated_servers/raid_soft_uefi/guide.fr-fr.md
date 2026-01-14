@@ -58,7 +58,7 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
 - [Simulation d'une panne de disque](#diskfailure)
     - [Retirer le disque défectueux](#diskremove)
 - [Reconstruction du RAID (avec des ESP non-mirrorrées)](#raidrebuildnonmirrored)
-    - [Reconstruction du RAID après le remplacement du disque principal (mode rescue)](nonmirroredrescuemode)
+    - [Reconstruction du RAID après le remplacement du disque principal (mode rescue)](#nonmirroredrescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
     - [Reconstruction du RAID avec des ESP non synchronisés après des mises à jour majeures du système (GRUB)](#efiraidgrub)
     - [Reconstruction du RAID après le remplacement du disque principal (mode normal)](#nonmirrorednormalmode)
@@ -1152,12 +1152,15 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> ```
 >>
 >> Une fois la reconstruction du RAID terminée, consultez [cette section](#swap-partition) pour recréer la partition SWAP (le cas échéant).
+>>
+
+///
 
 #### Ajout de l'étiquette à la partition SWAP (si applicable) <a name="swap-partition"></a>
 
 /// details | **Dépliez cette section**
 
-> [tabs]
+> [!tabs]
 > **Via le mode Rescue**
 >>
 >> Hors de l'environnement `chroot`, recréez la partition [SWAP] **nvme0n1p4** et ajoutez le label `swap-nvmenxxx` :
