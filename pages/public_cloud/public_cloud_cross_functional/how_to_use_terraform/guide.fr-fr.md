@@ -3,7 +3,7 @@ title: Comment utiliser Terraform sur le Public Cloud OVHcloud
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
-updated: 2026-01-13
+updated: 2026-01-14
 ---
 
 ## Objectif
@@ -568,12 +568,12 @@ terraform apply
 
 Vous pouvez créer un projet OVHcloud Public Cloud par programmation à l'aide de Terraform.
 
-Avant de créer un projet via Terraform, vous devez avoir créé **au moins un projet Public Cloud** via l'espace client OVHcloud.  
+Avant de créer un projet via Terraform, vous devez avoir créé **au moins un projet Public Cloud** via l'espace client OVHcloud.
 
 Cette création initiale de projet est nécessaire pour :
 
-- Accepter les conditions générales d'utilisation du Public Cloud
-- Enregistrer et valider un moyen de paiement sur votre compte
+- accepter les conditions générales d'utilisation du Public Cloud ;
+- enregistrer et valider un moyen de paiement sur votre compte.
 
 Si cette condition préalable n'est pas remplie, l'API renverra l'erreur suivante : `"Found eligibility issues: challengePaymentMethod"`.
 
@@ -581,8 +581,8 @@ Dans ce cas, la création de projet via Terraform n'est pas possible.
 
 Pour résoudre ce problème, vous devez :
 
-1. Créer manuellement un projet Public Cloud depuis l'espace client OVHcloud
-2. Effectuer la vérification de propriété du moyen de paiement (le défi exact dépend du moyen de paiement et de la configuration du compte)
+1. [Créer manuellement un projet Public Cloud depuis l'espace client OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+2. Effectuer la vérification de propriété du moyen de paiement (le défi exact dépend du moyen de paiement et de la configuration du compte).
 
 Une fois cette validation effectuée, vous pourrez créer des projets supplémentaires à l'aide de Terraform.
 

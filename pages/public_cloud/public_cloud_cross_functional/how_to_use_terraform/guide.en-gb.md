@@ -3,7 +3,7 @@ title: How to use Terraform
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2026-01-13
+updated: 2026-01-14
 ---
 
 ## Objective
@@ -567,7 +567,7 @@ terraform apply
 
 You can create an OVHcloud Public Cloud project programmatically using Terraform.
 
-Before creating a project via Terraform, you must have created **at least one Public Cloud project** through the OVHcloud Control Panel.  
+Before creating a project via Terraform, you must have created **at least one Public Cloud project** through the OVHcloud Control Panel.
 
 This initial project creation is required to:
 
@@ -580,7 +580,7 @@ In this situation, project creation via Terraform is not possible.
 
 To resolve this issue, you must:
 
-1. Create a Public Cloud project manually from the OVHcloud Control Panel
+1. [Create a Public Cloud project manually from the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 2. Complete the payment method ownership verification process (the exact challenge depends on the payment method and account configuration)
 
 Once this validation is completed, you will be able to create additional projects using Terraform.
