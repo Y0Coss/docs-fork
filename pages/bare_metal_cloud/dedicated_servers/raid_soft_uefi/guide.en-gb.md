@@ -1090,7 +1090,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-12-16-15-40-00-00
 >> ```
 >>
->> Once done, consult [this section](#swap-rescue) to reacreate the SWAP partition (if applicable).
+>> Once done, consult [this section](#swap-partition) to reacreate the SWAP partition (if applicable).
 >>
 > **In normal mode**
 >>
