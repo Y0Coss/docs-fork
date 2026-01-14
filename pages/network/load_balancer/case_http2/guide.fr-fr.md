@@ -12,6 +12,7 @@ updated: 2026-01-14
 > Le guide suivant reste cependant applicable pour les frontends TCP, qui peuvent être utiles pour des applications nécessitant une faible latence et de hautes performances.
 >
 > Afin d'activer le protocole HTTP/2 sur des frontends HTTP et TLS existants, vous devez effectuer l'appel de rafraîchissement ci-dessous via l'API, où **serviceName** est le nom interne de votre Load Balancer.
+>
 
 > [!api]
 >
@@ -95,7 +96,7 @@ Nous allons ajouter une route à notre service.
 > Le paramètre weight permet de définir l'ordre d'évaluation de vos routes, la première qui est validée sera exécutée.
 > 
 
-> Paramètres :
+Paramètres :
 
 |Champ|Valeur et description|
 |---|---|
@@ -117,7 +118,7 @@ Nous allons maintenant ajouter une règle à notre route.
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 > 
 
-> Paramètres :
+Paramètres :
 
 |Champ|Valeur et description|
 |---|---|
@@ -133,16 +134,16 @@ Les modifications apportées à votre OVHcloud Load Balancer doivent être *appl
 
 Si vous avez plusieurs zones, vous devrez appliquer la même configuration pour chacune d'elles.
 
-#####  Depuis l'API OVHcloud
+#### Rafraîchir une zone
 
-Rafraîchir une zone :
+##### Depuis l'API OVHcloud
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
-> Paramètres :
+Paramètres :
 
 |Champ|Valeur et description|
 |---|---|
@@ -159,5 +160,7 @@ HTTP/2 200
 ```
 
 ## Aller plus loin
+
+Si vous souhaitez obtenir plus d'informations sur le protocole HTTP/2, rendez-vous sur <https://http2.github.io/>.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

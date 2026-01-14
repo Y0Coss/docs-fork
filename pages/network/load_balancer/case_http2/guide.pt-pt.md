@@ -12,6 +12,7 @@ updated: 2026-01-14
 > Este guia continua, no entanto, aplicável aos frontends TCP, que podem ser úteis para aplicações que necessitam de baixa latência e altas performances.
 >
 > Para ativar o protocolo HTTP/2 nos frontends HTTP e TLS existentes, terá de efetuar o seguinte chamada de atualização através da API, onde **serviceName** é o nome interno do seu Load Balancer.
+>
 
 > [!api]
 >
@@ -76,84 +77,56 @@ Ao interpretar o protocolo de aplicação, um frontend compatível com HTTP/2 po
 
 > [!warning]
 >
-> A ordem de criação dos elementos é importante. Os encaminhamentos devem ser configurados antes de lhes serem atribuídas regras.
+> A ordem de criação dos elementos é importante: as rotas devem ser configuradas **antes** de poderem ser ligadas a regras.
 > 
 
-#### Adicionar um encaminhamento
+#### Adicionar uma rota
 
-Vamos adicionar um encaminhamento ao serviço.
+Vamos adicionar uma rota ao nosso serviço.
 
-##### Através da API
+##### Através da API da OVHcloud
 
-> [!faq]
+> [!api]
 >
-> Serviço:
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
+> 
+
+> [!warning]
 >
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
->> >
->>
->
-> Parâmetros:
->
->> > **serviceName** *
->> >
->> >> `<ID do Load Balancer>`
->> >
->> > **action**
->> >
->> >> **type**
->> >> >
->> >> > `"farm"`
->> >>
->> >> **target**
->> >> >
->> >> > `<ID da Farm TCP que deve poder gerir o HTTP/2>`
->> >
->> > **frontendId**
->> >
->> >> `<ID do Frontend TCP 443>`
->
+> O parâmetro weight permite definir a ordem de avaliação das suas rotas, a primeira que for validada será executada.
+> 
+
+Parâmetros:
+
+|Campo|Valor e descrição|
+|---|---|
+|serviceName|Identificador do seu serviço Load Balancer da OVHcloud|
+|frontendId|Identificador do seu Frontend TCP porta 443|
+|displayName|"HTTP2 TCP route"|
+|weight|(vazio)|
+|action.type|"farm"|
+|action.target|Identificador da sua fera tcp que deve saber gerir o HTTP/2|
 
 #### Adicionar uma regra
 
-Agora vamos adicionar uma regra à nossa route.
+Vamos agora adicionar uma regra à nossa rota.
 
-##### Através da API
+##### Através da API da OVHcloud
 
-> [!faq]
+> [!api]
 >
-> Serviço:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
->> >
->>
->
-> Parâmetros:
->
->> > **serviceName** \
->> >
->> >> `<ID do Load Balancer>`
->> >
->> > **routeId**
->> >
->> >> `<ID da route criada acima>`
->> >
->> > **field**
->> >
->> >> `"protocol"`
->> >
->> > **match**
->> >
->> >> `"is"`
->> >
->> > **pattern**
->> >
->> >> `"http/2.0"`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+> 
+
+Parâmetros:
+
+|Campo|Valor e descrição|
+|---|---|
+|serviceName|Identificador do seu serviço Load Balancer da OVHcloud|
+|routeId|Identificador da rota anteriormente criada|
+|field|"protocol" O nome do campo que deve verificar a regra|
+|match|"is" O tipo de verificação a fazer|
+|pattern|"http/2.0" O valor a verificar para o campo especificado|
 
 #### Aplicar as modificações
 
@@ -161,30 +134,21 @@ As modificações feitas ao Load Balancer OVHcloud devem ser  *aplicadas explici
 
 Se tem várias zonas, deve aplicar a mesma configuração a cada uma delas.
 
-##### Através da API
+#### Atualizar uma zona
 
-Atualizar uma zona:
+##### Através da API da OVHcloud
 
-> [!faq]
+> [!api]
 >
-> Serviço:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
-> Parâmetros:
->
->> > **serviceName** *
->> >
->> >> `<ID do Load Balancer>`
->> >
->> > **zona**
->> >
->> >> `<zona na qual aplicar a configuração>`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
+> 
+
+Parâmetros:
+
+|Campo|Valor e descrição|
+|---|---|
+|serviceName|Identificador do seu serviço Load Balancer da OVHcloud|
+|zone|Identificador da zona onde quer aplicar a sua configuração|
 
 #### Validar
 
@@ -196,5 +160,7 @@ HTTP/2 200
 ```
 
 ## Quer saber mais?
+
+Se desejar obter mais informações sobre o protocolo HTTP/2, aceda a <https://http2.github.io/>.
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -12,6 +12,7 @@ updated: 2026-01-14
 > La guida seguente rimane comunque applicabile per i frontends TCP, che possono risultare utili per applicazioni che richiedono una bassa latenza e alte prestazioni.
 >
 > Per attivare il protocollo HTTP/2 su frontends HTTP e TLS esistenti, è necessario effettuare l'invio del comando di aggiornamento riportato di seguito tramite l'API, dove **serviceName** è il nome interno del vostro Load Balancer.
+>
 
 > [!api]
 >
@@ -76,117 +77,80 @@ Interpretando il protocollo applicativo, un frontend compatibile con HTTP/2 può
 
 > [!warning]
 >
-> L'ordine in cui vengono creati gli elementi è importante: prima di poter essere associati a delle regole, i percorsi devono essere configurati.
+> L'ordine di creazione degli elementi è importante: le route devono essere configurate **prima** di poter loro associare regole.
+>
+
+#### Aggiungere una route
+
+Aggiungeremo una route al nostro servizio.
+
+##### Dal tramite l'API OVHcloud
+
+> [!api]
+>
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 > 
 
-#### Step 1: aggiungi un percorso
+> [!warning]
+>
+> Il parametro weight permette di definire l'ordine di valutazione delle vostre route, la prima che risulta valida verrà eseguita.
+> 
 
-Di seguito andiamo a mostrare come aggiungere un percorso al servizio.
+Parametri:
 
-##### Tramite l'API
+|Campo|Valore e descrizione|
+|---|---|
+|serviceName|Identificativo del vostro servizio Load Balancer OVHcloud|
+|frontendId|Identificativo del vostro Frontend TCP sulla porta 443|
+|displayName|"HTTP2 TCP route"|
+|weight|(vuoto)|
+|action.type|"farm"|
+|action.target|Identificativo della vostra fermata tcp che deve saper gestire il HTTP/2|
 
-> [!faq]
->
-> Servizio:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> `<identificativo del Load Balancer>`
->> >
->> > **action**
->> >
->> >> **type**
->> >> >
->> >> > `"farm"`
->> >>
->> >> **target**
->> >> >
->> >> > `<id della farm TCP che deve gestire l’HTTP/2>`
->> >
->> > **frontendId**
->> >
->> >> `<identificativo del tuo front-end TCP 443>`
->
-
-#### Step 2: aggiungi una regola
+#### Aggiungere una regola
 
 Ora vediamo come aggiungere una regola al percorso appena creato.
 
-##### Tramite l'API
+##### Dal tramite l'API OVHcloud
 
-> [!faq]
+> [!api]
 >
-> Servizio:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> `<identificativo del Load Balancer>`
->> >
->> > **routeId**
->> >
->> >> `<identificativo del percorso precedentemente creato>`
->> >
->> > **field**
->> >
->> >> `"protocol"`
->> >
->> > **match**
->> >
->> >> `"is"`
->> >
->> > **pattern**
->> >
->> >> `"http/2.0"`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+> 
 
-#### Step 3: applica le modifiche
+Parametri:
+
+|Campo|Valore e descrizione|
+|---|---|
+|serviceName|Identificativo del vostro servizio Load Balancer OVHcloud|
+|routeId|Identificativo della route precedentemente creata|
+|field|"protocol" Il nome del campo che deve verificare la regola|
+|match|"is" Il tipo di verifica da effettuare|
+|pattern|"http/2.0" Il valore da verificare per il campo specificato|
+
+#### Applicare le modifiche
 
 Le modifiche effettuate su OVHcloud Load Balancer devono essere *espressamente applicate* a tutte le zone configurate: solo così saranno visibili ai visitatori. Questo consente di modificare le impostazioni in modo complesso in una sola volta.
 
 Se disponi di più zone, dovrai applicare la stessa configurazione a ogni zona.
 
-##### Tramite l'API
+#### Aggiornare una zona
 
-Aggiornamento di una zona:
+##### Dal tramite l'API OVHcloud
 
-> [!faq]
+> [!api]
 >
-> Servizio:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> `<identificativo del Load Balancer>`
->> >
->> > **zone**
->> >
->> >> `<zona in cui distribuire la configurazione>`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
+> 
 
-#### Step 4: verifica lo stato del servizio
+Parametri:
+
+|Campo|Valore e descrizione|
+|---|---|
+|serviceName|Identificativo del vostro servizio Load Balancer OVHcloud|
+|zone|Identificativo della zona su cui volete applicare la vostra configurazione|
+
+#### Validare
 
 Dopo tutti questi passaggi, Load Balancer dovrebbe essere operativo per i tuoi server HTTP/2. A questo punto verifica e conferma lo stato del servizio inviando una richiesta al tuo OVHcloud Load Balancer e verificandone la risposta:
 
@@ -196,5 +160,7 @@ HTTP/2 200
 ```
 
 ## Per saperne di più
+
+Per ulteriori informazioni sul protocollo HTTP/2, visitare il sito <https://http2.github.io/>.
 
 Contatta la nostra [Community di utenti](/links/community).

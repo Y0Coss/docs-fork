@@ -73,119 +73,82 @@ Poprzez zrozumienie protokołu aplikacji, fronton kompatybilny z HTTP/2 może of
 
 *Jeśli zdecydujesz się użyć frontonu TCP, przejdź do kolejnych kroków tego przewodnika, aby skonfigurować go do użycia z HTTP/2*.
 
-### Skonfiguruj interfejs TCP do użycia z HTTP/2
+### Konfigurowanie frontonu TCP do HTTP/2
 
 > [!warning]
 >
-> Ważna jest kolejność tworzenia elementów: najpierw muszą zostać utworzone trasy, aby potem można było do nich przypisać reguły.
+> Kolejność tworzenia elementów jest ważna: trasy muszą być skonfigurowane **przed** dołączeniem do nich reguł.
 > 
 
 #### Dodawanie trasy
 
-Dodaj trasę do Twojej usługi.
+Dodamy trasę do naszego serwisu.
 
-##### Za pomocą API OVHcloud
+##### Z poziomu OVHcloud API
 
-> [!faq]
+> [!api]
 >
-> Metoda API:
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
+> 
+
+> [!warning]
 >
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> `<identyfikator Load Balancera>`
->> >
->> > **action**
->> >
->> >> **type**
->> >> >
->> >> > `"farm"`
->> >>
->> >> **target**
->> >> >
->> >> > `<ID farmy TCP zarządzającej HTTP/2>`
->> >
->> > **frontendId**
->> >
->> >> `<ID front-endu TCP 443>`
->
+> Parametr weight pozwala zdefiniować kolejność oceny Twoich tras, pierwsza z nich, która zostanie zweryfikowana, zostanie wykonana.
+> 
+
+Parametry:
+
+|Pole|Wartość i opis|
+|---|---|
+|serviceName|Identyfikator Twojego serwisu OVHcloud Load Balancer|
+|frontendId|Identyfikator Twojego TCP Frontend port 443|
+|displayName|"HTTP2 TCP route"|
+|weight|(puste)|
+|action.type|"farm"|
+|action.target|Identyfikator Twojej TCP farmy, która musi być w stanie obsługiwać HTTP/2|
 
 #### Dodawanie reguły
 
-Dodaj regułę do trasy.
+Teraz dodamy regułę do naszej trasy.
 
-##### Za pomocą API OVHcloud
+##### Z poziomu OVHcloud API
 
-> [!faq]
+> [!api]
 >
-> Metoda API:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> `<identyfikator Load Balancera>`
->> >
->> > **routeId**
->> >
->> >> `<ID trasy utworzonej powyżej>`
->> >
->> > **field**
->> >
->> >> `"protocol"`
->> >
->> > **match**
->> >
->> >> `"is"`
->> >
->> > **pattern**
->> >
->> >> `"http/2.0"`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+> 
 
-#### Wdrażanie modyfikacji
+Parametry:
 
-Modyfikacje wprowadzone w Load Balancerze muszą zostać *wyraźnie zatwierdzone* w każdej ze stref skonfigurowanych dla Twojej usługi. Dopiero po zatwierdzeniu staną się widoczne dla Twoich użytkowników. Dzięki temu możesz przeprowadzić wszystkie zmiany konfiguracji za jednym razem.
+|Pole|Wartość i opis|
+|---|---|
+|serviceName|Identyfikator Twojego serwisu OVHcloud Load Balancer|
+|routeId|Identyfikator wcześniej utworzonej trasy|
+|field|"protocol" Nazwa pola, które musi być sprawdzane przez regułę|
+|match|"is" Typ sprawdzenia do wykonania|
+|pattern|"http/2.0" Wartość do sprawdzenia dla określonego pola|
 
-W przypadku kilku stref, musisz zastosować tę samą konfigurację dla każdej z nich.
+#### Zastosowanie zmian
 
-##### Za pomocą API OVHcloud
+Zmiany wprowadzone do Twojego OVHcloud Load Balancer muszą być *jawne zastosowane* w każdej z konfigurowanych dla Twojego serwisu stref. Tylko wtedy będą widoczne dla Twoich odwiedzających. To umożliwia wprowadzenie skomplikowanych zmian konfiguracji w jednym kroku.
 
-Odświeżanie strefy:
+Jeśli masz wiele stref, musisz zastosować tę samą konfigurację dla każdej z nich.
 
-> [!faq]
+##### Z poziomu OVHcloud API
+
+Odśwież strefę:
+
+> [!api]
 >
-> Metoda API:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> `<identyfikator Load Balancera>`
->> >
->> > **zone**
->> >
->> >> `<strefa do konfiguracji >`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
+> 
+
+Parametry:
+
+|Pole|Wartość i opis|
+|---|---|
+|serviceName|Identyfikator Twojego serwisu OVHcloud Load Balancer|
+|zone|Identyfikator strefy, na której chcesz zastosować swoją konfigurację|
 
 #### Weryfikacja
 
@@ -197,5 +160,7 @@ HTTP/2 200
 ```
 
 ## Sprawdź również
+
+Jeśli chcesz uzyskać więcej informacji na temat protokołu HTTP/2, odwiedź stronę <https://http2.github.io/>.
 
 Dołącz do [grona naszych użytkowników](/links/community).

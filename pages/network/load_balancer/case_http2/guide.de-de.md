@@ -86,36 +86,26 @@ Im Folgenden werden wir eine Route zu unserer Dienstleistung hinzufügen.
 
 ##### Über die API
 
-> [!faq]
+> [!api]
 >
-> Dienst:
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
+> 
+
+> [!warning]
 >
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
-> Einstellungen:
->
->> > **ServiceName***
->> >
->> >> `<Loadbalancer ID>`
->> >
->> > **action**
->> >
->> >> **type**
->> >> >
->> >> > `"farm"`
->> >>
->> >> **target**
->> >> >
->> >> > `<ID Ihrer TCP-Farm, die HTTP/2 verarbeiten kann>`
->> >
->> > **frontendId**
->> >
->> >> `<ID Ihres TCP/443-Frontends>`
->
+> Der Parameter weight erlaubt Ihnen, die Bewertungsreihenfolge Ihrer Routen zu definieren, die erste, die validiert wird, wird ausgeführt.
+> 
+
+Parameter:
+
+|Feld|Wert und Beschreibung|
+|---|---|
+|serviceName|Kennzeichner Ihres OVHcloud Load Balancer-Dienstes|
+|frontendId|Kennzeichner Ihres TCP-Frontend-Ports 443|
+|displayName|"HTTP2 TCP route"|
+|weight|(leer)|
+|action.type|"farm"|
+|action.target|Kennzeichner Ihrer TCP-Farm, die HTTP/2 verarbeiten kann|
 
 #### Eine Regel hinzufügen
 
@@ -123,38 +113,20 @@ Wir werden nun eine Regel zu unserer Route hinzufügen.
 
 ##### Über die API
 
-> [!faq]
+> [!api]
 >
-> Dienst:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
-> Einstellungen:
->
->> > **ServiceName***
->> >
->> >> `<Loadbalancer ID>`
->> >
->> > **routeId**
->> >
->> >> `<ID der zuvor erstellten Route>`
->> >
->> > **field**
->> >
->> >> `"protocol"`
->> >
->> > **match**
->> >
->> >> `"is"`
->> >
->> > **pattern**
->> >
->> >> `"http/2.0"`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+> 
+
+Parameter:
+
+|Feld|Wert und Beschreibung|
+|---|---|
+|serviceName|Kennzeichner Ihres OVHcloud Load Balancer-Dienstes|
+|routeId|Kennzeichner der zuvor erstellten Route|
+|field|"protocol" Der Name des Feldes, das von der Regel überprüft werden muss|
+|match|"is" Der Typ der Überprüfung, die durchgeführt werden muss|
+|pattern|"http/2.0" Der Wert, der für das angegebene Feld überprüft werden muss|
 
 #### Änderungen anwenden
 
@@ -164,28 +136,19 @@ Falls Sie mehrere Zonen haben, ist die gleiche Konfiguration für jede einzeln v
 
 ##### Über die API
 
-Eine Zone aktualisieren
+Aktualisieren einer Zone:
 
-> [!faq]
+> [!api]
 >
-> Dienst:
->
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
-> Einstellungen:
->
->> > **ServiceName**
->> >
->> >> `<Loadbalancer ID>`
->> >
->> > **zone**
->> >
->> >> `<Zone, in der die Konfiguration angewendet wird>`
->
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
+> 
+
+Parameter:
+
+|Feld|Wert und Beschreibung|
+|---|---|
+|serviceName|Kennzeichner Ihres OVHcloud Load Balancer-Dienstes|
+|zone|Kennzeichner der Zone, auf die Sie Ihre Konfiguration anwenden möchten|
 
 ### Bestätigen
 
@@ -197,5 +160,7 @@ HTTP/2 200
 ```
 
 ## Weiterführende Informationen
+
+Wenn Sie weitere Informationen zum HTTP/2-Protokoll wünschen, besuchen Sie bitte <https://http2.github.io/>.
 
 Treten Sie unserer [User Community](/links/community) bei.
