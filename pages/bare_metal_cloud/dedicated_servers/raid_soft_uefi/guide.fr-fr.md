@@ -1086,7 +1086,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-12-16-15-40-00-00
 >> ```
 >>
->> Ensuite, consultez [cette section](#swap-rescue) pour recréer la partition SWAP (le cas échéant).
+>> Ensuite, consultez [cette section](#swap-partition) pour recréer la partition SWAP (le cas échéant).
 >>
 > **En mode Normal**
 >>
