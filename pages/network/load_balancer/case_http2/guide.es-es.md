@@ -9,7 +9,7 @@ updated: 2026-01-14
 >
 > A partir de junio de 2025, los frontends HTTP y TLS de los servicios Load Balancer de OVHcloud admiten de forma nativa el protocolo HTTP/2.
 >
-> Este guía sigue siendo aplicable, sin embargo, para los frontends TCP, que pueden ser útiles para aplicaciones que requieran baja latencia y altas prestaciones.
+> Esta guía sigue siendo aplicable, sin embargo, para los frontends TCP, que pueden ser útiles para aplicaciones que requieran baja latencia y altas prestaciones.
 >
 > Para activar el protocolo HTTP/2 en frontends HTTP y TLS existentes, debe realizar la llamada de actualización siguiente a través de la API, donde **serviceName** es el nombre interno de su Load Balancer.
 >
@@ -21,7 +21,7 @@ updated: 2026-01-14
 
 ## Objetivo
 
-Este guía tiene dos objetivos principales:
+Esta guía tiene dos objetivos principales:
 
 - Ayudarle a comprender las diferencias entre los frontends TCP, HTTP y TLS en un Load Balancer de OVHcloud, permitiéndole así determinar si un frontend TCP es la opción más adecuada para sus necesidades aplicativas específicas, especialmente al gestionar el tráfico HTTP/2.
 - Si se considera deseable un frontend TCP, proporcionar a continuación instrucciones paso a paso sobre cómo configurarlo para equilibrar eficazmente el tráfico HTTP/2 en sus servidores backend.
@@ -71,7 +71,7 @@ Al interpretar el protocolo de aplicación, un frontend compatible con HTTP/2 pu
 - Necesite una lógica de enrutamiento avanzada basada en encabezados HTTP, URLs u otros atributos de la capa de aplicación;
 - Desee optimizar la experiencia del cliente aprovechando las funcionalidades HTTP/2.
 
-*Si decide utilizar un frontend TCP, siga los pasos siguientes de este guía para configurarlo para su uso con HTTP/2*.
+*Si decide utilizar un frontend TCP, siga los pasos siguientes de esta guía para configurarlo para su uso con HTTP/2*.
 
 ### Configurar un frontend TCP para HTTP/2
 
