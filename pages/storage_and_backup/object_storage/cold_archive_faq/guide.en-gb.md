@@ -26,6 +26,18 @@ Starting **November 2025**, Cold Archive v2 was introduced as an Object Storage 
 The main difference is that Cold Archive v1 archives **entire buckets**, while Cold Archive v2 allows **archiving individual objects** within a container. 
 From a restoration perspective, the granularity is also different: on one hand with Cold Archive v1, restoration is done for the entire bucket (details [here](/pages/storage_and_backup/object_storage/cold_archive_overview)), where for Cold Archive v2, the restoration is available for individual objects (details [here](/pages/storage_and_backup/object_storage/s3_restoring_objects)).
 
+#### Summary - Cold Archive v1 and Cold Archive v2
+
+| Topic | Cold Archive v1 | Cold Archive v2 |
+| ------ | ------ | ------ |
+| Presentation | standalone, bucket-granular Cold Archive solution introduced in 2023 that archives entire buckets onto physical tapes | new Object Storage class/tier that allows archiving individual objects within an S3-compatible bucket |
+| Granularity | bucket level: whole bucket is archived/restored | object level: individual objects can be archived/restored |
+| Availability | accessible through rbx-archive region only | currently eu-west-par (Paris, FR) only |
+| S3 features compatibility | limited, details can be found [here](/pages/storage_and_backup/object_storage/cold_archive_getting_started) | full (asynchronous replication, lifecycle management, versioning, object lock and many more) |
+| Billing details | Standard Object Storage temporary storage - early deletion fees (180-day minimum storage duration) - restoration fees - minimum 1 TiB per bucket - see [pricing](https://www.ovhcloud.com/fr/public-cloud/old-prices/) | early deletion fees (180-day minimum storage duration) - restoration fees - see [pricing](/links/public-cloud/prices) |
+| Status | no longer available for new customers since November 2025 - long term support for existing customers | available in eu-west-par (Paris, FR) since November 2025 |
+
+
 ### Is Cold Archive v1 still available for new customers? 
 
 Since  November 2025, Cold Archive v1 is no longer available for new customers through the Control Panel despite still in production for existing customers.
