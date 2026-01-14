@@ -195,8 +195,11 @@ Billing stops when the archive is deleted (*delete-ovh-archive*).
 
 A 7% discount is applied for a data volume greater than 3 PB.
 
+The minimum amount billed for archiving is 1 TiB. Even if the total volumetry of the bucket is below 1 TiB, it will be billed at 1 TiB.
+
 #### Cold Archive v2
-When uploading objects in the Cold Archive class/tier, objects are billed at the Cold Archive rate available on [this page](/links/public-cloud/prices).
+When uploading objects in the Cold Archive class/tier, objects are billed at the Cold Archive rate available on [this page](/links/public-cloud/prices). 
+Cold Archive v2 is billed at the first Byte.
 
 ### Is there a minimum storage duration?
 
