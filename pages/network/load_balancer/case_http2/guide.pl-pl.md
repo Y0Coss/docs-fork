@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja HTTP/2 w usłudze Load Balancer
-excerpt: Wybierz i skonfiguruj interfejsy użytkownika usługi OVHcloud Load Balancer do użytku z protokołem HTTP/2.
+title: "Konfiguracja HTTP/2 w usłudze Load Balancer"
+excerpt: "Dowiedz się, jak wybrać i skonfigurować interfejsy użytkownika usługi Load Balancer OVHcloud do korzystania z protokołu HTTP/2"
 updated: 2026-01-14
 ---
 
