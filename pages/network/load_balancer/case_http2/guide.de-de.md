@@ -1,61 +1,90 @@
 ---
 title: Konfiguration von HTTP/2 auf dem OVHcloud Loadbalancer
-excerpt: So konfigurieren Sie HTTP/2 auf dem OVHcloud Loadbalancer
-updated: 2025-07-24
+excerpt: Wählen und konfigurieren Sie die Frontends Ihres OVHcloud Load Balancer-Dienstes für die Verwendung mit dem HTTP/2-Protokoll.
+updated: 2026-01-14
 ---
 
 > [!primary]
-> **Hinweis auf native HTTP/2-Medien**
+> **Hinweis zur nativen Unterstützung von HTTP/2**
 >
-> Seit Juni 2025 unterstützen die HTTP- und TLS-Frontends der OVHcloud Loadbalancer-Dienste nativ das HTTP/2-Protokoll.
+> Ab Juni 2025 unterstützen HTTP- und TLS-Frontends, die von den OVHcloud Load Balancer-Diensten verwendet werden, das HTTP/2-Protokoll nativ.
 >
-> Für TCP-Frontends, die für Anwendungen mit geringer Latenz und hoher Leistung nützlich sein können, gilt jedoch die folgende Anleitung.
+> Dieser Leitfaden bleibt jedoch für TCP-Frontends anwendbar, die in Anwendungen mit hoher Leistung und geringer Latenz nützlich sein können.
 >
-> HTTP/2 verbessert die Performance Ihrer Web-Applikationen durch:
+> Um HTTP/2 auf bestehenden HTTP- und TLS-Frontends zu aktivieren, müssen Sie folgende Aktualisierungsanfrage über die API durchführen, wobei **{serviceName}** der interne Name Ihres Load Balancers ist.
 >
-> - *Schnellere Ladezeiten* durch Query Multiplexing, das es ermöglicht, mehrere Anfragen parallel über eine Verbindung zu senden.
-> - *Reduzierte Latenz* mit besserem Verbindungsmanagement.
-> - *Optimierung der Netzwerkressourcen* durch Header-Komprimierung.
->
-> Um das HTTP/2-Protokoll auf bestehenden HTTP- und TLS-Frontends zu aktivieren, führen Sie den unten stehenden Aufruf zum Aktualisieren über die API aus, wobei **serviceName** der interne Name Ihres Loadbalancers ist.
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
-## Einleitung
+## Ziel
 
-Das HTTP/2-Protokoll wird aktuell nicht vom OVHcloud Loadbalancer unterstützt. Sie können diese Einschränkung jedoch umgehen, indem Sie den TCP-Modus mit der ALPN-Erweiterung des TLS-Protokolls verwenden.
+Dieser Leitfaden hat zwei Hauptzwecke:
 
-ALPN (Application-Layer Protocol Negotiation) ist eine TLS-Erweiterung, die es der Anwendungsschicht erlaubt, das verwendete Protokoll auszuhandeln (im vorliegenden Fall h2).
-
-**In dieser Anleitung erfahren Sie, wie Sie HTTP/2 auf dem OVHcloud Loadbalancer einrichten. Wir werden den Dienst im Folgenden konfigurieren, um die Traffic-Last auf mehrere Server zu verteilen, die mit HTTP/2 antworten.**
-
-> [!primary]
->
-> Seit Juni 2025 unterstützen die HTTP- und TLS-Frontends der OVHcloud Loadbalancer-Dienste nativ das HTTP/2-Protokoll.
->
-> Die folgende Anleitung gilt jedoch weiterhin für TCP-Frontends.
->
+- Er hilft Ihnen dabei, die Unterschiede zwischen TCP-, HTTP- und TLS-Frontends auf einem OVHcloud Load Balancer zu verstehen, sodass Sie beurteilen können, ob ein TCP-Frontend die beste Wahl für Ihre spezifischen Anforderungen ist, insbesondere wenn es um HTTP/2-Datenverkehr geht.
+- Falls ein TCP-Frontend wünschenswert erscheint, bietet er Schritt-für-Schritt-Anweisungen, wie Sie es konfigurieren können, um HTTP/2-Datenverkehr effektiv auf Ihre Back-End-Server zu verteilen.
 
 ## Voraussetzungen
 
-- Sie haben ein TCP-Frontend erstellt.
-- Sie haben eine TCP-Farm erstellt und dieser Server hinzugefügt.
+Sie benötigen:
 
-## Beschreibung
+- Einen [OVHcloud Load Balancer](/links/network/load-balancer) -Dienst;
+- Ein TCP-Frontend auf Ihrem Load Balancer;
+- Ein TCP-Back-End-Cluster mit mindestens einem Server, der diesem hinzugefügt wurde;
+- Back-End-Server, die so konfiguriert sind, dass sie HTTP/2 unterstützen und darauf reagieren;
+- Zugriff auf die [OVHcloud API](/links/api).
+
+## In der praktischen Anwendung
+
+### Warum HTTP/2 verwenden?
+
+HTTP/2 bietet zahlreiche Vorteile, um die Leistung und Effizienz Ihrer Anwendungen zu verbessern:
+
+- *Schnellere Ladezeiten* durch Multiplexing, das es ermöglicht, mehrere Anfragen parallel über dieselbe Verbindung zu senden.
+- *Geringere Latenz* durch Begrenzung der Kommunikation zwischen Client und Server.
+- *Optimierte Netzwerkperformance* durch Header-Komprimierung.
+
+### Unterschiede zwischen HTTP/2 und TCP-Frontends
+
+Ein TCP-Frontend arbeitet auf Schicht 4 (Transportebene) des OSI-Modells. Wenn Sie ein TCP-Frontend konfigurieren, stellt der Load Balancer eine TCP-Verbindung zwischen dem Client und einem Back-End-Server her. Das bedeutet, dass der Load Balancer die HTTP/2-Daten innerhalb des TCP-Streams nicht analysiert oder versteht. Daher bieten TCP-Frontends aufgrund der geringen Verarbeitungsanforderungen eine hohe Leistung.
+
+Da es jedoch das Anwendungsprotokoll nicht versteht, kann es keine fortgeschrittenen HTTP-spezifischen Optimierungen durchführen, wie z. B. Inhaltsbasierte Weiterleitung oder Manipulation von HTTP-Headern.
+
+HTTP- und TLS-Frontends hingegen arbeiten auf Schicht 7 (Anwendungsebene). Wenn ein Client eine mit HTTP/2 kompatible Frontend verbindet, decodiert der Load Balancer die HTTP/2-Frames vollständig, bevor eine Verbindung zu einem Back-End-Server hergestellt wird.
+
+Durch das Verständnis des Anwendungsprotokolls kann ein mit HTTP/2 kompatibles Frontend zahlreiche fortgeschrittene Funktionen bieten. Dazu gehören SSL/TLS-Terminierung (Entlastung der Back-End-Server von Verschlüsselungs-/Entschlüsselungsvorgängen), inhaltsbasierte Weiterleitung (z. B. Weiterleitung von Anfragen an verschiedene Back-End-Pools basierend auf URL-Pfad oder Headern), Anpassung von Anfragen/Antworten und HTTP/2-Multiplexing.
+
+**Sie sollten ein TCP-Frontend verwenden, wenn:**
+
+- Sie andere nicht-HTTP-Dienste auslasten müssen (z. B. Datenbanken, benutzerdefinierte TCP-Anwendungen, SSH);
+- Sie maximale Leistung und minimale Latenz benötigen;
+- Ihre Back-End-Server bereits die SSL/TLS-Terminierung übernehmen;
+- Sie keine fortgeschrittenen HTTP-spezifischen Funktionen benötigen, wie z. B. inhaltsbasierte Weiterleitung, Manipulation von HTTP-Headern oder HTTP/2-Protokoll-Optimierungen.
+
+**Sie sollten ein mit HTTP/2 kompatibles Frontend verwenden, wenn:**
+
+- Sie hauptsächlich Webverkehr (HTTP/HTTPS) auslasten;
+- Sie die Leistungsverbesserungen von HTTP/2 zwischen Client und Load Balancer nutzen möchten;
+- Sie die SSL/TLS-Terminierung von Ihren Back-End-Servern abladen möchten;
+- Sie eine fortgeschrittene Weiterleitungslogik basierend auf HTTP-Headern, URLs oder anderen Anwendungsebenen-Attributen benötigen;
+- Sie die Client-Erfahrung durch die Nutzung von HTTP/2-Funktionen optimieren möchten.
+
+*Falls Sie sich für die Verwendung eines TCP-Frontends entscheiden, folgen Sie den nächsten Schritten dieses Leitfadens, um es für die Verwendung mit HTTP/2 zu konfigurieren*.
+
+### Konfigurieren Sie ein TCP-Frontend für die Verwendung mit HTTP/2.
 
 > [!warning]
 >
 > Es ist wichtig, dass die verschiedenen Elemente in der richtigen Reihenfolge angelegt werden: Die Routen werden zuerst konfiguriert, damit ihnen anschließend Regeln hinzugefügt werden können.
 > 
 
-### Eine Route hinzufügen
+#### Eine Route hinzufügen
 
 Im Folgenden werden wir eine Route zu unserer Dienstleistung hinzufügen.
 
-#### Über die API
+##### Über die API
 
 > [!faq]
 >
@@ -88,11 +117,11 @@ Im Folgenden werden wir eine Route zu unserer Dienstleistung hinzufügen.
 >> >> `<ID Ihres TCP/443-Frontends>`
 >
 
-### Eine Regel hinzufügen
+#### Eine Regel hinzufügen
 
 Wir werden nun eine Regel zu unserer Route hinzufügen.
 
-#### Über die API
+##### Über die API
 
 > [!faq]
 >
@@ -127,13 +156,13 @@ Wir werden nun eine Regel zu unserer Route hinzufügen.
 >> >> `"http/2.0"`
 >
 
-### Änderungen anwenden
+#### Änderungen anwenden
 
 Die vorgenommenen Änderungen müssen in jeder für Ihren Dienst konfigurierten Zone *explizit angewendet* werden. Erst dann werden sie für Ihre Besucher sichtbar. So können Sie auch komplexere Konfigurationsänderungen in einem Mal durchführen.
 
 Falls Sie mehrere Zonen haben, ist die gleiche Konfiguration für jede einzeln vorzunehmen.
 
-#### Über die API
+##### Über die API
 
 Eine Zone aktualisieren
 
@@ -149,7 +178,7 @@ Eine Zone aktualisieren
 >
 > Einstellungen:
 >
->> > **ServiceName***
+>> > **ServiceName**
 >> >
 >> >> `<Loadbalancer ID>`
 >> >
@@ -169,4 +198,4 @@ HTTP/2 200
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

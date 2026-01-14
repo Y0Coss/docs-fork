@@ -1,7 +1,7 @@
 ---
 title: 'Configurer HTTP/2 sur un service OVHcloud Load Balancer'
 excerpt: 'Configuration de HTTP/2 sur un service OVHcloud Load Balancer'
-updated: 2025-07-24
+updated: 2026-01-14
 ---
 
 > [!primary]
@@ -35,7 +35,9 @@ Vous aurez besoin de :
 - Des serveurs backend configurés pour prendre en charge et répondre avec HTTP/2 ;
 - Avoir accès à l'[API OVHcloud](/links/api).
 
-## Pourquoi utiliser HTTP/2 ?
+## En pratique
+
+### Pourquoi utiliser HTTP/2 ?
 
 HTTP/2 apporte de nombreux avantages pour améliorer les performances et l'efficacité de vos applications :
 
@@ -43,7 +45,7 @@ HTTP/2 apporte de nombreux avantages pour améliorer les performances et l'effic
 - *Latence réduite* en limitant les échanges entre le client et le serveur.
 - *Performances réseau optimisées* grâce à la compression des en-têtes.
 
-## Différences entre les frontends HTTP/2 et TCP
+### Différences entre les frontends HTTP/2 et TCP
 
 Un frontend TCP opère à la Couche 4 (la couche de transport) du modèle OSI. Lorsque vous configurez un frontend TCP, le Load Balancer établit une connexion TCP entre le client et un serveur backend. Cela signifie que le Load Balancer n'inspecte ni ne comprend les données HTTP/2 au sein du flux TCP. Par conséquent, les frontends TCP offrent des performances élevées grâce à un traitement minimal des données.
 
@@ -54,12 +56,14 @@ Les frontends HTTP et TLS, quant à eux, opèrent à la Couche 7 (la couche appl
 En interprétant le protocole applicatif, un frontend compatible HTTP/2 peut fournir de nombreuses fonctionnalités avancées. Celles-ci incluent la terminaison SSL/TLS (déchargeant le chiffrement/déchiffrement des serveurs backend), le routage basé sur le contenu (par exemple, le routage des requêtes vers différentes fermes de backend en fonction du chemin d'URL ou des en-têtes), la modification des requêtes/réponses et le multiplexage HTTP/2.
 
 **Vous devriez utiliser un frontend TCP lorsque :**
+
 - Vous devez équilibrer la charge d'autres services non-HTTP (par exemple, des bases de données, des applications TCP personnalisées, SSH) ;
 - Vous exigez des performances maximales et une latence minimale ;
 - Vos serveurs backend gèrent déjà la terminaison SSL/TLS ;
 - Vous n'avez pas besoin de fonctionnalités HTTP avancées spécifiques telles que le routage basé sur le contenu, la manipulation des en-têtes HTTP ou les optimisations au niveau du protocole HTTP/2.
 
 **Vous devriez utiliser un frontend compatible HTTP/2 lorsque :**
+
 - Vous traitez principalement du trafic web (HTTP/HTTPS) ;
 - Vous souhaitez tirer parti des avantages de performance de HTTP/2 entre le client et le Load Balancer ;
 - Vous souhaitez déléguer la terminaison SSL/TLS de vos serveurs backend à votre Load Balancer ;
@@ -68,18 +72,18 @@ En interprétant le protocole applicatif, un frontend compatible HTTP/2 peut fou
 
 *Si vous choisissez d'utiliser un frontend TCP, suivez les étapes suivantes de ce guide pour le configurer pour une utilisation HTTP/2*.
 
-## Configurer un frontend TCP pour HTTP/2
+### Configurer un frontend TCP pour HTTP/2
 
 > [!warning]
 >
 > L'ordre de création des éléments est important : les routes doivent être configurées **avant** de pouvoir leur attacher des règles.
 > 
 
-### Ajouter une route
+#### Ajouter une route
 
 Nous allons ajouter une route à notre service.
 
-#### Depuis l'API OVHcloud
+##### Depuis l'API OVHcloud
 
 > [!api]
 >
@@ -102,11 +106,11 @@ Nous allons ajouter une route à notre service.
 |action.type|"farm"|
 |action.target|Identifiant de votre ferme tcp qui doit savoir gérer le HTTP/2|
 
-### Ajouter une règle
+#### Ajouter une règle
 
 Nous allons maintenant ajouter une règle à notre route.
 
-#### Depuis l'API OVHcloud
+##### Depuis l'API OVHcloud
 
 > [!api]
 >
@@ -123,13 +127,13 @@ Nous allons maintenant ajouter une règle à notre route.
 |match|"is" Le type de la vérification à faire|
 |pattern|"http/2.0" La valeur à vérifier pour le champ spécifié|
 
-### Appliquer les modifications
+#### Appliquer les modifications
 
 Les modifications apportées à votre OVHcloud Load Balancer doivent être *appliquées explicitement* dans chacune des zones configurées pour votre service. C'est seulement à ce moment qu'elles seront visibles pour vos visiteurs. Cela permet d'effectuer un changement complexe de configurations en une seule fois.
 
 Si vous avez plusieurs zones, vous devrez appliquer la même configuration pour chacune d'elles.
 
-####  Depuis l'API OVHcloud
+#####  Depuis l'API OVHcloud
 
 Rafraîchir une zone :
 
@@ -145,7 +149,7 @@ Rafraîchir une zone :
 |serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |zone|Identifiant de la zone sur laquelle vous voulez appliquer votre configuration|
 
-### Valider
+#### Valider
 
 Après toutes ces étapes, vous devez maintenant disposer d'un service de répartition de charge fonctionnel pour vos serveurs HTTP/2. Vous pouvez alors valider l'état du service en interrogeant votre OVHcloud Load Balancer puis en vérifiant la version de la réponse :
 

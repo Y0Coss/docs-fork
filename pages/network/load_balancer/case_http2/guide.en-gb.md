@@ -1,7 +1,7 @@
 ---
 title: Configuring HTTP/2 on an OVH Load Balancer service
 excerpt: Choose and configure the frontends of your OVHcloud Load Balancer service, for usage with the HTTP/2 protocol
-updated: 2025-07-30
+updated: 2026-01-14
 ---
 
 > [!primary]
@@ -22,20 +22,23 @@ updated: 2025-07-30
 ## Objective
 
 This guide serves two primary purposes:
+
 - To help you understand the distinctions between TCP, HTTP, and TLS frontends on an OVHcloud Load Balancer, enabling you to determine if a TCP frontend is the most suitable choice for your specific application requirements, especially when dealing with HTTP/2 traffic.
 - If a TCP frontend is deemed desirable, to then provide step-by-step instructions on how to configure it to effectively balance HTTP/2 traffic across your backend servers.
-
 
 ## Requirements
 
 You will need:
-- An [OVHcloud Load Balancer](/links/network/load-balancer) service ;
-- A TCP frontend on your Load Balancer ;
-- A TCP backend cluster with at least one server added to it ;
-- Backend servers configured to support and respond with HTTP/2 ;
+
+- An [OVHcloud Load Balancer](/links/network/load-balancer) service;
+- A TCP frontend on your Load Balancer;
+- A TCP backend cluster with at least one server added to it;
+- Backend servers configured to support and respond with HTTP/2;
 - Access to the [OVHcloud API](/links/api).
 
-## Why use HTTP/2 ?
+## Instructions
+
+### Why use HTTP/2?
 
 HTTP/2 brings numerous advantages to enhance the performance and efficiency of your applications:
 
@@ -43,7 +46,7 @@ HTTP/2 brings numerous advantages to enhance the performance and efficiency of y
 - *Reduced latency* by limiting the exchanges between the client and the server.
 - *Optimized network performance* through header compression.
 
-## Differences between HTTP/2 and TCP frontends
+### Differences between HTTP/2 and TCP frontends
 
 A TCP frontend operates at Layer 4 (the transport layer) of the OSI model. When you configure a TCP frontend, the load balancer establishes a TCP connection between the client and a backend server. This means the load balancer doesn't inspect or understand the HTTP/2 data within the TCP stream. Consequently, TCP frontends offer high performance due to minimal processing needs.
 
@@ -54,12 +57,14 @@ HTTP and TLS frontends, conversely, operate at Layer 7 (the application layer). 
 By understanding the application protocol, an HTTP/2-compatible frontend can provide numerous advanced features. These include SSL/TLS termination (offloading encryption/decryption from backend servers), content-based routing (e.g., routing requests to different backend pools based on URL path or headers), request/response modification, and HTTP/2 multiplexing.
 
 **You should use a TCP frontend when:**
+
 - You need to load balance other non-HTTP services (e.g., databases, custom TCP applications, SSH);
 - You require maximum performance and minimal latency;
 - Your backend servers are already handling SSL/TLS termination;
 - You don't need advanced HTTP-specific features like content-based routing, HTTP header manipulation, or HTTP/2 protocol-level optimizations.
 
 **You should use an HTTP/2-compatible frontend when:**
+
 - You are primarily load balancing web traffic (HTTP/HTTPS);
 - You want to leverage the performance benefits of HTTP/2 between the client and the load balancer;
 - You need to offload SSL/TLS termination from your backend servers;
@@ -68,18 +73,18 @@ By understanding the application protocol, an HTTP/2-compatible frontend can pro
 
 *If you choose to use a TCP frontend, follow the next steps of this guide to configure it for HTTP/2 usage*.
 
-## Configure a TCP frontend for use with HTTP/2
+### Configure a TCP frontend for use with HTTP/2
 
 > [!warning]
 >
 > The order in which you create elements is important: the routes must be configured before you attach them to rules.
 > 
 
-### Add a route
+#### Add a route
 
 We will add a route to our service.
 
-#### Via the API
+##### Via the API
 
 > [!faq]
 >
@@ -112,11 +117,11 @@ We will add a route to our service.
 >> >> `<ID of your front-end TCP 443>`
 >
 
-### Add a rule
+#### Add a rule
 
 We will now add a rule to our route.
 
-#### Via the API
+##### Via the API
 
 > [!faq]
 >
@@ -151,13 +156,13 @@ We will now add a rule to our route.
 >> >> `"http/2.0"`
 >
 
-### Apply the modifications
+#### Apply the modifications
 
 The modifications made to your OVH Load Balancer must be *explicitly applied* in each of the zones configured for your service. Only at this point will they be visible to your website visitors. This way, you can make complex configuration changes in one go.
 
 If you have several zones, you must apply the same configuration for each of them.
 
-#### Via the API
+##### Via the API
 
 Refresh a zone:
 
@@ -182,7 +187,7 @@ Refresh a zone:
 >> >> `<zone to deploy the configuration in>`
 >
 
-### Confirm
+#### Confirm
 
 After you have completed these steps, you should have a functional load balancer service for your HTTP/2 servers. You can now confirm the status of your service by requesting it from your OVH Load Balancer service, then verifying the response version:
 
@@ -195,4 +200,4 @@ HTTP/2 200
 
 If you want more information about the HTTP/2 protocol, please visit <https://http2.github.io/>.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
