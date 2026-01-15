@@ -1,5 +1,5 @@
 ---
-title: File Storage Service - Getting started (Alpha)
+title: File Storage Service - Getting started (Beta)
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
 updated: 2025-10-21
 ---
@@ -8,18 +8,17 @@ updated: 2025-10-21
 
 OVHcloud provides a File Storage Service powered by OpenStack Manila. This service offers managed NFS shares on private networks, supporting ReadWriteMany (RWX) access across multiple instances or Kubernetes pods.
 
-It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
+It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 
 > [!warning]
 >
-> This service is currently in Alpha, available only in the **SBG5** region, and limited to registered Alpha customers. Features and availability may change.
+> This service is currently in Beta, available only in the **SBG5**, **DE1** and **GRA** region. Features and availability may change.
 >
-> During the Alpha phase, the allowed share size ranges from 10 GiB to 5 TiB.
+> During the Beta phase, the allowed share size ranges from 150 GiB to 10 TiB.
 >
 
 ## Requirements
 
-- Your project is authorized for Manila Alpha (register [here](https://labs.ovhcloud.com/en/file-storage/))
 - You already have a [private network](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) available in your project.
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
@@ -28,11 +27,15 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 
 > [!primary]
 >
-> Currently, the File Storage Service can only be accessed and managed via OpenStack CLI with the Manila plugin. Other interfaces will be supported in the future.
+> Currently, the File Storage Service can only be accessed and managed via OVH APIs, OpenStack CLI with the Manila plugin and Terraform. Other interfaces will be supported in the future.
 >
 
 > [!tabs]
 > Via the OpenStack CLI with the Manila plugin
+>> **0\. Additional requirements**
+>>
+>> - Make sure openstack user has Administrator or Share operator role
+>>
 >> **1\. Install the Manila CLI Plugin**
 >>
 >> If the Manila commands are not yet available, install the plugin:
@@ -68,13 +71,13 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> +----------+-----------+------------+------------+
 >> | ID       | Name      | Visibility | Is Default |
 >> +----------+-----------+------------+------------+
->> | acceb7b4 | generic_0 | public     | True       |
+>> | acceb7b4 | standard-1az | public     | True       |
 >> +----------+-----------+------------+------------+
 >> ```
 >>
 >> > [!primary]
 >> >
->> > Note: For the generic_0 type, you must always select a share network, otherwise the share cannot be created.
+>> > Note: The type `standard-1az` uses `driver_handles_share_servers` = True, which means you must attach a share network when creating a share.
 >> >
 >>
 >> **3\. Create a Share Network**
@@ -126,7 +129,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> ```bash
 >> openstack share create \
 >>   --os-region-name <REGION_NAME> \
->>   --share-type generic_0 \
+>>   --share-type standard-1az \
 >>   --share-network <my-share-network-name> \
 >>   --name <my-first-share-name> \
 >>   NFS 150
@@ -277,7 +280,6 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> | `Unknown command ['share']` | Manila CLI not installed           | Install it with `sudo apt install python3-manilaclient`            |
 >> | `Share network must be set` | Using a DHSS=True share type       | Provide `--share-network`                                          |
 >> | Cannot mount NFS            | IP not authorized or wrong network | Ensure VM is in the same private subnet and access rule is created |
->> | `403 Forbidden`             | Project not whitelisted for Manila | Ensure you are registered to Alpha                                 |
 >> | Share stuck in creating     | Invalid network ID or subnet       | Check `NETWORK_ID` and `SUBNET_ID`                                 |
 >>
 > Via Manila CSI in Kubernetes environment
@@ -572,7 +574,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>   # Manila share type
 >>   # default value: default
 >>   # openstack share type list to find proper value
->>   type: generic_0
+>>   type: standard-1az
 >>   # /!\ MANDATORY /!\
 >>   # openstack share network list
 >>   shareNetworkID: "<OS_SHARE_NETWORK_ID>"
@@ -598,7 +600,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> kubectl apply -f dynamic-storageclass.yaml
 >> ```
 >>
->> Once the StorageClass is created, create a file named `nfs-pvc.yaml` defining a PersistentVolumeClaim (PVC) that uses this StorageClass. For example, request a 15Gi volume with `ReadWriteMany` (RWX) access:
+>> Once the StorageClass is created, create a file named `nfs-pvc.yaml` defining a PersistentVolumeClaim (PVC) that uses this StorageClass. For example, request a 150Gi volume with `ReadWriteMany` (RWX) access:
 >>
 >> ```yaml
 >> apiVersion: v1
@@ -610,7 +612,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>     - ReadWriteMany
 >>   resources:
 >>     requests:
->>       storage: 15Gi
+>>       storage: 150Gi
 >>   storageClassName: csi-manila-nfs
 >> ```
 >>
@@ -630,7 +632,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
 >> | ID                                   | Name                                     | Size | Share Proto | Status    | Is Public | Share Type Name | Host | Availability Zone |
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
->> | 9484d5f3-7bf7-486b-b88e-40bbedeet9f3 | pvc-78135a68-c6f4-48fe-8644-454b387a3ad4 |   15 | NFS         | available | False     | generic_0       |      | nova              |
+>> | 9484d5f3-7bf7-486b-b88e-40bbedeet9f3 | pvc-78135a68-c6f4-48fe-8644-454b387a3ad4 |  150 | NFS         | available | False     | standard-1az    |      | nova              |
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
 >> ```
 >>
@@ -743,7 +745,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> Where:
 >>
->> - `SHARE_TYPE` is `generic_0` by default. You can check existing share types with:
+>> - `SHARE_TYPE` is `standard-1az` by default. You can check existing share types with:
 >>
 >> ```bash
 >> openstack --os-region SBG5 share type list
@@ -908,7 +910,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This resource creates a share network in OpenStack, associating it with your existing private network and subnet. It is required to provision and manage shared file systems.
 >>
->> **5\. Create a NFS network**
+>> **5\. Create a NFS share**
 >>
 >> Add the following resource to your `main.tf` to create an NFS share on your File Storage service:
 >>
@@ -919,7 +921,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> resource "openstack_sharedfilesystem_share_v2" "share" {
 >>   name             = "<YOUR_SHARE_NAME>"
 >>   region           = "<YOUR_REGION_NAME>"
->>   share_type       = "generic_0"
+>>   share_type       = "standard-1az"
 >>   share_proto      = "NFS"
 >>   size             = 150
 >>   share_network_id = openstack_sharedfilesystem_sharenetwork_v2.sharenetwork.id
