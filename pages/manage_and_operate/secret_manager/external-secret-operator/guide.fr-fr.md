@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser Kubernetes External Secret Operator avec Secret Manager"
 excerpt: "Découvrez comment configurer External Secret Operator pour stocker les secrets Kubernetes sur le Secret Manager d'OVHcloud"
-updated: 2026-01-07
+updated: 2026-01-15
 ---
 
 ## Objectif
