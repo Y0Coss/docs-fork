@@ -23,23 +23,23 @@ Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local 
 |                       | GPU                        | Nie | |
 |                       | Backup Instancji           | Tak | |
 |                       | Distant Backup             | Nie | |
-|                       | Zarządzanie Pracą Backupu  | Tak | |
-|                       | Obraz Linux                | Tak | |
+|                       | Workflow Management dla kopii zapasowych  | Tak | |
+|                       | Obrazy Linux                | Tak | |
 |                       | Obrazy Windows             | Nie | |
-|                       | Prześlij własny obraz      | Tak | Maksymalny rozmiar obrazu to 25 GB |
+|                       | Importuj własny obraz      | Tak | Maksymalny rozmiar obrazu to 25 GB |
 | Sieć                  | Load Balancer              | Nie | |
 |                       | Gateway                    | Nie | |
 |                       | Floating IP                | Nie | |
-|                       | Dodatkowy IP               | Nie | |
+|                       | Additional IP              | Nie | |
 |                       | Prywatna Sieć z vRack      | Nie | Local Zones nie są kompatybilne z vRack. Prywatne sieci są ograniczone tylko do tej samej Local Zone. DHCP jest obsługiwany na prywatnych sieciach lokalnych. |
-| Przechowywanie danych | Object Storage             | Tak | 1. Nie obsługiwane są zasady użytkownika. wszystkie klucze dostępowe w ramach projektu mogą uzyskiwać dostęp do wszystkich kubełków we wszystkich Local Zones. </br> 2. Obsługiwana jest tylko klasa Standard Storage. </br> 3. Funkcje S3<sup>1</sup> nie są obsługiwane: tagi S3<sup>1</sup>, Legal Hold, SSE-OMK, replikacja S3<sup>1</sup>, logowanie dostępu serwera. |
+| Przechowywanie danych | Object Storage             | Tak | 1. Nie obsługiwane są zasady użytkownika. wszystkie klucze dostępowe w ramach projektu mogą uzyskiwać dostęp do wszystkich kubełków we wszystkich Local Zones. <br> 2. Obsługiwana jest tylko klasa Standard Storage. <br> 3. Funkcje S3<sup>1</sup> nie są obsługiwane: tagi S3, Legal Hold, SSE-OMK, replikacja S3, logowanie dostępu serwera. |
 |                       | Block Storage              | Tak | Brak obsługi szyfrowania. Klasyczne woluminy nie mogą być wielokrotnie dołączone. Klasyczne woluminy ograniczone do 250 IOPS (vs 500 IOPS w regionach 1AZ i 3AZ). Maksymalny rozmiar 4 TB (vs 12 TB). |
 |                       | File Storage               | Nie | |
-| Kontener              | Zarządzany Kubernetes      | Nie | |
-|                       | Zarządzany Serwis Rancher  | Nie | |
-|                       | Zarządzany Prywatny Rejestr | Nie | |
+| Kontener              | Managed Kubernetes Service      | Nie | |
+|                       | Managed Rancher Service  | Nie | |
+|                       | Managed Private Registry | Nie | |
 | DBaas                 | DBaas                      | Nie | |
-|                       | Analiza danych            | Nie | |
+|                       | Analytics            | Nie | |
 | AI                    | AI                         | Nie | |
 
 ## Możliwości i ograniczenia
@@ -48,7 +48,7 @@ Wszystkie funkcje instancji, których nie ma na liście, takie jak restart (rebo
 
 ### Serwer SMTP
 
-Instancje w Local Zone nie mogą kontaktować się z serwerami SMTP.
+Instancje Local Zones nie mogą łączyć się z serwerami SMTP.
 
 ## Sprawdź również
 

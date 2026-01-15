@@ -23,16 +23,16 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 |                       | GPU                        | No | |
 |                       | Backup delle istanze       | Sì | |
 |                       | Backup a distanza          | No | |
-|                       | Gestione del flusso di backup | Sì | |
-|                       | Immagine Linux             | Sì | |
+|                       | Workflow Management per i backup | Sì | |
+|                       | Immagini Linux             | Sì | |
 |                       | Immagini Windows           | No | |
-|                       | Carica la tua immagine     | Sì | Dimensione dell'immagine limitata a un massimo di 25 GB |
+|                       | Importa la tua immagine     | Sì | Dimensione dell'immagine limitata a un massimo di 25 GB |
 | Rete                  | Load Balancer              | No | |
 |                       | Gateway                    | No | |
-|                       | IP flottante               | No | |
-|                       | IP aggiuntivo              | No | |
+|                       | Floating IP               | No | |
+|                       | Additional IP              | No | |
 |                       | Rete privata con vRack     | No | Le Local Zones non sono compatibili con vRack. Le reti private sono limitate alla stessa Local Zone. DHCP è supportato sulle reti private locali. |
-| Archiviazione         | Object Storage             | Sì | 1. Non sono supportate le politiche utente. tutte le chiavi di accesso all'interno di un progetto possono accedere a tutti i bucket in tutte le Local Zones. </br> 2. Supportato solo il livello di archiviazione Standard. </br> 3. Funzionalità S3<sup>1</sup> non supportate: tag S3<sup>1</sup>, Legal Hold, SSE-OMK, replica S3<sup>1</sup>, accesso log server. |
+| Archiviazione         | Object Storage             | Sì | 1. Non sono supportate le politiche utente. tutte le chiavi di accesso all'interno di un progetto possono accedere a tutti i bucket in tutte le Local Zones. <br> 2. Supportato solo il livello di archiviazione Standard. <br> 3. Funzionalità S3<sup>1</sup> non supportate: tag S3, Legal Hold, SSE-OMK, replica S3, accesso log server. |
 |                       | Archiviazione su disco     | Sì | Nessun supporto per la crittografia. I volumi classici non possono essere multi-attaccati. I volumi classici limitati a 250 IOPS (contro 500 IOPS nelle regioni 1AZ e 3AZ). Dimensione massima 4 TB (contro 12 TB). |
 |                       | Archiviazione file         | No | |
 | Contenitori           | Kubernetes gestito         | No | |
@@ -48,7 +48,7 @@ Tutte le funzionalità delle istanze che non sono elencate qui, come il riavvio 
 
 ### Server SMTP
 
-Le istanze nella Local Zone non possono contattare i server SMTP.
+Le istanze Local Zones non possono contattare i server SMTP.
 
 ## Per saperne di più
 
