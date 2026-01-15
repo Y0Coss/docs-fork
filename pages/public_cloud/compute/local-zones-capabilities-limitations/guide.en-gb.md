@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out the current features, capabilities and limitations of Local Zones for Public Cloud
-updated: 2026-01-12
+updated: 2026-01-15
 ---
 
 ## Objective
@@ -32,7 +32,7 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 |                       | Floating IP                | No | |
 |                       | Additional IP              | No | |
 |                       | Private Network with vRack | No | Local Zones are not compatible with vRack. Private networks are limited to the same Local Zone only. DHCP is supported on Local Private Networks. |
-| Storage               | Object Storage             | Yes | 1. User policies not supported. all access keys within a project can access all buckets across all Local Zones. </br> 2. Only Standard storage class supported. </br> 3. S3 features not supported: S3 tags, Legal Hold, SSE-OMK, S3 replication, Server access logging. |
+| Storage               | Object Storage             | Yes | 1. User policies not supported. all access keys within a project can access all buckets across all Local Zones. </br> 2. Only Standard storage class supported. </br> 3. S3<sup>1</sup> features not supported: S3<sup>1</sup> tags, Legal Hold, SSE-OMK, S3<sup>1</sup> replication, Server access logging. |
 |                       | Block Storage              | Yes | No encryption support. Classic volumes cannot be multi-attached. Classic volumes limited to 250 IOPS (vs 500 IOPS in 1AZ and 3AZ regions). Maximum size 4 TB (vs 12 TB). |
 |                       | File Storage               | No | |
 | Container             | Managed Kubernetes Service | No | |

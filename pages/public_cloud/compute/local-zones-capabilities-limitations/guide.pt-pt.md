@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades e limites
 excerpt: Descubra as funcionalidades, capacidades e limites atuais das instâncias Local Zones
-updated: 2025-03-27
+updated: 2026-01-15
 ---
 
 ## Objetivo
@@ -16,26 +16,39 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 
 ## Funcionalidades disponíveis
 
-| Ação | Disponibilidade geral |
-| --- | --- |
-| Instâncias | Sim |
-| Suporte User-data/cloud-init | Sim|
-| Adicionar Rede Privada Local Nova/Existente | Sim |
-| Suporte IPv6 Public | Sim |
-| Suporte IPv4 Público | Sim |
-| Boot/Start | Sim |
-| Stop | Sim |
-| Block Storage | Sim |
-| Backups de Instâncias | Sim |
-| Backups automáticos | Sim |
-| Snapshots de volumes| Sim |
-| Backups de volumes | Sim |
-| Object Storage | Sim |
-| Imagens do Windows | Não |
+| Serviços Public Cloud | Produto                    | Disponibilidade na Local Zone | Limitações |
+| --------------------- | -------------------------- | ----------------------------- | ----------- |
+| Compute               | Instâncias                 | Sim | A ação Suspend (shelve) não é suportada nas Local Zones |
+|                       | Instâncias Metal           | Não | |
+|                       | GPU                        | Não | |
+|                       | Backup de Instâncias       | Sim | |
+|                       | Backup Distantes           | Não | |
+|                       | Gestão de Workflow de Backup | Sim | |
+|                       | Imagem Linux               | Sim | |
+|                       | Imagens Windows            | Não | |
+|                       | Carregue a sua própria imagem | Sim | Tamanho máximo da imagem limitado a 25 GB |
+| Rede                  | Load Balancer              | Não | |
+|                       | Gateway                    | Não | |
+|                       | IP Flutuante               | Não | |
+|                       | IP Adicional               | Não | |
+|                       | Rede Privada com vRack     | Não | As Local Zones não são compatíveis com vRack. As redes privadas estão limitadas à mesma Local Zone apenas. O DHCP é suportado nas redes privadas das Local Zones. |
+| Armazenamento         | Object Storage             | Sim | 1. Políticas de utilizador não suportadas. todas as chaves de acesso dentro de um projeto podem aceder a todos os baldees em todas as Local Zones. </br> 2. Apenas a classe de armazenamento Standard é suportada. </br> 3. Características S3<sup>1</sup> não suportadas: etiquetas S3<sup>1</sup>, Legal Hold, SSE-OMK, replicação S3<sup>1</sup>, registo de acesso ao servidor. |
+|                       | Armazenamento em Bloco     | Sim | Sem suporte de encriptação. Volumes clássicos não podem ser multi-anexados. Volumes clássicos limitados a 250 IOPS (vs 500 IOPS nas regiões 1AZ e 3AZ). Tamanho máximo 4 TB (vs 12 TB). |
+|                       | Armazenamento de Ficheiros | Não | |
+| Contentores           | Serviço Kubernetes Gestionado | Não | |
+|                       | Serviço Rancher Gestionado | Não | |
+|                       | Registo Privado Gestionado | Não | |
+| DBaas                 | DBaas                      | Não | |
+|                       | Análise                    | Não | |
+| IA                    | IA                         | Não | |
 
 ## Capacidades e limitações
 
 Todas as funcionalidades das instâncias que não estão listadas aqui, como o reboot das instâncias, o suporte de Object Storage estarão disponíveis nos próximos meses. O nosso objetivo consiste em apoiar todas as funcionalidades já suportadas nas regiões globais.
+
+### Servidor SMTP
+
+As instâncias na Local Zone não podem contactar servidores SMTP.
 
 ## Quer saber mais? 
 
@@ -44,3 +57,5 @@ Todas as funcionalidades das instâncias que não estão listadas aqui, como o r
 Fale connosco sobre as suas questões, opiniões e sugestões para melhorar o serviço:
 
 - No [servidor Discord OVHcloud](https://discord.gg/ovhcloud)
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
