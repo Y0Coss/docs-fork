@@ -1,7 +1,7 @@
 ---
 title: 'Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?'
 excerpt: 'Découvrez comment migrer votre connexion xDSL vers la fibre optique en raison de la fermeture progressive du réseau cuivre'
-updated: 2025-10-29
+updated: 2026-01-15
 ---
 
 ## Objectif
