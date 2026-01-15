@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von HTTP/2 auf dem OVHcloud Load Balancer"
 excerpt: "Erfahren Sie, wie Sie die Frontends Ihres OVHcloud Load Balancers für die Verwendung mit dem HTTP/2-Protokoll auswählen und konfigurieren können"
-updated: 2026-01-14
+updated: 2026-01-15
 ---
 
 > [!primary]
