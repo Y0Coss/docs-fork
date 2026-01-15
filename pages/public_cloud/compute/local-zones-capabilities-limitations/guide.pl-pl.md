@@ -18,7 +18,7 @@ Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local 
 
 | Public Cloud Services | Produkt                    | Dostępność w Local Zone | Ograniczenia |
 | --------------------- | -------------------------- | ------------------------ | ----------- |
-| Compute               | Instancje                  | Tak | Akcja Suspend (shelve) nie jest obsługiwana w Local Zones |
+| Compute               | Instancje                  | Tak | Akcja "zawieszania (shelve)" nie jest obsługiwana w Local Zones |
 |                       | Instancje Metalowe         | Nie | |
 |                       | GPU                        | Nie | |
 |                       | Backup Instancji           | Tak | |

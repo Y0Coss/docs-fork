@@ -18,7 +18,7 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 
 | Servicios de Public Cloud | Producto                    | Disponibilidad en Local Zone | Limitaciones |
 | ------------------------- | --------------------------- | ----------------------------- | ------------ |
-| Compute                   | Instancias                  | Sí | La acción de suspender (shelve) no está soportada en Local Zones |
+| Compute                   | Instancias                  | Sí | La acción "suspender (shelve)" no está soportada en Local Zones |
 |                           | Instancias Metal            | No | |
 |                           | GPU                         | No | |
 |                           | Copia de seguridad de instancias | Sí | |

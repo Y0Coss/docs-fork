@@ -17,7 +17,7 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 
 | Services Public Cloud | Produit                    | Disponibilité en Local Zone | Limitations |
 | --------------------- | -------------------------- | ------------------------ | ----------- |
-| Compute               | Instances                  | Oui | La suspension (mise en attente) n'est pas prise en charge dans les Local Zones |
+| Compute               | Instances                  | Oui | L'action « suspendre (shelve) » n'est pas prise en charge dans les Local Zones |
 |                       | Instances Metal            | Non | |
 |                       | GPU                        | Non | |
 |                       | Sauvegardes d'instances    | Oui | |

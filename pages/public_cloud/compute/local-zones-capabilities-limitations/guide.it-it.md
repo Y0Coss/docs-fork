@@ -18,7 +18,7 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 
 | Servizi Public Cloud | Prodotto                    | Disponibilità Local Zone | Limitazioni |
 | --------------------- | -------------------------- | ------------------------ | ----------- |
-| Compute               | Istanze                    | Sì | L'azione Suspend (shelve) non è supportata nelle Local Zones |
+| Compute               | Istanze                    | Sì | L'azione "sospendere (shelve)" non è supportata nelle Local Zones |
 |                       | Istanze Metal              | No | |
 |                       | GPU                        | No | |
 |                       | Backup delle istanze       | Sì | |
