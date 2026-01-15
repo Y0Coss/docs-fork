@@ -1,22 +1,22 @@
 ---
 title: "Domain name holder contact management"
-excerpt: "Find out how to verify, correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
+excerpt: "Find out how to verify, correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud"
 updated: 2026-01-15
 ---
 
 ## Objective
 
-Have you received an email from OVHcloud stating that action is required for your domain name? Does the same email indicate that the contact details (contact information) relating to your domain name owner must be corrected or completed?
+Have you received an email from OVHcloud stating that action is required for your domain name? Does the same email indicate that the contact details (contact information) relating to your domain name holder must be corrected or completed?
 
-**Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud.**
+**Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud.**
 
 ## Why did I receive a contact verification email from OVHcloud?
 
-ICANN, the organization responsible for governing domain names globally, or registries, organizations responsible for managing extensions, require the validation of owner information when a domain name is created, transferred, or whenever associated contacts are updated.
+ICANN, the organization responsible for governing domain names globally, or registries, organizations responsible for managing extensions, require the validation of holder information when a domain name is created, transferred, or whenever associated contacts are updated.
 
-Verification of owner contact details can occur at any time during a domain name's lifecycle, including for domain names purchased several years ago. Thus, each domain concerned must undergo verification of the owner's contact details within 15 days of receiving the verification email, whether following a purchase, transfer, modification of contact details, or a periodic verification requested by ICANN or the registry.
+Verification of holder contact details can occur at any time during a domain name's lifecycle, including for domain names purchased several years ago. Thus, each domain concerned must undergo verification of the holder's contact details within 15 days of receiving the verification email, whether following a purchase, transfer, modification of contact details, or a periodic verification requested by ICANN or the registry.
 
-## What happens if the owner's email or contact information is not verified within the timeframe?
+## What happens if the holder's email or contact information is not verified within the timeframe?
 
 If verification is not completed within the specified timeframe, the domain name is automatically suspended and becomes temporarily unavailable until verification is completed, potentially resulting in the deletion of the domain name.
 In this case, OVHcloud will not be able to provide any refund.
@@ -25,38 +25,38 @@ In this case, OVHcloud will not be able to provide any refund.
 
 - You have a [domain name](/links/web/domains) registered with OVHcloud.
 - You have access to the [OVHcloud Control Panel](/links/manager).
-- You have received an email from OVHcloud stating that action is required regarding your domain name owner contact details.
+- You have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
 - Check the following points to ensure that this is not a fraudulent email:
     - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
     - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Instructions
 
-### 1 - Owner email verification after purchase or modification of the owner's contact email for a domain name
+### 1 - Holder email verification after purchase or modification of the holder's contact email for a domain name
 
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 
->> After the order, the domain name owner will receive an email from OVH to validate their email address and confirm it is reachable.
+>> After the order, the domain name holder will receive an email from OVH to validate their email address and confirm it is reachable.
 
 > **Step 2**
 
-By clicking on "Confirm your email address", a new page will open with a link directly validating the owner's email address.
+By clicking on "Confirm your email address", a new page will open with a link directly validating the holder's email address.
 
 >> ![Email address verification](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png){.thumbnail}
 
 > **Step 2 bis**
 
-If step 2 does not work, the owner can manually validate their email address using the one-time code provided in the email and by clicking on "Email validation form"
+If step 2 does not work, the holder can manually validate their email address using the one-time code provided in the email and by clicking on "Email validation form"
 
 >> ![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
 
 >> ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
 
-### 2 - Correct or complete the contact details of the domain name owner as an administrator
+### 2 - Correct or complete the contact details of the domain name holder as an administrator
 
 Click on the tabs below to view each of the **5** steps.
 
@@ -83,7 +83,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 4**
 >>
->> On the new page, go to the **Owner** box, then click the `Edit`{.action} button.
+>> On the new page, go to the **Holder** box, then click the `Edit`{.action} button.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
@@ -91,17 +91,17 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> > [!warning]
 >> >
->> > Any change to the owner's first name, surname, organization, legal status or email address is considered a **change of owner**.
+>> > Any change to the holder's first name, surname, organization, legal status or email address is considered a **change of holder**.
 >> >
->> > If you modify **only** the owner's contact details other than those mentioned above, edit the appropriate fields, then click `Confirm`{.action}. In this case it will not be necessary to initiate a request for a change of owner. For this operation, you do not need to confirm the changes by email.
+>> > If you modify **only** the holder's contact details other than those mentioned above, edit the appropriate fields, then click `Confirm`{.action}. In this case it will not be necessary to initiate a request for a change of holder. For this operation, you do not need to confirm the changes by email.
 >> >
->> > If a change of owner is required, click on the link `Click here to continue`{.action} at the bottom of the page.
+>> > If a change of holder is required, click on the link `Click here to continue`{.action} at the bottom of the page.
 >>
 >> ![Owner information](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
->> Find more details on changing the owner in our guide: “[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)”.
+>> Find more details on changing the holder in our guide: "[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)".
 
-### 3 - What to do if the owner contact's email address is no longer accessible?
+### 3 - What to do if the holder contact's email address is no longer accessible?
 
 > **General case**
 
@@ -109,13 +109,13 @@ If the email address associated with your domain name is incorrect or inaccessib
 
 https://help.ovhcloud.com/csm?id=contact_us_ovh
 
-Note that the domain owner will need to verify their identity again by providing the necessary documents according to their type (individual, business, association, etc.).
+Note that the domain holder will need to verify their identity again by providing the necessary documents according to their type (individual, business, association, etc.).
 
 > [!primary]
 >
 > The list of documents below is not exhaustive. Other supporting documents may be required depending on your situation or the requirements of the relevant registry.
 
-**Documents to provide according to the owner type:**
+**Documents to provide according to the holder type:**
 
 **Individual**
 - Valid identity document (front and back): national identity card, passport (pages containing the photograph and personal information as well as the signature page), residence permit or driving licence
@@ -137,13 +137,13 @@ Our team will help you with the next steps to verify your domain 😊
 
 > **Special case for .fr**
 
-For .fr extensions, the domain administrator can go directly to their Control Panel and modify the owner contact's email address by following the steps described in Step 2 of this page.
+For .fr extensions, the domain administrator can go directly to their Control Panel and modify the holder contact's email address by following the steps described in Step 2 of this page.
 
-### 4 - Relaunch the operation to verify the contact details of the domain name owner
+### 4 - Relaunch the operation to verify the contact details of the domain name holder
 
 > [!warning]
 >
-> If the corrections in the first part of this guide required the initialization of a change of owner for the domain name, complete the change of owner **before** continuing with the actions described in this guide.
+> If the corrections in the first part of this guide required the initialization of a change of holder for the domain name, complete the change of holder **before** continuing with the actions described in this guide.
 >
 
 Click on the tabs below to view each of the **4** steps.
@@ -177,7 +177,7 @@ It will take a few minutes to complete the operation. Refresh the `Domain name o
 
 If the operation has completed successfully, the row for the processed operation no longer appears.
 
-If this is not the case, a correction is necessary in the domain name owner's contact details. In this case, please follow this guide from the beginning to resolve the issue.
+If this is not the case, a correction is necessary in the domain name holder's contact details. In this case, please follow this guide from the beginning to resolve the issue.
 
 ## Go further
 
