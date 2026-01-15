@@ -4,10 +4,6 @@ excerpt: "Découvrez comment utiliser le Secret Manager avec l'interface graphiq
 updated: 2025-10-15
 ---
 
-> [!primary]
-> Le Secret Manager est actuellement en phase bêta. Ce guide est susceptible d’être mis à jour ultérieurement avec les avancées de nos équipes en charge de ce produit.
->
-
 ## Objectif
 
 L'objectif de ce guide est de présenter l'utilisation du Secret Manager à travers l'espace client OVHcloud.

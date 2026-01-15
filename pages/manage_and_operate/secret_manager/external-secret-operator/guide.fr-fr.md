@@ -4,9 +4,6 @@ excerpt: "Découvrez comment configurer External Secret Operator pour stocker le
 updated: 2026-01-07
 ---
 
-> [!primary]
-> Secret Manager est actuellement en phase bêta. Ce guide peut être mis à jour à l'avenir avec les avancées apportées par nos équipes en charge de ce produit.
-
 ## Objectif
 
 Ce guide explique comment configurer l'External Secret Operator Kubernetes pour utiliser le Secret Manager d'OVHcloud en tant que fournisseur.

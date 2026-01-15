@@ -4,9 +4,6 @@ excerpt: "Discover how to use the Secret Manager with the graphical interface"
 updated: 2025-10-15
 ---
 
-> [!primary]
-> Secret Manager is currently in beta phase. This guide can be updated in the future with the advances of our teams in charge of this product.
-
 ## Objective
 
 The objective of this guide is to present the use of the Secret Manager through the OVHcloud Control Panel.
