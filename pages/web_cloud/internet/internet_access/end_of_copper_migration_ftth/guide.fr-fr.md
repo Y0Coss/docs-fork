@@ -39,6 +39,9 @@ La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos 
 
 Vous pouvez dès lors choisir de migrer vers la [Fibre Pro OVHcloud](https://www.ovhcloud.com/fr/internet/fibre/) (voir ci-dessous) ou de [résilier votre offre d'accès à Internet OVHcloud](#cancel).
 
+> [!success]
+> Retrouvez les offres et débits disponibles à votre adresse grâce à [notre outil d'éligibilité](https://order.isp.ovh.net/).
+
 ### Souscrire une offre fibre OVHcloud
 
 #### Cas n°1 : La migration est proposée directement dans l'espace client
