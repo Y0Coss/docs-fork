@@ -1,7 +1,7 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
 excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro, MX Plan or Zimbra platform"
-updated: 2021-10-21
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -106,7 +106,6 @@ To do this, select the relevant Email Pro, Exchange or Zimbra service, then go t
 > [!primary]
 >
 > If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](/links/manager).
->
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.
 
@@ -121,7 +120,6 @@ If you have configured one of the migrated accounts on a local email client (e.g
 > [!primary]
 >
 > You can also manually migrate external email addresses to OVHcloud by using our [OVHcloud Mail Migrator](/links/web/omm) tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
->
 
 ## Go further
 

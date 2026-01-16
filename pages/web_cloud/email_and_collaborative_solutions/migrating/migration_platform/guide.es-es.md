@@ -1,7 +1,7 @@
 ---
 title: "Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra"
 excerpt: "Cómo migrar las direcciones de correo de una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro, MX Plan o Zimbra"
-updated: 2021-10-21
+updated: 2026-01-16
 ---
 
 ## Objetivo
@@ -106,7 +106,6 @@ Para ello, seleccione el servicio Email Pro, Exchange o Zimbra concernido, y dir
 > [!primary]
 >
 > Si acaba de realizar la migración o de modificar un registro DNS de su dominio, es posible que la visualización en el [área de cliente de OVHcloud](/links/manager) necesite algunas horas para actualizarse.
->
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.
 
@@ -121,7 +120,6 @@ Si ha configurado una de las cuentas migradas en un cliente de correo (p.ej.: Ou
 > [!primary]
 >
 > También puede migrar manualmente direcciones de correo a OVHcloud utilizando nuestra herramienta [OVHcloud Mail Migrator (OMM)](/links/web/omm). Para ello, debe disponer de la información (usuario, contraseña, servidores) del correo de origen y del correo electrónico de destino.
->
 
 ## Más información
 

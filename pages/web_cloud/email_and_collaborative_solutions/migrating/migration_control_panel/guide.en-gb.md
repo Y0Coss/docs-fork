@@ -1,7 +1,7 @@
 ---
 title: 'Migrating an MX Plan email account to an Email Pro, Exchange account or Zimbra'
 excerpt: 'Find out how to migrate an MX Plan email address to an Email Pro, Exchange or Zimbra account'
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -56,7 +56,6 @@ Before starting your migration, you will need to identify the version of the MX 
 > 1. Note the technology used under the mention **Webmail** in the `Subscription` box.
 >
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
->
 
 #### 3.1 Manual migration of an MX Plan offer to Exchange, Email Pro or Zimbra  <a name="all-mxplan"></a>
 
@@ -121,7 +120,6 @@ If you want to delete it, go to the `Email accounts`{.action} tab in your MX Pla
 > Your OVHcloud account must be the administrative **and** technical contact for the MX plan service to be migrated, **as well as** for the Email Pro or Exchange service you are migrating to.
 >
 > For more information on editing contacts, please refer to our guide on [managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
->
 
 You can migrate from two interfaces:<br>
 
@@ -139,7 +137,6 @@ Once you are ready, follow the steps below, depending on the interface you have 
 > Once the migration is confirmed, you will no longer be able to access your old MX Plan email account, or cancel the migration process. We strongly advise you to carry out this operation at a favourable time.
 >
 > Even if you can no longer access your current email account, existing and newly arriving messages will not be lost. All will be immediately accessible from your new account.
->
 
 ##### **Migration with the Exchange configuration assistant**
 
@@ -172,7 +169,6 @@ To do this, select the concerned Email Pro, Exchange or Zimbra service, then go 
 > [!primary]
 >
 > If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated in your [OVHcloud Control Panel](/links/manager).
->
 
 To modify the configuration, click on the red badge and perform the requested operation. This operation requires a propagation time of 4 to 24 hours maximum before it is fully effective.
 

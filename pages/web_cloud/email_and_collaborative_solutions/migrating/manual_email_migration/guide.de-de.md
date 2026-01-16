@@ -1,7 +1,7 @@
 ---
 title: Ihre E-Mail-Adresse manuell migrieren
 excerpt: Erfahren Sie hier, wie Sie Ihre E-Mail-Adresse manuell auf eine andere E-Mail-Adresse migrieren.
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Ziel
