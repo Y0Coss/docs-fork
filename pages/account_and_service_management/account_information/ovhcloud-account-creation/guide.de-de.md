@@ -19,19 +19,20 @@ Die Erstellung eines Accounts kann vor oder während der Bestellung Ihres ersten
 
 ### Wie erstellt man einen OVHcloud Kunden-Account?
 
-Um einen OVHcloud Account zu erstellen, gehen Sie zu [this page](/links/manager) und klicken Sie auf `Account erstellen`{.action}.
 
-![Konto erstellen](images/account-creation-EN-01.png){.thumbnail}
+Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie zu [dieser Seite](/links/manager) und klicken Sie auf `Account erstellen`{.action}.
+
+![Account erstellen](images/account-creation-EN-01.png){.thumbnail}
 
 Geben Sie im OVHcloud Kundencenter Ihr Land mit Steuersitz, Ihre Währung und die Sprache ein, in der Sie Ihre Dienste verwalten möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 
 ![Erstellen Sie einen Account](images/account-creation-EN-02.png){.thumbnail}
 
-Geben Sie dann Ihre E-Mail-Adresse ein und erstellen Sie ein Passwort für den Zugriff auf Ihr OVHcloud Konto.
+Geben Sie dann Ihre E-Mail-Adresse ein und erstellen Sie ein Passwort für den Zugriff auf Ihr OVHcloud Kunden-Account.
 
 |Information|Beschreibung|
 |---|---|
-|E-Mail-Adresse|Geben Sie eine gültige **E-Mail-Adresse, auf die Sie Zugriff haben**, ein.<br><br>Vermeiden Sie es, eine E-Mail-Adresse zu verwenden, die mit einer Domain verbunden ist, die Sie über diesen OVHcloud-Account verwalten. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.|
+|E-Mail-Adresse|Geben Sie eine gültige **E-Mail-Adresse, auf die Sie Zugriff haben**, ein.<br><br>Vermeiden Sie es, eine E-Mail-Adresse zu verwenden, die mit einer Domain verbunden ist, die Sie über diesen OVHcloud Kunden-Account verwalten. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.|
 |Passwort|Das Passwort muss einzigartig sein (erstellt und ausschließlich verwendet für Ihren OVHcloud Kunden-Account) und hinreichend komplex sein.<br><br>Um ein effizientes Passwort [zu erstellen, lesen Sie unsere](/pages/account_and_service_management/account_information/manage-ovh-password#in-der-praktischen-anwendung) Anleitung zur Passwortverwaltung.|
 
 Sobald Sie das erste Formular ausgefüllt haben, wird Ihnen ein Code zur einmaligen Verwendung an die von Ihnen angegebene E-Mail-Adresse zugesandt. Mit diesem Code können Sie Ihre E-Mail-Adresse validieren. Geben Sie ihn in die dafür vorgesehenen Felder ein.
