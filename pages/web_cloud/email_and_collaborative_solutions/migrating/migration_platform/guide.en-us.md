@@ -1,7 +1,7 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
 excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform"
-updated: 2021-10-21
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -80,7 +80,7 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 
 Migrate the source email account to your new platform account using our [OMM](/links/web/omm) tool (OVHcloud Mail Migrator).
 
-> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) mode via [OMM](/links/web/omm). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
+> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) mode via [OMM](/links/web/omm). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
 
 For more information on OMM, please read our guide on [Migrating email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
