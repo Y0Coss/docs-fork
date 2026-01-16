@@ -120,9 +120,9 @@ Veuillez noter que le titulaire du domaine devra à nouveau justifier son identi
 
 Nos équipes vous aideront dans les prochaines étapes pour vérifier votre domaine.
 
-#### Cas particulier du .fr
+#### Cas particulier - Modification du contact titulaire par l'administrateur sans assistance (exemple du .fr)
 
-Pour les extensions en .fr, l'administrateur du domaine peut se rendre directement sur son [espace client OVHcloud](/links/manager) et modifier l'adresse du contact titulaire en suivant les étapes décrites à l'étape 2 de cette page.
+Pour certaines extensions ( par exemple : .fr, .it, .es), l'administrateur du domaine peut se rendre directement sur son [espace client OVHcloud](/links/manager) et modifier l'adresse du contact titulaire en suivant les étapes décrites à l'étape 2 de cette page.
 
 ### 4 - Relancer l'opération de vérification des coordonnées/informations de contact du titulaire du nom de domaine
 

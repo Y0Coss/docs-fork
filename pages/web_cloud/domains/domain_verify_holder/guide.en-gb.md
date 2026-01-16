@@ -120,9 +120,9 @@ Please note that the domain's holder will have to prove their identity again by 
 
 Our teams will help you in the next steps to verify your domain.
 
-#### Special case of .fr
+#### Special case - Modification of the holder contact by the administrator without assistance (example of .fr)
 
-For .fr extensions, the domain administrator can go directly to their Control Panel and modify the holder contact's email address by following the steps described in Step 2 of this page.
+For certain extensions ( e.g.: .fr, .it, .es), the domain administrator can go directly to their [OVHcloud Control Panel](/links/manager) and modify the holder contact's email address by following the steps described in Step 2 of this page.
 
 ### 4 - Relaunch the operation to verify the contact details of the domain name holder
 
