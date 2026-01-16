@@ -1,7 +1,7 @@
 ---
 title: "Domain name holder contact management"
 excerpt: "Find out how to verify, correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud"
-updated: 2026-01-15
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -10,13 +10,13 @@ Have you received an email from OVHcloud stating that action is required for you
 
 **Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud.**
 
-## Why did I receive a contact verification email from OVHcloud?
+### Why did I receive a contact verification email from OVHcloud?
 
 ICANN, the organization responsible for governing domain names globally, or registries, organizations responsible for managing extensions, require the validation of holder information when a domain name is created, transferred, or whenever associated contacts are updated.
 
 Verification of holder contact details can occur at any time during a domain name's lifecycle, including for domain names purchased several years ago. Thus, each domain concerned must undergo verification of the holder's contact details within 15 days of receiving the verification email, whether following a purchase, transfer, modification of contact details, or a periodic verification requested by ICANN or the registry.
 
-## What happens if the holder's email or contact information is not verified within the timeframe?
+### What happens if the holder's email or contact information is not verified within the timeframe?
 
 If verification is not completed within the specified timeframe, the domain name is automatically suspended and becomes temporarily unavailable until verification is completed, potentially resulting in the deletion of the domain name.
 In this case, OVHcloud will not be able to provide any refund.
@@ -24,7 +24,7 @@ In this case, OVHcloud will not be able to provide any refund.
 ## Requirements
 
 - You have a [domain name](/links/web/domains) registered with OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
 - Check the following points to ensure that this is not a fraudulent email:
     - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
@@ -34,27 +34,17 @@ In this case, OVHcloud will not be able to provide any refund.
 
 ### 1 - Holder email verification after purchase or modification of the holder's contact email for a domain name
 
-Click on the tabs below to view each of the **2** steps.
+After the order, the domain name holder will receive an email from OVHcloud to validate their email address and confirm it is reachable.
 
-> [!tabs]
-> **Step 1**
+![Email address verification](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png){.thumbnail}
 
->> After the order, the domain name holder will receive an email from OVH to validate their email address and confirm it is reachable.
+When clicking on `Confirm your email address`{.action}, a new page will open with a link directly validating the holder's email address.
 
-> **Step 2**
+If this method does not work, the holder can manually validate their email address using the one-time code provided in the email and by clicking on `Email validation form`{.action}.
 
-By clicking on "Confirm your email address", a new page will open with a link directly validating the holder's email address.
+![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
 
->> ![Email address verification](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png){.thumbnail}
-
-> **Step 2 bis**
-
-If step 2 does not work, the holder can manually validate their email address using the one-time code provided in the email and by clicking on "Email validation form"
-
->> ![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
-
->> ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
-
+![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
 ### 2 - Correct or complete the contact details of the domain name holder as an administrator
 
@@ -77,7 +67,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> On the page that pops up, check that your domain name is covered by the procedure, as there is a banner (yellow or red) indicating the operation to be carried out.
 >>
->> You will then find the **Contacts** comment in the **Plan** box. Click the `...`{.action} button on the right, then `Manage contacts`{.action}.
+>> Then, find the **Contacts** comment in the **Plan** box. Click the `...`{.action} button to the right, then `Manage contacts`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
@@ -103,39 +93,34 @@ Click on the tabs below to view each of the **5** steps.
 
 ### 3 - What to do if the holder contact's email address is no longer accessible?
 
-> **General case**
+#### General case
 
-If the email address associated with your domain name is incorrect or inaccessible (for example due to a typing error), we invite you to contact OVHcloud Support:
+If the email address associated with your domain name is incorrect or inaccessible (for example, due to a typo), you should [contact OVHcloud support](/links/support).
 
-https://help.ovhcloud.com/csm?id=contact_us_ovh
-
-Note that the domain holder will need to verify their identity again by providing the necessary documents according to their type (individual, business, association, etc.).
+Please note that the domain's holder will have to prove their identity again by providing the required documents according to their type (individual, company, association, etc.).
 
 > [!primary]
 >
-> The list of documents below is not exhaustive. Other supporting documents may be required depending on your situation or the requirements of the relevant registry.
+> The list of documents below is not exhaustive. Other documents may be requested depending on your situation or the requirements of the relevant registry.
 
-**Documents to provide according to the holder type:**
+**Documents to provide according to the type of holder:**
 
-**Individual**
-- Valid identity document (front and back): national identity card, passport (pages containing the photograph and personal information as well as the signature page), residence permit or driving licence
+- **Individual**:
+    - Valid identity document (front and back): national identity card, passport (pages containing the photograph and personal information as well as the signature page), residence permit or driving licence
+- **Company**
+    - Proof of entity existence: company registration extract (less than 3 months old), trade register extract, business licence, or any equivalent document.
+    - Valid identity document (front and back) of the legal representative (business owner, president or managing director): national identity card, passport, residence permit or driving licence.
+- **Non-profit organisation**
+    - Valid identity document (front and back) of the legal representative (president, manager or director of the association): national identity card, passport, residence permit or driving licence
+    - Legal proof of existence of the organisation.
+    - Minutes of the last general meeting.
+- **Public administration**
+    - Administrative certificate (or equivalent official document).
+    - Valid identity document (front and back) of the public administration representative: national identity card, passport, residence permit or driving licence.
 
-**Business**
-- Proof of entity existence: company registration extract (less than 3 months old), trade register extract, business licence, or any equivalent document
-- Valid identity document (front and back) of the legal representative (business owner, president or managing director): national identity card, passport, residence permit or driving licence
+Our teams will help you in the next steps to verify your domain.
 
-**Association**
-- Valid identity document (front and back) of the legal representative (president, manager or director of the association): national identity card, passport, residence permit or driving licence
-- Publication in the official journal
-- Minutes of the last general assembly
-
-**Public administration**
-- Administrative certificate (or equivalent official document)
-- Valid identity document (front and back) of the public administration representative: national identity card, passport, residence permit or driving licence
-
-Our team will help you with the next steps to verify your domain 😊
-
-> **Special case for .fr**
+#### Special case of .fr
 
 For .fr extensions, the domain administrator can go directly to their Control Panel and modify the holder contact's email address by following the steps described in Step 2 of this page.
 
@@ -184,9 +169,9 @@ If this is not the case, a correction is necessary in the domain name holder's c
 [Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)
 
 [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)
- 
+
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
- 
+
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
- 
+
 Join our [community of users](/links/community).
