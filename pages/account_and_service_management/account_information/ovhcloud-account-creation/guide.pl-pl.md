@@ -21,7 +21,7 @@ Konto może zostać utworzone przed lub podczas składania zamówienia na pierws
 
 Aby utworzyć konto OVHcloud, przejdź do [this page](/links/manager) i kliknij `Utwórz konto`{.action}.
 
-![Załóż konto](images/account-create-EN-01.png){.thumbnail}
+![Załóż konto](images/account-creation-EN-01.png){.thumbnail}
 
 Wprowadź w Panelu klienta kraj rezydencji podatkowej, walutę i język do zarządzania usługami. Następnie kliknij przycisk `Potwierdź`{.action}.
 
