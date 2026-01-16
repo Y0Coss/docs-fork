@@ -31,6 +31,246 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >
 
 > [!tabs]
+> > Via l'API OVHcloud
+>> **1\. Créer un share**
+>>
+>> Identifiez votre réseau privé et votre sous-réseau.
+>>
+>> Avant de créer ou d'associer un service File Storage, vous devez identifier le réseau privé cible.
+>>
+>> Récupérez l'ID du réseau.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/network
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> [
+>>   {
+>>     "id": "581fad02-158d-4dc6-81f0-c1ec2794bbec",
+>>     "name": "Ext-Net",
+>>     "visibility": "public",
+>>     "vlanId": null
+>>   },
+>>   {
+>>     "id": "[NETWORK_ID]",
+>>     "name": "<my-network-name>",
+>>     "visibility": "private",
+>>     "vlanId": 2701
+>>   }
+>> ]
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > **NOTE:** Sélectionnez uniquement un réseau privé.
+>> >
+>>
+>> Récupérez l'ID du sous-réseau à l'aide de l'ID réseau.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/network/{networkId}/subnet
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> [
+>>   {
+>>     "id": "[SUBNET_ID]",
+>>     "name": "subnet-name",
+>>     "cidr": "10.1.0.0/24",
+>>     "ipVersion": 4,
+>>     "dhcpEnabled": true,
+>>     "gatewayIp": "10.1.0.1",
+>>     "allocationPools": [
+>>       {
+>>         "start": "10.1.0.2",
+>>         "end": "10.1.0.254"
+>>       }
+>>     ],
+>>     "hostRoutes": [],
+>>     "dnsNameServers": [
+>>       "1.1.1.1"
+>>     ]
+>>   }
+>> ]
+>> ```
+>>
+>> L'ID réseau et l'ID sous-réseau doivent tous deux respecter le format suivant : `abc12345-def6-4abc-8def-123456abcdef`.
+>>
+>> Créez un share NFS de 150 Gio connecté à votre réseau privé.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share
+>> >
+>>
+>> > [!primary]
+>> >
+>> > **NOTE:** Remplacez <my-share-name> par le nom de share que vous avez choisi.
+>> >
+>>
+>> Répertoriez vos actions et attendez que la nouvelle action apparaisse avec le statut `available`.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> {
+>>   "capabilities": [
+>>     {
+>>       ...
+>>     }
+>>   ],
+>>   "createdAt": "2026-01-14T08:23:30.079Z",
+>>   "description": "<my-share-description>",
+>>   "exportLocations": [
+>>     {
+>>       "id": "string",
+>>       "path": "string"
+>>     }
+>>   ],
+>>   "id": "[SHARE_ID]",
+>>   "isPublic": false,
+>>   "name": "<my-share-name>",
+>>   "protocol": "NFS",
+>>   "region": "[REGION]",
+>>   "size": 150,
+>>   "status": "available",
+>>   "type": "standard-1az",
+>>   "updatedAt": "2026-01-14T08:23:30.079Z"
+>> }
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > **NOTE:** L'identifiant du share doit avoir le format « abc12345-def6-4abc-8def-123456abcdef ».
+>> >
+>>
+>> Récupérez les détails du share à l'aide de l'ID de share.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> {
+>>   "capabilities": [
+>>     {
+>>       "enabled": true,
+>>       "name": "<my-share-name>"
+>>     }
+>>   ],
+>>   "createdAt": "2026-01-14T08:23:30.079Z",
+>>   "description": "<my-share-description>",
+>>   "exportLocations": [
+>>     {
+>>       "id": "string",
+>>       "path": "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef"
+>>     }
+>>   ],
+>>   "id": "abc12345-def6-4abc-8def-123456abcdef",
+>>   "isPublic": false,
+>>   "name": "string",
+>>   "protocol": "NFS",
+>>   "region": "string",
+>>   "size": 150,
+>>   "status": "available",
+>>   "type": "standard-1az",
+>>   "updatedAt": "2026-01-14T08:23:30.079Z"
+>> }
+>> ```
+>>
+>> **2\. Autoriser une machine virtuelle cliente**
+>>
+>> Assurez-vous que la machine virtuelle cliente se trouve sur le même réseau privé que le share.
+>>
+>> Récupérez l'adresse [IP privée de la machine virtuelle](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>>
+>> Accordez l'accès au share à l'aide de l'adresse IP privée de la machine virtuelle (par exemple, 10.1.0.123) via la gestion ACL :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> {
+>>   "accessLevel": "rw",
+>>   "accessTo": "10.1.0.123",
+>>   "createdAt": "2026-01-14T10:26:14.446Z",
+>>   "id": "[ACL_ID]",
+>>   "status": "active",
+>>   "updatedAt": "2026-01-14T10:26:14.446Z"
+>> }
+>> ```
+>> 
+>> Vérifiez l'accès au share NFS à partir de la machine virtuelle cliente autorisée.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl/{aclId}
+>> >
+>>
+>> **3\. Montez le share sur votre machine virtuelle cliente**
+>>
+>> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share.
+>>
+>> ```bash
+>> sudo apt update && sudo apt install -y nfs-common
+>> ```
+>>
+>> Créer un point de montage et monter le share
+>>
+>> ```bash
+>> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
+>> ```
+>>
+>> Vérifiez le montage
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Rendre le montage persistant après les redémarrages
+>>
+>> ```bash
+>> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> Cela garantit que le share NFS est automatiquement remonté après le redémarrage de la VM.
+>>
+>> **4\. Vérifier la capacité et l'utilisation**
+>>
+>> Une fois le share NFS monté, vérifiez son espace disponible et son utilisation :
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Exemple de résultat :
+>>
+>> ```bash
+>> Filesystem                          Size  Used  Avail Use% Mounted on
+>> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
+>> ```
+>>
+>> **Note:** Cela vous permet de surveiller la capacité de stockage et l'utilisation de votre share NFS.
+>>
 > Via la CLI OpenStack avec le plugin Manila
 > >> **0\. Prérequis supplémentaires**
 >>

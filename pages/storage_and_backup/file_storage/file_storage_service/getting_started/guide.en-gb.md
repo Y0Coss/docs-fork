@@ -31,6 +31,246 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >
 
 > [!tabs]
+> Via OVHcloud API
+>> **1\. Create a share**
+>>
+>> Identify your private network and subnet
+>>
+>> Before creating or attaching a File Storage service, you must identify the target private network.
+>>
+>> Retrieve the network ID.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/network
+>> >
+>>
+>> Example output:
+>>
+>> ```json
+>> [
+>>   {
+>>     "id": "581fad02-158d-4dc6-81f0-c1ec2794bbec",
+>>     "name": "Ext-Net",
+>>     "visibility": "public",
+>>     "vlanId": null
+>>   },
+>>   {
+>>     "id": "[NETWORK_ID]",
+>>     "name": "<my-network-name>",
+>>     "visibility": "private",
+>>     "vlanId": 2701
+>>   }
+>> ]
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > **NOTE:** Only select a private network.
+>> >
+>>
+>> Retrieve the subnet ID using the network ID.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/network/{networkId}/subnet
+>> >
+>>
+>> Example output:
+>>
+>> ```json
+>> [
+>>   {
+>>     "id": "[SUBNET_ID]",
+>>     "name": "subnet-name",
+>>     "cidr": "10.1.0.0/24",
+>>     "ipVersion": 4,
+>>     "dhcpEnabled": true,
+>>     "gatewayIp": "10.1.0.1",
+>>     "allocationPools": [
+>>       {
+>>         "start": "10.1.0.2",
+>>         "end": "10.1.0.254"
+>>       }
+>>     ],
+>>     "hostRoutes": [],
+>>     "dnsNameServers": [
+>>       "1.1.1.1"
+>>     ]
+>>   }
+>> ]
+>> ```
+>>
+>> Both the network ID and subnet ID should have the format: `abc12345-def6-4abc-8def-123456abcdef`.
+>>
+>> Create a 150 GiB NFS share attached to your private network.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share
+>> >
+>>
+>> > [!primary]
+>> >
+>> > **NOTE:** Replace <my-share-name> with your chosen share name.
+>> >
+>>
+>> List your shares and wait until the newly created one appears with status `available`.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share
+>> >
+>>
+>> Example output:
+>>
+>> ```json
+>> {
+>>   "capabilities": [
+>>     {
+>>       ...
+>>     }
+>>   ],
+>>   "createdAt": "2026-01-14T08:23:30.079Z",
+>>   "description": "<my-share-description>",
+>>   "exportLocations": [
+>>     {
+>>       "id": "string",
+>>       "path": "string"
+>>     }
+>>   ],
+>>   "id": "[SHARE_ID]",
+>>   "isPublic": false,
+>>   "name": "<my-share-name>",
+>>   "protocol": "NFS",
+>>   "region": "[REGION]",
+>>   "size": 150,
+>>   "status": "available",
+>>   "type": "standard-1az",
+>>   "updatedAt": "2026-01-14T08:23:30.079Z"
+>> }
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > **NOTE:** The share ID should have the format `abc12345-def6-4abc-8def-123456abcdef`.
+>> >
+>>
+>> Retrieve the share details using the share ID.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}
+>> >
+>>
+>> Example output:
+>>
+>> ```json
+>> {
+>>   "capabilities": [
+>>     {
+>>       "enabled": true,
+>>       "name": "<my-share-name>"
+>>     }
+>>   ],
+>>   "createdAt": "2026-01-14T08:23:30.079Z",
+>>   "description": "<my-share-description>",
+>>   "exportLocations": [
+>>     {
+>>       "id": "string",
+>>       "path": "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef"
+>>     }
+>>   ],
+>>   "id": "abc12345-def6-4abc-8def-123456abcdef",
+>>   "isPublic": false,
+>>   "name": "string",
+>>   "protocol": "NFS",
+>>   "region": "string",
+>>   "size": 150,
+>>   "status": "available",
+>>   "type": "standard-1az",
+>>   "updatedAt": "2026-01-14T08:23:30.079Z"
+>> }
+>> ```
+>>
+>> **2\. Authorize a Client VM**
+>>
+>> Ensure the client VM is on the same private network as the share.
+>>
+>> Retrieve the VM’s [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>>
+>> Grant access to the share using the VM’s private IP (e.g., 10.1.0.123) via ACL management:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl
+>> >
+>>
+>> Example output:
+>>
+>> ```json
+>> {
+>>   "accessLevel": "rw",
+>>   "accessTo": "10.1.0.123",
+>>   "createdAt": "2026-01-14T10:26:14.446Z",
+>>   "id": "[ACL_ID]",
+>>   "status": "active",
+>>   "updatedAt": "2026-01-14T10:26:14.446Z"
+>> }
+>> ```
+>> 
+>> Verify access to the NFS share from the authorized client VM.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl/{aclId}
+>> >
+>>
+>> **3\. Mount the Share on Your Client VM**
+>>
+>> Connect to your client VM and install the NFS utilities required to mount the share.
+>>
+>> ```bash
+>> sudo apt update && sudo apt install -y nfs-common
+>> ```
+>>
+>> Create a mount point and mount the share
+>>
+>> ```bash
+>> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
+>> ```
+>>
+>> Verify the mount
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Make the mount persistent across reboots
+>>
+>> ```bash
+>> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> This ensures the NFS share is automatically remounted after the VM restarts.
+>>
+>> **4\. Check Capacity and Usage**
+>>
+>> Once the NFS share is mounted, verify its available space and usage:
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Example output:
+>>
+>> ```bash
+>> Filesystem                          Size  Used  Avail Use% Mounted on
+>> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
+>> ```
+>>
+>> **Note:** This allows you to monitor the storage capacity and usage of your NFS share.
+>>
 > Via the OpenStack CLI with the Manila plugin
 >> **0\. Additional requirements**
 >>
