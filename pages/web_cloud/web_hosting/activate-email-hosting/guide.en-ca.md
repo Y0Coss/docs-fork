@@ -20,7 +20,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!warning]
 >
-> The "email address(es) included with your web hosting" option is unavailable for an external domain name (not registered with OVHcloud or registered on a different [OVHcloud account](/links/manager) from yours).
+> The "email address(es) included with your web hosting plan" option is unavailable for an external domain name (not registered with OVHcloud or registered on a different OVHcloud account from yours).
 >
 > To transfer an external domain to OVHcloud, follow [this guide](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 > If your domain name is already registered with OVHcloud or if a DNS zone already exists for it in another [OVHcloud account](/links/manager) than yours, refer to our documentation "[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)" to regain control.
