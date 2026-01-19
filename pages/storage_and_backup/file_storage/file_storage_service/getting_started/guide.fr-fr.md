@@ -31,7 +31,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI et Terr
 >
 
 > [!tabs]
-> > Via l'API OVHcloud
+> Via l'API OVHcloud
 >> **1\. Créer un share**
 >>
 >> Identifiez votre réseau privé et votre sous-réseau.
