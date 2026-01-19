@@ -36,7 +36,7 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 >
 > Wybierz kartę `Domeny przypisane`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Status` widoczna jest marka `OK` lub `Aktywny`{.action}.
 >
-> ![e-mail-migracja](images/migration_platform02.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Aby uzyskać więcej informacji na temat dodania domeny, zapoznaj się [z przewodnikiem E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config) lub [przewodnikiem Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
