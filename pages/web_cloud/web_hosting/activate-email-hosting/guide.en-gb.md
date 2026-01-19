@@ -25,7 +25,6 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 > Furthermore, if your domain name is already registered with OVHcloud, or if a DNS zone already exists for it in another [OVHcloud account](/links/manager) than your own, please read our documentation “[Managing your service contacts](/pages/account_and_service_management/account_information/managing_contacts)” to find out how to manage it.
 >
 > Finally, if your domain name is already linked to the "email address(es) included with your web hosting plan" option on another web hosting plan, you cannot link it to your own web hosting plan directly. Use this guide to check with the current web hosting manager.
->
 
 ## Instructions
 

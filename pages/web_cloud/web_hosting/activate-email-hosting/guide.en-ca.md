@@ -26,16 +26,10 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 > If your domain name is already registered with OVHcloud or if a DNS zone already exists for it in another OVHcloud account than your own, refer to our documentation "[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)" to find out how to manage it.
 >
 > Finally, if your domain name is already linked to the "email address(es) included" option of another web hosting plan, you will not be able to associate it directly with your own web hosting plan. Use this guide to check with the current web hosting manager.
->
 
 ## Instructions
 
 ### Activate your email addresses included with your web hosting plan
-
-> [!primary]
->
-> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create).
->
 
 Click on the tabs below to view each of the **4** steps.
 
