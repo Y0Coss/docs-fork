@@ -36,7 +36,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 >
 > Select the `Associated Domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
 >
-> ![email-migration](images/migration_platform02.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > For more details on adding a domain name, follow [the Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) or [the Zimbra guide](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 

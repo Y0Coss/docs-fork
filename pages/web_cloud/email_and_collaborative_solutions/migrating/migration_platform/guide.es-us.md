@@ -35,7 +35,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 >
 > Antes de comenzar su migración, si acaba de pedir su nueva oferta de correo electrónico, primero agregue el nombre de dominio a su plataforma de correo electrónico. Si migra a una plataforma MX Plan, el nombre de dominio asociado siendo "fijo", puede pasar directamente a la [siguiente etapa](#accountsmigration).
 >
-> Seleccione la pestaña `Dominios asociados`{.action} o `Dominio`{.action} en su plataforma, y haga clic en `Añadir un dominio`{.action}. Una vez que el nombre de dominio se haya agregado, asegúrese de que la mención `OK` o `Activo`{.action} esté bien presente en la columna `Estado`.
+> Seleccione la pestaña `Dominios asociados`{.action} en su plataforma, y haga clic en `Añadir un dominio`{.action}. Una vez que el nombre de dominio se haya agregado, asegúrese de que la mención `OK` esté bien presente en la columna `Estado`.
 >
 > ![email-migración](images/migration_platform02.png){.thumbnail}
 >

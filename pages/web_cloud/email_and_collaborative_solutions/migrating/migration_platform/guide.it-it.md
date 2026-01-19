@@ -36,7 +36,7 @@ Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email 
 >
 > Seleziona l'opzione `Domini associati`{.action} o `Dominio`{.action} sulla tua piattaforma, quindi clicca su `Aggiungi un dominio`{.action}. Una volta aggiunto il nome del dominio, assicurati che l'indicazione `OK` o `Attivo`{.action} sia presente nella colonna `Stato`.
 >
-> ![email-migrazione](images/migration_platform02.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Per ulteriori dettagli sull'aggiunta di un nome di dominio, segui la [guida Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), la [guida Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) o la [guida Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
