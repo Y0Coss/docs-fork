@@ -25,7 +25,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 > To transfer an external domain to OVHcloud, follow [this guide](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 > If your domain name is already registered with OVHcloud or if a DNS zone already exists for it in another OVHcloud account than your own, refer to our documentation "[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)" to find out how to manage it.
 >
-> Finally, if your domain name is already linked to the "email address(es) included" option of another web hosting service, you will not be able to associate it directly with your own web hosting. Contact the current web hosting manager using this guide for assistance.
+> Finally, if your domain name is already linked to the "email address(es) included" option of another web hosting plan, you will not be able to associate it directly with your own web hosting plan. Use this guide to check with the current web hosting manager.
 >
 
 ## Instructions
