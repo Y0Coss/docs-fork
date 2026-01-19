@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2026-01-21
+updated: 2026-01-19
 ---
 
 > [!warning]
@@ -24,8 +24,9 @@ updated: 2026-01-21
 Cold Archive fournit un stockage de données à long terme en archivant des objets de type « bucket » sur des bandes physiques.
 La restauration peut prendre un certain temps car les données sont lues à partir des bandes.
 
-Comme expliqué en détail dans la [FAQ Cold Archive](pages/storage_and_backup/object_storage/cold_archive_faq), il existe deux manières de consommer Cold Archive :
-- **Cold Archive v1, une solution standalone (granularité au niveau du bucket)**, et
+Comme expliqué en détail dans la [FAQ Cold Archive](/pages/storage_and_backup/object_storage/cold_archive_faq), il existe deux manières de consommer Cold Archive :
+
+- **Cold Archive v1, une solution standalone (granularité au niveau du bucket)**.
 - **Cold Archive v2, une classe Object Storage permettant d'archiver des objets individuellement au sein d'un bucket**.
 
 Bien qu'il existe deux manières différentes de consommer Cold Archive, nous continuons à faire référence à la solution sous le nom de 'Cold Archive' dans tous les documents destinés aux utilisateurs, y compris la page produit et dans l'espace client, sans mentionner explicitement 'v1' ou 'v2'.

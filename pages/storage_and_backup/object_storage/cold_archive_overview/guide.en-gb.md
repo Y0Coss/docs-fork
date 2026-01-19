@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Overview
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2026-01-16
+updated: 2026-01-19
 ---
 
 <style>
@@ -56,9 +56,14 @@ The service allows you to focus on building and deploying cloud applications whi
 
 **This guide explains the concepts of the Cold Archive class of storage.**
 
-Since November 2025, there are two ways of consuming Cold Archive are: (1) **Cold Archive v1, a standalone bucket-granular Cold Archive solution (legacy offering)**, and (2) **Cold Archive v2, an Object Storage class/tier that allows archiving individual objects within a container**. Although there are two underlying ways of consuming Cold Archive, we continue to refer to the solution as 'Cold Archive' in all customer-facing materials, including the product page and customer experience, without explicitly mentioning 'v1' or 'v2'. 
+Since November 2025, there are two ways of consuming Cold Archive are:
 
-Please refer to the [Cold Archive FAQ](pages/storage_and_backup/object_storage/cold_archive_faq) to know more about the main differences between the two underlying options for Cold Archive
+- **Cold Archive v1, a standalone bucket-granular Cold Archive solution (legacy offering)**.
+- **Cold Archive v2, an Object Storage class/tier that allows archiving individual objects within a container**. 
+
+Although there are two underlying ways of consuming Cold Archive, we continue to refer to the solution as 'Cold Archive' in all customer-facing materials, including the product page and customer experience, without explicitly mentioning 'v1' or 'v2'. 
+
+Please refer to the [Cold Archive FAQ](/pages/storage_and_backup/object_storage/cold_archive_faq) to know more about the main differences between the two underlying options for Cold Archive.
 
 ### Concepts
 

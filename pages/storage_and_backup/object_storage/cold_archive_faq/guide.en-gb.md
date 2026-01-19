@@ -1,30 +1,32 @@
 ---
 title: Cold Archive - FAQ
 excerpt: Frequently Asked Questions on the Cold Archive solution
-updated: 2026-01-18
+updated: 2026-01-19
 ---
+
 ## Clarification on Cold Archive options
 
-### What are the two ways of consuming Cold Archive? 
+### What are the two ways of consuming Cold Archive?
 
-The two ways of consuming Cold Archive are: 
+The two ways of consuming Cold Archive are:
+
 - **Cold Archive v1, a standalone bucket-granular Cold Archive solution (legacy offering)**, and 
 - **Cold Archive v2, an Object Storage class/tier that allows archiving individual objects within a container**.
 
 Although there are two underlying ways of consuming Cold Archive, we continue to refer to the solution as 'Cold Archive' in all customer-facing materials, including the product page and customer experience, without explicitly mentioning 'v1' or 'v2'. 
 
-### What is Cold Archive v1? 
+### What is Cold Archive v1?
 
-Cold Archive v1 is a standalone, bucket-granular Cold Archive solution **introduced in 2023** that **archives entire buckets** onto physical tapes. This method is still available for customers that was using it before November 2025, but it will no longer be available for new customers through the Control Panel with no impact on existing customers. APIs will continue to work and data will of course remain secure and available at any moment: we only modify the way users will access and manage objects.
+Cold Archive v1 is a standalone, bucket-granular Cold Archive solution **introduced in 2023** that **archives entire buckets** onto physical tapes. This method is still available for customers that were using it before November 2025, but it will no longer be available for new customers through the OVHcloud Control Panel with no impact on existing customers. APIs will continue to work and data will of course remain secure and available at any moment: we only modify the way users will access and manage objects.
 
-### What is Cold Archive v2? 
+### What is Cold Archive v2?
 
-Starting **November 2025**, Cold Archive v2 was introduced as an Object Storage class/tier that **allows archiving individual objects within an S3-compatible bucket**. This feature is now directly available in the Object Storage dashboard, where you can upload objects in the Cold Archive class or use lifecycle transitions to move data to the Cold Archive class. As of today, Cold Archive v2 is only available from the Paris 3-AZ region (eu-west-par). Know more about Object Storage geoavailability on [this page](/pages/storage_and_backup/object_storage/s3_location).
+Starting **November 2025**, Cold Archive v2 was introduced as an Object Storage class/tier that **allows archiving individual objects within an S3<sup>1</sup>-compatible bucket**. This feature is now directly available in the Object Storage dashboard, where you can upload objects in the Cold Archive class or use lifecycle transitions to move data to the Cold Archive class. As of today, Cold Archive v2 is only available from the Paris 3-AZ region (eu-west-par). Know more about Object Storage geoavailability on [this page](/pages/storage_and_backup/object_storage/s3_location).
 
-### What are the main differences between Cold Archive v1 and v2? 
+### What are the main differences between Cold Archive v1 and v2?
 
 The main difference is that Cold Archive v1 archives **entire buckets**, while Cold Archive v2 allows **archiving individual objects** within a container. 
-From a restoration perspective, the granularity is also different: on one hand with Cold Archive v1, restoration is done for the entire bucket (details [here](/pages/storage_and_backup/object_storage/cold_archive_overview)), where for Cold Archive v2, the restoration is available for individual objects (details [here](/pages/storage_and_backup/object_storage/s3_restoring_objects)).
+From a restoration perspective, the granularity is also different: on one hand with Cold Archive v1, restoration is done for the entire bucket (details [here](/pages/storage_and_backup/object_storage/cold_archive_overview)), whereas for Cold Archive v2, the restoration is available for individual objects (details [here](/pages/storage_and_backup/object_storage/s3_restoring_objects)).
 
 #### Summary - Cold Archive v1 and Cold Archive v2
 
@@ -34,38 +36,37 @@ From a restoration perspective, the granularity is also different: on one hand w
 | Granularity | bucket level: whole bucket is archived/restored | object level: individual objects can be archived/restored |
 | Availability | accessible through rbx-archive region only | currently eu-west-par (Paris, FR) only |
 | S3 features compatibility | limited, details can be found [here](/pages/storage_and_backup/object_storage/cold_archive_getting_started) | full (asynchronous replication, lifecycle management, versioning, object lock and many more) |
-| Billing details | Standard Object Storage temporary storage - early deletion fees (180-day minimum storage duration) - restoration fees - minimum 1 TiB per bucket - see [pricing](https://www.ovhcloud.com/fr/public-cloud/old-prices/) | early deletion fees (180-day minimum storage duration) - restoration fees - see [pricing](/links/public-cloud/prices) |
+| Billing details | Standard Object Storage temporary storage - early deletion fees (180-day minimum storage duration) - restoration fees - minimum 1 TiB per bucket - see [pricing](/links/public-cloud/prices-old-prices) | early deletion fees (180-day minimum storage duration) - restoration fees - see [pricing](/links/public-cloud/prices) |
 | Status | no longer available for new customers since November 2025 - long term support for existing customers | available in eu-west-par (Paris, FR) since November 2025 |
 
+### Is Cold Archive v1 still available for new customers?
 
-### Is Cold Archive v1 still available for new customers? 
-
-Since  November 2025, Cold Archive v1 is no longer available for new customers through the Control Panel despite still in production for existing customers.
-In other words, prior to November 2025, if a Public Cloud project had at least one Cold Archive container, the Cold Archive entry in the Control Panel remains available. 
+Since  November 2025, Cold Archive v1 is no longer available for new customers through the OVHcloud Control Panel despite still in production for existing customers.
+In other words, prior to November 2025, if a Public Cloud project had at least one Cold Archive container, the Cold Archive entry in the OVHcloud Control Panel remains available. 
 Finally, APIs continue to work and data will of course remain secure and available at any moment: we only modify the way users will access and manage objects.
 
-### How do I access Cold Archive v2? 
+### How do I access Cold Archive v2?
 
 Cold Archive v2 is directly available in the Object Storage dashboard for a given Object Storage general-purpose bucket, where you can upload objects in the Cold Archive class or use lifecycle transitions to move data to the Cold Archive class.
-**As of today, Cold Archive v2 is only available from the Paris 3-AZ region (eu-west-par).** 
+**As of today, Cold Archive v2 is only available from the Paris 3-AZ region (eu-west-par).**
 
-Users can also manage his Cold Archive objects using S3 or OVHcloud APIs, more details in the [Object Storage getting started guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+Users can also manage their Cold Archive objects using S3 or OVHcloud APIs. Find more details in the [Object Storage getting started guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
-### What are the benefits of using Cold Archive v2 over v1? 
+### What are the benefits of using Cold Archive v2 over v1?
 
 Cold Archive v2 provides more flexibility and granularity, allowing you to archive individual objects within a container, rather than entire buckets. 
 
-### Can I migrate my existing Cold Archive v1 buckets to Cold Archive v2? 
+### Can I migrate my existing Cold Archive v1 buckets to Cold Archive v2?
 
 No, as the archiving process is different and managed through a different granularity, migration from Cold Archive v1 to Cold Archive v2 is not possible.
 
-### Are there any differences in pricing between Cold Archive v1 and v2?  
+### Are there any differences in pricing between Cold Archive v1 and v2?
 
 Yes. First of all, on both options, early deletion fee (associated to a 180-day minimum storage duration) and retrieval/restoration fee are applied. However, data storage and retrieval fees are different on Cold Archive v1 and v2. For official prices, see [this page](/links/public-cloud/prices).
 
 ## General Information
 
-### Which use cases are suitable for the Cold Archive storage service? 
+### Which use cases are suitable for the Cold Archive storage service?
 
 The Cold Archive storage class is an Object Storage service adapted for long-term storage. It is suitable for the following use cases:
 
@@ -79,7 +80,7 @@ Its design is highly resilient (4 datacentres), low cost, sustainable (the lifes
 
 Find an overview of the solution on [this page](/pages/storage_and_backup/object_storage/cold_archive_overview).
 
-### How do I use the service for the first time? 
+### How do I use the service for the first time?
 
 To use the service, you will need to meet the following requirements:
 
@@ -93,7 +94,7 @@ All the features of our Object Storage storage classes are supported by Cold Arc
 
 Few operations are available specifically for this storage class: archiving (on Cold Archive v1), restoring (on Cold Archive v1 and v2), container status (on Cold Archive v1 and v2), deleting the archive (on Cold Archive v1).
 
-## Cold Archive v1 (legacy offering) - Archiving and restoration 
+## Cold Archive v1 (legacy offering) - Archiving and restoration
 
 ### How do I download the data into a container?
 
@@ -107,9 +108,9 @@ You can then upload files to this container via the S3-compatible API, CLI or SD
 
 ### How do I archive a container?
 
-You archive the container from the Control Panel, via the S3-compatible API, CLI or SDK. 
+You archive the container from the OVHcloud Control Panel, via the S3-compatible API, CLI or SDK.
 
-In the Control Panel, the action is carried out by activating the `Archive`{.action} button. 
+In the OVHcloud Control Panel, the action is carried out by activating the `Archive`{.action} button.
 
 After this request, the bucket is not yet archived. Archiving to tape will take some time. From this command until a restore, the bucket cannot accept any read or write requests on the objects (listing objects is always allowed).
 
@@ -182,9 +183,9 @@ We do not offer this service. Archives are stored in *off-line* magnetic tapes, 
 
 ## Billing
 
-### How is the Cold Archive service billed? 
+### How is the Cold Archive service billed?
 
-Billing is done on a volume basis in GiB per hour. 
+Billing is done on a volume basis in GiB per hour.
 
 #### Legacy offering aka Cold Archive v1
 During the download phase, your storage volumes are billed at the price of the **Object Storage - Standard** class.
@@ -195,11 +196,12 @@ Billing stops when the archive is deleted (*delete-ovh-archive*).
 
 A 7% discount is applied for a data volume greater than 3 PB.
 
-The minimum amount billed for archiving is 1 TiB. Even if the total volumetry of the bucket is below 1 TiB, it will be billed at 1 TiB.
+The minimum amount billed for archiving is 1 TiB. Even if the total volumetry of the bucket is below 1 TiB, it will be billed for 1 TiB.
 
 #### Cold Archive v2
-When uploading objects in the Cold Archive class/tier, objects are billed at the Cold Archive rate available on [this page](/links/public-cloud/prices). 
-Cold Archive v2 is billed at the first Byte.
+
+When uploading objects in the Cold Archive class/tier, objects are billed at the Cold Archive rate available on [this page](/links/public-cloud/prices).
+Cold Archive v2 is billed from the first Byte.
 
 ### Is there a minimum storage duration?
 
@@ -252,7 +254,7 @@ OVHcloud offers a managed service. OVHcloud takes care of the replacement of mag
 
 To protect data against theft, the connection between a third-party object storage (*from*) and OVHcloud Object Storage (*to*) is encrypted and protected by https.
 
-In addition, we recommend that you encrypt your data before sending it. You can use multiple encryption options available in details [here](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
+In addition, we recommend that you encrypt your data before sending it. You can use multiple available encryption options described [here](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
 ### Is data encrypted?
 
