@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Premiers pas (EN)
 excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2025-06-19
+updated: 2026-01-19
 ---
 
 > [!primary]
