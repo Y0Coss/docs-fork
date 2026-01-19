@@ -1,5 +1,5 @@
 ---
-title: "File Storage Service - Premiers pas (Beta)"
+title: "File Storage Service - Premiers pas (bêta)"
 excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
 updated: 2026-01-19
 ---
@@ -8,13 +8,13 @@ updated: 2026-01-19
 
 OVHcloud propose un service File Storage basé sur OpenStack Manila. Ce service fournit des shares NFS gérés sur des réseaux privés, avec un accès ReadWriteMany (RWX) possible depuis plusieurs instances ou pods Kubernetes.
 
-Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
+Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI et Terraform.
 
 > [!warning]
 >
 >  Ce service est actuellement en version bêta et disponible uniquement dans les régions **SBG5**, **DE1** et **GRA**. Les fonctionnalités et la disponibilité peuvent être modifiées.
 >
-> Pendant la phase Beta, la taille autorisée des shares varie entre 150 Gio à 10 Tio.
+> Pendant la phase bêta, la taille autorisée des shares varie entre 150 Gio à 10 Tio.
 >
 
 ## Prérequis
@@ -27,7 +27,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 
 > [!primary]
 >
-> Actuellement, le service File Storage ne peut être consulté et géré que via les API OVH et la CLI OpenStack avec le plugin Manila. D’autres interfaces seront disponibles à l’avenir.
+> Actuellement, le service File Storage ne peut être consulté et géré que via les API OVHcloud et la CLI OpenStack avec le plugin Manila. D’autres interfaces seront disponibles à l’avenir.
 >
 
 > [!tabs]
@@ -38,7 +38,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> Avant de créer ou d'associer un service File Storage, vous devez identifier le réseau privé cible.
 >>
->> Récupérez l'ID du réseau.
+>> Récupérez l'ID du réseau :
 >>
 >> > [!api]
 >> >
@@ -66,10 +66,10 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > **NOTE:** Sélectionnez uniquement un réseau privé.
+>> > **Note :** Sélectionnez uniquement un réseau privé.
 >> >
 >>
->> Récupérez l'ID du sous-réseau à l'aide de l'ID réseau.
+>> Récupérez l'ID du sous-réseau à l'aide de l'ID réseau :
 >>
 >> > [!api]
 >> >
@@ -103,7 +103,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> L'ID réseau et l'ID sous-réseau doivent tous deux respecter le format suivant : `abc12345-def6-4abc-8def-123456abcdef`.
 >>
->> Créez un share NFS de 150 Gio connecté à votre réseau privé.
+>> Créez un share NFS de 150 Gio connecté à votre réseau privé :
 >>
 >> > [!api]
 >> >
@@ -112,7 +112,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > **NOTE:** Remplacez <my-share-name> par le nom de share que vous avez choisi.
+>> > **Note :** Remplacez <my-share-name> par le nom de share que vous avez choisi.
 >> >
 >>
 >> Répertoriez vos actions et attendez que la nouvelle action apparaisse avec le statut `available`.
@@ -153,10 +153,10 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > **NOTE:** L'identifiant du share doit avoir le format « abc12345-def6-4abc-8def-123456abcdef ».
+>> > **Note :** L'identifiant du share doit avoir le format `abc12345-def6-4abc-8def-123456abcdef`.
 >> >
 >>
->> Récupérez les détails du share à l'aide de l'ID de share.
+>> Récupérez les détails du share à l'aide de l'ID de share :
 >>
 >> > [!api]
 >> >
@@ -219,7 +219,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >> }
 >> ```
 >> 
->> Vérifiez l'accès au share NFS à partir de la machine virtuelle cliente autorisée.
+>> Vérifiez l'accès au share NFS à partir de la machine virtuelle cliente autorisée :
 >>
 >> > [!api]
 >> >
@@ -228,25 +228,25 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> **3\. Montez le share sur votre machine virtuelle cliente**
 >>
->> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share.
+>> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share :
 >>
 >> ```bash
 >> sudo apt update && sudo apt install -y nfs-common
 >> ```
 >>
->> Créer un point de montage et monter le share
+>> Créez un point de montage et montez le share :
 >>
 >> ```bash
 >> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
 >> ```
 >>
->> Vérifiez le montage
+>> Vérifiez le montage :
 >>
 >> ```bash
 >> df -h /mnt/share
 >> ```
 >>
->> Rendre le montage persistant après les redémarrages
+>> Rendez le montage persistant après les redémarrages :
 >>
 >> ```bash
 >> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
@@ -269,12 +269,12 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
 >>
->> **Note:** Cela vous permet de surveiller la capacité de stockage et l'utilisation de votre share NFS.
+>> **Note :** Cela vous permet de surveiller la capacité de stockage et l'utilisation de votre share NFS.
 >>
 > Via la CLI OpenStack avec le plugin Manila
-> >> **0\. Prérequis supplémentaires**
+> >> **Prérequis supplémentaires**
 >>
->> - Assurez-vous que l'utilisateur OpenStack dispose du rôle Administrator ou Share operator.
+>> - Assurez-vous que l'utilisateur OpenStack dispose du rôle ``Administrator` ou `Share operator`.
 >>
 >> **1\. Installer le plugin CLI Manila**
 >>
@@ -317,7 +317,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Le type `standard-1az` utilise `driver_handles_share_servers` = True, ce qui signifie que vous devez associer un réseau partagé lors de la création d'un share.
+>> > Remarque : Le type `standard-1az` utilise `driver_handles_share_servers = True`, ce qui signifie que vous devez associer un réseau partagé lors de la création d'un share.
 >> >
 >>
 >> **3\. Créer un Share Network**
