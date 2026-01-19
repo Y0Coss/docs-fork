@@ -23,7 +23,7 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 > La opción "dirección(es) de correo electrónico incluida(s) con su alojamiento web" no está disponible para un nombre de dominio externo (no registrado en OVHcloud o registrado en una cuenta de OVHcloud diferente a la suya).
 >
 > Para migrar un dominio externo a OVHcloud, siga [esta guía](/pages/web_cloud/domains/transfer_incoming_generic_domain).
-> Si su nombre de dominio ya está registrado en OVHcloud o si ya existe una zona DNS para este en otro [cuenta de OVHcloud](/links/manager) que no sea la suya, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para recuperar su gestión.
+> Si su nombre de dominio ya está registrado en OVHcloud o si ya existe una zona DNS para este en otra cuenta de OVHcloud que no sea la suya, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para recuperar su gestión.
 >
 > Finalmente, si su nombre de dominio ya está vinculado a la opción "dirección(es) de correo electrónico incluida(s)" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Póngase en contacto con el actual administrador del alojamiento web con la ayuda de esta guía.
 
