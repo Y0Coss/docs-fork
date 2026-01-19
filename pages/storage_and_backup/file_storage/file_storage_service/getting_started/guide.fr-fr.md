@@ -841,7 +841,7 @@ Il est accessible via les API OVH, OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl apply -f dynamic-storageclass.yaml
 >> ```
 >>
->> Une fois la StorageClass créée, créez un fichier nommé `nfs-pvc.yaml` définissant une PersistentVolumeClaim (PVC) qui utilise cette StorageClass. Par exemple, demandez un volume de 150 Gi avec un accès `ReadWriteMany` (RWX) :
+>> Une fois la StorageClass créée, créez un fichier nommé `nfs-pvc.yaml` définissant une PersistentVolumeClaim (PVC) qui utilise cette StorageClass. Par exemple, demandez un volume de 150 Gio avec un accès `ReadWriteMany` (RWX) :
 >>
 >> ```yaml
 >> apiVersion: v1
