@@ -1020,7 +1020,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>   accessModes:
 >>   - ReadWriteMany
 >>   capacity:
->>     storage: 120Gi
+>>     storage: 150Gi
 >>   csi:
 >>     driver: nfs.manila.csi.openstack.org
 >>     volumeHandle: preprovisioned-nfs-share
@@ -1043,7 +1043,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>   - ReadWriteMany
 >>   resources:
 >>     requests:
->>       storage: 120Gi
+>>       storage: 150Gi
 >>   storageClassName: "" # <--- Prevent default Cinder CSI usage
 >>   selector:
 >>     matchExpressions:
