@@ -8,11 +8,11 @@ updated: 2026-01-19
 
 OVHcloud provides a File Storage Service powered by OpenStack Manila. This service offers managed NFS shares on private networks, supporting ReadWriteMany (RWX) access across multiple instances or Kubernetes pods.
 
-It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
+It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, and Terraform.
 
 > [!warning]
 >
-> This service is currently in Beta, available only in the **SBG5**, **DE1** and **GRA** region. Features and availability may change.
+> This service is currently in Beta, available only in the **SBG5**, **DE1** and **GRA** regions. Features and availability may change.
 >
 > During the Beta phase, the allowed share size ranges from 150 GiB to 10 TiB.
 >
@@ -27,18 +27,18 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 
 > [!primary]
 >
-> Currently, the File Storage Service can only be accessed and managed via OVH APIs, OpenStack CLI with the Manila plugin and Terraform. Other interfaces will be supported in the future.
+> Currently, the File Storage Service can only be accessed and managed via OVHcloud API, OpenStack CLI with the Manila plugin and Terraform. Other interfaces will be supported in the future.
 >
 
 > [!tabs]
-> Via OVHcloud API
+> Via the OVHcloud API
 >> **1\. Create a share**
 >>
 >> Identify your private network and subnet
 >>
 >> Before creating or attaching a File Storage service, you must identify the target private network.
 >>
->> Retrieve the network ID.
+>> Retrieve the network ID:
 >>
 >> > [!api]
 >> >
@@ -69,7 +69,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> > **NOTE:** Only select a private network.
 >> >
 >>
->> Retrieve the subnet ID using the network ID.
+>> Retrieve the subnet ID using the network ID:
 >>
 >> > [!api]
 >> >
@@ -103,7 +103,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> Both the network ID and subnet ID should have the format: `abc12345-def6-4abc-8def-123456abcdef`.
 >>
->> Create a 150 GiB NFS share attached to your private network.
+>> Create a 150 GiB NFS share attached to your private network:
 >>
 >> > [!api]
 >> >
@@ -115,7 +115,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> > **NOTE:** Replace <my-share-name> with your chosen share name.
 >> >
 >>
->> List your shares and wait until the newly created one appears with status `available`.
+>> List your shares and wait until the newly created one appears with status `available`:
 >>
 >> > [!api]
 >> >
@@ -156,7 +156,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> > **NOTE:** The share ID should have the format `abc12345-def6-4abc-8def-123456abcdef`.
 >> >
 >>
->> Retrieve the share details using the share ID.
+>> Retrieve the share details using the share ID:
 >>
 >> > [!api]
 >> >
@@ -193,7 +193,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> }
 >> ```
 >>
->> **2\. Authorize a Client VM**
+>> **2\. Authorize a client VM**
 >>
 >> Ensure the client VM is on the same private network as the share.
 >>
@@ -219,34 +219,34 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> }
 >> ```
 >> 
->> Verify access to the NFS share from the authorized client VM.
+>> Verify access to the NFS share from the authorized client VM:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl/{aclId}
 >> >
 >>
->> **3\. Mount the Share on Your Client VM**
+>> **3\. Mount the share on your client VM**
 >>
->> Connect to your client VM and install the NFS utilities required to mount the share.
+>> Connect to your client VM and install the NFS utilities required to mount the share:
 >>
 >> ```bash
 >> sudo apt update && sudo apt install -y nfs-common
 >> ```
 >>
->> Create a mount point and mount the share
+>> Create a mount point and mount the share:
 >>
 >> ```bash
 >> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
 >> ```
 >>
->> Verify the mount
+>> Verify the mount:
 >>
 >> ```bash
 >> df -h /mnt/share
 >> ```
 >>
->> Make the mount persistent across reboots
+>> Make the mount persistent across reboots:
 >>
 >> ```bash
 >> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
@@ -254,7 +254,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This ensures the NFS share is automatically remounted after the VM restarts.
 >>
->> **4\. Check Capacity and Usage**
+>> **4\. Check capacity and usage**
 >>
 >> Once the NFS share is mounted, verify its available space and usage:
 >>
@@ -272,11 +272,11 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> **Note:** This allows you to monitor the storage capacity and usage of your NFS share.
 >>
 > Via the OpenStack CLI with the Manila plugin
->> **0\. Additional requirements**
+>> **Additional requirements**
 >>
->> - Make sure openstack user has Administrator or Share operator role
+>> - Make sure your OpenStack user has the `Administrator` or `Share operator` role.
 >>
->> **1\. Install the Manila CLI Plugin**
+>> **1\. Install the Manila CLI plugin**
 >>
 >> If the Manila commands are not yet available, install the plugin:
 >>
@@ -297,7 +297,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> - share network create
 >> - share access create
 >>
->> **2\. Check Available Share Types**
+>> **2\. Check available share types**
 >>
 >> List the share types available in your region:
 >>
@@ -317,10 +317,10 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> > [!primary]
 >> >
->> > Note: The type `standard-1az` uses `driver_handles_share_servers` = True, which means you must attach a share network when creating a share.
+>> > Note: The type `standard-1az` uses `driver_handles_share_servers = True`, which means you must attach a share network when creating a share.
 >> >
 >>
->> **3\. Create a Share Network**
+>> **3\. Create a share network**
 >>
 >> Identify your private network and subnet:
 >>
@@ -362,7 +362,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share network list --os-region-name <REGION_NAME>
 >> ```
 >>
->> **4\. Create an NFS Share**
+>> **4\. Create an NFS share**
 >>
 >> Create a 150 GB NFS share:
 >>
@@ -386,7 +386,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share list --os-region-name <REGION_NAME>
 >> ```
 >>
->> **5\. Authorize a Client VM**
+>> **5\. Authorize a client VM**
 >>
 >> Ensure your client VM is in the same private network as the share.
 >>
@@ -417,7 +417,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share access list --os-region-name <REGION_NAME> <my-first-share-name>
 >> ```
 >>
->> **6\. Retrieve the Export Path**
+>> **6\. Retrieve the export path**
 >>
 >> Get the NFS export location:
 >>
@@ -436,7 +436,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: This export path is used to mount the share on your client VM.
 >> >
 >>
->> **7\. Mount the Share on Your Client VM**
+>> **7\. Mount the share on your client VM**
 >>
 >> Connect to your VM and install NFS utilities:
 >>
@@ -523,7 +523,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> | Share stuck in creating     | Invalid network ID or subnet       | Check `NETWORK_ID` and `SUBNET_ID`                                 |
 >>
 > Via Manila CSI in Kubernetes environment
->> **1\. Additional Requirements**
+>> **1\. Additional requirements**
 >>
 >> - Helm CLI installed on your local machine.
 >> - OpenStack CLI configured and ready to use.
@@ -641,7 +641,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> kubectl stern -n kube-system -l app=openstack-manila-csi
 >> ```
 >>
->> **7\. Preparing OpenStack Resources for Manila CSI**
+>> **7\. Preparing OpenStack resources for Manila CSI**
 >>
 >> 7.1\. Create a dedicated OpenStack user for Manila
 >>
@@ -789,7 +789,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> kubectl apply -f manila-runtime-configmap.yaml
 >> ```
 >>
->> **9\. Creating NFS Shares via Dynamic Provisioning**
+>> **9\. Creating NFS shares via dynamic provisioning**
 >>
 >> To enable the Manila CSI driver to dynamically create Manila shares and use them as Kubernetes volumes, you must define a StorageClass in your cluster. This StorageClass specifies the shared network that will be used to create and grant access to NFS exports.
 >>
@@ -924,7 +924,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> You can verify the RWX functionality by connecting to one pod using the `kubectl exec` command and creating a file in the mounted directory (e.g., `/var/lib/www/`). Then, connect to the second pod and check that the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
 >>
->> **10\. Resize an NFS Share Using Dynamic Provisioning**
+>> **10\. Resize an NFS share using dynamic provisioning**
 >>
 >> > [!warning]
 >> >
@@ -969,7 +969,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >> > error: persistentvolumeclaims "existing-nfs-share-pvc" could not be patched: persistentvolumeclaims "existing-nfs-share-pvc" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
 >> >
 >>
->> **11\. Mounting an Existing Manila Share as a Volume in Pods**
+>> **11\. Mounting an existing Manila share as a volume in Pods**
 >>
 >> As shown earlier, a Kubernetes StorageClass can dynamically create Manila shares exposed via NFS. Alternatively, you can use a pre-provisioned Manila share and mount it directly in a Pod.
 >>
@@ -1117,7 +1117,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This block ensures that Terraform uses the correct providers for managing OVH and OpenStack resources.
 >>
->> **3\. Retrieve information about your Private Network**
+>> **3\. Retrieve information about your private network**
 >>
 >> Add the following blocks to your `main.tf` file to fetch details about your private network and subnet:
 >>
@@ -1150,7 +1150,7 @@ It can be accessed via OVH APIs, OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> This resource creates a share network in OpenStack, associating it with your existing private network and subnet. It is required to provision and manage shared file systems.
 >>
->> **5\. Create a NFS share**
+>> **5\. Create an NFS share**
 >>
 >> Add the following resource to your `main.tf` to create an NFS share on your File Storage service:
 >>
