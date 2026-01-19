@@ -20,7 +20,7 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 > [!warning]
 >
-> L'option « adresse(s) e-mail incluse(s) avec votre hébergement web » est indisponible pour un nom de domaine externe ((non enregistré chez OVHcloud ou enregistré sur un [compte OVHcloud](/links/manager) différent du vôtre).
+> L'option « adresse(s) e-mail incluse(s) avec votre hébergement web » est indisponible pour un nom de domaine externe (non enregistré chez OVHcloud ou enregistré sur un compte OVHcloud différent du vôtre).
 >
 > Pour migrer un domaine externe chez OVHcloud, suivez [ce guide](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 Si votre nom de domaine est déjà enregistré chez OVHcloud ou si une zone DNS existe déjà pour ce dernier dans un autre [compte OVHcloud](/links/manager) que le vôtre, consultez notre documentation « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
