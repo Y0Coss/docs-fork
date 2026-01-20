@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnostic et dépannage"
 excerpt: "Découvrez comment résoudre les problèmes potentiels liés à Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-20
 ---
 
 <style>
@@ -112,6 +112,16 @@ Enfin, redémarrez le service veeamservice.
 /// details | Mon utilisation du stockage ne s'est pas actualisée suite à la suppression d'un agent.
 
 Nous gardons vos données durant 14 jours à la suite d'une suppression d'un agent, l'utilisation du stockage se mettra à jour suite aux 14 jours et la suppression des données.
+
+///
+
+/// details | Je souhaite modifier le mot de passe d’accès à la Veeam Service Provider Console (VSPC).
+
+Le changement de mot de passe s’effectue via le lien « Forgot password? » disponible sur la console VSPC.
+
+![Reset password 1](images/reset_password_1.png)
+
+![Reset password 2](images/reset_password_2.png)
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Troubleshooting"
 excerpt: "Learn how to solve potential issues related to Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-20
 ---
 
 <style>
@@ -111,6 +111,16 @@ Then restart the veeamservice service.
 /// details | My storage usage did not refresh after an agent was removed.
 
 We keep your data for 14 days following an agent deletion, storage usage will be updated following the 14 days and data deletion.
+
+///
+
+/// details | I want to change the password for accessing the Veeam Service Provider Console (VSPC).
+
+Passwords can be changed via the “Forgot password?” link available on the VSPC console.
+
+![Reset password 1](images/reset_password_1.png)
+
+![Reset password 2](images/reset_password_2.png)
 
 ///
 
